@@ -11,15 +11,15 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
 
     <!-- SEO, GEO & IAE Metadata -->
-    <title data-i18n="fes_page.seo.title">Guide de Voyage Fès 2026 | Incontournables, Riads & Médina | MoroccoTripMap</title>
-    <meta content="Oubliez la boussole et plongez dans Fès. Découvrez notre guide complet : la médina de Fès el-Bali, les tanneries Chouara, les plus beaux riads, notre itinéraire sur 3 jours et des conseils locaux." name="description" data-i18n-attr="content:fes_page.seo.description"/>
-    <meta content="Guide de voyage Fès, visiter Fès, médina Fès el-Bali, tanneries Chouara, riads Fès, capitale spirituelle Maroc, tourisme Fès" name="keywords"/>
+    <title data-i18n="fes_page.seo.title">Guide de Voyage Fès 2026 | Incontournables, Riads, FAQ & Médina | MoroccoTripMap</title>
+    <meta content="Guide complet pour visiter Fès : monuments historiques, tanneries Chouara, plus beaux riads de la médina, itinéraires conseillés, blog et FAQ pratiques." name="description" data-i18n-attr="content:fes_page.seo.description"/>
+    <meta content="Guide de voyage Fès, visiter Fès, médina Fès el-Bali, tanneries Chouara, riads Fès, université Al Quaraouiyine, faq Fès, blog Fès" name="keywords"/>
     <link href="https://moroccotripmap.com/fes.html" rel="canonical"/>
 
     <!-- Open Graph / Social Media -->
     <meta content="website" property="og:type"/>
-    <meta content="Guide de Voyage Fès | Incontournables & Riads Secrets | MoroccoTripMap" property="og:title" data-i18n-attr="content:fes_page.seo.og_title"/>
-    <meta content="Explorez la capitale spirituelle du Maroc. Un labyrinthe d'artisanat, de palais cachés et d'histoire millénaire. Préparez votre séjour à Fès." property="og:description" data-i18n-attr="content:fes_page.seo.og_description"/>
+    <meta content="Guide de Voyage Fès | Incontournables, Riads & Conseils | MoroccoTripMap" property="og:title" data-i18n-attr="content:fes_page.seo.og_title"/>
+    <meta content="Explorez la capitale spirituelle du Maroc. Un labyrinthe d'artisanat, de palais cachés et d'histoire millénaire." property="og:description" data-i18n-attr="content:fes_page.seo.og_description"/>
     <meta content="https://moroccotripmap.com/fes.html" property="og:url"/>
     <meta content="https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=1200&q=80" property="og:image"/>
 
@@ -37,7 +37,7 @@
       "@type": "TouristDestination",
       "name": "Fès",
       "url": "https://moroccotripmap.com/fes.html",
-      "description": "Guide de voyage immersif pour découvrir Fès, la capitale spirituelle du Maroc, ses tanneries historiques et sa médina classée à l'UNESCO.",
+      "description": "Guide de voyage complet pour découvrir Fès, ses monuments, ses riads traditionnels et sa médina classée à l'UNESCO.",
       "touristType": ["Culture", "Histoire", "Gastronomie"],
       "containedInPlace": {
         "@type": "Country",
@@ -75,36 +75,16 @@
     <style>
         body { font-family: 'Outfit', sans-serif; }
 
-        /* Styles intégrés conservés de la page modèle */
-        .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
-        .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
-        .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
-        .tab-btn.active { background: #185336; color: #fff; border-color: #185336; }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
-        .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-        .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
-        .day-card h3:first-of-type { margin-top: 0; }
-        .steps-list { list-style: none; padding: 0; margin-top: 15px; }
-        .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
-
-        /* Styles pour les Filtres d'hébergement */
+        /* Styles filtres et hébergements */
         .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
         .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
         .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
         .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
         .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
         .filter-group select:focus { border-color: #185336; }
-        .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
-        .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
-        .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
-        .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
-        .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
-        .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
-        .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
-        .acc-contact a:hover { text-decoration: underline; }
-        .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
+        
+        .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); border-radius: 1.5rem; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+        .acc-card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(0,0,0,0.06); }
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -174,7 +154,7 @@
             </div>
         </div>
         
-        <!-- Mobile Menu (Hidden by default) -->
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-sable/10 absolute w-full z-40 shadow-xl pb-4">
             <div class="px-4 pt-4 pb-2 space-y-1">
                 <a href="destinations.html" class="block px-3 py-3 rounded-md text-base font-bold text-vert bg-creme">Destinations</a>
@@ -245,16 +225,16 @@
             </div>
         </section>
 
-        <!-- Must-Visit Places Section -->
+        <!-- Must-Visit Places Section (Complete - 8 Places) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div>
                     <span class="text-xs font-bold text-sable uppercase tracking-wider">Lieux Emblématiques</span>
                     <h2 class="text-3xl font-bold text-vert">Les incontournables de Fès</h2>
                 </div>
-                <p class="text-sm text-sombre/70 max-w-md">De ses tanneries mondiales à ses universités ancestrales, découvrez le patrimoine historique fassi.</p>
+                <p class="text-sm text-sombre/70 max-w-md">Des tanneries médiévales aux médersas richement ornées, découvrez les joyaux de la capitale culturelle.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- 1. Bab Boujloud -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/bab-boujloud.html">
                     <div class="relative h-48 overflow-hidden">
@@ -289,7 +269,7 @@
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Médersa Bou Inania</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2">L'une des rares institutions religieuses accessibles aux non-musulmans, joyau de l'art mérinide aux stucs sculptés.</p>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Chef-d'œuvre de l'architecture mérinide aux stucs sculptés et boiseries raffinées.</p>
                         <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1">Découvrir →</span>
                     </div>
                 </a>
@@ -302,7 +282,59 @@
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Al Quaraouiyine</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Reconnue comme la plus ancienne université au monde encore en activité. Le cœur intellectuel de Fès.</p>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Reconnue comme la plus ancienne université au monde encore en activité, fondée au IXe siècle.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1">Découvrir →</span>
+                    </div>
+                </a>
+
+                <!-- 5. Médersa Attarine -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/medersa-attarine.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Médersa Attarine" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Patrimoine</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Médersa Al-Attarine</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Située à l'entrée du souk des épices, réputée pour l'extrême finesse de ses décors en zellige.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1">Découvrir →</span>
+                    </div>
+                </a>
+
+                <!-- 6. Place Seffarine -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/place-seffarine.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Place Seffarine Fès" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Culture</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Place Seffarine</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2">La place vivante des artisans dinandiers où résonne le martèlement du cuivre et du laiton.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1">Découvrir →</span>
+                    </div>
+                </a>
+
+                <!-- 7. Tombeaux Mérinides -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/tombeaux-merinides.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Tombeaux Mérinides panorama Fès" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Panorama</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Tombeaux Mérinides</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Perchés sur la colline, ils offrent le plus beau coucher de soleil et une vue à 360° sur la médina.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1">Découvrir →</span>
+                    </div>
+                </a>
+
+                <!-- 8. Palais Royal & Mellah -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/palais-royal-mellah.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Portes en laiton du Palais Royal de Fès" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1579282240050-352db0a14c21?auto=format&fit=crop&w=800&q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Histoire</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Palais Royal & Mellah</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Admirez les sublimes portes en laiton ciselé du palais et parcourez l'historique quartier juif.</p>
                         <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1">Découvrir →</span>
                     </div>
                 </a>
@@ -343,15 +375,15 @@
             </div>
         </section>
 
-        <!-- Filtres et Répertoire des Hébergements de Fès -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Filtres et Répertoire Élargi des Hébergements de Fès -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="filter-section mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider">Répertoire & Adresses</span>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider">Sélection d'exception</span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
                     <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                    <span>Trouvez votre cocon à Fès</span>
+                    <span>Où dormir à Fès : Riads & Hôtels</span>
                 </h2>
-                <p class="text-sm text-sombre/70 mt-2">Dormir dans un riad traditionnel est l'une des expériences les plus magiques d'un séjour fassi. Filtrez selon vos envies ci-dessous.</p>
+                <p class="text-sm text-sombre/70 mt-2">Du palais arabo-andalou restauré avec soin au riad intimiste au cœur des souks, voici nos établissements recommandés.</p>
                 
                 <div class="filter-container mt-6 flex flex-wrap gap-4">
                     <!-- Filtre Type -->
@@ -361,70 +393,222 @@
                             <option value="all">Tous les types</option>
                             <option value="hotel">Hôtels & Resorts</option>
                             <option value="riad">Riads Traditionnels</option>
-                            <option value="maison">Maisons d'hôtes</option>
+                            <option value="maison">Maison d'hôtes de charme</option>
                         </select>
                     </div>
 
-                    <!-- Filtre Quartier localisé Fès (GEO SEO) -->
+                    <!-- Filtre Quartier -->
                     <div class="filter-group flex flex-col">
                         <label for="filter-location" class="text-xs font-semibold mb-1">Quartier / Zone :</label>
                         <select id="filter-location" class="p-2 border rounded-md">
                             <option value="all">Toutes les zones</option>
-                            <option value="medina">Fès el-Bali (Médina Historique)</option>
+                            <option value="medina">Fès el-Bali (Médina Coeur)</option>
+                            <option value="batha">Quartier Batha (Portes & Accès)</option>
                             <option value="nouvelle">Ville Nouvelle & Périphérie</option>
-                            <option value="batha">Quartier Batha (Proche Portes)</option>
                         </select>
                     </div>
                 </div>
                 
-                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter">Hébergements sélectionnés pour vous</div>
+                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter">6 établissements sélectionnés</div>
             </div>
 
-            <!-- Grille d'hébergements Fès (Exemples pertinents) -->
+            <!-- Grille d'hébergements Fès (6 adresses complètes) -->
             <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
                 
-                <!-- Riad Fès -->
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="batha">
-                    <img src="https://images.unsplash.com/photo-1542314831-c6a4d14b3d81?auto=format&fit=crop&w=800&q=80" alt="Riad Fès Relais & Châteaux" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
+                <!-- 1. Riad Fès -->
+                <div class="acc-card border rounded-2xl overflow-hidden bg-white shadow-sm" data-type="riad" data-location="batha">
+                    <img src="https://images.unsplash.com/photo-1542314831-c6a4d14b3d81?auto=format&fit=crop&w=800&q=80" alt="Riad Fès Relais & Châteaux" class="w-full h-52 object-cover" loading="lazy">
+                    <div class="p-5">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">1. Riad Fès (Relais & Châteaux)</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.3</span>
+                            <h3 class="font-bold text-lg text-vert">Riad Fès (Relais & Châteaux)</h3>
+                            <span class="bg-vert/10 text-vert text-xs font-bold px-2 py-1 rounded-lg">★ 9.4</span>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2">Quartier : Batha | Type : Riad de Luxe 5*</p>
-                        <p class="acc-contact text-xs text-gray-500 mb-3">L'excellence de l'architecture arabo-andalouse avec une vue imprenable depuis son rooftop.</p>
-                        <a href="#" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition">Voir les disponibilités</a>
+                        <p class="text-xs font-semibold text-sable mb-2">Quartier Batha • Riad de Luxe 5*</p>
+                        <p class="text-xs text-sombre/70 mb-4">Alliance parfaite entre architecture hispano-mauresque et confort contemporain avec rooftop panoramique.</p>
+                        <a href="#" class="inline-block w-full text-center bg-vert text-white text-xs font-bold py-2.5 rounded-xl hover:bg-vert/90 transition">Voir les tarifs & disponibilités</a>
                     </div>
                 </div>
 
-                <!-- Palais Amani -->
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1590422748805-4f40f3bba5cd?auto=format&fit=crop&w=800&q=80" alt="Palais Amani" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
+                <!-- 2. Palais Amani -->
+                <div class="acc-card border rounded-2xl overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1590422748805-4f40f3bba5cd?auto=format&fit=crop&w=800&q=80" alt="Palais Amani" class="w-full h-52 object-cover" loading="lazy">
+                    <div class="p-5">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">2. Palais Amani</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.5</span>
+                            <h3 class="font-bold text-lg text-vert">Palais Amani</h3>
+                            <span class="bg-vert/10 text-vert text-xs font-bold px-2 py-1 rounded-lg">★ 9.5</span>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2">Quartier : Fès el-Bali | Type : Riad Authentique</p>
-                        <p class="acc-contact text-xs text-gray-500 mb-3">Un véritable sanctuaire caché derrière les hauts murs de la médina abritant de somptueux jardins.</p>
-                        <a href="#" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition">Voir les disponibilités</a>
+                        <p class="text-xs font-semibold text-sable mb-2">Fès el-Bali • Palais de Charme</p>
+                        <p class="text-xs text-sombre/70 mb-4">Un vaste jardin d'agrumes intime, un hammam traditionnel somptueux et des ateliers de cuisine fassie.</p>
+                        <a href="#" class="inline-block w-full text-center bg-vert text-white text-xs font-bold py-2.5 rounded-xl hover:bg-vert/90 transition">Voir les tarifs & disponibilités</a>
                     </div>
                 </div>
 
-                <!-- Hotel Sahrai -->
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="nouvelle">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c0d129df?auto=format&fit=crop&w=800&q=80" alt="Hotel Sahrai" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
+                <!-- 3. Riad Laaroussa -->
+                <div class="acc-card border rounded-2xl overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Riad Laaroussa" class="w-full h-52 object-cover" loading="lazy">
+                    <div class="p-5">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">3. Hotel Sahrai</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
+                            <h3 class="font-bold text-lg text-vert">Riad Laaroussa</h3>
+                            <span class="bg-vert/10 text-vert text-xs font-bold px-2 py-1 rounded-lg">★ 9.6</span>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2">Quartier : Ville Nouvelle | Type : Hotel Boutique 5*</p>
-                        <p class="acc-contact text-xs text-gray-500 mb-3">Alternative design surplombant la ville, alliant confort ultra-moderne et clins d'œil au patrimoine.</p>
-                        <a href="#" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition">Voir les disponibilités</a>
+                        <p class="text-xs font-semibold text-sable mb-2">Fès el-Bali • Riad Historique XVIIe</p>
+                        <p class="text-xs text-sombre/70 mb-4">Célèbre pour son vaste patio ombragé d'orangers, sa piscine chauffée et son accueil familial chaleureux.</p>
+                        <a href="#" class="inline-block w-full text-center bg-vert text-white text-xs font-bold py-2.5 rounded-xl hover:bg-vert/90 transition">Voir les tarifs & disponibilités</a>
                     </div>
                 </div>
 
+                <!-- 4. Hotel Sahrai -->
+                <div class="acc-card border rounded-2xl overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="nouvelle">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c0d129df?auto=format&fit=crop&w=800&q=80" alt="Hotel Sahrai" class="w-full h-52 object-cover" loading="lazy">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">Hotel Sahrai</h3>
+                            <span class="bg-vert/10 text-vert text-xs font-bold px-2 py-1 rounded-lg">★ 9.1</span>
+                        </div>
+                        <p class="text-xs font-semibold text-sable mb-2">Ville Nouvelle • Hôtel Design 5*</p>
+                        <p class="text-xs text-sombre/70 mb-4">Piscine à débordement surplombant la médina, spa Givenchy et architecture contemporaine époustouflante.</p>
+                        <a href="#" class="inline-block w-full text-center bg-vert text-white text-xs font-bold py-2.5 rounded-xl hover:bg-vert/90 transition">Voir les tarifs & disponibilités</a>
+                    </div>
+                </div>
+
+                <!-- 5. Karawan Riad -->
+                <div class="acc-card border rounded-2xl overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Karawan Riad" class="w-full h-52 object-cover" loading="lazy">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">Karawan Riad</h3>
+                            <span class="bg-vert/10 text-vert text-xs font-bold px-2 py-1 rounded-lg">★ 9.7</span>
+                        </div>
+                        <p class="text-xs font-semibold text-sable mb-2">Quartier Andalou • Riad de Luxe Suites</p>
+                        <p class="text-xs text-sombre/70 mb-4">Ancien palais ottoman du XVIIe siècle métamorphosé en un hôtel-boutique exclusif de 7 suites uniques.</p>
+                        <a href="#" class="inline-block w-full text-center bg-vert text-white text-xs font-bold py-2.5 rounded-xl hover:bg-vert/90 transition">Voir les tarifs & disponibilités</a>
+                    </div>
+                </div>
+
+                <!-- 6. Dar Roumana -->
+                <div class="acc-card border rounded-2xl overflow-hidden bg-white shadow-sm" data-type="maison" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Maison d'hôtes Dar Roumana" class="w-full h-52 object-cover" loading="lazy">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">Dar Roumana</h3>
+                            <span class="bg-vert/10 text-vert text-xs font-bold px-2 py-1 rounded-lg">★ 9.3</span>
+                        </div>
+                        <p class="text-xs font-semibold text-sable mb-2">Fès el-Bali • Maison d'hôtes & Table d'hôte</p>
+                        <p class="text-xs text-sombre/70 mb-4">Plafonds en cèdre sculpté à la main, carreaux de zellige raffinés et l'une des meilleures tables de la ville.</p>
+                        <a href="#" class="inline-block w-full text-center bg-vert text-white text-xs font-bold py-2.5 rounded-xl hover:bg-vert/90 transition">Voir les tarifs & disponibilités</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Articles du Blog relatifs à Fès (Section Blog) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider">Lectures & Inspiration</span>
+                    <h2 class="text-3xl font-bold text-vert">Articles du Blog sur Fès</h2>
+                </div>
+                <a href="blog/index.html" class="text-xs font-bold text-sable hover:text-vert transition flex items-center gap-1">Tous les articles du blog →</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Article 1 -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1549449495-23fa97ee8eb8?auto=format&fit=crop&w=800&q=80" alt="Guide tanneries Fès" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-[10px] font-bold text-sable uppercase tracking-wider mb-2">Conseils Pratiques</span>
+                        <h3 class="font-bold text-base text-sombre group-hover:text-vert transition mb-2">Comment visiter les Tanneries Chouara sans se faire harceler ?</h3>
+                        <p class="text-xs text-sombre/70 leading-relaxed mb-4 flex-grow">Conseils d'initiés pour accéder aux plus beaux balcons, éviter les faux guides et négocier le cuir au juste prix.</p>
+                        <a href="blog/visiter-tanneries-fes.html" class="text-xs font-bold text-vert hover:text-sable transition">Lire l'article complet →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Fès ou Marrakech" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-[10px] font-bold text-sable uppercase tracking-wider mb-2">Comparatif Voyage</span>
+                        <h3 class="font-bold text-base text-sombre group-hover:text-vert transition mb-2">Fès ou Marrakech : Quelle ville choisir pour votre séjour ?</h3>
+                        <p class="text-xs text-sombre/70 leading-relaxed mb-4 flex-grow">Authenticité historique vs effervescence touristique : le comparatif détaillé pour vous aider à trancher.</p>
+                        <a href="blog/fes-ou-marrakech-comparatif.html" class="text-xs font-bold text-vert hover:text-sable transition">Lire l'article complet →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?auto=format&fit=crop&w=800&q=80" alt="Gastronomie fassie" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-[10px] font-bold text-sable uppercase tracking-wider mb-2">Gastronomie</span>
+                        <h3 class="font-bold text-base text-sombre group-hover:text-vert transition mb-2">Les 5 spécialités culinaires fassies à goûter absolument</h3>
+                        <p class="text-xs text-sombre/70 leading-relaxed mb-4 flex-grow">De la véritable Pastilla au pigeon jusqu'au Khlaâ, découvrez la plus haute gastronomie du Royaume.</p>
+                        <a href="blog/gastronomie-fassie-specialites.html" class="text-xs font-bold text-vert hover:text-sable transition">Lire l'article complet →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section Fès -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider">Questions Fréquentes</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1">FAQ : Tout savoir avant de visiter Fès</h2>
+                    <p class="text-sm text-sombre/70 mt-2">Retrouvez les réponses aux questions les plus posées pour préparer sereinement votre séjour fassi.</p>
+                </div>
+
+                <div class="space-y-4" id="faq-accordion">
+                    <!-- Q1 -->
+                    <div class="bg-white border border-sable/20 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-bold text-sombre hover:text-vert transition flex justify-between items-center gap-4">
+                            <span>Combien de jours sont nécessaires pour visiter Fès ?</span>
+                            <svg id="faq-icon-1" class="w-5 h-5 text-sable transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div id="faq-content-1" class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
+                            Une durée de 2 à 3 jours est idéale pour visiter les incontournables de la médina (Fès el-Bali), explorer le quartier juif du Mellah et profiter des panoramas sur les collines. Si vous souhaitez faire des excursions d'une journée vers Meknès, Volubilis ou Moulay Idriss Zerhoun, prévoyez 4 jours.
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="bg-white border border-sable/20 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-bold text-sombre hover:text-vert transition flex justify-between items-center gap-4">
+                            <span>Est-il facile de se perdre dans la médina de Fès ?</span>
+                            <svg id="faq-icon-2" class="w-5 h-5 text-sable transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div id="faq-content-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
+                            Oui, la médina de Fès el-Bali compte plus de 9 000 ruelles et constitue la plus grande zone piétonne au monde. Se perdre fait partie du charme ! Cependant, les axes principaux (Talaa Kebira et Talaa Seghira) sont bien signalés par des panneaux colorés. Des applications comme Maps.me fonctionnent très bien hors-ligne.
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="bg-white border border-sable/20 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold text-sombre hover:text-vert transition flex justify-between items-center gap-4">
+                            <span>Faut-il engager un guide officiel pour la journée ?</span>
+                            <svg id="faq-icon-3" class="w-5 h-5 text-sable transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div id="faq-content-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
+                            Prendre un guide officiel pour votre première journée est fortement recommandé. Cela vous permettra de comprendre la riche histoire de la ville, de visiter les medersas et souks d'artisanat sans être sollicité par les sollicitateurs informels.
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="bg-white border border-sable/20 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(4)" class="w-full p-5 text-left font-bold text-sombre hover:text-vert transition flex justify-between items-center gap-4">
+                            <span>Quelle est la meilleure période de l'année pour visiter Fès ?</span>
+                            <svg id="faq-icon-4" class="w-5 h-5 text-sable transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div id="faq-content-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
+                            Le printemps (mars à mai) et l'automne (septembre à novembre) offrent un climat parfait avec des températures douces autour de 22-26°C. L'été peut être particulièrement chaud (dépassant régulièrement 40°C), tandis que les nuits d'hiver peuvent être fraîches.
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -507,9 +691,23 @@
         </div>
     </footer>
 
-    <!-- Script pour Filtres et Onglets -->
+    <!-- JavaScript Complémentaire (Filtres + Accordéon FAQ) -->
     <script>
-        // Logique simplifiée pour les filtres si besoin
+        // Gestion de l'accordéon FAQ
+        function toggleFaq(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Logique de filtrage des hébergements
         document.addEventListener('DOMContentLoaded', () => {
             const typeFilter = document.getElementById('filter-type');
             const locationFilter = document.getElementById('filter-location');
@@ -535,7 +733,7 @@
                 });
                 
                 if(counter) {
-                    counter.textContent = count > 0 ? `${count} Hébergement(s) trouvé(s)` : `Aucun hébergement ne correspond à vos critères.`;
+                    counter.textContent = count > 0 ? `${count} établissement(s) sélectionné(s)` : `Aucun établissement ne correspond à vos critères.`;
                 }
             }
 

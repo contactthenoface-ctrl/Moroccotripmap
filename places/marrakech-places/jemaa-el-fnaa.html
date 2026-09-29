@@ -1,215 +1,428 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html class="scroll-smooth" dir="ltr" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="jemaa_el_fnaa.title">Place Jemaa el-Fna Marrakech - Guide & Histoire | MoroccoTripMap</title>
-    <meta name="description" content="Découvrez la Place Jemaa el-Fna à Marrakech : histoire, animations du soir, terrasses, conseils de visite et incontournables au cœur de la Médina." data-i18n-attr="content:jemaa_el_fnaa.meta_desc">
+    <!-- Directive Robots -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     
-    <!-- Tailwind CSS -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
+
+    <!-- SEO & Metadata -->
+    <title data-i18n="places.jemaa_el_fnaa.seo.title">Jemaa el-Fnaa & Souks Travel Guide | Marrakech | MoroccoTripMap</title>
+    <meta content="Explore Jemaa el-Fnaa and the bustling souks of Marrakech." name="description" data-i18n-attr="content:places.jemaa_el_fnaa.seo.description"/>
+    <link href="https://moroccotripmap.com/places/marrakech-places/jemaa-el-fnaa.html" rel="canonical"/>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Jemaa el-Fnaa & Souks Travel Guide | Marrakech | MoroccoTripMap" />
+    <meta property="og:description" content="Immerse yourself in the heart of Marrakech: Jemaa el-Fnaa square." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "Jemaa el-Fnaa",
+      "description": "The main square and market place in Marrakech's medina quarter.",
+      "url": "https://moroccotripmap.com/places/marrakech-places/jemaa-el-fnaa.html"
+    }
+    </script>
+
+    <!-- Tailwind CSS & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        sombre: '#1E293B',
-                        creme: '#F8FAFC',
-                        sable: '#E2E8F0',
-                        vert: '#0F172A',
-                        terracotta: '#C2410C',
-                        'terracotta-dark': '#9A3412',
+                    colors: { creme: '#F9F6F0', vert: '#185336', sable: '#C29B62', sombre: '#1A1A1A' },
+                    animation: { 'scroll-rtl': 'scrollRtl 25s linear infinite' },
+                    keyframes: {
+                        scrollRtl: { '0%': { transform: 'translateX(0%)' }, '100%': { transform: 'translateX(-50%)' } }
                     }
                 }
             }
         }
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .paused { animation-play-state: paused !important; }
+    </style>
 </head>
-<body class="bg-creme text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
 
-    <!-- Header / Navigation -->
-    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html">
-                        <img class="h-10 w-auto" src="images/logo.webp" alt="MoroccoTripMap Logo">
-                    </a>
+    <!-- Header Navigation avec Menu Mobile Hamburger -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="../../index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-vert flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition">
+                    M
                 </div>
+                <span class="text-xl font-bold text-vert tracking-tight">MoroccoTripMap</span>
+            </a>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
-                    <a href="index.html" class="hover:text-terracotta transition" data-i18n="nav.home">Accueil</a>
-                    <a href="destinations.html" class="hover:text-terracotta transition" data-i18n="nav.destinations">Destinations</a>
-                    <a href="riads/index.html" class="hover:text-terracotta transition" data-i18n="nav.cat_stays">Hébergements</a>
-                    <a href="experiences/index.html" class="hover:text-terracotta transition" data-i18n="nav.cat_experiences">Expériences</a>
-                    <a href="blog/index.html" class="hover:text-terracotta transition" data-i18n="nav.blog">Blog</a>
-                </nav>
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sombre">
+                <a href="../../index.html" class="hover:text-vert transition" data-i18n="nav.home">Home</a>
+                <a href="../../destinations.html" class="text-vert font-semibold" data-i18n="nav.destinations">Destinations</a>
+                <a href="../../blog/index.html" class="hover:text-vert transition" data-i18n="nav.blog">Blog</a>
+                <a href="../../about.html" class="hover:text-vert transition" data-i18n="nav.about">About</a>
+            </nav>
 
-                <!-- Language Selector -->
-                <div class="relative inline-block text-left">
-                    <button type="button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="inline-flex items-center justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 bg-white text-xs font-bold text-gray-700 hover:bg-gray-50 focus:outline-none">
-                        <i class="fa-solid me-1.5 text-gray-500 fa-globe"></i>
-                        <span id="current-lang-label">FR</span>
-                        <i class="fa-solid fa-chevron-down ms-1 text-[10px]"></i>
-                    </button>
-                    <div id="lang-menu-dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-24 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
-                        <div class="py-1" role="menu">
-                            <button onclick="switchLanguage('fr')" class="block w-full text-left px-4 py-1.5 text-xs text-gray-700 hover:bg-gray-100">Français</button>
-                            <button onclick="switchLanguage('en')" class="block w-full text-left px-4 py-1.5 text-xs text-gray-700 hover:bg-gray-100">English</button>
-                            <button onclick="switchLanguage('es')" class="block w-full text-left px-4 py-1.5 text-xs text-gray-700 hover:bg-gray-100">Español</button>
-                        </div>
-                    </div>
-                </div>
+            <!-- Actions droite : Langue & Mobile Toggle -->
+            <div class="flex items-center gap-3 sm:gap-4">
+                <!-- Sélecteur de Langue -->
+                <select id="langSelect" class="bg-transparent border border-sable/30 rounded-lg px-2 py-1 text-sm text-sombre focus:outline-none focus:border-vert">
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                    <option value="ar">AR</option>
+                </select>
+
+                <a href="../../marrakech.html" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full bg-vert text-white text-xs sm:text-sm font-semibold hover:bg-vert/90 transition shadow-sm" data-i18n="nav.back_marrakech">
+                    Back to Marrakech
+                </a>
+
+                <!-- Bouton Hamburger Mobile -->
+                <button id="mobileMenuBtn" aria-label="Toggle Menu" class="md:hidden p-2 rounded-lg text-sombre hover:bg-sable/10 focus:outline-none">
+                    <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Déroulant Mobile -->
+        <div id="mobileMenu" class="hidden md:hidden bg-creme border-b border-sable/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="../../index.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.home">Home</a>
+            <a href="../../destinations.html" class="block py-2 text-base font-medium text-vert font-semibold" data-i18n="nav.destinations">Destinations</a>
+            <a href="../../blog/index.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.blog">Blog</a>
+            <a href="../../about.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.about">About</a>
+            <div class="pt-2 border-t border-sable/20">
+                <a href="../../marrakech.html" class="block w-full text-center py-2.5 rounded-full bg-vert text-white text-sm font-semibold" data-i18n="nav.back_marrakech">
+                    Back to Marrakech
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="flex-grow">
-        <!-- Hero Section avec Image de fond -->
-        <section class="relative bg-sombre text-white py-20 px-4 sm:px-6 lg:px-8">
-            <div class="absolute inset-0 overflow-hidden opacity-40">
-                <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1600&q=80" alt="Place Jemaa el-Fna" class="w-full h-full object-cover">
-            </div>
-            <div class="relative max-w-7xl mx-auto text-center">
-                <span class="inline-block bg-terracotta text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4" data-i18n="jemaa_el_fnaa.badge">Incontournable de Marrakech</span>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4" data-i18n="jemaa_el_fnaa.hero_title">Place Jemaa el-Fna</h1>
-                <p class="max-w-2xl mx-auto text-base sm:text-lg text-creme/90" data-i18n="jemaa_el_fnaa.hero_subtitle">Le cœur battant et le théâtre à ciel ouvert de la Médina de Marrakech, classé au patrimoine culturel immatériel de l'UNESCO.</p>
-            </div>
-        </section>
-
-        <!-- Fil d'Ariane (Breadcrumb) -->
-        <div class="bg-white border-b border-gray-200">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-xs text-gray-500">
-                <a href="index.html" class="hover:text-terracotta" data-i18n="nav.home">Accueil</a> &gt; 
-                <a href="destinations.html" class="hover:text-terracotta" data-i18n="nav.destinations">Destinations</a> &gt; 
-                <a href="marrakech.html" class="hover:text-terracotta">Marrakech</a> &gt; 
-                <span class="text-gray-800 font-medium">Jemaa el-Fna</span>
+        <!-- Hero Section -->
+        <div class="relative h-[420px] sm:h-[500px] lg:h-[560px] flex items-end">
+            <img alt="Jemaa el-Fnaa Square at Dusk" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1920&q=80"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
+            
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
+                <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
+                    <a href="../../index.html" class="hover:text-white transition" data-i18n="nav.home">Home</a>
+                    <span>/</span>
+                    <a href="../../destinations.html" class="hover:text-white transition" data-i18n="nav.destinations">Destinations</a>
+                    <span>/</span>
+                    <a href="../../marrakech.html" class="hover:text-white transition" data-i18n="nav.marrakech">Marrakech</a>
+                    <span>/</span>
+                    <span class="text-white">Jemaa el-Fnaa</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4" data-i18n="places.jemaa_el_fnaa.title">Jemaa el-Fnaa & The Souks</h1>
+                <p class="text-lg sm:text-xl text-creme/90 max-w-2xl font-light leading-relaxed" data-i18n="places.jemaa_el_fnaa.subtitle">
+                    The beating heart of Marrakech where ancient storytellers, vibrant food stalls, and sensory artisan alleyways come alive every evening.
+                </p>
             </div>
         </div>
 
-        <!-- Section Fiche & Présentation -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Colonne Principale -->
-                <div class="lg:col-span-2 space-y-8">
-                    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
-                        <h2 class="text-2xl font-bold text-vert mb-4" data-i18n="jemaa_el_fnaa.overview_title">À propos de la Place Jemaa el-Fna</h2>
-                        <p class="text-gray-600 leading-relaxed mb-4" data-i18n="jemaa_el_fnaa.desc_p1">
-                            La place Jemaa el-Fna est le centre névralgique de Marrakech. De jour comme de nuit, elle offre un spectacle vivant captivant où se mêlent charmeurs de serpents, conteurs, musiciens gnaouas, tatoueuses au henné et échoppes de jus d'orange frais.
-                        </p>
-                        <p class="text-gray-600 leading-relaxed mb-4" data-i18n="jemaa_el_fnaa.desc_p2">
-                            À la tombée du jour, la place se transforme en un immense restaurant en plein air. De la fumée odorante s'élève des dizaines de grilades traditionnelles, attirant locaux et voyageurs pour une expérience gastronomique populaire unique.
-                        </p>
-                    </div>
-
-                    <!-- Points forts / À ne pas manquer -->
-                    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
-                        <h2 class="text-xl font-bold text-vert mb-4" data-i18n="jemaa_el_fnaa.highlights_title">Ce que vous y trouverez</h2>
-                        <ul class="space-y-3 text-sm text-gray-600">
-                            <li class="flex items-start"><i class="fa-solid fa-check text-terracotta mt-1 mr-3"></i> <span data-i18n="jemaa_el_fnaa.h1"><strong>Jus d'orange frais :</strong> Dégustez un jus pressé minute auprès des échoppes numérotées au centre de la place.</span></li>
-                            <li class="flex items-start"><i class="fa-solid fa-check text-terracotta mt-1 mr-3"></i> <span data-i18n="jemaa_el_fnaa.h2"><strong>Spectacles de rue du soir :</strong> Conteurs d'histoires, musiciens traditionnels et acrobates qui animent le 'Halqa'.</span></li>
-                            <li class="flex items-start"><i class="fa-solid fa-check text-terracotta mt-1 mr-3"></i> <span data-i18n="jemaa_el_fnaa.h3"><strong>Terrasses panoramiques :</strong> Admirez le coucher de soleil sur la Koutoubia depuis le café Le Grand Balcon du Café de France.</span></li>
-                            <li class="flex items-start"><i class="fa-solid fa-check text-terracotta mt-1 mr-3"></i> <span data-i18n="jemaa_el_fnaa.h4"><strong>Stand de grillades :</strong> Dînez sur le pouce dans une ambiance festive et conviviale.</span></li>
-                        </ul>
-                    </div>
+        <!-- Quick Info Bar -->
+        <div class="bg-vert text-creme py-6 border-b border-sable/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-2">
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="places.info.best_time">Best Time to Visit</span>
+                    <span class="text-base sm:text-lg font-bold mt-1 block" data-i18n="places.jemaa_el_fnaa.info.time">Late Afternoon to Night</span>
                 </div>
+                <div class="p-2">
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="places.info.duration">Suggested Duration</span>
+                    <span class="text-base sm:text-lg font-bold mt-1 block" data-i18n="places.jemaa_el_fnaa.info.duration">2 – 4 Hours</span>
+                </div>
+                <div class="p-2">
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="places.info.vibe">Vibe & Atmosphere</span>
+                    <span class="text-base sm:text-lg font-bold mt-1 block" data-i18n="places.jemaa_el_fnaa.info.vibe">Lively, Cultural & Sensory</span>
+                </div>
+                <div class="p-2">
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="places.info.location">Location</span>
+                    <span class="text-base sm:text-lg font-bold mt-1 block" data-i18n="places.jemaa_el_fnaa.info.location">Central Medina</span>
+                </div>
+            </div>
+        </div>
 
-                <!-- Sidebar d'informations pratiques -->
-                <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <h3 class="font-bold text-lg text-vert mb-4" data-i18n="jemaa_el_fnaa.practical_info">Informations Pratiques</h3>
-                        <ul class="space-y-4 text-xs text-gray-600">
-                            <li class="flex items-center">
-                                <i class="fa-solid fa-location-dot text-terracotta text-base w-6"></i>
-                                <div>
-                                    <span class="block font-bold text-gray-800" data-i18n="jemaa_el_fnaa.location_label">Localisation</span>
-                                    <span>Médina, Marrakech 40000</span>
-                                </div>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fa-solid fa-clock text-terracotta text-base w-6"></i>
-                                <div>
-                                    <span class="block font-bold text-gray-800" data-i18n="jemaa_el_fnaa.hours_label">Horaires</span>
-                                    <span>Accessible 24h/24 (Pic d'activité : 17h00 - 00h00)</span>
-                                </div>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fa-solid fa-ticket text-terracotta text-base w-6"></i>
-                                <div>
-                                    <span class="block font-bold text-gray-800" data-i18n="jemaa_el_fnaa.price_label">Tarif</span>
-                                    <span>Accès gratuit (Prévoir de la monnaie pour les artistes/photos)</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="mt-6 pt-6 border-t border-gray-100">
-                            <a href="https://www.google.com/maps/search/?api=1&query=Jemaa+el-Fna+Marrakech" target="_blank" class="block w-full text-center bg-terracotta text-white text-xs font-bold py-2.5 rounded-lg hover:bg-terracotta-dark transition" data-i18n="jemaa_el_fnaa.open_maps">
-                                Voir sur Google Maps →
-                            </a>
+        <!-- Main Content -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-vert mb-6" data-i18n="places.jemaa_el_fnaa.section1.title">Step Into the Open-Air Theater of Marrakech</h2>
+            
+            <p class="text-sombre/85 leading-relaxed text-lg mb-6" data-i18n="places.jemaa_el_fnaa.section1.p1">
+                Standing at the edge of Jemaa el-Fnaa as dusk turns to night is one of the most hypnotic experiences in North Africa. Recognised by UNESCO as a Masterpiece of the Oral and Intangible Heritage of Humanity, this historic square transforms daily from a peaceful daytime courtyard into a booming carnival of culture.
+            </p>
+
+            <p class="text-sombre/85 leading-relaxed text-base mb-8" data-i18n="places.jemaa_el_fnaa.section1.p2">
+                As night falls, dozens of open-air food stalls spark up their charcoal grills, filling the night sky with aromatic clouds of grilled meats, spices, and fresh mint tea. Musicians playing Gnawa tunes, snake charmers, acrobats, and traditional storytellers (*Hkaia*) gather crowds in passionate circles (*Halqa*).
+            </p>
+
+            <!-- Highlights Box -->
+            <div class="my-10 bg-white border border-sable/30 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h3 class="text-xl font-bold text-vert mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385c.116.486-.411.87-.833.618L12 17.77l-4.73 2.776c-.422.252-.949-.132-.833-.618l1.285-5.385a.563.563 0 00-.182-.557l-4.204-3.602c-.38-.325-.178-.948.32-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>
+                    </svg>
+                    <span data-i18n="places.highlights.title">Top Highlights & Insider Secrets</span>
+                </h3>
+                <ul class="space-y-4 text-sombre/80 text-base">
+                    <li class="flex items-start gap-3">
+                        <span class="text-sable font-bold">•</span>
+                        <span data-i18n="places.jemaa_el_fnaa.highlights.item1"><strong>Sunset Rooftop Views:</strong> Head to Cafe des Epices or Le Grand Balcon du Cafe de France around 5:30 PM for a front-row view of the square coming to life.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-sable font-bold">•</span>
+                        <span data-i18n="places.jemaa_el_fnaa.highlights.item2"><strong>Street Food Stalls:</strong> Don't hesitate to try fresh orange juice at stall #1 or hot grilled skewers at the bustling night market stalls.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-sable font-bold">•</span>
+                        <span data-i18n="places.jemaa_el_fnaa.highlights.item3"><strong>Exploring Souk Semmarine:</strong> The main arterial street leading north into the souks, packed with leather goods, handmade rugs, brass lamps, and spices.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="text-2xl font-bold text-vert mt-10 mb-4" data-i18n="places.jemaa_el_fnaa.souks.title">Navigating the Medina Souks</h3>
+            <p class="text-sombre/85 leading-relaxed text-base mb-6" data-i18n="places.jemaa_el_fnaa.souks.intro">
+                Branching north from Jemaa el-Fnaa is an endless maze of covered markets. Each quarter of the souk is historically dedicated to a specific craft:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                <div class="bg-creme p-5 rounded-xl border border-sable/20">
+                    <h4 class="font-bold text-vert mb-1">Souk Haddadine</h4>
+                    <p class="text-sm text-sombre/70" data-i18n="places.jemaa_el_fnaa.souks.haddadine">The blacksmiths' market where artisans forge iron lanterns and intricate metal decor by hand.</p>
+                </div>
+                <div class="bg-creme p-5 rounded-xl border border-sable/20">
+                    <h4 class="font-bold text-vert mb-1">Souk Cherratine</h4>
+                    <p class="text-sm text-sombre/70" data-i18n="places.jemaa_el_fnaa.souks.cherratine">The leather quarter filled with handcrafted bags, slippers (*babouches*), and travel luggage.</p>
+                </div>
+                <div class="bg-creme p-5 rounded-xl border border-sable/20">
+                    <h4 class="font-bold text-vert mb-1">Souk des Teinturiers</h4>
+                    <p class="text-sm text-sombre/70" data-i18n="places.jemaa_el_fnaa.souks.teinturiers">The dyers' market featuring colorful skeins of freshly dyed wool hanging high overhead.</p>
+                </div>
+                <div class="bg-creme p-5 rounded-xl border border-sable/20">
+                    <h4 class="font-bold text-vert mb-1">Place des Épices</h4>
+                    <p class="text-sm text-sombre/70" data-i18n="places.jemaa_el_fnaa.souks.epices">Spice square bursting with aromatic saffron, ras el hanout, woven baskets, and traditional cosmetics.</p>
+                </div>
+            </div>
+
+            <!-- GetYourGuide Booking Card -->
+            <div class="my-12 p-8 bg-white border border-sable/30 rounded-2xl shadow-sm text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-sable/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider block mb-2" data-i18n="places.tour.badge">Recommended Experience</span>
+                <h4 class="text-2xl font-bold text-vert mb-3" data-i18n="places.jemaa_el_fnaa.tour.title">Guided Souk & Hidden Medina Walking Tour</h4>
+                <p class="text-sm text-sombre/70 max-w-xl mx-auto mb-6" data-i18n="places.jemaa_el_fnaa.tour.description">
+                    Uncover secret artisan workshops, learn the art of respectful bargaining, and sample local street food with a certified local guide.
+                </p>
+                <a href="https://www.getyourguide.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-vert text-white px-8 py-3.5 rounded-full font-semibold hover:bg-vert/90 transition shadow-sm gap-2">
+                    <span data-i18n="places.tour.button">Book Your Guided Tour</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Carousel Gallery Section -->
+        <section class="py-12 bg-white border-t border-b border-sable/20 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider block" data-i18n="gallery.badge">Visual Gallery</span>
+                    <h3 class="text-2xl font-bold text-vert" data-i18n="places.jemaa_el_fnaa.gallery.title">Atmosphere of Jemaa el-Fnaa</h3>
+                </div>
+                <span class="text-xs text-sombre/50 italic hidden sm:block" data-i18n="gallery.scroll_hint">Auto-scrolling Gallery</span>
+            </div>
+
+            <div class="relative w-full overflow-hidden flex hide-scrollbar">
+                <div id="carouselTrack" class="flex gap-6 animate-scroll-rtl min-w-max">
+                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
+                        <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=600&q=80" alt="Jemaa el Fnaa Night Market" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-medium">Night Food Market</span>
                         </div>
                     </div>
-
-                    <!-- Carte de recommandation hébergement à proximité -->
-                    <div class="bg-sombre text-white p-6 rounded-xl shadow-sm">
-                        <h3 class="font-bold text-base mb-2" data-i18n="jemaa_el_fnaa.stay_near">Dormir près de la place ?</h3>
-                        <p class="text-xs text-creme/70 mb-4" data-i18n="jemaa_el_fnaa.stay_desc">Trouvez les meilleurs riads authentiques situés à moins de 5 minutes à pied.</p>
-                        <a href="marrakech.html#directory" class="inline-block w-full text-center bg-sable text-sombre text-xs font-bold py-2 rounded hover:bg-white transition" data-i18n="jemaa_el_fnaa.view_riads">
-                            Voir les riads de la Médina
-                        </a>
+                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
+                        <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=600&q=80" alt="Souk Alleyway" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-medium">Artisan Souk Alleyways</span>
+                        </div>
                     </div>
+                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80" alt="Moroccan Lanterns" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-medium">Handcrafted Lamps & Lanterns</span>
+                        </div>
+                    </div>
+                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Spices Market" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-medium">Place des Épices</span>
+                        </div>
+                    </div>
+                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
+                        <img src="https://images.unsplash.com/photo-1560067174-c5a3a8f37060?auto=format&fit=crop&w=600&q=80" alt="Mint Tea in Medina" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-medium">Traditional Moroccan Tea</span>
+                        </div>
+                    </div>
+                    <!-- Duplicate Set for Loop -->
+                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
+                        <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=600&q=80" alt="Jemaa el Fnaa Night Market" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-medium">Night Food Market</span>
+                        </div>
+                    </div>
+                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
+                        <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=600&q=80" alt="Souk Alleyway" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-medium">Artisan Souk Alleyways</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Articles Section -->
+        <section class="bg-creme py-12 sm:py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between mb-8">
+                    <div>
+                        <span class="text-xs font-bold text-sable uppercase tracking-wider block" data-i18n="related.badge">More Inspiration</span>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-vert" data-i18n="related.title">Related Travel Guides</h3>
+                    </div>
+                    <a href="../../blog/index.html" class="inline-flex items-center gap-1 text-sm font-bold text-vert hover:text-sable transition">
+                        <span data-i18n="related.view_all">View All Articles</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="../../blog/index.html" class="group bg-white p-6 rounded-2xl border border-sable/20 hover:shadow-md transition">
+                        <span class="text-xs font-bold text-sable uppercase" data-i18n="blog.category.shopping">Shopping Guide</span>
+                        <h4 class="font-bold text-lg text-sombre group-hover:text-vert mt-2 mb-2" data-i18n="blog.article1.title">How to Bargain in the Souks Like a Pro</h4>
+                        <p class="text-sm text-sombre/70" data-i18n="blog.article1.desc">Master the friendly art of negotiation and bring home authentic treasures.</p>
+                    </a>
+
+                    <a href="../../blog/index.html" class="group bg-white p-6 rounded-2xl border border-sable/20 hover:shadow-md transition">
+                        <span class="text-xs font-bold text-sable uppercase" data-i18n="blog.category.food">Food & Dining</span>
+                        <h4 class="font-bold text-lg text-sombre group-hover:text-vert mt-2 mb-2" data-i18n="blog.article2.title">Top 8 Street Food Dishes to Try in Jemaa el-Fnaa</h4>
+                        <p class="text-sm text-sombre/70" data-i18n="blog.article2.desc">From steaming harira soup to sizzling kebabs and sweet pastries.</p>
+                    </a>
+
+                    <a href="../../blog/index.html" class="group bg-white p-6 rounded-2xl border border-sable/20 hover:shadow-md transition">
+                        <span class="text-xs font-bold text-sable uppercase" data-i18n="blog.category.culture">Culture & History</span>
+                        <h4 class="font-bold text-lg text-sombre group-hover:text-vert mt-2 mb-2" data-i18n="blog.article3.title">The Untold History of Marrakech’s UNESCO Square</h4>
+                        <p class="text-sm text-sombre/70" data-i18n="blog.article3.desc">Discover how this iconic square evolved over nearly 1,000 years.</p>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-sombre text-creme/80 pt-16 pb-8 border-t border-sable/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-            <div>
-                <img src="images/logo.webp" alt="MoroccoTripMap Logo" class="h-10 w-auto mb-4 filter brightness-200">
-                <p class="text-xs text-creme/60 leading-relaxed" data-i18n="footer.about">Your ultimate interactive guide for exploring Morocco. Discover curated itineraries, monuments, authentic riads, and local experiences.</p>
+    <!-- Footer Identique à marrakech.html -->
+    <footer class="bg-sombre text-creme border-t border-sable/20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="../../index.html" class="text-2xl font-bold text-white mb-4 block">MoroccoTripMap</a>
+                    <p class="text-sm text-creme/70 leading-relaxed" data-i18n="footer.about">
+                        Your ultimate interactive travel guide to discovering Morocco's rich heritage, cities, and landmarks.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold uppercase tracking-wider text-sable mb-4" data-i18n="footer.destinations">Destinations</h5>
+                    <ul class="space-y-2 text-sm text-creme/80">
+                        <li><a href="../../marrakech.html" class="hover:text-sable transition">Marrakech</a></li>
+                        <li><a href="../../destinations.html" class="hover:text-sable transition">Fes</a></li>
+                        <li><a href="../../destinations.html" class="hover:text-sable transition">Chefchaouen</a></li>
+                        <li><a href="../../destinations.html" class="hover:text-sable transition">Merzouga Desert</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold uppercase tracking-wider text-sable mb-4" data-i18n="footer.quick_links">Quick Links</h5>
+                    <ul class="space-y-2 text-sm text-creme/80">
+                        <li><a href="../../about.html" class="hover:text-sable transition" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="../../blog/index.html" class="hover:text-sable transition" data-i18n="nav.blog">Travel Blog</a></li>
+                        <li><a href="../../contact.html" class="hover:text-sable transition" data-i18n="footer.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold uppercase tracking-wider text-sable mb-4" data-i18n="footer.follow_us">Follow Us</h5>
+                    <p class="text-sm text-creme/70 mb-4" data-i18n="footer.follow_desc">Stay updated with fresh travel tips and photos from Morocco.</p>
+                </div>
             </div>
-            <div>
-                <h4 class="text-sm font-bold text-sable uppercase tracking-wider mb-4" data-i18n="footer.quick_links">Quick Links</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="destinations.html" class="hover:text-white transition" data-i18n="nav.destinations">Destinations</a></li>
-                    <li><a href="riads/index.html" class="hover:text-white transition" data-i18n="nav.cat_stays">Stays & Riads</a></li>
-                    <li><a href="experiences/index.html" class="hover:text-white transition" data-i18n="nav.cat_experiences">Experiences</a></li>
-                    <li><a href="blog/index.html" class="hover:text-white transition" data-i18n="nav.blog">Blog</a></li>
-                </ul>
+            <div class="border-t border-creme/10 pt-6 text-center text-xs text-creme/50">
+                &copy; 2026 MoroccoTripMap. All rights reserved.
             </div>
-            <div>
-                <h4 class="text-sm font-bold text-sable uppercase tracking-wider mb-4" data-i18n="footer.legal">Legal</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="privacy.html" class="hover:text-white transition" data-i18n="footer.privacy">Privacy Policy</a></li>
-                    <li><a href="terms.html" class="hover:text-white transition" data-i18n="footer.terms">Terms of Service</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition" data-i18n="nav.contact">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-sm font-bold text-sable uppercase tracking-wider mb-4" data-i18n="footer.newsletter">Newsletter</h4>
-                <p class="text-xs text-creme/60 mb-3" data-i18n="footer.newsletter_desc">Subscribe to receive travel tips and guides directly in your inbox.</p>
-                <form class="flex gap-2">
-                    <input type="email" placeholder="Your email..." class="bg-white/10 text-xs px-3 py-2 rounded-lg text-white placeholder-creme/40 focus:outline-none focus:ring-1 focus:ring-sable w-full">
-                    <button type="submit" class="bg-sable text-sombre font-bold px-4 py-2 rounded-lg text-xs hover:bg-sable/80 transition" data-i18n="footer.subscribe">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-creme/10 text-center text-xs text-creme/50">
-            <p>&copy; 2026 MoroccoTripMap. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript Language Switcher -->
+    <!-- Scripts Externe -->
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/main.js"></script>
+
+    <!-- Script Menu Mobile + Langue + Carousel -->
     <script>
-        function switchLanguage(lang) {
-            console.log("Switching language to: " + lang);
-            document.getElementById('current-lang-label').textContent = lang.toUpperCase();
-            document.getElementById('lang-menu-dropdown').classList.add('hidden');
-        }
+        document.addEventListener('DOMContentLoaded', () => {
+            // Toggle Menu Mobile
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburgerIcon = document.getElementById('hamburgerIcon');
+            const closeIcon = document.getElementById('closeIcon');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    hamburgerIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+
+            // Sync Sélecteur de Langue
+            const langSelect = document.getElementById('langSelect');
+            const currentLang = localStorage.getItem('app_lang') || 'en';
+
+            if (langSelect) {
+                langSelect.value = currentLang;
+                langSelect.addEventListener('change', (e) => {
+                    const newLang = e.target.value;
+                    localStorage.setItem('app_lang', newLang);
+                    if (typeof window.changeLanguage === 'function') {
+                        window.changeLanguage(newLang);
+                    } else {
+                        location.reload();
+                    }
+                });
+            }
+
+            // Sens RTL/LTR
+            if (currentLang === 'ar') {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', currentLang);
+            }
+
+            // Animation carrousel pause au survol
+            const carouselTrack = document.getElementById('carouselTrack');
+            if (carouselTrack) {
+                carouselTrack.addEventListener('mouseenter', () => carouselTrack.classList.add('paused'));
+                carouselTrack.addEventListener('mouseleave', () => carouselTrack.classList.remove('paused'));
+            }
+        });
     </script>
 </body>
 </html>

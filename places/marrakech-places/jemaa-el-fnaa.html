@@ -37,7 +37,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { creme: '#F9F6F0', vert: '#185336', sable: '#C29B62', sombre: '#1A1A1A' },
+                    colors: { creme: '#F9F6F0', vert: '#185336', sable: '#C29B62', sombre: '#1A1A1A', terracotta: '#C85A32' },
                     animation: { 'scroll-rtl': 'scrollRtl 25s linear infinite' },
                     keyframes: {
                         scrollRtl: { '0%': { transform: 'translateX(0%)' }, '100%': { transform: 'translateX(-50%)' } }
@@ -57,14 +57,14 @@
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
 
-    <!-- Header Navigation conforme à marrakech.html -->
+    <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="../../index.html">
-                        <img class="h-10 w-auto" src="images/logo.webp" alt="MoroccoTripMap Logo">
+                        <img class="h-10 w-auto" src="../../images/logo.webp" alt="MoroccoTripMap Logo">
                     </a>
                 </div>
 
@@ -103,7 +103,7 @@
             <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
             
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
-                <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
+                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
                     <a href="../../index.html" class="hover:text-white transition" data-i18n="nav.home">Home</a>
                     <span>/</span>
                     <a href="../../destinations.html" class="hover:text-white transition" data-i18n="nav.destinations">Destinations</a>
@@ -201,7 +201,7 @@
                 </div>
             </div>
 
-            <!-- GetYourGuide Booking Card -->
+            <!-- Booking Card -->
             <div class="my-12 p-8 bg-white border border-sable/30 rounded-2xl shadow-sm text-center relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-sable/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
                 <span class="text-xs font-bold text-sable uppercase tracking-wider block mb-2" data-i18n="places.tour.badge">Recommended Experience</span>
@@ -258,19 +258,6 @@
                             <span class="text-white text-sm font-medium">Traditional Moroccan Tea</span>
                         </div>
                     </div>
-                    <!-- Duplicate Set for Loop -->
-                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
-                        <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=600&q=80" alt="Jemaa el Fnaa Night Market" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                            <span class="text-white text-sm font-medium">Night Food Market</span>
-                        </div>
-                    </div>
-                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
-                        <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=600&q=80" alt="Souk Alleyway" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                            <span class="text-white text-sm font-medium">Artisan Souk Alleyways</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -278,12 +265,13 @@
         <!-- Related Articles Section -->
         <section class="bg-creme py-12 sm:py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between mb-8">
+                <!-- Header flexibilité mobile/desktop pour éviter le chevauchement -->
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
                     <div>
                         <span class="text-xs font-bold text-sable uppercase tracking-wider block" data-i18n="related.badge">More Inspiration</span>
                         <h3 class="text-2xl sm:text-3xl font-bold text-vert" data-i18n="related.title">Related Travel Guides</h3>
                     </div>
-                    <a href="../../blog/index.html" class="inline-flex items-center gap-1 text-sm font-bold text-vert hover:text-sable transition">
+                    <a href="../../blog/index.html" class="inline-flex items-center gap-1.5 text-sm font-bold text-vert hover:text-sable transition self-start sm:self-auto">
                         <span data-i18n="related.view_all">View All Articles</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
                     </a>
@@ -312,11 +300,11 @@
         </section>
     </main>
 
-    <!-- Footer conforme à marrakech.html -->
+    <!-- Footer -->
     <footer class="bg-sombre text-creme/80 pt-16 pb-8 border-t border-sable/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             <div>
-                <img src="images/logo.webp" alt="MoroccoTripMap Logo" class="h-10 w-auto mb-4 filter brightness-200">
+                <img src="../../images/logo.webp" alt="MoroccoTripMap Logo" class="h-10 w-auto mb-4 filter brightness-200">
                 <p class="text-xs text-creme/60 leading-relaxed" data-i18n="footer.about">Your ultimate interactive guide for exploring Morocco. Discover curated itineraries, monuments, authentic riads, and local experiences.</p>
             </div>
             <div>
@@ -357,7 +345,6 @@
     <!-- Script Menu Langue + Carrousel -->
     <script>
         function switchLanguage(lang) {
-            console.log("Switching language to: " + lang);
             document.getElementById('current-lang-label').textContent = lang.toUpperCase();
             document.getElementById('lang-menu-dropdown').classList.add('hidden');
             if (typeof window.changeLanguage === 'function') {
@@ -366,7 +353,6 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Animation carrousel pause au survol
             const carouselTrack = document.getElementById('carouselTrack');
             if (carouselTrack) {
                 carouselTrack.addEventListener('mouseenter', () => carouselTrack.classList.add('paused'));

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" dir="ltr" lang="en">
+<html class="scroll-smooth" dir="ltr" lang="fr">
 <head>
     <!-- Directive Robots -->
     <meta name="robots" content="noindex, nofollow" />
@@ -47,6 +47,7 @@
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Outfit', sans-serif; }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
@@ -56,61 +57,41 @@
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
 
-    <!-- Header Navigation avec Menu Mobile Hamburger -->
-    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            
-            <!-- Logo -->
-            <a href="../../index.html" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-full bg-vert flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition">
-                    M
+    <!-- Header Navigation conforme à marrakech.html -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="../../index.html">
+                        <img class="h-10 w-auto" src="images/logo.webp" alt="MoroccoTripMap Logo">
+                    </a>
                 </div>
-                <span class="text-xl font-bold text-vert tracking-tight">MoroccoTripMap</span>
-            </a>
 
-            <!-- Menu Desktop -->
-            <nav class="hidden md:flex items-center gap-8 font-medium text-sombre">
-                <a href="../../index.html" class="hover:text-vert transition" data-i18n="nav.home">Home</a>
-                <a href="../../destinations.html" class="text-vert font-semibold" data-i18n="nav.destinations">Destinations</a>
-                <a href="../../blog/index.html" class="hover:text-vert transition" data-i18n="nav.blog">Blog</a>
-                <a href="../../about.html" class="hover:text-vert transition" data-i18n="nav.about">About</a>
-            </nav>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+                    <a href="../../index.html" class="hover:text-terracotta transition" data-i18n="nav.home">Accueil</a>
+                    <a href="../../destinations.html" class="hover:text-terracotta transition" data-i18n="nav.destinations">Destinations</a>
+                    <a href="../../riads/index.html" class="hover:text-terracotta transition" data-i18n="nav.cat_stays">Hébergements</a>
+                    <a href="../../experiences/index.html" class="hover:text-terracotta transition" data-i18n="nav.cat_experiences">Expériences</a>
+                    <a href="../../blog/index.html" class="hover:text-terracotta transition" data-i18n="nav.blog">Blog</a>
+                </nav>
 
-            <!-- Actions droite : Langue & Mobile Toggle -->
-            <div class="flex items-center gap-3 sm:gap-4">
-                <!-- Sélecteur de Langue -->
-                <select id="langSelect" class="bg-transparent border border-sable/30 rounded-lg px-2 py-1 text-sm text-sombre focus:outline-none focus:border-vert">
-                    <option value="en">EN</option>
-                    <option value="fr">FR</option>
-                    <option value="ar">AR</option>
-                </select>
-
-                <a href="../../marrakech.html" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full bg-vert text-white text-xs sm:text-sm font-semibold hover:bg-vert/90 transition shadow-sm" data-i18n="nav.back_marrakech">
-                    Back to Marrakech
-                </a>
-
-                <!-- Bouton Hamburger Mobile -->
-                <button id="mobileMenuBtn" aria-label="Toggle Menu" class="md:hidden p-2 rounded-lg text-sombre hover:bg-sable/10 focus:outline-none">
-                    <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                    <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Menu Déroulant Mobile -->
-        <div id="mobileMenu" class="hidden md:hidden bg-creme border-b border-sable/20 px-4 pt-2 pb-6 space-y-3">
-            <a href="../../index.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.home">Home</a>
-            <a href="../../destinations.html" class="block py-2 text-base font-medium text-vert font-semibold" data-i18n="nav.destinations">Destinations</a>
-            <a href="../../blog/index.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.blog">Blog</a>
-            <a href="../../about.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.about">About</a>
-            <div class="pt-2 border-t border-sable/20">
-                <a href="../../marrakech.html" class="block w-full text-center py-2.5 rounded-full bg-vert text-white text-sm font-semibold" data-i18n="nav.back_marrakech">
-                    Back to Marrakech
-                </a>
+                <!-- Language Selector -->
+                <div class="relative inline-block text-left">
+                    <button type="button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="inline-flex items-center justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 bg-white text-xs font-bold text-gray-700 hover:bg-gray-50 focus:outline-none">
+                        <i class="fa-solid me-1.5 text-gray-500 fa-globe"></i>
+                        <span id="current-lang-label">FR</span>
+                        <i class="fa-solid fa-chevron-down ms-1 text-[10px]"></i>
+                    </button>
+                    <div id="lang-menu-dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-24 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
+                        <div class="py-1" role="menu">
+                            <button onclick="switchLanguage('fr')" class="block w-full text-left px-4 py-1.5 text-xs text-gray-700 hover:bg-gray-100">Français</button>
+                            <button onclick="switchLanguage('en')" class="block w-full text-left px-4 py-1.5 text-xs text-gray-700 hover:bg-gray-100">English</button>
+                            <button onclick="switchLanguage('es')" class="block w-full text-left px-4 py-1.5 text-xs text-gray-700 hover:bg-gray-100">Español</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -331,41 +312,41 @@
         </section>
     </main>
 
-    <!-- Footer Identique à marrakech.html -->
-    <footer class="bg-sombre text-creme border-t border-sable/20 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <a href="../../index.html" class="text-2xl font-bold text-white mb-4 block">MoroccoTripMap</a>
-                    <p class="text-sm text-creme/70 leading-relaxed" data-i18n="footer.about">
-                        Your ultimate interactive travel guide to discovering Morocco's rich heritage, cities, and landmarks.
-                    </p>
-                </div>
-                <div>
-                    <h5 class="text-sm font-bold uppercase tracking-wider text-sable mb-4" data-i18n="footer.destinations">Destinations</h5>
-                    <ul class="space-y-2 text-sm text-creme/80">
-                        <li><a href="../../marrakech.html" class="hover:text-sable transition">Marrakech</a></li>
-                        <li><a href="../../destinations.html" class="hover:text-sable transition">Fes</a></li>
-                        <li><a href="../../destinations.html" class="hover:text-sable transition">Chefchaouen</a></li>
-                        <li><a href="../../destinations.html" class="hover:text-sable transition">Merzouga Desert</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text-sm font-bold uppercase tracking-wider text-sable mb-4" data-i18n="footer.quick_links">Quick Links</h5>
-                    <ul class="space-y-2 text-sm text-creme/80">
-                        <li><a href="../../about.html" class="hover:text-sable transition" data-i18n="nav.about">About Us</a></li>
-                        <li><a href="../../blog/index.html" class="hover:text-sable transition" data-i18n="nav.blog">Travel Blog</a></li>
-                        <li><a href="../../contact.html" class="hover:text-sable transition" data-i18n="footer.contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text-sm font-bold uppercase tracking-wider text-sable mb-4" data-i18n="footer.follow_us">Follow Us</h5>
-                    <p class="text-sm text-creme/70 mb-4" data-i18n="footer.follow_desc">Stay updated with fresh travel tips and photos from Morocco.</p>
-                </div>
+    <!-- Footer conforme à marrakech.html -->
+    <footer class="bg-sombre text-creme/80 pt-16 pb-8 border-t border-sable/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <div>
+                <img src="images/logo.webp" alt="MoroccoTripMap Logo" class="h-10 w-auto mb-4 filter brightness-200">
+                <p class="text-xs text-creme/60 leading-relaxed" data-i18n="footer.about">Your ultimate interactive guide for exploring Morocco. Discover curated itineraries, monuments, authentic riads, and local experiences.</p>
             </div>
-            <div class="border-t border-creme/10 pt-6 text-center text-xs text-creme/50">
-                &copy; 2026 MoroccoTripMap. All rights reserved.
+            <div>
+                <h4 class="text-sm font-bold text-sable uppercase tracking-wider mb-4" data-i18n="footer.quick_links">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="../../destinations.html" class="hover:text-white transition" data-i18n="nav.destinations">Destinations</a></li>
+                    <li><a href="../../riads/index.html" class="hover:text-white transition" data-i18n="nav.cat_stays">Stays & Riads</a></li>
+                    <li><a href="../../experiences/index.html" class="hover:text-white transition" data-i18n="nav.cat_experiences">Experiences</a></li>
+                    <li><a href="../../blog/index.html" class="hover:text-white transition" data-i18n="nav.blog">Blog</a></li>
+                </ul>
             </div>
+            <div>
+                <h4 class="text-sm font-bold text-sable uppercase tracking-wider mb-4" data-i18n="footer.legal">Legal</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="../../privacy.html" class="hover:text-white transition" data-i18n="footer.privacy">Privacy Policy</a></li>
+                    <li><a href="../../terms.html" class="hover:text-white transition" data-i18n="footer.terms">Terms of Service</a></li>
+                    <li><a href="../../contact.html" class="hover:text-white transition" data-i18n="nav.contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-bold text-sable uppercase tracking-wider mb-4" data-i18n="footer.newsletter">Newsletter</h4>
+                <p class="text-xs text-creme/60 mb-3" data-i18n="footer.newsletter_desc">Subscribe to receive travel tips and guides directly in your inbox.</p>
+                <form class="flex gap-2">
+                    <input type="email" placeholder="Your email..." class="bg-white/10 text-xs px-3 py-2 rounded-lg text-white placeholder-creme/40 focus:outline-none focus:ring-1 focus:ring-sable w-full">
+                    <button type="submit" class="bg-sable text-sombre font-bold px-4 py-2 rounded-lg text-xs hover:bg-sable/80 transition" data-i18n="footer.subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-creme/10 text-center text-xs text-creme/50">
+            <p>&copy; 2026 MoroccoTripMap. All rights reserved.</p>
         </div>
     </footer>
 
@@ -373,49 +354,18 @@
     <script src="../../js/i18n.js"></script>
     <script src="../../js/main.js"></script>
 
-    <!-- Script Menu Mobile + Langue + Carousel -->
+    <!-- Script Menu Langue + Carrousel -->
     <script>
+        function switchLanguage(lang) {
+            console.log("Switching language to: " + lang);
+            document.getElementById('current-lang-label').textContent = lang.toUpperCase();
+            document.getElementById('lang-menu-dropdown').classList.add('hidden');
+            if (typeof window.changeLanguage === 'function') {
+                window.changeLanguage(lang);
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            // Toggle Menu Mobile
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const hamburgerIcon = document.getElementById('hamburgerIcon');
-            const closeIcon = document.getElementById('closeIcon');
-
-            if (mobileMenuBtn && mobileMenu) {
-                mobileMenuBtn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                    hamburgerIcon.classList.toggle('hidden');
-                    closeIcon.classList.toggle('hidden');
-                });
-            }
-
-            // Sync Sélecteur de Langue
-            const langSelect = document.getElementById('langSelect');
-            const currentLang = localStorage.getItem('app_lang') || 'en';
-
-            if (langSelect) {
-                langSelect.value = currentLang;
-                langSelect.addEventListener('change', (e) => {
-                    const newLang = e.target.value;
-                    localStorage.setItem('app_lang', newLang);
-                    if (typeof window.changeLanguage === 'function') {
-                        window.changeLanguage(newLang);
-                    } else {
-                        location.reload();
-                    }
-                });
-            }
-
-            // Sens RTL/LTR
-            if (currentLang === 'ar') {
-                document.documentElement.setAttribute('dir', 'rtl');
-                document.documentElement.setAttribute('lang', 'ar');
-            } else {
-                document.documentElement.setAttribute('dir', 'ltr');
-                document.documentElement.setAttribute('lang', currentLang);
-            }
-
             // Animation carrousel pause au survol
             const carouselTrack = document.getElementById('carouselTrack');
             if (carouselTrack) {

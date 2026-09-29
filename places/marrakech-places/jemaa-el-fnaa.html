@@ -11,13 +11,13 @@
 
     <!-- SEO & Metadata -->
     <title data-i18n="places.jemaa_el_fnaa.seo.title">Jemaa el-Fnaa & Souks Travel Guide | Marrakech | MoroccoTripMap</title>
-    <meta content="Explore Jemaa el-Fnaa and the bustling souks of Marrakech. Discover street food stalls, storytellers, artisan markets, and insider travel tips." name="description" data-i18n-attr="content:places.jemaa_el_fnaa.seo.description"/>
+    <meta content="Explore Jemaa el-Fnaa and the bustling souks of Marrakech." name="description" data-i18n-attr="content:places.jemaa_el_fnaa.seo.description"/>
     <link href="https://moroccotripmap.com/places/marrakech-places/jemaa-el-fnaa.html" rel="canonical"/>
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Jemaa el-Fnaa & Souks Travel Guide | Marrakech | MoroccoTripMap" />
-    <meta property="og:description" content="Immerse yourself in the heart of Marrakech: Jemaa el-Fnaa square and the surrounding artisan souks." />
+    <meta property="og:description" content="Immerse yourself in the heart of Marrakech: Jemaa el-Fnaa square." />
     <meta property="og:image" content="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80" />
 
     <!-- Schema.org JSON-LD -->
@@ -27,34 +27,20 @@
       "@type": "TouristAttraction",
       "name": "Jemaa el-Fnaa",
       "description": "The main square and market place in Marrakech's medina quarter.",
-      "url": "https://moroccotripmap.com/places/marrakech-places/jemaa-el-fnaa.html",
-      "location": {
-        "@type": "Place",
-        "name": "Marrakech Medina, Morocco"
-      }
+      "url": "https://moroccotripmap.com/places/marrakech-places/jemaa-el-fnaa.html"
     }
     </script>
 
-    <!-- Tailwind CSS & Google Fonts -->
+    <!-- Tailwind CSS & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { 
-                        creme: '#F9F6F0', 
-                        vert: '#185336', 
-                        sable: '#C29B62', 
-                        sombre: '#1A1A1A' 
-                    },
-                    animation: {
-                        'scroll-rtl': 'scrollRtl 25s linear infinite'
-                    },
+                    colors: { creme: '#F9F6F0', vert: '#185336', sable: '#C29B62', sombre: '#1A1A1A' },
+                    animation: { 'scroll-rtl': 'scrollRtl 25s linear infinite' },
                     keyframes: {
-                        scrollRtl: {
-                            '0%': { transform: 'translateX(0%)' },
-                            '100%': { transform: 'translateX(-50%)' }
-                        }
+                        scrollRtl: { '0%': { transform: 'translateX(0%)' }, '100%': { transform: 'translateX(-50%)' } }
                     }
                 }
             }
@@ -70,9 +56,11 @@
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
 
-    <!-- Header Navigation (Structure exacte de marrakech.html avec sélecteur de langue) -->
+    <!-- Header Navigation avec Menu Mobile Hamburger -->
     <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
             <a href="../../index.html" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 rounded-full bg-vert flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition">
                     M
@@ -80,6 +68,7 @@
                 <span class="text-xl font-bold text-vert tracking-tight">MoroccoTripMap</span>
             </a>
 
+            <!-- Menu Desktop -->
             <nav class="hidden md:flex items-center gap-8 font-medium text-sombre">
                 <a href="../../index.html" class="hover:text-vert transition" data-i18n="nav.home">Home</a>
                 <a href="../../destinations.html" class="text-vert font-semibold" data-i18n="nav.destinations">Destinations</a>
@@ -87,7 +76,8 @@
                 <a href="../../about.html" class="hover:text-vert transition" data-i18n="nav.about">About</a>
             </nav>
 
-            <div class="flex items-center gap-4">
+            <!-- Actions droite : Langue & Mobile Toggle -->
+            <div class="flex items-center gap-3 sm:gap-4">
                 <!-- Sélecteur de Langue -->
                 <select id="langSelect" class="bg-transparent border border-sable/30 rounded-lg px-2 py-1 text-sm text-sombre focus:outline-none focus:border-vert">
                     <option value="en">EN</option>
@@ -95,7 +85,30 @@
                     <option value="ar">AR</option>
                 </select>
 
-                <a href="../../marrakech.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-vert text-white text-sm font-semibold hover:bg-vert/90 transition shadow-sm" data-i18n="nav.back_marrakech">
+                <a href="../../marrakech.html" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full bg-vert text-white text-xs sm:text-sm font-semibold hover:bg-vert/90 transition shadow-sm" data-i18n="nav.back_marrakech">
+                    Back to Marrakech
+                </a>
+
+                <!-- Bouton Hamburger Mobile -->
+                <button id="mobileMenuBtn" aria-label="Toggle Menu" class="md:hidden p-2 rounded-lg text-sombre hover:bg-sable/10 focus:outline-none">
+                    <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Déroulant Mobile -->
+        <div id="mobileMenu" class="hidden md:hidden bg-creme border-b border-sable/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="../../index.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.home">Home</a>
+            <a href="../../destinations.html" class="block py-2 text-base font-medium text-vert font-semibold" data-i18n="nav.destinations">Destinations</a>
+            <a href="../../blog/index.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.blog">Blog</a>
+            <a href="../../about.html" class="block py-2 text-base font-medium text-sombre hover:text-vert" data-i18n="nav.about">About</a>
+            <div class="pt-2 border-t border-sable/20">
+                <a href="../../marrakech.html" class="block w-full text-center py-2.5 rounded-full bg-vert text-white text-sm font-semibold" data-i18n="nav.back_marrakech">
                     Back to Marrakech
                 </a>
             </div>
@@ -264,7 +277,7 @@
                             <span class="text-white text-sm font-medium">Traditional Moroccan Tea</span>
                         </div>
                     </div>
-                    <!-- Duplicate Set for Continuous Loop -->
+                    <!-- Duplicate Set for Loop -->
                     <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
                         <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=600&q=80" alt="Jemaa el Fnaa Night Market" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
@@ -275,24 +288,6 @@
                         <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=600&q=80" alt="Souk Alleyway" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                             <span class="text-white text-sm font-medium">Artisan Souk Alleyways</span>
-                        </div>
-                    </div>
-                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
-                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80" alt="Moroccan Lanterns" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                            <span class="text-white text-sm font-medium">Handcrafted Lamps & Lanterns</span>
-                        </div>
-                    </div>
-                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
-                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Spices Market" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                            <span class="text-white text-sm font-medium">Place des Épices</span>
-                        </div>
-                    </div>
-                    <div class="w-72 h-48 sm:w-80 sm:h-56 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm relative group">
-                        <img src="https://images.unsplash.com/photo-1560067174-c5a3a8f37060?auto=format&fit=crop&w=600&q=80" alt="Mint Tea in Medina" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                            <span class="text-white text-sm font-medium">Traditional Moroccan Tea</span>
                         </div>
                     </div>
                 </div>
@@ -336,10 +331,10 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Identique à marrakech.html -->
     <footer class="bg-sombre text-creme border-t border-sable/20 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <a href="../../index.html" class="text-2xl font-bold text-white mb-4 block">MoroccoTripMap</a>
                     <p class="text-sm text-creme/70 leading-relaxed" data-i18n="footer.about">
@@ -374,14 +369,28 @@
         </div>
     </footer>
 
-    <!-- INCLUSION DES SCRIPTS EXTERNES DE LA PAGE MARRAKECH (Ajuster les chemins si nécessaire) -->
+    <!-- Scripts Externe -->
     <script src="../../js/i18n.js"></script>
     <script src="../../js/main.js"></script>
 
-    <!-- SCRIPT DE SECOURS LOCAL ET INTERACTION CARROUSEL -->
+    <!-- Script Menu Mobile + Langue + Carousel -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // 1. Synchronisation du sélecteur de langue avec LocalStorage
+            // Toggle Menu Mobile
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburgerIcon = document.getElementById('hamburgerIcon');
+            const closeIcon = document.getElementById('closeIcon');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    hamburgerIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+
+            // Sync Sélecteur de Langue
             const langSelect = document.getElementById('langSelect');
             const currentLang = localStorage.getItem('app_lang') || 'en';
 
@@ -390,8 +399,6 @@
                 langSelect.addEventListener('change', (e) => {
                     const newLang = e.target.value;
                     localStorage.setItem('app_lang', newLang);
-                    
-                    // Si la fonction i18n globale existe dans main.js / i18n.js
                     if (typeof window.changeLanguage === 'function') {
                         window.changeLanguage(newLang);
                     } else {
@@ -400,7 +407,7 @@
                 });
             }
 
-            // Direction RTL/LTR
+            // Sens RTL/LTR
             if (currentLang === 'ar') {
                 document.documentElement.setAttribute('dir', 'rtl');
                 document.documentElement.setAttribute('lang', 'ar');
@@ -409,7 +416,7 @@
                 document.documentElement.setAttribute('lang', currentLang);
             }
 
-            // 2. Gestion du survol pour pause du carrousel
+            // Animation carrousel pause au survol
             const carouselTrack = document.getElementById('carouselTrack');
             if (carouselTrack) {
                 carouselTrack.addEventListener('mouseenter', () => carouselTrack.classList.add('paused'));

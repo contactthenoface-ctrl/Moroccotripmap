@@ -57,46 +57,47 @@
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
 
-    <!-- Header Navigation conforme à Marrakech.html -->
-    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+    <!-- HEADER EXACT MARRAKECH -->
+    <header class="bg-creme/90 backdrop-blur-md sticky top-0 z-50 border-b border-sable/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="../../index.html" class="flex items-center gap-2">
-                        <img class="h-9 w-auto" src="../../images/logo.png" alt="MoroccoTripMap Logo" onerror="this.src='../../images/logo.webp'">
+                        <img class="h-10 w-auto" src="../../images/logo.png" alt="MoroccoTripMap Logo" onerror="this.src='../../images/logo.webp'">
                     </a>
                 </div>
 
-                <!-- Right Controls (Langue & Burger Menu) -->
+                <!-- Right Controls (Langue avec ARABE & Burger Menu) -->
                 <div class="flex items-center gap-3">
-                    <!-- Language Selector -->
+                    <!-- Language Selector Dropdown -->
                     <div class="relative inline-block text-left">
-                        <button type="button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="inline-flex items-center justify-center rounded-full border border-gray-200 shadow-sm px-3 py-1.5 bg-white text-xs font-bold text-gray-700 hover:bg-gray-50 focus:outline-none gap-1.5">
+                        <button type="button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="inline-flex items-center justify-center rounded-full border border-sable/20 shadow-sm px-3.5 py-1.5 bg-white text-xs font-bold text-sombre hover:bg-creme focus:outline-none gap-1.5">
                             <span id="current-lang-flag">🇬🇧</span>
                             <span id="current-lang-label">EN</span>
-                            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400"></i>
+                            <i class="fa-solid fa-chevron-down text-[10px] text-sombre/40"></i>
                         </button>
-                        <div id="lang-menu-dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-28 rounded-xl shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 overflow-hidden">
+                        <div id="lang-menu-dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-32 rounded-2xl shadow-xl bg-white ring-1 ring-black/5 z-50 overflow-hidden border border-sable/10">
                             <div class="py-1" role="menu">
-                                <button onclick="switchLanguage('en', '🇬🇧')" class="flex items-center gap-2 w-full text-left px-4 py-2 text-xs text-gray-700 hover:bg-gray-50"><span>🇬🇧</span> English</button>
-                                <button onclick="switchLanguage('fr', '🇫🇷')" class="flex items-center gap-2 w-full text-left px-4 py-2 text-xs text-gray-700 hover:bg-gray-50"><span>🇫🇷</span> Français</button>
-                                <button onclick="switchLanguage('es', '🇪🇸')" class="flex items-center gap-2 w-full text-left px-4 py-2 text-xs text-gray-700 hover:bg-gray-50"><span>🇪🇸</span> Español</button>
+                                <button onclick="switchLanguage('en', '🇬🇧')" class="flex items-center gap-2.5 w-full text-left px-4 py-2 text-xs font-medium text-sombre hover:bg-creme transition"><span>🇬🇧</span> English</button>
+                                <button onclick="switchLanguage('fr', '🇫🇷')" class="flex items-center gap-2.5 w-full text-left px-4 py-2 text-xs font-medium text-sombre hover:bg-creme transition"><span>🇫🇷</span> Français</button>
+                                <button onclick="switchLanguage('es', '🇪🇸')" class="flex items-center gap-2.5 w-full text-left px-4 py-2 text-xs font-medium text-sombre hover:bg-creme transition"><span>🇪🇸</span> Español</button>
+                                <button onclick="switchLanguage('ar', '🇸🇦')" class="flex items-center gap-2.5 w-full text-left px-4 py-2 text-xs font-medium text-sombre hover:bg-creme transition"><span>🇸🇦</span> العربية</button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Burger Button (Mobile & Desktop) -->
-                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="p-2 rounded-full border border-gray-200 text-gray-700 hover:bg-gray-50 focus:outline-none">
-                        <i class="fa-solid fa-bars text-lg px-0.5"></i>
+                    <!-- Burger Button -->
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="w-10 h-10 rounded-full border border-sable/20 flex items-center justify-center bg-white text-sombre hover:bg-creme focus:outline-none transition">
+                        <i class="fa-solid fa-bars text-base"></i>
                     </button>
                 </div>
             </div>
         </div>
 
         <!-- Mobile / Hamburger Menu Dropdown -->
-        <div id="mobile-menu" class="hidden border-b border-gray-100 bg-white px-4 pt-2 pb-6 shadow-lg">
-            <nav class="flex flex-col space-y-3 text-sm font-medium text-gray-700 pt-2">
+        <div id="mobile-menu" class="hidden border-b border-sable/10 bg-white px-6 pt-3 pb-6 shadow-xl">
+            <nav class="flex flex-col space-y-3 text-sm font-semibold text-sombre">
                 <a href="../../index.html" class="hover:text-vert py-1 transition" data-i18n="nav.home">Home</a>
                 <a href="../../destinations.html" class="hover:text-vert py-1 transition" data-i18n="nav.destinations">Destinations</a>
                 <a href="../../riads/index.html" class="hover:text-vert py-1 transition" data-i18n="nav.cat_stays">Stays & Riads</a>
@@ -275,7 +276,6 @@
         <!-- Related Articles Section -->
         <section class="bg-creme py-12 sm:py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Header responsive aligné proprement -->
                 <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
                     <div>
                         <span class="text-xs font-bold text-sable uppercase tracking-wider block" data-i18n="related.badge">More Inspiration</span>
@@ -310,40 +310,42 @@
         </section>
     </main>
 
-    <!-- Footer Green Style (conforme à marrakech.html) -->
+    <!-- FOOTER EXACT MARRAKECH -->
     <footer class="bg-vert text-creme rounded-t-[2.5rem] pt-12 pb-8 mt-12 shadow-inner">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
                 <!-- Branding -->
                 <div class="md:col-span-1">
-                    <h3 class="text-2xl font-bold text-white mb-2">Morocco<span class="text-sable">TripMap</span></h3>
-                    <p class="text-xs text-creme/80 leading-relaxed">
+                    <a href="../../index.html" class="inline-block mb-3">
+                        <span class="text-2xl font-bold text-white tracking-wide">Morocco<span class="text-sable">TripMap</span></span>
+                    </a>
+                    <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.desc">
                         Discover. Plan. Experience Morocco. The premier tourism directory and cultural travel guide for visitors exploring Morocco.
                     </p>
                 </div>
 
                 <!-- Destinations -->
                 <div>
-                    <h4 class="text-xs font-bold text-sable uppercase tracking-widest mb-3">DESTINATIONS</h4>
+                    <h4 class="text-xs font-bold text-sable uppercase tracking-widest mb-3" data-i18n="footer.destinations">DESTINATIONS</h4>
                     <ul class="space-y-2 text-xs">
-                        <li><a href="../../marrakech.html" class="hover:text-sable font-semibold transition">Marrakech Travel Guide</a></li>
-                        <li><a href="../../destinations.html" class="hover:text-sable transition">All destinations</a></li>
+                        <li><a href="../../marrakech.html" class="hover:text-sable font-semibold transition" data-i18n="footer.marrakech">Marrakech Travel Guide</a></li>
+                        <li><a href="../../destinations.html" class="hover:text-sable transition" data-i18n="footer.all_destinations">All destinations</a></li>
                     </ul>
                 </div>
 
                 <!-- Categories -->
                 <div>
-                    <h4 class="text-xs font-bold text-sable uppercase tracking-widest mb-3">CATEGORIES</h4>
+                    <h4 class="text-xs font-bold text-sable uppercase tracking-widest mb-3" data-i18n="footer.categories">CATEGORIES</h4>
                     <ul class="space-y-2 text-xs">
-                        <li><a href="../../riads/index.html" class="hover:text-sable transition">Authentic Riads & Hotels</a></li>
-                        <li><a href="../../experiences/index.html" class="hover:text-sable transition">Moroccan Restaurants</a></li>
+                        <li><a href="../../riads/index.html" class="hover:text-sable transition" data-i18n="footer.riads">Authentic Riads & Hotels</a></li>
+                        <li><a href="../../experiences/index.html" class="hover:text-sable transition" data-i18n="footer.restaurants">Moroccan Restaurants</a></li>
                     </ul>
                 </div>
 
                 <!-- Connect -->
                 <div>
-                    <h4 class="text-xs font-bold text-sable uppercase tracking-widest mb-3">CONNECT</h4>
-                    <p class="text-xs text-creme/80 mb-3">Follow our YouTube channel for video travel guides:</p>
+                    <h4 class="text-xs font-bold text-sable uppercase tracking-widest mb-3" data-i18n="footer.connect">CONNECT</h4>
+                    <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_desc">Follow our YouTube channel for video travel guides:</p>
                     <a href="https://youtube.com/@moroccotripmap" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-red-600 text-white px-3.5 py-1.5 rounded-full text-xs font-semibold hover:bg-red-700 transition">
                         <i class="fa-brands fa-youtube"></i>
                         <span>@moroccotripmap</span>

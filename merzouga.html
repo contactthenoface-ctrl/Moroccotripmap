@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" dir="ltr" lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    
+    <meta name="google" content="notranslate"/>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Favicon SVG (Pin de carte vert, cohérent avec le logo MoroccoTripMap) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
+
+    <!-- SEO & Metadata -->
+    <title data-i18n="merzouga_page.seo.title">Merzouga Travel Guide 2026 | Kasbahs, Camel Trek &amp; Erg Chebbi | MoroccoTripMap</title>
+    <meta content="Plan your trip to Merzouga: Erg Chebbi dunes, camel treks, desert camps, Khamlia, Rissani, hotels and practical tips." name="description" data-i18n-attr="content:merzouga_page.seo.description"/>
+    <meta content="Merzouga travel guide, things to do in Merzouga, Erg Chebbi, camel trek, desert camp, Khamlia, Dayet Srji, Rissani, Hassilabied, fossils, Merzouga, best hotels Merzouga, day trips from Merzouga" name="keywords"/>
+    <link href="https://moroccotripmap.com/merzouga.html" rel="canonical"/>
+
+    <!-- Open Graph / Social Media -->
+    <meta content="website" property="og:type"/>
+    <meta content="Merzouga Travel Guide | Erg Chebbi Dunes, Camel Treks &amp; Desert Camps | MoroccoTripMap" property="og:title" data-i18n-attr="content:merzouga_page.seo.og_title"/>
+    <meta content="Medina, ramparts, beach, riads, seafood and a ready-made itinerary for Merzouga, all in one guide." property="og:description" data-i18n-attr="content:merzouga_page.seo.og_description"/>
+    <meta content="https://moroccotripmap.com/merzouga.html" property="og:url"/>
+    <meta content="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
+
+    <!-- Hreflang Tags (Multilingual SEO) -->
+    <link href="https://moroccotripmap.com/merzouga.html" hreflang="en" rel="alternate"/>
+    <link href="https://moroccotripmap.com/fr/merzouga.html" hreflang="fr" rel="alternate"/>
+    <link href="https://moroccotripmap.com/es/merzouga.html" hreflang="es" rel="alternate"/>
+    <link href="https://moroccotripmap.com/ar/merzouga.html" hreflang="ar" rel="alternate"/>
+    <link href="https://moroccotripmap.com/merzouga.html" hreflang="x-default" rel="alternate"/>
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Merzouga",
+      "url": "https://moroccotripmap.com/merzouga.html",
+      "description": "Merzouga travel guide covering top attractions, hotels, restaurants, itineraries, and day trips from Morocco’s economic capital on the Atlantic coast.",
+      "touristType": ["Culture", "Business", "City Break"],
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "Morocco"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creme: '#F9F6F0',
+                        vert: '#185336',
+                        sable: '#C29B62',
+                        sombre: '#1A1A1A',
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+
+        /* Styles intégrés pour l'itinéraire et les filtres */
+        .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
+        .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
+        .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
+        .tab-btn.active { background: #185336; color: #fff; border-color: #185336; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
+        .day-card h3:first-of-type { margin-top: 0; }
+        .steps-list { list-style: none; padding: 0; margin-top: 15px; }
+        .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
+
+        /* Styles pour les Filtres d'hébergement */
+        .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
+        .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
+        .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
+        .filter-group select:focus { border-color: #185336; }
+        .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
+        .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
+        .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
+        .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
+        .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
+        .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
+        .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
+        .acc-contact a:hover { text-decoration: underline; }
+        .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
+    </style>
+</head>
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
+    
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a class="flex items-center gap-3 group shrink-0" href="index.html">
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="images/logo.webp"/>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
+    <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
+    <div class="relative inline-block text-left" id="categories-menu-container">
+        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
+            <span data-i18n="nav.categories">Categories</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+        </div>
+    </div>
+    <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
+    <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
+    <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
+</nav>
+            
+            <!-- Lang Switcher & Mobile Toggle -->
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- SÉLECTEUR DE LANGUE -->
+                <div class="relative inline-block text-left" id="lang-menu-container">
+                    <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                        <span id="current-lang-label">EN</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    
+                    <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden">
+                        <button onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                            English
+                        </button>
+                        <button onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>
+                            Français
+                        </button>
+                        <button onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>
+                            Español
+                        </button>
+                        <button onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>
+                            العربية
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" id="mobile-menu-btn" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition focus:outline-none" type="button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="mobile_menu.language_title">Language / Langue</span>
+                <div class="flex gap-2">
+                    <button onclick="switchLanguage('en')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">EN</button>
+                    <button onclick="switchLanguage('fr')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">FR</button>
+                    <button onclick="switchLanguage('es')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">ES</button>
+                    <button onclick="switchLanguage('ar')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">AR</button>
+                </div>
+            </div>
+
+            <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
+    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
+        <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
+            <span data-i18n="nav.cities">Cities &amp; Destinations</span>
+        </div>
+        <span class="text-xs text-gray-400">→</span>
+    </a>
+    <div>
+        <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
+            <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                <span data-i18n="nav.categories">Categories</span>
+            </div>
+            <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+        </div>
+    </div>
+    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
+        <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            <span data-i18n="nav.history">History of Morocco</span>
+        </div>
+        <span class="text-xs text-gray-400">→</span>
+    </a>
+    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
+        <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+            <span data-i18n="nav.blog">Blog</span>
+        </div>
+        <span class="text-xs text-gray-400">→</span>
+    </a>
+    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="contact.html">
+        <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span data-i18n="nav.contact">Contact</span>
+        </div>
+        <span class="text-xs text-gray-400">→</span>
+    </a>
+</nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <div class="relative h-[400px] sm:h-[480px] lg:h-[520px] flex items-end">
+            <img alt="Merzouga Cityscape with Koutoubia Mosque" class="absolute inset-0 w-full h-full object-cover" src="images/merzouga-art.webp?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
+                <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
+                    <a class="hover:text-white transition" href="index.html" data-i18n="breadcrumb.home">Home</a>
+                    <span>/</span>
+                    <a class="hover:text-white transition" href="destinations.html" data-i18n="breadcrumb.destinations">Destinations</a>
+                    <span>/</span>
+                    <span class="text-white" data-i18n="destinations.merzouga.name">Merzouga</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-3" data-i18n="destinations.merzouga.name">Merzouga</h1>
+                <p class="text-lg sm:text-xl text-creme/90 max-w-2xl font-light" data-i18n="merzouga_page.hero_subtitle">Gateway to the Sahara and Morocco’s film cunes: Erg Chebbi, camel treks, desert camps and Saharan horizons — Merzouga is the door between the Atlas and the dunes.</p>
+            </div>
+        </div>
+
+        <!-- Quick Info Bar -->
+        <div class="bg-vert text-creme py-6 border-b border-sable/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="merzouga_page.info.best_time_label">Best Time to Visit</span>
+                    <span class="text-base font-bold" data-i18n="merzouga_page.info.best_time_val">Apr – Jun &amp; Sep – Nov</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="merzouga_page.info.stay_label">Ideal Stay</span>
+                    <span class="text-base font-bold" data-i18n="merzouga_page.info.stay_val">2 – 3 Days</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="merzouga_page.info.vibe_label">Top Vibe</span>
+                    <span class="text-base font-bold" data-i18n="merzouga_page.info.vibe_val">Desert &amp; Film</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="merzouga_page.info.airport_label">Nearest Airport</span>
+                    <span class="text-base font-bold" data-i18n="merzouga_page.info.airport_val">CMN (Mohammed V)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overview Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="merzouga_page.overview.title">Welcome to Morocco’s White City</h2>
+                <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="merzouga_page.overview.p1">Merzouga sits on the edge of the High Atlas and the pre-Saharan plains. Kasbahs, film studios and the road to the desert define the town. It is less a medina city than a base for Erg Chebbi, camel treks and overnight desert trips toward Merzouga or Erfoud.</p>
+                <p class="text-sombre/80 leading-relaxed text-base" data-i18n="merzouga_page.overview.p2">Two to three days cover Kasbah Tahebbi dunes, a camel trek and a night in camp — plus Khamlia, Dayet Srji or Rissani oasis if you stay longer. Use Merzouga as a stop on a Marrakech–desert circuit.</p>
+            </div>
+        </section>
+
+        <!-- Must-Visit Places Section (9 Lieux Incontournables) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.places.badge">Top Sightseeing</span>
+                    <h2 class="text-3xl font-bold text-vert" data-i18n="merzouga_page.places.title">Must-Visit Places in Merzouga</h2>
+                </div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="merzouga_page.places.subtitle">Dunes, camel treks, camps and the stops that define the desert gateway.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/erg-chebbi.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Erg Chebbi dunes Merzouga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.erg.tag">Dunes</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.erg.title">Erg Chebbi</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.erg.desc">Vast golden dunes rising above Merzouga — the heart of every Sahara visit here.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/merzouga-village.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Merzouga village" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1489749798305-4ea4cdc436ca?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.village.tag">Village</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.village.title">Merzouga Village</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.village.desc">Small desert gateway village with hotels, cafés and the trailhead to the erg.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/camel-trek.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Camel trek Erg Chebbi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.camel.tag">Experience</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.camel.title">Camel Trek</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.camel.desc">Classic camel ride into the dunes at sunset or sunrise — the signature Merzouga experience.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/desert-camp.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Desert camp Merzouga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1517824805568-7cece4e3d2a6?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.camp.tag">Camp</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.camp.title">Desert Camp</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.camp.desc">Overnight in a Berber-style camp under the stars — dinner, drums and dune silence.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/khamlia.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Khamlia village" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.khamlia.tag">Culture</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.khamlia.title">Khamlia</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.khamlia.desc">Black desert village known for Gnawa music, tea and warm hospitality near the dunes.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/dayet-srji.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Dayet Srji lake Merzouga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.dayet.tag">Nature</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.dayet.title">Dayet Srji</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.dayet.desc">Seasonal lake at the foot of the dunes — flamingos when water is present after rains.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/rissani.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Rissani souk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.rissani.tag">Town</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.rissani.title">Rissani</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.rissani.desc">Historic market town and gateway — souk days, kasbahs and the Moulay Ali Cherif mausoleum.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/hassilabied.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Hassilabied Merzouga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.hassilabied.tag">Village</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.hassilabied.title">Hassilabied</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.hassilabied.desc">Quiet village on the edge of the erg — hotels with dune views and a calmer base than central Merzouga.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/merzouga-places/fossils.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Fossil workshops Merzouga Erfoud" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.places.fossils.tag">Craft</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.places.fossils.title">Fossil Workshops</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="merzouga_page.places.fossils.desc">Local workshops and shops selling trilobites and polished fossils from the Erfoud region.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="merzouga_page.places.explore">Explore Place →</span>
+                    </div>
+                </a>
+            </div>
+
+            
+
+<section class="itinerary-section">
+<div class="text-center mb-8">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.itinerary.badge">Planning</span>
+<h2 class="text-3xl font-bold text-vert" data-i18n="merzouga_page.itinerary.title">Suggested 3-Day Itinerary</h2>
+<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="merzouga_page.itinerary.subtitle">Dunes, a night in camp, and the villages around Erg Chebbi.</p>
+</div>
+<div class="itinerary-tabs">
+<button class="tab-btn active" data-i18n="merzouga_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Dunes &amp; Village</button>
+<button class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Camel Trek &amp; Camp</button>
+<button class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Khamlia &amp; Rissani</button>
+</div>
+<div class="tab-content active" id="day1"><div class="day-card">
+<h3 data-i18n="merzouga_page.detailed_itinerary.day1_m">Morning — Erg Chebbi viewpoint</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day1_md">Drive or walk to the edge of Erg Chebbi. Climb a dune for the first panoramic view before the heat peaks.</p>
+<h3 data-i18n="merzouga_page.detailed_itinerary.day1_a">Afternoon — Merzouga village &amp; fossils</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day1_ad">Return to the village for lunch, fossil shops, and time to arrange your camel trek and camp.</p>
+<h3 data-i18n="merzouga_page.detailed_itinerary.day1_e">Evening — Sunset on the dunes</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day1_ed">Watch sunset from a dune ridge, then dinner at your hotel or a village restaurant.</p>
+</div></div>
+<div class="tab-content" id="day2"><div class="day-card">
+<h3 data-i18n="merzouga_page.detailed_itinerary.day2_m">Morning — Free or short walk</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day2_md">A quiet morning in the village or Hassilabied; rest before the afternoon trek.</p>
+<h3 data-i18n="merzouga_page.detailed_itinerary.day2_a">Afternoon — Camel trek into Erg Chebbi</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day2_ad">Depart as arranged with your camp: camel trek into the dunes toward your overnight stay.</p>
+<h3 data-i18n="merzouga_page.detailed_itinerary.day2_e">Evening — Night in the Sahara</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day2_ed">Berber dinner, drums and stars; sleep in a tent or camp with optional sunrise climb.</p>
+</div></div>
+<div class="tab-content" id="day3"><div class="day-card">
+<h3 data-i18n="merzouga_page.detailed_itinerary.day3_m">Morning — Sunrise &amp; return</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day3_md">Climb for sunrise, breakfast at camp, then camel or 4x4 back to the village.</p>
+<h3 data-i18n="merzouga_page.detailed_itinerary.day3_a">Afternoon — Khamlia or Rissani</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day3_ad">Gnawa music and tea in Khamlia, or Rissani’s souk and Moulay Ali Cherif mausoleum.</p>
+<h3 data-i18n="merzouga_page.detailed_itinerary.day3_e">Evening — Last night in Merzouga</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day3_ed">Quiet dinner before onward travel toward Erfoud, Tinghir or Ouarzazate.</p>
+</div></div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+<div class="mb-8">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.directory.badge">Where to Stay</span>
+<h2 class="text-3xl font-bold text-vert" data-i18n="merzouga_page.directory.title">Hotels, Kasbahs &amp; Desert Camps in Merzouga</h2>
+<p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="merzouga_page.directory.subtitle">Filter by type and area — village edge, Hassilabied, or overnight in the dunes.</p>
+</div>
+
+<div class="filter-section">
+<div class="filter-container">
+<div class="filter-group">
+<label for="filter-type" data-i18n="merzouga_page.directory.filter_type_label">Accommodation Type</label>
+<select id="filter-type" onchange="filterAccommodations()">
+<option value="all" data-i18n="merzouga_page.directory.type_all">All types</option>
+<option value="hotel" data-i18n="merzouga_page.directory.type_hotel">Hotels &amp; Kasbahs</option>
+<option value="riad" data-i18n="merzouga_page.directory.type_riad">Riads &amp; Guesthouses</option>
+<option value="camp" data-i18n="merzouga_page.directory.type_camp">Desert Camps</option>
+</select>
+</div>
+<div class="filter-group">
+<label for="filter-location" data-i18n="merzouga_page.directory.filter_location_label">Area</label>
+<select id="filter-location" onchange="filterAccommodations()">
+<option value="all" data-i18n="merzouga_page.directory.location_all">All areas</option>
+<option value="village" data-i18n="merzouga_page.directory.location_village">Merzouga village</option>
+<option value="hassilabied" data-i18n="merzouga_page.directory.location_hassilabied">Hassilabied</option>
+<option value="dunes" data-i18n="merzouga_page.directory.location_dunes">Dunes / desert camp</option>
+<option value="rissani" data-i18n="merzouga_page.directory.location_rissani">Rissani area</option>
+</select>
+</div>
+</div>
+<div class="filter-counter" id="accommodation-counter" data-i18n="merzouga_page.directory.counter">12 accommodations listed</div>
+</div>
+
+<div class="accommodation-grid" id="accommodation-list">
+
+<div class="acc-card" data-type="hotel" data-location="village">
+<h3>1. Kasbah Mohayut</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: hotel</p>
+<p class="text-xs text-sombre/70 mt-2">Traditional kasbah-style hotel at the foot of the dunes.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Kasbah+Mohayut+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="hotel" data-location="village">
+<h3>2. Hotel Yasmina</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: hotel</p>
+<p class="text-xs text-sombre/70 mt-2">Long-established hotel facing Erg Chebbi with pool and dune views.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Hotel+Yasmina+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="riad" data-location="village">
+<h3>3. Riad Madu</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: riad</p>
+<p class="text-xs text-sombre/70 mt-2">Boutique riad atmosphere with terrace views toward the erg.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Riad+Madu+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="hotel" data-location="hassilabied">
+<h3>4. Auberge du Sud</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: hotel</p>
+<p class="text-xs text-sombre/70 mt-2">Classic auberge in Hassilabied, popular base for camel treks.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Auberge+du+Sud+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="hotel" data-location="village">
+<h3>5. Kasbah Azalay Merzouga</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: hotel</p>
+<p class="text-xs text-sombre/70 mt-2">Comfortable kasbah hotel with pool near the dune edge.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Kasbah+Azalay+Merzouga+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="hotel" data-location="village">
+<h3>6. Hotel Kanz Erremal</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: hotel</p>
+<p class="text-xs text-sombre/70 mt-2">Dune-view rooms and a practical base for desert excursions.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Hotel+Kanz+Erremal+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="riad" data-location="village">
+<h3>7. Riad Nomad</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: riad</p>
+<p class="text-xs text-sombre/70 mt-2">Small riad-style stay in the village, close to trek departure points.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Riad+Nomad+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="riad" data-location="hassilabied">
+<h3>8. Chez Julia</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: riad</p>
+<p class="text-xs text-sombre/70 mt-2">Friendly guesthouse feel in Hassilabied with home cooking.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Chez+Julia+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="camp" data-location="dunes">
+<h3>9. Sahara Stars Camp</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes | <span data-i18n="merzouga_page.directory.type_label">Type</span>: camp</p>
+<p class="text-xs text-sombre/70 mt-2">Desert camp in Erg Chebbi — tents, dinner and sunrise over the dunes.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Sahara+Stars+Camp+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="camp" data-location="dunes">
+<h3>10. Merzouga Luxury Camp</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes | <span data-i18n="merzouga_page.directory.type_label">Type</span>: camp</p>
+<p class="text-xs text-sombre/70 mt-2">Higher-end camp experience with private tents in the erg.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Merzouga+Luxury+Camp+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="camp" data-location="dunes">
+<h3>11. Nomad Camp Merzouga</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes | <span data-i18n="merzouga_page.directory.type_label">Type</span>: camp</p>
+<p class="text-xs text-sombre/70 mt-2">Berber-style overnight camp with camel transfer and traditional dinner.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Nomad+Camp+Merzouga+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+
+<div class="acc-card" data-type="hotel" data-location="rissani">
+<h3>12. Hotel Sijilmassa</h3>
+<p class="acc-meta"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Rissani | <span data-i18n="merzouga_page.directory.type_label">Type</span>: hotel</p>
+<p class="text-xs text-sombre/70 mt-2">Practical stop in Rissani if combining the souk with Merzouga.</p>
+<div class="acc-contact">
+<a class="btn-availability" href="https://www.booking.com/searchresults.html?ss=Hotel+Sijilmassa+Merzouga" target="_blank" rel="noopener sponsored" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
+</div>
+</div>
+</div>
+<p id="no-results" class="no-results-msg" style="display:none" data-i18n="merzouga_page.directory.no_results">No accommodations match your filters.</p>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.eat.badge">Gastronomy</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="merzouga_page.eat.title">Best Restaurants &amp; Rooftops</h2>
+                </div>
+                <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="merzouga_page.eat.subtitle">Curated culinary experiences with top visitor ratings</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. Nomad -->
+                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/nomad.html">
+                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Rick’s Café" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
+                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <span>4.4</span>
+                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="merzouga_page.eat.ricks.tag">Modern Moroccan</span>
+                                <span class="text-xs text-gray-400" data-i18n="merzouga_page.eat.ricks.loc">Medina Rooftop</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.eat.ricks.title">Rick’s Café</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="merzouga_page.eat.ricks.desc">Trendy rooftop terrace overlooking the Spice Square, serving light local cuisine with a modern twist.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 2. La Sqala -->
+                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/le-jardin.html">
+                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=80" alt="La Sqala Merzouga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
+                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <span>4.3</span>
+                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="merzouga_page.eat.sqala.tag">Garden Dining</span>
+                                <span class="text-xs text-gray-400" data-i18n="merzouga_page.eat.sqala.loc">Medina Oasis</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.eat.sqala.title">La Sqala</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="merzouga_page.eat.sqala.desc">A lush 16th-century courtyard filled with banana trees, offering authentic tagines and tranquil ambiance.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 3. Al-Mounia -->
+                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/al-fassia.html">
+                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Al-Mounia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
+                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <span>4.5</span>
+                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="merzouga_page.eat.mounia.tag">Traditional Cuisine</span>
+                                <span class="text-xs text-gray-400" data-i18n="merzouga_page.eat.mounia.loc">Gueliz</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.eat.mounia.title">Al-Mounia</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="merzouga_page.eat.mounia.desc">Run entirely by women, famous for its slow-cooked shoulder of lamb and rich traditional pastilla.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 4. La Grande Table Marocaine -->
+                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/dar-moha.html">
+                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="La Grande Table Marocaine" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
+                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <span>4.5</span>
+                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="merzouga_page.eat.grande_table.tag">Fine Dining</span>
+                                <span class="text-xs text-gray-400" data-i18n="merzouga_page.eat.grande_table.loc">Medina Riad</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.eat.grande_table.title">La Grande Table Marocaine</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="merzouga_page.eat.grande_table.desc">Refined Moroccan gastronomy served around a courtyard pool in Pierre Balmain's former palace.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 5. Le Cabestan -->
+                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/bacha-coffee.html">
+                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Le Cabestan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
+                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <span>4.6</span>
+                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="merzouga_page.eat.cabestan.tag">Café &amp; Pastry</span>
+                                <span class="text-xs text-gray-400" data-i18n="merzouga_page.eat.cabestan.loc">Dar El Bacha</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.eat.cabestan.title">Le Cabestan</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="merzouga_page.eat.cabestan.desc">Iconic 1930s coffee room offering rare Arabica coffees and French pastries in a opulent palace setting.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 6. Table 3 -->
+                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/el-fenn.html">
+                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Table 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
+                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <span>4.5</span>
+                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="merzouga_page.eat.table3.tag">Chic Rooftop</span>
+                                <span class="text-xs text-gray-400" data-i18n="merzouga_page.eat.table3.loc">Medina View</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="merzouga_page.eat.table3.title">Table 3</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="merzouga_page.eat.table3.desc">Stylish rooftop lounge featuring panoramic views of the Koutoubia, creative cocktails, and tapas.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Practical Travel Tips -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h2 class="text-2xl font-bold text-vert mb-6" data-i18n="merzouga_page.tips.title">Practical Tips for Visiting Merzouga</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                <div class="bg-white p-5 rounded-xl border border-sable/10">
+                    <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8m-9 5h10M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2zM7 9h.01M17 9h.01"/></svg>
+                        <span data-i18n="merzouga_page.tips.transport.title">Getting Around</span>
+                    </h3>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="merzouga_page.tips.transport.desc">The Casa Tramway is clean, cheap and useful for many central routes. For longer distances use red petit taxis (insist on the meter) or rideshare apps. The airport train is the easiest way from CMN.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-sable/10">
+                    <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                        <span data-i18n="merzouga_page.tips.bargain.title">Dress &amp; Etiquette</span>
+                    </h3>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="merzouga_page.tips.bargain.desc">Merzouga is more relaxed than inland cities, but modest clothing is still appreciated, especially when visiting the mosque. Bring a light jacket — the Atlantic breeze can be cool even in summer.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-sable/10">
+                    <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+                        <span data-i18n="merzouga_page.tips.water.title">Safety &amp; Atmosphere</span>
+                    </h3>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="merzouga_page.tips.water.desc">Merzouga is a big city. Use normal big-city awareness, especially after dark in quieter streets. The Beach and main tourist areas feel lively and safe in the evening.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day Trips from Merzouga -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+            <div class="mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.daytrips.badge">Day Trips</span>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="merzouga_page.daytrips.title">Best Day Trips from Merzouga</h2>
+                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="merzouga_page.daytrips.subtitle">Easy train or car excursions that fit comfortably into a single day.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
+                    <img alt="Marrakech Kasbah of the Udayas" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a6e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="merzouga_page.daytrips.rabat.title">Erfoud &amp; Draa Valley</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="merzouga_page.daytrips.rabat.desc">South into the Draa Valley — palm groves, kasbahs and the road toward the desert.</p>
+                    </div>
+                </div>
+                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
+                    <img alt="Erfoud Portuguese Cistern" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="merzouga_page.daytrips.zagora.title">Erfoud</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="merzouga_page.daytrips.zagora.desc">UNESCO Portuguese citadel and the famous underground cistern, about 1h20 by train or car.</p>
+                    </div>
+                </div>
+                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
+                    <img alt="Mohammedia beach" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="merzouga_page.daytrips.mohammedia.title">Dadès &amp; Todra</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="merzouga_page.daytrips.mohammedia.desc">Gorges and valley scenery on the road east — often combined with a desert circuit.</p>
+                    </div>
+                </div>
+                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
+                    <img alt="Azemmour street art" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="merzouga_page.daytrips.azemmour.title">Marrakech (return)</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="merzouga_page.daytrips.azemmour.desc">Many travellers continue or return via the High Atlas Tizi n’Tichka pass to Marrakech.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+            <div class="mb-8 text-center">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.faq.badge">Good to Know</span>
+                <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="merzouga_page.faq.title">Merzouga Travel FAQ</h2>
+            </div>
+            <div class="space-y-3">
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="merzouga_page.faq.q1.question">How many days should I spend in Merzouga?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="merzouga_page.faq.q1.answer">Two full days cover the main sights comfortably. Three or four days allow a relaxed pace plus a day trip to Marrakech or Erfoud.</p>
+                </details>
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="merzouga_page.faq.q2.question">Is Merzouga safe for tourists?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="merzouga_page.faq.q2.answer">Yes. Like any large city, use normal precautions. Tourist areas, the Beach and the centre are generally well-frequented and feel safe.</p>
+                </details>
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="merzouga_page.faq.q3.question">What currency is used and can I pay by card?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="merzouga_page.faq.q3.answer">Morocco uses the dirham (MAD). Cards are widely accepted in hotels and restaurants; keep some cash for taxis, markets and smaller shops.</p>
+                </details>
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="merzouga_page.faq.q4.question">How do I get from Mohammed V Airport to the city centre?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="merzouga_page.faq.q4.answer">The ONCF airport train is the most convenient option (about 35–45 minutes). Official taxis and private transfers are also available; agree the price or use the meter.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
+                <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
+                    Discover. Plan. Experience Morocco.<br/>
+                    The premier tourism directory and cultural travel guide for visitors exploring Morocco.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Destinations</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="text-white font-bold transition" href="merzouga.html" data-i18n="footer.link_merzouga">Merzouga Travel Guide</a></li>
+                    <li><a class="hover:text-white transition" href="destinations.html" data-i18n="footer.link_all_destinations">All Destinations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="riads/index.html" data-i18n="footer.link_stays">Authentic Riads &amp; Hotels</a></li>
+                    <li><a class="hover:text-white transition" href="index.html#restaurants" data-i18n="footer.link_restaurants">Moroccan Restaurants</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
+                <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
+                <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                    @moroccotripmap
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
+            <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
+            <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
+    <script>
+        function openDay(evt, dayId) {
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            var tabBtns = document.getElementsByClassName("tab-btn");
+            for (var i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove("active");
+            }
+            document.getElementById(dayId).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        function filterAccommodations() {
+            var selectedType = document.getElementById("filter-type").value;
+            var selectedLocation = document.getElementById("filter-location").value;
+            var cards = document.getElementsByClassName("acc-card");
+            var visibleCount = 0;
+
+            for (var i = 0; i < cards.length; i++) {
+                var card = cards[i];
+                var cardType = card.getAttribute("data-type");
+                var cardLocation = card.getAttribute("data-location");
+
+                var matchType = (selectedType === "all" || cardType === selectedType);
+                var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
+
+                if (matchType && matchLocation) {
+                    card.style.display = "block";
+                    visibleCount++;
+                } else {
+                    card.style.display = "none";
+                }
+            }
+
+            var counterDiv = document.getElementById("accommodation-counter");
+            var noResults = document.getElementById("no-results");
+            if (visibleCount === 0) {
+                counterDiv.innerText = "0 établissement trouvé";
+                if (noResults) noResults.style.display = "block";
+            } else if (visibleCount === 1) {
+                counterDiv.innerText = "1 établissement trouvé";
+                if (noResults) noResults.style.display = "none";
+            } else {
+                counterDiv.innerText = visibleCount + " établissements trouvés";
+                if (noResults) noResults.style.display = "none";
+            }
+        }
+
+        function toggleMobileCategories() {
+            const dropdown = document.getElementById('mobile-categories-dropdown');
+            const arrow = document.getElementById('categories-arrow');
+            if (dropdown) {
+                dropdown.classList.toggle('hidden');
+                if (arrow) {
+                    arrow.classList.toggle('rotate-180');
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const langButton = document.getElementById('lang-menu-button');
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+
+            if (langButton && langDropdown) {
+                langButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.add('hidden');
+                    }
+                });
+            }
+
+            const savedLang = localStorage.getItem('preferred_lang') || 'fr';
+            switchLanguage(savedLang);
+        });
+
+        const FLAG_SVGS = {
+            en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
+            fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
+            es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
+            ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
+        };
+
+        function switchLanguage(lang) {
+            const langLabel = document.getElementById('current-lang-label');
+            const langButton = document.getElementById('lang-menu-button');
+
+            if (langLabel) {
+                langLabel.textContent = lang.toUpperCase();
+            }
+
+            if (langButton && FLAG_SVGS[lang]) {
+                const svgElement = langButton.querySelector('svg');
+                if (svgElement) {
+                    svgElement.outerHTML = FLAG_SVGS[lang];
+                }
+            }
+
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+            if (langDropdown) {
+                langDropdown.classList.add('hidden');
+            }
+
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(lang);
+            }
+        }
+    </script>
+    
+    <!-- Scripts externes -->
+    <script src="js/i18n.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

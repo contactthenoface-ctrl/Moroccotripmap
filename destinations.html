@@ -232,19 +232,64 @@
 
 <!-- Video intro -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
-  <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
-    <div>
-      <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="destinations_page.video_badge">Watch</span>
-      <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="destinations_page.video_title">Morocco in motion</h2>
-      <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="destinations_page.video_subtitle">A short overview of the landscapes and cities you will find in our destination guides — from the medina to the Sahara.</p>
-    </div>
-  </div>
-  <div class="rounded-3xl overflow-hidden shadow-lg border border-sable/10 bg-sombre" style="aspect-ratio: 16 / 9;">
-    <video class="w-full h-full object-cover" controls preload="metadata" poster="https://images.unsplash.com/photo-1489749798305-4ea4cdc436ca?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-      <source src="images/moroccotripmap-video.mp4" type="video/mp4"/>
-      Your browser does not support HTML5 video.
+  <div class="relative rounded-3xl overflow-hidden shadow-lg border border-sable/10 bg-sombre" style="aspect-ratio: 16 / 9;">
+
+    <video
+        id="moroccoVideo"
+        class="w-full h-full object-cover"
+        controls
+        preload="metadata"
+        poster="images/moroccotripmap-thumbnail.webp">
+
+        <source src="images/moroccotripmap-video.mp4" type="video/mp4"/>
+        Your browser does not support HTML5 video.
     </video>
-  </div>
+
+    <!-- Bouton Play central -->
+    <button
+        id="playButton"
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+               w-20 h-20 md:w-24 md:h-24
+               rounded-full bg-white/95
+               shadow-2xl flex items-center justify-center
+               transition-all duration-300
+               hover:scale-110 hover:bg-white"
+        aria-label="Lire la vidéo">
+
+        <svg
+            class="w-8 h-8 md:w-10 md:h-10 ml-1"
+            viewBox="0 0 24 24"
+            fill="currentColor">
+
+            <path d="M8 5v14l11-7z"/>
+        </svg>
+
+    </button>
+
+</div>
+
+<script>
+    const video = document.getElementById('moroccoVideo');
+    const playButton = document.getElementById('playButton');
+
+    // Cliquer sur le bouton Play
+    playButton.addEventListener('click', () => {
+        video.play();
+        playButton.style.display = 'none';
+    });
+
+    // Cacher le bouton lorsque la vidéo démarre
+    video.addEventListener('play', () => {
+        playButton.style.display = 'none';
+    });
+
+    // Réafficher le bouton si la vidéo est mise en pause
+    video.addEventListener('pause', () => {
+        if (!video.ended) {
+            playButton.style.display = 'flex';
+        }
+    });
+</script>
 </section>
 
 <!-- How to use -->

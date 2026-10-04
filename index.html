@@ -627,10 +627,26 @@ Search
     <div class="relative">
       <h2 class="text-2xl sm:text-3xl font-bold text-creme mb-2" data-i18n="newsletter.title">Get Morocco Travel Tips in Your Inbox</h2>
       <p class="text-sm text-creme/80 mb-6 max-w-xl mx-auto" data-i18n="newsletter.subtitle">New destinations, seasonal itineraries, and hand-picked riads — no spam, unsubscribe anytime.</p>
-      <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false;">
-        <input type="email" required class="w-full px-4 py-3 rounded-xl text-sm text-sombre outline-none" placeholder="Your email address" data-i18n-placeholder="newsletter.placeholder"/>
-        <button type="submit" class="bg-sable text-sombre font-semibold text-sm px-6 py-3 rounded-xl hover:bg-sable/90 transition shrink-0" data-i18n="newsletter.button">Subscribe</button>
+      
+      <!-- Formulaire redirigeant vers newsletter.php -->
+      <form action="newsletter.php" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input 
+          type="email" 
+          name="email" 
+          required 
+          class="w-full px-4 py-3 rounded-xl text-sm text-sombre outline-none" 
+          placeholder="Your email address" 
+          data-i18n-placeholder="newsletter.placeholder"
+        />
+        <button 
+          type="submit" 
+          class="bg-sable text-sombre font-semibold text-sm px-6 py-3 rounded-xl hover:bg-sable/90 transition shrink-0" 
+          data-i18n="newsletter.button"
+        >
+          Subscribe
+        </button>
       </form>
+
     </div>
   </div>
 </section>

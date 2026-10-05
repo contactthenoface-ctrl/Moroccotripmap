@@ -628,24 +628,30 @@ Search
       <h2 class="text-2xl sm:text-3xl font-bold text-creme mb-2" data-i18n="newsletter.title">Get Morocco Travel Tips in Your Inbox</h2>
       <p class="text-sm text-creme/80 mb-6 max-w-xl mx-auto" data-i18n="newsletter.subtitle">New destinations, seasonal itineraries, and hand-picked riads — no spam, unsubscribe anytime.</p>
       
-      <!-- Formulaire redirigeant vers newsletter.php -->
-      <form action="newsletter.php" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <!-- Formulaire configuré pour Formspree avec votre endpoint -->
+      <form id="newsletter-form" action="https://formspree.io/f/xeaejbee" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <input 
           type="email" 
           name="email" 
+          id="newsletter-email"
           required 
           class="w-full px-4 py-3 rounded-xl text-sm text-sombre outline-none" 
           placeholder="Your email address" 
           data-i18n-placeholder="newsletter.placeholder"
         />
+        <input type="hidden" name="_subject" value="Nouvelle inscription Newsletter - MoroccoTripMap" />
         <button 
           type="submit" 
-          class="bg-sable text-sombre font-semibold text-sm px-6 py-3 rounded-xl hover:bg-sable/90 transition shrink-0" 
+          id="newsletter-btn"
+          class="bg-sable text-sombre font-semibold text-sm px-6 py-3 rounded-xl hover:bg-sable/90 transition shrink-0 flex items-center justify-center gap-2" 
           data-i18n="newsletter.button"
         >
           Subscribe
         </button>
       </form>
+
+      <!-- Zone d'affichage du message de confirmation -->
+      <div id="newsletter-message" class="hidden mt-4 p-4 rounded-xl text-sm font-semibold max-w-md mx-auto transition-all"></div>
 
     </div>
   </div>
@@ -780,5 +786,53 @@ Search
 <!-- Scripts externes (i18n.js et search.js dans /js/) -->
 <script src="js/i18n.js"></script>
 <script src="js/search.js"></script>
+<!-- Scripts Newsletter-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('newsletter-form');
+    const messageBox = document.getElementById('newsletter-message');
+    const submitBtn = document.getElementById('newsletter-btn');
+
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            submitBtn.disabled = true;
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Envoi en cours...';
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    messageBox.className = 'mt-4 p-4 rounded-xl text-sm font-semibold max-w-md mx-auto bg-emerald-100 text-emerald-800 border border-emerald-300';
+                    messageBox.innerHTML = 'Merci pour votre inscription ! Vous recevrez bientôt nos conseils de voyage sur le Maroc.';
+                    messageBox.classList.remove('hidden');
+                    
+                    form.reset();
+                } else {
+                    throw new Error('Erreur lors de l\'envoi');
+                }
+            })
+            .catch(error => {
+                messageBox.className = 'mt-4 p-4 rounded-xl text-sm font-semibold max-w-md mx-auto bg-red-100 text-red-800 border border-red-300';
+                messageBox.innerHTML = 'Une erreur est survenue. Veuillez réessayer ultérieurement.';
+                messageBox.classList.remove('hidden');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            });
+        });
+    }
+});
+</script>
 </body>
     </html>

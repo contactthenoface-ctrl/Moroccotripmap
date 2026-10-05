@@ -499,106 +499,35 @@ Search
 </section>
 
 <!-- SECTION CARTE INTERACTIVE : MARRAKECH & MAROC -->
-<!-- Container Carte SVG Maroc Unifié -->
-<div class="w-full h-[450px] rounded-2xl overflow-hidden border border-sable/20 relative shadow-inner bg-creme/30 p-4 flex items-center justify-center">
-  <svg class="w-full h-full max-h-[420px]" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      .region {
-        fill: #1b4332; /* Vert de votre charte graphique */
-        stroke: #ffffff;
-        stroke-width: 1.5;
-        transition: all 0.2s ease;
-        cursor: pointer;
-      }
-      .region:hover {
-        fill: #2d6a4f; /* Survol plus clair */
-        opacity: 0.9;
-      }
-      .pin {
-        fill: #c9a227; /* Couleur Sable/Or pour le marqueur */
-        animation: bounce 2s infinite;
-      }
-    </style>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="map">
+  <div class="bg-white p-6 sm:p-8 rounded-3xl border border-sable/15 shadow-lg">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 gap-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="map.badge">Interactive Travel Map</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="map.title">Explore Marrakech & Morocco</h2>
+        <p class="text-sm text-sombre/70 mt-1" data-i18n="map.subtitle">Discover top attractions, traditional riads, and authentic spots directly on the map.</p>
+      </div>
+      <a href="marrakech.html" class="inline-flex items-center gap-2 bg-vert text-white px-5 py-2.5 rounded-xl text-xs font-semibold hover:bg-vert/90 transition shadow-sm">
+        <span data-i18n="map.explore_marrakech">Explore Marrakech Directory</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
 
-    <!-- Tracé SVG Unifié du Maroc (Exemple structuré des 12 régions officielles) -->
-    <g id="morocco-map-regions">
-      <!-- Tanger-Tétouan-Al Hoceïma -->
-      <path class="region" data-name="Tanger-Tétouan-Al Hoceïma" d="M680,80 L740,60 L780,100 L710,120 Z">
-        <title>Tanger-Tétouan-Al Hoceïma</title>
-      </path>
+    <!-- Container Carte Google Maps (Maroc Unifié) -->
+    <div class="w-full h-[450px] rounded-2xl overflow-hidden border border-sable/20 relative shadow-inner">
+      <iframe 
+        title="Carte Interactive du Maroc" 
+        class="w-full h-full border-0" 
+        loading="lazy" 
+        allowfullscreen 
+        referrerpolicy="no-referrer-when-downgrade" 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7000000.000000000!2d-9.5000000!3d28.8000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma">
+      </iframe>
+    </div>
+  </div>
+</section>
 
-      <!-- Oriental -->
-      <path class="region" data-name="L'Oriental" d="M780,100 L880,130 L850,280 L750,220 Z">
-        <title>L'Oriental</title>
-      </path>
-
-      <!-- Fès-Meknès -->
-      <path class="region" data-name="Fès-Meknès" d="M680,120 L750,130 L730,220 L660,190 Z">
-        <title>Fès-Meknès</title>
-      </path>
-
-      <!-- Rabat-Salé-Kénitra -->
-      <path class="region" data-name="Rabat-Salé-Kénitra" d="M610,130 L680,120 L660,190 L590,170 Z">
-        <title>Rabat-Salé-Kénitra</title>
-      </path>
-
-      <!-- Béni Mellal-Khénifra -->
-      <path class="region" data-name="Béni Mellal-Khénifra" d="M590,190 L710,220 L680,290 L570,250 Z">
-        <title>Béni Mellal-Khénifra</title>
-      </path>
-
-      <!-- Casablanca-Settat -->
-      <path class="region" data-name="Casablanca-Settat" d="M540,170 L600,180 L570,240 L500,210 Z">
-        <title>Casablanca-Settat</title>
-      </path>
-
-      <!-- Marrakech-Safi -->
-      <path class="region" data-name="Marrakech-Safi" d="M460,220 L570,250 L530,340 L410,290 Z">
-        <title>Marrakech-Safi</title>
-      </path>
-
-      <!-- Drâa-Tafilalet -->
-      <path class="region" data-name="Drâa-Tafilalet" d="M570,250 L750,280 L680,450 L500,370 Z">
-        <title>Drâa-Tafilalet</title>
-      </path>
-
-      <!-- Souss-Massa -->
-      <path class="region" data-name="Souss-Massa" d="M380,310 L520,350 L460,460 L330,400 Z">
-        <title>Souss-Massa</title>
-      </path>
-
-      <!-- Guelmim-Oued Noun -->
-      <path class="region" data-name="Guelmim-Oued Noun" d="M310,410 L460,460 L380,570 L230,510 Z">
-        <title>Guelmim-Oued Noun</title>
-      </path>
-
-      <!-- Laâyoune-Sakia El Hamra -->
-      <path class="region" data-name="Laâyoune-Sakia El Hamra" d="M220,520 L380,580 L290,720 L130,650 Z">
-        <title>Laâyoune-Sakia El Hamra</title>
-      </path>
-
-      <!-- Dakhla-Oued Ed-Dahab -->
-      <path class="region" data-name="Dakhla-Oued Ed-Dahab" d="M120,660 L290,730 L180,940 L40,860 Z">
-        <title>Dakhla-Oued Ed-Dahab</title>
-      </path>
-    </g>
-
-    <!-- Marqueur Marrakech -->
-    <g id="pin-marrakech" transform="translate(490, 270)">
-      <circle cx="0" cy="0" r="8" class="pin" />
-      <text x="12" y="4" font-size="14" font-weight="bold" fill="#1b4332">Marrakech</text>
-    </g>
-
-    <!-- Marqueur Dakhla -->
-    <g id="pin-dakhla" transform="translate(90, 800)">
-      <circle cx="0" cy="0" r="8" class="pin" />
-      <text x="12" y="4" font-size="14" font-weight="bold" fill="#1b4332">Dakhla</text>
-    </g>
-  </svg>
-</div>
-
-
-<!-- Intro / Trust Text (Remplace la section Témoignages) -->
+<!-- Intro / Trust Text -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
   <div class="bg-vert rounded-3xl px-6 sm:px-12 py-10 sm:py-12 text-creme shadow-lg">
     <span class="inline-block text-xs font-bold uppercase tracking-widest text-sable mb-3" data-i18n="intro.badge">Built from experience, not guesswork</span>
@@ -914,14 +843,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-<script>
-  document.querySelectorAll('.region').forEach(region => {
-    region.addEventListener('click', function() {
-      const regionName = this.getAttribute('data-name');
-      alert('Région sélectionnée : ' + regionName);
-    });
-  });
-</script>
-
 </body>
-    </html>
+            </html>

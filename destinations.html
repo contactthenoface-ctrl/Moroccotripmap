@@ -603,25 +603,43 @@
 </main>
 
 
-<!-- Full Morocco map (incl. southern provinces) -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 border-t border-sable/10">
-  <div class="mb-6">
-    <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="destinations_page.map_badge">Orientation</span>
-    <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="destinations_page.map_title">Map of Morocco</h2>
-    <p class="text-sm text-sombre/70 mt-2 max-w-2xl" data-i18n="destinations_page.map_subtitle">A single continuous map of the Kingdom — from the Mediterranean and the Rif to the Atlantic, the Sahara and the southern provinces — so you can place every destination in context.</p>
+<!-- SECTION CARTE INTERACTIVE : MARRAKECH & MAROC -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="map">
+  <div class="bg-white p-6 sm:p-8 rounded-3xl border border-sable/15 shadow-lg">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 gap-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="map.badge">Interactive Travel Map</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="map.title">Explore Marrakech & Morocco</h2>
+        <p class="text-sm text-sombre/70 mt-1" data-i18n="map.subtitle">Discover top attractions, traditional riads, and authentic spots directly on the map.</p>
+      </div>
+      <a href="marrakech.html" class="inline-flex items-center gap-2 bg-vert text-white px-5 py-2.5 rounded-xl text-xs font-semibold hover:bg-vert/90 transition shadow-sm">
+        <span data-i18n="map.explore_marrakech">Explore Marrakech Directory</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+
+    <!-- Container Carte Google Maps (Maroc Unifié) -->
+    <div class="w-full h-[450px] rounded-2xl overflow-hidden border border-sable/20 relative shadow-inner">
+      <iframe 
+        title="Carte Interactive du Maroc" 
+        class="w-full h-full border-0" 
+        loading="lazy" 
+        allowfullscreen 
+        referrerpolicy="no-referrer-when-downgrade" 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7000000.000000000!2d-9.5000000!3d28.8000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma">
+      </iframe>
+    </div>
   </div>
-  <div class="rounded-3xl overflow-hidden border border-sable/15 shadow-md bg-white" style="height: min(70vh, 560px);">
-    <iframe
-      title="Map of Morocco"
-      class="w-full h-full border-0"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-17.2%2C20.7%2C-0.8%2C36.1&amp;layer=mapnik&amp;marker=31.7917%2C-7.0926">
-    </iframe>
-  </div>
-  <p class="text-[11px] text-sombre/50 mt-2" data-i18n="destinations_page.map_credit">Map data © OpenStreetMap contributors — pan and zoom to explore.</p>
-  <p class="text-xs text-sombre/60 mt-3 max-w-3xl" data-i18n="destinations_page.map_note">Tip: pair the map with the filters above. Desert stops (Merzouga, Zagora, Tinghir) sit east of the High Atlas; Atlantic towns line the west coast down to Dakhla and Laayoune.</p>
 </section>
+
+<!-- Intro / Trust Text -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="bg-vert rounded-3xl px-6 sm:px-12 py-10 sm:py-12 text-creme shadow-lg">
+    <span class="inline-block text-xs font-bold uppercase tracking-widest text-sable mb-3" data-i18n="intro.badge">Built from experience, not guesswork</span>
+    <p class="text-lg sm:text-2xl font-medium leading-relaxed max-w-3xl" data-i18n="intro.text">MoroccoTripMap started because too many "best of Morocco" lists were clearly written by people who never left their desk. Everything here — from riads to desert camps — comes from actual time spent in more than 20 Moroccan cities, checked and rechecked so the details still hold up when you get there. It's all here in English, French, Spanish and Arabic, because a good recommendation shouldn't depend on which language you happen to speak.</p>
+  </div>
+</section>
+
 
 <!-- Blog / travel ideas -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -8,7 +8,7 @@ Usage :
 SOURCE_DIR contient ar.json, en.json, es.json, fr.json (les fichiers que tu édites ; ils servent aussi de secours
 si les dossiers découpés sont absents).
 OUT_DIR reçoit (en général js/translations/ lui-même) :
-    {lang}/_core.json      -> sections communes à toutes les pages
+    {lang}/core.json      -> sections communes à toutes les pages
     {lang}/{section}.json  -> une section par fichier (ex. tanger_page.json)
 """
 import json, sys, shutil
@@ -34,7 +34,7 @@ def main(src, out):
         d = out / lang
         if d.exists():
             shutil.rmtree(d)
-        dump(d / "_core.json", {k: data[k] for k in CORE if k in data})
+        dump(d / "core.json", {k: data[k] for k in CORE if k in data})
         for k, v in data.items():
             if k not in CORE:
                 dump(d / f"{k}.json", v)

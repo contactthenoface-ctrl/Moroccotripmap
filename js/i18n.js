@@ -1153,100 +1153,115 @@
 
 
     /* =====================================================
-       GESTION DU MENU DE LANGUE
-       ===================================================== */
+   GESTION DU MENU DE LANGUE
+   ===================================================== */
 
-    document.addEventListener(
-        'click',
-        event => {
+document.addEventListener('click', function (event) {
 
-            /*
-             * Bouton principal
-             */
-            const button =
-                event.target.closest(
-                    '#lang-menu-button'
+    const langButton = event.target.closest('#lang-menu-button');
+
+    /*
+     * OUVERTURE / FERMETURE DU MENU
+     */
+    if (langButton) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        const dropdown =
+            document.getElementById('lang-menu-dropdown');
+
+        if (!dropdown) {
+            return;
+        }
+
+        const isCurrentlyHidden =
+            dropdown.classList.contains('hidden');
+
+        dropdown.classList.toggle('hidden');
+
+        langButton.setAttribute(
+            'aria-expanded',
+            isCurrentlyHidden ? 'true' : 'false'
+        );
+
+        return;
+    }
+
+
+    /*
+     * CLIC SUR UNE LANGUE
+     *
+     * Compatible avec :
+     *
+     * onclick="switchLanguage('en')"
+     * onclick="switchLanguage('fr')"
+     * onclick="switchLanguage('es')"
+     * onclick="switchLanguage('ar')"
+     */
+    const languageButton =
+        event.target.closest(
+            '#lang-menu-dropdown button'
+        );
+
+    if (languageButton) {
+
+        const onclickValue =
+            languageButton.getAttribute('onclick');
+
+        if (onclickValue) {
+
+            const match =
+                onclickValue.match(
+                    /switchLanguage\s*\(\s*['"]([^'"]+)['"]\s*\)/
                 );
 
+            if (match && match[1]) {
 
-            if (button) {
+                event.preventDefault();
+                event.stopPropagation();
 
-                const dropdown =
-                    document.getElementById(
-                        'lang-menu-dropdown'
-                    );
-
-
-                if (dropdown) {
-
-                    const isHidden =
-                        dropdown.classList.contains(
-                            'hidden'
-                        );
-
-
-                    dropdown.classList.toggle(
-                        'hidden'
-                    );
-
-
-                    button.setAttribute(
-                        'aria-expanded',
-                        String(isHidden)
-                    );
-                }
-
+                window.switchLanguage(match[1]);
 
                 return;
             }
-
-
-            /*
-             * Clic en dehors :
-             * fermer le menu.
-             */
-            const container =
-                document.getElementById(
-                    'lang-menu-container'
-                );
-
-
-            if (
-                container &&
-                !container.contains(
-                    event.target
-                )
-            ) {
-
-                const dropdown =
-                    document.getElementById(
-                        'lang-menu-dropdown'
-                    );
-
-
-                const langButton =
-                    document.getElementById(
-                        'lang-menu-button'
-                    );
-
-
-                if (dropdown) {
-
-                    dropdown.classList.add(
-                        'hidden'
-                    );
-                }
-
-
-                if (langButton) {
-
-                    langButton.setAttribute(
-                        'aria-expanded',
-                        'false'
-                    );
-                }
-            }
         }
-    );
+    }
 
-})();
+
+    /*
+     * CLIC À L'EXTÉRIEUR DU MENU
+     */
+    const container =
+        document.getElementById(
+            'lang-menu-container'
+        );
+
+    if (
+        container &&
+        !container.contains(event.target)
+    ) {
+
+        const dropdown =
+            document.getElementById(
+                'lang-menu-dropdown'
+            );
+
+        const button =
+            document.getElementById(
+                'lang-menu-button'
+            );
+
+        if (dropdown) {
+            dropdown.classList.add('hidden');
+        }
+
+        if (button) {
+            button.setAttribute(
+                'aria-expanded',
+                'false'
+            );
+        }
+    }
+
+});

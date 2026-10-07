@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (FIX CHEMINS & TRADUCTIONS)
+   MOROCCO TRIP MAP — I18N ENGINE (SOLUTION ZÉRO BLOCAGE)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -12,11 +12,21 @@ let currentLang = null;
 let currentTranslations = {};
 
 /* =========================================================
-   1. CALCUL INTELLIGENT DU CHEMIN DES TRADUCTIONS
+   1. DRAPEAUX SVG NETS
+   ========================================================= */
+
+const I18N_FLAG_SVGS = {
+    fr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>`,
+    en: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>`,
+    es: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>`,
+    ar: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>`
+};
+
+/* =========================================================
+   2. CALCUL DU CHEMIN ABSOLU DES FICHIERS JSON
    ========================================================= */
 
 const I18N_BASE_URL = (() => {
-    // Retrouve le chemin absolu/relatif exact du script i18n.js
     const scripts = document.getElementsByTagName('script');
     for (let i = 0; i < scripts.length; i++) {
         const src = scripts[i].src;
@@ -27,17 +37,6 @@ const I18N_BASE_URL = (() => {
     return '/js/';
 })();
 
-/* =========================================================
-   2. DRAPEAUX SVG NETS
-   ========================================================= */
-
-const I18N_FLAG_SVGS = {
-    fr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>`,
-    en: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>`,
-    es: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>`,
-    ar: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>`
-};
-
 function getNestedTranslation(object, path) {
     if (!object || !path) return null;
     return path.split('.').reduce((accumulator, key) => accumulator?.[key], object) ?? null;
@@ -46,13 +45,9 @@ function getNestedTranslation(object, path) {
 async function fetchJson(url) {
     try {
         const response = await fetch(url, { cache: 'default' });
-        if (!response.ok) {
-            console.warn(`[i18n] Fichier introuvable (${response.status}): ${url}`);
-            return null;
-        }
+        if (!response.ok) return null;
         return await response.json();
     } catch (e) {
-        console.warn(`[i18n] Erreur réseau/JSON sur ${url}:`, e);
         return null;
     }
 }
@@ -115,27 +110,27 @@ function updateLanguageDOM(langData) {
     });
 }
 
+/* =========================================================
+   3. MISE À JOUR NETTE DU BOUTON PRINCIPAL (#lang-menu-button)
+   ========================================================= */
+
 function syncLanguageSwitcherUI(lang) {
     const activeLang = lang || currentLang || DEFAULT_LANG;
+    const langBtn = document.getElementById('lang-menu-button');
 
-    // 1. Texte du bouton (EN, FR, ES, AR)
-    const langLabel = document.getElementById('current-lang-label');
-    if (langLabel) {
-        langLabel.textContent = activeLang.toUpperCase();
-    }
-
-    // 2. SVG du bouton principal (#lang-menu-button)
-    const langButton = document.getElementById('lang-menu-button');
-    if (langButton) {
-        const oldSvg = langButton.querySelector('svg');
-        if (oldSvg && I18N_FLAG_SVGS[activeLang]) {
-            oldSvg.outerHTML = I18N_FLAG_SVGS[activeLang];
-        }
+    if (langBtn) {
+        const flagSvg = I18N_FLAG_SVGS[activeLang] || I18N_FLAG_SVGS[DEFAULT_LANG];
+        
+        // Reconstruction propre du bouton sans risque de remplacer la mauvaise icône
+        langBtn.innerHTML = `
+            ${flagSvg}
+            <span id="current-lang-label">${activeLang.toUpperCase()}</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        `;
     }
 }
 
 async function ensureLangData(lang, sections) {
-    // Exemple de structure : js/translations/fr/core.json
     const base = `${I18N_BASE_URL}translations/${lang}/`;
     const dict = allTranslations[lang] || (allTranslations[lang] = {});
     const tasks = pendingTasks[lang] || (pendingTasks[lang] = {});
@@ -148,13 +143,11 @@ async function ensureLangData(lang, sections) {
         return tasks[cacheKey];
     };
 
-    // Chargement de core.json
     let coreData = await loadFile('core', 'core.json');
     if (coreData && typeof coreData === 'object') {
         Object.assign(dict, coreData);
     }
 
-    // Chargement des autres sections nécessaires (ex: places.json, nav.json)
     const missingSections = Array.from(sections || []).filter(name => !(name in dict));
     if (missingSections.length) {
         const loadedData = await Promise.all(
@@ -170,17 +163,20 @@ async function ensureLangData(lang, sections) {
     return dict;
 }
 
-// Fonction accessible globalement
+/* =========================================================
+   4. FONCTION GLOBALE APPELÉE PAR ONCLICK
+   ========================================================= */
+
 window.switchLanguage = window.changeLanguage = async function(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) return;
 
     currentLang = lang;
     localStorage.setItem('preferred_lang', lang);
 
-    // Mettre à jour l'icône du bouton tout de suite
+    // 1. Mettre à jour l'affichage du bouton
     syncLanguageSwitcherUI(lang);
 
-    // Masquer le menu déroulant
+    // 2. Masquer le menu déroulant
     const dropdown = document.getElementById('lang-menu-dropdown');
     if (dropdown) {
         dropdown.classList.add('hidden');
@@ -193,7 +189,6 @@ window.switchLanguage = window.changeLanguage = async function(lang) {
         const sections = collectI18nSections();
         const dict = await ensureLangData(lang, sections);
 
-        // Appliquer les traductions sur le DOM
         updateLanguageDOM(dict);
 
         window.dispatchEvent(
@@ -224,28 +219,33 @@ window.i18n = {
     }
 };
 
+/* =========================================================
+   5. INITIALISATION DES ÉVÉNEMENTS
+   ========================================================= */
+
 function initI18n() {
     const savedLang = localStorage.getItem('preferred_lang');
     const initialLang = SUPPORTED_LANGS.includes(savedLang) ? savedLang : DEFAULT_LANG;
 
+    // Charger la langue enregistrée au démarrage
     window.switchLanguage(initialLang);
 
-    // Événement sur le bouton principal
-    const langBtn = document.getElementById('lang-menu-button');
-    const langDropdown = document.getElementById('lang-menu-dropdown');
+    // Attacher la gestion de l'ouverture/fermeture du menu
+    document.addEventListener('click', (e) => {
+        const langBtn = e.target.closest('#lang-menu-button');
+        const dropdown = document.getElementById('lang-menu-dropdown');
 
-    if (langBtn && langDropdown) {
-        langBtn.onclick = function(e) {
+        if (langBtn && dropdown) {
             e.stopPropagation();
-            langDropdown.classList.toggle('hidden');
-        };
+            dropdown.classList.toggle('hidden');
+            return;
+        }
 
-        document.onclick = function(e) {
-            if (!langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
-                langDropdown.classList.add('hidden');
-            }
-        };
-    }
+        // Si on clique en dehors du dropdown, le fermer
+        if (dropdown && !dropdown.contains(e.target)) {
+            dropdown.classList.add('hidden');
+        }
+    });
 }
 
 if (document.readyState === 'loading') {

@@ -804,6 +804,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (matchingTab) {
             applyRegionFilter(urlRegion);
+
+            // Scroll direct vers la section filtres + grille (saute l'intro / vidéo)
+            const target = document.getElementById('region-filters')
+                || document.getElementById('destinations-grid');
+
+            if (target) {
+                // Petit délai pour laisser le filtre s'appliquer et le layout se stabiliser
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 80);
+            }
         }
     }
 });

@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (SOLUTION ZERO TOUCH HTML)
+   MOROCCO TRIP MAP — I18N ENGINE (FIX MULTI-PAGES ROBUSTE)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -95,11 +95,11 @@ function updateLanguageDOM(langData) {
 }
 
 /* =========================================================
-   SYNCHRONISATION ET NETTOYAGE FORCÉ DU BOUTON ET DU DROPDOWN
+   SYNCHRONISATION ROBUSTE DE TOUS LES ÉLÉMENTS DE LANGUE
    ========================================================= */
 
 function syncLanguageSwitcherUI(lang) {
-    // 1. Label texte (EN, FR, AR, ES)
+    // 1. Label texte du bouton principal (EN, FR, AR, ES)
     const langLabel = document.getElementById('current-lang-label');
     if (langLabel) {
         langLabel.textContent = lang.toUpperCase();
@@ -108,22 +108,32 @@ function syncLanguageSwitcherUI(lang) {
     // 2. Drapeau dans le bouton principal (#current-flag)
     const currentFlagContainer = document.getElementById('current-flag');
     if (currentFlagContainer && I18N_FLAG_SVGS[lang]) {
-        // Remplacement complet du SVG dur
         currentFlagContainer.innerHTML = I18N_FLAG_SVGS[lang];
     }
 
-    // 3. Drapeaux dans les options du menu déroulant ([data-lang])
+    // 3. Drapeaux des options du menu déroulant (Toutes les pages)
     document.querySelectorAll('[data-lang]').forEach(option => {
         const optionLang = option.getAttribute('data-lang');
-        if (I18N_FLAG_SVGS[optionLang]) {
-            // Suppression des anciens SVG/éléments d'icône d'origine
-            option.querySelectorAll('svg, .lang-flag').forEach(oldEl => oldEl.remove());
-            
-            const flagSpan = document.createElement('span');
-            flagSpan.className = 'lang-flag inline-flex items-center me-2';
-            flagSpan.innerHTML = I18N_FLAG_SVGS[optionLang];
-            
-            option.insertBefore(flagSpan, option.firstChild);
+        if (!I18N_FLAG_SVGS[optionLang]) return;
+
+        // Chercher si un conteneur dédié existe déjà ou supprimer tout SVG résiduel interne
+        let flagWrapper = option.querySelector('.flag-icon, .lang-flag, span:first-child');
+        
+        // Si le span contient du texte (comme "English"), ne pas réutiliser le span de texte
+        if (flagWrapper && flagWrapper.textContent.trim().length > 0 && !flagWrapper.querySelector('svg')) {
+            flagWrapper = null;
+        }
+
+        if (flagWrapper) {
+            // Nettoyage complet du conteneur et injection du bon SVG
+            flagWrapper.innerHTML = I18N_FLAG_SVGS[optionLang];
+        } else {
+            // Création d'un nouveau wrapper propre
+            option.querySelectorAll('svg').forEach(s => s.remove());
+            const newFlagSpan = document.createElement('span');
+            newFlagSpan.className = 'lang-flag inline-flex items-center me-2';
+            newFlagSpan.innerHTML = I18N_FLAG_SVGS[optionLang];
+            option.insertBefore(newFlagSpan, option.firstChild);
         }
     });
 
@@ -173,7 +183,7 @@ async function ensureLangData(lang, sections) {
 async function loadLanguage(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) return;
 
-    // Mise à jour visuelle instantanée (0 ms)
+    // Mise à jour visuelle immédiate (0 ms)
     syncLanguageSwitcherUI(lang);
 
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -199,7 +209,7 @@ async function loadLanguage(lang) {
 }
 
 /* =========================================================
-   INITIALISATION AUTOMATIQUE AU CHARGEMENT
+   INITIALISATION AUTOMATIQUE
    ========================================================= */
 
 window.i18n = {

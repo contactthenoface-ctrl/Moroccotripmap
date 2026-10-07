@@ -1152,21 +1152,22 @@
     }
 
 
-    /* =====================================================
+/* =====================================================
    GESTION DU MENU DE LANGUE
    ===================================================== */
 
 document.addEventListener('click', function (event) {
 
-    const langButton = event.target.closest('#lang-menu-button');
+    /* -----------------------------------------------
+       OUVRIR / FERMER LE MENU
+       ----------------------------------------------- */
 
-    /*
-     * OUVERTURE / FERMETURE DU MENU
-     */
+    const langButton =
+        event.target.closest('#lang-menu-button');
+
     if (langButton) {
 
         event.preventDefault();
-        event.stopPropagation();
 
         const dropdown =
             document.getElementById('lang-menu-dropdown');
@@ -1175,67 +1176,26 @@ document.addEventListener('click', function (event) {
             return;
         }
 
-        const isCurrentlyHidden =
-            dropdown.classList.contains('hidden');
+        const isOpen =
+            !dropdown.classList.contains('hidden');
 
         dropdown.classList.toggle('hidden');
 
         langButton.setAttribute(
             'aria-expanded',
-            isCurrentlyHidden ? 'true' : 'false'
+            isOpen ? 'false' : 'true'
         );
 
         return;
     }
 
 
-    /*
-     * CLIC SUR UNE LANGUE
-     *
-     * Compatible avec :
-     *
-     * onclick="switchLanguage('en')"
-     * onclick="switchLanguage('fr')"
-     * onclick="switchLanguage('es')"
-     * onclick="switchLanguage('ar')"
-     */
-    const languageButton =
-        event.target.closest(
-            '#lang-menu-dropdown button'
-        );
+    /* -----------------------------------------------
+       CLIC EN DEHORS DU MENU
+       ----------------------------------------------- */
 
-    if (languageButton) {
-
-        const onclickValue =
-            languageButton.getAttribute('onclick');
-
-        if (onclickValue) {
-
-            const match =
-                onclickValue.match(
-                    /switchLanguage\s*\(\s*['"]([^'"]+)['"]\s*\)/
-                );
-
-            if (match && match[1]) {
-
-                event.preventDefault();
-                event.stopPropagation();
-
-                window.switchLanguage(match[1]);
-
-                return;
-            }
-        }
-    }
-
-
-    /*
-     * CLIC À L'EXTÉRIEUR DU MENU
-     */
     const container =
-        document.getElementById(
-            'lang-menu-container'
-        );
+        document.getElementById('lang-menu-container');
 
     if (
         container &&
@@ -1243,14 +1203,10 @@ document.addEventListener('click', function (event) {
     ) {
 
         const dropdown =
-            document.getElementById(
-                'lang-menu-dropdown'
-            );
+            document.getElementById('lang-menu-dropdown');
 
         const button =
-            document.getElementById(
-                'lang-menu-button'
-            );
+            document.getElementById('lang-menu-button');
 
         if (dropdown) {
             dropdown.classList.add('hidden');

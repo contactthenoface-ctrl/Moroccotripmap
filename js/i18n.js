@@ -1,34 +1,6 @@
 /* =========================================================
    MOROCCO TRIP MAP — I18N ENGINE
-   =========================================================
-
-   Structure attendue :
-
-   js/
-   ├── i18n.js
-   └── translations/
-       ├── fr/
-       │   ├── core.json
-       │   ├── hero.json
-       │   ├── ...
-       │
-       ├── en/
-       │   ├── core.json
-       │   ├── hero.json
-       │   ├── ...
-       │
-       ├── es/
-       │   ├── core.json
-       │   ├── hero.json
-       │   ├── ...
-       │
-       └── ar/
-           ├── core.json
-           ├── hero.json
-           ├── ...
-
    ========================================================= */
-
 
 /* =========================================================
    CONFIGURATION
@@ -50,7 +22,7 @@ let currentTranslations = {};
 
 
 /* =========================================================
-   DRAPEAUX SVG (CORRIGÉS ET VECTEURS OFFICIELS)
+   DRAPEAUX SVG (OFFICIELS)
    ========================================================= */
 
 const I18N_FLAG_SVGS = {
@@ -127,23 +99,16 @@ const I18N_BASE_URL = (() => {
    UTILITAIRE : RÉCUPÉRER UNE TRADUCTION IMBRIQUÉE
    ========================================================= */
 
-function getNestedTranslation(
-    object,
-    path
-) {
+function getNestedTranslation(object, path) {
 
-    if (
-        !object ||
-        !path
-    ) {
+    if (!object || !path) {
         return null;
     }
 
     return path
         .split('.')
         .reduce(
-            (accumulator, key) =>
-                accumulator?.[key],
+            (accumulator, key) => accumulator?.[key],
             object
         ) ?? null;
 }
@@ -155,23 +120,15 @@ function getNestedTranslation(
 
 function fetchJson(url) {
 
-    return fetch(
-        url,
-        {
-            cache: 'default'
-        }
-    )
-    .then(response => {
+    return fetch(url, { cache: 'default' })
+        .then(response => {
 
-        if (!response.ok) {
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status} for ${url}`);
+            }
 
-            throw new Error(
-                `HTTP ${response.status} for ${url}`
-            );
-        }
-
-        return response.json();
-    });
+            return response.json();
+        });
 }
 
 
@@ -185,63 +142,36 @@ function collectI18nSections() {
 
     function addKey(key) {
 
-        if (!key) {
-            return;
-        }
+        if (!key) return;
 
-        const section =
-            key
-                .trim()
-                .split('.')[0];
+        const section = key.trim().split('.')[0];
 
         if (section) {
             sections.add(section);
         }
     }
 
-    /* -----------------------------------------------------
-       data-i18n
-       ----------------------------------------------------- */
+    /* data-i18n */
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        addKey(element.getAttribute('data-i18n'));
+    });
 
-    document
-        .querySelectorAll('[data-i18n]')
-        .forEach(element => {
-            addKey(
-                element.getAttribute('data-i18n')
-            );
+    /* data-i18n-placeholder */
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        addKey(element.getAttribute('data-i18n-placeholder'));
+    });
+
+    /* data-i18n-attr */
+    document.querySelectorAll('[data-i18n-attr]').forEach(element => {
+
+        const rules = element.getAttribute('data-i18n-attr') || '';
+
+        rules.split(',').forEach(rule => {
+            const parts = rule.split(':');
+            const key = parts.slice(1).join(':').trim();
+            addKey(key);
         });
-
-    /* -----------------------------------------------------
-       data-i18n-placeholder
-       ----------------------------------------------------- */
-
-    document
-        .querySelectorAll('[data-i18n-placeholder]')
-        .forEach(element => {
-            addKey(
-                element.getAttribute('data-i18n-placeholder')
-            );
-        });
-
-    /* -----------------------------------------------------
-       data-i18n-attr
-       ----------------------------------------------------- */
-
-    document
-        .querySelectorAll('[data-i18n-attr]')
-        .forEach(element => {
-
-            const rules =
-                element.getAttribute('data-i18n-attr') || '';
-
-            rules
-                .split(',')
-                .forEach(rule => {
-                    const parts = rule.split(':');
-                    const key = parts.slice(1).join(':').trim();
-                    addKey(key);
-                });
-        });
+    });
 
     return sections;
 }
@@ -256,60 +186,52 @@ function updateLanguageDOM(langData) {
     currentTranslations = langData || {};
 
     /* 1. TEXTES */
-    document
-        .querySelectorAll('[data-i18n]')
-        .forEach(element => {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
 
-            const key = element.getAttribute('data-i18n');
-            const value = getNestedTranslation(langData, key);
+        const key = element.getAttribute('data-i18n');
+        const value = getNestedTranslation(langData, key);
 
-            if (value !== null && value !== undefined) {
-                element.textContent = value;
-            }
-        });
+        if (value !== null && value !== undefined) {
+            element.textContent = value;
+        }
+    });
 
     /* 2. PLACEHOLDERS */
-    document
-        .querySelectorAll('[data-i18n-placeholder]')
-        .forEach(element => {
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
 
-            const key = element.getAttribute('data-i18n-placeholder');
+        const key = element.getAttribute('data-i18n-placeholder');
+        const value = getNestedTranslation(langData, key);
+
+        if (value !== null && value !== undefined) {
+            element.placeholder = value;
+        }
+    });
+
+    /* 3. ATTRIBUTS */
+    document.querySelectorAll('[data-i18n-attr]').forEach(element => {
+
+        const rules = element.getAttribute('data-i18n-attr') || '';
+
+        rules.split(',').forEach(rule => {
+
+            const parts = rule.split(':');
+            const attrName = parts[0]?.trim();
+            const key = parts.slice(1).join(':').trim();
+
+            if (!attrName || !key) return;
+
             const value = getNestedTranslation(langData, key);
 
             if (value !== null && value !== undefined) {
-                element.placeholder = value;
+                element.setAttribute(attrName, value);
             }
         });
-
-    /* 3. ATTRIBUTS */
-    document
-        .querySelectorAll('[data-i18n-attr]')
-        .forEach(element => {
-
-            const rules = element.getAttribute('data-i18n-attr') || '';
-
-            rules
-                .split(',')
-                .forEach(rule => {
-
-                    const parts = rule.split(':');
-                    const attrName = parts[0]?.trim();
-                    const key = parts.slice(1).join(':').trim();
-
-                    if (!attrName || !key) return;
-
-                    const value = getNestedTranslation(langData, key);
-
-                    if (value !== null && value !== undefined) {
-                        element.setAttribute(attrName, value);
-                    }
-                });
-        });
+    });
 }
 
 
 /* =========================================================
-   SYNCHRONISER LE SÉLECTEUR DE LANGUE (CORRIGÉ)
+   SYNCHRONISER LE SÉLECTEUR DE LANGUE (SANS TOUCHER AU HTML)
    ========================================================= */
 
 function syncLanguageSwitcherUI(lang) {
@@ -326,24 +248,22 @@ function syncLanguageSwitcherUI(lang) {
 
 
     /* -----------------------------------------------------
-       2. Drapeau (Gestion intelligente du conteneur)
+       2. Drapeau sur le bouton principal
        ----------------------------------------------------- */
 
     const langButton = document.getElementById('lang-menu-button');
 
     if (langButton && I18N_FLAG_SVGS[lang]) {
 
-        let flagContainer = langButton.querySelector('.lang-flag') || langButton.querySelector('svg');
+        let flagWrapper = langButton.querySelector('.lang-flag');
 
-        if (flagContainer) {
-            flagContainer.outerHTML = `<span class="lang-flag">${I18N_FLAG_SVGS[lang]}</span>`;
-        } else {
-            // Insère le drapeau au tout début du bouton si aucun SVG n'était présent au départ
-            langButton.insertAdjacentHTML(
-                'afterbegin',
-                `<span class="lang-flag">${I18N_FLAG_SVGS[lang]}</span>`
-            );
+        if (!flagWrapper) {
+            flagWrapper = document.createElement('span');
+            flagWrapper.className = 'lang-flag';
+            langButton.insertBefore(flagWrapper, langButton.firstChild);
         }
+
+        flagWrapper.innerHTML = I18N_FLAG_SVGS[lang];
     }
 
 
@@ -452,7 +372,6 @@ async function loadLanguage(lang) {
 
         currentLang = lang;
 
-        // Configuration direction et attributs du document HTML
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
         document.documentElement.lang = lang;
 
@@ -516,7 +435,7 @@ window.i18n = {
 
 
 /* =========================================================
-   ALIASES GLOBAUX POUR COMPATIBILITÉ
+   ALIASES GLOBAUX
    ========================================================= */
 
 window.changeLanguage = window.i18n.changeLanguage;
@@ -526,7 +445,7 @@ window.i18nPhotoLabel = window.i18n.getPhotoLabel;
 
 
 /* =========================================================
-   INITIALISATION AU DOMCONTENTLOADED
+   INITIALISATION
    ========================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -539,7 +458,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadLanguage(initialLang);
 
-    /* Écouteur global pour la sélection de langue via [data-lang] */
     document.addEventListener('click', event => {
 
         const langButton = event.target.closest('[data-lang]');
@@ -562,7 +480,3 @@ document.addEventListener('DOMContentLoaded', () => {
         loadLanguage(selectedLang);
     });
 });
-
-/* =========================================================
-   FIN DU I18N ENGINE
-   ========================================================= */

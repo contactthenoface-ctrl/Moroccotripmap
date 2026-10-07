@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (SUR MESURE POUR VOTRE HTML)
+   MOROCCO TRIP MAP — I18N ENGINE (FIX CLIC & DROPDOWN)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -12,7 +12,7 @@ let currentLang = null;
 let currentTranslations = {};
 
 /* =========================================================
-   DRAPEAUX SVG NETS (CONFORMES À VOTRE DESIGN)
+   DRAPEAUX SVG NETS
    ========================================================= */
 
 const I18N_FLAG_SVGS = {
@@ -94,20 +94,16 @@ function updateLanguageDOM(langData) {
     });
 }
 
-/* =========================================================
-   SYNCHRONISATION VISUELLE DU BOUTON PRINCIPAL (#lang-menu-button)
-   ========================================================= */
-
 function syncLanguageSwitcherUI(lang) {
     const activeLang = lang || currentLang || DEFAULT_LANG;
 
-    // 1. Mettre à jour le texte du bouton principal (EN, FR, ES, AR)
+    // 1. Label texte (EN, FR, ES, AR)
     const langLabel = document.getElementById('current-lang-label');
     if (langLabel) {
         langLabel.textContent = activeLang.toUpperCase();
     }
 
-    // 2. Mettre à jour le SVG du drapeau principal dans le bouton
+    // 2. SVG du bouton principal (#lang-menu-button)
     const langButton = document.getElementById('lang-menu-button');
     if (langButton) {
         const oldSvg = langButton.querySelector('svg');
@@ -153,16 +149,17 @@ async function ensureLangData(lang, sections) {
     return dict;
 }
 
-async function loadLanguage(lang) {
+// Fonction accessible globalement dés le chargement
+window.switchLanguage = window.changeLanguage = async function(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) return;
 
     currentLang = lang;
     localStorage.setItem('preferred_lang', lang);
 
-    // 1. Mettre à jour l'icône et le texte du bouton
+    // Mettre à jour l'icône du bouton principal
     syncLanguageSwitcherUI(lang);
 
-    // 2. Fermer le menu déroulant
+    // Masquer le menu déroulant immédiatement
     const dropdown = document.getElementById('lang-menu-dropdown');
     if (dropdown) {
         dropdown.classList.add('hidden');
@@ -179,67 +176,4 @@ async function loadLanguage(lang) {
 
         window.dispatchEvent(
             new CustomEvent('languageChanged', {
-                detail: { lang, translations: dict }
-            })
-        );
-    } catch (error) {
-        console.error(`[i18n] Erreur pour "${lang}":`, error);
-    }
-}
-
-/* =========================================================
-   INITIALISATION + GESTION DE L'OUVERTURE / FERMETURE DU MENU
-   ========================================================= */
-
-window.i18n = {
-    changeLanguage: loadLanguage,
-    switchLanguage: loadLanguage,
-    ensureSections: async function(names) {
-        if (!currentLang) return currentTranslations;
-        const dict = await ensureLangData(currentLang, names);
-        currentTranslations = dict;
-        return dict;
-    },
-    getTranslation: function(path) {
-        return getNestedTranslation(currentTranslations, path);
-    },
-    getPhotoLabel: function(n) {
-        const template = getNestedTranslation(currentTranslations, 'common.photo') || getNestedTranslation(currentTranslations, 'places.common.photo');
-        return typeof template === 'string' ? template.replace('{n}', String(n)) : `Photo ${n}`;
-    }
-};
-
-window.changeLanguage = window.i18n.changeLanguage;
-window.switchLanguage = window.i18n.switchLanguage;
-
-function initI18n() {
-    const savedLang = localStorage.getItem('preferred_lang');
-    const initialLang = SUPPORTED_LANGS.includes(savedLang) ? savedLang : DEFAULT_LANG;
-
-    // Charger la langue enregistrée ou le français par défaut
-    loadLanguage(initialLang);
-
-    // Gérer l'ouverture/fermeture au clic sur le bouton principal (#lang-menu-button)
-    const langBtn = document.getElementById('lang-menu-button');
-    const langDropdown = document.getElementById('lang-menu-dropdown');
-
-    if (langBtn && langDropdown) {
-        langBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            langDropdown.classList.toggle('hidden');
-        });
-
-        // Fermer le menu si l'utilisateur clique n'importe où ailleurs dans la page
-        document.addEventListener('click', (e) => {
-            if (!langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
-                langDropdown.classList.add('hidden');
-            }
-        });
-    }
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initI18n);
-} else {
-    initI18n();
-}
+                detail: { lang

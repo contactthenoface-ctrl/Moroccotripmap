@@ -1,129 +1,436 @@
-// ============================================================
-// I18N — Système de traduction multilingue
-// ============================================================
-//
-// Structure attendue :
-//
-// js/
-// ├── i18n.js
-// └── translations/
-//     ├── ar/
-//     │   ├── _core.json
-//     │   ├── home.json
-//     │   ├── services.json
-//     │   └── ...
-//     ├── en/
-//     │   ├── _core.json
-//     │   └── ...
-//     ├── es/
-//     │   ├── _core.json
-//     │   └── ...
-//     └── fr/
-//         ├── _core.json
-//         └── ...
-//
-// Les anciens fichiers :
-// translations/fr.json
-// translations/en.json
-// translations/es.json
-// translations/ar.json
-//
-// ne sont plus utilisés.
-// ============================================================
+/* =========================================================
+   MOROCCO TRIP MAP — I18N ENGINE
+   =========================================================
+
+   Structure attendue :
+
+   js/
+   ├── i18n.js
+   └── translations/
+       ├── fr/
+       │   ├── core.json
+       │   ├── hero.json
+       │   ├── ...
+       │
+       ├── en/
+       │   ├── core.json
+       │   ├── hero.json
+       │   ├── ...
+       │
+       ├── es/
+       │   ├── core.json
+       │   ├── hero.json
+       │   ├── ...
+       │
+       └── ar/
+           ├── core.json
+           ├── hero.json
+           ├── ...
+
+   ========================================================= */
 
 
-// ============================================================
-// VARIABLES GLOBALES
-// ============================================================
+/* =========================================================
+   CONFIGURATION
+   ========================================================= */
 
-// Traductions actuellement utilisées
+const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
+const DEFAULT_LANG = 'fr';
+
+
+/* =========================================================
+   CACHE GLOBAL
+   ========================================================= */
+
+const allTranslations = {};
+const pendingTasks = {};
+
+let currentLang = null;
 let currentTranslations = {};
 
-// Cache des traductions par langue
-// Chaque fichier JSON chargé est conservé en mémoire
-// pour éviter de le recharger inutilement.
-let allTranslations = {};
 
-
-// ============================================================
-// DRAPEAUX
-// ============================================================
+/* =========================================================
+   DRAPEAUX SVG
+   ========================================================= */
 
 const I18N_FLAG_SVGS = {
 
-    en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
+    fr: `
+        <svg
+            viewBox="0 0 24 16"
+            aria-hidden="true"
+        >
+            <rect
+                width="8"
+                height="16"
+                fill="#0055A4"
+            />
+            <rect
+                width="8"
+                height="16"
+                x="8"
+                fill="#FFFFFF"
+            />
+            <rect
+                width="8"
+                height="16"
+                x="16"
+                fill="#EF4135"
+            />
+        </svg>
+    `,
 
-    fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
+    en: `
+        <svg
+            viewBox="0 0 24 16"
+            aria-hidden="true"
+        >
+            <rect
+                width="24"
+                height="16"
+                fill="#012169"
+            />
 
-    es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
+            <path
+                d="M0 0L24 16M24 0L0 16"
+                stroke="#FFFFFF"
+                stroke-width="3"
+            />
 
-    ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
+            <path
+                d="M0 0L24 16M24 0L0 16"
+                stroke="#C8102E"
+                stroke-width="1.5"
+            />
 
+            <path
+                d="M12 0V16M0 8H24"
+                stroke="#FFFFFF"
+                stroke-width="5"
+            />
+
+            <path
+                d="M12 0V16M0 8H24"
+                stroke="#C8102E"
+                stroke-width="3"
+            />
+        </svg>
+    `,
+
+    es: `
+        <svg
+            viewBox="0 0 24 16"
+            aria-hidden="true"
+        >
+            <rect
+                width="24"
+                height="16"
+                fill="#AA151B"
+            />
+
+            <rect
+                width="24"
+                height="8"
+                y="4"
+                fill="#F1BF00"
+            />
+        </svg>
+    `,
+
+    ar: `
+        <svg
+            viewBox="0 0 24 16"
+            aria-hidden="true"
+        >
+            <rect
+                width="24"
+                height="16"
+                fill="#006233"
+            />
+
+            <path
+                d="
+                    M12 3.5
+                    l1.05 3.24
+                    h3.4
+                    l-2.75 2
+                    l1.05 3.24
+                    l-2.75-2
+                    l-2.75 2
+                    l1.05-3.24
+                    l-2.75-2
+                    h3.4z
+                "
+                fill="none"
+                stroke="#C1272D"
+                stroke-width="0.9"
+            />
+        </svg>
+    `
 };
 
 
-// ============================================================
-// RÉCUPÉRER UNE TRADUCTION IMBRIQUÉE
-// Exemple :
-//
-// getNestedTranslation(data, "home.hero.title")
-//
-// retourne :
-// data.home.hero.title
-// ============================================================
+/* =========================================================
+   URL DE BASE
+   =========================================================
 
-function getNestedTranslation(obj, path) {
+   Si i18n.js se trouve ici :
 
-    if (!obj || !path) {
+   /js/i18n.js
+
+   alors les traductions seront cherchées ici :
+
+   /js/translations/
+
+   ========================================================= */
+
+const I18N_BASE_URL = (() => {
+
+    const script = document.currentScript;
+
+    if (
+        script &&
+        script.src
+    ) {
+        return script.src.replace(
+            /i18n\.js(\?.*)?$/,
+            ''
+        );
+    }
+
+    return 'js/';
+})();
+
+
+/* =========================================================
+   UTILITAIRE :
+   RÉCUPÉRER UNE TRADUCTION IMBRIQUÉE
+   =========================================================
+
+   Exemple :
+
+   getNestedTranslation(
+       translations,
+       'hero.title_line1'
+   );
+
+   ========================================================= */
+
+function getNestedTranslation(
+    object,
+    path
+) {
+
+    if (
+        !object ||
+        !path
+    ) {
         return null;
     }
 
     return path
         .split('.')
-        .reduce((prev, curr) => {
-            return prev != null ? prev[curr] : null;
-        }, obj);
+        .reduce(
+            (accumulator, key) =>
+                accumulator?.[key],
+            object
+        ) ?? null;
 }
 
 
-// ============================================================
-// APPLIQUER LES TRADUCTIONS À LA PAGE
-// ============================================================
+/* =========================================================
+   FETCH JSON
+   ========================================================= */
 
-function updateLanguage(langData) {
+function fetchJson(url) {
 
-    currentTranslations = langData || {};
+    return fetch(
+        url,
+        {
+            cache: 'default'
+        }
+    )
+    .then(response => {
 
+        if (!response.ok) {
 
-    // --------------------------------------------------------
-    // data-i18n
-    // --------------------------------------------------------
-
-    document.querySelectorAll('[data-i18n]').forEach(element => {
-
-        const key = element.getAttribute('data-i18n');
-
-        const translation = getNestedTranslation(
-            langData,
-            key
-        );
-
-        if (
-            translation !== null &&
-            translation !== undefined
-        ) {
-            element.textContent = translation;
+            throw new Error(
+                `HTTP ${response.status} for ${url}`
+            );
         }
 
+        return response.json();
     });
+}
 
 
-    // --------------------------------------------------------
-    // data-i18n-placeholder
-    // --------------------------------------------------------
+/* =========================================================
+   ANALYSE DU DOM
+   DÉTECTER LES SECTIONS NÉCESSAIRES
+   =========================================================
+
+   Exemple :
+
+   data-i18n="hero.title_line1"
+
+   => hero.json
+
+   data-i18n="nav.destinations"
+
+   => nav.json si présent,
+      sinon nav peut être dans core.json.
+
+   ========================================================= */
+
+function collectI18nSections() {
+
+    const sections = new Set();
+
+
+    function addKey(key) {
+
+        if (!key) {
+            return;
+        }
+
+        const section =
+            key
+                .trim()
+                .split('.')[0];
+
+        if (section) {
+            sections.add(section);
+        }
+    }
+
+
+    /* -----------------------------------------------------
+       data-i18n
+       ----------------------------------------------------- */
 
     document
-        .querySelectorAll('[data-i18n-placeholder]')
+        .querySelectorAll('[data-i18n]')
+        .forEach(element => {
+
+            addKey(
+                element.getAttribute(
+                    'data-i18n'
+                )
+            );
+        });
+
+
+    /* -----------------------------------------------------
+       data-i18n-placeholder
+       ----------------------------------------------------- */
+
+    document
+        .querySelectorAll(
+            '[data-i18n-placeholder]'
+        )
+        .forEach(element => {
+
+            addKey(
+                element.getAttribute(
+                    'data-i18n-placeholder'
+                )
+            );
+        });
+
+
+    /* -----------------------------------------------------
+       data-i18n-attr
+
+       Exemple :
+
+       data-i18n-attr="
+           title:common.title,
+           aria-label:common.menu
+       "
+       ----------------------------------------------------- */
+
+    document
+        .querySelectorAll(
+            '[data-i18n-attr]'
+        )
+        .forEach(element => {
+
+            const rules =
+                element.getAttribute(
+                    'data-i18n-attr'
+                ) || '';
+
+            rules
+                .split(',')
+                .forEach(rule => {
+
+                    const parts =
+                        rule.split(':');
+
+                    const key =
+                        parts
+                            .slice(1)
+                            .join(':')
+                            .trim();
+
+                    addKey(key);
+                });
+        });
+
+
+    return sections;
+}
+
+
+/* =========================================================
+   MISE À JOUR DU DOM
+   ========================================================= */
+
+function updateLanguageDOM(
+    langData
+) {
+
+    currentTranslations =
+        langData || {};
+
+
+    /* =====================================================
+       1. TEXTES
+       ===================================================== */
+
+    document
+        .querySelectorAll('[data-i18n]')
+        .forEach(element => {
+
+            const key =
+                element.getAttribute(
+                    'data-i18n'
+                );
+
+            const value =
+                getNestedTranslation(
+                    langData,
+                    key
+                );
+
+            if (
+                value !== null &&
+                value !== undefined
+            ) {
+                element.textContent =
+                    value;
+            }
+        });
+
+
+    /* =====================================================
+       2. PLACEHOLDERS
+       ===================================================== */
+
+    document
+        .querySelectorAll(
+            '[data-i18n-placeholder]'
+        )
         .forEach(element => {
 
             const key =
@@ -131,83 +438,101 @@ function updateLanguage(langData) {
                     'data-i18n-placeholder'
                 );
 
-            const translation =
+            const value =
                 getNestedTranslation(
                     langData,
                     key
                 );
 
             if (
-                translation !== null &&
-                translation !== undefined
+                value !== null &&
+                value !== undefined
             ) {
-                element.placeholder = translation;
+                element.placeholder =
+                    value;
             }
-
         });
 
 
-    // --------------------------------------------------------
-    // data-i18n-attr
-    //
-    // Exemple :
-    // data-i18n-attr="title:common.title"
-    // --------------------------------------------------------
+    /* =====================================================
+       3. ATTRIBUTS
+       =====================================================
+
+       Exemple :
+
+       data-i18n-attr="
+           title:common.title,
+           aria-label:common.menu
+       "
+
+       ===================================================== */
 
     document
-        .querySelectorAll('[data-i18n-attr]')
+        .querySelectorAll(
+            '[data-i18n-attr]'
+        )
         .forEach(element => {
 
-            const rule =
+            const rules =
                 element.getAttribute(
                     'data-i18n-attr'
-                );
+                ) || '';
 
-            const parts =
-                rule.split(':');
+            rules
+                .split(',')
+                .forEach(rule => {
 
-            const attrName =
-                parts[0]?.trim();
+                    const parts =
+                        rule.split(':');
 
-            const key =
-                parts.slice(1).join(':').trim();
+                    const attrName =
+                        parts[0]?.trim();
 
-            if (!attrName || !key) {
-                return;
-            }
+                    const key =
+                        parts
+                            .slice(1)
+                            .join(':')
+                            .trim();
 
-            const translation =
-                getNestedTranslation(
-                    langData,
-                    key
-                );
+                    if (
+                        !attrName ||
+                        !key
+                    ) {
+                        return;
+                    }
 
-            if (
-                translation !== null &&
-                translation !== undefined
-            ) {
+                    const value =
+                        getNestedTranslation(
+                            langData,
+                            key
+                        );
 
-                element.setAttribute(
-                    attrName,
-                    translation
-                );
+                    if (
+                        value !== null &&
+                        value !== undefined
+                    ) {
 
-            }
-
+                        element.setAttribute(
+                            attrName,
+                            value
+                        );
+                    }
+                });
         });
-
 }
 
 
-// ============================================================
-// METTRE À JOUR L'INTERFACE DU SÉLECTEUR DE LANGUE
-// ============================================================
+/* =========================================================
+   SYNCHRONISER LE SÉLECTEUR DE LANGUE
+   ========================================================= */
 
-function syncLanguageSwitcherUI(lang) {
+function syncLanguageSwitcherUI(
+    lang
+) {
 
-    // --------------------------------------------------------
-    // Texte de la langue actuelle
-    // --------------------------------------------------------
+    /* -----------------------------------------------------
+       Label
+       ----------------------------------------------------- */
 
     const langLabel =
         document.getElementById(
@@ -218,13 +543,12 @@ function syncLanguageSwitcherUI(lang) {
 
         langLabel.textContent =
             lang.toUpperCase();
-
     }
 
 
-    // --------------------------------------------------------
-    // Drapeau
-    // --------------------------------------------------------
+    /* -----------------------------------------------------
+       Drapeau
+       ----------------------------------------------------- */
 
     const langButton =
         document.getElementById(
@@ -237,21 +561,21 @@ function syncLanguageSwitcherUI(lang) {
     ) {
 
         const svgElement =
-            langButton.querySelector('svg');
+            langButton.querySelector(
+                'svg'
+            );
 
         if (svgElement) {
 
             svgElement.outerHTML =
                 I18N_FLAG_SVGS[lang];
-
         }
-
     }
 
 
-    // --------------------------------------------------------
-    // Fermer le menu
-    // --------------------------------------------------------
+    /* -----------------------------------------------------
+       Fermer le menu
+       ----------------------------------------------------- */
 
     const langDropdown =
         document.getElementById(
@@ -263,229 +587,13 @@ function syncLanguageSwitcherUI(lang) {
         langDropdown.classList.add(
             'hidden'
         );
-
     }
-
 }
 
 
-// ============================================================
-// DÉTERMINER LE DOSSIER DU SCRIPT
-// ============================================================
-//
-// Permet de fonctionner depuis :
-//
-// /
-// /places/ville-places/
-//
-// etc.
-//
-// Si i18n.js se trouve dans /js/,
-// I18N_BASE_URL devient automatiquement /js/.
-//
-// ============================================================
-
-const I18N_BASE_URL = (function () {
-
-    const current =
-        document.currentScript;
-
-    if (
-        current &&
-        current.src
-    ) {
-
-        return current.src.replace(
-            /i18n\.js(\?.*)?$/,
-            ''
-        );
-
-    }
-
-    return 'js/';
-
-})();
-
-
-// ============================================================
-// LANGUE ACTIVE
-// ============================================================
-
-let currentLang = null;
-
-
-// ============================================================
-// MÉTADONNÉES DE CHARGEMENT
-// ============================================================
-//
-// Exemple :
-//
-// i18nMeta.fr = {
-//     full: false,
-//     tasks: {
-//         _core: Promise,
-//         home: Promise
-//     }
-// }
-//
-// ============================================================
-
-const i18nMeta = {};
-
-
-// ============================================================
-// DÉTECTER LES SECTIONS UTILISÉES PAR LA PAGE
-// ============================================================
-//
-// Exemple :
-//
-// data-i18n="home.hero.title"
-//                  ↓
-// section = "home"
-//
-// Le système chargera donc :
-//
-// translations/fr/home.json
-//
-// ============================================================
-
-function collectI18nSections() {
-
-    const sections =
-        new Set();
-
-
-    const add = (key) => {
-
-        if (!key) {
-            return;
-        }
-
-        const name =
-            key
-                .trim()
-                .split('.')[0];
-
-        if (name) {
-            sections.add(name);
-        }
-
-    };
-
-
-    // data-i18n
-
-    document
-        .querySelectorAll('[data-i18n]')
-        .forEach(element => {
-
-            add(
-                element.getAttribute(
-                    'data-i18n'
-                )
-            );
-
-        });
-
-
-    // data-i18n-placeholder
-
-    document
-        .querySelectorAll(
-            '[data-i18n-placeholder]'
-        )
-        .forEach(element => {
-
-            add(
-                element.getAttribute(
-                    'data-i18n-placeholder'
-                )
-            );
-
-        });
-
-
-    // data-i18n-attr
-
-    document
-        .querySelectorAll(
-            '[data-i18n-attr]'
-        )
-        .forEach(element => {
-
-            const parts =
-                (
-                    element.getAttribute(
-                        'data-i18n-attr'
-                    ) || ''
-                ).split(':');
-
-            if (parts.length > 1) {
-
-                add(
-                    parts
-                        .slice(1)
-                        .join(':')
-                );
-
-            }
-
-        });
-
-
-    return sections;
-
-}
-
-
-// ============================================================
-// CHARGER UN FICHIER JSON
-// ============================================================
-
-function i18nFetchJson(url) {
-
-    return fetch(url)
-        .then(response => {
-
-            if (!response.ok) {
-
-                throw new Error(
-                    'HTTP ' +
-                    response.status +
-                    ' for ' +
-                    url
-                );
-
-            }
-
-            return response.json();
-
-        });
-
-}
-
-
-// ============================================================
-// CHARGER LES DONNÉES D'UNE LANGUE
-// ============================================================
-//
-// Charge uniquement :
-//
-// translations/{lang}/_core.json
-//
-// puis les sections nécessaires :
-//
-// translations/{lang}/{section}.json
-//
-// IMPORTANT :
-// Aucun fallback vers :
-//
-// translations/fr.json
-// translations/en.json
-// translations/es.json
-// translations/ar.json
-//
-// ============================================================
+/* =========================================================
+   CHARGEMENT LAZY + CACHE
+   ========================================================= */
 
 async function ensureLangData(
     lang,
@@ -493,245 +601,222 @@ async function ensureLangData(
 ) {
 
     const base =
-        I18N_BASE_URL +
-        'translations/';
+        `${I18N_BASE_URL}translations/${lang}/`;
 
 
-    // --------------------------------------------------------
-    // Vérification de la langue
-    // --------------------------------------------------------
-
-    const supportedLanguages = [
-        'fr',
-        'en',
-        'es',
-        'ar'
-    ];
-
-    if (
-        !supportedLanguages.includes(lang)
-    ) {
-
-        throw new Error(
-            'Langue non supportée : ' +
-            lang
-        );
-
-    }
-
-
-    // --------------------------------------------------------
-    // Cache
-    // --------------------------------------------------------
+    /* -----------------------------------------------------
+       Initialiser le dictionnaire
+       ----------------------------------------------------- */
 
     const dict =
         allTranslations[lang] ||
-        (
-            allTranslations[lang] = {}
+        (allTranslations[lang] = {});
+
+
+    /* -----------------------------------------------------
+       Initialiser les tâches en cours
+       ----------------------------------------------------- */
+
+    const tasks =
+        pendingTasks[lang] ||
+        (pendingTasks[lang] = {});
+
+
+    /* =====================================================
+       CHARGER UN FICHIER UNE SEULE FOIS
+       ===================================================== */
+
+    const loadFile = (
+        name,
+        fileName,
+        required = false
+    ) => {
+
+        const cacheKey =
+            `${lang}:${name}`;
+
+
+        if (!tasks[cacheKey]) {
+
+            tasks[cacheKey] =
+                fetchJson(
+                    `${base}${fileName}`
+                )
+                .catch(error => {
+
+                    if (required) {
+
+                        throw error;
+                    }
+
+
+                    console.warn(
+                        `[i18n] Échec du chargement : ${fileName}`,
+                        error
+                    );
+
+
+                    return null;
+                });
+        }
+
+
+        return tasks[cacheKey];
+    };
+
+
+    /* =====================================================
+       1. CORE — OBLIGATOIRE
+       ===================================================== */
+
+    let coreData;
+
+    try {
+
+        coreData =
+            await loadFile(
+                'core',
+                'core.json',
+                true
+            );
+
+    } catch (error) {
+
+        console.error(
+            `[i18n] Impossible de charger core.json pour "${lang}".`,
+            error
         );
 
-
-    const meta =
-        i18nMeta[lang] ||
-        (
-            i18nMeta[lang] = {
-                full: false,
-                tasks: {}
-            }
-        );
-
-
-    // Si tout est déjà chargé
-
-    if (meta.full) {
-
-        return dict;
-
+        throw error;
     }
 
 
-    // --------------------------------------------------------
-    // Éviter les doubles requêtes
-    // --------------------------------------------------------
+    if (
+        !coreData ||
+        typeof coreData !== 'object'
+    ) {
 
-    const once = (
-        name,
-        url,
-        apply
-    ) => {
-
-        if (!meta.tasks[name]) {
-
-            meta.tasks[name] =
-                i18nFetchJson(url)
-                    .then(apply);
-
-        }
-
-        return meta.tasks[name];
-
-    };
-
-
-    // --------------------------------------------------------
-    // 1. Charger _core.json
-    // --------------------------------------------------------
-
-    await once(
-        '_core',
-        base +
-        lang +
-        '/core.json',
-        data => {
-
-            if (
-                data &&
-                typeof data === 'object'
-            ) {
-
-                Object.assign(
-                    dict,
-                    data
-                );
-
-            }
-
-        }
-    );
-
-
-    // --------------------------------------------------------
-    // 2. Charger les sections nécessaires
-    // --------------------------------------------------------
-
-    const missing =
-        Array.from(
-            sections || []
-        ).filter(
-            name =>
-                !(name in dict)
+        throw new Error(
+            `[i18n] core.json invalide pour "${lang}".`
         );
+    }
 
 
-    await Promise.all(
-
-        missing.map(name => {
-
-            return once(
-
-                name,
-
-                base +
-                lang +
-                '/' +
-                encodeURIComponent(name) +
-                '.json',
-
-                data => {
-
-                    dict[name] =
-                        data;
-
-                }
-
-            ).catch(error => {
-
-                console.warn(
-                    'Section de traduction introuvable : ' +
-                    name +
-                    ' (' +
-                    lang +
-                    ')',
-                    error
-                );
-
-            });
-
-        })
-
+    Object.assign(
+        dict,
+        coreData
     );
 
 
-    return dict;
+    /* =====================================================
+       2. SECTIONS SPÉCIFIQUES
+       ===================================================== */
 
-}
-
-
-// ============================================================
-// CHARGER DES SECTIONS SUPPLÉMENTAIRES DEPUIS DU JS
-// ============================================================
-//
-// Exemple :
-//
-// await i18nEnsureSections([
-//     'hero',
-//     'cities'
-// ]);
-//
-// ============================================================
-
-window.i18nEnsureSections =
-    async function (names) {
-
-        if (!currentLang) {
-
-            return currentTranslations;
-
-        }
-
-
-        const dict =
-            await ensureLangData(
-                currentLang,
-                names
+    const missingSections =
+        Array
+            .from(sections || [])
+            .filter(
+                name =>
+                    !(name in dict)
             );
 
 
-        currentTranslations =
-            dict;
+    if (
+        missingSections.length
+    ) {
+
+        const loadedData =
+            await Promise.all(
+                missingSections.map(
+                    name =>
+                        loadFile(
+                            name,
+                            `${encodeURIComponent(name)}.json`,
+                            false
+                        )
+                )
+            );
 
 
-        return dict;
+        missingSections.forEach(
+            (name, index) => {
 
-    };
+                const data =
+                    loadedData[index];
+
+                if (
+                    data &&
+                    typeof data === 'object'
+                ) {
+
+                    dict[name] =
+                        data;
+                }
+            }
+        );
+    }
 
 
-// ============================================================
-// CHANGER DE LANGUE
-// ============================================================
+    return dict;
+}
 
-async function loadLanguage(lang) {
 
-    // --------------------------------------------------------
-    // Fermer immédiatement le menu
-    // --------------------------------------------------------
-    //
-    // Même si le réseau met quelques secondes à charger
-    // les fichiers JSON, le menu ne reste pas bloqué.
-    //
+/* =========================================================
+   CHARGER UNE LANGUE
+   ========================================================= */
 
-    const langDropdown =
+async function loadLanguage(
+    lang
+) {
+
+    /* -----------------------------------------------------
+       Vérifier la langue
+       ----------------------------------------------------- */
+
+    if (
+        !SUPPORTED_LANGS.includes(
+            lang
+        )
+    ) {
+
+        console.error(
+            `[i18n] Langue non supportée : "${lang}"`
+        );
+
+        return;
+    }
+
+
+    /* -----------------------------------------------------
+       Fermer immédiatement le dropdown
+       ----------------------------------------------------- */
+
+    const dropdown =
         document.getElementById(
             'lang-menu-dropdown'
         );
 
-    if (langDropdown) {
+    if (dropdown) {
 
-        langDropdown.classList.add(
+        dropdown.classList.add(
             'hidden'
         );
-
     }
 
 
     try {
 
-        // ----------------------------------------------------
-        // Charger les traductions
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Détecter les sections utilisées
+           ------------------------------------------------- */
 
         const sections =
             collectI18nSections();
+
+
+        /* -------------------------------------------------
+           Charger les données
+           ------------------------------------------------- */
 
         const dict =
             await ensureLangData(
@@ -740,37 +825,28 @@ async function loadLanguage(lang) {
             );
 
 
-        // ----------------------------------------------------
-        // Vérification
-        // ----------------------------------------------------
-
         if (
             !dict ||
             typeof dict !== 'object'
         ) {
 
-            console.error(
-                'Langue "' +
-                lang +
-                '" introuvable ou fichier invalide.'
+            throw new Error(
+                `Données de traduction invalides pour "${lang}".`
             );
-
-            return;
-
         }
 
 
-        // ----------------------------------------------------
-        // Définir la langue active
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Langue courante
+           ------------------------------------------------- */
 
         currentLang =
             lang;
 
 
-        // ----------------------------------------------------
-        // Direction du texte
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Direction
+           ------------------------------------------------- */
 
         document.documentElement.dir =
             lang === 'ar'
@@ -778,17 +854,17 @@ async function loadLanguage(lang) {
                 : 'ltr';
 
 
-        // ----------------------------------------------------
-        // Attribut lang
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Langue HTML
+           ------------------------------------------------- */
 
         document.documentElement.lang =
             lang;
 
 
-        // ----------------------------------------------------
-        // Sauvegarder la préférence
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Sauvegarder la préférence
+           ------------------------------------------------- */
 
         localStorage.setItem(
             'preferred_lang',
@@ -796,213 +872,275 @@ async function loadLanguage(lang) {
         );
 
 
-        // ----------------------------------------------------
-        // Appliquer les traductions
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Appliquer les traductions
+           ------------------------------------------------- */
 
-        updateLanguage(
+        updateLanguageDOM(
             dict
         );
 
 
-        // ----------------------------------------------------
-        // Mettre à jour le sélecteur
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Mettre à jour le sélecteur
+           ------------------------------------------------- */
 
         syncLanguageSwitcherUI(
             lang
         );
 
 
+        /* -------------------------------------------------
+           Événement global
+           ------------------------------------------------- */
+
+        window.dispatchEvent(
+            new CustomEvent(
+                'languageChanged',
+                {
+                    detail: {
+                        lang,
+                        translations: dict
+                    }
+                }
+            )
+        );
+
+
     } catch (error) {
 
         console.error(
-            'Erreur de chargement de la langue ' +
-            lang +
-            ':',
+            `[i18n] Erreur lors du chargement de la langue "${lang}":`,
             error
         );
-
     }
-
 }
 
 
-// ============================================================
-// FONCTIONS PUBLIQUES
-// ============================================================
+/* =========================================================
+   API PUBLIQUE
+   ========================================================= */
 
-function changeLanguage(lang) {
+window.i18n = {
 
-    loadLanguage(lang);
+    /* -----------------------------------------------------
+       Changer de langue
+       ----------------------------------------------------- */
 
-}
+    changeLanguage:
+        loadLanguage,
+
+    switchLanguage:
+        loadLanguage,
 
 
-function switchLanguage(lang) {
+    /* -----------------------------------------------------
+       Charger des sections supplémentaires
+       ----------------------------------------------------- */
 
-    loadLanguage(lang);
+    ensureSections:
+        async function(names) {
 
-}
+            if (!currentLang) {
+
+                return currentTranslations;
+            }
 
 
-// Rendre disponibles globalement
+            const dict =
+                await ensureLangData(
+                    currentLang,
+                    names
+                );
+
+
+            currentTranslations =
+                dict;
+
+
+            return dict;
+        },
+
+
+    /* -----------------------------------------------------
+       Récupérer une traduction
+       ----------------------------------------------------- */
+
+    getTranslation:
+        function(path) {
+
+            return getNestedTranslation(
+                currentTranslations,
+                path
+            );
+        },
+
+
+    /* -----------------------------------------------------
+       Label photo
+       ----------------------------------------------------- */
+
+    getPhotoLabel:
+        function(n) {
+
+            const commonPhoto =
+                getNestedTranslation(
+                    currentTranslations,
+                    'common.photo'
+                );
+
+
+            const placesPhoto =
+                getNestedTranslation(
+                    currentTranslations,
+                    'places.common.photo'
+                );
+
+
+            const template =
+                commonPhoto ||
+                placesPhoto;
+
+
+            if (
+                typeof template ===
+                'string'
+            ) {
+
+                return template.replace(
+                    '{n}',
+                    String(n)
+                );
+            }
+
+
+            return `Photo ${n}`;
+        }
+};
+
+
+/* =========================================================
+   ALIASES GLOBAUX
+   COMPATIBILITÉ AVEC L'ANCIEN CODE
+   ========================================================= */
 
 window.changeLanguage =
-    changeLanguage;
+    window.i18n.changeLanguage;
 
 window.switchLanguage =
-    switchLanguage;
+    window.i18n.switchLanguage;
+
+window.i18nEnsureSections =
+    window.i18n.ensureSections;
+
+window.i18nPhotoLabel =
+    window.i18n.getPhotoLabel;
 
 
-// ============================================================
-// INITIALISATION
-// ============================================================
+/* =========================================================
+   INITIALISATION
+   ========================================================= */
 
 document.addEventListener(
     'DOMContentLoaded',
     () => {
 
-        // ----------------------------------------------------
-        // Langue sauvegardée
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Récupérer la langue sauvegardée
+           ------------------------------------------------- */
 
         const savedLang =
             localStorage.getItem(
                 'preferred_lang'
-            ) || 'fr';
+            );
 
 
-        // ----------------------------------------------------
-        // Charger la langue
-        // ----------------------------------------------------
+        const initialLang =
+            SUPPORTED_LANGS.includes(
+                savedLang
+            )
+                ? savedLang
+                : DEFAULT_LANG;
+
+
+        /* -------------------------------------------------
+           Charger la langue initiale
+           ------------------------------------------------- */
 
         loadLanguage(
-            savedLang
+            initialLang
         );
 
 
-        // ----------------------------------------------------
-        // Boutons de langues
-        // ----------------------------------------------------
+        /* -------------------------------------------------
+           Délégation des boutons de langue
+           ------------------------------------------------- */
 
-        document
-            .querySelectorAll(
-                '[data-lang]'
-            )
-            .forEach(button => {
+        document.addEventListener(
+            'click',
+            event => {
 
-                button.addEventListener(
-                    'click',
-                    event => {
-
-                        event.preventDefault();
-                        event.stopPropagation();
+                const langButton =
+                    event.target.closest(
+                        '[data-lang]'
+                    );
 
 
-                        const selectedLang =
-                            button.getAttribute(
-                                'data-lang'
-                            );
+                if (!langButton) {
+                    return;
+                }
 
 
-                        if (
-                            selectedLang
-                        ) {
+                event.preventDefault();
 
-                            loadLanguage(
-                                selectedLang
-                            );
 
-                        }
+                const selectedLang =
+                    langButton.getAttribute(
+                        'data-lang'
+                    );
 
-                    }
+
+                if (
+                    !selectedLang ||
+                    !SUPPORTED_LANGS.includes(
+                        selectedLang
+                    )
+                ) {
+
+                    return;
+                }
+
+
+                /* -------------------------------------------------
+                   Éviter un rechargement inutile
+                   ------------------------------------------------- */
+
+                if (
+                    selectedLang ===
+                    currentLang
+                ) {
+
+                    document
+                        .getElementById(
+                            'lang-menu-dropdown'
+                        )
+                        ?.classList.add(
+                            'hidden'
+                        );
+
+                    return;
+                }
+
+
+                loadLanguage(
+                    selectedLang
                 );
-
-            });
-
+            }
+        );
     }
 );
 
 
-// ============================================================
-// LABEL "PHOTO"
-// ============================================================
-//
-// Utilisé par du JavaScript externe.
-//
-// Exemple :
-//
-// i18nPhotoLabel(3)
-//
-// ============================================================
-
-window.i18nPhotoLabel =
-    function (n) {
-
-        let tpl = null;
-
-
-        try {
-
-            tpl =
-                (
-                    currentTranslations
-                        .common &&
-                    currentTranslations
-                        .common
-                        .photo
-                ) ||
-
-                (
-                    currentTranslations
-                        .places &&
-                    currentTranslations
-                        .places
-                        .common &&
-                    currentTranslations
-                        .places
-                        .common
-                        .photo
-                ) ||
-
-                null;
-
-        } catch (e) {
-
-            tpl = null;
-
-        }
-
-
-        if (
-            tpl &&
-            typeof tpl === 'string'
-        ) {
-
-            return tpl.replace(
-                '{n}',
-                String(n)
-            );
-
-        }
-
-
-        return 'Photo ' + n;
-
-    };
-
-
-// ============================================================
-// FIN I18N
-// ============================================================
-
-Après avoir remplacé le fichier :
-
-1. Enregistre "js/i18n.js".
-2. Vérifie que tu as bien "js/translations/fr/_core.json", "ar/_core.json", "en/_core.json", "es/_core.json".
-3. Vérifie que les sections demandées par chaque page existent dans les dossiers correspondants.
-4. Fais un hard refresh du site ("Ctrl + F5" sur PC) ou vide le cache du navigateur sur mobile.
-5. Teste FR → EN → ES → AR.
-
-Avec cette version, "fr.json", "en.json", "es.json" et "ar.json" ne sont plus nécessaires du tout.
+/* =========================================================
+   FIN DU I18N ENGINE
+   ========================================================= */

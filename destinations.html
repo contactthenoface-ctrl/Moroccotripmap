@@ -723,29 +723,90 @@
 
 <!-- Filtre par région -->
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const tabs = document.querySelectorAll('.region-tab');
-        const cards = document.querySelectorAll('#destinations-grid .city-card');
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.region-tab');
+    const cards = document.querySelectorAll('#destinations-grid .city-card');
 
+    function applyRegionFilter(region) {
+
+        // Mettre à jour l'apparence des boutons
         tabs.forEach(tab => {
-            tab.addEventListener('click', function () {
-                const region = tab.getAttribute('data-region');
+            const tabRegion = tab.getAttribute('data-region');
 
-                tabs.forEach(t => {
-                    t.classList.remove('active', 'bg-vert', 'text-white');
-                    t.classList.add('bg-white', 'text-sombre');
-                });
-                tab.classList.add('active', 'bg-vert', 'text-white');
-                tab.classList.remove('bg-white', 'text-sombre');
+            tab.classList.remove(
+                'active',
+                'bg-vert',
+                'text-white'
+            );
 
-                cards.forEach(card => {
-                    const cardRegions = (card.getAttribute('data-region') || '').trim().split(/\s+/);
-                    const match = region === 'all' || cardRegions.indexOf(region) !== -1;
-                    card.style.display = match ? '' : 'none';
-                });
-            });
+            tab.classList.add(
+                'bg-white',
+                'text-sombre'
+            );
+
+            if (tabRegion === region) {
+                tab.classList.add(
+                    'active',
+                    'bg-vert',
+                    'text-white'
+                );
+
+                tab.classList.remove(
+                    'bg-white',
+                    'text-sombre'
+                );
+            }
+        });
+
+        // Afficher / masquer les destinations
+        cards.forEach(card => {
+            const cardRegions = (card.getAttribute('data-region') || '')
+                .trim()
+                .split(/\s+/);
+
+            const match =
+                region === 'all' ||
+                cardRegions.includes(region);
+
+            card.style.display = match ? '' : 'none';
+        });
+    }
+
+    // Clic sur les filtres
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+            const region = tab.getAttribute('data-region');
+
+            applyRegionFilter(region);
+
+            // Mettre à jour l'URL
+            const url = new URL(window.location.href);
+
+            if (region === 'all') {
+                url.searchParams.delete('region');
+            } else {
+                url.searchParams.set('region', region);
+            }
+
+            window.history.replaceState({}, '', url);
         });
     });
+
+    // Lire le filtre présent dans l'URL
+    const urlRegion = new URLSearchParams(
+        window.location.search
+    ).get('region');
+
+    if (urlRegion) {
+        const matchingTab = document.querySelector(
+            `.region-tab[data-region="${urlRegion}"]`
+        );
+
+        if (matchingTab) {
+            applyRegionFilter(urlRegion);
+        }
+    }
+});
 </script>
 
 <!-- Scripts externes (i18n.js à la racine et search.js dans /js/) -->

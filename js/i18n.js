@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (CIBLAGE HTML EXACT)
+   MOROCCO TRIP MAP — I18N ENGINE (SOLUTION ZERO TOUCH HTML)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -12,14 +12,14 @@ let currentLang = null;
 let currentTranslations = {};
 
 /* =========================================================
-   DRAPEAUX SVG OFFICIELS
+   DRAPEAUX SVG NETS SANS CLIP-PATH (SANS CONFLIT D'ID)
    ========================================================= */
 
 const I18N_FLAG_SVGS = {
-    fr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" aria-hidden="true"><rect width="900" height="600" fill="#ED2939"/><rect width="600" height="600" fill="#fff"/><rect width="300" height="600" fill="#002395"/></svg>`,
-    en: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-hidden="true"><clipPath id="s"><path d="M0,0 v300 h600 v-300 z"/></clipPath><clipPath id="t"><path d="M0,0 L600,300 M600,0 L0,300"/></clipPath><g clip-path="url(#s)"><path d="M0,0 L600,300 M600,0 L0,300" stroke="#fff" stroke-width="60"/><path d="M0,0 L600,300 M600,0 L0,300" stroke="#012169" stroke-width="60" clip-path="url(#t)"/><path d="M0,0 L600,300 M600,0 L0,300" stroke="#C8102E" stroke-width="20" clip-path="url(#t)"/><path d="M300,0 v300 M0,150 h600" stroke="#fff" stroke-width="100"/><path d="M300,0 v300 M0,150 h600" stroke="#C8102E" stroke-width="60"/></g></svg>`,
-    es: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg>`,
-    ar: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" aria-hidden="true"><rect width="900" height="600" fill="#c1272d"/><path d="M450,195 L480,287 L577,287 L498,344 L528,436 L450,379 L372,436 L402,344 L323,287 L420,287 Z" fill="none" stroke="#006233" stroke-width="14" stroke-linejoin="round"/></svg>`
+    fr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-5 h-3.5 rounded-sm shadow-sm object-cover" aria-hidden="true"><rect width="900" height="600" fill="#ED2939"/><rect width="600" height="600" fill="#fff"/><rect width="300" height="600" fill="#002395"/></svg>`,
+    en: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" class="w-5 h-3.5 rounded-sm shadow-sm object-cover" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>`,
+    es: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" class="w-5 h-3.5 rounded-sm shadow-sm object-cover" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg>`,
+    ar: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-5 h-3.5 rounded-sm shadow-sm object-cover" aria-hidden="true"><rect width="900" height="600" fill="#c1272d"/><path d="M450,195 L480,287 L577,287 L498,344 L528,436 L450,379 L372,436 L402,344 L323,287 L420,287 Z" fill="none" stroke="#006233" stroke-width="14" stroke-linejoin="round"/></svg>`
 };
 
 const I18N_BASE_URL = (() => {
@@ -95,37 +95,39 @@ function updateLanguageDOM(langData) {
 }
 
 /* =========================================================
-   SYNCHRONISATION VISUELLE DE VOTRE BOUTON HTML
+   SYNCHRONISATION ET NETTOYAGE FORCÉ DU BOUTON ET DU DROPDOWN
    ========================================================= */
 
 function syncLanguageSwitcherUI(lang) {
-    // 1. Mise à jour du texte EN/FR/AR/ES dans #current-lang-label
+    // 1. Label texte (EN, FR, AR, ES)
     const langLabel = document.getElementById('current-lang-label');
     if (langLabel) {
         langLabel.textContent = lang.toUpperCase();
     }
 
-    // 2. Mise à jour du drapeau SVG dans #current-flag
+    // 2. Drapeau dans le bouton principal (#current-flag)
     const currentFlagContainer = document.getElementById('current-flag');
     if (currentFlagContainer && I18N_FLAG_SVGS[lang]) {
+        // Remplacement complet du SVG dur
         currentFlagContainer.innerHTML = I18N_FLAG_SVGS[lang];
     }
 
-    // 3. Drapeaux des options du menu déroulant
+    // 3. Drapeaux dans les options du menu déroulant ([data-lang])
     document.querySelectorAll('[data-lang]').forEach(option => {
         const optionLang = option.getAttribute('data-lang');
         if (I18N_FLAG_SVGS[optionLang]) {
-            let optionFlag = option.querySelector('.lang-flag') || option.querySelector('span:first-child');
-            if (!optionFlag) {
-                optionFlag = document.createElement('span');
-                optionFlag.className = 'lang-flag';
-                option.insertBefore(optionFlag, option.firstChild);
-            }
-            optionFlag.innerHTML = I18N_FLAG_SVGS[optionLang];
+            // Suppression des anciens SVG/éléments d'icône d'origine
+            option.querySelectorAll('svg, .lang-flag').forEach(oldEl => oldEl.remove());
+            
+            const flagSpan = document.createElement('span');
+            flagSpan.className = 'lang-flag inline-flex items-center me-2';
+            flagSpan.innerHTML = I18N_FLAG_SVGS[optionLang];
+            
+            option.insertBefore(flagSpan, option.firstChild);
         }
     });
 
-    // 4. Fermeture du menu déroulant
+    // 4. Fermeture du dropdown
     const langDropdown = document.getElementById('lang-menu-dropdown');
     if (langDropdown) {
         langDropdown.classList.add('hidden');
@@ -171,7 +173,7 @@ async function ensureLangData(lang, sections) {
 async function loadLanguage(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) return;
 
-    // Mise à jour de l'interface visuelle IMMEDIATEMENT (0 ms)
+    // Mise à jour visuelle instantanée (0 ms)
     syncLanguageSwitcherUI(lang);
 
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -180,7 +182,6 @@ async function loadLanguage(lang) {
 
     currentLang = lang;
 
-    // Chargement asynchronously des JSON
     try {
         const sections = collectI18nSections();
         const dict = await ensureLangData(lang, sections);
@@ -198,7 +199,7 @@ async function loadLanguage(lang) {
 }
 
 /* =========================================================
-   INITIALISATION
+   INITIALISATION AUTOMATIQUE AU CHARGEMENT
    ========================================================= */
 
 window.i18n = {
@@ -222,7 +223,7 @@ window.i18n = {
 window.changeLanguage = window.i18n.changeLanguage;
 window.switchLanguage = window.i18n.switchLanguage;
 
-document.addEventListener('DOMContentLoaded', () => {
+function initI18n() {
     const savedLang = localStorage.getItem('preferred_lang');
     const initialLang = SUPPORTED_LANGS.includes(savedLang) ? savedLang : DEFAULT_LANG;
 
@@ -239,4 +240,10 @@ document.addEventListener('DOMContentLoaded', () => {
             loadLanguage(selectedLang);
         }
     });
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initI18n);
+} else {
+    initI18n();
+}

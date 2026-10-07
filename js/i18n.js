@@ -581,7 +581,7 @@ async function ensureLangData(
         '_core',
         base +
         lang +
-        '/_core.json',
+        '/core.json',
         data => {
 
             if (

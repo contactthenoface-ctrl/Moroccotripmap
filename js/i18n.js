@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (FIX DRAPEAUX & FERMETURE DROPDOWN)
+   MOROCCO TRIP MAP — I18N ENGINE (SUR MESURE POUR VOTRE HTML)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -10,17 +10,16 @@ const pendingTasks = {};
 
 let currentLang = null;
 let currentTranslations = {};
-let isSyncing = false;
 
 /* =========================================================
-   DRAPEAUX SVG NETS SANS CLIP-PATH
+   DRAPEAUX SVG NETS (CONFORMES À VOTRE DESIGN)
    ========================================================= */
 
 const I18N_FLAG_SVGS = {
-    fr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-5 h-3.5 rounded-sm shadow-sm object-cover" aria-hidden="true"><rect width="900" height="600" fill="#ED2939"/><rect width="600" height="600" fill="#fff"/><rect width="300" height="600" fill="#002395"/></svg>`,
-    en: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" class="w-5 h-3.5 rounded-sm shadow-sm object-cover" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>`,
-    es: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" class="w-5 h-3.5 rounded-sm shadow-sm object-cover" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg>`,
-    ar: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-5 h-3.5 rounded-sm shadow-sm object-cover" aria-hidden="true"><rect width="900" height="600" fill="#c1272d"/><path d="M450,195 L480,287 L577,287 L498,344 L528,436 L450,379 L372,436 L402,344 L323,287 L420,287 Z" fill="none" stroke="#006233" stroke-width="14" stroke-linejoin="round"/></svg>`
+    fr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>`,
+    en: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>`,
+    es: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>`,
+    ar: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>`
 };
 
 const I18N_BASE_URL = (() => {
@@ -96,58 +95,26 @@ function updateLanguageDOM(langData) {
 }
 
 /* =========================================================
-   SYNCHRONISATION ET FERMETURE FERME DU DROPDOWN
+   SYNCHRONISATION VISUELLE DU BOUTON PRINCIPAL (#lang-menu-button)
    ========================================================= */
 
-function closeLanguageDropdown() {
-    // Tente toutes les méthodes de fermeture pour s'adapter à toutes vos pages
-    const dropdowns = document.querySelectorAll('#lang-menu-dropdown, .lang-dropdown, [id*="lang-menu"]');
-    dropdowns.forEach(dropdown => {
-        dropdown.classList.add('hidden');
-        dropdown.classList.remove('show', 'block', 'active');
-        dropdown.style.display = 'none'; // Forçage du style direct au cas où
-    });
-
-    // Déclenche un clic ailleurs pour fermer si géré par un autre JS
-    document.body.click();
-}
-
 function syncLanguageSwitcherUI(lang) {
-    if (isSyncing) return;
-    isSyncing = true;
-
     const activeLang = lang || currentLang || DEFAULT_LANG;
 
-    // 1. Label texte du bouton principal (EN, FR, ES, AR)
-    const langLabels = document.querySelectorAll('#current-lang-label, .current-lang-text');
-    langLabels.forEach(label => {
-        label.textContent = activeLang.toUpperCase();
-    });
+    // 1. Mettre à jour le texte du bouton principal (EN, FR, ES, AR)
+    const langLabel = document.getElementById('current-lang-label');
+    if (langLabel) {
+        langLabel.textContent = activeLang.toUpperCase();
+    }
 
-    // 2. Drapeau bouton principal (#current-flag)
-    const currentFlagContainers = document.querySelectorAll('#current-flag, .current-flag-icon');
-    currentFlagContainers.forEach(container => {
-        if (I18N_FLAG_SVGS[activeLang]) {
-            container.innerHTML = I18N_FLAG_SVGS[activeLang];
+    // 2. Mettre à jour le SVG du drapeau principal dans le bouton
+    const langButton = document.getElementById('lang-menu-button');
+    if (langButton) {
+        const oldSvg = langButton.querySelector('svg');
+        if (oldSvg && I18N_FLAG_SVGS[activeLang]) {
+            oldSvg.outerHTML = I18N_FLAG_SVGS[activeLang];
         }
-    });
-
-    // 3. Remplacement des drapeaux dans toutes les options [data-lang]
-    document.querySelectorAll('[data-lang]').forEach(option => {
-        const optionLang = option.getAttribute('data-lang');
-        if (!I18N_FLAG_SVGS[optionLang]) return;
-
-        // Supprimer tous les anciens SVG et spans de drapeaux dans l'option
-        option.querySelectorAll('svg, .lang-flag, .flag-icon').forEach(el => el.remove());
-
-        // Créer et insérer le SVG autonome
-        const flagSpan = document.createElement('span');
-        flagSpan.className = 'lang-flag inline-flex items-center me-2';
-        flagSpan.innerHTML = I18N_FLAG_SVGS[optionLang];
-        option.insertBefore(flagSpan, option.firstChild);
-    });
-
-    isSyncing = false;
+    }
 }
 
 async function ensureLangData(lang, sections) {
@@ -192,8 +159,14 @@ async function loadLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('preferred_lang', lang);
 
-    // Mettre à jour l'interface (Drapeaux + Textes bouton)
+    // 1. Mettre à jour l'icône et le texte du bouton
     syncLanguageSwitcherUI(lang);
+
+    // 2. Fermer le menu déroulant
+    const dropdown = document.getElementById('lang-menu-dropdown');
+    if (dropdown) {
+        dropdown.classList.add('hidden');
+    }
 
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = lang;
@@ -215,7 +188,7 @@ async function loadLanguage(lang) {
 }
 
 /* =========================================================
-   INITIALISATION ET GESTIONNAIRE D'ÉVÉNEMENTS
+   INITIALISATION + GESTION DE L'OUVERTURE / FERMETURE DU MENU
    ========================================================= */
 
 window.i18n = {
@@ -243,38 +216,26 @@ function initI18n() {
     const savedLang = localStorage.getItem('preferred_lang');
     const initialLang = SUPPORTED_LANGS.includes(savedLang) ? savedLang : DEFAULT_LANG;
 
+    // Charger la langue enregistrée ou le français par défaut
     loadLanguage(initialLang);
 
-    // Synchronisation forcée supplémentaire après court délai pour capturer le DOM tardif
-    setTimeout(() => syncLanguageSwitcherUI(initialLang), 100);
-    setTimeout(() => syncLanguageSwitcherUI(initialLang), 500);
+    // Gérer l'ouverture/fermeture au clic sur le bouton principal (#lang-menu-button)
+    const langBtn = document.getElementById('lang-menu-button');
+    const langDropdown = document.getElementById('lang-menu-dropdown');
 
-    // Clic global sur les langues
-    document.addEventListener('click', event => {
-        // Clic sur une option de langue
-        const langOption = event.target.closest('[data-lang]');
-        if (langOption) {
-            event.preventDefault();
-            event.stopPropagation();
+    if (langBtn && langDropdown) {
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langDropdown.classList.toggle('hidden');
+        });
 
-            const selectedLang = langOption.getAttribute('data-lang');
-            if (selectedLang && SUPPORTED_LANGS.includes(selectedLang)) {
-                loadLanguage(selectedLang);
-                closeLanguageDropdown();
+        // Fermer le menu si l'utilisateur clique n'importe où ailleurs dans la page
+        document.addEventListener('click', (e) => {
+            if (!langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
+                langDropdown.classList.add('hidden');
             }
-            return;
-        }
-
-        // Clic sur le bouton d'ouverture du menu (pour réafficher le menu si caché par display:none)
-        const langBtn = event.target.closest('#lang-menu-button, [id*="lang-menu-btn"]');
-        if (langBtn) {
-            const dropdown = document.getElementById('lang-menu-dropdown');
-            if (dropdown && dropdown.style.display === 'none') {
-                dropdown.style.display = '';
-            }
-            syncLanguageSwitcherUI(currentLang);
-        }
-    }, true);
+        });
+    }
 }
 
 if (document.readyState === 'loading') {

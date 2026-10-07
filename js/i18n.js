@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (FIX CLIC & DROPDOWN)
+   MOROCCO TRIP MAP — I18N ENGINE (FIX CHEMINS & TRADUCTIONS)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -12,7 +12,23 @@ let currentLang = null;
 let currentTranslations = {};
 
 /* =========================================================
-   DRAPEAUX SVG NETS
+   1. CALCUL INTELLIGENT DU CHEMIN DES TRADUCTIONS
+   ========================================================= */
+
+const I18N_BASE_URL = (() => {
+    // Retrouve le chemin absolu/relatif exact du script i18n.js
+    const scripts = document.getElementsByTagName('script');
+    for (let i = 0; i < scripts.length; i++) {
+        const src = scripts[i].src;
+        if (src && src.includes('i18n.js')) {
+            return src.replace(/i18n\.js(\?.*)?$/, '');
+        }
+    }
+    return '/js/';
+})();
+
+/* =========================================================
+   2. DRAPEAUX SVG NETS
    ========================================================= */
 
 const I18N_FLAG_SVGS = {
@@ -22,24 +38,23 @@ const I18N_FLAG_SVGS = {
     ar: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm flex-shrink-0" aria-hidden="true"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>`
 };
 
-const I18N_BASE_URL = (() => {
-    const script = document.currentScript;
-    if (script && script.src) {
-        return script.src.replace(/i18n\.js(\?.*)?$/, '');
-    }
-    return 'js/';
-})();
-
 function getNestedTranslation(object, path) {
     if (!object || !path) return null;
     return path.split('.').reduce((accumulator, key) => accumulator?.[key], object) ?? null;
 }
 
-function fetchJson(url) {
-    return fetch(url, { cache: 'default' }).then(response => {
-        if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
-        return response.json();
-    });
+async function fetchJson(url) {
+    try {
+        const response = await fetch(url, { cache: 'default' });
+        if (!response.ok) {
+            console.warn(`[i18n] Fichier introuvable (${response.status}): ${url}`);
+            return null;
+        }
+        return await response.json();
+    } catch (e) {
+        console.warn(`[i18n] Erreur réseau/JSON sur ${url}:`, e);
+        return null;
+    }
 }
 
 function collectI18nSections() {
@@ -70,14 +85,18 @@ function updateLanguageDOM(langData) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         const value = getNestedTranslation(langData, key);
-        if (value !== null && value !== undefined) element.textContent = value;
+        if (value !== null && value !== undefined) {
+            element.textContent = value;
+        }
     });
 
     /* 2. PLACEHOLDERS */
     document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
         const key = element.getAttribute('data-i18n-placeholder');
         const value = getNestedTranslation(langData, key);
-        if (value !== null && value !== undefined) element.placeholder = value;
+        if (value !== null && value !== undefined) {
+            element.placeholder = value;
+        }
     });
 
     /* 3. ATTRIBUTS */
@@ -89,7 +108,9 @@ function updateLanguageDOM(langData) {
             const key = parts.slice(1).join(':').trim();
             if (!attrName || !key) return;
             const value = getNestedTranslation(langData, key);
-            if (value !== null && value !== undefined) element.setAttribute(attrName, value);
+            if (value !== null && value !== undefined) {
+                element.setAttribute(attrName, value);
+            }
         });
     });
 }
@@ -97,7 +118,7 @@ function updateLanguageDOM(langData) {
 function syncLanguageSwitcherUI(lang) {
     const activeLang = lang || currentLang || DEFAULT_LANG;
 
-    // 1. Label texte (EN, FR, ES, AR)
+    // 1. Texte du bouton (EN, FR, ES, AR)
     const langLabel = document.getElementById('current-lang-label');
     if (langLabel) {
         langLabel.textContent = activeLang.toUpperCase();
@@ -114,30 +135,30 @@ function syncLanguageSwitcherUI(lang) {
 }
 
 async function ensureLangData(lang, sections) {
+    // Exemple de structure : js/translations/fr/core.json
     const base = `${I18N_BASE_URL}translations/${lang}/`;
     const dict = allTranslations[lang] || (allTranslations[lang] = {});
     const tasks = pendingTasks[lang] || (pendingTasks[lang] = {});
 
-    const loadFile = (name, fileName, required = false) => {
+    const loadFile = (name, fileName) => {
         const cacheKey = `${lang}:${name}`;
         if (!tasks[cacheKey]) {
-            tasks[cacheKey] = fetchJson(`${base}${fileName}`).catch(error => {
-                if (required) throw error;
-                console.warn(`[i18n] Échec : ${fileName}`, error);
-                return null;
-            });
+            tasks[cacheKey] = fetchJson(`${base}${fileName}`);
         }
         return tasks[cacheKey];
     };
 
-    let coreData = await loadFile('core', 'core.json', true);
-    if (!coreData || typeof coreData !== 'object') throw new Error(`[i18n] core.json invalide pour "${lang}".`);
-    Object.assign(dict, coreData);
+    // Chargement de core.json
+    let coreData = await loadFile('core', 'core.json');
+    if (coreData && typeof coreData === 'object') {
+        Object.assign(dict, coreData);
+    }
 
+    // Chargement des autres sections nécessaires (ex: places.json, nav.json)
     const missingSections = Array.from(sections || []).filter(name => !(name in dict));
     if (missingSections.length) {
         const loadedData = await Promise.all(
-            missingSections.map(name => loadFile(name, `${encodeURIComponent(name)}.json`, false))
+            missingSections.map(name => loadFile(name, `${encodeURIComponent(name)}.json`))
         );
         missingSections.forEach((name, index) => {
             if (loadedData[index] && typeof loadedData[index] === 'object') {
@@ -149,17 +170,17 @@ async function ensureLangData(lang, sections) {
     return dict;
 }
 
-// Fonction accessible globalement dés le chargement
+// Fonction accessible globalement
 window.switchLanguage = window.changeLanguage = async function(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) return;
 
     currentLang = lang;
     localStorage.setItem('preferred_lang', lang);
 
-    // Mettre à jour l'icône du bouton principal
+    // Mettre à jour l'icône du bouton tout de suite
     syncLanguageSwitcherUI(lang);
 
-    // Masquer le menu déroulant immédiatement
+    // Masquer le menu déroulant
     const dropdown = document.getElementById('lang-menu-dropdown');
     if (dropdown) {
         dropdown.classList.add('hidden');
@@ -172,8 +193,63 @@ window.switchLanguage = window.changeLanguage = async function(lang) {
         const sections = collectI18nSections();
         const dict = await ensureLangData(lang, sections);
 
+        // Appliquer les traductions sur le DOM
         updateLanguageDOM(dict);
 
         window.dispatchEvent(
             new CustomEvent('languageChanged', {
-                detail: { lang
+                detail: { lang, translations: dict }
+            })
+        );
+    } catch (error) {
+        console.error(`[i18n] Erreur lors du chargement de "${lang}":`, error);
+    }
+};
+
+window.i18n = {
+    changeLanguage: window.switchLanguage,
+    switchLanguage: window.switchLanguage,
+    ensureSections: async function(names) {
+        if (!currentLang) return currentTranslations;
+        const dict = await ensureLangData(currentLang, names);
+        currentTranslations = dict;
+        return dict;
+    },
+    getTranslation: function(path) {
+        return getNestedTranslation(currentTranslations, path);
+    },
+    getPhotoLabel: function(n) {
+        const template = getNestedTranslation(currentTranslations, 'common.photo') || getNestedTranslation(currentTranslations, 'places.common.photo');
+        return typeof template === 'string' ? template.replace('{n}', String(n)) : `Photo ${n}`;
+    }
+};
+
+function initI18n() {
+    const savedLang = localStorage.getItem('preferred_lang');
+    const initialLang = SUPPORTED_LANGS.includes(savedLang) ? savedLang : DEFAULT_LANG;
+
+    window.switchLanguage(initialLang);
+
+    // Événement sur le bouton principal
+    const langBtn = document.getElementById('lang-menu-button');
+    const langDropdown = document.getElementById('lang-menu-dropdown');
+
+    if (langBtn && langDropdown) {
+        langBtn.onclick = function(e) {
+            e.stopPropagation();
+            langDropdown.classList.toggle('hidden');
+        };
+
+        document.onclick = function(e) {
+            if (!langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
+                langDropdown.classList.add('hidden');
+            }
+        };
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initI18n);
+} else {
+    initI18n();
+}

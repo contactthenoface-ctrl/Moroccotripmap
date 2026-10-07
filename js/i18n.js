@@ -73,32 +73,98 @@ const I18N_BASE_URL = (function () {
     return 'js/';
 })();
 
+// Langue active (utile pour i18nEnsureSections)
+let currentLang = null;
+// Suivi par langue : { full: true si le fichier complet est chargé, tasks: requêtes déjà lancées }
+const i18nMeta = {};
+
+/** Liste les sections (1er segment des clés) réellement utilisées par la page. */
+function collectI18nSections() {
+    const sections = new Set();
+    const add = (key) => {
+        if (!key) return;
+        const name = key.trim().split('.')[0];
+        if (name) sections.add(name);
+    };
+    document.querySelectorAll('[data-i18n]').forEach(el => add(el.getAttribute('data-i18n')));
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => add(el.getAttribute('data-i18n-placeholder')));
+    document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+        const parts = (el.getAttribute('data-i18n-attr') || '').split(':');
+        if (parts.length > 1) add(parts[1]);
+    });
+    return sections;
+}
+
+function i18nFetchJson(url) {
+    return fetch(url).then(response => {
+        if (!response.ok) {
+            throw new Error('HTTP ' + response.status + ' for ' + url);
+        }
+        return response.json();
+    });
+}
+
 /**
- * Charge js/translations/{lang}.json (cache par langue).
- * Aucun changement HTML requis.
+ * Charge uniquement ce qu'il faut pour la page :
+ *   translations/{lang}/_core.json  (nav, footer, breadcrumb, mobile_menu, destinations, common)
+ *   translations/{lang}/{section}.json pour chaque section utilisée par la page
+ * Si le dossier {lang}/ n'existe pas, retombe sur translations/{lang}.json (fichier complet).
  */
+async function ensureLangData(lang, sections) {
+    const base = I18N_BASE_URL + 'translations/';
+    const dict = allTranslations[lang] || (allTranslations[lang] = {});
+    const meta = i18nMeta[lang] || (i18nMeta[lang] = { full: false, tasks: {} });
+    if (meta.full) return dict;
+
+    const once = (name, url, apply) => {
+        if (!meta.tasks[name]) {
+            meta.tasks[name] = i18nFetchJson(url).then(apply);
+        }
+        return meta.tasks[name];
+    };
+
+    try {
+        await once('_core', base + lang + '/_core.json', data => Object.assign(dict, data));
+    } catch (coreError) {
+        // Secours : ancien fichier unique
+        let langData = await i18nFetchJson(base + lang + '.json');
+        // Filet de sécurité si le fichier contient encore { "fr": { ... } }
+        if (langData && langData[lang] && typeof langData[lang] === 'object' && !langData.nav) {
+            langData = langData[lang];
+        }
+        Object.assign(dict, langData);
+        meta.full = true;
+        return dict;
+    }
+
+    const missing = Array.from(sections || []).filter(name => !(name in dict));
+    await Promise.all(missing.map(name =>
+        once(name, base + lang + '/' + encodeURIComponent(name) + '.json', data => { dict[name] = data; })
+            .catch(err => console.warn('Section de traduction introuvable : ' + name + ' (' + lang + ')', err))
+    ));
+    return dict;
+}
+
+/**
+ * Pour du JS qui lit currentTranslations.xxx sans passer par data-i18n :
+ *   await i18nEnsureSections(['hero', 'cities']);
+ */
+window.i18nEnsureSections = async function (names) {
+    if (!currentLang) return currentTranslations;
+    const dict = await ensureLangData(currentLang, names);
+    currentTranslations = dict;
+    return dict;
+};
+
 async function loadLanguage(lang) {
     try {
-        if (!allTranslations[lang]) {
-            const response = await fetch(I18N_BASE_URL + 'translations/' + lang + '.json');
-            if (!response.ok) {
-                throw new Error('HTTP ' + response.status + ' for translations/' + lang + '.json');
-            }
-            let langData = await response.json();
-
-            // Filet de sécurité si le fichier contient encore { "fr": { ... } }
-            if (langData && langData[lang] && typeof langData[lang] === 'object' && !langData.nav) {
-                langData = langData[lang];
-            }
-            allTranslations[lang] = langData;
-        }
-
-        const dict = allTranslations[lang];
+        const dict = await ensureLangData(lang, collectI18nSections());
         if (!dict || typeof dict !== 'object') {
             console.error('Langue "' + lang + '" introuvable ou fichier invalide');
             return;
         }
 
+        currentLang = lang;
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
         document.documentElement.lang = lang;
         localStorage.setItem('preferred_lang', lang);

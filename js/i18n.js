@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (FIX DRAPEAU BOUTON & MENU)
+   MOROCCO TRIP MAP — I18N ENGINE (CLEAN & FORCE DRAPEAU)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -12,50 +12,14 @@ let currentLang = null;
 let currentTranslations = {};
 
 /* =========================================================
-   DRAPEAUX SVG
+   DRAPEAUX SVG OFFICIELS
    ========================================================= */
 
 const I18N_FLAG_SVGS = {
-
-    fr: `
-        <svg viewBox="0 0 900 600" aria-hidden="true">
-            <rect width="900" height="600" fill="#ED2939"/>
-            <rect width="600" height="600" fill="#fff"/>
-            <rect width="300" height="600" fill="#002395"/>
-        </svg>
-    `,
-
-    en: `
-        <svg viewBox="0 0 600 300" aria-hidden="true">
-            <clipPath id="s">
-                <path d="M0,0 v300 h600 v-300 z"/>
-            </clipPath>
-            <clipPath id="t">
-                <path d="M0,0 L600,300 M600,0 L0,300"/>
-            </clipPath>
-            <g clip-path="url(#s)">
-                <path d="M0,0 L600,300 M600,0 L0,300" stroke="#fff" stroke-width="60"/>
-                <path d="M0,0 L600,300 M600,0 L0,300" stroke="#012169" stroke-width="60" clip-path="url(#t)"/>
-                <path d="M0,0 L600,300 M600,0 L0,300" stroke="#C8102E" stroke-width="20" clip-path="url(#t)"/>
-                <path d="M300,0 v300 M0,150 h600" stroke="#fff" stroke-width="100"/>
-                <path d="M300,0 v300 M0,150 h600" stroke="#C8102E" stroke-width="60"/>
-            </g>
-        </svg>
-    `,
-
-    es: `
-        <svg viewBox="0 0 750 500" aria-hidden="true">
-            <rect width="750" height="500" fill="#c60b1e"/>
-            <rect width="750" height="250" y="125" fill="#ffc400"/>
-        </svg>
-    `,
-
-    ar: `
-        <svg viewBox="0 0 900 600" aria-hidden="true">
-            <rect width="900" height="600" fill="#c1272d"/>
-            <path d="M450,195 L480,287 L577,287 L498,344 L528,436 L450,379 L372,436 L402,344 L323,287 L420,287 Z" fill="none" stroke="#006233" stroke-width="14" stroke-linejoin="round"/>
-        </svg>
-    `
+    fr: `<svg viewBox="0 0 900 600" aria-hidden="true"><rect width="900" height="600" fill="#ED2939"/><rect width="600" height="600" fill="#fff"/><rect width="300" height="600" fill="#002395"/></svg>`,
+    en: `<svg viewBox="0 0 600 300" aria-hidden="true"><clipPath id="s"><path d="M0,0 v300 h600 v-300 z"/></clipPath><clipPath id="t"><path d="M0,0 L600,300 M600,0 L0,300"/></clipPath><g clip-path="url(#s)"><path d="M0,0 L600,300 M600,0 L0,300" stroke="#fff" stroke-width="60"/><path d="M0,0 L600,300 M600,0 L0,300" stroke="#012169" stroke-width="60" clip-path="url(#t)"/><path d="M0,0 L600,300 M600,0 L0,300" stroke="#C8102E" stroke-width="20" clip-path="url(#t)"/><path d="M300,0 v300 M0,150 h600" stroke="#fff" stroke-width="100"/><path d="M300,0 v300 M0,150 h600" stroke="#C8102E" stroke-width="60"/></g></svg>`,
+    es: `<svg viewBox="0 0 750 500" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg>`,
+    ar: `<svg viewBox="0 0 900 600" aria-hidden="true"><rect width="900" height="600" fill="#c1272d"/><path d="M450,195 L480,287 L577,287 L498,344 L528,436 L450,379 L372,436 L402,344 L323,287 L420,287 Z" fill="none" stroke="#006233" stroke-width="14" stroke-linejoin="round"/></svg>`
 };
 
 const I18N_BASE_URL = (() => {
@@ -131,48 +95,47 @@ function updateLanguageDOM(langData) {
 }
 
 /* =========================================================
-   SYNCHRONISATION ET MISE À JOUR NETTE DE L'INTERFACE
+   REMPLACEMENT STRICTE DU DRAPEAU (SUPPRESSION DES ANCIENS)
    ========================================================= */
 
 function syncLanguageSwitcherUI(lang) {
-    // 1. Mise à jour du texte du label principal
+    // 1. Label texte (ex: FR, AR)
     const langLabel = document.getElementById('current-lang-label');
     if (langLabel) {
         langLabel.textContent = lang.toUpperCase();
     }
 
-    // 2. Recherche du bouton principal (par ID ou par classe/attribut)
+    // 2. Bouton principal : Nettoyage et injection
     const langButton = document.getElementById('lang-menu-button') || document.querySelector('[aria-haspopup="true"]');
-    
     if (langButton && I18N_FLAG_SVGS[lang]) {
-        let flagWrapper = langButton.querySelector('.lang-flag');
 
-        if (!flagWrapper) {
-            flagWrapper = document.createElement('span');
-            flagWrapper.className = 'lang-flag';
-            // Insère le wrapper de drapeau tout au début du bouton (devant le texte FR/AR)
-            langButton.insertBefore(flagWrapper, langButton.firstChild);
-        }
+        // Suppression de TOUS les anciens SVG de drapeau ou wrappers en dur
+        langButton.querySelectorAll('svg:not(.arrow), .lang-flag').forEach(el => el.remove());
 
-        // Met à jour le SVG dans le wrapper du bouton
+        // Création du nouveau wrapper propre
+        const flagWrapper = document.createElement('span');
+        flagWrapper.className = 'lang-flag';
         flagWrapper.innerHTML = I18N_FLAG_SVGS[lang];
+
+        // Insertion au tout début du bouton
+        langButton.insertBefore(flagWrapper, langButton.firstChild);
     }
 
-    // 3. Injection des drapeaux dans le menu déroulant
+    // 3. Drapeaux des options du menu déroulant
     document.querySelectorAll('[data-lang]').forEach(item => {
         const itemLang = item.getAttribute('data-lang');
         if (I18N_FLAG_SVGS[itemLang]) {
-            let itemFlag = item.querySelector('.lang-flag');
-            if (!itemFlag) {
-                itemFlag = document.createElement('span');
-                itemFlag.className = 'lang-flag';
-                item.insertBefore(itemFlag, item.firstChild);
-            }
+            item.querySelectorAll('svg:not(.arrow), .lang-flag').forEach(el => el.remove());
+            
+            const itemFlag = document.createElement('span');
+            itemFlag.className = 'lang-flag';
             itemFlag.innerHTML = I18N_FLAG_SVGS[itemLang];
+            
+            item.insertBefore(itemFlag, item.firstChild);
         }
     });
 
-    // 4. Fermeture du menu déroulant
+    // 4. Fermeture du dropdown
     const langDropdown = document.getElementById('lang-menu-dropdown');
     if (langDropdown) {
         langDropdown.classList.add('hidden');
@@ -218,7 +181,7 @@ async function ensureLangData(lang, sections) {
 async function loadLanguage(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) return;
 
-    // 1. Changement visuel immédiat (0ms)
+    // Mise à jour visuelle instantanée (0 ms)
     syncLanguageSwitcherUI(lang);
 
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -227,7 +190,6 @@ async function loadLanguage(lang) {
 
     currentLang = lang;
 
-    // 2. Application des traductions
     try {
         const sections = collectI18nSections();
         const dict = await ensureLangData(lang, sections);
@@ -245,7 +207,7 @@ async function loadLanguage(lang) {
 }
 
 /* =========================================================
-   API PUBLIQUE ET INITIALISATION
+   API PUBLIQUE ET DOM CONTENT LOADED
    ========================================================= */
 
 window.i18n = {

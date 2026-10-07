@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (OPTIMISÉ INSTANTANÉ)
+   MOROCCO TRIP MAP — I18N ENGINE (FIX DRAPEAUX)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -12,7 +12,7 @@ let currentLang = null;
 let currentTranslations = {};
 
 /* =========================================================
-   DRAPEAUX SVG (OFFICIELS)
+   DRAPEAUX SVG
    ========================================================= */
 
 const I18N_FLAG_SVGS = {
@@ -131,31 +131,43 @@ function updateLanguageDOM(langData) {
 }
 
 /* =========================================================
-   SYNCHRONISATION INSTANTANÉE DE L'INTERFACE
+   SYNCHRONISATION ET MISE À JOUR NETTE DE L'INTERFACE
    ========================================================= */
 
 function syncLanguageSwitcherUI(lang) {
-    // 1. Mise à jour instantanée du texte
+    // 1. Mise à jour du texte
     const langLabel = document.getElementById('current-lang-label');
     if (langLabel) {
         langLabel.textContent = lang.toUpperCase();
     }
 
-    // 2. Mise à jour instantanée du drapeau du bouton
+    // 2. Gestion du drapeau
     const langButton = document.getElementById('lang-menu-button');
     if (langButton && I18N_FLAG_SVGS[lang]) {
+
+        // Rechercher un wrapper existant ou le premier SVG
         let flagWrapper = langButton.querySelector('.lang-flag');
 
         if (!flagWrapper) {
+            // Créer le wrapper dédié au drapeau s'il n'existe pas
             flagWrapper = document.createElement('span');
             flagWrapper.className = 'lang-flag';
+
+            // Si un SVG était directement dans le HTML au début (ex: drapeau dur), on le retire
+            const existingSvg = langButton.querySelector('svg');
+            if (existingSvg && !existingSvg.classList.contains('arrow')) {
+                existingSvg.remove();
+            }
+
+            // Insérer le drapeau tout au début du bouton
             langButton.insertBefore(flagWrapper, langButton.firstChild);
         }
 
+        // Remplacer proprement le contenu du drapeau par la nouvelle langue
         flagWrapper.innerHTML = I18N_FLAG_SVGS[lang];
     }
 
-    // 3. Fermeture instantanée du menu déroulant
+    // 3. Fermeture du menu déroulant
     const langDropdown = document.getElementById('lang-menu-dropdown');
     if (langDropdown) {
         langDropdown.classList.add('hidden');
@@ -201,7 +213,7 @@ async function ensureLangData(lang, sections) {
 async function loadLanguage(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) return;
 
-    // MISE À JOUR VISUELLE IMMÉDIATE (0ms)
+    // 1. Changement visuel immédiat (0ms)
     syncLanguageSwitcherUI(lang);
 
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -210,7 +222,7 @@ async function loadLanguage(lang) {
 
     currentLang = lang;
 
-    // CHARGEMENT ET APPLICATION DES TEXTES
+    // 2. Application des traductions
     try {
         const sections = collectI18nSections();
         const dict = await ensureLangData(lang, sections);
@@ -223,7 +235,7 @@ async function loadLanguage(lang) {
             })
         );
     } catch (error) {
-        console.error(`[i18n] Erreur de chargement pour "${lang}":`, error);
+        console.error(`[i18n] Erreur pour "${lang}":`, error);
     }
 }
 

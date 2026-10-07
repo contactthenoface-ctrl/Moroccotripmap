@@ -2,7 +2,7 @@
    MOROCCO TRIP MAP — I18N ENGINE
    =========================================================
 
-   Structure attendue :
+   Structure :
 
    js/
    ├── i18n.js
@@ -10,22 +10,22 @@
        ├── fr/
        │   ├── core.json
        │   ├── hero.json
-       │   ├── ...
+       │   └── ...
        │
        ├── en/
        │   ├── core.json
        │   ├── hero.json
-       │   ├── ...
+       │   └── ...
        │
        ├── es/
        │   ├── core.json
        │   ├── hero.json
-       │   ├── ...
+       │   └── ...
        │
        └── ar/
            ├── core.json
            ├── hero.json
-           ├── ...
+           └── ...
 
    ========================================================= */
 
@@ -57,20 +57,24 @@ const I18N_FLAG_SVGS = {
 
     fr: `
         <svg
+            class="i18n-flag-svg"
             viewBox="0 0 24 16"
             aria-hidden="true"
+            focusable="false"
         >
             <rect
                 width="8"
                 height="16"
                 fill="#0055A4"
             />
+
             <rect
                 width="8"
                 height="16"
                 x="8"
                 fill="#FFFFFF"
             />
+
             <rect
                 width="8"
                 height="16"
@@ -82,8 +86,10 @@ const I18N_FLAG_SVGS = {
 
     en: `
         <svg
+            class="i18n-flag-svg"
             viewBox="0 0 24 16"
             aria-hidden="true"
+            focusable="false"
         >
             <rect
                 width="24"
@@ -119,8 +125,10 @@ const I18N_FLAG_SVGS = {
 
     es: `
         <svg
+            class="i18n-flag-svg"
             viewBox="0 0 24 16"
             aria-hidden="true"
+            focusable="false"
         >
             <rect
                 width="24"
@@ -139,8 +147,10 @@ const I18N_FLAG_SVGS = {
 
     ar: `
         <svg
+            class="i18n-flag-svg"
             viewBox="0 0 24 16"
             aria-hidden="true"
+            focusable="false"
         >
             <rect
                 width="24"
@@ -172,26 +182,18 @@ const I18N_FLAG_SVGS = {
 
 /* =========================================================
    URL DE BASE
-   =========================================================
-
-   Si i18n.js se trouve ici :
-
-   /js/i18n.js
-
-   alors les traductions seront cherchées ici :
-
-   /js/translations/
-
    ========================================================= */
 
 const I18N_BASE_URL = (() => {
 
-    const script = document.currentScript;
+    const script =
+        document.currentScript;
 
     if (
         script &&
         script.src
     ) {
+
         return script.src.replace(
             /i18n\.js(\?.*)?$/,
             ''
@@ -204,16 +206,7 @@ const I18N_BASE_URL = (() => {
 
 /* =========================================================
    UTILITAIRE :
-   RÉCUPÉRER UNE TRADUCTION IMBRIQUÉE
-   =========================================================
-
-   Exemple :
-
-   getNestedTranslation(
-       translations,
-       'hero.title_line1'
-   );
-
+   TRADUCTION IMBRIQUÉE
    ========================================================= */
 
 function getNestedTranslation(
@@ -265,26 +258,13 @@ function fetchJson(url) {
 
 
 /* =========================================================
-   ANALYSE DU DOM
-   DÉTECTER LES SECTIONS NÉCESSAIRES
-   =========================================================
-
-   Exemple :
-
-   data-i18n="hero.title_line1"
-
-   => hero.json
-
-   data-i18n="nav.destinations"
-
-   => nav.json si présent,
-      sinon nav peut être dans core.json.
-
+   COLLECTE DES SECTIONS UTILISÉES
    ========================================================= */
 
 function collectI18nSections() {
 
-    const sections = new Set();
+    const sections =
+        new Set();
 
 
     function addKey(key) {
@@ -299,7 +279,10 @@ function collectI18nSections() {
                 .split('.')[0];
 
         if (section) {
-            sections.add(section);
+
+            sections.add(
+                section
+            );
         }
     }
 
@@ -309,7 +292,9 @@ function collectI18nSections() {
        ----------------------------------------------------- */
 
     document
-        .querySelectorAll('[data-i18n]')
+        .querySelectorAll(
+            '[data-i18n]'
+        )
         .forEach(element => {
 
             addKey(
@@ -340,13 +325,6 @@ function collectI18nSections() {
 
     /* -----------------------------------------------------
        data-i18n-attr
-
-       Exemple :
-
-       data-i18n-attr="
-           title:common.title,
-           aria-label:common.menu
-       "
        ----------------------------------------------------- */
 
     document
@@ -359,6 +337,7 @@ function collectI18nSections() {
                 element.getAttribute(
                     'data-i18n-attr'
                 ) || '';
+
 
             rules
                 .split(',')
@@ -395,11 +374,13 @@ function updateLanguageDOM(
 
 
     /* =====================================================
-       1. TEXTES
+       1. TEXT CONTENT
        ===================================================== */
 
     document
-        .querySelectorAll('[data-i18n]')
+        .querySelectorAll(
+            '[data-i18n]'
+        )
         .forEach(element => {
 
             const key =
@@ -407,16 +388,19 @@ function updateLanguageDOM(
                     'data-i18n'
                 );
 
+
             const value =
                 getNestedTranslation(
                     langData,
                     key
                 );
 
+
             if (
                 value !== null &&
                 value !== undefined
             ) {
+
                 element.textContent =
                     value;
             }
@@ -438,16 +422,19 @@ function updateLanguageDOM(
                     'data-i18n-placeholder'
                 );
 
+
             const value =
                 getNestedTranslation(
                     langData,
                     key
                 );
 
+
             if (
                 value !== null &&
                 value !== undefined
             ) {
+
                 element.placeholder =
                     value;
             }
@@ -456,15 +443,6 @@ function updateLanguageDOM(
 
     /* =====================================================
        3. ATTRIBUTS
-       =====================================================
-
-       Exemple :
-
-       data-i18n-attr="
-           title:common.title,
-           aria-label:common.menu
-       "
-
        ===================================================== */
 
     document
@@ -478,6 +456,7 @@ function updateLanguageDOM(
                     'data-i18n-attr'
                 ) || '';
 
+
             rules
                 .split(',')
                 .forEach(rule => {
@@ -485,14 +464,17 @@ function updateLanguageDOM(
                     const parts =
                         rule.split(':');
 
+
                     const attrName =
                         parts[0]?.trim();
+
 
                     const key =
                         parts
                             .slice(1)
                             .join(':')
                             .trim();
+
 
                     if (
                         !attrName ||
@@ -501,11 +483,13 @@ function updateLanguageDOM(
                         return;
                     }
 
+
                     const value =
                         getNestedTranslation(
                             langData,
                             key
                         );
+
 
                     if (
                         value !== null &&
@@ -530,14 +514,15 @@ function syncLanguageSwitcherUI(
     lang
 ) {
 
-    /* -----------------------------------------------------
-       Label
-       ----------------------------------------------------- */
+    /* =====================================================
+       1. LABEL DE LANGUE
+       ===================================================== */
 
     const langLabel =
         document.getElementById(
             'current-lang-label'
         );
+
 
     if (langLabel) {
 
@@ -546,41 +531,96 @@ function syncLanguageSwitcherUI(
     }
 
 
-    /* -----------------------------------------------------
-       Drapeau
-       ----------------------------------------------------- */
+    /* =====================================================
+       2. DRAPEAU DU BOUTON PRINCIPAL
+       ===================================================== */
 
     const langButton =
         document.getElementById(
             'lang-menu-button'
         );
 
+
     if (
         langButton &&
         I18N_FLAG_SVGS[lang]
     ) {
 
-        const svgElement =
+        /*
+         * PRIORITÉ 1 :
+         * Conteneur dédié .lang-flag
+         */
+
+        const flagContainer =
             langButton.querySelector(
-                'svg'
+                '.lang-flag'
             );
 
-        if (svgElement) {
 
-            svgElement.outerHTML =
+        if (flagContainer) {
+
+            flagContainer.innerHTML =
                 I18N_FLAG_SVGS[lang];
+
+        } else {
+
+            /*
+             * PRIORITÉ 2 :
+             * Un SVG déjà présent dans le bouton
+             */
+
+            const existingSvg =
+                langButton.querySelector(
+                    'svg'
+                );
+
+
+            if (existingSvg) {
+
+                existingSvg.outerHTML =
+                    I18N_FLAG_SVGS[lang];
+
+            } else {
+
+                /*
+                 * PRIORITÉ 3 :
+                 * Aucun SVG :
+                 * on crée automatiquement
+                 * un conteneur dédié.
+                 */
+
+                const newFlagContainer =
+                    document.createElement(
+                        'span'
+                    );
+
+
+                newFlagContainer.className =
+                    'lang-flag';
+
+
+                newFlagContainer.innerHTML =
+                    I18N_FLAG_SVGS[lang];
+
+
+                langButton.insertBefore(
+                    newFlagContainer,
+                    langButton.firstChild
+                );
+            }
         }
     }
 
 
-    /* -----------------------------------------------------
-       Fermer le menu
-       ----------------------------------------------------- */
+    /* =====================================================
+       3. FERMER LE DROPDOWN
+       ===================================================== */
 
     const langDropdown =
         document.getElementById(
             'lang-menu-dropdown'
         );
+
 
     if (langDropdown) {
 
@@ -605,7 +645,7 @@ async function ensureLangData(
 
 
     /* -----------------------------------------------------
-       Initialiser le dictionnaire
+       Dictionnaire
        ----------------------------------------------------- */
 
     const dict =
@@ -614,7 +654,7 @@ async function ensureLangData(
 
 
     /* -----------------------------------------------------
-       Initialiser les tâches en cours
+       Tâches déjà lancées
        ----------------------------------------------------- */
 
     const tasks =
@@ -623,7 +663,7 @@ async function ensureLangData(
 
 
     /* =====================================================
-       CHARGER UN FICHIER UNE SEULE FOIS
+       CHARGEUR DE FICHIER
        ===================================================== */
 
     const loadFile = (
@@ -666,10 +706,11 @@ async function ensureLangData(
 
 
     /* =====================================================
-       1. CORE — OBLIGATOIRE
+       CORE.JSON — OBLIGATOIRE
        ===================================================== */
 
     let coreData;
+
 
     try {
 
@@ -709,12 +750,14 @@ async function ensureLangData(
 
 
     /* =====================================================
-       2. SECTIONS SPÉCIFIQUES
+       SECTIONS SPÉCIFIQUES
        ===================================================== */
 
     const missingSections =
         Array
-            .from(sections || [])
+            .from(
+                sections || []
+            )
             .filter(
                 name =>
                     !(name in dict)
@@ -744,6 +787,7 @@ async function ensureLangData(
                 const data =
                     loadedData[index];
 
+
                 if (
                     data &&
                     typeof data === 'object'
@@ -762,7 +806,7 @@ async function ensureLangData(
 
 
 /* =========================================================
-   CHARGER UNE LANGUE
+   CHANGEMENT DE LANGUE
    ========================================================= */
 
 async function loadLanguage(
@@ -788,26 +832,22 @@ async function loadLanguage(
 
 
     /* -----------------------------------------------------
-       Fermer immédiatement le dropdown
+       Fermer le menu immédiatement
        ----------------------------------------------------- */
 
-    const dropdown =
-        document.getElementById(
+    document
+        .getElementById(
             'lang-menu-dropdown'
-        );
-
-    if (dropdown) {
-
-        dropdown.classList.add(
+        )
+        ?.classList.add(
             'hidden'
         );
-    }
 
 
     try {
 
         /* -------------------------------------------------
-           Détecter les sections utilisées
+           Détecter les sections
            ------------------------------------------------- */
 
         const sections =
@@ -837,7 +877,7 @@ async function loadLanguage(
 
 
         /* -------------------------------------------------
-           Langue courante
+           Langue actuelle
            ------------------------------------------------- */
 
         currentLang =
@@ -855,7 +895,7 @@ async function loadLanguage(
 
 
         /* -------------------------------------------------
-           Langue HTML
+           Attribut lang
            ------------------------------------------------- */
 
         document.documentElement.lang =
@@ -863,7 +903,7 @@ async function loadLanguage(
 
 
         /* -------------------------------------------------
-           Sauvegarder la préférence
+           Sauvegarder
            ------------------------------------------------- */
 
         localStorage.setItem(
@@ -882,7 +922,7 @@ async function loadLanguage(
 
 
         /* -------------------------------------------------
-           Mettre à jour le sélecteur
+           Synchroniser le bouton
            ------------------------------------------------- */
 
         syncLanguageSwitcherUI(
@@ -924,7 +964,7 @@ async function loadLanguage(
 window.i18n = {
 
     /* -----------------------------------------------------
-       Changer de langue
+       Changement de langue
        ----------------------------------------------------- */
 
     changeLanguage:
@@ -1021,7 +1061,6 @@ window.i18n = {
 
 /* =========================================================
    ALIASES GLOBAUX
-   COMPATIBILITÉ AVEC L'ANCIEN CODE
    ========================================================= */
 
 window.changeLanguage =
@@ -1046,7 +1085,7 @@ document.addEventListener(
     () => {
 
         /* -------------------------------------------------
-           Récupérer la langue sauvegardée
+           Langue sauvegardée
            ------------------------------------------------- */
 
         const savedLang =
@@ -1073,7 +1112,7 @@ document.addEventListener(
 
 
         /* -------------------------------------------------
-           Délégation des boutons de langue
+           Délégation des boutons
            ------------------------------------------------- */
 
         document.addEventListener(

@@ -1,5 +1,5 @@
 /* =========================================================
-   MOROCCO TRIP MAP — I18N ENGINE (FIX DRAPEAUX)
+   MOROCCO TRIP MAP — I18N ENGINE (FIX DRAPEAU BOUTON & MENU)
    ========================================================= */
 
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'ar'];
@@ -135,39 +135,44 @@ function updateLanguageDOM(langData) {
    ========================================================= */
 
 function syncLanguageSwitcherUI(lang) {
-    // 1. Mise à jour du texte
+    // 1. Mise à jour du texte du label principal
     const langLabel = document.getElementById('current-lang-label');
     if (langLabel) {
         langLabel.textContent = lang.toUpperCase();
     }
 
-    // 2. Gestion du drapeau
-    const langButton = document.getElementById('lang-menu-button');
+    // 2. Recherche du bouton principal (par ID ou par classe/attribut)
+    const langButton = document.getElementById('lang-menu-button') || document.querySelector('[aria-haspopup="true"]');
+    
     if (langButton && I18N_FLAG_SVGS[lang]) {
-
-        // Rechercher un wrapper existant ou le premier SVG
         let flagWrapper = langButton.querySelector('.lang-flag');
 
         if (!flagWrapper) {
-            // Créer le wrapper dédié au drapeau s'il n'existe pas
             flagWrapper = document.createElement('span');
             flagWrapper.className = 'lang-flag';
-
-            // Si un SVG était directement dans le HTML au début (ex: drapeau dur), on le retire
-            const existingSvg = langButton.querySelector('svg');
-            if (existingSvg && !existingSvg.classList.contains('arrow')) {
-                existingSvg.remove();
-            }
-
-            // Insérer le drapeau tout au début du bouton
+            // Insère le wrapper de drapeau tout au début du bouton (devant le texte FR/AR)
             langButton.insertBefore(flagWrapper, langButton.firstChild);
         }
 
-        // Remplacer proprement le contenu du drapeau par la nouvelle langue
+        // Met à jour le SVG dans le wrapper du bouton
         flagWrapper.innerHTML = I18N_FLAG_SVGS[lang];
     }
 
-    // 3. Fermeture du menu déroulant
+    // 3. Injection des drapeaux dans le menu déroulant
+    document.querySelectorAll('[data-lang]').forEach(item => {
+        const itemLang = item.getAttribute('data-lang');
+        if (I18N_FLAG_SVGS[itemLang]) {
+            let itemFlag = item.querySelector('.lang-flag');
+            if (!itemFlag) {
+                itemFlag = document.createElement('span');
+                itemFlag.className = 'lang-flag';
+                item.insertBefore(itemFlag, item.firstChild);
+            }
+            itemFlag.innerHTML = I18N_FLAG_SVGS[itemLang];
+        }
+    });
+
+    // 4. Fermeture du menu déroulant
     const langDropdown = document.getElementById('lang-menu-dropdown');
     if (langDropdown) {
         langDropdown.classList.add('hidden');

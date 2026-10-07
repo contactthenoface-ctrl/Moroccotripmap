@@ -4,7 +4,7 @@
 - [ ] Vérifier canonical + hreflang pointent bien vers moroccotripmap.com
 - [ ] Configurer le domaine personnalisé dans Settings > Pages
 - [ ] Ajouter le site à Google Search Console
-
+Ajoute un article de blog sur Taghazout skatepark > https://www.instagram.com/taghazout_skatepark?stkn=YXVodXRyd3BzbWNw
 
 Notes : Comment avoir du traffic et Monétiser le site
 

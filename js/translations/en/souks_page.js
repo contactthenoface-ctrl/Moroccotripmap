@@ -1,0 +1,178 @@
+// souks_page — en
+const souks_page = {
+  "seo": {
+    "title": "Taroudant Souks: Arab & Berber Markets Guide | MoroccoTripMap",
+    "description": "Explore the Arab and Berber souks of Taroudant: silver jewellery, leather, spices, produce and everyday market life in the Little Marrakech of the Souss.",
+    "og_title": "Taroudant Souks: Arab & Berber Markets Guide",
+    "og_description": "A practical guide to Taroudant’s two main markets — relaxed shopping, bargaining tips and what to buy."
+  },
+  "name": "Arab & Berber Souks",
+  "hero_subtitle": "Two complementary markets in the medina of Taroudant, the Little Marrakech — silver, leather, spices and daily life.",
+  "info": {
+    "best_time_label": "Best time",
+    "best_time_val": "Morning & late afternoon",
+    "duration_label": "Suggested time",
+    "duration_val": "1 – 3 hours",
+    "entry_label": "Entry",
+    "entry_val": "Free",
+    "area_label": "Location",
+    "area_val": "Medina, near Place Assarag"
+  },
+  "overview": {
+    "title": "Markets that still serve the town",
+    "p1": "Taroudant has two main market areas often called the Arab souk and the Berber (Amazigh) souk. They sit close to Place Assarag and remain working markets as much as visitor attractions.",
+    "p2": "Expect silver jewellery, leather goods, spices, argan products, textiles and everyday produce. Bargaining is expected but usually calmer than in high-pressure tourist streets.",
+    "p3": "Use Place Assarag as your landmark: from the square you can step into either market, then return for tea before diving back in."
+  },
+  "gallery": {
+    "badge": "Photo gallery",
+    "title": "Arab & Berber Souks in pictures",
+    "subtitle": "Scenes from Arab & Berber Souks in Taroudant.",
+    "s1": {
+      "caption": "Arab & Berber Souks — view 1"
+    },
+    "s2": {
+      "caption": "Arab & Berber Souks — view 2"
+    },
+    "s3": {
+      "caption": "Arab & Berber Souks — view 3"
+    },
+    "s4": {
+      "caption": "Arab & Berber Souks — view 4"
+    },
+    "s5": {
+      "caption": "Arab & Berber Souks — view 5"
+    }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Arab & Berber Souks through the day",
+    "subtitle": "When to go.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet hours",
+      "desc": "Cooler and calmer.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Late afternoon",
+      "title": "Best light",
+      "desc": "Warm light and local life.",
+      "duration": "Late afternoon"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Wind down",
+      "desc": "Softer pace after the heat.",
+      "duration": "Evening"
+    }
+  },
+  "food": {
+    "title": "Food near Arab & Berber Souks",
+    "p1": "Plan meals around Place Assarag or a medina riad before or after your visit.",
+    "li1": "Mint tea on Place Assarag.",
+    "li2": "Simple Moroccan dishes near the square.",
+    "li3": "Riad lunch in the medina.",
+    "li4": "Carry water in summer.",
+    "li5": "Dinner in a medina riad.",
+    "p2": "Confirm opening hours of any on-site options."
+  },
+  "tips": {
+    "title": "Practical tips for Arab & Berber Souks",
+    "1": {
+      "title": "Getting there",
+      "desc": "On foot from the medina or by petit taxi. Agree fares in advance if the meter is not used."
+    },
+    "2": {
+      "title": "Timing",
+      "desc": "Prefer morning or late afternoon in warm months."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Ask before photographing people; keep valuables secure."
+    }
+  },
+  "gyg": {
+    "badge": "Tours & experiences",
+    "title": "Tours related to Arab & Berber Souks",
+    "subtitle": "Options if you prefer a local guide.",
+    "t1": {
+      "tag": "Walking",
+      "title": "Taroudant medina walk",
+      "desc": "Square, souks and walls with a guide."
+    },
+    "t2": {
+      "tag": "City",
+      "title": "Taroudant highlights",
+      "desc": "A balanced loop of the Little Marrakech."
+    },
+    "t3": {
+      "tag": "Half day",
+      "title": "Taroudant & Tiout",
+      "desc": "Town plus the palm oasis."
+    },
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Taroudant",
+    "back": "← Back to Taroudant guide"
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read the article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Taroudant",
+      "desc": "Practical tips for the Little Marrakech."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "What to see in Taroudant",
+      "desc": "Walls, souks and day trips."
+    },
+    "a3": {
+      "tag": "Tips",
+      "title": "Two or three days in Taroudant",
+      "desc": "A simple itinerary outline."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "Arab & Berber Souks FAQ",
+    "q1": {
+      "question": "Is Arab & Berber Souks free to visit?",
+      "answer": "In most cases public areas are free. Confirm any ticketed interiors on site."
+    },
+    "q2": {
+      "question": "How long should I spend?",
+      "answer": "Thirty minutes to two hours depending on the site and your pace."
+    },
+    "q3": {
+      "question": "What is the best time to go?",
+      "answer": "Morning or late afternoon for cooler temperatures and better light."
+    },
+    "q4": {
+      "question": "How do I get there from the medina?",
+      "answer": "On foot if central, or by petit taxi. Ask for the place name as a landmark."
+    },
+    "q5": {
+      "question": "Can I take photos?",
+      "answer": "Usually yes outdoors. Ask before photographing people or restricted interiors."
+    }
+  },
+  "destinations": {
+    "taroudant": {
+      "name": "Taroudant"
+    }
+  }
+};
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = souks_page;
+} else if (typeof window !== "undefined") {
+  window.souks_page = souks_page;
+}

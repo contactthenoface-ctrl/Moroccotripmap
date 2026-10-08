@@ -1,0 +1,178 @@
+// kasbah_page — en
+const kasbah_page = {
+  "seo": {
+    "title": "Taroudant Kasbah: Historic Quarter Guide | MoroccoTripMap",
+    "description": "Visit the kasbah of Taroudant: the quieter former royal quarter in the north-east of the medina, square towers and a different pace from the main souks.",
+    "og_title": "Taroudant Kasbah: Historic Quarter Guide",
+    "og_description": "Explore the kasbah district of Taroudant — quieter lanes, fortification character and local life in the Little Marrakech."
+  },
+  "name": "The Kasbah",
+  "hero_subtitle": "The former royal quarter of Taroudant: quieter lanes, square towers and a slower pace than the main souks.",
+  "info": {
+    "best_time_label": "Best time",
+    "best_time_val": "Morning & late afternoon",
+    "duration_label": "Suggested time",
+    "duration_val": "1 – 2 hours",
+    "entry_label": "Entry",
+    "entry_val": "Free (public lanes)",
+    "area_label": "Location",
+    "area_val": "North-east medina"
+  },
+  "overview": {
+    "title": "A quieter historic quarter",
+    "p1": "The kasbah of Taroudant sits in the north-east of the walled medina. Historically tied to power and defence, it is now a residential and atmospheric quarter.",
+    "p2": "Walking here pairs well with Bab el-Kasbah, the most ornate gate of the ramparts.",
+    "p3": "Public streets are free. Respect private doorways and ask before photographing people at close range."
+  },
+  "gallery": {
+    "badge": "Photo gallery",
+    "title": "The Kasbah in pictures",
+    "subtitle": "Scenes from The Kasbah in Taroudant.",
+    "s1": {
+      "caption": "The Kasbah — view 1"
+    },
+    "s2": {
+      "caption": "The Kasbah — view 2"
+    },
+    "s3": {
+      "caption": "The Kasbah — view 3"
+    },
+    "s4": {
+      "caption": "The Kasbah — view 4"
+    },
+    "s5": {
+      "caption": "The Kasbah — view 5"
+    }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "The Kasbah through the day",
+    "subtitle": "When to go.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet hours",
+      "desc": "Cooler and calmer.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Late afternoon",
+      "title": "Best light",
+      "desc": "Warm light and local life.",
+      "duration": "Late afternoon"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Wind down",
+      "desc": "Softer pace after the heat.",
+      "duration": "Evening"
+    }
+  },
+  "food": {
+    "title": "Food near The Kasbah",
+    "p1": "Plan meals around Place Assarag or a medina riad before or after your visit.",
+    "li1": "Mint tea on Place Assarag.",
+    "li2": "Simple Moroccan dishes near the square.",
+    "li3": "Riad lunch in the medina.",
+    "li4": "Carry water in summer.",
+    "li5": "Dinner in a medina riad.",
+    "p2": "Confirm opening hours of any on-site options."
+  },
+  "tips": {
+    "title": "Practical tips for The Kasbah",
+    "1": {
+      "title": "Getting there",
+      "desc": "On foot from the medina or by petit taxi. Agree fares in advance if the meter is not used."
+    },
+    "2": {
+      "title": "Timing",
+      "desc": "Prefer morning or late afternoon in warm months."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Ask before photographing people; keep valuables secure."
+    }
+  },
+  "gyg": {
+    "badge": "Tours & experiences",
+    "title": "Tours related to The Kasbah",
+    "subtitle": "Options if you prefer a local guide.",
+    "t1": {
+      "tag": "Walking",
+      "title": "Taroudant medina walk",
+      "desc": "Square, souks and walls with a guide."
+    },
+    "t2": {
+      "tag": "City",
+      "title": "Taroudant highlights",
+      "desc": "A balanced loop of the Little Marrakech."
+    },
+    "t3": {
+      "tag": "Half day",
+      "title": "Taroudant & Tiout",
+      "desc": "Town plus the palm oasis."
+    },
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Taroudant",
+    "back": "← Back to Taroudant guide"
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read the article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Taroudant",
+      "desc": "Practical tips for the Little Marrakech."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "What to see in Taroudant",
+      "desc": "Walls, souks and day trips."
+    },
+    "a3": {
+      "tag": "Tips",
+      "title": "Two or three days in Taroudant",
+      "desc": "A simple itinerary outline."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "The Kasbah FAQ",
+    "q1": {
+      "question": "Is The Kasbah free to visit?",
+      "answer": "In most cases public areas are free. Confirm any ticketed interiors on site."
+    },
+    "q2": {
+      "question": "How long should I spend?",
+      "answer": "Thirty minutes to two hours depending on the site and your pace."
+    },
+    "q3": {
+      "question": "What is the best time to go?",
+      "answer": "Morning or late afternoon for cooler temperatures and better light."
+    },
+    "q4": {
+      "question": "How do I get there from the medina?",
+      "answer": "On foot if central, or by petit taxi. Ask for the place name as a landmark."
+    },
+    "q5": {
+      "question": "Can I take photos?",
+      "answer": "Usually yes outdoors. Ask before photographing people or restricted interiors."
+    }
+  },
+  "destinations": {
+    "taroudant": {
+      "name": "Taroudant"
+    }
+  }
+};
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = kasbah_page;
+} else if (typeof window !== "undefined") {
+  window.kasbah_page = kasbah_page;
+}

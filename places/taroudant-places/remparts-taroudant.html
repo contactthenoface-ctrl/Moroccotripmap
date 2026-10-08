@@ -11,15 +11,15 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
 
     <!-- SEO & Metadata -->
-    <title data-i18n="remparts_page.seo.title">Ramparts of Taroudant | Historic Saadian Red Walls Guide | MoroccoTripMap</title>
-    <meta content="Discover the monumental 16th-century Saadian red-earth ramparts of Taroudant. Learn about the 7.5km wall circuit, historical gates, calèche tours, photo spots, and nearby stays." name="description" data-i18n-attr="content:remparts_page.seo.description"/>
-    <meta content="Taroudant ramparts, red walls Taroudant, Saadian walls Morocco, Bab El Kasbah, calèche tour Taroudant, Souss historical sites, Bab Sedra, Bab Zorgan" name="keywords"/>
+    <title data-i18n="remparts_page.seo.title">Ramparts of Taroudant | Historic Saadian Red Walls Guide 2026 | MoroccoTripMap</title>
+    <meta content="Discover the monumental 16th-century Saadian red-earth ramparts of Taroudant. Complete travel guide covering the 7.5km wall circuit, 5 historic gates, calèche carriage tours, photo spots, nearby riads, and practical visitor tips." name="description" data-i18n-attr="content:remparts_page.seo.description"/>
+    <meta content="Taroudant ramparts, red walls Taroudant, Saadian walls Morocco, Bab El Kasbah, calèche tour Taroudant, Souss historical sites, Bab Sedra, Bab Zorgan, Bab Targhunt, Taroudant monuments" name="keywords"/>
     <link href="https://moroccotripmap.com/places/taroudant-places/remparts-taroudant.html" rel="canonical"/>
 
     <!-- Open Graph / Social Media -->
     <meta content="website" property="og:type"/>
     <meta content="Ramparts of Taroudant | Historic Saadian Red Walls Guide | MoroccoTripMap" property="og:title" data-i18n-attr="content:remparts_page.seo.og_title"/>
-    <meta content="Explore 7.5 km of magnificent 16th-century red-clay walls, monumental gates, and scenic carriage tours in Taroudant." property="og:description" data-i18n-attr="content:remparts_page.seo.og_description"/>
+    <meta content="Explore 7.5 km of magnificent 16th-century red-clay walls, monumental gates, scenic carriage tours, and historic landmarks in Taroudant." property="og:description" data-i18n-attr="content:remparts_page.seo.og_description"/>
     <meta content="https://moroccotripmap.com/places/taroudant-places/remparts-taroudant.html" property="og:url"/>
     <meta content="../../images/places/remparts-taroudant.webp" property="og:image"/>
 
@@ -91,7 +91,7 @@
         .tab-btn {
             background: #F9F6F0;
             border: 1px solid rgba(194, 155, 98, 0.3);
-            padding: 10px 20px;
+            padding: 12px 24px;
             cursor: pointer;
             font-weight: 600;
             border-radius: 0.75rem;
@@ -106,6 +106,61 @@
         }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
+
+        .filter-section {
+            background: #fff;
+            border: 1px solid rgba(194, 155, 98, 0.2);
+            padding: 30px;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .filter-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 220px;
+        }
+        .filter-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1A1A1A;
+            font-size: 0.9rem;
+        }
+        .filter-group select {
+            padding: 12px;
+            border: 1px solid rgba(194, 155, 98, 0.3);
+            border-radius: 0.75rem;
+            font-size: 0.95rem;
+            background-color: #F9F6F0;
+            cursor: pointer;
+            color: #1A1A1A;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .filter-group select:focus { border-color: #185336; }
+        .accommodation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .acc-card {
+            background: #fff;
+            border: 1px solid rgba(194, 155, 98, 0.2);
+            padding: 20px;
+            border-radius: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .acc-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+        }
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -178,17 +233,36 @@
 
         <!-- Mobile Menu Drawer -->
         <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="mobile_menu.language_title">Language / Langue</span>
+                <div class="flex gap-2">
+                    <button onclick="switchLanguage('en')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">EN</button>
+                    <button onclick="switchLanguage('fr')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">FR</button>
+                    <button onclick="switchLanguage('es')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">ES</button>
+                    <button onclick="switchLanguage('ar')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">AR</button>
+                </div>
+            </div>
+
             <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../../destinations.html">
-                    <span data-i18n="nav.cities">Cities &amp; Destinations</span>
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
+                        <span data-i18n="nav.cities">Cities &amp; Destinations</span>
+                    </div>
                     <span class="text-xs text-gray-400">→</span>
                 </a>
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../../taroudant.html">
-                    <span data-i18n="destinations.taroudant.name">Taroudant Guide</span>
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                        <span data-i18n="destinations.taroudant.name">Taroudant Guide</span>
+                    </div>
                     <span class="text-xs text-gray-400">→</span>
                 </a>
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../../contact.html">
-                    <span data-i18n="nav.contact">Contact</span>
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 015.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span data-i18n="nav.contact">Contact</span>
+                    </div>
                     <span class="text-xs text-gray-400">→</span>
                 </a>
             </nav>
@@ -198,7 +272,7 @@
     <!-- Main Content -->
     <main class="flex-grow">
         <!-- Hero Section -->
-        <div class="relative h-[400px] sm:h-[480px] lg:h-[520px] flex items-end">
+        <div class="relative h-[440px] sm:h-[520px] lg:h-[580px] flex items-end">
             <img alt="Ramparts of Taroudant" class="absolute inset-0 w-full h-full object-cover" src="../../images/places/remparts-taroudant.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80';"/>
             <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
@@ -212,9 +286,19 @@
                     <span class="text-white" data-i18n="remparts_page.title">Les Remparts</span>
                 </div>
                 <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-3" data-i18n="remparts_page.title">Les Remparts de Taroudant</h1>
-                <p class="text-lg sm:text-xl text-creme/90 max-w-2xl font-light" data-i18n="remparts_page.subtitle">
+                <p class="text-lg sm:text-xl text-creme/90 max-w-2xl font-light mb-6" data-i18n="remparts_page.subtitle">
                     Nearly 7.5 kilometers of intact 16th-century Saadian red-clay walls framing the ancient medina.
                 </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#about" class="bg-vert text-white font-bold text-xs px-5 py-3 rounded-xl hover:bg-vert/90 transition flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span data-i18n="remparts_page.hero_btn_about">Read Full History</span>
+                    </a>
+                    <a href="#gates" class="bg-sable text-sombre font-bold text-xs px-5 py-3 rounded-xl hover:bg-white transition flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"/></svg>
+                        <span data-i18n="remparts_page.hero_btn_gates">Explore 5 Gates</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -240,8 +324,59 @@
             </div>
         </div>
 
+        <!-- Interactive Exploration Tabs Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-b border-sable/10">
+            <div class="flex flex-wrap gap-3 justify-center mb-8">
+                <button onclick="openTab(event, 'tab-history')" class="tab-btn active" data-i18n="remparts_page.tabs.history">History & Architecture</button>
+                <button onclick="openTab(event, 'tab-photo')" class="tab-btn" data-i18n="remparts_page.tabs.photo">Best Photo Spots</button>
+                <button onclick="openTab(event, 'tab-caleche')" class="tab-btn" data-i18n="remparts_page.tabs.caleche">Calèche Guide</button>
+            </div>
+
+            <!-- Tab 1: History -->
+            <div id="tab-history" class="tab-content active bg-white p-8 rounded-3xl border border-sable/15 shadow-sm">
+                <h3 class="text-2xl font-bold text-vert mb-4" data-i18n="remparts_page.tabs.h_title">Centuries of Military Earthworks</h3>
+                <p class="text-sombre/80 leading-relaxed text-sm sm:text-base mb-4" data-i18n="remparts_page.tabs.h_p1">
+                    Constructed in the 1530s under Sultan Mohammed ash-Sheikh, Taroudant’s fortifications served as the first imperial line of defense for the Saadian dynasty. The ramparts are made using the traditional rammed-earth technique (pisé), blending local red clay, stone, water, and lime pressed inside wooden frameworks.
+                </p>
+                <p class="text-sombre/80 leading-relaxed text-sm sm:text-base" data-i18n="remparts_page.tabs.h_p2">
+                    The total wall height varies between 8 to 14 meters, supported by 130 defensive towers. This unique earth construction gives the city its famous nickname, "The Little Marrakech of Souss."
+                </p>
+            </div>
+
+            <!-- Tab 2: Photo Spots -->
+            <div id="tab-photo" class="tab-content bg-white p-8 rounded-3xl border border-sable/15 shadow-sm">
+                <h3 class="text-2xl font-bold text-vert mb-4" data-i18n="remparts_page.tabs.p_title">Golden Hour & Photography Guide</h3>
+                <p class="text-sombre/80 leading-relaxed text-sm sm:text-base mb-4" data-i18n="remparts_page.tabs.p_p1">
+                    The best lighting conditions occur late in the afternoon (1.5 hours before sunset). Stand outside Bab Sedra to capture the glowing orange clay walls against the High Atlas mountains in the background.
+                </p>
+                <ul class="list-disc list-inside text-sm text-sombre/80 space-y-2">
+                    <li data-i18n="remparts_page.tabs.p_li1"><strong>Bab El-Kasbah:</strong> Frame the horseshoe arch with surrounding olive and palm trees.</li>
+                    <li data-i18n="remparts_page.tabs.p_li2"><strong>Bab Zorgan:</strong> Great for candid street photography as local craftsmen transport goods.</li>
+                    <li data-i18n="remparts_page.tabs.p_li3"><strong>Rooftop Terraces:</strong> Panoramic views from Riad Maryam or Hotel Palais Salam terraces.</li>
+                </ul>
+            </div>
+
+            <!-- Tab 3: Calèche Guide -->
+            <div id="tab-caleche" class="tab-content bg-white p-8 rounded-3xl border border-sable/15 shadow-sm">
+                <h3 class="text-2xl font-bold text-vert mb-4" data-i18n="remparts_page.tabs.c_title">How to Hire & Price a Calèche</h3>
+                <p class="text-sombre/80 leading-relaxed text-sm sm:text-base mb-4" data-i18n="remparts_page.tabs.c_p1">
+                    Horse-drawn carriages (calèches) are the official local transport for touring the 7.5 km wall loop. You can pick one up directly at Place Assarag or outside Bab El-Kasbah.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                    <div class="bg-creme p-4 rounded-xl border border-sable/20">
+                        <strong class="text-vert block font-bold mb-1" data-i18n="remparts_page.tabs.c_box1_title">Official Standard Fare</strong>
+                        <p data-i18n="remparts_page.tabs.c_box1_desc">120 MAD to 150 MAD per carriage for a complete 1-hour circuit around all 5 gates.</p>
+                    </div>
+                    <div class="bg-creme p-4 rounded-xl border border-sable/20">
+                        <strong class="text-vert block font-bold mb-1" data-i18n="remparts_page.tabs.c_box2_title">Tips for Passengers</strong>
+                        <p data-i18n="remparts_page.tabs.c_box2_desc">Confirm the final price and duration before getting in. Drivers speak French and Arabic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Section Overview & History -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div class="lg:col-span-2">
                     <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="remparts_page.about.badge">Historical Monument</span>
@@ -252,6 +387,16 @@
                     <p class="text-sombre/80 leading-relaxed text-base mb-6" data-i18n="remparts_page.about.p2">
                         Reinforced with 130 square towers and 19 monumental bastions, the ramparts are pierced by five ancient gates (Babs). Built using traditional rammed earth (pisé) mixed with local reddish lime, the walls shift color throughout the day, glowing fiery ochre during sunset against the snow-capped High Atlas peaks.
                     </p>
+
+                    <!-- Photo Gallery Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+                        <div class="rounded-2xl overflow-hidden h-56 border border-sable/20 shadow-sm">
+                            <img alt="Taroudant Ramparts at Sunset" class="w-full h-full object-cover hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"/>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden h-56 border border-sable/20 shadow-sm">
+                            <img alt="Bab El Kasbah Gate" class="w-full h-full object-cover hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"/>
+                        </div>
+                    </div>
 
                     <!-- Key Features List -->
                     <h3 class="text-xl font-bold text-vert mb-4" data-i18n="remparts_page.features.title">Architectural Features</h3>
@@ -278,6 +423,26 @@
                             </div>
                         </li>
                     </ul>
+
+                    <!-- History Timeline Section -->
+                    <h3 class="text-xl font-bold text-vert mb-4" data-i18n="remparts_page.history.title">Key Historical Eras</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="bg-white p-5 rounded-2xl border border-sable/15 shadow-sm">
+                            <span class="text-xs font-bold text-sable uppercase">1528 – 1540</span>
+                            <h4 class="font-bold text-sombre text-base mt-0.5" data-i18n="remparts_page.history.e1_title">Saadian Capital Construction</h4>
+                            <p class="text-xs sm:text-sm text-sombre/70 mt-1" data-i18n="remparts_page.history.e1_desc">Mohammed ash-Sheikh establishes Taroudant as the Saadian kingdom's capital, constructing the surrounding walls to resist Portuguese expansion along the Atlantic coast.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-sable/15 shadow-sm">
+                            <span class="text-xs font-bold text-sable uppercase">17th – 18th Century</span>
+                            <h4 class="font-bold text-sombre text-base mt-0.5" data-i18n="remparts_page.history.e2_title">Alaouite Dynasty Fortifications</h4>
+                            <p class="text-xs sm:text-sm text-sombre/70 mt-1" data-i18n="remparts_page.history.e2_desc">Sultan Moulay Ismail reinforces the ramparts, strengthening the bastions and defense towers to secure commercial routes between the Sahara and northern cities.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-sable/15 shadow-sm">
+                            <span class="text-xs font-bold text-sable uppercase">Present Day</span>
+                            <h4 class="font-bold text-sombre text-base mt-0.5" data-i18n="remparts_page.history.e3_title">National Heritage Preservation</h4>
+                            <p class="text-xs sm:text-sm text-sombre/70 mt-1" data-i18n="remparts_page.history.e3_desc">Recognized as an emblematic monument of southern Morocco, ongoing preservation ensures traditional pisé construction methods are maintained for future generations.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Sidebar Practical Info Card -->
@@ -317,7 +482,7 @@
         </section>
 
         <!-- The 5 Historic Gates Section -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+        <section id="gates" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="mb-8">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="remparts_page.gates.badge">Exploration</span>
                 <h2 class="text-3xl font-bold text-vert" data-i18n="remparts_page.gates.title">The 5 Historic Gates of Taroudant</h2>
@@ -388,6 +553,88 @@
             </div>
         </section>
 
+        <!-- Accommodations Near Ramparts Directory with Interactive Filters -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+            <div class="filter-section mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="remparts_page.hotels.badge">Where to Stay</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1">Riads & Hotels Facing the Ramparts</h2>
+                <p class="text-sm text-sombre/70 mt-2">Filter guest houses and historic palaces directly adjacent to Taroudant's red walls.</p>
+
+                <!-- Filter Controls Bar -->
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="filter-category">Type of Stay</label>
+                        <select id="filter-category" onchange="filterAccommodations()">
+                            <option value="all">All Accommodations</option>
+                            <option value="palace">Historic Palace</option>
+                            <option value="riad">Boutique Riad</option>
+                            <option value="guesthouse">Guest House</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-price">Price Range</label>
+                        <select id="filter-price" onchange="filterAccommodations()">
+                            <option value="all">All Prices</option>
+                            <option value="budget">Budget (< 60€)</option>
+                            <option value="mid">Mid-Range (60€ - 120€)</option>
+                            <option value="luxury">Luxury (120€+)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accommodations Grid -->
+            <div class="accommodation-grid" id="acc-list">
+                <div class="acc-card" data-category="palace" data-price="luxury">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Palais Salam Taroudant" class="w-full h-44 object-cover rounded-xl mb-3">
+                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Historic Palace</span>
+                    <h3 class="font-bold text-base text-vert mt-0.5">Hotel Palais Salam</h3>
+                    <p class="text-xs text-gray-600 mb-4">Built inside the former Kasbah ramparts with lush banana gardens and royal pools.</p>
+                    <a href="https://www.booking.com/searchresults.html?ss=Palais+Salam+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
+                </div>
+
+                <div class="acc-card" data-category="riad" data-price="mid">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Riad Jnane Ines" class="w-full h-44 object-cover rounded-xl mb-3">
+                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Boutique Riad</span>
+                    <h3 class="font-bold text-base text-vert mt-0.5">Riad Jnane Ines</h3>
+                    <p class="text-xs text-gray-600 mb-4">Charming boutique riad with outdoor swimming pool overlooking the ancient red walls.</p>
+                    <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Ines+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
+                </div>
+
+                <div class="acc-card" data-category="riad" data-price="budget">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Maryam" class="w-full h-44 object-cover rounded-xl mb-3">
+                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Authentic Riad</span>
+                    <h3 class="font-bold text-base text-vert mt-0.5">Riad Maryam</h3>
+                    <p class="text-xs text-gray-600 mb-4">Authentic traditional medina stay offering traditional cooking and terrace views near Bab Zorgan.</p>
+                    <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
+                </div>
+
+                <div class="acc-card" data-category="guesthouse" data-price="mid">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Dar Jaafrana" class="w-full h-44 object-cover rounded-xl mb-3">
+                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Guest House</span>
+                    <h3 class="font-bold text-base text-vert mt-0.5">Dar Jaafrana</h3>
+                    <p class="text-xs text-gray-600 mb-4">Peaceful eco-guesthouse situated right outside Bab Targhunt gate with olive tree gardens.</p>
+                    <a href="https://www.booking.com/searchresults.html?ss=Dar+Jaafrana+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
+                </div>
+
+                <div class="acc-card" data-category="riad" data-price="mid">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Riad Tissaliwine" class="w-full h-44 object-cover rounded-xl mb-3">
+                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Boutique Riad</span>
+                    <h3 class="font-bold text-base text-vert mt-0.5">Riad Tissaliwine</h3>
+                    <p class="text-xs text-gray-600 mb-4">Warm Moroccan hospitality featuring rooftop breakfast with direct views over the ramparts.</p>
+                    <a href="https://www.booking.com/searchresults.html?ss=Riad+Tissaliwine+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
+                </div>
+
+                <div class="acc-card" data-category="guesthouse" data-price="budget">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Maison d'Hôtes Les Agrumes" class="w-full h-44 object-cover rounded-xl mb-3">
+                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Guest House</span>
+                    <h3 class="font-bold text-base text-vert mt-0.5">Les Agrumes Taroudant</h3>
+                    <p class="text-xs text-gray-600 mb-4">Budget-friendly stay with friendly hosts located 2 minutes walk from Bab Sedra.</p>
+                    <a href="https://www.booking.com/searchresults.html?ss=Les+Agrumes+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
+                </div>
+            </div>
+        </section>
+
         <!-- FAQ Section -->
         <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="mb-8 text-center">
@@ -413,6 +660,16 @@
                     </summary>
                     <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="remparts_page.faq.a2">
                         Carriages line up at Place Assarag and near Bab El-Kasbah. Agree on the price (around 120–150 MAD for a 1-hour full loop) before boarding.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="remparts_page.faq.q3">What is the best time for photography?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="remparts_page.faq.a3">
+                        Late afternoon, approximately 1 hour before sunset, is ideal. The golden light illuminates the reddish clay walls and contrasts beautifully with the blue sky and Atlas mountain range.
                     </p>
                 </details>
             </div>
@@ -485,6 +742,37 @@
             if (typeof changeLanguage === 'function') {
                 changeLanguage(lang);
             }
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        function filterAccommodations() {
+            var cat = document.getElementById("filter-category").value;
+            var price = document.getElementById("filter-price").value;
+            var cards = document.querySelectorAll("#acc-list .acc-card");
+
+            cards.forEach(function(card) {
+                var matchCat = (cat === "all" || card.getAttribute("data-category") === cat);
+                var matchPrice = (price === "all" || card.getAttribute("data-price") === price);
+
+                if (matchCat && matchPrice) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
         }
     </script>
     <script src="../../js/i18n.js"></script>

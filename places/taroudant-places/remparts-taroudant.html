@@ -12,7 +12,7 @@
 
     <!-- SEO & Metadata -->
     <title data-i18n="remparts_page.seo.title">Ramparts of Taroudant | Historic Saadian Red Walls Guide 2026 | MoroccoTripMap</title>
-    <meta content="Discover the monumental 16th-century Saadian red-earth ramparts of Taroudant. Complete travel guide covering the 7.5km wall circuit, 5 historic gates, calèche carriage tours, photo spots, nearby riads, and practical visitor tips." name="description" data-i18n-attr="content:remparts_page.seo.description"/>
+    <meta content="Discover the monumental 16th-century Saadian red-earth ramparts of Taroudant. Complete travel guide covering the 7.5km wall circuit, 5 historic gates, calèche carriage tours, photo carousel, nearby riads, and practical visitor tips." name="description" data-i18n-attr="content:remparts_page.seo.description"/>
     <meta content="Taroudant ramparts, red walls Taroudant, Saadian walls Morocco, Bab El Kasbah, calèche tour Taroudant, Souss historical sites, Bab Sedra, Bab Zorgan, Bab Targhunt, Taroudant monuments" name="keywords"/>
     <link href="https://moroccotripmap.com/places/taroudant-places/remparts-taroudant.html" rel="canonical"/>
 
@@ -106,6 +106,66 @@
         }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
+
+        /* Carousel Styles identical to Jemaa el-Fnaa */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.4s ease-in-out;
+            width: 100%;
+        }
+        .carousel-slide {
+            min-width: 100%;
+            position: relative;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(26, 26, 26, 0.6);
+            color: #fff;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+            z-index: 10;
+        }
+        .carousel-btn:hover {
+            background: rgba(24, 83, 54, 0.9);
+        }
+        .carousel-btn.prev { left: 16px; }
+        .carousel-btn.next { right: 16px; }
+        
+        .carousel-dots {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+        .carousel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .carousel-dot.active {
+            background: #C29B62;
+            transform: scale(1.2);
+        }
 
         .filter-section {
             background: #fff;
@@ -388,13 +448,48 @@
                         Reinforced with 130 square towers and 19 monumental bastions, the ramparts are pierced by five ancient gates (Babs). Built using traditional rammed earth (pisé) mixed with local reddish lime, the walls shift color throughout the day, glowing fiery ochre during sunset against the snow-capped High Atlas peaks.
                     </p>
 
-                    <!-- Photo Gallery Grid -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
-                        <div class="rounded-2xl overflow-hidden h-56 border border-sable/20 shadow-sm">
-                            <img alt="Taroudant Ramparts at Sunset" class="w-full h-full object-cover hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"/>
-                        </div>
-                        <div class="rounded-2xl overflow-hidden h-56 border border-sable/20 shadow-sm">
-                            <img alt="Bab El Kasbah Gate" class="w-full h-full object-cover hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"/>
+                    <!-- Photo Carousel (Jemaa el-Fnaa Style) -->
+                    <div class="my-8">
+                        <h3 class="text-xl font-bold text-vert mb-4" data-i18n="remparts_page.carousel.title">Ramparts Photo Gallery</h3>
+                        <div class="carousel-container shadow-md">
+                            <div class="carousel-track" id="carouselTrack">
+                                <div class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80" alt="Ramparts at Sunset" class="w-full h-[350px] sm:h-[450px] object-cover">
+                                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                        <p class="font-semibold text-sm sm:text-base">Sunset illumination over the ancient earth walls</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80" alt="Bab El Kasbah Gate" class="w-full h-[350px] sm:h-[450px] object-cover">
+                                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                        <p class="font-semibold text-sm sm:text-base">Bab El-Kasbah - Royal Gateway to the Citadel</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80" alt="Calèche tour around the walls" class="w-full h-[350px] sm:h-[450px] object-cover">
+                                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                        <p class="font-semibold text-sm sm:text-base">Traditional horse-drawn calèche circuit along the perimeter</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" alt="High Atlas Backdrop" class="w-full h-[350px] sm:h-[450px] object-cover">
+                                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                        <p class="font-semibold text-sm sm:text-base">View of the High Atlas mountain peaks behind the red bastions</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+                            <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+
+                            <!-- Carousel Dots -->
+                            <div class="carousel-dots" id="carouselDots">
+                                <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+                                <span class="carousel-dot" onclick="goToSlide(1)"></span>
+                                <span class="carousel-dot" onclick="goToSlide(2)"></span>
+                                <span class="carousel-dot" onclick="goToSlide(3)"></span>
+                            </div>
                         </div>
                     </div>
 
@@ -583,58 +678,6 @@
                 </div>
             </div>
 
-            <!-- Accommodations Grid -->
-            <div class="accommodation-grid" id="acc-list">
-                <div class="acc-card" data-category="palace" data-price="luxury">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Palais Salam Taroudant" class="w-full h-44 object-cover rounded-xl mb-3">
-                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Historic Palace</span>
-                    <h3 class="font-bold text-base text-vert mt-0.5">Hotel Palais Salam</h3>
-                    <p class="text-xs text-gray-600 mb-4">Built inside the former Kasbah ramparts with lush banana gardens and royal pools.</p>
-                    <a href="https://www.booking.com/searchresults.html?ss=Palais+Salam+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
-                </div>
-
-                <div class="acc-card" data-category="riad" data-price="mid">
-                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Riad Jnane Ines" class="w-full h-44 object-cover rounded-xl mb-3">
-                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Boutique Riad</span>
-                    <h3 class="font-bold text-base text-vert mt-0.5">Riad Jnane Ines</h3>
-                    <p class="text-xs text-gray-600 mb-4">Charming boutique riad with outdoor swimming pool overlooking the ancient red walls.</p>
-                    <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Ines+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
-                </div>
-
-                <div class="acc-card" data-category="riad" data-price="budget">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Maryam" class="w-full h-44 object-cover rounded-xl mb-3">
-                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Authentic Riad</span>
-                    <h3 class="font-bold text-base text-vert mt-0.5">Riad Maryam</h3>
-                    <p class="text-xs text-gray-600 mb-4">Authentic traditional medina stay offering traditional cooking and terrace views near Bab Zorgan.</p>
-                    <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
-                </div>
-
-                <div class="acc-card" data-category="guesthouse" data-price="mid">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Dar Jaafrana" class="w-full h-44 object-cover rounded-xl mb-3">
-                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Guest House</span>
-                    <h3 class="font-bold text-base text-vert mt-0.5">Dar Jaafrana</h3>
-                    <p class="text-xs text-gray-600 mb-4">Peaceful eco-guesthouse situated right outside Bab Targhunt gate with olive tree gardens.</p>
-                    <a href="https://www.booking.com/searchresults.html?ss=Dar+Jaafrana+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
-                </div>
-
-                <div class="acc-card" data-category="riad" data-price="mid">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Riad Tissaliwine" class="w-full h-44 object-cover rounded-xl mb-3">
-                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Boutique Riad</span>
-                    <h3 class="font-bold text-base text-vert mt-0.5">Riad Tissaliwine</h3>
-                    <p class="text-xs text-gray-600 mb-4">Warm Moroccan hospitality featuring rooftop breakfast with direct views over the ramparts.</p>
-                    <a href="https://www.booking.com/searchresults.html?ss=Riad+Tissaliwine+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
-                </div>
-
-                <div class="acc-card" data-category="guesthouse" data-price="budget">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Maison d'Hôtes Les Agrumes" class="w-full h-44 object-cover rounded-xl mb-3">
-                    <span class="text-[10px] font-bold text-sable uppercase tracking-wider">Guest House</span>
-                    <h3 class="font-bold text-base text-vert mt-0.5">Les Agrumes Taroudant</h3>
-                    <p class="text-xs text-gray-600 mb-4">Budget-friendly stay with friendly hosts located 2 minutes walk from Bab Sedra.</p>
-                    <a href="https://www.booking.com/searchresults.html?ss=Les+Agrumes+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-blue-700 transition">Check availability →</a>
-                </div>
-            </div>
-        </section>
-
         <!-- FAQ Section -->
         <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="mb-8 text-center">
@@ -773,6 +816,40 @@
                     card.style.display = "none";
                 }
             });
+        }
+
+        /* Carousel Script identical to Jemaa el-Fnaa */
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+
+        function updateCarousel() {
+            const track = document.getElementById('carouselTrack');
+            if (track) {
+                track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function moveCarousel(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            } else if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
         }
     </script>
     <script src="../../js/i18n.js"></script>

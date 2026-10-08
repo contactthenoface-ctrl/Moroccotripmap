@@ -418,35 +418,58 @@
             </div>
         </section>
 
-        <!-- Recommended Itinerary Section -->
+                <!-- Recommended Itinerary Section (3 Days for Taroudant) -->
         <section class="itinerary-section">
             <div class="text-center mb-8">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="taroudant_page.itinerary.badge">Planning</span>
-                <h2 class="text-3xl font-bold text-vert" data-i18n="taroudant_page.itinerary.title">Suggested 2-Day Itinerary</h2>
-                <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="taroudant_page.itinerary.subtitle">An easy-going guide to soak up the culture, markets, and surrounding nature of Taroudant.</p>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="taroudant_page.itinerary.title">Suggested 3-Day Itinerary</h2>
+                <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="taroudant_page.itinerary.subtitle">A comprehensive 3-day guide to discover Taroudant, its ancient ramparts, craft souks, and lush surrounding oases.</p>
             </div>
             <div class="itinerary-tabs">
-                <button class="tab-btn active" onclick="openDay(event,'day1')">Day 1 — Ramparts &amp; Souks</button>
-                <button class="tab-btn" onclick="openDay(event,'day2')">Day 2 — Tiout Oasis &amp; Art Palaces</button>
+                <button class="tab-btn active" data-i18n="taroudant_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Ramparts &amp; Craft Souks</button>
+                <button class="tab-btn" data-i18n="taroudant_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Tiout Oasis &amp; Art Palaces</button>
+                <button class="tab-btn" data-i18n="taroudant_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Mountain Passes &amp; Berber Heritage</button>
             </div>
+            
+            <!-- Day 1 -->
             <div class="tab-content active" id="day1">
                 <div class="day-card">
-                    <h3>Morning — Calèche Tour &amp; Ramparts</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed">Take a horse-drawn carriage (calèche) around the 7km loop of ramparts, entering through historic gates like Bab El-Kasbah and Bab Sedra.</p>
-                    <h3>Afternoon — Craft Souks &amp; Place Assarag</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed">Explore the Berber &amp; Arab Souks for silver jewelry and leather, then relax with mint tea at Place Assarag.</p>
-                    <h3>Evening — Traditional Souss Dinner</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed">Enjoy local argan oil dishes, Souss-style Berber tagines, and warm hospitality in a traditional riad garden.</p>
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day1_m">Morning — Ramparts &amp; Calèche Tour</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day1_md">Start early with a traditional horse-drawn carriage (calèche) along the 7km loop of 16th-century red-earth ramparts. Stop at monumental gates like Bab El-Kasbah and Bab Sedra.</p>
+                    
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day1_a">Afternoon — Souk Berbère, Souk Arabe &amp; Tanneries</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day1_ad">Explore the artisan lanes for silver jewelry, terracotta pottery, and leatherwork. Visit the traditional tanneries near Bab Taghoumt to see age-old leathercraft methods.</p>
+                    
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day1_e">Evening — Place Assarag Sunset &amp; Mint Tea</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day1_ed">Gather at Place Assarag as dusk falls. Sip fresh mint tea on a café terrace while watching local street musicians and performers, followed by a quiet dinner in a riad courtyard.</p>
                 </div>
             </div>
+
+            <!-- Day 2 -->
             <div class="tab-content" id="day2">
                 <div class="day-card">
-                    <h3>Morning — Excursion to Tiout Oasis</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed">Drive 30 km to Tiout. Walk or ride through the lush palm grove and enjoy panoramas from the ruined hilltop Kasbah.</p>
-                    <h3>Afternoon — Palais Claudio Bravo</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed">Visit the former palace-museum of Claudio Bravo, admiring hyperrealist paintings, antiques, and tranquil gardens.</p>
-                    <h3>Evening — Sunset over the High Atlas</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed">Watch the sunset cast a golden glow over the red ramparts with the snow-capped Atlas mountains in the backdrop.</p>
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day2_m">Morning — Tiout Oasis &amp; Ancient Kasbah</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day2_md">Take a 30-minute excursion to the lush Tiout Oasis. Walk under thousands of date palms and climb up to the hilltop Kasbah for panoramic views over the Souss Valley.</p>
+                    
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day2_a">Afternoon — Palais Claudio Bravo &amp; Botanical Gardens</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day2_ad">Head to the former palace-museum of Claudio Bravo to admire hyperrealist art, sculptures, and exotic gardens, or visit Dar al Hossoun's subtropical eco-garden.</p>
+                    
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day2_e">Evening — Souss Gastronomy &amp; Argan Flavors</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day2_ed">Enjoy an authentic Berber dinner featuring dishes enhanced with locally produced culinary Argan oil, fresh almonds, and Souss tagines.</p>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="tab-content" id="day3">
+                <div class="day-card">
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day3_m">Morning — Excursion to Taliouine or Tizi n'Test</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day3_md">Travel east toward Taliouine to visit saffron cooperatives in the Sirwa mountains, or drive up the scenic Tizi n'Test pass for mountain landscapes and High Atlas views.</p>
+                    
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day3_a">Afternoon — Relaxed Medina Stroll &amp; Local Hammam</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day3_ad">Return to the medina for a peaceful afternoon. Unwind with a traditional Moroccan hammam and massage with Argan oil, then pick up local spices and saffron as souvenirs.</p>
+                    
+                    <h3 data-i18n="taroudant_page.detailed_itinerary.day3_e">Evening — Final Sunset Over the Atlas</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="taroudant_page.detailed_itinerary.day3_ed">Spend your final evening on a rooftop terrace, watching the sunset glow on the red walls with the snow-capped High Atlas peaks in the distance.</p>
                 </div>
             </div>
         </section>

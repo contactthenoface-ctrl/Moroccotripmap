@@ -70,3 +70,39 @@ nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bol
 [dir="rtl"] #lang-menu-button {
     flex-direction: row-reverse;
 }
+/* Container de la carte */
+.map-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Image responsive */
+.responsive-map {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol (optionnel) */
+.responsive-map:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Style d'accessibilité pour le texte alternatif masqué */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

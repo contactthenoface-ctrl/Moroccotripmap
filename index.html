@@ -443,7 +443,8 @@ Search
 </a>
 </div>
 
-<div class="flex justify-center mt-10 mb-8">
+<!-- Bouton View All Destinations (Marge inférieure réduite) -->
+<div class="flex justify-center mt-8 mb-3">
     <a href="destinations.html" class="inline-flex items-center gap-2 border-2 border-vert text-vert px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-vert hover:text-white transition-all duration-300">
         <span data-i18n="destinations.view_all_btn">View All Destinations</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -451,25 +452,19 @@ Search
 </div>
 </section>
 
-<!-- Séparateur Zellige Marocain Responsive -->
-<div class="w-full my-8 sm:my-12 px-4 flex items-center justify-center overflow-hidden" aria-hidden="true">
+<!-- Séparateur Zellige Compact -->
+<div class="w-full my-1 px-4 flex items-center justify-center overflow-hidden" aria-hidden="true">
   <div class="max-w-7xl w-full flex items-center justify-center gap-3 sm:gap-6">
-    <!-- Ligne dégradée gauche -->
     <div class="h-[1px] bg-gradient-to-r from-transparent via-sable/40 to-sable flex-grow"></div>
 
-    <!-- Motif Zellige SVG -->
-    <div class="shrink-0 flex items-center justify-center py-2">
-      <svg class="w-64 sm:w-[480px] md:w-[600px] h-10 sm:h-12 text-sable" viewBox="0 0 600 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="shrink-0 flex items-center justify-center">
+      <svg class="w-48 sm:w-[400px] md:w-[500px] h-5 sm:h-6 text-sable" viewBox="0 0 600 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="zelligePattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <!-- Carré central basculé -->
             <rect x="10" y="10" width="20" height="20" transform="rotate(45 20 20)" fill="none" stroke="#185336" stroke-width="1.2" opacity="0.35"/>
-            <!-- Étoile à 8 branches (Khatam) -->
             <path d="M20 2 L24.5 15.5 L38 20 L24.5 24.5 L20 38 L15.5 24.5 L2 20 L15.5 15.5 Z" fill="none" stroke="#C29B62" stroke-width="1.5"/>
-            <!-- Petit losange central -->
             <polygon points="20,14 26,20 20,26 14,20" fill="#185336" opacity="0.85"/>
             <circle cx="20" cy="20" r="2" fill="#F9F6F0"/>
-            <!-- Motifs d'angle d'entrelacement -->
             <circle cx="0" cy="0" r="4" fill="#C29B62" opacity="0.4"/>
             <circle cx="40" cy="0" r="4" fill="#C29B62" opacity="0.4"/>
             <circle cx="0" cy="40" r="4" fill="#C29B62" opacity="0.4"/>
@@ -480,14 +475,12 @@ Search
       </svg>
     </div>
 
-    <!-- Ligne dégradée droite -->
     <div class="h-[1px] bg-gradient-to-l from-transparent via-sable/40 to-sable flex-grow"></div>
   </div>
 </div>
 
-
-<!-- Experiences Spotlight -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="experiences">
+<!-- Experiences Spotlight (Padding supérieur réduit pt-4 au lieu de py-12) -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-12" id="experiences">
   <div class="mb-8">
     <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="spotlight.badge">Signature Experiences</span>
     <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="spotlight.title">Four Ways to Feel Morocco</h2>

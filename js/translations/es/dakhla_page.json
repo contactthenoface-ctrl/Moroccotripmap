@@ -8,13 +8,13 @@
   "name": "Dakhla",
   "hero_subtitle": "Donde el Sáhara se encuentra con el Atlántico: una laguna turquesa de 40 km, vientos de kitesurf de nivel mundial, la Duna Blanca y la Isla del Dragón.",
   "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Mar – Oct for wind; year-round for landscapes",
-    "stay_label": "Ideal stay",
-    "stay_val": "3 – 5 days",
-    "vibe_label": "Vibe",
-    "vibe_val": "Lagoon, wind, open horizon",
-    "airport_label": "Airport",
+    "best_time_label": "Mejor época",
+    "best_time_val": "Mar – oct. para el viento; todo el año para paisajes",
+    "stay_label": "Estancia ideal",
+    "stay_val": "3 – 5 días",
+    "vibe_label": "Ambiente",
+    "vibe_val": "Laguna, viento, horizonte abierto",
+    "airport_label": "Aeropuerto",
     "airport_val": "Dakhla (VIL)"
   },
   "overview": {
@@ -95,79 +95,80 @@
     "badge": "Alojamientos",
     "title": "Encuentra tu alojamiento ideal en Dakhla",
     "subtitle": "Campamentos de laguna, hoteles en ciudad y estancias cerca de los spots.",
-    "filter_type_label": "Type:",
-    "type_all": "All types",
-    "type_hotel": "Hotels",
-    "type_riad": "Camps & lodges",
-    "type_guesthouse": "Guesthouses",
-    "filter_location_label": "Area:",
-    "location_all": "All areas",
-    "location_medina": "Town centre",
-    "location_outside": "Lagoon camps",
-    "location_outskirts": "Ocean side",
-    "counter": "stays found",
-    "district_label": "Area",
-    "type_label": "Type",
-    "no_results": "No stays match these filters.",
-    "check_availability": "Check availability →"
+    "filter_type_label": "Tipo:",
+    "type_all": "Todos los tipos",
+    "type_hotel": "Hoteles",
+    "type_riad": "Campamentos y lodges",
+    "type_guesthouse": "Casas de huéspedes",
+    "filter_location_label": "Zona:",
+    "location_all": "Todas las zonas",
+    "location_medina": "Centro de la ciudad",
+    "location_outside": "Campamentos de laguna",
+    "location_outskirts": "Lado océano",
+    "counter": "alojamientos encontrados",
+    "district_label": "Zona",
+    "type_label": "Tipo",
+    "no_results": "Ningún alojamiento coincide con estos filtros.",
+    "check_availability": "Ver disponibilidad →",
+    "location_town": "Centro de la ciudad"
   },
   "eat": {
     "badge": "Comida",
     "title": "Dónde comer en Dakhla",
     "subtitle": "Pescado fresco, ostras de laguna y mesas sencillas.",
     "roudani": {
-      "tag": "Seafood",
-      "loc": "Town",
-      "title": "Fish restaurants",
-      "desc": "Grilled catch near the port and centre."
+      "tag": "Mariscos",
+      "loc": "Ciudad",
+      "title": "Restaurantes de pescado",
+      "desc": "Parrillas cerca del puerto y el centro."
     },
     "maryam": {
-      "tag": "Lagoon",
-      "loc": "Farms",
-      "title": "Oyster tasting",
-      "desc": "Short visits and tastings at lagoon farms."
+      "tag": "Laguna",
+      "loc": "Granjas",
+      "title": "Degustación de ostras",
+      "desc": "Visitas cortas y degustaciones en granjas de laguna."
     },
     "zitoune": {
-      "tag": "Camp",
-      "loc": "Lagoon",
-      "title": "Camp restaurants",
-      "desc": "Meals at lagoon camps after sessions."
+      "tag": "Campamento",
+      "loc": "Laguna",
+      "title": "Restaurantes de campamento",
+      "desc": "Comidas en campamentos de laguna tras las sesiones."
     },
     "nomad": {
       "tag": "Café",
       "loc": "Corniche",
-      "title": "Corniche cafés",
-      "desc": "Tea, juice and sunset views."
+      "title": "Cafés de la corniche",
+      "desc": "Té, zumo y atardeceres."
     },
     "jardin": {
       "tag": "Local",
-      "loc": "Town",
-      "title": "Simple local tables",
-      "desc": "Everyday Moroccan plates away from the camps."
+      "loc": "Ciudad",
+      "title": "Mesas locales sencillas",
+      "desc": "Platos marroquíes cotidianos lejos de los campamentos."
     },
     "fassia": {
       "tag": "Hotel",
-      "loc": "Town / lagoon",
-      "title": "Hotel restaurants",
-      "desc": "Reliable options if you stay in town or at a larger lodge."
+      "loc": "Ciudad / laguna",
+      "title": "Restaurantes de hotel",
+      "desc": "Opciones fiables en la ciudad o en un lodge más grande."
     },
     "moha": {
-      "tag": "Seafood",
-      "loc": "Port",
-      "title": "Port-side fish",
-      "desc": "Fresh from the harbour when boats are in."
+      "tag": "Mariscos",
+      "loc": "Puerto",
+      "title": "Pescado del puerto",
+      "desc": "Fresco del puerto cuando vuelven los barcos."
     },
     "bacha": {
       "tag": "Café",
-      "loc": "Centre",
-      "title": "Town café stop",
-      "desc": "Coffee and a pause between errands."
+      "loc": "Centro",
+      "title": "Pausa café en la ciudad",
+      "desc": "Café y descanso entre desplazamientos."
     },
     "elfenn": {
-      "tag": "Camp",
-      "loc": "Lagoon",
-      "title": "Lagoon dinner",
-      "desc": "Evening meal with wind-down views."
+      "tag": "Campamento",
+      "loc": "Laguna",
+      "title": "Cena en la laguna",
+      "desc": "Comida nocturna con vistas tranquilas."
     }
   },
   "tips": {
@@ -190,20 +191,20 @@
     "title": "Mejores salidas desde Dakhla",
     "subtitle": "Bucles de laguna y pistas desérticas más largas.",
     "tiout": {
-      "title": "White Dune & lagoon loop",
-      "desc": "Half-day 4x4 or boat outing combining the White Dune and lagoon viewpoints."
+      "title": "Duna Blanca y bucle de laguna",
+      "desc": "Media jornada en 4x4 o barco combinando la Duna Blanca y miradores de la laguna."
     },
     "antiatlas": {
-      "title": "Imlili sebkha",
-      "desc": "Salt flats and natural desert pools south of Dakhla — a full-day track with a local driver."
+      "title": "Sebkha de Imlili",
+      "desc": "Sebkhas salinas y charcas naturales al sur de Dakhla — día completo con conductor local."
     },
     "taliouine": {
-      "title": "Ocean-side beaches",
-      "desc": "Foum El Bouir and wild Atlantic stretches for surf and empty sand."
+      "title": "Playas del lado océano",
+      "desc": "Foum El Bouir y tramos atlánticos salvajes para surf y arena vacía."
     },
     "agadir": {
-      "title": "Tropic of Cancer marker",
-      "desc": "A symbolic stop on the peninsula road — quick photo and sense of latitude."
+      "title": "Marcador del trópico de Cáncer",
+      "desc": "Parada simbólica en la carretera de la península — foto rápida y sentido de la latitud."
     }
   },
   "faq": {
@@ -215,7 +216,7 @@
     },
     "q2": {
       "question": "¿Dakhla es solo para kitesurfistas?",
-      "answer": "No. Laguna, Duna Blanca, Isla del Dragón, ostras y pistas desérticas también interesan a quien no monta."
+      "answer": "No. Laguna, Duna Blanca, Isla del Dragón, ostras y pistas desérticas también interesan a quien no monta. El deporte de viento es el atractivo principal, no el único."
     },
     "q3": {
       "question": "¿Cómo llegar a Dakhla?",

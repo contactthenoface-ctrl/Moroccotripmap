@@ -1,1 +1,217 @@
-{"nav":{"destinations":"Destinations","stays":"Hébergements","restaurants":"Restaurants","experiences":"Expériences","guides":"Guides","interactive_map":"Carte Interactive","cities":"Villes & Destinations","categories":"Catégories","cat_stays":"Hébergements & Riads","cat_hotels":"Hôtels & Riads","cat_gastronomy":"Gastronomie","cat_restaurants":"Restaurants & Cafés","cat_experiences":"Expériences","cat_tours":"Excursions & Circuits","cat_attractions":"Attractions","cat_museums":"Monuments & Musées","cat_transport":"Transport","cat_rental":"Transferts & Location","cat_itineraries":"Itinéraires","cat_guides":"Guides de Voyage","history":"Histoire du Maroc","blog":"Blog","contact":"Contact","directory":"Annuaire & Base de données"},"footer":{"about_text":"Découvrez. Planifiez. Vivez le Maroc.\nLe premier annuaire touristique et guide de voyage culturel pour les visiteurs explorant le Maroc.","destinations_title":"Destinations","link_marrakech":"Guide de Voyage Marrakech","link_all_destinations":"Toutes les destinations","categories_title":"Catégories","link_stays":"Riads & Hôtels Authentiques","link_restaurants":"Restaurants Marocains","connect_title":"Suivez-nous","youtube_text":"Suivez notre chaîne YouTube pour nos guides vidéo :","copyright":"© MoroccoTripMap. Tous droits réservés.","link_chefchaouen":"Incontournables de Chefchaouen","link_fes":"Guide de la Médina de Fès","link_experiences":"Expériences Désert & Culture","link_transport":"Transport & Chauffeurs Privés","link_agadir":"Guide Agadir","link_essaouira":"Guide Essaouira","link_tanger":"Guide Tanger","link_ouarzazate":"Guide Ouarzazate","link_rabat":"Guide Rabat","link_casablanca":"Guide de voyage Casablanca","link_merzouga":"Guide de voyage Merzouga","link_meknes":"Guide de Meknès","link_tetouan":"Guide de Tetouan","link_ifrane":"Guide d'Ifrane","link_el-jadida":"El Jadida"},"breadcrumb":{"home":"Accueil","destinations":"Destinations","stays":"Hébergements"},"mobile_menu":{"language_title":"Langue / Language"},"destinations":{"badge":"Destinations Phares","title":"Explorez les Villes Emblématiques","view_all":"Voir Toutes les Destinations →","view_all_btn":"Voir Toutes les Destinations","marrakech":{"tag":"Ville Impériale","name":"Marrakech","desc":"Médina, Palais & Portes du Désert"},"chefchaouen":{"tag":"Montagnes du Rif","name":"Chefchaouen","desc":"L'Emblématique Perle Bleue du Maroc"},"fes":{"tag":"Capitale Culturelle","name":"Fès","desc":"Médina Antique & Héritage Spirituel"},"casablanca":{"tag":"Cœur Économique","name":"Casablanca","desc":"La plus grande ville du Maroc"},"essaouira":{"tag":"Côte Atlantique","name":"Essaouira","desc":"Cité des Alizés, Remparts & Fruits de mer"},"agadir":{"tag":"Soleil & Plage","name":"Agadir","desc":"Plages Dorées & Stations Balnéaires"},"tangier":{"tag":"Détroit de Gibraltar","name":"Tanger","desc":"La Porte entre l'Europe et l'Afrique"},"ouarzazate":{"tag":"Porte du désert","name":"Ouarzazate","desc":"Kasbahs, studios de cinéma & Aït Benhaddou"},"rabat":{"tag":"Capitale atlantique","name":"Rabat","desc":"Kasbah, Tour Hassan & Chellah"},"merzouga":{"tag":"Désert du Sahara","name":"Merzouga","desc":"Dunes d'Erg Chebbi & Bivouacs"},"meknes":{"name":"Meknès"},"tetouan":{"name":"Tetouan"},"ifrane":{"name":"Ifrane"},"el-jadida":{"name":"El Jadida"}},"common":{"photo":"Photo {n}","photo_aria":"Photo {n}","explore":"Explorer →","explore_place":"Explorer le lieu →","gallery":"Galerie","what_to_see":"À voir","good_to_know":"Bon à savoir","faq":"FAQ","practical_tips":"Conseils pratiques","tours_experiences":"Visites & expériences","from_the_blog":"Du blog","related_articles":"Articles associés","all_articles":"Tous les articles →","read_article":"Lire l’article →","keep_exploring":"Continuer à explorer","more_must_visit":"D’autres lieux incontournables","back_to_guide":"← Retour au guide","best_time":"Meilleure période","time_needed":"Durée","entry":"Entrée","where":"Où","free":"Gratuit","morning":"Matin","afternoon":"Après-midi","evening":"Soir","plan":"Planifier","detail":"Détail","stay":"Hébergement","food":"Cuisine","gastronomy":"Gastronomie","nature":"Nature","culture":"Culture","heritage":"Patrimoine","walk":"Balade","view":"Vue","town":"Ville","park":"Parc","lake":"Lac","forest":"Forêt","mountain":"Montagne","coast":"Côte","beach":"Plage","family":"Famille","private":"Privé","half_day":"Demi-journée","full_day":"Journée complète","winter":"Hiver","combo":"Combo","type":"Type","hotel":"Hôtel","riad":"Riad","guesthouse":"Maison d’hôtes","stay_type":"Type d’hébergement","area":"Zone","all":"Tous","all_areas":"Toutes les zones","district":"Quartier","near_station":"Près de la gare","check_availability":"Voir les disponibilités →","check_gyg":"Voir les disponibilités sur GetYourGuide →","no_stays_match":"Aucun hébergement ne correspond à ces filtres.","ideal_stay":"Séjour idéal","top_vibe":"Ambiance","nearest_airport":"Aéroport le plus proche","day_1":"Jour 1","day_2":"Jour 2","day_3":"Jour 3","suggested_3_day":"Itinéraire suggéré sur 3 jours","hour_by_hour":"Idées heure par heure","affiliate_disclosure":"Certains liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous.","how_long":"Combien de temps faut-il ?","entry_fee":"Y a-t-il un droit d’entrée ?","best_time_q":"Meilleur moment ?","combine_with":"À combiner avec quoi ?","need_guide":"Ai-je besoin d’un guide ?","book_tour":"Réserver une visite","home":"Accueil","destinations":"Destinations"}}
+{
+  "nav": {
+    "destinations": "Destinations",
+    "stays": "Hébergements",
+    "restaurants": "Restaurants",
+    "experiences": "Expériences",
+    "guides": "Guides",
+    "interactive_map": "Carte Interactive",
+    "cities": "Villes & Destinations",
+    "categories": "Catégories",
+    "cat_stays": "Hébergements & Riads",
+    "cat_hotels": "Hôtels & Riads",
+    "cat_gastronomy": "Gastronomie",
+    "cat_restaurants": "Restaurants & Cafés",
+    "cat_experiences": "Expériences",
+    "cat_tours": "Excursions & Circuits",
+    "cat_attractions": "Attractions",
+    "cat_museums": "Monuments & Musées",
+    "cat_transport": "Transport",
+    "cat_rental": "Transferts & Location",
+    "cat_itineraries": "Itinéraires",
+    "cat_guides": "Guides de Voyage",
+    "history": "Histoire du Maroc",
+    "blog": "Blog",
+    "contact": "Contact",
+    "directory": "Annuaire & Base de données"
+  },
+  "footer": {
+    "about_text": "Découvrez. Planifiez. Vivez le Maroc.\nLe premier annuaire touristique et guide de voyage culturel pour les visiteurs explorant le Maroc.",
+    "destinations_title": "Destinations",
+    "link_marrakech": "Guide de Voyage Marrakech",
+    "link_all_destinations": "Toutes les destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hôtels Authentiques",
+    "link_restaurants": "Restaurants Marocains",
+    "connect_title": "Suivez-nous",
+    "youtube_text": "Suivez notre chaîne YouTube pour nos guides vidéo :",
+    "copyright": "© MoroccoTripMap. Tous droits réservés.",
+    "link_chefchaouen": "Incontournables de Chefchaouen",
+    "link_fes": "Guide de la Médina de Fès",
+    "link_experiences": "Expériences Désert & Culture",
+    "link_transport": "Transport & Chauffeurs Privés",
+    "link_agadir": "Guide Agadir",
+    "link_essaouira": "Guide Essaouira",
+    "link_tanger": "Guide Tanger",
+    "link_ouarzazate": "Guide Ouarzazate",
+    "link_rabat": "Guide Rabat",
+    "link_casablanca": "Guide de voyage Casablanca",
+    "link_merzouga": "Guide de voyage Merzouga",
+    "link_meknes": "Guide de Meknès",
+    "link_tetouan": "Guide de Tetouan",
+    "link_ifrane": "Guide d'Ifrane",
+    "link_el-jadida": "El Jadida",
+    "link_taroudant": "Guide de voyage Taroudant"
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "destinations": "Destinations",
+    "stays": "Hébergements"
+  },
+  "mobile_menu": {
+    "language_title": "Langue / Language"
+  },
+  "destinations": {
+    "badge": "Destinations Phares",
+    "title": "Explorez les Villes Emblématiques",
+    "view_all": "Voir Toutes les Destinations →",
+    "view_all_btn": "Voir Toutes les Destinations",
+    "marrakech": {
+      "tag": "Ville Impériale",
+      "name": "Marrakech",
+      "desc": "Médina, Palais & Portes du Désert"
+    },
+    "chefchaouen": {
+      "tag": "Montagnes du Rif",
+      "name": "Chefchaouen",
+      "desc": "L'Emblématique Perle Bleue du Maroc"
+    },
+    "fes": {
+      "tag": "Capitale Culturelle",
+      "name": "Fès",
+      "desc": "Médina Antique & Héritage Spirituel"
+    },
+    "casablanca": {
+      "tag": "Cœur Économique",
+      "name": "Casablanca",
+      "desc": "La plus grande ville du Maroc"
+    },
+    "essaouira": {
+      "tag": "Côte Atlantique",
+      "name": "Essaouira",
+      "desc": "Cité des Alizés, Remparts & Fruits de mer"
+    },
+    "agadir": {
+      "tag": "Soleil & Plage",
+      "name": "Agadir",
+      "desc": "Plages Dorées & Stations Balnéaires"
+    },
+    "taroudant": {
+      "tag": "Petite Marrakech",
+      "name": "Taroudant",
+      "desc": "Remparts ocre et souks authentiques dans le Souss"
+    },
+    "tangier": {
+      "tag": "Détroit de Gibraltar",
+      "name": "Tanger",
+      "desc": "La Porte entre l'Europe et l'Afrique"
+    },
+    "ouarzazate": {
+      "tag": "Porte du désert",
+      "name": "Ouarzazate",
+      "desc": "Kasbahs, studios de cinéma & Aït Benhaddou"
+    },
+    "rabat": {
+      "tag": "Capitale atlantique",
+      "name": "Rabat",
+      "desc": "Kasbah, Tour Hassan & Chellah"
+    },
+    "merzouga": {
+      "tag": "Désert du Sahara",
+      "name": "Merzouga",
+      "desc": "Dunes d'Erg Chebbi & Bivouacs"
+    },
+    "meknes": {
+      "name": "Meknès"
+    },
+    "tetouan": {
+      "name": "Tetouan"
+    },
+    "ifrane": {
+      "name": "Ifrane"
+    },
+    "el-jadida": {
+      "name": "El Jadida"
+    }
+  },
+  "common": {
+    "photo": "Photo {n}",
+    "photo_aria": "Photo {n}",
+    "explore": "Explorer →",
+    "explore_place": "Explorer le lieu →",
+    "gallery": "Galerie",
+    "what_to_see": "À voir",
+    "good_to_know": "Bon à savoir",
+    "faq": "FAQ",
+    "practical_tips": "Conseils pratiques",
+    "tours_experiences": "Visites & expériences",
+    "from_the_blog": "Du blog",
+    "related_articles": "Articles associés",
+    "all_articles": "Tous les articles →",
+    "read_article": "Lire l’article →",
+    "keep_exploring": "Continuer à explorer",
+    "more_must_visit": "D’autres lieux incontournables",
+    "back_to_guide": "← Retour au guide",
+    "best_time": "Meilleure période",
+    "time_needed": "Durée",
+    "entry": "Entrée",
+    "where": "Où",
+    "free": "Gratuit",
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "evening": "Soir",
+    "plan": "Planifier",
+    "detail": "Détail",
+    "stay": "Hébergement",
+    "food": "Cuisine",
+    "gastronomy": "Gastronomie",
+    "nature": "Nature",
+    "culture": "Culture",
+    "heritage": "Patrimoine",
+    "walk": "Balade",
+    "view": "Vue",
+    "town": "Ville",
+    "park": "Parc",
+    "lake": "Lac",
+    "forest": "Forêt",
+    "mountain": "Montagne",
+    "coast": "Côte",
+    "beach": "Plage",
+    "family": "Famille",
+    "private": "Privé",
+    "half_day": "Demi-journée",
+    "full_day": "Journée complète",
+    "winter": "Hiver",
+    "combo": "Combo",
+    "type": "Type",
+    "hotel": "Hôtel",
+    "riad": "Riad",
+    "guesthouse": "Maison d’hôtes",
+    "stay_type": "Type d’hébergement",
+    "area": "Zone",
+    "all": "Tous",
+    "all_areas": "Toutes les zones",
+    "district": "Quartier",
+    "near_station": "Près de la gare",
+    "check_availability": "Voir les disponibilités →",
+    "check_gyg": "Voir les disponibilités sur GetYourGuide →",
+    "no_stays_match": "Aucun hébergement ne correspond à ces filtres.",
+    "ideal_stay": "Séjour idéal",
+    "top_vibe": "Ambiance",
+    "nearest_airport": "Aéroport le plus proche",
+    "day_1": "Jour 1",
+    "day_2": "Jour 2",
+    "day_3": "Jour 3",
+    "suggested_3_day": "Itinéraire suggéré sur 3 jours",
+    "hour_by_hour": "Idées heure par heure",
+    "affiliate_disclosure": "Certains liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous.",
+    "how_long": "Combien de temps faut-il ?",
+    "entry_fee": "Y a-t-il un droit d’entrée ?",
+    "best_time_q": "Meilleur moment ?",
+    "combine_with": "À combiner avec quoi ?",
+    "need_guide": "Ai-je besoin d’un guide ?",
+    "book_tour": "Réserver une visite",
+    "home": "Accueil",
+    "destinations": "Destinations"
+  }
+}

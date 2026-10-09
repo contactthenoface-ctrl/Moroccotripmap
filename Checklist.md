@@ -7,6 +7,7 @@
 - [ ] Ajoute un article de blog sur Taghazout skatepark > https://www.instagram.com/taghazout_skatepark?stkn=YXVodXRyd3BzbWNw
 - [ ] Les stades maroc de 2030
 - [ ] ajouter des articles de blog en s'inspirant de booking et tripadvisor.
+- [ ] les trésors cachés du maroc
 
 Notes : Comment avoir du traffic et Monétiser le site
 

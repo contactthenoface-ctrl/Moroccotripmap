@@ -17,7 +17,7 @@
     "cat_attractions": "Attractions",
     "cat_museums": "Monuments & Musées",
     "cat_transport": "Transport",
-    "cat_rental": "Transferts & Location",
+    "cat_rental": "Transferts & Location de voitures",
     "cat_itineraries": "Itinéraires",
     "cat_guides": "Guides de Voyage",
     "history": "Histoire du Maroc",
@@ -40,19 +40,20 @@
     "link_fes": "Guide de la Médina de Fès",
     "link_experiences": "Expériences Désert & Culture",
     "link_transport": "Transport & Chauffeurs Privés",
-    "link_agadir": "Guide Agadir",
-    "link_essaouira": "Guide Essaouira",
-    "link_tanger": "Guide Tanger",
-    "link_ouarzazate": "Guide Ouarzazate",
-    "link_rabat": "Guide Rabat",
-    "link_casablanca": "Guide de voyage Casablanca",
-    "link_merzouga": "Guide de voyage Merzouga",
-    "link_meknes": "Guide de Meknès",
-    "link_tetouan": "Guide de Tetouan",
-    "link_ifrane": "Guide d'Ifrane",
-    "link_el-jadida": "El Jadida",
-    "link_taroudant": "Guide de voyage Taroudant",
-    "link_dakhla": "Guide de voyage Dakhla"
+    "link_agadir": "Guide de Voyage Agadir",
+    "link_essaouira": "Guide de Voyage Essaouira",
+    "link_tanger": "Guide de Voyage Tanger",
+    "link_ouarzazate": "Guide de Voyage Ouarzazate",
+    "link_rabat": "Guide de Voyage Rabat",
+    "link_casablanca": "Guide de Voyage Casablanca",
+    "link_merzouga": "Guide de Voyage Merzouga",
+    "link_meknes": "Guide de Voyage Meknès",
+    "link_tetouan": "Guide de Voyage Tétouan",
+    "link_ifrane": "Guide de Voyage Ifrane",
+    "link_el-jadida": "Guide de Voyage El Jadida",
+    "link_taroudant": "Guide de Voyage Taroudant",
+    "link_dakhla": "Guide de Voyage Dakhla",
+    "link_al-hoceima": "Guide de Voyage Al Hoceima"
   },
   "breadcrumb": {
     "home": "Accueil",
@@ -85,7 +86,7 @@
     "casablanca": {
       "tag": "Cœur Économique",
       "name": "Casablanca",
-      "desc": "La plus grande ville du Maroc"
+      "desc": "La plus grande métropole du Maroc"
     },
     "essaouira": {
       "tag": "Côte Atlantique",
@@ -126,7 +127,7 @@
       "name": "Meknès"
     },
     "tetouan": {
-      "name": "Tetouan"
+      "name": "Tétouan"
     },
     "ifrane": {
       "name": "Ifrane"
@@ -140,7 +141,9 @@
       "desc": "Lagune, kitesurf et Dune Blanche dans le sud"
     },
     "al_hoceima": {
-      "name": "Al Hoceima"
+      "tag": "Côte Méditerranéenne",
+      "name": "Al Hoceima",
+      "desc": "Criques, Parc National & Baie Turquoise"
     }
   },
   "common": {

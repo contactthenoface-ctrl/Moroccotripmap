@@ -17,13 +17,13 @@
     "cat_attractions": "Atracciones",
     "cat_museums": "Monumentos y Museos",
     "cat_transport": "Transporte",
-    "cat_rental": "Traslados y Alquiler",
+    "cat_rental": "Traslados y Alquiler de Coches",
     "cat_itineraries": "Itinerarios",
     "cat_guides": "Guías de Viaje",
     "history": "Historia de Marruecos",
     "blog": "Blog",
     "contact": "Contacto",
-    "directory": "Directorio y Base de datos"
+    "directory": "Directorio y Base de Datos"
   },
   "footer": {
     "about_text": "Descubre. Planifica. Vive Marruecos.\nEl directorio turístico y guía cultural principal para los visitantes que exploran Marruecos.",
@@ -38,21 +38,21 @@
     "copyright": "© MoroccoTripMap. Todos los derechos reservados.",
     "link_chefchaouen": "Lo Más Destacado de Chefchaouen",
     "link_fes": "Guía de la Medina de Fez",
-    "link_experiences": "Experiencias de Desierto y Cultura",
-    "link_transport": "Transporte y Choferes Privados",
-    "link_agadir": "Guía de Agadir",
-    "link_essaouira": "Guía de Essaouira",
-    "link_tanger": "Guía de Tánger",
-    "link_ouarzazate": "Guía de Oarzazate",
-    "link_rabat": "Guía de Rabat",
-    "link_casablanca": "Guía de viaje Casablanca",
-    "link_merzouga": "Guía de viaje Merzouga",
-    "link_meknes": "Guía de Meknes",
-    "link_tetouan": "Guia de Tetuan",
-    "link_ifrane": "Guia de Ifrane",
-    "link_el-jadida": "El Jadida",
-    "link_taroudant": "Guía de viaje Taroudant",
-    "link_dakhla": "Guía de viaje Dakhla"
+    "link_experiences": "Experiencias en el Desierto y Culturales",
+    "link_transport": "Transporte y Chóferes Privados",
+    "link_agadir": "Guía de Viaje a Agadir",
+    "link_essaouira": "Guía de Viaje a Essaouira",
+    "link_tanger": "Guía de Viaje a Tánger",
+    "link_ouarzazate": "Guía de Viaje a Ouarzazate",
+    "link_rabat": "Guía de Viaje a Rabat",
+    "link_casablanca": "Guía de Viaje a Casablanca",
+    "link_merzouga": "Guía de Viaje a Merzouga",
+    "link_meknes": "Guía de Viaje a Meknes",
+    "link_tetouan": "Guía de Viaje a Tetuán",
+    "link_ifrane": "Guía de Viaje a Ifrane",
+    "link_el-jadida": "Guía de Viaje a El Jadida",
+    "link_taroudant": "Guía de Viaje a Taroudant",
+    "link_dakhla": "Guía de Viaje a Dakhla"
   },
   "breadcrumb": {
     "home": "Inicio",
@@ -85,7 +85,7 @@
     "casablanca": {
       "tag": "Corazón Económico",
       "name": "Casablanca",
-      "desc": "La ciudad más grande de Marruecos"
+      "desc": "La metrópolis más grande de Marruecos"
     },
     "essaouira": {
       "tag": "Costa Atlántica",
@@ -100,7 +100,7 @@
     "taroudant": {
       "tag": "Pequeña Marrakech",
       "name": "Taroudant",
-      "desc": "Murallas ocre y zocos auténticos en el Souss"
+      "desc": "Murallas de adobe y zocos auténticos en el Souss"
     },
     "tangier": {
       "tag": "Estrecho de Gibraltar",
@@ -108,12 +108,12 @@
       "desc": "La Puerta entre Europa y África"
     },
     "ouarzazate": {
-      "tag": "Puerta del desierto",
-      "name": "Oarzazate",
+      "tag": "Puerta del Desierto",
+      "name": "Ouarzazate",
       "desc": "Kasbahs, estudios de cine y Aït Benhaddou"
     },
     "rabat": {
-      "tag": "Capital atlántica",
+      "tag": "Capital Atlántica",
       "name": "Rabat",
       "desc": "Kasbah, Torre Hassan y Chellah"
     },
@@ -126,7 +126,7 @@
       "name": "Meknes"
     },
     "tetouan": {
-      "name": "Tetuan"
+      "name": "Tetuán"
     },
     "ifrane": {
       "name": "Ifrane"
@@ -140,7 +140,9 @@
       "desc": "Laguna, kitesurf y Duna Blanca en el sur"
     },
     "al_hoceima": {
-      "name": "Al Hoceima"
+      "tag": "Costa Mediterránea",
+      "name": "Al Hoceima",
+      "desc": "Calas, Parque Nacional y Bahía Turquesa"
     }
   },
   "common": {
@@ -161,8 +163,8 @@
     "keep_exploring": "Seguir explorando",
     "more_must_visit": "Más lugares imprescindibles",
     "back_to_guide": "← Volver a la guía",
-    "best_time": "Mejor momento",
-    "time_needed": "Duración",
+    "best_time": "Mejor época",
+    "time_needed": "Duración sugerida",
     "entry": "Entrada",
     "where": "Dónde",
     "free": "Gratis",
@@ -213,12 +215,12 @@
     "day_3": "Día 3",
     "suggested_3_day": "Itinerario sugerido de 3 días",
     "hour_by_hour": "Ideas hora por hora",
-    "affiliate_disclosure": "Algunos enlaces son de afiliados. Una reserva a través de ellos puede generarnos una comisión sin coste extra para usted.",
+    "affiliate_disclosure": "Algunos enlaces son de afiliados. Reservar a través de ellos puede generarnos una pequeña comisión sin coste adicional para ti.",
     "how_long": "¿Cuánto tiempo necesito?",
     "entry_fee": "¿Hay entrada de pago?",
-    "best_time_q": "¿Mejor momento?",
-    "combine_with": "¿Con qué combinarlo?",
-    "need_guide": "¿Necesito guía?",
+    "best_time_q": "¿Cuál es la mejor época?",
+    "combine_with": "¿Con qué puedo combinarlo?",
+    "need_guide": "¿Necesito un guía local?",
     "book_tour": "Reservar un tour",
     "home": "Inicio",
     "destinations": "Destinos"

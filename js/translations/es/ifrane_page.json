@@ -1,109 +1,113 @@
-"ifrane_page": {
+{
   "seo": {
     "title": "Guía de Viaje de Ifrane | Pequeña Suiza, Cedros y Lagos | MoroccoTripMap",
-    "description": "Planifica tu viaje a Ifrane: bosques de cedros, arquitectura alpina, aire puro, el lago Dayet Aoua, Michlifen y un itinerario claro.",
-    "og_title": "Guía de Viaje de Ifrane | Bosques de Cedros, Lagos y Ambiente Alpino | MoroccoTripMap",
-    "og_description": "Explora la arquitectura alpina de Ifrane, sus bosques de cedros, lagos de montaña, hoteles, restaurantes y un itinerario a medida."
+    "description": "Planifica tu viaje a Ifrane: bosques de cedros, arquitectura alpina, aire puro, lago Dayet Aoua, Michlifen e itinerario claro.",
+    "og_title": "Guía de Ifrane | Bosques de Cedros, Lagos y Ambiente Alpino | MoroccoTripMap",
+    "og_description": "Explora la arquitectura alpina de Ifrane, bosques de cedros, lagos de montaña, riads, restaurantes locales y un itinerario listo."
   },
-  "hero_subtitle": "La pequeña Suiza del Medio Atlas — bosques de cedros, aire puro de montaña y encanto alpino.",
+  "hero_subtitle": "La pequeña Suiza en el Medio Atlas — bosques de cedros, aire puro de montaña y encanto alpino.",
   "info": {
     "best_time_label": "Mejor época",
-    "best_time_val": "Abr – Jun & Sep – Nov",
+    "best_time_val": "Abr – Jun y Sep – Nov",
     "stay_label": "Estancia ideal",
     "stay_val": "2 – 3 Días",
     "vibe_label": "Ambiente",
     "vibe_val": "Alpino y Bosques",
     "airport_label": "Aeropuerto cercano",
-    "airport_val": "FEZ (Fez-Saïss)"
+    "airport_val": "FES (Fes-Sais)"
   },
   "overview": {
     "title": "Ifrane: Jardines Alpinos, Bosques de Cedros y Lagos de Montaña",
-    "p1": "Ubicada a 1.650 metros de altitud en el Medio Atlas, Ifrane ofrece un contraste absoluto con las ciudades imperiales y las dunas del desierto marroquí. Conocida por sus chalés de tejados rojos inclinados, sus jardines cuidados y su aire fresco de montaña, es un remanso de paz para los amantes de la naturaleza y los viajeros que buscan un retiro alpino refrescante.",
-    "p2": "De dos a tres días te dan tiempo de sobra para pasear por las impecables avenidas de la ciudad, visitar los bosques de cedros cercanos para ver los monos de Berbería, explorar las pintorescas orillas de Dayet Aoua o disfrutar de los deportes de invierno en Michlifen."
+    "p1": "Enclavada a 1.650 metros en el Medio Atlas, Ifrane ofrece un contraste total con las ciudades imperiales y las dunas del desierto de Marruecos. Conocida por sus chalés de tejados rojos inclinados, jardines cuidados y aire fresco de montaña, es un refugio sereno para amantes de la naturaleza y viajeros que buscan un respiro.",
+    "p2": "De dos a tres días te darán tiempo de sobra para pasear por sus impecables avenidas, visitar los bosques de cedros cercanos para ver macacos de Berbería, explorar las orillas del lago Dayet Aoua o disfrutar de los deportes de invierno en Michlifen."
   },
   "places": {
-    "badge": "Imprescindibles",
+    "badge": "Lugares Imprescindibles",
     "title": "Lugares que Visitar en Ifrane",
     "subtitle": "Monumentos alpinos, lagos de montaña, bosques de cedros y valles pintorescos.",
-    "lion": { "tag": "Símbolo", "title": "El León de Piedra", "desc": "La famosa escultura de Ifrane tallada en la roca en el centro de la ciudad." },
-    "aoua": { "tag": "Lago", "title": "Dayet Aoua", "desc": "Lago de montaña rodeado de bosques de robles, ideal para paseos y observación de aves." },
-    "cedar": { "tag": "Bosque", "title": "Bosque de Cedros", "desc": "Majestuosos cedros del Atlas y hogar de simpáticos monos de Berbería." },
-    "michlifen": { "tag": "Montaña", "title": "Michlifen", "desc": "Cráter volcánico y estación de esquí con vistas panorámicas excepcionales de las altas mesetas." },
-    "vittel": { "tag": "Manantial", "title": "Fuente Vittel", "desc": "Parque natural con un manantial refrescante rodeado de frondosa vegetación." },
-    "uni": { "tag": "Campus", "title": "Universidad Al Akhawayn", "desc": "Prestigioso campus universitario de estilo americano con arquitectura alpina." },
-    "tizguit": { "tag": "Valle", "title": "Valle de Tizguit", "desc": "Pintoresco valle fluvial ideal para tranquilos paseos en plena naturaleza." },
-    "hachlaf": { "tag": "Lago", "title": "Dayet Hachlaf", "desc": "Un lago tranquilo y alejado de las rutas turísticas en la meseta montañosa." },
+    "explore": "Explorar lugar →",
+    "lion": { "tag": "Monumento", "title": "León de Piedra", "desc": "La famosa escultura de Ifrane tallada en la roca en el centro de la ciudad." },
+    "aoua": { "tag": "Lago", "title": "Dayet Aoua", "desc": "Lago de montaña rodeado de bosques de robles, popular para paseos y avistamiento de aves." },
+    "cedar": { "tag": "Bosque", "title": "Bosque de Cedros", "desc": "Majestuosos cedros del Atlas y hogar de amigables macacos de Berbería." },
+    "michlifen": { "tag": "Montaña", "title": "Michlifen", "desc": "Cráter volcánico y estación de esquí con vistas panorámicas de las tierras altas." },
+    "vittel": { "tag": "Manantial", "title": "Fuente Vittel", "desc": "Parque de manantiales naturales refrescante situado entre frondosa vegetación." },
+    "uni": { "tag": "Campus", "title": "Universidad Al Akhawayn", "desc": "Prestigioso campus universitario de estilo americano con bella arquitectura alpina." },
+    "tizguit": { "tag": "Valle", "title": "Valle de Tizguit", "desc": "Valle fluvial escénico ideal para paseos tranquilos y escapadas a la naturaleza." },
+    "hachlaf": { "tag": "Lago", "title": "Dayet Hachlaf", "desc": "Un lago tranquilo y fuera de lo común en la meseta montañosa." },
     "park": { "tag": "Parque", "title": "Parque Nacional de Ifrane", "desc": "Reserva natural protegida con rutas de senderismo y una rica biodiversidad." }
   },
   "itinerary": {
     "badge": "Planificación",
     "title": "Itinerario Sugerido de 3 Días",
-    "subtitle": "Un ritmo relajado para descubrir los puntos clave de Ifrane y el Medio Atlas."
+    "subtitle": "Un programa relajado para experimentar lo más destacado de Ifrane y el Medio Atlas."
   },
   "detailed_itinerary": {
     "day1_tab": "Día 1 — Ciudad y Jardines",
     "day2_tab": "Día 2 — Lagos y Cedros",
-    "day3_tab": "Día 3 — Altitudes y Valles",
+    "day3_tab": "Día 3 — Alturas y Valles",
     "day1_m": "Mañana — León de Piedra y Centro",
-    "day1_md": "Empieza por la emblemática escultura del león de piedra y camina por las limpias avenidas de la ciudad jardín; visita el parque de la Fuente Vittel para ver los manantiales naturales.",
+    "day1_md": "Comienza en la icónica escultura del león de piedra y camina por las limpias avenidas de la ciudad-jardín; visita el parque Source Vittel.",
     "day1_a": "Tarde — Campus Al Akhawayn",
-    "day1_ad": "Admira la arquitectura de estilo americano de la universidad desde el exterior y descansa tomando un café en la plaza central.",
+    "day1_ad": "Admira la arquitectura universitaria de estilo americano desde el exterior y relájate con un café en la plaza del pueblo.",
     "day1_e": "Noche — Cena Acogedora",
-    "day1_ed": "Disfruta de una cena reconfortante en un restaurante local; las noches en Ifrane refrescan rápidamente, incluso en verano.",
+    "day1_ed": "Disfruta de una cena cálida en un restaurante local — las noches en Ifrane refrescan rápido incluso en verano.",
     "day2_m": "Mañana — Lago Dayet Aoua",
-    "day2_md": "Dirígete a Dayet Aoua para dar paseos tranquilos junto al agua y avistar aves con la luz de la mañana.",
-    "day2_a": "Tarde — Bosque de Cedros y Monos",
-    "day2_ad": "Continúa hacia el antiguo bosque de cedros para admirar los árboles milenarios y observar a los monos de Berbería en libertad.",
-    "day2_e": "Noche — Noche Tranquila en la Ciudad",
-    "day2_ed": "Relájate en tu hotel o riad después de un día refrescante en plena naturaleza.",
+    "day2_md": "Dirígete a Dayet Aoua para dar tranquilos paseos por la orilla y avistamiento de aves con la luz de la mañana.",
+    "day2_a": "Tarde — Bosque de Cedros y Macacos",
+    "day2_ad": "Adéntrate en el antiguo bosque de cedros para ver los árboles majestuosos y observar a los macacos salvajes en su hábitat.",
+    "day2_e": "Noche — Noche Tranquila en el Pueblo",
+    "day2_ed": "Descansa en tu hotel o riad después de un día refrescante en la naturaleza.",
     "day3_m": "Mañana — Alturas de Michlifen",
-    "day3_md": "Sube a Michlifen para disfrutar de vistas panorámicas de la montaña, rutas de senderismo o esquí en temporada de invierno.",
+    "day3_md": "Sube a Michlifen para disfrutar de vistas panorámicas de la montaña, rutas de senderismo o esquí en temporada.",
     "day3_a": "Tarde — Valle de Tizguit",
-    "day3_ad": "Explora los paisajes verdes y los arroyos del valle de Tizguit antes de regresar al centro.",
+    "day3_ad": "Explora los frondosos paisajes y arroyos del Valle de Tizguit antes de regresar al pueblo.",
     "day3_e": "Noche — Salida",
-    "day3_ed": "Prepara tu viaje hacia Fez, Mequinez o adéntrate aún más en las montañas del Atlas."
+    "day3_ed": "Prepara tu viaje hacia Fes, Meknes o adéntrate más en las montañas del Atlas."
   },
   "directory": {
     "badge": "Directorio y Base de Datos",
-    "title": "Encuentra tu Alojamiento Ideal en Ifrane",
-    "subtitle": "Usa los filtros siguientes para ordenar al instante los mejores lugares según tus criterios de búsqueda.",
+    "title": "Encuentra tu Estancia Ideal en Ifrane",
+    "subtitle": "Usa los filtros a continuación para ordenar instantáneamente los mejores lugares según tus criterios.",
     "filter_type_label": "Tipo",
     "type_all": "Todos",
     "type_hotel": "Hotel",
     "type_riad": "Riad",
-    "type_guesthouse": "Alojamiento",
-    "filter_location_label": "Barrio / Zona:",
+    "type_guesthouse": "Casa de huéspedes",
+    "filter_location_label": "Distrito / Zona:",
     "location_all": "Todas las zonas",
     "location_medina": "Centro de la ciudad",
-    "location_ville": "Bellevue / Resort",
-    "location_walls": "Cerca de los lagos",
-    "location_volubilis": "Carretera de Azrou / Cedros",
+    "location_ville": "Bellevue / complejo",
+    "location_walls": "Cerca de lagos",
+    "location_volubilis": "Azrou / carretera de cedros",
     "counter": "28 alojamientos listados",
-    "no_results": "Ningún establecimiento coincide con tus criterios."
+    "no_results": "Ningún alojamiento coincide con tus filtros.",
+    "check_availability": "Ver disponibilidad →",
+    "district_label": "Zona",
+    "type_label": "Tipo"
   },
   "eat": {
     "badge": "Dónde Comer",
     "title": "Dónde Comer en Ifrane",
-    "subtitle": "Cafés en la plaza central, parrilladas de montaña y comedores alpinos acogedores."
+    "subtitle": "Cafés en la plaza del pueblo, parrillas de montaña y acogedores comedores alpinos."
   },
   "tips": {
     "badge": "Consejos Prácticos",
     "title": "Consejos Prácticos para Visitar Ifrane",
-    "transport": { "title": "Cómo Moverse", "desc": "El centro de la ciudad se recorre fácilmente a pie. Para visitar los lagos, Michlifen y el bosque de cedros, se recomienda contratar un taxi privado o una excursión organizada." },
-    "bargain": { "title": "Respeto por la Naturaleza", "desc": "Al visitar el bosque de cedros, observa a los monos de Berbería a distancia y evita alimentarlos para preservar su dieta natural." },
-    "water": { "title": "Ropa de Abrigo en Altitud", "desc": "Debido a su altitud (1.650 m), las noches en Ifrane pueden refrescar incluso en los meses más cálidos. Lleva siempre una chaqueta ligera o un jersey." }
+    "transport": { "title": "Cómo Moverse", "desc": "El centro de la ciudad se recorre fácilmente a pie. Para visitar los lagos, Michlifen y el bosque de cedros, se recomienda contratar un taxi privado o un tour." },
+    "bargain": { "title": "Ética en la Naturaleza", "desc": "Al visitar el bosque de cedros, disfruta observando a los macacos de Berbería a distancia y evita alimentarlos para proteger su dieta natural." },
+    "water": { "title": "Equipaje para la Altitud", "desc": "Debido a su altitud (1.650 m), las noches en Ifrane pueden refrescar incluso en los meses cálidos. Lleva siempre una chaqueta ligera o jersey." }
   },
   "daytrips": {
     "badge": "Excursiones",
     "title": "Mejores Excursiones desde Ifrane",
-    "subtitle": "Explora los mercados de cedros cercanos, la historia imperial y las cumbres montañosas."
+    "subtitle": "Explora mercados de cedros cercanos, historia imperial y picos de montaña."
   },
   "faq": {
     "badge": "Bueno Saberlo",
     "title": "Preguntas Frecuentes sobre Ifrane",
-    "q1": { "question": "¿Cuántos días debería pasar en Ifrane?", "answer": "De dos a tres días son ideales para explorar la ciudad, visitar los bosques de cedros, los lagos y disfrutar de una relajante escapada a la montaña." },
-    "q2": { "question": "¿Es Ifrane segura para los turistas?", "answer": "Sí, Ifrane está considerada de forma general como una de las ciudades más seguras, limpias y tranquilas de Marruecos." },
-    "q3": { "question": "¿Se puede ver nieve en Ifrane?", "answer": "¡Sí! Durante el invierno (de diciembre a febrero), Ifrane recibe nieve con frecuencia, convirtiendo a Michlifen en un destino popular para esquiar y disfrutar de paisajes invernales." },
-    "q4": { "question": "¿Cómo llegar a Ifrane desde Fez?", "answer": "Ifrane se comunica fácilmente con Fez mediante grandes taxis, traslados privados o autobuses, en un trayecto de aproximadamente 1 a 1 horas y media a través de bellas carreteras de montaña." }
+    "q1": { "question": "¿Cuántos días debo pasar en Ifrane?", "answer": "De dos a tres días son ideales para explorar el pueblo, visitar los bosques de cedros, los lagos y disfrutar de una relajante pausa de montaña." },
+    "q2": { "question": "¿Es Ifrane segura para los turistas?", "answer": "Sí, Ifrane está ampliamente reconocida como una de las ciudades más seguras, limpias y pacíficas de Marruecos." },
+    "q3": { "question": "¿Puedo ver nieve en Ifrane?", "answer": "¡Sí! Durante el invierno (diciembre a febrero), Ifrane recibe nieve con frecuencia, convirtiendo a Michlifen en un destino popular para esquiar." },
+    "q4": { "question": "¿Cómo llegar a Ifrane desde Fes?", "answer": "Ifrane es fácilmente accesible desde Fes mediante grand taxis, traslados privados o autobuses, tomando entre 1 y 1.5 horas por hermosas carreteras de montaña." }
   }
 }

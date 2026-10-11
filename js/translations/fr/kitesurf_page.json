@@ -1,156 +1,166 @@
 {
   "seo": {
-    "title": "Spots de Kitesurf & Wingfoil Dakhla | MoroccoTripMap",
-    "description": "Découvrez les meilleurs spots de kitesurf et wingfoil à Dakhla. Eau plate du lagon, alizés constants, écoles, meilleures saisons et sécurité.",
-    "og_title": "Spots de Kitesurf & Wingfoil à Dakhla : Lagon, Vent & Écoles",
-    "og_description": "Tout ce qu'il faut savoir sur le kitesurf et le wingfoil à Dakhla, des hauts-fonds peu profonds aux vagues de l'océan."
+    "title": "Spots kitesurf & wingfoil Dakhla | MoroccoTripMap",
+    "description": "Flat lagoon water, steady trade winds and camps along the shore — one of the world’s great wind-sport classrooms.",
+    "og_title": "Kitesurf & Wingfoil Spots",
+    "og_description": "Flat lagoon water, steady trade winds and camps along the shore — one of the world’s great wind-sport classrooms."
   },
-  "name": "Spots de Kitesurf & Wingfoil",
-  "hero_subtitle": "Eau plate du lagon, alizés réguliers et camps le long de la rive — l'un des plus grands spots de glisse au monde.",
+  "name": "Spots kitesurf & wingfoil",
+  "hero_subtitle": "Eau plate, alizés réguliers et camps sur la rive — l’une des grandes écoles de vent au monde.",
   "info": {
-    "best_time_label": "Meilleure période",
-    "best_time_val": "Saison des vents au plus haut",
-    "duration_label": "Durée idéale",
-    "duration_val": "Demi-journée ou séjour",
-    "entry_label": "Accès",
-    "entry_val": "Écoles / frais de location",
-    "area_label": "Où",
-    "area_val": "Camps du lagon"
+    "best_time_label": "Meilleur moment",
+    "best_time_val": "Pic de vent en saison chaude",
+    "duration_label": "Durée suggérée",
+    "duration_val": "Demi-journée ou multi-jours",
+    "entry_label": "Entrée",
+    "entry_val": "Frais école / location",
+    "area_label": "Emplacement",
+    "area_val": "Camps de lagune"
   },
   "overview": {
     "title": "Pourquoi les riders choisissent Dakhla",
-    "p1": "Des vents latéraux constants et de l'eau plate jusqu'à la taille font du lagon un endroit idéal pour l'apprentissage ainsi que pour de longues sessions de freestyle ou de freeride. Les écoles et les camps se regroupent le long des rives.",
-    "p2": "Les zones PK et les pistes de vitesse offrent un plan d'eau miroir lorsque les conditions sont alignées. Les spots côté océan proposent des vagues pour les riders confirmés.",
-    "p3": "Réservez vos cours ou locations auprès d'une école reconnue. Respectez les zones de sécurité, les règles locales et les autres usagers de l'eau."
+    "p1": "Des vents de côté réguliers et une eau peu profonde et plate rendent la lagune idéale pour apprendre et pour de longues sessions freestyle ou freeride. Écoles et camps se regroupent aux bornes kilométriques connues le long de la rive.",
+    "p2": "Les zones PK et les bandes de vitesse offrent du verre quand les conditions s’alignent. Les spots côté océan ajoutent des vagues pour les riders avancés.",
+    "p3": "Réservez cours ou location via une école reconnue. Respectez les zones de secours, les règles locales et les autres usagers de l’eau."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "Spots de Kitesurf & Wingfoil en Images",
-    "subtitle": "Aperçu des sessions sur le lagon, des camps de kite et des horizons venteux.",
-    "s1": { "caption": "Le lagon au crépuscule sous un vent régulier" },
-    "s2": { "caption": "Camps de kite et stations en bord de plage" },
-    "s3": { "caption": "Eaux peu profondes idéales pour débuter" },
-    "s4": { "caption": "Lumière de fin de journée sur le lagon" },
-    "s5": { "caption": "Vue panoramique sur les spots de glisse" }
+    "badge": "Galerie photo",
+    "title": "Spots kitesurf & wingfoil en images",
+    "subtitle": "Vues de Spots kitesurf & wingfoil à Dakhla.",
+    "s1": {
+      "caption": "Spots kitesurf & wingfoil — vue 1"
+    },
+    "s2": {
+      "caption": "Spots kitesurf & wingfoil — vue 2"
+    },
+    "s3": {
+      "caption": "Spots kitesurf & wingfoil — vue 3"
+    },
+    "s4": {
+      "caption": "Spots kitesurf & wingfoil — vue 4"
+    },
+    "s5": {
+      "caption": "Spots kitesurf & wingfoil — vue 5"
+    }
   },
   "moods": {
-    "badge": "Rythme",
-    "title": "Le Kitesurf à Dakhla, session par session",
-    "subtitle": "Comment le vent et l'eau évoluent au fil de la journée.",
+    "badge": "Timing",
+    "title": "Spots kitesurf & wingfoil dans la journée",
+    "subtitle": "Quand y aller.",
     "1": {
-      "tag": "Matinée",
-      "title": "Sessions matinales sur eau plate",
-      "desc": "Profitez de la brise matinale lorsque l'eau est la plus calme pour de longues balades en freeride.",
-      "duration": "Matin • Plan d'eau miroir"
+      "tag": "Matin",
+      "title": "Début calme",
+      "desc": "Lumière plus douce, moins de monde.",
+      "duration": "Matin"
     },
     "2": {
-      "tag": "Après-midi",
-      "title": "Vent fort & heures de cours",
-      "desc": "Les alizés soufflent au plus fort. Les cours ont lieu dans les hauts-fonds tandis que les experts s'exercent au freestyle.",
-      "duration": "Après-midi • Vent fort"
+      "tag": "Midi",
+      "title": "Lumière vive",
+      "desc": "Soleil fort — protégez peau et matériel.",
+      "duration": "Midi"
     },
     "3": {
-      "tag": "Coucher du soleil",
-      "title": "Downwinders & détente à la plage",
-      "desc": "Le vent faiblit légèrement au coucher du soleil. Détendez-vous dans les bars de plage des camps.",
-      "duration": "Soir • Ambiance détendue"
+      "tag": "Fin d’après-midi",
+      "title": "Meilleures couleurs",
+      "desc": "Lumière chaude sur l’eau et le sable.",
+      "duration": "Fin d’après-midi"
     }
   },
   "food": {
-    "title": "Restauration dans les Camps de Kite",
-    "p1": "La plupart des camps de kite disposent de restaurants en plein air et de terrasses de plage surplombant l'eau, proposant fruits de mer frais, plats marocains et repas sains.",
-    "li1": "Huîtres fraîches du lagon et poisson grillé du jour.",
-    "li2": "Tajines traditionnels et couscous servis dans les camps.",
-    "li3": "Smoothies, jus frais et bols énergétiques pour les riders.",
-    "li4": "Thé à la menthe sur les transats après une longue session.",
-    "li5": "Dîners sociaux animés et barbecues organisés le soir par les camps.",
-    "p2": "Vous trouverez tout ce dont vous avez besoin directement au bord de l'eau."
+    "title": "Manger près de Spots kitesurf & wingfoil",
+    "p1": "Prévoyez les repas en ville, au camp de lagune ou lors d’une dégustation.",
+    "li1": "Eau en bouteille à chaque sortie.",
+    "li2": "Poisson et plats simples en ville.",
+    "li3": "Repas de camp si vous logez sur la lagune.",
+    "li4": "Dégustation d’huîtres quand les fermes sont ouvertes.",
+    "li5": "Vérifiez les horaires avant d’y aller.",
+    "p2": "Les espèces sont utiles hors grands hôtels."
   },
   "tips": {
-    "title": "Conseils pratiques pour les kitesurfeurs à Dakhla",
+    "title": "Conseils pratiques pour Spots kitesurf & wingfoil",
     "1": {
-      "title": "Matériel & Locations",
-      "desc": "La plupart des camps proposent des locations récentes de kites, wingfoils et planches. Si vous voyagez avec votre matériel, vérifiez les franchises bagages."
+      "title": "Accès",
+      "desc": "Confirmez transfert, marée ou réservation école avant de quitter la ville."
     },
     "2": {
-      "title": "Vent & Combinaisons",
-      "desc": "Le vent souffle toute l'année avec un pic en été. L'eau pouvant être fraîche, une combinaison courte 3/2mm ou intégrale est recommandée."
+      "title": "Soleil & vent",
+      "desc": "SPF élevé, lunettes et une couche contre l’alizé."
     },
     "3": {
-      "title": "Sécurité & Règles",
-      "desc": "Respectez les règles de priorité sur le lagon, évitez les zones débutantes si vous naviguez fort, et assurez-vous que votre camp propose une couverture de bateau de sauvetage."
+      "title": "Respect",
+      "desc": "Restez sur les chemins autorisés ; emportez vos déchets."
     }
   },
   "gyg": {
-    "badge": "Cours & Excursions",
-    "title": "Réserver vos activités nautiques",
-    "subtitle": "Meilleures expériences et cours autour du lagon de Dakhla.",
+    "badge": "Visites & expériences",
+    "title": "Visites liées à Spots kitesurf & wingfoil",
+    "subtitle": "Options si vous préférez un opérateur local.",
     "t1": {
-      "tag": "Kitesurf",
-      "title": "Stage découverte de Kitesurf pour débutants",
-      "desc": "Apprenez les bases du pilotage et de la sécurité avec des moniteurs certifiés en eau peu profonde."
+      "tag": "Lagune",
+      "title": "Sortie bateau sur la lagune",
+      "desc": "Points de vue et approches d’îles avec un skipper."
     },
     "t2": {
-      "tag": "Wingfoil",
-      "title": "Cours de Wingfoil dans le lagon",
-      "desc": "Maîtrisez la nouvelle tendance des sports de glisse avec un coaching dédié."
+      "tag": "Nature",
+      "title": "Boucle Dune Blanche",
+      "desc": "4x4 ou sites emblématiques de la lagune combinés."
     },
     "t3": {
-      "tag": "Aventure",
-      "title": "Excursion Downwinder & Tour du lagon",
-      "desc": "Balade guidée en downwind à travers les spots du lagon avec assistance de bateau de sécurité."
+      "tag": "Sport",
+      "title": "Cours de kitesurf",
+      "desc": "Session d’école sur l’eau plate de la lagune."
     },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via eux, nous touchons une petite commission sans frais supplémentaires pour vous."
+    "check": "Voir les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains de ces liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous."
   },
   "nearby": {
-    "badge": "Continuer l'exploration",
-    "title": "Plus de lieux incontournables à Dakhla",
-    "back": "← Retour au guide de Dakhla"
+    "badge": "Continuer l’exploration",
+    "title": "Plus de lieux à Dakhla",
+    "back": "← Retour au guide Dakhla"
   },
   "blog": {
-    "badge": "Du Blog",
-    "title": "Articles associés",
+    "badge": "Du blog",
+    "title": "Articles liés",
     "all": "Tous les articles →",
-    "read": "Lire l'article →",
+    "read": "Lire l’article →",
     "a1": {
-      "tag": "Gastronomie",
-      "title": "Guide culinaire de Dakhla : que manger et où",
-      "desc": "Des saveurs maritimes aux spécialités sahariennes."
+      "tag": "Préparer",
+      "title": "Première fois à Dakhla",
+      "desc": "Lagune, vent et durée de séjour."
     },
     "a2": {
-      "tag": "Souks",
-      "title": "Comment négocier dans les souks de Dakhla",
-      "desc": "Prix, timing et petites courtoisies pour faciliter les achats."
+      "tag": "Guide",
+      "title": "Dune Blanche & Île du Dragon",
+      "desc": "Comment combiner les deux sites."
     },
     "a3": {
-      "tag": "Planification",
-      "title": "Premier voyage à Dakhla : Les erreurs à éviter",
-      "desc": "Les conseils essentiels pour un séjour réussi."
+      "tag": "Sport",
+      "title": "Kitesurf à Dakhla",
+      "desc": "Spots, saisons et écoles."
     }
   },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ sur les spots de Kitesurf & Wingfoil",
+    "title": "FAQ Spots kitesurf & wingfoil",
     "q1": {
-      "question": "Est-il facile d'apprendre le kitesurf à Dakhla ?",
-      "answer": "Oui ! La combinaison d'eau plate peu profonde et de vents latéraux constants fait de Dakhla l'un des meilleurs spots au monde pour débuter."
+      "question": "Is Dakhla good for beginner kitesurf?",
+      "answer": "Yes. Many camps specialise in lessons on shallow, flat lagoon water with safety boats."
     },
     "q2": {
-      "question": "Dois-je apporter mon propre matériel ?",
-      "answer": "Pas forcément. Presque tous les camps proposent du matériel haut de gamme à la location, bien que les riders expérimentés préfèrent leur propre matériel."
+      "question": "Is wingfoil available too?",
+      "answer": "Yes. The same lagoon is popular for wingfoil sessions and lessons."
     },
     "q3": {
-      "question": "Quelle est la saison des vents à Dakhla ?",
-      "answer": "Dakhla bénéficie d'un vent exceptionnel toute l'année, mais les alizés les plus forts et réguliers soufflent d'avril à septembre."
+      "question": "When is the best wind season?",
+      "answer": "Wind is present much of the year. October to June is a common window for comfortable temperatures and reliable sessions."
     },
     "q4": {
-      "question": "Y a-t-il des vagues pour les riders confirmés ?",
-      "answer": "Oui, les spots côté océan comme Foum El Bouir offrent de superbes conditions de vagues pour les surfeurs et kiters à seulement quelques minutes de la presqu'île."
+      "question": "Do I need my own gear?",
+      "answer": "No. Rentals, packages and storage are widely offered at lagoon camps."
     },
     "q5": {
-      "question": "Ai-je besoin d'une combinaison ?",
-      "answer": "Oui, la température de l'eau de l'Atlantique et du lagon nécessite une combinaison 3/2mm ou un shorty pour rester à l'aise lors de longues sessions."
+      "question": "Should I stay at a kite camp or in town?",
+      "answer": "Camps put you next to the spots. Town is quieter at night and needs a transfer to the water."
     }
   },
   "destinations": {

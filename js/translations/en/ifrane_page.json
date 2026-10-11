@@ -88,7 +88,22 @@
   "eat": {
     "badge": "Where to Eat",
     "title": "Where to Eat in Ifrane",
-    "subtitle": "Town square cafés, mountain grills and cozy alpine dining rooms."
+    "subtitle": "Town square cafés, mountain grills and cozy alpine dining rooms.",
+    "gardens": {
+      "tag": "Café",
+      "title": "Central Garden Cafés",
+      "desc": "Mint tea and relaxed meals overlooking the central gardens and fountains."
+    },
+    "grill": {
+      "tag": "Local",
+      "title": "Mountain Grills & Tagines",
+      "desc": "Hearty local tagines and grilled meats ideal for cooler mountain weather."
+    },
+    "brasserie": {
+      "tag": "Alpine",
+      "title": "Alpine Brasseries",
+      "desc": "Cafés and brasseries serving coffee, pastries and warm dishes near the centre."
+    }
   },
   "tips": {
     "badge": "Practical Tips",
@@ -100,7 +115,19 @@
   "daytrips": {
     "badge": "Day Trips",
     "title": "Best Day Trips from Ifrane",
-    "subtitle": "Explore nearby cedar markets, imperial history, and mountain peaks."
+    "subtitle": "Explore nearby cedar markets, imperial history, and mountain peaks.",
+    "azrou": {
+      "title": "Azrou & Cedar Forest",
+      "desc": "Famous market town and deep cedar woods just south of Ifrane."
+    },
+    "fes": {
+      "title": "Fes",
+      "desc": "About an hour away — dive into the vibrant medieval medina."
+    },
+    "michlifen": {
+      "title": "Michlifen & Jbel Hebri",
+      "desc": "High volcanic plateaus, winter sports and expansive alpine views."
+    }
   },
   "faq": {
     "badge": "Good to Know",

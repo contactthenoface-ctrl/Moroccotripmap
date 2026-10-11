@@ -1,80 +1,170 @@
 {
   "seo": {
-    "title": "Dakhla Lagoon | MoroccoTripMap",
-    "description": "Discover Dakhla Lagoon, a 40 km turquoise oasis between the Sahara and the Atlantic. Best times to visit, boat trips, oyster farms and visitor tips.",
-    "og_title": "Dakhla Lagoon: Turquoise Waters, Oysters & Sahara Views",
-    "og_description": "Explore the majestic 40 km Dakhla lagoon, its calm turquoise waters, wildlife, and stunning desert landscapes."
+    "title": "Dakhla Lagoon | Turquoise Water & Wind | MoroccoTripMap",
+    "description": "Explore Dakhla Lagoon: turquoise flat water, kitesurf shores, wind, light and practical tips for visiting the lagoon.",
+    "keywords": "Dakhla Lagoon, lagune Dakhla, kitesurf lagoon, turquoise lagoon Morocco, Dakhla flat water"
   },
   "name": "Dakhla Lagoon",
-  "hero_subtitle": "A 40 km turquoise lagoon between Sahara dunes and the Atlantic — the geographic and sporting heart of Dakhla.",
+  "hero_subtitle": "A 40 km turquoise lagoon between the Sahara and the Atlantic — the heart of Dakhla.",
   "info": {
-    "best_time_label": "Best Time to Go",
-    "best_time_val": "Morning & late afternoon",
-    "duration_label": "Time Needed",
-    "duration_val": "Half day to full day",
+    "best_time_label": "Best time",
+    "best_time_val": "Late afternoon for light",
+    "duration_label": "Suggested duration",
+    "duration_val": "2 – 4 hours",
     "entry_label": "Entry",
-    "entry_val": "Free (activities extra)",
-    "area_label": "Where",
-    "area_val": "Peninsula lagoon"
+    "entry_val": "Free shores",
+    "area_label": "Location",
+    "area_val": "Between Sahara and Atlantic"
   },
   "overview": {
-    "title": "The lagoon that defines Dakhla",
-    "p1": "Dakhla’s lagoon stretches for roughly forty kilometres along a sand peninsula. Sheltered from open-ocean swell, its shallow turquoise water stays remarkably flat — the reason the world comes here to kitesurf and wingfoil.",
-    "p2": "Even without a board, the lagoon is the main stage: boat trips, oyster farms, flamingos in season, and light that shifts from silver to deep blue across the day.",
-    "p3": "Most camps and schools sit on the lagoon shore. Town is a short drive; the White Dune and Dragon Island are classic lagoon outings."
+    "title": "The water that defines the town",
+    "p1": "Dakhla Lagoon stretches for roughly forty kilometres of shallow turquoise water, sheltered from the open Atlantic by a long sandy peninsula.",
+    "p2": "This is where most visitors spend their days: kite and wing sessions on flat water, quiet walks on the shore, and sunsets that turn the lagoon gold and pink.",
+    "p3": "Treat it as a landscape as much as a playground — conditions and access points vary along its length."
   },
   "gallery": {
-    "badge": "Gallery",
-    "title": "Dakhla Lagoon in Pictures",
-    "subtitle": "Swipe through crystal-clear waters, sand flats, and serene horizons.",
-    "s1": { "caption": "Lagoon at dusk" },
-    "s2": { "caption": "Shore along Dakhla Lagoon" },
-    "s3": { "caption": "Lagoon shore and kite camps" },
-    "s4": { "caption": "Late light on the lagoon" },
-    "s5": { "caption": "View over the lagoon toward the dunes" }
+    "badge": "Photo gallery",
+    "title": "Dakhla Lagoon in pictures",
+    "subtitle": "Views from Dakhla Lagoon in Dakhla.",
+    "s1": {
+      "caption": "Dakhla Lagoon — 1"
+    },
+    "s2": {
+      "caption": "Dakhla Lagoon — 2"
+    },
+    "s3": {
+      "caption": "Dakhla Lagoon — 3"
+    },
+    "s4": {
+      "caption": "Dakhla Lagoon — 4"
+    },
+    "s5": {
+      "caption": "Dakhla Lagoon — 5"
+    }
   },
-  "tips": {
-    "title": "Practical Tips for Visiting Dakhla Lagoon",
+  "moods": {
+    "badge": "Timing",
+    "title": "Dakhla Lagoon through the day",
+    "subtitle": "When to go.",
     "1": {
-      "title": "Getting Around",
-      "desc": "Taxis or rental cars are needed to reach the various lagoon camps and spots down the peninsula from Dakhla town."
+      "tag": "Morning",
+      "title": "Quiet start",
+      "desc": "Softer light and cooler air.",
+      "duration": "Morning"
     },
     "2": {
-      "title": "Sun & Wind Protection",
-      "desc": "The combination of desert sun and steady coastal wind means high SPF sunscreen, sunglasses, and a windbreaker are essential."
+      "tag": "Midday",
+      "title": "Strong sun",
+      "desc": "Protect skin and hydrate.",
+      "duration": "Midday"
     },
     "3": {
-      "title": "Tides & Nature",
-      "desc": "Be mindful of changing tides when walking on the flats, and respect local wildlife areas and protected bird habitats."
+      "tag": "Late afternoon",
+      "title": "Best colour",
+      "desc": "Warm light on lagoon and dunes.",
+      "duration": "Late afternoon"
+    }
+  },
+  "food": {
+    "title": "Food near Dakhla Lagoon",
+    "p1": "Plan meals at lagoon camps or in Dakhla town; pack water for every outing.",
+    "li1": "Camp meals if you stay on the lagoon.",
+    "li2": "Oyster tastings when farms are open.",
+    "li3": "Grilled fish in town.",
+    "li4": "Carry water and snacks on dune or desert tracks.",
+    "li5": "Confirm camp kitchen hours after wind sessions.",
+    "p2": "Cash helps at small lagoon stops."
+  },
+  "tips": {
+    "title": "Practical tips for Dakhla Lagoon",
+    "1": {
+      "title": "Access",
+      "desc": "Confirm transfer times from your camp or hotel."
+    },
+    "2": {
+      "title": "Sun & wind",
+      "desc": "High SPF, windbreaker and extra water."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Stay on allowed paths; mind riders on the water."
+    }
+  },
+  "gyg": {
+    "badge": "Tours & experiences",
+    "title": "Tours linked to Dakhla Lagoon",
+    "subtitle": "Options if you prefer a local operator.",
+    "t1": {
+      "tag": "Lagoon",
+      "title": "Lagoon orientation",
+      "desc": "Shore and viewpoint introduction."
+    },
+    "t2": {
+      "tag": "Wind",
+      "title": "Kite or wing session",
+      "desc": "Lessons and guided water time."
+    },
+    "t3": {
+      "tag": "Desert",
+      "title": "Dune or sebkha outing",
+      "desc": "White Dune or desert-edge track."
+    },
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Dakhla",
+      "desc": "Lagoon, wind and how long to stay."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Lagoon day",
+      "desc": "Shores, dune and light."
+    },
+    "a3": {
+      "tag": "Sports",
+      "title": "Kitesurf in Dakhla",
+      "desc": "Spots and seasons."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "Dakhla Lagoon FAQ",
+    "q1": {
+      "question": "Can I swim in the lagoon?",
+      "answer": "Some edges are used for swimming; always check local conditions and currents. Many visitors come primarily for wind sports on the flat water."
+    },
+    "q2": {
+      "question": "Best time of day on the lagoon?",
+      "answer": "Late afternoon for golden light; morning for calmer shore walks before the trade wind builds."
+    },
+    "q3": {
+      "question": "Do I need a guide for the lagoon?",
+      "answer": "Not for main shore access. A local operator helps for boat trips or finding quieter stretches away from the camps."
+    },
+    "q4": {
+      "question": "How long should I spend at the lagoon?",
+      "answer": "Two to four hours for a first shore visit. Full days if you kitesurf or wingfoil."
+    },
+    "q5": {
+      "question": "Is lagoon shore access free?",
+      "answer": "Yes, general shore access is free. Camps, lessons, rentals and boat trips are paid activities."
     }
   },
   "nearby": {
-    "badge": "Keep Exploring",
-    "title": "More Must-Visit Places in Dakhla",
+    "badge": "Keep exploring",
+    "title": "More places in Dakhla",
     "back": "← Back to the Dakhla guide"
   },
-  "faq": {
-    "badge": "Good to Know",
-    "title": "Dakhla Lagoon FAQ",
-    "q1": {
-      "question": "Is Dakhla Lagoon free to visit?",
-      "answer": "Yes, accessing the shores of the lagoon is completely free. Costs apply only if you rent water sports equipment, book boat excursions, or dine at the oyster farms and camps."
-    },
-    "q2": {
-      "question": "What is the best time to visit the lagoon?",
-      "answer": "Early morning offers the calmest glass-like water and stunning sunrise colors, while late afternoon provides magical golden light reflecting across the tidal flats."
-    },
-    "q3": {
-      "question": "Can I see wildlife at Dakhla Lagoon?",
-      "answer": "Yes! The lagoon is a protected Ramsar site and a crucial stop for migratory birds, including large flocks of flamingos, herons, and waders."
-    },
-    "q4": {
-      "question": "What are the local culinary specialties here?",
-      "answer": "Dakhla is famous for its fresh local oysters farmed directly in the clean waters of the lagoon, as well as fresh Atlantic fish and traditional Saharan mint tea."
-    },
-    "q5": {
-      "question": "How far is the lagoon from Dakhla town?",
-      "answer": "The main kite camps and central areas of the lagoon are located along the peninsula, roughly a 20 to 30-minute drive from downtown Dakhla."
+  "destinations": {
+    "dakhla": {
+      "name": "Dakhla"
     }
   }
 }

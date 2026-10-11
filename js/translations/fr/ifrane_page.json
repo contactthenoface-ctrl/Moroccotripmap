@@ -88,7 +88,22 @@
   "eat": {
     "badge": "Où Manger",
     "title": "Où Manger à Ifrane",
-    "subtitle": "Cafés de la place centrale, grillades de montagne et salles à manger alpines chaleureuses."
+    "subtitle": "Cafés de la place centrale, grillades de montagne et salles à manger alpines chaleureuses.",
+    "gardens": {
+      "tag": "Café",
+      "title": "Cafés des Jardins Centraux",
+      "desc": "Thé à la menthe et repas détendus avec vue sur les jardins centraux et les fontaines."
+    },
+    "grill": {
+      "tag": "Local",
+      "title": "Grillades & Tajines de Montagne",
+      "desc": "Tajines locaux copieux et viandes grillées, idéaux pour le climat frais de la montagne."
+    },
+    "brasserie": {
+      "tag": "Alpin",
+      "title": "Brasseries Alpines",
+      "desc": "Cafés et brasseries proposant café, pâtisseries et plats chauds à proximité du centre."
+    }
   },
   "tips": {
     "badge": "Conseils Pratiques",
@@ -100,7 +115,19 @@
   "daytrips": {
     "badge": "Excursions",
     "title": "Meilleures Excursions depuis Ifrane",
-    "subtitle": "Explorez les marchés de cèdres voisins, l'histoire impériale et les sommets de montagne."
+    "subtitle": "Explorez les marchés de cèdres voisins, l'histoire impériale et les sommets de montagne.",
+    "azrou": {
+      "title": "Azrou & la Forêt de Cèdres",
+      "desc": "Célèbre ville de marché et denses forêts de cèdres juste au sud d'Ifrane."
+    },
+    "fes": {
+      "title": "Fès",
+      "desc": "À environ une heure de route — plongez au cœur de la vibrante médina médiévale."
+    },
+    "michlifen": {
+      "title": "Michlifen & Jbel Hebri",
+      "desc": "Hauts plateaux volcaniques, sports d'hiver et vastes panoramas alpins."
+    }
   },
   "faq": {
     "badge": "Bon à Savoir",

@@ -1,9 +1,9 @@
-"ifrane_page": {
+{
   "seo": {
-    "title": "Guide de Voyage Ifrane | La Petite Suisse, Cèdres & Lacs | MoroccoTripMap",
-    "description": "Préparez votre voyage à Ifrane : forêts de cèdres, architecture alpine, air pur, lac Dayet Aoua, Michlifen et un itinéraire clair.",
-    "og_title": "Guide de Voyage Ifrane | Forêts de Cèdres, Lacs & Charme Alpin | MoroccoTripMap",
-    "og_description": "Explorez l'architecture alpine d'Ifrane, ses forêts de cèdres, ses lacs de montagne, ses hôtels, ses restaurants et son itinéraire sur mesure."
+    "title": "Guide de Voyage Ifrane | Petite Suisse, Cèdres & Lacs | MoroccoTripMap",
+    "description": "Préparez votre séjour à Ifrane : forêts de cèdres, architecture alpine, air pur, lac Dayet Aoua, Michlifen et itinéraire idéal.",
+    "og_title": "Guide de Voyage Ifrane | Forêts de Cèdres, Lacs & Ambiance Alpine | MoroccoTripMap",
+    "og_description": "Découvrez l'architecture alpine d'Ifrane, ses forêts de cèdres, ses lacs de montagne, ses riads, ses restaurants et son itinéraire clé en main."
   },
   "hero_subtitle": "La petite Suisse du Moyen Atlas — forêts de cèdres, air pur de montagne et charme alpin.",
   "info": {
@@ -13,60 +13,61 @@
     "stay_val": "2 – 3 Jours",
     "vibe_label": "Ambiance",
     "vibe_val": "Alpine & Forêts",
-    "airport_label": "Aéroport le plus proche",
-    "airport_val": "FÈS (Fès-Saïss)"
+    "airport_label": "Aéroport proche",
+    "airport_val": "FÈS (Fes-Sais)"
   },
   "overview": {
     "title": "Ifrane : Jardins Alpins, Forêts de Cèdres et Lacs de Montagne",
-    "p1": "Nichée à 1 650 mètres d'altitude dans le Moyen Atlas, Ifrane offre un contraste saisissant avec les villes impériales et les dunes du désert marocain. Connue pour ses chalets aux toits rouges en pente, ses jardins manucurés et son air frais de montagne, c'est un havre de paix pour les amoureux de la nature, les randonneurs et les voyageurs en quête d'une retraite montagnarde rafraîchissante.",
-    "p2": "Deux à trois jours vous laissent amplement le temps de flâner dans les avenues impeccables de la ville, de visiter les forêts de cèdres voisines pour observer les singes magots, d'explorer les rives pittoresques de Dayet Aoua ou de profiter des sports d'hiver à Michlifen."
+    "p1": "Nichée à 1 650 mètres d'altitude dans le Moyen Atlas, Ifrane offre un contraste saisissant avec les villes impériales et les dunes du désert marocain. Connue pour ses chalets aux toits rouges inclinés, ses jardins manucurés et son air frais, c'est un havre de paix pour les amoureux de la nature et les voyageurs en quête de fraîcheur.",
+    "p2": "Deux à trois jours vous laisseront le temps de flâner dans les avenues impeccables de la ville, de visiter les forêts de cèdres pour observer les singes magots, d'explorer les rives du lac Dayet Aoua ou de profiter des activités de Michlifen."
   },
   "places": {
-    "badge": "À ne pas manquer",
+    "badge": "À Voir Absolument",
     "title": "Les Incontournables d'Ifrane",
     "subtitle": "Monuments alpins, lacs de montagne, forêts de cèdres et vallées pittoresques.",
-    "lion": { "tag": "Emblème", "title": "Le Lion de Pierre", "desc": "La célèbre sculpture d'Ifrane taillée dans la roche au centre-ville." },
-    "aoua": { "tag": "Lac", "title": "Dayet Aoua", "desc": "Lac de montagne entouré de forêts de chênes, idéal pour les promenades et l'observation des oiseaux." },
-    "cedar": { "tag": "Forêt", "title": "Forêt de Cèdres", "desc": "Majestueux cèdres de l'Atlas et foyer de sympathiques singes magots." },
-    "michlifen": { "tag": "Montagne", "title": "Michlifen", "desc": "Cratère volcanique et station de ski offrant des panoramas exceptionnels sur les hauts plateaux." },
-    "vittel": { "tag": "Source", "title": "Source Vittel", "desc": "Parc naturel de source rafraîchissante niché au cœur d'une verdure luxuriante." },
-    "uni": { "tag": "Campus", "title": "Université Al Akhawayn", "desc": "Campus universitaire prestigieux de style américain à l'architecture alpine remarquable." },
-    "tizguit": { "tag": "Vallée", "title": "Vallée de Tizguit", "desc": "Vallée fluviale pittoresque idéale pour des promenades paisibles en pleine nature." },
+    "explore": "Explorer le lieu →",
+    "lion": { "tag": "Monument", "title": "Le Lion de Pierre", "desc": "La célèbre sculpture d'Ifrane taillée dans le roc au cœur de la ville." },
+    "aoua": { "tag": "Lac", "title": "Dayet Aoua", "desc": "Lac de montagne entouré de chênaies, très apprécié pour les balades et l'observation des oiseaux." },
+    "cedar": { "tag": "Forêt", "title": "La Forêt de Cèdres", "desc": "Majestueux cèdres de l'Atlas abritant les sympathiques singes magots." },
+    "michlifen": { "tag": "Montagne", "title": "Michlifen", "desc": "Cratère volcanique et station de ski offrant des panoramas alpins grandioses." },
+    "vittel": { "tag": "Source", "title": "Source Vittel", "desc": "Parc verdoyant et rafraîchissant autour des sources naturelles de la ville." },
+    "uni": { "tag": "Campus", "title": "Université Al Akhawayn", "desc": "Prestigieux campus universitaire de style américain à l'architecture alpine remarquable." },
+    "tizguit": { "tag": "Vallée", "title": "Vallée de Tizguit", "desc": "Vallée fluviale pittoresque idéale pour des balades paisibles en pleine nature." },
     "hachlaf": { "tag": "Lac", "title": "Dayet Hachlaf", "desc": "Un lac paisible et hors des sentiers battus sur le plateau montagneux." },
     "park": { "tag": "Parc", "title": "Parc National d'Ifrane", "desc": "Réserve naturelle protégée dotée de sentiers de randonnée et d'une riche biodiversité." }
   },
   "itinerary": {
     "badge": "Planification",
     "title": "Itinéraire Suggéré de 3 Jours",
-    "subtitle": "Un rythme détendu pour découvrir les points forts d'Ifrane et du Moyen Atlas."
+    "subtitle": "Un programme détendu pour découvrir les incontournables d'Ifrane et du Moyen Atlas."
   },
   "detailed_itinerary": {
     "day1_tab": "Jour 1 — Ville & Jardins",
     "day2_tab": "Jour 2 — Lacs & Cèdres",
-    "day3_tab": "Jour 3 — Altitudes & Vallées",
+    "day3_tab": "Jour 3 — Sommets & Vallées",
     "day1_m": "Matin — Lion de Pierre & Centre",
-    "day1_md": "Commencez par l'emblématique sculpture du lion de pierre et promenez-vous dans les avenues propres de la ville-jardin ; visitez le parc de la Source Vittel pour admirer les sources naturelles.",
+    "day1_md": "Commencez par le célèbre lion de pierre et promenez-vous dans les avenues propres de la ville-jardin ; visitez le parc de la Source Vittel.",
     "day1_a": "Après-midi — Campus Al Akhawayn",
-    "day1_ad": "Admirez l'architecture de style américain de l'université depuis l'extérieur, puis détendez-vous autour d'un café sur la place centrale.",
-    "day1_e": "Soir — Dîner Chaleureux",
-    "day1_ed": "Savourez un dîner réconfortant dans un restaurant local — les soirées à Ifrane se rafraîchissent rapidement, même en été.",
+    "day1_ad": "Admirez l'architecture américaine de l'université de l'extérieur, puis détendez-vous autour d'un café sur la place centrale.",
+    "day1_e": "Soirée — Dîner Chaleureux",
+    "day1_ed": "Savourez un dîner réconfortant dans un restaurant local — les soirées d'Ifrane se rafraîchissent vite, même en été.",
     "day2_m": "Matin — Lac Dayet Aoua",
-    "day2_md": "Partez vers Dayet Aoua pour des balades paisibles au bord de l'eau et de l'observation d'oiseaux dans la lumière du matin.",
-    "day2_a": "Après-midi — Forêt de Cèdres & Magots",
-    "day2_ad": "Poursuivez vers l'ancienne forêt de cèdres pour admirer les arbres majestueux et observer les singes magots sauvages dans leur habitat naturel.",
-    "day2_e": "Soir — Soirée Détente en Ville",
-    "day2_ed": "Détendez-vous à votre hôtel ou riad après une journée rafraîchissante au plus près de la nature.",
-    "day3_m": "Matin — Les Hauteurs de Michlifen",
-    "day3_md": "Montez à Michlifen pour des vues panoramiques sur la montagne, des sentiers de randonnée ou du ski en hiver selon la saison.",
+    "day2_md": "Partez pour Dayet Aoua pour des promenades paisibles au bord de l'eau et de l'observation d'oiseaux dans la lumière matinale.",
+    "day2_a": "Après-midi — Forêt de Cèdres & Singes Magots",
+    "day2_ad": "Pénétrez dans l'ancienne forêt de cèdres pour admirer les arbres géants et observer les singes magots dans leur habitat naturel.",
+    "day2_e": "Soirée — Soirée Détente en Ville",
+    "day2_ed": "Détendez-vous à votre hôtel ou riad après une journée revigorante en pleine nature.",
+    "day3_m": "Matin — Sommets de Michlifen",
+    "day3_md": "Montez à Michlifen pour admirer les panoramas de montagne, faire de la randonnée ou du ski en hiver.",
     "day3_a": "Après-midi — Vallée de Tizguit",
-    "day3_ad": "Explorez les paysages verdoyants et les ruisseaux de la vallée de Tizguit avant de regagner le centre.",
-    "day3_e": "Soir — Départ",
-    "day3_ed": "Préparez votre voyage vers Fès, Meknès ou les profondeurs de l'Atlas."
+    "day3_ad": "Explorez les paysages verdoyants et les ruisseaux de la vallée de Tizguit avant de regagner la ville.",
+    "day3_e": "Soirée — Départ",
+    "day3_ed": "Préparez votre départ vers Fès, Meknès ou plus loin dans les montagnes de l'Atlas."
   },
   "directory": {
     "badge": "Répertoire & Base de Données",
     "title": "Trouvez Votre Hébergement Idéal à Ifrane",
-    "subtitle": "Utilisez les filtres ci-dessous pour trier instantanément les meilleurs endroits selon vos critères de recherche.",
+    "subtitle": "Utilisez les filtres ci-dessous pour trier instantanément les meilleurs établissements selon vos critères.",
     "filter_type_label": "Type",
     "type_all": "Tous",
     "type_hotel": "Hôtel",
@@ -75,11 +76,14 @@
     "filter_location_label": "Quartier / Zone :",
     "location_all": "Toutes les zones",
     "location_medina": "Centre-ville",
-    "location_ville": "Bellevue / Station",
+    "location_ville": "Bellevue / complexe",
     "location_walls": "Près des lacs",
-    "location_volubilis": "Route d'Azrou / Cèdres",
+    "location_volubilis": "Route d'Azrou / cèdres",
     "counter": "28 hébergements répertoriés",
-    "no_results": "Aucun établissement ne correspond à vos critères."
+    "no_results": "Aucun hébergement ne correspond à vos filtres.",
+    "check_availability": "Vérifier la disponibilité →",
+    "district_label": "Quartier",
+    "type_label": "Type"
   },
   "eat": {
     "badge": "Où Manger",
@@ -89,9 +93,9 @@
   "tips": {
     "badge": "Conseils Pratiques",
     "title": "Conseils Pratiques pour Visiter Ifrane",
-    "transport": { "title": "Se Déplacer", "desc": "Le centre-ville seexplore facilement à pied. Pour visiter les lacs, Michlifen et la forêt de cèdres, il est recommandé de louer un taxi privé ou de faire une excursion." },
-    "bargain": { "title": "Étiquette en Nature", "desc": "Lors de votre visite dans la forêt de cèdres, observez les singes magots à distance et évitez de les nourrir pour préserver leur régime naturel." },
-    "water": { "title": "S'habiller en Altitude", "desc": "En raison de son altitude (1 650 m), les soirées à Ifrane peuvent être fraîches même pendant les mois chauds. Prévoyez toujours une veste légère ou un pull." }
+    "transport": { "title": "Se Déplacer", "desc": "Le centre-ville se visite facilement à pied. Pour visiter les lacs, Michlifen et la forêt de cèdres, il est recommandé de louer un taxi privé ou de faire une excursion." },
+    "bargain": { "title": "Éthique en Nature", "desc": "Lors de votre visite dans la forêt de cèdres, observez les singes magots à distance et évitez de les nourrir pour préserver leur régime naturel." },
+    "water": { "title": "Prévoir pour l'Altitude", "desc": "En raison de son altitude (1 650 m), les soirées à Ifrane peuvent devenir fraîches même en été. Pensez toujours à emporter une veste légère ou un pull." }
   },
   "daytrips": {
     "badge": "Excursions",
@@ -101,9 +105,9 @@
   "faq": {
     "badge": "Bon à Savoir",
     "title": "FAQ Voyage Ifrane",
-    "q1": { "question": "Combien de jours devrais-je passer à Ifrane ?", "answer": "Deux à trois jours sont idéaux pour explorer la ville, visiter les forêts de cèdres, les lacs et profiter d'une pause montagnarde relaxante." },
-    "q2": { "question": "Ifrane est-elle sûre pour les touristes ?", "answer": "Oui, Ifrane est largement reconnue comme l'une des villes les plus sûres, propres et paisibles du Maroc." },
-    "q3": { "question": "Peut-on voir de la neige à Ifrane ?", "answer": "Oui ! Pendant l'hiver (de décembre à février), Ifrane reçoit fréquemment de la neige, faisant de Michlifen une destination prisée pour le ski et les paysages hivernaux." },
-    "q4": { "question": "Comment aller à Ifrane depuis Fès ?", "answer": "Ifrane est facilement accessible depuis Fès via des grands taxis, des transferts privés ou des bus, le trajet prenant environ 1h à 1h30 à travers de superbes routes de montagne." }
+    "q1": { "question": "Combien de jours passer à Ifrane ?", "answer": "Deux à trois jours sont parfaits pour explorer la ville, visiter les forêts de cèdres, les lacs et profiter d'une pause montagnarde relaxante." },
+    "q2": { "question": "Ifrane est-elle une ville sûre pour les touristes ?", "answer": "Oui, Ifrane est largement reconnue comme l'une des villes les plus sûres, propres et paisibles du Maroc." },
+    "q3": { "question": "Peut-on voir de la neige à Ifrane ?", "answer": "Oui ! En hiver (de décembre à février), Ifrane reçoit fréquemment de la neige, faisant de Michlifen une destination prisée pour le ski." },
+    "q4": { "question": "Comment se rendre à Ifrane depuis Fès ?", "answer": "Ifrane est facilement accessible depuis Fès en grands taxis, transferts privés ou bus, pour un trajet d'environ 1h à 1h30 à travers de superbes routes de montagne." }
   }
 }

@@ -1,171 +1,80 @@
 {
   "seo": {
-    "title": "Lagune de Dakhla Dakhla | MoroccoTripMap",
-    "description": "A 40 km turquoise lagoon between Sahara dunes and the Atlantic — the geographic and sporting heart of Dakhla.",
-    "og_title": "Dakhla Lagoon",
-    "og_description": "A 40 km turquoise lagoon between Sahara dunes and the Atlantic — the geographic and sporting heart of Dakhla."
+    "title": "Lagune de Dakhla | MoroccoTripMap",
+    "description": "Découvrez la lagune de Dakhla, une oasis turquoise de 40 km entre le Sahara et l'Atlantique. Meilleures périodes, balades en bateau et parcs à huîtres.",
+    "og_title": "Lagune de Dakhla : Eaux Turquoise, Huîtres & Vues sur le Sahara",
+    "og_description": "Explorez la magnifique lagune de Dakhla, ses eaux calmes et transparentes, sa faune sauvage et ses paysages désertiques."
   },
   "name": "Lagune de Dakhla",
-  "hero_subtitle": "Une lagune turquoise de 40 km entre dunes sahariennes et Atlantique — cœur géographique et sportif de Dakhla.",
+  "hero_subtitle": "Une lagune turquoise de 40 km entre dunes du Sahara et océan Atlantique — le cœur géographique et sportif de Dakhla.",
   "info": {
-    "best_time_label": "Meilleur moment",
-    "best_time_val": "Matin et fin d’après-midi",
-    "duration_label": "Durée suggérée",
-    "duration_val": "Demi-journée à journée complète",
-    "entry_label": "Entrée",
-    "entry_val": "Gratuit (activités en plus)",
-    "area_label": "Emplacement",
-    "area_val": "Lagune de la presqu’île"
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Matin & fin d'après-midi",
+    "duration_label": "Durée idéale",
+    "duration_val": "Demi-journée à journée",
+    "entry_label": "Accès",
+    "entry_val": "Gratuit (activités payantes)",
+    "area_label": "Où",
+    "area_val": "Lagune de la presqu'île"
   },
   "overview": {
     "title": "La lagune qui définit Dakhla",
-    "p1": "La lagune de Dakhla s’étend sur environ quarante kilomètres le long d’une presqu’île de sable. Protégée de la houle du large, son eau turquoise peu profonde reste remarquablement plate — la raison pour laquelle le monde vient ici pour le kitesurf et le wingfoil.",
-    "p2": "Même sans planche, la lagune est la scène principale : sorties en bateau, fermes d’huîtres, flamants en saison, et une lumière qui passe de l’argenté au bleu profond.",
-    "p3": "La plupart des camps et écoles sont sur la rive de la lagune. La ville est à courte distance ; la Dune Blanche et l’Île du Dragon sont des sorties classiques depuis la lagune."
+    "p1": "La lagune de Dakhla s'étend sur environ quarante kilomètres le long d'une presqu'île de sable. À l'abri de la houle de l'océan, ses eaux peu profondes et turquoise restent remarquablement plates — la raison pour laquelle le monde entier vient y faire du kitesurf et du wingfoil.",
+    "p2": "Même sans planche, la lagune est un spectacle permanent : excursions en bateau, fermes ostréicoles, flamants roses en saison et lumières changeantes du lever au coucher du soleil.",
+    "p3": "La plupart des camps et des écoles bordent les rives de la lagune. La ville n'est qu'à un court trajet en voiture ; la Dune Blanche et l'Île du Dragon sont des excursions incontournables."
   },
   "gallery": {
-    "badge": "Galerie photo",
-    "title": "Lagune de Dakhla en images",
-    "subtitle": "Vues de Lagune de Dakhla à Dakhla.",
-    "s1": {
-      "caption": "Lagune de Dakhla — vue 1"
-    },
-    "s2": {
-      "caption": "Lagune de Dakhla — vue 2"
-    },
-    "s3": {
-      "caption": "Lagune de Dakhla — vue 3"
-    },
-    "s4": {
-      "caption": "Lagune de Dakhla — vue 4"
-    },
-    "s5": {
-      "caption": "Lagune de Dakhla — vue 5"
-    }
-  },
-  "moods": {
-    "badge": "Timing",
-    "title": "Lagune de Dakhla dans la journée",
-    "subtitle": "Quand y aller.",
-    "1": {
-      "tag": "Matin",
-      "title": "Début calme",
-      "desc": "Lumière plus douce, moins de monde.",
-      "duration": "Matin"
-    },
-    "2": {
-      "tag": "Midi",
-      "title": "Lumière vive",
-      "desc": "Soleil fort — protégez peau et matériel.",
-      "duration": "Midi"
-    },
-    "3": {
-      "tag": "Fin d’après-midi",
-      "title": "Meilleures couleurs",
-      "desc": "Lumière chaude sur l’eau et le sable.",
-      "duration": "Fin d’après-midi"
-    }
-  },
-  "food": {
-    "title": "Manger près de Lagune de Dakhla",
-    "p1": "Prévoyez les repas en ville, au camp de lagune ou lors d’une dégustation.",
-    "li1": "Eau en bouteille à chaque sortie.",
-    "li2": "Poisson et plats simples en ville.",
-    "li3": "Repas de camp si vous logez sur la lagune.",
-    "li4": "Dégustation d’huîtres quand les fermes sont ouvertes.",
-    "li5": "Vérifiez les horaires avant d’y aller.",
-    "p2": "Les espèces sont utiles hors grands hôtels."
+    "badge": "Galerie",
+    "title": "La Lagune de Dakhla en Images",
+    "subtitle": "Aperçu des eaux cristallines, des bancs de sable et des horizons sereins.",
+    "s1": { "caption": "La lagune au crépuscule" },
+    "s2": { "caption": "Rivage le long de la lagune de Dakhla" },
+    "s3": { "caption": "Rives de la lagune et camps de kite" },
+    "s4": { "caption": "Lumière de fin de journée sur la lagune" },
+    "s5": { "caption": "Vue sur la lagune et les dunes" }
   },
   "tips": {
-    "title": "Conseils pratiques pour Lagune de Dakhla",
+    "title": "Conseils pratiques pour visiter la lagune",
     "1": {
-      "title": "Accès",
-      "desc": "Confirmez transfert, marée ou réservation école avant de quitter la ville."
+      "title": "Se déplacer",
+      "desc": "Des taxis ou une voiture de location sont nécessaires pour rejoindre les différents camps de la lagune depuis le centre de Dakhla."
     },
     "2": {
-      "title": "Soleil & vent",
-      "desc": "SPF élevé, lunettes et une couche contre l’alizé."
+      "title": "Protection solaire et vent",
+      "desc": "La combinaison du soleil du désert et du vent côtier rend indispensables une crème solaire haute protection, des lunettes de soleil et un coupe-vent."
     },
     "3": {
-      "title": "Respect",
-      "desc": "Restez sur les chemins autorisés ; emportez vos déchets."
+      "title": "Marées et nature",
+      "desc": "Soyez attentif aux marées changeantes lors de vos promenades sur les bancs de sable et respectez les zones naturelles protégées pour les oiseaux."
     }
-  },
-  "gyg": {
-    "badge": "Visites & expériences",
-    "title": "Visites liées à Lagune de Dakhla",
-    "subtitle": "Options si vous préférez un opérateur local.",
-    "t1": {
-      "tag": "Lagune",
-      "title": "Sortie bateau sur la lagune",
-      "desc": "Points de vue et approches d’îles avec un skipper."
-    },
-    "t2": {
-      "tag": "Nature",
-      "title": "Boucle Dune Blanche",
-      "desc": "4x4 ou sites emblématiques de la lagune combinés."
-    },
-    "t3": {
-      "tag": "Sport",
-      "title": "Cours de kitesurf",
-      "desc": "Session d’école sur l’eau plate de la lagune."
-    },
-    "check": "Voir les disponibilités sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous."
   },
   "nearby": {
-    "badge": "Continuer l’exploration",
-    "title": "Plus de lieux à Dakhla",
-    "back": "← Retour au guide Dakhla"
-  },
-  "blog": {
-    "badge": "Du blog",
-    "title": "Articles liés",
-    "all": "Tous les articles →",
-    "read": "Lire l’article →",
-    "a1": {
-      "tag": "Préparer",
-      "title": "Première fois à Dakhla",
-      "desc": "Lagune, vent et durée de séjour."
-    },
-    "a2": {
-      "tag": "Guide",
-      "title": "Dune Blanche & Île du Dragon",
-      "desc": "Comment combiner les deux sites."
-    },
-    "a3": {
-      "tag": "Sport",
-      "title": "Kitesurf à Dakhla",
-      "desc": "Spots, saisons et écoles."
-    }
+    "badge": "Continuer l'exploration",
+    "title": "Plus de lieux incontournables à Dakhla",
+    "back": "← Retour au guide de Dakhla"
   },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ Lagune de Dakhla",
+    "title": "FAQ sur la Lagune de Dakhla",
     "q1": {
-      "question": "Les non-kiters peuvent-ils profiter de la lagune ?",
-      "answer": "Oui — bateaux, points de vue, huîtres et marches le long du rivage fonctionnent sans planche."
+      "question": "L'accès à la lagune de Dakhla est-il gratuit ?",
+      "answer": "Oui, l'accès aux rives de la lagune est totalement gratuit. Des frais s'appliquent uniquement si vous louez du matériel nautique, réservez une excursion en bateau ou mangez dans les parcs à huîtres et les camps."
     },
     "q2": {
-      "question": "Quelle longueur a la lagune ?",
-      "answer": "Environ 40 km le long de la presqu’île, avec plusieurs accès et camps."
+      "question": "Quel est le meilleur moment pour visiter la lagune ?",
+      "answer": "Tôt le matin, l'eau est parfaitement calme comme un miroir avec de superbes couleurs de lever de soleil, tandis que l'fin d'après-midi offre une lumière dorée magique."
     },
     "q3": {
-      "question": "La baignade est-elle sûre ?",
-      "answer": "Les bas-fonds sont fréquents, mais suivez les conseils locaux sur courants, bateaux et zones de kite."
+      "question": "Peut-on observer des animaux sauvages dans la lagune ?",
+      "answer": "Oui ! La lagune est un site Ramsar protégé et une étape cruciale pour les oiseaux migrateurs, abritant de grands groupes de flamants roses et d'hérons."
     },
     "q4": {
-      "question": "Faut-il une voiture ?",
-      "answer": "Les camps organisent souvent les transferts. Taxis de ville et 4x4 d’agence couvrent les sorties."
+      "question": "Quelles sont les spécialités culinaires locales ?",
+      "answer": "Dakhla est célèbre pour ses huîtres fraîches élevées directement dans les eaux pures de la lagune, ainsi que pour ses poissons de l'Atlantique et le thé à la menthe saharien."
     },
     "q5": {
-      "question": "Meilleure lumière photo ?",
-      "answer": "Tôt le matin et fin d’après-midi pour la couleur sur l’eau."
-    }
-  },
-  "destinations": {
-    "dakhla": {
-      "name": "Dakhla"
+      "question": "À quelle distance se trouve la lagune de la ville de Dakhla ?",
+      "answer": "Les principaux camps de kite et zones centrales de la lagune sont situés le long de la presqu'île, à environ 20 à 30 minutes de route du centre-ville."
     }
   }
 }

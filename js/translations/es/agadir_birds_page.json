@@ -1,1 +1,158 @@
-{"seo":{"title":"Valle de los Pájaros | Agadir | MoroccoTripMap","description":"Small city park with birds and green shade.","og_title":"Valle de los Pájaros","og_description":"Small city park with birds and green shade."},"name":"Valle de los Pájaros","hero_subtitle":"Pequeño parque urbano con aves y sombra verde.","info":{"best_time_label":"Mejor momento","duration_label":"Duración","entry_label":"Entrada","area_label":"Zona","best_time_val":"Pausa de sombra al mediodía","duration_val":"45 – 90 min","entry_val":"Posible tarifa pequeña","area_val":"Parque urbano"},"overview":{"title":"Sombra, aves y una pausa corta en la ciudad","p1":"El Valle de los Pájaros es un parque urbano modesto: caminos, aviarios y un bolsillo de verde cuando el resplandor de la playa es demasiado. No llenará un día entero, pero es una parada familiar útil o una hora tranquila entre planes más pesados.","p2":"Espere un parque local más que una gran atracción. Confirme horarios y posible entrada pequeña el día de la visita.","p3":"Combine con la playa o el zoco el mismo día. Mantenga expectativas proporcionales al tamaño del sitio."},"gallery":{"badge":"Galería","title":"Valle de los Pájaros en imágenes","subtitle":"Detalles que importan","s1":{"caption":"Caminos del parque bajo los árboles"},"s2":{"caption":"Recintos de aves"},"s3":{"caption":"Bancos a la sombra"},"s4":{"caption":"Familias en los paseos"},"s5":{"caption":"Contraste verde con la ciudad de playa"}},"moods":{"badge":"Qué ver","title":"Qué ver","subtitle":"Tres formas de vivir Valle de los Pájaros","1":{"tag":"Sombra","title":"Pausa verde","desc":"Un rincón más fresco en una ciudad muy soleada.","duration":"45–90 min"},"2":{"tag":"Aves","title":"Aviarios","desc":"La razón del nombre: simple y local.","duration":"45–90 min"},"3":{"tag":"Familia","title":"Parada fácil","desc":"Caminos planos y cambio de escenario para niños.","duration":"45–90 min"}},"food":{"title":"Comer cerca, no dentro","p1":"Lleve agua; planifique una comida real en la corniche o el centro después.","p2":"Es una parada de parque, no un destino gastronómico.","li1":"Agua y un snack antes de entrar","li2":"Café de corniche después","li3":"Snacks del zoco si sigue al mercado","li4":"Almuerzo de hotel si está en la playa","li5":"Zumo en la ciudad nueva"},"tips":{"title":"Consejos prácticos — Valle de los Pájaros","1":{"title":"Calor","desc":"Útil al mediodía cuando la playa es más dura."},"2":{"title":"Expectativas","desc":"Pequeño y local: no es un parque nacional."},"3":{"title":"Combinar","desc":"Mejor como relleno entre paradas mayores."}},"gyg":{"badge":"Experiencias","title":"Reservar un tour — Valle de los Pájaros","subtitle":"Buenas opciones si prefiere un guía local.","check":"Ver disponibilidad","disclosure":"Los socios pueden pagar una comisión.","t1":{"tag":"Tour","title":"Visita a Valle de los Pájaros","desc":"Buenas opciones si prefiere un guía local."},"t2":{"tag":"Media jornada","title":"Bucle costa y ciudad","desc":"Buenas opciones si prefiere un guía local."},"t3":{"tag":"Privado","title":"Conductor privado","desc":"Buenas opciones si prefiere un guía local."}},"nearby":{"badge":"Seguir explorando","title":"Más lugares imprescindibles en Agadir","back":"← Volver a la guía de Agadir","explore":"Explorar el lugar →"},"blog":{"badge":"Del blog","title":"Artículos relacionados","all":"Todos los artículos →","read":"Leer","a1":{"tag":"Gastronomía","title":"Guía food Agadir: pescado, puerto y corniche","desc":"Dónde comer en Agadir, de las parrillas del puerto a las terrazas de playa."},"a2":{"tag":"Itinerario","title":"Tres días en Agadir","desc":"Playa, Casba, zoco y una excursión sin prisas."},"a3":{"tag":"Costa","title":"Taghazout y la costa del surf","desc":"Cómo añadir el pueblo al norte de Agadir a su plan."}},"faq":{"badge":"FAQ","title":"FAQ — Valle de los Pájaros","q4":{"question":"¿Hace falta guía en Valle de los Pájaros?","answer":"Opcional; útil para el contexto."},"q5":{"question":"¿Valle de los Pájaros es apto para familias?","answer":"Sí con supervisión normal."},"q1":{"question":"¿Cuánto tiempo hace falta?","answer":"Unos 45–90 minutos para la mayoría de visitas."},"q2":{"question":"¿Hay entrada de pago?","answer":"A veces una tarifa pequeña: lleve cambio."},"q3":{"question":"¿Vale la pena sin niños?","answer":"Solo si quiere sombra y un paseo corto; priorice Casba y playa primero."}}}
+{
+  "agadir_birds_page": {
+    "name": "Valle de los Pájaros",
+    "hero_subtitle": "Pequeño parque urbano con sombra y aves.",
+    "seo": {
+      "title": "Valle de los Pájaros | Guía del Parque en Agadir | MoroccoTripMap",
+      "description": "¿Visitas el Valle de los Pájaros en Agadir? Descubre paseos con sombra, recintos de animales, consejos familiares y horarios.",
+      "og_title": "Valle de los Pájaros, Agadir: Parque, Familia y Consejos",
+      "og_description": "Explora el Valle de los Pájaros en Agadir: parque urbano con sombra, pajareras, senderos familiares y consejos prácticos."
+    },
+    "info": {
+      "best_time_label": "Mejor momento",
+      "best_time_val": "Pausa de sombra al mediodía",
+      "duration_label": "Tiempo necesario",
+      "duration_val": "45 – 90 min",
+      "entry_label": "Entrada",
+      "entry_val": "Posible tarifa pequeña",
+      "area_label": "Zona",
+      "area_val": "Parque urbano"
+    },
+    "overview": {
+      "title": "Sombra, aves y una breve pausa urbana",
+      "p1": "El Valle de los Pájaros es un modesto parque urbano con senderos, pajareras y un rincón de vegetación cuando el sol de la playa aprieta demasiado. No ocupará todo el día, pero es una parada familiar útil o una hora tranquila entre planes más intensos.",
+      "p2": "Espere un parque local más que una gran atracción turística. Compruebe los horarios y si hay una pequeña tarifa de entrada el día de su visita.",
+      "p3": "Combínelo con la playa o el zoco el mismo día. Mantenga las expectativas proporcionales al tamaño del lugar."
+    },
+    "gallery": {
+      "badge": "Galería",
+      "title": "El Valle de los Pájaros en imágenes",
+      "subtitle": "Recorre los senderos del parque, las pajareras y los rincones con sombra.",
+      "s1": { "caption": "Senderos del parque bajo los árboles" },
+      "s2": { "caption": "Recintos para aves" },
+      "s3": { "caption": "Bancos con sombra" },
+      "s4": { "caption": "Familias paseando por los caminos" },
+      "s5": { "caption": "Contraste verde en la ciudad costera" }
+    },
+    "moods": {
+      "badge": "Momentos",
+      "title": "Qué ver en el Valle de los Pájaros",
+      "subtitle": "Sombra, pajareras y ambiente familiar relajado — tres facetas por descubrir.",
+      "1": {
+        "tag": "Sombra",
+        "title": "Pausa verde",
+        "desc": "Un rincón más fresco en una ciudad muy soleada.",
+        "duration": "Paseo • 10 – 15 min"
+      },
+      "2": {
+        "tag": "Aves",
+        "title": "Pajareras",
+        "desc": "La razón de su nombre: sencillo y local.",
+        "duration": "Explorar • 45 – 60 min"
+      },
+      "3": {
+        "tag": "Familia",
+        "title": "Parada fácil",
+        "desc": "Caminos llanos y un cambio de aires para los niños.",
+        "duration": "Relajarse • 15 – 30 min"
+      }
+    },
+    "food": {
+      "title": "Coma fuera, no dentro",
+      "p1": "Lleve agua y planifique una comida completa en la corniche o en el centro después.",
+      "li1": "Agua y un tentempié antes de entrar",
+      "li2": "Café en la corniche después",
+      "li3": "Aperitivos en el zoco si continúa hacia el mercado",
+      "li4": "Almuerzo en el hotel si se aloja en la playa",
+      "li5": "Zumo en la ciudad nueva",
+      "p2": "Es una parada de parque, no un destino gastronómico."
+    },
+    "tips": {
+      "title": "Consejos prácticos para visitar el Valle de los Pájaros",
+      "1": {
+        "title": "Calor",
+        "desc": "Útil al mediodía cuando el sol de la playa pega con más fuerza."
+      },
+      "2": {
+        "title": "Expectativas",
+        "desc": "Pequeño y local: no es un gran zoológico nacional."
+      },
+      "3": {
+        "title": "Combinar",
+        "desc": "Ideal como relleno entre paradas más grandes."
+      }
+    },
+    "gyg": {
+      "badge": "Tours y Experiencias",
+      "title": "Reservar una excursión en Agadir",
+      "subtitle": "Buenas opciones si prefieres una visita guiada por la ciudad y sus parques.",
+      "t1": {
+        "tag": "Tour por la ciudad",
+        "title": "Lo más destacado de Agadir y tour por el zoco",
+        "desc": "Explora los puntos clave de Agadir, incluyendo la kasbah, la corniche y las animadas calles del mercado."
+      },
+      "t2": {
+        "tag": "Actividad familiar",
+        "title": "Tour familiar por los parques y la costa de Agadir",
+        "desc": "Un recorrido privado y relajado diseñado para familias que visitan los parques y atracciones locales."
+      },
+      "t3": {
+        "tag": "Medio día",
+        "title": "Tour cultural y turístico de Agadir",
+        "desc": "Una visión general de medio día que combina cultura, miradores y paseos costeros."
+      },
+      "check": "Ver disponibilidad en GetYourGuide →",
+      "disclosure": "Algunos enlaces son de afiliados. Si reservas a través de ellos, podemos ganar una pequeña comisión sin coste adicional para ti."
+    },
+    "nearby": {
+      "badge": "Sigue explorando",
+      "title": "Más lugares imprescindibles en Agadir",
+      "back": "← Volver a la guía de Agadir"
+    },
+    "blog": {
+      "badge": "Del Blog",
+      "title": "Artículos relacionados",
+      "all": "Todos los artículos →",
+      "read": "Leer artículo →",
+      "a1": {
+        "tag": "Gastronomía",
+        "title": "Guía gastronómica de Agadir: mariscos y lugares clave",
+        "desc": "Dónde comer bien en Agadir, desde pescado en la marina hasta cocina tradicional."
+      },
+      "a2": {
+        "tag": "Transporte",
+        "title": "Cómo moverse por Agadir: taxis y excursiones",
+        "desc": "Conseils prácticos para moverte entre el aeropuerto, la playa, el zoco y la marina."
+      },
+      "a3": {
+        "tag": "Planificación",
+        "title": "Primera vez en Agadir: qué esperar",
+        "desc": "Cómo organizar tus primeros días y planificar excursiones con calma."
+      }
+    },
+    "faq": {
+      "badge": "Información útil",
+      "title": "Preguntas Frecuentes sobre el Valle de los Pájaros",
+      "q1": {
+        "question": "¿Cuánto tiempo necesito?",
+        "answer": "Entre 45 y 90 minutos para la mayoría de las visitas."
+      },
+      "q2": {
+        "question": "¿Hay tarifa de entrada?",
+        "answer": "A veces una pequeña tarifa; lleva algo de cambio."
+      },
+      "q3": {
+        "question": "¿Vale la pena sin niños?",
+        "answer": "Solo si buscas sombra y un paseo corto; prioriza antes la Kasbah y la playa."
+      },
+      "q4": {
+        "question": "¿Necesito un guía en el Valle de los Pájaros?",
+        "answer": "Es opcional para una visita simple; útil para el contexto y la gestión del tiempo."
+      },
+      "q5": {
+        "question": "¿Es adecuado para familias?",
+        "answer": "Sí, en la mayoría de los casos con la supervisión normal de los niños."
+      }
+    }
+  }
+}

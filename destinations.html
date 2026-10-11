@@ -820,7 +820,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-<!-- Scripts externes (i18n.js à la racine et search.js dans /js/) -->
+<!-- Scripts externes (i18n.js et search.js) -->
 <script src="js/i18n.js"></script>
 <script src="js/search.js"></script>
 <script>
@@ -835,6 +835,27 @@ document.addEventListener('DOMContentLoaded', function () {
             arrow.classList.toggle('rotate-180');
         }
     }
+
+    // Gestion de la sélection de langue pour tous les boutons [data-lang] (Desktop & Mobile)
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('[data-lang]').forEach(button => {
+            button.addEventListener('click', function () {
+                const lang = this.getAttribute('data-lang');
+                if (typeof switchLanguage === 'function') {
+                    switchLanguage(lang);
+                }
+                const langDropdown = document.getElementById('lang-menu-dropdown');
+                if (langDropdown) langDropdown.classList.add('hidden');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu) mobileMenu.classList.add('hidden');
+            });
+        });
+
+        const savedLang = localStorage.getItem('preferred_lang') || 'en';
+        if (typeof switchLanguage === 'function') {
+            switchLanguage(savedLang);
+        }
+    });
 </script>
 </body>
-    </html>
+</html>

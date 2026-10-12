@@ -398,7 +398,47 @@
  <!-- ==========================================
  SECTION RÉPERTOIRE & FILTRES DES 60 HÉBERGEMENTS
  ========================================== -->
- <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+ 
+<!-- Recommended Itinerary Section -->
+<section class="itinerary-section">
+<div class="text-center mb-8">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="essaouira_page.itinerary.badge">Planning</span>
+<h2 class="text-3xl font-bold text-vert" data-i18n="essaouira_page.itinerary.title">Suggested 3-day plan for Essaouira</h2>
+<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="essaouira_page.itinerary.subtitle">Ramparts and port first, then beach and islands light, with a slower craft day.</p>
+</div>
+<div class="itinerary-tabs">
+<button class="tab-btn active" data-i18n="essaouira_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Medina & Skala</button>
+<button class="tab-btn" data-i18n="essaouira_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Beach & souks</button>
+<button class="tab-btn" data-i18n="essaouira_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Islands or day trip</button>
+</div>
+<div class="tab-content active" id="day1"><div class="day-card">
+<h3 data-i18n="essaouira_page.detailed_itinerary.day1_m">Morning — Medina and ramparts</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day1_md">Enter the UNESCO white-and-blue medina; walk the Skala de la Ville walls above the Atlantic.</p>
+<h3 data-i18n="essaouira_page.detailed_itinerary.day1_a">Afternoon — Port and Skala du Port</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day1_ad">Fishing harbour, blue boats and the port scale for cannons and sea views.</p>
+<h3 data-i18n="essaouira_page.detailed_itinerary.day1_e">Evening — Mellah and dinner</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day1_ed">Quiet lanes of the old Jewish quarter, then seafood near the port or a medina riad courtyard.</p>
+</div></div>
+<div class="tab-content" id="day2"><div class="day-card">
+<h3 data-i18n="essaouira_page.detailed_itinerary.day2_m">Morning — Essaouira beach</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day2_md">Long Atlantic sand south of the walls — walk, kite watch or light swim if conditions allow.</p>
+<h3 data-i18n="essaouira_page.detailed_itinerary.day2_a">Afternoon — Artisan souks</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day2_ad">Woodwork, thuya, silver and spice streets inside the medina.</p>
+<h3 data-i18n="essaouira_page.detailed_itinerary.day2_e">Evening — Rampart sunset</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day2_ed">Back to the Skala for wind and golden light over the islands.</p>
+</div></div>
+<div class="tab-content" id="day3"><div class="day-card">
+<h3 data-i18n="essaouira_page.detailed_itinerary.day3_m">Morning — Purple Islands or free</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day3_md">Boat to the Îles Purpuraires when allowed, or a slower medina morning.</p>
+<h3 data-i18n="essaouira_page.detailed_itinerary.day3_a">Afternoon — Beach or Diabat</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day3_ad">More sand time, or a short hop toward Diabat and the coastal dunes.</p>
+<h3 data-i18n="essaouira_page.detailed_itinerary.day3_e">Evening — Departure options</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day3_ed">Last port walk, or road links toward Marrakech or Agadir depending on your route.</p>
+</div></div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
  <div class="filter-section mb-8">
  <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="essaouira_page.directory.badge">Stay</span>
  <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
@@ -772,44 +812,6 @@
 
  <!-- Day Trips from Essaouira -->
  
-<!-- Recommended Itinerary Section -->
-<section class="itinerary-section">
-<div class="text-center mb-8">
-<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="essaouira_page.itinerary.badge">Planning</span>
-<h2 class="text-3xl font-bold text-vert" data-i18n="essaouira_page.itinerary.title">Suggested 3-day plan for Essaouira</h2>
-<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="essaouira_page.itinerary.subtitle">Ramparts and port first, then beach and islands light, with a slower craft day.</p>
-</div>
-<div class="itinerary-tabs">
-<button class="tab-btn active" data-i18n="essaouira_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Medina & Skala</button>
-<button class="tab-btn" data-i18n="essaouira_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Beach & souks</button>
-<button class="tab-btn" data-i18n="essaouira_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Islands or day trip</button>
-</div>
-<div class="tab-content active" id="day1"><div class="day-card">
-<h3 data-i18n="essaouira_page.detailed_itinerary.day1_m">Morning — Medina and ramparts</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day1_md">Enter the UNESCO white-and-blue medina; walk the Skala de la Ville walls above the Atlantic.</p>
-<h3 data-i18n="essaouira_page.detailed_itinerary.day1_a">Afternoon — Port and Skala du Port</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day1_ad">Fishing harbour, blue boats and the port scale for cannons and sea views.</p>
-<h3 data-i18n="essaouira_page.detailed_itinerary.day1_e">Evening — Mellah and dinner</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day1_ed">Quiet lanes of the old Jewish quarter, then seafood near the port or a medina riad courtyard.</p>
-</div></div>
-<div class="tab-content" id="day2"><div class="day-card">
-<h3 data-i18n="essaouira_page.detailed_itinerary.day2_m">Morning — Essaouira beach</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day2_md">Long Atlantic sand south of the walls — walk, kite watch or light swim if conditions allow.</p>
-<h3 data-i18n="essaouira_page.detailed_itinerary.day2_a">Afternoon — Artisan souks</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day2_ad">Woodwork, thuya, silver and spice streets inside the medina.</p>
-<h3 data-i18n="essaouira_page.detailed_itinerary.day2_e">Evening — Rampart sunset</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day2_ed">Back to the Skala for wind and golden light over the islands.</p>
-</div></div>
-<div class="tab-content" id="day3"><div class="day-card">
-<h3 data-i18n="essaouira_page.detailed_itinerary.day3_m">Morning — Purple Islands or free</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day3_md">Boat to the Îles Purpuraires when allowed, or a slower medina morning.</p>
-<h3 data-i18n="essaouira_page.detailed_itinerary.day3_a">Afternoon — Beach or Diabat</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day3_ad">More sand time, or a short hop toward Diabat and the coastal dunes.</p>
-<h3 data-i18n="essaouira_page.detailed_itinerary.day3_e">Evening — Departure options</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="essaouira_page.detailed_itinerary.day3_ed">Last port walk, or road links toward Marrakech or Agadir depending on your route.</p>
-</div></div>
-</section>
-
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
  <div class="mb-8">
  <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="essaouira_page.daytrips.badge">Around Essaouira</span>

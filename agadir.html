@@ -409,7 +409,47 @@
  <!-- ==========================================
  SECTION RÉPERTOIRE & FILTRES DES 60 HÉBERGEMENTS
  ========================================== -->
- <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+ 
+<!-- Recommended Itinerary Section -->
+<section class="itinerary-section">
+<div class="text-center mb-8">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.itinerary.badge">Planning</span>
+<h2 class="text-3xl font-bold text-vert" data-i18n="agadir_page.itinerary.title">Suggested 3-day plan for Agadir</h2>
+<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="agadir_page.itinerary.subtitle">Beach and kasbah first, then market and a day trip north or inland.</p>
+</div>
+<div class="itinerary-tabs">
+<button class="tab-btn active" data-i18n="agadir_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Beach & Kasbah</button>
+<button class="tab-btn" data-i18n="agadir_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Souk & Corniche</button>
+<button class="tab-btn" data-i18n="agadir_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Taghazout or Paradise Valley</button>
+</div>
+<div class="tab-content active" id="day1"><div class="day-card">
+<h3 data-i18n="agadir_page.detailed_itinerary.day1_m">Morning — Agadir Beach</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_md">Walk the long public sand and the corniche; orient yourself along the bay.</p>
+<h3 data-i18n="agadir_page.detailed_itinerary.day1_a">Afternoon — Kasbah Oufella</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_ad">Climb or taxi to the hill ruins for the classic panorama over the rebuilt city and harbour.</p>
+<h3 data-i18n="agadir_page.detailed_itinerary.day1_e">Evening — Marina</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_ed">Seafood and a stroll around the yacht basin at the north end of the beach strip.</p>
+</div></div>
+<div class="tab-content" id="day2"><div class="day-card">
+<h3 data-i18n="agadir_page.detailed_itinerary.day2_m">Morning — Souk El Had</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_md">Agadir’s big everyday market for produce, spices and local prices — best early.</p>
+<h3 data-i18n="agadir_page.detailed_itinerary.day2_a">Afternoon — Corniche free time</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_ad">Beach time, café stops or a longer walk between hotels and the marina.</p>
+<h3 data-i18n="agadir_page.detailed_itinerary.day2_e">Evening — Seafront dinner</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_ed">Hotel-strip restaurants or another marina meal with bay views.</p>
+</div></div>
+<div class="tab-content" id="day3"><div class="day-card">
+<h3 data-i18n="agadir_page.detailed_itinerary.day3_m">Morning — Taghazout or valley start</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_md">North to the surf village for beach and waves, or inland toward Paradise Valley pools.</p>
+<h3 data-i18n="agadir_page.detailed_itinerary.day3_a">Afternoon — Coast or gorge</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_ad">Swim and cafés in Taghazout, or rock pools and palms in the Anti-Atlas foothills.</p>
+<h3 data-i18n="agadir_page.detailed_itinerary.day3_e">Evening — Return to Agadir</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_ed">Back to the city for a last corniche walk or early departure plan.</p>
+</div></div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
  <div class="filter-section mb-8">
  <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.directory.badge">Stay</span>
  <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
@@ -783,44 +823,6 @@
 
  <!-- Day Trips from Agadir -->
  
-<!-- Recommended Itinerary Section -->
-<section class="itinerary-section">
-<div class="text-center mb-8">
-<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.itinerary.badge">Planning</span>
-<h2 class="text-3xl font-bold text-vert" data-i18n="agadir_page.itinerary.title">Suggested 3-day plan for Agadir</h2>
-<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="agadir_page.itinerary.subtitle">Beach and kasbah first, then market and a day trip north or inland.</p>
-</div>
-<div class="itinerary-tabs">
-<button class="tab-btn active" data-i18n="agadir_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Beach & Kasbah</button>
-<button class="tab-btn" data-i18n="agadir_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Souk & Corniche</button>
-<button class="tab-btn" data-i18n="agadir_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Taghazout or Paradise Valley</button>
-</div>
-<div class="tab-content active" id="day1"><div class="day-card">
-<h3 data-i18n="agadir_page.detailed_itinerary.day1_m">Morning — Agadir Beach</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_md">Walk the long public sand and the corniche; orient yourself along the bay.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day1_a">Afternoon — Kasbah Oufella</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_ad">Climb or taxi to the hill ruins for the classic panorama over the rebuilt city and harbour.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day1_e">Evening — Marina</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_ed">Seafood and a stroll around the yacht basin at the north end of the beach strip.</p>
-</div></div>
-<div class="tab-content" id="day2"><div class="day-card">
-<h3 data-i18n="agadir_page.detailed_itinerary.day2_m">Morning — Souk El Had</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_md">Agadir’s big everyday market for produce, spices and local prices — best early.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day2_a">Afternoon — Corniche free time</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_ad">Beach time, café stops or a longer walk between hotels and the marina.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day2_e">Evening — Seafront dinner</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_ed">Hotel-strip restaurants or another marina meal with bay views.</p>
-</div></div>
-<div class="tab-content" id="day3"><div class="day-card">
-<h3 data-i18n="agadir_page.detailed_itinerary.day3_m">Morning — Taghazout or valley start</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_md">North to the surf village for beach and waves, or inland toward Paradise Valley pools.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day3_a">Afternoon — Coast or gorge</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_ad">Swim and cafés in Taghazout, or rock pools and palms in the Anti-Atlas foothills.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day3_e">Evening — Return to Agadir</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_ed">Back to the city for a last corniche walk or early departure plan.</p>
-</div></div>
-</section>
-
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
  <div class="mb-8">
  <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.daytrips.badge">Around Agadir</span>

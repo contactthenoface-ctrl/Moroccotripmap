@@ -1,158 +1,111 @@
 {
-  "agadir_marina_page": {
-    "name": "Agadir Marina",
-    "hero_subtitle": "Modern marina with yachts, cafés and a calmer waterfront atmosphere.",
-    "seo": {
-      "title": "Agadir Marina | Waterfront Guide & Tips | MoroccoTripMap",
-      "description": "Visiting Agadir Marina? Discover yacht berths, waterfront dining, café terraces, sunset strolls and practical tips for the modern port.",
-      "og_title": "Agadir Marina: Yachts, Waterfront Dining & Sunset Walks",
-      "og_description": "Explore Agadir Marina: modern yacht basin, café terraces, upscale dining, and relaxed evening strolls along the Atlantic coast."
+  "seo": {
+    "title": "Agadir Marina | Yacht Basin, Cafés & Evening Stroll | MoroccoTripMap",
+    "description": "Agadir Marina: yacht basin, waterfront cafés and an easy evening walk between the beach and the port.",
+    "keywords": "Agadir Marina, Agadir harbour, marina restaurants Agadir, yacht basin"
+  },
+  "name": "Agadir Marina",
+  "hero_subtitle": "A modern yacht basin with cafés and a waterfront walk — the polished edge between Agadir Beach and the working port.",
+  "info": {
+    "best_time": "Evening for atmosphere",
+    "duration": "1 – 2 hours",
+    "entry": "Free to walk",
+    "where": "North end of the beach strip",
+    "area_val": "North end of the beach strip",
+    "best_time_val": "Evening for atmosphere",
+    "duration_val": "1 – 2 hours",
+    "entry_val": "Free to walk"
+  },
+  "overview": {
+    "title": "Marina life on the Atlantic",
+    "p1": "Agadir Marina gathers yachts, restaurants and a paved promenade at the northern curve of the bay. It is a contrast to the open beach: more structured, good for an evening stroll and seafood with a view of the masts.",
+    "p2": "By day it is quieter; after sunset the terraces fill. The marina links naturally with the corniche walk toward the main beach hotels."
+  },
+  "gallery": {
+    "title": "Marina scenes",
+    "s1": {
+      "caption": "Yachts in Agadir Marina basin"
     },
-    "info": {
-      "best_time_label": "Best Time to Go",
-      "best_time_val": "Late afternoon – evening",
-      "duration_label": "Time Needed",
-      "duration_val": "45 – 90 min",
-      "entry_label": "Entry",
-      "entry_val": "Free",
-      "area_label": "Area",
-      "area_val": "Waterfront"
+    "s2": {
+      "caption": "Waterfront promenade at the marina"
     },
-    "overview": {
-      "title": "Boats, Cafés and a Calmer Waterfront",
-      "p1": "Agadir’s marina is the polished waterfront alternative to the open beach: boats in the basin, café terraces, and a slower stroll for people who want sea air without sand in their shoes.",
-      "p2": "It works well for a coffee stop, an evening walk, or a seafood meal with a view of the masts. It is a contemporary resort design rather than an old historic harbour.",
-      "p3": "Combine it with the nearby beach or corniche. Forty-five to ninety minutes is enough unless you settle into a long restaurant terrace lunch."
+    "s3": {
+      "caption": "Café terraces along the docks"
     },
-    "gallery": {
-      "badge": "Gallery",
-      "title": "Agadir Marina in Pictures",
-      "subtitle": "Swipe through the yacht basin, waterfront terraces and evening lights.",
-      "s1": { "caption": "Yachts in the marina basin" },
-      "s2": { "caption": "Café terraces on the waterfront" },
-      "s3": { "caption": "Evening lights on the water" },
-      "s4": { "caption": "Walkway along the docks" },
-      "s5": { "caption": "View toward the open bay" }
+    "s4": {
+      "caption": "Evening light on the marina"
     },
-    "moods": {
-      "badge": "Timing",
-      "title": "What to See at Agadir Marina",
-      "subtitle": "Boats, terraces and night lights — three angles worth seeing.",
-      "1": {
-        "tag": "Water",
-        "title": "Basin and boats",
-        "desc": "A sheltered waterfront scene with luxury yachts and fishing boats.",
-        "duration": "Walk • 15 – 30 min"
-      },
-      "2": {
-        "tag": "Café",
-        "title": "Terrace time",
-        "desc": "Coffee and people-watching by the yachts.",
-        "duration": "Relax • 45 – 60 min"
-      },
-      "3": {
-        "tag": "Evening",
-        "title": "Soft lights",
-        "desc": "A calmer night option than the busiest beach clubs.",
-        "duration": "Stroll • 30 – 45 min"
-      }
+    "s5": {
+      "caption": "View from the marina toward the bay"
+    }
+  },
+  "food": {
+    "title": "Eat at the marina",
+    "p1": "This is one of the easiest places in Agadir for a sit-down seafood meal with a view — compare a few terraces before sitting down.",
+    "li1": "Seafood restaurants on the basin.",
+    "li2": "Cafés for drinks without a full meal.",
+    "li3": "Ice cream and snacks for a short stop.",
+    "li4": "Cards accepted in most restaurants.",
+    "li5": "Book ahead in peak season evenings."
+  },
+  "tips": {
+    "title": "Practical tips",
+    "1": {
+      "title": "Access",
+      "desc": "Walk from the northern beach or take a short taxi. Parking exists for those with a car."
     },
-    "food": {
-      "title": "Marina tables",
-      "p1": "Cafés and restaurants around the basin cover everything from coffee to full seafood meals.",
-      "li1": "Coffee on a marina terrace",
-      "li2": "Seafood lunch by the boats",
-      "li3": "Ice cream for a short stop",
-      "li4": "Corniche restaurants a short walk away",
-      "li5": "Hotel dinner if you prefer the beach strip",
-      "p2": "Marina prices reflect the setting — fair for the view, not always the cheapest fish in town."
+    "2": {
+      "title": "Timing",
+      "desc": "Late afternoon and evening for the best atmosphere."
     },
-    "tips": {
-      "title": "Practical Tips for Visiting Agadir Marina",
-      "1": {
-        "title": "Wind",
-        "desc": "More sheltered than the open beach, still bring a layer at night."
-      },
-      "2": {
-        "title": "Timing",
-        "desc": "Late afternoon and evening are the most pleasant."
-      },
-      "3": {
-        "title": "Photos",
-        "desc": "Reflections in the basin work well after the wind drops."
-      }
+    "3": {
+      "title": "Budget",
+      "desc": "Marina restaurants are pricier than souk grills — check menus before ordering."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "Is the marina free to visit?",
+      "answer": "Yes — walking the promenade is free. Restaurants and cafés are paid."
     },
-    "gyg": {
-      "badge": "Tours & Experiences",
-      "title": "Book a Tour of the Agadir Marina",
-      "subtitle": "Good options if you'd rather have a local guide for the first evening.",
-      "t1": {
-        "tag": "Agadir City Tour",
-        "title": "Agadir City & Waterfront Tour",
-        "desc": "Visit the marina and the seafront with a local guide and see the city highlights in one half-day."
-      },
-      "t2": {
-        "tag": "Guided Walk",
-        "title": "Agadir Marina Guided Visit",
-        "desc": "Relaxed guided entry focused on the modern resort architecture and harbor story."
-      },
-      "t3": {
-        "tag": "Half-Day Tour",
-        "title": "Agadir Highlights Tour",
-        "desc": "A broader city overview including the marina, beach boulevard and a taste of local life."
-      },
-      "check": "Check availability on GetYourGuide →",
-      "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission, at no extra cost to you."
+    "q2": {
+      "question": "Is it good for families?",
+      "answer": "Yes — flat paths and open views. Keep children away from the water edge."
     },
-    "nearby": {
-      "badge": "Keep Exploring",
-      "title": "More Must-Visit Places in Agadir",
-      "back": "← Back to the Agadir guide"
+    "q3": {
+      "question": "Distance from the main beach?",
+      "answer": "At the northern end of the main beach strip — walkable from many hotels."
     },
-    "blog": {
-      "badge": "From the Blog",
-      "title": "Related Articles",
-      "all": "All articles →",
-      "read": "Read the article →",
-      "a1": {
-        "tag": "Food",
-        "title": "Agadir Food Guide: Seafood and Classic Spots",
-        "desc": "Where to eat well in Agadir, from beach and marina seafood to classic Moroccan kitchens."
-      },
-      "a2": {
-        "tag": "Transport",
-        "title": "Getting Around Agadir: Taxis and Excursions",
-        "desc": "Practical ways to move between the airport, beach, souk and marina."
-      },
-      "a3": {
-        "tag": "Planning",
-        "title": "First Time in Agadir: What to Expect",
-        "desc": "What the city feels like on day one, and how to plan without overloading the schedule."
-      }
+    "q4": {
+      "question": "Best for dinner?",
+      "answer": "Yes — popular for evening seafood. Arrive early or reserve in high season."
     },
-    "faq": {
-      "badge": "Good to Know",
-      "title": "Agadir Marina FAQ",
-      "q1": {
-        "question": "Is it free to walk around Agadir Marina?",
-        "answer": "Yes — public walkways are open; restaurants are à la carte."
-      },
-      "q2": {
-        "question": "What is the best time to visit the Agadir Marina?",
-        "answer": "Late afternoon and evening are the most pleasant times when café terraces come alive."
-      },
-      "q3": {
-        "question": "Are there restaurants at the marina?",
-        "answer": "Yes, the marina features seafood restaurants and cafés with water views."
-      },
-      "q4": {
-        "question": "How far from the main beach?",
-        "answer": "It sits right at the northern end of the main beach promenade."
-      },
-      "q5": {
-        "question": "Is Agadir Marina suitable for families?",
-        "answer": "Yes, flat pedestrian walkways make it very accessible and safe for stroller strolls."
-      }
+    "q5": {
+      "question": "Is it the fishing port?",
+      "answer": "No — the marina is the yacht and leisure basin. The working fishing port sits nearby but is separate."
+    }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Marina through the day",
+    "subtitle": "When the basin comes alive.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet docks",
+      "desc": "Calm water and fewer terraces open.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Afternoon",
+      "title": "Café stretch",
+      "desc": "Good for a long lunch with harbour views.",
+      "duration": "Afternoon"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Lights on the masts",
+      "desc": "The most animated time for a stroll and seafood.",
+      "duration": "Evening"
     }
   }
 }

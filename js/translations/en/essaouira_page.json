@@ -100,50 +100,98 @@
     "badge": "Stay",
     "title": "Find your ideal stay in Essaouira",
     "subtitle": "Riads in the medina, sea-view hotels and stays near the beach.",
+    "filter_type_label": "Type:",
     "type_label": "Type:",
-    "all_types": "All types",
-    "area_label": "Area:",
-    "all_areas": "All areas",
+    "type_all": "All types",
+    "type_hotel": "Hotel",
+    "type_riad": "Riad",
+    "type_guesthouse": "Guesthouse",
+    "filter_location_label": "Area:",
+    "district_label": "Area:",
+    "location_all": "All areas",
+    "location_town": "Medina",
+    "location_outside": "Outside the walls",
+    "location_outskirts": "Outskirts",
+    "counter": "stays found",
+    "no_results": "No stays match your filters.",
+    "check_availability": "Check availability →",
     "stays": "stays",
-    "check": "Check availability →"
+    "all_types": "All types",
+    "all_areas": "All areas"
   },
   "eat": {
     "badge": "Food",
     "title": "Where to eat in Essaouira",
-    "subtitle": "Grilled fish at the port, medina tables and beach cafés."
+    "subtitle": "Grilled fish at the port, medina tables and beach cafés.",
+    "nomad": {
+      "tag": "Seafood",
+      "loc": "Port",
+      "title": "Harbour grill",
+      "desc": "Busy midday tables when the catch is in."
+    },
+    "jardin": {
+      "tag": "Café",
+      "loc": "Beach",
+      "title": "Beach cafés",
+      "desc": "Casual seaside food on the shore strip."
+    },
+    "moha": {
+      "tag": "Hotel",
+      "loc": "Centre",
+      "title": "Hotel restaurants",
+      "desc": "Reliable options near the walls."
+    },
+    "fassia": {
+      "tag": "Café",
+      "loc": "Medina",
+      "title": "Town café",
+      "desc": "Everyday coffee away from the beach."
+    },
+    "elfenn": {
+      "tag": "Local",
+      "loc": "Medina",
+      "title": "Tagines & salads",
+      "desc": "Moroccan plates beyond seafood."
+    },
+    "bacha": {
+      "tag": "Local",
+      "loc": "Seafront",
+      "title": "Evening table",
+      "desc": "Later sitting when the wind eases."
+    }
   },
   "tips": {
     "title": "Practical tips for Essaouira",
-    "1": {
+    "transport": {
       "title": "Getting around",
-      "desc": "Walk the medina. Petit taxis for the beach strip and bus station. Wind can make evenings cool."
+      "desc": "Walk the medina. Petit taxis for the beach strip and bus station. Agree prices for longer coastal hops."
     },
-    "2": {
+    "bargain": {
       "title": "Wind & sun",
-      "desc": "Alizé winds are part of the character — bring a light jacket even in summer. High SPF on the Skala."
+      "desc": "Alizé winds are part of the character — bring a light jacket even in summer. High SPF on the Skala and beach."
     },
-    "3": {
+    "water": {
       "title": "Tickets & cash",
-      "desc": "Most walks are free. Cash helps at the port stalls and small shops."
+      "desc": "Most walks are free. Carry dirhams for taxis, port snacks and medina shops."
     }
   },
   "daytrips": {
     "badge": "Around Essaouira",
     "title": "Best day trips from Essaouira",
     "subtitle": "Coast and countryside with real road links.",
-    "1": {
+    "sidi_kaouki": {
       "title": "Sidi Kaouki",
       "desc": "Wind and surf beach about 25 minutes south."
     },
-    "2": {
+    "diabat": {
       "title": "Diabat",
       "desc": "Quiet village and dunes near town."
     },
-    "3": {
+    "marrakech": {
       "title": "Marrakech",
       "desc": "UNESCO medina and souks about 2.5 hours east."
     },
-    "4": {
+    "argan": {
       "title": "Coastal argan country",
       "desc": "Rural roads, argan trees and Atlantic viewpoints."
     }

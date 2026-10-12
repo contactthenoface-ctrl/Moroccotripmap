@@ -1,158 +1,111 @@
 {
-  "agadir_paradise_page": {
-    "name": "Paradise Valley",
-    "hero_subtitle": "Gorge bordée de palmiers et bassins naturels dans l'arrière-pays d'Agadir.",
-    "seo": {
-      "title": "Paradise Valley | Guide des Bassins Naturels & Randonnée | MoroccoTripMap",
-      "description": "Visitez Paradise Valley près d'Agadir : bassins naturels, gorge arborée, baignade, randonnée et conseils pratiques pour une excursion réussie.",
-      "og_title": "Paradise Valley, Agadir : Bassins Naturels & Conseils d'Excursion",
-      "og_description": "Découvrez Paradise Valley près d'Agadir : canyon de palmiers, piscines naturelles en roche, baignade et conseils d'excursion."
+  "seo": {
+    "title": "Paradise Valley Agadir | Gorge de palmiers & piscines naturelles | MoroccoTripMap",
+    "description": "Paradise Valley près d’Agadir : gorge bordée de palmiers, piscines naturelles et excursion Anti-Atlas depuis la côte.",
+    "keywords": "Paradise Valley Agadir, Paradise Valley Maroc, gorge palmiers, piscines naturelles"
+  },
+  "name": "Paradise Valley",
+  "hero_subtitle": "Une gorge de palmiers avec des piscines naturelles dans les contreforts à l’intérieur d’Agadir — l’une des excursions classiques depuis la côte.",
+  "info": {
+    "best_time": "Départ matin ; éviter le pic de chaleur",
+    "duration": "Journée depuis Agadir",
+    "entry": "Site nature libre ; guide optionnel",
+    "where": "≈1–1,5 h à l’intérieur",
+    "area_val": "≈1–1,5 h à l’intérieur",
+    "best_time_val": "Départ matin ; éviter le pic de chaleur",
+    "duration_val": "Journée depuis Agadir",
+    "entry_val": "Site nature libre ; guide optionnel"
+  },
+  "overview": {
+    "title": "Gorge de palmiers au-delà de la plage",
+    "p1": "Paradise Valley s’enfonce dans les contreforts de l’Anti-Atlas au nord-est d’Agadir. Palmiers, vasques rocheuses et sentier de oued en font une échappée populaire hors de la chaleur urbaine — surtout du printemps à l’automne.",
+    "p2": "La plupart des visiteurs viennent avec un chauffeur ou une petite excursion. Portez des chaussures à bonne adhérence ; la marche vers les meilleures vasques peut être rocailleuse. Emportez de l’eau et attendez-vous à peu d’infrastructures."
+  },
+  "gallery": {
+    "title": "Scènes de vallée",
+    "s1": {
+      "caption": "Gorge de palmiers de Paradise Valley"
     },
-    "info": {
-      "best_time_label": "Meilleur moment",
-      "best_time_val": "Tôt le matin",
-      "duration_label": "Durée conseillée",
-      "duration_val": "Demi-journée (avec trajet)",
-      "entry_label": "Accès",
-      "entry_val": "Accès libre",
-      "area_label": "Quartier",
-      "area_val": "Arrière-pays / Montagne"
+    "s2": {
+      "caption": "Piscines naturelles dans la roche"
     },
-    "overview": {
-      "title": "Gorge de palmiers et bassins naturels",
-      "p1": "Paradise Valley est l'escapade idéale dans l'arrière-pays : un canyon verdoyant bordé de palmiers, des piscines de roche et une eau rafraîchissante quand le littoral chauffe. Arrivez tôt pour profiter de la quiétude des lieux.",
-      "p2": "Prévoyez des chaussures fermées ou des sandales de rivière antidérapantes pour marcher sur les rochers, ainsi de l'eau potable. Une sortie le matin vous laisse l'après-midi libre pour la plage à Agadir.",
-      "p3": "Facilement accessible en voiture, en taxi ou via une excursion guidée d'une demi-journée depuis le centre-ville."
+    "s3": {
+      "caption": "Sentier le long de l’oued"
     },
-    "gallery": {
-      "badge": "Galerie",
-      "title": "Paradise Valley en images",
-      "subtitle": "Parcourez la gorge de palmiers, les piscines naturelles et les sentiers.",
-      "s1": { "caption": "Paysage de la gorge et palmeraie" },
-      "s2": { "caption": "Bassin naturel creusé dans la roche" },
-      "s3": { "caption": "Baigneurs au bord de l'eau" },
-      "s4": { "caption": "Route menant à la vallée" },
-      "s5": { "caption": "Contraste entre végétation et collines arides" }
+    "s4": {
+      "caption": "Palmiers verts contre collines sèches"
     },
-    "moods": {
-      "badge": "Moments clés",
-      "title": "Que voir à Paradise Valley",
-      "subtitle": "Bassins naturels, palmeraie et sentiers paisibles — trois ambiances à découvrir.",
-      "1": {
-        "tag": "Eau",
-        "title": "Bassins naturels",
-        "desc": "Des vasques d'eau fraîche entourées de hautes falaises rocheuses.",
-        "duration": "Baignade & Détente • 1 – 2h"
-      },
-      "2": {
-        "tag": "Palmiers",
-        "title": "Gorge verdoyante",
-        "desc": "Une oasis verdoyante qui contraste avec les collines arides de l'Atlas.",
-        "duration": "Randonnée • 45 – 60 min"
-      },
-      "3": {
-        "tag": "Matin",
-        "title": "Calme matinal",
-        "desc": "Lumière douce et atmosphère paisible avant l'arrivée des bus d'excursion.",
-        "duration": "Photos • 30 – 45 min"
-      }
+    "s5": {
+      "caption": "Lumière sur les parois de la vallée"
+    }
+  },
+  "food": {
+    "title": "Manger sur l’excursion",
+    "p1": "Des cafés simples et arrêts tajine existent près de l’entrée de la vallée — beaucoup d’excursions incluent un déjeuner. Emportez snacks et eau dans tous les cas.",
+    "li1": "Cafés basiques près du point d’accès.",
+    "li2": "Pique-nique si vous préférez l’autonomie.",
+    "li3": "Retour à Agadir pour un dîner plus complet.",
+    "li4": "Beaucoup d’eau indispensable.",
+    "li5": "Espèces pour les petits stands ruraux."
+  },
+  "tips": {
+    "title": "Conseils pratiques",
+    "1": {
+      "title": "Y aller",
+      "desc": "Taxi privé ou excursion organisée depuis Agadir est l’option habituelle. Fixez le prix complet avec temps d’attente."
     },
-    "food": {
-      "title": "Restauration dans la vallée",
-      "p1": "Attendez-vous à de petits cafés rustiques au bord de l'eau et des tajines simples plutôt qu'à de la haute gastronomie.",
-      "li1": "Bouteilles d'eau et encas emportés depuis Agadir",
-      "li2": "Tajine traditionnel berbère préparé au bord de la rivière",
-      "li3": "Thé à la menthe face aux palmiers",
-      "li4": "Repas de poissons au retour à Agadir",
-      "li5": "Veillez à rapporter tous vos déchets pour protéger la nature",
-      "p2": "Remportez toujours ce que vous apportez — aidez à préserver la propreté de la vallée."
+    "2": {
+      "title": "Chaussures",
+      "desc": "Chaussures fermées à bonne adhérence — les chemins vers les vasques sont rocheux et peuvent être glissants."
     },
-    "tips": {
-      "title": "Conseils pratiques pour visiter Paradise Valley",
-      "1": {
-        "title": "Partir tôt",
-        "desc": "La fréquentation et les températures grimpent en milieu de journée. Arrivez avant 10h00 si possible."
-      },
-      "2": {
-        "title": "Chaussures",
-        "desc": "Des baskets solides ou des chaussures d'eau avec de l'accroche sont indispensables pour les rochers glissants."
-      },
-      "3": {
-        "title": "Espèces",
-        "desc": "Prévoyez de la petite monnaie (MAD) pour le parking, le thé ou les pauses rafraîchissantes."
-      }
+    "3": {
+      "title": "Chaleur",
+      "desc": "Partez tôt en été. L’ombre est limitée hors des bosquets de palmiers."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "À quelle distance est Paradise Valley d’Agadir ?",
+      "answer": "Environ 1–1,5 heure de route selon le trafic et le point de dépose exact."
     },
-    "gyg": {
-      "badge": "Visites & Expériences",
-      "title": "Réserver une excursion à Paradise Valley",
-      "subtitle": "Des formules pratiques de demi-journée incluant le transport depuis votre hôtel.",
-      "t1": {
-        "tag": "Excursion",
-        "title": "Demi-journée à Paradise Valley",
-        "desc": "Prise en charge à l'hôtel, route panoramique dans les contreforts de l'Atlas et marche vers les bassins."
-      },
-      "t2": {
-        "tag": "Aventure",
-        "title": "Paradise Valley & Quad dans l'Atlas",
-        "desc": "Combinez la découverte de la gorge de palmiers avec une randonnée en quad dans les villages berbères."
-      },
-      "t3": {
-        "tag": "Journée Combo",
-        "title": "Paradise Valley & Dunes de sable",
-        "desc": "Une journée complète combinant la vallée verdoyante et les dunes de sable bordant l'océan à Timlalin."
-      },
-      "check": "Voir les disponibilités sur GetYourGuide →",
-      "disclosure": "Certains liens sont des liens d'affiliation. En réservant via ceux-ci, nous pouvons toucher une commission sans frais supplémentaires pour vous."
+    "q2": {
+      "question": "Faut-il un guide ?",
+      "answer": "Pas obligatoire, mais un chauffeur local qui connaît le sentier aide. Les chaussures comptent plus qu’un guide pour les marcheurs en forme."
     },
-    "nearby": {
-      "badge": "Continuer l'exploration",
-      "title": "Autres lieux incontournables à Agadir",
-      "back": "← Retour au guide d'Agadir"
+    "q3": {
+      "question": "Peut-on se baigner ?",
+      "answer": "Dans les piscines naturelles quand le niveau d’eau le permet — ne plongez jamais, et vérifiez la profondeur."
     },
-    "blog": {
-      "badge": "Sur le blog",
-      "title": "Articles connexes",
-      "all": "Tous les articles →",
-      "read": "Lire l'article →",
-      "a1": {
-        "tag": "Gastronomie",
-        "title": "Guide gourmand d'Agadir : poissons et bonnes adresses",
-        "desc": "Où bien manger à Agadir, des restaurants de la marina aux tables marocaines traditionnelles."
-      },
-      "a2": {
-        "tag": "Transport",
-        "title": "Se déplacer à Agadir : taxis et excursions",
-        "desc": "Conseils pratiques pour naviguer entre l'aéroport, la plage, le souk, la marina et Paradise Valley."
-      },
-      "a3": {
-        "tag": "Conseils",
-        "title": "Premier voyage à Agadir : à quoi s'attendre",
-        "desc": "Vos premiers pas dans la ville et comment organiser vos excursions sans surcharger votre programme."
-      }
+    "q4": {
+      "question": "Convient-il aux enfants ?",
+      "answer": "Possible avec prudence sur les passages rocheux ; ce n’est pas un site poussette."
     },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "FAQ Paradise Valley",
-      "q1": {
-        "question": "Un guide est-il obligatoire pour visiter Paradise Valley ?",
-        "answer": "Non, l'accès est libre, mais une excursion guidée ou un chauffeur local facilite le trajet en montagne et le stationnement."
-      },
-      "q2": {
-        "question": "Peut-on se baigner à Paradise Valley ?",
-        "answer": "Oui, la baignade dans les bassins rocheux est l'attraction principale quand le niveau d'eau le permet. Vérifiez toujours la profondeur."
-      },
-      "q3": {
-        "question": "Combien de temps faut-il pour s'y rendre depuis Agadir ?",
-        "answer": "Comptez environ 1h à 1h30 de route par trajet depuis le centre d'Agadir selon le trafic."
-      },
-      "q4": {
-        "question": "Que faut-il emporter ou porter ?",
-        "answer": "Mettez des chaussures de marche ou de rivière adéquates, et apportez maillot, serviette, crème solaire et eau potable."
-      },
-      "q5": {
-        "question": "Paradise Valley est-elle adaptée aux familles ?",
-        "answer": "Oui pour les enfants habitués à marcher sur des sentiers rocheux, en restant vigilant à proximité des bassins d'eau."
-      }
+    "q5": {
+      "question": "Meilleure saison ?",
+      "answer": "Printemps et automne. L’été est chaud ; en hiver les vasques sont plus fraîches et plus calmes."
+    }
+  },
+  "moods": {
+    "badge": "Horaires",
+    "title": "Paradise Valley dans la journée",
+    "subtitle": "La chaleur et le niveau d’eau comptent.",
+    "1": {
+      "tag": "Matin",
+      "title": "Montée plus fraîche",
+      "desc": "Meilleur moment pour rejoindre les vasques avant la chaleur.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Pic de chaleur",
+      "desc": "Restez près de l’ombre et de l’eau ; évitez les longues expositions.",
+      "duration": "Midi"
+    },
+    "3": {
+      "tag": "Après-midi",
+      "title": "Fenêtre de retour",
+      "desc": "Repartez vers Agadir avant le trafic du soir.",
+      "duration": "Après-midi"
     }
   }
 }

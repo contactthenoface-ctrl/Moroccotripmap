@@ -1,158 +1,111 @@
 {
-  "agadir_birds_page": {
-    "name": "Vallée des Oiseaux",
-    "hero_subtitle": "Petit parc urbain ombragé abritant des oiseaux et de la verdure.",
-    "seo": {
-      "title": "Vallée des Oiseaux | Guide du Parc à Agadir & Conseils | MoroccoTripMap",
-      "description": "Vous visitez la Vallée des Oiseaux à Agadir ? Découvrez ses sentiers ombragés, ses volières, ses conseils familiaux et ses horaires.",
-      "og_title": "Vallée des Oiseaux, Agadir : Parc, Famille & Conseils",
-      "og_description": "Explorez la Vallée des Oiseaux à Agadir : parc urbain ombragé, volières d'oiseaux, sentiers familiaux et conseils pratiques."
+  "seo": {
+    "title": "Oiseaux du Souss-Massa | Zones humides près d’Agadir | MoroccoTripMap",
+    "description": "Observation des oiseaux près d’Agadir : zones humides du Souss-Massa, estuaire et côte du parc national pour flamants et migrateurs.",
+    "keywords": "Souss-Massa, oiseaux Agadir, birdwatching Maroc, estuaire Souss, flamants Agadir"
+  },
+  "name": "Oiseaux du Souss-Massa",
+  "hero_subtitle": "Zones humides et estuaire au sud d’Agadir — flamants, oiseaux migrateurs et nature plus calme sur la côte du Souss-Massa.",
+  "info": {
+    "best_time": "Matin ; saisons de migration particulièrement riches",
+    "duration": "Demi-journée à journée",
+    "entry": "Règles du parc ; certains points de vue libres",
+    "where": "Estuaire du Souss & côte du parc national",
+    "area_val": "Estuaire du Souss & côte du parc national",
+    "best_time_val": "Matin ; saisons de migration particulièrement riches",
+    "duration_val": "Demi-journée à journée",
+    "entry_val": "Règles du parc ; certains points de vue libres"
+  },
+  "overview": {
+    "title": "La vie des oiseaux au-delà des resorts",
+    "p1": "L’embouchure de l’oued Souss et la côte du parc national de Souss-Massa accueillent des zones humides où se nourrissent flamants et autres oiseaux d’eau. C’est un autre visage de la région d’Agadir — plus calme, plus naturel, et utile en demi-journée si la faune vous intéresse.",
+    "p2": "Apportez des jumelles si vous en avez. Les points d’accès varient ; un chauffeur local ou un guide nature aide à rejoindre les meilleurs belvédères sans déranger les oiseaux."
+  },
+  "gallery": {
+    "title": "Scènes de zones humides",
+    "s1": {
+      "caption": "Zones humides de l’estuaire du Souss"
     },
-    "info": {
-      "best_time_label": "Meilleur moment",
-      "best_time_val": "Pause ombragée à midi",
-      "duration_label": "Durée conseillée",
-      "duration_val": "45 – 90 min",
-      "entry_label": "Accès",
-      "entry_val": "Modeste droit d'entrée possible",
-      "area_label": "Zone",
-      "area_val": "Parc urbain"
+    "s2": {
+      "caption": "Flamants et oiseaux d’eau"
     },
-    "overview": {
-      "title": "Ombre, oiseaux et courte pause en ville",
-      "p1": "La Vallée des Oiseaux est un parc urbain modeste : sentiers, volières et îlot de verdure bienvenu quand le soleil de la plage se fait trop fort. Bien qu'il ne remplisse pas toute une journée, c'est une halte familiale très appréciée ou une heure de calme entre deux visites.",
-      "p2": "Attendez-vous à un parc local plutôt qu'à une attraction monumentale. Vérifiez les horaires d'ouverture et l'éventuel petit droit d'entrée le jour venu.",
-      "p3": "Idéal à combiner avec la plage ou le souk le même jour. Gardez des attentes proportionnées à la taille du site."
+    "s3": {
+      "caption": "Broussailles côtières près de Souss-Massa"
     },
-    "gallery": {
-      "badge": "Galerie",
-      "title": "La Vallée des Oiseaux en images",
-      "subtitle": "Parcourez les sentiers du parc, les volières et les recoins de verdure.",
-      "s1": { "caption": "Sentiers du parc sous les arbres" },
-      "s2": { "caption": "Enclos et volières d'oiseaux" },
-      "s3": { "caption": "Bancs ombragés" },
-      "s4": { "caption": "Visiteurs en famille sur les chemins" },
-      "s5": { "caption": "Contraste verdoyant dans la ville balnéaire" }
+    "s4": {
+      "caption": "Plage calme sur la côte du parc"
     },
-    "moods": {
-      "badge": "Moments clés",
-      "title": "Que voir à la Vallée des Oiseaux",
-      "subtitle": "Ombre, volières et atmosphère familiale décontractée — trois aspects à découvrir.",
-      "1": {
-        "tag": "Ombre",
-        "title": "Pause verte",
-        "desc": "Un recoin plus frais dans une ville baignée de soleil.",
-        "duration": "Balade • 10 – 15 min"
-      },
-      "2": {
-        "tag": "Oiseaux",
-        "title": "Volières",
-        "desc": "La raison d'être du parc — simple et de proximité.",
-        "duration": "Explorer • 45 – 60 min"
-      },
-      "3": {
-        "tag": "Famille",
-        "title": "Halte facile",
-        "desc": "Des chemins plats et un changement de décor pour les enfants.",
-        "duration": "Détente • 15 – 30 min"
-      }
+    "s5": {
+      "caption": "Lumière du matin sur l’estuaire"
+    }
+  },
+  "food": {
+    "title": "Manger lors d’une sortie ornitho",
+    "p1": "Les infrastructures sont limitées près des meilleurs points de vue — emportez eau et snacks, puis mangez correctement à Agadir ou dans un café côtier au retour.",
+    "li1": "Provisions pique-nique depuis Agadir.",
+    "li2": "Cafés simples sur les routes principales.",
+    "li3": "Repas complet au retour en ville.",
+    "li4": "Beaucoup d’eau.",
+    "li5": "Espèces pour les petits arrêts."
+  },
+  "tips": {
+    "title": "Conseils pratiques",
+    "1": {
+      "title": "Y aller",
+      "desc": "Taxi ou sortie nature guidée depuis Agadir. Fixez l’itinéraire et le temps d’attente."
     },
-    "food": {
-      "title": "Manger à proximité, pas à l'intérieur",
-      "p1": "Prévoyez de l'eau et programmez un vrai repas sur la corniche ou au centre-ville ensuite.",
-      "li1": "Eau et en-cas avant d'entrer",
-      "li2": "Café sur la corniche après la visite",
-      "li3": "Petits snacks au souk si vous continuez vers le marché",
-      "li4": "Déjeuner à l'hôtel si vous séjournez sur le front de mer",
-      "li5": "Jus de fruits frais dans la ville nouvelle",
-      "p2": "C'est une étape de parc, pas une destination gastronomique."
+    "2": {
+      "title": "Respecter la faune",
+      "desc": "Gardez vos distances avec les oiseaux qui nichent ou se nourrissent ; restez sur les sentiers balisés."
     },
-    "tips": {
-      "title": "Conseils pratiques pour visiter la Vallée des Oiseaux",
-      "1": {
-        "title": "Chaleur",
-        "desc": "Idéal à midi lorsque le soleil tape le plus fort sur la plage."
-      },
-      "2": {
-        "title": "Attentes",
-        "desc": "Un site à taille humaine — ce n'est pas un immense zoo national."
-      },
-      "3": {
-        "title": "Combinaison",
-        "desc": "Parfait pour combler un moment entre deux activités majeures."
-      }
+    "3": {
+      "title": "Équipement",
+      "desc": "Jumelles, chapeau, SPF et chaussures fermées pour les terrains irréguliers."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "Peut-on voir des flamants près d’Agadir ?",
+      "answer": "Oui — l’estuaire du Souss et les zones humides proches sont connus pour les flamants et d’autres oiseaux d’eau, avec des effectifs variables selon la saison."
     },
-    "gyg": {
-      "badge": "Visites & Expériences",
-      "title": "Réserver une excursion à Agadir",
-      "subtitle": "De bonnes options si vous préférez une visite guidée englobant les parcs et la ville.",
-      "t1": {
-        "tag": "Visite de la ville",
-        "title": "Points forts d'Agadir & Tour du Souk",
-        "desc": "Explorez les incontournables d'Agadir, de la kasbah à la corniche en passant par les rues animées du marché."
-      },
-      "t2": {
-        "tag": "Activité en famille",
-        "title": "Tour familial des parcs et de la côte d'Agadir",
-        "desc": "Une excursion privée et détendue conçue pour les familles visitant les parcs et attractions locales."
-      },
-      "t3": {
-        "tag": "Demi-journée",
-        "title": "Visite culturelle et panoramique d'Agadir",
-        "desc": "Un aperçu complet de la ville en demi-journée alliant culture, panoramas et promenades côtières."
-      },
-      "check": "Voir les disponibilités sur GetYourGuide →",
-      "disclosure": "Certains de ces liens sont des liens d'affiliation. En réservant via ceux-ci, nous pouvons percevoir une petite commission sans frais supplémentaires pour vous."
+    "q2": {
+      "question": "Faut-il un guide ?",
+      "answer": "Utile pour trouver les meilleurs accès et identifier les espèces, mais pas obligatoire pour un simple point de vue."
     },
-    "nearby": {
-      "badge": "Continuer l'exploration",
-      "title": "Autres lieux incontournables à Agadir",
-      "back": "← Retour au guide d'Agadir"
+    "q3": {
+      "question": "À quelle distance de la ville ?",
+      "answer": "La zone de l’estuaire se trouve environ 30–60 minutes du centre d’Agadir selon le site exact."
     },
-    "blog": {
-      "badge": "Sur le blog",
-      "title": "Articles connexes",
-      "all": "Tous les articles →",
-      "read": "Lire l'article →",
-      "a1": {
-        "tag": "Gastronomie",
-        "title": "Guide gourmand d'Agadir : poissons et bonnes adresses",
-        "desc": "Où bien manger à Agadir, des restaurants de la marina aux tables marocaines traditionnelles."
-      },
-      "a2": {
-        "tag": "Transport",
-        "title": "Se déplacer à Agadir : taxis et excursions",
-        "desc": "Conseils pratiques pour naviguer entre l'aéroport, la plage, le souk et la marina."
-      },
-      "a3": {
-        "tag": "Conseils",
-        "title": "Premier voyage à Agadir : à quoi s'attendre",
-        "desc": "Vos premiers pas dans la ville et comment organiser votre séjour sans surcharger le programme."
-      }
+    "q4": {
+      "question": "Meilleure saison pour les oiseaux ?",
+      "answer": "Les périodes de migration (globalement automne et printemps) sont les plus riches ; l’hiver attire aussi des visiteurs."
     },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "FAQ Vallée des Oiseaux",
-      "q1": {
-        "question": "Combien de temps y consacrer ?",
-        "answer": "Environ 45 à 90 minutes pour la plupart des visites."
-      },
-      "q2": {
-        "question": "Y a-t-il un droit d'entrée ?",
-        "answer": "Parfois un tarif minime — prévoyez un peu de monnaie."
-      },
-      "q3": {
-        "question": "Est-ce intéressant sans enfants ?",
-        "answer": "Seulement si vous cherchez de l'ombre et une petite marche ; privilégiez d'abord la Kasbah et la plage."
-      },
-      "q4": {
-        "question": "Faut-il un guide à la Vallée des Oiseaux ?",
-        "answer": "Facultatif pour une simple visite ; utile si vous souhaitez contextualiser votre découverte."
-      },
-      "q5": {
-        "question": "Est-ce adapté aux familles ?",
-        "answer": "Oui, la plupart du temps avec une surveillance normale des enfants."
-      }
+    "q5": {
+      "question": "Est-ce dans le parc national ?",
+      "answer": "Une partie de l’expérience chevauche le parc national de Souss-Massa — respectez les règles affichées."
+    }
+  },
+  "moods": {
+    "badge": "Horaires",
+    "title": "Souss-Massa dans la journée",
+    "subtitle": "Lumière et activité des oiseaux.",
+    "1": {
+      "tag": "Matin",
+      "title": "Pic d’activité",
+      "desc": "Meilleure lumière et alimentation sur les zones humides.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Chaleur plus calme",
+      "desc": "Les oiseaux se reposent parfois ; bons paysages ouverts.",
+      "duration": "Midi"
+    },
+    "3": {
+      "tag": "Fin d’après-midi",
+      "title": "Lumière douce",
+      "desc": "Lumière de retour sur l’estuaire avant de rentrer.",
+      "duration": "Fin d’après-midi"
     }
   }
 }

@@ -1,158 +1,111 @@
 {
-  "agadir_marina_page": {
-    "name": "Marina d'Agadir",
-    "hero_subtitle": "Marina moderne avec yachts, cafés et ambiance paisible au bord de l'eau.",
-    "seo": {
-      "title": "Marina d'Agadir | Guide, Restaurants & Conseils | MoroccoTripMap",
-      "description": "Visitez la Marina d'Agadir : yachts, restaurants en bord de mer, terrasses de café, promenades au coucher du soleil et conseils pratiques.",
-      "og_title": "Marina d'Agadir : Yachts, Restaurants & Balades au Coucher du Soleil",
-      "og_description": "Découvrez la Marina d'Agadir : bassin de yachts moderne, terrasses animées, cuisine raffinée et balade nocturne sur l'Atlantique."
+  "seo": {
+    "title": "Marina d’Agadir | Bassin de plaisance, cafés & balade | MoroccoTripMap",
+    "description": "Marina d’Agadir : bassin de yachts, cafés en front de mer et balade du soir entre la plage et le port.",
+    "keywords": "marina Agadir, port de plaisance Agadir, restaurants marina"
+  },
+  "name": "Marina d’Agadir",
+  "hero_subtitle": "Un bassin de plaisance moderne avec cafés et promenade — le bord soigné entre la plage d’Agadir et le port de travail.",
+  "info": {
+    "best_time": "Soirée pour l’ambiance",
+    "duration": "1 – 2 heures",
+    "entry": "Promenade libre",
+    "where": "Extrémmité nord de la plage",
+    "area_val": "Extrémmité nord de la plage",
+    "best_time_val": "Soirée pour l’ambiance",
+    "duration_val": "1 – 2 heures",
+    "entry_val": "Promenade libre"
+  },
+  "overview": {
+    "title": "Vie de marina sur l’Atlantique",
+    "p1": "La marina d’Agadir regroupe yachts, restaurants et une promenade pavée à la courbe nord de la baie. C’est un contraste avec la plage ouverte : plus structuré, idéal pour une balade du soir et des fruits de mer face aux mâts.",
+    "p2": "Le jour est plus calme ; après le coucher du soleil les terrasses se remplissent. La marina s’enchaîne naturellement avec la corniche vers les hôtels de plage."
+  },
+  "gallery": {
+    "title": "Scènes de marina",
+    "s1": {
+      "caption": "Yachts dans le bassin de la marina d’Agadir"
     },
-    "info": {
-      "best_time_label": "Meilleur moment",
-      "best_time_val": "Fin d'après-midi – Soir",
-      "duration_label": "Durée conseillée",
-      "duration_val": "45 – 90 min",
-      "entry_label": "Accès",
-      "entry_val": "Gratuit",
-      "area_label": "Quartier",
-      "area_val": "Front de mer"
+    "s2": {
+      "caption": "Promenade en front de mer à la marina"
     },
-    "overview": {
-      "title": "Bateaux, terrasses et promenade au calme",
-      "p1": "La marina d'Agadir offre une alternative élégante à la grande plage : yachts amarrés au bassin, terrasses de café et promenade relaxante pour profiter de l'air marin sans le sable dans les chaussures.",
-      "p2": "C'est l'endroit idéal pour une pause café, une balade du soir ou un repas de fruits de mer face aux mâts. Il s'agit d'un aménagement balnéaire moderne plutôt que d'un port historique ancien.",
-      "p3": "Facile à combiner avec la plage ou la corniche. Trente à quatre-vingt-dix minutes suffisent, à moins de vous installer longuement en terrasse."
+    "s3": {
+      "caption": "Terrasses de cafés le long des quais"
     },
-    "gallery": {
-      "badge": "Galerie",
-      "title": "La Marina d'Agadir en images",
-      "subtitle": "Parcourez le bassin des yachts, les terrasses du port et les illuminations nocturnes.",
-      "s1": { "caption": "Yachts amarrés dans le bassin de la marina" },
-      "s2": { "caption": "Terrasses de café en bord de mer" },
-      "s3": { "caption": "Lumières du soir se reflétant sur l'eau" },
-      "s4": { "caption": "Promenade piétonne le long des quais" },
-      "s5": { "caption": "Vue panoramique sur la baie" }
+    "s4": {
+      "caption": "Lumière du soir sur la marina"
     },
-    "moods": {
-      "badge": "Moments clés",
-      "title": "Que voir à la Marina d'Agadir",
-      "subtitle": "Bateaux, terrasses et lumières du soir — trois ambiances à découvrir.",
-      "1": {
-        "tag": "Bassin",
-        "title": "Bateaux et yachts",
-        "desc": "Un paysage portuaire abrité avec voiliers et bateaux de plaisance.",
-        "duration": "Balade • 15 – 30 min"
-      },
-      "2": {
-        "tag": "Café",
-        "title": "Pause en terrasse",
-        "desc": "Prendre un verre face aux yachts au fil de la journée.",
-        "duration": "Détente • 45 – 60 min"
-      },
-      "3": {
-        "tag": "Soirée",
-        "title": "Lumières douces",
-        "desc": "Une option nocturne plus sereine que les clubs de plage animés.",
-        "duration": "Promenade • 30 – 45 min"
-      }
+    "s5": {
+      "caption": "Vue depuis la marina vers la baie"
+    }
+  },
+  "food": {
+    "title": "Manger à la marina",
+    "p1": "C’est l’un des endroits les plus simples d’Agadir pour un repas de fruits de mer assis avec vue — comparez quelques terrasses avant de vous installer.",
+    "li1": "Restaurants de fruits de mer sur le bassin.",
+    "li2": "Cafés pour boire sans repas complet.",
+    "li3": "Glaces et snacks pour une pause courte.",
+    "li4": "Cartes acceptées dans la plupart des restaurants.",
+    "li5": "Réservez en haute saison le soir."
+  },
+  "tips": {
+    "title": "Conseils pratiques",
+    "1": {
+      "title": "Accès",
+      "desc": "À pied depuis le nord de la plage ou en taxi court. Parking pour ceux qui ont une voiture."
     },
-    "food": {
-      "title": "Où manger à la Marina",
-      "p1": "Les cafés et restaurants autour du bassin proposent tout, du simple café aux repas complets de poissons.",
-      "li1": "Pause café en terrasse face au bassin",
-      "li2": "Déjeuner de fruits de mer près des bateaux",
-      "li3": "Glace artisanale pour une petite pause",
-      "li4": "Restaurants de la Corniche à quelques pas",
-      "li5": "Dîner à l'hôtel le long du boulevard balnéaire",
-      "p2": "Les prix à la marina reflètent le cadre privilégié — corrects pour la vue, mais pas toujours le poisson le moins cher de la ville."
+    "2": {
+      "title": "Horaires",
+      "desc": "Fin d’après-midi et soirée pour la meilleure ambiance."
     },
-    "tips": {
-      "title": "Conseils pratiques pour visiter la Marina d'Agadir",
-      "1": {
-        "title": "Vent",
-        "desc": "Mieux abritée que la plage ouverte, prévoyez tout de même une veste le soir."
-      },
-      "2": {
-        "title": "Horaires",
-        "desc": "La fin d'après-midi et la tombée de la nuit sont les moments les plus agréables."
-      },
-      "3": {
-        "title": "Photos",
-        "desc": "Les reflets sur l'eau du bassin sont magnifiques lorsque le vent retombe."
-      }
+    "3": {
+      "title": "Budget",
+      "desc": "Les restaurants de marina sont plus chers que les grills du souk — regardez les menus avant de commander."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "La marina est-elle gratuite ?",
+      "answer": "Oui — se promener est libre. Restaurants et cafés sont payants."
     },
-    "gyg": {
-      "badge": "Visites & Expériences",
-      "title": "Réserver une visite de la Marina d'Agadir",
-      "subtitle": "Excellentes options si vous préférez être accompagné d'un guide local.",
-      "t1": {
-        "tag": "Tour de Ville",
-        "title": "Visite guidée d'Agadir & Front de mer",
-        "desc": "Découvrez la marina et le bord de mer avec un guide local lors d'un demi-journée panoramique."
-      },
-      "t2": {
-        "tag": "Balade guidée",
-        "title": "Découverte de la Marina d'Agadir",
-        "desc": "Visite à pied axée sur l'architecture balnéaire moderne et l'histoire du port."
-      },
-      "t3": {
-        "tag": "Demi-journée",
-        "title": "Incontournables d'Agadir",
-        "desc": "Un aperçu complet de la ville incluant la marina, la plage et les marchés."
-      },
-      "check": "Voir les disponibilités sur GetYourGuide →",
-      "disclosure": "Certains liens sont des liens d'affiliation. En réservant via ceux-ci, nous pouvons toucher une commission sans frais supplémentaires pour vous."
+    "q2": {
+      "question": "Convient-elle aux familles ?",
+      "answer": "Oui — chemins plats et vues ouvertes. Gardez les enfants loin du bord de l’eau."
     },
-    "nearby": {
-      "badge": "Continuer l'exploration",
-      "title": "Autres lieux incontournables à Agadir",
-      "back": "← Retour au guide d'Agadir"
+    "q3": {
+      "question": "Distance de la plage principale ?",
+      "answer": "À l’extrémité nord de la bande de plage principale — accessible à pied depuis beaucoup d’hôtels."
     },
-    "blog": {
-      "badge": "Sur le blog",
-      "title": "Articles connexes",
-      "all": "Tous les articles →",
-      "read": "Lire l'article →",
-      "a1": {
-        "tag": "Gastronomie",
-        "title": "Guide gourmand d'Agadir : poissons et bonnes adresses",
-        "desc": "Où bien manger à Agadir, des restaurants de la marina aux tables marocaines traditionnelles."
-      },
-      "a2": {
-        "tag": "Transport",
-        "title": "Se déplacer à Agadir : taxis, transports et trajets",
-        "desc": "Conseils pratiques pour naviguer facilement entre l'aéroport, la plage, le souk et la marina."
-      },
-      "a3": {
-        "tag": "Conseils",
-        "title": "Premier voyage à Agadir : à quoi s'attendre",
-        "desc": "Vos premiers pas dans la ville et comment structurer vos journées en toute sérénité."
-      }
+    "q4": {
+      "question": "Bon pour dîner ?",
+      "answer": "Oui — populaire le soir pour les fruits de mer. Arrivez tôt ou réservez en haute saison."
     },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "FAQ Marina d'Agadir",
-      "q1": {
-        "question": "L'accès à la Marina d'Agadir est-il gratuit ?",
-        "answer": "Oui — les promenades le long des quais sont publiques et libres d'accès."
-      },
-      "q2": {
-        "question": "Quel est le meilleur moment pour visiter la marina ?",
-        "answer": "En fin d'après-midi et en soirée lorsque les terrasses s'animent et les températures s'adoucissent."
-      },
-      "q3": {
-        "question": "Trouve-t-on des restaurants à la marina ?",
-        "answer": "Oui, de nombreux cafés et restaurants de fruits de mer bordent le bassin des yachts."
-      },
-      "q4": {
-        "question": "À quelle distance se trouve-t-elle de la plage principale ?",
-        "answer": "Elle se situe tout au nord de la promenade de la plage principale."
-      },
-      "q5": {
-        "question": "La marina convient-elle aux familles ?",
-        "answer": "Tout à fait, ses quais larges et plats sont très faciles d'accès avec des poussettes."
-      }
+    "q5": {
+      "question": "Est-ce le port de pêche ?",
+      "answer": "Non — la marina est le bassin de plaisance. Le port de pêche se trouve à proximité mais est séparé."
+    }
+  },
+  "moods": {
+    "badge": "Horaires",
+    "title": "La marina dans la journée",
+    "subtitle": "Quand le bassin s’anime.",
+    "1": {
+      "tag": "Matin",
+      "title": "Quais calmes",
+      "desc": "Eau tranquille et peu de terrasses ouvertes.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Après-midi",
+      "title": "Pause café",
+      "desc": "Bon pour un long déjeuner avec vue sur le bassin.",
+      "duration": "Après-midi"
+    },
+    "3": {
+      "tag": "Soir",
+      "title": "Lumières sur les mâts",
+      "desc": "Le moment le plus animé pour se promener et manger.",
+      "duration": "Soir"
     }
   }
 }

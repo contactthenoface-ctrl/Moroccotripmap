@@ -100,51 +100,99 @@
     "badge": "Séjour",
     "title": "Trouvez votre hébergement idéal à Essaouira",
     "subtitle": "Riads en médina, hôtels vue mer et séjours près de la plage.",
+    "filter_type_label": "Type :",
     "type_label": "Type :",
-    "all_types": "Tous les types",
-    "area_label": "Quartier :",
-    "all_areas": "Tous les quartiers",
+    "type_all": "Tous les types",
+    "type_hotel": "Hôtel",
+    "type_riad": "Riad",
+    "type_guesthouse": "Maison d'hôtes",
+    "filter_location_label": "Quartier :",
+    "district_label": "Quartier :",
+    "location_all": "Tous les quartiers",
+    "location_town": "Médina",
+    "location_outside": "Hors les murs",
+    "location_outskirts": "Périphérie",
+    "counter": "hébergements trouvés",
+    "no_results": "Aucun hébergement ne correspond.",
+    "check_availability": "Vérifier les disponibilités →",
     "stays": "hébergements",
-    "check": "Vérifier les disponibilités →"
+    "all_types": "Tous les types",
+    "all_areas": "Tous les quartiers"
   },
   "eat": {
     "badge": "Cuisine",
     "title": "Où manger à Essaouira",
-    "subtitle": "Poisson grillé au port, tables de médina et cafés de plage."
+    "subtitle": "Poisson grillé au port, tables de médina et cafés de plage.",
+    "nomad": {
+      "tag": "Fruits de mer",
+      "loc": "Port",
+      "title": "Grill du port",
+      "desc": "Tables animées à midi quand la pêche rentre."
+    },
+    "jardin": {
+      "tag": "Café",
+      "loc": "Plage",
+      "title": "Cafés de plage",
+      "desc": "Cuisine simple face à la mer."
+    },
+    "moha": {
+      "tag": "Hôtel",
+      "loc": "Centre",
+      "title": "Restaurants d'hôtel",
+      "desc": "Options fiables près des remparts."
+    },
+    "fassia": {
+      "tag": "Café",
+      "loc": "Médina",
+      "title": "Café de ville",
+      "desc": "Café du quotidien loin de la plage."
+    },
+    "elfenn": {
+      "tag": "Local",
+      "loc": "Médina",
+      "title": "Tajines & salades",
+      "desc": "Assiettes marocaines au-delà des fruits de mer."
+    },
+    "bacha": {
+      "tag": "Local",
+      "loc": "Front de mer",
+      "title": "Table du soir",
+      "desc": "Service plus tard quand le vent tombe."
+    }
   },
   "tips": {
     "title": "Conseils pratiques pour Essaouira",
-    "1": {
+    "transport": {
       "title": "Se déplacer",
-      "desc": "La médina se fait à pied. Petits taxis pour la plage et la gare routière. Les soirées peuvent être fraîches."
+      "desc": "La médina se fait à pied. Petits taxis pour la plage et la gare routière. Fixez le prix pour les trajets côtiers plus longs."
     },
-    "2": {
+    "bargain": {
       "title": "Vent & soleil",
-      "desc": "Les alizés font partie du caractère — veste légère même en été. SPF élevé sur la Skala."
+      "desc": "Les alizés font partie du caractère — veste légère même en été. SPF élevé sur la Skala et la plage."
     },
-    "3": {
+    "water": {
       "title": "Tickets & espèces",
-      "desc": "La plupart des balades sont gratuites. Les espèces aident au port et dans les petites boutiques."
+      "desc": "La plupart des balades sont gratuites. Prévoyez des dirhams pour taxis, snacks du port et boutiques de médina."
     }
   },
   "daytrips": {
-    "badge": "Autour d’Essaouira",
+    "badge": "Autour d'Essaouira",
     "title": "Meilleures excursions depuis Essaouira",
     "subtitle": "Côte et campagne avec de vrais liens routiers.",
-    "1": {
+    "sidi_kaouki": {
       "title": "Sidi Kaouki",
       "desc": "Plage de vent et de surf à environ 25 minutes au sud."
     },
-    "2": {
+    "diabat": {
       "title": "Diabat",
       "desc": "Village calme et dunes près de la ville."
     },
-    "3": {
+    "marrakech": {
       "title": "Marrakech",
-      "desc": "Médina UNESCO et souks à environ 2 h 30 à l’est."
+      "desc": "Médina UNESCO et souks à environ 2 h 30 à l'est."
     },
-    "4": {
-      "title": "Pays de l’argan côtiers",
+    "argan": {
+      "title": "Pays de l'argan côtiers",
       "desc": "Routes rurales, arganiers et points de vue atlantiques."
     }
   },

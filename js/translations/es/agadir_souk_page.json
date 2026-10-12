@@ -1,155 +1,111 @@
 {
-  "agadir_souk_page": {
-    "name": "Souk El Had",
-    "hero_subtitle": "Especias, productos frescos, textiles y vida cotidiana de Agadir bajo un gran mercado cubierto.",
-    "seo": {
-      "title": "Souk El Had | Guía del Mercado de Agadir y Consejos | MoroccoTripMap",
-      "description": "¿Visitas Souk El Had en Agadir? Descubre puestos de especias, artesanía local, consejos de compras y regateo.",
-      "og_title": "Souk El Had, Agadir: Horarios, Compras y Consejos",
-      "og_description": "Explora Souk El Had en Agadir: gran mercado cubierto, especias, textiles, artesanía local y consejos prácticos."
+  "seo": {
+    "title": "Souk El Had Agadir | Large Market for Produce & Spices | MoroccoTripMap",
+    "description": "Souk El Had in Agadir: one of Morocco’s largest markets — produce, spices, clothes and everyday goods under covered lanes.",
+    "keywords": "Souk El Had, Agadir market, Agadir souk, spices Agadir"
+  },
+  "name": "Souk El Had",
+  "hero_subtitle": "Uno de los mayores mercados de Marruecos.",
+  "info": {
+    "best_time": "Mañana, sobre todo días de mercado",
+    "duration": "1 – 2 horas",
+    "entry": "Gratis",
+    "where": "Este del centro",
+    "area_val": "Este del centro",
+    "best_time_val": "Mañana, sobre todo días de mercado",
+    "duration_val": "1 – 2 horas",
+    "entry_val": "Gratis"
+  },
+  "overview": {
+    "title": "Agadir’s big everyday market",
+    "p1": "Souk El Had is where Agadir shops for real life: fruit, vegetables, spices, olives, clothes and household goods. It is less touristic than medina souks in imperial cities, and more about volume and local prices.",
+    "p2": "Go in the morning for the freshest produce and cooler air. Bargain politely on non-food items; fixed-price stalls exist too. Keep valuables close in crowded aisles."
+  },
+  "gallery": {
+    "title": "Market scenes",
+    "s1": {
+      "caption": "Covered lanes of Souk El Had"
     },
-    "info": {
-      "best_time_label": "Mejor momento",
-      "best_time_val": "Por la mañana – vida y color",
-      "duration_label": "Tiempo necesario",
-      "duration_val": "1 – 2 horas",
-      "entry_label": "Entrada",
-      "entry_val": "Acceso libre",
-      "area_label": "Zona",
-      "area_val": "Mercado del centro"
+    "s2": {
+      "caption": "Spice and olive stalls"
     },
-    "overview": {
-      "title": "Uno de los mercados más grandes de Marruecos",
-      "p1": "Souk El Had no es un simple bazar para turistas: es el mercado real donde los habitantes de Agadir compran alimentos, ropa y enseres. Su dimensión impresiona: pasillos enteros de aceitunas, especias, telas y artesanía.",
-      "p2": "Ve con paciencia y buen humor. Prueba si te invitan, compara precios y mantén tus objetos personales seguros en las zonas más concurridas. Las mañanas son perfectas para la alimentación; las tardes para pasear.",
-      "p3": "Una visita guiada gastronómica ayuda a entender la cultura local, aunque caminar libremente una o dos horas es suficiente para la mayoría."
+    "s3": {
+      "caption": "Fresh produce in the morning"
     },
-    "gallery": {
-      "badge": "Galería",
-      "title": "Souk El Had en imágenes",
-      "subtitle": "Recorre los pabellones cubiertos, los puestos de especias y los pasillos animados.",
-      "s1": { "caption": "Pabellones cubiertos del mercado" },
-      "s2": { "caption": "Puestos de especias y aceitunas" },
-      "s3": { "caption": "Coloridos pasillos de textiles" },
-      "s4": { "caption": "Productos frescos por la mañana" },
-      "s5": { "caption": "Compradores en los pasillos principales" }
+    "s4": {
+      "caption": "Textile and clothing section"
     },
-    "moods": {
-      "badge": "Momentos",
-      "title": "Qué ver en Souk El Had",
-      "subtitle": "Mercado gigante, especias aromáticas y vida cotidiana: tres facetas por descubrir.",
-      "1": {
-        "tag": "Dimensión",
-        "title": "Grandes pabellones",
-        "desc": "Uno de los mercados cubiertos más grandes del país."
-      },
-      "2": {
-        "tag": "Sentidos",
-        "title": "Especias y aceitunas",
-        "desc": "Colores y aromas vibrantes que definen el zoco."
-      },
-      "3": {
-        "tag": "Local",
-        "title": "Agadir cotidiano",
-        "desc": "Un mercado para la vida real, no solo para recuerdos."
-      }
+    "s5": {
+      "caption": "Busy aisle in Agadir’s main souk"
+    }
+  },
+  "food": {
+    "title": "Eat near the souk",
+    "p1": "Simple grills and juice stalls sit around the market edges — good for a quick bite after browsing.",
+    "li1": "Fresh orange juice stalls.",
+    "li2": "Simple grilled meats nearby.",
+    "li3": "Café stops on the outer streets.",
+    "li4": "Wash fruit if you buy produce.",
+    "li5": "Small bills help for stalls."
+  },
+  "tips": {
+    "title": "Practical tips",
+    "1": {
+      "title": "Getting there",
+      "desc": "Petit taxi from the beach or centre; ask for Souk El Had."
     },
-    "food": {
-      "title": "Sabores dentro del zoco",
-      "p1": "Aceitunas, especias, pan fresco y puestos de zumos hacen del mercado un lugar ideal para picar algo.",
-      "li1": "Degustación de aceitunas y especias en los pasillos",
-      "li2": "Puestos de zumos de frutas naturales",
-      "li3": "Puestos sencillos de comida a la parrilla cerca",
-      "li4": "Almuerzo de vuelta hacia el paseo marítimo",
-      "li5": "Té con menta si te lo ofrece un comerciante",
-      "p2": "Aceptar un té no te obliga a comprar: sé amable y educado."
+    "2": {
+      "title": "Timing",
+      "desc": "Mornings are best. Some sections slow in the afternoon heat."
     },
-    "tips": {
-      "title": "Consejos prácticos para visitar Souk El Had",
-      "1": {
-        "title": "Bolsos",
-        "desc": "Lleva un bolso cruzado por delante en los pasillos más concurridos."
-      },
-      "2": {
-        "title": "Efectivo",
-        "desc": "Lleva billetes pequeños y monedas en dirhams (MAD)."
-      },
-      "3": {
-        "title": "Horario",
-        "desc": "Por la mañana para ver el mercado en plena actividad; por la tarde para mayor calma."
-      }
+    "3": {
+      "title": "Shopping",
+      "desc": "Compare prices on spices and crafts; polite bargaining is normal."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "Is Souk El Had open every day?",
+      "answer": "Much of the market operates daily, with peak activity in the morning. Some sections are busier on traditional market days."
     },
-    "gyg": {
-      "badge": "Tours y Experiencias",
-      "title": "Reservar un tour en Souk El Had",
-      "subtitle": "Buenas opciones si prefieres ir acompañado por un guía local.",
-      "t1": {
-        "tag": "Gastronómico",
-        "title": "Tour gastronómico en Souk El Had",
-        "desc": "Prueba aceitunas, especias y dulces locales con un guía experto por el laberinto del mercado."
-      },
-      "t2": {
-        "tag": "Compras",
-        "title": "Ruta de compras y cultura en el zoco",
-        "desc": "Recorre los puestos de artesanía, aprende a regatear y encuentra objetos auténticos."
-      },
-      "t3": {
-        "tag": "Medio día",
-        "title": "Tour por la ciudad y Souk El Had",
-        "desc": "Una visión completa combinando la Kasbah, la marina y el mercado con guía."
-      },
-      "check": "Ver disponibilidad en GetYourGuide →",
-      "disclosure": "Algunos enlaces son de afiliados. Si reservas a través de ellos, podemos ganar una pequeña comisión sin costo adicional para ti."
+    "q2": {
+      "question": "Is it touristy?",
+      "answer": "Less than medina souks in Marrakech or Fes — many stalls serve local shoppers."
     },
-    "nearby": {
-      "badge": "Sigue explorando",
-      "title": "Más lugares imprescindibles en Agadir",
-      "back": "← Volver a la guía de Agadir"
+    "q3": {
+      "question": "What should I buy?",
+      "answer": "Spices, olives, argan products, simple textiles and fresh produce if you have a kitchen."
     },
-    "blog": {
-      "badge": "Del Blog",
-      "title": "Artículos relacionados",
-      "all": "Todos los artículos →",
-      "read": "Leer artículo →",
-      "a1": {
-        "tag": "Gastronomía",
-        "title": "Guía gastronómica de Agadir: mariscos y lugares clave",
-        "desc": "Dónde comer bien en Agadir, desde pescado en la marina hasta cocina tradicional."
-      },
-      "a2": {
-        "tag": "Transporte",
-        "title": "Cómo moverse por Agadir: taxis y excursiones",
-        "desc": "Consejos prácticos para moverte entre el aeropuerto, la playa, el zoco y la marina."
-      },
-      "a3": {
-        "tag": "Planificación",
-        "title": "Primera vez en Agadir: qué esperar",
-        "desc": "Cómo organizar tus primeros días y planificar excursiones con calma."
-      }
+    "q4": {
+      "question": "Do I need a guide?",
+      "answer": "No — the layout is large but navigable. A guide can help if you want product explanations."
     },
-    "faq": {
-      "badge": "Información útil",
-      "title": "Preguntas Frecuentes sobre Souk El Had",
-      "q1": {
-        "question": "¿Hace falta guía para ir?",
-        "answer": "No es obligatorio, pero ayuda a orientarse y probar productos en la primera visita."
-      },
-      "q2": {
-        "question": "¿Se debe regatear?",
-        "answer": "Sí en los puestos de artesanía; mantén siempre un trato amable."
-      },
-      "q3": {
-        "question": "¿Cuáles son los horarios?",
-        "answer": "Abre habitualmente durante el día; ten en cuenta los horarios de oración del viernes."
-      },
-      "q4": {
-        "question": "¿Cuánto tiempo lleva la visita?",
-        "answer": "Se suele tardar entre 1 y 2 horas."
-      },
-      "q5": {
-        "question": "¿Es adecuado para familias?",
-        "answer": "Sí, es una visita muy animada que suele gustar a niños y adultos."
-      }
+    "q5": {
+      "question": "How long do I need?",
+      "answer": "One to two hours is enough for most visitors."
+    }
+  },
+  "moods": {
+    "badge": "Horario",
+    "title": "El Souk El Had a lo largo del día",
+    "subtitle": "Cuándo el mercado está en su mejor momento.",
+    "1": {
+      "tag": "Mañana",
+      "title": "Pico de productos frescos",
+      "desc": "Más animado y fresco para fruta, verdura y especias.",
+      "duration": "Mañana"
+    },
+    "2": {
+      "tag": "Mediodía",
+      "title": "Ritmo completo",
+      "desc": "Pasillos llenos y compras locales a tope.",
+      "duration": "Mediodía"
+    },
+    "3": {
+      "tag": "Tarde",
+      "title": "Pasillos más lentos",
+      "desc": "Algunos puestos se vacían; el calor baja más tarde.",
+      "duration": "Tarde"
     }
   }
 }

@@ -100,50 +100,98 @@
     "badge": "Alojamiento",
     "title": "Encuentra tu estancia ideal en Essaouira",
     "subtitle": "Riad en la medina, hoteles con vistas al mar y estancias cerca de la playa.",
+    "filter_type_label": "Tipo:",
     "type_label": "Tipo:",
-    "all_types": "Todos los tipos",
-    "area_label": "Zona:",
-    "all_areas": "Todas las zonas",
+    "type_all": "Todos los tipos",
+    "type_hotel": "Hotel",
+    "type_riad": "Riad",
+    "type_guesthouse": "Casa de huéspedes",
+    "filter_location_label": "Zona:",
+    "district_label": "Zona:",
+    "location_all": "Todas las zonas",
+    "location_town": "Medina",
+    "location_outside": "Fuera de las murallas",
+    "location_outskirts": "Alrededores",
+    "counter": "alojamientos encontrados",
+    "no_results": "Ningún alojamiento coincide.",
+    "check_availability": "Comprobar disponibilidad →",
     "stays": "alojamientos",
-    "check": "Comprobar disponibilidad →"
+    "all_types": "Todos los tipos",
+    "all_areas": "Todas las zonas"
   },
   "eat": {
     "badge": "Comida",
     "title": "Dónde comer en Essaouira",
-    "subtitle": "Pescado a la parrilla en el puerto, mesas de medina y cafés de playa."
+    "subtitle": "Pescado a la parrilla en el puerto, mesas de medina y cafés de playa.",
+    "nomad": {
+      "tag": "Mariscos",
+      "loc": "Puerto",
+      "title": "Parrilla del puerto",
+      "desc": "Mesas animadas al mediodía cuando llega la captura."
+    },
+    "jardin": {
+      "tag": "Café",
+      "loc": "Playa",
+      "title": "Cafés de playa",
+      "desc": "Comida informal frente al mar."
+    },
+    "moha": {
+      "tag": "Hotel",
+      "loc": "Centro",
+      "title": "Restaurantes de hotel",
+      "desc": "Opciones fiables cerca de las murallas."
+    },
+    "fassia": {
+      "tag": "Café",
+      "loc": "Medina",
+      "title": "Café de ciudad",
+      "desc": "Café cotidiano lejos de la playa."
+    },
+    "elfenn": {
+      "tag": "Local",
+      "loc": "Medina",
+      "title": "Tajines y ensaladas",
+      "desc": "Platos marroquíes más allá del marisco."
+    },
+    "bacha": {
+      "tag": "Local",
+      "loc": "Paseo marítimo",
+      "title": "Mesa de noche",
+      "desc": "Servicio más tarde cuando baja el viento."
+    }
   },
   "tips": {
     "title": "Consejos prácticos para Essaouira",
-    "1": {
+    "transport": {
       "title": "Moverse",
-      "desc": "La medina se recorre a pie. Pequeños taxis para la playa y la estación de buses. Las noches pueden ser frescas."
+      "desc": "La medina se recorre a pie. Pequeños taxis para la playa y la estación. Acuerda el precio en trayectos costeros más largos."
     },
-    "2": {
+    "bargain": {
       "title": "Viento y sol",
-      "desc": "Los alisios forman parte del carácter — chaqueta ligera incluso en verano. FPS alto en la Skala."
+      "desc": "Los alisios forman parte del carácter — chaqueta ligera incluso en verano. FPS alto en la Skala y la playa."
     },
-    "3": {
+    "water": {
       "title": "Entradas y efectivo",
-      "desc": "La mayoría de paseos son gratis. El efectivo ayuda en el puerto y tiendas pequeñas."
+      "desc": "La mayoría de paseos son gratis. Lleva dirhams para taxis, snacks del puerto y tiendas de la medina."
     }
   },
   "daytrips": {
     "badge": "Alrededor de Essaouira",
     "title": "Mejores excursiones desde Essaouira",
     "subtitle": "Costa y campo con conexiones reales por carretera.",
-    "1": {
+    "sidi_kaouki": {
       "title": "Sidi Kaouki",
       "desc": "Playa de viento y surf a unos 25 minutos al sur."
     },
-    "2": {
+    "diabat": {
       "title": "Diabat",
       "desc": "Pueblo tranquilo y dunas cerca de la ciudad."
     },
-    "3": {
+    "marrakech": {
       "title": "Marrakech",
       "desc": "Medina UNESCO y zocos a unas 2,5 horas al este."
     },
-    "4": {
+    "argan": {
       "title": "País del argán costero",
       "desc": "Carreteras rurales, arganes y miradores atlánticos."
     }

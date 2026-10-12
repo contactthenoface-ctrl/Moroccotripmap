@@ -205,37 +205,30 @@
   },
   "itinerary": {
     "badge": "Planificar",
-    "title": "Itinerario sugerido de 3 días",
-    "subtitle": "Playa, mirador y una excursión.",
-    "day1": {
-      "title": "Día 1 — Playa y Kasbah",
-      "desc": "Mañana en la playa de Agadir y la corniche. Tarde en la Kasbah Agadir Oufella. Noche en la marina."
-    },
-    "day2": {
-      "title": "Día 2 — Zoco y Marina",
-      "desc": "Souk El Had por la mañana. Tarde libre en la playa o cafés de la marina."
-    },
-    "day3": {
-      "title": "Día 3 — Costa o valle",
-      "desc": "Elige Taghazout para surf, Paradise Valley para gargantas, o Crocoparc en familia."
-    }
+    "title": "Plan sugerido de 3 días en Agadir",
+    "subtitle": "Playa y kasbah primero, luego zoco y una excursión al norte o al interior."
   },
   "detailed_itinerary": {
-    "title": "Ideas hora por hora",
-    "d1": {
-      "m": "Paseo por la playa y café en la corniche.",
-      "a": "Taxi o subida al mirador de la kasbah.",
-      "e": "Cena en la marina o parrilla frente al mar."
-    },
-    "d2": {
-      "m": "Souk El Had — especias, productos, artesanía.",
-      "a": "Tiempo libre en playa o marina.",
-      "e": "Café tranquilo en el paseo."
-    },
-    "d3": {
-      "m": "Salida hacia Taghazout, Paradise Valley o Crocoparc.",
-      "a": "Regreso por la carretera costera.",
-      "e": "Última noche en el frente marítimo."
-    }
+    "day1_tab": "Día 1 — Playa y kasbah",
+    "day1_m": "Mañana — Playa de Agadir",
+    "day1_md": "Camina por la larga arena pública y la corniche; orienta la bahía.",
+    "day1_a": "Tarde — Kasbah Oufella",
+    "day1_ad": "Sube o toma un taxi a las ruinas en la colina para el panorama clásico.",
+    "day1_e": "Noche — Marina",
+    "day1_ed": "Mariscos y paseo por la cuenca de yates al norte de la franja de playa.",
+    "day2_tab": "Día 2 — Zoco y corniche",
+    "day2_m": "Mañana — Souk El Had",
+    "day2_md": "El gran mercado cotidiano de Agadir: productos, especias y precios locales — mejor temprano.",
+    "day2_a": "Tarde — Corniche libre",
+    "day2_ad": "Tiempo de playa, cafés o paseo largo entre hoteles y marina.",
+    "day2_e": "Noche — Cena frente al mar",
+    "day2_ed": "Restaurantes de la franja hotelera u otra comida en la marina con vistas.",
+    "day3_tab": "Día 3 — Taghazout o Paradise Valley",
+    "day3_m": "Mañana — Taghazout o inicio del valle",
+    "day3_md": "Norte al pueblo de surf, o interior hacia las pozas de Paradise Valley.",
+    "day3_a": "Tarde — Costa o garganta",
+    "day3_ad": "Baño y cafés en Taghazout, o pozas y palmeras en las estribaciones del Anti-Atlas.",
+    "day3_e": "Noche — Regreso a Agadir",
+    "day3_ed": "Vuelta a la ciudad para un último paseo por la corniche o salida anticipada."
   }
 }

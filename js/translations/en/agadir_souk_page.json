@@ -83,7 +83,9 @@
     "q5": {
       "question": "How long do I need?",
       "answer": "One to two hours is enough for most visitors."
-    }
+    },
+    "badge": "Good to know",
+    "title": "FAQ about Souk El Had"
   },
   "moods": {
     "badge": "Timing",
@@ -106,6 +108,49 @@
       "title": "Slower lanes",
       "desc": "Some stalls thin out; cooler only later in the day.",
       "duration": "Afternoon"
+    }
+  },
+  "gyg": {
+    "badge": "Tours & experiences",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local operator.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
+    "t1": {
+      "tag": "City",
+      "title": "Agadir city highlights",
+      "desc": "Beach, kasbah viewpoint and marina orientation."
+    },
+    "t2": {
+      "tag": "Coast",
+      "title": "Taghazout coast",
+      "desc": "Surf villages and Atlantic beaches north of Agadir."
+    },
+    "t3": {
+      "tag": "Nature",
+      "title": "Paradise Valley day trip",
+      "desc": "Palm gorge and pools inland from the coast."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Agadir",
+      "desc": "Beach base and easy day trips."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Atlantic Agadir",
+      "desc": "Corniche, marina and kasbah view."
+    },
+    "a3": {
+      "tag": "Coast",
+      "title": "North to Taghazout",
+      "desc": "Surf villages beyond the city."
     }
   }
 }

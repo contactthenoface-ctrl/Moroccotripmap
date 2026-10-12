@@ -1,158 +1,111 @@
 {
-  "agadir_marina_page": {
-    "name": "مارينا أكادير",
-    "hero_subtitle": "مارينا حديثة باليخوت والمقاهي وأجواء شاطئية هادئة.",
-    "seo": {
-      "title": "مارينا أكادير | دليل الميناء ونصائح الزيارة | MoroccoTripMap",
-      "description": "هل تجول في مارينا أكادير؟ اكتشف مرسى اليخوت، المطاعم المطلة على البحر، مقاهي الرصيف، وجولات الغروب.",
-      "og_title": "مارينا أكادير: اليخوت، المطاعم والجولات عند الغروب",
-      "og_description": "استكشف مارينا أكادير: حوض اليخوت العصري، المقاهي المفتوحة، المطاعم الراقية والجولات المسائية على ساحل المحيط الأطلسي."
+  "seo": {
+    "title": "Agadir Marina | Yacht Basin, Cafés & Evening Stroll | MoroccoTripMap",
+    "description": "Agadir Marina: yacht basin, waterfront cafés and an easy evening walk between the beach and the port.",
+    "keywords": "Agadir Marina, Agadir harbour, marina restaurants Agadir, yacht basin"
+  },
+  "name": "مارينا أكادير",
+  "hero_subtitle": "حوض يخوت ومقاهي ونزهة مسائية.",
+  "info": {
+    "best_time": "المساء للأجواء",
+    "duration": "1 – 2 ساعة",
+    "entry": "المشي مجاني",
+    "where": "الطرف الشمالي لشريط الشاطئ",
+    "area_val": "الطرف الشمالي لشريط الشاطئ",
+    "best_time_val": "المساء للأجواء",
+    "duration_val": "1 – 2 ساعة",
+    "entry_val": "المشي مجاني"
+  },
+  "overview": {
+    "title": "Marina life on the Atlantic",
+    "p1": "Agadir Marina gathers yachts, restaurants and a paved promenade at the northern curve of the bay. It is a contrast to the open beach: more structured, good for an evening stroll and seafood with a view of the masts.",
+    "p2": "By day it is quieter; after sunset the terraces fill. The marina links naturally with the corniche walk toward the main beach hotels."
+  },
+  "gallery": {
+    "title": "Marina scenes",
+    "s1": {
+      "caption": "Yachts in Agadir Marina basin"
     },
-    "info": {
-      "best_time_label": "أفضل وقت للزيارة",
-      "best_time_val": "أواخر أوقات الظهيرة – المساء",
-      "duration_label": "الوقت المقترح",
-      "duration_val": "45 – 90 دقيقة",
-      "entry_label": "الدخول",
-      "entry_val": "مجاني",
-      "area_label": "المنطقة",
-      "area_val": "الواجهة البحرية"
+    "s2": {
+      "caption": "Waterfront promenade at the marina"
     },
-    "overview": {
-      "title": "قوارب، مقاهي ونزهة هادئة على البحر",
-      "p1": "تعتبر مارينا أكادير البديل العصري والأنيق للشاطئ المفتوح: قوارب ورسو لليخوت، جلسات مقاهي، ونزهة مريحة لمن يرغب بنسيم المحيط دون الرمال.",
-      "p2": "مكان مثالي لاستراحة قهوة، جولة مسائية، أو وجبة فواكه بحرية أمام مشهد القوارب. إنها حوض عصري سياحي وليست ميناءً تاريخياً قديماً.",
-      "p3": "يمكنك دمجها مع زيارة الشاطئ أو الكورنيش المجاور. يكفي من 45 إلى 90 دقيقة ما لم تقرر الجلوس لتناول وجبة غداء طويلة."
+    "s3": {
+      "caption": "Café terraces along the docks"
     },
-    "gallery": {
-      "badge": "معرض الصور",
-      "title": "مارينا أكادير بالصور",
-      "subtitle": "استعرض حوض اليخوت، المقاهي المطلة والأضواء المسائية.",
-      "s1": { "caption": "اليخوت الراسية في حوض المارينا" },
-      "s2": { "caption": "جلسات المقاهي على الواجهة البحرية" },
-      "s3": { "caption": "أنوار المساء المنعكسة على المياه" },
-      "s4": { "caption": "ممر المشاة المحاذي للأرصفة" },
-      "s5": { "caption": "إطلالة باتجاه خليج أكادير" }
+    "s4": {
+      "caption": "Evening light on the marina"
     },
-    "moods": {
-      "badge": "أوقات الزيارة",
-      "title": "ماذا تشاهد في مارينا أكادير",
-      "subtitle": "اليخوت، المقاهي، والأضواء المسائية — ثلاثة أجواء تستحق الاكتشاف.",
-      "1": {
-        "tag": "الحوض",
-        "title": "القوارب واليخوت",
-        "desc": "مشهد بحري هادئ يضم يخوت وقوارب نزهة.",
-        "duration": "جولة سير • 15 – 30 دقيقة"
-      },
-      "2": {
-        "tag": "المقاهي",
-        "title": "جلسة مقهى",
-        "desc": "الاستمتاع بالقهوة واستراحة المشاهدة بجانب اليخوت.",
-        "duration": "استراحة • 45 – 60 دقيقة"
-      },
-      "3": {
-        "tag": "المساء",
-        "title": "أضواء هادئة",
-        "desc": "خيار مسائي مريح وهادئ مقارنة بالأندية الشاطئية الصاخبة.",
-        "duration": "نزهة • 30 – 45 دقيقة"
-      }
+    "s5": {
+      "caption": "View from the marina toward the bay"
+    }
+  },
+  "food": {
+    "title": "Eat at the marina",
+    "p1": "This is one of the easiest places in Agadir for a sit-down seafood meal with a view — compare a few terraces before sitting down.",
+    "li1": "Seafood restaurants on the basin.",
+    "li2": "Cafés for drinks without a full meal.",
+    "li3": "Ice cream and snacks for a short stop.",
+    "li4": "Cards accepted in most restaurants.",
+    "li5": "Book ahead in peak season evenings."
+  },
+  "tips": {
+    "title": "Practical tips",
+    "1": {
+      "title": "Access",
+      "desc": "Walk from the northern beach or take a short taxi. Parking exists for those with a car."
     },
-    "food": {
-      "title": "المطاعم في المارينا",
-      "p1": "تتنوع المقاهي والمطاعم حول الحوض لتشمل كل شيء بدءاً من القهوة السريعة وحتى وجبات السمك الكاملة.",
-      "li1": "قهوة في شرفة مطلة على حوض اليخوت",
-      "li2": "غداء فواكه بحرية بالقرب من القوارب",
-      "li3": "آيس كريم لجولة سريعة",
-      "li4": "مطاعم الكورنيش على بعد خطوات قليلة",
-      "li5": "عشاء في الفنادق الممتدة على الشريط الشاطئي",
-      "p2": "تعكس الأسعار في المارينا موقعها المميز — وهي مناسبة للإطلالة، وإن لم تكن الأرخص للأسماك في المدينة."
+    "2": {
+      "title": "Timing",
+      "desc": "Late afternoon and evening for the best atmosphere."
     },
-    "tips": {
-      "title": "نصائح عملية لزيارة مارينا أكادير",
-      "1": {
-        "title": "الرياح",
-        "desc": "أكثر حميمية ومأوى من الشاطئ المفتوح، لكن يفضل جلب سترة خفيفة ليلاً."
-      },
-      "2": {
-        "title": "التوقيت",
-        "desc": "أواخر الظهيرة والفترة المسائية هما الأفضل للزيارة."
-      },
-      "3": {
-        "title": "التصوير",
-        "desc": "تكون الانعكاسات على مياه الحوض ممتازة عندما تهدأ الرياح."
-      }
+    "3": {
+      "title": "Budget",
+      "desc": "Marina restaurants are pricier than souk grills — check menus before ordering."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "Is the marina free to visit?",
+      "answer": "Yes — walking the promenade is free. Restaurants and cafés are paid."
     },
-    "gyg": {
-      "badge": "الجولات والتجارب",
-      "title": "حجز جولة في مارينا أكادير",
-      "subtitle": "خيارات ممتازة إذا كنت تفضل وجود مرشد محلي.",
-      "t1": {
-        "tag": "جولة المدينة",
-        "title": "جولة مدينة أكادير والواجهة البحرية",
-        "desc": "زر المارينا والشاطئ مع مرشد محلي لتكتشف أهم المعالم في نصف يوم."
-      },
-      "t2": {
-        "tag": "جولة مشي",
-        "title": "زيارة مخصصة لمارينا أكادير",
-        "desc": "جولة مريحة تركز على الهندسة المعمارية الحديثة وقصة الميناء."
-      },
-      "t3": {
-        "tag": "نصف يوم",
-        "title": "أبرز معالم أكادير",
-        "desc": "نظرة شاملة على المدينة تشمل المارينا، الشاطئ والسوق."
-      },
-      "check": "تحقق من التوفر على GetYourGuide ←",
-      "disclosure": "بعض هذه الروابط هي روابط بالعمولة. عند الحجز من خلالها قد نحصل على عمولة بسيطة دون أي تكلفة إضافية عليك."
+    "q2": {
+      "question": "Is it good for families?",
+      "answer": "Yes — flat paths and open views. Keep children away from the water edge."
     },
-    "nearby": {
-      "badge": "واصل الاستكشاف",
-      "title": "أماكن أخرى لا تفوت في أكادير",
-      "back": "← العودة إلى دليل أكادير"
+    "q3": {
+      "question": "Distance from the main beach?",
+      "answer": "At the northern end of the main beach strip — walkable from many hotels."
     },
-    "blog": {
-      "badge": "من المدونة",
-      "title": "مقالات ذات صلة",
-      "all": "جميع المقالات ←",
-      "read": "اقرأ المقال ←",
-      "a1": {
-        "tag": "مطاعم",
-        "title": "دليل مطاعم أكادير: المأكولات البحرية والأطباق الكلاسيكية",
-        "desc": "أين تأكل جيدا في أكادير، من سمك المارينا والشاطئ إلى المطبخ المغربي."
-      },
-      "a2": {
-        "tag": "المواصلات",
-        "title": "التنقل في أكادير: سيارات الأجور والجولات",
-        "desc": "طرق عملية للتنقل بين المطار، الشاطئ، السوق والمارينا."
-      },
-      "a3": {
-        "tag": "تخطيط",
-        "title": "زيارتك الأولى لأكادير: ماذا تتوقع",
-        "desc": "أجواء المدينة في يومك الأول وكيف تخطط لرحلتك دون إجهاد."
-      }
+    "q4": {
+      "question": "Best for dinner?",
+      "answer": "Yes — popular for evening seafood. Arrive early or reserve in high season."
     },
-    "faq": {
-      "badge": "معلومات مفيدة",
-      "title": "الأسئلة الشائعة حول مارينا أكادير",
-      "q1": {
-        "question": "هل التجول في مارينا أكادير مجاني؟",
-        "answer": "نعم — الممرات والمشايات مفتوحة للعموم مجاناً."
-      },
-      "q2": {
-        "question": "ما هو أفضل وقت لزيارة مارينا أكادير؟",
-        "answer": "أواخر الظهيرة والمساء هما الأجمل حيث تنشط المقاهي وتعتدل الحرارة."
-      },
-      "q3": {
-        "question": "هل تتوفر مطاعم في المارينا؟",
-        "answer": "نعم، تضم المارينا العديد من مطاعم الأسماك والمقاهي المطلة على المياه."
-      },
-      "q4": {
-        "question": "كم تبعد عن الشاطئ الرئيسي؟",
-        "answer": "تقع في الطرف الشمالي المباشر لكورنيش الشاطئ الرئيسي."
-      },
-      "q5": {
-        "question": "هل مارينا أكادير مناسبة للعائلات؟",
-        "answer": "نعم، ممراتها المسطحة والواسعة تجعلها آمنة ومناسبة جداً لعربات الأطفال."
-      }
+    "q5": {
+      "question": "Is it the fishing port?",
+      "answer": "No — the marina is the yacht and leisure basin. The working fishing port sits nearby but is separate."
+    }
+  },
+  "moods": {
+    "badge": "التوقيت",
+    "title": "المارينا على مدار اليوم",
+    "subtitle": "متى ينبض الحوض بالحياة.",
+    "1": {
+      "tag": "صباح",
+      "title": "أرصفة هادئة",
+      "desc": "ماء هادئ وقليل من الشرفات المفتوحة.",
+      "duration": "صباح"
+    },
+    "2": {
+      "tag": "بعد الظهر",
+      "title": "استراحة مقهى",
+      "desc": "مناسبة لغداء طويل بإطلالة على الحوض.",
+      "duration": "بعد الظهر"
+    },
+    "3": {
+      "tag": "مساء",
+      "title": "أضواء على الصواري",
+      "desc": "أكثر الأوقات حيوية للنزهة والمأكولات البحرية.",
+      "duration": "مساء"
     }
   }
 }

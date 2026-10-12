@@ -1,155 +1,111 @@
 {
-  "agadir_souk_page": {
-    "name": "سوق الأحد",
-    "hero_subtitle": "التوابل، المنتجات الطازجة، المنسوجات والحياة اليومية لأكادير تحت سقف سوق مغطى ضخم.",
-    "seo": {
-      "title": "سوق الأحد | دليل التسوق في أكادير والنصائح العملية | MoroccoTripMap",
-      "description": "هل تخطط لزيارة سوق الأحد في أكادير؟ اكتشف محلات التوابل، الصناعة التقليدية، نصائح المساومة وأوقات الزيارة.",
-      "og_title": "سوق الأحد، أكادير: أوقات الزيارة، التسوق والنصائح",
-      "og_description": "استكشف سوق الأحد في أكادير: أكبر سوق مغطى، التوابل، المنسوجات، المنتجات المحلية ونصائح التسوق."
+  "seo": {
+    "title": "Souk El Had Agadir | Large Market for Produce & Spices | MoroccoTripMap",
+    "description": "Souk El Had in Agadir: one of Morocco’s largest markets — produce, spices, clothes and everyday goods under covered lanes.",
+    "keywords": "Souk El Had, Agadir market, Agadir souk, spices Agadir"
+  },
+  "name": "سوق الأحد",
+  "hero_subtitle": "من أكبر أسواق المغرب.",
+  "info": {
+    "best_time": "الصباح، خاصة أيام السوق",
+    "duration": "1 – 2 ساعة",
+    "entry": "مجاني",
+    "where": "شرق وسط المدينة",
+    "area_val": "شرق وسط المدينة",
+    "best_time_val": "الصباح، خاصة أيام السوق",
+    "duration_val": "1 – 2 ساعة",
+    "entry_val": "مجاني"
+  },
+  "overview": {
+    "title": "Agadir’s big everyday market",
+    "p1": "Souk El Had is where Agadir shops for real life: fruit, vegetables, spices, olives, clothes and household goods. It is less touristic than medina souks in imperial cities, and more about volume and local prices.",
+    "p2": "Go in the morning for the freshest produce and cooler air. Bargain politely on non-food items; fixed-price stalls exist too. Keep valuables close in crowded aisles."
+  },
+  "gallery": {
+    "title": "Market scenes",
+    "s1": {
+      "caption": "Covered lanes of Souk El Had"
     },
-    "info": {
-      "best_time_label": "أفضل وقت للزيارة",
-      "best_time_val": "الصباح – حيوية المنتجات",
-      "duration_label": "الوقت المقترح",
-      "duration_val": "1 – 2 ساعة",
-      "entry_label": "الدخول",
-      "entry_val": "مجانًا",
-      "area_label": "المنطقة",
-      "area_val": "وسط المدينة"
+    "s2": {
+      "caption": "Spice and olive stalls"
     },
-    "overview": {
-      "title": "واحد من أكبر أسواق المغرب",
-      "p1": "ليس سوق الأحد مجرد بزار سياحي، بل هو السوق الحيوي الذي يتبضع منه سكان أكادير للمأكولات والملابس والحاجيات اليومية. حجم السوق مذهل للمرة الأولى: ممرات كاملة للزيتون، التوابل، الأقمشة والصناعة التقليدية.",
-      "p2": "تجوّل بصبر وبشاشة. تذوق المنتجات عند الدعوة، قارن الأسعار، واحتفظ بأغراضك الشخصية بأمان في الممرات المزدحمة. الفترة الصباحية ممتازة للمأكولات الطازجة، بينما الظهيرة مناسبة للتجول والتسوق.",
-      "p3": "يمكن لجولة جولات الطعام الموجهة أن تمنحك فكرة عميقة، وإلا فإن ساعة أو ساعتين من التجول الحر تكفي معظم الزوار."
+    "s3": {
+      "caption": "Fresh produce in the morning"
     },
-    "gallery": {
-      "badge": "معرض الصور",
-      "title": "سوق الأحد بالصور",
-      "subtitle": "استعرض الجناحات المغطاة، معارض التوابل والممرات النابضة بالحياة.",
-      "s1": { "caption": "الأروقة المغطاة للسوق" },
-      "s2": { "caption": "معروضات التوابل والزيتون" },
-      "s3": { "caption": "ألوان ممرات المنسوجات" },
-      "s4": { "caption": "خضار وفواكه طازجة في الصباح" },
-      "s5": { "caption": "الزوار والتسوق في الممرات الرئيسية" }
+    "s4": {
+      "caption": "Textile and clothing section"
     },
-    "moods": {
-      "badge": "أوقات الزيارة",
-      "title": "ماذا تشاهد في سوق الأحد",
-      "subtitle": "أروقة ضخمة، توابل زكية وحياة يومية — ثلاثة جوانب تستحق الاستكشاف.",
-      "1": {
-        "tag": "الحجم",
-        "title": "أروقة واسعة",
-        "desc": "من أكبر الأسواق المغطاة في المملكة."
-      },
-      "2": {
-        "tag": "الأجواء",
-        "title": "التوابل والزيتون",
-        "desc": "روائح وألوان زاهية تميز أجواء السوق."
-      },
-      "3": {
-        "tag": "محلي",
-        "title": "أكادير اليومية",
-        "desc": "سوق للحياة الحقيقية وليس فقط للهدايا التذكارية."
-      }
+    "s5": {
+      "caption": "Busy aisle in Agadir’s main souk"
+    }
+  },
+  "food": {
+    "title": "Eat near the souk",
+    "p1": "Simple grills and juice stalls sit around the market edges — good for a quick bite after browsing.",
+    "li1": "Fresh orange juice stalls.",
+    "li2": "Simple grilled meats nearby.",
+    "li3": "Café stops on the outer streets.",
+    "li4": "Wash fruit if you buy produce.",
+    "li5": "Small bills help for stalls."
+  },
+  "tips": {
+    "title": "Practical tips",
+    "1": {
+      "title": "Getting there",
+      "desc": "Petit taxi from the beach or centre; ask for Souk El Had."
     },
-    "food": {
-      "title": "المأكولات داخل السوق",
-      "p1": "محلات الزيتون، التوابل، الخبز العصري والتقليدي والعصائر تجعل من السوق مكاناً رائعاً للتذوق.",
-      "li1": "تذوق الزيتون والتوابل في الممرات",
-      "li2": "عصائر الفواكه الطبيعية الطازجة",
-      "li3": "وجبات المشويات البسيطة المجاورة",
-      "li4": "غداء قرب الكورنيش بعد الانتهاء",
-      "li5": "شاي بالنعناع عند التبضع من التجار",
-      "p2": "قبول الشاي يعتبر من كرم الضيافة ولا يلزمك بالشراء."
+    "2": {
+      "title": "Timing",
+      "desc": "Mornings are best. Some sections slow in the afternoon heat."
     },
-    "tips": {
-      "title": "نصائح عملية لزيارة سوق الأحد",
-      "1": {
-        "title": "الحقائب",
-        "desc": "احمل حقيبة جانبية أمامك في الممرات المزدحمة."
-      },
-      "2": {
-        "title": "النقود",
-        "desc": "وفر مبالغ مالية صغيرة بالدرهم (MAD) للمشتريات الخفيفة."
-      },
-      "3": {
-        "title": "التوقيت",
-        "desc": "الصباح للحيوية والمنتجات الطازجة، وأواخر النهار لجولة أكثر هدوءاً."
-      }
+    "3": {
+      "title": "Shopping",
+      "desc": "Compare prices on spices and crafts; polite bargaining is normal."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "Is Souk El Had open every day?",
+      "answer": "Much of the market operates daily, with peak activity in the morning. Some sections are busier on traditional market days."
     },
-    "gyg": {
-      "badge": "الجولات والتجارب",
-      "title": "حجز جولة في سوق الأحد",
-      "subtitle": "خيارات ممتازة إذا كنت تفضل التواجد مع مرشد محلي.",
-      "t1": {
-        "tag": "تذوق",
-        "title": "جولة تذوق الطعام في سوق الأحد",
-        "desc": "تذوق الزيتون المحلي، التوابل والحلويات برفقة مرشد خبير في أزقة السوق."
-      },
-      "t2": {
-        "tag": "تسوق",
-        "title": "جولة التسوق والصناعة التقليدية",
-        "desc": "اكتشف محلات الصناعة التقليدية، تعلم نصائح المساومة واعثر على تحف متميزة."
-      },
-      "t3": {
-        "tag": "نصف يوم",
-        "title": "جولة أكادير وسوق الأحد",
-        "desc": "نظرة شاملة تجمع بين القصبة، المارينا ومشي برفقة مرشد داخل السوق."
-      },
-      "check": "تحقق من التوفر على GetYourGuide ←",
-      "disclosure": "بعض هذه الروابط هي روابط بالعمولة. عند الحجز من خلالها قد نحصل على عمولة بسيطة دون أي تكلفة إضافية عليك."
+    "q2": {
+      "question": "Is it touristy?",
+      "answer": "Less than medina souks in Marrakech or Fes — many stalls serve local shoppers."
     },
-    "nearby": {
-      "badge": "واصل الاستكشاف",
-      "title": "أماكن أخرى لا تفوت في أكادير",
-      "back": "← العودة إلى دليل أكادير"
+    "q3": {
+      "question": "What should I buy?",
+      "answer": "Spices, olives, argan products, simple textiles and fresh produce if you have a kitchen."
     },
-    "blog": {
-      "badge": "من المدونة",
-      "title": "مقالات ذات صلة",
-      "all": "جميع المقالات ←",
-      "read": "اقرأ المقال ←",
-      "a1": {
-        "tag": "مطاعم",
-        "title": "دليل مطاعم أكادير: المأكولات البحرية والأطباق الكلاسيكية",
-        "desc": "أين تأكل جيدا في أكادير، من سمك المارينا والشاطئ إلى المطبخ المغربي."
-      },
-      "a2": {
-        "tag": "المواصلات",
-        "title": "التنقل في أكادير: سيارات الأجور والجولات",
-        "desc": "طرق عملية للتنقل بين المطار، الشاطئ، السوق والمارينا."
-      },
-      "a3": {
-        "tag": "تخطيط",
-        "title": "زيارتك الأولى لأكادير: ماذا تتوقع",
-        "desc": "أجواء المدينة وكيفية تخطيط برنامجك بكل أريحية."
-      }
+    "q4": {
+      "question": "Do I need a guide?",
+      "answer": "No — the layout is large but navigable. A guide can help if you want product explanations."
     },
-    "faq": {
-      "badge": "معلومات مفيدة",
-      "title": "الأسئلة الشائعة حول سوق الأحد",
-      "q1": {
-        "question": "هل أستعين بمرشد سياحي؟",
-        "answer": "ليس ضرورياً، لكنه مفيد للتذوق وسهولة التوجه في الزيارة الأولى."
-      },
-      "q2": {
-        "question": "هل المساومة مطلوبة؟",
-        "answer": "نعم في معظم محلات الصناعة التقليدية والهدايا؛ حافظ دائماً على أسلوب لطيف."
-      },
-      "q3": {
-        "question": "ما هي أوقات العمل؟",
-        "answer": "مفتوح طوال النهار عادةً، مع مراعاة أوقات صلاة الجمعة والعطل."
-      },
-      "q4": {
-        "question": "كم يستغرق وقت الزيارة؟",
-        "answer": "عادة ما تستغرق الزيارة بين ساعة إلى ساعتين."
-      },
-      "q5": {
-        "question": "هل السوق مناسب للعائلات؟",
-        "answer": "نعم، تجربة ممتعة وملونة تناسب العائلات والأطفال."
-      }
+    "q5": {
+      "question": "How long do I need?",
+      "answer": "One to two hours is enough for most visitors."
+    }
+  },
+  "moods": {
+    "badge": "التوقيت",
+    "title": "سوق الأحد على مدار اليوم",
+    "subtitle": "متى يكون السوق في أفضل حالاته.",
+    "1": {
+      "tag": "صباح",
+      "title": "ذروة المنتجات الطازجة",
+      "desc": "الأكثر ازدحاماً وطزاجة للخضر والفواكه والتوابل.",
+      "duration": "صباح"
+    },
+    "2": {
+      "tag": "ظهر",
+      "title": "إيقاع كامل",
+      "desc": "أزقة مزدحمة وتسوق محلي بكامل حيويته.",
+      "duration": "ظهر"
+    },
+    "3": {
+      "tag": "بعد الظهر",
+      "title": "أزقة أهدأ",
+      "desc": "بعض الأكشاك تهدأ؛ الحرارة تخف لاحقاً.",
+      "duration": "بعد الظهر"
     }
   }
 }

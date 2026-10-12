@@ -1,158 +1,111 @@
 {
-  "agadir_birds_page": {
-    "name": "وادي الطيور",
-    "hero_subtitle": "حديقة مدينة صغيرة مع مساحات مظللة وطيور.",
-    "seo": {
-      "title": "وادي الطيور | دليل حديقة أكادير والنصائح | MoroccoTripMap",
-      "description": "هل تزور وادي الطيور في أكادير؟ اكتشف مسارات الظل، وأقفاص الحيوانات، ونصائح العائلات، وأوقات عمل الحديقة.",
-      "og_title": "وادي الطيور، أكادير: الحديقة، العائلة والنصائح",
-      "og_description": "استكشف وادي الطيور في أكادير: حديقة مدينة مظللة، أقفاص الطيور، ممرات عائلية ونصائح عملية للزوار."
+  "seo": {
+    "title": "Souss-Massa Birds | Wetlands & Bird Reserve near Agadir | MoroccoTripMap",
+    "description": "Birdwatching near Agadir: Souss-Massa wetlands, estuary and national park coast for flamingos and migratory birds.",
+    "keywords": "Souss-Massa, Agadir birds, birdwatching Morocco, Souss estuary, flamingos Agadir"
+  },
+  "name": "طيور سوس ماسة",
+  "hero_subtitle": "أراضٍ رطبة ومحمية طيور سوس.",
+  "info": {
+    "best_time": "صباح؛ مواسم الهجرة أغنى",
+    "duration": "نصف يوم إلى يوم كامل",
+    "entry": "قواعد المنتزه؛ بعض نقاط الإطلالة مجانية",
+    "where": "مصب سوس وساحل المنتزه الوطني",
+    "area_val": "مصب سوس وساحل المنتزه الوطني",
+    "best_time_val": "صباح؛ مواسم الهجرة أغنى",
+    "duration_val": "نصف يوم إلى يوم كامل",
+    "entry_val": "قواعد المنتزه؛ بعض نقاط الإطلالة مجانية"
+  },
+  "overview": {
+    "title": "Birdlife beyond the beach resorts",
+    "p1": "The Souss River mouth and the Souss-Massa National Park coast host wetlands where flamingos and other waterbirds feed. It is a different side of the Agadir region — quieter, more natural, and worth a half-day if you care about wildlife.",
+    "p2": "Bring binoculars if you have them. Access points vary; a local driver or nature guide helps reach the better viewpoints without disturbing the birds."
+  },
+  "gallery": {
+    "title": "Wetland scenes",
+    "s1": {
+      "caption": "Wetlands of the Souss estuary"
     },
-    "info": {
-      "best_time_label": "أفضل وقت للزيارة",
-      "best_time_val": "استراحة الظل في منتصف النهار",
-      "duration_label": "الوقت المقترح",
-      "duration_val": "45 – 90 دقيقة",
-      "entry_label": "الدخول",
-      "entry_val": "رسوم رمزية محتملة",
-      "area_label": "المنطقة",
-      "area_val": "حديقة حضرية"
+    "s2": {
+      "caption": "Flamingos and waterbirds"
     },
-    "overview": {
-      "title": "الظل والطيور واستراحة قصيرة في المدينة",
-      "p1": "وادي الطيور (Vallée des Oiseaux) هو حديقة حضرية متواضعة تضم ممرات وأقفاصاً للطيور ومساحة خضراء مريحة عندما تكون أشعة الشمس قوية جداً على الشاطئ. لن تملأ يوماً كاملاً، لكنها محطة عائلية مفيدة أو ساعة هادئة بين الخطط الأكبر.",
-      "p2": "توقع زيارة حديقة محلية وليست معلماً كبيراً. تحقق من مواعيد الافتتاح وأي رسوم دخول بسيطة يوم زيارتك.",
-      "p3": "يمكنك الجمع بينها وبين الشاطئ أو السوق في نفس اليوم. حافظ على توقعات متناسبة مع حجم المكان."
+    "s3": {
+      "caption": "Coastal scrub near Souss-Massa"
     },
-    "gallery": {
-      "badge": "معرض الصور",
-      "title": "وادي الطيور بالصور",
-      "subtitle": "استعرض مسارات الحديقة، الأقفاص، والمناطق الخضراء المظللة.",
-      "s1": { "caption": "ممرات الحديقة تحت الأشجار" },
-      "s2": { "caption": "أقفاث ومساحات الطيور" },
-      "s3": { "caption": "مقاعد مظللة" },
-      "s4": { "caption": "زوار عائلات على الممرات" },
-      "s5": { "caption": "التباين الأخضر مع مدينة الشاطئ" }
+    "s4": {
+      "caption": "Quiet beach on the park coast"
     },
-    "moods": {
-      "badge": "أوقات الزيارة",
-      "title": "ماذا تشاهد في وادي الطيور",
-      "subtitle": "الظل، الأقفاص، والأجواء العائلية الهادئة — ثلاثة جوانب تستحق المشاهدة.",
-      "1": {
-        "tag": "ظل",
-        "title": "استراحة خضراء",
-        "desc": "ركن أكثر برودة في مدينة مشمسة.",
-        "duration": "نزهة • 10 – 15 دقيقة"
-      },
-      "2": {
-        "tag": "طيور",
-        "title": "الأقفاص",
-        "desc": "السبب وراء التسمية — بسيطة ومحلية.",
-        "duration": "استكشاف • 45 – 60 دقيقة"
-      },
-      "3": {
-        "tag": "عائلة",
-        "title": "محطة سهلة",
-        "desc": "ممرات مسطحة وتغيير في المشهد للأطفال.",
-        "duration": "استرخاء • 15 – 30 دقيقة"
-      }
+    "s5": {
+      "caption": "Morning light on the estuary"
+    }
+  },
+  "food": {
+    "title": "Eat on a birding trip",
+    "p1": "Facilities are limited near the best viewpoints — pack water and snacks, then eat properly back in Agadir or at a coastal café on the return.",
+    "li1": "Picnic supplies from Agadir.",
+    "li2": "Simple cafés on the main roads.",
+    "li3": "Full meal on return to the city.",
+    "li4": "Plenty of water.",
+    "li5": "Cash for small stops."
+  },
+  "tips": {
+    "title": "Practical tips",
+    "1": {
+      "title": "Getting there",
+      "desc": "Taxi or guided nature trip from Agadir. Agree the itinerary and waiting time."
     },
-    "food": {
-      "title": "تناول الطعام في الخارج وليس بالداخل",
-      "p1": "احرص على جلب الماء وخطط لتناول وجبة حقيقية على الكورنيش أو في وسط المدينة لاحقاً.",
-      "li1": "ماء ووجبة خفيفة قبل الدخول",
-      "li2": "مقهى الكورنيش بعد الزيارة",
-      "li3": "وجبات السوق الخفيفة إذا واصلت نحو السوق",
-      "li4": "غداء الفندق إذا كنت مقيماً على الشاطئ",
-      "li5": "عصير طازج في المدينة الجديدة",
-      "p2": "هذه محطة حديقة وليست وجهة طعام رئيسية."
+    "2": {
+      "title": "Respect wildlife",
+      "desc": "Keep distance from nesting and feeding birds; stay on paths where marked."
     },
-    "tips": {
-      "title": "نصائح عملية لزيارة وادي الطيور",
-      "1": {
-        "title": "الحرارة",
-        "desc": "مفيدة في منتصف النهار عندما تكون شمس الشاطئ في ذروتها."
-      },
-      "2": {
-        "title": "التوقعات",
-        "desc": "صغيرة ومحلية — وليست تجربة حديقة حيوانات وطنية ضخمة."
-      },
-      "3": {
-        "title": "الدمج",
-        "desc": "الأفضل كاستراحة بين المحطات الكبرى أو الشاطئ."
-      }
+    "3": {
+      "title": "Gear",
+      "desc": "Binoculars, hat, SPF and closed shoes for rough ground."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "Can I see flamingos near Agadir?",
+      "answer": "Yes — the Souss estuary and nearby wetlands are known for flamingos and other waterbirds, with numbers varying by season."
     },
-    "gyg": {
-      "badge": "الجولات والتجارب",
-      "title": "حجز رحلة في أكادير",
-      "subtitle": "خيارات ممتازة إذا كنت تفضل جولة مدينة مصحوبة بشرح تشمل الحدائق المركزية.",
-      "t1": {
-        "tag": "جولة المدينة",
-        "title": "معالم أكادير البارزة وجولة السوق",
-        "desc": "استكشف أبرز معالم أكادير بما في ذلك القصبة، الكورنيش، وشوارع السوق النابضة بالحياة."
-      },
-      "t2": {
-        "tag": "نشاط عائلي",
-        "title": "جولة عائلية في حدائق وساحل أكادير",
-        "desc": "جولة خاصة مريحة مصممة للعائلات التي تزور المعالم السياحية والحدائق المحلية."
-      },
-      "t3": {
-        "tag": "نصف يوم",
-        "title": "جولة معالم وثقافة أكادير",
-        "desc": "نظرة شاملة لنصف يوم على المدينة تجمع بين الثقافة، النقاط المرتفعة، والنزهات الساحلية."
-      },
-      "check": "تحقق من التوفر على GetYourGuide ←",
-      "disclosure": "بعض هذه الروابط هي روابط بالعمولة. عند الحجز من خلالها قد نحصل على عمولة بسيطة دون أي تكلفة إضافية عليك."
+    "q2": {
+      "question": "Do I need a guide?",
+      "answer": "Helpful for finding the best access points and identifying species, but not mandatory for a simple viewpoint visit."
     },
-    "nearby": {
-      "badge": "واصل الاستكشاف",
-      "title": "أماكن أخرى لا تفوت في أكادير",
-      "back": "← العودة إلى دليل أكادير"
+    "q3": {
+      "question": "How far from the city?",
+      "answer": "The estuary area is roughly 30–60 minutes from central Agadir depending on the exact site."
     },
-    "blog": {
-      "badge": "من المدونة",
-      "title": "مقالات ذات صلة",
-      "all": "جميع المقالات ←",
-      "read": "اقرأ المقال ←",
-      "a1": {
-        "tag": "مطاعم",
-        "title": "دليل مطاعم أكادير: المأكولات البحرية والأطباق الكلاسيكية",
-        "desc": "أين تأكل جيدا في أكادير، من سمك المارينا والشاطئ إلى المطبخ المغربي."
-      },
-      "a2": {
-        "tag": "المواصلات",
-        "title": "التنقل في أكادير: سيارات الأجور والجولات",
-        "desc": "طرق عملية للتنقل بين المطار، الشاطئ، السوق والمارينا."
-      },
-      "a3": {
-        "tag": "تخطيط",
-        "title": "زيارتك الأولى لأكادير: ماذا تتوقع",
-        "desc": "أجواء المدينة وكيفية تخطيط برنامجك بكل أريحية."
-      }
+    "q4": {
+      "question": "Best season for birds?",
+      "answer": "Migration periods (broadly autumn and spring) are richest; winter also brings visitors."
     },
-    "faq": {
-      "badge": "معلومات مفيدة",
-      "title": "الأسئلة الشائعة حول وادي الطيور",
-      "q1": {
-        "question": "كم من الوقت أحتاج؟",
-        "answer": "حوالي 45 إلى 90 دقيقة لمعظم الزيارات."
-      },
-      "q2": {
-        "question": "هل توجد رسوم دخول؟",
-        "answer": "أحياناً رسوم رمزية بسيطة — احمل معك بعض الفكة."
-      },
-      "q3": {
-        "question": "هل تستحق الزيارة بدون أطفال؟",
-        "answer": "فقط إذا كنت تبحث عن الظل وممشى قصير؛ امنح الأولوية للقصبة والشاطئ أولاً."
-      },
-      "q4": {
-        "question": "هل أحتاج إلى مرشد في وادي الطيور؟",
-        "answer": "اختياري للزيارة العادية؛ مفيد للسياق وإدارة الوقت."
-      },
-      "q5": {
-        "question": "هل وادي الطيور مناسب للعائلات؟",
-        "answer": "نعم في معظم الأحوال مع الرقابة العادية على الأطفال."
-      }
+    "q5": {
+      "question": "Is it inside the national park?",
+      "answer": "Parts of the experience overlap with Souss-Massa National Park — follow park rules where posted."
+    }
+  },
+  "moods": {
+    "badge": "التوقيت",
+    "title": "سوس ماسة على مدار اليوم",
+    "subtitle": "الضوء ونشاط الطيور.",
+    "1": {
+      "tag": "صباح",
+      "title": "ذروة النشاط",
+      "desc": "أفضل ضوء وتغذية على الأراضي الرطبة.",
+      "duration": "صباح"
+    },
+    "2": {
+      "tag": "ظهر",
+      "title": "حرارة أهدأ",
+      "desc": "قد تستريح الطيور؛ مناظر أوسع جيدة.",
+      "duration": "ظهر"
+    },
+    "3": {
+      "tag": "آخر بعد الظهر",
+      "title": "ضوء ناعم",
+      "desc": "ضوء العودة على المصب قبل الرجوع.",
+      "duration": "آخر بعد الظهر"
     }
   }
 }

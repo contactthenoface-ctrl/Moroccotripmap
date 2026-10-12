@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tangier Medina | Lanes, Soccos & Kasbah Approach | MoroccoTripMap</title>
+<meta name="description" content="Explore Tangier’s medina: Grand Socco entrance, Petit Socco cafés, markets and the climb toward the kasbah."/>
+<meta name="keywords" content="Tangier medina, Petit Socco, Grand Socco, Tangier old town"/>
+<meta name="robots" content="noindex, follow"/>
+<link rel="canonical" href="https://contactthenoface-ctrl.github.io/Moroccotripmap/places/tanger-places/medina.html"/>
+<link rel="alternate" hreflang="en" href="https://contactthenoface-ctrl.github.io/Moroccotripmap/places/tanger-places/medina.html"/>
+<link rel="alternate" hreflang="fr" href="https://contactthenoface-ctrl.github.io/Moroccotripmap/places/tanger-places/medina.html"/>
+<link rel="alternate" hreflang="es" href="https://contactthenoface-ctrl.github.io/Moroccotripmap/places/tanger-places/medina.html"/>
+<link rel="alternate" hreflang="ar" href="https://contactthenoface-ctrl.github.io/Moroccotripmap/places/tanger-places/medina.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://contactthenoface-ctrl.github.io/Moroccotripmap/places/tanger-places/medina.html"/>
+<meta property="og:title" content="Tangier Medina | Lanes, Soccos & Kasbah Approach | MoroccoTripMap"/>
+<meta property="og:description" content="Explore Tangier’s medina: Grand Socco entrance, Petit Socco cafés, markets and the climb toward the kasbah."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Tangier Medina | Lanes, Soccos & Kasbah Approach | MoroccoTripMap"/>
+<meta name="twitter:description" content="Explore Tangier’s medina: Grand Socco entrance, Petit Socco cafés, markets and the climb toward the kasbah."/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TouristAttraction","name":"Tangier Medina","description":"Explore Tangier’s medina: Grand Socco entrance, Petit Socco cafés, markets and the climb toward the kasbah.","geo":{"@type":"GeoCoordinates","latitude":"35.7847","longitude":"-5.8129"},"url":"https://contactthenoface-ctrl.github.io/Moroccotripmap/places/tanger-places/medina.html"}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: { vert:'#185336', sable:'#C29B62', sombre:'#1A1A1A', creme:'#F9F6F0' } } } }
+</script>
+<style>
+
+        body { font-family: 'Outfit', sans-serif; }
+
+        /* Styles intégrés pour l'itinéraire et les filtres */
+        .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
+        .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
+        .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
+        .tab-btn.active { background: #185336; color: #fff; border-color: #185336; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
+        .day-card h3:first-of-type { margin-top: 0; }
+        .steps-list { list-style: none; padding: 0; margin-top: 15px; }
+        .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
+
+        /* Styles pour les Filtres d'hébergement */
+        .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
+        .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
+        .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
+        .filter-group select:focus { border-color: #185336; }
+        .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
+        .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
+        .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
+        .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
+        .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
+        .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
+        .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
+        .acc-contact a:hover { text-decoration: underline; }
+        .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
+    
+</style>
+</head>
+<body class="bg-creme text-sombre">
+
+<header class="bg-creme border-b border-sable/20 sticky top-0 z-50">
+<div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+<a href="../../index.html" class="flex items-center gap-2 font-bold text-vert">MoroccoTripMap</a>
+<div class="flex items-center gap-2">
+<div class="relative">
+<button type="button" class="px-3 py-1.5 rounded-full border border-sable/30 text-sm bg-white" onclick="document.getElementById('lang-menu').classList.toggle('hidden')">EN</button>
+<div id="lang-menu" class="hidden absolute right-0 mt-2 bg-white border border-sable/20 rounded-xl shadow-lg py-2 min-w-[120px] z-50">
+<button class="block w-full text-left px-4 py-2 hover:bg-creme text-sm" onclick="switchLanguage('en')">English</button>
+<button class="block w-full text-left px-4 py-2 hover:bg-creme text-sm" onclick="switchLanguage('fr')">Français</button>
+<button class="block w-full text-left px-4 py-2 hover:bg-creme text-sm" onclick="switchLanguage('es')">Español</button>
+<button class="block w-full text-left px-4 py-2 hover:bg-creme text-sm" onclick="switchLanguage('ar')">العربية</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<main>
+<section class="relative min-h-[42vh] flex items-end">
+<img src="../../images/places/medina/medina.webp" alt="Tangier Medina" class="absolute inset-0 w-full h-full object-cover"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/80 via-sombre/30 to-transparent"></div>
+<div class="relative max-w-6xl mx-auto px-4 pb-8 w-full">
+<nav class="text-xs text-white/80 mb-3">
+<a href="../../index.html" data-i18n="nav.home">Home</a> /
+<a href="../../destinations.html" data-i18n="nav.destinations">Destinations</a> /
+<a href="../../tanger.html" data-i18n="destinations.tangier.name">Tangier</a> /
+<span data-i18n="tanger_medina_page.name">Tangier Medina</span>
+</nav>
+<h1 class="text-3xl md:text-4xl font-bold text-white" data-i18n="tanger_medina_page.name">Tangier Medina</h1>
+<p class="text-white/90 mt-2" data-i18n="tanger_medina_page.hero_subtitle">Lanes from the Grand Socco up toward the kasbah.</p>
+</div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 -mt-6 relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+<div class="bg-white rounded-xl p-4 shadow border border-sable/20"><div class="text-[10px] uppercase tracking-wider text-sable font-bold" data-i18n="tanger_medina_page.info.best_time_label">Best time</div><div class="font-bold text-vert mt-1 text-sm" data-i18n="tanger_medina_page.info.best_time_val">Morning and late afternoon</div></div>
+<div class="bg-white rounded-xl p-4 shadow border border-sable/20"><div class="text-[10px] uppercase tracking-wider text-sable font-bold" data-i18n="tanger_medina_page.info.duration_label">Suggested duration</div><div class="font-bold text-vert mt-1 text-sm" data-i18n="tanger_medina_page.info.duration_val">2 – 3 hours</div></div>
+<div class="bg-white rounded-xl p-4 shadow border border-sable/20"><div class="text-[10px] uppercase tracking-wider text-sable font-bold" data-i18n="tanger_medina_page.info.entry_label">Entry</div><div class="font-bold text-vert mt-1 text-sm" data-i18n="tanger_medina_page.info.entry_val">Free to walk</div></div>
+<div class="bg-white rounded-xl p-4 shadow border border-sable/20"><div class="text-[10px] uppercase tracking-wider text-sable font-bold" data-i18n="tanger_medina_page.info.area_label">Location</div><div class="font-bold text-vert mt-1 text-sm" data-i18n="tanger_medina_page.info.area_val">Old town, above the port</div></div>
+</div>
+</section>
+
+<section class="max-w-3xl mx-auto px-4 py-10">
+<h2 class="text-2xl font-bold text-vert" data-i18n="tanger_medina_page.overview.title">The old town between port and kasbah</h2>
+<p class="mt-4 text-sombre/80 leading-relaxed" data-i18n="tanger_medina_page.overview.p1">Tangier’s medina rises from the port edge toward the kasbah on the hill. Unlike the denser imperial medinas, it feels open in places — Petit Socco as a café hinge, market streets, and stepped lanes that still reward slow wandering.</p>
+<p class="mt-3 text-sombre/80 leading-relaxed" data-i18n="tanger_medina_page.overview.p2">Start from the Grand Socco gate, drift to Petit Socco, then climb when you want views. Keep valuables close in crowded stretches; evenings are atmospheric but some lanes empty out.</p>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-6">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tanger_medina_page.gallery.badge">Photo gallery</span>
+<h2 class="text-2xl font-bold text-vert" data-i18n="tanger_medina_page.gallery.title">Medina scenes</h2>
+<p class="text-sm text-sombre/70 mb-4" data-i18n="tanger_medina_page.gallery.subtitle">Squares, lanes and the climb to the kasbah.</p>
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-0 rounded-2xl overflow-hidden">
+<figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="Slide 1">
+<img alt="Lane in Tangier medina" src="images/places/medina/medina-01.webp" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy"/>
+<figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="tanger_medina_page.gallery.s1.caption">Lane in Tangier medina</figcaption>
+</figure>
+
+<figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="Slide 2">
+<img alt="Petit Socco café square" src="images/places/medina/medina-02.webp" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy"/>
+<figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="tanger_medina_page.gallery.s2.caption">Petit Socco café square</figcaption>
+</figure>
+
+<figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="Slide 3">
+<img alt="Market street in the old town" src="images/places/medina/medina-03.webp" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy"/>
+<figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="tanger_medina_page.gallery.s3.caption">Market street in the old town</figcaption>
+</figure>
+
+<figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="Slide 4">
+<img alt="Steps toward the kasbah" src="images/places/medina/medina-04.webp" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy"/>
+<figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="tanger_medina_page.gallery.s4.caption">Steps toward the kasbah</figcaption>
+</figure>
+
+<figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="Slide 5">
+<img alt="Medina walls and rooftops" src="images/places/medina/medina-05.webp" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy"/>
+<figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="tanger_medina_page.gallery.s5.caption">Medina walls and rooftops</figcaption>
+</figure>
+</div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-10">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tanger_medina_page.moods.badge">Timing</span>
+<h2 class="text-2xl font-bold text-vert" data-i18n="tanger_medina_page.moods.title">Medina through the day</h2>
+<p class="text-sm text-sombre/70 mb-6" data-i18n="tanger_medina_page.moods.subtitle">When the lanes feel best.</p>
+<div class="grid md:grid-cols-3 gap-4">
+<div class="bg-white border border-sable/20 rounded-2xl p-5">
+<span class="text-[10px] font-bold uppercase text-sable" data-i18n="tanger_medina_page.moods.1.tag">Morning</span>
+<h3 class="font-bold text-vert mt-1" data-i18n="tanger_medina_page.moods.1.title">Fresh market energy</h3>
+<p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.moods.1.desc">Shops opening and cooler air for climbing lanes.</p>
+<span class="text-xs text-sombre/50 mt-2 inline-block" data-i18n="tanger_medina_page.moods.1.duration">Morning</span>
+</div>
+
+<div class="bg-white border border-sable/20 rounded-2xl p-5">
+<span class="text-[10px] font-bold uppercase text-sable" data-i18n="tanger_medina_page.moods.2.tag">Midday</span>
+<h3 class="font-bold text-vert mt-1" data-i18n="tanger_medina_page.moods.2.title">Busy squares</h3>
+<p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.moods.2.desc">Petit Socco and main streets at full pace.</p>
+<span class="text-xs text-sombre/50 mt-2 inline-block" data-i18n="tanger_medina_page.moods.2.duration">Midday</span>
+</div>
+
+<div class="bg-white border border-sable/20 rounded-2xl p-5">
+<span class="text-[10px] font-bold uppercase text-sable" data-i18n="tanger_medina_page.moods.3.tag">Late afternoon</span>
+<h3 class="font-bold text-vert mt-1" data-i18n="tanger_medina_page.moods.3.title">Softer light</h3>
+<p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.moods.3.desc">Golden walls and a slower climb to the kasbah.</p>
+<span class="text-xs text-sombre/50 mt-2 inline-block" data-i18n="tanger_medina_page.moods.3.duration">Late afternoon</span>
+</div>
+</div>
+</section>
+
+<section class="max-w-3xl mx-auto px-4 py-8">
+<h2 class="text-2xl font-bold text-vert" data-i18n="tanger_medina_page.food.title">Eat in the medina</h2>
+<p class="mt-3 text-sombre/80" data-i18n="tanger_medina_page.food.p1">Cafés on Petit Socco and simple kitchens in the lanes — good for a pause between climbs.</p>
+<ul class="list-disc pl-5 mt-3 space-y-1 text-sombre/80"><li data-i18n="tanger_medina_page.food.li1">Coffee on Petit Socco.</li><li data-i18n="tanger_medina_page.food.li2">Grilled meats and tagines nearby.</li><li data-i18n="tanger_medina_page.food.li3">Mint tea with a view higher up.</li><li data-i18n="tanger_medina_page.food.li4">Small bills for stalls.</li><li data-i18n="tanger_medina_page.food.li5">Busier spots fill at peak hours.</li></ul>
+<p class="mt-3 text-sombre/80" data-i18n="tanger_medina_page.food.p2">For a longer seafood meal, the port area is a short walk downhill.</p>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-8">
+<h2 class="text-2xl font-bold text-vert mb-4" data-i18n="tanger_medina_page.tips.title">Practical tips</h2>
+<div class="grid md:grid-cols-3 gap-4"><div class="bg-white border border-sable/20 rounded-2xl p-5"><h3 class="font-bold text-vert" data-i18n="tanger_medina_page.tips.1.title">Getting there</h3><p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.tips.1.desc">Walk from the Grand Socco or the port edge; petit taxis drop at the main gates.</p></div><div class="bg-white border border-sable/20 rounded-2xl p-5"><h3 class="font-bold text-vert" data-i18n="tanger_medina_page.tips.2.title">Orientation</h3><p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.tips.2.desc">Uphill generally leads toward the kasbah; downhill toward the port and new town.</p></div><div class="bg-white border border-sable/20 rounded-2xl p-5"><h3 class="font-bold text-vert" data-i18n="tanger_medina_page.tips.3.title">Safety</h3><p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.tips.3.desc">Normal city awareness in crowds; agree taxi fares before longer rides.</p></div></div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-8">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tanger_medina_page.gyg.badge">Tours & experiences</span>
+<h2 class="text-2xl font-bold text-vert" data-i18n="tanger_medina_page.gyg.title">Tours linked to this place</h2>
+<p class="text-sm text-sombre/70 mb-4" data-i18n="tanger_medina_page.gyg.subtitle">Options if you prefer a local operator.</p>
+<div class="grid md:grid-cols-3 gap-4">
+<div class="border border-sable/20 rounded-2xl p-4 bg-white">
+<span class="text-[10px] font-bold uppercase text-sable" data-i18n="tanger_medina_page.gyg.t1.tag">City</span>
+<h3 class="font-bold text-vert mt-1" data-i18n="tanger_medina_page.gyg.t1.title">Tangier medina & kasbah</h3>
+<p class="text-sm text-sombre/70 mt-1" data-i18n="tanger_medina_page.gyg.t1.desc">Old town lanes and hilltop views.</p>
+<a href="#" class="text-sm font-semibold text-vert mt-2 inline-block" data-i18n="tanger_medina_page.gyg.check">Check availability on GetYourGuide →</a>
+</div>
+
+<div class="border border-sable/20 rounded-2xl p-4 bg-white">
+<span class="text-[10px] font-bold uppercase text-sable" data-i18n="tanger_medina_page.gyg.t2.tag">Coast</span>
+<h3 class="font-bold text-vert mt-1" data-i18n="tanger_medina_page.gyg.t2.title">Cap Spartel & Hercules Caves</h3>
+<p class="text-sm text-sombre/70 mt-1" data-i18n="tanger_medina_page.gyg.t2.desc">Western headland and sea caves half-day.</p>
+<a href="#" class="text-sm font-semibold text-vert mt-2 inline-block" data-i18n="tanger_medina_page.gyg.check">Check availability on GetYourGuide →</a>
+</div>
+
+<div class="border border-sable/20 rounded-2xl p-4 bg-white">
+<span class="text-[10px] font-bold uppercase text-sable" data-i18n="tanger_medina_page.gyg.t3.tag">Day trip</span>
+<h3 class="font-bold text-vert mt-1" data-i18n="tanger_medina_page.gyg.t3.title">Chefchaouen blue medina</h3>
+<p class="text-sm text-sombre/70 mt-1" data-i18n="tanger_medina_page.gyg.t3.desc">Full-day to the Rif mountain town.</p>
+<a href="#" class="text-sm font-semibold text-vert mt-2 inline-block" data-i18n="tanger_medina_page.gyg.check">Check availability on GetYourGuide →</a>
+</div>
+</div>
+<p class="text-xs text-sombre/50 mt-4" data-i18n="tanger_medina_page.gyg.disclosure">Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.</p>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-10">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tanger_medina_page.nearby.badge">Keep exploring</span>
+<h2 class="text-2xl font-bold text-vert" data-i18n="tanger_medina_page.nearby.title">More places in Tangier</h2>
+<a href="../../tanger.html" class="text-sm text-sable font-semibold inline-block mb-4" data-i18n="tanger_medina_page.nearby.back">← Back to Tangier guide</a>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<a href="kasbah.html" class="block border border-sable/20 rounded-2xl p-4 bg-white hover:shadow-md transition">
+<span class="text-[10px] font-bold uppercase text-sable">Viewpoint</span>
+<h3 class="font-bold text-vert mt-1">Kasbah Museum</h3>
+<p class="text-sm text-sombre/70 mt-1">Hilltop strait views.</p>
+<span class="text-sm font-semibold text-sable mt-2 inline-block" data-i18n="tanger_medina_page.nearby.explore">Explore place →</span>
+</a>
+
+<a href="socco.html" class="block border border-sable/20 rounded-2xl p-4 bg-white hover:shadow-md transition">
+<span class="text-[10px] font-bold uppercase text-sable">Square</span>
+<h3 class="font-bold text-vert mt-1">Grand Socco</h3>
+<p class="text-sm text-sombre/70 mt-1">New town–medina hinge.</p>
+<span class="text-sm font-semibold text-sable mt-2 inline-block" data-i18n="tanger_medina_page.nearby.explore">Explore place →</span>
+</a>
+
+<a href="hafa.html" class="block border border-sable/20 rounded-2xl p-4 bg-white hover:shadow-md transition">
+<span class="text-[10px] font-bold uppercase text-sable">Café</span>
+<h3 class="font-bold text-vert mt-1">Café Hafa</h3>
+<p class="text-sm text-sombre/70 mt-1">Cliff tea terraces.</p>
+<span class="text-sm font-semibold text-sable mt-2 inline-block" data-i18n="tanger_medina_page.nearby.explore">Explore place →</span>
+</a>
+
+<a href="beach.html" class="block border border-sable/20 rounded-2xl p-4 bg-white hover:shadow-md transition">
+<span class="text-[10px] font-bold uppercase text-sable">Beach</span>
+<h3 class="font-bold text-vert mt-1">Tangier Beach</h3>
+<p class="text-sm text-sombre/70 mt-1">City sand and corniche.</p>
+<span class="text-sm font-semibold text-sable mt-2 inline-block" data-i18n="tanger_medina_page.nearby.explore">Explore place →</span>
+</a>
+
+<a href="spartel.html" class="block border border-sable/20 rounded-2xl p-4 bg-white hover:shadow-md transition">
+<span class="text-[10px] font-bold uppercase text-sable">Cape</span>
+<h3 class="font-bold text-vert mt-1">Cap Spartel</h3>
+<p class="text-sm text-sombre/70 mt-1">Lighthouse headland.</p>
+<span class="text-sm font-semibold text-sable mt-2 inline-block" data-i18n="tanger_medina_page.nearby.explore">Explore place →</span>
+</a>
+
+<a href="caves.html" class="block border border-sable/20 rounded-2xl p-4 bg-white hover:shadow-md transition">
+<span class="text-[10px] font-bold uppercase text-sable">Caves</span>
+<h3 class="font-bold text-vert mt-1">Hercules Caves</h3>
+<p class="text-sm text-sombre/70 mt-1">Sea caves west of town.</p>
+<span class="text-sm font-semibold text-sable mt-2 inline-block" data-i18n="tanger_medina_page.nearby.explore">Explore place →</span>
+</a>
+
+<a href="malabata.html" class="block border border-sable/20 rounded-2xl p-4 bg-white hover:shadow-md transition">
+<span class="text-[10px] font-bold uppercase text-sable">Cape</span>
+<h3 class="font-bold text-vert mt-1">Cap Malabata</h3>
+<p class="text-sm text-sombre/70 mt-1">Eastern bay views.</p>
+<span class="text-sm font-semibold text-sable mt-2 inline-block" data-i18n="tanger_medina_page.nearby.explore">Explore place →</span>
+</a>
+
+<a href="legation.html" class="block border border-sable/20 rounded-2xl p-4 bg-white hover:shadow-md transition">
+<span class="text-[10px] font-bold uppercase text-sable">Museum</span>
+<h3 class="font-bold text-vert mt-1">American Legation</h3>
+<p class="text-sm text-sombre/70 mt-1">Medina museum.</p>
+<span class="text-sm font-semibold text-sable mt-2 inline-block" data-i18n="tanger_medina_page.nearby.explore">Explore place →</span>
+</a>
+</div>
+</section>
+
+<section class="max-w-3xl mx-auto px-4 py-10">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tanger_medina_page.faq.badge">Good to know</span>
+<h2 class="text-2xl font-bold text-vert mb-4" data-i18n="tanger_medina_page.faq.title">FAQ about Tangier Medina</h2>
+<details class="bg-white border border-sable/20 rounded-xl p-4 mb-3"><summary class="font-semibold text-vert cursor-pointer" data-i18n="tanger_medina_page.faq.q1.question">Is the medina safe to walk?</summary><p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.faq.q1.answer">Yes for standard daytime and early evening walking. Stay aware in dense crowds and use known gates at night.</p></details><details class="bg-white border border-sable/20 rounded-xl p-4 mb-3"><summary class="font-semibold text-vert cursor-pointer" data-i18n="tanger_medina_page.faq.q2.question">How long do I need?</summary><p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.faq.q2.answer">Two to three hours for a first loop including Petit Socco and a kasbah approach.</p></details><details class="bg-white border border-sable/20 rounded-xl p-4 mb-3"><summary class="font-semibold text-vert cursor-pointer" data-i18n="tanger_medina_page.faq.q3.question">Do I need a guide?</summary><p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.faq.q3.answer">Not required; maps and main axes are manageable. A guide helps with history and shortcuts.</p></details><details class="bg-white border border-sable/20 rounded-xl p-4 mb-3"><summary class="font-semibold text-vert cursor-pointer" data-i18n="tanger_medina_page.faq.q4.question">Where does the medina start?</summary><p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.faq.q4.answer">The Grand Socco is the main hinge from the new town; smaller gates open from the port side.</p></details><details class="bg-white border border-sable/20 rounded-xl p-4 mb-3"><summary class="font-semibold text-vert cursor-pointer" data-i18n="tanger_medina_page.faq.q5.question">Best photo light?</summary><p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_medina_page.faq.q5.answer">Late afternoon on the upper lanes and kasbah edge.</p></details>
+</section>
+</main>
+
+<footer class="bg-vert text-white mt-16">
+<div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
+<div>
+<div class="font-bold text-lg mb-2">MoroccoTripMap</div>
+<p class="text-white/80" data-i18n="footer.tagline">Discover. Plan. Experience Morocco.</p>
+</div>
+<div>
+<div class="font-semibold mb-2" data-i18n="footer.destinations">Destinations</div>
+<a href="../../tanger.html" class="block text-white/80 hover:text-white" data-i18n="footer.tanger_guide">Tangier travel guide</a>
+<a href="../../destinations.html" class="block text-white/80 hover:text-white" data-i18n="footer.all_destinations">All destinations</a>
+</div>
+<div>
+<div class="font-semibold mb-2" data-i18n="footer.contact">Contact</div>
+<p class="text-white/80">@moroccotripmap</p>
+</div>
+</div>
+<div class="border-t border-white/10 text-center text-xs text-white/60 py-4">© MoroccoTripMap</div>
+</footer>
+
+
+<script src="../../js/i18n.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+function openDay(evt, dayId) {
+  var tabContents = document.getElementsByClassName("tab-content");
+  for (var i = 0; i < tabContents.length; i++) tabContents[i].classList.remove("active");
+  var tabBtns = document.getElementsByClassName("tab-btn");
+  for (var i = 0; i < tabBtns.length; i++) tabBtns[i].classList.remove("active");
+  document.getElementById(dayId).classList.add("active");
+  evt.currentTarget.classList.add("active");
+}
+function filterAccommodations() {
+  var selectedType = document.getElementById("filter-type").value;
+  var selectedLocation = document.getElementById("filter-location").value;
+  var cards = document.querySelectorAll(".acc-card");
+  var visible = 0;
+  cards.forEach(function(card) {
+    var cardType = card.getAttribute("data-type") || "";
+    var cardLocation = card.getAttribute("data-location") || "";
+    var matchType = (selectedType === "all" || cardType === selectedType);
+    var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
+    if (matchType && matchLocation) { card.style.display = ""; visible++; }
+    else { card.style.display = "none"; }
+  });
+  var counter = document.getElementById("acc-count");
+  if (counter) counter.textContent = visible;
+}
+function toggleMobileCategories() {
+  var m = document.getElementById("mobile-categories");
+  if (m) m.classList.toggle("hidden");
+}
+function switchLanguage(lang) {
+  try {
+    localStorage.setItem("preferred_language", lang);
+    if (typeof changeLanguage === "function") changeLanguage(lang);
+    else location.reload();
+  } catch (e) { location.reload(); }
+}
+document.addEventListener("DOMContentLoaded", function() {
+  var ft = document.getElementById("filter-type");
+  var fl = document.getElementById("filter-location");
+  if (ft) ft.addEventListener("change", filterAccommodations);
+  if (fl) fl.addEventListener("change", filterAccommodations);
+});
+</script>
+
+</body>
+</html>

@@ -404,7 +404,7 @@ body { font-family: 'Outfit', sans-serif; }
 <option value="beach" data-i18n="tanger_page.directory.area_beach">Beach / Corniche</option>
 <option value="newtown" data-i18n="tanger_page.directory.area_newtown">New town</option>
 </select></label>
-<span class="text-sm text-sombre/60"><span id="acc-count">8</span> <span data-i18n="tanger_page.directory.found">stays</span></span>
+<span class="text-sm text-sombre/60"><span id="accommodation-counter">8</span> <span data-i18n="tanger_page.directory.found">stays</span></span>
 </div>
 <div id="acc-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
 <div class="acc-card border border-sable/15 rounded-2xl overflow-hidden bg-white shadow-sm" data-type="riad" data-location="kasbah">
@@ -513,48 +513,63 @@ body { font-family: 'Outfit', sans-serif; }
 </section>
 
 <!-- Tips -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
-<h2 class="text-2xl sm:text-3xl font-bold text-vert mb-6" data-i18n="tanger_page.tips.title">Practical tips for Tangier</h2>
-<div class="grid md:grid-cols-3 gap-4">
-<div class="bg-white rounded-2xl border border-sable/15 p-5">
-<h3 class="font-bold text-vert" data-i18n="tanger_page.tips.1.title">Getting around</h3>
-<p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_page.tips.1.desc">Petit taxis for short hops; agree meter or price. Walking works well in the medina and along the corniche.</p>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+<h2 class="text-2xl font-bold text-vert mb-6" data-i18n="tanger_page.tips.title">Practical tips for Tangier</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+<div class="bg-white p-5 rounded-xl border border-sable/10">
+<h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+<svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8m-9 5h10M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2z"/></svg>
+<span data-i18n="tanger_page.tips.1.title">Getting around</span>
+</h3>
+<p class="text-sombre/70 text-xs leading-relaxed" data-i18n="tanger_page.tips.1.desc">Petit taxis for short hops; agree meter or price. Walking works well in the medina and along the corniche.</p>
 </div>
-<div class="bg-white rounded-2xl border border-sable/15 p-5">
-<h3 class="font-bold text-vert" data-i18n="tanger_page.tips.2.title">Airport &amp; train</h3>
-<p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_page.tips.2.desc">TNG Ibn Battuta airport serves the city. Al Boraq high-speed trains link Tangier with Rabat and Casablanca.</p>
+<div class="bg-white p-5 rounded-xl border border-sable/10">
+<h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+<svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+<span data-i18n="tanger_page.tips.2.title">Airport &amp; train</span>
+</h3>
+<p class="text-sombre/70 text-xs leading-relaxed" data-i18n="tanger_page.tips.2.desc">TNG Ibn Battuta airport serves the city. Al Boraq high-speed trains link Tangier with Rabat and Casablanca.</p>
 </div>
-<div class="bg-white rounded-2xl border border-sable/15 p-5">
-<h3 class="font-bold text-vert" data-i18n="tanger_page.tips.3.title">Day trips</h3>
-<p class="text-sm text-sombre/70 mt-2" data-i18n="tanger_page.tips.3.desc">Chefchaouen, Asilah and Tetouan are the usual road outings; Cap Spartel is a half-day west of town.</p>
+<div class="bg-white p-5 rounded-xl border border-sable/10">
+<h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+<svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+<span data-i18n="tanger_page.tips.3.title">Day trips</span>
+</h3>
+<p class="text-sombre/70 text-xs leading-relaxed" data-i18n="tanger_page.tips.3.desc">Chefchaouen, Asilah and Tetouan are the usual road outings; Cap Spartel is a half-day west of town.</p>
 </div>
 </div>
 </section>
 
 <!-- Day trips -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+<div class="mb-8">
 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tanger_page.daytrips.badge">Beyond the city</span>
-<h2 class="text-3xl font-bold text-vert mb-6" data-i18n="tanger_page.daytrips.title">Day trips from Tangier</h2>
+<h2 class="text-3xl font-bold text-vert" data-i18n="tanger_page.daytrips.title">Day trips from Tangier</h2>
+<p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="tanger_page.daytrips.subtitle">Blue medinas, Atlantic ramparts and Andalusian heritage within easy reach.</p>
+</div>
 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-<div class="bg-white rounded-2xl border border-sable/15 overflow-hidden shadow-sm">
-<img src="images/places/chefchaouen/chefchaouen-01.webp" alt="Chefchaouen blue streets" class="w-full h-40 object-cover" loading="lazy"/>
-<div class="p-4">
-<h3 class="font-bold text-vert" data-i18n="tanger_page.daytrips.chefchaouen.name">Chefchaouen</h3>
-<p class="text-sm text-sombre/70 mt-1" data-i18n="tanger_page.daytrips.chefchaouen.desc">Blue medina in the Rif — about 2–2.5 hours by road. Full day recommended.</p>
+<div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
+<img alt="Chefchaouen blue streets" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/chefchaouen/chefchaouen-01.webp" loading="lazy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<h3 class="text-base font-bold" data-i18n="tanger_page.daytrips.chefchaouen.name">Chefchaouen</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="tanger_page.daytrips.chefchaouen.desc">Blue medina in the Rif — about 2–2.5 hours by road. Full day recommended.</p>
 </div>
 </div>
-<div class="bg-white rounded-2xl border border-sable/15 overflow-hidden shadow-sm">
-<img src="images/places/asilah/asilah-01.webp" alt="Asilah ramparts" class="w-full h-40 object-cover" loading="lazy"/>
-<div class="p-4">
-<h3 class="font-bold text-vert" data-i18n="tanger_page.daytrips.asilah.name">Asilah</h3>
-<p class="text-sm text-sombre/70 mt-1" data-i18n="tanger_page.daytrips.asilah.desc">Atlantic medina and ramparts south of Tangier — roughly 1 hour. Ideal half-day or easy day.</p>
+<div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
+<img alt="Asilah ramparts" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/asilah/asilah-01.webp" loading="lazy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<h3 class="text-base font-bold" data-i18n="tanger_page.daytrips.asilah.name">Asilah</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="tanger_page.daytrips.asilah.desc">Atlantic medina and ramparts south of Tangier — roughly 1 hour. Ideal half-day or easy day.</p>
 </div>
 </div>
-<div class="bg-white rounded-2xl border border-sable/15 overflow-hidden shadow-sm">
-<img src="images/places/tetouan/tetouan-01.webp" alt="Tetouan medina" class="w-full h-40 object-cover" loading="lazy"/>
-<div class="p-4">
-<h3 class="font-bold text-vert" data-i18n="tanger_page.daytrips.tetouan.name">Tetouan</h3>
-<p class="text-sm text-sombre/70 mt-1" data-i18n="tanger_page.daytrips.tetouan.desc">UNESCO medina and Andalusian heritage — about 1 hour toward the east.</p>
+<div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
+<img alt="Tetouan medina" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/tetouan/tetouan-01.webp" loading="lazy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<h3 class="text-base font-bold" data-i18n="tanger_page.daytrips.tetouan.name">Tetouan</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="tanger_page.daytrips.tetouan.desc">UNESCO medina and Andalusian heritage — about 1 hour toward the east.</p>
 </div>
 </div>
 </div>
@@ -635,16 +650,58 @@ body { font-family: 'Outfit', sans-serif; }
  </div>
  </footer>
 
-<script src="js/i18n.js"></script>
-<script src="js/search.js"></script>
-<script>
-const FLAG_SVGS = {
+<!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
+ <script>
+ function openDay(evt, dayId) {
+ var tabContents = document.getElementsByClassName("tab-content");
+ for (var i = 0; i < tabContents.length; i++) {
+ tabContents[i].classList.remove("active");
+ }
+ var tabBtns = document.getElementsByClassName("tab-btn");
+ for (var i = 0; i < tabBtns.length; i++) {
+ tabBtns[i].classList.remove("active");
+ }
+ document.getElementById(dayId).classList.add("active");
+ if (evt && evt.currentTarget) evt.currentTarget.classList.add("active");
+ }
+
+ function toggleMobileCategories() {
+ const dropdown = document.getElementById('mobile-categories-dropdown');
+ const arrow = document.getElementById('categories-arrow');
+ if (dropdown) {
+ dropdown.classList.toggle('hidden');
+ if (arrow) arrow.classList.toggle('rotate-180');
+ }
+ }
+
+ document.addEventListener('DOMContentLoaded', function () {
+ const langButton = document.getElementById('lang-menu-button');
+ const langDropdown = document.getElementById('lang-menu-dropdown');
+
+ if (langButton && langDropdown) {
+ langButton.addEventListener('click', function(e) {
+ e.stopPropagation();
+ langDropdown.classList.toggle('hidden');
+ });
+ document.addEventListener('click', function(e) {
+ if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+ langDropdown.classList.add('hidden');
+ }
+ });
+ }
+
+ const savedLang = localStorage.getItem('preferred_lang') || 'en';
+ switchLanguage(savedLang);
+ });
+
+ const FLAG_SVGS = {
  en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
  fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
  es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
  ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
-};
-function switchLanguage(lang) {
+ };
+
+ function switchLanguage(lang) {
  const langLabel = document.getElementById('current-lang-label');
  const langButton = document.getElementById('lang-menu-button');
  if (langLabel) langLabel.textContent = lang.toUpperCase();
@@ -654,28 +711,39 @@ function switchLanguage(lang) {
  }
  const langDropdown = document.getElementById('lang-menu-dropdown');
  if (langDropdown) langDropdown.classList.add('hidden');
+ try { localStorage.setItem('preferred_lang', lang); } catch(e) {}
  if (typeof changeLanguage === 'function') changeLanguage(lang);
-}
-function openDay(evt, id) {
- document.querySelectorAll('.tab-content').forEach(function (el) { el.classList.remove('active'); });
- document.querySelectorAll('.tab-btn').forEach(function (el) { el.classList.remove('active'); });
- document.getElementById(id).classList.add('active');
- if (evt && evt.currentTarget) evt.currentTarget.classList.add('active');
-}
+ }
+ </script>
+ <script src="js/i18n.js"></script>
+ <script src="js/search.js"></script>
+<script>
 function filterAccommodations() {
- var type = document.getElementById('filter-type').value;
- var loc = document.getElementById('filter-location').value;
- var cards = document.querySelectorAll('.acc-card');
- var n = 0;
- cards.forEach(function (c) {
- var matchType = (type === 'all' || c.getAttribute('data-type') === type);
- var matchLoc = (loc === 'all' || c.getAttribute('data-location') === loc);
- var show = matchType && matchLoc;
- c.style.display = show ? '' : 'none';
- if (show) n++;
- });
- var counter = document.getElementById('acc-count');
- if (counter) counter.textContent = n;
+ var typeEl = document.getElementById("filter-type");
+ var locEl = document.getElementById("filter-location");
+ var selectedType = typeEl ? typeEl.value : "all";
+ var selectedLocation = locEl ? locEl.value : "all";
+ var cards = document.getElementsByClassName("acc-card");
+ var visibleCount = 0;
+ for (var i = 0; i < cards.length; i++) {
+ var card = cards[i];
+ var cardType = card.getAttribute("data-type") || "";
+ var cardLocation = card.getAttribute("data-location") || "";
+ var matchType = (selectedType === "all" || cardType === selectedType);
+ var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
+ if (matchType && matchLocation) {
+ card.style.display = "block";
+ visibleCount++;
+ } else {
+ card.style.display = "none";
+ }
+ }
+ var counterDiv = document.getElementById("accommodation-counter");
+ if (!counterDiv) counterDiv = document.getElementById("accommodation-counter");
+ if (counterDiv) {
+ if (visibleCount === 0) counterDiv.innerText = "0";
+ else counterDiv.innerText = String(visibleCount);
+ }
 }
 </script>
 </body>

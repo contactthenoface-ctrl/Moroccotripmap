@@ -511,16 +511,44 @@ body { font-family: 'Outfit', sans-serif; }
  <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
  </div>
  </footer>
-<script src="../../js/i18n.js"></script>
-<script src="../../js/search.js"></script>
-<script>
-const FLAG_SVGS = {
+
+ <!-- Scripts JavaScript combinés (Langues, Menu Mobile) -->
+ <script>
+ function toggleMobileCategories() {
+ const dropdown = document.getElementById('mobile-categories-dropdown');
+ const arrow = document.getElementById('categories-arrow');
+ if (dropdown) {
+ dropdown.classList.toggle('hidden');
+ if (arrow) arrow.classList.toggle('rotate-180');
+ }
+ }
+
+ document.addEventListener('DOMContentLoaded', function () {
+ const langButton = document.getElementById('lang-menu-button');
+ const langDropdown = document.getElementById('lang-menu-dropdown');
+ if (langButton && langDropdown) {
+ langButton.addEventListener('click', function(e) {
+ e.stopPropagation();
+ langDropdown.classList.toggle('hidden');
+ });
+ document.addEventListener('click', function(e) {
+ if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+ langDropdown.classList.add('hidden');
+ }
+ });
+ }
+ const savedLang = localStorage.getItem('preferred_lang') || 'en';
+ switchLanguage(savedLang);
+ });
+
+ const FLAG_SVGS = {
  en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
  fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
  es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
  ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
-};
-function switchLanguage(lang) {
+ };
+
+ function switchLanguage(lang) {
  const langLabel = document.getElementById('current-lang-label');
  const langButton = document.getElementById('lang-menu-button');
  if (langLabel) langLabel.textContent = lang.toUpperCase();
@@ -530,9 +558,13 @@ function switchLanguage(lang) {
  }
  const langDropdown = document.getElementById('lang-menu-dropdown');
  if (langDropdown) langDropdown.classList.add('hidden');
+ try { localStorage.setItem('preferred_lang', lang); } catch(e) {}
  if (typeof changeLanguage === 'function') changeLanguage(lang);
-}
-</script>
+ }
+ </script>
+ <script src="../../js/i18n.js"></script>
+ <script src="../../js/search.js"></script>
+
 <script>
 (function () {
  var root = document.getElementById('beach-carousel');
@@ -563,5 +595,6 @@ function switchLanguage(lang) {
  if (next) next.addEventListener('click', function () { goTo(idx + 1); });
 })();
 </script>
+
 </body>
 </html>

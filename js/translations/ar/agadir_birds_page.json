@@ -14,7 +14,11 @@
     "area_val": "مصب سوس وساحل المنتزه الوطني",
     "best_time_val": "صباح؛ مواسم الهجرة أغنى",
     "duration_val": "نصف يوم إلى يوم كامل",
-    "entry_val": "قواعد المنتزه؛ بعض نقاط الإطلالة مجانية"
+    "entry_val": "قواعد المنتزه؛ بعض نقاط الإطلالة مجانية",
+    "best_time_label": "أفضل وقت",
+    "duration_label": "المدة المقترحة",
+    "entry_label": "الدخول",
+    "area_label": "الموقع"
   },
   "overview": {
     "title": "Birdlife beyond the beach resorts",
@@ -22,7 +26,7 @@
     "p2": "Bring binoculars if you have them. Access points vary; a local driver or nature guide helps reach the better viewpoints without disturbing the birds."
   },
   "gallery": {
-    "title": "Wetland scenes",
+    "title": "مشاهد الأراضي الرطبة",
     "s1": {
       "caption": "Wetlands of the Souss estuary"
     },
@@ -37,7 +41,9 @@
     },
     "s5": {
       "caption": "Morning light on the estuary"
-    }
+    },
+    "badge": "معرض الصور",
+    "subtitle": "مصب سوس وموائل الطيور."
   },
   "food": {
     "title": "Eat on a birding trip",
@@ -152,5 +158,10 @@
       "title": "شمالاً إلى تغازوت",
       "desc": "قرى السيرف خارج المدينة."
     }
+  },
+  "nearby": {
+    "badge": "واصل الاستكشاف",
+    "title": "المزيد من الأماكن في أكادير",
+    "back": "← العودة إلى دليل أكادير"
   }
 }

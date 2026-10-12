@@ -14,7 +14,11 @@
     "area_val": "Sur de Agadir, hacia la carretera de Tiznit",
     "best_time_val": "Mañana para temperaturas más suaves",
     "duration_val": "2 – 3 horas",
-    "entry_val": "Entrada de pago"
+    "entry_val": "Entrada de pago",
+    "best_time_label": "Mejor momento",
+    "duration_label": "Duración sugerida",
+    "entry_label": "Entrada",
+    "area_label": "Ubicación"
   },
   "overview": {
     "title": "Crocodiles and gardens near the coast",
@@ -22,7 +26,7 @@
     "p2": "Paths are mostly easy. Combine it with a coastal stop or return to the city for the afternoon. Check opening hours and ticket prices before you go."
   },
   "gallery": {
-    "title": "Park scenes",
+    "title": "Escenas del parque",
     "s1": {
       "caption": "Crocodile enclosures at Crocoparc"
     },
@@ -37,7 +41,9 @@
     },
     "s5": {
       "caption": "Park landscape near Agadir"
-    }
+    },
+    "badge": "Galería de fotos",
+    "subtitle": "Cocodrilos y jardines al sur de la ciudad."
   },
   "food": {
     "title": "Eat at or near Crocoparc",
@@ -83,7 +89,9 @@
     "q5": {
       "question": "Are the crocodiles real Nile crocodiles?",
       "answer": "The park is known for its Nile crocodile collection; follow all barrier and safety rules."
-    }
+    },
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Crocoparc"
   },
   "moods": {
     "badge": "Horario",
@@ -107,5 +115,10 @@
       "desc": "Aún abierto para una visita más corta antes de volver.",
       "duration": "Tarde"
     }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Agadir",
+    "back": "← Volver a la guía de Agadir"
   }
 }

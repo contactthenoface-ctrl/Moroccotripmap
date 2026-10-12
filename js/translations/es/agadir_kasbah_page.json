@@ -14,7 +14,11 @@
     "area_val": "Colina al norte del centro",
     "best_time_val": "Finales de tarde para luz suave",
     "duration_val": "1 – 1,5 horas",
-    "entry_val": "Gratis / pequeña tasa si aplica"
+    "entry_val": "Gratis / pequeña tasa si aplica",
+    "best_time_label": "Mejor momento",
+    "duration_label": "Duración sugerida",
+    "entry_label": "Entrada",
+    "area_label": "Ubicación"
   },
   "overview": {
     "title": "The viewpoint that defines Agadir’s skyline",
@@ -22,7 +26,7 @@
     "p2": "Most visitors come for the view and photos rather than long ruins walks. A short climb or taxi ride brings you to the gate; the light is strongest toward sunset."
   },
   "gallery": {
-    "title": "Kasbah views",
+    "title": "Vistas de la kasbah",
     "s1": {
       "caption": "Panorama over Agadir bay from the kasbah"
     },
@@ -37,7 +41,9 @@
     },
     "s5": {
       "caption": "Late light on the kasbah hill"
-    }
+    },
+    "badge": "Galería de fotos",
+    "subtitle": "Panorama sobre la ciudad reconstruida."
   },
   "food": {
     "title": "Eat after the viewpoint",
@@ -83,7 +89,9 @@
     "q5": {
       "question": "How long do I need?",
       "answer": "Forty-five minutes to an hour is enough for the view and photos."
-    }
+    },
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Kasbah Agadir Oufella"
   },
   "moods": {
     "badge": "Horario",
@@ -107,5 +115,10 @@
       "desc": "La mejor luz sobre el arco de playa y el puerto.",
       "duration": "Tarde"
     }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Agadir",
+    "back": "← Volver a la guía de Agadir"
   }
 }

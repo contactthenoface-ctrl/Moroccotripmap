@@ -14,7 +14,11 @@
     "area_val": "A lo largo de la playa principal",
     "best_time_val": "Mañana o atardecer",
     "duration_val": "1 – 2 horas de paseo",
-    "entry_val": "Gratis"
+    "entry_val": "Gratis",
+    "best_time_label": "Mejor momento",
+    "duration_label": "Duración sugerida",
+    "entry_label": "Entrada",
+    "area_label": "Ubicación"
   },
   "overview": {
     "title": "Agadir’s seafront walk",
@@ -22,7 +26,7 @@
     "p2": "At one end you drift toward the marina; at the other the beach continues south. It is flat, easy and central to any beach-based stay in Agadir."
   },
   "gallery": {
-    "title": "Corniche views",
+    "title": "Vistas del paseo",
     "s1": {
       "caption": "Promenade along Agadir’s corniche"
     },
@@ -37,7 +41,9 @@
     },
     "s5": {
       "caption": "Sunset light on the corniche"
-    }
+    },
+    "badge": "Galería de fotos",
+    "subtitle": "A lo largo de la franja hotelera."
   },
   "food": {
     "title": "Eat on the corniche",
@@ -83,7 +89,9 @@
     "q5": {
       "question": "Best section?",
       "answer": "The stretch facing the main hotels toward the marina is the most animated."
-    }
+    },
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Corniche de Agadir"
   },
   "moods": {
     "badge": "Horario",
@@ -107,5 +115,10 @@
       "desc": "El momento clásico para la corniche y el enlace con la marina.",
       "duration": "Tarde"
     }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Agadir",
+    "back": "← Volver a la guía de Agadir"
   }
 }

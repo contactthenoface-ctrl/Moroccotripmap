@@ -14,7 +14,11 @@
     "area_val": "Extremo norte de la playa",
     "best_time_val": "Noche para el ambiente",
     "duration_val": "1 – 2 horas",
-    "entry_val": "Paseo libre"
+    "entry_val": "Paseo libre",
+    "best_time_label": "Mejor momento",
+    "duration_label": "Duración sugerida",
+    "entry_label": "Entrada",
+    "area_label": "Ubicación"
   },
   "overview": {
     "title": "Marina life on the Atlantic",
@@ -22,7 +26,7 @@
     "p2": "By day it is quieter; after sunset the terraces fill. The marina links naturally with the corniche walk toward the main beach hotels."
   },
   "gallery": {
-    "title": "Marina scenes",
+    "title": "Escenas de marina",
     "s1": {
       "caption": "Yachts in Agadir Marina basin"
     },
@@ -37,7 +41,9 @@
     },
     "s5": {
       "caption": "View from the marina toward the bay"
-    }
+    },
+    "badge": "Galería de fotos",
+    "subtitle": "Paseo del puerto y luces de noche."
   },
   "food": {
     "title": "Eat at the marina",
@@ -83,7 +89,9 @@
     "q5": {
       "question": "Is it the fishing port?",
       "answer": "No — the marina is the yacht and leisure basin. The working fishing port sits nearby but is separate."
-    }
+    },
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Marina de Agadir"
   },
   "moods": {
     "badge": "Horario",
@@ -107,5 +115,10 @@
       "desc": "El momento más animado para pasear y comer.",
       "duration": "Noche"
     }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Agadir",
+    "back": "← Volver a la guía de Agadir"
   }
 }

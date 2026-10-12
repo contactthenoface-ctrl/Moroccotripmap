@@ -14,7 +14,11 @@
     "area_val": "Este del centro",
     "best_time_val": "Mañana, sobre todo días de mercado",
     "duration_val": "1 – 2 horas",
-    "entry_val": "Gratis"
+    "entry_val": "Gratis",
+    "best_time_label": "Mejor momento",
+    "duration_label": "Duración sugerida",
+    "entry_label": "Entrada",
+    "area_label": "Ubicación"
   },
   "overview": {
     "title": "Agadir’s big everyday market",
@@ -22,7 +26,7 @@
     "p2": "Go in the morning for the freshest produce and cooler air. Bargain politely on non-food items; fixed-price stalls exist too. Keep valuables close in crowded aisles."
   },
   "gallery": {
-    "title": "Market scenes",
+    "title": "Escenas de mercado",
     "s1": {
       "caption": "Covered lanes of Souk El Had"
     },
@@ -37,7 +41,9 @@
     },
     "s5": {
       "caption": "Busy aisle in Agadir’s main souk"
-    }
+    },
+    "badge": "Galería de fotos",
+    "subtitle": "Comercio diario en el Souk El Had."
   },
   "food": {
     "title": "Eat near the souk",
@@ -83,7 +89,9 @@
     "q5": {
       "question": "How long do I need?",
       "answer": "One to two hours is enough for most visitors."
-    }
+    },
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Souk El Had"
   },
   "moods": {
     "badge": "Horario",
@@ -107,5 +115,10 @@
       "desc": "Algunos puestos se vacían; el calor baja más tarde.",
       "duration": "Tarde"
     }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Agadir",
+    "back": "← Volver a la guía de Agadir"
   }
 }

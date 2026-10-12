@@ -14,7 +14,11 @@
     "area_val": "Hill north of the centre",
     "best_time_val": "Late afternoon for soft light",
     "duration_val": "1 – 1.5 hours",
-    "entry_val": "Free / small site fee if applicable"
+    "entry_val": "Free / small site fee if applicable",
+    "best_time_label": "Best time",
+    "duration_label": "Suggested duration",
+    "entry_label": "Entry",
+    "area_label": "Location"
   },
   "overview": {
     "title": "The viewpoint that defines Agadir’s skyline",
@@ -22,7 +26,7 @@
     "p2": "Most visitors come for the view and photos rather than long ruins walks. A short climb or taxi ride brings you to the gate; the light is strongest toward sunset."
   },
   "gallery": {
-    "title": "Kasbah views",
+    "title": "Kasbah viewpoints",
     "s1": {
       "caption": "Panorama over Agadir bay from the kasbah"
     },
@@ -37,7 +41,9 @@
     },
     "s5": {
       "caption": "Late light on the kasbah hill"
-    }
+    },
+    "badge": "Photo gallery",
+    "subtitle": "Panorama over the rebuilt city."
   },
   "food": {
     "title": "Eat after the viewpoint",
@@ -152,5 +158,10 @@
       "title": "North to Taghazout",
       "desc": "Surf villages beyond the city."
     }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Agadir",
+    "back": "← Back to Agadir guide"
   }
 }

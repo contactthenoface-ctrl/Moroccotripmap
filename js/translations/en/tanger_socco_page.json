@@ -1,164 +1,194 @@
 {
-  "seo": {
-    "title": "Grand Socco Tangier | Gateway to the Medina | MoroccoTripMap",
-    "description": "Grand Socco (Place du 9 Avril) is Tangier’s hinge between new town and medina — markets, taxis and the main gate into the old city.",
-    "keywords": "Grand Socco Tangier, Place du 9 Avril, Tangier medina entrance"
-  },
-  "name": "Grand Socco",
-  "hero_subtitle": "The busy square between new town and medina.",
-  "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Daytime; evenings lively",
-    "duration_label": "Suggested duration",
-    "duration_val": "30 – 60 minutes",
-    "entry_label": "Entry",
-    "entry_val": "Free",
-    "area_label": "Location",
-    "area_val": "Edge of medina & new town"
-  },
-  "overview": {
-    "title": "Where Tangier switches gear",
-    "p1": "The Grand Socco — officially Place du 9 Avril 1947 — is the practical entrance to the medina. Taxis, buses of people and market energy meet here before the lanes tighten toward Petit Socco and the kasbah.",
-    "p2": "Use it as a landmark rather than a long stop: orient, enter the medina, return when you need a taxi. Nearby cinema and park edges add a bit of open space."
-  },
-  "gallery": {
-    "badge": "Photo gallery",
-    "title": "Square scenes",
-    "subtitle": "The hinge of Tangier’s old and new.",
-    "s1": {
-      "caption": "Grand Socco open square"
+  "tanger_socco_page": {
+    "seo": {
+      "title": "Grand Socco Tangier | Gateway to the Medina | MoroccoTripMap",
+      "description": "Grand Socco (Place du 9 Avril) is Tangier’s hinge between new town and medina — markets, taxis and the main gate into the old city.",
+      "keywords": "Grand Socco Tangier, Place du 9 Avril, Tangier medina entrance"
     },
-    "s2": {
-      "caption": "Gate into the medina"
+    "name": "Grand Socco",
+    "hero_subtitle": "The busy square between new town and medina.",
+    "info": {
+      "best_time_label": "Best time",
+      "best_time_val": "Daytime; evenings lively",
+      "duration_label": "Suggested duration",
+      "duration_val": "30 – 60 minutes",
+      "entry_label": "Entry",
+      "entry_val": "Free",
+      "area_label": "Location",
+      "area_val": "Edge of medina & new town"
     },
-    "s3": {
-      "caption": "Market activity at the edge"
+    "overview": {
+      "title": "Where Tangier switches gear",
+      "p1": "The Grand Socco — officially Place du 9 Avril 1947 — is the practical entrance to the medina. Taxis, buses of people and market energy meet here before the lanes tighten toward Petit Socco and the kasbah.",
+      "p2": "Use it as a landmark rather than a long stop: orient, enter the medina, return when you need a taxi. Nearby cinema and park edges add a bit of open space."
     },
-    "s4": {
-      "caption": "Evening movement on the square"
+    "gallery": {
+      "badge": "Photo gallery",
+      "title": "Square scenes",
+      "subtitle": "The hinge of Tangier’s old and new.",
+      "s1": {
+        "caption": "Grand Socco open square"
+      },
+      "s2": {
+        "caption": "Gate into the medina"
+      },
+      "s3": {
+        "caption": "Market activity at the edge"
+      },
+      "s4": {
+        "caption": "Evening movement on the square"
+      },
+      "s5": {
+        "caption": "View toward medina lanes"
+      }
     },
-    "s5": {
-      "caption": "View toward medina lanes"
+    "moods": {
+      "badge": "Timing",
+      "title": "Grand Socco through the day",
+      "subtitle": "Gateway energy from morning markets to evening traffic.",
+      "1": {
+        "tag": "Morning",
+        "title": "Market start",
+        "desc": "Fresher air and local rhythm before the day fully opens.",
+        "duration": "Morning"
+      },
+      "2": {
+        "tag": "Midday",
+        "title": "Busy square",
+        "desc": "Taxis, pedestrians and shoppers — the main junction feel.",
+        "duration": "Midday"
+      },
+      "3": {
+        "tag": "Evening",
+        "title": "Meeting point",
+        "desc": "Easy place to regroup before medina dinner or a corniche walk.",
+        "duration": "Evening"
+      }
+    },
+    "food": {
+      "title": "Eat near the Grand Socco",
+      "p1": "Cafés and quick bites on the new-town side; better medina kitchens a few minutes inside the gates.",
+      "li1": "Cafés facing the square.",
+      "li2": "Petit Socco for a classic pause.",
+      "li3": "Simple grills nearby.",
+      "li4": "Cash useful for small places.",
+      "li5": "Port seafood downhill if you prefer fish.",
+      "p2": ""
+    },
+    "tips": {
+      "title": "Practical tips",
+      "1": {
+        "title": "Getting there",
+        "desc": "Central for petit taxis; main walking link into the medina."
+      },
+      "2": {
+        "title": "Orientation",
+        "desc": "Medina gates lead uphill toward Petit Socco and the kasbah."
+      },
+      "3": {
+        "title": "Taxis",
+        "desc": "Agree on the meter or a price before rides to Cap Spartel or the airport."
+      }
+    },
+    "faq": {
+      "badge": "Good to know",
+      "title": "FAQ about the Grand Socco",
+      "q1": {
+        "question": "Is Grand Socco the same as Petit Socco?",
+        "answer": "No. Grand Socco is the large outer square; Petit Socco is a smaller café square deeper in the medina."
+      },
+      "q2": {
+        "question": "Can I leave luggage area taxis here?",
+        "answer": "It is a common drop-off to enter the medina on foot; confirm with your driver."
+      },
+      "q3": {
+        "question": "Is it worth a long stop?",
+        "answer": "Better as a gateway and meeting point than a half-day destination."
+      },
+      "q4": {
+        "question": "Safe at night?",
+        "answer": "Generally active; stick to lit routes into the medina."
+      },
+      "q5": {
+        "question": "Nearby landmarks?",
+        "answer": "Medina gates, cinema edge and the path toward Petit Socco."
+      }
+    },
+    "gyg": {
+      "badge": "Tours & experiences",
+      "title": "Tours linked to this place",
+      "subtitle": "Options if you prefer a local operator.",
+      "check": "Check availability on GetYourGuide →",
+      "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
+      "t1": {
+        "tag": "City",
+        "title": "Tangier medina & kasbah",
+        "desc": "Old town lanes and hilltop views."
+      },
+      "t2": {
+        "tag": "Coast",
+        "title": "Cap Spartel & Hercules Caves",
+        "desc": "Western headland and sea caves half-day."
+      },
+      "t3": {
+        "tag": "Day trip",
+        "title": "Chefchaouen blue medina",
+        "desc": "Full-day to the Rif mountain town."
+      }
+    },
+    "blog": {
+      "badge": "From the blog",
+      "title": "Related articles",
+      "all": "All articles →",
+      "read": "Read article →",
+      "a1": {
+        "tag": "Planning",
+        "title": "First time in Tangier",
+        "desc": "Medina, capes and strait logistics."
+      },
+      "a2": {
+        "tag": "Guide",
+        "title": "Strait viewpoints",
+        "desc": "Hafa, Spartel and Malabata."
+      },
+      "a3": {
+        "tag": "Day trips",
+        "title": "North from Tangier",
+        "desc": "Asilah, Tetouan, Chefchaouen."
+      }
+    },
+    "nearby": {
+      "badge": "Keep exploring",
+      "title": "More places in Tangier",
+      "back": "← Back to Tangier guide",
+      "explore": "Explore place →",
+      "medina": {
+        "name": "Tangier Medina"
+      },
+      "kasbah": {
+        "name": "Kasbah Museum"
+      },
+      "socco": {
+        "name": "Grand Socco"
+      },
+      "hafa": {
+        "name": "Café Hafa"
+      },
+      "beach": {
+        "name": "Tangier Beach"
+      },
+      "spartel": {
+        "name": "Cap Spartel"
+      },
+      "caves": {
+        "name": "Hercules Caves"
+      },
+      "malabata": {
+        "name": "Cap Malabata"
+      },
+      "legation": {
+        "name": "American Legation"
+      }
     }
-  },
-  "moods": {
-    "badge": "Timing",
-    "title": "Grand Socco through the day",
-    "subtitle": "Gateway energy from morning markets to evening traffic.",
-    "1": {
-      "tag": "Morning",
-      "title": "Market start",
-      "desc": "Fresher air and local rhythm before the day fully opens.",
-      "duration": "Morning"
-    },
-    "2": {
-      "tag": "Midday",
-      "title": "Busy square",
-      "desc": "Taxis, pedestrians and shoppers — the main junction feel.",
-      "duration": "Midday"
-    },
-    "3": {
-      "tag": "Evening",
-      "title": "Meeting point",
-      "desc": "Easy place to regroup before medina dinner or a corniche walk.",
-      "duration": "Evening"
-    }
-  },
-  "food": {
-    "title": "Eat near the Grand Socco",
-    "p1": "Cafés and quick bites on the new-town side; better medina kitchens a few minutes inside the gates.",
-    "li1": "Cafés facing the square.",
-    "li2": "Petit Socco for a classic pause.",
-    "li3": "Simple grills nearby.",
-    "li4": "Cash useful for small places.",
-    "li5": "Port seafood downhill if you prefer fish.",
-    "p2": ""
-  },
-  "tips": {
-    "title": "Practical tips",
-    "1": {
-      "title": "Getting there",
-      "desc": "Central for petit taxis; main walking link into the medina."
-    },
-    "2": {
-      "title": "Orientation",
-      "desc": "Medina gates lead uphill toward Petit Socco and the kasbah."
-    },
-    "3": {
-      "title": "Taxis",
-      "desc": "Agree on the meter or a price before rides to Cap Spartel or the airport."
-    }
-  },
-  "faq": {
-    "badge": "Good to know",
-    "title": "FAQ about the Grand Socco",
-    "q1": {
-      "question": "Is Grand Socco the same as Petit Socco?",
-      "answer": "No. Grand Socco is the large outer square; Petit Socco is a smaller café square deeper in the medina."
-    },
-    "q2": {
-      "question": "Can I leave luggage area taxis here?",
-      "answer": "It is a common drop-off to enter the medina on foot; confirm with your driver."
-    },
-    "q3": {
-      "question": "Is it worth a long stop?",
-      "answer": "Better as a gateway and meeting point than a half-day destination."
-    },
-    "q4": {
-      "question": "Safe at night?",
-      "answer": "Generally active; stick to lit routes into the medina."
-    },
-    "q5": {
-      "question": "Nearby landmarks?",
-      "answer": "Medina gates, cinema edge and the path toward Petit Socco."
-    }
-  },
-  "gyg": {
-    "badge": "Tours & experiences",
-    "title": "Tours linked to this place",
-    "subtitle": "Options if you prefer a local operator.",
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
-    "t1": {
-      "tag": "City",
-      "title": "Tangier medina & kasbah",
-      "desc": "Old town lanes and hilltop views."
-    },
-    "t2": {
-      "tag": "Coast",
-      "title": "Cap Spartel & Hercules Caves",
-      "desc": "Western headland and sea caves half-day."
-    },
-    "t3": {
-      "tag": "Day trip",
-      "title": "Chefchaouen blue medina",
-      "desc": "Full-day to the Rif mountain town."
-    }
-  },
-  "blog": {
-    "badge": "From the blog",
-    "title": "Related articles",
-    "all": "All articles →",
-    "read": "Read article →",
-    "a1": {
-      "tag": "Planning",
-      "title": "First time in Tangier",
-      "desc": "Medina, capes and strait logistics."
-    },
-    "a2": {
-      "tag": "Guide",
-      "title": "Strait viewpoints",
-      "desc": "Hafa, Spartel and Malabata."
-    },
-    "a3": {
-      "tag": "Day trips",
-      "title": "North from Tangier",
-      "desc": "Asilah, Tetouan, Chefchaouen."
-    }
-  },
-  "nearby": {
-    "badge": "Keep exploring",
-    "title": "More places in Tangier",
-    "back": "← Back to Tangier guide"
   }
 }

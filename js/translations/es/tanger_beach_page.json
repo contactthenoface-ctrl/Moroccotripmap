@@ -1,194 +1,192 @@
 {
-  "tanger_beach_page": {
-    "seo": {
-      "title": "Tangier Beach & Corniche | City Seafront | MoroccoTripMap",
-      "description": "Tangier’s city beach and corniche offer an easy sea-level break near hotels and the new town — walks, cafés and Atlantic-Mediterranean air.",
-      "keywords": "Tangier beach, Tangier corniche, Tangier seafront"
+  "seo": {
+    "title": "Tangier Beach & Corniche | City Seafront | MoroccoTripMap",
+    "description": "Tangier’s city beach and corniche offer an easy sea-level break near hotels and the new town — walks, cafés and Atlantic-Mediterranean air.",
+    "keywords": "Tangier beach, Tangier corniche, Tangier seafront"
+  },
+  "name": "Playa de Tánger",
+  "hero_subtitle": "Arena urbana y corniche cerca de la ciudad nueva.",
+  "info": {
+    "best_time_label": "Mejor momento",
+    "best_time_val": "Mañana o final de tarde",
+    "duration_label": "Duración sugerida",
+    "duration_val": "1 – 2 horas",
+    "entry_label": "Entrada",
+    "entry_val": "Gratis",
+    "area_label": "Ubicación",
+    "area_val": "Frente marítimo / corniche"
+  },
+  "overview": {
+    "title": "Nivel del mar tras las subidas de la medina",
+    "p1": "La playa principal de Tánger se extiende a lo largo de la bahía con una corniche para caminar. No es una cala remota — espera energía urbana, hoteles cerca y un lugar práctico para respirar tras los callejones.",
+    "p2": "El baño depende de las condiciones y del consejo local; muchos vienen por el paseo y el horizonte hacia España en días claros."
+  },
+  "gallery": {
+    "badge": "Galería",
+    "title": "Playa y corniche",
+    "subtitle": "Frente marítimo urbano de Tánger.",
+    "s1": {
+      "caption": "Playa de Tánger por la mañana"
     },
-    "name": "Playa de Tánger",
-    "hero_subtitle": "Arena urbana y corniche cerca de la ciudad nueva.",
-    "info": {
-      "best_time_label": "Mejor momento",
-      "best_time_val": "Mañana o final de tarde",
-      "duration_label": "Duración sugerida",
-      "duration_val": "1 – 2 horas",
-      "entry_label": "Entrada",
-      "entry_val": "Gratis",
-      "area_label": "Ubicación",
-      "area_val": "Frente marítimo / corniche"
+    "s2": {
+      "caption": "Paseo de la corniche"
     },
-    "overview": {
-      "title": "Nivel del mar tras las subidas de la medina",
-      "p1": "La playa principal de Tánger se extiende a lo largo de la bahía con una corniche para caminar. No es una cala remota — espera energía urbana, hoteles cerca y un lugar práctico para respirar tras los callejones.",
-      "p2": "El baño depende de las condiciones y del consejo local; muchos vienen por el paseo y el horizonte hacia España en días claros."
+    "s3": {
+      "caption": "Arena y frente hotelero"
     },
-    "gallery": {
-      "badge": "Galería",
-      "title": "Playa y corniche",
-      "subtitle": "Frente marítimo urbano de Tánger.",
-      "s1": {
-        "caption": "Playa de Tánger por la mañana"
-      },
-      "s2": {
-        "caption": "Paseo de la corniche"
-      },
-      "s3": {
-        "caption": "Arena y frente hotelero"
-      },
-      "s4": {
-        "caption": "Vista hacia el puerto"
-      },
-      "s5": {
-        "caption": "Final del día en el frente marítimo"
-      }
+    "s4": {
+      "caption": "Vista hacia el puerto"
     },
-    "moods": {
-      "badge": "Horarios",
-      "title": "Playa y corniche a lo largo del día",
-      "subtitle": "Ritmo del frente marítimo urbano.",
-      "1": {
-        "tag": "Mañana",
-        "title": "Arena abierta",
-        "desc": "Aire más fresco y espacio para caminar antes del calor.",
-        "duration": "Mañana"
-      },
-      "2": {
-        "tag": "Mediodía",
-        "title": "Franja activa",
-        "desc": "Hoteles, paseantes y brisa marina a lo largo del frente.",
-        "duration": "Mediodía"
-      },
-      "3": {
-        "tag": "Tarde-noche",
-        "title": "Luz de paseo",
-        "desc": "Hora popular de paseo cuando la ciudad se orienta al agua.",
-        "duration": "Tarde-noche"
-      }
+    "s5": {
+      "caption": "Final del día en el frente marítimo"
+    }
+  },
+  "moods": {
+    "badge": "Horarios",
+    "title": "Playa y corniche a lo largo del día",
+    "subtitle": "Ritmo del frente marítimo urbano.",
+    "1": {
+      "tag": "Mañana",
+      "title": "Arena abierta",
+      "desc": "Aire más fresco y espacio para caminar antes del calor.",
+      "duration": "Mañana"
     },
-    "food": {
-      "title": "Comer en el frente marítimo",
-      "p1": "Cafés y restaurantes a lo largo de la corniche — prácticos, calidad variable.",
-      "li1": "Cafés de corniche para bebidas.",
-      "li2": "Opciones de mariscos hacia el puerto.",
-      "li3": "Restaurantes de hotel en la franja.",
-      "li4": "Efectivo para kioscos pequeños.",
-      "li5": "Comidas de medina si quieres cocinas más locales.",
-      "p2": ""
+    "2": {
+      "tag": "Mediodía",
+      "title": "Franja activa",
+      "desc": "Hoteles, paseantes y brisa marina a lo largo del frente.",
+      "duration": "Mediodía"
     },
-    "tips": {
-      "title": "Consejos prácticos",
-      "1": {
-        "title": "Cómo llegar",
-        "desc": "Petit taxi o a pie desde la ciudad nueva; muchos hoteles están en o cerca de la franja."
-      },
-      "2": {
-        "title": "Baño",
-        "desc": "Comprueba las condiciones locales; playa urbana, no una bahía de resort vigilada."
-      },
-      "3": {
-        "title": "Combinar",
-        "desc": "Buen reseteo entre mañanas de medina y planes de tarde."
-      }
+    "3": {
+      "tag": "Tarde-noche",
+      "title": "Luz de paseo",
+      "desc": "Hora popular de paseo cuando la ciudad se orienta al agua.",
+      "duration": "Tarde-noche"
+    }
+  },
+  "food": {
+    "title": "Comer en el frente marítimo",
+    "p1": "Cafés y restaurantes a lo largo de la corniche — prácticos, calidad variable.",
+    "li1": "Cafés de corniche para bebidas.",
+    "li2": "Opciones de mariscos hacia el puerto.",
+    "li3": "Restaurantes de hotel en la franja.",
+    "li4": "Efectivo para kioscos pequeños.",
+    "li5": "Comidas de medina si quieres cocinas más locales.",
+    "p2": ""
+  },
+  "tips": {
+    "title": "Consejos prácticos",
+    "1": {
+      "title": "Cómo llegar",
+      "desc": "Petit taxi o a pie desde la ciudad nueva; muchos hoteles están en o cerca de la franja."
     },
-    "faq": {
-      "badge": "Bueno saber",
-      "title": "FAQ sobre la playa de Tánger",
-      "q1": {
-        "question": "¿Está limpia para nadar?",
-        "answer": "Las condiciones varían; muchos prefieren caminar y las vistas. Pregunta en el lugar ese día."
-      },
-      "q2": {
-        "question": "¿Qué largo tiene el frente?",
-        "answer": "Un tramo urbano largo — suficiente para un buen paseo sin salir de la ciudad."
-      },
-      "q3": {
-        "question": "¿Lejos de la medina?",
-        "answer": "Taxi corto o paseo más largo según tu salida de medina."
-      },
-      "q4": {
-        "question": "¿Mejor momento del día?",
-        "answer": "Mañana para aire más fresco; tarde para el ambiente de paseo."
-      },
-      "q5": {
-        "question": "¿Apto para familias?",
-        "answer": "Sí para caminar y el espacio; supervisa cerca del agua."
-      }
+    "2": {
+      "title": "Baño",
+      "desc": "Comprueba las condiciones locales; playa urbana, no una bahía de resort vigilada."
     },
-    "gyg": {
-      "badge": "Tours y experiencias",
-      "title": "Tours vinculados a este lugar",
-      "subtitle": "Opciones si prefieres un operador local.",
-      "check": "Ver disponibilidad en GetYourGuide →",
-      "disclosure": "Algunos enlaces son de afiliados. Si reservas a través de ellos podemos ganar una comisión sin coste extra para ti.",
-      "t1": {
-        "tag": "Ciudad",
-        "title": "Medina y kasbah de Tánger",
-        "desc": "Callejones del casco antiguo y vistas desde la colina."
-      },
-      "t2": {
-        "tag": "Costa",
-        "title": "Cabo Spartel y cuevas de Hércules",
-        "desc": "Promontorio oeste y cuevas marinas en media jornada."
-      },
-      "t3": {
-        "tag": "Excursión",
-        "title": "Medina azul de Chefchaouen",
-        "desc": "Día completo a la ciudad del Rif."
-      }
+    "3": {
+      "title": "Combinar",
+      "desc": "Buen reseteo entre mañanas de medina y planes de tarde."
+    }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "FAQ sobre la playa de Tánger",
+    "q1": {
+      "question": "¿Está limpia para nadar?",
+      "answer": "Las condiciones varían; muchos prefieren caminar y las vistas. Pregunta en el lugar ese día."
     },
-    "blog": {
-      "badge": "Del blog",
-      "title": "Artículos relacionados",
-      "all": "Todos los artículos →",
-      "read": "Leer artículo →",
-      "a1": {
-        "tag": "Planificar",
-        "title": "Primera vez en Tánger",
-        "desc": "Medina, cabos y logística del estrecho."
-      },
-      "a2": {
-        "tag": "Guía",
-        "title": "Miradores del estrecho",
-        "desc": "Hafa, Spartel y Malabata."
-      },
-      "a3": {
-        "tag": "Excursiones",
-        "title": "Al norte desde Tánger",
-        "desc": "Asilah, Tetuán, Chefchaouen."
-      }
+    "q2": {
+      "question": "¿Qué largo tiene el frente?",
+      "answer": "Un tramo urbano largo — suficiente para un buen paseo sin salir de la ciudad."
     },
-    "nearby": {
-      "badge": "Seguir explorando",
-      "title": "Más lugares en Tánger",
-      "back": "← Volver a la guía de Tánger",
-      "explore": "Explorar el lugar →",
-      "medina": {
-        "name": "Medina de Tánger"
-      },
-      "kasbah": {
-        "name": "Museo de la Kasbah"
-      },
-      "socco": {
-        "name": "Grand Socco"
-      },
-      "hafa": {
-        "name": "Café Hafa"
-      },
-      "beach": {
-        "name": "Playa de Tánger"
-      },
-      "spartel": {
-        "name": "Cabo Espartel"
-      },
-      "caves": {
-        "name": "Cuevas de Hércules"
-      },
-      "malabata": {
-        "name": "Cabo Malabata"
-      },
-      "legation": {
-        "name": "Legación Americana"
-      }
+    "q3": {
+      "question": "¿Lejos de la medina?",
+      "answer": "Taxi corto o paseo más largo según tu salida de medina."
+    },
+    "q4": {
+      "question": "¿Mejor momento del día?",
+      "answer": "Mañana para aire más fresco; tarde para el ambiente de paseo."
+    },
+    "q5": {
+      "question": "¿Apto para familias?",
+      "answer": "Sí para caminar y el espacio; supervisa cerca del agua."
+    }
+  },
+  "gyg": {
+    "badge": "Tours y experiencias",
+    "title": "Tours vinculados a este lugar",
+    "subtitle": "Opciones si prefieres un operador local.",
+    "check": "Ver disponibilidad en GetYourGuide →",
+    "disclosure": "Algunos enlaces son de afiliados. Si reservas a través de ellos podemos ganar una comisión sin coste extra para ti.",
+    "t1": {
+      "tag": "Ciudad",
+      "title": "Medina y kasbah de Tánger",
+      "desc": "Callejones del casco antiguo y vistas desde la colina."
+    },
+    "t2": {
+      "tag": "Costa",
+      "title": "Cabo Spartel y cuevas de Hércules",
+      "desc": "Promontorio oeste y cuevas marinas en media jornada."
+    },
+    "t3": {
+      "tag": "Excursión",
+      "title": "Medina azul de Chefchaouen",
+      "desc": "Día completo a la ciudad del Rif."
+    }
+  },
+  "blog": {
+    "badge": "Del blog",
+    "title": "Artículos relacionados",
+    "all": "Todos los artículos →",
+    "read": "Leer artículo →",
+    "a1": {
+      "tag": "Planificar",
+      "title": "Primera vez en Tánger",
+      "desc": "Medina, cabos y logística del estrecho."
+    },
+    "a2": {
+      "tag": "Guía",
+      "title": "Miradores del estrecho",
+      "desc": "Hafa, Spartel y Malabata."
+    },
+    "a3": {
+      "tag": "Excursiones",
+      "title": "Al norte desde Tánger",
+      "desc": "Asilah, Tetuán, Chefchaouen."
+    }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Tánger",
+    "back": "← Volver a la guía de Tánger",
+    "explore": "Explorar el lugar →",
+    "medina": {
+      "name": "Medina de Tánger"
+    },
+    "kasbah": {
+      "name": "Museo de la Kasbah"
+    },
+    "socco": {
+      "name": "Grand Socco"
+    },
+    "hafa": {
+      "name": "Café Hafa"
+    },
+    "beach": {
+      "name": "Playa de Tánger"
+    },
+    "spartel": {
+      "name": "Cabo Espartel"
+    },
+    "caves": {
+      "name": "Cuevas de Hércules"
+    },
+    "malabata": {
+      "name": "Cabo Malabata"
+    },
+    "legation": {
+      "name": "Legación Americana"
     }
   }
 }

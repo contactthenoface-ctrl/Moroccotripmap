@@ -1,70 +1,32 @@
 {
-  "tanger_page": {
-    "seo": {
-      "title": "Guide de Tanger | Médina, Kasbah, Cap Spartel & vues sur le détroit | MoroccoTripMap",
-      "description": "Préparez Tanger : médina et kasbah, Café Hafa, Cap Spartel, grottes d’Hercule, Malabata et la Légation américaine. Conseils, plan 3 jours et excursions vers Chefchaouen, Asilah et Tétouan.",
-      "keywords": "guide Tanger, médina Tanger, Cap Spartel, grottes d’Hercule, Café Hafa"
-    },
-    "name": "Tanger",
-    "hero_subtitle": "Vues sur le détroit, médina stratifiée et rencontre des lumières atlantique et méditerranéenne.",
-    "info": {
-      "best_time_label": "Meilleure période",
-      "best_time_val": "Avril – juin & septembre – novembre",
-      "stay_label": "Durée idéale",
-      "stay_val": "2 – 3 jours",
-      "vibe_label": "Ambiance",
-      "vibe_val": "Ville portuaire, vents du détroit et ruelles historiques",
-      "airport_label": "Accès",
-      "airport_val": "TNG Ibn Battuta · Al Boraq vers Rabat/Casa · Ferry depuis l’Espagne"
-    },
-    "overview": {
-      "title": "Bienvenue à Tanger — porte entre l’Europe et l’Afrique",
-      "p1": "Tanger se situe là où l’Atlantique rencontre la Méditerranée, à un court trajet de l’Espagne à travers le détroit de Gibraltar. La médina monte vers la kasbah ; en bas, le port et la ville nouvelle s’ouvrent sur corniche et plage. Ferries, train à grande vitesse Al Boraq et aéroport Ibn Battuta (TNG) en font l’une des arrivées les plus simples du nord du Maroc.",
-      "p2": "Parcourez la médina et le Petit Socco, faites une pause au Café Hafa face au détroit, puis partez à l’ouest vers le Cap Spartel et les grottes d’Hercule, ou à l’est vers le Cap Malabata. Le musée de la Légation américaine ancre un chapitre plus calme de la vieille ville. Les excursions mènent aux remparts d’Asilah, à la médina de Tétouan ou aux ruelles bleues de Chefchaouen."
-    },
-    "places": {
-      "badge": "Points forts",
-      "title": "Lieux incontournables à Tanger",
-      "subtitle": "Ruelles de médina, belvédères sur le détroit et caps atlantiques.",
-      "explore": "Explorer le lieu →",
-      "items": {
-        "medina": {
-          "name": "Médina de Tanger",
-          "desc": "Rues blanches, Petit Socco et portes vers la kasbah."
-        },
-        "kasbah": {
-          "name": "Musée de la Kasbah",
-          "desc": "Palais-musée sur la colline avec vues sur le détroit."
-        },
-        "socco": {
-          "name": "Grand Socco",
-          "desc": "Place principale entre ville nouvelle et portes de la médina."
-        },
-        "hafa": {
-          "name": "Café Hafa",
-          "desc": "Terrasses de thé à la menthe au-dessus du détroit."
-        },
-        "beach": {
-          "name": "Plage de Tanger",
-          "desc": "Longue corniche urbaine pour marcher et respirer la mer."
-        },
-        "spartel": {
-          "name": "Cap Spartel",
-          "desc": "Cap au phare à l’ouest, souvent combiné avec les grottes d’Hercule."
-        },
-        "caves": {
-          "name": "Grottes d’Hercule",
-          "desc": "Grottes côtières et ouverture sur la mer près du Cap Spartel."
-        },
-        "malabata": {
-          "name": "Cap Malabata",
-          "desc": "Proche plus calme avec vue sur la baie de Tanger."
-        },
-        "legation": {
-          "name": "Légation américaine",
-          "desc": "Musée et cour à l’intérieur de la médina."
-        }
-      },
+  "seo": {
+    "title": "Guide de Tanger | Médina, Kasbah, Cap Spartel & vues sur le détroit | MoroccoTripMap",
+    "description": "Préparez Tanger : médina et kasbah, Café Hafa, Cap Spartel, grottes d’Hercule, Malabata et la Légation américaine. Conseils, plan 3 jours et excursions vers Chefchaouen, Asilah et Tétouan.",
+    "keywords": "guide Tanger, médina Tanger, Cap Spartel, grottes d’Hercule, Café Hafa"
+  },
+  "name": "Tanger",
+  "hero_subtitle": "Vues sur le détroit, médina stratifiée et rencontre des lumières atlantique et méditerranéenne.",
+  "info": {
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Avril – juin & septembre – novembre",
+    "stay_label": "Durée idéale",
+    "stay_val": "2 – 3 jours",
+    "vibe_label": "Ambiance",
+    "vibe_val": "Ville portuaire, vents du détroit et ruelles historiques",
+    "airport_label": "Accès",
+    "airport_val": "TNG Ibn Battuta · Al Boraq vers Rabat/Casa · Ferry depuis l’Espagne"
+  },
+  "overview": {
+    "title": "Bienvenue à Tanger — porte entre l’Europe et l’Afrique",
+    "p1": "Tanger se situe là où l’Atlantique rencontre la Méditerranée, à un court trajet de l’Espagne à travers le détroit de Gibraltar. La médina monte vers la kasbah ; en bas, le port et la ville nouvelle s’ouvrent sur corniche et plage. Ferries, train à grande vitesse Al Boraq et aéroport Ibn Battuta (TNG) en font l’une des arrivées les plus simples du nord du Maroc.",
+    "p2": "Parcourez la médina et le Petit Socco, faites une pause au Café Hafa face au détroit, puis partez à l’ouest vers le Cap Spartel et les grottes d’Hercule, ou à l’est vers le Cap Malabata. Le musée de la Légation américaine ancre un chapitre plus calme de la vieille ville. Les excursions mènent aux remparts d’Asilah, à la médina de Tétouan ou aux ruelles bleues de Chefchaouen."
+  },
+  "places": {
+    "badge": "Points forts",
+    "title": "Lieux incontournables à Tanger",
+    "subtitle": "Ruelles de médina, belvédères sur le détroit et caps atlantiques.",
+    "explore": "Explorer le lieu →",
+    "items": {
       "medina": {
         "name": "Médina de Tanger",
         "desc": "Rues blanches, Petit Socco et portes vers la kasbah."
@@ -102,223 +64,263 @@
         "desc": "Musée et cour à l’intérieur de la médina."
       }
     },
-    "itinerary": {
-      "badge": "Planifier",
-      "title": "Plan suggéré de 3 jours à Tanger",
-      "subtitle": "Médina et kasbah d’abord, puis caps de l’ouest, puis plage ou excursion."
+    "medina": {
+      "name": "Médina de Tanger",
+      "desc": "Rues blanches, Petit Socco et portes vers la kasbah."
     },
-    "detailed_itinerary": {
-      "day1_tab": "Jour 1 — Kasbah & médina",
-      "day1_m": "Matin — Grand Socco & médina",
-      "day1_md": "Entrez par le Grand Socco, flânez vers le Petit Socco et les ruelles basses.",
-      "day1_a": "Après-midi — Musée de la Kasbah",
-      "day1_ad": "Montez à la kasbah pour le musée, les jardins et les vues sur le détroit.",
-      "day1_e": "Soir — Café Hafa ou port",
-      "day1_ed": "Thé à la menthe sur les terrasses de Hafa, ou fruits de mer près du port.",
-      "day2_tab": "Jour 2 — Cap Spartel & grottes",
-      "day2_m": "Matin — Cap Spartel",
-      "day2_md": "Phare et falaises où se rencontrent les courants atlantiques et méditerranéens.",
-      "day2_a": "Après-midi — Grottes d’Hercule",
-      "day2_ad": "Courte halte aux grottes marines et à la célèbre ouverture vers l’océan.",
-      "day2_e": "Soir — Dîner en médina",
-      "day2_ed": "Retour en ville pour un restaurant de médina ou une option plus calme en ville nouvelle.",
-      "day3_tab": "Jour 3 — Plage ou excursion",
-      "day3_m": "Matin — Plage de Tanger ou Cap Malabata",
-      "day3_md": "Matinée facile sur la plage / corniche, ou à l’est vers Malabata pour de larges vues.",
-      "day3_a": "Après-midi — Légation américaine ou temps libre",
-      "day3_ad": "Visitez le musée de la Légation dans la médina, ou gardez du temps pour les boutiques et cafés.",
-      "day3_e": "Soir — Options de départ",
-      "day3_ed": "Train ou route vers Rabat, Chefchaouen ou l’aéroport selon votre itinéraire."
+    "kasbah": {
+      "name": "Musée de la Kasbah",
+      "desc": "Palais-musée sur la colline avec vues sur le détroit."
     },
-    "directory": {
-      "badge": "Annuaire",
-      "title": "Trouvez votre séjour idéal à Tanger",
-      "subtitle": "Riad de médina, vues kasbah et hôtels de ville nouvelle près de la plage.",
-      "type_label": "Type d’hébergement :",
-      "area_label": "Quartier / Zone :",
-      "all_types": "Tous les types",
-      "all_areas": "Toutes les zones",
-      "found": "hébergements trouvés",
-      "check": "Voir les disponibilités →",
-      "type_riad": "Riad",
-      "type_hotel": "Hôtel",
-      "type_dar": "Dar / maison d’hôtes",
-      "type_boutique": "Boutique",
-      "area_medina": "Médina",
-      "area_kasbah": "Kasbah",
-      "area_beach": "Plage / Corniche",
-      "area_newtown": "Ville nouvelle",
-      "filter_type_label": "Type :",
-      "filter_location_label": "Quartier :",
-      "type_all": "Tous les types",
-      "location_all": "Tous les quartiers",
-      "district_label": "Quartier :",
-      "check_availability": "Vérifier dispo →",
-      "counter": "{n} hébergements",
-      "no_results": "Aucun hébergement pour ces filtres.",
-      "location_town": "Médina",
-      "location_outskirts": "Kasbah",
-      "location_outside": "Plage / Corniche",
-      "type_guesthouse": "Maison d’hôtes"
+    "socco": {
+      "name": "Grand Socco",
+      "desc": "Place principale entre ville nouvelle et portes de la médina."
     },
-    "food": {
-      "badge": "Cuisine",
-      "title": "Où manger à Tanger",
-      "subtitle": "Fruits de mer au port, terrasses de cafés et cuisines de médina.",
-      "items": {
-        "1": {
-          "name": "Fruits de mer du port",
-          "rating": "4.5",
-          "type": "Fruits de mer",
-          "area": "Port",
-          "desc": "Poisson frais près du débarquement."
-        },
-        "2": {
-          "name": "Café Hafa",
-          "rating": "4.4",
-          "type": "Café",
-          "area": "Marshan",
-          "desc": "Thé avec une vue classique sur le détroit."
-        },
-        "3": {
-          "name": "Cuisines de médina",
-          "rating": "4.3",
-          "type": "Local",
-          "area": "Médina",
-          "desc": "Tajines et viandes grillées dans les ruelles."
-        },
-        "4": {
-          "name": "Cafés du Petit Socco",
-          "rating": "4.4",
-          "type": "Café",
-          "area": "Médina",
-          "desc": "Observer la place autour d’un café."
-        },
-        "5": {
-          "name": "Spots de corniche",
-          "rating": "4.2",
-          "type": "Mixte",
-          "area": "Plage",
-          "desc": "Repas faciles le long du front de mer."
-        },
-        "6": {
-          "name": "Restaurants ville nouvelle",
-          "rating": "4.5",
-          "type": "International",
-          "area": "Ville nouvelle",
-          "desc": "Menus plus larges loin de la foule de la médina."
-        }
-      }
+    "hafa": {
+      "name": "Café Hafa",
+      "desc": "Terrasses de thé à la menthe au-dessus du détroit."
     },
-    "tips": {
-      "badge": "Conseils pratiques",
-      "title": "Conseils pratiques pour Tanger",
+    "beach": {
+      "name": "Plage de Tanger",
+      "desc": "Longue corniche urbaine pour marcher et respirer la mer."
+    },
+    "spartel": {
+      "name": "Cap Spartel",
+      "desc": "Cap au phare à l’ouest, souvent combiné avec les grottes d’Hercule."
+    },
+    "caves": {
+      "name": "Grottes d’Hercule",
+      "desc": "Grottes côtières et ouverture sur la mer près du Cap Spartel."
+    },
+    "malabata": {
+      "name": "Cap Malabata",
+      "desc": "Proche plus calme avec vue sur la baie de Tanger."
+    },
+    "legation": {
+      "name": "Légation américaine",
+      "desc": "Musée et cour à l’intérieur de la médina."
+    }
+  },
+  "itinerary": {
+    "badge": "Planifier",
+    "title": "Plan suggéré de 3 jours à Tanger",
+    "subtitle": "Médina et kasbah d’abord, puis caps de l’ouest, puis plage ou excursion."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Jour 1 — Kasbah & médina",
+    "day1_m": "Matin — Grand Socco & médina",
+    "day1_md": "Entrez par le Grand Socco, flânez vers le Petit Socco et les ruelles basses.",
+    "day1_a": "Après-midi — Musée de la Kasbah",
+    "day1_ad": "Montez à la kasbah pour le musée, les jardins et les vues sur le détroit.",
+    "day1_e": "Soir — Café Hafa ou port",
+    "day1_ed": "Thé à la menthe sur les terrasses de Hafa, ou fruits de mer près du port.",
+    "day2_tab": "Jour 2 — Cap Spartel & grottes",
+    "day2_m": "Matin — Cap Spartel",
+    "day2_md": "Phare et falaises où se rencontrent les courants atlantiques et méditerranéens.",
+    "day2_a": "Après-midi — Grottes d’Hercule",
+    "day2_ad": "Courte halte aux grottes marines et à la célèbre ouverture vers l’océan.",
+    "day2_e": "Soir — Dîner en médina",
+    "day2_ed": "Retour en ville pour un restaurant de médina ou une option plus calme en ville nouvelle.",
+    "day3_tab": "Jour 3 — Plage ou excursion",
+    "day3_m": "Matin — Plage de Tanger ou Cap Malabata",
+    "day3_md": "Matinée facile sur la plage / corniche, ou à l’est vers Malabata pour de larges vues.",
+    "day3_a": "Après-midi — Légation américaine ou temps libre",
+    "day3_ad": "Visitez le musée de la Légation dans la médina, ou gardez du temps pour les boutiques et cafés.",
+    "day3_e": "Soir — Options de départ",
+    "day3_ed": "Train ou route vers Rabat, Chefchaouen ou l’aéroport selon votre itinéraire."
+  },
+  "directory": {
+    "badge": "Annuaire",
+    "title": "Trouvez votre séjour idéal à Tanger",
+    "subtitle": "Riad de médina, vues kasbah et hôtels de ville nouvelle près de la plage.",
+    "type_label": "Type d’hébergement :",
+    "area_label": "Quartier / Zone :",
+    "all_types": "Tous les types",
+    "all_areas": "Toutes les zones",
+    "found": "hébergements trouvés",
+    "check": "Voir les disponibilités →",
+    "type_riad": "Riad",
+    "type_hotel": "Hôtel",
+    "type_dar": "Dar / maison d’hôtes",
+    "type_boutique": "Boutique",
+    "area_medina": "Médina",
+    "area_kasbah": "Kasbah",
+    "area_beach": "Plage / Corniche",
+    "area_newtown": "Ville nouvelle",
+    "filter_type_label": "Type :",
+    "filter_location_label": "Quartier :",
+    "type_all": "Tous les types",
+    "location_all": "Tous les quartiers",
+    "district_label": "Quartier :",
+    "check_availability": "Vérifier dispo →",
+    "counter": "{n} hébergements",
+    "no_results": "Aucun hébergement pour ces filtres.",
+    "location_town": "Médina",
+    "location_outskirts": "Kasbah",
+    "location_outside": "Plage / Corniche",
+    "type_guesthouse": "Maison d’hôtes"
+  },
+  "food": {
+    "badge": "Cuisine",
+    "title": "Où manger à Tanger",
+    "subtitle": "Fruits de mer au port, terrasses de cafés et cuisines de médina.",
+    "items": {
       "1": {
-        "title": "Se déplacer",
-        "desc": "Petits taxis en ville ; convenez des tarifs pour Cap Spartel, les grottes ou Malabata. La marche couvre médina et kasbah."
+        "name": "Fruits de mer du port",
+        "rating": "4.5",
+        "type": "Fruits de mer",
+        "area": "Port",
+        "desc": "Poisson frais près du débarquement."
       },
       "2": {
-        "title": "Météo du détroit",
-        "desc": "Le vent peut être fort sur les caps — une couche aide même hors saison chaude."
+        "name": "Café Hafa",
+        "rating": "4.4",
+        "type": "Café",
+        "area": "Marshan",
+        "desc": "Thé avec une vue classique sur le détroit."
       },
       "3": {
-        "title": "Espèces et cartes",
-        "desc": "Cartes dans les grands hôtels et restaurants ; dirhams pour taxis, petits cafés et boutiques de médina."
+        "name": "Cuisines de médina",
+        "rating": "4.3",
+        "type": "Local",
+        "area": "Médina",
+        "desc": "Tajines et viandes grillées dans les ruelles."
       },
-      "transport": {
-        "title": "Se déplacer",
-        "desc": "Petits taxis pour les courts trajets ; convenez du prix. La marche convient en médina et sur la corniche."
-      },
-      "bargain": {
-        "title": "Aéroport et train",
-        "desc": "Aéroport TNG Ibn Battuta. Trains Al Boraq vers Rabat et Casablanca."
-      },
-      "water": {
-        "title": "Excursions",
-        "desc": "Chefchaouen, Asilah et Tétouan sont les sorties habituelles ; Cap Spartel se fait en demi-journée à l’ouest."
-      }
-    },
-    "daytrips": {
-      "badge": "Autour de Tanger",
-      "title": "Meilleures excursions depuis Tanger",
-      "subtitle": "Ruelles bleues, remparts blancs et médina face à l’Espagne à portée de route.",
-      "chefchaouen": {
-        "title": "Chefchaouen",
-        "desc": "Médina bleue dans le Rif — environ 2–2,5 heures de route."
-      },
-      "asilah": {
-        "title": "Asilah",
-        "desc": "Remparts atlantiques et ruelles d’artistes — environ 1 heure au sud."
-      },
-      "tetouan": {
-        "title": "Tétouan",
-        "desc": "Médina UNESCO sous le Rif — environ 1 heure au sud-est."
-      },
-      "ceuta": {
-        "title": "Vers Ceuta",
-        "desc": "Direction de l’enclave espagnole — vérifiez les règles frontalières avant de partir."
-      }
-    },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "FAQ sur Tanger",
-      "q1": {
-        "question": "Combien de jours à Tanger ?",
-        "answer": "Deux journées couvrent médina, kasbah, Café Hafa et Cap Spartel avec les grottes. Un troisième jour permet Malabata, la Légation ou une excursion."
-      },
-      "q2": {
-        "question": "Tanger n’est-elle qu’une ville de transit ?",
-        "answer": "C’est une porte d’entrée, mais la médina, les belvédères du détroit et les caps proches méritent un vrai séjour — pas seulement une correspondance de ferry."
-      },
-      "q3": {
-        "question": "Comment rejoindre Tanger ?",
-        "answer": "Aéroport Ibn Battuta (TNG), train à grande vitesse Al Boraq depuis Casablanca/Rabat/Kénitra, trains et bus longue distance, plus ferries depuis l’Espagne."
-      },
-      "q4": {
-        "question": "Meilleure période pour Tanger ?",
-        "answer": "Printemps et automne pour marcher par temps doux. L’été est animé ; l’hiver plus frais et venteux sur les caps exposés."
-      }
-    },
-    "eat": {
-      "badge": "Table",
-      "title": "Où manger à Tanger",
-      "subtitle": "Fruits de mer au port, terrasses de cafés et cuisines de médina.",
-      "bacha": {
-        "title": "Fruits de mer du port",
-        "tag": "Fruits de mer",
-        "loc": "Port",
-        "desc": "Poisson frais près des débarquements."
-      },
-      "elfenn": {
-        "title": "Café Hafa",
-        "tag": "Café",
-        "loc": "Marshan",
-        "desc": "Thé à la menthe avec vue classique sur le détroit."
-      },
-      "fassia": {
-        "title": "Cuisines de médina",
-        "tag": "Local",
-        "loc": "Médina",
-        "desc": "Tajines et grillades dans les ruelles."
-      },
-      "jardin": {
-        "title": "Cafés du Petit Socco",
-        "tag": "Café",
-        "loc": "Médina",
+      "4": {
+        "name": "Cafés du Petit Socco",
+        "rating": "4.4",
+        "type": "Café",
+        "area": "Médina",
         "desc": "Observer la place autour d’un café."
       },
-      "moha": {
-        "title": "Adresses de corniche",
-        "tag": "Varié",
-        "loc": "Plage",
-        "desc": "Repas simples sur le front de mer."
+      "5": {
+        "name": "Spots de corniche",
+        "rating": "4.2",
+        "type": "Mixte",
+        "area": "Plage",
+        "desc": "Repas faciles le long du front de mer."
       },
-      "nomad": {
-        "title": "Restaurants ville nouvelle",
-        "tag": "International",
-        "loc": "Ville nouvelle",
-        "desc": "Cartes plus larges loin de la foule de la médina."
+      "6": {
+        "name": "Restaurants ville nouvelle",
+        "rating": "4.5",
+        "type": "International",
+        "area": "Ville nouvelle",
+        "desc": "Menus plus larges loin de la foule de la médina."
       }
+    }
+  },
+  "tips": {
+    "badge": "Conseils pratiques",
+    "title": "Conseils pratiques pour Tanger",
+    "1": {
+      "title": "Se déplacer",
+      "desc": "Petits taxis en ville ; convenez des tarifs pour Cap Spartel, les grottes ou Malabata. La marche couvre médina et kasbah."
+    },
+    "2": {
+      "title": "Météo du détroit",
+      "desc": "Le vent peut être fort sur les caps — une couche aide même hors saison chaude."
+    },
+    "3": {
+      "title": "Espèces et cartes",
+      "desc": "Cartes dans les grands hôtels et restaurants ; dirhams pour taxis, petits cafés et boutiques de médina."
+    },
+    "transport": {
+      "title": "Se déplacer",
+      "desc": "Petits taxis pour les courts trajets ; convenez du prix. La marche convient en médina et sur la corniche."
+    },
+    "bargain": {
+      "title": "Aéroport et train",
+      "desc": "Aéroport TNG Ibn Battuta. Trains Al Boraq vers Rabat et Casablanca."
+    },
+    "water": {
+      "title": "Excursions",
+      "desc": "Chefchaouen, Asilah et Tétouan sont les sorties habituelles ; Cap Spartel se fait en demi-journée à l’ouest."
+    }
+  },
+  "daytrips": {
+    "badge": "Autour de Tanger",
+    "title": "Meilleures excursions depuis Tanger",
+    "subtitle": "Ruelles bleues, remparts blancs et médina face à l’Espagne à portée de route.",
+    "chefchaouen": {
+      "title": "Chefchaouen",
+      "desc": "Médina bleue dans le Rif — environ 2–2,5 heures de route.",
+      "name": "Chefchaouen"
+    },
+    "asilah": {
+      "title": "Asilah",
+      "desc": "Remparts atlantiques et ruelles d’artistes — environ 1 heure au sud.",
+      "name": "Asilah"
+    },
+    "tetouan": {
+      "title": "Tétouan",
+      "desc": "Médina UNESCO sous le Rif — environ 1 heure au sud-est.",
+      "name": "Tétouan"
+    },
+    "ceuta": {
+      "title": "Vers Ceuta",
+      "desc": "Direction de l’enclave espagnole — vérifiez les règles frontalières avant de partir.",
+      "name": "Vers Ceuta"
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ sur Tanger",
+    "q1": {
+      "question": "Combien de jours à Tanger ?",
+      "answer": "Deux journées couvrent médina, kasbah, Café Hafa et Cap Spartel avec les grottes. Un troisième jour permet Malabata, la Légation ou une excursion."
+    },
+    "q2": {
+      "question": "Tanger n’est-elle qu’une ville de transit ?",
+      "answer": "C’est une porte d’entrée, mais la médina, les belvédères du détroit et les caps proches méritent un vrai séjour — pas seulement une correspondance de ferry."
+    },
+    "q3": {
+      "question": "Comment rejoindre Tanger ?",
+      "answer": "Aéroport Ibn Battuta (TNG), train à grande vitesse Al Boraq depuis Casablanca/Rabat/Kénitra, trains et bus longue distance, plus ferries depuis l’Espagne."
+    },
+    "q4": {
+      "question": "Meilleure période pour Tanger ?",
+      "answer": "Printemps et automne pour marcher par temps doux. L’été est animé ; l’hiver plus frais et venteux sur les caps exposés."
+    }
+  },
+  "eat": {
+    "badge": "Table",
+    "title": "Où manger à Tanger",
+    "subtitle": "Fruits de mer au port, terrasses de cafés et cuisines de médina.",
+    "bacha": {
+      "title": "Fruits de mer du port",
+      "tag": "Fruits de mer",
+      "loc": "Port",
+      "desc": "Poisson frais près des débarquements."
+    },
+    "elfenn": {
+      "title": "Café Hafa",
+      "tag": "Café",
+      "loc": "Marshan",
+      "desc": "Thé à la menthe avec vue classique sur le détroit."
+    },
+    "fassia": {
+      "title": "Cuisines de médina",
+      "tag": "Local",
+      "loc": "Médina",
+      "desc": "Tajines et grillades dans les ruelles."
+    },
+    "jardin": {
+      "title": "Cafés du Petit Socco",
+      "tag": "Café",
+      "loc": "Médina",
+      "desc": "Observer la place autour d’un café."
+    },
+    "moha": {
+      "title": "Adresses de corniche",
+      "tag": "Varié",
+      "loc": "Plage",
+      "desc": "Repas simples sur le front de mer."
+    },
+    "nomad": {
+      "title": "Restaurants ville nouvelle",
+      "tag": "International",
+      "loc": "Ville nouvelle",
+      "desc": "Cartes plus larges loin de la foule de la médina."
     }
   }
 }

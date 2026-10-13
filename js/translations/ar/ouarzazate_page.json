@@ -30,35 +30,43 @@
     "explore": "استكشف المكان ←",
     "taourirt": {
       "name": "قصبة تاوريرت",
-      "desc": "حصن كلاوي سابقاً وأجواء بوابة الصحراء."
+      "desc": "حصن كلاوي سابقاً وأجواء بوابة الصحراء.",
+      "tag": "قصبة"
     },
     "atlas-studios": {
       "name": "استوديوهات أطلس",
-      "desc": "ديكورات في الهواء الطلق — هوليوود المغرب."
+      "desc": "ديكورات في الهواء الطلق — هوليوود المغرب.",
+      "tag": "ديكورات"
     },
     "ait-benhaddou": {
       "name": "أيت بن حدو",
-      "desc": "قصر طيني شهير على طريق القوافل القديم."
+      "desc": "قصر طيني شهير على طريق القوافل القديم.",
+      "tag": "قصر يونسكو"
     },
     "tifoultoute": {
       "name": "قصبة تفولتوت",
-      "desc": "قصبة على التل بإطلالات واسعة وأهدأ."
+      "desc": "قصبة على التل بإطلالات واسعة وأهدأ.",
+      "tag": "إطلالة"
     },
     "fint": {
       "name": "واحة فنت",
-      "desc": "ممر نخيل جنوب المدينة."
+      "desc": "ممر نخيل جنوب المدينة.",
+      "tag": "واحة"
     },
     "cinema-museum": {
       "name": "متحف السينما",
-      "desc": "أزياء وقصة التصوير في ورزازات."
+      "desc": "أزياء وقصة التصوير في ورزازات.",
+      "tag": "متحف"
     },
     "skoura": {
       "name": "واحة سكورة",
-      "desc": "واحة واسعة وقصبات نحو دادس."
+      "desc": "واحة واسعة وقصبات نحو دادس.",
+      "tag": "واحة نخيل"
     },
     "souk": {
       "name": "سوق ورزازات",
-      "desc": "شوارع سوق وإيقاع محلي."
+      "desc": "شوارع سوق وإيقاع محلي.",
+      "tag": "سوق"
     }
   },
   "itinerary": {
@@ -67,27 +75,27 @@
     "subtitle": "المدينة والاستوديوهات، ثم أيت بن حدو، ثم واحة أو طريق الشرق."
   },
   "detailed_itinerary": {
-    "day1_tab": "Day 1 — Town & Studios",
-    "day2_tab": "Day 2 — Aït Benhaddou",
-    "day3_tab": "Day 3 — Oasis or road east",
-    "day1_m": "Morning — Kasbah Taourirt",
-    "day1_md": "Explore the Glaoui kasbah courtyards and terraces at the edge of town.",
-    "day1_a": "Afternoon — Atlas Film Studios",
-    "day1_ad": "Walk the outdoor sets and desert backdrops that made Ouarzazate a film hub.",
-    "day1_e": "Evening — Town centre",
-    "day1_ed": "Simple dinner in the centre; early night if tomorrow is Aït Benhaddou.",
-    "day2_m": "Morning — Drive to Aït Benhaddou",
-    "day2_md": "Leave early for the UNESCO ksar; climb for the classic panorama.",
-    "day2_a": "Afternoon — Ksar lanes & lunch",
-    "day2_ad": "Explore the fortified village, then lunch on the modern bank.",
-    "day2_e": "Evening — Return to Ouarzazate",
-    "day2_ed": "Back to town; optional Cinema Museum if energy remains.",
-    "day3_m": "Morning — Fint Oasis or Tifoultoute",
-    "day3_md": "Choose palms and village paths, or a quieter hill kasbah viewpoint.",
-    "day3_a": "Afternoon — Skoura or free time",
-    "day3_ad": "Palm grove toward the Dadès, or shopping and rest in town.",
-    "day3_e": "Evening — Next leg",
-    "day3_ed": "Continue toward Dadès, Draa/Zagora or back to Marrakech depending on your route."
+    "day1_tab": "اليوم 1 — المدينة والاستوديوهات",
+    "day2_tab": "اليوم 2 — أيت بن حدو",
+    "day3_tab": "اليوم 3 — واحة أو طريق الشرق",
+    "day1_m": "صباح — قصبة تاوريرت",
+    "day1_md": "تجوّل في ساحات وشرفات قصبة الكلاوي على طرف المدينة.",
+    "day1_a": "بعد الظهر — استوديوهات أطلس",
+    "day1_ad": "سر بين الديكورات المفتوحة التي جعلت ورزازات مركزاً سينمائياً.",
+    "day1_e": "مساء — وسط المدينة",
+    "day1_ed": "عشاء بسيط في الوسط؛ نم مبكراً إن كان الغد لأيت بن حدو.",
+    "day2_m": "صباح — الطريق إلى أيت بن حدو",
+    "day2_md": "انطلق مبكراً للقصر اليونسكو؛ اصعد للبانوراما الكلاسيكية.",
+    "day2_a": "بعد الظهر — أزقة القصر والغداء",
+    "day2_ad": "استكشف القرية المحصّنة ثم تغدَّ على الضفة الحديثة.",
+    "day2_e": "مساء — العودة إلى ورزازات",
+    "day2_ed": "العودة للمدينة؛ متحف السينما اختياري.",
+    "day3_m": "صباح — واحة فنت أو تفولتوت",
+    "day3_md": "نخيل ومسارات قرية، أو قصبة أهدأ على التل.",
+    "day3_a": "بعد الظهر — سكورة أو وقت حر",
+    "day3_ad": "واحة نحو دادس، أو تسوق وراحة في المدينة.",
+    "day3_e": "مساء — المرحلة التالية",
+    "day3_ed": "نحو دادس أو درعة/زاكورة أو العودة لمراكش حسب مسارك."
   },
   "directory": {
     "badge": "الدليل",
@@ -104,61 +112,61 @@
     "district_label": "المنطقة:",
     "check_availability": "تحقق من التوفر ←",
     "check": "تحقق من التوفر ←",
-    "counter": "{n} stays found",
-    "found": "stays found",
-    "no_results": "No stays match these filters.",
-    "type_riad": "Riad",
-    "type_hotel": "Hotel",
-    "type_dar": "Dar / guesthouse",
-    "type_guesthouse": "Guesthouse",
-    "type_boutique": "Boutique",
-    "location_town": "Town centre",
-    "location_outskirts": "Kasbah area",
-    "location_outside": "Skoura / East",
-    "area_medina": "Town centre",
-    "area_kasbah": "Kasbah area",
+    "counter": "{n} إقامات",
+    "found": "إقامات",
+    "no_results": "لا توجد إقامات بهذه الفلاتر.",
+    "type_riad": "رياض",
+    "type_hotel": "فندق",
+    "type_dar": "دار / ضيافة",
+    "type_guesthouse": "دار ضيافة",
+    "type_boutique": "بوتيك",
+    "location_town": "وسط المدينة",
+    "location_outskirts": "منطقة القصبة",
+    "location_outside": "سكورة / الشرق",
+    "area_medina": "وسط المدينة",
+    "area_kasbah": "منطقة القصبة",
     "area_beach": "طريق سكورة",
-    "area_newtown": "New town"
+    "area_newtown": "المدينة الجديدة"
   },
   "eat": {
     "badge": "مأكولات",
     "title": "أين تأكل في ورزازات",
     "subtitle": "طواجن في المدينة وشرفات أيت بن حدو.",
     "bacha": {
-      "title": "Town tagines",
-      "tag": "Local",
-      "loc": "Centre",
-      "desc": "Classic Moroccan plates in the centre."
+      "title": "طواجن المدينة",
+      "tag": "محلي",
+      "loc": "الوسط",
+      "desc": "أطباق مغربية كلاسيكية في الوسط."
     },
     "elfenn": {
-      "title": "Kasbah-area cafés",
-      "tag": "Café",
-      "loc": "Taourirt",
-      "desc": "Drinks near the main kasbah."
+      "title": "مقاهي قرب القصبة",
+      "tag": "مقهى",
+      "loc": "تاوريرت",
+      "desc": "مشروبات قرب القصبة الرئيسية."
     },
     "fassia": {
-      "title": "Hotel restaurants",
-      "tag": "Hotel",
-      "loc": "Town",
-      "desc": "Reliable options after long day trips."
+      "title": "مطاعم الفنادق",
+      "tag": "فندق",
+      "loc": "المدينة",
+      "desc": "خيارات موثوقة بعد رحلات طويلة."
     },
     "jardin": {
-      "title": "Aït Benhaddou terraces",
-      "tag": "Day trip",
+      "title": "شرفات أيت بن حدو",
+      "tag": "رحلة يوم",
       "loc": "القصر",
-      "desc": "Lunch with views of the fortified village."
+      "desc": "غداء بإطلالة على القرية المحصّنة."
     },
     "moha": {
-      "title": "Simple grills",
-      "tag": "Grill",
-      "loc": "Centre",
-      "desc": "Everyday meat and bread stops."
+      "title": "مشويات بسيطة",
+      "tag": "مشوي",
+      "loc": "الوسط",
+      "desc": "لحم وخبز يومي."
     },
     "nomad": {
-      "title": "Skoura lodges",
-      "tag": "Oasis",
-      "loc": "Skoura",
-      "desc": "Set menus in palm-grove stays."
+      "title": "إقامات سكورة",
+      "tag": "واحة",
+      "loc": "سكورة",
+      "desc": "قوائم ثابتة في النخيل."
     }
   },
   "food": {
@@ -167,46 +175,46 @@
     "subtitle": "طواجن في المدينة وشرفات أيت بن حدو.",
     "items": {
       "1": {
-        "name": "Town tagines",
+        "name": "طواجن المدينة",
         "rating": "4.3",
-        "type": "Local",
-        "area": "Centre",
-        "desc": "Classic Moroccan plates in the centre."
+        "type": "محلي",
+        "area": "الوسط",
+        "desc": "أطباق مغربية كلاسيكية في الوسط."
       },
       "2": {
-        "name": "Kasbah-area cafés",
+        "name": "مقاهي قرب القصبة",
         "rating": "4.2",
-        "type": "Café",
-        "area": "Taourirt",
-        "desc": "Drinks near the main kasbah."
+        "type": "مقهى",
+        "area": "تاوريرت",
+        "desc": "مشروبات قرب القصبة الرئيسية."
       },
       "3": {
-        "name": "Hotel restaurants",
+        "name": "مطاعم الفنادق",
         "rating": "4.4",
-        "type": "Hotel",
-        "area": "Town",
-        "desc": "Reliable options after long day trips."
+        "type": "فندق",
+        "area": "المدينة",
+        "desc": "خيارات موثوقة بعد رحلات طويلة."
       },
       "4": {
-        "name": "Aït Benhaddou terraces",
+        "name": "شرفات أيت بن حدو",
         "rating": "4.5",
-        "type": "Day trip",
-        "area": "Ksar",
-        "desc": "Lunch with views of the fortified village."
+        "type": "رحلة يوم",
+        "area": "القصر",
+        "desc": "غداء بإطلالة على القرية المحصّنة."
       },
       "5": {
-        "name": "Simple grills",
+        "name": "مشويات بسيطة",
         "rating": "4.1",
-        "type": "Grill",
-        "area": "Centre",
-        "desc": "Everyday meat and bread stops."
+        "type": "مشوي",
+        "area": "الوسط",
+        "desc": "لحم وخبز يومي."
       },
       "6": {
-        "name": "Skoura lodges",
+        "name": "إقامات سكورة",
         "rating": "4.4",
-        "type": "Oasis",
-        "area": "Skoura",
-        "desc": "Set menus in palm-grove stays."
+        "type": "واحة",
+        "area": "سكورة",
+        "desc": "قوائم ثابتة في النخيل."
       }
     }
   },

@@ -30,35 +30,43 @@
     "explore": "Explorar el lugar →",
     "taourirt": {
       "name": "Kasbah Taourirt",
-      "desc": "Antigua fortaleza Glaoui y ambiente de puerta del desierto."
+      "desc": "Antigua fortaleza Glaoui y ambiente de puerta del desierto.",
+      "tag": "Kasbah"
     },
     "atlas-studios": {
       "name": "Atlas Film Studios",
-      "desc": "Decorados al aire libre — el Hollywood de Marruecos."
+      "desc": "Decorados al aire libre — el Hollywood de Marruecos.",
+      "tag": "Estudios"
     },
     "ait-benhaddou": {
       "name": "Aït Benhaddou",
-      "desc": "Ksar de tierra icónico en la antigua ruta caravanera."
+      "desc": "Ksar de tierra icónico en la antigua ruta caravanera.",
+      "tag": "Ksar UNESCO"
     },
     "tifoultoute": {
       "name": "Kasbah Tifoultoute",
-      "desc": "Kasbah en lo alto, vistas amplias, más tranquila."
+      "desc": "Kasbah en lo alto, vistas amplias, más tranquila.",
+      "tag": "Mirador"
     },
     "fint": {
       "name": "Oasis de Fint",
-      "desc": "Corredor de palmeras al sur de la ciudad."
+      "desc": "Corredor de palmeras al sur de la ciudad.",
+      "tag": "Oasis"
     },
     "cinema-museum": {
       "name": "Museo del Cine",
-      "desc": "Trajes e historia del rodaje en Ouarzazate."
+      "desc": "Trajes e historia del rodaje en Ouarzazate.",
+      "tag": "Museo"
     },
     "skoura": {
       "name": "Palmeral de Skoura",
-      "desc": "Gran oasis y kasbahs hacia el Dadès."
+      "desc": "Gran oasis y kasbahs hacia el Dadès.",
+      "tag": "Palmeral"
     },
     "souk": {
       "name": "Zoco de Ouarzazate",
-      "desc": "Calles de mercado y ritmo local."
+      "desc": "Calles de mercado y ritmo local.",
+      "tag": "Zoco"
     }
   },
   "itinerary": {
@@ -67,27 +75,27 @@
     "subtitle": "Ciudad y estudios, luego Aït Benhaddou, luego oasis o ruta este."
   },
   "detailed_itinerary": {
-    "day1_tab": "Day 1 — Town & Studios",
-    "day2_tab": "Day 2 — Aït Benhaddou",
-    "day3_tab": "Day 3 — Oasis or road east",
-    "day1_m": "Morning — Kasbah Taourirt",
-    "day1_md": "Explore the Glaoui kasbah courtyards and terraces at the edge of town.",
-    "day1_a": "Afternoon — Atlas Film Studios",
-    "day1_ad": "Walk the outdoor sets and desert backdrops that made Ouarzazate a film hub.",
-    "day1_e": "Evening — Town centre",
-    "day1_ed": "Simple dinner in the centre; early night if tomorrow is Aït Benhaddou.",
-    "day2_m": "Morning — Drive to Aït Benhaddou",
-    "day2_md": "Leave early for the UNESCO ksar; climb for the classic panorama.",
-    "day2_a": "Afternoon — Ksar lanes & lunch",
-    "day2_ad": "Explore the fortified village, then lunch on the modern bank.",
-    "day2_e": "Evening — Return to Ouarzazate",
-    "day2_ed": "Back to town; optional Cinema Museum if energy remains.",
-    "day3_m": "Morning — Fint Oasis or Tifoultoute",
-    "day3_md": "Choose palms and village paths, or a quieter hill kasbah viewpoint.",
-    "day3_a": "Afternoon — Skoura or free time",
-    "day3_ad": "Palm grove toward the Dadès, or shopping and rest in town.",
-    "day3_e": "Evening — Next leg",
-    "day3_ed": "Continue toward Dadès, Draa/Zagora or back to Marrakech depending on your route."
+    "day1_tab": "Día 1 — Ciudad y estudios",
+    "day2_tab": "Día 2 — Aït Benhaddou",
+    "day3_tab": "Día 3 — Oasis o ruta este",
+    "day1_m": "Mañana — Kasbah Taourirt",
+    "day1_md": "Explora patios y terrazas de la kasbah Glaoui al borde de la ciudad.",
+    "day1_a": "Tarde — Atlas Film Studios",
+    "day1_ad": "Recorre los decorados al aire libre que hicieron de Ouarzazate un hub de cine.",
+    "day1_e": "Noche — Centro",
+    "day1_ed": "Cena sencilla; acuesta temprano si mañana es Aït Benhaddou.",
+    "day2_m": "Mañana — Camino a Aït Benhaddou",
+    "day2_md": "Sal temprano al ksar UNESCO; sube para el panorama clásico.",
+    "day2_a": "Tarde — Calles del ksar y comida",
+    "day2_ad": "Explora el pueblo fortificado y come en la orilla moderna.",
+    "day2_e": "Noche — Regreso a Ouarzazate",
+    "day2_ed": "Vuelta a la ciudad; museo del cine opcional.",
+    "day3_m": "Mañana — Oasis de Fint o Tifoultoute",
+    "day3_md": "Palmeras y senderos, o kasbah más tranquila en lo alto.",
+    "day3_a": "Tarde — Skoura o tiempo libre",
+    "day3_ad": "Palmeral hacia el Dadès, o compras y descanso.",
+    "day3_e": "Noche — Siguiente etapa",
+    "day3_ed": "Hacia Dadès, Draa/Zagora o regreso a Marraquech."
   },
   "directory": {
     "badge": "Directorio",
@@ -104,17 +112,17 @@
     "district_label": "Zona:",
     "check_availability": "Ver disponibilidad →",
     "check": "Ver disponibilidad →",
-    "counter": "{n} stays found",
-    "found": "stays found",
+    "counter": "{n} alojamientos",
+    "found": "alojamientos",
     "no_results": "No stays match these filters.",
     "type_riad": "Riad",
     "type_hotel": "Hotel",
     "type_dar": "Dar / guesthouse",
     "type_guesthouse": "Guesthouse",
     "type_boutique": "Boutique",
-    "location_town": "Town centre",
-    "location_outskirts": "Kasbah area",
-    "location_outside": "Skoura / East",
+    "location_town": "Centro",
+    "location_outskirts": "Zona kasbah",
+    "location_outside": "Skoura / Este",
     "area_medina": "Town centre",
     "area_kasbah": "Kasbah area",
     "area_beach": "Carretera de Skoura",
@@ -125,40 +133,40 @@
     "title": "Dónde comer en Ouarzazate",
     "subtitle": "Tajines en la ciudad y terrazas en Aït Benhaddou.",
     "bacha": {
-      "title": "Town tagines",
+      "title": "Tajines en la ciudad",
       "tag": "Local",
-      "loc": "Centre",
-      "desc": "Classic Moroccan plates in the centre."
+      "loc": "Centro",
+      "desc": "Platos marroquíes clásicos."
     },
     "elfenn": {
-      "title": "Kasbah-area cafés",
+      "title": "Cafés cerca de la kasbah",
       "tag": "Café",
       "loc": "Taourirt",
-      "desc": "Drinks near the main kasbah."
+      "desc": "Bebidas junto a la gran kasbah."
     },
     "fassia": {
-      "title": "Hotel restaurants",
+      "title": "Restaurantes de hotel",
       "tag": "Hotel",
-      "loc": "Town",
-      "desc": "Reliable options after long day trips."
+      "loc": "Ciudad",
+      "desc": "Opciones fiables tras excursiones."
     },
     "jardin": {
-      "title": "Aït Benhaddou terraces",
-      "tag": "Day trip",
+      "title": "Terrazas de Aït Benhaddou",
+      "tag": "Excursión",
       "loc": "Ksar",
-      "desc": "Lunch with views of the fortified village."
+      "desc": "Comida con vistas al pueblo fortificado."
     },
     "moha": {
-      "title": "Simple grills",
-      "tag": "Grill",
-      "loc": "Centre",
-      "desc": "Everyday meat and bread stops."
+      "title": "Parrillas sencillas",
+      "tag": "Parrilla",
+      "loc": "Centro",
+      "desc": "Carne y pan del día a día."
     },
     "nomad": {
-      "title": "Skoura lodges",
+      "title": "Lodges de Skoura",
       "tag": "Oasis",
       "loc": "Skoura",
-      "desc": "Set menus in palm-grove stays."
+      "desc": "Menús fijos en el palmeral."
     }
   },
   "food": {
@@ -167,46 +175,46 @@
     "subtitle": "Tajines en la ciudad y terrazas en Aït Benhaddou.",
     "items": {
       "1": {
-        "name": "Town tagines",
+        "name": "Tajines en la ciudad",
         "rating": "4.3",
         "type": "Local",
-        "area": "Centre",
-        "desc": "Classic Moroccan plates in the centre."
+        "area": "Centro",
+        "desc": "Platos marroquíes clásicos."
       },
       "2": {
-        "name": "Kasbah-area cafés",
+        "name": "Cafés cerca de la kasbah",
         "rating": "4.2",
         "type": "Café",
         "area": "Taourirt",
-        "desc": "Drinks near the main kasbah."
+        "desc": "Bebidas junto a la kasbah."
       },
       "3": {
-        "name": "Hotel restaurants",
+        "name": "Restaurantes de hotel",
         "rating": "4.4",
         "type": "Hotel",
-        "area": "Town",
-        "desc": "Reliable options after long day trips."
+        "area": "Ciudad",
+        "desc": "Opciones fiables."
       },
       "4": {
-        "name": "Aït Benhaddou terraces",
+        "name": "Terrazas de Aït Benhaddou",
         "rating": "4.5",
-        "type": "Day trip",
+        "type": "Excursión",
         "area": "Ksar",
-        "desc": "Lunch with views of the fortified village."
+        "desc": "Comida con vistas al ksar."
       },
       "5": {
-        "name": "Simple grills",
+        "name": "Parrillas sencillas",
         "rating": "4.1",
-        "type": "Grill",
-        "area": "Centre",
-        "desc": "Everyday meat and bread stops."
+        "type": "Parrilla",
+        "area": "Centro",
+        "desc": "Carne y pan del día a día."
       },
       "6": {
-        "name": "Skoura lodges",
+        "name": "Lodges de Skoura",
         "rating": "4.4",
         "type": "Oasis",
         "area": "Skoura",
-        "desc": "Set menus in palm-grove stays."
+        "desc": "Menús fijos en el palmeral."
       }
     }
   },

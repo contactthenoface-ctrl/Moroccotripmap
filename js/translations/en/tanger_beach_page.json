@@ -1,194 +1,192 @@
 {
-  "tanger_beach_page": {
-    "seo": {
-      "title": "Tangier Beach & Corniche | City Seafront | MoroccoTripMap",
-      "description": "Tangier’s city beach and corniche offer an easy sea-level break near hotels and the new town — walks, cafés and Atlantic-Mediterranean air.",
-      "keywords": "Tangier beach, Tangier corniche, Tangier seafront"
+  "seo": {
+    "title": "Tangier Beach & Corniche | City Seafront | MoroccoTripMap",
+    "description": "Tangier’s city beach and corniche offer an easy sea-level break near hotels and the new town — walks, cafés and Atlantic-Mediterranean air.",
+    "keywords": "Tangier beach, Tangier corniche, Tangier seafront"
+  },
+  "name": "Tangier Beach",
+  "hero_subtitle": "City sand and corniche near the new town.",
+  "info": {
+    "best_time_label": "Best time",
+    "best_time_val": "Morning or late afternoon",
+    "duration_label": "Suggested duration",
+    "duration_val": "1 – 2 hours",
+    "entry_label": "Entry",
+    "entry_val": "Free",
+    "area_label": "Location",
+    "area_val": "City seafront / corniche"
+  },
+  "overview": {
+    "title": "Sea level after the medina climbs",
+    "p1": "Tangier’s main city beach stretches along the bay with a corniche for walking. It is not a remote cove — expect urban energy, hotels nearby and a practical place to breathe after medina lanes.",
+    "p2": "Swimming depends on conditions and local advice; many visitors come for the walk and the horizon toward Spain on clear days."
+  },
+  "gallery": {
+    "badge": "Photo gallery",
+    "title": "Seafront scenes",
+    "subtitle": "Sand, corniche and bay light.",
+    "s1": {
+      "caption": "Tangier city beach"
     },
-    "name": "Tangier Beach",
-    "hero_subtitle": "City sand and corniche near the new town.",
-    "info": {
-      "best_time_label": "Best time",
-      "best_time_val": "Morning or late afternoon",
-      "duration_label": "Suggested duration",
-      "duration_val": "1 – 2 hours",
-      "entry_label": "Entry",
-      "entry_val": "Free",
-      "area_label": "Location",
-      "area_val": "City seafront / corniche"
+    "s2": {
+      "caption": "Corniche walkway"
     },
-    "overview": {
-      "title": "Sea level after the medina climbs",
-      "p1": "Tangier’s main city beach stretches along the bay with a corniche for walking. It is not a remote cove — expect urban energy, hotels nearby and a practical place to breathe after medina lanes.",
-      "p2": "Swimming depends on conditions and local advice; many visitors come for the walk and the horizon toward Spain on clear days."
+    "s3": {
+      "caption": "Bay view toward the horizon"
     },
-    "gallery": {
-      "badge": "Photo gallery",
-      "title": "Seafront scenes",
-      "subtitle": "Sand, corniche and bay light.",
-      "s1": {
-        "caption": "Tangier city beach"
-      },
-      "s2": {
-        "caption": "Corniche walkway"
-      },
-      "s3": {
-        "caption": "Bay view toward the horizon"
-      },
-      "s4": {
-        "caption": "Evening on the seafront"
-      },
-      "s5": {
-        "caption": "Beach against the city edge"
-      }
+    "s4": {
+      "caption": "Evening on the seafront"
     },
-    "moods": {
-      "badge": "Timing",
-      "title": "Beach & corniche through the day",
-      "subtitle": "Urban seafront rhythm.",
-      "1": {
-        "tag": "Morning",
-        "title": "Open sand",
-        "desc": "Cooler air and space to walk before the day heats up.",
-        "duration": "Morning"
-      },
-      "2": {
-        "tag": "Midday",
-        "title": "Active strip",
-        "desc": "Hotels, walkers and sea breeze along the long front.",
-        "duration": "Midday"
-      },
-      "3": {
-        "tag": "Evening",
-        "title": "Promenade light",
-        "desc": "Popular stroll time as the city turns toward the water.",
-        "duration": "Evening"
-      }
+    "s5": {
+      "caption": "Beach against the city edge"
+    }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Beach & corniche through the day",
+    "subtitle": "Urban seafront rhythm.",
+    "1": {
+      "tag": "Morning",
+      "title": "Open sand",
+      "desc": "Cooler air and space to walk before the day heats up.",
+      "duration": "Morning"
     },
-    "food": {
-      "title": "Eat on the seafront",
-      "p1": "Cafés and restaurants along the corniche — convenient, varied quality.",
-      "li1": "Corniche cafés for drinks.",
-      "li2": "Seafood options near the port end.",
-      "li3": "Hotel restaurants along the strip.",
-      "li4": "Cash for smaller kiosks.",
-      "li5": "Medina meals if you want more local kitchens.",
-      "p2": ""
+    "2": {
+      "tag": "Midday",
+      "title": "Active strip",
+      "desc": "Hotels, walkers and sea breeze along the long front.",
+      "duration": "Midday"
     },
-    "tips": {
-      "title": "Practical tips",
-      "1": {
-        "title": "Getting there",
-        "desc": "Petit taxi or walk from the new town; hotels often sit on or near the strip."
-      },
-      "2": {
-        "title": "Swimming",
-        "desc": "Check local conditions; this is an urban beach, not a guarded resort bay."
-      },
-      "3": {
-        "title": "Combine",
-        "desc": "Good reset between medina mornings and evening plans."
-      }
+    "3": {
+      "tag": "Evening",
+      "title": "Promenade light",
+      "desc": "Popular stroll time as the city turns toward the water.",
+      "duration": "Evening"
+    }
+  },
+  "food": {
+    "title": "Eat on the seafront",
+    "p1": "Cafés and restaurants along the corniche — convenient, varied quality.",
+    "li1": "Corniche cafés for drinks.",
+    "li2": "Seafood options near the port end.",
+    "li3": "Hotel restaurants along the strip.",
+    "li4": "Cash for smaller kiosks.",
+    "li5": "Medina meals if you want more local kitchens.",
+    "p2": ""
+  },
+  "tips": {
+    "title": "Practical tips",
+    "1": {
+      "title": "Getting there",
+      "desc": "Petit taxi or walk from the new town; hotels often sit on or near the strip."
     },
-    "faq": {
-      "badge": "Good to know",
-      "title": "FAQ about Tangier Beach",
-      "q1": {
-        "question": "Is the beach clean enough to swim?",
-        "answer": "Conditions vary; many prefer walking and views. Ask locally on the day."
-      },
-      "q2": {
-        "question": "How long is the seafront?",
-        "answer": "A long urban stretch — enough for a solid walk without leaving the city."
-      },
-      "q3": {
-        "question": "Far from the medina?",
-        "answer": "A short taxi or a longer walk depending on your medina exit."
-      },
-      "q4": {
-        "question": "Best time of day?",
-        "answer": "Morning for cooler air; evening for the promenade atmosphere."
-      },
-      "q5": {
-        "question": "Family friendly?",
-        "answer": "Yes for walks and space; supervise near the water."
-      }
+    "2": {
+      "title": "Swimming",
+      "desc": "Check local conditions; this is an urban beach, not a guarded resort bay."
     },
-    "gyg": {
-      "badge": "Tours & experiences",
-      "title": "Tours linked to this place",
-      "subtitle": "Options if you prefer a local operator.",
-      "check": "Check availability on GetYourGuide →",
-      "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
-      "t1": {
-        "tag": "City",
-        "title": "Tangier medina & kasbah",
-        "desc": "Old town lanes and hilltop views."
-      },
-      "t2": {
-        "tag": "Coast",
-        "title": "Cap Spartel & Hercules Caves",
-        "desc": "Western headland and sea caves half-day."
-      },
-      "t3": {
-        "tag": "Day trip",
-        "title": "Chefchaouen blue medina",
-        "desc": "Full-day to the Rif mountain town."
-      }
+    "3": {
+      "title": "Combine",
+      "desc": "Good reset between medina mornings and evening plans."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "FAQ about Tangier Beach",
+    "q1": {
+      "question": "Is the beach clean enough to swim?",
+      "answer": "Conditions vary; many prefer walking and views. Ask locally on the day."
     },
-    "blog": {
-      "badge": "From the blog",
-      "title": "Related articles",
-      "all": "All articles →",
-      "read": "Read article →",
-      "a1": {
-        "tag": "Planning",
-        "title": "First time in Tangier",
-        "desc": "Medina, capes and strait logistics."
-      },
-      "a2": {
-        "tag": "Guide",
-        "title": "Strait viewpoints",
-        "desc": "Hafa, Spartel and Malabata."
-      },
-      "a3": {
-        "tag": "Day trips",
-        "title": "North from Tangier",
-        "desc": "Asilah, Tetouan, Chefchaouen."
-      }
+    "q2": {
+      "question": "How long is the seafront?",
+      "answer": "A long urban stretch — enough for a solid walk without leaving the city."
     },
-    "nearby": {
-      "badge": "Keep exploring",
-      "title": "More places in Tangier",
-      "back": "← Back to Tangier guide",
-      "explore": "Explore place →",
-      "medina": {
-        "name": "Tangier Medina"
-      },
-      "kasbah": {
-        "name": "Kasbah Museum"
-      },
-      "socco": {
-        "name": "Grand Socco"
-      },
-      "hafa": {
-        "name": "Café Hafa"
-      },
-      "beach": {
-        "name": "Tangier Beach"
-      },
-      "spartel": {
-        "name": "Cap Spartel"
-      },
-      "caves": {
-        "name": "Hercules Caves"
-      },
-      "malabata": {
-        "name": "Cap Malabata"
-      },
-      "legation": {
-        "name": "American Legation"
-      }
+    "q3": {
+      "question": "Far from the medina?",
+      "answer": "A short taxi or a longer walk depending on your medina exit."
+    },
+    "q4": {
+      "question": "Best time of day?",
+      "answer": "Morning for cooler air; evening for the promenade atmosphere."
+    },
+    "q5": {
+      "question": "Family friendly?",
+      "answer": "Yes for walks and space; supervise near the water."
+    }
+  },
+  "gyg": {
+    "badge": "Tours & experiences",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local operator.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
+    "t1": {
+      "tag": "City",
+      "title": "Tangier medina & kasbah",
+      "desc": "Old town lanes and hilltop views."
+    },
+    "t2": {
+      "tag": "Coast",
+      "title": "Cap Spartel & Hercules Caves",
+      "desc": "Western headland and sea caves half-day."
+    },
+    "t3": {
+      "tag": "Day trip",
+      "title": "Chefchaouen blue medina",
+      "desc": "Full-day to the Rif mountain town."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Tangier",
+      "desc": "Medina, capes and strait logistics."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Strait viewpoints",
+      "desc": "Hafa, Spartel and Malabata."
+    },
+    "a3": {
+      "tag": "Day trips",
+      "title": "North from Tangier",
+      "desc": "Asilah, Tetouan, Chefchaouen."
+    }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Tangier",
+    "back": "← Back to Tangier guide",
+    "explore": "Explore place →",
+    "medina": {
+      "name": "Tangier Medina"
+    },
+    "kasbah": {
+      "name": "Kasbah Museum"
+    },
+    "socco": {
+      "name": "Grand Socco"
+    },
+    "hafa": {
+      "name": "Café Hafa"
+    },
+    "beach": {
+      "name": "Tangier Beach"
+    },
+    "spartel": {
+      "name": "Cap Spartel"
+    },
+    "caves": {
+      "name": "Hercules Caves"
+    },
+    "malabata": {
+      "name": "Cap Malabata"
+    },
+    "legation": {
+      "name": "American Legation"
     }
   }
 }

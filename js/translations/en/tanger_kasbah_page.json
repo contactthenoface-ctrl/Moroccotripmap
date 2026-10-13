@@ -1,194 +1,192 @@
 {
-  "tanger_kasbah_page": {
-    "seo": {
-      "title": "Tangier Kasbah Museum | Hilltop Views & Palace Rooms | MoroccoTripMap",
-      "description": "Visit the Kasbah Museum in Tangier: historic rooms, gardens and panoramic views over the medina and the Strait of Gibraltar.",
-      "keywords": "Tangier kasbah, Kasbah Museum Tangier, Tangier viewpoint"
+  "seo": {
+    "title": "Tangier Kasbah Museum | Hilltop Views & Palace Rooms | MoroccoTripMap",
+    "description": "Visit the Kasbah Museum in Tangier: historic rooms, gardens and panoramic views over the medina and the Strait of Gibraltar.",
+    "keywords": "Tangier kasbah, Kasbah Museum Tangier, Tangier viewpoint"
+  },
+  "name": "Kasbah Museum",
+  "hero_subtitle": "Palace-museum and strait views above the medina.",
+  "info": {
+    "best_time_label": "Best time",
+    "best_time_val": "Morning or late afternoon",
+    "duration_label": "Suggested duration",
+    "duration_val": "1 – 1.5 hours",
+    "entry_label": "Entry",
+    "entry_val": "Paid museum entry",
+    "area_label": "Location",
+    "area_val": "Kasbah hill, medina heights"
+  },
+  "overview": {
+    "title": "The hill that watches the strait",
+    "p1": "The Kasbah Museum occupies a former sultan’s palace at the top of Tangier’s medina. Rooms display crafts and history; the terraces and gardens open toward the Strait of Gibraltar and the roofs below.",
+    "p2": "Combine it with a medina walk rather than as a standalone rush. Mornings are quieter; late light is better for outdoor views."
+  },
+  "gallery": {
+    "badge": "Photo gallery",
+    "title": "Kasbah views",
+    "subtitle": "Museum courtyards and the strait beyond.",
+    "s1": {
+      "caption": "Kasbah terrace overlooking Tangier"
     },
-    "name": "Kasbah Museum",
-    "hero_subtitle": "Palace-museum and strait views above the medina.",
-    "info": {
-      "best_time_label": "Best time",
-      "best_time_val": "Morning or late afternoon",
-      "duration_label": "Suggested duration",
-      "duration_val": "1 – 1.5 hours",
-      "entry_label": "Entry",
-      "entry_val": "Paid museum entry",
-      "area_label": "Location",
-      "area_val": "Kasbah hill, medina heights"
+    "s2": {
+      "caption": "Museum courtyard"
     },
-    "overview": {
-      "title": "The hill that watches the strait",
-      "p1": "The Kasbah Museum occupies a former sultan’s palace at the top of Tangier’s medina. Rooms display crafts and history; the terraces and gardens open toward the Strait of Gibraltar and the roofs below.",
-      "p2": "Combine it with a medina walk rather than as a standalone rush. Mornings are quieter; late light is better for outdoor views."
+    "s3": {
+      "caption": "View toward the strait"
     },
-    "gallery": {
-      "badge": "Photo gallery",
-      "title": "Kasbah views",
-      "subtitle": "Museum courtyards and the strait beyond.",
-      "s1": {
-        "caption": "Kasbah terrace overlooking Tangier"
-      },
-      "s2": {
-        "caption": "Museum courtyard"
-      },
-      "s3": {
-        "caption": "View toward the strait"
-      },
-      "s4": {
-        "caption": "Garden within the kasbah"
-      },
-      "s5": {
-        "caption": "Medina roofs from above"
-      }
+    "s4": {
+      "caption": "Garden within the kasbah"
     },
-    "moods": {
-      "badge": "Timing",
-      "title": "Kasbah through the day",
-      "subtitle": "When the viewpoint is strongest.",
-      "1": {
-        "tag": "Morning",
-        "title": "Quiet rooms",
-        "desc": "Calmer museum visit before tour groups peak.",
-        "duration": "Morning"
-      },
-      "2": {
-        "tag": "Midday",
-        "title": "Bright terraces",
-        "desc": "Strong light on the strait — bring sun protection.",
-        "duration": "Midday"
-      },
-      "3": {
-        "tag": "Late afternoon",
-        "title": "Soft panorama",
-        "desc": "Best outdoor light over the bay and roofs.",
-        "duration": "Late afternoon"
-      }
+    "s5": {
+      "caption": "Medina roofs from above"
+    }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Kasbah through the day",
+    "subtitle": "When the viewpoint is strongest.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet rooms",
+      "desc": "Calmer museum visit before tour groups peak.",
+      "duration": "Morning"
     },
-    "food": {
-      "title": "Eat near the kasbah",
-      "p1": "Limited options inside the museum area — plan a café in the upper medina or return downhill.",
-      "li1": "Cafés on the approach lanes.",
-      "li2": "Petit Socco for a longer pause.",
-      "li3": "Port seafood after descending.",
-      "li4": "Water for the climb.",
-      "li5": "Cash for small cafés.",
-      "p2": ""
+    "2": {
+      "tag": "Midday",
+      "title": "Bright terraces",
+      "desc": "Strong light on the strait — bring sun protection.",
+      "duration": "Midday"
     },
-    "tips": {
-      "title": "Practical tips",
-      "1": {
-        "title": "Getting there",
-        "desc": "Walk up through the medina or take a petit taxi to the kasbah gate."
-      },
-      "2": {
-        "title": "Tickets",
-        "desc": "Museum entry is paid; check current hours before you climb."
-      },
-      "3": {
-        "title": "Combine",
-        "desc": "Pair with Café Hafa (nearby cliffs) or a full medina loop."
-      }
+    "3": {
+      "tag": "Late afternoon",
+      "title": "Soft panorama",
+      "desc": "Best outdoor light over the bay and roofs.",
+      "duration": "Late afternoon"
+    }
+  },
+  "food": {
+    "title": "Eat near the kasbah",
+    "p1": "Limited options inside the museum area — plan a café in the upper medina or return downhill.",
+    "li1": "Cafés on the approach lanes.",
+    "li2": "Petit Socco for a longer pause.",
+    "li3": "Port seafood after descending.",
+    "li4": "Water for the climb.",
+    "li5": "Cash for small cafés.",
+    "p2": ""
+  },
+  "tips": {
+    "title": "Practical tips",
+    "1": {
+      "title": "Getting there",
+      "desc": "Walk up through the medina or take a petit taxi to the kasbah gate."
     },
-    "faq": {
-      "badge": "Good to know",
-      "title": "FAQ about the Kasbah Museum",
-      "q1": {
-        "question": "Is the kasbah free?",
-        "answer": "Outdoor approaches are walkable; the museum itself has a paid ticket."
-      },
-      "q2": {
-        "question": "How long is the visit?",
-        "answer": "About one to one and a half hours including terraces."
-      },
-      "q3": {
-        "question": "Are the views worth it?",
-        "answer": "Yes — one of the best elevated looks at the strait and medina together."
-      },
-      "q4": {
-        "question": "Hard climb?",
-        "answer": "Moderate slopes and steps; a taxi can drop you near the gate."
-      },
-      "q5": {
-        "question": "Best time of day?",
-        "answer": "Late afternoon for outdoor light; morning for quieter galleries."
-      }
+    "2": {
+      "title": "Tickets",
+      "desc": "Museum entry is paid; check current hours before you climb."
     },
-    "gyg": {
-      "badge": "Tours & experiences",
-      "title": "Tours linked to this place",
-      "subtitle": "Options if you prefer a local operator.",
-      "check": "Check availability on GetYourGuide →",
-      "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
-      "t1": {
-        "tag": "City",
-        "title": "Tangier medina & kasbah",
-        "desc": "Old town lanes and hilltop views."
-      },
-      "t2": {
-        "tag": "Coast",
-        "title": "Cap Spartel & Hercules Caves",
-        "desc": "Western headland and sea caves half-day."
-      },
-      "t3": {
-        "tag": "Day trip",
-        "title": "Chefchaouen blue medina",
-        "desc": "Full-day to the Rif mountain town."
-      }
+    "3": {
+      "title": "Combine",
+      "desc": "Pair with Café Hafa (nearby cliffs) or a full medina loop."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "FAQ about the Kasbah Museum",
+    "q1": {
+      "question": "Is the kasbah free?",
+      "answer": "Outdoor approaches are walkable; the museum itself has a paid ticket."
     },
-    "blog": {
-      "badge": "From the blog",
-      "title": "Related articles",
-      "all": "All articles →",
-      "read": "Read article →",
-      "a1": {
-        "tag": "Planning",
-        "title": "First time in Tangier",
-        "desc": "Medina, capes and strait logistics."
-      },
-      "a2": {
-        "tag": "Guide",
-        "title": "Strait viewpoints",
-        "desc": "Hafa, Spartel and Malabata."
-      },
-      "a3": {
-        "tag": "Day trips",
-        "title": "North from Tangier",
-        "desc": "Asilah, Tetouan, Chefchaouen."
-      }
+    "q2": {
+      "question": "How long is the visit?",
+      "answer": "About one to one and a half hours including terraces."
     },
-    "nearby": {
-      "badge": "Keep exploring",
-      "title": "More places in Tangier",
-      "back": "← Back to Tangier guide",
-      "explore": "Explore place →",
-      "medina": {
-        "name": "Tangier Medina"
-      },
-      "kasbah": {
-        "name": "Kasbah Museum"
-      },
-      "socco": {
-        "name": "Grand Socco"
-      },
-      "hafa": {
-        "name": "Café Hafa"
-      },
-      "beach": {
-        "name": "Tangier Beach"
-      },
-      "spartel": {
-        "name": "Cap Spartel"
-      },
-      "caves": {
-        "name": "Hercules Caves"
-      },
-      "malabata": {
-        "name": "Cap Malabata"
-      },
-      "legation": {
-        "name": "American Legation"
-      }
+    "q3": {
+      "question": "Are the views worth it?",
+      "answer": "Yes — one of the best elevated looks at the strait and medina together."
+    },
+    "q4": {
+      "question": "Hard climb?",
+      "answer": "Moderate slopes and steps; a taxi can drop you near the gate."
+    },
+    "q5": {
+      "question": "Best time of day?",
+      "answer": "Late afternoon for outdoor light; morning for quieter galleries."
+    }
+  },
+  "gyg": {
+    "badge": "Tours & experiences",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local operator.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
+    "t1": {
+      "tag": "City",
+      "title": "Tangier medina & kasbah",
+      "desc": "Old town lanes and hilltop views."
+    },
+    "t2": {
+      "tag": "Coast",
+      "title": "Cap Spartel & Hercules Caves",
+      "desc": "Western headland and sea caves half-day."
+    },
+    "t3": {
+      "tag": "Day trip",
+      "title": "Chefchaouen blue medina",
+      "desc": "Full-day to the Rif mountain town."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Tangier",
+      "desc": "Medina, capes and strait logistics."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Strait viewpoints",
+      "desc": "Hafa, Spartel and Malabata."
+    },
+    "a3": {
+      "tag": "Day trips",
+      "title": "North from Tangier",
+      "desc": "Asilah, Tetouan, Chefchaouen."
+    }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Tangier",
+    "back": "← Back to Tangier guide",
+    "explore": "Explore place →",
+    "medina": {
+      "name": "Tangier Medina"
+    },
+    "kasbah": {
+      "name": "Kasbah Museum"
+    },
+    "socco": {
+      "name": "Grand Socco"
+    },
+    "hafa": {
+      "name": "Café Hafa"
+    },
+    "beach": {
+      "name": "Tangier Beach"
+    },
+    "spartel": {
+      "name": "Cap Spartel"
+    },
+    "caves": {
+      "name": "Hercules Caves"
+    },
+    "malabata": {
+      "name": "Cap Malabata"
+    },
+    "legation": {
+      "name": "American Legation"
     }
   }
 }

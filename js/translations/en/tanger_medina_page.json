@@ -1,194 +1,192 @@
 {
-  "tanger_medina_page": {
-    "seo": {
-      "title": "Tangier Medina | Lanes, Soccos & Kasbah Approach | MoroccoTripMap",
-      "description": "Explore Tangier’s medina: Grand Socco entrance, Petit Socco cafés, markets and the climb toward the kasbah.",
-      "keywords": "Tangier medina, Petit Socco, Grand Socco, Tangier old town"
+  "seo": {
+    "title": "Tangier Medina | Lanes, Soccos & Kasbah Approach | MoroccoTripMap",
+    "description": "Explore Tangier’s medina: Grand Socco entrance, Petit Socco cafés, markets and the climb toward the kasbah.",
+    "keywords": "Tangier medina, Petit Socco, Grand Socco, Tangier old town"
+  },
+  "name": "Tangier Medina",
+  "hero_subtitle": "Lanes from the Grand Socco up toward the kasbah.",
+  "info": {
+    "best_time_label": "Best time",
+    "best_time_val": "Morning and late afternoon",
+    "duration_label": "Suggested duration",
+    "duration_val": "2 – 3 hours",
+    "entry_label": "Entry",
+    "entry_val": "Free to walk",
+    "area_label": "Location",
+    "area_val": "Old town, above the port"
+  },
+  "overview": {
+    "title": "The old town between port and kasbah",
+    "p1": "Tangier’s medina rises from the port edge toward the kasbah on the hill. Unlike the denser imperial medinas, it feels open in places — Petit Socco as a café hinge, market streets, and stepped lanes that still reward slow wandering.",
+    "p2": "Start from the Grand Socco gate, drift to Petit Socco, then climb when you want views. Keep valuables close in crowded stretches; evenings are atmospheric but some lanes empty out."
+  },
+  "gallery": {
+    "badge": "Photo gallery",
+    "title": "Medina scenes",
+    "subtitle": "Squares, lanes and the climb to the kasbah.",
+    "s1": {
+      "caption": "Lane in Tangier medina"
     },
-    "name": "Tangier Medina",
-    "hero_subtitle": "Lanes from the Grand Socco up toward the kasbah.",
-    "info": {
-      "best_time_label": "Best time",
-      "best_time_val": "Morning and late afternoon",
-      "duration_label": "Suggested duration",
-      "duration_val": "2 – 3 hours",
-      "entry_label": "Entry",
-      "entry_val": "Free to walk",
-      "area_label": "Location",
-      "area_val": "Old town, above the port"
+    "s2": {
+      "caption": "Petit Socco café square"
     },
-    "overview": {
-      "title": "The old town between port and kasbah",
-      "p1": "Tangier’s medina rises from the port edge toward the kasbah on the hill. Unlike the denser imperial medinas, it feels open in places — Petit Socco as a café hinge, market streets, and stepped lanes that still reward slow wandering.",
-      "p2": "Start from the Grand Socco gate, drift to Petit Socco, then climb when you want views. Keep valuables close in crowded stretches; evenings are atmospheric but some lanes empty out."
+    "s3": {
+      "caption": "Market street in the old town"
     },
-    "gallery": {
-      "badge": "Photo gallery",
-      "title": "Medina scenes",
-      "subtitle": "Squares, lanes and the climb to the kasbah.",
-      "s1": {
-        "caption": "Lane in Tangier medina"
-      },
-      "s2": {
-        "caption": "Petit Socco café square"
-      },
-      "s3": {
-        "caption": "Market street in the old town"
-      },
-      "s4": {
-        "caption": "Steps toward the kasbah"
-      },
-      "s5": {
-        "caption": "Medina walls and rooftops"
-      }
+    "s4": {
+      "caption": "Steps toward the kasbah"
     },
-    "moods": {
-      "badge": "Timing",
-      "title": "Medina through the day",
-      "subtitle": "How the lanes change from morning to evening.",
-      "1": {
-        "tag": "Morning",
-        "title": "Quiet alleys",
-        "desc": "Softer light and fewer crowds in the upper lanes.",
-        "duration": "Morning"
-      },
-      "2": {
-        "tag": "Midday",
-        "title": "Market energy",
-        "desc": "Shops open, Petit Socco busy — good for people-watching.",
-        "duration": "Midday"
-      },
-      "3": {
-        "tag": "Late afternoon",
-        "title": "Golden walls",
-        "desc": "Warm light on whitewashed streets toward the kasbah.",
-        "duration": "Late afternoon"
-      }
+    "s5": {
+      "caption": "Medina walls and rooftops"
+    }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Medina through the day",
+    "subtitle": "How the lanes change from morning to evening.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet alleys",
+      "desc": "Softer light and fewer crowds in the upper lanes.",
+      "duration": "Morning"
     },
-    "food": {
-      "title": "Eat in the medina",
-      "p1": "Cafés on Petit Socco and simple kitchens in the lanes — good for a pause between climbs.",
-      "li1": "Coffee on Petit Socco.",
-      "li2": "Grilled meats and tagines nearby.",
-      "li3": "Mint tea with a view higher up.",
-      "li4": "Small bills for stalls.",
-      "li5": "Busier spots fill at peak hours.",
-      "p2": "For a longer seafood meal, the port area is a short walk downhill."
+    "2": {
+      "tag": "Midday",
+      "title": "Market energy",
+      "desc": "Shops open, Petit Socco busy — good for people-watching.",
+      "duration": "Midday"
     },
-    "tips": {
-      "title": "Practical tips",
-      "1": {
-        "title": "Getting there",
-        "desc": "Walk from the Grand Socco or the port edge; petit taxis drop at the main gates."
-      },
-      "2": {
-        "title": "Orientation",
-        "desc": "Uphill generally leads toward the kasbah; downhill toward the port and new town."
-      },
-      "3": {
-        "title": "Safety",
-        "desc": "Normal city awareness in crowds; agree taxi fares before longer rides."
-      }
+    "3": {
+      "tag": "Late afternoon",
+      "title": "Golden walls",
+      "desc": "Warm light on whitewashed streets toward the kasbah.",
+      "duration": "Late afternoon"
+    }
+  },
+  "food": {
+    "title": "Eat in the medina",
+    "p1": "Cafés on Petit Socco and simple kitchens in the lanes — good for a pause between climbs.",
+    "li1": "Coffee on Petit Socco.",
+    "li2": "Grilled meats and tagines nearby.",
+    "li3": "Mint tea with a view higher up.",
+    "li4": "Small bills for stalls.",
+    "li5": "Busier spots fill at peak hours.",
+    "p2": "For a longer seafood meal, the port area is a short walk downhill."
+  },
+  "tips": {
+    "title": "Practical tips",
+    "1": {
+      "title": "Getting there",
+      "desc": "Walk from the Grand Socco or the port edge; petit taxis drop at the main gates."
     },
-    "faq": {
-      "badge": "Good to know",
-      "title": "FAQ about Tangier Medina",
-      "q1": {
-        "question": "Is the medina safe to walk?",
-        "answer": "Yes for standard daytime and early evening walking. Stay aware in dense crowds and use known gates at night."
-      },
-      "q2": {
-        "question": "How long do I need?",
-        "answer": "Two to three hours for a first loop including Petit Socco and a kasbah approach."
-      },
-      "q3": {
-        "question": "Do I need a guide?",
-        "answer": "Not required; maps and main axes are manageable. A guide helps with history and shortcuts."
-      },
-      "q4": {
-        "question": "Where does the medina start?",
-        "answer": "The Grand Socco is the main hinge from the new town; smaller gates open from the port side."
-      },
-      "q5": {
-        "question": "Best photo light?",
-        "answer": "Late afternoon on the upper lanes and kasbah edge."
-      }
+    "2": {
+      "title": "Orientation",
+      "desc": "Uphill generally leads toward the kasbah; downhill toward the port and new town."
     },
-    "gyg": {
-      "badge": "Tours & experiences",
-      "title": "Tours linked to this place",
-      "subtitle": "Options if you prefer a local operator.",
-      "check": "Check availability on GetYourGuide →",
-      "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
-      "t1": {
-        "tag": "City",
-        "title": "Tangier medina & kasbah",
-        "desc": "Old town lanes and hilltop views."
-      },
-      "t2": {
-        "tag": "Coast",
-        "title": "Cap Spartel & Hercules Caves",
-        "desc": "Western headland and sea caves half-day."
-      },
-      "t3": {
-        "tag": "Day trip",
-        "title": "Chefchaouen blue medina",
-        "desc": "Full-day to the Rif mountain town."
-      }
+    "3": {
+      "title": "Safety",
+      "desc": "Normal city awareness in crowds; agree taxi fares before longer rides."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "FAQ about Tangier Medina",
+    "q1": {
+      "question": "Is the medina safe to walk?",
+      "answer": "Yes for standard daytime and early evening walking. Stay aware in dense crowds and use known gates at night."
     },
-    "blog": {
-      "badge": "From the blog",
-      "title": "Related articles",
-      "all": "All articles →",
-      "read": "Read article →",
-      "a1": {
-        "tag": "Planning",
-        "title": "First time in Tangier",
-        "desc": "Medina, capes and strait logistics."
-      },
-      "a2": {
-        "tag": "Guide",
-        "title": "Strait viewpoints",
-        "desc": "Hafa, Spartel and Malabata."
-      },
-      "a3": {
-        "tag": "Day trips",
-        "title": "North from Tangier",
-        "desc": "Asilah, Tetouan, Chefchaouen."
-      }
+    "q2": {
+      "question": "How long do I need?",
+      "answer": "Two to three hours for a first loop including Petit Socco and a kasbah approach."
     },
-    "nearby": {
-      "badge": "Keep exploring",
-      "title": "More places in Tangier",
-      "back": "← Back to Tangier guide",
-      "explore": "Explore place →",
-      "medina": {
-        "name": "Tangier Medina"
-      },
-      "kasbah": {
-        "name": "Kasbah Museum"
-      },
-      "socco": {
-        "name": "Grand Socco"
-      },
-      "hafa": {
-        "name": "Café Hafa"
-      },
-      "beach": {
-        "name": "Tangier Beach"
-      },
-      "spartel": {
-        "name": "Cap Spartel"
-      },
-      "caves": {
-        "name": "Hercules Caves"
-      },
-      "malabata": {
-        "name": "Cap Malabata"
-      },
-      "legation": {
-        "name": "American Legation"
-      }
+    "q3": {
+      "question": "Do I need a guide?",
+      "answer": "Not required; maps and main axes are manageable. A guide helps with history and shortcuts."
+    },
+    "q4": {
+      "question": "Where does the medina start?",
+      "answer": "The Grand Socco is the main hinge from the new town; smaller gates open from the port side."
+    },
+    "q5": {
+      "question": "Best photo light?",
+      "answer": "Late afternoon on the upper lanes and kasbah edge."
+    }
+  },
+  "gyg": {
+    "badge": "Tours & experiences",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local operator.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
+    "t1": {
+      "tag": "City",
+      "title": "Tangier medina & kasbah",
+      "desc": "Old town lanes and hilltop views."
+    },
+    "t2": {
+      "tag": "Coast",
+      "title": "Cap Spartel & Hercules Caves",
+      "desc": "Western headland and sea caves half-day."
+    },
+    "t3": {
+      "tag": "Day trip",
+      "title": "Chefchaouen blue medina",
+      "desc": "Full-day to the Rif mountain town."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Tangier",
+      "desc": "Medina, capes and strait logistics."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Strait viewpoints",
+      "desc": "Hafa, Spartel and Malabata."
+    },
+    "a3": {
+      "tag": "Day trips",
+      "title": "North from Tangier",
+      "desc": "Asilah, Tetouan, Chefchaouen."
+    }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Tangier",
+    "back": "← Back to Tangier guide",
+    "explore": "Explore place →",
+    "medina": {
+      "name": "Tangier Medina"
+    },
+    "kasbah": {
+      "name": "Kasbah Museum"
+    },
+    "socco": {
+      "name": "Grand Socco"
+    },
+    "hafa": {
+      "name": "Café Hafa"
+    },
+    "beach": {
+      "name": "Tangier Beach"
+    },
+    "spartel": {
+      "name": "Cap Spartel"
+    },
+    "caves": {
+      "name": "Hercules Caves"
+    },
+    "malabata": {
+      "name": "Cap Malabata"
+    },
+    "legation": {
+      "name": "American Legation"
     }
   }
 }

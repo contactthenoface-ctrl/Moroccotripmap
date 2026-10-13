@@ -1,165 +1,194 @@
 {
-  "seo": {
-    "title": "Cap Malabata Tangier | Eastern Bay Views | MoroccoTripMap",
-    "description": "Cap Malabata sits east of Tangier with open views back across the bay and toward the Spanish coast — a quieter headland stop.",
-    "keywords": "Cap Malabata, Cape Malabata Tangier, Tangier bay viewpoint"
-  },
-  "name": "Cabo Malabata",
-  "hero_subtitle": "Promontorio este sobre la bahía de Tánger.",
-  "info": {
-    "best_time_label": "Mejor momento",
-    "best_time_val": "Días claros para vistas largas",
-    "duration_label": "Duración sugerida",
-    "duration_val": "45 – 90 minutos",
-    "entry_label": "Entrada",
-    "entry_val": "Miradores exteriores libres",
-    "area_label": "Ubicación",
-    "area_val": "Este de la bahía de Tánger"
-  },
-  "overview": {
-    "title": "Mirar atrás a la ciudad y el estrecho",
-    "p1": "El Cabo Malabata es la contraparte este del drama occidental del Cabo Spartel. Desde el promontorio se mira hacia la bahía de Tánger, con España a veces visible en días claros.",
-    "p2": "Menos « empaquetado » que el circuito Spartel–cuevas. Ven por el aire y la perspectiva; los servicios son limitados respecto al centro."
-  },
-  "gallery": {
-    "badge": "Galería",
-    "title": "Cabo Malabata",
-    "subtitle": "Perspectiva este sobre la bahía de Tánger.",
-    "s1": {
-      "caption": "Vista desde el Cabo Malabata"
+  "tanger_malabata_page": {
+    "seo": {
+      "title": "Cap Malabata Tangier | Eastern Bay Views | MoroccoTripMap",
+      "description": "Cap Malabata sits east of Tangier with open views back across the bay and toward the Spanish coast — a quieter headland stop.",
+      "keywords": "Cap Malabata, Cape Malabata Tangier, Tangier bay viewpoint"
     },
-    "s2": {
-      "caption": "Bahía hacia Tánger"
+    "name": "Cabo Malabata",
+    "hero_subtitle": "Promontorio este sobre la bahía de Tánger.",
+    "info": {
+      "best_time_label": "Mejor momento",
+      "best_time_val": "Días claros para vistas largas",
+      "duration_label": "Duración sugerida",
+      "duration_val": "45 – 90 minutos",
+      "entry_label": "Entrada",
+      "entry_val": "Miradores exteriores libres",
+      "area_label": "Ubicación",
+      "area_val": "Este de la bahía de Tánger"
     },
-    "s3": {
-      "caption": "Promontorio y vegetación"
+    "overview": {
+      "title": "Mirar atrás a la ciudad y el estrecho",
+      "p1": "El Cabo Malabata es la contraparte este del drama occidental del Cabo Spartel. Desde el promontorio se mira hacia la bahía de Tánger, con España a veces visible en días claros.",
+      "p2": "Menos « empaquetado » que el circuito Spartel–cuevas. Ven por el aire y la perspectiva; los servicios son limitados respecto al centro."
     },
-    "s4": {
-      "caption": "Horizonte mediterráneo"
+    "gallery": {
+      "badge": "Galería",
+      "title": "Cabo Malabata",
+      "subtitle": "Perspectiva este sobre la bahía de Tánger.",
+      "s1": {
+        "caption": "Vista desde el Cabo Malabata"
+      },
+      "s2": {
+        "caption": "Bahía hacia Tánger"
+      },
+      "s3": {
+        "caption": "Promontorio y vegetación"
+      },
+      "s4": {
+        "caption": "Horizonte mediterráneo"
+      },
+      "s5": {
+        "caption": "Parada de mirador"
+      }
     },
-    "s5": {
-      "caption": "Parada de mirador"
+    "moods": {
+      "badge": "Horarios",
+      "title": "El Cabo Malabata a lo largo del día",
+      "subtitle": "Vistas de la bahía en el lado este.",
+      "1": {
+        "tag": "Mañana",
+        "title": "Bahía clara",
+        "desc": "A menudo buena visibilidad hacia la ciudad.",
+        "duration": "Mañana"
+      },
+      "2": {
+        "tag": "Mediodía",
+        "title": "Promontorio abierto",
+        "desc": "Parada corta para el panorama — poca sombra.",
+        "duration": "Mediodía"
+      },
+      "3": {
+        "tag": "Final de tarde",
+        "title": "Línea de ciudad más suave",
+        "desc": "Luz más suave sobre la bahía si el cielo sigue despejado.",
+        "duration": "Final de tarde"
+      }
+    },
+    "food": {
+      "title": "Comer cerca de Malabata",
+      "p1": "Pocas opciones en el cabo — come en Tánger antes o después.",
+      "li1": "Lleva agua.",
+      "li2": "Restaurantes en la ciudad al volver.",
+      "li3": "Paradas ocasionales en la carretera.",
+      "li4": "Efectivo para compras pequeñas.",
+      "li5": "Acuerda la espera del taxi si te quedas.",
+      "p2": ""
+    },
+    "tips": {
+      "title": "Consejos prácticos",
+      "1": {
+        "title": "Cómo llegar",
+        "desc": "Petit taxi desde Tánger; acuerda precio de ida y vuelta con espera."
+      },
+      "2": {
+        "title": "Por qué ir",
+        "desc": "Perspectiva sobre la bahía más que una red larga de senderismo."
+      },
+      "3": {
+        "title": "Combinar",
+        "desc": "Funciona como alternativa más ligera o complemento al circuito de cabos del oeste."
+      }
+    },
+    "faq": {
+      "badge": "Bueno saber",
+      "title": "FAQ sobre el Cabo Malabata",
+      "q1": {
+        "question": "¿Distancia del centro?",
+        "answer": "Corto trayecto al este de Tánger — normalmente menos de 30 minutos según el tráfico."
+      },
+      "q2": {
+        "question": "¿Mejor que el Cabo Spartel?",
+        "answer": "Diferente: Spartel es la salida clásica faro/cuevas; Malabata ofrece una perspectiva más tranquila sobre la bahía."
+      },
+      "q3": {
+        "question": "¿Hay un faro que visitar?",
+        "answer": "El interés es la vista del promontorio; no esperes una parada de faro al estilo Spartel."
+      },
+      "q4": {
+        "question": "¿Bien con bruma?",
+        "answer": "Las vistas largas sufren — prioriza días claros."
+      },
+      "q5": {
+        "question": "¿Apto para familias?",
+        "answer": "Sí para una parada corta de mirador con supervisión cerca de los bordes."
+      }
+    },
+    "gyg": {
+      "badge": "Tours y experiencias",
+      "title": "Tours vinculados a este lugar",
+      "subtitle": "Opciones si prefieres un operador local.",
+      "check": "Ver disponibilidad en GetYourGuide →",
+      "disclosure": "Algunos enlaces son de afiliados. Si reservas a través de ellos podemos ganar una comisión sin coste extra para ti.",
+      "t1": {
+        "tag": "Ciudad",
+        "title": "Medina y kasbah de Tánger",
+        "desc": "Callejones del casco antiguo y vistas desde la colina."
+      },
+      "t2": {
+        "tag": "Costa",
+        "title": "Cabo Spartel y cuevas de Hércules",
+        "desc": "Promontorio oeste y cuevas marinas en media jornada."
+      },
+      "t3": {
+        "tag": "Excursión",
+        "title": "Medina azul de Chefchaouen",
+        "desc": "Día completo a la ciudad del Rif."
+      }
+    },
+    "blog": {
+      "badge": "Del blog",
+      "title": "Artículos relacionados",
+      "all": "Todos los artículos →",
+      "read": "Leer artículo →",
+      "a1": {
+        "tag": "Planificar",
+        "title": "Primera vez en Tánger",
+        "desc": "Medina, cabos y logística del estrecho."
+      },
+      "a2": {
+        "tag": "Guía",
+        "title": "Miradores del estrecho",
+        "desc": "Hafa, Spartel y Malabata."
+      },
+      "a3": {
+        "tag": "Excursiones",
+        "title": "Al norte desde Tánger",
+        "desc": "Asilah, Tetuán, Chefchaouen."
+      }
+    },
+    "nearby": {
+      "badge": "Seguir explorando",
+      "title": "Más lugares en Tánger",
+      "back": "← Volver a la guía de Tánger",
+      "explore": "Explorar el lugar →",
+      "medina": {
+        "name": "Medina de Tánger"
+      },
+      "kasbah": {
+        "name": "Museo de la Kasbah"
+      },
+      "socco": {
+        "name": "Grand Socco"
+      },
+      "hafa": {
+        "name": "Café Hafa"
+      },
+      "beach": {
+        "name": "Playa de Tánger"
+      },
+      "spartel": {
+        "name": "Cabo Espartel"
+      },
+      "caves": {
+        "name": "Cuevas de Hércules"
+      },
+      "malabata": {
+        "name": "Cabo Malabata"
+      },
+      "legation": {
+        "name": "Legación Americana"
+      }
     }
-  },
-  "moods": {
-    "badge": "Horarios",
-    "title": "El Cabo Malabata a lo largo del día",
-    "subtitle": "Vistas de la bahía en el lado este.",
-    "1": {
-      "tag": "Mañana",
-      "title": "Bahía clara",
-      "desc": "A menudo buena visibilidad hacia la ciudad.",
-      "duration": "Mañana"
-    },
-    "2": {
-      "tag": "Mediodía",
-      "title": "Promontorio abierto",
-      "desc": "Parada corta para el panorama — poca sombra.",
-      "duration": "Mediodía"
-    },
-    "3": {
-      "tag": "Final de tarde",
-      "title": "Línea de ciudad más suave",
-      "desc": "Luz más suave sobre la bahía si el cielo sigue despejado.",
-      "duration": "Final de tarde"
-    }
-  },
-  "food": {
-    "title": "Comer cerca de Malabata",
-    "p1": "Pocas opciones en el cabo — come en Tánger antes o después.",
-    "li1": "Lleva agua.",
-    "li2": "Restaurantes en la ciudad al volver.",
-    "li3": "Paradas ocasionales en la carretera.",
-    "li4": "Efectivo para compras pequeñas.",
-    "li5": "Acuerda la espera del taxi si te quedas.",
-    "p2": ""
-  },
-  "tips": {
-    "title": "Consejos prácticos",
-    "1": {
-      "title": "Cómo llegar",
-      "desc": "Petit taxi desde Tánger; acuerda precio de ida y vuelta con espera."
-    },
-    "2": {
-      "title": "Por qué ir",
-      "desc": "Perspectiva sobre la bahía más que una red larga de senderismo."
-    },
-    "3": {
-      "title": "Combinar",
-      "desc": "Funciona como alternativa más ligera o complemento al circuito de cabos del oeste."
-    }
-  },
-  "faq": {
-    "badge": "Bueno saber",
-    "title": "FAQ sobre el Cabo Malabata",
-    "q1": {
-      "question": "¿Distancia del centro?",
-      "answer": "Corto trayecto al este de Tánger — normalmente menos de 30 minutos según el tráfico."
-    },
-    "q2": {
-      "question": "¿Mejor que el Cabo Spartel?",
-      "answer": "Diferente: Spartel es la salida clásica faro/cuevas; Malabata ofrece una perspectiva más tranquila sobre la bahía."
-    },
-    "q3": {
-      "question": "¿Hay un faro que visitar?",
-      "answer": "El interés es la vista del promontorio; no esperes una parada de faro al estilo Spartel."
-    },
-    "q4": {
-      "question": "¿Bien con bruma?",
-      "answer": "Las vistas largas sufren — prioriza días claros."
-    },
-    "q5": {
-      "question": "¿Apto para familias?",
-      "answer": "Sí para una parada corta de mirador con supervisión cerca de los bordes."
-    }
-  },
-  "gyg": {
-    "badge": "Tours y experiencias",
-    "title": "Tours vinculados a este lugar",
-    "subtitle": "Opciones si prefieres un operador local.",
-    "check": "Ver disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos enlaces son de afiliados. Si reservas a través de ellos podemos ganar una comisión sin coste extra para ti.",
-    "t1": {
-      "tag": "Ciudad",
-      "title": "Medina y kasbah de Tánger",
-      "desc": "Callejones del casco antiguo y vistas desde la colina."
-    },
-    "t2": {
-      "tag": "Costa",
-      "title": "Cabo Spartel y cuevas de Hércules",
-      "desc": "Promontorio oeste y cuevas marinas en media jornada."
-    },
-    "t3": {
-      "tag": "Excursión",
-      "title": "Medina azul de Chefchaouen",
-      "desc": "Día completo a la ciudad del Rif."
-    }
-  },
-  "blog": {
-    "badge": "Del blog",
-    "title": "Artículos relacionados",
-    "all": "Todos los artículos →",
-    "read": "Leer artículo →",
-    "a1": {
-      "tag": "Planificar",
-      "title": "Primera vez en Tánger",
-      "desc": "Medina, cabos y logística del estrecho."
-    },
-    "a2": {
-      "tag": "Guía",
-      "title": "Miradores del estrecho",
-      "desc": "Hafa, Spartel y Malabata."
-    },
-    "a3": {
-      "tag": "Excursiones",
-      "title": "Al norte desde Tánger",
-      "desc": "Asilah, Tetuán, Chefchaouen."
-    }
-  },
-  "nearby": {
-    "badge": "Seguir explorando",
-    "title": "Más lugares en Tánger",
-    "back": "← Volver a la guía de Tánger",
-    "explore": "Explorar lugar →"
   }
 }

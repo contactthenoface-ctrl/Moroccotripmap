@@ -1,165 +1,194 @@
 {
-  "seo": {
-    "title": "Tangier Medina | Lanes, Soccos & Kasbah Approach | MoroccoTripMap",
-    "description": "Explore Tangier’s medina: Grand Socco entrance, Petit Socco cafés, markets and the climb toward the kasbah.",
-    "keywords": "Tangier medina, Petit Socco, Grand Socco, Tangier old town"
-  },
-  "name": "Médina de Tanger",
-  "hero_subtitle": "Ruelles du Grand Socco vers la kasbah.",
-  "info": {
-    "best_time_label": "Meilleure période",
-    "best_time_val": "Matin et fin d’après-midi",
-    "duration_label": "Durée suggérée",
-    "duration_val": "2 – 3 heures",
-    "entry_label": "Entrée",
-    "entry_val": "Promenade libre",
-    "area_label": "Emplacement",
-    "area_val": "Vieille ville, au-dessus du port"
-  },
-  "overview": {
-    "title": "La vieille ville entre port et kasbah",
-    "p1": "La médina de Tanger s’élève du bord du port vers la kasbah sur la colline. Moins dense que les médinas impériales, elle s’ouvre par endroits — le Petit Socco comme charnière de cafés, rues de marché et ruelles en escaliers qui récompensent une flânerie lente.",
-    "p2": "Parte du Grand Socco, dérive vers le Petit Socco, puis monte quand tu veux des vues. Garde tes affaires près de toi dans les tronçons bondés ; le soir est atmosphérique mais certaines ruelles se vident."
-  },
-  "gallery": {
-    "badge": "Galerie",
-    "title": "Ambiance de la médina",
-    "subtitle": "Ruelles, portes et lumière atlantique.",
-    "s1": {
-      "caption": "Ruelle blanche de la médina de Tanger"
+  "tanger_medina_page": {
+    "seo": {
+      "title": "Tangier Medina | Lanes, Soccos & Kasbah Approach | MoroccoTripMap",
+      "description": "Explore Tangier’s medina: Grand Socco entrance, Petit Socco cafés, markets and the climb toward the kasbah.",
+      "keywords": "Tangier medina, Petit Socco, Grand Socco, Tangier old town"
     },
-    "s2": {
-      "caption": "Porte et passage ombragé"
+    "name": "Médina de Tanger",
+    "hero_subtitle": "Ruelles du Grand Socco vers la kasbah.",
+    "info": {
+      "best_time_label": "Meilleure période",
+      "best_time_val": "Matin et fin d’après-midi",
+      "duration_label": "Durée suggérée",
+      "duration_val": "2 – 3 heures",
+      "entry_label": "Entrée",
+      "entry_val": "Promenade libre",
+      "area_label": "Emplacement",
+      "area_val": "Vieille ville, au-dessus du port"
     },
-    "s3": {
-      "caption": "Café du Petit Socco"
+    "overview": {
+      "title": "La vieille ville entre port et kasbah",
+      "p1": "La médina de Tanger s’élève du bord du port vers la kasbah sur la colline. Moins dense que les médinas impériales, elle s’ouvre par endroits — le Petit Socco comme charnière de cafés, rues de marché et ruelles en escaliers qui récompensent une flânerie lente.",
+      "p2": "Parte du Grand Socco, dérive vers le Petit Socco, puis monte quand tu veux des vues. Garde tes affaires près de toi dans les tronçons bondés ; le soir est atmosphérique mais certaines ruelles se vident."
     },
-    "s4": {
-      "caption": "Escalier vers la kasbah"
+    "gallery": {
+      "badge": "Galerie",
+      "title": "Ambiance de la médina",
+      "subtitle": "Ruelles, portes et lumière atlantique.",
+      "s1": {
+        "caption": "Ruelle blanche de la médina de Tanger"
+      },
+      "s2": {
+        "caption": "Porte et passage ombragé"
+      },
+      "s3": {
+        "caption": "Café du Petit Socco"
+      },
+      "s4": {
+        "caption": "Escalier vers la kasbah"
+      },
+      "s5": {
+        "caption": "Toits de la médina"
+      }
     },
-    "s5": {
-      "caption": "Toits de la médina"
+    "moods": {
+      "badge": "Horaires",
+      "title": "La médina dans la journée",
+      "subtitle": "Comment les ruelles changent du matin au soir.",
+      "1": {
+        "tag": "Matin",
+        "title": "Ruelles calmes",
+        "desc": "Lumière plus douce et moins de monde dans les ruelles hautes.",
+        "duration": "Matin"
+      },
+      "2": {
+        "tag": "Midi",
+        "title": "Énergie des souks",
+        "desc": "Boutiques ouvertes, Petit Socco animé — idéal pour observer.",
+        "duration": "Midi"
+      },
+      "3": {
+        "tag": "Fin d’après-midi",
+        "title": "Murs dorés",
+        "desc": "Lumière chaude sur les rues blanchies vers la kasbah.",
+        "duration": "Fin d’après-midi"
+      }
+    },
+    "food": {
+      "title": "Manger dans la médina",
+      "p1": "Cafés sur le Petit Socco et cuisines simples dans les ruelles — bien pour une pause entre deux montées.",
+      "li1": "Café sur le Petit Socco.",
+      "li2": "Viandes grillées et tajines à proximité.",
+      "li3": "Thé à la menthe avec vue plus haut.",
+      "li4": "Petites coupures pour les étals.",
+      "li5": "Les spots fréquentés se remplissent aux heures de pointe.",
+      "p2": "Pour un repas de fruits de mer plus long, le port est une courte descente."
+    },
+    "tips": {
+      "title": "Conseils pratiques",
+      "1": {
+        "title": "Y aller",
+        "desc": "À pied depuis le Grand Socco ou le bord du port ; les petits taxis déposent aux portes principales."
+      },
+      "2": {
+        "title": "Orientation",
+        "desc": "En montant on va vers la kasbah ; en descendant vers le port et la ville nouvelle."
+      },
+      "3": {
+        "title": "Sécurité",
+        "desc": "Vigilance urbaine normale dans la foule ; convenez des tarifs de taxi avant les trajets plus longs."
+      }
+    },
+    "faq": {
+      "badge": "Bon à savoir",
+      "title": "FAQ sur la médina de Tanger",
+      "q1": {
+        "question": "La médina est-elle sûre à pied ?",
+        "answer": "Oui pour la marche de jour et en début de soirée. Restez attentif dans la foule dense et utilisez des portes connues la nuit."
+      },
+      "q2": {
+        "question": "Combien de temps faut-il ?",
+        "answer": "Deux à trois heures pour une première boucle incluant le Petit Socco et l’approche de la kasbah."
+      },
+      "q3": {
+        "question": "Faut-il un guide ?",
+        "answer": "Pas obligatoire ; les axes principaux sont gérables. Un guide aide pour l’histoire et les raccourcis."
+      },
+      "q4": {
+        "question": "Où commence la médina ?",
+        "answer": "Le Grand Socco est la charnière principale depuis la ville nouvelle ; de plus petites portes s’ouvrent côté port."
+      },
+      "q5": {
+        "question": "Meilleure lumière photo ?",
+        "answer": "Fin d’après-midi sur les ruelles hautes et le bord de la kasbah."
+      }
+    },
+    "gyg": {
+      "badge": "Visites & expériences",
+      "title": "Visites liées à ce lieu",
+      "subtitle": "Options si vous préférez un opérateur local.",
+      "check": "Voir les disponibilités sur GetYourGuide →",
+      "disclosure": "Certains liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous.",
+      "t1": {
+        "tag": "Ville",
+        "title": "Médina & kasbah de Tanger",
+        "desc": "Ruelles de la vieille ville et vues depuis la colline."
+      },
+      "t2": {
+        "tag": "Côte",
+        "title": "Cap Spartel & grottes d’Hercule",
+        "desc": "Promontoire ouest et grottes marines en demi-journée."
+      },
+      "t3": {
+        "tag": "Excursion",
+        "title": "Médina bleue de Chefchaouen",
+        "desc": "Journée complète vers la ville du Rif."
+      }
+    },
+    "blog": {
+      "badge": "Du blog",
+      "title": "Articles associés",
+      "all": "Tous les articles →",
+      "read": "Lire l’article →",
+      "a1": {
+        "tag": "Planifier",
+        "title": "Première fois à Tanger",
+        "desc": "Médina, caps et logistique du détroit."
+      },
+      "a2": {
+        "tag": "Guide",
+        "title": "Belvédères du détroit",
+        "desc": "Hafa, Spartel et Malabata."
+      },
+      "a3": {
+        "tag": "Excursions",
+        "title": "Au nord depuis Tanger",
+        "desc": "Asilah, Tétouan, Chefchaouen."
+      }
+    },
+    "nearby": {
+      "badge": "Continuer",
+      "title": "Plus de lieux à Tanger",
+      "back": "← Retour au guide de Tanger",
+      "explore": "Explorer le lieu →",
+      "medina": {
+        "name": "Médina de Tanger"
+      },
+      "kasbah": {
+        "name": "Musée de la Kasbah"
+      },
+      "socco": {
+        "name": "Grand Socco"
+      },
+      "hafa": {
+        "name": "Café Hafa"
+      },
+      "beach": {
+        "name": "Plage de Tanger"
+      },
+      "spartel": {
+        "name": "Cap Spartel"
+      },
+      "caves": {
+        "name": "Grottes d’Hercule"
+      },
+      "malabata": {
+        "name": "Cap Malabata"
+      },
+      "legation": {
+        "name": "Légation américaine"
+      }
     }
-  },
-  "moods": {
-    "badge": "Horaires",
-    "title": "La médina dans la journée",
-    "subtitle": "Comment les ruelles changent du matin au soir.",
-    "1": {
-      "tag": "Matin",
-      "title": "Ruelles calmes",
-      "desc": "Lumière plus douce et moins de monde dans les ruelles hautes.",
-      "duration": "Matin"
-    },
-    "2": {
-      "tag": "Midi",
-      "title": "Énergie des souks",
-      "desc": "Boutiques ouvertes, Petit Socco animé — idéal pour observer.",
-      "duration": "Midi"
-    },
-    "3": {
-      "tag": "Fin d’après-midi",
-      "title": "Murs dorés",
-      "desc": "Lumière chaude sur les rues blanchies vers la kasbah.",
-      "duration": "Fin d’après-midi"
-    }
-  },
-  "food": {
-    "title": "Manger dans la médina",
-    "p1": "Cafés sur le Petit Socco et cuisines simples dans les ruelles — bien pour une pause entre deux montées.",
-    "li1": "Café sur le Petit Socco.",
-    "li2": "Viandes grillées et tajines à proximité.",
-    "li3": "Thé à la menthe avec vue plus haut.",
-    "li4": "Petites coupures pour les étals.",
-    "li5": "Les spots fréquentés se remplissent aux heures de pointe.",
-    "p2": "Pour un repas de fruits de mer plus long, le port est une courte descente."
-  },
-  "tips": {
-    "title": "Conseils pratiques",
-    "1": {
-      "title": "Y aller",
-      "desc": "À pied depuis le Grand Socco ou le bord du port ; les petits taxis déposent aux portes principales."
-    },
-    "2": {
-      "title": "Orientation",
-      "desc": "En montant on va vers la kasbah ; en descendant vers le port et la ville nouvelle."
-    },
-    "3": {
-      "title": "Sécurité",
-      "desc": "Vigilance urbaine normale dans la foule ; convenez des tarifs de taxi avant les trajets plus longs."
-    }
-  },
-  "faq": {
-    "badge": "Bon à savoir",
-    "title": "FAQ sur la médina de Tanger",
-    "q1": {
-      "question": "La médina est-elle sûre à pied ?",
-      "answer": "Oui pour la marche de jour et en début de soirée. Restez attentif dans la foule dense et utilisez des portes connues la nuit."
-    },
-    "q2": {
-      "question": "Combien de temps faut-il ?",
-      "answer": "Deux à trois heures pour une première boucle incluant le Petit Socco et l’approche de la kasbah."
-    },
-    "q3": {
-      "question": "Faut-il un guide ?",
-      "answer": "Pas obligatoire ; les axes principaux sont gérables. Un guide aide pour l’histoire et les raccourcis."
-    },
-    "q4": {
-      "question": "Où commence la médina ?",
-      "answer": "Le Grand Socco est la charnière principale depuis la ville nouvelle ; de plus petites portes s’ouvrent côté port."
-    },
-    "q5": {
-      "question": "Meilleure lumière photo ?",
-      "answer": "Fin d’après-midi sur les ruelles hautes et le bord de la kasbah."
-    }
-  },
-  "gyg": {
-    "badge": "Visites & expériences",
-    "title": "Visites liées à ce lieu",
-    "subtitle": "Options si vous préférez un opérateur local.",
-    "check": "Voir les disponibilités sur GetYourGuide →",
-    "disclosure": "Certains liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous.",
-    "t1": {
-      "tag": "Ville",
-      "title": "Médina & kasbah de Tanger",
-      "desc": "Ruelles de la vieille ville et vues depuis la colline."
-    },
-    "t2": {
-      "tag": "Côte",
-      "title": "Cap Spartel & grottes d’Hercule",
-      "desc": "Promontoire ouest et grottes marines en demi-journée."
-    },
-    "t3": {
-      "tag": "Excursion",
-      "title": "Médina bleue de Chefchaouen",
-      "desc": "Journée complète vers la ville du Rif."
-    }
-  },
-  "blog": {
-    "badge": "Du blog",
-    "title": "Articles associés",
-    "all": "Tous les articles →",
-    "read": "Lire l’article →",
-    "a1": {
-      "tag": "Planifier",
-      "title": "Première fois à Tanger",
-      "desc": "Médina, caps et logistique du détroit."
-    },
-    "a2": {
-      "tag": "Guide",
-      "title": "Belvédères du détroit",
-      "desc": "Hafa, Spartel et Malabata."
-    },
-    "a3": {
-      "tag": "Excursions",
-      "title": "Au nord depuis Tanger",
-      "desc": "Asilah, Tétouan, Chefchaouen."
-    }
-  },
-  "nearby": {
-    "badge": "Continuer à explorer",
-    "title": "Plus de lieux à Tanger",
-    "back": "← Retour au guide Tanger",
-    "explore": "Explorer le lieu →"
   }
 }

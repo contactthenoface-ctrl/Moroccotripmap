@@ -1,165 +1,194 @@
 {
-  "seo": {
-    "title": "Hercules Caves Tangier | Sea Caves near Cap Spartel | MoroccoTripMap",
-    "description": "Visit the Hercules Caves west of Tangier — sea caves with the famous opening shaped like the continent of Africa, usually paired with Cap Spartel.",
-    "keywords": "Hercules Caves, Caves of Hercules Tangier, Cap Spartel caves"
-  },
-  "name": "Grottes d’Hercule",
-  "hero_subtitle": "Grottes marines et fenêtre océanique en forme d’Afrique.",
-  "info": {
-    "best_time_label": "Meilleure période",
-    "best_time_val": "Journée ; combiner avec Cap Spartel",
-    "duration_label": "Durée suggérée",
-    "duration_val": "30 – 60 minutes",
-    "entry_label": "Entrée",
-    "entry_val": "Entrée de site payante",
-    "area_label": "Emplacement",
-    "area_val": "Ouest de Tanger, près du Cap Spartel"
-  },
-  "overview": {
-    "title": "Mythe, roche et fenêtre sur l’océan",
-    "p1": "Les grottes d’Hercule se trouvent sur la côte près du Cap Spartel. La légende les relie à Hercule ; les visiteurs viennent pour la caverne et l’ouverture qui cadre la mer dans une forme souvent comparée à l’Afrique.",
-    "p2": "C’est un arrêt court. Attendez-vous à des stands commerciaux dehors ; à l’intérieur, attention aux pas sur la roche irrégulière et suivez les chemins du site."
-  },
-  "gallery": {
-    "badge": "Galerie",
-    "title": "Grottes d’Hercule",
-    "subtitle": "Ouverture marine et roche côtière.",
-    "s1": {
-      "caption": "Ouverture des grottes sur la mer"
+  "tanger_caves_page": {
+    "seo": {
+      "title": "Hercules Caves Tangier | Sea Caves near Cap Spartel | MoroccoTripMap",
+      "description": "Visit the Hercules Caves west of Tangier — sea caves with the famous opening shaped like the continent of Africa, usually paired with Cap Spartel.",
+      "keywords": "Hercules Caves, Caves of Hercules Tangier, Cap Spartel caves"
     },
-    "s2": {
-      "caption": "Forme souvent comparée à l’Afrique"
+    "name": "Grottes d’Hercule",
+    "hero_subtitle": "Grottes marines et fenêtre océanique en forme d’Afrique.",
+    "info": {
+      "best_time_label": "Meilleure période",
+      "best_time_val": "Journée ; combiner avec Cap Spartel",
+      "duration_label": "Durée suggérée",
+      "duration_val": "30 – 60 minutes",
+      "entry_label": "Entrée",
+      "entry_val": "Entrée de site payante",
+      "area_label": "Emplacement",
+      "area_val": "Ouest de Tanger, près du Cap Spartel"
     },
-    "s3": {
-      "caption": "Intérieur de la grotte"
+    "overview": {
+      "title": "Mythe, roche et fenêtre sur l’océan",
+      "p1": "Les grottes d’Hercule se trouvent sur la côte près du Cap Spartel. La légende les relie à Hercule ; les visiteurs viennent pour la caverne et l’ouverture qui cadre la mer dans une forme souvent comparée à l’Afrique.",
+      "p2": "C’est un arrêt court. Attendez-vous à des stands commerciaux dehors ; à l’intérieur, attention aux pas sur la roche irrégulière et suivez les chemins du site."
     },
-    "s4": {
-      "caption": "Falaises autour du site"
+    "gallery": {
+      "badge": "Galerie",
+      "title": "Grottes d’Hercule",
+      "subtitle": "Ouverture marine et roche côtière.",
+      "s1": {
+        "caption": "Ouverture des grottes sur la mer"
+      },
+      "s2": {
+        "caption": "Forme souvent comparée à l’Afrique"
+      },
+      "s3": {
+        "caption": "Intérieur de la grotte"
+      },
+      "s4": {
+        "caption": "Falaises autour du site"
+      },
+      "s5": {
+        "caption": "Approche du site touristique"
+      }
     },
-    "s5": {
-      "caption": "Approche du site touristique"
+    "moods": {
+      "badge": "Horaires",
+      "title": "Les grottes d’Hercule dans la journée",
+      "subtitle": "La lumière dans l’ouverture sur la mer.",
+      "1": {
+        "tag": "Matin",
+        "title": "Visite plus calme",
+        "desc": "Moins de cars si vous arrivez tôt.",
+        "duration": "Matin"
+      },
+      "2": {
+        "tag": "Midi",
+        "title": "Ouverture lumineuse",
+        "desc": "Fort contraste à la fenêtre marine en forme d’Afrique.",
+        "duration": "Midi"
+      },
+      "3": {
+        "tag": "Après-midi",
+        "title": "Boucle standard",
+        "desc": "Facile à combiner avec le Cap Spartel sur le même trajet.",
+        "duration": "Après-midi"
+      }
+    },
+    "food": {
+      "title": "Manger à proximité",
+      "p1": "Stands orientés touristes dehors ; meilleurs repas de retour à Tanger.",
+      "li1": "Snacks à l’entrée.",
+      "li2": "Emportez de l’eau.",
+      "li3": "Prévoyez le déjeuner en ville.",
+      "li4": "Espèces pour billets et petits achats.",
+      "li5": "Convenez du temps d’attente du taxi si vous mangez sur place.",
+      "p2": ""
+    },
+    "tips": {
+      "title": "Conseils pratiques",
+      "1": {
+        "title": "Y aller",
+        "desc": "En général associé au Cap Spartel en petit taxi ou excursion depuis Tanger."
+      },
+      "2": {
+        "title": "Billets",
+        "desc": "Entrée payante ; gardez de la petite monnaie."
+      },
+      "3": {
+        "title": "Chaussures",
+        "desc": "Chaussures fermées aident sur la roche humide irrégulière."
+      }
+    },
+    "faq": {
+      "badge": "Bon à savoir",
+      "title": "FAQ sur les grottes d’Hercule",
+      "q1": {
+        "question": "Les grottes sont-elles naturelles ?",
+        "answer": "Ce sont des grottes côtières à longue histoire humaine ; le site est aménagé pour les visites."
+      },
+      "q2": {
+        "question": "Pourquoi la forme d’Afrique ?",
+        "answer": "L’ouverture sur la mer est souvent comparée au contour de l’Afrique — le moment photo principal."
+      },
+      "q3": {
+        "question": "Combien de temps faut-il ?",
+        "answer": "Trente à soixante minutes suffisent pour la plupart des visiteurs."
+      },
+      "q4": {
+        "question": "Combiner avec le Cap Spartel ?",
+        "answer": "Oui — la sortie demi-journée habituelle depuis Tanger."
+      },
+      "q5": {
+        "question": "Convient-il aux enfants ?",
+        "answer": "Oui avec supervision sur les marches et la roche humide."
+      }
+    },
+    "gyg": {
+      "badge": "Visites & expériences",
+      "title": "Visites liées à ce lieu",
+      "subtitle": "Options si vous préférez un opérateur local.",
+      "check": "Voir les disponibilités sur GetYourGuide →",
+      "disclosure": "Certains liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous.",
+      "t1": {
+        "tag": "Ville",
+        "title": "Médina & kasbah de Tanger",
+        "desc": "Ruelles de la vieille ville et vues depuis la colline."
+      },
+      "t2": {
+        "tag": "Côte",
+        "title": "Cap Spartel & grottes d’Hercule",
+        "desc": "Promontoire ouest et grottes marines en demi-journée."
+      },
+      "t3": {
+        "tag": "Excursion",
+        "title": "Médina bleue de Chefchaouen",
+        "desc": "Journée complète vers la ville du Rif."
+      }
+    },
+    "blog": {
+      "badge": "Du blog",
+      "title": "Articles associés",
+      "all": "Tous les articles →",
+      "read": "Lire l’article →",
+      "a1": {
+        "tag": "Planifier",
+        "title": "Première fois à Tanger",
+        "desc": "Médina, caps et logistique du détroit."
+      },
+      "a2": {
+        "tag": "Guide",
+        "title": "Belvédères du détroit",
+        "desc": "Hafa, Spartel et Malabata."
+      },
+      "a3": {
+        "tag": "Excursions",
+        "title": "Au nord depuis Tanger",
+        "desc": "Asilah, Tétouan, Chefchaouen."
+      }
+    },
+    "nearby": {
+      "badge": "Continuer",
+      "title": "Plus de lieux à Tanger",
+      "back": "← Retour au guide de Tanger",
+      "explore": "Explorer le lieu →",
+      "medina": {
+        "name": "Médina de Tanger"
+      },
+      "kasbah": {
+        "name": "Musée de la Kasbah"
+      },
+      "socco": {
+        "name": "Grand Socco"
+      },
+      "hafa": {
+        "name": "Café Hafa"
+      },
+      "beach": {
+        "name": "Plage de Tanger"
+      },
+      "spartel": {
+        "name": "Cap Spartel"
+      },
+      "caves": {
+        "name": "Grottes d’Hercule"
+      },
+      "malabata": {
+        "name": "Cap Malabata"
+      },
+      "legation": {
+        "name": "Légation américaine"
+      }
     }
-  },
-  "moods": {
-    "badge": "Horaires",
-    "title": "Les grottes d’Hercule dans la journée",
-    "subtitle": "La lumière dans l’ouverture sur la mer.",
-    "1": {
-      "tag": "Matin",
-      "title": "Visite plus calme",
-      "desc": "Moins de cars si vous arrivez tôt.",
-      "duration": "Matin"
-    },
-    "2": {
-      "tag": "Midi",
-      "title": "Ouverture lumineuse",
-      "desc": "Fort contraste à la fenêtre marine en forme d’Afrique.",
-      "duration": "Midi"
-    },
-    "3": {
-      "tag": "Après-midi",
-      "title": "Boucle standard",
-      "desc": "Facile à combiner avec le Cap Spartel sur le même trajet.",
-      "duration": "Après-midi"
-    }
-  },
-  "food": {
-    "title": "Manger à proximité",
-    "p1": "Stands orientés touristes dehors ; meilleurs repas de retour à Tanger.",
-    "li1": "Snacks à l’entrée.",
-    "li2": "Emportez de l’eau.",
-    "li3": "Prévoyez le déjeuner en ville.",
-    "li4": "Espèces pour billets et petits achats.",
-    "li5": "Convenez du temps d’attente du taxi si vous mangez sur place.",
-    "p2": ""
-  },
-  "tips": {
-    "title": "Conseils pratiques",
-    "1": {
-      "title": "Y aller",
-      "desc": "En général associé au Cap Spartel en petit taxi ou excursion depuis Tanger."
-    },
-    "2": {
-      "title": "Billets",
-      "desc": "Entrée payante ; gardez de la petite monnaie."
-    },
-    "3": {
-      "title": "Chaussures",
-      "desc": "Chaussures fermées aident sur la roche humide irrégulière."
-    }
-  },
-  "faq": {
-    "badge": "Bon à savoir",
-    "title": "FAQ sur les grottes d’Hercule",
-    "q1": {
-      "question": "Les grottes sont-elles naturelles ?",
-      "answer": "Ce sont des grottes côtières à longue histoire humaine ; le site est aménagé pour les visites."
-    },
-    "q2": {
-      "question": "Pourquoi la forme d’Afrique ?",
-      "answer": "L’ouverture sur la mer est souvent comparée au contour de l’Afrique — le moment photo principal."
-    },
-    "q3": {
-      "question": "Combien de temps faut-il ?",
-      "answer": "Trente à soixante minutes suffisent pour la plupart des visiteurs."
-    },
-    "q4": {
-      "question": "Combiner avec le Cap Spartel ?",
-      "answer": "Oui — la sortie demi-journée habituelle depuis Tanger."
-    },
-    "q5": {
-      "question": "Convient-il aux enfants ?",
-      "answer": "Oui avec supervision sur les marches et la roche humide."
-    }
-  },
-  "gyg": {
-    "badge": "Visites & expériences",
-    "title": "Visites liées à ce lieu",
-    "subtitle": "Options si vous préférez un opérateur local.",
-    "check": "Voir les disponibilités sur GetYourGuide →",
-    "disclosure": "Certains liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous.",
-    "t1": {
-      "tag": "Ville",
-      "title": "Médina & kasbah de Tanger",
-      "desc": "Ruelles de la vieille ville et vues depuis la colline."
-    },
-    "t2": {
-      "tag": "Côte",
-      "title": "Cap Spartel & grottes d’Hercule",
-      "desc": "Promontoire ouest et grottes marines en demi-journée."
-    },
-    "t3": {
-      "tag": "Excursion",
-      "title": "Médina bleue de Chefchaouen",
-      "desc": "Journée complète vers la ville du Rif."
-    }
-  },
-  "blog": {
-    "badge": "Du blog",
-    "title": "Articles associés",
-    "all": "Tous les articles →",
-    "read": "Lire l’article →",
-    "a1": {
-      "tag": "Planifier",
-      "title": "Première fois à Tanger",
-      "desc": "Médina, caps et logistique du détroit."
-    },
-    "a2": {
-      "tag": "Guide",
-      "title": "Belvédères du détroit",
-      "desc": "Hafa, Spartel et Malabata."
-    },
-    "a3": {
-      "tag": "Excursions",
-      "title": "Au nord depuis Tanger",
-      "desc": "Asilah, Tétouan, Chefchaouen."
-    }
-  },
-  "nearby": {
-    "badge": "Continuer à explorer",
-    "title": "Plus de lieux à Tanger",
-    "back": "← Retour au guide Tanger",
-    "explore": "Explorer le lieu →"
   }
 }

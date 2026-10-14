@@ -1,92 +1,167 @@
-"ifrane_cedar_page": {
+{
   "seo": {
-    "title": "Bosque de Cedros | Guía de Ifrane | MoroccoTripMap",
-    "description": "¿Visitas el Bosque de Cedros en Ifrane? Gigantescos cedros del Atlas, monos de Berbería salvajes, mejores fotos y consejos de naturaleza.",
-    "og_title": "Bosque de Cedros, Ifrane: Naturaleza, Fauna y Consejos",
-    "og_description": "Cómo visitar este punto clave de Ifrane: majestuosos cedros, monos de Berbería, senderos y consejos prácticos."
+    "title": "Cedar Forest Ifrane | Atlas Cedars & Trails | MoroccoTripMap",
+    "description": "Walk the cedar forests near Ifrane: Middle Atlas trails, scented air and the famous cedar stands of the region.",
+    "keywords": "cedar forest Ifrane, Cèdre Gouraud, Atlas cedar",
+    "og_title": "Cedar Forest Ifrane | Atlas Cedars & Trails | MoroccoTripMap",
+    "og_description": "Walk the cedar forests near Ifrane: Middle Atlas trails, scented air and the famous cedar stands of the region."
   },
-  "hero_subtitle": "Un magnífico bosque antiguo en el Medio Atlas que cuenta con imponentes cedros del Atlas y monos de Berbería salvajes.",
+  "name": "Bosque de cedros",
+  "hero_subtitle": "Cedros del Atlas cerca de Ifrane — senderos y zona Gouraud.",
   "info": {
     "best_time_label": "Mejor época",
-    "best_time_val": "Mañana",
-    "duration_label": "Duración ideal",
-    "duration_val": "1 – 2 Horas",
+    "best_time_val": "Matin pour marcher au frais",
+    "duration_label": "Tiempo sugerido",
+    "duration_val": "1.5 – 3 hours",
     "entry_label": "Entrada",
-    "entry_val": "Acceso Libre",
+    "entry_val": "Free access to public forest paths",
     "area_label": "Ubicación",
-    "area_val": "Medio Atlas, cerca de Ifrane"
+    "area_val": "Forest roads near Ifrane / Azrou axis"
   },
   "overview": {
-    "title": "Santuario Natural en el Medio Atlas",
-    "p1": "El Bosque de Cedros de Ifrane (a menudo asociado con el bosque Gouraud) es una impresionante extensión natural en las montañas del Medio Atlas. Hogar de majestuosos cedros del Atlas centenarios, ofrece tranquilos senderos para caminar, aire fresco de pino y paisajes deslumbrantes que cambian de color con las estaciones.",
-    "p2": "El bosque también es famoso por su población de monos de Berbería salvajes. Si bien observar a estos divertidos monos es lo más destacado para muchos visitantes, la observación responsable de la fauna es fundamental para proteger su comportamiento natural y su salud.",
-    "p3": "Visita el bosque por la mañana para disfrutar del aire fresco de la montaña y senderos tranquilos, y luego combina tu excursión natural con una visita a los lagos cercanos o al pueblo de Ifrane."
+    "title": "Under the Atlas cedars",
+    "p1": "The cedar forests around Ifrane are among the Middle Atlas’s defining landscapes. Tall Atlas cedars, cool shade and forest roads make this a highlight for anyone who came up from the heat of the plains. Barbary macaques are sometimes seen on nearby routes — keep distance and do not feed them.",
+    "p2": "Stay on established paths. The Gouraud cedar area is a well-known stop on the wider forest circuit."
   },
   "gallery": {
-    "badge": "Galería",
-    "title": "Bosque de Cedros en Imágenes",
-    "subtitle": "Antiguos cedros del Atlas, senderos forestales y fauna local.",
-    "s1": { "caption": "Imponentes y antiguos cedros del Atlas" },
-    "s2": { "caption": "Tranquilos senderos para caminar" },
-    "s3": { "caption": "Monos de Berbería salvajes" },
-    "s4": { "caption": "Hitos históricos de cedros" },
-    "s5": { "caption": "Vistas panorámicas de las montañas del Medio Atlas" }
+    "badge": "Gallery",
+    "title": "Cedar forest photo gallery",
+    "subtitle": "Atlas cedars, forest trails and the Gouraud cedar area near Ifrane.",
+    "s1": {
+      "caption": "Atlas cedar forest near Ifrane"
+    },
+    "s2": {
+      "caption": "Tall cedars and path"
+    },
+    "s3": {
+      "caption": "Forest light through cedar branches"
+    },
+    "s4": {
+      "caption": "Middle Atlas forest road"
+    },
+    "s5": {
+      "caption": "Cedar grove in the Ifrane area"
+    }
   },
   "moods": {
-    "badge": "Qué ver",
-    "title": "Lo más destacado del Bosque de Cedros",
-    "subtitle": "Árboles ancestrales, fauna silvestre y panoramas de montaña.",
-    "1": { "tag": "Árboles", "title": "Gigantescos Cedros del Atlas", "desc": "Árboles centenarios que se elevan majestuosamente sobre el suelo del bosque.", "duration": "30–45 min" },
-    "2": { "tag": "Fauna", "title": "Monos de Berbería", "desc": "Observa a los monos nativos deambular libremente en su hábitat natural.", "duration": "20–30 min" },
-    "3": { "tag": "Naturaleza", "title": "Senderos de Excursión", "desc": "Caminos tranquilos que serpentean a través de una vegetación montañosa virgen.", "duration": "45–60 min" }
+    "badge": "Timing",
+    "title": "The cedar forest through the day",
+    "subtitle": "Shade helps — weather still changes fast at altitude.",
+    "1": {
+      "tag": "Morning",
+      "title": "Cool forest air",
+      "desc": "Best time for longer walks under the cedars.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Quiet shade",
+      "desc": "A good refuge when the open plateau is hot or windy.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Soft forest light",
+      "desc": "Beautiful for photos before dusk.",
+      "duration": "Evening"
+    }
   },
   "food": {
-    "title": "Pícnics y Comida Cercana",
-    "p1": "El bosque es un lugar ideal para un pícnic tranquilo al aire libre rodeado de naturaleza, o puedes regresar al cercano Ifrane o Azrou para encontrar restaurantes y cafés locales.",
-    "li1": "Pintorescas áreas de pícnic bajo el dosel de los cedros",
-    "li2": "Cafés locales cerca de los aparcamientos del bosque para tomar té y aperitivos",
-    "li3": "Opciones de comida tradicional marroquí en el cercano pueblo de Ifrane",
-    "li4": "Paradas de agua de manantial fresca a lo largo de las rutas del Medio Atlas",
-    "li5": "Ambiente montañoso relajante para comer al aire libre",
-    "p2": "Lleva agua y aperitivos si planeas hacer rutas de senderismo prolongadas por la reserva."
+    "title": "Eating near the cedars",
+    "p1": "A picnic is the usual approach under the cedars. Full meals wait in Ifrane or Azrou.",
+    "p2": "Do not leave food waste in the forest and never feed wildlife, including macaques.",
+    "li1": "Pack a picnic from town.",
+    "li2": "Water for every walker.",
+    "li3": "Meals in Ifrane after the trail.",
+    "li4": "Avoid feeding macaques or other animals.",
+    "li5": "Carry all litter back to town."
   },
   "tips": {
-    "badge": "Consejos Prácticos",
-    "title": "Consejos Prácticos para Visitar el Bosque de Cedros",
-    "1": { "title": "Respeta la fauna", "desc": "No alimentes a los monos de Berbería ni dejes comida expuesta, ya que altera su dieta natural y su salud." },
-    "2": { "title": "Usa calzado cómodo", "desc": "Se recomiendan zapatos de caminar resistentes o zapatillas deportivas para los senderos forestales irregulares y caminos de tierra." },
-    "3": { "title": "Combínalo con los lagos de montaña", "desc": "Combina tu visita al bosque con un recorrido panorámico hacia los lagos de montaña cercanos como Dayet Aoua." }
-  },
-  "gyg": {
-    "badge": "Excursiones",
-    "title": "Explora la Naturaleza del Medio Atlas",
-    "subtitle": "Excursiones guiadas que cubren bosques de cedros, fauna y lagos.",
-    "t1": { "tag": "Naturaleza", "title": "Bosque de Cedros del Medio Atlas y Safari de Monos", "desc": "Visita guiada a través de antiguos cedros con avistamiento de fauna." },
-    "t2": { "tag": "Excursión", "title": "Excursión de un Día a Ifrane, Azrou y Bosque de Cedros", "desc": "Completa excursión de un día que cubre lo más destacado de la montaña y la artesanía." },
-    "t3": { "tag": "Panorámico", "title": "Explorador de Lagos y Bosques del Atlas", "desc": "Descubre los lagos de montaña y los pinares de cedros con experiencia local." },
-    "check": "Comprobar disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una comisión sin coste adicional para ti."
-  },
-  "nearby": {
-    "badge": "Sigue Explorando",
-    "title": "Más Lugares de Interés en Ifrane",
-    "back": "← Volver a la guía de Ifrane"
-  },
-  "blog": {
-    "badge": "Del Blog",
-    "title": "Artículos Relacionados",
-    "all": "Todos los artículos →",
-    "a1": { "tag": "Naturaleza", "title": "Explorando los Bosques de Cedros del Medio Atlas", "desc": "Descubre las maravillas ecológicas que rodean Ifrane." },
-    "a2": { "tag": "Fauna", "title": "Conociendo a los Monos de Berbería de Forma Responsable", "desc": "Cómo disfrutar de la observación de fauna protegiendo a los animales locales." },
-    "a3": { "tag": "Planificación", "title": "Aventuras al Aire Libre en Ifrane", "desc": "Los mejores lugares de senderismo y naturaleza de la región." },
-    "read": "Leer el artículo →"
+    "title": "Consejos prácticos",
+    "1": {
+      "title": "Clima de montaña",
+      "desc": "Lleva una capa abrigada; el tiempo cambia rápido en altitud."
+    },
+    "2": {
+      "title": "Acceso",
+      "desc": "Coche recomendado desde Ifrane; revisa la carretera tras lluvia o nieve."
+    },
+    "3": {
+      "title": "Respeto del lugar",
+      "desc": "Permanece en los senderos y recoge tu basura."
+    }
   },
   "faq": {
-    "badge": "Bueno Saberlo",
-    "title": "Preguntas Frecuentes del Bosque de Cedros",
-    "q1": { "question": "¿Se pueden ver monos en el Bosque de Cedros?", "answer": "Sí, el bosque es famoso por su población de monos de Berbería salvajes, aunque se aconseja no alimentarlos para proteger su dieta natural." },
-    "q2": { "question": "¿Cuál es la mejor época para visitar?", "answer": "Las mañanas ofrecen aire fresco de montaña, senderos forestales tranquilos y una iluminación excelente para la fotografía entre los cedros gigantes." },
-    "q3": { "question": "¿Cuánto dura la visita?", "answer": "Alrededor de 1 a 2 horas para caminar entre los árboles milenarios, observar la fauna y disfrutar del paisaje del Medio Atlas." },
-    "q4": { "question": "¿La entrada es gratuita?", "answer": "Sí, explorar el bosque de cedros y los senderos públicos para caminar es completamente gratuito." }
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Bosque de cedros",
+    "q1": {
+      "question": "Is the forest free?",
+      "answer": "Public paths are generally free; respect any signed private areas."
+    },
+    "q2": {
+      "question": "Famous cedar tree?",
+      "answer": "The region is known for large Atlas cedars including historic specimens on the tourist circuit."
+    },
+    "q3": {
+      "question": "Combine with lakes?",
+      "answer": "Yes — a classic Ifrane nature day."
+    },
+    "q4": {
+      "question": "Good for children?",
+      "answer": "Yes on short, easy paths."
+    },
+    "q5": {
+      "question": "Toward Azrou?",
+      "answer": "The cedar road continues toward Azrou — a popular loop."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "Cedar walks",
+      "desc": "Paths, footwear and wildlife tips."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Toward Azrou",
+      "desc": "Forest road highlights."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Atlas cedars",
+      "desc": "Why these trees define the region."
+    }
+  },
+  "gyg": {
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Forest",
+      "title": "Cedar forest walk",
+      "desc": "Trails under Atlas cedars."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Gouraud cedar area",
+      "desc": "Famous stands near the Ifrane–Azrou road."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Forest day from Ifrane",
+      "desc": "Cedars and mountain air."
+    }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Ifrane",
+    "back": "← Volver a la guía de Ifrane",
+    "explore": "Explorar el lugar →"
   }
 }

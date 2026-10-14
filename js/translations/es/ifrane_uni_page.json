@@ -1,93 +1,167 @@
-"ifrane_uni_page": {
+{
   "seo": {
-    "title": "Universidad Al Akhawayn | Guía de Ifrane | MoroccoTripMap",
-    "description": "¿Visitas la Universidad Al Akhawayn en Ifrane? Arquitectura, normas de acceso al campus, mejores puntos fotográficos y consejos prácticos.",
-    "og_title": "Universidad Al Akhawayn, Ifrane: Arquitectura, Campus y Consejos",
-    "og_description": "Cómo visitar este punto clave de Ifrane: vistas del campus, arquitectura alpina y consejos prácticos."
+    "title": "Al Akhawayn University Ifrane | Campus Visit | MoroccoTripMap",
+    "description": "See Al Akhawayn University in Ifrane: a modern campus in the Middle Atlas with distinctive architecture and mountain setting.",
+    "keywords": "Al Akhawayn, AUI Ifrane, university Ifrane",
+    "og_title": "Al Akhawayn University Ifrane | Campus Visit | MoroccoTripMap",
+    "og_description": "See Al Akhawayn University in Ifrane: a modern campus in the Middle Atlas with distinctive architecture and mountain setting."
   },
-  "hero_subtitle": "Un prestigioso campus universitario de estilo americano situado en medio de la impresionante arquitectura alpina de Ifrane.",
+  "name": "Universidad Al Akhawayn",
+  "hero_subtitle": "Campus de montaña en el borde de Ifrane.",
   "info": {
     "best_time_label": "Mejor época",
-    "best_time_val": "Mañana o tarde",
-    "duration_label": "Duración ideal",
-    "duration_val": "30 – 45 Minutos",
+    "best_time_val": "Hors pics de changement de cours",
+    "duration_label": "Tiempo sugerido",
+    "duration_val": "45 – 90 minutes",
     "entry_label": "Entrada",
-    "entry_val": "Vista exterior y alrededores",
+    "entry_val": "Exterior / public areas only — respect campus rules",
     "area_label": "Ubicación",
-    "area_val": "Centro de Ifrane"
+    "area_val": "Ifrane"
   },
   "overview": {
-    "title": "La Educación Americana se une al Diseño Alpino",
-    "p1": "La Universidad Al Akhawayn de Ifrane (AUI) es una universidad pública de primer nivel establecida en la década de 1990, reconocida por adoptar el sistema educativo estadounidense de artes liberales. Más allá de su excelencia académica, el campus es célebre por su arquitectura distintiva, que presenta techos inclinados rojos, mampostería de piedra y frondosos céspedes que se mezclan perfectamente con el entorno montañoso de Ifrane.",
-    "p2": "Aunque las aulas interiores están reservadas para estudiantes y profesores, los visitantes admiran frecuentemente las puertas del campus, las plazas exteriores y los jardines circundantes. Es un testimonio de la modernidad marroquí manteniendo el característico encanto alpino de la ciudad.",
-    "p3": "Visita el campus durante tu paseo por la ciudad para apreciar el ambiente pacífico y único de los alrededores."
+    "title": "A campus in the pines",
+    "p1": "Al Akhawayn University is part of modern Ifrane’s identity: a planned campus with mountain views and a different atmosphere from the medina cities. Visitors typically stay on public exterior areas unless invited for an official event.",
+    "p2": "Do not disrupt classes. For most travellers it is a short architectural and scenic stop, not a full museum visit."
   },
   "gallery": {
-    "badge": "Galería",
-    "title": "Universidad Al Akhawayn en Imágenes",
-    "subtitle": "Arquitectura del campus, amplios céspedes y detalles alpinos.",
-    "s1": { "caption": "Arquitectura alpina del campus principal" },
-    "s2": { "caption": "Céspedes cuidados y caminos" },
-    "s3": { "caption": "Entorno universitario tranquilo" },
-    "s4": { "caption": "Techos rojos y pinos" },
-    "s5": { "caption": "Exterior de la universidad en el límite de la ciudad" }
+    "badge": "Gallery",
+    "title": "Al Akhawayn campus gallery",
+    "subtitle": "Campus architecture and mountain setting on the edge of Ifrane.",
+    "s1": {
+      "caption": "Al Akhawayn campus exterior"
+    },
+    "s2": {
+      "caption": "University buildings in Ifrane"
+    },
+    "s3": {
+      "caption": "Campus greenery"
+    },
+    "s4": {
+      "caption": "Mountain setting of AUI"
+    },
+    "s5": {
+      "caption": "Modern architecture in Ifrane"
+    }
   },
   "moods": {
-    "badge": "Qué ver",
-    "title": "Qué ver en la Universidad Al Akhawayn",
-    "subtitle": "Arquitectura, espacios abiertos y serenidad montañosa.",
-    "1": { "tag": "Arquitectura", "title": "Estructuras y techos alpinos", "desc": "Distintivos techos rojos inclinados y mampostería inspirada en chalets de montaña.", "duration": "20–30 min" },
-    "2": { "tag": "Terrenos", "title": "Céspedes y caminos", "desc": "Espacios exteriores impecablemente cuidados que coinciden con el ambiente de ciudad-jardín.", "duration": "15–20 min" },
-    "3": { "tag": "Ambiente", "title": "Centro académico moderno", "desc": "Un entorno universitario animado pero tranquilo que representa los estándares internacionales en Marruecos.", "duration": "10–15 min" }
+    "badge": "Timing",
+    "title": "The campus through the day",
+    "subtitle": "A working university — visit public exterior areas quietly.",
+    "1": {
+      "tag": "Morning",
+      "title": "Calm morning",
+      "desc": "Fewer movements between classes; softer light on buildings.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Active campus",
+      "desc": "Stay on public paths and out of restricted buildings.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Late afternoon",
+      "desc": "Nice light on the architecture and pines.",
+      "duration": "Evening"
+    }
   },
   "food": {
-    "title": "Cafés Cercanos tras tu Paseo",
-    "p1": "Dirígete hacia la plaza central del pueblo para tomar un café, un pastel o un té en un acogedor ambiente de montaña.",
-    "li1": "Café en el centro de la ciudad tras explorar",
-    "li2": "Pasteles locales y aperitivos cerca de la plaza principal",
-    "li3": "Té de menta refrescante con vistas a las avenidas ajardinadas",
-    "li4": "Lugares informales que sirven platos tradicionales o continentales",
-    "li5": "Atmósfera nocturna relajante a medida que bajan las temperaturas de la montaña",
-    "p2": "Combina esta visita con un paseo por los parques centrales de Ifrane para completar una agradable excursión matutina o vespertina."
+    "title": "Eating near the campus",
+    "p1": "Student and town options may exist nearby; fuller restaurants are in central Ifrane.",
+    "p2": "Do not treat campus cafés as tourist restaurants unless they are clearly open to the public.",
+    "li1": "Confirm public access to any café on campus.",
+    "li2": "Centre of Ifrane for full meals.",
+    "li3": "Carry water with you.",
+    "li4": "Hotel restaurants in the evening.",
+    "li5": "Respect student spaces and study areas."
   },
   "tips": {
-    "badge": "Consejos Prácticos",
-    "title": "Consejos Prácticos para Visitar la Universidad",
-    "1": { "title": "Acceso exterior y perimetral", "desc": "Los visitantes pueden contemplar fácilmente la arquitectura del campus y los terrenos de entrada desde el perímetro público y las áreas exteriores." },
-    "2": { "title": "Respetar la tranquilidad académica", "desc": "Al tratarse de una institución activa, mantén baja la intensidad de ruido y sigue las pautas de seguridad en los accesos." },
-    "3": { "title": "Combinar con un paseo por el pueblo", "desc": "Combina tu visita a la universidad con un recorrido por las impecables avenidas ajardinadas de Ifrane y sus parques cercanos." }
-  },
-  "gyg": {
-    "badge": "Excursiones",
-    "title": "Explora Ifrane y sus Alrededores",
-    "subtitle": "Opciones guiadas para descubrir la arquitectura y la naturaleza de Ifrane.",
-    "t1": { "tag": "Cultura", "title": "Paseo a Pie por el Pueblo Alpino de Ifrane", "desc": "Explora la arquitectura única, los jardines y el perímetro universitario con un guía." },
-    "t2": { "tag": "Naturaleza", "title": "Excursión al Bosque de Cedros del Medio Atlas y Lagos", "desc": "Excursión de un día a los antiguos bosques de cedros, monos de Berbería y lagos de montaña." },
-    "t3": { "tag": "Excursión", "title": "Excursión de un Día de Fez a Ifrane y Azrou", "desc": "Cómoda excursión que cubre los puntos destacados de la montaña desde Fez." },
-    "check": "Comprobar disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una comisión sin coste adicional para ti."
-  },
-  "nearby": {
-    "badge": "Sigue Explorando",
-    "title": "Más Lugares de Interés en Ifrane",
-    "back": "← Volver a la guía de Ifrane"
-  },
-  "blog": {
-    "badge": "Del Blog",
-    "title": "Artículos Relacionados",
-    "all": "Todos los artículos →",
-    "a1": { "tag": "Arquitectura", "title": "Descubriendo la Arquitectura Alpina de Ifrane", "desc": "Por qué el estilo de chalet define la ciudad turística de montaña de Marruecos." },
-    "a2": { "tag": "Naturaleza", "title": "Escapadas por el Medio Atlas: Lagos y Cedros", "desc": "Explorando las maravillas naturales que rodean Ifrane." },
-    "a3": { "tag": "Planificación", "title": "Un Fin de Semana Relajante en Ifrane", "desc": "Cómo aprovechar al máximo una breve escapada a la montaña." },
-    "read": "Leer el artículo →"
+    "title": "Consejos prácticos",
+    "1": {
+      "title": "Clima de montaña",
+      "desc": "Lleva una capa abrigada; el tiempo cambia rápido en altitud."
+    },
+    "2": {
+      "title": "Acceso",
+      "desc": "Coche recomendado desde Ifrane; revisa la carretera tras lluvia o nieve."
+    },
+    "3": {
+      "title": "Respeto del lugar",
+      "desc": "Permanece en los senderos y recoge tu basura."
+    }
   },
   "faq": {
-    "badge": "Bueno Saberlo",
-    "title": "Preguntas Frecuentes de la Universidad Al Akhawayn",
-    "q1": { "question": "¿Pueden los turistas entrar en la Universidad Al Akhawayn?", "answer": "Los visitantes pueden admirar la llamativa arquitectura alpina y las puertas principales del campus desde el exterior, aunque el acceso interior a los edificios académicos puede estar restringido." },
-    "q2": { "question": "¿Cuál es la mejor época para visitar?", "answer": "Las mañanas ofrecen aire fresco de montaña y una iluminación hermosa para fotografiar los edificios de techos rojos." },
-    "q3": { "question": "¿Hay código de vestimenta?", "answer": "Los visitantes deben vestir de forma respetuosa y casual, adecuada para el entorno de un campus universitario moderno." },
-    "q4": { "question": "¿Cuánto dura la visita?", "answer": "Alrededor de 30 a 45 minutos para pasear por el perímetro y apreciar el diseño alpino único." },
-    "q5": { "question": "¿La entrada es gratuita?", "answer": "Ver los terrenos exteriores y las puertas del campus es completamente gratuito." }
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Universidad Al Akhawayn",
+    "q1": {
+      "question": "Can I tour inside?",
+      "answer": "Generally no formal tourist tour — exterior viewing only."
+    },
+    "q2": {
+      "question": "Why visit?",
+      "answer": "Architecture and the contrast with historic Moroccan cities."
+    },
+    "q3": {
+      "question": "Open every day?",
+      "answer": "Campus operates on academic schedules; exterior roads vary."
+    },
+    "q4": {
+      "question": "Far from centre?",
+      "answer": "On the edge of Ifrane — short taxi or walk depending on your hotel."
+    },
+    "q5": {
+      "question": "English spoken?",
+      "answer": "The university is known for English-medium programmes; town services vary."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "Visiting AUI",
+      "desc": "Public areas and etiquette."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Ifrane beyond lakes",
+      "desc": "Town landmarks and campus."
+    },
+    "a3": {
+      "tag": "Culture",
+      "title": "Education in the Atlas",
+      "desc": "Why Al Akhawayn matters locally."
+    }
+  },
+  "gyg": {
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Campus",
+      "title": "Al Akhawayn exterior",
+      "desc": "Architecture on the edge of Ifrane."
+    },
+    "t2": {
+      "tag": "Mountain",
+      "title": "Town & campus",
+      "desc": "Lion, centre and university views."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Modern Ifrane",
+      "desc": "How the campus shapes the town."
+    }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Ifrane",
+    "back": "← Volver a la guía de Ifrane",
+    "explore": "Explorar el lugar →"
   }
 }

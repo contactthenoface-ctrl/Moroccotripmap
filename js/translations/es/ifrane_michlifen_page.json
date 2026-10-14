@@ -1,93 +1,167 @@
-"ifrane_michlifen_page": {
+{
   "seo": {
-    "title": "Michlifen | Guía de Ifrane | MoroccoTripMap",
-    "description": "¿Visitas Michlifen en Ifrane? Pistas de esquí, vistas a la montaña, nieve en invierno, actividades al aire libre y consejos prácticos.",
-    "og_title": "Michlifen, Ifrane: Pistas de esquí, Vistas de montaña y Consejos",
-    "og_description": "Cómo visitar Michlifen: deportes de invierno, vistas panorámicas de la montaña, paisaje alpino y consejos prácticos."
+    "title": "Michlifen Ifrane | Ski Station & Viewpoint | MoroccoTripMap",
+    "description": "Visit Michlifen above Ifrane: Middle Atlas viewpoint and small ski station with seasonal snow and wide mountain views.",
+    "keywords": "Michlifen, ski Ifrane, Michlifen Morocco",
+    "og_title": "Michlifen Ifrane | Ski Station & Viewpoint | MoroccoTripMap",
+    "og_description": "Visit Michlifen above Ifrane: Middle Atlas viewpoint and small ski station with seasonal snow and wide mountain views."
   },
-  "hero_subtitle": "La principal estación de esquí y montaña del Medio Atlas — laderas nevadas e impresionantes vistas alpinas.",
+  "name": "Michlifen",
+  "hero_subtitle": "Puerto y estación de esquí sobre Ifrane.",
   "info": {
     "best_time_label": "Mejor época",
-    "best_time_val": "Invierno para nieve / Verano para senderismo",
-    "duration_label": "Duración ideal",
-    "duration_val": "2 – 4 horas",
+    "best_time_val": "Jours clairs pour la vue ; hiver pour la neige",
+    "duration_label": "Tiempo sugerido",
+    "duration_val": "1 – 3 hours",
     "entry_label": "Entrada",
-    "entry_val": "Acceso libre / Actividades de pago",
+    "entry_val": "Free viewpoint access; ski facilities seasonal/paid",
     "area_label": "Ubicación",
-    "area_val": "Montañas del Medio Atlas, cerca de Ifrane"
+    "area_val": "Above Ifrane · Middle Atlas"
   },
   "overview": {
-    "title": "El principal paraíso alpino de Marruecos",
-    "p1": "Michlifen es una impresionante caldera volcánica situada en las montañas del Medio Atlas, reconocida como el principal destino de esquí y deportes de invierno de Marruecos. Rodeada de frondosos bosques de cedros y picos imponentes, se transforma en un paraíso nevado en invierno y en un refugio alpino fresco en verano.",
-    "p2": "Ya sea que quieras esquiar por laderas polvorientas, disfrutar del trineo en familia o realizar rutas de senderismo bajo cielos azules despejados, Michlifen ofrece paisajes impresionantes y aventuras al aire libre durante todo el año.",
-    "p3": "Fácilmente accesible mediante un pintoresco trayecto en coche desde Ifrane, es una excursión fantástica de medio día o día completo. Asegúrate de consultar las condiciones meteorológicas en invierno y disfruta de un café caliente en las instalaciones de la estación."
+    "title": "The high balcony above town",
+    "p1": "Michlifen sits higher than Ifrane and is known for winter sports when snow allows, and for broad views across the Middle Atlas the rest of the year. It is a short drive up from town and a favourite stop for visitors who want altitude without a long expedition.",
+    "p2": "In winter, check road and ski conditions before you go. Out of season, treat it as a viewpoint and fresh-air stop."
   },
   "gallery": {
-    "badge": "Galería",
-    "title": "Michlifen en Imágenes",
-    "subtitle": "Laderas nevadas, panoramas montañosos y paisajes alpinos.",
-    "s1": { "caption": "Laderas nevadas y paisaje invernal" },
-    "s2": { "caption": "Bosques de cedros circundantes" },
-    "s3": { "caption": "Vistas panorámicas del Medio Atlas" },
-    "s4": { "caption": "Caldera y zona de la estación" },
-    "s5": { "caption": "Frondosa vegetación alpina en verano" }
+    "badge": "Gallery",
+    "title": "Michlifen photo gallery",
+    "subtitle": "High pass views, winter slopes and mountain ridges above Ifrane.",
+    "s1": {
+      "caption": "Michlifen viewpoint"
+    },
+    "s2": {
+      "caption": "Mountain ridge above Ifrane"
+    },
+    "s3": {
+      "caption": "Winter scene at Michlifen"
+    },
+    "s4": {
+      "caption": "Road toward Michlifen"
+    },
+    "s5": {
+      "caption": "High Atlas foothills view"
+    }
   },
   "moods": {
-    "badge": "Qué ver",
-    "title": "Lo más destacado de Michlifen",
-    "subtitle": "Esquí, miradores panorámicos y aire puro de montaña.",
-    "1": { "tag": "Deportes de Invierno", "title": "Esquí y trineo", "desc": "Disfruta de los deportes de nieve en las laderas volcánicas naturales durante el invierno.", "duration": "2–4 horas" },
-    "2": { "tag": "Panoramas", "title": "Miradores de montaña", "desc": "Contempla amplias vistas de los picos y valles del Medio Atlas.", "duration": "1–2 horas" },
-    "3": { "tag": "Naturaleza", "title": "Senderismo alpino", "desc": "Explora los bosques de cedros y rutas de senderismo en primavera y verano.", "duration": "2–3 horas" }
+    "badge": "Timing",
+    "title": "Michlifen through the day",
+    "subtitle": "Altitude, wind and visibility decide the visit.",
+    "1": {
+      "tag": "Morning",
+      "title": "Clear morning views",
+      "desc": "Best chance of long-distance visibility from the pass.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Bright and exposed",
+      "desc": "Strong sun and wind — protect skin and eyes.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Late light",
+      "desc": "Dramatic colours if clouds stay high.",
+      "duration": "Evening"
+    }
   },
   "food": {
-    "title": "Gastronomía y bebidas calientes en la estación",
-    "p1": "Michlifen cuenta con restaurantes de hoteles de alta gama y chalets de montaña que ofrecen comidas reconfortantes, bebidas calientes y especialidades marroquíes para entrar en calor tras las actividades al aire libre.",
-    "li1": "Chocolate caliente y té de menta con vistas a las laderas nevadas",
-    "li2": "Tajines de montaña reconfortantes y sopas",
-    "li3": "Restaurantes de la estación y bares informales",
-    "li4": "Se recomienda llevar agua potable durante las caminatas",
-    "li5": "Acogedoras chimeneas interiores en invierno",
-    "p2": "Hay opciones gastronómicas adicionales de regreso en el centro de Ifrane, a poca distancia en coche."
+    "title": "Eating at Michlifen",
+    "p1": "Food options are limited and often seasonal. Eat a proper meal in Ifrane if you need a full menu.",
+    "p2": "Carry water and a snack in every season — the altitude is higher and more exposed than town.",
+    "li1": "Snacks and water from Ifrane.",
+    "li2": "Seasonal cafés when open in winter.",
+    "li3": "Dinner back in town after the viewpoint.",
+    "li4": "Hot drinks welcome in cold months.",
+    "li5": "Do not count on full restaurant service at the pass."
   },
   "tips": {
-    "badge": "Consejos Prácticos",
-    "title": "Consejos Prácticos para Visitar Michlifen",
-    "1": { "title": "Comprueba el clima y el estado de las carreteras", "desc": "Las carreteras de montaña pueden sufrir fuertes nevadas en invierno. Comprueba la accesibilidad antes de subir desde Ifrane." },
-    "2": { "title": "Vístete por capas", "desc": "A gran altura las temperaturas pueden bajar rápidamente, especialmente en invierno. Chaquetas abrigadas, guantes y calzado resistente son esenciales." },
-    "3": { "title": "Transporte desde Ifrane", "desc": "Los taxis o coches de alquiler desde Ifrane te llevan fácilmente a Michlifen. Acuerda la tarifa o contrata un conductor para el viaje de ida y vuelta." }
-  },
-  "gyg": {
-    "badge": "Excursiones",
-    "title": "Reserva una Excursión de Montaña a Michlifen",
-    "subtitle": "Excursiones guiadas de montaña que cubren Ifrane, Michlifen y la naturaleza circundante.",
-    "t1": { "tag": "Montaña", "title": "Excursión Alpina y de Esquí a Michlifen", "desc": "Viaje guiado por la montaña con transporte desde Ifrane y miradores panorámicos." },
-    "t2": { "tag": "Día completo", "title": "Tour de Naturaleza y Lagos del Medio Atlas", "desc": "Combina Michlifen con los bosques de cedros y lagos de montaña como Dayet Aoua." },
-    "t3": { "tag": "Privado", "title": "Aventura Privada en las Montañas del Atlas", "desc": "Excursión privada flexible adaptada a tu ritmo e intereses al aire libre." },
-    "check": "Comprobar disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una comisión sin coste adicional para ti."
-  },
-  "nearby": {
-    "badge": "Sigue Explorando",
-    "title": "Más Lugares de Interés en Ifrane",
-    "back": "← Volver a la guía de Ifrane"
-  },
-  "blog": {
-    "badge": "Del Blog",
-    "title": "Artículos Relacionados",
-    "all": "Todos los artículos →",
-    "a1": { "tag": "Invierno", "title": "Esquiar en Marruecos: guía de Michlifen", "desc": "Qué esperar de los deportes de invierno en el Medio Atlas." },
-    "a2": { "tag": "Planificación", "title": "Excursiones de un día desde Ifrane a la montaña", "desc": "Cómo combinar Michlifen con los bosques de cedros y rutas panorámicas." },
-    "a3": { "tag": "Naturaleza", "title": "Senderismo de verano alrededor de Michlifen", "desc": "Descubriendo calderas volcánicas verdes y senderos de montaña." },
-    "read": "Leer el artículo →"
+    "title": "Consejos prácticos",
+    "1": {
+      "title": "Clima de montaña",
+      "desc": "Lleva una capa abrigada; el tiempo cambia rápido en altitud."
+    },
+    "2": {
+      "title": "Acceso",
+      "desc": "Coche recomendado desde Ifrane; revisa la carretera tras lluvia o nieve."
+    },
+    "3": {
+      "title": "Respeto del lugar",
+      "desc": "Permanece en los senderos y recoge tu basura."
+    }
   },
   "faq": {
-    "badge": "Bueno Saberlo",
-    "title": "Preguntas Frecuentes de Michlifen",
-    "q1": { "question": "¿Hay tarifa de entrada para visitar Michlifen?", "answer": "No, el acceso a la zona de montaña y miradores es gratuito. Las actividades específicas de la estación, el alquiler de equipos de esquí o la comida tienen costes separados." },
-    "q2": { "question": "¿Cuánto tiempo debo quedarme?", "answer": "De 2 a 4 horas es ideal para disfrutar de las vistas, tomar fotos y relajarse o esquiar." },
-    "q3": { "question": "¿Se puede visitar en verano?", "answer": "Sí, el verano es maravilloso para hacer senderismo, picnics y disfrutar del aire fresco de la montaña lejos del calor de la ciudad." },
-    "q4": { "question": "¿Necesito un vehículo 4x4 en invierno?", "answer": "Durante nevadas fuertes se pueden requerir cadenas para la nieve o un 4x4, aunque las carreteras principales desde Ifrane se limpian con regularidad." },
-    "q5": { "question": "¿A qué distancia está de Ifrane?", "answer": "Está aproximadamente a 20 o 30 minutos en coche al sur del centro de Ifrane a través de pintorescas carreteras de montaña." }
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Michlifen",
+    "q1": {
+      "question": "Can I ski every winter?",
+      "answer": "Only when snow and facilities allow — seasons vary."
+    },
+    "q2": {
+      "question": "Worth it without snow?",
+      "answer": "Yes for the viewpoint and mountain air."
+    },
+    "q3": {
+      "question": "How far from Ifrane?",
+      "answer": "A short drive uphill from town."
+    },
+    "q4": {
+      "question": "Family-friendly?",
+      "answer": "Yes with care in icy conditions."
+    },
+    "q5": {
+      "question": "Need a guide?",
+      "answer": "Not for a viewpoint stop."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "Michlifen in winter",
+      "desc": "Snow, roads and expectations."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Without snow",
+      "desc": "Why the viewpoint still matters."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Middle Atlas passes",
+      "desc": "High routes around Ifrane."
+    }
+  },
+  "gyg": {
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Mountain",
+      "title": "Michlifen viewpoint",
+      "desc": "High pass above Ifrane."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Atlas heights",
+      "desc": "Mountain air and ridge views."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Ifrane & Michlifen",
+      "desc": "Town plus the high balcony."
+    }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Ifrane",
+    "back": "← Volver a la guía de Ifrane",
+    "explore": "Explorar el lugar →"
   }
 }

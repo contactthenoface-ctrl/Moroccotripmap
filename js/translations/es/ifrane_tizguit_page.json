@@ -1,94 +1,167 @@
-"ifrane_tizguit_page": {
+{
   "seo": {
-    "title": "Valle de Tizguit | Guía de Ifrane | MoroccoTripMap",
-    "description": "¿Visitas el Valle de Tizguit cerca de Ifrane? Paseos fluviales, naturaleza exuberante, cascadas, actividades y consejos prácticos.",
-    "og_title": "Valle de Tizguit, Ifrane: Naturaleza, Cascadas y Consejos",
-    "og_description": "Cómo visitar el Valle de Tizguit: paseos junto al río, paisajes verdes, cascadas y consejos prácticos."
+    "title": "Source Tizguit Ifrane | Spring & Valley | MoroccoTripMap",
+    "description": "Visit Source Tizguit near Ifrane: a Middle Atlas spring and green valley for a short walk and cool air.",
+    "keywords": "Source Tizguit, Tizguit Ifrane",
+    "og_title": "Source Tizguit Ifrane | Spring & Valley | MoroccoTripMap",
+    "og_description": "Visit Source Tizguit near Ifrane: a Middle Atlas spring and green valley for a short walk and cool air."
   },
-  "name": "Valle de Tizguit",
-  "hero_subtitle": "Un exuberante y pintoresco valle fluvial cerca de Ifrane, con arroyos refrescantes, cascadas, senderos y naturaleza apacible.",
+  "name": "Fuente Tizguit",
+  "hero_subtitle": "Manantial y valle verde cerca de Ifrane.",
   "info": {
     "best_time_label": "Mejor época",
-    "best_time_val": "Primavera y verano para ver verdor",
-    "duration_label": "Duración ideal",
-    "duration_val": "1 a 2 horas",
+    "best_time_val": "Matin ou fin d'après-midi",
+    "duration_label": "Tiempo sugerido",
+    "duration_val": "1 – 2 hours",
     "entry_label": "Entrada",
-    "entry_val": "Acceso libre y gratuito",
+    "entry_val": "Free access",
     "area_label": "Ubicación",
-    "area_val": "A las afueras del centro de Ifrane"
+    "area_val": "Near Ifrane"
   },
   "overview": {
-    "title": "Naturaleza y arroyos en las colinas del Medio Atlas",
-    "p1": "El Valle de Tizguit es un pacífico santuario natural situado a poca distancia del centro de Ifrane. Tallado por el agua a través de las verdes colinas del Medio Atlas, el valle ofrece serenos senderos junto a arroyos cristalinos y pequeñas cascadas.",
-    "p2": "Los visitantes pueden disfrutar de paseos relajantes bajo la sombra de los árboles, escuchar el relajante sonido del agua corriendo y admirar la flora local y las aves en un ambiente sumamente tranquilo.",
-    "p3": "Ya sea que busques un agradable paseo por la tarde, un lugar para un picnic familiar o una escapada silenciosa a la naturaleza, el Valle de Tizguit ofrece una experiencia al aire libre refrescante y cercana."
+    "title": "Water and green near town",
+    "p1": "Source Tizguit is a local nature stop: spring water, greenery and a break from the main road. It suits travellers who want a simple outdoor hour without driving far into the mountains.",
+    "p2": "Wear shoes with grip if paths are wet. Bring water even though you are near a spring — do not assume potable fountains."
   },
   "gallery": {
-    "badge": "Galería",
-    "title": "El Valle de Tizguit en Imágenes",
-    "subtitle": "Arroyos, cascadas y exuberantes paisajes de valle.",
-    "s1": { "caption": "Sereno arroyo y vegetación" },
-    "s2": { "caption": "Cascadas y aguas fluyendo" },
-    "s3": { "caption": "Senderos sombreados para caminar" },
-    "s4": { "caption": "Vegetación exuberante en las riberas" },
-    "s5": { "caption": "Vistas panorámicas del valle" }
+    "badge": "Gallery",
+    "title": "Source Tizguit",
+    "subtitle": "Spring and green valley near Ifrane — a short nature escape from town.",
+    "s1": {
+      "caption": "Source Tizguit greenery"
+    },
+    "s2": {
+      "caption": "Spring area near Ifrane"
+    },
+    "s3": {
+      "caption": "Valley walk at Tizguit"
+    },
+    "s4": {
+      "caption": "Water and vegetation"
+    },
+    "s5": {
+      "caption": "Path near the spring"
+    }
   },
   "moods": {
-    "badge": "Qué ver",
-    "title": "Lo más destacado del Valle de Tizguit",
-    "subtitle": "Paseos fluviales, cascadas y un entorno natural tranquilo.",
-    "1": { "tag": "Cascadas", "title": "Saltos de agua y pozas", "desc": "Disfruta de los relajantes sonidos del agua clara fluyendo sobre las rocas.", "duration": "30–45 min" },
-    "2": { "tag": "Paseo", "title": "Caminos junto al río", "desc": "Camina por senderos suaves sombreados por frondosos árboles.", "duration": "45–60 min" },
-    "3": { "tag": "Naturaleza", "title": "Zonas de picnic y relax", "desc": "Desconecta en un entorno verde y apacible cerca de la ciudad.", "duration": "1–2 horas" }
+    "badge": "Horarios",
+    "title": "Fuente Tizguit a lo largo del día",
+    "subtitle": "Luz y ritmo según el momento.",
+    "1": {
+      "tag": "Mañana",
+      "title": "Luz suave",
+      "desc": "Mejor momento para caminar fresco.",
+      "duration": "Mañana"
+    },
+    "2": {
+      "tag": "Mediodía",
+      "title": "Pleno día",
+      "desc": "Prefiere sombra o una pausa corta.",
+      "duration": "Mediodía"
+    },
+    "3": {
+      "tag": "Tarde",
+      "title": "Final del día",
+      "desc": "Luz rasante y menos gente.",
+      "duration": "Tarde"
+    }
   },
   "food": {
-    "title": "Picnics y gastronomía cerca del valle",
-    "p1": "El Valle de Tizguit es un lugar maravilloso para un picnic relajado al aire libre bajo los árboles. Para comidas formales, hay encantadores cafés y restaurantes locales cerca o en el centro de Ifrane.",
-    "li1": "Zonas de césped sombreadas ideales para picnics familiares",
-    "li2": "Cafés locales que sirven té de menta y refrescos",
-    "li3": "Platos tradicionales marroquíes disponibles en restaurantes cercanos",
-    "li4": "Se recomienda llevar agua embotellada para el paseo",
-    "li5": "Gran variedad de opciones gastronómicas en el centro de Ifrane",
-    "p2": "Por favor, ayuda a proteger la belleza natural del valle manteniendo limpias las zonas de picnic y tirando los residuos adecuadamente."
+    "title": "Dónde comer cerca",
+    "p1": "Opciones limitadas fuera de Ifrane: picnic o comida en el pueblo.",
+    "p2": "Lleva agua y snacks a las salidas de naturaleza.",
+    "li1": "Picnic preparado en el pueblo.",
+    "li2": "Agua para cada caminante.",
+    "li3": "Restaurantes de hotel en Ifrane.",
+    "li4": "Cafés del centro para una comida simple.",
+    "li5": "No dejes basura en el sitio."
   },
   "tips": {
-    "badge": "Consejos Prácticos",
-    "title": "Consejos Prácticos para Visitar el Valle de Tizguit",
-    "1": { "title": "Lleva calzado cómodo para caminar", "desc": "Los senderos cerca del río pueden estar húmedos o irregulares. Un calzado resistente garantiza un paseo cómodo." },
-    "2": { "title": "Visita por la mañana o al atardecer", "desc": "Estos momentos ofrecen la mejor luz para la fotografía y una atmósfera maravillosamente tranquila." },
-    "3": { "title": "Combínalo con el centro de Ifrane", "desc": "Dado que el valle está muy cerca de la ciudad, se puede visitar fácilmente junto con el centro o los parques cercanos." }
-  },
-  "gyg": {
-    "badge": "Excursiones",
-    "title": "Reserva una Excursión de Naturaleza en Ifrane",
-    "subtitle": "Excursiones guiadas al aire libre que cubren el valle, los bosques de cedros y los puntos clave.",
-    "t1": { "tag": "Naturaleza", "title": "Paseo por el Valle de Tizguit y Cascadas", "desc": "Tour guiado por la naturaleza explorando ríos locales, cascadas y miradores." },
-    "t2": { "tag": "Lo más destacado", "title": "Tour Completo por la Ciudad y Naturaleza de Ifrane", "desc": "Combina monumentos como el León de Piedra con los valles naturales cercanos." },
-    "t3": { "tag": "Privado", "title": "Explorador Privado del Medio Atlas", "desc": "Excursión privada personalizada adaptada a tu ritmo e intereses." },
-    "check": "Comprobar disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una comisión sin coste adicional para ti."
-  },
-  "nearby": {
-    "badge": "Sigue Explorando",
-    "title": "Más Lugares de Interés en Ifrane",
-    "back": "← Volver a la guía de Ifrane"
-  },
-  "blog": {
-    "badge": "Del Blog",
-    "title": "Artículos Relacionados",
-    "all": "Todos los artículos →",
-    "a1": { "tag": "Naturaleza", "title": "Descubriendo los ríos y valles alrededor de Ifrane", "desc": "Paseos panorámicos y retiros naturales en el Medio Atlas." },
-    "a2": { "tag": "Caminatas", "title": "Las mejores rutas de senderismo suaves cerca de Ifrane", "desc": "Senderos fáciles y paseos bucólicos por el valle para todas las edades." },
-    "a3": { "tag": "Familia", "title": "Lugares naturales ideales para familias en Ifrane", "desc": "Dónde disfrutar de picnics relajantes y tiempo al aire libre en familia." },
-    "read": "Leer el artículo →"
+    "title": "Consejos prácticos",
+    "1": {
+      "title": "Clima de montaña",
+      "desc": "Lleva una capa abrigada; el tiempo cambia rápido en altitud."
+    },
+    "2": {
+      "title": "Acceso",
+      "desc": "Coche recomendado desde Ifrane; revisa la carretera tras lluvia o nieve."
+    },
+    "3": {
+      "title": "Respeto del lugar",
+      "desc": "Permanece en los senderos y recoge tu basura."
+    }
   },
   "faq": {
-    "badge": "Bueno Saberlo",
-    "title": "Preguntas Frecuentes del Valle de Tizguit",
-    "q1": { "question": "¿Hay tarifa de entrada para visitar el Valle de Tizguit?", "answer": "No, el acceso al valle y a sus senderos es totalmente gratuito y abierto a todos los visitantes." },
-    "q2": { "question": "¿Cuándo es la mejor época para visitar?", "answer": "La primavera y el verano ofrecen el verdor más vibrante y un clima muy agradable para caminar junto a la orilla del río." },
-    "q3": { "question": "¿A qué distancia está del centro de Ifrane?", "answer": "El valle está situado a pocos minutos del centro de Ifrane, por lo que es fácilmente accesible en taxi, coche o a pie." },
-    "q4": { "question": "¿Cuánto tiempo debo dedicar a explorar?", "answer": "Planifica de 1 a 2 horas para disfrutar de un paseo relajante junto al río y contemplar el paisaje natural." },
-    "q5": { "question": "¿Hay lugares para comer cerca?", "answer": "Sí, puedes encontrar agradables cafés y restaurantes locales cerca del valle o regresar fácilmente al centro de Ifrane." }
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Fuente Tizguit",
+    "q1": {
+      "question": "How far?",
+      "answer": "Close to Ifrane — a short outing."
+    },
+    "q2": {
+      "question": "Worth it?",
+      "answer": "Yes for a green pause if you have an extra hour."
+    },
+    "q3": {
+      "question": "Children?",
+      "answer": "Yes with supervision near water."
+    },
+    "q4": {
+      "question": "Combine?",
+      "answer": "Works with town and lion in the same half-day."
+    },
+    "q5": {
+      "question": "Facilities?",
+      "answer": "Minimal — be self-sufficient."
+    }
+  },
+  "blog": {
+    "badge": "Del blog",
+    "title": "Artículos relacionados",
+    "all": "Todos los artículos →",
+    "read": "Leer artículo →",
+    "a1": {
+      "tag": "Planificación",
+      "title": "Primera vez en Ifrane",
+      "desc": "Lagos, cedros y logística de montaña."
+    },
+    "a2": {
+      "tag": "Guía",
+      "title": "Lagos del Medio Atlas",
+      "desc": "Dayet Aoua y paradas tranquilas."
+    },
+    "a3": {
+      "tag": "Naturaleza",
+      "title": "Bosques de cedro",
+      "desc": "Caminar bajo los cedros cerca de Ifrane."
+    }
+  },
+  "gyg": {
+    "badge": "Tours",
+    "title": "Tours vinculados a este lugar",
+    "subtitle": "Opciones con organizador local.",
+    "check": "Ver disponibilidad en GetYourGuide →",
+    "disclosure": "Algunos enlaces son de afiliados.",
+    "t1": {
+      "tag": "Montaña",
+      "title": "Ifrane y lagos",
+      "desc": "Pueblo, Dayet Aoua y cedros."
+    },
+    "t2": {
+      "tag": "Naturaleza",
+      "title": "Paseo en el cedral",
+      "desc": "Caminata guiada en el bosque."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Día Ifrane desde Fez",
+      "desc": "Excursión de montaña desde la ciudad imperial."
+    }
+  },
+  "nearby": {
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Ifrane",
+    "back": "← Volver a la guía de Ifrane",
+    "explore": "Explorar el lugar →"
   }
 }

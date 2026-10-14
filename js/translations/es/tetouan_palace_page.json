@@ -3,7 +3,7 @@
     "title": "Palacio Real | Guía de Tetuán | MoroccoTripMap",
     "description": "¿Visitas el Palacio Real en Tetouan? Descubre su historia, arquitectura en la Plaza Hassan II, consejos fotográficos y prácticos.",
     "og_title": "Palacio Real, Tetuán: Arquitectura, Plaza Hassan II y Consejos",
-    "og_description": "Cómo visitar el punto clave del Palacio Real en Tetuán: vistas exteriores, contexto histórico y recomendaciones."
+    "og_description": "Cómo visitar el punto clave del Palacio Real en Tetouan: vistas exteriores, contexto histórico y recomendaciones."
   },
   "name": "Royal Palace",
   "hero_subtitle": "La majestuosa residencia real con vistas a la Plaza Hassan II: grandeza, arquitectura hispano-morisca y guardia real.",
@@ -33,6 +33,29 @@
     "s4": { "caption": "Puesto de guardia tradicional" },
     "s5": { "caption": "Ambiente nocturno alrededor del palacio" }
   },
+  "moods": {
+    "badge": "Qué ver",
+    "title": "Puntos destacados del palacio",
+    "subtitle": "Elementos arquitectónicos clave y puntos focales para fotos.",
+    "1": {
+      "tag": "Arquitectura",
+      "title": "Puertas hispano-moriscas",
+      "desc": "intrincada azulejería, techos de tejas verdes y monumentales entradas arqueadas.",
+      "duration": "20 min"
+    },
+    "2": {
+      "tag": "Patrimonio",
+      "title": "Puestos de la guardia real",
+      "desc": "Presencia de guardia tradicional que honra la residencia real en activo.",
+      "duration": "15 min"
+    },
+    "3": {
+      "tag": "Ubicación",
+      "title": "Integración en la plaza",
+      "desc": "Ancla perfectamente la Plaza Hassan II justo en el umbral de la medina.",
+      "duration": "15 min"
+    }
+  },
   "tips": {
     "title": "Consejos prácticos para visitar el Palacio Real",
     "1": {
@@ -45,7 +68,7 @@
     },
     "3": {
       "title": "Puerta de entrada a la medina",
-      "desc": "El palacio se encuentra junto a las entradas de Bab el-Okla y Bab Tut, por lo que es un punto de partida ideal para explorar la medina."
+      "desc": "El palacio se encuentra junto a las entradas de la medina, siendo un punto de partida ideal para explorar el casco antiguo."
     }
   },
   "gyg": {

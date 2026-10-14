@@ -1,65 +1,167 @@
-"seo": {
-    "title": "Tizguit Valley | Ifrane Guide | MoroccoTripMap",
-    "description": "Visiting the Tizguit Valley near Ifrane? Scenic river walks, lush nature spots, waterfalls, outdoor activities and practical travel tips.",
-    "og_title": "Tizguit Valley, Ifrane: Nature, Waterfalls & Tips",
-    "og_description": "How to visit the Tizguit Valley: river walks, lush green landscapes, waterfalls and practical advice."
+{
+  "seo": {
+    "title": "Source Tizguit Ifrane | Spring & Valley | MoroccoTripMap",
+    "description": "Visit Source Tizguit near Ifrane: a Middle Atlas spring and green valley for a short walk and cool air.",
+    "keywords": "Source Tizguit, Tizguit Ifrane",
+    "og_title": "Source Tizguit Ifrane | Spring & Valley | MoroccoTripMap",
+    "og_description": "Visit Source Tizguit near Ifrane: a Middle Atlas spring and green valley for a short walk and cool air."
   },
-  "name": "Tizguit Valley",
-  "hero_subtitle": "A lush, scenic river valley near Ifrane — featuring refreshing streams, waterfalls, walking paths, and tranquil nature.",
+  "name": "Source Tizguit",
+  "hero_subtitle": "Spring and green valley near Ifrane — a short nature escape from town.",
   "info": {
-    "best_time_label": "Best Time to Go",
-    "best_time_val": "Spring & summer for greenery",
-    "duration_label": "Time Needed",
-    "duration_val": "1 to 2 hours",
+    "best_time_label": "Best time",
+    "best_time_val": "Morning or late afternoon",
+    "duration_label": "Suggested time",
+    "duration_val": "1 – 2 hours",
     "entry_label": "Entry",
-    "entry_val": "Free open access",
-    "area_label": "Where",
-    "area_val": "Just outside central Ifrane"
+    "entry_val": "Free access",
+    "area_label": "Location",
+    "area_val": "Near Ifrane"
   },
   "overview": {
-    "title": "Nature and streams in the Middle Atlas hills",
-    "p1": "Tizguit Valley is a peaceful natural sanctuary located just a short distance from central Ifrane. Carved by flowing water through the green Middle Atlas hills, the valley offers serene walking paths alongside bubbling streams and small waterfalls.",
-    "p2": "Visitors can enjoy leisurely walks under the shade of trees, listen to the calming sound of running water, and admire local flora and birdlife in a remarkably tranquil atmosphere.",
-    "p3": "Whether you are looking for a relaxing afternoon stroll, a family picnic spot, or a quiet escape into nature, Tizguit Valley provides a refreshing outdoor experience close to town."
+    "title": "Water and green near town",
+    "p1": "Source Tizguit is a local nature stop: spring water, greenery and a break from the main road. It suits travellers who want a simple outdoor hour without driving far into the mountains.",
+    "p2": "Wear shoes with grip if paths are wet. Bring water even though you are near a spring — do not assume potable fountains."
   },
   "gallery": {
     "badge": "Gallery",
-    "title": "Tizguit Valley in Pictures",
-    "subtitle": "Streams, waterfalls and lush green valley landscapes.",
-    "s1": { "caption": "Serene river stream and greenery" },
-    "s2": { "caption": "Cascades and flowing waters" },
-    "s3": { "caption": "Shaded walking and hiking paths" },
-    "s4": { "caption": "Lush vegetation along the riverbanks" },
-    "s5": { "caption": "Panoramic valley vistas" }
+    "title": "Source Tizguit",
+    "subtitle": "Mountain and forest views around Ifrane",
+    "s1": {
+      "caption": "Source Tizguit greenery"
+    },
+    "s2": {
+      "caption": "Spring area near Ifrane"
+    },
+    "s3": {
+      "caption": "Valley walk at Tizguit"
+    },
+    "s4": {
+      "caption": "Water and vegetation"
+    },
+    "s5": {
+      "caption": "Path near the spring"
+    }
   },
   "moods": {
-    "badge": "What to See",
-    "title": "Highlights of Tizguit Valley",
-    "subtitle": "River walks, waterfalls and tranquil natural surroundings.",
-    "1": { "tag": "Waterfalls", "title": "Cascades & stream pools", "desc": "Enjoy the soothing sounds of clear water flowing over rocks.", "duration": "30–45 min" },
-    "2": { "tag": "Walking", "title": "Riverbank pathways", "desc": "Stroll along gentle paths shaded by lush trees.", "duration": "45–60 min" },
-    "3": { "tag": "Nature", "title": "Picnic & relaxation spots", "desc": "Unwind in a peaceful green environment close to town.", "duration": "1–2 hours" }
+    "badge": "Timing",
+    "title": "Source Tizguit through the day",
+    "subtitle": "Green valley microclimate.",
+    "1": {
+      "tag": "Morning",
+      "title": "Fresh morning",
+      "desc": "Pleasant for photos and a short walk.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Quiet midday",
+      "desc": "Shade varies by spot.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Late calm",
+      "desc": "Nice light before returning to town.",
+      "duration": "Evening"
+    }
   },
   "food": {
-    "title": "Picnics and dining near the valley",
-    "p1": "Tizguit Valley is a wonderful spot for a relaxed outdoor picnic under the trees. For sit-down meals, charming local cafes and restaurants are available nearby or easily reached in central Ifrane.",
-    "li1": "Shaded grassy areas ideal for family picnics",
-    "li2": "Local cafes serving Moroccan mint tea and refreshments",
-    "li3": "Traditional Moroccan dishes available in nearby town restaurants",
-    "li4": "Bringing bottled water for your walk is recommended",
-    "li5": "Wide variety of dining choices in central Ifrane",
-    "p2": "Please help protect the natural beauty of the valley by keeping picnic areas clean and disposing of waste properly."
+    "title": "Eating near Source Tizguit",
+    "p1": "Limited or no services — plan food in Ifrane.",
+    "p2": "Picnic only if you pack out waste.",
+    "li1": "Eat in town.",
+    "li2": "Carry water.",
+    "li3": "Small snacks for the walk.",
+    "li4": "No reliable restaurants on site.",
+    "li5": "Hotel or café dinner in Ifrane."
   },
   "tips": {
-    "badge": "Practical Tips",
-    "title": "Practical Tips for Visiting Tizguit Valley",
-    "1": { "title": "Wear comfortable walking shoes", "desc": "Paths near the river can sometimes be damp or uneven. Sturdy footwear ensures a comfortable stroll." },
-    "2": { "title": "Visit in the morning or late afternoon", "desc": "These times offer the best lighting for photography and a wonderfully peaceful atmosphere." },
-    "3": { "title": "Combine with central Ifrane", "desc": "Since the valley is very close to town, it pairs effortlessly with a visit to the town center or nearby parks." }
+    "title": "Practical tips",
+    "1": {
+      "title": "Access",
+      "desc": "Short trip from Ifrane by car or taxi."
+    },
+    "2": {
+      "title": "Paths",
+      "desc": "Can be damp — suitable footwear."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Keep the spring area clean."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "FAQ about Source Tizguit",
+    "q1": {
+      "question": "How far?",
+      "answer": "Close to Ifrane — a short outing."
+    },
+    "q2": {
+      "question": "Worth it?",
+      "answer": "Yes for a green pause if you have an extra hour."
+    },
+    "q3": {
+      "question": "Children?",
+      "answer": "Yes with supervision near water."
+    },
+    "q4": {
+      "question": "Combine?",
+      "answer": "Works with town and lion in the same half-day."
+    },
+    "q5": {
+      "question": "Facilities?",
+      "answer": "Minimal — be self-sufficient."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Ifrane",
+      "desc": "Lakes, cedars and mountain logistics."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Middle Atlas lakes",
+      "desc": "Dayet Aoua and quieter stops near town."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Cedar forests",
+      "desc": "Walking under Atlas cedars around Ifrane."
+    }
   },
   "gyg": {
-    "badge": "Tours & Experiences",
-    "title": "Book a Nature Tour in Ifrane",
-    "subtitle": "Guided outdoor excursions covering the valley, cedar forests and local highlights.",
-    "t1": { "tag": "Nature", "title": "Ifrane Valley & Waterfalls Walk", "desc": "Guided nature tour exploring local rivers, cascades and scenic viewpoints." },
-    "
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Mountain",
+      "title": "Ifrane & lakes",
+      "desc": "Town, Dayet Aoua and cedar stops."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Cedar forest walk",
+      "desc": "Guided walk in the Middle Atlas forest."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Ifrane day from Fes",
+      "desc": "Mountain day trip from the imperial city."
+    }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Ifrane",
+    "back": "← Back to Ifrane guide",
+    "explore": "Explore the place →"
+  }
+}

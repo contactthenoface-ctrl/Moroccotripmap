@@ -1,1 +1,53 @@
-{"explore":"Explore Place →","back":"← Back to the Ifrane guide","more_title":"More Must-Visit Places in Ifrane","lion":{"tag":"Landmark","title":"Stone Lion","desc":"Ifrane’s famous town-centre emblem."},"aoua":{"tag":"Lake","title":"Dayet Aoua","desc":"Mountain lake with walks and birdlife."},"cedar":{"tag":"Forest","title":"Cedar Forest","desc":"Atlas cedars and Barbary macaques."},"michlifen":{"tag":"Mountain","title":"Michlifen","desc":"Ski slopes and high views."},"vittel":{"tag":"Spring","title":"Source Vittel","desc":"Park and spring in the garden city."},"uni":{"tag":"Campus","title":"Al Akhawayn","desc":"University campus in alpine setting."},"tizguit":{"tag":"Valley","title":"Tizguit Valley","desc":"Green valley walks near town."},"hachlaf":{"tag":"Lake","title":"Dayet Hachlaf","desc":"Quieter plateau lake."},"park":{"tag":"Park","title":"Ifrane National Park","desc":"Protected cedars and trails."}}
+{
+  "title": "More places in Ifrane",
+  "subtitle": "Continue exploring the Middle Atlas",
+  "back": "← Back to Ifrane guide",
+  "explore": "Explore the place →",
+  "items": [
+    {
+      "slug": "lion",
+      "title": "Stone Lion of Ifrane",
+      "tag": "Landmark"
+    },
+    {
+      "slug": "aoua",
+      "title": "Dayet Aoua",
+      "tag": "Lake"
+    },
+    {
+      "slug": "hachlaf",
+      "title": "Dayet Hachlaf",
+      "tag": "Lake"
+    },
+    {
+      "slug": "cedar",
+      "title": "Cedar Forest",
+      "tag": "Forest"
+    },
+    {
+      "slug": "michlifen",
+      "title": "Michlifen",
+      "tag": "Mountain"
+    },
+    {
+      "slug": "park",
+      "title": "Ifrane National Park",
+      "tag": "Park"
+    },
+    {
+      "slug": "tizguit",
+      "title": "Source Tizguit",
+      "tag": "Nature"
+    },
+    {
+      "slug": "vittel",
+      "title": "Source Vittel",
+      "tag": "Spring"
+    },
+    {
+      "slug": "uni",
+      "title": "Al Akhawayn University",
+      "tag": "Campus"
+    }
+  ]
+}

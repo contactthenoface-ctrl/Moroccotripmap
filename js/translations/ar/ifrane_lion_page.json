@@ -1,93 +1,167 @@
-"ifrane_lion_page": {
+{
   "seo": {
-    "title": "الأسد الحجري | دليل إفران | MoroccoTripMap",
-    "description": "هل تزور الأسد الحجري في إفران؟ تاريخ هذا المعلم الشهير، نصائح للتصوير، أفضل أوقات الزيارة ومعلومات عملية.",
-    "og_title": "الأسد الحجري، إفران: أوقات الزيارة، الصور والنصائح",
-    "og_description": "كيفية زيارة هذا المعلم الأيقوني في إفران: أماكن التصوير، التاريخ والنصائح العملية."
+    "title": "أسد إفران الحجري | إفران | MoroccoTripMap",
+    "description": "See the Stone Lion of Ifrane: the town’s famous carved lion in the centre of Morocco’s alpine-style Middle Atlas resort.",
+    "keywords": "Stone Lion Ifrane, lion Ifrane, Ifrane landmark",
+    "og_title": "Stone Lion of Ifrane | Town Landmark | MoroccoTripMap",
+    "og_description": "See the Stone Lion of Ifrane: the town’s famous carved lion in the centre of Morocco’s alpine-style Middle Atlas resort."
   },
-  "hero_subtitle": "الرمز الشهير لمدينة إفران — منحوت في الصخر تخليداً لذكرى آخر أسود الأطلس.",
+  "name": "أسد إفران الحجري",
+  "hero_subtitle": "الأسد المنحوت رمز البلدة الجبلية.",
   "info": {
-    "best_time_label": "أفضل وقت للزيارة",
-    "best_time_val": "الصباح أو أواخر الظهر",
-    "duration_label": "المدة المثالية",
-    "duration_val": "20 – 30 دقيقة",
+    "best_time_label": "أفضل فترة",
+    "best_time_val": "À tout moment lors d'une promenade en ville",
+    "duration_label": "وقت مقترح",
+    "duration_val": "15 – 30 minutes",
     "entry_label": "الدخول",
-    "entry_val": "دخول مجاني",
+    "entry_val": "Free",
     "area_label": "الموقع",
-    "area_val": "الحديقة المركزية، إفران"
+    "area_val": "Ifrane town centre"
   },
   "overview": {
-    "title": "تمثال إفران الأسطوري",
-    "p1": "الأسد الحجري (المعروف غالباً بأسد جورا) هو أشهر معلم في إفران، وقد نُحت مباشرة من صخرة جيرية داخل حديقة عامة هادئة بالقرب من وسط المدينة. نُحت في ثلاثينيات القرن العشرين، ويُعد تحية مؤثرة لآخر أسود الأطلس البرية التي كانت تجوب هذه الغابات الجبلية سابقاً.",
-    "p2": "لا تحتاج إلى تذاكر أو مرشدين لمشاهدته. يقع التمثال في مساحة خضراء يسهل الوصول إليها حيث يتوقف المسافرون غالباً لالتقاط صور لا تُنسى والاستمتاع بنزهة مريحة في الأجواء الجبلية للمدينة.",
-    "p3": "سواء زبته في الصباح الباكر لترتيب وقتك بهدوء أو تحت ضوء الشمس الدافئ بعد الظهر، فإن هذا النصب التذكاري يُعد محطة لا تُفوت لأي زائر لإفران."
+    "title": "The town’s postcard symbol",
+    "p1": "The Stone Lion sits in central Ifrane and appears on countless photos of the town. It is a short stop rather than a full outing — ideal when you arrive or before heading to the lakes and cedars.",
+    "p2": "Combine with a café in the centre and a stroll past the chalet-style architecture that earned Ifrane its Little Switzerland nickname."
   },
   "gallery": {
-    "badge": "معرض الصور",
-    "title": "الأسد الحجري بالصور",
-    "subtitle": "تفاصيل التمثال، الحديقة المحيطة وزوايا التصوير المميزة.",
-    "s1": { "caption": "تمثال الأسد الحجري الأيقوني" },
-    "s2": { "caption": "المساحات الخضراء الهادئة للحديقة المحيطة" },
-    "s3": { "caption": "لَوْحة مقربة للنحت الحجري الجيري" },
-    "s4": { "caption": "إضاءة أواخر الظهر على النصب التذكاري" },
-    "s5": { "caption": "نقطة تصوير شهيرة في وسط إفران" }
+    "badge": "Gallery",
+    "title": "Stone Lion photo gallery",
+    "subtitle": "Views of the carved lion and the mountain town centre.",
+    "s1": {
+      "caption": "Stone lion of Ifrane"
+    },
+    "s2": {
+      "caption": "Lion in the town centre"
+    },
+    "s3": {
+      "caption": "Close-up of the carved lion"
+    },
+    "s4": {
+      "caption": "Ifrane centre near the lion"
+    },
+    "s5": {
+      "caption": "Chalet-style street near the landmark"
+    }
   },
   "moods": {
-    "badge": "ماذا تشاهد",
-    "title": "أبرز معالم الأسد الحجري",
-    "subtitle": "تفاصيل النحت، محيط الحديقة وفرص التقاط الصور.",
-    "1": { "tag": "النحت", "title": "تفاصيل الأحجار التاريخية", "desc": "تفقد فنون نحت الحجارة التي تعود إلى ثلاثينيات القرن العشرين.", "duration": "10–15 دقيقة" },
-    "2": { "tag": "حديقة", "title": "المحيط الأخضر الهادئ", "desc": "استرخِ في أجواء الحديقة الهادئة في قلب المدينة.", "duration": "15–20 دقيقة" },
-    "3": { "tag": "صور", "title": "لقطات تذكارية لا تُنسى", "desc": "التقط صورك بجانب أشهر رمز في مدينة إفران.", "duration": "10 دقائق" }
+    "badge": "Timing",
+    "title": "The stone lion through the day",
+    "subtitle": "A short central stop — light is the main variable.",
+    "1": {
+      "tag": "Morning",
+      "title": "Soft morning light",
+      "desc": "Best photos before the centre gets busy.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Midday pause",
+      "desc": "Quick look between lake or forest trips.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Evening calm",
+      "desc": "Quieter streets after day visitors leave.",
+      "duration": "Evening"
+    }
   },
   "food": {
-    "title": "المقاهي والمطاعم بالقرب من الحديقة",
-    "p1": "تضم المنطقة المجاورة للأسد الحجري في وسط إفران العديد من المقاهي والمطاعم اللطيفة حيث يمكنك الاستمتاع بالشاي بالنعناع أو الأطباق المغربية المحلية.",
-    "li1": "مقاهي وسط المدينة الدافئة التي تقدم الشاي بالنعناع",
-    "li2": "مطاعم محلية تقدم الطاجين المغربي الأصيل",
-    "li3": "مخابز ومحلات حلويات قريبة",
-    "li4": "مياه ينابيع منعشة متوفرة في المدينة",
-    "li5": "شرفات مريحة مطلة على شوارع المدينة ذات الطابع الجبلي",
-    "p2": "خذ جولة قصيرة مشياً على الأقدام من النصب التذكاري لاستكشاف الساحة المركزية وخيارات تناول الطعام بالمدينة."
+    "title": "Eating near the lion",
+    "p1": "Cafés and simple restaurants sit within a short walk of the town centre and the stone lion.",
+    "p2": "Use the lion as a meeting point, then eat in central Ifrane — not at the monument itself.",
+    "li1": "Centre cafés for coffee and pastries.",
+    "li2": "Hotel restaurants for fuller meals.",
+    "li3": "Local grills on side streets.",
+    "li4": "Stock snacks before forest or lake outings.",
+    "li5": "Mountain evenings can be cold — prefer indoor seating."
   },
   "tips": {
-    "badge": "نصائح عملية",
-    "title": "نصائح عملية لزيارة الأسد الحجري",
-    "1": { "title": "زر المكان مبكراً للصور", "desc": "باعتباره أحد أبرز معالم إفران، قد يزدحم الموقع بالحشود في منتصف النهار. الصباح الباكر هو الأفضل للهدوء." },
-    "2": { "title": "ادمج الزيارة مع جولة في المدينة", "desc": "يقع الأسد الحجري في موقع مركزى يسهل معه الجمع بينه وبين التنزه في شوارع وحدائق إفران." },
-    "3": { "title": "احترم النصب التذكاري", "desc": "على الرغم من تشجيع التصوير، يرجى الحفاظ على النصب التاريخي والحرص على نظافة الحديقة المحيطة به." }
-  },
-  "gyg": {
-    "badge": "رحلات",
-    "title": "احجز رحلة تشمل الأسد الحجري",
-    "subtitle": "جولات سياحية مرشدة تغطي أهم معالم وحدائق إفران.",
-    "t1": { "tag": "مشياً", "title": "جولة معالم مدينة إفران", "desc": "جولة مشي مرشدة تتضمن الأسد الحجري، الحدائق المركزية والهندسة المعمارية." },
-    "t2": { "tag": "يوم كامل", "title": "رحلة إفران وغابة الأرز", "desc": "اجمع بين زيارة الأسد الحجري وجولات محمية الأرز الوطنية." },
-    "t3": { "tag": "خاص", "title": "جولة خاصة للطبيعة والتراث", "desc": "جولة خاصة مرنة مصممة خصيصاً لتناسب سرعتك واهتماماتك الشخصية." },
-    "check": "تحقق من التوفر على GetYourGuide →",
-    "disclosure": "بعض هذه الروابط هي روابط إحالة. إذا قمت بالحجز من خلالها فقد نحصل على عمولة دون أي تكلفة إضافية عليك."
-  },
-  "nearby": {
-    "badge": "استمر في الاستكشاف",
-    "title": "المزيد من الأماكن التي يجب زيارتها في إفران",
-    "back": "← العودة إلى دليل إفران"
-  },
-  "blog": {
-    "badge": "من المدونة",
-    "title": "مقالات ذات صلة",
-    "all": "جميع المقالات →",
-    "a1": { "tag": "التخطيط", "title": "إفران في يوم واحد: من أين تبدأ", "desc": "لماذا يُعد الأسد الحجري نقطة البداية الأوضح." },
-    "a2": { "tag": "تاريخ", "title": "أسطورة أسود الأطلس", "desc": "القصة التاريخية وراء النحت الأكثر شهرة في إفران." },
-    "a3": { "tag": "تصوير", "title": "أفضل أماكن التصوير في إفران", "desc": "نصائح لالتقاط صور رائعة للأسد الحجري والحدائق الجبلية." },
-    "read": "اقرأ المقال →"
+    "title": "نصائح عملية",
+    "1": {
+      "title": "طقس الجبل",
+      "desc": "أحضر طبقة دافئة؛ الطقس يتغير بسرعة في الارتفاع."
+    },
+    "2": {
+      "title": "الوصول",
+      "desc": "يُنصح بسيارة من إفران؛ تحقق من الطريق بعد المطر أو الثلج."
+    },
+    "3": {
+      "title": "احترام الموقع",
+      "desc": "ابق على المسارات وخذ نفاياتك معك."
+    }
   },
   "faq": {
-    "badge": "معلومات مفيدة",
-    "title": "الأسئلة الشائعة حول الأسد الحجري",
-    "q1": { "question": "هل زيارة الأسد الحجري مجانية؟", "answer": "نعم، يقع الأسد الحجري في حديقة عامة بوسط إفران ودخوله مجاني تماماً في جميع الأوقات." },
-    "q2": { "question": "كم من الوقت أحتاج للزيارة؟", "answer": "حوالي 20 إلى 30 دقيقة لالتقاط الصور واستكشاف محيط الحديقة في وسط المدينة." },
-    "q3": { "question": "ما هو أفضل وقت لالتقاط الصور؟", "answer": "الصباح الباكر لتجنب الازدحام والحصول على إضاءة ناعمة، أو أواخر الظهر للحصول على ألوان دافئة." },
-    "q4": { "question": "أين يقع المعلم بالضبط؟", "answer": "يقع في حديقة عامة مركزية في إفران، ويسهل الوصول إليه سيراً على الأقدام من الفنادق والمطاعم والوسط." },
-    "q5": { "question": "هل المكان مزدحم؟", "answer": "قد يصبح مزدحماً عند وصول الأفواج السياحية في أواخر الصباح، لكن الزيارة المبكرة أو المتأخرة تضمن لك الهدوء." }
+    "badge": "من الجيد معرفته",
+    "title": "أسئلة عن أسد إفران الحجري",
+    "q1": {
+      "question": "Is it worth a special trip?",
+      "answer": "Yes as part of seeing the town — not a half-day site on its own."
+    },
+    "q2": {
+      "question": "How old is the lion?",
+      "answer": "A modern town symbol linked to Ifrane’s planned resort identity."
+    },
+    "q3": {
+      "question": "Free to visit?",
+      "answer": "Yes — public outdoor landmark."
+    },
+    "q4": {
+      "question": "Good with children?",
+      "answer": "Yes — quick and central."
+    },
+    "q5": {
+      "question": "Far from the lakes?",
+      "answer": "The lakes need a short drive; the lion is in town."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in Ifrane",
+      "desc": "Town, lion and mountain logistics."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Middle Atlas lakes",
+      "desc": "Dayet Aoua and quieter lake stops."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Cedar forests",
+      "desc": "Walking under Atlas cedars near Ifrane."
+    }
+  },
+  "gyg": {
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Mountain",
+      "title": "Ifrane town walk",
+      "desc": "Stone lion and centre of the alpine-style town."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Lakes & cedars",
+      "desc": "Dayet Aoua and cedar forest from Ifrane."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Ifrane day from Fes",
+      "desc": "Mountain day trip from the imperial city."
+    }
+  },
+  "nearby": {
+    "badge": "واصل الاستكشاف",
+    "title": "المزيد من الأماكن في إفران",
+    "back": "← العودة إلى دليل إفران",
+    "explore": "استكشف المكان ←"
   }
 }

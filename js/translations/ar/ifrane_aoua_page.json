@@ -1,92 +1,167 @@
-"ifrane_aoua_page": {
+{
   "seo": {
-    "title": "دايت عوا | دليل إفران | MoroccoTripMap",
-    "description": "هل تزور دايت عوا قرب إفران؟ بحيرة جبلية خلابة، قوارب التجديف، مراقبة الطيور، مسارات المشي ونصائح الطبيعة العملية.",
-    "og_title": "دايت عوا، إفران: بحيرة جبلية، ركوب القوارب والنصائح",
-    "og_description": "كيفية زيارة دايت عوا: إطلالات خلابة على البحيرة، ركوب القوارب، المسارات والنصائح العملية في الأطلس المتوسط."
+    "title": "ضاية عوا | إفران | MoroccoTripMap",
+    "description": "Visit Dayet Aoua near Ifrane: a Middle Atlas lake with walking paths, birdlife and cool mountain scenery.",
+    "keywords": "Dayet Aoua, lake Ifrane, Middle Atlas lake",
+    "og_title": "Dayet Aoua | Mountain Lake near Ifrane | MoroccoTripMap",
+    "og_description": "Visit Dayet Aoua near Ifrane: a Middle Atlas lake with walking paths, birdlife and cool mountain scenery."
   },
-  "hero_subtitle": "بحيرة جبلية خلابة في الأطلس المتوسط محاطة بغابات الأرز والمساحات الخضراء المورقة.",
+  "name": "ضاية عوا",
+  "hero_subtitle": "بحيرة جبلية قرب إفران — ضفاف وطيور وإطلالات.",
   "info": {
-    "best_time_label": "أفضل وقت للزيارة",
-    "best_time_val": "الربيع والخريف",
-    "duration_label": "المدة المثالية",
-    "duration_val": "1 – 2 ساعات",
+    "best_time_label": "أفضل فترة",
+    "best_time_val": "Matin pour l'eau calme et les oiseaux",
+    "duration_label": "وقت مقترح",
+    "duration_val": "1.5 – 3 hours",
     "entry_label": "الدخول",
-    "entry_val": "دخول مجاني",
+    "entry_val": "Free shore access",
     "area_label": "الموقع",
-    "area_val": "الأطلس المتوسط، قرب إفران"
+    "area_val": "Near Ifrane · Middle Atlas"
   },
   "overview": {
-    "title": "بحيرة جبلية هادئة في الأطلس المتوسط",
-    "p1": "تعتبر دايت عوا واحدة من أشهر البحيرات الطبيعية وأكثرها خلابة في منطقة الأطلس المتوسط، وتقع على مسافة قصيرة وممتعة بالسيارة من إفران. محاطة بالتلال المتدحرجة وبساتين البلوط وغابات الأرز، وهي توفر ملاذاً هادئاً لعشاق الطبيعة والهواء الطلق.",
-    "p2": "يمكن للزوار الاستمتاع بنزهات هادئة على طول الشاطئ، أو استئجار قوارب تجديف صغيرة للانزلاق عبر الماء، أو مراقبة مختلف أنواع الطيور التي ترتاد البحيرة. تقدم المقاهي المحلية والبائعون بالقرب من الشاطئ المشروبات المنعشة والوجبات الخفيفة.",
-    "p3": "سواء كنت تزور المكان لنزهة هادئة بعد الظهر أو كجزء من جولة سياحية في بحيرات الأطلس المتوسط، فإن دايت عوا توفر الهدوء الجبلي الكلاسيكي."
+    "title": "The classic lake outing from Ifrane",
+    "p1": "Dayet Aoua is one of the best-known lakes near Ifrane. The shore invites a slow walk, birdwatching and views of the surrounding hills. Water levels change with the season; even when low, the setting remains a peaceful contrast to the imperial cities below the Atlas.",
+    "p2": "Bring water and a wind layer. A car or organised transfer is the usual way from Ifrane town."
   },
   "gallery": {
-    "badge": "معرض الصور",
-    "title": "دايت عوا بالصور",
-    "subtitle": "المياه المتلألئة، انعكاسات الجبال والشواطئ الهادئة.",
-    "s1": { "caption": "مياه دايت عوا الهادئة" },
-    "s2": { "caption": "قوارب التجديف جاهزة للاستئجار" },
-    "s3": { "caption": "مسارات المشي ذات المناظر الخلابة بجانب البحيرة" },
-    "s4": { "caption": "التلال الخضراء المتدحرجة والغابات المحيطة" },
-    "s5": { "caption": "الحياة الطيور الغنية وبيئة الأراضي الرطبة" }
+    "badge": "Gallery",
+    "title": "Dayet Aoua photo gallery",
+    "subtitle": "Shore walks, birds and Middle Atlas hills around the lake.",
+    "s1": {
+      "caption": "Dayet Aoua shoreline"
+    },
+    "s2": {
+      "caption": "Mountain lake near Ifrane"
+    },
+    "s3": {
+      "caption": "Birds at Dayet Aoua"
+    },
+    "s4": {
+      "caption": "Hills around the lake"
+    },
+    "s5": {
+      "caption": "Walking path by the water"
+    }
   },
   "moods": {
-    "badge": "ماذا تشاهد",
-    "title": "أبرز معالم دايت عوا",
-    "subtitle": "ركوب القوارب، مراقبة الطيور والاسترخاء بجانب البحيرة.",
-    "1": { "tag": "نشاط", "title": "تأجير قوارب التجديف", "desc": "استمتع بركوب القوارب المريحة في سطح البحيرة الهادئ.", "duration": "30–45 دقيقة" },
-    "2": { "tag": "طبيعة", "title": "مراقبة الطيور", "desc": "راقِب مختلف أنواع الطيور المهاجرة والمحلية حول الماء.", "duration": "30–60 دقيقة" },
-    "3": { "tag": "استرخاء", "title": "مقاهي ضفاف البحيرة", "desc": "استمتع بالشاي بالنعناع المغربي بينما تأخذ في الاعتبار المناظر الجبلية.", "duration": "30–45 دقيقة" }
+    "badge": "Timing",
+    "title": "Dayet Aoua through the day",
+    "subtitle": "Wind and light on the water change the visit.",
+    "1": {
+      "tag": "Morning",
+      "title": "Calm morning",
+      "desc": "Best for birds and reflections on the lake.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Bright shore",
+      "desc": "Limited shade — hat and water help.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Soft late light",
+      "desc": "Good photos before driving back to Ifrane.",
+      "duration": "Evening"
+    }
   },
   "food": {
-    "title": "النزهات ومقاهي ضفاف البحيرة",
-    "p1": "تعد دايت عوا مكاناً مفضلاً للنزهات في الهواء الطلق. يعمل العديد من المقاهي المحلية الصغيرة وأكشاك الطعام بالقرب من الشاطئ، وتقدم المشروبات المنعشة والوجبات الخفيفة والأطباق المغربية التقليدية.",
-    "li1": "مناطق عشبية مظللة مثالية للنزهات العائلية",
-    "li2": "مقاهي محلية تقدم الشاي بالنعناع الطازج والوجبات الخفيفة المحلية",
-    "li3": "جلسات خارجية مطلة على المياه المتلألئة",
-    "li4": "خيارات الأسماك الطازجة متوفرة في مطاعم البحيرة القريبة",
-    "li5": "أجواء مريحة منغمسة في الطبيعة الجبلية",
-    "p2": "احضر معك غطاء نزهة إذا كنت تفضل تناول الطعام مباشرة على العشب تحت الأشجار."
+    "title": "Eating near Dayet Aoua",
+    "p1": "Facilities at the lake are limited. Plan a picnic or eat in Ifrane before or after your visit.",
+    "p2": "Do not rely on restaurants at the shore — bring what you need and take litter back.",
+    "li1": "Pack a picnic from town.",
+    "li2": "Water and snacks for everyone.",
+    "li3": "Full meals back in Ifrane.",
+    "li4": "Seasonal stalls may appear — quality varies.",
+    "li5": "Leave no litter at the lake."
   },
   "tips": {
-    "badge": "نصائح عملية",
-    "title": "نصائح عملية لزيارة دايت عوا",
-    "1": { "title": "تحقق من مستويات المياه الموسمية", "desc": "يمكن أن تختلف مستويات مياه البحيرة اعتماداً على هطول الأمطار وذوبان الثلوج، مما يجعل الربيع أكثر الفصول حيوية للزيارة." },
-    "2": { "title": "الجمع بينها وبين غابات الأرز", "desc": "يسهل دمج دايت عوا مع رحلة إلى غابة الأرز القريبة ومني إفران الوطني ليوم كامل من الطبيعة." },
-    "3": { "title": "احضر كاميرا", "desc": "توفر انعكاسات التلال والأشجار المحيطة على الماء فرصاً استثنائية لتصوير المناظر الطبيعية." }
-  },
-  "gyg": {
-    "badge": "رحلات",
-    "title": "استكشف بحيرات وطبيعة الأطلس المتوسط",
-    "subtitle": "رحلات مرشدة تغطي دايت عوا وغابات الأرز والمعالم المحلية.",
-    "t1": { "tag": "طبيعة", "title": "رحلة بحيرات الأطلس المتوسط ودايت عوا", "desc": "جولة مرشدة تستكشف البحيرات الجبلية ووجهات النظر الخلابة." },
-    "t2": { "tag": "رحلة يومية", "title": "رحلة ليوم واحد إلى حديقة إفران الوطنية والبحيرات", "desc": "رحلة يومية شاملة تغطي غابات الأرز ودايت عوا." },
-    "t3": { "tag": "مناظر طبيعية", "title": "سفاري الطبيعة والحياة البرية في جبال الأطلس", "desc": "اكتشف المناظر الطبيعية الجبلية والبحيرات والحياة البرية مع الخبراء المحليين." },
-    "check": "تحقق من التوفر على GetYourGuide →",
-    "disclosure": "بعض هذه الروابط هي روابط إحالة. إذا قمت بالحجز من خلالها فقد نحصل على عمولة دون أي تكلفة إضافية عليك."
-  },
-  "nearby": {
-    "badge": "استمر في الاستكشاف",
-    "title": "المزيد من الأماكن التي يجب زيارتها في إفران",
-    "back": "← العودة إلى دليل إفران"
-  },
-  "blog": {
-    "badge": "من المدونة",
-    "title": "مقالات ذات صلة",
-    "all": "جميع المقالات →",
-    "a1": { "tag": "طبيعة", "title": "اكتشاف بحيرات الأطلس المتوسط", "desc": "استكشف دايت عوا والأراضي الرطبة الجبلية المحيطة بها." },
-    "a2": { "tag": "حياة برية", "title": "مراقبة الطيور حول دايت عوا", "desc": "دليل لأنواع الطيور التي تسكن منطقة البحيرة." },
-    "a3": { "tag": "التخطيط", "title": "رحلات يومية من إفران", "desc": "أفضل مسارات الرحلات ذات المناظر الخلابة التي تبدأ من بلدة إفران." },
-    "read": "اقرأ المقال →"
+    "title": "نصائح عملية",
+    "1": {
+      "title": "طقس الجبل",
+      "desc": "أحضر طبقة دافئة؛ الطقس يتغير بسرعة في الارتفاع."
+    },
+    "2": {
+      "title": "الوصول",
+      "desc": "يُنصح بسيارة من إفران؛ تحقق من الطريق بعد المطر أو الثلج."
+    },
+    "3": {
+      "title": "احترام الموقع",
+      "desc": "ابق على المسارات وخذ نفاياتك معك."
+    }
   },
   "faq": {
-    "badge": "معلومات مفيدة",
-    "title": "الأسئلة الشائعة حول دايت عوا",
-    "q1": { "question": "هل يمكنك ركوب القوارب في دايت عوا؟", "answer": "نعم، غالباً ما تتوفر قوارب تجديف صغيرة للإيجار للقيام بجولة هادئة في البحيرة." },
-    "q2": { "question": "ما هو أفضل وقت للزيارة؟", "answer": "يقدم الربيع والخريف مناظر طبيعية خلابة، وطقساً لطيفاً، وحياة طيور نشطة حول الماء." },
-    "q3": { "question": "كم تستغرق الزيارة؟", "answer": "حوالي ساعة إلى ساعتين للمشي حول أجزاء من البحيرة، والاستمتاع بالمقاهي المحلية، أو استئجار قارب." },
-    "q4": { "question": "هل الدخول مجاني؟", "answer": "نعم، زيارة البحيرة والمسارات المحيطة بها مجانية بالكامل." }
+    "badge": "من الجيد معرفته",
+    "title": "أسئلة عن ضاية عوا",
+    "q1": {
+      "question": "How far from Ifrane?",
+      "answer": "A short drive — typically under 30 minutes depending on the route."
+    },
+    "q2": {
+      "question": "Can I swim?",
+      "answer": "It is a nature stop more than a shore; respect local rules and water quality."
+    },
+    "q3": {
+      "question": "Best season?",
+      "answer": "Spring and autumn for mild weather; summer is popular for the cool air."
+    },
+    "q4": {
+      "question": "Need a guide?",
+      "answer": "Not for a simple shore walk."
+    },
+    "q5": {
+      "question": "Combine with cedars?",
+      "answer": "Yes — a classic Ifrane nature day."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "Dayet Aoua tips",
+      "desc": "When to go and what to pack."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Middle Atlas lakes",
+      "desc": "Aoua, Hachlaf and quieter shores."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Birds at the lake",
+      "desc": "What to look for on the shore."
+    }
+  },
+  "gyg": {
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Lake",
+      "title": "Dayet Aoua visit",
+      "desc": "Shore walk and birdwatching near Ifrane."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Lakes & forest",
+      "desc": "Combine the lake with cedar trails."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Ifrane lakes day",
+      "desc": "Mountain lakes circuit from town."
+    }
+  },
+  "nearby": {
+    "badge": "واصل الاستكشاف",
+    "title": "المزيد من الأماكن في إفران",
+    "back": "← العودة إلى دليل إفران",
+    "explore": "استكشف المكان ←"
   }
 }

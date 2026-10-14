@@ -1,92 +1,167 @@
-"ifrane_cedar_page": {
+{
   "seo": {
-    "title": "غابة الأرز | دليل إفران | MoroccoTripMap",
-    "description": "هل تزور غابة الأرز في إفران؟ أشجار الأرز الأطلسي العملاقة، قرود المكاك البرية، أفضل مواقع التصوير ونصائح الطبيعة العملية.",
-    "og_title": "غابة الأرز، إفران: الطبيعة، الحياة البرية والنصائح",
-    "og_description": "كيفية زيارة هذا المعلم الطبيعي في إفران: أشجار الأرز المهيبة، قرود المكاك، مسارات المشي والنصائح العملية."
+    "title": "غابة الأرز | إفران | MoroccoTripMap",
+    "description": "Walk the cedar forests near Ifrane: Middle Atlas trails, scented air and the famous cedar stands of the region.",
+    "keywords": "cedar forest Ifrane, Cèdre Gouraud, Atlas cedar",
+    "og_title": "Cedar Forest Ifrane | Atlas Cedars & Trails | MoroccoTripMap",
+    "og_description": "Walk the cedar forests near Ifrane: Middle Atlas trails, scented air and the famous cedar stands of the region."
   },
-  "hero_subtitle": "غابة قديمة رائعة في جبال الأطلس المتوسط تضم أشجار الأرز الأطلسي الشامخة وقرود المكاك البرية.",
+  "name": "غابة الأرز",
+  "hero_subtitle": "أرز الأطلس قرب إفران — مسارات ومنطقة غورو.",
   "info": {
-    "best_time_label": "أفضل وقت للزيارة",
-    "best_time_val": "الصباح",
-    "duration_label": "المدة المثالية",
-    "duration_val": "1 – 2 ساعات",
+    "best_time_label": "أفضل فترة",
+    "best_time_val": "Matin pour marcher au frais",
+    "duration_label": "وقت مقترح",
+    "duration_val": "1.5 – 3 hours",
     "entry_label": "الدخول",
-    "entry_val": "دخول مجاني",
+    "entry_val": "Free access to public forest paths",
     "area_label": "الموقع",
-    "area_val": "الأطلس المتوسط، قرب إفران"
+    "area_val": "Forest roads near Ifrane / Azrou axis"
   },
   "overview": {
-    "title": "ملاذ الطبيعة في الأطلس المتوسط",
-    "p1": "تعتبر غابة الأرز في إفران (المرتبطة غالباً بغابة غورو) مساحة طبيعية خلابة في جبال الأطلس المتوسط. تعد موطناً لأشجار الأرز الأطلسي المهيبة التي تعود لعقود طويلة، وتوفر مسارات مشي هادئة، وهواء الصنوبر المنعش، المناظر الطبيعية الخلابة التي تتغير ألوانها مع الفصول.",
-    "p2": "تشتهر الغابة أيضاً بوجود قرود المكاك البرية فيها. وفي حين أن مراقبة هذه القرود المرحة تعتبر من أبرز محطات الزوار، فإن مشاهدة الحياة البرية بطريقة مسؤولة أمر ضروري لحماية سلوكها الطبيعي وصحتها.",
-    "p3": "قم بزيارة الغابة في الصباح للاستمتاع بالهواء الجبلي المنعش والممرات الهادئة، ثم اجمع بين نزهتك الطبيعية وزيارة البحيرات المجاورة أو مدينة إفران."
+    "title": "Under the Atlas cedars",
+    "p1": "The cedar forests around Ifrane are among the Middle Atlas’s defining landscapes. Tall Atlas cedars, cool shade and forest roads make this a highlight for anyone who came up from the heat of the plains. Barbary macaques are sometimes seen on nearby routes — keep distance and do not feed them.",
+    "p2": "Stay on established paths. The Gouraud cedar area is a well-known stop on the wider forest circuit."
   },
   "gallery": {
-    "badge": "معرض الصور",
-    "title": "غابة الأرز بالصور",
-    "subtitle": "أشجار الأرز الأطلسي القديمة، مسارات الغابات والحياة البرية المحلية.",
-    "s1": { "caption": "أشجار الأرز الأطلسي الشامخة والقديمة" },
-    "s2": { "caption": "مسارات المشي الهادئة" },
-    "s3": { "caption": "قرود المكاك البرية" },
-    "s4": { "caption": "معالم الأرز التاريخية" },
-    "s5": { "caption": "إطلالات جبال الأطلس المتوسط" }
+    "badge": "Gallery",
+    "title": "Cedar forest photo gallery",
+    "subtitle": "Atlas cedars, forest trails and the Gouraud cedar area near Ifrane.",
+    "s1": {
+      "caption": "Atlas cedar forest near Ifrane"
+    },
+    "s2": {
+      "caption": "Tall cedars and path"
+    },
+    "s3": {
+      "caption": "Forest light through cedar branches"
+    },
+    "s4": {
+      "caption": "Middle Atlas forest road"
+    },
+    "s5": {
+      "caption": "Cedar grove in the Ifrane area"
+    }
   },
   "moods": {
-    "badge": "ماذا تشاهد",
-    "title": "أبرز معالم غابة الأرز",
-    "subtitle": "الأشجار القديمة، الحياة البرية والمناظر الجبلية البانورامية.",
-    "1": { "tag": "الأشجار", "title": "أشجار الأرز العملاقة في الأطلس", "desc": "أشجار تعود لقرون ترتفع بشموخ فوق أرضية الغابة.", "duration": "30–45 دقيقة" },
-    "2": { "tag": "الحياة البرية", "title": "قرود المكاك البرية", "desc": "راقب القرود المحلية وهي تتجول بحرية في موطنها الطبيعي.", "duration": "20–30 دقيقة" },
-    "3": { "tag": "الطبيعة", "title": "مسارات المشي لمسافات طويلة", "desc": "ممرات هادئة تتلوى عبر الخضرة الجبلية البكر.", "duration": "45–60 دقيقة" }
+    "badge": "Timing",
+    "title": "The cedar forest through the day",
+    "subtitle": "Shade helps — weather still changes fast at altitude.",
+    "1": {
+      "tag": "Morning",
+      "title": "Cool forest air",
+      "desc": "Best time for longer walks under the cedars.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Quiet shade",
+      "desc": "A good refuge when the open plateau is hot or windy.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Evening",
+      "title": "Soft forest light",
+      "desc": "Beautiful for photos before dusk.",
+      "duration": "Evening"
+    }
   },
   "food": {
-    "title": "النزهات والمطاعم القريبة",
-    "p1": "تعتبر الغابة مكاناً مثالياً لنزهة هادئة في الهواء الطلق محاطة بالطبيعة، أو يمكنك العودة إلى إفران أو أزرو المجاورة للعثور على المطاعم والمقاهي المحلية.",
-    "li1": "مناطق نزهة ذات مناظر خلابة تحت مظلة شجر الأرز",
-    "li2": "المقاهي المحلية بالقرب من مواقف السيارات في الغابة لتناول الشاي والوجبات الخفيفة",
-    "li3": "خيارات الأكل المغربي التقليدي في مدينة إفران القريبة",
-    "li4": "محطات مياه الينابيع العذبة على طول طرق الأطلس المتوسط",
-    "li5": "أجواء جبلية مريحة لتناول الطعام في الهواء الطلق",
-    "p2": "احضر معك الماء والوجبات الخفيفة إذا كنت تخطط للقيام بمسارات مشي طويلة عبر المحمية."
+    "title": "Eating near the cedars",
+    "p1": "A picnic is the usual approach under the cedars. Full meals wait in Ifrane or Azrou.",
+    "p2": "Do not leave food waste in the forest and never feed wildlife, including macaques.",
+    "li1": "Pack a picnic from town.",
+    "li2": "Water for every walker.",
+    "li3": "Meals in Ifrane after the trail.",
+    "li4": "Avoid feeding macaques or other animals.",
+    "li5": "Carry all litter back to town."
   },
   "tips": {
-    "badge": "نصائح عملية",
-    "title": "نصائح عملية لزيارة غابة الأرز",
-    "1": { "title": "احترم الحياة البرية", "desc": "لا تقم بإطعام قرود المكاك أو ترك الطعام مكشوفاً، لأن ذلك يزعج نظامها الغذائي الطبيعي وصحتها." },
-    "2": { "title": "ارتد أحذية مريحة", "desc": "يوصى بارتداء أحذية مشي متينة أو أحذية رياضية لمسارات الغابات الوعرة والطرق الترابية." },
-    "3": { "title": "اجمعها مع البحيرات الجبلية", "desc": "اربط زيارتك للغابة برحلة ذات مناظر خلابة إلى البحيرات الجبلية القريبة مثل دايت عوا." }
-  },
-  "gyg": {
-    "badge": "رحلات",
-    "title": "استكشف طبيعة الأطلس المتوسط",
-    "subtitle": "رحلات مرشدة تغطي غابات الأرز والحياة البرية والبحيرات.",
-    "t1": { "tag": "طبيعة", "title": "غابة الأرز في الأطلس المتوسط ورحلة سفاري القرود", "desc": "جولة مرشدة عبر أشجار الأرز القديمة مع مراقبة الحياة البرية." },
-    "t2": { "tag": "رحلة يومية", "title": "رحلة ليوم واحد إلى إفران وأزرو وغابة الأرز", "desc": "رحلة يومية شاملة تغطي أبرز معالم الجبال والحرف اليدوية." },
-    "t3": { "tag": "مناظر طبيعية", "title": "مستكشف بحيرات وغابات الأطلس", "desc": "اكتشف البحيرات الجبلية وبساتين الأرز بخبرة محلية." },
-    "check": "تحقق من التوفر على GetYourGuide →",
-    "disclosure": "بعض هذه الروابط هي روابط إحالة. إذا قمت بالحجز من خلالها فقد نحصل على عمولة دون أي تكلفة إضافية عليك."
-  },
-  "nearby": {
-    "badge": "استمر في الاستكشاف",
-    "title": "المزيد من الأماكن التي يجب زيارتها في إفران",
-    "back": "← العودة إلى دليل إفران"
-  },
-  "blog": {
-    "badge": "من المدونة",
-    "title": "مقالات ذات صلة",
-    "all": "جميع المقالات →",
-    "a1": { "tag": "طبيعة", "title": "استكشاف غابات الأرز في الأطلس المتوسط", "desc": "اكتشف العجائب البيئية المحيطة بإفران." },
-    "a2": { "tag": "حياة برية", "title": "لقاء قرود المكاك بمسؤولية", "desc": "كيف تستمتع بمشاهدة الحياة البرية مع حماية الحيوانات المحلية." },
-    "a3": { "tag": "التخطيط", "title": "مغامرات في الهواء الطلق في إفران", "desc": "أفضل مناطق المشي لمسافات طويلة والطبيعة في المنطقة." },
-    "read": "اقرأ المقال →"
+    "title": "نصائح عملية",
+    "1": {
+      "title": "طقس الجبل",
+      "desc": "أحضر طبقة دافئة؛ الطقس يتغير بسرعة في الارتفاع."
+    },
+    "2": {
+      "title": "الوصول",
+      "desc": "يُنصح بسيارة من إفران؛ تحقق من الطريق بعد المطر أو الثلج."
+    },
+    "3": {
+      "title": "احترام الموقع",
+      "desc": "ابق على المسارات وخذ نفاياتك معك."
+    }
   },
   "faq": {
-    "badge": "معلومات مفيدة",
-    "title": "الأسئلة الشائعة حول غابة الأرز",
-    "q1": { "question": "هل يمكنك رؤية القرود في غابة الأرز؟", "answer": "نعم، تشتهر الغابة بوجود قرود المكاك البرية فيها، على الرغم من نصح الزوار بعدم إطعامها لحماية نظامها الغذائي الطبيعي." },
-    "q2": { "question": "ما هو أفضل وقت للزيارة؟", "answer": "توفر الصباحات هواءً جبلياً منعشاً، ومسارات غابات هادئة، وإضاءة رائعة للتصوير الفوتوغرافي بين أشجار الأرز العملاقة." },
-    "q3": { "question": "كم تستغرق الزيارة؟", "answer": "حوالي ساعة إلى ساعتين للمشي بين الأشجار القديمة، مراقبة الحياة البرية، والاستمتاع بمناظر الأطلس المتوسط." },
-    "q4": { "question": "هل الدخول مجاني؟", "answer": "نعم، استكشاف غابة الأرز ومسارات المشي العامة مجاني بالكامل." }
+    "badge": "من الجيد معرفته",
+    "title": "أسئلة عن غابة الأرز",
+    "q1": {
+      "question": "Is the forest free?",
+      "answer": "Public paths are generally free; respect any signed private areas."
+    },
+    "q2": {
+      "question": "Famous cedar tree?",
+      "answer": "The region is known for large Atlas cedars including historic specimens on the tourist circuit."
+    },
+    "q3": {
+      "question": "Combine with lakes?",
+      "answer": "Yes — a classic Ifrane nature day."
+    },
+    "q4": {
+      "question": "Good for children?",
+      "answer": "Yes on short, easy paths."
+    },
+    "q5": {
+      "question": "Toward Azrou?",
+      "answer": "The cedar road continues toward Azrou — a popular loop."
+    }
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "Cedar walks",
+      "desc": "Paths, footwear and wildlife tips."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Toward Azrou",
+      "desc": "Forest road highlights."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Atlas cedars",
+      "desc": "Why these trees define the region."
+    }
+  },
+  "gyg": {
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Forest",
+      "title": "Cedar forest walk",
+      "desc": "Trails under Atlas cedars."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Gouraud cedar area",
+      "desc": "Famous stands near the Ifrane–Azrou road."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Forest day from Ifrane",
+      "desc": "Cedars and mountain air."
+    }
+  },
+  "nearby": {
+    "badge": "واصل الاستكشاف",
+    "title": "المزيد من الأماكن في إفران",
+    "back": "← العودة إلى دليل إفران",
+    "explore": "استكشف المكان ←"
   }
 }

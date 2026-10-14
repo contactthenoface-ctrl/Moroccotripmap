@@ -1,70 +1,167 @@
-"ifrane_aoua_page": {
+{
   "seo": {
-    "title": "Dayet Aoua | Guide d'Ifrane | MoroccoTripMap",
-    "description": "Visite de Dayet Aoua près d'Ifrane ? Lac de montagne pittoresque, barques, observation des oiseaux, sentiers de randonnée et conseils nature.",
-    "og_title": "Dayet Aoua, Ifrane : Lac de Montagne, Barques et Conseils",
-    "og_description": "Comment visiter Dayet Aoua : vues panoramiques sur le lac, balades en barque, sentiers et conseils pratiques dans le Moyen Atlas."
+    "title": "Dayet Aoua | Lac près d'Ifrane | MoroccoTripMap",
+    "description": "Visitez Dayet Aoua près d'Ifrane : lac du Moyen Atlas, sentiers, oiseaux et paysages de montagne.",
+    "keywords": "Dayet Aoua, lac Ifrane",
+    "og_title": "Dayet Aoua | MoroccoTripMap",
+    "og_description": "Lac de montagne près d'Ifrane."
   },
-  "hero_subtitle": "Un lac de montagne pittoresque dans le Moyen Atlas, entouré de forêts de cèdres et d'une verdure luxuriante.",
+  "name": "Dayet Aoua",
+  "hero_subtitle": "Lac de montagne près d'Ifrane — rives, oiseaux et vues du Moyen Atlas.",
   "info": {
     "best_time_label": "Meilleure période",
-    "best_time_val": "Printemps et Automne",
-    "duration_label": "Durée idéale",
-    "duration_val": "1 – 2 Heures",
+    "best_time_val": "Matin pour l'eau calme et les oiseaux",
+    "duration_label": "Temps suggéré",
+    "duration_val": "1,5 – 3 heures",
     "entry_label": "Entrée",
-    "entry_val": "Accès Libre",
-    "area_label": "Localisation",
-    "area_val": "Moyen Atlas, près d'Ifrane"
+    "entry_val": "Accès libre aux rives",
+    "area_label": "Emplacement",
+    "area_val": "Près d'Ifrane · Moyen Atlas"
   },
   "overview": {
-    "title": "Un Lac de Montagne Sérénissime dans le Moyen Atlas",
-    "p1": "Dayet Aoua est l'un des lacs naturels les plus célèbres et pittoresques de la région du Moyen Atlas, situé à une courte et agréable distance en voiture d'Ifrane. Entouré de collines verdoyantes, de chênaies et de forêts de cèdres, il offre une retraite paisible pour les amoureux de la nature et les amateurs de plein air.",
-    "p2": "Les visiteurs peuvent profiter de promenades tranquilles le long du rivage, louer de petites barques à rames pour glisser sur l'eau ou observer diverses espèces d'oiseaux qui fréquentent le lac. Des cafés locaux et des marchands situés près du rivage proposent des boissons rafraîchissantes et des en-cas.",
-    "p3": "Que vous veniez pour un pique-nique relaxant l'après-midi ou dans le cadre d'un circuit panoramique des lacs du Moyen Atlas, Dayet Aoua offre une tranquillité de montagne classique."
+    "title": "La sortie lac classique depuis Ifrane",
+    "p1": "Dayet Aoua est l'un des lacs les plus connus près d'Ifrane. La rive invite à une marche lente, à l'observation des oiseaux et aux vues sur les collines. Le niveau d'eau varie selon la saison.",
+    "p2": "Apportez de l'eau et une couche coupe-vent. Voiture ou transfert depuis la ville."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "Dayet Aoua en Images",
-    "subtitle": "Eaux scintillantes, reflets des montagnes et rives paisibles.",
-    "s1": { "caption": "Les eaux paisibles de Dayet Aoua" },
-    "s2": { "caption": "Barques prêtes à la location" },
-    "s3": { "caption": "Sentiers de randonnée au bord du lac" },
-    "s4": { "caption": "Collines verdoyantes et forêts environnantes" },
-    "s5": { "caption": "Richesse aviaire et habitat humide" }
+    "badge": "Gallery",
+    "title": "Galerie photo de Dayet Aoua",
+    "subtitle": "Promenades au bord de l'eau, oiseaux et collines du Moyen Atlas.",
+    "s1": {
+      "caption": "Dayet Aoua shoreline"
+    },
+    "s2": {
+      "caption": "Mountain lake near Ifrane"
+    },
+    "s3": {
+      "caption": "Birds at Dayet Aoua"
+    },
+    "s4": {
+      "caption": "Hills around the lake"
+    },
+    "s5": {
+      "caption": "Walking path by the water"
+    }
   },
   "moods": {
-    "badge": "À voir",
-    "title": "Points Forts de Dayet Aoua",
-    "subtitle": "Navigation, observation des oiseaux et détente au bord du lac.",
-    "1": { "tag": "Activité", "title": "Location de Barques", "desc": "Faites une balade relaxante en barque sur les eaux calmes du lac.", "duration": "30–45 min" },
-    "2": { "tag": "Nature", "title": "Observation des Oiseaux", "desc": "Observez diverses espèces d'oiseaux migrateurs et indigènes autour de l'eau.", "duration": "30–60 min" },
-    "3": { "tag": "Détente", "title": "Cafés au Bord du Lac", "desc": "Savourez un thé à la menthe marocain tout en admirant les paysages de montagne.", "duration": "30–45 min" }
+    "badge": "Horaires",
+    "title": "Dayet Aoua au fil de la journée",
+    "subtitle": "Le vent et la lumière sur l'eau changent la visite.",
+    "1": {
+      "tag": "Matin",
+      "title": "Matin calme",
+      "desc": "Idéal pour les oiseaux et les reflets.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Rive en plein jour",
+      "desc": "Peu d'ombre — chapeau et eau utiles.",
+      "duration": "Midi"
+    },
+    "3": {
+      "tag": "Soir",
+      "title": "Lumière douce du soir",
+      "desc": "Belles photos avant le retour à Ifrane.",
+      "duration": "Soir"
+    }
   },
   "food": {
-    "title": "Pique-niques et Cafés au Bord de l'Eau",
-    "p1": "Dayet Aoua est un lieu de prédilection pour les pique-niques en plein air. Plusieurs petits cafés locaux et stands de nourriture se trouvent près de la rive, proposant des boissons rafraîchissantes, des en-cas légers et des plats traditionnels marocains.",
-    "li1": "Espaces herbeux ombragés parfaits pour les pique-niques en famille",
-    "li2": "Cafés locaux servant du thé à la menthe frais et des en-cas",
-    "li3": "Terrasses extérieures surplombant l'eau scintillante",
-    "li4": "Options de poissons frais disponibles dans les restaurants proches du lac",
-    "li5": "Atmosphère relaxante immergée dans la nature de montagne",
-    "p2": "Apportez une couverture de pique-nique si vous préférez manger directement sur l'herbe sous les arbres."
+    "title": "Manger près de Dayet Aoua",
+    "p1": "Peu d'équipements au lac. Pique-nique ou repas à Ifrane avant/après.",
+    "p2": "N'comptez pas sur des restaurants sur place.",
+    "li1": "Pique-nique préparé en ville.",
+    "li2": "Eau et en-cas pour tous.",
+    "li3": "Repas complets à Ifrane.",
+    "li4": "Stands saisonniers possibles.",
+    "li5": "Ne laissez aucun déchet."
   },
   "tips": {
-    "badge": "Conseils Pratiques",
-    "title": "Conseils Pratiques pour Visiter Dayet Aoua",
-    "1": { "title": "Vérifier le niveau d'eau saisonnier", "desc": "Le niveau du lac peut varier selon les précipitations et la fonte des neiges, faisant du printemps la saison la plus vibrante." },
-    "2": { "title": "Combiner avec les forêts de cèdres", "desc": "Dayet Aoua s'associe facilement à une excursion vers la forêt de cèdres voisine et le Parc National d'Ifrane pour une journée nature complète." },
-    "3": { "title": "Apporter un appareil photo", "desc": "Les reflets des collines et des arbres environnants sur l'eau offrent des opportunités de photographie de paysage exceptionnelles." }
+    "title": "Conseils pratiques",
+    "1": {
+      "title": "Météo de montagne",
+      "desc": "Prévoyez une couche chaude ; le temps change vite en altitude."
+    },
+    "2": {
+      "title": "Accès",
+      "desc": "Voiture recommandée depuis Ifrane ; vérifiez la route après pluie ou neige."
+    },
+    "3": {
+      "title": "Respect du site",
+      "desc": "Restez sur les sentiers et emportez vos déchets."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ sur Dayet Aoua",
+    "q1": {
+      "question": "À quelle distance d'Ifrane ?",
+      "answer": "Une courte route — en général moins de 30 minutes selon l'itinéraire."
+    },
+    "q2": {
+      "question": "Peut-on nager ?",
+      "answer": "C'est surtout une halte nature ; respectez les règles locales et la qualité de l'eau."
+    },
+    "q3": {
+      "question": "Meilleure saison ?",
+      "answer": "Printemps et automne pour un climat doux ; l'été attire pour la fraîcheur."
+    },
+    "q4": {
+      "question": "Faut-il un guide ?",
+      "answer": "Non pour une simple promenade au bord de l'eau."
+    },
+    "q5": {
+      "question": "Combiner avec les cèdres ?",
+      "answer": "Oui — une journée nature classique autour d'Ifrane."
+    }
+  },
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles liés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Préparation",
+      "title": "Première fois à Ifrane",
+      "desc": "Lacs, cèdres et logistique de montagne."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Lacs du Moyen Atlas",
+      "desc": "Dayet Aoua et pauses plus calmes."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Forêts de cèdres",
+      "desc": "Marcher sous les cèdres autour d'Ifrane."
+    }
   },
   "gyg": {
-    "badge": "Excursions",
-    "title": "Explorez les Lacs et la Nature du Moyen Atlas",
-    "subtitle": "Excursions guidées couvrant Dayet Aoua, les forêts de cèdres et les sites incontournables.",
-    "t1": { "tag": "Nature", "title": "Excursion des Lacs du Moyen Atlas & Dayet Aoua", "desc": "Visite guidée à la découverte des lacs de montagne et des points de vue panoramiques." },
-    "t2": { "tag": "Excursion", "title": "Excursion d'une Journée au Parc National d'Ifrane & Lacs", "desc": "Excursion complète couvrant les forêts de cèdres et Dayet Aoua." },
-    "t3": { "tag": "Panoramique", "title": "Safari Nature & Faune des Montagnes de l'Atlas", "desc": "Découvrez les paysages de montagne, les lacs et la faune avec des experts locaux." },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via ceux-ci, nous pourrions percevoir une commission sans frais supplémentaires pour vous."
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Lake",
+      "title": "Dayet Aoua visit",
+      "desc": "Shore walk and birdwatching near Ifrane."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Lakes & forest",
+      "desc": "Combine the lake with cedar trails."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Ifrane lakes day",
+      "desc": "Mountain lakes circuit from town."
+    }
   },
-  "nearby
+  "nearby": {
+    "badge": "Continuer",
+    "title": "Plus de lieux à Ifrane",
+    "back": "← Retour au guide d'Ifrane",
+    "explore": "Explorer le lieu →"
+  }
+}

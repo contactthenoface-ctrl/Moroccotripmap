@@ -1,93 +1,167 @@
-"ifrane_park_page": {
+{
   "seo": {
-    "title": "Parc National d'Ifrane | Guide d'Ifrane | MoroccoTripMap",
-    "description": "Visiter le Parc National d'Ifrane ? Forêts de cèdres, macaques de Barbarie, sentiers de randonnée, coins de nature et conseils pratiques.",
-    "og_title": "Parc National d'Ifrane : Faune, Forêts de cèdres & Conseils",
-    "og_description": "Comment visiter le Parc National d'Ifrane : forêts de cèdres, macaques de Barbarie, sentiers de randonnée et conseils pratiques."
+    "title": "Parc national d'Ifrane | Nature du Moyen Atlas | MoroccoTripMap",
+    "description": "Explorez le parc national d'Ifrane : forêts de cèdres et de chênes, montagne et faune du Moyen Atlas.",
+    "keywords": "parc national Ifrane",
+    "og_title": "Parc national d'Ifrane | MoroccoTripMap",
+    "og_description": "Parc national autour d'Ifrane."
   },
-  "hero_subtitle": "Une magnifique réserve naturelle protégée du Moyen Atlas — forêts de cèdres majestueuses, lacs paisibles et macaques de Barbarie sauvages.",
+  "name": "Parc national d'Ifrane",
+  "hero_subtitle": "Paysages protégés du Moyen Atlas — forêt et habitats autour d'Ifrane.",
   "info": {
     "best_time_label": "Meilleure période",
-    "best_time_val": "Printemps et automne pour la randonnée",
-    "duration_label": "Durée idéale",
-    "duration_val": "Demi-journée à une journée",
+    "best_time_val": "Matin pour marcher",
+    "duration_label": "Temps suggéré",
+    "duration_val": "Demi-journée ou plus",
     "entry_label": "Entrée",
-    "entry_val": "Accès libre / Visites guidées variables",
-    "area_label": "Localisation",
-    "area_val": "Montagnes du Moyen Atlas, près d'Ifrane"
+    "entry_val": "Accès libre aux zones publiques",
+    "area_label": "Emplacement",
+    "area_val": "Autour d'Ifrane · Moyen Atlas"
   },
   "overview": {
-    "title": "Nature et faune au cœur du Moyen Atlas",
-    "p1": "Le Parc National d'Ifrane est l'un des trésors écologiques du Maroc, s'étendant sur de vastes plateaux et des terrains montagneux recouverts de magnifiques forêts de cèdres de l'Atlas. Il offre un sanctuaire paisible à une flore et une faune diversifiées, incluant les célèbres macaques de Barbarie sauvages.",
-    "p2": "Les visiteurs peuvent explorer des sentiers de randonnée pittoresques serpentant à travers des arbres centenaires, découvrir des lacs de montagne paisibles comme Dayet Aoua et profiter de l'air pur de la montagne loin de l'agitation des villes.",
-    "p3": "Que vous planifiiez un pique-nique en famille, de l'observation d'oiseaux ou une randonnée active à travers les cédraies, le parc national offre une expérience en plein air inoubliable en toutes saisons."
+    "title": "Le poumon vert du Moyen Atlas",
+    "p1": "Le parc national protège forêts et habitats de montagne autour d'Ifrane. On y vient pour marcher, l'air pur et l'environnement de l'Atlas. Restez sur les itinéraires balisés.",
+    "p2": "Combinez lisières du parc, cèdres et lacs pour une journée nature basée à Ifrane."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "Le Parc National d'Ifrane en Images",
-    "subtitle": "Forêts de cèdres, faune sauvage et paysages de montagne.",
-    "s1": { "caption": "Majestueuses forêts de cèdres de l'Atlas" },
-    "s2": { "caption": "Macaques de Barbarie sauvages" },
-    "s3": { "caption": "Sentiers de promenade et de randonnée" },
-    "s4": { "caption": "Ruisseaux et sources naturelles" },
-    "s5": { "caption": "Panoramas sur le Moyen Atlas" }
+    "badge": "Gallery",
+    "title": "Ifrane National Park",
+    "subtitle": "Protected Middle Atlas landscapes — forest, wildlife habitat and mountain air around Ifrane.",
+    "s1": {
+      "caption": "Ifrane National Park forest"
+    },
+    "s2": {
+      "caption": "Protected Middle Atlas landscape"
+    },
+    "s3": {
+      "caption": "Park trail near Ifrane"
+    },
+    "s4": {
+      "caption": "Oak and cedar habitat"
+    },
+    "s5": {
+      "caption": "Mountain meadow in the park"
+    }
   },
   "moods": {
-    "badge": "À voir",
-    "title": "Points Forts du Parc National d'Ifrane",
-    "subtitle": "Cédraies, observation de la faune et sentiers de randonnée.",
-    "1": { "tag": "Forêts", "title": "Cédraies et arbres centenaires", "desc": "Marchez au milieu de cèdres de l'Atlas séculaires dans un cadre paisible.", "duration": "1–2 heures" },
-    "2": { "tag": "Faune", "title": "Macaques de Barbarie", "desc": "Observez les singes autochtones dans leur habitat forestier naturel.", "duration": "30–60 min" },
-    "3": { "tag": "Randonnée", "title": "Sentiers de montagne", "desc": "Suivez des sentiers bien balisés à travers plateaux et vallées.", "duration": "2–4 heures" }
+    "badge": "Horaires",
+    "title": "Parc national d'Ifrane au fil de la journée",
+    "subtitle": "Lumière et rythme selon le moment.",
+    "1": {
+      "tag": "Matin",
+      "title": "Lumière douce",
+      "desc": "Meilleure période pour marcher au frais.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Plein jour",
+      "desc": "Préférez l'ombre ou une pause plus courte.",
+      "duration": "Midi"
+    },
+    "3": {
+      "tag": "Soir",
+      "title": "Fin de journée",
+      "desc": "Lumière rasante et moins de monde.",
+      "duration": "Soir"
+    }
   },
   "food": {
-    "title": "Pique-niques et restauration près du parc",
-    "p1": "Le parc est un endroit idéal pour des pique-niques en plein air à l'ombre de cèdres imposants. Des cafés traditionnels et des restaurants locaux fonctionnent près des principaux points d'accès et des lacs voisins.",
-    "li1": "Coins de pique-nique pittoresques au milieu des cédraies",
-    "li2": "Cafés locaux servant du thé à la menthe marocain et du café chaud",
-    "li3": "Tajines marocains traditionnels et viandes grillées à proximité",
-    "li4": "Il est recommandé d'apporter de l'eau en bouteille pour la randonnée",
-    "li5": "Restaurants disponibles dans les villes voisines et au centre d'Ifrane",
-    "p2": "N'oubliez pas de préserver l'environnement naturel propre et d'éviter de nourrir les animaux sauvages avec des aliments transformés."
+    "title": "Où manger à proximité",
+    "p1": "Les options sont limitées hors d'Ifrane : pique-nique ou repas en ville.",
+    "p2": "Emportez de l'eau et des en-cas pour les sorties nature.",
+    "li1": "Pique-nique préparé en ville.",
+    "li2": "Eau pour chaque marcheur.",
+    "li3": "Restaurants d'hôtel à Ifrane.",
+    "li4": "Cafés du centre pour un repas simple.",
+    "li5": "Ne laissez aucun déchet sur place."
   },
   "tips": {
-    "badge": "Conseils Pratiques",
-    "title": "Conseils Pratiques pour Visiter le Parc National d'Ifrane",
-    "1": { "title": "Respecter la faune", "desc": "Les macaques de Barbarie sont des animaux sauvages. Observez-les à une distance sécurisée et ne les nourrissez pas." },
-    "2": { "title": "Porter des chaussures de marche confortables", "desc": "Les sentiers forestiers peuvent être inégaux ou boueux après la pluie. Des chaussures robustes rendent l'exploration beaucoup plus agréable." },
-    "3": { "title": "Vérifier les conditions météorologiques", "desc": "Le temps en montagne peut changer rapidement. Des vêtements en plusieurs couches et un équipement adapté sont recommandés." }
-  },
-  "gyg": {
-    "badge": "Excursions",
-    "title": "Réserver une Excursion Nature au Parc National d'Ifrane",
-    "subtitle": "Excursions guidées couvrant les forêts de cèdres, la faune et les lacs de montagne.",
-    "t1": { "tag": "Nature", "title": "Safari Forêt de Cèdres & Macaques", "desc": "Visite guidée de la nature avec des guides locaux experts et un transport confortable." },
-    "t2": { "tag": "Journée", "title": "Exploration des Lacs & du Parc du Moyen Atlas", "desc": "Découvrez les lacs de montagne, les cédraies et les points de vue panoramiques en un jour." },
-    "t3": { "tag": "Privé", "title": "Éco-Aventure Privée dans l'Atlas", "desc": "Randonnée privée personnalisée et excursion faunique adaptées à vos préférences." },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via ceux-ci, nous pourrions percevoir une commission sans frais supplémentaires pour vous."
-  },
-  "nearby": {
-    "badge": "À Continuer",
-    "title": "Autres Lieux Incontournables à Ifrane",
-    "back": "← Retour au guide d'Ifrane"
-  },
-  "blog": {
-    "badge": "Du Blog",
-    "title": "Articles Connexes",
-    "all": "Tous les articles →",
-    "a1": { "tag": "Nature", "title": "Explorer le Parc National d'Ifrane : guide de la faune", "desc": "À quoi s'attendre lors de la visite des forêts de cèdres du Moyen Atlas." },
-    "a2": { "tag": "Randonnée", "title": "Meilleurs sentiers de randonnée dans le Moyen Atlas", "desc": "Les meilleurs itinéraires et chemins de marche pour les passionnés de nature." },
-    "a3": { "tag": "Faune", "title": "Observer les macaques de Barbarie de manière responsable", "desc": "Directives d'observation éthique de la faune dans le Parc National d'Ifrane." },
-    "read": "Lire l'article →"
+    "title": "Conseils pratiques",
+    "1": {
+      "title": "Météo de montagne",
+      "desc": "Prévoyez une couche chaude ; le temps change vite en altitude."
+    },
+    "2": {
+      "title": "Accès",
+      "desc": "Voiture recommandée depuis Ifrane ; vérifiez la route après pluie ou neige."
+    },
+    "3": {
+      "title": "Respect du site",
+      "desc": "Restez sur les sentiers et emportez vos déchets."
+    }
   },
   "faq": {
-    "badge": "Bon à Savoir",
-    "title": "FAQ du Parc National d'Ifrane",
-    "q1": { "question": "Y a-t-il des frais d'entrée pour visiter le parc ?", "answer": "Non, l'accès au parc national et aux routes forestières est gratuit. Les visites guidées ou excursions spécialisées ont des coûts distincts." },
-    "q2": { "question": "Quelle est la meilleure période pour visiter ?", "answer": "Le printemps et l'automne offrent une météo idéale pour la randonnée, tandis que l'été apporte de la fraîcheur et l'hiver des paysages enneigés." },
-    "q3": { "question": "Peut-on voir des singes dans le parc ?", "answer": "Oui, les macaques de Barbarie sauvages habitent les forêts de cèdres et sont fréquemment aperçus près des zones de visite populaires." },
-    "q4": { "question": "Combien de temps y consacrer ?", "answer": "Prévoyez d'une demi-journée à une journée complète selon que vous souhaitez pique-niquer, randonner ou visiter les lacs voisins." },
-    "q5": { "question": "À quelle distance se trouve-t-il du centre d'Ifrane ?", "answer": "Des parties du parc commencent dès la lisière de la ville, tandis que les grands secteurs forestiers et lacs sont à 15-30 minutes de route." }
+    "badge": "Bon à savoir",
+    "title": "FAQ sur Parc national d'Ifrane",
+    "q1": {
+      "question": "Do I need a ticket?",
+      "answer": "Public areas are generally open; obey local signage."
+    },
+    "q2": {
+      "question": "Famous for?",
+      "answer": "Cedar forest and Middle Atlas ecosystems."
+    },
+    "q3": {
+      "question": "Combine with Michlifen?",
+      "answer": "Yes on a mountain day from Ifrane."
+    },
+    "q4": {
+      "question": "Guides available?",
+      "answer": "Local guides can be arranged in season."
+    },
+    "q5": {
+      "question": "Good for hiking?",
+      "answer": "Yes — choose routes matching your fitness."
+    }
+  },
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles liés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Préparation",
+      "title": "Première fois à Ifrane",
+      "desc": "Lacs, cèdres et logistique de montagne."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Lacs du Moyen Atlas",
+      "desc": "Dayet Aoua et pauses plus calmes."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Forêts de cèdres",
+      "desc": "Marcher sous les cèdres autour d'Ifrane."
+    }
+  },
+  "gyg": {
+    "badge": "Visites",
+    "title": "Visites liées à ce lieu",
+    "subtitle": "Options si vous préférez un organisateur local.",
+    "check": "Voir les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains liens sont affiliés.",
+    "t1": {
+      "tag": "Montagne",
+      "title": "Ifrane et lacs",
+      "desc": "Ville, Dayet Aoua et cèdres."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Promenade en cèdraie",
+      "desc": "Balade guidée en forêt."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Journée Ifrane depuis Fès",
+      "desc": "Excursion montagne depuis la ville impériale."
+    }
+  },
+  "nearby": {
+    "badge": "Continuer",
+    "title": "Plus de lieux à Ifrane",
+    "back": "← Retour au guide d'Ifrane",
+    "explore": "Explorer le lieu →"
   }
 }

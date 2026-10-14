@@ -1,1 +1,53 @@
-{"explore":"Explorer le lieu →","back":"← Retour au guide d'Ifrane","more_title":"Autres lieux incontournables à Ifrane","lion":{"tag":"Monument","title":"Lion de pierre","desc":"Emblème du centre-ville."},"aoua":{"tag":"Lac","title":"Dayet Aoua","desc":"Lac de montagne et balades."},"cedar":{"tag":"Forêt","title":"Forêt de cèdres","desc":"Cèdres et magots."},"michlifen":{"tag":"Montagne","title":"Michlifen","desc":"Pistes et vues d'altitude."},"vittel":{"tag":"Source","title":"Source Vittel","desc":"Parc et source en cité-jardin."},"uni":{"tag":"Campus","title":"Al Akhawayn","desc":"Campus en cadre alpin."},"tizguit":{"tag":"Vallée","title":"Vallée de Tizguit","desc":"Balades vertes près de la ville."},"hachlaf":{"tag":"Lac","title":"Dayet Hachlaf","desc":"Lac plus calme."},"park":{"tag":"Parc","title":"Parc national d'Ifrane","desc":"Cèdres protégés et sentiers."}}
+{
+  "title": "Plus de lieux à Ifrane",
+  "subtitle": "Continuez d'explorer le Moyen Atlas",
+  "back": "← Retour au guide d'Ifrane",
+  "explore": "Explorer le lieu →",
+  "items": [
+    {
+      "slug": "lion",
+      "title": "Lion de pierre d'Ifrane",
+      "tag": "Repère"
+    },
+    {
+      "slug": "aoua",
+      "title": "Dayet Aoua",
+      "tag": "Lac"
+    },
+    {
+      "slug": "hachlaf",
+      "title": "Dayet Hachlaf",
+      "tag": "Lac"
+    },
+    {
+      "slug": "cedar",
+      "title": "Forêt de cèdres",
+      "tag": "Forêt"
+    },
+    {
+      "slug": "michlifen",
+      "title": "Michlifen",
+      "tag": "Montagne"
+    },
+    {
+      "slug": "park",
+      "title": "Parc national d'Ifrane",
+      "tag": "Parc"
+    },
+    {
+      "slug": "tizguit",
+      "title": "Source Tizguit",
+      "tag": "Nature"
+    },
+    {
+      "slug": "vittel",
+      "title": "Source Vittel",
+      "tag": "Source"
+    },
+    {
+      "slug": "uni",
+      "title": "Université Al Akhawayn",
+      "tag": "Campus"
+    }
+  ]
+}

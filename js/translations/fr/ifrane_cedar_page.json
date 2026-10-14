@@ -1,92 +1,167 @@
-"ifrane_cedar_page": {
+{
   "seo": {
-    "title": "Forêt de Cèdres | Guide d'Ifrane | MoroccoTripMap",
-    "description": "Visite de la Forêt de Cèdres à Ifrane ? Cèdres de l'Atlas géants, singes magots sauvages, meilleurs spots photo et conseils nature.",
-    "og_title": "Forêt de Cèdres, Ifrane : Nature, Faune et Conseils",
-    "og_description": "Comment visiter ce site incontournable d'Ifrane : cèdres majestueux, singes magots, sentiers de randonnée et conseils pratiques."
+    "title": "Forêt de cèdres Ifrane | Cèdres de l'Atlas | MoroccoTripMap",
+    "description": "Parcourez les forêts de cèdres près d'Ifrane : sentiers du Moyen Atlas et peuplements célèbres de la région.",
+    "keywords": "cèdres Ifrane, cèdre Gouraud",
+    "og_title": "Forêt de cèdres Ifrane | MoroccoTripMap",
+    "og_description": "Cèdres de l'Atlas près d'Ifrane."
   },
-  "hero_subtitle": "Une magnifique forêt ancienne du Moyen Atlas abritant de majestueux cèdres de l'Atlas et des singes magots sauvages.",
+  "name": "Forêt de cèdres",
+  "hero_subtitle": "Cèdres de l'Atlas près d'Ifrane — sentiers et zone du cèdre Gouraud.",
   "info": {
     "best_time_label": "Meilleure période",
-    "best_time_val": "Matin",
-    "duration_label": "Durée idéale",
-    "duration_val": "1 – 2 Heures",
+    "best_time_val": "Matin pour marcher au frais",
+    "duration_label": "Temps suggéré",
+    "duration_val": "1,5 – 3 heures",
     "entry_label": "Entrée",
-    "entry_val": "Accès Libre",
-    "area_label": "Localisation",
-    "area_val": "Moyen Atlas, près d'Ifrane"
+    "entry_val": "Accès libre aux sentiers publics",
+    "area_label": "Emplacement",
+    "area_val": "Routes forestières près d'Ifrane / Azrou"
   },
   "overview": {
-    "title": "Sanctuaire Naturel dans le Moyen Atlas",
-    "p1": "La Forêt de Cèdres d'Ifrane (souvent associée à la forêt Gouraud) est une étendue naturelle époustouflante dans les montagnes du Moyen Atlas. Abritant de majestueux cèdres de l'Atlas centenaires, elle offre des sentiers de randonnée paisibles, un air pur de pin et des paysages époustouflants qui changent de couleur au fil des saisons.",
-    "p2": "La forêt est également célèbre pour sa population de singes magots sauvages. Bien que l'observation de ces singes joueurs soit un moment fort pour de nombreux visiteurs, une observation responsable de la faune est essentielle pour protéger leur comportement naturel et leur santé.",
-    "p3": "Visitez la forêt le matin pour profiter de l'air frais de la montagne et de sentiers paisibles, puis combinez votre excursion nature avec une visite des lacs voisins ou de la ville d'Ifrane."
+    "title": "Sous les cèdres de l'Atlas",
+    "p1": "Les cèdraies autour d'Ifrane comptent parmi les paysages emblématiques du Moyen Atlas. Grands cèdres, ombre fraîche et routes forestières. Des macaques de Barbarie sont parfois visibles — ne les nourrissez pas.",
+    "p2": "Restez sur les sentiers balisés. La zone du cèdre Gouraud est un arrêt connu."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "La Forêt de Cèdres en Images",
-    "subtitle": "Cèdres de l'Atlas ancestraux, sentiers forestiers et faune locale.",
-    "s1": { "caption": "Cèdres de l'Atlas géants et ancestraux" },
-    "s2": { "caption": "Sentiers de randonnée paisibles" },
-    "s3": { "caption": "Singes magots sauvages" },
-    "s4": { "caption": "Repères historiques de cèdres" },
-    "s5": { "caption": "Panoramas montagneux du Moyen Atlas" }
+    "badge": "Gallery",
+    "title": "Galerie de la forêt de cèdres",
+    "subtitle": "Cèdres de l'Atlas, sentiers et zone du cèdre Gouraud.",
+    "s1": {
+      "caption": "Atlas cedar forest near Ifrane"
+    },
+    "s2": {
+      "caption": "Tall cedars and path"
+    },
+    "s3": {
+      "caption": "Forest light through cedar branches"
+    },
+    "s4": {
+      "caption": "Middle Atlas forest road"
+    },
+    "s5": {
+      "caption": "Cedar grove in the Ifrane area"
+    }
   },
   "moods": {
-    "badge": "À voir",
-    "title": "Points Forts de la Forêt de Cèdres",
-    "subtitle": "Arbres ancestraux, faune sauvage et panoramas de montagne.",
-    "1": { "tag": "Arbres", "title": "Cèdres Géants de l'Atlas", "desc": "Des arbres centenaires s'élevant majestueusement au-dessus du sol de la forêt.", "duration": "30–45 min" },
-    "2": { "tag": "Faune", "title": "Singes Magots", "desc": "Observez les singes indigènes évoluer en liberté dans leur habitat naturel.", "duration": "20–30 min" },
-    "3": { "tag": "Nature", "title": "Sentiers de Randonnée", "desc": "Des chemins paisibles serpentant à travers une verdure de montagne immaculée.", "duration": "45–60 min" }
+    "badge": "Horaires",
+    "title": "La cèdraie au fil de la journée",
+    "subtitle": "L'ombre aide — le temps change vite en altitude.",
+    "1": {
+      "tag": "Matin",
+      "title": "Air frais sous les cèdres",
+      "desc": "Meilleur moment pour de plus longues marches.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Ombre tranquille",
+      "desc": "Refuge quand le plateau est chaud ou venteux.",
+      "duration": "Midi"
+    },
+    "3": {
+      "tag": "Soir",
+      "title": "Lumière douce en forêt",
+      "desc": "Beau pour les photos avant le crépuscule.",
+      "duration": "Soir"
+    }
   },
   "food": {
-    "title": "Pique-niques et Restauration à Proximité",
-    "p1": "La forêt est un endroit idéal pour un pique-nique paisible en plein air entouré par la nature, ou vous pouvez retourner vers Ifrane ou Azrou pour trouver des restaurants locaux et des cafés.",
-    "li1": "Aires de pique-nique pittoresques sous la canopée des cèdres",
-    "li2": "Cafés locaux près des parkings de la forêt pour du thé et des en-cas",
-    "li3": "Options de restauration marocaine traditionnelle dans la ville d'Ifrane",
-    "li4": "Points d'eau de source fraîche le long des routes du Moyen Atlas",
-    "li5": "Atmosphère de montagne relaxante pour les repas en plein air",
-    "p2": "Apportez de l'eau et des en-cas si vous prévoyez de longues randonnées à travers la réserve."
+    "title": "Manger près des cèdres",
+    "p1": "Le pique-nique est l'approche habituelle. Repas complets à Ifrane ou Azrou.",
+    "p2": "Ne laissez aucun déchet et ne nourrissez pas la faune.",
+    "li1": "Pique-nique depuis la ville.",
+    "li2": "Eau pour chaque marcheur.",
+    "li3": "Repas à Ifrane après.",
+    "li4": "Ne nourrissez pas les macaques.",
+    "li5": "Rapportez tous les déchets."
   },
   "tips": {
-    "badge": "Conseils Pratiques",
-    "title": "Conseils Pratiques pour Visiter la Forêt de Cèdres",
-    "1": { "title": "Respecter la faune", "desc": "Ne nourrissez pas les singes magots et ne laissez pas de nourriture traîner, car cela perturbe leur régime alimentaire naturel et leur santé." },
-    "2": { "title": "Porter des chaussures confortables", "desc": "Des chaussures de marche solides ou des baskets sont recommandées pour les sentiers forestiers inégaux et les chemins de terre." },
-    "3": { "title": "Combiner avec les lacs de montagne", "desc": "Associez votre visite de la forêt à une promenade pittoresque vers les lacs de montagne voisins comme Dayet Aoua." }
-  },
-  "gyg": {
-    "badge": "Excursions",
-    "title": "Explorez la Nature du Moyen Atlas",
-    "subtitle": "Excursions guidées couvrant les forêts de cèdres, la faune et les lacs.",
-    "t1": { "tag": "Nature", "title": "Forêt de Cèdres du Moyen Atlas & Safari aux Singes", "desc": "Visite guidée à travers les cèdres ancestraux avec observation de la faune." },
-    "t2": { "tag": "Excursion", "title": "Excursion d'une Journée à Ifrane, Azrou & Forêt de Cèdres", "desc": "Excursion complète d'une journée couvrant les points forts de la montagne et l'artisanat." },
-    "t3": { "tag": "Panoramique", "title": "Explorateur des Lacs et Forêts de l'Atlas", "desc": "Découvrez les lacs de montagne et les pinèdes de cèdres grâce à l'expertise locale." },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via ceux-ci, nous pourrions percevoir une commission sans frais supplémentaires pour vous."
-  },
-  "nearby": {
-    "badge": "À Continuer",
-    "title": "Autres Lieux Incontournables à Ifrane",
-    "back": "← Retour au guide d'Ifrane"
-  },
-  "blog": {
-    "badge": "Du Blog",
-    "title": "Articles Connexes",
-    "all": "Tous les articles →",
-    "a1": { "tag": "Nature", "title": "Exploration des Forêts de Cèdres du Moyen Atlas", "desc": "Découvrez les merveilles écologiques qui entourent Ifrane." },
-    "a2": { "tag": "Faune", "title": "Rencontrer les Singes Magots de Manière Responsable", "desc": "Comment profiter de l'observation de la faune tout en protégeant les animaux locaux." },
-    "a3": { "tag": "Planification", "title": "Aventures en Plein Air à Ifrane", "desc": "Les meilleurs spots de randonnée et de nature de la région." },
-    "read": "Lire l'article →"
+    "title": "Conseils pratiques",
+    "1": {
+      "title": "Météo de montagne",
+      "desc": "Prévoyez une couche chaude ; le temps change vite en altitude."
+    },
+    "2": {
+      "title": "Accès",
+      "desc": "Voiture recommandée depuis Ifrane ; vérifiez la route après pluie ou neige."
+    },
+    "3": {
+      "title": "Respect du site",
+      "desc": "Restez sur les sentiers et emportez vos déchets."
+    }
   },
   "faq": {
-    "badge": "Bon à Savoir",
-    "title": "FAQ de la Forêt de Cèdres",
-    "q1": { "question": "Peut-on voir des singes dans la Forêt de Cèdres ?", "answer": "Oui, la forêt est célèbre pour sa population de singes magots sauvages, bien qu'il soit conseillé de ne pas les nourrir pour préserver leur régime naturel." },
-    "q2": { "question": "Quel est le meilleur moment pour visiter ?", "answer": "Les matinées offrent un air de montagne frais, des sentiers forestiers paisibles et une belle luminosité pour la photographie parmi les cèdres géants." },
-    "q3": { "question": "Combien de temps dure la visite ?", "answer": "Environ 1 à 2 heures pour marcher parmi les arbres ancestraux, observer la faune et profiter des paysages du Moyen Atlas." },
-    "q4": { "question": "L'entrée est-elle gratuite ?", "answer": "Oui, l'exploration de la forêt de cèdres et des sentiers de randonnée publics est entièrement gratuite." }
+    "badge": "Bon à savoir",
+    "title": "FAQ sur Forêt de cèdres",
+    "q1": {
+      "question": "Is the forest free?",
+      "answer": "Public paths are generally free; respect any signed private areas."
+    },
+    "q2": {
+      "question": "Famous cedar tree?",
+      "answer": "The region is known for large Atlas cedars including historic specimens on the tourist circuit."
+    },
+    "q3": {
+      "question": "Combine with lakes?",
+      "answer": "Yes — a classic Ifrane nature day."
+    },
+    "q4": {
+      "question": "Good for children?",
+      "answer": "Yes on short, easy paths."
+    },
+    "q5": {
+      "question": "Toward Azrou?",
+      "answer": "The cedar road continues toward Azrou — a popular loop."
+    }
+  },
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles liés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Préparation",
+      "title": "Première fois à Ifrane",
+      "desc": "Lacs, cèdres et logistique de montagne."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Lacs du Moyen Atlas",
+      "desc": "Dayet Aoua et pauses plus calmes."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Forêts de cèdres",
+      "desc": "Marcher sous les cèdres autour d'Ifrane."
+    }
+  },
+  "gyg": {
+    "badge": "Tours",
+    "title": "Tours linked to this place",
+    "subtitle": "Options if you prefer a local organiser.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some links are affiliate.",
+    "t1": {
+      "tag": "Forest",
+      "title": "Cedar forest walk",
+      "desc": "Trails under Atlas cedars."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Gouraud cedar area",
+      "desc": "Famous stands near the Ifrane–Azrou road."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Forest day from Ifrane",
+      "desc": "Cedars and mountain air."
+    }
+  },
+  "nearby": {
+    "badge": "Continuer",
+    "title": "Plus de lieux à Ifrane",
+    "back": "← Retour au guide d'Ifrane",
+    "explore": "Explorer le lieu →"
   }
 }

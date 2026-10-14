@@ -1,93 +1,167 @@
-"ifrane_hachlaf_page": {
+{
   "seo": {
-    "title": "Moulay Idriss Zerhoun | Guide d'Ifrane | MoroccoTripMap",
-    "description": "Visite de Moulay Idriss Zerhoun près d'Ifrane ? Ville sainte à flanc de colline, panoramas, ruelles, code vestimentaire et conseils pratiques.",
-    "og_title": "Moulay Idriss Zerhoun, Ifrane : Ville Sainte, Vues et Conseils",
-    "og_description": "Comment visiter Moulay Idriss Zerhoun : panoramas sur la vallée, ruelles pittoresques, code vestimentaire et conseils pratiques dans l'Atlas."
+    "title": "Dayet Hachlaf | Lac tranquille près d'Ifrane | MoroccoTripMap",
+    "description": "Découvrez Dayet Hachlaf près d'Ifrane : lac plus calme du Moyen Atlas pour marcher au grand air.",
+    "keywords": "Dayet Hachlaf, lac Ifrane",
+    "og_title": "Dayet Hachlaf | MoroccoTripMap",
+    "og_description": "Lac tranquille près d'Ifrane."
   },
-  "hero_subtitle": "Une ville sainte perchée à flanc de colline près d'Ifrane — sacrée, photogénique et à visiter avec respect.",
+  "name": "Dayet Hachlaf",
+  "hero_subtitle": "Lac plus tranquille près d'Ifrane pour une pause paisible.",
   "info": {
     "best_time_label": "Meilleure période",
-    "best_time_val": "Fin de matinée après Ifrane",
-    "duration_label": "Durée idéale",
-    "duration_val": "1 – 2 Heures",
+    "best_time_val": "Matin ou fin d'après-midi",
+    "duration_label": "Temps suggéré",
+    "duration_val": "1 – 2 heures",
     "entry_label": "Entrée",
-    "entry_val": "Ville libre ; accès au sanctuaire restreint",
-    "area_label": "Localisation",
-    "area_val": "Région d'Ifrane, Moyen Atlas"
+    "entry_val": "Accès libre aux rives",
+    "area_label": "Emplacement",
+    "area_val": "Près d'Ifrane · Moyen Atlas"
   },
   "overview": {
-    "title": "Une Ville Bâtie Autour du Pèlerinage",
-    "p1": "Moulay Idriss Zerhoun s'élève sur une colline non loin d'Ifrane, avec ses murs blanchis à la chaux empilés au-dessus des pentes verdoyantes. C'est l'une des villes de pèlerinage les plus importantes du Maroc, centrée autour du tombeau de Moulay Idriss Ier. Pour les visiteurs, l'intérêt réside dans le cadre, les ruelles pittoresques et les panoramas.",
-    "p2": "Certains espaces intérieurs sont réservés aux musulmans. Restez dans les rues publiques, habillez-vous modestement et photographiez avec tact à proximité des lieux de culte. La ville est habitée et fervente ; votre visite doit se faire en toute discrétion.",
-    "p3": "La plupart des voyageurs s'y arrêtent lors d'une excursion depuis Ifrane. Montez à un point de vue public, parcourez une rue principale, buvez un thé et imprégnez-vous de l'atmosphère unique de cette cité historique."
+    "title": "Une alternative plus calme",
+    "p1": "Dayet Hachlaf offre une halte lacustre plus discrète dans la région d'Ifrane. Moins d'équipements, davantage de paysage ouvert du Moyen Atlas.",
+    "p2": "Accès par la route depuis Ifrane ; emportez tout le nécessaire."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "Moulay Idriss Zerhoun en Images",
-    "subtitle": "Ville blanche à flanc de colline, ruelles et vues sur la vallée.",
-    "s1": { "caption": "Ville blanche à flanc de colline" },
-    "s2": { "caption": "Rue principale et escaliers traditionnels" },
-    "s3": { "caption": "Point de vue sur la campagne environnante" },
-    "s4": { "caption": "Toits en gradins sur la pente" },
-    "s5": { "caption": "Rue paisible de Moulay Idriss" }
+    "badge": "Gallery",
+    "title": "Dayet Hachlaf",
+    "subtitle": "Quieter mountain lake near Ifrane for a peaceful stop away from the busiest shores.",
+    "s1": {
+      "caption": "Dayet Hachlaf lake"
+    },
+    "s2": {
+      "caption": "Quiet shore near Ifrane"
+    },
+    "s3": {
+      "caption": "Middle Atlas hills at Hachlaf"
+    },
+    "s4": {
+      "caption": "Open landscape around the lake"
+    },
+    "s5": {
+      "caption": "Path near Dayet Hachlaf"
+    }
   },
   "moods": {
-    "badge": "À voir",
-    "title": "Points Forts de Moulay Idriss Zerhoun",
-    "subtitle": "Panoramas, ruelles et atmosphère respectueuse.",
-    "1": { "tag": "Panorama", "title": "Vues Panoramiques", "desc": "Admirez la ville blanche et la campagne environnante depuis les terrasses publiques.", "duration": "20–40 min" },
-    "2": { "tag": "Ruelles", "title": "Rues Principales et Escaliers", "desc": "Découvrez l'agencement vertical unique qui caractérise la cité.", "duration": "30–60 min" },
-    "3": { "tag": "Ambiance", "title": "Calme d'une Ville Sainte", "desc": "Profitez d'une ambiance distincte de l'agitation des grands centres urbains.", "duration": "Flexible" }
+    "badge": "Horaires",
+    "title": "Dayet Hachlaf au fil de la journée",
+    "subtitle": "Lumière et rythme selon le moment.",
+    "1": {
+      "tag": "Matin",
+      "title": "Lumière douce",
+      "desc": "Meilleure période pour marcher au frais.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Plein jour",
+      "desc": "Préférez l'ombre ou une pause plus courte.",
+      "duration": "Midi"
+    },
+    "3": {
+      "tag": "Soir",
+      "title": "Fin de journée",
+      "desc": "Lumière rasante et moins de monde.",
+      "duration": "Soir"
+    }
   },
   "food": {
-    "title": "Restauration Simple et Respectueuse",
-    "p1": "Les petits cafés locaux servent du thé à la menthe et des repas de base. Ce n'est pas une destination gastronomique — mangez simplement et maintenez un niveau sonore modéré.",
-    "li1": "Thé à la menthe avec vue panoramique",
-    "li2": "Options de déjeuner local simples",
-    "li3": "Eau en bouteille recommandée",
-    "li4": "Pas d'alcool servi dans ce contexte de ville sainte",
-    "li5": "Soutenez les commerçants locaux avec courtoisie",
-    "p2": "Si vous avez apporté des en-cas d'Ifrane, veillez à jeter vos déchets proprement avant de repartir."
+    "title": "Où manger à proximité",
+    "p1": "Les options sont limitées hors d'Ifrane : pique-nique ou repas en ville.",
+    "p2": "Emportez de l'eau et des en-cas pour les sorties nature.",
+    "li1": "Pique-nique préparé en ville.",
+    "li2": "Eau pour chaque marcheur.",
+    "li3": "Restaurants d'hôtel à Ifrane.",
+    "li4": "Cafés du centre pour un repas simple.",
+    "li5": "Ne laissez aucun déchet sur place."
   },
   "tips": {
-    "badge": "Conseils Pratiques",
-    "title": "Conseils Pratiques pour Visiter Moulay Idriss Zerhoun",
-    "1": { "title": "Tenue et comportement de rigueur", "desc": "Couvrez vos épaules et vos genoux. Parlez à voix basse près des édifices religieux et demandez toujours l'autorisation avant de photographier des personnes." },
-    "2": { "title": "Organiser son transport à l'avance", "desc": "Les visites se font plus facilement dans le cadre d'une excursion combinée depuis Ifrane avec un chauffeur ou un taxi réservé." },
-    "3": { "title": "Privilégier les points de vue", "desc": "Les terrasses publiques et les rues principales offrent toute la beauté de la ville sans perturber l'intimité des lieux sacrés." }
-  },
-  "gyg": {
-    "badge": "Excursions",
-    "title": "Réserver une Excursion à Moulay Idriss Zerhoun",
-    "subtitle": "Souvent combiné avec Ifrane lors d'excursions d'une demi-journée ou d'une journée.",
-    "t1": { "tag": "Combo", "title": "Excursion Ifrane et Moulay Idriss", "desc": "Visitez Ifrane et la ville sainte à flanc de colline lors d'un circuit guidé." },
-    "t2": { "tag": "Demi-journée", "title": "Colline Sacrée et Points Forts Régionaux", "desc": "Une boucle guidée avec un temps idéal pour les points de vue et la culture locale." },
-    "t3": { "tag": "Privé", "title": "Visite Privée de Moulay Idriss", "desc": "Visite flexible et personnalisée selon votre propre rythme." },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via ceux-ci, nous pourrions percevoir une commission sans frais supplémentaires pour vous."
-  },
-  "nearby": {
-    "badge": "À Continuer",
-    "title": "Autres Lieux Incontournables à Ifrane",
-    "back": "← Retour au guide d'Ifrane"
-  },
-  "blog": {
-    "badge": "Du Blog",
-    "title": "Articles Connexes",
-    "all": "Tous les articles →",
-    "a1": { "tag": "Étiquette", "title": "Visiter les villes saintes au Maroc", "desc": "Comment se déplacer à Moulay Idriss dans le respect des traditions." },
-    "a2": { "tag": "Planification", "title": "Timing entre Ifrane et Moulay Idriss", "desc": "Un programme d'une demi-journée idéal au départ d'Ifrane." },
-    "a3": { "tag": "Photo", "title": "Photographier les villes perchées avec soin", "desc": "Profiter des panoramas sans s'immiscer dans les espaces sacrés." },
-    "read": "Lire l'article →"
+    "title": "Conseils pratiques",
+    "1": {
+      "title": "Météo de montagne",
+      "desc": "Prévoyez une couche chaude ; le temps change vite en altitude."
+    },
+    "2": {
+      "title": "Accès",
+      "desc": "Voiture recommandée depuis Ifrane ; vérifiez la route après pluie ou neige."
+    },
+    "3": {
+      "title": "Respect du site",
+      "desc": "Restez sur les sentiers et emportez vos déchets."
+    }
   },
   "faq": {
-    "badge": "Bon à Savoir",
-    "title": "FAQ de Moulay Idriss Zerhoun",
-    "q1": { "question": "Les non-musulmans peuvent-ils visiter le sanctuaire ?", "answer": "Le complexe religieux principal est généralement restreint. Restez dans les zones publiques et suivez les indications locales." },
-    "q2": { "question": "Est-ce que cela vaut le détour si l'on est à Ifrane ?", "answer": "Oui, si vous disposez d'une heure supplémentaire — le décor à flanc de colline offre un contraste saisissant." },
-    "q3": { "question": "Combien de temps dure la visite ?", "answer": "Une à deux heures suffisent amplement pour profiter des panoramas et d'une courte promenade." },
-    "q4": { "question": "Y a-t-il des endroits où se restaurer ?", "answer": "De petits cafés et restaurants locaux sont disponibles — gardez des attentes modestes et un comportement respectueux." },
-    "q5": { "question": "Quel est le meilleur ordre de visite avec Ifrane ?", "answer": "Ifrane le matin, Moulay Idriss en fin de matinée ou début d'après-midi, puis retour à Ifrane." }
+    "badge": "Bon à savoir",
+    "title": "FAQ sur Dayet Hachlaf",
+    "q1": {
+      "question": "Quieter than Dayet Aoua?",
+      "answer": "Often yes — fewer organised groups."
+    },
+    "q2": {
+      "question": "Swimming?",
+      "answer": "Nature visit first; follow local advice."
+    },
+    "q3": {
+      "question": "How long?",
+      "answer": "One to two hours is typical."
+    },
+    "q4": {
+      "question": "Family-friendly?",
+      "answer": "Yes for a short outdoor stop."
+    },
+    "q5": {
+      "question": "Need 4x4?",
+      "answer": "Not usually for the main access in good weather."
+    }
+  },
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles liés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Préparation",
+      "title": "Première fois à Ifrane",
+      "desc": "Lacs, cèdres et logistique de montagne."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Lacs du Moyen Atlas",
+      "desc": "Dayet Aoua et pauses plus calmes."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Forêts de cèdres",
+      "desc": "Marcher sous les cèdres autour d'Ifrane."
+    }
+  },
+  "gyg": {
+    "badge": "Visites",
+    "title": "Visites liées à ce lieu",
+    "subtitle": "Options si vous préférez un organisateur local.",
+    "check": "Voir les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains liens sont affiliés.",
+    "t1": {
+      "tag": "Montagne",
+      "title": "Ifrane et lacs",
+      "desc": "Ville, Dayet Aoua et cèdres."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Promenade en cèdraie",
+      "desc": "Balade guidée en forêt."
+    },
+    "t3": {
+      "tag": "Atlas",
+      "title": "Journée Ifrane depuis Fès",
+      "desc": "Excursion montagne depuis la ville impériale."
+    }
+  },
+  "nearby": {
+    "badge": "Continuer",
+    "title": "Plus de lieux à Ifrane",
+    "back": "← Retour au guide d'Ifrane",
+    "explore": "Explorer le lieu →"
   }
 }

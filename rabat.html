@@ -270,16 +270,16 @@
  <span class="text-base font-bold" data-i18n="rabat_page.info.best_time_val">March–May & September–November</span>
  </div>
  <div>
- <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="rabat_page.info.stay_label">Ideal stay</span>
- <span class="text-base font-bold" data-i18n="rabat_page.info.stay_val">1 – 2 days</span>
+ <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="rabat_page.info.duration_label">Ideal stay</span>
+ <span class="text-base font-bold" data-i18n="rabat_page.info.duration_val">1 – 2 days</span>
  </div>
  <div>
- <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="rabat_page.info.vibe_label">Vibe</span>
- <span class="text-base font-bold" data-i18n="rabat_page.info.vibe_val">Walled town, ochre brick and Bouregreg calm</span>
+ <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="rabat_page.info.area_label">Vibe</span>
+ <span class="text-base font-bold" data-i18n="rabat_page.info.area_val">Walled town, ochre brick and Bouregreg calm</span>
  </div>
  <div>
- <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="rabat_page.info.airport_label">Access</span>
- <span class="text-base font-bold" data-i18n="rabat_page.info.airport_val">RBA Rabat-Salé · ONCF trains · motorway from Casablanca (~1 h)</span>
+ <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="rabat_page.info.entry_label">Access</span>
+ <span class="text-base font-bold" data-i18n="rabat_page.info.entry_val">RBA Rabat-Salé · ONCF trains · motorway from Casablanca (~1 h)</span>
  </div>
  </div>
  </div>
@@ -305,93 +305,113 @@
  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/oudayas.html">
                 <div class="relative h-48 overflow-hidden">
-                    <img alt="Kasbah of the Udayas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/oudayas/oudayas-01.webp" onerror="this.style.background='#e8e0d5'" loading="lazy"/>
-                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.places.oudayas.tag">Square</span>
+                    <img alt="Kasbah of the Udayas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/oudayas/oudayas.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.oudayas.tag">Kasbah</span>
                 </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.places.oudayas.name">Kasbah of the Udayas</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.oudayas.desc">Main square — cafés, taxis and the town’s daily pulse.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="rabat_page.places.explore">Explore place →</span>
-                </div>
-            </a>
-            <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/oudayas.html">
-                <div class="relative h-48 overflow-hidden">
-                    <img alt="Rabat Ramparts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/remparts/remparts-01.webp" onerror="this.style.background='#e8e0d5'" loading="lazy"/>
-                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.places.oudayas.tag">Walls</span>
-                </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.places.oudayas.name">Rabat Ramparts</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.oudayas.desc">Ochre ramparts that earned the Atlantic capital nickname.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="rabat_page.places.explore">Explore place →</span>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.oudayas.title">Kasbah of the Udayas</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.oudayas.desc">White-and-blue quarter above the river mouth with Andalusian gardens.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
                 </div>
             </a>
+
             <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/hassan.html">
                 <div class="relative h-48 overflow-hidden">
-                    <img alt="Hassan Tower" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/bab-el-kasbah/bab-el-kasbah-01.webp" onerror="this.style.background='#e8e0d5'" loading="lazy"/>
-                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.places.hassan.tag">Gate</span>
+                    <img alt="Hassan Tower" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/hassan/hassan.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.hassan.tag">Monument</span>
                 </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.places.hassan.name">Hassan Tower</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.hassan.desc">Historic gate in the walls toward the kasbah side.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="rabat_page.places.explore">Explore place →</span>
-                </div>
-            </a>
-            <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/medina.html">
-                <div class="relative h-48 overflow-hidden">
-                    <img alt="Rabat Souks" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/souks/souks-01.webp" onerror="this.style.background='#e8e0d5'" loading="lazy"/>
-                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.places.medina.tag">Market</span>
-                </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.places.medina.name">Rabat Souks</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.medina.desc">Spices, crafts and local market life inside the walls.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="rabat_page.places.explore">Explore place →</span>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.hassan.title">Hassan Tower</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.hassan.desc">Iconic Almohad minaret and the esplanade of the unfinished mosque.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
                 </div>
             </a>
+
             <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/mausoleum.html">
                 <div class="relative h-48 overflow-hidden">
-                    <img alt="Grande Mosquée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/grande-mosquee/grande-mosquee-01.webp" onerror="this.style.background='#e8e0d5'" loading="lazy"/>
-                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.places.mausoleum.tag">Mosque</span>
+                    <img alt="Mohammed V Mausoleum" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/mausoleum/mausoleum.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.mausoleum.tag">Mausoleum</span>
                 </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.places.mausoleum.name">Grande Mosquée</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.mausoleum.desc">Medina landmark — exterior visit with respect.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="rabat_page.places.explore">Explore place →</span>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.mausoleum.title">Mohammed V Mausoleum</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.mausoleum.desc">Marble and zellige memorial beside Hassan Tower.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
                 </div>
             </a>
+
             <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/chellah.html">
                 <div class="relative h-48 overflow-hidden">
-                    <img alt="Palmeraie de Chellah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/tioute/tioute-01.webp" onerror="this.style.background='#e8e0d5'" loading="lazy"/>
-                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.places.chellah.tag">Oasis</span>
+                    <img alt="Chellah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/chellah/chellah.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.chellah.tag">Ruins</span>
                 </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.places.chellah.name">Palmeraie de Chellah</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.chellah.desc">Palm grove and village south of Rabat.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="rabat_page.places.explore">Explore place →</span>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.chellah.title">Chellah</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.chellah.desc">Roman and Merinid necropolis in a walled garden by the Bouregreg.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
                 </div>
             </a>
+
             <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/medina.html">
                 <div class="relative h-48 overflow-hidden">
-                    <img alt="Rabat Medina" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/medina/medina-01.webp" onerror="this.style.background='#e8e0d5'" loading="lazy"/>
-                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.places.medina.tag">Medina</span>
+                    <img alt="Rabat Medina" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/medina/medina.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.medina.tag">Medina</span>
                 </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.places.medina.name">Rabat Medina</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.medina.desc">Residential lanes and everyday life inside the walls.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="rabat_page.places.explore">Explore place →</span>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.medina.title">Rabat Medina</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.medina.desc">Compact lanes, souks and the Andalusian wall near the ocean.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
                 </div>
             </a>
+
             <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/gardens.html">
                 <div class="relative h-48 overflow-hidden">
-                    <img alt="Rabat Kasbah Area" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/kasbah/kasbah-01.webp" onerror="this.style.background='#e8e0d5'" loading="lazy"/>
-                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.places.gardens.tag">Quarter</span>
+                    <img alt="Andalusian Gardens" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/gardens/gardens.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.gardens.tag">Gardens</span>
                 </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.places.gardens.name">Rabat Kasbah Area</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.gardens.desc">Quieter historic streets on the kasbah side.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="rabat_page.places.explore">Explore place →</span>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.gardens.title">Andalusian Gardens</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.gardens.desc">Shaded gardens inside the Udayas kasbah.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
                 </div>
             </a>
-            </div>
+
+            <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/marina.html">
+                <div class="relative h-48 overflow-hidden">
+                    <img alt="Bouregreg Marina" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/marina/marina.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.marina.tag">Waterfront</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.marina.title">Bouregreg Marina</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.marina.desc">Modern marina and promenade facing Salé across the estuary.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
+                </div>
+            </a>
+
+            <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/beach.html">
+                <div class="relative h-48 overflow-hidden">
+                    <img alt="Rabat Beach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/beach/beach.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.beach.tag">Beach</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.beach.title">Rabat Beach</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.beach.desc">Atlantic sand below the walls and along the corniche.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
+                </div>
+            </a>
+
+            <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/rabat-places/museum.html">
+                <div class="relative h-48 overflow-hidden">
+                    <img alt="Museums of Rabat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/museum/museum.webp" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80'"/>
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold px-2.5 py-1 rounded-full text-vert" data-i18n="rabat_page.places.museum.tag">Museum</span>
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <h3 class="text-lg font-bold text-vert group-hover:text-sable transition" data-i18n="rabat_page.places.museum.title">Museums of Rabat</h3>
+                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="rabat_page.places.museum.desc">Archaeology and modern collections in the capital.</p>
+                    <span class="mt-4 text-sm font-semibold text-vert" data-i18n="rabat_page.places.explore">Explore the place →</span>
+                </div>
+            </a>
+
+          </div>
 </section>
 
 
@@ -464,10 +484,10 @@
  <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="rabat_page.directory.filter_location_label">Area:</label>
  <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
  <option value="all" data-i18n="rabat_page.directory.location_all">All areas</option>
- <option value="medina" data-i18n="rabat_page.directory.location_town">City centre</option>
- <option value="hassan" data-i18n="rabat_page.directory.location_outside">Town centre</option>
- <option value="agdal" data-i18n="rabat_page.directory.location_outskirts">Chellah / North</option>
- <option value="peripherie" data-i18n="rabat_page.directory.location_outskirts">Chellah / North</option>
+ <option value="medina" data-i18n="rabat_page.directory.location_hassan">City centre</option>
+ <option value="hassan" data-i18n="rabat_page.directory.location_medina">Town centre</option>
+ <option value="agdal" data-i18n="rabat_page.directory.location_agdal">Chellah / North</option>
+ <option value="peripherie" data-i18n="rabat_page.directory.location_agdal">Chellah / North</option>
  </select>
  </div>
  </div>
@@ -486,7 +506,7 @@
  <h3 class="font-bold text-lg text-vert">1. Hotel Kasbah View</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.2</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60" data-i18n="rabat_page.directory.district_label">Area:<span>Town centre</span> · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad-palace</p>
+ <p class="acc-meta text-xs text-sombre/60" data-i18n="rabat_page.directory.filter_location_label">Area:<span>Town centre</span> · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad-palace</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Palais+Oumensour+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -501,7 +521,7 @@
  <h3 class="font-bold text-lg text-vert">2. Villa Atlantique</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -516,7 +536,7 @@
  <h3 class="font-bold text-lg text-vert">3. Hotel Atlas Bay</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.1</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Boutique riad</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Boutique riad</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Riad+Tania+Mozaik+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -531,7 +551,7 @@
  <h3 class="font-bold text-lg text-vert">4. Riad Rabat</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.3</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Dar / guesthouse</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Dar / guesthouse</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Dar+Zahia+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -546,7 +566,7 @@
  <h3 class="font-bold text-lg text-vert">5. Hotel Regency</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.8</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Riad+Amnay+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -561,7 +581,7 @@
  <h3 class="font-bold text-lg text-vert">6. Jardin Rabat</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> City centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Garden hotel</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> City centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Garden hotel</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Dar+Zitoune+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -576,7 +596,7 @@
  <h3 class="font-bold text-lg text-vert">7. Westpoint Rabat</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.4</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> City centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Botanical lodge</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> City centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Botanical lodge</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Hossoun+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -591,7 +611,7 @@
  <h3 class="font-bold text-lg text-vert">8. Hotel Maghreb</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Ines+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -606,7 +626,7 @@
  <h3 class="font-bold text-lg text-vert">9. La Maison Rabat</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.9</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Guesthouse</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> Town centre · <span data-i18n="rabat_page.directory.type_label">Type:</span> Guesthouse</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=La+Maison+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -621,7 +641,7 @@
  <h3 class="font-bold text-lg text-vert">10. Apartments town Rabat</h3>
  <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.7</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.district_label">Area:</span> Chellah / North · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad</p>
+ <p class="acc-meta text-xs text-sombre/60"><span data-i18n="rabat_page.directory.filter_location_label">Area:</span> Chellah / North · <span data-i18n="rabat_page.directory.type_label">Type:</span> Riad</p>
  <p class="text-xs text-sombre/70 mt-2"></p>
  <div class="acc-contact mt-3">
  <a href="https://www.booking.com/searchresults.html?ss=Riad+Tafilag+Rabat" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="rabat_page.directory.check_availability">Check availability →</a>
@@ -648,7 +668,7 @@
  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
  
  <!-- 1. Restaurant Roudani -->
- <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/nomad.html">
+ <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/dinarjat.html">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
  <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Restaurant Roudani" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
@@ -660,11 +680,11 @@
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.nomad.tag">Seafood</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.nomad.loc">Square</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.dinarjat.tag">Seafood</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.dinarjat.loc">Square</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.nomad.title">Square tables</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.nomad.desc">Fish and seafood with harbour views.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.dinarjat.title">Square tables</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.dinarjat.desc">Fish and seafood with harbour views.</p>
  </div>
  </div>
  </a>
@@ -682,11 +702,11 @@
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.jardin.tag">Café</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.jardin.loc">town</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.imprevu.tag">Café</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.imprevu.loc">town</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.jardin.title">town cafés</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.jardin.desc">Casual drinks and snacks along the promenade.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.imprevu.title">town cafés</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.imprevu.desc">Casual drinks and snacks along the promenade.</p>
  </div>
  </div>
  </a>
@@ -704,11 +724,11 @@
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.fassia.tag">Hotel</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.fassia.loc">town</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.naji.tag">Hotel</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.naji.loc">town</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.fassia.title">Hotel restaurants</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.fassia.desc">Reliable options on the seafront strip.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.naji.title">Hotel restaurants</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.naji.desc">Reliable options on the seafront strip.</p>
  </div>
  </div>
  </a>
@@ -726,11 +746,11 @@
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.moha.tag">Grill</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.moha.loc">Souk</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.goeland.tag">Grill</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.goeland.loc">Souk</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.moha.title">Simple grills</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.moha.desc">Everyday Moroccan plates near Souk El Had.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.goeland.title">Simple grills</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.goeland.desc">Everyday Moroccan plates near Souk El Had.</p>
  </div>
  </div>
  </a>
@@ -748,11 +768,11 @@
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.bacha.tag">Seafood</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.bacha.loc">Port</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.tour.tag">Seafood</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.tour.loc">Port</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.bacha.title">Port catch</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.bacha.desc">Fresh fish when the boats are in.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.tour.title">Port catch</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.tour.desc">Fresh fish when the boats are in.</p>
  </div>
  </div>
  </a>
@@ -770,11 +790,11 @@
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.elfenn.tag">Local</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.elfenn.loc">Centre</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.maure.tag">Local</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.maure.loc">Centre</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.elfenn.title">City centre</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.elfenn.desc">Cafés and tagines away from the town crowds.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.maure.title">City centre</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.maure.desc">Cafés and tagines away from the town crowds.</p>
  </div>
  </div>
  </a>
@@ -789,23 +809,23 @@
  <div class="bg-white p-5 rounded-xl border border-sable/10">
  <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
  <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8m-9 5h10M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2zM7 9h.01M17 9h.01"/></svg>
- <span data-i18n="rabat_page.tips.transport.title">Getting around</span>
+ <span data-i18n="rabat_page.tips.1.title">Getting around</span>
  </h3>
- <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="rabat_page.tips.transport.desc">Everything central is walkable. Petit taxis for longer hops; private drivers for Chellah.</p>
+ <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="rabat_page.tips.1.desc">Everything central is walkable. Petit taxis for longer hops; private drivers for Chellah.</p>
  </div>
  <div class="bg-white p-5 rounded-xl border border-sable/10">
  <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
  <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
- <span data-i18n="rabat_page.tips.bargain.title">Heat on the walls</span>
+ <span data-i18n="rabat_page.tips.3.title">Heat on the walls</span>
  </h3>
- <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="rabat_page.tips.bargain.desc">Open rampart walks have little shade. Morning and late afternoon are kinder.</p>
+ <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="rabat_page.tips.3.desc">Open rampart walks have little shade. Morning and late afternoon are kinder.</p>
  </div>
  <div class="bg-white p-5 rounded-xl border border-sable/10">
  <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
  <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
- <span data-i18n="rabat_page.tips.water.title">Calm capital on the Atlantic</span>
+ <span data-i18n="rabat_page.tips.2.title">Calm capital on the Atlantic</span>
  </h3>
- <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="rabat_page.tips.water.desc">Expect calmer souks and fewer ticketed monuments — atmosphere is the main draw.</p>
+ <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="rabat_page.tips.2.desc">Expect calmer souks and fewer ticketed monuments — atmosphere is the main draw.</p>
  </div>
  </div>
  </section>
@@ -822,22 +842,22 @@
  <img alt="Palmeraie de Chellah" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/tioute/tioute-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.tioute.name">Palmeraie de Chellah</h3>
- <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.tioute.desc">Palm oasis and village about 30–45 minutes south of town.</p>
+ <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.sale.title">Palmeraie de Chellah</h3>
+ <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.sale.desc">Palm oasis and village about 30–45 minutes south of town.</p>
  </div></div>
  <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
  <img alt="Bouregreg countryside" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/sale/souss-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.sale.name">Salé</h3>
+ <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.sale.title">Salé</h3>
  <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.sale.desc">Medina and beach just across the Bouregreg — tram or boat. Rabat on short rural drives.</p>
  </div></div>
  <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
  <img alt="Anti-Atlas foothills" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/anti-atlas/anti-atlas-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.anti_atlas.name">Toward the Anti-Atlas</h3>
- <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.anti_atlas.desc">Mountain roads south for travellers continuing deeper into the Bouregreg hinterland.</p>
+ <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.casa.title">Toward the Anti-Atlas</h3>
+ <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.casa.desc">Mountain roads south for travellers continuing deeper into the Bouregreg hinterland.</p>
  </div></div>
  </div>
 </section>

@@ -1,1 +1,53 @@
-{"explore":"Explorar el lugar →","back":"← Volver a la guía de Rabat","more_title":"Más lugares imprescindibles en Rabat","oudayas":{"tag":"Kasbah","title":"Kasbah de los Oudayas","desc":"Callejones azul y blanco sobre el Bouregreg."},"hassan":{"tag":"Monumento","title":"Torre Hassan","desc":"Alminar almohade inacabado y explanada de columnas."},"mausoleum":{"tag":"Mausoleo","title":"Mausoleo de Mohamed V","desc":"Sala de mármol blanco junto a la Torre Hassan."},"chellah":{"tag":"Ruinas","title":"Chellah","desc":"Yacimiento romano y meriní con nidos de cigüeñas."},"medina":{"tag":"Medina","title":"Medina de Rabat","desc":"Zocos compactos entre kasbah y ville nouvelle."},"gardens":{"tag":"Jardín","title":"Jardines andaluces","desc":"Sombra junto a la kasbah de los Oudayas."},"beach":{"tag":"Costa","title":"Playa y corniche","desc":"Paseos atlánticos al borde de la capital."},"marina":{"tag":"Frente fluvial","title":"Marina del Bouregreg","desc":"Paseo fluvial moderno y terrazas."},"museum":{"tag":"Museo","title":"Museo Mohamed VI","desc":"Arte moderno y contemporáneo bajo techo."}}
+{
+  "title": "Más lugares en Rabat",
+  "subtitle": "Sigue explorando la capital",
+  "back": "← Volver a la guía de Rabat",
+  "explore": "Explorar el lugar →",
+  "items": [
+    {
+      "slug": "oudayas",
+      "title": "Kasbah de los Udayas",
+      "tag": "Kasbah"
+    },
+    {
+      "slug": "hassan",
+      "title": "Torre Hassan",
+      "tag": "Monumento"
+    },
+    {
+      "slug": "mausoleum",
+      "title": "Mausoleo de Mohamed V",
+      "tag": "Mausoleo"
+    },
+    {
+      "slug": "chellah",
+      "title": "Chellah",
+      "tag": "Ruinas"
+    },
+    {
+      "slug": "medina",
+      "title": "Medina de Rabat",
+      "tag": "Medina"
+    },
+    {
+      "slug": "gardens",
+      "title": "Jardines Andaluces",
+      "tag": "Jardines"
+    },
+    {
+      "slug": "marina",
+      "title": "Marina del Bouregreg",
+      "tag": "Frente marítimo"
+    },
+    {
+      "slug": "beach",
+      "title": "Playa de Rabat",
+      "tag": "Playa"
+    },
+    {
+      "slug": "museum",
+      "title": "Museos de Rabat",
+      "tag": "Museo"
+    }
+  ]
+}

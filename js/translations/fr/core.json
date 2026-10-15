@@ -18,7 +18,7 @@
     "cat_attractions": "Attractions",
     "cat_museums": "Monuments & Musées",
     "cat_transport": "Transport",
-    "cat_rental": "Transferts & Location de voitures",
+    "cat_rental": "Transferts & Location de Voiture",
     "cat_itineraries": "Itinéraires",
     "cat_guides": "Guides de Voyage",
     "history": "Histoire du Maroc",
@@ -27,7 +27,7 @@
     "directory": "Annuaire & Base de données"
   },
   "footer": {
-    "about_text": "Découvrez. Planifiez. Vivez le Maroc.\nLe premier annuaire touristique et guide de voyage culturel pour les visiteurs explorant le Maroc.",
+    "about_text": "Découvrez. Planifiez. Vivez le Maroc.\nLe premier annuaire touristique et guide culturel pour les voyageurs explorant le Maroc.",
     "destinations_title": "Destinations",
     "link_marrakech": "Guide de Voyage Marrakech",
     "link_all_destinations": "Toutes les destinations",
@@ -35,9 +35,9 @@
     "link_stays": "Riads & Hôtels Authentiques",
     "link_restaurants": "Restaurants Marocains",
     "connect_title": "Suivez-nous",
-    "youtube_text": "Suivez notre chaîne YouTube pour nos guides vidéo :",
+    "youtube_text": "Suivez notre chaîne YouTube pour nos guides de voyage en vidéo :",
     "copyright": "© MoroccoTripMap. Tous droits réservés.",
-    "link_chefchaouen": "Incontournables de Chefchaouen",
+    "link_chefchaouen": "Les Incontournables de Chefchaouen",
     "link_fes": "Guide de la Médina de Fès",
     "link_experiences": "Expériences Désert & Culture",
     "link_transport": "Transport & Chauffeurs Privés",
@@ -48,14 +48,50 @@
     "link_rabat": "Guide de Voyage Rabat",
     "link_casablanca": "Guide de Voyage Casablanca",
     "link_merzouga": "Guide de Voyage Merzouga",
+    "link_zagora": "Guide de Voyage Zagora",
     "link_meknes": "Guide de Voyage Meknès",
     "link_tetouan": "Guide de Voyage Tétouan",
     "link_ifrane": "Guide de Voyage Ifrane",
     "link_el-jadida": "Guide de Voyage El Jadida",
     "link_taroudant": "Guide de Voyage Taroudant",
     "link_dakhla": "Guide de Voyage Dakhla",
-    "link_al-hoceima": "Guide de Voyage Al Hoceima",
-    "link_nador": "Guide de Voyage Nador"
+    "link_nador": "Guide de Voyage Nador",
+    "link_al_hoceima": "Guide de Voyage Al Hoceïma",
+    "link_taghazout": "Guide de Voyage Taghazout",
+    "link_asilah": "Guide de Voyage Asilah",
+    "link_tiznit": "Guide de Voyage Tiznit",
+    "link_oujda": "Guide de Voyage Oujda",
+    "link_safi": "Guide de Voyage Safi",
+    "link_kenitra": "Guide de Voyage Kénitra",
+    "link_midelt": "Guide de Voyage Midelt",
+    "link_tinghir": "Guide de Voyage Tinghir",
+    "link_azrou": "Guide de Voyage Azrou",
+    "link_larache": "Guide de Voyage Larache",
+    "link_imlil": "Guide de Voyage Imlil",
+    "link_mirleft": "Guide de Voyage Mirleft",
+    "link_tafraout": "Guide de Voyage Tafraout",
+    "link_mhamid": "Guide de Voyage M'Hamid El Ghizlane",
+    "link_errachidia": "Guide de Voyage Errachidia",
+    "link_oukaimeden": "Guide de Voyage Oukaïmeden",
+    "link_bin_el_ouidane": "Guide de Voyage Bin El Ouidane",
+    "link_azilal": "Guide de Voyage Azilal",
+    "link_chichaoua": "Guide de Voyage Chichaoua",
+    "link_khouribga": "Guide de Voyage Khouribga",
+    "link_settat": "Guide de Voyage Settat",
+    "link_taourirt": "Guide de Voyage Taourirt",
+    "link_berkane": "Guide de Voyage Berkane",
+    "link_saidia": "Guide de Voyage Saïdia",
+    "link_laayoune": "Guide de Voyage Laâyoune",
+    "link_guelmim": "Guide de Voyage Guelmim",
+    "link_tan_tan": "Guide de Voyage Tan-Tan",
+    "link_tarfaya": "Guide de Voyage Tarfaya",
+    "link_tiflet": "Guide de Voyage Tiflet",
+    "link_khemisset": "Guide de Voyage Khémisset",
+    "link_sidi_ifni": "Guide de Voyage Sidi Ifni",
+    "link_moulay_idriss": "Guide de Voyage Moulay Idriss Zerhoun",
+    "link_khenifra": "Guide de Voyage Khénifra",
+    "link_taza": "Guide de Voyage Taza",
+    "link_sefrou": "Guide de Voyage Sefrou"
   },
   "breadcrumb": {
     "home": "Accueil",
@@ -65,11 +101,21 @@
   "mobile_menu": {
     "language_title": "Langue / Language"
   },
+  "nador_page": {
+    "name": "Guide de Voyage Nador",
+    "hero_subtitle": "Là où le Rif rencontre une vaste lagune méditerranéenne : Marchica, sa corniche animée, ses panoramas montagneux et ses caps sauvages vers le Cap des Trois Fourches.",
+    "seo": {
+      "title": "Guide de Voyage Nador 2026 | Lagune, Côte, Parc National & Gourougou | MoroccoTripMap",
+      "description": "Planifiez votre séjour à Nador : lagune d'exception, côte méditerranéenne, Parc National, Gourougou et paysages uniques au Maroc.",
+      "og_title": "Guide de Voyage Nador | Le Rif rencontre la Méditerranée – Remparts, Souks & Riads | MoroccoTripMap",
+      "og_description": "Découvrez Nador : lagune turquoise préservée, souks authentiques, itinéraires et excursions en un seul guide complet."
+    }
+  },
   "destinations": {
-    "badge": "Destinations Phares",
-    "title": "Explorez les Villes Emblématiques",
-    "view_all": "Voir Toutes les Destinations →",
-    "view_all_btn": "Voir Toutes les Destinations",
+    "badge": "Top Destinations",
+    "title": "Explorez les Villes & Destinations Incontournables",
+    "view_all": "Voir toutes les destinations →",
+    "view_all_btn": "Voir toutes les destinations",
     "marrakech": {
       "tag": "Ville Impériale",
       "name": "Marrakech",
@@ -78,79 +124,267 @@
     "chefchaouen": {
       "tag": "Montagnes du Rif",
       "name": "Chefchaouen",
-      "desc": "L'Emblématique Perle Bleue du Maroc"
+      "desc": "L'emblématique Perle Bleue du Maroc"
     },
     "fes": {
       "tag": "Capitale Culturelle",
       "name": "Fès",
-      "desc": "Médina Antique & Héritage Spirituel"
+      "desc": "Ancienne Médina & Patrimoine Spirituel"
     },
     "casablanca": {
       "tag": "Cœur Économique",
       "name": "Casablanca",
-      "desc": "La plus grande métropole du Maroc"
+      "desc": "La plus grande métropole du Maroc & la Mosquée Hassan II"
     },
     "essaouira": {
       "tag": "Côte Atlantique",
       "name": "Essaouira",
-      "desc": "Cité des Alizés, Remparts & Fruits de mer"
+      "desc": "Cité des Alizés, Remparts & Poissons Frais"
     },
     "agadir": {
       "tag": "Soleil & Plage",
       "name": "Agadir",
-      "desc": "Plage atlantique, kasbah et côte de surf"
+      "desc": "Plage Atlantique, Kasbah & Côte du Surf"
     },
     "taroudant": {
-      "tag": "Petite Marrakech",
+      "tag": "La Petite Marrakech",
       "name": "Taroudant",
-      "desc": "Remparts ocre et souks authentiques dans le Souss"
+      "desc": "Remparts d'ocre & Souks authentiques de la Vallée du Souss"
     },
     "tangier": {
       "tag": "Détroit de Gibraltar",
       "name": "Tanger",
-      "desc": "La Porte entre l'Europe et l'Afrique"
+      "desc": "La Passerelle entre l'Europe et l'Afrique"
     },
     "ouarzazate": {
-      "tag": "Porte du désert",
+      "tag": "Porte du Désert",
       "name": "Ouarzazate",
-      "desc": "Kasbahs, studios de cinéma & Aït Benhaddou"
+      "desc": "Kasbahs, Studios de Cinéma & Aït Benhaddou"
     },
     "rabat": {
-      "tag": "Capitale atlantique",
+      "tag": "Capitale Atlantique",
       "name": "Rabat",
       "desc": "Kasbah, Tour Hassan & Chellah"
     },
     "merzouga": {
       "tag": "Désert du Sahara",
       "name": "Merzouga",
-      "desc": "Dunes d'Erg Chebbi & Bivouacs"
+      "desc": "Dunes de l'Erg Chebbi & Bivouacs"
+    },
+    "zagora": {
+      "tag": "Vallée du Draâ",
+      "name": "Zagora",
+      "desc": "Panneau Tombouctou 52 jours, Oasis & Dunes"
     },
     "meknes": {
-      "name": "Meknès"
+      "tag": "Capitale Ismaïlienne",
+      "name": "Meknès",
+      "desc": "Bab Mansour, Monuments Impériaux & Volubilis tout proche"
     },
     "tetouan": {
-      "name": "Tétouan"
+      "tag": "La Colombe Blanche",
+      "name": "Tétouan",
+      "desc": "Héritage Hispano-Mauresque & Médina classée à l'UNESCO"
     },
     "ifrane": {
-      "name": "Ifrane"
+      "tag": "La Petite Suisse",
+      "name": "Ifrane",
+      "desc": "Architecture Alpine, Forêts de Cèdres & Station de Ski"
     },
     "el-jadida": {
-      "name": "El Jadida"
+      "tag": "Patrimoine Portugais",
+      "name": "El Jadida",
+      "desc": "Cité Portugaise & Citerne Manueline Historique"
     },
     "dakhla": {
-      "tag": "Sahara et Atlantique",
+      "tag": "Le Sahara rencontre l'Atlantique",
       "name": "Dakhla",
-      "desc": "Lagune, kitesurf et Dune Blanche dans le sud"
+      "desc": "Lagune, Kitesurf & Dune Blanche dans l'Extrême Sud"
     },
     "al_hoceima": {
-      "tag": "Côte Méditerranéenne",
-      "name": "Al Hoceima",
-      "desc": "Criques, Parc National & Baie Turquoise"
+      "tag": "Perle de la Méditerranée",
+      "name": "Al Hoceïma",
+      "desc": "Criques Sauvages, Nature Montagneuse & Parc National"
     },
     "nador": {
-      "tag": "Lagune de Marchica & Côte",
+      "tag": "Lagune & Littoral",
       "name": "Nador",
-      "desc": "Lagune de Marchica, corniche, mont Gourougou & cap des Trois Fourches"
+      "desc": "Lagune de Marchica, Mont Gourougou & Cap des Trois Fourches"
+    },
+    "taghazout": {
+      "tag": "Capitale du Surf",
+      "name": "Taghazout",
+      "desc": "Village de Pêcheurs Authentique & Spots de Surf de Renommée"
+    },
+    "asilah": {
+      "tag": "Arts & Océan",
+      "name": "Asilah",
+      "desc": "Fresques Murales, Remparts Maritimes & Douceur de Vivre"
+    },
+    "tiznit": {
+      "tag": "Capitale de l'Argent",
+      "name": "Tiznit",
+      "desc": "Bijoux en Argent Traditionnels & Remparts de Pisé Rouge"
+    },
+    "oujda": {
+      "tag": "Capitale de l'Est",
+      "name": "Oujda",
+      "desc": "Traditions de l'Oriental, Musique Raï & Souks Animés"
+    },
+    "safi": {
+      "tag": "Capitale de la Céramique",
+      "name": "Safi",
+      "desc": "Poterie Traditionnelle, Château de la Mer & Produits de la Mer"
+    },
+    "kenitra": {
+      "tag": "Porte du Gharb",
+      "name": "Kénitra",
+      "desc": "Plage de Mehdia, Kasbah Historique & Réserves Naturelles"
+    },
+    "tinghir": {
+      "tag": "Oasis des Gorges",
+      "name": "Tinghir",
+      "desc": "Spectaculaires Gorges du Todra & Palmeraies Verdoyantes"
+    },
+    "azrou": {
+      "tag": "Cœur du Moyen Atlas",
+      "name": "Azrou",
+      "desc": "Forêts de Cèdres, Macaques de Barbarie & Randonnées"
+    },
+    "larache": {
+      "tag": "Patrimoine du Loukkos",
+      "name": "Larache",
+      "desc": "Site Antique de Lixus & Littoral Atlantique"
+    },
+    "midelt": {
+      "tag": "Capitale de la Pomme",
+      "name": "Midelt",
+      "desc": "Jonction entre le Haut et le Moyen Atlas"
+    },
+    "imlil": {
+      "tag": "Randonnée en Montagne",
+      "name": "Imlil",
+      "desc": "Base de départ pour le Mont Toubkal & Villages Berbères"
+    },
+    "mirleft": {
+      "tag": "Falaises Sauvages",
+      "name": "Mirleft",
+      "desc": "Plages Isolées, Falaises Océaniques & Spots de Surf"
+    },
+    "tafraout": {
+      "tag": "Joyau de l'Anti-Atlas",
+      "name": "Tafraout",
+      "desc": "Rochers Peints, Amandiers en Fleur & Sommets de Granit"
+    },
+    "mhamid": {
+      "tag": "Porte de l'Erg Chigaga",
+      "name": "M'Hamid El Ghizlane",
+      "desc": "Porte d'accès au Grand Désert & Expéditions Sahariennes"
+    },
+    "errachidia": {
+      "tag": "Porte du Tafilalet",
+      "name": "Errachidia",
+      "desc": "Palmeraies de la Vallée du Ziz & Lac Hassan Addakhil"
+    },
+    "oukaimeden": {
+      "tag": "Station de Ski",
+      "name": "Oukaïmeden",
+      "desc": "Plus haute station de ski d'Afrique dans le Haut Atlas"
+    },
+    "bin_el_ouidane": {
+      "tag": "Lac Turquoise de l'Atlas",
+      "name": "Bin El Ouidane",
+      "desc": "Grand Lac Turquoise, Sports Nautiques & Vues sur les Montagnes"
+    },
+    "azilal": {
+      "tag": "Région des Cascades d'Ouzoud",
+      "name": "Azilal",
+      "desc": "Cascades d'Ouzoud, Géoparc du M'Goun & Vallées de l'Atlas"
+    },
+    "saidia": {
+      "tag": "La Perle Bleue",
+      "name": "Saïdia",
+      "desc": "Sable Fin & Station Balnéaire Méditerranéenne de l'Est"
+    },
+    "laayoune": {
+      "tag": "Cœur du Sahara",
+      "name": "Laâyoune",
+      "desc": "Place du Mechouar, Port Côtier & Dunes de Sable"
+    },
+    "guelmim": {
+      "tag": "Porte du Désert",
+      "name": "Guelmim",
+      "desc": "Marché aux Chameaux Historique & Immenses Paysages"
+    },
+    "sidi_ifni": {
+      "tag": "Héritage Colonial Espagnol",
+      "name": "Sidi Ifni",
+      "desc": "Architecture Art Déco, Arches de Legzira & Surf"
+    },
+    "moulay_idriss": {
+      "tag": "Cité Sainte",
+      "name": "Moulay Idriss Zerhoun",
+      "desc": "Ville Sainte à proximité des Ruines Romaines de Volubilis"
+    },
+    "khenifra": {
+      "tag": "Capitale des Zayanes",
+      "name": "Khénifra",
+      "desc": "Lacs Aguelmouss, Cèdres & Sources de l'Oum Er-Rbia"
+    },
+    "taza": {
+      "tag": "Passe de Taza",
+      "name": "Taza",
+      "desc": "Gouffre de Friouato & Parc National de Tazekka"
+    },
+    "sefrou": {
+      "tag": "Capitale des Cerises",
+      "name": "Sefrou",
+      "desc": "Fête des Cerises, Cascades & Ancienne Médina"
+    },
+    "tan_tan": {
+      "tag": "Moussem de Tan-Tan",
+      "name": "Tan-Tan",
+      "desc": "Festival Culturel Classé par l'UNESCO & Littoral d'El Ouatia"
+    },
+    "tarfaya": {
+      "tag": "Histoire du Cap Juby",
+      "name": "Tarfaya",
+      "desc": "Musée Antoine de Saint-Exupéry & Côtes Atlantiques"
+    },
+    "berkane": {
+      "tag": "Capitale des Agrumes",
+      "name": "Berkane",
+      "desc": "Monts des Beni Snassen & Grotte des Chameaux"
+    },
+    "taourirt": {
+      "tag": "Ville Carrefour",
+      "name": "Taourirt",
+      "desc": "Kasbah Historique de Taourirt & Bassin de la Moulouya"
+    },
+    "settat": {
+      "tag": "Cœur de la Chaouia",
+      "name": "Settat",
+      "desc": "Région Agricole, Arts Équestres & Campagnes Verdoyantes"
+    },
+    "khouribga": {
+      "tag": "Capitale des Phosphates",
+      "name": "Khouribga",
+      "desc": "Festival du Cinéma Africain & Patrimoine Industriel"
+    },
+    "chichaoua": {
+      "tag": "Etape de l'Atlas",
+      "name": "Chichaoua",
+      "desc": "Carrefour Majeur Reliant Marrakech, Essaouira & Agadir"
+    },
+    "tiflet": {
+      "tag": "Pays Zemmour",
+      "name": "Tiflet",
+      "desc": "Centre Agricole & Forêts de Chênes Avoisinantes"
+    },
+    "khemisset": {
+      "tag": "Capitale Zemmour",
+      "name": "Khémisset",
+      "desc": "Lac Dayat Roumi, Élevage Équin & Tapis Traditionnels"
     }
   },
   "common": {
@@ -163,32 +397,32 @@
     "good_to_know": "Bon à savoir",
     "faq": "FAQ",
     "practical_tips": "Conseils pratiques",
-    "tours_experiences": "Visites & expériences",
-    "from_the_blog": "Du blog",
-    "related_articles": "Articles associés",
+    "tours_experiences": "Circuits & Expériences",
+    "from_the_blog": "Sur le blog",
+    "related_articles": "Articles connexes",
     "all_articles": "Tous les articles →",
-    "read_article": "Lire l’article →",
-    "keep_exploring": "Continuer à explorer",
-    "more_must_visit": "D’autres lieux incontournables",
+    "read_article": "Lire l'article →",
+    "keep_exploring": "Poursuivre l'exploration",
+    "more_must_visit": "Autres lieux incontournables",
     "back_to_guide": "← Retour au guide",
     "best_time": "Meilleure période",
-    "time_needed": "Durée",
+    "time_needed": "Durée conseillée",
     "entry": "Entrée",
     "where": "Où",
     "free": "Gratuit",
     "morning": "Matin",
     "afternoon": "Après-midi",
     "evening": "Soir",
-    "plan": "Planifier",
+    "plan": "Plan",
     "detail": "Détail",
     "stay": "Hébergement",
-    "food": "Cuisine",
+    "food": "Restauration",
     "gastronomy": "Gastronomie",
     "nature": "Nature",
     "culture": "Culture",
     "heritage": "Patrimoine",
-    "walk": "Balade",
-    "view": "Vue",
+    "walk": "Promenade",
+    "view": "Panorama",
     "town": "Ville",
     "park": "Parc",
     "lake": "Lac",
@@ -201,19 +435,19 @@
     "half_day": "Demi-journée",
     "full_day": "Journée complète",
     "winter": "Hiver",
-    "combo": "Combo",
+    "combo": "Combiné",
     "type": "Type",
     "hotel": "Hôtel",
     "riad": "Riad",
-    "guesthouse": "Maison d’hôtes",
-    "stay_type": "Type d’hébergement",
-    "area": "Zone",
+    "guesthouse": "Maison d'hôtes",
+    "stay_type": "Type d'hébergement",
+    "area": "Quartier / Zone",
     "all": "Tous",
     "all_areas": "Toutes les zones",
     "district": "Quartier",
     "near_station": "Près de la gare",
-    "check_availability": "Voir les disponibilités →",
-    "check_gyg": "Voir les disponibilités sur GetYourGuide →",
+    "check_availability": "Vérifier la disponibilité →",
+    "check_gyg": "Vérifier sur GetYourGuide →",
     "no_stays_match": "Aucun hébergement ne correspond à ces filtres.",
     "ideal_stay": "Séjour idéal",
     "top_vibe": "Ambiance",
@@ -222,14 +456,14 @@
     "day_2": "Jour 2",
     "day_3": "Jour 3",
     "suggested_3_day": "Itinéraire suggéré sur 3 jours",
-    "hour_by_hour": "Idées heure par heure",
-    "affiliate_disclosure": "Certains liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous.",
-    "how_long": "Combien de temps faut-il ?",
-    "entry_fee": "Y a-t-il un droit d’entrée ?",
-    "best_time_q": "Meilleur moment ?",
+    "hour_by_hour": "Programme heure par heure",
+    "affiliate_disclosure": "Certains liens sont affiliés. Réserver via ces liens peut nous rapporter une petite commission sans surcoût pour vous.",
+    "how_long": "Combien de temps prévoir ?",
+    "entry_fee": "Y a-t-il des frais d'entrée ?",
+    "best_time_q": "Quelle est la meilleure période ?",
     "combine_with": "À combiner avec quoi ?",
-    "need_guide": "Ai-je besoin d’un guide ?",
-    "book_tour": "Réserver une visite",
+    "need_guide": "Faut-il un guide local ?",
+    "book_tour": "Réserver une excursion",
     "home": "Accueil",
     "destinations": "Destinations"
   }

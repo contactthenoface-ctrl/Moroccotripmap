@@ -1,71 +1,158 @@
 {
   "seo": {
-    "title": "Amezrou Zagora Guide 2026 | Earthen Lanes, Jewish Quarter & Oasis Heritage | MoroccoTripMap",
-    "description": "Plan Amezrou in Zagora: historic earthen lanes, old Jewish quarter heritage, traditional architecture, oasis walks and local artisan crafts."
+    "title": "Amezrou Zagora | MoroccoTripMap",
+    "description": "Visiting Amezrou in Zagora? Best time to go, traditional earthen lanes, Jewish quarter heritage, safety tips and how long to stay.",
+    "og_title": "Amezrou Zagora | Earthen Lanes & Oasis Views | MoroccoTripMap",
+    "og_description": "Visit Amezrou in Zagora: earthen lane walks, oasis heritage, best time and how to enjoy the village beside the town."
   },
-  "name": "Amezrou",
-  "hero_subtitle": "Earthen lanes and the old Jewish quarter — a walkable heritage corner of the Zagora oasis.",
-  "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Morning or late afternoon",
-    "duration_label": "Suggested duration",
-    "duration_val": "1 – 2 hours",
-    "entry_label": "Entry",
-    "entry_val": "Free to walk; tips for guides",
-    "area_label": "Location",
-    "area_val": "Edge of Zagora oasis"
-  },
-  "overview": {
-    "title": "Lanes of earth and memory",
-    "p1": "Amezrou is the historic oasis village side of Zagora: narrow lanes, earthen walls and traces of the old Jewish quarter that once formed an integral part of the town’s social and craft fabric.",
-    "p2": "It is best discovered on foot. A short walk gives insight into traditional Draa Valley architecture and daily life away from the main road strip.",
-    "p3": "Stay respectful in residential alleys and ask for permission before photographing locals or private doorways."
-  },
-  "gallery": {
-    "badge": "Photo gallery",
-    "title": "Amezrou in pictures",
-    "subtitle": "Glimpses of architecture and village life.",
-    "s1": {
-      "caption": "Amezrou village — earthen architecture"
+  "amezrou_page": {
+    "name": "Amezrou",
+    "hero_subtitle": "Earthen lanes and the old Jewish quarter — a walkable heritage corner of the Zagora oasis.",
+    "info": {
+      "best_time_label": "Best time",
+      "best_time_val": "Morning or late afternoon",
+      "duration_label": "Suggested duration",
+      "duration_val": "1 – 2 hours",
+      "entry_label": "Entry",
+      "entry_val": "Free to walk; tips for guides",
+      "area_label": "Location",
+      "area_val": "Edge of Zagora oasis"
     },
-    "s2": {
-      "caption": "Historic village alleys"
+    "overview": {
+      "title": "Lanes of earth and memory",
+      "p1": "Amezrou (Amazrou) is the oasis village side of Zagora: narrow lanes, earthen walls and traces of the old Jewish quarter that once formed part of the town’s social fabric.",
+      "p2": "It is best on foot. A short walk gives more sense of daily Draa life than the main road strip. Local guides sometimes offer context for a tip.",
+      "p3": "Stay respectful in residential lanes and ask before photographing people or private doorways."
     },
-    "s3": {
-      "caption": "Oasis border and palm views"
+    "gallery": {
+      "badge": "Photo gallery",
+      "title": "Amezrou in pictures",
+      "subtitle": "Views from Amezrou in Zagora.",
+      "s1": { "caption": "Amezrou village — view 1" },
+      "s2": { "caption": "Amezrou village — view 2" },
+      "s3": { "caption": "Amezrou village — view 3" },
+      "s4": { "caption": "Amezrou village — view 4" },
+      "s5": { "caption": "Amezrou village — view 5" }
     },
-    "s4": {
-      "caption": "Late light on the mud-brick walls"
+    "moods": {
+      "badge": "Timing",
+      "title": "Amezrou through the day",
+      "subtitle": "When to go.",
+      "1": {
+        "tag": "Morning",
+        "title": "Quiet start",
+        "desc": "Softer light and fewer visitors.",
+        "duration": "Morning"
+      },
+      "2": {
+        "tag": "Midday",
+        "title": "Bright light",
+        "desc": "Strong sun — protect skin and gear.",
+        "duration": "Midday"
+      },
+      "3": {
+        "tag": "Late afternoon",
+        "title": "Best colour",
+        "desc": "Warm light on mud walls and palms.",
+        "duration": "Late afternoon"
+      }
     },
-    "s5": {
-      "caption": "Traces of old artisan quarters"
-    }
-  },
-  "tips": {
-    "title": "Practical tips for Amezrou",
-    "1": {
-      "title": "Access",
-      "desc": "Easily reached on foot or by a short bicycle ride from central Zagora."
+    "food": {
+      "title": "Food near Amezrou",
+      "p1": "Plan meals in central Zagora or pack water and snacks for your walk.",
+      "li1": "Bottled water on every outing.",
+      "li2": "Traditional tagines and plates in town.",
+      "li3": "Café stops in the afternoon.",
+      "li4": "Confirm hours before you go.",
+      "li5": "Cash is useful outside larger hotels.",
+      "p2": "Carry dirhams for taxis and small stops."
     },
-    "2": {
-      "title": "Sun Protection",
-      "desc": "Bring water, a hat, and sunscreen, especially when walking in warmer months."
+    "tips": {
+      "title": "Practical tips for Amezrou",
+      "1": {
+        "title": "Access",
+        "desc": "Easily reached on foot or by short taxi ride from central Zagora."
+      },
+      "2": {
+        "title": "Sun & water",
+        "desc": "High SPF, water and hat for sunny desert-edge walks."
+      },
+      "3": {
+        "title": "Respect",
+        "desc": "Stay on paths; ask before photographing people or homes."
+      }
     },
-    "3": {
-      "title": "Respect",
-      "desc": "Respect local residents' privacy in narrow alleys and residential quarters."
-    }
-  },
-  "faq": {
-    "badge": "Good to know",
-    "title": "Amezrou FAQ",
-    "q1": {
-      "question": "How far from the centre?",
-      "answer": "It's located right on the edge of town, just a short walk or taxi ride from central Zagora."
+    "gyg": {
+      "badge": "Tours & experiences",
+      "title": "Tours linked to Amezrou",
+      "subtitle": "Options if you prefer a local operator.",
+      "t1": {
+        "tag": "Zagora",
+        "title": "Amezrou village walk",
+        "desc": "Guided heritage tour of lanes and artisan corners."
+      },
+      "t2": {
+        "tag": "Oasis",
+        "title": "Draa Valley palm grove day",
+        "desc": "Explore the oasis and surrounding earthen ksars."
+      },
+      "t3": {
+        "tag": "Desert",
+        "title": "Tinfou dunes & Tamegroute",
+        "desc": "Combine Amezrou with pottery workshops and library."
+      },
+      "check": "Check availability on GetYourGuide →",
+      "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
     },
-    "q2": {
-      "question": "Is a guide needed?",
-      "answer": "Not strictly required, but a local guide adds great value regarding the history of the old Jewish quarter and artisan traditions."
+    "nearby": {
+      "badge": "Keep exploring",
+      "title": "More places in Zagora",
+      "back": "← Back to the Zagora guide"
+    },
+    "blog": {
+      "badge": "From the blog",
+      "title": "Related articles",
+      "all": "All articles →",
+      "read": "Read article →",
+      "a1": {
+        "tag": "Planning",
+        "title": "First time in Zagora",
+        "desc": "Zagora, palms and how long to stay."
+      },
+      "a2": {
+        "tag": "Guide",
+        "title": "Amezrou & the earthen lanes",
+        "desc": "How to enjoy the historic village."
+      },
+      "a3": {
+        "tag": "Nature",
+        "title": "Draa Valley Oasis Days",
+        "desc": "Planning a palm grove exploration day."
+      }
+    },
+    "faq": {
+      "badge": "Good to know",
+      "title": "Amezrou FAQ",
+      "q1": {
+        "question": "How far from the centre?",
+        "answer": "On the edge of the oasis — a short hop from central Zagora."
+      },
+      "q2": {
+        "question": "Is a guide needed?",
+        "answer": "Not required; helpful for history of the old Jewish quarter and local crafts."
+      },
+      "q3": {
+        "question": "How long?",
+        "answer": "One to two hours at a relaxed pace."
+      },
+      "q4": {
+        "question": "Photography?",
+        "answer": "Be discreet and ask permission in residential areas."
+      },
+      "q5": {
+        "question": "Combine with the souk?",
+        "answer": "Yes on market days for a fuller local morning."
+      }
     }
   }
 }

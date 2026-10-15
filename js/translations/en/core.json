@@ -48,11 +48,50 @@
     "link_rabat": "Rabat Travel Guide",
     "link_casablanca": "Casablanca Travel Guide",
     "link_merzouga": "Merzouga Travel Guide",
+    "link_zagora": "Zagora Travel Guide",
     "link_meknes": "Meknes Travel Guide",
     "link_tetouan": "Tetouan Travel Guide",
     "link_ifrane": "Ifrane Travel Guide",
     "link_el-jadida": "El Jadida Travel Guide",
-    "link_nador": "Nador Travel Guide"
+    "link_taroudant": "Taroudant Travel Guide",
+    "link_dakhla": "Dakhla Travel Guide",
+    "link_nador": "Nador Travel Guide",
+    "link_al_hoceima": "Al Hoceima Travel Guide",
+    "link_taghazout": "Taghazout Travel Guide",
+    "link_asilah": "Asilah Travel Guide",
+    "link_tiznit": "Tiznit Travel Guide",
+    "link_oujda": "Oujda Travel Guide",
+    "link_safi": "Safi Travel Guide",
+    "link_kenitra": "Kenitra Travel Guide",
+    "link_midelt": "Midelt Travel Guide",
+    "link_tinghir": "Tinghir Travel Guide",
+    "link_azrou": "Azrou Travel Guide",
+    "link_larache": "Larache Travel Guide",
+    "link_imlil": "Imlil Travel Guide",
+    "link_mirleft": "Mirleft Travel Guide",
+    "link_tafraout": "Tafraoute Travel Guide",
+    "link_mhamid": "M'Hamid El Ghizlane Travel Guide",
+    "link_errachidia": "Errachidia Travel Guide",
+    "link_oukaimeden": "Oukaïmeden Travel Guide",
+    "link_bin_el_ouidane": "Bin El Ouidane Travel Guide",
+    "link_azilal": "Azilal Travel Guide",
+    "link_chichaoua": "Chichaoua Travel Guide",
+    "link_khouribga": "Khouribga Travel Guide",
+    "link_settat": "Settat Travel Guide",
+    "link_taourirt": "Taourirt Travel Guide",
+    "link_berkane": "Berkane Travel Guide",
+    "link_saidia": "Saïdia Travel Guide",
+    "link_laayoune": "Laâyoune Travel Guide",
+    "link_guelmim": "Guelmim Travel Guide",
+    "link_tan_tan": "Tan-Tan Travel Guide",
+    "link_tarfaya": "Tarfaya Travel Guide",
+    "link_tiflet": "Tiflet Travel Guide",
+    "link_khemisset": "Khemisset Travel Guide",
+    "link_sidi_ifni": "Sidi Ifni Travel Guide",
+    "link_moulay_idriss": "Moulay Idriss Zerhoun Travel Guide",
+    "link_khenifra": "Khenifra Travel Guide",
+    "link_taza": "Taza Travel Guide",
+    "link_sefrou": "Sefrou Travel Guide"
   },
   "breadcrumb": {
     "home": "Home",
@@ -67,14 +106,14 @@
     "hero_subtitle": "Where the Rif meets a vast Mediterranean lagoon: Marchica, a lively corniche, mountain viewpoints and wild headlands toward Cap des Trois Fourches.",
     "seo": {
       "title": "Nador Travel Guide 2026 | Bay, Coast, National Park & Gourougou | MoroccoTripMap",
-      "description": "Plan Nador: cliff-backed bay, coast, National Park, Gourougou, Bades Bay and Rif-meets-Mediterranean landscapes in southern Morocco.",
+      "description": "Plan Nador: cliff-backed bay, coast, National Park, Gourougou, Bades Bay and Rif-meets-Mediterranean landscapes in Morocco.",
       "og_title": "Nador Travel Guide | Rif meets the Mediterranean – Ramparts, Souks & Riads | MoroccoTripMap",
       "og_description": "Discover Nador, nicknamed the Rif meets the Mediterranean: intact turquoise bay, authentic souks, bay camps, itinerary and day trips in one guide."
     }
   },
   "destinations": {
     "badge": "Top Destinations",
-    "title": "Explore Iconic Cities",
+    "title": "Explore Iconic Cities & Destinations",
     "view_all": "View All Destinations →",
     "view_all_btn": "View All Destinations",
     "marrakech": {
@@ -95,7 +134,7 @@
     "casablanca": {
       "tag": "Economic Heart",
       "name": "Casablanca",
-      "desc": "The largest metropolis in Morocco"
+      "desc": "The largest metropolis in Morocco & Hassan II Mosque"
     },
     "essaouira": {
       "tag": "Atlantic Coast",
@@ -106,6 +145,11 @@
       "tag": "Sun & Beach",
       "name": "Agadir",
       "desc": "Atlantic Beach, Kasbah & Surf Coast"
+    },
+    "taroudant": {
+      "tag": "Little Marrakech",
+      "name": "Taroudant",
+      "desc": "Ochre Ramparts & Authentic Souks in the Souss Valley"
     },
     "tangier": {
       "tag": "Strait of Gibraltar",
@@ -127,32 +171,220 @@
       "name": "Merzouga",
       "desc": "Erg Chebbi Dunes & Desert Camps"
     },
+    "zagora": {
+      "tag": "Draâ Valley",
+      "name": "Zagora",
+      "desc": "52 Days to Timbuktu Sign, Oases & Sand Dunes"
+    },
     "meknes": {
-      "name": "Meknes"
+      "tag": "Ismaili Capital",
+      "name": "Meknes",
+      "desc": "Bab Mansour, Grand Imperial Monuments & Nearby Volubilis"
     },
     "tetouan": {
-      "name": "Tetouan"
+      "tag": "The White Dove",
+      "name": "Tetouan",
+      "desc": "Hispano-Moorish Heritage & UNESCO-listed Medina"
     },
     "ifrane": {
-      "name": "Ifrane"
+      "tag": "Little Switzerland",
+      "name": "Ifrane",
+      "desc": "Alpine Architecture, Cedar Forests & Skiing"
     },
     "el-jadida": {
-      "name": "El Jadida"
+      "tag": "Portuguese Heritage",
+      "name": "El Jadida",
+      "desc": "Portuguese Citadel & Historic Underground Cistern"
     },
     "dakhla": {
       "tag": "Sahara meets Atlantic",
       "name": "Dakhla",
-      "desc": "Lagoon, kitesurfing and White Dune in the far south"
+      "desc": "Lagoon, Kitesurfing & White Dune in the Far South"
     },
     "al_hoceima": {
-      "tag": "Mediterranean Coast",
+      "tag": "Mediterranean Pearl",
       "name": "Al Hoceima",
-      "desc": "Coves, National Park & Turquoise Bay"
+      "desc": "Pristine Coves, Mountain Nature & National Park"
     },
     "nador": {
       "tag": "Lagoon & Coast",
       "name": "Nador",
-      "desc": "Marchica Lagoon, Mount Gourougou & Mediterranean Coast"
+      "desc": "Marchica Lagoon, Mount Gourougou & Cap des Trois Fourches"
+    },
+    "taghazout": {
+      "tag": "Surf Capital",
+      "name": "Taghazout",
+      "desc": "Laid-back Fishing Village & World-Class Surf Spots"
+    },
+    "asilah": {
+      "tag": "Arts & Ocean",
+      "name": "Asilah",
+      "desc": "Vibrant Murals, Ocean Ramparts & Tranquil Vibe"
+    },
+    "tiznit": {
+      "tag": "Silver Capital",
+      "name": "Tiznit",
+      "desc": "Traditional Silver Jewelry & Historic Red Walls"
+    },
+    "oujda": {
+      "tag": "Capital of Eastern Morocco",
+      "name": "Oujda",
+      "desc": "Eastern Moroccan Traditions, Raï Music & Lively Souks"
+    },
+    "safi": {
+      "tag": "Pottery Capital",
+      "name": "Safi",
+      "desc": "Famous Ceramic Art, Sea Castle & Fresh Seafood"
+    },
+    "kenitra": {
+      "tag": "Gharb Gateway",
+      "name": "Kenitra",
+      "desc": "Mehdya Beach, Mehdia Kasbah & Nature Reserves"
+    },
+    "tinghir": {
+      "tag": "Oasis of Gorges",
+      "name": "Tinghir",
+      "desc": "Dramatic Todra Gorge Canyon & Lush Palm Groves"
+    },
+    "azrou": {
+      "tag": "Heart of the Middle Atlas",
+      "name": "Azrou",
+      "desc": "Cedar Forests, Barbary Macaques & Mountain Trails"
+    },
+    "larache": {
+      "tag": "Loukkos Heritage",
+      "name": "Larache",
+      "desc": "Ancient Ruins of Lixus & Atlantic Coastlines"
+    },
+    "midelt": {
+      "tag": "Apple Capital",
+      "name": "Midelt",
+      "desc": "Junction Between the High Atlas & Middle Atlas Ranges"
+    },
+    "imlil": {
+      "tag": "Mountain Trekking",
+      "name": "Imlil",
+      "desc": "Base Camp for Mount Toubkal & Berber Village Hiking"
+    },
+    "mirleft": {
+      "tag": "Wild Ocean Cliffs",
+      "name": "Mirleft",
+      "desc": "Secluded Beaches, Ocean Cliffs & Surf Spots"
+    },
+    "tafraout": {
+      "tag": "Anti-Atlas Gem",
+      "name": "Tafraoute",
+      "desc": "Painted Rocks, Almond Trees & Granite Peaks"
+    },
+    "mhamid": {
+      "tag": "Erg Chigaga Gateway",
+      "name": "M'Hamid El Ghizlane",
+      "desc": "Gateway to Deep Sahara Dunes & Desert Expeditions"
+    },
+    "errachidia": {
+      "tag": "Tafilalet Gateway",
+      "name": "Errachidia",
+      "desc": "Ziz Valley Palm Groves & Hassan Addakhil Lake"
+    },
+    "oukaimeden": {
+      "tag": "Alpine Ski Resort",
+      "name": "Oukaïmeden",
+      "desc": "Africa's Highest Ski Resort in the High Atlas Mountains"
+    },
+    "bin_el_ouidane": {
+      "tag": "Atlas Turquoise Lake",
+      "name": "Bin El Ouidane",
+      "desc": "Turquoise Reservoir Lake, Water Sports & Mountain Views"
+    },
+    "azilal": {
+      "tag": "Ouzoud Waterfalls Region",
+      "name": "Azilal",
+      "desc": "Ouzoud Falls, M'Goun Geopark & Atlas Valleys"
+    },
+    "saidia": {
+      "tag": "The Blue Pearl",
+      "name": "Saïdia",
+      "desc": "Golden Sand Beaches & Mediterranean Beach Resorts"
+    },
+    "laayoune": {
+      "tag": "Sahara Hub",
+      "name": "Laâyoune",
+      "desc": "Mechouar Square, Coastal Port & Sand Dunes"
+    },
+    "guelmim": {
+      "tag": "Gateway to the Desert",
+      "name": "Guelmim",
+      "desc": "Historic Camel Market & Vast Desert-Coast Landscapes"
+    },
+    "sidi_ifni": {
+      "tag": "Spanish Colonial Heritage",
+      "name": "Sidi Ifni",
+      "desc": "Art Deco Architecture, Legzira Arches & Surf Beaches"
+    },
+    "moulay_idriss": {
+      "tag": "Holy Town",
+      "name": "Moulay Idriss Zerhoun",
+      "desc": "Sacred Hillside Town near the Volubilis Roman Ruins"
+    },
+    "khenifra": {
+      "tag": "Zayane Capital",
+      "name": "Khenifra",
+      "desc": "Aguelmouss Lakes, Cedar Woods & Oum Er-Rbia Springs"
+    },
+    "taza": {
+      "tag": "Taza Pass",
+      "name": "Taza",
+      "desc": "Friouato Caves & Tazekka National Park"
+    },
+    "sefrou": {
+      "tag": "Cherry Capital",
+      "name": "Sefrou",
+      "desc": "Annual Cherry Festival, Waterfalls & Ancient Medina"
+    },
+    "tan_tan": {
+      "tag": "Moussem of Tan-Tan",
+      "name": "Tan-Tan",
+      "desc": "UNESCO Cultural Festival & El Ouatia Coastline"
+    },
+    "tarfaya": {
+      "tag": "Cap Juby History",
+      "name": "Tarfaya",
+      "desc": "Saint-Exupéry Airmail Museum & Atlantic Shores"
+    },
+    "berkane": {
+      "tag": "Citrus Capital",
+      "name": "Berkane",
+      "desc": "Beni Snassen Mountains & Grotte des Chameaux"
+    },
+    "taourirt": {
+      "tag": "Crossroads City",
+      "name": "Taourirt",
+      "desc": "Historic Taourirt Kasbah & Moulouya River Basin"
+    },
+    "settat": {
+      "tag": "Chaouia Heart",
+      "name": "Settat",
+      "desc": "Agricultural Region, Equestrian Arts & Countryside Views"
+    },
+    "khouribga": {
+      "tag": "Phosphate Capital",
+      "name": "Khouribga",
+      "desc": "African Cinema Festival & Industrial Heritage"
+    },
+    "chichaoua": {
+      "tag": "Atlas Highway Stop",
+      "name": "Chichaoua",
+      "desc": "Key Junction Connecting Marrakech, Essaouira & Agadir"
+    },
+    "tiflet": {
+      "tag": "Zemmour Region",
+      "name": "Tiflet",
+      "desc": "Agricultural Hub & Nearby Oak Forests"
+    },
+    "khemisset": {
+      "tag": "Zemmour Capital",
+      "name": "Khemisset",
+      "desc": "Dayat Roumi Lake, Horse Breeding & Handwoven Rugs"
     }
   },
   "common": {

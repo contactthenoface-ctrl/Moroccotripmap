@@ -1,158 +1,156 @@
 {
   "seo": {
     "title": "Amezrou Zagora | MoroccoTripMap",
-    "description": "Visiter Amezrou à Zagora ? Meilleure période, ruelles traditionnelles en pisé, quartier juif, conseils de sécurité et durée de visite.",
-    "og_title": "Amezrou Zagora | Ruelles en Pisé & Vues sur l'Oasis | MoroccoTripMap",
-    "og_description": "Visitez Amezrou à Zagora : balades dans les ruelles en pisé, patrimoine de l'oasis et conseils pour profiter du village."
+    "description": "Visiter Amezrou à Zagora ? Meilleure période, ruelles en pisé, héritage du vieux quartier juif, conseils pratiques et durée de visite.",
+    "og_title": "Amezrou Zagora | Ruelles en pisé & Oasis | MoroccoTripMap",
+    "og_description": "Visitez Amezrou à Zagora : balade dans les ruelles en pisé, patrimoine de l'oasis et conseils pour profiter du village."
   },
-  "amezrou_page": {
-    "name": "Amezrou",
-    "hero_subtitle": "Ruelles en pisé et ancien quartier juif — un coin d'histoire à explorer au cœur de l'oasis de Zagora.",
-    "info": {
-      "best_time_label": "Meilleure période",
-      "best_time_val": "Matin ou fin d'après-midi",
-      "duration_label": "Durée suggérée",
-      "duration_val": "1 – 2 heures",
-      "entry_label": "Entrée",
-      "entry_val": "Accès libre ; pourboire pour les guides",
-      "area_label": "Emplacement",
-      "area_val": "Lisière de l'oasis de Zagora"
+  "name": "Amezrou",
+  "hero_subtitle": "Ruelles en pisé et ancien quartier juif — un coin d'histoire accessible de l'oasis de Zagora.",
+  "info": {
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Matin ou fin d'après-midi",
+    "duration_label": "Durée suggérée",
+    "duration_val": "1 – 2 heures",
+    "entry_label": "Entrée",
+    "entry_val": "Libre (pourboire pour les guides)",
+    "area_label": "Emplacement",
+    "area_val": "Bordure de l'oasis de Zagora"
+  },
+  "overview": {
+    "title": "Ruelles de terre et de mémoire",
+    "p1": "Amezrou (Amazrou) est le village oasien de Zagora : ruelles étroites, murs en pisé et vestiges de l'ancien quartier juif qui faisait autrefois partie du tissu social de la ville.",
+    "p2": "Il se découvre idéalement à pied. Une courte promenade donne un meilleur aperçu de la vie quotidienne du Drâa que l'artère principale. Des guides locaux proposent parfois leurs services contre un pourboire.",
+    "p3": "Restez respectueux dans les ruelles résidentielles et demandez l'autorisation avant de photographier des personnes ou des portes privées."
+  },
+  "gallery": {
+    "badge": "Galerie photo",
+    "title": "Amezrou en images",
+    "subtitle": "Vues d'Amezrou à Zagora.",
+    "s1": { "caption": "Amezrou village — vue 1" },
+    "s2": { "caption": "Amezrou village — vue 2" },
+    "s3": { "caption": "Amezrou village — vue 3" },
+    "s4": { "caption": "Amezrou village — vue 4" },
+    "s5": { "caption": "Amezrou village — vue 5" }
+  },
+  "moods": {
+    "badge": "Horaires",
+    "title": "Amezrou au fil de la journée",
+    "subtitle": "Quand y aller.",
+    "1": {
+      "tag": "Matin",
+      "title": "Départ matinal",
+      "desc": "Lumière douce et moins de visiteurs.",
+      "duration": "Matin"
     },
-    "overview": {
-      "title": "Ruelles de terre et de mémoire",
-      "p1": "Amezrou (Amazrou) est le village oasis historique de Zagora : ruelles étroites, murs en pisé et vestiges de l'ancien quartier juif qui formaient autrefois une partie du tissu social.",
-      "p2": "À découvrir de préférence à pied. Une courte promenade donne un meilleur aperçu de la vie quotidienne dans le Drâa que la route principale. Des guides locaux proposent parfois leurs services.",
-      "p3": "Restez respectueux dans les ruelles résidentielles et demandez la permission avant de photographier des personnes ou des portes privées."
+    "2": {
+      "tag": "Midi",
+      "title": "Lumière vive",
+      "desc": "Soleil fort — protégez votre peau et vos équipements.",
+      "duration": "Midi"
     },
-    "gallery": {
-      "badge": "Galerie photo",
-      "title": "Amezrou en images",
-      "subtitle": "Vues d'Amezrou à Zagora.",
-      "s1": { "caption": "Village d'Amezrou — vue 1" },
-      "s2": { "caption": "Village d'Amezrou — vue 2" },
-      "s3": { "caption": "Village d'Amezrou — vue 3" },
-      "s4": { "caption": "Village d'Amezrou — vue 4" },
-      "s5": { "caption": "Village d'Amezrou — vue 5" }
+    "3": {
+      "tag": "Fin d'après-midi",
+      "title": "Belle couleur",
+      "desc": "Lumière chaude sur les murs en terre et les palmiers.",
+      "duration": "Fin d'après-midi"
+    }
+  },
+  "food": {
+    "title": "Où manger près d'Amezrou",
+    "p1": "Prévoyez vos repas dans le centre de Zagora ou emportez de l'eau et des en-cas pour votre balade.",
+    "li1": "De l'eau en bouteille pour chaque sortie.",
+    "li2": "Tajines traditionnels et plats locaux en ville.",
+    "li3": "Arrêts dans les cafés l'après-midi.",
+    "li4": "Vérifiez les horaires avant de vous déplacer.",
+    "li5": "Le liquide est utile en dehors des grands hôtels.",
+    "p2": "Ayez des dirhams sur vous pour les taxis et les petits arrêts."
+  },
+  "tips": {
+    "title": "Conseils pratiques pour Amezrou",
+    "1": {
+      "title": "Accès",
+      "desc": "Facilement accessible à pied ou en court trajet en taxi depuis le centre de Zagora."
     },
-    "moods": {
-      "badge": "Horaires",
-      "title": "Amezrou au fil de la journée",
-      "subtitle": "Quand s'y rendre.",
-      "1": {
-        "tag": "Matin",
-        "title": "Départ matinal",
-        "desc": "Lumière douce et moins de visiteurs.",
-        "duration": "Matin"
-      },
-      "2": {
-        "tag": "Midi",
-        "title": "Lumière vive",
-        "desc": "Soleil fort — protégez votre peau et votre matériel.",
-        "duration": "Midi"
-      },
-      "3": {
-        "tag": "Fin d'après-midi",
-        "title": "Belle couleur",
-        "desc": "Lumière chaude sur les murs de terre et les palmiers.",
-        "duration": "Fin d'après-midi"
-      }
+    "2": {
+      "title": "Soleil et eau",
+      "desc": "Crème solaire à indice élevé, eau et chapeau pour les balades ensoleillées."
     },
-    "food": {
-      "title": "Où manger près d'Amezrou",
-      "p1": "Prévoyez vos repas dans le centre de Zagora ou emportez de l'eau et des en-cas pour votre balade.",
-      "li1": "De l'eau en bouteille pour chaque sortie.",
-      "li2": "Tajines et plats traditionnels en ville.",
-      "li3": "Arrêts dans les cafés l'après-midi.",
-      "li4": "Vérifiez les horaires avant de vous déplacer.",
-      "li5": "Le liquide est utile en dehors des grands hôtels.",
-      "p2": "Ayez des dirhams sur vous pour les taxis et les petits achats."
+    "3": {
+      "title": "Respect",
+      "desc": "Restez sur les sentiers ; demandez avant de photographier des personnes ou des maisons."
+    }
+  },
+  "gyg": {
+    "badge": "Excursions & expériences",
+    "title": "Excursions liées à Amezrou",
+    "subtitle": "Options si vous préférez un opérateur local.",
+    "t1": {
+      "tag": "Zagora",
+      "title": "Balade dans le village d'Amezrou",
+      "desc": "Visite guidée du patrimoine, des ruelles et des coins d'artisanat."
     },
-    "tips": {
-      "title": "Conseils pratiques pour Amezrou",
-      "1": {
-        "title": "Accès",
-        "desc": "Facilement accessible à pied ou en court trajet en taxi depuis le centre de Zagora."
-      },
-      "2": {
-        "title": "Soleil et eau",
-        "desc": "Indice UV élevé, eau et chapeau de mise pour les balades aux portes du désert."
-      },
-      "3": {
-        "title": "Respect",
-        "desc": "Restez sur les sentiers ; demandez avant de photographier des habitants ou des maisons."
-      }
+    "t2": {
+      "tag": "Oasis",
+      "title": "Journée palmeraies du Drâa",
+      "desc": "Explorez l'oasis et les ksars en pisé environnants."
     },
-    "gyg": {
-      "badge": "Excursions & expériences",
-      "title": "Visites liées à Amezrou",
-      "subtitle": "Options si vous préférez un opérateur local.",
-      "t1": {
-        "tag": "Zagora",
-        "title": "Balade dans le village d'Amezrou",
-        "desc": "Visite guidée patrimoniale des ruelles et des ateliers d'artisans."
-      },
-      "t2": {
-        "tag": "Oasis",
-        "title": "Journée dans la palmeraie du Drâa",
-        "desc": "Explorez l'oasis et les ksars en pisé environnants."
-      },
-      "t3": {
-        "tag": "Désert",
-        "title": "Dunes de Tinfou & Tamegroute",
-        "desc": "Associez Amezrou aux ateliers de poterie et à la bibliothèque."
-      },
-      "check": "Vérifier la disponibilité sur GetYourGuide →",
-      "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via ceux-ci, nous touchons une petite commission sans frais supplémentaires pour vous."
+    "t3": {
+      "tag": "Désert",
+      "title": "Dunes de Tinfou & Tamegroute",
+      "desc": "Associez Amezrou aux ateliers de poterie et à la bibliothèque."
     },
-    "nearby": {
-      "badge": "Continuer l'exploration",
-      "title": "Plus de lieux à Zagora",
-      "back": "← Retour au guide de Zagora"
+    "check": "Vérifier la disponibilité sur GetYourGuide →",
+    "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via ceux-ci, nous touchons une petite commission sans frais supplémentaires pour vous."
+  },
+  "nearby": {
+    "badge": "Continuer l'exploration",
+    "title": "Plus de lieux à Zagora",
+    "back": "← Retour au guide de Zagora"
+  },
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles associés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Planification",
+      "title": "Première fois à Zagora",
+      "desc": "Zagora, palmeraies et durée idéale du séjour."
     },
-    "blog": {
-      "badge": "Du blog",
-      "title": "Articles associés",
-      "all": "Tous les articles →",
-      "read": "Lire l'article →",
-      "a1": {
-        "tag": "Planification",
-        "title": "Première fois à Zagora",
-        "desc": "Zagora, palmeraies et durée idéale du séjour."
-      },
-      "a2": {
-        "tag": "Guide",
-        "title": "Amezrou et ses ruelles en pisé",
-        "desc": "Comment profiter du village historique."
-      },
-      "a3": {
-        "tag": "Nature",
-        "title": "Journées dans l'oasis du Drâa",
-        "desc": "Planifier une journée d'exploration des palmeraies."
-      }
+    "a2": {
+      "tag": "Guide",
+      "title": "Amezrou et ses ruelles en pisé",
+      "desc": "Comment profiter du village historique."
     },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "FAQ Amezrou",
-      "q1": {
-        "question": "À quelle distance du centre ?",
-        "answer": "À la lisière de l'oasis — à quelques minutes du centre de Zagora."
-      },
-      "q2": {
-        "question": "Un guide est-il nécessaire ?",
-        "answer": "Pas obligatoire ; utile pour l'histoire de l'ancien quartier juif et de l'artisanat local."
-      },
-      "q3": {
-        "question": "Combien de temps ?",
-        "answer": "Une à deux heures à un rythme tranquille."
-      },
-      "q4": {
-        "question": "Photographie ?",
-        "answer": "Soyez discret et demandez la permission dans les zones résidentielles."
-      },
-      "q5": {
-        "question": "Combiner avec le souk ?",
-        "answer": "Oui, les jours de marché, pour une matinée locale complète."
-      }
+    "a3": {
+      "tag": "Nature",
+      "title": "Journées d'oasis dans la vallée du Drâa",
+      "desc": "Planifier une journée d'exploration de la palmeraie."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ Amezrou",
+    "q1": {
+      "question": "À quelle distance du centre ?",
+      "answer": "En bordure de l'oasis — à quelques minutes du centre de Zagora."
+    },
+    "q2": {
+      "question": "Faut-il un guide ?",
+      "answer": "Non requis, mais utile pour l'histoire du vieux quartier juif et l'artisanat local."
+    },
+    "q3": {
+      "question": "Combien de temps y consacrer ?",
+      "answer": "Une à deux heures à un rythme détendu."
+    },
+    "q4": {
+      "question": "Quid de la photographie ?",
+      "answer": "Soyez discret et demandez la permission dans les zones résidentielles."
+    },
+    "q5": {
+      "question": "Combiner avec le souk ?",
+      "answer": "Oui, les jours de marché pour une matinée locale plus complète."
     }
   }
 }

@@ -5,154 +5,152 @@
     "og_title": "Palmeraies de la Vallée du Drâa Zagora | Oasis & Palmeraies | MoroccoTripMap",
     "og_description": "Visitez les palmeraies de la vallée du Drâa à Zagora : balades dans l'oasis, palmiers dattiers et conseils pour profiter du site."
   },
-  "draa_valley_page": {
-    "name": "Palmeraies de la Vallée du Drâa",
-    "hero_subtitle": "Un fleuve de palmiers dattiers et de villages en pisé — le cœur vert de la route vers Zagora.",
-    "info": {
-      "best_time_label": "Meilleure période",
-      "best_time_val": "Matin & fin d'après-midi",
-      "duration_label": "Durée suggérée",
-      "duration_val": "2 – 4 heures",
-      "entry_label": "Entrée",
-      "entry_val": "Libre",
-      "area_label": "Emplacement",
-      "area_val": "Le long du Drâa vers Zagora"
+  "name": "Palmeraies de la Vallée du Drâa",
+  "hero_subtitle": "Un fleuve de palmiers dattiers et de villages en pisé — le cœur vert de la route vers Zagora.",
+  "info": {
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Matin & fin d'après-midi",
+    "duration_label": "Durée suggérée",
+    "duration_val": "2 – 4 heures",
+    "entry_label": "Entrée",
+    "entry_val": "Libre",
+    "area_label": "Emplacement",
+    "area_val": "Le long du Drâa vers Zagora"
+  },
+  "overview": {
+    "title": "La ligne verte à travers le désert",
+    "p1": "La vallée du Drâa est l'un des plus grands paysages d'oasis du Maroc : un long ruban de palmiers dattiers, de canaux d'irrigation et de villages en pisé adossés à des collines arides et au désert.",
+    "p2": "Autour de Zagora, vous pouvez marcher ou conduire le long des palmeraies, traverser des ksars et des jardins, et comprendre pourquoi les caravanes avaient besoin de ce couloir d'eau et d'ombre.",
+    "p3": "Partez tôt ou tard pour une lumière plus douce. Prenez de l'eau ; l'ombre est inégale et la chaleur estivale est intense."
+  },
+  "gallery": {
+    "badge": "Galerie photo",
+    "title": "Palmeraies de la Vallée du Drâa en images",
+    "subtitle": "Vues des palmeraies et des villages oasiens autour de Zagora.",
+    "s1": { "caption": "Lush date palm canopy in the valley" },
+    "s2": { "caption": "Traditional earthen ksar amidst gardens" },
+    "s3": { "caption": "Walkway along palm groves and fields" },
+    "s4": { "caption": "Golden afternoon light on the palms" },
+    "s5": { "caption": "Panoramic view over the green oasis corridor" }
+  },
+  "moods": {
+    "badge": "Horaires",
+    "title": "La vallée du Drâa au fil de la journée",
+    "subtitle": "Quand explorer les palmeraies.",
+    "1": {
+      "tag": "Matin",
+      "title": "Départ matinal",
+      "desc": "Lumière douce et air frais du matin sous les palmiers.",
+      "duration": "Matin"
     },
-    "overview": {
-      "title": "La ligne verte à travers le désert",
-      "p1": "La vallée du Drâa est l'un des plus grands paysages d'oasis du Maroc : un long ruban de palmiers dattiers, de canaux d'irrigation et de villages en pisé adossés à des collines arides et au désert.",
-      "p2": "Autour de Zagora, vous pouvez marcher ou conduire le long des palmeraies, traverser des ksars et des jardins, et comprendre pourquoi les caravanes avaient besoin de ce couloir d'eau et d'ombre.",
-      "p3": "Partez tôt ou tard pour une lumière plus douce. Prenez de l'eau ; l'ombre est inégale et la chaleur estivale est intense."
+    "2": {
+      "tag": "Midi",
+      "title": "Lumière vive",
+      "desc": "Soleil fort — protégez votre peau et hydratez-vous.",
+      "duration": "Midi"
     },
-    "gallery": {
-      "badge": "Galerie photo",
-      "title": "Palmeraies de la Vallée du Drâa en images",
-      "subtitle": "Vues des palmeraies et des villages oasiens autour de Zagora.",
-      "s1": { "caption": "Lush date palm canopy in the valley" },
-      "s2": { "caption": "Traditional earthen ksar amidst gardens" },
-      "s3": { "caption": "Walkway along palm groves and fields" },
-      "s4": { "caption": "Golden afternoon light on the palms" },
-      "s5": { "caption": "Panoramic view over the green oasis corridor" }
+    "3": {
+      "tag": "Fin d'après-midi",
+      "title": "Belle couleur",
+      "desc": "Lumière dorée et chaude sur les murs en pisé.",
+      "duration": "Fin d'après-midi"
+    }
+  },
+  "food": {
+    "title": "Où manger près de la vallée du Drâa",
+    "p1": "Prévoyez vos repas dans le centre de Zagora ou emportez de l'eau et des en-cas pour votre balade.",
+    "li1": "De l'eau en bouteille pour chaque sortie.",
+    "li2": "Tajines traditionnels et plats locaux en ville.",
+    "li3": "Arrêts dans les cafés ombragés l'après-midi.",
+    "li4": "Vérifiez les horaires avant de vous déplacer.",
+    "li5": "Le liquide est utile en dehors des grands hôtels.",
+    "p2": "Ayez des dirhams sur vous pour les taxis et les petits arrêts au village."
+  },
+  "tips": {
+    "title": "Conseils pratiques pour la vallée du Drâa",
+    "1": {
+      "title": "Accès",
+      "desc": "Facilement accessible à pied depuis la ville ou en voiture le long de la route principale."
     },
-    "moods": {
-      "badge": "Horaires",
-      "title": "La vallée du Drâa au fil de la journée",
-      "subtitle": "Quand explorer les palmeraies.",
-      "1": {
-        "tag": "Matin",
-        "title": "Départ matinal",
-        "desc": "Lumière douce et air frais du matin sous les palmiers.",
-        "duration": "Matin"
-      },
-      "2": {
-        "tag": "Midi",
-        "title": "Lumière vive",
-        "desc": "Soleil fort — protégez votre peau et hydratez-vous.",
-        "duration": "Midi"
-      },
-      "3": {
-        "tag": "Fin d'après-midi",
-        "title": "Belle couleur",
-        "desc": "Lumière dorée et chaude sur les murs en pisé.",
-        "duration": "Fin d'après-midi"
-      }
+    "2": {
+      "title": "Soleil et eau",
+      "desc": "Crème solaire à indice élevé, chapeau et eau en quantité pour les balades."
     },
-    "food": {
-      "title": "Où manger près de la vallée du Drâa",
-      "p1": "Prévoyez vos repas dans le centre de Zagora ou emportez de l'eau et des en-cas pour votre balade.",
-      "li1": "De l'eau en bouteille pour chaque sortie.",
-      "li2": "Tajines traditionnels et plats locaux en ville.",
-      "li3": "Arrêts dans les cafés ombragés l'après-midi.",
-      "li4": "Vérifiez les horaires avant de vous déplacer.",
-      "li5": "Le liquide est utile en dehors des grands hôtels.",
-      "p2": "Ayez des dirhams sur vous pour les taxis et les petits arrêts au village."
+    "3": {
+      "title": "Respect",
+      "desc": "Restez sur les sentiers publics, respectez les cultures et demandez avant de photographier."
+    }
+  },
+  "gyg": {
+    "badge": "Excursions & expériences",
+    "title": "Excursions dans la vallée du Drâa",
+    "subtitle": "Options si vous préférez un opérateur local.",
+    "t1": {
+      "tag": "Oasis",
+      "title": "Journée dans les palmeraies du Drâa",
+      "desc": "Exploration guidée des anciens ksars et des jardins luxuriants."
     },
-    "tips": {
-      "title": "Conseils pratiques pour la vallée du Drâa",
-      "1": {
-        "title": "Accès",
-        "desc": "Facilement accessible à pied depuis la ville ou en voiture le long de la route principale."
-      },
-      "2": {
-        "title": "Soleil et eau",
-        "desc": "Crème solaire à indice élevé, chapeau et eau en quantité pour les balades."
-      },
-      "3": {
-        "title": "Respect",
-        "desc": "Restez sur les sentiers publics, respectez les cultures et demandez avant de photographier."
-      }
+    "t2": {
+      "tag": "Culture",
+      "title": "Balade patrimoine & oasis à Zagora",
+      "desc": "Visite à pied de l'agriculture locale et des systèmes d'irrigation."
     },
-    "gyg": {
-      "badge": "Excursions & expériences",
-      "title": "Excursions dans la vallée du Drâa",
-      "subtitle": "Options si vous préférez un opérateur local.",
-      "t1": {
-        "tag": "Oasis",
-        "title": "Journée dans les palmeraies du Drâa",
-        "desc": "Exploration guidée des anciens ksars et des jardins luxuriants."
-      },
-      "t2": {
-        "tag": "Culture",
-        "title": "Balade patrimoine & oasis à Zagora",
-        "desc": "Visite à pied de l'agriculture locale et des systèmes d'irrigation."
-      },
-      "t3": {
-        "tag": "Désert",
-        "title": "Combiné vallée et dunes",
-        "desc": "Associez l'oasis verdoyante du Drâa aux dunes de sable du désert."
-      },
-      "check": "Vérifier la disponibilité sur GetYourGuide →",
-      "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via ceux-ci, nous touchons une petite commission sans frais supplémentaires pour vous."
+    "t3": {
+      "tag": "Désert",
+      "title": "Combiné vallée et dunes",
+      "desc": "Associez l'oasis verdoyante du Drâa aux dunes de sable du désert."
     },
-    "nearby": {
-      "badge": "Continuer l'exploration",
-      "title": "Plus de lieux à Zagora",
-      "back": "← Retour au guide de Zagora"
+    "check": "Vérifier la disponibilité sur GetYourGuide →",
+    "disclosure": "Certains de ces liens sont des liens affiliés. Si vous réservez via ceux-ci, nous touchons une petite commission sans frais supplémentaires pour vous."
+  },
+  "nearby": {
+    "badge": "Continuer l'exploration",
+    "title": "Plus de lieux à Zagora",
+    "back": "← Retour au guide de Zagora"
+  },
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles associés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Planification",
+      "title": "Première fois à Zagora",
+      "desc": "Zagora, palmeraies et durée idéale du séjour."
     },
-    "blog": {
-      "badge": "Du blog",
-      "title": "Articles associés",
-      "all": "Tous les articles →",
-      "read": "Lire l'article →",
-      "a1": {
-        "tag": "Planification",
-        "title": "Première fois à Zagora",
-        "desc": "Zagora, palmeraies et durée idéale du séjour."
-      },
-      "a2": {
-        "tag": "Guide",
-        "title": "Explorer l'oasis de la vallée du Drâa",
-        "desc": "Comment profiter des palmeraies et des villages anciens."
-      },
-      "a3": {
-        "tag": "Nature",
-        "title": "Journées d'oasis dans le sud du Maroc",
-        "desc": "Planifier une journée d'exploration de la palmeraie."
-      }
+    "a2": {
+      "tag": "Guide",
+      "title": "Explorer l'oasis de la vallée du Drâa",
+      "desc": "Comment profiter des palmeraies et des villages anciens."
     },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "FAQ Palmeraies de la Vallée du Drâa",
-      "q1": {
-        "question": "Peut-on marcher librement dans les palmeraies ?",
-        "answer": "Restez sur les chemins publics et respectez les jardins privés et les canaux."
-      },
-      "q2": {
-        "question": "Quel est le meilleur moment de la journée ?",
-        "answer": "Le matin et la fin d'après-midi pour la lumière et la fraîcheur."
-      },
-      "q3": {
-        "question": "Faut-il un guide ?",
-        "answer": "Non requis pour les abords de la route ; utile pour les ruelles intérieures des villages."
-      },
-      "q4": {
-        "question": "Combien de temps y consacrer ?",
-        "answer": "Deux à quatre heures pour une première boucle satisfaisante."
-      },
-      "q5": {
-        "question": "Combiner avec le panneau de Tombouctou ?",
-        "answer": "Oui — ils s'intègrent naturellement dans la même journée de découverte."
-      }
+    "a3": {
+      "tag": "Nature",
+      "title": "Journées d'oasis dans le sud du Maroc",
+      "desc": "Planifier une journée d'exploration de la palmeraie."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ Palmeraies de la Vallée du Drâa",
+    "q1": {
+      "question": "Peut-on marcher librement dans les palmeraies ?",
+      "answer": "Restez sur les chemins publics et respectez les jardins privés et les canaux."
+    },
+    "q2": {
+      "question": "Quel est le meilleur moment de la journée ?",
+      "answer": "Le matin et la fin d'après-midi pour la lumière et la fraîcheur."
+    },
+    "q3": {
+      "question": "Faut-il un guide ?",
+      "answer": "Non requis pour les abords de la route ; utile pour les ruelles intérieures des villages."
+    },
+    "q4": {
+      "question": "Combien de temps y consacrer ?",
+      "answer": "Deux à quatre heures pour une première boucle satisfaisante."
+    },
+    "q5": {
+      "question": "Combiner avec le panneau de Tombouctou ?",
+      "answer": "Oui — ils s'intègrent naturellement dans la même journée de découverte."
     }
   }
 }

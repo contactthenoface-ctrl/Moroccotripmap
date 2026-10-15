@@ -1,221 +1,163 @@
 {
-  "seo": {
-    "title": "Guía de Viaje de Merzouga 2026 | Kasbahs, Dromedario y Erg Chebbi | MoroccoTripMap",
-    "description": "Planifica tu viaje a Merzouga: dunas de Erg Chebbi, excursiones en dromedario, campamentos en el desierto, Khamlia, Rissani, hoteles y consejos prácticos.",
-    "og_title": "Guía de Viaje de Merzouga | Dunas de Erg Chebbi y Campamentos | MoroccoTripMap",
-    "og_description": "Medina, murallas, playa, riads, marisco y un itinerario preparado para Merzouga, todo en una guía."
+  "nav": {
+    "destinations": "Destinos",
+    "categories": "Categorías",
+    "cat_stays": "Alojamientos y Riads",
+    "cat_gastronomy": "Gastronomía",
+    "cat_experiences": "Experiencias",
+    "cat_museums": "Monumentos y Museos",
+    "cat_transport": "Transporte y Alquiler",
+    "cat_itineraries": "Itinerarios",
+    "cat_guides": "Guías de viaje",
+    "history": "Historia",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "cities": "Ciudades y Destinos"
   },
-  "hero_subtitle": "Puerta de entrada al Sahara y a los paisajes cinematográficos de Marruecos: Erg Chebbi, rutas en dromedario y horizontes saharianos.",
-  "info": {
-    "best_time_label": "Mejor época",
-    "best_time_val": "Abr – Jun & Sep – Nov",
-    "stay_label": "Estancia ideal",
-    "stay_val": "2 – 3 Días",
-    "vibe_label": "Ambiente",
-    "vibe_val": "Desierto y Cine",
-    "airport_label": "Aeropuerto cercano",
-    "airport_val": "CMN (Mohammed V)"
+  "mobile_menu": {
+    "language_title": "Idioma / Language"
   },
-  "overview": {
-    "title": "Bienvenido a la puerta del desierto en Merzouga",
-    "p1": "Merzouga se encuentra al borde del Alto Atlas y las llanuras presaharianas. Kasbahs, estudios cinematográficos y la ruta hacia el desierto definen la zona, sirviendo como base ideal para explorar el Erg Chebbi.",
-    "p2": "Dos o tres días permiten disfrutar de las dunas, una ruta en dromedario y una noche bajo las estrellas en un campamento, además de visitar Khamlia, Dayet Srji o Rissani."
+  "breadcrumb": {
+    "home": "Inicio",
+    "destinations": "Destinos"
   },
-  "places": {
-    "badge": "Lugares imperdibles",
-    "title": "Qué visitar en Merzouga",
-    "subtitle": "Dunas, rutas en dromedario, campamentos y paradas clave en el desierto.",
-    "explore": "Explorar lugar →",
-    "erg": {
-      "tag": "Dunas",
-      "title": "Erg Chebbi",
-      "desc": "Inmensas dunas doradas que se alzan sobre Merzouga, el corazón de cualquier viaje al Sahara."
-    },
-    "village": {
-      "tag": "Pueblo",
-      "title": "Pueblo de Merzouga",
-      "desc": "Pequeño pueblo junto al desierto con hoteles, cafés y el acceso principal al erg."
-    },
-    "camel": {
-      "tag": "Experiencia",
-      "title": "Paseo en dromedario",
-      "desc": "Clásica travesía en dromedario por las dunas al atardecer o al amanecer."
-    },
-    "camp": {
-      "tag": "Campamento",
-      "title": "Campamento en el desierto",
-      "desc": "Noche en un campamento bereber bajo las estrellas con cena, música y silencio."
-    },
-    "khamlia": {
-      "tag": "Cultura",
-      "title": "Khamlia",
-      "desc": "Pueblo del desierto conocido por su música Gnaoua, té y cálida hospitalidad."
-    },
-    "dayet": {
-      "tag": "Naturaleza",
-      "title": "Dayet Srji",
-      "desc": "Lago estacional al pie de las dunas que puede albergar flamencos tras las lluvias."
-    },
-    "rissani": {
-      "tag": "Ciudad",
-      "title": "Rissani",
-      "desc": "Histórica ciudad comercial con animados zocos, kasbahs y mausoleos."
-    },
-    "hassilabied": {
-      "tag": "Pueblo",
-      "title": "Hassilabied",
-      "desc": "Tranquilo pueblo al borde del erg con hoteles con vistas a las dunas."
-    },
-    "fossils": {
-      "tag": "Artesanía",
-      "title": "Talleres de fósiles",
-      "desc": "Tiendas y talleres locales que venden trilobites y fósiles pulidos de Erfoud."
+  "destinations": {
+    "merzouga": {
+      "name": "Merzouga"
     }
   },
-  "itinerary": {
-    "badge": "Planificación",
-    "title": "Itinerario sugerido de 3 días",
-    "subtitle": "Dunas, noche en campamento y pueblos alrededor del Erg Chebbi."
-  },
-  "detailed_itinerary": {
-    "day1_tab": "Día 1 — Dunas y Pueblo",
-    "day2_tab": "Día 2 — Dromedario y Campamento",
-    "day3_tab": "Día 3 — Khamlia y Rissani",
-    "day1_m": "Mañana — Mirador de Erg Chebbi",
-    "day1_md": "Conduce o camina hasta el borde de Erg Chebbi para contemplar una primera panorámica.",
-    "day1_a": "Tarde — Pueblo de Merzouga y fósiles",
-    "day1_ad": "Regreso al pueblo para almorzar, visitar tiendas de fósiles y organizar la excursión.",
-    "day1_e": "Noche — Atardecer en las dunas",
-    "day1_ed": "Disfruta de la puesta de sol desde una cresta de arena y cena en el hotel.",
-    "day2_m": "Mañana — Tiempo libre",
-    "day2_md": "Mañana tranquila en el pueblo o en Hassilabied antes de la excursión.",
-    "day2_a": "Tarde — Ruta en dromedario en Erg Chebbi",
-    "day2_ad": "Salida en dromedario hacia el interior de las dunas rumbo al campamento.",
-    "day2_e": "Noche — Noche en el Sahara",
-    "day2_ed": "Cena bereber, tambores y cielo estrellado en una tienda del desierto.",
-    "day3_m": "Mañana — Amanecer y regreso",
-    "day3_md": "Sube a una duna para el amanecer, desayuna en el campamento y regresa al pueblo.",
-    "day3_a": "Tarde — Khamlia o Rissani",
-    "day3_ad": "Música Gnaoua en Khamlia o visita al zoco y mausoleo de Rissani.",
-    "day3_e": "Noche — Última noche en Merzouga",
-    "day3_ed": "Cena tranquila antes de continuar hacia Erfoud, Tinghir u Ouarzazate."
-  },
-  "directory": {
-    "badge": "Dónde alojarse",
-    "title": "Hoteles, Kasbahs y Campamentos en Merzouga",
-    "subtitle": "Filtra por tipo y zona: pueblo, Hassilabied o campamentos en las dunas.",
-    "filter_type_label": "Tipo de alojamiento",
-    "type_all": "Todos los tipos",
-    "type_hotel": "Hoteles y Kasbahs",
-    "type_riad": "Riads y Hostales",
-    "type_camp": "Campamentos en el desierto",
-    "filter_location_label": "Zona",
-    "location_all": "Todas las zonas",
-    "location_village": "Pueblo de Merzouga",
-    "location_hassilabied": "Hassilabied",
-    "location_dunes": "Dunas / campamento",
-    "location_rissani": "Zona de Rissani",
-    "counter": "28 alojamientos listados",
-    "district_label": "Zona",
-    "type_label": "Tipo",
-    "check_availability": "Comprobar disponibilidad →",
-    "no_results": "Ningún alojamiento coincide con tus filtros."
-  },
-  "eat": {
-    "badge": "Gastronomía",
-    "title": "Dónde comer en Merzouga",
-    "subtitle": "Tajines, carnes a la brasa y té de menta en restaurantes locales y hoteles.",
-    "dunes": {
-      "tag": "Local · Vistas a las dunas",
-      "title": "Restaurant Les Dunes",
-      "desc": "Tajines clásicos y parrilladas con terraza frente al erg.",
-      "loc": "Pueblo de Merzouga · Terraza"
+  "merzouga_page": {
+    "seo": {
+      "title": "Guía de viaje de Merzouga 2026 | Kasbahs, Excursión en camello y Erg Chebbi | MoroccoTripMap",
+      "description": "Planifica tu viaje a Merzouga: dunas de Erg Chebbi, excursiones en camello, campamentos en el desierto, Khamlia, Rissani, hoteles y consejos prácticos.",
+      "og_title": "Guía de viaje de Merzouga | Dunas de Erg Chebbi, Campamentos y Desierto | MoroccoTripMap",
+      "og_description": "Dunas de Erg Chebbi, excursiones en camello, campamentos, riads, oasis e itinerario ideal para Merzouga en una sola guía."
     },
-    "yasmina": {
-      "tag": "Restaurante de hotel",
-      "title": "Restaurant Yasmina",
-      "desc": "Menús marroquíes abiertos a visitantes con vistas hacia el Erg Chebbi.",
-      "loc": "Hotel Yasmina · Pueblo"
+    "hero_subtitle": "Puerta al Sahara y a las dunas de Erg Chebbi: excursiones en camello, campamentos en el desierto y horizontes saharianos — Merzouga es el nexo entre el Atlas y la arena.",
+    "info": {
+      "best_time_label": "Mejor época",
+      "best_time_val": "Abr – Jun & Sep – Nov",
+      "stay_label": "Estancia ideal",
+      "stay_val": "2 – 3 Días",
+      "vibe_label": "Ambiente",
+      "vibe_val": "Desierto y Dunas",
+      "airport_label": "Aeropuerto más cercano",
+      "airport_val": "ERH (Errachidia)"
     },
-    "sud": {
-      "tag": "Café · Casual",
-      "title": "Café du Sud",
-      "desc": "Cafetería informal para desayunos, tortillas y té de menta.",
-      "loc": "Centro del pueblo de Merzouga"
+    "overview": {
+      "title": "Bienvenido a la puerta del Sahara",
+      "p1": "Merzouga se encuentra al borde de las majestuosas dunas de Erg Chebbi. Las kasbahs, las pistas desérticas y los cielos estrellados definen el área. Es la base definitiva para Erg Chebbi, paseos en camello y campamentos nocturnos.",
+      "p2": "Dos o tres días cubren las dunas, una excursión en camello y una noche en campamento, además de Khamlia, Dayet Srji u Rissani si te quedas más tiempo. Utiliza Merzouga como punto destacado en tu circuito por el desierto."
     },
-    "mohayut": {
-      "tag": "Cena en kasbah",
-      "title": "Kasbah Mohayut Restaurant",
-      "desc": "Menús marroquíes en un ambiente de kasbah al pie de las dunas.",
-      "loc": "Kasbah Mohayut · Borde de las dunas"
+    "places": {
+      "badge": "Imprescindibles",
+      "title": "Lugares que visitar en Merzouga",
+      "subtitle": "Dunas, excursiones, campamentos y las paradas clave de la puerta del desierto.",
+      "explore": "Explorar lugar →",
+      "erg": { "tag": "Dunas", "title": "Erg Chebbi", "desc": "Vastas dunas doradas que se elevan sobre Merzouga — el corazón de cada visita al Sahara." },
+      "village": { "tag": "Pueblo", "title": "Pueblo de Merzouga", "desc": "Pequeño pueblo en la puerta del desierto con hoteles, cafés y el acceso al erg." },
+      "camel": { "tag": "Experiencia", "title": "Paseo en camello", "desc": "Clásico paseo en camello por las dunas al atardecer o amanecer — la experiencia emblemática de Merzouga." },
+      "camp": { "tag": "Campamento", "title": "Campamento en el desierto", "desc": "Noche en un campamento bereber bajo las estrellas — cena, tambores y silencio de las dunas." },
+      "khamlia": { "tag": "Cultura", "title": "Khamlia", "desc": "Pueblo del desierto negro conocido por su música Ganaue, té y cálida hospitalidad." },
+      "dayet": { "tag": "Naturaleza", "title": "Dayet Srji", "desc": "Lago estacional al pie de las dunas — flamencos cuando hay agua tras las lluvias." },
+      "rissani": { "tag": "Ciudad", "title": "Rissani", "desc": "Histórico pueblo comercial y puerta de entrada — días de zoco, kasbahs y el mausoleo de Moulay Ali Cherif." },
+      "hassilabied": { "tag": "Pueblo", "title": "Hassilabied", "desc": "Tranquilo pueblo al borde del erg — hoteles con vistas a las dunas y un ambiente más relajado." },
+      "fossils": { "tag": "Artesanía", "title": "Talleres de fósiles", "desc": "Talleres y tiendas locales que venden trilobites y fósiles pulidos de la región de Erfoud." }
     },
-    "berbere": {
-      "tag": "Hassilabied",
-      "title": "Restaurant Berbère",
-      "desc": "Cocina bereber casera en Hassilabied con cuscús y tajines tradicionales.",
-      "loc": "Hassilabied · Cocina local"
+    "itinerary": {
+      "badge": "Planificación",
+      "title": "Itinerario sugerido de 3 días",
+      "subtitle": "Dunas, una noche en campamento y los pueblos alrededor de Erg Chebbi."
     },
-    "camp": {
-      "tag": "Campamento en el desierto",
-      "title": "Cena en el campamento",
-      "desc": "Cena bereber bajo las estrellas incluida en la mayoría de campamentos.",
-      "loc": "Campamentos de Erg Chebbi · Comida incluida"
+    "detailed_itinerary": {
+      "day1_tab": "Día 1 — Dunas y Pueblo",
+      "day2_tab": "Día 2 — Camello y Campamento",
+      "day3_tab": "Día 3 — Khamlia y Rissani",
+      "day1_m": "Mañana — Mirador de Erg Chebbi",
+      "day1_md": "Conduce o camina hasta el borde de Erg Chebbi. Sube a una duna para disfrutar de la primera vista panorámica antes del calor.",
+      "day1_a": "Tarde — Pueblo de Merzouga y fósiles",
+      "day1_ad": "Regresa al pueblo para almorzar, visitar tiendas de fósiles y organizar tu excursión.",
+      "day1_e": "Noche — Atardecer en las dunas",
+      "day1_ed": "Contempla la puesta de sol desde una cresta de dunas y cena en tu hotel o en un restaurante local.",
+      "day2_m": "Mañana — Libre o paseo corto",
+      "day2_md": "Una mañana tranquila en el pueblo o en Hassilabied; descansa antes de la excursión de la tarde.",
+      "day2_a": "Tarde — Excursión en camello por Erg Chebbi",
+      "day2_ad": "Salida organizada hacia las dunas en camello rumbo a tu estancia nocturna.",
+      "day2_e": "Noche — Noche en el Sahara",
+      "day2_ed": "Cena bereber, tambores y estrellas; duerme en una tienda o campamento bajo el cielo.",
+      "day3_m": "Mañana — Amanecer y regreso",
+      "day3_md": "Sube para ver el amanecer, desayuna en el campamento y regresa en camello o 4x4 al pueblo.",
+      "day3_a": "Tarde — Khamlia o Rissani",
+      "day3_ad": "Música Ganaue y té en Khamlia, o el zoco y mausoleo de Rissani.",
+      "day3_e": "Noche — Última noche en Merzouga",
+      "day3_ed": "Cena tranquila antes de continuar tu viaje hacia Erfoud, Tinghir o Uarzazate."
+    },
+    "directory": {
+      "badge": "Dónde alojarse",
+      "title": "Hoteles, Kasbahs y Campamentos en Merzouga",
+      "subtitle": "Filtra por tipo y zona: centro del pueblo, Hassilabied o campamento en las dunas.",
+      "filter_type_label": "Tipo de alojamiento",
+      "type_all": "Todos los tipos",
+      "type_hotel": "Hoteles y Kasbahs",
+      "type_riad": "Riads y Hostales",
+      "type_camp": "Campamentos del desierto",
+      "filter_location_label": "Zona",
+      "location_all": "Todas las zonas",
+      "location_village": "Pueblo de Merzouga",
+      "location_hassilabied": "Hassilabied",
+      "location_dunes": "Dunas / campamento",
+      "location_rissani": "Área de Rissani",
+      "counter": "28 alojamientos listados",
+      "district_label": "Zona",
+      "type_label": "Tipo",
+      "check_availability": "Ver disponibilidad →",
+      "no_results": "Ningún alojamiento coincide con tus filtros."
+    },
+    "eat": {
+      "badge": "Gastronomía",
+      "title": "Dónde comer en Merzouga",
+      "subtitle": "Tajines, carnes a la brasa y té de menta — restaurantes del pueblo y mesas con vistas a las dunas.",
+      "dunes": { "tag": "Local · Vistas a las dunas", "title": "Restaurant Les Dunes", "desc": "Tajines clásicos y platos a la parrilla con terraza frente al erg — un favorito del pueblo.", "loc": "Pueblo de Merzouga · Terraza" },
+      "yasmina": { "tag": "Restaurante de hotel", "title": "Restaurant Yasmina", "desc": "Restaurante de hotel abierto a clientes externos — menús marroquíes y vistas a Erg Chebbi.", "loc": "Hotel Yasmina · Pueblo" },
+      "sud": { "tag": "Café · Informal", "title": "Café du Sud", "desc": "Café-restaurante sencillo para desayunos, tortillas, té de menta y un descanso del calor.", "loc": "Centro del pueblo de Merzouga" },
+      "mohayut": { "tag": "Estilo Kasbah", "title": "Kasbah Mohayut Restaurant", "desc": "Menús marroquíes en un entorno de kasbah al pie de las dunas — muy popular.", "loc": "Kasbah Mohayut · Borde de dunas" },
+      "berbere": { "tag": "Hassilabied", "title": "Restaurant Berbère", "desc": "Cocina bereber casera en Hassilabied — cuscús, tajine y una velada más tranquila.", "loc": "Hassilabied · Cocina local" },
+      "camp": { "tag": "Campamento en el desierto", "title": "Cena en el Campamento", "desc": "La mayoría de los campamentos incluyen una cena bereber bajo las estrellas.", "loc": "Campamentos de Erg Chebbi · Comida incluida" }
+    },
+    "tips": {
+      "title": "Consejos prácticos para visitar Merzouga",
+      "transport": { "title": "Cómo moverse", "desc": "El aeropuerto más cercano es Errachidia (ERH), a unas 2 horas en coche. Los vehículos 4x4 y traslados privados son ideales para explorar las pistas del desierto." },
+      "bargain": { "title": "Vestimenta y Etiqueta", "desc": "Usa ropa ligera y transpirable durante el día y lleva capas abrigadas para las frías noches del desierto. Un pañuelo es esencial contra la arena y el sol." },
+      "water": { "title": "Seguridad y Ambiente", "desc": "Merzouga es muy acogedor y seguro para los viajeros. Mantente hidratado, bebe agua embotellada y reserva tus campamentos con operadores de confianza." }
+    },
+    "daytrips": {
+      "badge": "Excursiones de un día",
+      "title": "Mejores excursiones desde Merzouga",
+      "subtitle": "Fáciles excursiones y rutas por el desierto que se adaptan cómodamente a un día.",
+      "rabat": { "title": "Erfoud y Valle del Draa", "desc": "Hacia el sur en el Valle del Draa — palmerales, kasbahs y la carretera hacia el desierto." },
+      "zagora": { "title": "Erfoud", "desc": "Capital de los fósiles y puerta del desierto, a unos 40 minutos al norte de Merzouga." },
+      "mohammedia": { "title": "Gargantas del Dadès y Todra", "desc": "Paisajes de gargantas y valles en la ruta oeste — a menudo combinados en circuito." },
+      "azemmour": { "title": "Marrakech (regreso)", "desc": "Muchos viajeros continúan o regresan a través del puerto del Alto Atlas Tizi n’Tichka hacia Marrakech." }
+    },
+    "faq": {
+      "badge": "Bueno saber",
+      "title": "Preguntas frecuentes sobre Merzouga",
+      "q1": { "question": "¿Cuántos días debo pasar en Merzouga?", "answer": "Dos días completos cubren los principales lugares de interés. Tres o cuatro días permiten un ritmo relajado más una excursión a Rissani." },
+      "q2": { "question": "¿Es Merzouga seguro para los turistas?", "answer": "Sí. Merzouga es muy seguro y acogedor. Reserva tus campamentos y guías a través de operadores locales verificados." },
+      "q3": { "question": "¿Qué moneda se usa y se puede pagar con tarjeta?", "answer": "Marruecos utiliza el dirham (MAD). Las tarjetas se aceptan en hoteles grandes; lleva algo de efectivo para pequeños comercios y propinas." },
+      "q4": { "question": "¿Cómo llego a Merzouga desde el aeropuerto más cercano?", "answer": "El aeropuerto más cercano es Errachidia (ERH), a unas 2 horas en coche. Hay traslados privados, taxis y coches de alquiler disponibles." }
     }
   },
-  "tips": {
-    "title": "Consejos prácticos para visitar Merzouga",
-    "transport": {
-      "title": "Cómo desplazarse",
-      "desc": "Utiliza taxis rojos (exige taxímetro) o aplicaciones de transporte para moverte por la zona y trayectos largos."
-    },
-    "bargain": {
-      "title": "Vestimenta y etiqueta",
-      "desc": "Merzouga es relajado, pero se agradece vestir con modestia, especialmente al visitar lugares religiosos. Lleva una chaqueta ligera para la brisa."
-    },
-    "water": {
-      "title": "Seguridad y ambiente",
-      "desc": "Mantén las precauciones habituales de viaje por la noche en calles poco transitadas. Las zonas turísticas son seguras y animadas."
-    }
-  },
-  "daytrips": {
-    "badge": "Excursiones de un día",
-    "title": "Mejores excursiones desde Merzouga",
-    "subtitle": "Excursiones en coche o trayectos ideales para una jornada completa.",
-    "rabat": {
-      "title": "Erfoud y Valle del Draa",
-      "desc": "Hacia el sur del Valle del Draa con palmerales y kasbahs."
-    },
-    "zagora": {
-      "title": "Erfoud",
-      "desc": "Ciudadela portuguesa de la UNESCO y cisterna subterránea a corta distancia."
-    },
-    "mohammedia": {
-      "title": "Gargantas del Dadès y Todra",
-      "desc": "Impresionantes paisajes de gargantas y valles en la ruta este."
-    },
-    "azemmour": {
-      "title": "Marrakech (regreso)",
-      "desc": "Muchos viajeros regresan a Marrakech cruzando el puerto de montaña Tizi n'Tichka."
-    }
-  },
-  "faq": {
-    "badge": "Bueno saberlo",
-    "title": "Preguntas frecuentes sobre Merzouga",
-    "q1": {
-      "question": "¿Cuántos días pasar en Merzouga?",
-      "answer": "Dos días completos cubren los atractivos principales. Tres o cuatro permiten un ritmo más relajado y excursiones cercanas."
-    },
-    "q2": {
-      "question": "¿Es seguro Merzouga para los turistas?",
-      "answer": "Sí. Aplica las precauciones habituales de viaje. Las zonas turísticas y campamentos son muy seguros."
-    },
-    "q3": {
-      "question": "¿Qué moneda se usa y se puede pagar con tarjeta?",
-      "answer": "Se utiliza el dírham marroquí (MAD). Las tarjetas se aceptan en hoteles; lleva efectivo para pequeños comercios y propinas."
-    },
-    "q4": {
-      "question": "¿Cómo llegar al centro desde el aeropuerto?",
-      "answer": "Dispones de servicios de traslados privados, taxis oficiales y conexiones de tren según tu punto de origen."
-    }
+  "footer": {
+    "about_text": "Descubre. Planifica. Vive Marruecos.<br/>El directorio de turismo principal y guía de viaje cultural para visitantes en Marruecos.",
+    "destinations_title": "Destinos",
+    "link_merzouga": "Guía de viaje de Merzouga",
+    "link_all_destinations": "Todos los destinos",
+    "categories_title": "Categorías",
+    "link_stays": "Riads y Hoteles auténticos",
+    "link_restaurants": "Restaurantes marroquíes",
+    "connect_title": "Conectar",
+    "youtube_text": "Sigue nuestro canal de YouTube para guías de viaje en vídeo:",
+    "copyright": "© MoroccoTripMap. Todos los derechos reservados."
   }
 }

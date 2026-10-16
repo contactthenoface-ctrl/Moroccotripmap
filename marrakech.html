@@ -8,7 +8,7 @@
     <meta name="google" content="notranslate"/>
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-    <!-- Favicon SVG (Pin de carte vert, cohérent avec le logo MoroccoTripMap) -->
+    <!-- Favicon SVG -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
 
     <!-- SEO & Metadata -->
@@ -76,7 +76,7 @@
     <style>
         body { font-family: 'Outfit', sans-serif; }
 
-        /* Styles intégrés pour l'itinéraire */
+        /* Integrated itinerary styles */
         .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
         .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
         .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
@@ -123,7 +123,7 @@
             
             <!-- Lang Switcher & Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-4">
-                <!-- SÉLECTEUR DE LANGUE -->
+                <!-- LANGUAGE SELECTOR -->
                 <div class="relative inline-block text-left" id="lang-menu-container">
                     <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
@@ -277,7 +277,7 @@
             </div>
         </section>
 
-        <!-- Must-Visit Places Section (9 Lieux Incontournables) -->
+        <!-- Must-Visit Places Section (9 Essential Attractions) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div>
@@ -313,7 +313,7 @@
                     </div>
                 </a>
 
-                <!-- 3. Palais Bahia -->
+                <!-- 3. Bahia Palace -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/marrakech-places/palais-bahia.html">
                     <div class="relative h-48 overflow-hidden">
                         <img alt="Bahia Palace" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/palais-bahia/palais-bahia-01.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
@@ -326,7 +326,7 @@
                     </div>
                 </a>
 
-                <!-- 4. Medersa Ben Youssef -->
+                <!-- 4. Ben Youssef Madrasa -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/marrakech-places/medersa-ben-youssef.html">
                     <div class="relative h-48 overflow-hidden">
                         <img alt="Ben Youssef Madrasa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/medersa-ben-youssef-place.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
@@ -352,7 +352,7 @@
                     </div>
                 </a>
 
-                <!-- 6. Palais El Badi -->
+                <!-- 6. El Badi Palace -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/marrakech-places/palais-el-badi.html">
                     <div class="relative h-48 overflow-hidden">
                         <img alt="El Badi Palace" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/el-badi-palace-marrakech.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
@@ -365,15 +365,15 @@
                     </div>
                 </a>
 
-                <!-- 7. Les Jardins de la Menara -->
+                <!-- 7. Menara Gardens -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/marrakech-places/jardin-menara.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="Les jardins de la Menara" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/menara-garden-marrakech.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <img alt="Menara Gardens" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/menara-garden-marrakech.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="marrakech_page.places.jardin_menara.tag">Menara Gardens</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.places.jardin_menara.title">Les Jardins de la Menara</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="marrakech_page.places.jardin_menara.desc">Marrakech's Menara Gardens is a historic 12th-century olive orchard featuring a large basin and a green-roofed pavilion.</p>
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.places.jardin_menara.title">Menara Gardens</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="marrakech_page.places.jardin_menara.desc">A historic 12th-century olive orchard featuring a large water basin and a green-roofed pavilion.</p>
                         <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="marrakech_page.places.explore">Explore Place →</span>
                     </div>
                 </a>
@@ -386,12 +386,12 @@
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.places.dar_el_bacha.title">Dar El Bacha</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="marrakech_page.places.dar_el_bacha.desc">Dar El Bacha is a stunning 1910 Marrakech palace showcasing Morocco's rich heritage, Moorish architecture, and the famous Bacha Coffee.</p>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="marrakech_page.places.dar_el_bacha.desc">A stunning 1910 palace showcasing Moorish architecture and the famous Bacha Coffee.</p>
                         <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="marrakech_page.places.explore">Explore Place →</span>
                     </div>
                 </a>
                 
-                <!-- 9. Mosquée Koutoubia -->
+                <!-- 9. Koutoubia Mosque -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/marrakech-places/koutoubia.html">
                     <div class="relative h-48 overflow-hidden">
                         <img alt="Koutoubia Mosque" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/jardin-koutoubia-marrakech.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
@@ -399,7 +399,7 @@
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.places.koutoubia.title">Koutoubia Mosque</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="marrakech_page.places.koutoubia.desc">The minaret of this 12th-century mosque stands 77 meters tall.</p>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="marrakech_page.places.koutoubia.desc">The iconic minaret of this 12th-century mosque stands 77 meters tall.</p>
                         <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="marrakech_page.places.explore">Explore Place →</span>
                     </div>
                 </a>
@@ -421,121 +421,121 @@
             <div class="tab-content active" id="day1">
                 <div class="day-card">
                     <h3 data-i18n="marrakech_page.detailed_itinerary.day1_m">Morning — Jemaa el-Fnaa &amp; Koutoubia</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day1_md">Start at the Koutoubia gardens for soft light on the minaret, then walk into Jemaa el-Fnaa while the square is still relatively calm.</p>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day1_md">Start at the Koutoubia gardens for soft morning light on the minaret, then stroll into Jemaa el-Fnaa while the square is still calm and easy to navigate.</p>
                     <h3 data-i18n="marrakech_page.detailed_itinerary.day1_a">Afternoon — Souks &amp; Ben Youssef</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day1_ad">Get lost in the artisan souks toward Ben Youssef Madrasa. Visit the courtyard if open, then continue through spice and leather lanes at your own pace.</p>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day1_ad">Get lost in the vibrant artisan souks toward Ben Youssef Madrasa. Admire its intricate marble and stucco courtyard, then continue browsing spice and leather shops.</p>
                     <h3 data-i18n="marrakech_page.detailed_itinerary.day1_e">Evening — Square at night</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day1_ed">Return to Jemaa el-Fnaa as the food stalls light up. Try street food or a rooftop table overlooking the square.</p>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day1_ed">Return to Jemaa el-Fnaa as food stalls light up and the square turns into a magical open-air theatre. Enjoy dinner at a rooftop terrace with panoramic views.</p>
                 </div>
             </div>
             <div class="tab-content" id="day2">
                 <div class="day-card">
                     <h3 data-i18n="marrakech_page.detailed_itinerary.day2_m">Morning — Bahia Palace &amp; Saadian Tombs</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day2_md">Arrive early at Bahia Palace to avoid groups, then walk to the Saadian Tombs in the Kasbah district.</p>
-                    <h3 data-i18n="marrakech_page.detailed_itinerary.day2_a">Afternoon — El Badi or Majorelle</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day2_ad">Choose El Badi Palace for open-air ruins and storks, or book a timed slot for Jardin Majorelle and the Yves Saint Laurent Museum.</p>
-                    <h3 data-i18n="marrakech_page.detailed_itinerary.day2_e">Evening — Quiet riad dinner</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day2_ed">Rest in your riad courtyard or book a calmer restaurant away from the busiest square edges.</p>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day2_md">Arrive early at Bahia Palace to beat the tour groups, then take a short walk to the Saadian Tombs located in the historic Kasbah neighborhood.</p>
+                    <h3 data-i18n="marrakech_page.detailed_itinerary.day2_a">Afternoon — El Badi or Jardin Majorelle</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day2_ad">Choose El Badi Palace for grand open-air ruins and nesting storks, or head to Gueliz for Jardin Majorelle and the Yves Saint Laurent Museum.</p>
+                    <h3 data-i18n="marrakech_page.detailed_itinerary.day2_e">Evening — Relaxed Riad Dining</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day2_ed">Unwind in a peaceful riad courtyard or reserve a cozy spot at one of Marrakech's high-end Moroccan fine dining venues.</p>
                 </div>
             </div>
             <div class="tab-content" id="day3">
                 <div class="day-card">
-                    <h3 data-i18n="marrakech_page.detailed_itinerary.day3_m">Morning — Day trip departure or Menara</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day3_md">Leave early for the Atlas / Imlil, Agafay desert, or Ouzoud if booked. Otherwise visit the Menara Gardens for a slower local morning.</p>
-                    <h3 data-i18n="marrakech_page.detailed_itinerary.day3_a">Afternoon — Return or free medina</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day3_ad">Back in town, revisit favourite souk lanes, Dar El Bacha if open, or simply enjoy a hammam.</p>
-                    <h3 data-i18n="marrakech_page.detailed_itinerary.day3_e">Evening — Last night in the Ochre City</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day3_ed">A final mint tea on a rooftop and an early night if you travel onward the next morning.</p>
+                    <h3 data-i18n="marrakech_page.detailed_itinerary.day3_m">Morning — Day Trip Departure or Menara</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day3_md">Head out on an excursion to the High Atlas Mountains, Agafay Desert, or Ouzoud Waterfalls. Alternatively, enjoy a peaceful morning walk through the Menara Gardens.</p>
+                    <h3 data-i18n="marrakech_page.detailed_itinerary.day3_a">Afternoon — Medina Leisure &amp; Hammam</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day3_ad">Back in the city, revisit favorite souk stalls, sip coffee at Dar El Bacha, or indulge in a traditional Moroccan spa and hammam treatment.</p>
+                    <h3 data-i18n="marrakech_page.detailed_itinerary.day3_e">Evening — Last Night in the Ochre City</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="marrakech_page.detailed_itinerary.day3_ed">Enjoy a final glass of fresh mint tea on a rooftop lounge as sunset colors paint the city skyline.</p>
                 </div>
             </div>
         </section>
 
         <!-- ==========================================
-             SECTION HÉBERGEMENTS HYBRIDE : COUPS DE CŒUR + BANNIÈRE BOOKING
+             ACCOMMODATION HYBRID SECTION: FEATURED PICKS + BOOKING BANNER
              ========================================== -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             
-            <!-- En-tête de section -->
+            <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div>
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="marrakech_page.directory.badge">Sélection &amp; Conseils</span>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="marrakech_page.directory.badge">Selection &amp; Advice</span>
                     <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="marrakech_page.directory.title">Find Your Ideal Stay in Marrakech</h2>
                 </div>
                 <p class="text-sm text-sombre/70 max-w-md" data-i18n="marrakech_page.directory.subtitle">
-                    Palais légendaires, riads de charme ou havres de paix, voici nos adresses recommandées pour un séjour réussi à Marrakech.
+                    Legendary palaces, charming boutique riads, or peaceful sanctuaries: explore our top recommended addresses for an unforgettable stay in Marrakech.
                 </p>
             </div>
 
-            <!-- Grille des Coups de Cœur (4 cartes ciblées) -->
+            <!-- Featured Highlights Grid (4 Handpicked Stays) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
                 
-                <!-- Coup de cœur 1 : La Mamounia -->
+                <!-- Pick 1: La Mamounia -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="https://mamounia.com/media/cache/jadro_resize/rc/iBZUaTNn1785918630/jadroRoot/medias/653fcee154467/6540e50e0c796/6540e5783a736/accueil-entree.jpeg?auto=format&fit=crop&w=800&q=80" alt="Hôtel La Mamounia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <img src="https://mamounia.com/media/cache/jadro_resize/rc/iBZUaTNn1785918630/jadroRoot/medias/653fcee154467/6540e50e0c796/6540e5783a736/accueil-entree.jpeg?auto=format&fit=crop&w=800&q=80" alt="La Mamounia Hotel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                            ★ Palais Mythique
+                            ★ Iconic Palace
                         </span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre">Hôtel La Mamounia</h3>
+                        <h3 class="text-lg font-bold text-sombre">La Mamounia Hotel</h3>
                         <p class="text-xs text-sombre/70 mt-2 flex-grow">
-                            Un palace légendaire au cœur de l'Hivernage, réputé pour ses jardins somptueux et son raffinement intemporel.
+                            A legendary palace hotel set in historic gardens in the Hivernage district, celebrated worldwide for timeless elegance.
                         </p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert">Hivernage</span>
                             <a href="https://www.booking.com/searchresults.html?ss=La+Mamounia+Marrakech" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline">
-                                Réserver →
+                                Book Now →
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Coup de cœur 2 : The Oberoi Marrakech -->
+                <!-- Pick 2: The Oberoi Marrakech -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
                         <img src="https://www.oberoihotels.com/-/media/oberoi-hotel/marrakech-resized/marrakech_latest/overview/welcome/mobile400x450/image1.jpg?auto=format&fit=crop&w=800&q=80" alt="The Oberoi Marrakech" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
                         <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                            ★ Luxe &amp; Jardins
+                            ★ Luxury &amp; Gardens
                         </span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre">The Oberoi Marrakech</h3>
                         <p class="text-xs text-sombre/70 mt-2 flex-grow">
-                            Un havre de paix majestueux inspiré de l'architecture andalouse, entouré de vergers d'agrumes et d'oliveraies.
+                            A majestic sanctuary inspired by Andalusian architecture, surrounded by citrus orchards and ancient olive groves.
                         </p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert">Route de Fès</span>
                             <a href="https://www.booking.com/searchresults.html?ss=The+Oberoi+Marrakech" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline">
-                                Réserver →
+                                Book Now →
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Coup de cœur 3 : Royal Mansour -->
+                <!-- Pick 3: Royal Mansour -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
                         <img src="https://www.royalmansour.com/wp-content/uploads/2023/05/RM-Marrakech-14-1.jpg?auto=format&fit=crop&w=800&q=80" alt="Royal Mansour Marrakech" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                            ★ Riad d'Exception
+                            ★ Exceptional Riad
                         </span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre">Royal Mansour</h3>
                         <p class="text-xs text-sombre/70 mt-2 flex-grow">
-                            Un chef-d'œuvre architectural unique composé de riads privés de luxe, d'un service d'excellence et de superbes spas.
+                            A unique architectural masterpiece made of private luxury riads, offering unrivaled service and world-class spas.
                         </p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert">Medina</span>
                             <a href="https://www.booking.com/searchresults.html?ss=Royal+Mansour+Marrakech" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline">
-                                Réserver →
+                                Book Now →
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Coup de cœur 4 : El Fenn -->
+                <!-- Pick 4: El Fenn -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
                         <img src="https://el-fenn.b-cdn.net/wp-content/uploads/2025/11/Moggi-Photography-Rooftop-Loungers-Towels-1536x1024.jpg.webp?auto=format&fit=crop&w=800&q=80" alt="El Fenn" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
@@ -546,12 +546,12 @@
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre">El Fenn</h3>
                         <p class="text-xs text-sombre/70 mt-2 flex-grow">
-                            Un riad artistique et branché aux couleurs vibrantes, doté d'un toit-terrasse panoramique incontournable.
+                            An artistic, vibrant boutique riad featuring vibrant interior design and an iconic rooftop terrace with Medina views.
                         </p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert">Mouassine</span>
                             <a href="https://www.booking.com/searchresults.html?ss=El+Fenn+Marrakech" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline">
-                                Réserver →
+                                Book Now →
                             </a>
                         </div>
                     </div>
@@ -559,18 +559,18 @@
 
             </div>
 
-            <!-- BANNIÈRE DE REDIRECTION BOOKING POUR COMPLÉTER LA RECHERCHE -->
+            <!-- BOOKING REDIRECTION BANNER TO EXPAND SEARCH -->
             <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
                 
                 <div class="max-w-xl text-left z-10">
                     <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="marrakech_page.booking_banner.badge">
-                        Plus de 500+ établissements
+                        Over 500+ Accommodations
                     </span>
                     <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="marrakech_page.booking_banner.title">
-                        Explorez tous les hébergements à Marrakech
+                        Explore All Places to Stay in Marrakech
                     </h3>
                     <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="marrakech_page.booking_banner.desc">
-                        Comparez les tarifs en temps réel, consultez les avis vérifiés des voyageurs et profitez de l'annulation gratuite sur la majorité des riads et hôtels.
+                        Compare real-time rates, read verified guest reviews, and enjoy free cancellation options on most riads, hotels, and luxury resorts.
                     </p>
                 </div>
 
@@ -579,21 +579,21 @@
                        target="_blank" 
                        rel="noopener sponsored" 
                        class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
-                       <span data-i18n="marrakech_page.booking_banner.btn">Voir tous les riads sur Booking.com</span>
+                       <span data-i18n="marrakech_page.booking_banner.btn">View All Riads on Booking.com</span>
                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                        </svg>
                     </a>
-                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="marrakech_page.booking_banner.guarantee">✓ Meilleur prix garanti &amp; réservation sécurisée</p>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="marrakech_page.booking_banner.guarantee">✓ Best price guaranteed &amp; secure booking</p>
                 </div>
 
-                <!-- Element décoratif arrière-plan -->
+                <!-- Decorative Background Glow -->
                 <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
             </div>
 
         </section>
         
-        <!-- Where to Eat Section (6 Restaurants) -->
+        <!-- Where to Eat Section (6 Top Restaurants) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between">
                 <div>
@@ -622,7 +622,7 @@
                                 <span class="text-xs text-gray-400" data-i18n="marrakech_page.eat.nomad.loc">Medina Rooftop</span>
                             </div>
                             <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.eat.nomad.title">Nomad Marrakech</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.nomad.desc">Trendy rooftop terrace overlooking the Spice Square, serving light local cuisine with a modern twist.</p>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.nomad.desc">A trendy rooftop terrace overlooking Spice Square, serving light local cuisine with a modern twist.</p>
                         </div>
                     </div>
                 </a>
@@ -644,7 +644,7 @@
                                 <span class="text-xs text-gray-400" data-i18n="marrakech_page.eat.jardin.loc">Medina Oasis</span>
                             </div>
                             <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.eat.jardin.title">Le Jardin</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.jardin.desc">A lush 16th-century courtyard filled with banana trees, offering authentic tagines and tranquil ambiance.</p>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.jardin.desc">A lush 16th-century courtyard filled with greenery and banana plants, offering authentic tagines in a tranquil atmosphere.</p>
                         </div>
                     </div>
                 </a>
@@ -666,7 +666,7 @@
                                 <span class="text-xs text-gray-400" data-i18n="marrakech_page.eat.fassia.loc">Gueliz</span>
                             </div>
                             <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.eat.fassia.title">Al Fassia</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.fassia.desc">Run entirely by women, famous for its slow-cooked shoulder of lamb and rich traditional pastilla.</p>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.fassia.desc">Run entirely by women, famous for its slow-cooked shoulder of lamb and rich traditional pastilla recipes.</p>
                         </div>
                     </div>
                 </a>
@@ -688,7 +688,7 @@
                                 <span class="text-xs text-gray-400" data-i18n="marrakech_page.eat.moha.loc">Medina Riad</span>
                             </div>
                             <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.eat.moha.title">Dar Moha</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.moha.desc">Refined Moroccan gastronomy served around a courtyard pool in Pierre Balmain's former palace.</p>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.moha.desc">Refined Moroccan gastronomy served around a tranquil courtyard pool in Pierre Balmain's former palace.</p>
                         </div>
                     </div>
                 </a>
@@ -710,7 +710,7 @@
                                 <span class="text-xs text-gray-400" data-i18n="marrakech_page.eat.bacha.loc">Dar El Bacha</span>
                             </div>
                             <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.eat.bacha.title">Bacha Coffee</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.bacha.desc">Iconic 1930s coffee room offering rare Arabica coffees and French pastries in a opulent palace setting.</p>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.bacha.desc">An iconic 1930s coffee room offering fine Arabica coffees and French pastries in an opulent palace setting.</p>
                         </div>
                     </div>
                 </a>
@@ -732,7 +732,7 @@
                                 <span class="text-xs text-gray-400" data-i18n="marrakech_page.eat.elfenn.loc">Medina View</span>
                             </div>
                             <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="marrakech_page.eat.elfenn.title">El Fenn Rooftop</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.elfenn.desc">Stylish rooftop lounge featuring panoramic views of the Koutoubia, creative cocktails, and tapas.</p>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="marrakech_page.eat.elfenn.desc">A stylish rooftop lounge featuring panoramic Koutoubia views, signature cocktails, and gourmet tapas.</p>
                         </div>
                     </div>
                 </a>
@@ -749,21 +749,21 @@
                         <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8m-9 5h10M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2zM7 9h.01M17 9h.01"/></svg>
                         <span data-i18n="marrakech_page.tips.transport.title">Getting Around</span>
                     </h3>
-                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="marrakech_page.tips.transport.desc">Inside the Medina, walking is the best option. For longer trips, use yellow "Petit Taxis" and always request the meter (compteur) before starting.</p>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="marrakech_page.tips.transport.desc">Walking is best inside the Medina. For longer journeys, take yellow "Petit Taxis" and ask the driver to use the meter (compteur) before starting.</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-sable/10">
                     <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
                         <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                         <span data-i18n="marrakech_page.tips.bargain.title">Souk Bargaining</span>
                     </h3>
-                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="marrakech_page.tips.bargain.desc">Haggling is part of the culture! Start at around 50% of the initial offered price and always keep negotiations friendly and respectful.</p>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="marrakech_page.tips.bargain.desc">Haggling is part of the experience! Start at roughly 50% of the initial price and keep negotiations friendly and lighthearted.</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-sable/10">
                     <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
                         <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
                         <span data-i18n="marrakech_page.tips.water.title">Stay Hydrated</span>
                     </h3>
-                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="marrakech_page.tips.water.desc">Marrakech can get hot, especially between June and August. Drink bottled water and enjoy fresh orange juice in Jemaa el-Fnaa.</p>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="marrakech_page.tips.water.desc">Marrakech temperatures can soar, especially in summer. Stick to bottled water and enjoy fresh orange juice in Jemaa el-Fnaa.</p>
                 </div>
             </div>
         </section>
@@ -773,7 +773,7 @@
             <div class="mb-8">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="marrakech_page.daytrips.badge">Beyond the City</span>
                 <h2 class="text-3xl font-bold text-vert" data-i18n="marrakech_page.daytrips.title">Best Day Trips from Marrakech</h2>
-                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="marrakech_page.daytrips.subtitle">Rent a car, book a driver, or join a small group tour to reach these landscapes in a single day.</p>
+                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="marrakech_page.daytrips.subtitle">Rent a car, hire a private driver, or join a small tour to reach these stunning destinations in a single day.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
@@ -781,7 +781,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="marrakech_page.daytrips.atlas.title">Atlas Mountains &amp; Imlil</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="marrakech_page.daytrips.atlas.desc">Berber villages, valley hikes, and mountain views about 1h30 from Marrakech.</p>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="marrakech_page.daytrips.atlas.desc">Traditional Berber villages, valley treks, and alpine scenery about 1.5 hours from Marrakech.</p>
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
@@ -789,7 +789,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="marrakech_page.daytrips.agafay.title">Agafay Stone Desert</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="marrakech_page.daytrips.agafay.desc">Sunset camel rides and dinner under the stars, just 30 minutes from the medina.</p>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="marrakech_page.daytrips.agafay.desc">Sunset camel rides, quad biking, and dinner under the stars, just 40 minutes from town.</p>
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
@@ -797,7 +797,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="marrakech_page.daytrips.ouzoud.title">Ouzoud Waterfalls</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="marrakech_page.daytrips.ouzoud.desc">Morocco's tallest waterfalls and wild Barbary macaques, roughly 3 hours away.</p>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="marrakech_page.daytrips.ouzoud.desc">Morocco's tallest waterfalls surrounded by lush greenery and playful Barbary macaques.</p>
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
@@ -805,7 +805,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="marrakech_page.daytrips.essaouira.title">Essaouira Coast</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="marrakech_page.daytrips.essaouira.desc">Sea breeze, ramparts, and fresh seafood on Morocco's Atlantic coast.</p>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="marrakech_page.daytrips.essaouira.desc">Fresh sea breeze, historical ramparts, and grilled seafood along the Atlantic coast.</p>
                     </div>
                 </div>
             </div>
@@ -823,28 +823,28 @@
                         <span data-i18n="marrakech_page.faq.q1.question">How many days should I spend in Marrakech?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="marrakech_page.faq.q1.answer">3 to 5 days lets you explore the medina, palaces, and gardens at an easy pace, with a day free for the Atlas Mountains or Agafay desert.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="marrakech_page.faq.q1.answer">3 to 5 days allows you to explore the Medina, palaces, and gardens at an enjoyable pace, with time left for an excursion to the High Atlas or Agafay Desert.</p>
                 </details>
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
-                        <span data-i18n="marrakech_page.faq.q2.question">Is Marrakech safe for tourists?</span>
+                        <span data-i18n="marrakech_page.faq.q2.question">Is Marrakech safe for international tourists?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="marrakech_page.faq.q2.answer">Yes, Marrakech is a popular and generally safe destination. As in any busy city, stay alert in crowded souks and agree on taxi fares before you set off.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="marrakech_page.faq.q2.answer">Yes, Marrakech is generally very safe for travelers. As in any major tourism city, keep an eye on your belongings in crowded souks and agree on taxi prices upfront.</p>
                 </details>
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
-                        <span data-i18n="marrakech_page.faq.q3.question">What currency is used and can I pay by card?</span>
+                        <span data-i18n="marrakech_page.faq.q3.question">What currency is used and can I pay by credit card?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="marrakech_page.faq.q3.answer">Morocco uses the dirham (MAD). Cards are accepted in most hotels and restaurants, but keep cash for the souks, petit taxis, and small vendors.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="marrakech_page.faq.q3.answer">Morocco uses the Moroccan Dirham (MAD). Cards are accepted at most hotels, fine restaurants, and larger shops, but carrying cash is essential for souks, taxis, and small cafes.</p>
                 </details>
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
-                        <span data-i18n="marrakech_page.faq.q4.question">How do I get from Marrakech Menara Airport to the medina?</span>
+                        <span data-i18n="marrakech_page.faq.q4.question">How do I get from Marrakech Menara Airport to the Medina?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="marrakech_page.faq.q4.answer">RAK airport is about 15 minutes from the medina. Official airport taxis, private transfers, and app-based rides are all available; agree the price before departing if using a taxi.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="marrakech_page.faq.q4.answer">RAK airport is only 15 minutes away. Official taxis, pre-booked airport transfers, and local buses are all readily available right outside the arrivals terminal.</p>
                 </details>
             </div>
         </section>
@@ -889,7 +889,7 @@
         </div>
     </footer>
 
-    <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire) -->
+    <!-- Combined JavaScript Scripts (Language Switcher, Mobile Menu, Tabs) -->
     <script>
         function openDay(evt, dayId) {
             var tabContents = document.getElementsByClassName("tab-content");
@@ -932,7 +932,7 @@
                 });
             }
 
-            const savedLang = localStorage.getItem('preferred_lang') || 'fr';
+            const savedLang = localStorage.getItem('preferred_lang') || 'en';
             switchLanguage(savedLang);
         });
 
@@ -974,7 +974,7 @@
         }
     </script>
     
-    <!-- Scripts externes -->
+    <!-- External Scripts -->
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>
 </body>

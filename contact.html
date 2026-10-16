@@ -12,16 +12,9 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
 
     <!-- SEO & Metadata -->
-    <title data-i18n="seo.title">Contact Us | MoroccoTripMap</title>
-    <meta content="Get in touch with MoroccoTripMap. Contact us for any questions about our travel guides, destinations, or partnerships." name="description" data-i18n-attr="content:seo.description"/>
+    <title data-i18n="core.seo_contact_title">Contact Us | MoroccoTripMap</title>
+    <meta content="Get in touch with MoroccoTripMap. Contact us for any questions about our travel guides, destinations, or partnerships." name="description" data-i18n-attr="content:core.seo_contact_desc"/>
     <link href="https://moroccotripmap.com/contact.html" rel="canonical"/>
-
-    <!-- Open Graph / Social Media -->
-    <meta content="website" property="og:type"/>
-    <meta content="Contact Us | MoroccoTripMap" property="og:title" data-i18n-attr="content:seo.og_title"/>
-    <meta content="Get in touch with MoroccoTripMap for any questions or travel planning inquiries." property="og:description" data-i18n-attr="content:seo.og_description"/>
-    <meta content="https://moroccotripmap.com/contact.html" property="og:url"/>
-    <meta content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -88,31 +81,18 @@
             
             <!-- Lang Switcher & Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-4">
-                <!-- SÉLECTEUR DE LANGUE -->
                 <div class="relative inline-block text-left" id="lang-menu-container">
                     <button id="lang-menu-button" type="button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
                         <span id="current-lang-label">EN</span>
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     
                     <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden">
-                        <button type="button" onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
-                            English
-                        </button>
-                        <button type="button" onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>
-                            Français
-                        </button>
-                        <button type="button" onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>
-                            Español
-                        </button>
-                        <button type="button" onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>
-                            العربية
-                        </button>
+                        <button type="button" data-lang="en" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">English</button>
+                        <button type="button" data-lang="fr" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">Français</button>
+                        <button type="button" data-lang="es" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">Español</button>
+                        <button type="button" data-lang="ar" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">العربية</button>
                     </div>
                 </div>
 
@@ -128,10 +108,10 @@
             <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider">Language / Langue</span>
                 <div class="flex gap-2">
-                    <button type="button" onclick="switchLanguage('en')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">EN</button>
-                    <button type="button" onclick="switchLanguage('fr')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">FR</button>
-                    <button type="button" onclick="switchLanguage('es')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">ES</button>
-                    <button type="button" onclick="switchLanguage('ar')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">AR</button>
+                    <button type="button" data-lang="en" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">EN</button>
+                    <button type="button" data-lang="fr" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">FR</button>
+                    <button type="button" data-lang="es" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">ES</button>
+                    <button type="button" data-lang="ar" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">AR</button>
                 </div>
             </div>
             <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
@@ -148,7 +128,7 @@
             <h1 class="text-4xl font-extrabold text-vert mt-1" data-i18n="contact_page.title">Contact Us</h1>
             <p class="text-sombre/70 text-sm sm:text-base mt-2 max-w-lg mx-auto">
                 <span data-i18n="contact_page.subtitle">Have a question about our guides, destinations, or want to collaborate? Send us a message directly at</span>
-                <span class="font-semibold text-vert block mt-1">contact@moroccotripmap.com</span>
+                <span class="font-semibold text-vert block mt-1">contact@kamliseo.com</span>
             </p>
         </div>
 
@@ -169,11 +149,11 @@
 
                 <div>
                     <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="subject" data-i18n="contact_page.form.subject_label">Subject</label>
-                    <input class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm" type="text" id="subject" name="subject" placeholder="Partnership / Question about Marrakech" data-i18n-attr="placeholder:contact_page.form.subject_placeholder" required>
+                    <input class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm" type="text" id="subject" name="subject" placeholder="Partnership / Question about Dakhla" data-i18n-attr="placeholder:contact_page.form.subject_placeholder" required>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="message" data-i18n="contact_page.form.message_label">Message</label>
+                    <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" gr for="message" data-i18n="contact_page.form.message_label">Message</label>
                     <textarea class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm h-36 resize-none" id="message" name="message" placeholder="Write your message here..." data-i18n-attr="placeholder:contact_page.form.message_placeholder" required></textarea>
                 </div>
 
@@ -228,13 +208,6 @@
 
     <!-- Scripts JavaScript -->
     <script>
-        const FLAG_SVGS = {
-            en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
-            fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
-            es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
-            ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
-        };
-
         document.addEventListener('DOMContentLoaded', function () {
             const langButton = document.getElementById('lang-menu-button');
             const langDropdown = document.getElementById('lang-menu-dropdown');
@@ -251,38 +224,7 @@
                     }
                 });
             }
-
-            const savedLang = localStorage.getItem('preferred_lang') || 'en';
-            switchLanguage(savedLang);
         });
-
-        function switchLanguage(lang) {
-            const langLabel = document.getElementById('current-lang-label');
-            const langButton = document.getElementById('lang-menu-button');
-
-            if (langLabel) {
-                langLabel.textContent = lang.toUpperCase();
-            }
-
-            if (langButton && FLAG_SVGS[lang]) {
-                const svgElement = langButton.querySelector('svg');
-                if (svgElement) {
-                    svgElement.outerHTML = FLAG_SVGS[lang];
-                }
-            }
-
-            const langDropdown = document.getElementById('lang-menu-dropdown');
-            if (langDropdown) {
-                langDropdown.classList.add('hidden');
-            }
-
-            document.documentElement.setAttribute('lang', lang);
-            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-
-            if (typeof changeLanguage === 'function') {
-                changeLanguage(lang);
-            }
-        }
     </script>
     
     <script src="js/i18n.js"></script>

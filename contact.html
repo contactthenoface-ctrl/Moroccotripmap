@@ -12,14 +12,14 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
 
     <!-- SEO & Metadata -->
-    <title>Contact Us | MoroccoTripMap</title>
-    <meta content="Get in touch with MoroccoTripMap. Contact us for any questions about our travel guides, destinations, or partnerships." name="description"/>
+    <title data-i18n="seo.title">Contact Us | MoroccoTripMap</title>
+    <meta content="Get in touch with MoroccoTripMap. Contact us for any questions about our travel guides, destinations, or partnerships." name="description" data-i18n-attr="content:seo.description"/>
     <link href="https://moroccotripmap.com/contact.html" rel="canonical"/>
 
     <!-- Open Graph / Social Media -->
     <meta content="website" property="og:type"/>
-    <meta content="Contact Us | MoroccoTripMap" property="og:title"/>
-    <meta content="Get in touch with MoroccoTripMap for any questions or travel planning inquiries." property="og:description"/>
+    <meta content="Contact Us | MoroccoTripMap" property="og:title" data-i18n-attr="content:seo.og_title"/>
+    <meta content="Get in touch with MoroccoTripMap for any questions or travel planning inquiries." property="og:description" data-i18n-attr="content:seo.og_description"/>
     <meta content="https://moroccotripmap.com/contact.html" property="og:url"/>
     <meta content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
 
@@ -55,51 +55,64 @@
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
     
-    <!-- Header Navigation (Identique aux autres pages) -->
+    <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a class="flex items-center gap-3 group shrink-0" href="index.html">
-                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" src="images/logo.webp"/>
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" src="images/logo.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';"/>
             </a>
             
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-                <a class="hover:text-vert transition" href="destinations.html">Destinations</a>
+                <a class="hover:text-vert transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
                 <div class="relative inline-block text-left" id="categories-menu-container">
                     <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-                        <span>Categories</span>
+                        <span data-i18n="nav.categories">Categories</span>
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html">Stays & Riads</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html">Gastronomy</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html">Experiences</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html">Monuments & Museums</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html">Transport & Rental</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html">Itineraries</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html">Travel Guides</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
                     </div>
                 </div>
-                <a class="hover:text-vert transition" href="guides/histoire.html">History</a>
-                <a class="hover:text-vert transition" href="blog/index.html">Blog</a>
-                <a class="text-vert font-bold transition" href="contact.html">Contact</a>
+                <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
+                <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
+                <a class="text-vert font-bold transition" href="contact.html" data-i18n="nav.contact">Contact</a>
             </nav>
             
             <!-- Lang Switcher & Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-4">
+                <!-- SÉLECTEUR DE LANGUE -->
                 <div class="relative inline-block text-left" id="lang-menu-container">
-                    <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
+                    <button id="lang-menu-button" type="button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
                         <span id="current-lang-label">EN</span>
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     
                     <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden">
-                        <button onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">English</button>
-                        <button onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">Français</button>
-                        <button onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">Español</button>
-                        <button onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">العربية</button>
+                        <button type="button" onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                            English
+                        </button>
+                        <button type="button" onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>
+                            Français
+                        </button>
+                        <button type="button" onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>
+                            Español
+                        </button>
+                        <button type="button" onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>
+                            العربية
+                        </button>
                     </div>
                 </div>
 
@@ -112,9 +125,18 @@
 
         <!-- Mobile Menu Drawer -->
         <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider">Language / Langue</span>
+                <div class="flex gap-2">
+                    <button type="button" onclick="switchLanguage('en')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">EN</button>
+                    <button type="button" onclick="switchLanguage('fr')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">FR</button>
+                    <button type="button" onclick="switchLanguage('es')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">ES</button>
+                    <button type="button" onclick="switchLanguage('ar')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">AR</button>
+                </div>
+            </div>
             <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-                <a class="py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">Destinations</a>
-                <a class="py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-vert font-bold" href="contact.html">Contact</a>
+                <a class="py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
+                <a class="py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-vert font-bold" href="contact.html" data-i18n="nav.contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -122,45 +144,42 @@
     <!-- Main Content: Contact Section -->
     <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
         <div class="text-center mb-10">
-            <span class="text-xs font-bold text-sable uppercase tracking-wider">Get in Touch</span>
-            <h1 class="text-4xl font-extrabold text-vert mt-1">Contact Us</h1>
+            <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="contact_page.badge">Get in Touch</span>
+            <h1 class="text-4xl font-extrabold text-vert mt-1" data-i18n="contact_page.title">Contact Us</h1>
             <p class="text-sombre/70 text-sm sm:text-base mt-2 max-w-lg mx-auto">
-                Have a question about our guides, destinations, or want to collaborate? Send us a message directly at <span class="font-semibold text-vert">contact@kamliseo.com</span>.
+                <span data-i18n="contact_page.subtitle">Have a question about our guides, destinations, or want to collaborate? Send us a message directly at</span>
+                <span class="font-semibold text-vert block mt-1">contact@kamliseo.com</span>
             </p>
         </div>
 
         <!-- Formulaire de contact -->
         <div class="bg-white rounded-3xl border border-sable/15 shadow-sm p-8 sm:p-10">
-            <!-- 
-              NOTE: Pour router les messages vers contact@kamliseo.com sans backend, 
-              vous pouvez utiliser Formspree (remplacez l'URL ci-dessous par votre propre endpoint Formspree gratuit).
-            -->
             <form action="https://formspree.io/f/votre-id-formspree" method="POST" class="space-y-6">
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="name">Your Name</label>
-                        <input class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm" type="text" id="name" name="name" placeholder="John Doe" required>
+                        <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="name" data-i18n="contact_page.form.name_label">Your Name</label>
+                        <input class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm" type="text" id="name" name="name" placeholder="John Doe" data-i18n-attr="placeholder:contact_page.form.name_placeholder" required>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="email">Your Email</label>
-                        <input class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm" type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="email" data-i18n="contact_page.form.email_label">Your Email</label>
+                        <input class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm" type="email" id="email" name="email" placeholder="john@example.com" data-i18n-attr="placeholder:contact_page.form.email_placeholder" required>
                     </div>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="subject">Subject</label>
-                    <input class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm" type="text" id="subject" name="subject" placeholder="Partnership / Question about Dakhla" required>
+                    <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="subject" data-i18n="contact_page.form.subject_label">Subject</label>
+                    <input class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm" type="text" id="subject" name="subject" placeholder="Partnership / Question about Dakhla" data-i18n-attr="placeholder:contact_page.form.subject_placeholder" required>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="message">Message</label>
-                    <textarea class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm h-36 resize-none" id="message" name="message" placeholder="Write your message here..." required></textarea>
+                    <label class="block text-xs font-bold text-sombre uppercase tracking-wider mb-2" for="message" data-i18n="contact_page.form.message_label">Message</label>
+                    <textarea class="w-full bg-creme border border-sable/20 rounded-xl px-4 py-3 text-sombre focus:outline-none focus:border-vert transition text-sm h-36 resize-none" id="message" name="message" placeholder="Write your message here..." data-i18n-attr="placeholder:contact_page.form.message_placeholder" required></textarea>
                 </div>
 
                 <div>
                     <button type="submit" class="w-full bg-vert hover:bg-[#12422a] text-white font-bold text-base py-4 rounded-2xl shadow-md transition duration-200 flex items-center justify-center gap-2 cursor-pointer">
-                        <span>Envoyer le message</span>
+                        <span data-i18n="contact_page.form.send_btn">Send Message</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                         </svg>
@@ -170,50 +189,103 @@
         </div>
     </main>
 
-    <!-- Footer (Identique aux autres pages) -->
+    <!-- Footer -->
     <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
                 <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-                <p class="text-xs text-creme/80 leading-relaxed">
+                <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
                     Discover. Plan. Experience Morocco.<br/>
                     The premier tourism directory and cultural travel guide for visitors exploring Morocco.
                 </p>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Destinations</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Destinations</h4>
                 <ul class="text-xs space-y-2 text-creme/80">
-                    <li><a class="hover:text-white transition" href="dakhla.html">Dakhla Travel Guide</a></li>
-                    <li><a class="hover:text-white transition" href="destinations.html">All Destinations</a></li>
+                    <li><a class="hover:text-white transition" href="dakhla.html" data-i18n="footer.link_dakhla">Dakhla Travel Guide</a></li>
+                    <li><a class="hover:text-white transition" href="destinations.html" data-i18n="footer.link_all_destinations">All Destinations</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Categories</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
                 <ul class="text-xs space-y-2 text-creme/80">
-                    <li><a class="hover:text-white transition" href="riads/index.html">Authentic Riads & Hotels</a></li>
+                    <li><a class="hover:text-white transition" href="riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Connect</h4>
-                <p class="text-xs text-creme/80 mb-3">Follow our YouTube channel for video travel guides:</p>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
+                <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
                 <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
                     @moroccotripmap
                 </a>
             </div>
         </div>
         <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-            <p>© MoroccoTripMap. All rights reserved.</p>
+            <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
             <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
         </div>
     </footer>
 
     <!-- Scripts JavaScript -->
     <script>
+        const FLAG_SVGS = {
+            en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
+            fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
+            es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
+            ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const langButton = document.getElementById('lang-menu-button');
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+
+            if (langButton && langDropdown) {
+                langButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.add('hidden');
+                    }
+                });
+            }
+
+            const savedLang = localStorage.getItem('preferred_lang') || 'en';
+            switchLanguage(savedLang);
+        });
+
         function switchLanguage(lang) {
-            localStorage.setItem('preferred_lang', lang);
+            const langLabel = document.getElementById('current-lang-label');
+            const langButton = document.getElementById('lang-menu-button');
+
+            if (langLabel) {
+                langLabel.textContent = lang.toUpperCase();
+            }
+
+            if (langButton && FLAG_SVGS[lang]) {
+                const svgElement = langButton.querySelector('svg');
+                if (svgElement) {
+                    svgElement.outerHTML = FLAG_SVGS[lang];
+                }
+            }
+
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+            if (langDropdown) {
+                langDropdown.classList.add('hidden');
+            }
+
             document.documentElement.setAttribute('lang', lang);
             document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(lang);
+            }
         }
     </script>
+    
+    <script src="js/i18n.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

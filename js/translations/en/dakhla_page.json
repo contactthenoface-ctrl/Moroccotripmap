@@ -2,19 +2,19 @@
   "seo": {
     "title": "Dakhla Travel Guide 2026 | Lagoon, Kitesurf & Sahara | MoroccoTripMap",
     "description": "Plan Dakhla: turquoise lagoon, kitesurf and wingfoil, White Dune, Dragon Island, oyster farms, Foum El Bouir and desert edge. Atlantic meets Sahara in southern Morocco.",
-    "keywords": "Dakhla, Dakhla lagoon, kitesurf Dakhla, wingfoil, White Dune, Dragon Island, Foum El Bouir, oyster farm Dakhla, Sebkha Imlili"
+    "og_title": "Dakhla Travel Guide | Lagoon, Kitesurf & Sahara | MoroccoTripMap",
+    "og_description": "Turquoise lagoon, kitesurf, White Dune, Dragon Island, and desert edge in southern Morocco."
   },
-  "name": "Dakhla",
   "hero_subtitle": "Where a turquoise lagoon meets the Atlantic and the Sahara — wind sports, white dunes and quiet desert shores.",
   "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Year-round wind; peak Oct – June",
-    "stay_label": "Ideal stay",
-    "stay_val": "3 – 7 days",
-    "vibe_label": "Vibe",
-    "vibe_val": "Lagoon, kitesurf, desert edge",
-    "airport_label": "Access",
-    "airport_val": "Dakhla Airport (VIL) · road links"
+    "best_time_label": "Best Time to Visit",
+    "best_time_val": "Year-round wind; peak Oct – Jun",
+    "stay_label": "Ideal Stay",
+    "stay_val": "3 – 7 Days",
+    "vibe_label": "Top Vibe",
+    "vibe_val": "Lagoon & Kitesurf",
+    "airport_label": "Nearest Airport",
+    "airport_val": "VIL (Dakhla Airport)"
   },
   "overview": {
     "title": "Welcome to Dakhla — lagoon, wind and the edge of the desert",
@@ -23,10 +23,10 @@
     "p3": "Three to seven days work well if you mix water time with one dune outing and a slower lagoon evening. Summer is windy and warm; winter is milder and still excellent for sports."
   },
   "places": {
-    "badge": "Highlights",
-    "title": "Must-visit places in Dakhla",
+    "badge": "Top Sightseeing",
+    "title": "Must-Visit Places in Dakhla",
     "subtitle": "Lagoon, dunes, island, wind spots and the ocean side.",
-    "explore": "Explore place →",
+    "explore": "Explore Place →",
     "lagune": {
       "tag": "Lagoon",
       "title": "Dakhla Lagoon",
@@ -62,7 +62,7 @@
       "title": "Port & Waterfront",
       "desc": "Working harbour and evening promenade in town."
     },
-    "sources_asnaa": {
+    "notre_dame": {
       "tag": "Desert",
       "title": "Sources d'Asnaa",
       "desc": "Natural springs and a quieter desert-edge outing near Dakhla."
@@ -71,31 +71,7 @@
   "itinerary": {
     "badge": "Planning",
     "title": "Suggested 4-day plan for Dakhla",
-    "subtitle": "Wind and lagoon first, then dunes and ocean side.",
-    "day1": {
-      "tag": "Day 1",
-      "title": "Lagoon & orientation",
-      "desc": "Arrive, settle near the lagoon, sunset on the water.",
-      "duration": "Full day · arrival"
-    },
-    "day2": {
-      "tag": "Day 2",
-      "title": "Wind sports",
-      "desc": "Kitesurf or wingfoil session; optional lesson if you are new.",
-      "duration": "Full day · water"
-    },
-    "day3": {
-      "tag": "Day 3",
-      "title": "White Dune & Dragon Island",
-      "desc": "Lagoon outing to the dune and island viewpoints.",
-      "duration": "Full day · scenery"
-    },
-    "day4": {
-      "tag": "Day 4",
-      "title": "Ocean or desert",
-      "desc": "Foum El Bouir waves, oyster tasting, or Sebkha Imlili track.",
-      "duration": "Full day · flexible"
-    }
+    "subtitle": "Wind and lagoon first, then dunes and ocean side."
   },
   "detailed_itinerary": {
     "day1_tab": "Day 1 — Arrival & lagoon",
@@ -131,27 +107,49 @@
     "badge": "Stays",
     "title": "Find your ideal stay in Dakhla",
     "subtitle": "Lagoon camps, town hotels and stays near the kite spots — open a listing for details.",
-    "filter_type_label": "Type:",
-    "filter_location_label": "Area:",
-    "type_all": "All types",
-    "type_hotel": "Hotels",
-    "type_riad": "Riads & guesthouses",
-    "type_guesthouse": "Kite camps",
-    "location_all": "All areas",
-    "location_medina": "Town",
-    "location_town": "Town",
-    "location_outside": "Lagoon side",
-    "location_outskirts": "Kite spots / south",
-    "counter": "stays found",
-    "district_label": "Area",
-    "type_label": "Type",
-    "check_availability": "Check availability →",
-    "no_results": "No stays match these filters."
+    "check_availability": "Book →"
+  },
+  "stays": {
+    "badge": "Selection & Tips",
+    "title": "Where to stay in Dakhla? Our Favorites",
+    "subtitle": "Lagoon camps, town hotels and stays near the kite spots — open a listing for details.",
+    "book": "Book →",
+    "card1": {
+      "badge": "★ Kite Camp Resort",
+      "name": "Dakhla Attitude",
+      "desc": "World-renowned kite camp directly on the lagoon with top-tier water sports facilities and bungalows.",
+      "location": "Lagoon Side"
+    },
+    "card2": {
+      "badge": "★ Ocean & Surf",
+      "name": "West Point Dakhla",
+      "desc": "Eco-resort situated right on the ocean side near Foum El Bouir, perfect for surf and wave enthusiasts.",
+      "location": "Ocean Side"
+    },
+    "card3": {
+      "badge": "★ Luxury Lagoon Camp",
+      "name": "PK25 Dakhla",
+      "desc": "Sophisticated bungalows blending modern comfort with raw desert nature along the quiet lagoon.",
+      "location": "PK 25 Lagoon"
+    },
+    "card4": {
+      "badge": "★ Town & Comfort",
+      "name": "Hotel Dakhla South Rod",
+      "desc": "Convenient hotel base in town offering easy access to local markets, restaurants and coastal walks.",
+      "location": "Town Centre"
+    }
+  },
+  "booking_banner": {
+    "badge": "Over 50+ kite camps & hotels across Dakhla",
+    "title": "Explore all stays in Dakhla",
+    "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation on top lagoon camps and ocean resorts.",
+    "btn": "View all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
   },
   "eat": {
-    "badge": "Food",
+    "badge": "Gastronomy",
     "title": "Where to eat in Dakhla",
-    "subtitle": "Oysters, grilled fish and simple lagoon-side tables.",
+    "subtitle": "Oysters, grilled fish and simple lagoon-side tables",
     "roudani": {
       "tag": "Seafood",
       "loc": "Lagoon",
@@ -187,24 +185,6 @@
       "loc": "Lagoon",
       "title": "Shore café",
       "desc": "Tea with a lagoon view after the wind drops."
-    },
-    "moha": {
-      "tag": "Local",
-      "loc": "Town",
-      "title": "Everyday tagines",
-      "desc": "Moroccan plates away from the kite strip."
-    },
-    "bacha": {
-      "tag": "Seafood",
-      "loc": "Port",
-      "title": "Port fish",
-      "desc": "Catch of the day near the harbour."
-    },
-    "elfenn": {
-      "tag": "Local",
-      "loc": "Town",
-      "title": "Evening table",
-      "desc": "Later sitting when the heat eases."
     }
   },
   "tips": {

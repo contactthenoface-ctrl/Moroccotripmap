@@ -78,8 +78,28 @@
 
         /* Styles intégrés pour l'itinéraire et les filtres */
         .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
-        .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
-        .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
+        .itinerary-tabs { 
+            display: flex; 
+            flex-direction: column; /* Aligne les boutons les uns sous les autres */
+            align-items: flex-start; /* Aligne les boutons à gauche (ou 'center' si vous préférez au centre) */
+            gap: 10px; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #E5E7EB; 
+            padding-bottom: 15px; 
+        }
+        .tab-btn { 
+            background: #F9F6F0; 
+            border: 1px solid rgba(194, 155, 98, 0.3); 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            font-weight: 600; 
+            border-radius: 0.75rem; 
+            transition: 0.3s; 
+            color: #1A1A1A; 
+            font-size: 0.95rem; 
+            width: auto; /* Ajuste la largeur automatiquement selon le texte */
+            display: inline-block;
+        }
         .tab-btn.active { background: #185336; color: #fff; border-color: #185336; }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
@@ -398,17 +418,18 @@
             </div>
         </section>
 
-        <!-- Recommended Itinerary Section (3 Days Plan) -->
+        <!-- Recommended Itinerary Section -->
         <section class="itinerary-section">
             <div class="text-center mb-8">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="dakhla_page.itinerary.badge">Planning</span>
-                <h2 class="text-3xl font-bold text-vert" data-i18n="dakhla_page.itinerary.title">Suggested 3-day plan for Dakhla</h2>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="dakhla_page.itinerary.title">Suggested 4-day plan for Dakhla</h2>
                 <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="dakhla_page.itinerary.subtitle">Wind and lagoon first, then dunes and ocean side.</p>
             </div>
             <div class="itinerary-tabs">
                 <button class="tab-btn active" data-i18n="dakhla_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Arrival &amp; lagoon</button>
-                <button class="tab-btn" data-i18n="dakhla_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Wind &amp; Dune</button>
-                <button class="tab-btn" data-i18n="dakhla_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Ocean side &amp; departure</button>
+                <button class="tab-btn" data-i18n="dakhla_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Wind</button>
+                <button class="tab-btn" data-i18n="dakhla_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Dunes &amp; Island</button>
+                <button class="tab-btn" data-i18n="dakhla_page.detailed_itinerary.day4_tab" onclick="openDay(event,'day4')">Day 4 — Ocean or Desert</button>
             </div>
             <div class="tab-content active" id="day1">
                 <div class="day-card">
@@ -422,22 +443,32 @@
             </div>
             <div class="tab-content" id="day2">
                 <div class="day-card">
-                    <h3 data-i18n="dakhla_page.detailed_itinerary.day2_m">Morning — Kitesurf &amp; Lagoon Session</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day2_md">Kitesurf or wingfoil on the lagoon’s flat water.</p>
-                    <h3 data-i18n="dakhla_page.detailed_itinerary.day2_a">Afternoon — White Dune &amp; Dragon Island</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day2_ad">Drive or boat toward the White Dune and spot Dragon Island's silhouette.</p>
-                    <h3 data-i18n="dakhla_page.detailed_itinerary.day2_e">Evening — Oyster tasting</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day2_ed">Fresh oysters at the lagoon tables at sunset.</p>
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day2_m">Morning — Sports Session</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day2_md">Kitesurf or wingfoil on the lagoon’s calm water.</p>
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day2_a">Afternoon — Second Session or Rest</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day2_ad">More water time or relaxing at a shore-side café.</p>
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day2_e">Evening — Camp or Town</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day2_ed">An evening by the lagoon or along the waterfront.</p>
                 </div>
             </div>
             <div class="tab-content" id="day3">
                 <div class="day-card">
-                    <h3 data-i18n="dakhla_page.detailed_itinerary.day3_m">Morning — Foum El Bouir</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day3_md">Explore ocean waves on the peninsula’s Atlantic side.</p>
-                    <h3 data-i18n="dakhla_page.detailed_itinerary.day3_a">Afternoon — Town &amp; Waterfront</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day3_ad">Stroll through Dakhla town and waterfront before departing.</p>
-                    <h3 data-i18n="dakhla_page.detailed_itinerary.day3_e">Evening — Last lagoon view</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day3_ed">Final sunset and airport transfer.</p>
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day3_m">Morning — White Dune</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day3_md">Drive or take a boat toward the White Dune to enjoy the views.</p>
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day3_a">Afternoon — Dragon Island View</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day3_ad">Spot the rocky formation, take photos, and enjoy the lagoon light.</p>
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day3_e">Evening — Optional Oysters</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day3_ed">Taste lagoon oysters if in season.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="day4">
+                <div class="day-card">
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day4_m">Morning — Foum El Bouir or Sebkha Imlili</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day4_md">Ocean waves on the far side or a track on the edge of the desert.</p>
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day4_a">Afternoon — Free Time or Second Session</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day4_ad">Head back to the lagoon for wind or relax before departure.</p>
+                    <h3 data-i18n="dakhla_page.detailed_itinerary.day4_e">Evening — Last Lagoon Light</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="dakhla_page.detailed_itinerary.day4_ed">Final sunset if flight schedules allow.</p>
                 </div>
             </div>
         </section>
@@ -759,14 +790,14 @@
             </div>
         </section>
 
-        <!-- Day Trips from Dakhla (3 cartes) -->
+        <!-- Day Trips from Dakhla (4 cartes) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="mb-8">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="dakhla_page.daytrips.badge">Around Dakhla</span>
                 <h2 class="text-3xl font-bold text-vert" data-i18n="dakhla_page.daytrips.title">Best outings from Dakhla</h2>
                 <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="dakhla_page.daytrips.subtitle">Dunes, ocean side and desert edge.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
                     <img alt="White Dune sunset" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
@@ -789,6 +820,14 @@
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="dakhla_page.daytrips.taliouine.title">Foum El Bouir</h3>
                         <p class="text-xs text-white/80 mt-1" data-i18n="dakhla_page.daytrips.taliouine.desc">Atlantic waves on the ocean side of the peninsula.</p>
+                    </div>
+                </div>
+                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
+                    <img alt="Sebkha Imlili desert" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="dakhla_page.daytrips.agadir.title">Sebkha Imlili</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="dakhla_page.daytrips.agadir.desc">Salt flats and open desert located south of the town.</p>
                     </div>
                 </div>
             </div>

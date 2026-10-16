@@ -88,24 +88,6 @@
         .day-card h3:first-of-type { margin-top: 0; }
         .steps-list { list-style: none; padding: 0; margin-top: 15px; }
         .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
-
-        /* Styles pour les Filtres d'hébergement */
-        .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-        .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
-        .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
-        .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
-        .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
-        .filter-group select:focus { border-color: #185336; }
-        .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
-        .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
-        .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
-        .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
-        .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
-        .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
-        .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
-        .acc-contact a:hover { text-decoration: underline; }
-        .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -120,26 +102,26 @@
             
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-    <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
-    <div class="relative inline-block text-left" id="categories-menu-container">
-        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-            <span data-i18n="nav.categories">Categories</span>
-            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-        </div>
-    </div>
-    <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
-    <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
-    <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
-</nav>
+                <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
+                <div class="relative inline-block text-left" id="categories-menu-container">
+                    <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
+                        <span data-i18n="nav.categories">Categories</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+                    </div>
+                </div>
+                <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
+                <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
+                <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
+            </nav>
             
             <!-- Lang Switcher & Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-4">
@@ -191,53 +173,53 @@
             </div>
 
             <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
-            <span data-i18n="nav.cities">Cities &amp; Destinations</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <div>
-        <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                <span data-i18n="nav.categories">Categories</span>
-            </div>
-            <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-        </div>
-    </div>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-            <span data-i18n="nav.history">History of Morocco</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-            <span data-i18n="nav.blog">Blog</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="contact.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-            <span data-i18n="nav.contact">Contact</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-</nav>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
+                        <span data-i18n="nav.cities">Cities &amp; Destinations</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <div>
+                    <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                            <span data-i18n="nav.categories">Categories</span>
+                        </div>
+                        <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+                    </div>
+                </div>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <span data-i18n="nav.history">History of Morocco</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        <span data-i18n="nav.blog">Blog</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="contact.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span data-i18n="nav.contact">Contact</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+            </nav>
         </div>
     </header>
 
@@ -426,430 +408,190 @@
             </div>
         </section>
 
-        <!-- Recommended Itinerary Section -->        <!-- Recommended Itinerary Section -->
-        
-<section class="itinerary-section">
-<div class="text-center mb-8">
-<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="casablanca_page.itinerary.badge">Planning</span>
-<h2 class="text-3xl font-bold text-vert" data-i18n="casablanca_page.itinerary.title">Suggested 3-Day Itinerary</h2>
-<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="casablanca_page.itinerary.subtitle">A relaxed schedule to see the highlights without rushing.</p>
-</div>
-<div class="itinerary-tabs">
-<button class="tab-btn active" data-i18n="casablanca_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Mosque & Corniche</button><button class="tab-btn" data-i18n="casablanca_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Old & New City</button><button class="tab-btn" data-i18n="casablanca_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Culture or Day Trip</button>
-</div>
-<div class="tab-content active" id="day1"><div class="day-card">
-<h3 data-i18n="casablanca_page.detailed_itinerary.day1_m">Morning — Hassan II Mosque</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day1_md">Book a guided tour of the Hassan II Mosque (non-Muslims outside prayer times). Allow time for the exterior esplanade and ocean setting.</p>
-<h3 data-i18n="casablanca_page.detailed_itinerary.day1_a">Afternoon — Corniche & Ain Diab</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day1_ad">Walk or taxi along the corniche; cafés and Atlantic views without needing a full beach day.</p>
-<h3 data-i18n="casablanca_page.detailed_itinerary.day1_e">Evening — Centre or marina dinner</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day1_ed">Dinner in the centre, Maarif, or near the marina — Casablanca eats late and urban.</p>
-</div></div><div class="tab-content" id="day2"><div class="day-card">
-<h3 data-i18n="casablanca_page.detailed_itinerary.day2_m">Morning — Old Medina & port edge</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day2_md">Explore the old medina lanes and the edge of the working port area; keep expectations realistic — this is not Fez.</p>
-<h3 data-i18n="casablanca_page.detailed_itinerary.day2_a">Afternoon — Habous & Art Deco</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day2_ad">Visit the Habous quarter for architecture and shopping, then Art Deco façades in the centre ville.</p>
-<h3 data-i18n="casablanca_page.detailed_itinerary.day2_e">Evening — Modern neighbourhoods</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day2_ed">Maarif or Gauthier for a contemporary Casablanca night out.</p>
-</div></div><div class="tab-content" id="day3"><div class="day-card">
-<h3 data-i18n="casablanca_page.detailed_itinerary.day3_m">Morning — Museum or Cathedral</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day3_md">Museum of the History of Morocco or the cathedral exterior, depending on interests and opening hours.</p>
-<h3 data-i18n="casablanca_page.detailed_itinerary.day3_a">Afternoon — Rabat by train</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day3_ad">Easy ONCF trip to Rabat for the Kasbah and Hassan complex if you want a capital contrast.</p>
-<h3 data-i18n="casablanca_page.detailed_itinerary.day3_e">Evening — Return or fly out</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day3_ed">Casablanca is a hub — evening trains, airport transfers, or a last corniche walk.</p>
-</div></div>
-</section>
+        <!-- Recommended Itinerary Section -->
+        <section class="itinerary-section">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="casablanca_page.itinerary.badge">Planning</span>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="casablanca_page.itinerary.title">Suggested 3-Day Itinerary</h2>
+                <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="casablanca_page.itinerary.subtitle">A relaxed schedule to see the highlights without rushing.</p>
+            </div>
+            <div class="itinerary-tabs">
+                <button class="tab-btn active" data-i18n="casablanca_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Mosque &amp; Corniche</button>
+                <button class="tab-btn" data-i18n="casablanca_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Old &amp; New City</button>
+                <button class="tab-btn" data-i18n="casablanca_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Culture or Day Trip</button>
+            </div>
+            <div class="tab-content active" id="day1">
+                <div class="day-card">
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day1_m">Morning — Hassan II Mosque</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day1_md">Book a guided tour of the Hassan II Mosque (non-Muslims outside prayer times). Allow time for the exterior esplanade and ocean setting.</p>
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day1_a">Afternoon — Corniche &amp; Ain Diab</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day1_ad">Walk or taxi along the corniche; cafés and Atlantic views without needing a full beach day.</p>
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day1_e">Evening — Centre or marina dinner</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day1_ed">Dinner in the centre, Maarif, or near the marina — Casablanca eats late and urban.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="day2">
+                <div class="day-card">
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day2_m">Morning — Old Medina &amp; port edge</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day2_md">Explore the old medina lanes and the edge of the working port area; keep expectations realistic — this is not Fez.</p>
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day2_a">Afternoon — Habous &amp; Art Deco</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day2_ad">Visit the Habous quarter for architecture and shopping, then Art Deco façades in the centre ville.</p>
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day2_e">Evening — Modern neighbourhoods</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day2_ed">Maarif or Gauthier for a contemporary Casablanca night out.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="day3">
+                <div class="day-card">
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day3_m">Morning — Museum or Cathedral</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day3_md">Museum of the History of Morocco or the cathedral exterior, depending on interests and opening hours.</p>
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day3_a">Afternoon — Rabat by train</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day3_ad">Easy ONCF trip to Rabat for the Kasbah and Hassan complex if you want a capital contrast.</p>
+                    <h3 data-i18n="casablanca_page.detailed_itinerary.day3_e">Evening — Return or fly out</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="casablanca_page.detailed_itinerary.day3_ed">Casablanca is a hub — evening trains, airport transfers, or a last corniche walk.</p>
+                </div>
+            </div>
+        </section>
 
-
-        <!-- ==========================================
-             SECTION RÉPERTOIRE & FILTRES DES 60 HÉBERGEMENTS
-             ========================================== -->
+        <!-- ========================================== -->
+        <!-- SECTION HÉBERGEMENTS HYBRIDE : COUPS DE CŒUR + BANNIÈRE BOOKING -->
+        <!-- ========================================== -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="filter-section mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="casablanca_page.directory.badge">Directory & Database</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
-                    <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                    <span data-i18n="casablanca_page.directory.title">Find Your Ideal Stay in Casablanca</span>
-                </h2>
-                <p class="text-sm text-sombre/70 mt-2" data-i18n="casablanca_page.directory.subtitle">Use the filters below to instantly sort the best places based on your search criteria.</p>
-                
-                <div class="filter-container mt-6 flex flex-wrap gap-4">
-                    <!-- Filter by Accommodation Type -->
-                    <div class="filter-group flex flex-col">
-                        <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="casablanca_page.directory.filter_type_label">Accommodation Type:</label>
-                        <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
-                            <option value="all" data-i18n="casablanca_page.directory.type_all">All Types</option>
-                            <option value="hotel" data-i18n="casablanca_page.directory.type_hotel">Hotels & Resorts</option>
-                            <option value="riad" data-i18n="casablanca_page.directory.type_riad">Traditional Riads</option>
-                            <option value="maison" data-i18n="casablanca_page.directory.type_guesthouse">Guesthouses</option>
-                        </select>
-                    </div>
-
-                    <!-- Filter by District / Area -->
-                    <div class="filter-group flex flex-col">
-                        <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="casablanca_page.directory.filter_location_label">District / Area:</label>
-                        <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
-                            <option value="all" data-i18n="casablanca_page.directory.location_all">All Areas</option>
-                            <option value="centre" data-i18n="casablanca_page.directory.location_centre">City Centre / Downtown</option>
-                            <option value="corniche" data-i18n="casablanca_page.directory.location_corniche">Corniche &amp; Ain Diab</option>
-                            <option value="gauthier" data-i18n="casablanca_page.directory.location_gauthier">Gauthier &amp; Maarif</option>
-                            <option value="peripherie" data-i18n="casablanca_page.directory.location_outskirts">Outskirts &amp; Airport</option>
-                        </select>
-                    </div>
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="casablanca_page.stays.badge">Selection &amp; Tips</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="casablanca_page.stays.title">Where to stay in Casablanca? Our Favorites</h2>
                 </div>
-                
-                <!-- Dynamic Counter -->
-                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="casablanca_page.directory.counter">28 accommodations found</div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="casablanca_page.stays.subtitle">
+                    From iconic beachfront luxury hotels to boutique Art Deco riads and modern city suites, here are our top picks.
+                </p>
             </div>
 
-            <!-- Complete Grid of real Casablanca accommodations -->
-            <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
+            <!-- Top Pick Grid (4 Targeted Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
                 
-                <!-- HOTELS -->
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="corniche">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Four Seasons Hotel Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">1. Four Seasons Hotel Casablanca</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
+                <!-- Pick 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Four Seasons Hotel Casablanca" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="casablanca_page.stays.card1.badge">
+                            ★ Beachfront Luxury
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="casablanca_page.stays.card1.name">Four Seasons Hotel Casablanca</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="casablanca_page.stays.card1.desc">
+                            Resort-style luxury overlooking the Atlantic ocean along the Corniche, featuring spa and fine dining.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="casablanca_page.stays.card1.location">Ain Diab Coast</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Four+Seasons+Hotel+Casablanca" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="casablanca_page.stays.book">
+                                Book →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Ain Diab | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Luxury Beachfront 5*</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Four+Seasons+Hotel+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hyatt Regency Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">2. Hyatt Regency Casablanca</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
+                <!-- Pick 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hôtel particulier Le Doge" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="casablanca_page.stays.card2.badge">
+                            ★ Art Deco Boutique
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="casablanca_page.stays.card2.name">Hôtel particulier Le Doge</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="casablanca_page.stays.card2.desc">
+                            Relais &amp; Châteaux property housed in a magnificent 1930s Art Deco villa right in downtown Casablanca.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="casablanca_page.stays.card2.location">City Centre</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Hotel+particulier+Le+Doge+Casablanca" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="casablanca_page.stays.book">
+                                Book →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Place des Nations Unies | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Luxury Business 5*</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hyatt+Regency+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Sofitel Casablanca Tour Blanche" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">3. Sofitel Casablanca Tour Blanche</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.6</span>
+                <!-- Pick 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hyatt Regency Casablanca" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="casablanca_page.stays.card3.badge">
+                            ★ Business &amp; Central
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="casablanca_page.stays.card3.name">Hyatt Regency Casablanca</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="casablanca_page.stays.card3.desc">
+                            Iconic downtown hotel overlooking Place des Nations Unies, steps from the old medina and tramway lines.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="casablanca_page.stays.card3.location">Place des Nations</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Hyatt+Regency+Casablanca" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="casablanca_page.stays.book">
+                                Book →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Beauséjour | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Luxury Hotel 5*</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Sofitel+Casablanca+Tour+Blanche" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="gauthier">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Mövenpick Hotel Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">4. Mövenpick Hotel Casablanca</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.4</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Anfa | <span data-i18n="casablanca_page.directory.type_label">Type</span>: 5-Star Hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Movenpick+Hotel+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
+                <!-- Pick 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Ryad 91 Casablanca" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="casablanca_page.stays.card4.badge">
+                            ★ Traditional Riad
+                        </span>
                     </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Royal Mansour Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">5. Royal Mansour Casablanca</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.6</span>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="casablanca_page.stays.card4.name">Ryad 91</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="casablanca_page.stays.card4.desc">
+                            A peaceful traditional riad offering authentic Moroccan hospitality and calm courtyard sanctuary in the city.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="casablanca_page.stays.card4.location">Sidi Belyout</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Ryad+91+Casablanca" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="casablanca_page.stays.book">
+                                Book →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Downtown | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Ultra Luxury 5*</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Royal+Mansour+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Hôtel particulier Le Doge" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">6. Hôtel particulier Le Doge</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Downtown | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Relais &amp; Châteaux Boutique</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+particulier+Le+Doge+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="gauthier">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Art Palace Suites & Spa" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">7. Art Palace Suites &amp; Spa</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Gauthier | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Themed Boutique 5*</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Art+Palace+Suites+Spa+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Idou Anfa Hotel & Spa" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">8. Idou Anfa Hotel &amp; Spa</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.3</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: City Centre | <span data-i18n="casablanca_page.directory.type_label">Type</span>: 4-Star Hotel &amp; Spa</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Idou+Anfa+Hotel+Spa+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="gauthier">
-                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Kenzi Tower Hotel" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">9. Kenzi Tower Hotel</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Maarif / Twin Center | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Business Luxury</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Kenzi+Tower+Hotel+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="gauthier">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Radisson Hotel Gauthier" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">10. Radisson Hotel Gauthier</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Gauthier | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Modern Lifestyle</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Radisson+Hotel+Gauthier+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Barceló Anfa Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">11. Barceló Anfa Casablanca</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.2</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Anfa | <span data-i18n="casablanca_page.directory.type_label">Type</span>: 5-Star Hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Barcelo+Anfa+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Le Casablanca Hotel" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">12. Le Casablanca Hotel</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.3</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Racine | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Upscale Art Deco</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Le+Casablanca+Hotel" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="gauthier">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Le Square by ONOMO" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">13. Le Square by ONOMO</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Gauthier | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Lifestyle Boutique</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Le+Square+by+ONOMO+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Moroccan House Hotel" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">14. Moroccan House Hotel</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.4</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: City Centre | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Riad-Style Hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Moroccan+House+Hotel+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="corniche">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Hotel Club Val d'Anfa" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">15. Hotel Club Val d’Anfa</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Ain Diab | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Beach Club Hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Club+Val+dAnfa+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <!-- RIADS & GUESTHOUSES -->
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Ryad 91" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">16. Ryad 91</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Sidi Belyout | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Traditional Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Ryad+91+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="peripherie">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Riad Hamdani" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">17. Riad Hamdani</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Near Airport | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Garden Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Hamdani+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Riad Jnane Sherazade" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">18. Riad Jnane Sherazade</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Near Old Medina | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Quiet Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Sherazade" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="peripherie">
-                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Riad TANJIL" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">19. Riad TANJIL</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Near Airport | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Green Oasis Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+TANJIL+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Dar Tahra" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">20. Dar Tahra</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Centre | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Private Guesthouse</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Tahra+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Riad Hamdane" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">21. Riad Hamdane</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.3</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Near Central Market | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Traditional Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Hamdane+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Sheraton Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">22. Sheraton Casablanca Hotel</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: City Centre | <span data-i18n="casablanca_page.directory.type_label">Type</span>: International 5*</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Sheraton+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="ibis Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">23. ibis Casablanca City Center</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Centre | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Budget Modern</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=ibis+Casablanca+City+Center" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="gauthier">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Novotel Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">24. Novotel Casablanca City Center</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Centre | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Modern 4*</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Novotel+Casablanca+City+Center" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="gauthier">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Boutique Hotel Gauthier" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">25. Boutique Hotel Gauthier</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Gauthier | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Charming Boutique</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Boutique+Hotel+Gauthier+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="LHostel Casablanca" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">26. L’Hostel Casablanca</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.2</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Maarif | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Design Guesthouse</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=LHostel+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Zayna" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">27. Riad Zayna</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.6</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Centre | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Coastal-Style Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Zayna+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="centre">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Riad El Maati" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">28. Riad El Maati</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.4</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="casablanca_page.directory.district_label">District</span>: Centre | <span data-i18n="casablanca_page.directory.type_label">Type</span>: Budget-Friendly Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+El+Maati+Casablanca" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="casablanca_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Message d'alerte si aucun filtre ne correspond -->
-            <div id="no-results" class="no-results-msg mt-8 text-center text-gray-500 font-semibold" style="display: none;" data-i18n="casablanca_page.directory.no_results">
-                No accommodations match this filter combination. Try broadening your search.
+            <!-- BOOKING REDIRECTION BANNER -->
+            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="max-w-xl text-left z-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="casablanca_page.booking_banner.badge">
+                        Over 200+ properties across Casablanca
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="casablanca_page.booking_banner.title">
+                        Explore all stays in Casablanca
+                    </h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="casablanca_page.booking_banner.desc">
+                        Compare real-time rates, read verified guest reviews, and enjoy free cancellation on top city hotels, apartments, and guesthouses.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-auto shrink-0 z-10 text-center">
+                    <a href="https://www.booking.com/city/ma/casablanca.html" 
+                       target="_blank" 
+                       rel="noopener sponsored" 
+                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                       <span data-i18n="casablanca_page.booking_banner.btn">View all stays on Booking.com</span>
+                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                       </svg>
+                    </a>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="casablanca_page.booking_banner.guarantee">✓ Best price guarantee &amp; secure booking</p>
+                </div>
+
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
             </div>
+
         </section>
         
         <!-- Where to Eat Section (6 Restaurants) -->
@@ -864,10 +606,10 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- 1. Nomad -->
+                <!-- 1. Rick's Café -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/nomad.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Rick’s Café" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Rick’s Café" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.4</span>
@@ -889,7 +631,7 @@
                 <!-- 2. La Sqala -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/le-jardin.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=80" alt="La Sqala Casablanca" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="La Sqala Casablanca" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.3</span>
@@ -911,7 +653,7 @@
                 <!-- 3. Al-Mounia -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/al-fassia.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Al-Mounia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Al-Mounia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
@@ -933,7 +675,7 @@
                 <!-- 4. La Grande Table Marocaine -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/dar-moha.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="La Grande Table Marocaine" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="La Grande Table Marocaine" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
@@ -955,7 +697,7 @@
                 <!-- 5. Le Cabestan -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/bacha-coffee.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Le Cabestan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Le Cabestan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.6</span>
@@ -977,7 +719,7 @@
                 <!-- 6. Table 3 -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/el-fenn.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Table 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Table 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
@@ -1148,7 +890,7 @@
         </div>
     </footer>
 
-    <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
+    <!-- Scripts JavaScript -->
     <script>
         function openDay(evt, dayId) {
             var tabContents = document.getElementsByClassName("tab-content");
@@ -1161,42 +903,6 @@
             }
             document.getElementById(dayId).classList.add("active");
             evt.currentTarget.classList.add("active");
-        }
-
-        function filterAccommodations() {
-            var selectedType = document.getElementById("filter-type").value;
-            var selectedLocation = document.getElementById("filter-location").value;
-            var cards = document.getElementsByClassName("acc-card");
-            var visibleCount = 0;
-
-            for (var i = 0; i < cards.length; i++) {
-                var card = cards[i];
-                var cardType = card.getAttribute("data-type");
-                var cardLocation = card.getAttribute("data-location");
-
-                var matchType = (selectedType === "all" || cardType === selectedType);
-                var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
-
-                if (matchType && matchLocation) {
-                    card.style.display = "block";
-                    visibleCount++;
-                } else {
-                    card.style.display = "none";
-                }
-            }
-
-            var counterDiv = document.getElementById("accommodation-counter");
-            var noResults = document.getElementById("no-results");
-            if (visibleCount === 0) {
-                counterDiv.innerText = "0 établissement trouvé";
-                if (noResults) noResults.style.display = "block";
-            } else if (visibleCount === 1) {
-                counterDiv.innerText = "1 établissement trouvé";
-                if (noResults) noResults.style.display = "none";
-            } else {
-                counterDiv.innerText = visibleCount + " établissements trouvés";
-                if (noResults) noResults.style.display = "none";
-            }
         }
 
         function toggleMobileCategories() {
@@ -1227,7 +933,7 @@
                 });
             }
 
-            const savedLang = localStorage.getItem('preferred_lang') || 'fr';
+            const savedLang = localStorage.getItem('preferred_lang') || 'en';
             switchLanguage(savedLang);
         });
 
@@ -1258,13 +964,15 @@
                 langDropdown.classList.add('hidden');
             }
 
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
             if (typeof changeLanguage === 'function') {
                 changeLanguage(lang);
             }
         }
     </script>
     
-    <!-- Scripts externes -->
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>
 </body>

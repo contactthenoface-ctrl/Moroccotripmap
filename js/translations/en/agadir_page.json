@@ -79,28 +79,42 @@
       "desc": "Wetlands and bird reserve along the Souss estuary and national park coast."
     }
   },
-  "directory": {
-    "badge": "Stay",
-    "title": "Find your ideal stay in Agadir",
-    "subtitle": "Beach hotels, marina apartments and stays near Taghazout.",
-    "filter_type_label": "Type:",
-    "type_label": "Type:",
-    "type_all": "All types",
-    "type_hotel": "Hotel",
-    "type_riad": "Riad",
-    "type_guesthouse": "Guesthouse",
-    "filter_location_label": "Area:",
-    "district_label": "Area:",
-    "location_all": "All areas",
-    "location_town": "City centre",
-    "location_outside": "Beachfront",
-    "location_outskirts": "Taghazout / North",
-    "counter": "stays found",
-    "no_results": "No stays match your filters.",
-    "check_availability": "Check availability →",
-    "stays": "stays",
-    "all_types": "All types",
-    "all_areas": "All areas"
+  "stays": {
+    "badge": "Selection & Tips",
+    "title": "Where to stay in Agadir? Our Favorites",
+    "subtitle": "From luxury oceanfront resorts to cozy beach guesthouses and surf lodges, here are our top recommended places for a great stay.",
+    "book": "Book →",
+    "card1": {
+      "badge": "★ Luxury Resort",
+      "name": "Sofitel Agadir Royal Bay",
+      "desc": "Sumptuous oceanfront resort combining traditional Moroccan craft with modern beachfront luxury and private pools.",
+      "location": "Beachfront"
+    },
+    "card2": {
+      "badge": "★ Boutique & Spa",
+      "name": "Riad Villa Blanche",
+      "desc": "An intimate 28-room boutique hotel combining Moroccan riad design with modern oceanfront comfort and spa.",
+      "location": "Baie d'Agadir"
+    },
+    "card3": {
+      "badge": "★ Surf & Views",
+      "name": "Hyatt Place Taghazout Bay",
+      "desc": "Perched above Taghazout's surf spots with cliffside Atlantic views, infinity pool, and golf course access.",
+      "location": "Taghazout Bay"
+    },
+    "card4": {
+      "badge": "★ Marina & Convenience",
+      "name": "Marina Agadir Suites",
+      "desc": "Modern apartments and suites along the yacht basin, within stepping distance of restaurants and promenade.",
+      "location": "Agadir Marina"
+    }
+  },
+  "booking_banner": {
+    "badge": "Over 400+ properties",
+    "title": "Explore all stays in Agadir & Taghazout",
+    "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation on most hotels and beachfront apartments.",
+    "btn": "View all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
   },
   "eat": {
     "badge": "Food",

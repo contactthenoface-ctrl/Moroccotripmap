@@ -78,7 +78,7 @@
     <style>
         body { font-family: 'Outfit', sans-serif; }
 
-        /* Styles intégrés pour l'itinéraire et les filtres */
+        /* Styles intégrés pour l'itinéraire */
         .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
         .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
         .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
@@ -88,26 +88,6 @@
         .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
         .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
         .day-card h3:first-of-type { margin-top: 0; }
-        .steps-list { list-style: none; padding: 0; margin-top: 15px; }
-        .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
-
-        /* Styles pour les Filtres d'hébergement */
-        .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-        .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
-        .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
-        .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
-        .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
-        .filter-group select:focus { border-color: #185336; }
-        .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
-        .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
-        .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
-        .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
-        .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
-        .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
-        .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
-        .acc-contact a:hover { text-decoration: underline; }
-        .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -122,26 +102,26 @@
             
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-    <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
-    <div class="relative inline-block text-left" id="categories-menu-container">
-        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-            <span data-i18n="nav.categories">Categories</span>
-            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-        </div>
-    </div>
-    <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">Art &amp; garden</a>
-    <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
-    <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
-</nav>
+                <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
+                <div class="relative inline-block text-left" id="categories-menu-container">
+                    <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
+                        <span data-i18n="nav.categories">Categories</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+                    </div>
+                </div>
+                <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
+                <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
+                <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
+            </nav>
             
             <!-- Lang Switcher & Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-4">
@@ -193,53 +173,53 @@
             </div>
 
             <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
-            <span data-i18n="nav.cities">Cities &amp; Destinations</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <div>
-        <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                <span data-i18n="nav.categories">Categories</span>
-            </div>
-            <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-        </div>
-    </div>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-            <span data-i18n="nav.history">Art &amp; garden of Morocco</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-            <span data-i18n="nav.blog">Blog</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="contact.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-            <span data-i18n="nav.contact">Contact</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-</nav>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
+                        <span data-i18n="nav.cities">Cities &amp; Destinations</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <div>
+                    <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                            <span data-i18n="nav.categories">Categories</span>
+                        </div>
+                        <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+                    </div>
+                </div>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <span data-i18n="nav.history">History of Morocco</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        <span data-i18n="nav.blog">Blog</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="contact.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span data-i18n="nav.contact">Contact</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+            </nav>
         </div>
     </header>
 
@@ -288,12 +268,12 @@
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="max-w-3xl">
                 <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="al_hoceima_page.overview.title">Welcome to Al Hoceima — Mediterranean Rif, cliffs and clear water</h2>
-                <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="al_hoceima_page.overview.p1">Al Hoceima sits on Morocco’s northern Mediterranean coast, where the Rif mountains fall into turquoise coves and sandy bays. This is not desert or  shore: limestone cliffs, fishing ports and a national park of land and sea define the place.<em>la where Rif meets the Mediterranean</em> — for its vast turquoise bay and desert-meets-ocean horizon. Framed by the High Atlas to the north and the Anti-Atlas to the south, this Al Hoceima market town offers the atmosphere of a historic walled city without the intensity of larger tourist hubs.</p>
+                <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="al_hoceima_page.overview.p1">Al Hoceima sits on Morocco’s northern Mediterranean coast, where the Rif mountains fall into turquoise coves and sandy bays. Limestone cliffs, fishing ports and a national park of land and sea define the place.</p>
                 <p class="text-sombre/80 leading-relaxed text-base" data-i18n="al_hoceima_page.overview.p2">Most stays revolve around Quemado Beach in town, quieter coves like Cala Bonita, family sand at Sfiha, and outings into Al Hoceima National Park toward Cala Iris, the watchtowers of Torres de Alcalá and the wide sweep of Bades Bay.</p>
             </div>
         </section>
 
-        <!-- Must-Visit Places Section (9 Lieux Incontournables) -->
+        <!-- Must-Visit Places Section -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div>
@@ -303,351 +283,282 @@
                 <p class="text-sm text-sombre/70 max-w-md" data-i18n="al_hoceima_page.places.subtitle">Beaches, national park, coves and the working port.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- 1. Bades Bay Al Hoceima -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/quemado.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="Quemado Beach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/place-quemado/place-quemado-04.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <img alt="Quemado Beach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.style.background='#e8e0d5'"/>
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.places.quemado.tag">Beach</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="al_hoceima_page.places.quemado.title">Quemado Beach</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="al_hoceima_page.places.quemado.desc">The city’s main urban beach — golden sand, easy access and the everyday face of the bay.</p>
-                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="al_hoceima_page.places.quemado.desc">The city’s main urban beach — golden sand, easy access and the everyday face of the bay.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
                     </div>
                 </a>
-                
-                <!-- 2. National Park -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/parc-national.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="National Park" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/jardin-majorelle/jardin-majorelle-04.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <img alt="Al Hoceima National Park" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.style.background='#e8e0d5'"/>
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.places.parc_national.tag">Nature</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="al_hoceima_page.places.parc_national.title">Al Hoceima National Park</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="al_hoceima_page.places.parc_national.desc">Cliff coast, marine reserve and trails where the Rif drops into the Mediterranean.</p>
-                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="al_hoceima_page.places.parc_national.desc">Cliff coast, marine reserve and trails where the Rif drops into the Mediterranean.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
                     </div>
                 </a>
-
-                <!-- 3. Cala Bonita -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/cala-bonita.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="Arab &amp; Berber harbour area" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/palais-bahia/palais-bahia-01.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase trackinqg-wider" data-i18n="al_hoceima_page.places.cala_bonita.tag">Cove</span>
+                        <img alt="Cala Bonita" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.style.background='#e8e0d5'"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.places.cala_bonita.tag">Cove</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="al_hoceima_page.places.cala_bonita.title">Cala Bonita</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="al_hoceima_page.places.cala_bonita.desc">A sheltered cove of clear water close to town — swimming and pebble-sand shore.</p>
-                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="al_hoceima_page.places.cala_bonita.desc">A sheltered cove of clear water close to town — swimming and pebble-sand shore.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
                     </div>
                 </a>
-
-                <!-- 4. Sfiha Beach -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/sfiha.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="Sfiha Beach of Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/al-hoceima/kasbah.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <img alt="Sfiha Beach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.style.background='#e8e0d5'"/>
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.places.sfiha.tag">Beach</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="al_hoceima_page.places.sfiha.title">Sfiha Beach</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="al_hoceima_page.places.sfiha.desc">Wide family beach with views toward the Peñón de Alhucemas islet.</p>
-                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="al_hoceima_page.places.sfiha.desc">Wide family beach with views toward the Peñón de Alhucemas islet.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
                     </div>
                 </a>
-
-                <!-- 5. Al Hoceima fishing port -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/port-corniche.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="Al Hoceima fishing port" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/saadian-tombs-al-hoceima.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <img alt="Port & Corniche" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.style.background='#e8e0d5'"/>
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.places.port_corniche.tag">Town</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="al_hoceima_page.places.port_corniche.title">Port & Corniche</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="al_hoceima_page.places.port_corniche.desc">Working fishing harbour and evening seafront promenade.</p>
-                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="al_hoceima_page.places.port_corniche.desc">Working fishing harbour and evening seafront promenade.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
                     </div>
                 </a>
-
-                <!-- 6. Cala Iris -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/cala-iris.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="Cala Iris" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/el-badi-palace-al-hoceima.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <img alt="Cala Iris" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.style.background='#e8e0d5'"/>
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.places.cala_iris.tag">Park coast</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="al_hoceima_page.places.cala_iris.title">Cala Iris</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="al_hoceima_page.places.cala_iris.desc">Fishing village and wild cove on the national park shoreline.</p>
-                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="al_hoceima_page.places.cala_iris.desc">Fishing village and wild cove on the national park shoreline.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
                     </div>
                 </a>
-
-                <!-- 7. Al Hoceima Oasis -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/torres-alcala.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="Torres de Alcalá" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/menara-garden-al-hoceima.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <img alt="Torres de Alcalá" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.style.background='#e8e0d5'"/>
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.places.torres_alcala.tag">Heritage</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="al_hoceima_page.places.torres_alcala.title">Torres de Alcalá</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="al_hoceima_page.places.torres_alcala.desc">Historic coastal watchtowers and trails with open cliff-and-sea views.</p>
-                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="al_hoceima_page.places.torres_alcala.desc">Historic coastal watchtowers and trails with open cliff-and-sea views.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
                     </div>
                 </a>
-                
-                <!-- 8. Bades Bay Al Hoceima -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/bades.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img alt="Bades Bay Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/al-hoceima/talmoklate.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <img alt="Bades Bay" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&amp;fit=crop&amp;w=800&amp;q=80" onerror="this.style.background='#e8e0d5'"/>
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.places.bades.tag">Bay</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="al_hoceima_page.places.bades.title">Bades Bay</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="al_hoceima_page.places.bades.desc">Picturesque bay facing the historic rock of Badis — sand and quiet horizon.</p>
-                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="al_hoceima_page.places.bades.desc">Picturesque bay facing the historic rock of Badis — sand and quiet horizon.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="al_hoceima_page.places.explore">Explore place →</span>
                     </div>
                 </a>
-                
-                <!-- 9. Al Hoceima -->
             </div>
         </section>
 
         <!-- Recommended Itinerary Section -->
-        
-<section class="itinerary-section">
-<div class="text-center mb-8">
-<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="al_hoceima_page.itinerary.badge">Planning</span>
-<h2 class="text-3xl font-bold text-vert" data-i18n="al_hoceima_page.itinerary.title">Suggested 3-day plan for Al Hoceima</h2>
-<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="al_hoceima_page.itinerary.subtitle">Town beaches first, then park coast and a quieter bay.</p>
-</div>
-<div class="itinerary-tabs">
-<button class="tab-btn active" data-i18n="al_hoceima_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Arrival & Quemado</button>
-<button class="tab-btn" data-i18n="al_hoceima_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Coves</button>
-<button class="tab-btn" data-i18n="al_hoceima_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — National park coast</button>
-</div>
-<div class="tab-content active" id="day1"><div class="day-card">
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day1_m">Morning — Arrive</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day1_md">Transfer from Al Hoceima Airport (AHU) or by road; check in near the bay.</p>
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day1_a">Afternoon — Quemado Beach</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day1_ad">Main urban beach for a first swim and orientation of the bay.</p>
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day1_e">Evening — Port & Corniche</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day1_ed">Promenade and simple seafood near the harbour.</p>
-</div></div>
-<div class="tab-content" id="day2"><div class="day-card">
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day2_m">Morning — Cala Bonita</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day2_md">Sheltered cove for clear-water swimming closer to the cliffs.</p>
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day2_a">Afternoon — Sfiha Beach</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day2_ad">Wider sand, family atmosphere, views toward the Peñón.</p>
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day2_e">Evening — Town</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day2_ed">Corniche walk or a quiet café back in the centre.</p>
-</div></div>
-<div class="tab-content" id="day3"><div class="day-card">
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day3_m">Morning — Cala Iris or Torres</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day3_md">Park shoreline: fishing village cove or watchtower trails.</p>
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day3_a">Afternoon — Bades Bay optional</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day3_ad">Wider bay and historic Badis setting if time allows.</p>
-<h3 data-i18n="al_hoceima_page.detailed_itinerary.day3_e">Evening — Last sea view</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day3_ed">Sunset light on the cliffs before departure or another night.</p>
-</div></div>
-</section>
+        <section class="itinerary-section">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="al_hoceima_page.itinerary.badge">Planning</span>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="al_hoceima_page.itinerary.title">Suggested 3-day plan for Al Hoceima</h2>
+                <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="al_hoceima_page.itinerary.subtitle">Town beaches first, then park coast and a quieter bay.</p>
+            </div>
+            <div class="itinerary-tabs">
+                <button class="tab-btn active" data-i18n="al_hoceima_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Arrival & Quemado</button>
+                <button class="tab-btn" data-i18n="al_hoceima_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Coves</button>
+                <button class="tab-btn" data-i18n="al_hoceima_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — National park coast</button>
+            </div>
+            <div class="tab-content active" id="day1">
+                <div class="day-card">
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day1_m">Morning — Arrive</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day1_md">Transfer from Al Hoceima Airport (AHU) or by road; check in near the bay.</p>
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day1_a">Afternoon — Quemado Beach</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day1_ad">Main urban beach for a first swim and orientation of the bay.</p>
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day1_e">Evening — Port & Corniche</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day1_ed">Promenade and simple seafood near the harbour.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="day2">
+                <div class="day-card">
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day2_m">Morning — Cala Bonita</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day2_md">Sheltered cove for clear-water swimming closer to the cliffs.</p>
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day2_a">Afternoon — Sfiha Beach</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day2_ad">Wider sand, family atmosphere, views toward the Peñón.</p>
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day2_e">Evening — Town</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day2_ed">Corniche walk or a quiet café back in the centre.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="day3">
+                <div class="day-card">
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day3_m">Morning — Cala Iris or Torres</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day3_md">Park shoreline: fishing village cove or watchtower trails.</p>
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day3_a">Afternoon — Bades Bay optional</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day3_ad">Wider bay and historic Badis setting if time allows.</p>
+                    <h3 data-i18n="al_hoceima_page.detailed_itinerary.day3_e">Evening — Last sea view</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="al_hoceima_page.detailed_itinerary.day3_ed">Sunset light on the cliffs before departure or another night.</p>
+                </div>
+            </div>
+        </section>
 
-
-        <!-- ==========================================
-             SECTION RÉPERTOIRE & FILTRES DES 60 HÉBERGEMENTS
-             ========================================== -->
+        <!-- ========================================== -->
+        <!-- SECTION HÉBERGEMENTS HYBRIDE : COUPS DE CŒUR + BANNIÈRE BOOKING -->
+        <!-- ========================================== -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="filter-section mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="al_hoceima_page.directory.badge">Stays</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
-                    <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                    <span data-i18n="al_hoceima_page.directory.title">Find your ideal stay in Al Hoceima</span>
-                </h2>
-                <p class="text-sm text-sombre/70 mt-2" data-i18n="al_hoceima_page.directory.subtitle">Bay hotels, seafront apartments and stays near Quemado — open a listing for details.</p>
-                
-                <div class="filter-container mt-6 flex flex-wrap gap-4">
-                    <!-- Filter by Accommodation Type -->
-                    <div class="filter-group flex flex-col">
-                        <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="al_hoceima_page.directory.filter_type_label">Type:</label>
-                        <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
-                            <option value="all" data-i18n="al_hoceima_page.directory.type_all">All types</option>
-                            <option value="hotel" data-i18n="al_hoceima_page.directory.type_hotel">Hotels</option>
-                            <option value="riad" data-i18n="al_hoceima_page.directory.type_riad">Guesthouses</option>
-                            <option value="maison" data-i18n="al_hoceima_page.directory.type_guesthouse">Apartments</option>
-                        </select>
-                    </div>
-
-                    <!-- Filter by District / Area -->
-                    <div class="filter-group flex flex-col">
-                        <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="al_hoceima_page.directory.filter_location_label">Area:</label>
-                        <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
-                            <option value="all" data-i18n="al_hoceima_page.directory.location_all">All areas</option>
-                            <option value="town" data-i18n="al_hoceima_page.directory.location_town">Town centre</option>
-                            <option value="outside" data-i18n="al_hoceima_page.directory.location_outside">Bay / Quemado</option>
-                            <option value="outskirts" data-i18n="al_hoceima_page.directory.location_outskirts">Park coast / east</option>
-                        </select>
-                    </div>
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="al_hoceima_page.stays.badge">Selection & Tips</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="al_hoceima_page.stays.title">Where to stay in Al Hoceima? Our Favorites</h2>
                 </div>
-                
-                <!-- Dynamic Counter -->
-                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="al_hoceima_page.directory.counter">stays found</div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="al_hoceima_page.stays.subtitle">
+                    From scenic bay hotels to coastal guesthouses and modern apartments, here are our top recommended places for a great stay.
+                </p>
             </div>
 
-            <!-- Al Hoceima accommodations -->
-            <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel Bayview Al Hoceima" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">1. Hotel Bayview Al Hoceima</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.2</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60" data-i18n="al_hoceima_page.directory.district_label">Area<span>Medina</span> · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Riad-palace</p>
-                        <p class="text-xs text-sombre/70 mt-2">Bay-front beach camp with lessons, gear and direct water access.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Palais+Oumensour+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
+            <!-- Top Pick Grid (4 Targeted Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                
+                <!-- Pick 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel Mercure Quemado Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.stays.card1.badge">
+                            ★ Beachfront Resort
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="al_hoceima_page.stays.card1.name">Hotel Mercure Quemado</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="al_hoceima_page.stays.card1.desc">
+                            Directly overlooking Quemado Beach with panoramic sea views, comfortable rooms, and pool access.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="al_hoceima_page.stays.card1.location">Quemado Beach</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Mercure+Quemado+Al+Hoceima" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="al_hoceima_page.stays.book">
+                                Book →
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
-                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Villa Calabonita" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">2. Villa Calabonita</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Medina · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Riad</p>
-                        <p class="text-xs text-sombre/70 mt-2">Well-known bay camp for coast and swimming stays.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
+                <!-- Pick 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Hotel Mirador Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.stays.card2.badge">
+                            ★ Cliffside Views
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="al_hoceima_page.stays.card2.name">Hotel Mirador</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="al_hoceima_page.stays.card2.desc">
+                            Perched near the clifftops offering stunning vistas over the Mediterranean bay and town corniche.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="al_hoceima_page.stays.card2.location">Town Centre</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Mirador+Al+Hoceima" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="al_hoceima_page.stays.book">
+                                Book →
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Hotel Quemado" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">3. Hotel Quemado</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Medina · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Boutique riad</p>
-                        <p class="text-xs text-sombre/70 mt-2">Lodge near popular beach kilometre markers on the bay.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Tania+Mozaik+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
+                <!-- Pick 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Mira Palace Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.stays.card3.badge">
+                            ★ Comfort & Pool
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="al_hoceima_page.stays.card3.name">Mira Palace</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="al_hoceima_page.stays.card3.desc">
+                            Spacious hotel featuring modern amenities, swimming pool, and convenient access to local beaches.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="al_hoceima_page.stays.card3.location">Al Hoceima Heights</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Mira+Palace+Al+Hoceima" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="al_hoceima_page.stays.book">
+                                Book →
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Riad Al Hoceima" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">4. Riad Al Hoceima</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.3</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Medina · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Dar / guesthouse</p>
-                        <p class="text-xs text-sombre/70 mt-2">Eco-style bay stay focused on wind sports and quiet evenings.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Zahia+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
-                        </div>
+                <!-- Pick 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Appartements Corniche Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="al_hoceima_page.stays.card4.badge">
+                            ★ Seafront Apartments
+                        </span>
                     </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hotel Rif Regency" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">5. Hotel Rif Regency</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Medina · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Riad</p>
-                        <p class="text-xs text-sombre/70 mt-2">Practical hotel in town with easy transfers to the bay.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Amnay+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="outside">
-                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Dunes de Al Hoceima" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">6. Dunes de Al Hoceima</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Outside the walls · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Garden hotel</p>
-                        <p class="text-xs text-sombre/70 mt-2">Desert-camp atmosphere with pool and bay transfers.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Zitoune+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="outside">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Westpoint Al Hoceima" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">7. Westpoint Al Hoceima</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.4</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Outside the walls · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Botanical lodge</p>
-                        <p class="text-xs text-sombre/70 mt-2">Beachfront base popular for longer stays.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Hossoun+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
-                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Hotel Maghreb" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">8. Hotel Maghreb</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Medina · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Riad</p>
-                        <p class="text-xs text-sombre/70 mt-2">Comfort stay between town and the bay shore.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Ines+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="guesthouse" data-location="town">
-                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="La Maison Al Hoceima" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">9. La Maison Al Hoceima</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.9</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Medina · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Guesthouse</p>
-                        <p class="text-xs text-sombre/70 mt-2">Simple guesthouse-style stay in or near town.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=La+Maison+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="outskirts">
-                    <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80" alt="Hotel in Al Hoceima" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">10. Apartments Corniche</h3>
-                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="al_hoceima_page.directory.district_label">Area</span> Outskirts · <span data-i18n="al_hoceima_page.directory.type_label">Type</span> Riad</p>
-                        <p class="text-xs text-sombre/70 mt-2">Camp-style stay close to flat-water beach zones.</p>
-                        <div class="acc-contact mt-3">
-                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Tafilag+Al Hoceima" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="al_hoceima_page.directory.check_availability">Check availability →</a>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="al_hoceima_page.stays.card4.name">Corniche Suites</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="al_hoceima_page.stays.card4.desc">
+                            Independent apartments along the lively corniche, ideal for families and longer stays by the sea.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="al_hoceima_page.stays.card4.location">Al Hoceima Port</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Al+Hoceima+Apartments" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="al_hoceima_page.stays.book">
+                                Book →
+                            </a>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Message d'alerte si aucun filtre ne correspond -->
-            <div id="no-results" class="no-results-msg mt-8 text-center text-gray-500 font-semibold" style="display: none;" data-i18n="al_hoceima_page.directory.no_results">No stays match these filters.</div>
+            <!-- BOOKING REDIRECTION BANNER -->
+            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="max-w-xl text-left z-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="al_hoceima_page.booking_banner.badge">
+                        Over 100+ properties
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="al_hoceima_page.booking_banner.title">
+                        Explore all stays in Al Hoceima
+                    </h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="al_hoceima_page.booking_banner.desc">
+                        Compare real-time rates, read verified guest reviews, and enjoy free cancellation on most hotels and coastal apartments.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-auto shrink-0 z-10 text-center">
+                    <a href="https://www.booking.com/city/ma/al-hoceima.html" 
+                       target="_blank" 
+                       rel="noopener sponsored" 
+                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                       <span data-i18n="al_hoceima_page.booking_banner.btn">View all stays on Booking.com</span>
+                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                       </svg>
+                    </a>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="al_hoceima_page.booking_banner.guarantee">✓ Best price guarantee &amp; secure booking</p>
+                </div>
+
+                <!-- Decorative Background Blob -->
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+            </div>
+
         </section>
         
         <!-- Where to Eat Section (6 Restaurants) -->
@@ -661,15 +572,12 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- 1. Restaurant Roudani -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/nomad.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Restaurant Roudani" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Beachside tables" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.4</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col justify-between flex-grow">
@@ -683,15 +591,12 @@
                         </div>
                     </div>
                 </a>
-
-                <!-- 2. Le Jardin -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/le-jardin.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=80" alt="Le Jardin Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=80" alt="Hotel restaurants" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.3</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col justify-between flex-grow">
@@ -705,15 +610,12 @@
                         </div>
                     </div>
                 </a>
-
-                <!-- 3. Al Dunes de Al Hoceima -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/al-fassia.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Al Dunes de Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Town café" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col justify-between flex-grow">
@@ -727,15 +629,12 @@
                         </div>
                     </div>
                 </a>
-
-                <!-- 4. Hotel Quemado -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/dar-moha.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Hotel Quemado" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Tagines & salads" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col justify-between flex-grow">
@@ -749,15 +648,12 @@
                         </div>
                     </div>
                 </a>
-
-                <!-- 5. Café Al Hoceima -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/bacha-coffee.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Café Al Hoceima" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Sfiha side" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.6</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col justify-between flex-grow">
@@ -771,15 +667,12 @@
                         </div>
                     </div>
                 </a>
-
-                <!-- 6. Villa Calabonita -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/el-fenn.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Villa Calabonita" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Evening table" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col justify-between flex-grow">
@@ -793,7 +686,6 @@
                         </div>
                     </div>
                 </a>
-
             </div>
         </section>
 
@@ -834,7 +726,7 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Al Hoceima Oasis palm grove near Al Hoceima" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Cala Iris day" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="al_hoceima_page.daytrips.tiout.title">Cala Iris day</h3>
@@ -842,7 +734,7 @@
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Imlili sebkha near Al Hoceima" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Torres de Alcalá" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="al_hoceima_page.daytrips.antiatlas.title">Torres de Alcalá</h3>
@@ -850,7 +742,7 @@
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Ocean beaches near Al Hoceima" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Bades Bay" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="al_hoceima_page.daytrips.taliouine.title">Bades Bay</h3>
@@ -858,7 +750,7 @@
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Tropic of Cancer marker Al Hoceima" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1613057157282-cc3cbe630b26?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Park viewpoints" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1613057157282-cc3cbe630b26?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="al_hoceima_page.daytrips.agadir.title">Park viewpoints</h3>
@@ -946,7 +838,7 @@
         </div>
     </footer>
 
-    <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
+    <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire) -->
     <script>
         function openDay(evt, dayId) {
             var tabContents = document.getElementsByClassName("tab-content");
@@ -959,42 +851,6 @@
             }
             document.getElementById(dayId).classList.add("active");
             evt.currentTarget.classList.add("active");
-        }
-
-        function filterAccommodations() {
-            var selectedType = document.getElementById("filter-type").value;
-            var selectedLocation = document.getElementById("filter-location").value;
-            var cards = document.getElementsByClassName("acc-card");
-            var visibleCount = 0;
-
-            for (var i = 0; i < cards.length; i++) {
-                var card = cards[i];
-                var cardType = card.getAttribute("data-type");
-                var cardLocation = card.getAttribute("data-location");
-
-                var matchType = (selectedType === "all" || cardType === selectedType);
-                var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
-
-                if (matchType && matchLocation) {
-                    card.style.display = "block";
-                    visibleCount++;
-                } else {
-                    card.style.display = "none";
-                }
-            }
-
-            var counterDiv = document.getElementById("accommodation-counter");
-            var noResults = document.getElementById("no-results");
-            if (visibleCount === 0) {
-                counterDiv.innerText = "0 accommodations found";
-                if (noResults) noResults.style.display = "block";
-            } else if (visibleCount === 1) {
-                counterDiv.innerText = "1 accommodation found";
-                if (noResults) noResults.style.display = "none";
-            } else {
-                counterDiv.innerText = visibleCount + " accommodations found";
-                if (noResults) noResults.style.display = "none";
-            }
         }
 
         function toggleMobileCategories() {
@@ -1025,7 +881,7 @@
                 });
             }
 
-            const savedLang = localStorage.getItem('preferred_lang') || 'fr';
+            const savedLang = localStorage.getItem('preferred_lang') || 'en';
             switchLanguage(savedLang);
         });
 
@@ -1056,6 +912,9 @@
                 langDropdown.classList.add('hidden');
             }
 
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
             if (typeof changeLanguage === 'function') {
                 changeLanguage(lang);
             }
@@ -1066,4 +925,4 @@
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>
 </body>
-</html>
+    </html>

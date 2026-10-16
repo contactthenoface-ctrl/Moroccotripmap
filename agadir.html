@@ -78,7 +78,7 @@
  <style>
  body { font-family: 'Outfit', sans-serif; }
 
- /* Styles intégrés pour l'itinéraire et les filtres */
+ /* Styles intégrés pour l'itinéraire */
  .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
  .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
  .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
@@ -88,26 +88,6 @@
  .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
  .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
  .day-card h3:first-of-type { margin-top: 0; }
- .steps-list { list-style: none; padding: 0; margin-top: 15px; }
- .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
-
- /* Styles pour les Filtres d'hébergement */
- .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
- .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
- .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
- .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
- .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
- .filter-group select:focus { border-color: #185336; }
- .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
- .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
- .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
- .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
- .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
- .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
- .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
- .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
- .acc-contact a:hover { text-decoration: underline; }
- .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
  </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -406,244 +386,186 @@
 </section>
 
 
- <!-- ==========================================
- SECTION RÉPERTOIRE & FILTRES DES 60 HÉBERGEMENTS
- ========================================== -->
- 
-<!-- Recommended Itinerary Section -->
-<section class="itinerary-section">
-<div class="text-center mb-8">
-<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.itinerary.badge">Planning</span>
-<h2 class="text-3xl font-bold text-vert" data-i18n="agadir_page.itinerary.title">Suggested 3-day plan for Agadir</h2>
-<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="agadir_page.itinerary.subtitle">Beach and kasbah first, then market and a day trip north or inland.</p>
-</div>
-<div class="itinerary-tabs">
-<button class="tab-btn active" data-i18n="agadir_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Beach & Kasbah</button>
-<button class="tab-btn" data-i18n="agadir_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Souk & Corniche</button>
-<button class="tab-btn" data-i18n="agadir_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Taghazout or Paradise Valley</button>
-</div>
-<div class="tab-content active" id="day1"><div class="day-card">
-<h3 data-i18n="agadir_page.detailed_itinerary.day1_m">Morning — Agadir Beach</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_md">Walk the long public sand and the corniche; orient yourself along the bay.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day1_a">Afternoon — Kasbah Oufella</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_ad">Climb or taxi to the hill ruins for the classic panorama over the rebuilt city and harbour.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day1_e">Evening — Marina</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_ed">Seafood and a stroll around the yacht basin at the north end of the beach strip.</p>
-</div></div>
-<div class="tab-content" id="day2"><div class="day-card">
-<h3 data-i18n="agadir_page.detailed_itinerary.day2_m">Morning — Souk El Had</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_md">Agadir’s big everyday market for produce, spices and local prices — best early.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day2_a">Afternoon — Corniche free time</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_ad">Beach time, café stops or a longer walk between hotels and the marina.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day2_e">Evening — Seafront dinner</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_ed">Hotel-strip restaurants or another marina meal with bay views.</p>
-</div></div>
-<div class="tab-content" id="day3"><div class="day-card">
-<h3 data-i18n="agadir_page.detailed_itinerary.day3_m">Morning — Taghazout or valley start</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_md">North to the surf village for beach and waves, or inland toward Paradise Valley pools.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day3_a">Afternoon — Coast or gorge</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_ad">Swim and cafés in Taghazout, or rock pools and palms in the Anti-Atlas foothills.</p>
-<h3 data-i18n="agadir_page.detailed_itinerary.day3_e">Evening — Return to Agadir</h3>
-<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_ed">Back to the city for a last corniche walk or early departure plan.</p>
-</div></div>
-</section>
+ <!-- Recommended Itinerary Section -->
+ <section class="itinerary-section">
+ <div class="text-center mb-8">
+ <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.itinerary.badge">Planning</span>
+ <h2 class="text-3xl font-bold text-vert" data-i18n="agadir_page.itinerary.title">Suggested 3-day plan for Agadir</h2>
+ <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="agadir_page.itinerary.subtitle">Beach and kasbah first, then market and a day trip north or inland.</p>
+ </div>
+ <div class="itinerary-tabs">
+ <button class="tab-btn active" data-i18n="agadir_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Beach & Kasbah</button>
+ <button class="tab-btn" data-i18n="agadir_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Souk & Corniche</button>
+ <button class="tab-btn" data-i18n="agadir_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Taghazout or Paradise Valley</button>
+ </div>
+ <div class="tab-content active" id="day1"><div class="day-card">
+ <h3 data-i18n="agadir_page.detailed_itinerary.day1_m">Morning — Agadir Beach</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_md">Walk the long public sand and the corniche; orient yourself along the bay.</p>
+ <h3 data-i18n="agadir_page.detailed_itinerary.day1_a">Afternoon — Kasbah Oufella</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_ad">Climb or taxi to the hill ruins for the classic panorama over the rebuilt city and harbour.</p>
+ <h3 data-i18n="agadir_page.detailed_itinerary.day1_e">Evening — Marina</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day1_ed">Seafood and a stroll around the yacht basin at the north end of the beach strip.</p>
+ </div></div>
+ <div class="tab-content" id="day2"><div class="day-card">
+ <h3 data-i18n="agadir_page.detailed_itinerary.day2_m">Morning — Souk El Had</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_md">Agadir’s big everyday market for produce, spices and local prices — best early.</p>
+ <h3 data-i18n="agadir_page.detailed_itinerary.day2_a">Afternoon — Corniche free time</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_ad">Beach time, café stops or a longer walk between hotels and the marina.</p>
+ <h3 data-i18n="agadir_page.detailed_itinerary.day2_e">Evening — Seafront dinner</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day2_ed">Hotel-strip restaurants or another marina meal with bay views.</p>
+ </div></div>
+ <div class="tab-content" id="day3"><div class="day-card">
+ <h3 data-i18n="agadir_page.detailed_itinerary.day3_m">Morning — Taghazout or valley start</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_md">North to the surf village for beach and waves, or inland toward Paradise Valley pools.</p>
+ <h3 data-i18n="agadir_page.detailed_itinerary.day3_a">Afternoon — Coast or gorge</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_ad">Swim and cafés in Taghazout, or rock pools and palms in the Anti-Atlas foothills.</p>
+ <h3 data-i18n="agadir_page.detailed_itinerary.day3_e">Evening — Return to Agadir</h3>
+ <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="agadir_page.detailed_itinerary.day3_ed">Back to the city for a last corniche walk or early departure plan.</p>
+ </div></div>
+ </section>
 
 
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
- <div class="filter-section mb-8">
- <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.directory.badge">Stay</span>
- <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
- <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
- <span data-i18n="agadir_page.directory.title">Find your ideal stay in Agadir</span>
- </h2>
- <p class="text-sm text-sombre/70 mt-2" data-i18n="agadir_page.directory.subtitle">Beach hotels, marina apartments and stays near Taghazout.</p>
- 
- <div class="filter-container mt-6 flex flex-wrap gap-4">
- <!-- Filter by Accommodation Type -->
- <div class="filter-group flex flex-col">
- <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="agadir_page.directory.filter_type_label">Type:</label>
- <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
- <option value="all" data-i18n="agadir_page.directory.type_all">All types</option>
- <option value="hotel" data-i18n="agadir_page.directory.type_hotel">Hotel</option>
- <option value="riad" data-i18n="agadir_page.directory.type_riad">Riad</option>
- <option value="maison" data-i18n="agadir_page.directory.type_guesthouse">Guesthouse</option>
- </select>
- </div>
+ <!-- ========================================== -->
+ <!-- SECTION HÉBERGEMENTS HYBRIDE : COUPS DE CŒUR + BANNIÈRE BOOKING -->
+ <!-- ========================================== -->
+ <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+     
+     <!-- Section Header -->
+     <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+         <div>
+             <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.stays.badge">Selection & Tips</span>
+             <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="agadir_page.stays.title">Where to stay in Agadir? Our Favorites</h2>
+         </div>
+         <p class="text-sm text-sombre/70 max-w-md" data-i18n="agadir_page.stays.subtitle">
+             From luxury oceanfront resorts to cozy beach guesthouses and surf lodges, here are our top recommended places for a great stay.
+         </p>
+     </div>
 
- <!-- Filter by District / Area -->
- <div class="filter-group flex flex-col">
- <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="agadir_page.directory.filter_location_label">Area:</label>
- <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
- <option value="all" data-i18n="agadir_page.directory.location_all">All areas</option>
- <option value="centre" data-i18n="agadir_page.directory.location_town">City centre</option>
- <option value="beach" data-i18n="agadir_page.directory.location_outside">Beachfront</option>
- <option value="newtown" data-i18n="agadir_page.directory.location_outskirts">Taghazout / North</option>
- <option value="peripherie" data-i18n="agadir_page.directory.location_outskirts">Taghazout / North</option>
- </select>
- </div>
- </div>
- 
- <!-- Dynamic Counter -->
- <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="agadir_page.directory.counter">stays found</div>
- </div>
+     <!-- Top Pick Grid (4 Targeted Cards) -->
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+         
+         <!-- Pick 1: Luxury Beachfront Resort -->
+         <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+             <div class="relative h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Sofitel Agadir Royal Bay" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                 <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="agadir_page.stays.card1.badge">
+                     ★ Luxury Resort
+                 </span>
+             </div>
+             <div class="p-5 flex flex-col flex-grow">
+                 <h3 class="text-lg font-bold text-sombre" data-i18n="agadir_page.stays.card1.name">Sofitel Agadir Royal Bay</h3>
+                 <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="agadir_page.stays.card1.desc">
+                     Sumptuous oceanfront resort combining traditional Moroccan craft with modern beachfront luxury and private pools.
+                 </p>
+                 <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                     <span class="text-xs font-bold text-vert" data-i18n="agadir_page.stays.card1.location">Beachfront</span>
+                     <a href="https://www.booking.com/searchresults.html?ss=Sofitel+Agadir+Royal+Bay" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="agadir_page.stays.book">
+                         Book →
+                     </a>
+                 </div>
+             </div>
+         </div>
 
- <!-- Agadir accommodations -->
- <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
+         <!-- Pick 2: Boutique & Sunset Views -->
+         <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+             <div class="relative h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Riad Villa Blanche" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                 <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="agadir_page.stays.card2.badge">
+                     ★ Boutique & Spa
+                 </span>
+             </div>
+             <div class="p-5 flex flex-col flex-grow">
+                 <h3 class="text-lg font-bold text-sombre" data-i18n="agadir_page.stays.card2.name">Riad Villa Blanche</h3>
+                 <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="agadir_page.stays.card2.desc">
+                     An intimate 28-room boutique hotel combining Moroccan riad design with modern oceanfront comfort and spa.
+                 </p>
+                 <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                     <span class="text-xs font-bold text-vert" data-i18n="agadir_page.stays.card2.location">Baie d'Agadir</span>
+                     <a href="https://www.booking.com/searchresults.html?ss=Riad+Villa+Blanche+Agadir" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="agadir_page.stays.book">
+                         Book →
+                     </a>
+                 </div>
+             </div>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="newtown">
- <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel Kasbah View" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">1. Hotel Kasbah View</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.2</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60" data-i18n="agadir_page.directory.district_label">Area:<span>Beachfront</span> · <span data-i18n="agadir_page.directory.type_label">Type:</span> Riad-palace</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Palais+Oumensour+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+         <!-- Pick 3: Surf & Laid-back Coast -->
+         <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+             <div class="relative h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Hyatt Place Taghazout Bay" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                 <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="agadir_page.stays.card3.badge">
+                     ★ Surf & Views
+                 </span>
+             </div>
+             <div class="p-5 flex flex-col flex-grow">
+                 <h3 class="text-lg font-bold text-sombre" data-i18n="agadir_page.stays.card3.name">Hyatt Place Taghazout Bay</h3>
+                 <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="agadir_page.stays.card3.desc">
+                     Perched above Taghazout's surf spots with cliffside Atlantic views, infinity pool, and golf course access.
+                 </p>
+                 <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                     <span class="text-xs font-bold text-vert" data-i18n="agadir_page.stays.card3.location">Taghazout Bay</span>
+                     <a href="https://www.booking.com/searchresults.html?ss=Hyatt+Place+Taghazout+Bay" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="agadir_page.stays.book">
+                         Book →
+                     </a>
+                 </div>
+             </div>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Villa Atlantique" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">2. Villa Atlantique</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> Beachfront · <span data-i18n="agadir_page.directory.type_label">Type:</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+         <!-- Pick 4: Modern Marina Apartment -->
+         <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+             <div class="relative h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Marina Agadir Suites" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                 <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="agadir_page.stays.card4.badge">
+                     ★ Marina & Convenience
+                 </span>
+             </div>
+             <div class="p-5 flex flex-col flex-grow">
+                 <h3 class="text-lg font-bold text-sombre" data-i18n="agadir_page.stays.card4.name">Marina Agadir Suites</h3>
+                 <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="agadir_page.stays.card4.desc">
+                     Modern apartments and suites along the yacht basin, within stepping distance of restaurants and promenade.
+                 </p>
+                 <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                     <span class="text-xs font-bold text-vert" data-i18n="agadir_page.stays.card4.location">Agadir Marina</span>
+                     <a href="https://www.booking.com/searchresults.html?ss=Marina+Agadir" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="agadir_page.stays.book">
+                         Book →
+                     </a>
+                 </div>
+             </div>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">3. Hotel Atlas Bay</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.1</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> Beachfront · <span data-i18n="agadir_page.directory.type_label">Type:</span> Boutique riad</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Tania+Mozaik+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+     </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Riad Agadir" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">4. Riad Agadir</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.3</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> Beachfront · <span data-i18n="agadir_page.directory.type_label">Type:</span> Dar / guesthouse</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Zahia+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+     <!-- BOOKING REDIRECTION BANNER -->
+     <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+         
+         <div class="max-w-xl text-left z-10">
+             <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.booking_banner.badge">
+                 Over 400+ properties
+             </span>
+             <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="agadir_page.booking_banner.title">
+                 Explore all stays in Agadir & Taghazout
+             </h3>
+             <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="agadir_page.booking_banner.desc">
+                 Compare real-time rates, read verified guest reviews, and enjoy free cancellation on most hotels and beachfront apartments.
+             </p>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hotel Regency" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">5. Hotel Regency</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.8</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> Beachfront · <span data-i18n="agadir_page.directory.type_label">Type:</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Amnay+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+         <div class="w-full md:w-auto shrink-0 z-10 text-center">
+             <a href="https://www.booking.com/city/ma/agadir.html" 
+                target="_blank" 
+                rel="noopener sponsored" 
+                class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                <span data-i18n="agadir_page.booking_banner.btn">View all stays on Booking.com</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+             </a>
+             <p class="text-[11px] text-creme/60 mt-2" data-i18n="agadir_page.booking_banner.guarantee">✓ Best price guarantee &amp; secure booking</p>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="beach">
- <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Jardin Agadir" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">6. Jardin Agadir</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> City centre · <span data-i18n="agadir_page.directory.type_label">Type:</span> Garden hotel</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Zitoune+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+         <!-- Decorative Background Blob -->
+         <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+     </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="beach">
- <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Westpoint Agadir" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">7. Westpoint Agadir</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.4</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> City centre · <span data-i18n="agadir_page.directory.type_label">Type:</span> Botanical lodge</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Hossoun+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
-
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Hotel Maghreb" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">8. Hotel Maghreb</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> Beachfront · <span data-i18n="agadir_page.directory.type_label">Type:</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Ines+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
-
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="guesthouse" data-location="centre">
- <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="La Maison Agadir" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">9. La Maison Agadir</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.9</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> Beachfront · <span data-i18n="agadir_page.directory.type_label">Type:</span> Guesthouse</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=La+Maison+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
-
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="peripherie">
- <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80" alt="Hotel in Agadir" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">10. Apartments Beach Agadir</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.7</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="agadir_page.directory.district_label">Area:</span> Taghazout / North · <span data-i18n="agadir_page.directory.type_label">Type:</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Tafilag+Agadir" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="agadir_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
-
- </div>
-
- <!-- Message d'alerte si aucun filtre ne correspond -->
- <div id="no-results" class="no-results-msg mt-8 text-center text-gray-500 font-semibold" style="display: none;" data-i18n="agadir_page.directory.no_results">No stays match your filters.</div>
  </section>
  
  <!-- Where to Eat Section (6 Restaurants) -->
@@ -724,10 +646,10 @@
  </div>
  </a>
 
- <!-- 4.  -->
+ <!-- 4. Simple grills -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/dar-moha.html">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+ <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Simple grills" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
  <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
  <span>4.5</span>
@@ -822,8 +744,7 @@
  </section>
 
  <!-- Day Trips from Agadir -->
- 
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+ <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
  <div class="mb-8">
  <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="agadir_page.daytrips.badge">Around Agadir</span>
  <h2 class="text-3xl font-bold text-vert" data-i18n="agadir_page.daytrips.title">Best day trips from Agadir</h2>
@@ -943,15 +864,13 @@
  </div>
  </footer>
 
- <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
+ <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire) -->
  <script>
  function openDay(evt, dayId) {
  var tabContents = document.getElementsByClassName("tab-content");
  for (var i = 0; i < tabContents.length; i++) {
  tabContents[i].classList.remove("active");
  }
-
- 
  var tabBtns = document.getElementsByClassName("tab-btn");
  for (var i = 0; i < tabBtns.length; i++) {
  tabBtns[i].classList.remove("active");
@@ -959,8 +878,6 @@
  document.getElementById(dayId).classList.add("active");
  evt.currentTarget.classList.add("active");
  }
-
- 
 
  function toggleMobileCategories() {
  const dropdown = document.getElementById('mobile-categories-dropdown');
@@ -990,7 +907,7 @@
  });
  }
 
- const savedLang = localStorage.getItem('preferred_lang') || 'fr';
+ const savedLang = localStorage.getItem('preferred_lang') || 'en';
  switchLanguage(savedLang);
  });
 
@@ -1021,6 +938,9 @@
  langDropdown.classList.add('hidden');
  }
 
+ document.documentElement.setAttribute('lang', lang);
+ document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
  if (typeof changeLanguage === 'function') {
  changeLanguage(lang);
  }
@@ -1030,42 +950,5 @@
  <!-- Scripts externes -->
  <script src="js/i18n.js"></script>
  <script src="js/search.js"></script>
-<script>
-function filterAccommodations() {
- var typeEl = document.getElementById("filter-type");
- var locEl = document.getElementById("filter-location");
- var selectedType = typeEl ? typeEl.value : "all";
- var selectedLocation = locEl ? locEl.value : "all";
- var cards = document.getElementsByClassName("acc-card");
- var visibleCount = 0;
- for (var i = 0; i < cards.length; i++) {
- var card = cards[i];
- var cardType = card.getAttribute("data-type") || "";
- var cardLocation = card.getAttribute("data-location") || "";
- var matchType = (selectedType === "all" || cardType === selectedType);
- var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
- if (matchType && matchLocation) {
- card.style.display = "block";
- visibleCount++;
- } else {
- card.style.display = "none";
- }
- }
- var counterDiv = document.getElementById("accommodation-counter");
- var noResults = document.getElementById("no-results");
- if (counterDiv) {
- if (visibleCount === 0) {
- counterDiv.innerText = "0 stays found";
- if (noResults) noResults.style.display = "block";
- } else if (visibleCount === 1) {
- counterDiv.innerText = "1 stay found";
- if (noResults) noResults.style.display = "none";
- } else {
- counterDiv.innerText = visibleCount + " stays found";
- if (noResults) noResults.style.display = "none";
- }
- }
- }
-</script>
 </body>
 </html>

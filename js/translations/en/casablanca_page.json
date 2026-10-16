@@ -75,25 +75,44 @@
   "itinerary": {
     "badge": "Planning",
     "title": "Suggested 3-Day Itinerary",
-    "subtitle": "A balanced schedule to discover the highlights without rushing your visit.",
-    "day1": {
-      "tag": "Day 1",
-      "title": "Mosque & Old City",
-      "desc": "Morning guided tour of the Hassan II Mosque, then walk through the Old Medina and finish with sunset on the Corniche.",
-      "duration": "Full Day • Centre & Coast"
+    "subtitle": "A balanced schedule to discover the highlights without rushing your visit."
+  },
+  "stays": {
+    "badge": "Selection & Tips",
+    "title": "Where to stay in Casablanca? Our Favorites",
+    "subtitle": "From iconic beachfront luxury hotels to boutique Art Deco riads and modern city suites, here are our top picks.",
+    "book": "Book →",
+    "card1": {
+      "badge": "★ Beachfront Luxury",
+      "name": "Four Seasons Hotel Casablanca",
+      "desc": "Resort-style luxury overlooking the Atlantic ocean along the Corniche, featuring spa and fine dining.",
+      "location": "Ain Diab Coast"
     },
-    "day2": {
-      "tag": "Day 2",
-      "title": "Art Deco & Habous",
-      "desc": "Explore Place Mohammed V and the downtown architecture, then spend the afternoon in the atmospheric Quartier Habous.",
-      "duration": "Full Day • Downtown & Habous"
+    "card2": {
+      "badge": "★ Art Deco Boutique",
+      "name": "Hôtel particulier Le Doge",
+      "desc": "Relais & Châteaux property housed in a magnificent 1930s Art Deco villa right in downtown Casablanca.",
+      "location": "City Centre"
     },
-    "day3": {
-      "tag": "Day 3",
-      "title": "Day Trip or Coast",
-      "desc": "Take the train to Rabat for the Kasbah and Hassan Tower, or stay local and enjoy seafood and beach clubs along Ain Diab.",
-      "duration": "Full Day • Rabat or Corniche"
+    "card3": {
+      "badge": "★ Business & Central",
+      "name": "Hyatt Regency Casablanca",
+      "desc": "Iconic downtown hotel overlooking Place des Nations Unies, steps from the old medina and tramway lines.",
+      "location": "Place des Nations"
+    },
+    "card4": {
+      "badge": "★ Traditional Riad",
+      "name": "Ryad 91",
+      "desc": "A peaceful traditional riad offering authentic Moroccan hospitality and calm courtyard sanctuary in the city.",
+      "location": "Sidi Belyout"
     }
+  },
+  "booking_banner": {
+    "badge": "Over 200+ properties across Casablanca",
+    "title": "Explore all stays in Casablanca",
+    "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation on top city hotels, apartments, and guesthouses.",
+    "btn": "View all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
   },
   "directory": {
     "badge": "Directory & Database",
@@ -122,56 +141,44 @@
     "title": "Best Restaurants & Rooftops",
     "subtitle": "Curated culinary experiences with top visitor ratings",
     "ricks": {
-      "tag": "Cinema Icon",
-      "loc": "Old Medina edge",
+      "tag": "Modern Moroccan",
+      "loc": "Old Town / Port",
       "title": "Rick’s Café",
-      "desc": "A loving recreation of the 1942 film bar with piano, period décor and refined international-Moroccan cuisine."
+      "desc": "A legendary restaurant and piano bar recreating the iconic 1942 film setting near the old port."
     },
     "sqala": {
       "tag": "Garden Dining",
-      "loc": "Near Old Medina",
+      "loc": "Port Fortress",
       "title": "La Sqala",
-      "desc": "Fortress-garden restaurant serving excellent traditional Moroccan dishes in a peaceful setting."
+      "desc": "A lush 18th-century fortress courtyard serving traditional Moroccan cuisine and breakfast near the old walls."
     },
     "mounia": {
       "tag": "Traditional Cuisine",
       "loc": "City Centre",
       "title": "Al-Mounia",
-      "desc": "Long-established classic in downtown Casablanca for pastilla, couscous and traditional Moroccan flavours."
-    },
-    "cabestan": {
-      "tag": "Seafood & Views",
-      "loc": "Corniche",
-      "title": "Le Cabestan",
-      "desc": "Iconic cliffside restaurant overlooking the Atlantic, known for seafood and sunsets."
+      "desc": "A historic Casablanca establishment renowned for authentic Moroccan dishes, tagines, and pastilla."
     },
     "grande_table": {
       "tag": "Fine Dining",
-      "loc": "Royal Mansour / Centre",
+      "loc": "Downtown",
       "title": "La Grande Table Marocaine",
-      "desc": "High-end Moroccan gastronomy in an elegant setting, often ranked among the city’s best."
+      "desc": "Refined Moroccan gastronomy blending traditional recipes with modern culinary art."
+    },
+    "cabestan": {
+      "tag": "Oceanfront Lounge",
+      "loc": "Ain Diab",
+      "title": "Le Cabestan",
+      "desc": "Iconic oceanfront restaurant perched on the rocks of Ain Diab, offering fresh seafood and stunning Atlantic views."
     },
     "table3": {
-      "tag": "Modern Moroccan",
-      "loc": "Gauthier / Maarif",
+      "tag": "Chic Rooftop",
+      "loc": "City Centre",
       "title": "Table 3",
-      "desc": "Contemporary Moroccan cuisine with creative plating in a stylish neighbourhood restaurant."
+      "desc": "Stylish rooftop lounge featuring panoramic city views, creative cocktails, and sophisticated tapas."
     }
   },
   "tips": {
     "title": "Practical Tips for Visiting Casablanca",
-    "1": {
-      "title": "Getting Around",
-      "desc": "The Casa Tramway is clean, cheap and useful for many central routes. For longer distances use red petit taxis (insist on the meter) or rideshare apps. The airport train is the easiest way from CMN."
-    },
-    "2": {
-      "title": "Dress & Etiquette",
-      "desc": "Casablanca is more relaxed than inland cities, but modest clothing is still appreciated, especially when visiting the mosque. Bring a light jacket — the Atlantic breeze can be cool even in summer."
-    },
-    "3": {
-      "title": "Safety & Atmosphere",
-      "desc": "Casablanca is a big city. Use normal big-city awareness, especially after dark in quieter streets. The Corniche and main tourist areas feel lively and safe in the evening."
-    },
     "transport": {
       "title": "Getting Around",
       "desc": "The Casa Tramway is clean, cheap and useful for many central routes. For longer distances use red petit taxis (insist on the meter) or rideshare apps. The airport train is the easiest way from CMN."
@@ -207,7 +214,7 @@
     }
   },
   "faq": {
-    "badge": "Useful Info",
+    "badge": "Good to Know",
     "title": "Casablanca Travel FAQ",
     "q1": {
       "question": "How many days should I spend in Casablanca?",

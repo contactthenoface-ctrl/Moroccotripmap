@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Marrakech Travel Guide 2026 | Things to Do, Riads & Day Trips | MoroccoTripMap",
-    "description": "Plan your trip to Marrakech: top things to do (Jemaa el-Fnaa, Jardin Majorelle, souks), best riads and hotels, restaurants, a 3-day itinerary, day trips to the Atlas Mountains and Agafay desert, and practical travel tips.",
+    "description": "Plan your trip to Marrakech: top things to do (Jemaa el-Fnaa, Jardin Majorelle, souks), best riads and hotels, restaurants, 3-day itinerary, day trips to the Atlas Mountains and Agafay desert, and practical travel tips.",
     "og_title": "Marrakech Travel Guide | Things to Do, Riads & Day Trips | MoroccoTripMap",
     "og_description": "Top attractions, riads, restaurants, a ready-made itinerary, and day trips from Marrakech, all in one guide."
   },
@@ -63,7 +63,7 @@
     },
     "dar_el_bacha": {
       "tag": "Dar El Bacha",
-      "title": "Dar El Bacha",
+      "title": "Dar El Bacha Museum",
       "desc": "A stunning 1910 palace showcasing Moorish architecture and the famous Bacha Coffee."
     },
     "koutoubia": {
@@ -100,17 +100,63 @@
     "day3_e": "Evening — Last Night in the Ochre City",
     "day3_ed": "Enjoy a final glass of fresh mint tea on a rooftop lounge as sunset colors paint the city skyline."
   },
-  "directory": {
+  "stays": {
     "badge": "Selection & Advice",
-    "title": "Find Your Ideal Stay in Marrakech",
-    "subtitle": "Legendary palaces, charming boutique riads, or peaceful sanctuaries: explore our top recommended addresses for an unforgettable stay in Marrakech."
+    "title": "Where to stay in Marrakech? Our Favorites",
+    "subtitle": "Legendary palaces, charming boutique riads, or peaceful sanctuaries: explore our top recommended addresses for an unforgettable stay in Marrakech.",
+    "book": "Book Now →",
+    "card1": {
+      "badge": "★ Iconic Palace",
+      "name": "La Mamounia Hotel",
+      "desc": "A legendary palace hotel set in historic gardens in the Hivernage district, celebrated worldwide for timeless elegance.",
+      "location": "Near Koutoubia Gardens"
+    },
+    "card2": {
+      "badge": "★ Historic Royal Palace",
+      "name": "Royal Mansour Marrakech",
+      "desc": "A unique architectural masterpiece made of private luxury riads, offering unrivaled service and world-class privacy.",
+      "location": "Bab Doukkala District"
+    },
+    "card3": {
+      "badge": "★ Art Boutique Riad",
+      "name": "Dar Sofia",
+      "desc": "An intimate traditional riad showcasing authentic Moroccan hospitality with a peaceful courtyard and elegant decor.",
+      "location": "Heart of the Medina"
+    },
+    "card4": {
+      "badge": "★ Modern Chic Design",
+      "name": "Nobu Hotel Marrakech",
+      "desc": "A stylish modern hotel in Hivernage, combining sleek Japanese aesthetics with Moroccan touches and a rooftop pool.",
+      "location": "Hivernage District"
+    }
   },
   "booking_banner": {
-    "badge": "Over 500+ Accommodations",
+    "badge": "Over 500+ Accommodations in Marrakech",
     "title": "Explore All Places to Stay in Marrakech",
     "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation options on most riads, hotels, and luxury resorts.",
     "btn": "View All Riads on Booking.com",
     "guarantee": "✓ Best price guaranteed & secure booking"
+  },
+  "directory": {
+    "badge": "Directory & Database",
+    "title": "Find Your Ideal Stay in Marrakech",
+    "subtitle": "Use the filters below to sort top recommended properties based on your personal travel preferences.",
+    "filter_type_label": "Accommodation Type:",
+    "type_all": "All Accommodation Types",
+    "type_hotel": "Hotels & Luxury Resorts",
+    "type_riad": "Traditional Riads",
+    "type_guesthouse": "Guest Houses & Villas",
+    "filter_location_label": "Neighborhood / District:",
+    "location_all": "All Neighborhoods",
+    "location_centre": "City Center / Gueliz",
+    "location_medina": "Medina & Kasbah",
+    "location_hivernage": "Hivernage District",
+    "counter": "45 accommodations found",
+    "district_label": "District",
+    "type_label": "Type",
+    "tel_label": "Phone",
+    "no_results": "No accommodations match these filters. Try expanding your search.",
+    "check_availability": "Check Availability →"
   },
   "eat": {
     "badge": "Gastronomy",

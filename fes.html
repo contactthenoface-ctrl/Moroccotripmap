@@ -5,7 +5,8 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta content="notranslate" name="google"/>
-    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
     <!-- Favicon SVG (Pin de carte vert, cohérent avec le logo MoroccoTripMap) -->
     <link href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>" rel="icon" type="image/svg+xml"/>
     
@@ -342,259 +343,777 @@
             </div></div>
         </section>
 
-        <!-- Stays -->
+        <!-- ==========================================
+             SECTION RÉPERTOIRE & FILTRES DES 60 HÉBERGEMENTS (FÈS)
+             ========================================== -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="filter-section mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="fes_page.directory.badge">Where to Stay</span>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="fes_page.directory.badge">Directory & Database</span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
                     <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
                     <span data-i18n="fes_page.directory.title">Find Your Ideal Stay in Fes</span>
                 </h2>
-                <p class="text-sm text-sombre/70 mt-2"><span data-i18n="fes_page.directory.subtitle">For the full experience, many travellers choose a traditional riad in or near the medina. Modern hotels are convenient if you prefer easy road access.</span></p>
+                <p class="text-sm text-sombre/70 mt-2" data-i18n="fes_page.directory.subtitle">Use the filters below to instantly sort the best places based on your search criteria.</p>
                 
                 <div class="filter-container mt-6 flex flex-wrap gap-4">
+                    <!-- Filter by Accommodation Type -->
                     <div class="filter-group flex flex-col">
-                        <label data-i18n="fes_page.detailed_itinerary.filter_type" for="filter-type">Accommodation Type</label>
-                        <select id="filter-type" onchange="filterAccommodations()">
-                            <option data-i18n="fes_page.detailed_itinerary.all_types" value="all">All Types</option>
-                            <option data-i18n="fes_page.detailed_itinerary.riads" value="riad">Riads</option>
-                            <option data-i18n="fes_page.detailed_itinerary.hotels" value="hotel">Hotels</option>
-                            <option data-i18n="fes_page.detailed_itinerary.guesthouses" value="guesthouse">Guesthouses</option>
+                        <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="fes_page.directory.filter_type_label">Accommodation Type:</label>
+                        <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
+                            <option value="all" data-i18n="fes_page.directory.type_all">All Types</option>
+                            <option value="hotel" data-i18n="fes_page.directory.type_hotel">Hotels & Resorts</option>
+                            <option value="riad" data-i18n="fes_page.directory.type_riad">Traditional Riads</option>
+                            <option value="guesthouse" data-i18n="fes_page.directory.type_guesthouse">Guesthouses</option>
                         </select>
                     </div>
+
+                    <!-- Filter by District / Area -->
                     <div class="filter-group flex flex-col">
-                        <label data-i18n="fes_page.detailed_itinerary.area" for="filter-location">Area</label>
-                        <select id="filter-location" onchange="filterAccommodations()">
-                            <option data-i18n="fes_page.detailed_itinerary.all_areas" value="all">All Areas</option>
-                            <option data-i18n="fes_page.detailed_itinerary.medina" value="medina">Medina</option>
-                            <option data-i18n="fes_page.detailed_itinerary.ville_nouvelle" value="ville-nouvelle">Ville Nouvelle</option>
-                            <option data-i18n="fes_page.detailed_itinerary.outside" value="outskirts">Outskirts</option>
+                        <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="fes_page.directory.filter_location_label">District / Area:</label>
+                        <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
+                            <option value="all" data-i18n="fes_page.directory.location_all">All Areas</option>
+                            <option value="medina" data-i18n="fes_page.directory.location_medina">Medina (Fes el-Bali &amp; el-Jdid)</option>
+                            <option value="ville-nouvelle" data-i18n="fes_page.directory.location_ville_nouvelle">Ville Nouvelle</option>
+                            <option value="outskirts" data-i18n="fes_page.directory.location_outskirts">Outskirts &amp; Hillsides</option>
                         </select>
                     </div>
                 </div>
                 
-                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter">24 stays listed</div>
+                <!-- Dynamic Counter -->
+                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="fes_page.directory.counter">60 accommodations found</div>
             </div>
 
-            <div class="no-results-msg" id="no-results" data-i18n="fes_page.directory.no_results">Aucun établissement ne correspond à vos critères.</div>
-
+            <!-- Complete Grid of 60 Accommodations for Fes -->
             <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Fes in Fes" loading="lazy" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+                
+                <!-- HOTELS & RESORTS (1 à 20) -->
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="outskirts">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hotel Sahrai" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Fes</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p1.meta">Traditional Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p1.desc">A refined luxury riad in the historic medina, suited to travellers looking for architecture, calm and a memorable stay.</p>
-                        <a aria-label="Check availability for Riad Fes" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p1.book" data-property="Riad Fes" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">1. Hotel Sahrai</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.5 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Hillsides | <span data-i18n="fes_page.directory.type_label">Type</span>: Luxury Hotel 5*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Sahrai+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Fes Maya Suite &amp; Spa in Fes" loading="lazy" src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Fes Marriott Hotel Jnan Palace" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Fes Maya Suite &amp; Spa</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p2.meta">Riad &amp; Spa · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p2.desc">A comfortable medina option combining traditional interiors with spa facilities and a relaxed atmosphere.</p>
-                        <a aria-label="Check availability for Riad Fes Maya Suite &amp; Spa" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p2.book" data-property="Riad Fes Maya Suite &amp; Spa" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">2. Marriott Jnan Palace</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Hotel 5*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Fes+Marriott+Hotel+Jnan+Palace" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Laaroussa in Fes" loading="lazy" src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Palais Medina & Spa" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Laaroussa</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p3.meta">Heritage Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p3.desc">A characterful stay in the old city, with the kind of intimate setting that makes a Fes visit feel special.</p>
-                        <a aria-label="Check availability for Riad Laaroussa" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p3.book" data-property="Riad Laaroussa" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">3. Palais Medina & Spa</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.4 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Resort Hotel 5*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Palais+Medina+and+Spa+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Dar Seffarine in Fes" loading="lazy" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Barceló Fès Medina" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Dar Seffarine</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p4.meta">Guesthouse &amp; Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p4.desc">A small, atmospheric address for travellers who want to experience the old medina at a slower pace.</p>
-                        <a aria-label="Check availability for Dar Seffarine" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p4.book" data-property="Dar Seffarine" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">4. Barceló Fès Medina</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.3 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Modern Hotel 4*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Barcelo+Fes+Medina" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Palais Amani in Fes" loading="lazy" src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="outskirts">
+                    <img src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=800&q=80" alt="Hotel Les Mérinides" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Palais Amani</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p5.meta">Luxury Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p5.desc">A polished choice inside the medina, with traditional design and a quieter feel away from the busiest streets.</p>
-                        <a aria-label="Check availability for Palais Amani" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p5.book" data-property="Palais Amani" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">5. Les Mérinides</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.2 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Hillsides | <span data-i18n="fes_page.directory.type_label">Type</span>: Panoramic Hotel 4*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Les+Merinides+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Karawan Riad in Fes" loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4?auto=format&fit=crop&w=800&q=80" alt="Hotel Batha" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Karawan Riad</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p6.meta">Luxury Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p6.desc">A design-focused riad for travellers who appreciate detailed Moroccan interiors and a more intimate setting.</p>
-                        <a aria-label="Check availability for Karawan Riad" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p6.book" data-property="Karawan Riad" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">6. Hotel Batha</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.9 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina Gate | <span data-i18n="fes_page.directory.type_label">Type</span>: Historic Hotel 3*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Batha+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Rcif in Fes" loading="lazy" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="ibis Fes Centre Gare" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Rcif</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p7.meta">Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p7.desc">A traditional base near the medina streets, convenient for exploring Fes el-Bali on foot.</p>
-                        <a aria-label="Check availability for Riad Rcif" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p7.book" data-property="Riad Rcif" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">7. ibis Fes Centre Gare</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.7 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Budget Hotel 3*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Ibis+Fes+Centre+Gare" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Palais Faraj Suites &amp; Spa in Fes" loading="lazy" src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Hotel Volubilis" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Palais Faraj Suites &amp; Spa</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p8.meta">Luxury Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p8.desc">A high-end option overlooking the old city, particularly appealing for travellers looking for views and spa time.</p>
-                        <a aria-label="Check availability for Palais Faraj Suites &amp; Spa" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p8.book" data-property="Palais Faraj Suites &amp; Spa" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">8. Hotel Volubilis</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.5 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Standard Hotel 3*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Volubilis+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Braya in Fes" loading="lazy" src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Cron Palace Fes" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Braya</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p9.meta">Boutique Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p9.desc">A boutique-style riad with traditional character and a convenient location for discovering the medina.</p>
-                        <a aria-label="Check availability for Riad Braya" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p9.book" data-property="Riad Braya" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">9. Cron Palace Fes</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Hotel 4*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Cron+Palace+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Mayfez Suites &amp; Spa in Fes" loading="lazy" src="https://images.unsplash.com/photo-1512917774080-9991f1c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Zalagh Parc Palace" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Mayfez Suites &amp; Spa</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p10.meta">Riad &amp; Spa · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p10.desc">A refined medina stay combining Moroccan design with wellness-oriented facilities.</p>
-                        <a aria-label="Check availability for Riad Mayfez Suites &amp; Spa" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p10.book" data-property="Riad Mayfez Suites &amp; Spa" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">10. Zalagh Parc Palace</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.8 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Resort Hotel 4*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Zalagh+Parc+Palace+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad El Amine Fès in Fes" loading="lazy" src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Hotel Splendid Fes" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad El Amine Fès</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p11.meta">Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p11.desc">A traditional address for visitors who want to stay close to the historic heart of Fes.</p>
-                        <a aria-label="Check availability for Riad El Amine Fès" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p11.book" data-property="Riad El Amine Fès" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">11. Hotel Splendid</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.6 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Classic Hotel 3*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Splendid+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Idrissy in Fes" loading="lazy" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel Royal Fes" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Idrissy</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p12.meta">Boutique Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p12.desc">A welcoming choice with a strong sense of place, ideal for travellers who prefer smaller properties.</p>
-                        <a aria-label="Check availability for Riad Idrissy" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p12.book" data-property="Riad Idrissy" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">12. Hotel Royal Fes</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.7 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: City Hotel 3*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Royal+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Dar Bensouda in Fes" loading="lazy" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="outskirts">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Etoile de Fes" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Dar Bensouda</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p13.meta">Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p13.desc">A traditional medina property with courtyards and Moroccan character, suited to a cultural city break.</p>
-                        <a aria-label="Check availability for Dar Bensouda" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p13.book" data-property="Dar Bensouda" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">13. Etoile de Fes</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.1 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Outskirts | <span data-i18n="fes_page.directory.type_label">Type</span>: Country Hotel</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Etoile+de+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Dar Anebar in Fes" loading="lazy" src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Hotel Mounia" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Dar Anebar</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p14.meta">Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p14.desc">A classic Fes-style stay for travellers who want to sleep inside the historic medina.</p>
-                        <a aria-label="Check availability for Dar Anebar" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p14.book" data-property="Dar Anebar" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">14. Hotel Mounia</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.4 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Budget Hotel 2*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Mounia+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Dar Al Andalous in Fes" loading="lazy" src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Kassak" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Dar Al Andalous</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p15.meta">Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p15.desc">A traditional option close to the old city sights, with an atmosphere suited to a relaxed Fes stay.</p>
-                        <a aria-label="Check availability for Dar Al Andalous" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p15.book" data-property="Dar Al Andalous" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">15. Hotel Kassak</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.6 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Standard Hotel 3*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Kassak+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Andalib in Fes" loading="lazy" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Hotel Perla" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Andalib</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p16.meta">Boutique Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p16.desc">A comfortable boutique base for exploring the medina while returning to a quieter setting at the end of the day.</p>
-                        <a aria-label="Check availability for Riad Andalib" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p16.book" data-property="Riad Andalib" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">16. Hotel Perla</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.5 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: City Hotel 3*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Perla+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="ville-nouvelle">
-                    <img alt="Palais Medina &amp; Spa in Fes" loading="lazy" src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="outskirts">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Sahara Hotel Fes" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Palais Medina &amp; Spa</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p17.meta">Hotel &amp; Spa · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p17.desc">A full-service hotel option between the modern city and the historic centre, useful for travellers who prefer hotel facilities.</p>
-                        <a aria-label="Check availability for Palais Medina &amp; Spa" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p17.book" data-property="Palais Medina &amp; Spa" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">17. Sahara Hotel</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.8 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Outskirts | <span data-i18n="fes_page.directory.type_label">Type</span>: Suburban Hotel</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Sahara+Hotel+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="ville-nouvelle">
-                    <img alt="Barceló Fès Medina in Fes" loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hotel Across Carrefour" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Barceló Fès Medina</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p18.meta">Hotel · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p18.desc">A modern city hotel with straightforward access to Ville Nouvelle and the main road network.</p>
-                        <a aria-label="Check availability for Barceló Fès Medina" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p18.book" data-property="Barceló Fès Medina" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">18. Fes Inn Hotel</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.7 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Modern Hotel 3*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Fes+Inn+Hotel" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="ville-nouvelle">
-                    <img alt="Fes Marriott Hotel Jnan Palace in Fes" loading="lazy" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Hotel, Spa & Club Le Royal" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Fes Marriott Hotel Jnan Palace</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p19.meta">5-Star Hotel · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p19.desc">A large full-service hotel with gardens, pools and facilities suited to longer or more comfortable stays.</p>
-                        <a aria-label="Check availability for Fes Marriott Hotel Jnan Palace" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p19.book" data-property="Fes Marriott Hotel Jnan Palace" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">19. Le Royal Club Hotel</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Hotel & Club 4*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Le+Royal+Club+Hotel+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="ville-nouvelle">
-                    <img alt="Hotel Sahrai in Fes" loading="lazy" src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville-nouvelle">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Hotel Fes Panorama" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Hotel Sahrai</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p20.meta">Luxury Hotel · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p20.desc">A contemporary luxury option with elevated views and a good fit for travellers who want a modern hotel experience.</p>
-                        <a aria-label="Check availability for Hotel Sahrai" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p20.book" data-property="Hotel Sahrai" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">20. Fes Panorama Hotel</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.9 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Ville Nouvelle | <span data-i18n="fes_page.directory.type_label">Type</span>: Hotel 4*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Fes+Panorama+Hotel" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="outskirts">
-                    <img alt="Les Mérinides in Fes" loading="lazy" src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <!-- TRADITIONAL RIADS (21 à 40) -->
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Riad Fes" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Les Mérinides</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p21.meta">Hotel · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p21.desc">A hillside hotel known for its position above the city and views towards the historic medina.</p>
-                        <a aria-label="Check availability for Les Mérinides" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p21.book" data-property="Les Mérinides" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">21. Riad Fes</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.4 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Traditional Riad 5*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="medina">
-                    <img alt="Hotel Batha in Fes" loading="lazy" src="https://images.unsplash.com/photo-1512917774080-9991f1c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Palais Amani" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Hotel Batha</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p22.meta">Hotel · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p22.desc">A practical choice near the medina entrance, convenient for travellers who want easy access to the old city.</p>
-                        <a aria-label="Check availability for Hotel Batha" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p22.book" data-property="Hotel Batha" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">22. Palais Amani</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.6 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Luxury Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Palais+Amani+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="medina">
-                    <img alt="Riad Salam Fes in Fes" loading="lazy" src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Karawan Riad" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Salam Fes</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p23.meta">Riad Hotel · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p23.desc">A traditional-style accommodation option close to the historic centre and the medina experience.</p>
-                        <a aria-label="Check availability for Riad Salam Fes" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p23.book" data-property="Riad Salam Fes" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">23. Karawan Riad</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.5 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Design Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Karawan+Riad+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="medina">
-                    <img alt="Riad Palais Bahia Fès in Fes" loading="lazy" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-48 object-cover"/>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=800&q=80" alt="Palais Faraj Suites & Spa" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-4">
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-lg text-vert">Riad Palais Bahia Fès</h3></div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2" data-i18n="fes_page.directory.properties.p24.meta">Riad · Fes</p>
-                        <p class="acc-contact" data-i18n="fes_page.directory.properties.p24.desc">A traditional medina address suited to travellers looking for Moroccan architecture and a central base.</p>
-                        <a aria-label="Check availability for Riad Palais Bahia Fès" class="btn-availability inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition mt-3" data-i18n="fes_page.directory.properties.p24.book" data-property="Riad Palais Bahia Fès" href="#">Check availability →</a>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">24. Palais Faraj Suites</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.3 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina Edge | <span data-i18n="fes_page.directory.type_label">Type</span>: Luxury Riad 5*</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Palais+Faraj+Suites+and+Spa" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80" alt="Riad Fes Maya" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">25. Riad Fes Maya Suite</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Riad & Spa</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Fes+Maya+Suite+and+Spa" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Riad Laaroussa" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">26. Riad Laaroussa</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.3 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Heritage Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Laaroussa+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Riad Rcif" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">27. Riad Rcif</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Traditional Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Rcif+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Riad Braya" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">28. Riad Braya</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Boutique Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Braya+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4?auto=format&fit=crop&w=800&q=80" alt="Riad Mayfez" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">29. Riad Mayfez Suites</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Luxury Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Mayfez+Suites+and+Spa" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Riad El Amine Fès" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">30. Riad El Amine Fès</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Traditional Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+El+Amine+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Riad Idrissy" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">31. Riad Idrissy</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Boutique Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Idrissy+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Dar Bensouda" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">32. Dar Bensouda</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Historic Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Bensouda+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80" alt="Dar Anebar" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">33. Dar Anebar</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Traditional Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Anebar+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Dar Al Andalous" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">34. Dar Al Andalous</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Andalusian Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Andalous+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Riad Andalib" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">35. Riad Andalib</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Boutique Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Andalib+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Riad Palais Bahia Fès" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">36. Riad Palais Bahia Fès</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Traditional Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Palais+Bahia+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Riad Dar Bensouda" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">37. Riad Dar Bensouda</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Riad & Pool</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Bensouda+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4?auto=format&fit=crop&w=800&q=80" alt="Riad Dar Saida" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">38. Riad Dar Saida</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Charming Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Saida+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80" alt="Riad Dar Bensouda 2" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">39. Riad Dar Zouina</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.6 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Cozy Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Zouina+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Riad Les Chrifiens" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">40. Riad Les Chrifiens</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Historic Riad</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Les+Chrifiens+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <!-- GUESTHOUSES & DAR (41 à 60) -->
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Dar Seffarine" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">41. Dar Seffarine</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.3 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guesthouse</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Seffarine+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Dar Victoria" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">42. Dar Victoria</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Victoria+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Dar Bensouda Guesthouse" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">43. Dar Roumana</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.4 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House & Dining</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Roumana+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4?auto=format&fit=crop&w=800&q=80" alt="Dar Mouna" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">44. Dar Mouna</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Mouna+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80" alt="Dar Namir" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">45. Dar Namir</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Boutique House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Namir+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="outskirts">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Le Jardin des Biehn" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">46. Le Jardin des Biehn</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.3 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina / Art Garden | <span data-i18n="fes_page.directory.type_label">Type</span>: Artistic Guesthouse</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Le+Jardin+des+Biehn+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Dar Bensouda Guest" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">47. Dar Guiga</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Guiga+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Dar Lila" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">48. Dar Lila</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Lila+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Dar Bensouda Guest 2" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">49. Dar Tahami</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Tahami+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4?auto=format&fit=crop&w=800&q=80" alt="Dar Sophia" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">50. Dar Sophia</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Sophia+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80" alt="Dar Amane" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">51. Dar Amane</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Amane+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Dar Bensouda Guest 3" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">52. Dar Bensouda Annex</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Bensouda+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Dar Bushra" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">53. Dar Bushra</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Bushra+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Dar Jazil" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">54. Dar Jazil</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.5 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Boutique Guesthouse</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Jazil+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Dar Bensouda Guest 4" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">55. Dar Attajalli</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guesthouse</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Attajalli+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4?auto=format&fit=crop&w=800&q=80" alt="Dar Iman" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">56. Dar Iman</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Iman+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80" alt="Dar Farhane" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">57. Dar Farhane</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Farhane+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Dar Bensouda Guest 5" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">58. Dar Saada</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.6 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Saada+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Dar Al Madina" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">59. Dar Al Madina</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Madina+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="guesthouse" data-location="medina">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Dar Bensouda Guest 6" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">60. Dar Hakimi</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9 (Booking)</span>
+                        </div>
+                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="fes_page.directory.district_label">District</span>: Medina | <span data-i18n="fes_page.directory.type_label">Type</span>: Guest House</p>
+                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Hakimi+Fes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="fes_page.directory.check_availability">Check availability →</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Message d'alerte si aucun filtre ne correspond -->
+            <div id="no-results" class="no-results-msg mt-8 text-center text-gray-500 font-semibold" style="display: none;" data-i18n="fes_page.directory.no_results">
+                No accommodations match this filter combination. Try broadening your search.
             </div>
         </section>
 
@@ -686,7 +1205,7 @@
         </div>
     </footer>
 
-    <!-- Scripts JavaScript combinés -->
+    <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
     <script>
         function openDay(evt, dayId) {
             var tabContents = document.getElementsByClassName("tab-content");
@@ -777,6 +1296,8 @@
         };
 
         function switchLanguage(lang) {
+            try { localStorage.setItem('preferred_lang', lang); } catch (e) {}
+
             const langLabel = document.getElementById('current-lang-label');
             const langButton = document.getElementById('lang-menu-button');
 
@@ -795,6 +1316,9 @@
             if (langDropdown) {
                 langDropdown.classList.add('hidden');
             }
+
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
 
             if (typeof changeLanguage === 'function') {
                 changeLanguage(lang);

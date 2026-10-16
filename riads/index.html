@@ -10,15 +10,15 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
 
 <!-- SEO & Metadata -->
-<title data-i18n="stays_page.seo.title">Authentic Riads & Stays in Morocco | MoroccoTripMap</title>
-<meta content="Discover handpicked traditional riads, boutique dars, luxury hotels, and desert camps across Morocco with real-time booking options." name="description" data-i18n-attr="content:stays_page.seo.description"/>
+<title data-i18n="stays_page.seo.title">All Stays & Riads in Morocco | MoroccoTripMap</title>
+<meta content="Explore traditional riads, boutique hotels, kasbahs, and desert camps across all cities and regions of Morocco." name="description" data-i18n-attr="content:stays_page.seo.description"/>
 <meta content="Morocco riads, stays in Morocco, Marrakech riads, Fes authentic stays, luxury hotels Morocco, booking riad" name="keywords"/>
 <link href="https://moroccotripmap.com/riads/index.html" rel="canonical"/>
 
 <!-- Open Graph / Social Media -->
 <meta content="website" property="og:type"/>
-<meta content="Authentic Riads & Stays in Morocco | MoroccoTripMap" property="og:title" data-i18n-attr="content:stays_page.seo.og_title"/>
-<meta content="Browse top-rated traditional riads, boutique stays, and desert camps across every region of Morocco." property="og:description" data-i18n-attr="content:stays_page.seo.og_description"/>
+<meta content="All Stays & Riads in Morocco | MoroccoTripMap" property="og:title" data-i18n-attr="content:stays_page.seo.og_title"/>
+<meta content="Browse traditional riads, boutique stays, and desert camps across every destination in Morocco." property="og:description" data-i18n-attr="content:stays_page.seo.og_description"/>
 <meta content="https://moroccotripmap.com/riads/index.html" property="og:url"/>
 <meta content="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
 
@@ -138,12 +138,21 @@
 </div>
 <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4" data-i18n="stays_page.title">Where to Stay in Morocco: Riads, Dars & Desert Camps</h1>
 <p class="text-creme/80 max-w-3xl text-sm sm:text-base leading-relaxed" data-i18n="stays_page.description">
-    Experience authentic Moroccan hospitality. From historic palatial riads with lush central courtyards in Marrakech and Fes to whitewashed ocean dars in Essaouira and luxury tented camps under the stars in Merzouga — find your ideal stay with verified booking options.
+    Explore verified traditional riads, boutique dars, luxury hotels, and desert camps across every major city and region of Morocco. Compare real-time availability and secure your stay via Booking.com.
 </p>
 <div class="mt-6 flex flex-wrap gap-4 text-xs sm:text-sm text-creme/90">
-<span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1.5"><strong class="text-sable">10,000+</strong> <span data-i18n="stays_page.stat_stays">Verified Riads & Hotels</span></span>
+<span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1.5"><strong class="text-sable">21+</strong> <span data-i18n="stays_page.stat_cities">Regions & Cities Covered</span></span>
 <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1.5"><strong class="text-sable">Free</strong> <span data-i18n="stays_page.stat_cancel">Cancellation Options</span></span>
 <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1.5"><strong class="text-sable">Booking.com</strong> <span data-i18n="stays_page.stat_partner">Secure Partner</span></span>
+</div>
+
+<!-- Search Bar -->
+<div class="mt-8 max-w-md relative">
+<div class="relative">
+<input autocomplete="off" class="w-full pl-10 pr-4 py-3 rounded-xl bg-white text-sombre placeholder-gray-400 outline-none shadow-sm text-sm border border-sable/20 focus:border-sable transition" id="searchInput" data-i18n="stays_page.search_placeholder" placeholder="Search stays by city (e.g. Marrakech, Fes, Merzouga)..." type="text"/>
+<svg class="w-5 h-5 text-sable absolute left-3 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div class="absolute top-full left-0 w-full mt-2 bg-white rounded-xl shadow-xl overflow-hidden hidden z-50 text-sombre text-sm border border-gray-100" id="searchResults"></div>
 </div>
 </div>
 </div>
@@ -152,94 +161,361 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <!-- Region Filter Tabs -->
 <div class="flex flex-wrap gap-2 mb-8" id="region-filters">
-<button class="region-tab active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-vert text-white transition" data-region="all" data-i18n="stays_page.filter_all">All Stays</button>
-<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="riads" data-i18n="stays_page.filter_riads">Historic Riads</button>
-<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="luxury" data-i18n="stays_page.filter_luxury">Luxury Palaces</button>
-<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="desert" data-i18n="stays_page.filter_desert">Desert Camps</button>
-<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="coastal" data-i18n="stays_page.filter_coastal">Coastal Escapes</button>
+<button class="region-tab active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-vert text-white transition" data-region="all" data-i18n="stays_page.filter_all">All Regions</button>
+<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="imperial" data-i18n="stays_page.filter_imperial">Imperial Cities</button>
+<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="north" data-i18n="stays_page.filter_north">North &amp; Rif</button>
+<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="atlantic" data-i18n="stays_page.filter_atlantic">Atlantic Coast</button>
+<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="desert" data-i18n="stays_page.filter_desert">Desert &amp; South</button>
+<button class="region-tab px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition" data-region="mountains" data-i18n="stays_page.filter_mountains">Atlas Mountains</button>
 </div>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="destinations-grid">
 
-<!-- Marrakech Riads -->
-<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="riads luxury">
-<img alt="Traditional luxury riad in Marrakech with courtyard pool" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<!-- Marrakech -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="imperial">
+<img alt="Historic Koutoubia mosque and streets in Marrakech, Morocco" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
 <div class="absolute bottom-5 left-5 right-5 text-white z-10">
-<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="stays_page.card1.tag">Marrakech Medina</span>
-<h3 class="text-xl font-bold" data-i18n="stays_page.card1.name">Palatial Riads & Dars</h3>
-<p class="text-xs text-white/80 mt-1" data-i18n="stays_page.card1.desc">Immerse yourself in Moroccan craftsmanship with courtyard pools, rooftop terraces, and personalized service near Jemaa el-Fnaa.</p>
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.marrakech.tag">Imperial City</span>
+<h3 class="text-xl font-bold" data-i18n="cities.marrakech.name">Marrakech Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.marrakech.desc">Palatial riads with courtyard pools and rooftop terraces near Jemaa el-Fnaa.</p>
 <a href="https://www.booking.com/city/ma/marrakech.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
     <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
 </a>
 </div>
 </div>
 
-<!-- Fes Riads -->
-<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="riads luxury">
-<img alt="Palais Amani luxury riad in Fes el-Bali" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<!-- Chefchaouen -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="north mountains">
+<img alt="Traditional blue painted streets in Chefchaouen, Morocco" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1564507004663-b6dfb3c824d5?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
 <div class="absolute bottom-5 left-5 right-5 text-white z-10">
-<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="stays_page.card2.tag">Fes el-Bali</span>
-<h3 class="text-xl font-bold" data-i18n="stays_page.card2.name">Historic Medina Palaces</h3>
-<p class="text-xs text-white/80 mt-1" data-i18n="stays_page.card2.desc">Stay within medieval architectural masterworks featuring carved stucco, zellige tilework, and peaceful edible gardens.</p>
-<a href="https://www.booking.com/city/ma/fes.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
-    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
-</a>
-</div>
-</div>
-
-<!-- Merzouga Desert Camps -->
-<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="desert">
-<img alt="Luxury desert camp under stars in Merzouga Sahara" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
-<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
-<div class="absolute bottom-5 left-5 right-5 text-white z-10">
-<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="stays_page.card3.tag">Erg Chebbi Dunes</span>
-<h3 class="text-xl font-bold" data-i18n="stays_page.card3.name">Sahara Luxury Desert Camps</h3>
-<p class="text-xs text-white/80 mt-1" data-i18n="stays_page.card3.desc">Sleep in designer Berber tents equipped with king beds, private bathrooms, and fireside Berber music under the Milky Way.</p>
-<a href="https://www.booking.com/city/ma/merzouga.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
-    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
-</a>
-</div>
-</div>
-
-<!-- Essaouira Coastal Escapes -->
-<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="coastal riads">
-<img alt="White and blue coastal riad in Essaouira medina" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1613057157282-cc3cbe630b26?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
-<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
-<div class="absolute bottom-5 left-5 right-5 text-white z-10">
-<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="stays_page.card4.tag">Atlantic Coast</span>
-<h3 class="text-xl font-bold" data-i18n="stays_page.card4.name">Essaouira Oceanside Dars</h3>
-<p class="text-xs text-white/80 mt-1" data-i18n="stays_page.card4.desc">Breathe in the Atlantic breeze in bohemian guesthouses overlooking ramparts, art galleries, and fresh seafood ports.</p>
-<a href="https://www.booking.com/city/ma/essaouira.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
-    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
-</a>
-</div>
-</div>
-
-<!-- Chefchaouen Mountain Stays -->
-<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="riads coastal">
-<img alt="Lina Ryad and spa in blue city Chefchaouen" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1564507004663-b6dfb3c824d5?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
-<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
-<div class="absolute bottom-5 left-5 right-5 text-white z-10">
-<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="stays_page.card5.tag">Rif Mountains</span>
-<h3 class="text-xl font-bold" data-i18n="stays_page.card5.name">Chefchaouen Blue Haven Stays</h3>
-<p class="text-xs text-white/80 mt-1" data-i18n="stays_page.card5.desc">Unwind in tranquil alpine guesthouses featuring indoor heated pools, panoramic mountain vistas, and soothing spa treatments.</p>
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.chefchaouen.tag">Rif Mountains</span>
+<h3 class="text-xl font-bold" data-i18n="cities.chefchaouen.name">Chefchaouen Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.chefchaouen.desc">Cozy blue guesthouses and alpine boutique hotels overlooking the Rif peaks.</p>
 <a href="https://www.booking.com/city/ma/chefchaouene.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
     <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
 </a>
 </div>
 </div>
 
-<!-- Dakhla Lagoon Resorts -->
-<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="luxury coastal">
-<img alt="Eco-luxury kite resort overlooking Dakhla lagoon" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1643240260139-d27d5a899d13?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<!-- Fes -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="imperial">
+<img alt="Panoramic view of ancient medina in Fes, Morocco" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1555169048-ee590a06ab39?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
 <div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
 <div class="absolute bottom-5 left-5 right-5 text-white z-10">
-<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="stays_page.card6.tag">Deep South Lagoon</span>
-<h3 class="text-xl font-bold" data-i18n="stays_page.card6.name">Dakhla Eco-Luxury Lodges</h3>
-<p class="text-xs text-white/80 mt-1" data-i18n="stays_page.card6.desc">Modern waterfront bungalows and kite-surfing lodges where the Sahara desert meets the turquoise Atlantic ocean.</p>
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.fes.tag">Cultural Capital</span>
+<h3 class="text-xl font-bold" data-i18n="cities.fes.name">Fes Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.fes.desc">Historic medina palaces with carved stucco, zellige tilework, and tranquil gardens.</p>
+<a href="https://www.booking.com/city/ma/fes.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Casablanca -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="atlantic">
+<img alt="Casablanca" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1740602550091-0943d7cfb720?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.casablanca.tag">Economic Heart</span>
+<h3 class="text-xl font-bold" data-i18n="cities.casablanca.name">Casablanca Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.casablanca.desc">Modern luxury hotels and stylish oceanfront apartments near the Hassan II Mosque.</p>
+<a href="https://www.booking.com/city/ma/casablanca.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Essaouira -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="atlantic">
+<img alt="Essaouira" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1613057157282-cc3cbe630b26?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.essaouira.tag">Atlantic Coast</span>
+<h3 class="text-xl font-bold" data-i18n="cities.essaouira.name">Essaouira Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.essaouira.desc">Bohemian whitewashed guesthouses inside ancient ramparts with ocean views.</p>
+<a href="https://www.booking.com/city/ma/essaouira.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Agadir -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="atlantic">
+<img alt="Agadir" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1630172006681-a0b1d335c9e3?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.agadir.tag">Sun &amp; Beach</span>
+<h3 class="text-xl font-bold" data-i18n="cities.agadir.name">Agadir Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.agadir.desc">Beachfront resorts, family villas, and modern hotels along golden sandy shores.</p>
+<a href="https://www.booking.com/city/ma/agadir.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Tangier -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="north atlantic">
+<img alt="Tangier" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1711971725727-aa6e812eb45d?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.tangier.tag">Strait of Gibraltar</span>
+<h3 class="text-xl font-bold" data-i18n="cities.tangier.name">Tangier Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.tangier.desc">Historic cliffside hotels and stylish riads overlooking the Mediterranean and Atlantic convergence.</p>
+<a href="https://www.booking.com/city/ma/tangier.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Ouarzazate -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="desert">
+<img alt="Ouarzazate" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1737927427538-9f9b4ea4ab02?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.ouarzazate.tag">Desert Gateway</span>
+<h3 class="text-xl font-bold" data-i18n="cities.ouarzazate.name">Ouarzazate Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.ouarzazate.desc">Authentic earthen kasbahs and cinematic oasis hotels near Ait Benhaddou.</p>
+<a href="https://www.booking.com/city/ma/ouarzazate.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Rabat -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="imperial atlantic">
+<img alt="Rabat" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1588609715324-78072fc77cee?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.rabat.tag">Imperial City</span>
+<h3 class="text-xl font-bold" data-i18n="cities.rabat.name">Rabat Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.rabat.desc">Elegant boutique hotels and peaceful river-view stays in the capital.</p>
+<a href="https://www.booking.com/city/ma/rabat.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Meknes -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="imperial">
+<img alt="Meknes" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.trvl-media.com/place/6115304/f7679f0c-62db-486c-a2a2-90a4e979f378.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.meknes.tag">Imperial City</span>
+<h3 class="text-xl font-bold" data-i18n="cities.meknes.name">Meknes Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.meknes.desc">Traditional riads near monumental Ismaili gates and Roman ruins.</p>
+<a href="https://www.booking.com/city/ma/meknes.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Tetouan -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="north">
+<img alt="Tetouan" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=400%2Cheight=265%2Cdpr=2/tour_img/45f66ad6b9473a56e7dbb23a7f2b5ab2f5b9f9c9f9297019d4b9a7c27b77bce6.png?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.tetouan.tag">Mediterranean Coast</span>
+<h3 class="text-xl font-bold" data-i18n="cities.tetouan.name">Tetouan Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.tetouan.desc">Andalusian-style guesthouses reflecting Spanish-Moroccan heritage.</p>
+<a href="https://www.booking.com/city/ma/tetouan.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Ifrane -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="mountains">
+<img alt="Ifrane" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Neige_ifrane.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.ifrane.tag">Middle Atlas</span>
+<h3 class="text-xl font-bold" data-i18n="cities.ifrane.name">Ifrane Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.ifrane.desc">Alpine chalets and forest lodges surrounded by cedar trees and snowy peaks.</p>
+<a href="https://www.booking.com/city/ma/ifrane.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- El Jadida -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="atlantic">
+<img alt="El Jadida" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://maroc-diplomatique.net/wp-content/uploads/2018/06/eljadida.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.el_jadida.tag">Atlantic Coast</span>
+<h3 class="text-xl font-bold" data-i18n="cities.el_jadida.name">El Jadida Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.el_jadida.desc">Historic seaside hotels near Portuguese fortifications and ocean cisterns.</p>
+<a href="https://www.booking.com/city/ma/el-jadida.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Taroudant -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="desert">
+<img alt="Taroudant" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/ab/37/7b.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.taroudant.tag">Souss Valley</span>
+<h3 class="text-xl font-bold" data-i18n="cities.taroudant.name">Taroudant Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.taroudant.desc">Quiet riads nestled inside massive red mudbrick ramparts and fertile orchards.</p>
+<a href="https://www.booking.com/city/ma/taroudant.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Dakhla -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="desert atlantic">
+<img alt="Dakhla" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1643240260139-d27d5a899d13?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.dakhla.tag">Deep South</span>
+<h3 class="text-xl font-bold" data-i18n="cities.dakhla.name">Dakhla Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.dakhla.desc">Eco-lodges and luxury lagoon bungalows designed for kitesurfers and nature lovers.</p>
 <a href="https://www.booking.com/city/ma/dakhla.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Al Hoceima -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="north">
+<img alt="Al Hoceima" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://observatoirevivreensemble.org/sites/default/files/styles/obs_huge_pano/public/al_hoceima_3.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.al_hoceima.tag">Mediterranean Coast</span>
+<h3 class="text-xl font-bold" data-i18n="cities.al_hoceima.name">Al Hoceima Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.al_hoceima.desc">Cliffside hotels and beach resorts overlooking turquoise Mediterranean bays.</p>
+<a href="https://www.booking.com/city/ma/al-hoceima.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Nador -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="north">
+<img alt="Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://static.lematin.ma/files/lematin/images/articles/2021/08/552a3f4d1fc34431d8a6c8da7425f741.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.nador.tag">Mediterranean Lagoon</span>
+<h3 class="text-xl font-bold" data-i18n="cities.nador.name">Nador Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.nador.desc">Contemporary lagoon-view hotels and modern marina apartments.</p>
+<a href="https://www.booking.com/city/ma/nador.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Zagora -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="desert">
+<img alt="Zagora" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://www.infostourismemaroc.com/uploads/images/gallery/5ecb9f046e93f_que-faire-zagora-lieux-voir-activites-zagora-sud-marocain.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.zagora.tag">Drâa Valley</span>
+<h3 class="text-xl font-bold" data-i18n="cities.zagora.name">Zagora Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.zagora.desc">Traditional palm grove kasbahs and desert bivouacs along the Drâa River.</p>
+<a href="https://www.booking.com/city/ma/zagora.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Safi -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="atlantic">
+<img alt="Safi" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://khirbledi.ma/wp-content/uploads/2023/05/safi-pottery-stalls.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.safi.tag">Atlantic Coast</span>
+<h3 class="text-xl font-bold" data-i18n="cities.safi.name">Safi Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.safi.desc">Authentic ocean guesthouses near the famous pottery hills and sea fortress.</p>
+<a href="https://www.booking.com/city/ma/safi.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Laayoune -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="desert atlantic">
+<img alt="Laayoune" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Vacations_-_Camel_ride_in_Sahara_Desert_%28Morroco%29.jpg/1920px-Vacations_-_Camel_ride_in_Sahara_Desert_%28Morroco%29.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.laayoune.tag">Sahara Gateway</span>
+<h3 class="text-xl font-bold" data-i18n="cities.laayoune.name">Laayoune Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.laayoune.desc">Comfortable desert-gateway hotels blending Sahrawi culture with Atlantic horizons.</p>
+<a href="https://www.booking.com/city/ma/laayoune.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Merzouga -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="desert">
+<img alt="Merzouga" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1613169620329-6785c004d900?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.merzouga.tag">Sahara Desert</span>
+<h3 class="text-xl font-bold" data-i18n="cities.merzouga.name">Merzouga Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.merzouga.desc">Luxury desert camps and dune-facing kasbahs right at the edge of Erg Chebbi.</p>
+<a href="https://www.booking.com/city/ma/merzouga.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Azilal -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="mountains">
+<img alt="Azilal" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/grass-cs/ACvplmN2OlWxFatW1FWTDohPxgjbmPHEZyHgjLGWo9OyT_61SdyesrA4LTfNQ09ewj4gCrqnzGVxfjK6DH2LdiWKL4sDYHs6gg37ng8FQii9zHqJmiabYf33boCUghpfq0v90X68y8Ep=s1354-w822-h1354-rw?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.azilal.tag">Heart of the Atlas</span>
+<h3 class="text-xl font-bold" data-i18n="cities.azilal.name">Azilal Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.azilal.desc">Eco-lodges and mountain guesthouses near Ouzoud waterfalls and green valleys.</p>
+<a href="https://www.booking.com/city/ma/azilal.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Tinghir -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="desert mountains">
+<img alt="Tinghir" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1637707807941-9d6f648988ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.tinghir.tag">Todra Gorge</span>
+<h3 class="text-xl font-bold" data-i18n="cities.tinghir.name">Tinghir Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.tinghir.desc">Traditional canyon-side inns and valley oases near the spectacular Todra Gorge.</p>
+<a href="https://www.booking.com/city/ma/tinghir.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Oujda -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="north">
+<img alt="Oujda-Saïdia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Saidia%27s_Marina_by_night_-_Berkane_Morocco_by_Brahim_FARAJI.jpg/1280px-Saidia%27s_Marina_by_night_-_Berkane_Morocco_by_Brahim_FARAJI.jpg?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.oujda.tag">Eastern Gateway</span>
+<h3 class="text-xl font-bold" data-i18n="cities.oujda.name">Oujda &amp; Saïdia Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.oujda.desc">All-inclusive beach resorts and marina hotels on the Mediterranean coast.</p>
+<a href="https://www.booking.com/city/ma/oujda.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
+    <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
+</a>
+</div>
+</div>
+
+<!-- Asilah -->
+<div class="city-card block group relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 bg-white flex flex-col justify-end" data-region="north atlantic">
+<img alt="Asilah" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1555881403-32fb2e4c8e2e?auto=format&amp;fit=crop&amp;w=600&amp;q=80" loading="lazy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-sombre/90 via-sombre/30 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white z-10">
+<span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="cities.asilah.tag">Atlantic North</span>
+<h3 class="text-xl font-bold" data-i18n="cities.asilah.name">Asilah Stays</h3>
+<p class="text-xs text-white/80 mt-1" data-i18n="cities.asilah.desc">Artistic white-walled guesthouses within quiet ocean ramparts.</p>
+<a href="https://www.booking.com/city/ma/asilah.html" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-sable hover:underline">
     <span data-i18n="stays_page.book_btn">Book on Booking.com</span> →
 </a>
 </div>
@@ -267,14 +543,6 @@
         </div>
         <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
     </div>
-</section>
-
-<!-- Intro / Trust Text -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <div class="bg-vert rounded-3xl px-6 sm:px-12 py-10 sm:py-12 text-creme shadow-lg">
-    <span class="inline-block text-xs font-bold uppercase tracking-widest text-sable mb-3" data-i18n="stays_page.intro.badge">Authentic Heritage Hospitality</span>
-    <p class="text-lg sm:text-2xl font-medium leading-relaxed max-w-3xl" data-i18n="stays_page.intro.text">Staying in a traditional Moroccan riad is an experience in itself. Unlike standard chain hotels, riads are private urban sanctuaries centered around open-air courtyards filled with orange trees, fountains, and intricate hand-carved plasterwork. Every property featured across MoroccoTripMap is handpicked for its genuine character, warm local hospitality, and ideal location to explore the historic medinas.</p>
-  </div>
 </section>
 
 <!-- Footer -->

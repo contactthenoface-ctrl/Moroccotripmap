@@ -45,31 +45,6 @@
       "tag": "Panoramas",
       "title": "Spanish Mosque (Bouzafar)",
       "desc": "A hilltop mosque offering the ultimate sunset view over the entire blue medina and surrounding valley."
-    },
-    "raselmaa": {
-      "tag": "Natural Spring",
-      "title": "Ras El Maa Spring",
-      "desc": "Fresh mountain water spring outside the east medina gate where locals gather and wash rugs."
-    },
-    "haouta": {
-      "tag": "Historic Square",
-      "title": "Place El Haouta",
-      "desc": "A peaceful square with a zellige fountain, perfect for mint tea away from the busy alleys."
-    },
-    "babelain": {
-      "tag": "Medina Gate",
-      "title": "Bab El Ain & Souks",
-      "desc": "The main southern entrance to the medina leading to artisan workshops and local markets."
-    },
-    "souika": {
-      "tag": "Old Quarter",
-      "title": "Al Souika District",
-      "desc": "The oldest residential area featuring blue-washed cobblestone alleyways and carved doorways."
-    },
-    "talassemtane": {
-      "tag": "National Park",
-      "title": "Talassemtane National Park",
-      "desc": "Protected nature reserve with fir forests, dramatic peaks, and scenic hiking trails."
     }
   },
   "itinerary": {
@@ -77,30 +52,36 @@
     "title": "Suggested 3-Day Itinerary",
     "subtitle": "A relaxed schedule to capture the best photography spots and mountain landscapes."
   },
-  "directory": {
-    "badge": "Directory & Database",
-    "title": "Find Your Ideal Stay in Chefchaouen",
-    "subtitle": "Discover charming traditional Dars, authentic Riads, and scenic mountain guesthouses.",
-    "filter_type_label": "Accommodation Type:",
-    "type_all": "All Types",
-    "type_riad": "Riads & Dars",
-    "type_guesthouse": "Guesthouses",
-    "type_hotel": "Hotels",
-    "filter_location_label": "Area:",
-    "location_all": "All Areas",
-    "location_medina": "Blue Medina (Historic Center)",
-    "location_raselmaa": "Ras El Maa & High Medina",
-    "location_outskirts": "Valley & Surrounding Nature",
-    "counter": "24 accommodations found",
-    "counter_zero": "0 accommodations found",
-    "counter_one": "1 accommodation found",
-    "counter_many": "{count} accommodations found",
-    "district_label": "District",
-    "type_label": "Type",
-    "tel_label": "Tel",
-    "no_results": "No accommodations match these filters. Try broadening your search.",
-    "cta_book": "Book on Booking.com",
-    "check_availability": "Check availability →"
+  "stays": {
+    "badge": "Selection & Tips",
+    "title": "Where to stay in Chefchaouen? Our Favorites",
+    "subtitle": "From luxurious riads with spas to charming mountainside boutique hotels, here are our top picks.",
+    "book": "Book →",
+    "card1": {
+      "badge": "★ Luxury Riad & Spa",
+      "name": "Lina Ryad & Spa",
+      "desc": "An exquisite luxury riad featuring an indoor pool, spa facilities, and elegant rooms overlooking the blue medina.",
+      "location": "Blue Medina"
+    },
+    "card2": {
+      "badge": "★ Mountain View Boutique",
+      "name": "Dar Jasmine Boutique Hotel",
+      "desc": "A stunning hillside boutique hotel with a pool, lush garden, and breathtaking panoramic views over Chefchaouen.",
+      "location": "Spanish Mosque Area"
+    },
+    "card3": {
+      "badge": "★ Andalusian Guesthouse",
+      "name": "Casa Perleta",
+      "desc": "A charming, intimate guesthouse blending traditional Andalusian style with warm hospitality and a wonderful terrace.",
+      "location": "Bab El Souk"
+    }
+  },
+  "booking_banner": {
+    "badge": "Over 200+ properties across Chefchaouen",
+    "title": "Explore all stays in Chefchaouen",
+    "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation on traditional dars, riads, and mountain guesthouses.",
+    "btn": "View all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
   },
   "eat": {
     "badge": "Gastronomy",
@@ -123,24 +104,6 @@
       "loc": "Main Square",
       "title": "Restaurant Aladdin",
       "desc": "Arabo-Andalusian palace offering panoramic Kasbah views from three rooftop terraces."
-    },
-    "clock": {
-      "tag": "Cultural Café",
-      "loc": "Medina Rooftop",
-      "title": "Café Clock Chefchaouen",
-      "desc": "Vibrant cultural hub offering camel burgers, cooking classes, storytelling, and panoramic rooftop views."
-    },
-    "mandala": {
-      "tag": "Italian & Rif Produce",
-      "loc": "Hassan II Avenue",
-      "title": "Mandala Pizzeria",
-      "desc": "Wood-fired pizzas featuring local mountain goat cheese and fresh homemade pasta."
-    },
-    "triana": {
-      "tag": "River Views",
-      "loc": "Ras El Maa",
-      "title": "Restaurant Triana",
-      "desc": "Charming riverside eatery blending refined Moroccan dishes with Spanish influences."
     }
   },
   "tips": {
@@ -197,20 +160,20 @@
   },
   "detailed_itinerary": {
     "day1_tab": "Day 1 — The Blue Medina",
-    "day2_tab": "Day 2 — Akchour & Flavors",
-    "day3_tab": "Day 3 — Artisans & Ras El Maa",
     "day1_m": "Morning — Place Outa el Hammam & the Kasbah",
     "day1_md": "Start in the main square, visit the Kasbah and its gardens, then wander into the blue alleys while the light is soft and the streets are quiet.",
     "day1_a": "Afternoon — Lost in the Blue Alleys",
     "day1_ad": "Take your time in the medina’s lanes, stopping at small shops and cafés. Enjoy mint tea on the square and keep the camera ready for every corner.",
     "day1_e": "Evening — Sunset at the Spanish Mosque",
     "day1_ed": "Hike up to the Spanish Mosque for panoramic views over the blue rooftops at golden hour, then walk back down for dinner in the medina.",
+    "day2_tab": "Day 2 — Akchour & Flavors",
     "day2_m": "Morning — Akchour Waterfalls",
     "day2_md": "Take an early grand taxi to Akchour for a scenic river walk through Talassemtane National Park, with the Little Waterfall or the God’s Bridge trail if you have the energy.",
     "day2_a": "Afternoon — Return & Local Cheese",
     "day2_ad": "Head back to town in the afternoon and taste the region’s famous goat cheese, along with fresh bread and olives from a local vendor.",
     "day2_e": "Evening — Rooftop Dinner",
     "day2_ed": "Finish the day with a traditional dinner on a rooftop terrace overlooking the medina lights.",
+    "day3_tab": "Day 3 — Artisans & Ras El Maa",
     "day3_m": "Morning — Ras El Maa Spring",
     "day3_md": "Walk to the Ras El Maa spring at the edge of the medina, where locals gather, wash and relax by the water.",
     "day3_a": "Afternoon — Weavers & Handmade Crafts",

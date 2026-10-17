@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" dir="ltr" lang="en">
 <head>
-    <!-- Indique la racine du site pour tous les chemins relatifs -->
-    <base href="../">
-
 <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -1264,7 +1261,16 @@
             }
         }
     </script>
-    
+        <!-- Détection automatique du chemin pour les traductions -->
+    <script>
+        // Si on est dans un sous-dossier (ex: /riads/), on remonte d'un niveau pour trouver le js/
+        window.i18nBasePath = window.location.pathname.includes('/riads/') || window.location.pathname.includes('/gastronomy/') ? '../js/translations/' : 'js/translations/';
+    </script>
+    <!-- Scripts externes -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
     <!-- Scripts externes (grâce à <base href="../">, ils se chargeront depuis la racine) -->
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>

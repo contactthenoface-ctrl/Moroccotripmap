@@ -45,5 +45,247 @@
     "a3": "Absolument. Les camps de luxe dans les dunes de l'Erg Chebbi sont très demandés, surtout au printemps et en automne. Réserver via Booking.com garantit votre catégorie de tente et les options de balade à dos de chameau.",
     "q4": "Les riads sont-ils accessibles en voiture dans les médinas ?",
     "a4": "La plupart des médinas (comme Fès el-Bali ou la médina de Marrakech) sont piétonnes. Les riads se trouvent dans des ruelles historiques. Cependant, la plupart des établissements proposent une assistance pour les bagages depuis le parking gardé ou la porte de médina la plus proche."
+  },
+  "cities": {
+    "marrakech": {
+      "region": "Ville Impériale",
+      "title": "Séjours à Marrakech",
+      "desc": "Riads palatiaux avec piscines en cour et terrasses sur le toit près de Jemaa el-Fnaa.",
+      "name": "Marrakech"
+    },
+    "chefchaouen": {
+      "region": "Montagnes du Rif",
+      "title": "Séjours à Chefchaouen",
+      "desc": "Maisons d'hôtes bleues chaleureuses et hôtels boutique alpins face aux sommets du Rif.",
+      "name": "Chefchaouen"
+    },
+    "fes": {
+      "region": "Capitale Culturelle",
+      "title": "Séjours à Fès",
+      "desc": "Palais historiques de la médina avec stuc sculpté, zellige et jardins paisibles.",
+      "name": "Fès"
+    },
+    "casablanca": {
+      "region": "Cœur Économique",
+      "title": "Séjours à Casablanca",
+      "desc": "Hôtels de luxe modernes et appartements élégants en bord de mer près de la mosquée Hassan II.",
+      "name": "Casablanca"
+    },
+    "essaouira": {
+      "region": "Côte Atlantique",
+      "title": "Séjours à Essaouira",
+      "desc": "Maisons d'hôtes bohèmes blanchies à la chaux dans les remparts anciens avec vue sur l'océan.",
+      "name": "Essaouira"
+    },
+    "agadir": {
+      "region": "Soleil & Plage",
+      "title": "Séjours à Agadir",
+      "desc": "Resorts en bord de mer, villas familiales et hôtels modernes le long des plages dorées.",
+      "name": "Agadir"
+    },
+    "tangier": {
+      "region": "Détroit de Gibraltar",
+      "title": "Séjours à Tanger",
+      "desc": "Hôtels historiques sur les falaises et riads élégants avec vue sur la Méditerranée et l'Atlantique.",
+      "name": "Tanger"
+    },
+    "ouarzazate": {
+      "region": "Porte du Désert",
+      "title": "Séjours à Ouarzazate",
+      "desc": "Kasbahs en terre authentiques et hôtels d'oasis cinématographiques près d'Aït Benhaddou.",
+      "name": "Ouarzazate"
+    },
+    "rabat": {
+      "region": "Ville Impériale",
+      "title": "Séjours à Rabat",
+      "desc": "Hôtels boutique élégants et séjours paisibles avec vue sur le fleuve dans la capitale administrative.",
+      "name": "Rabat"
+    },
+    "meknes": {
+      "region": "Ville Impériale",
+      "title": "Séjours à Meknès",
+      "desc": "Riads traditionnels près des portes monumentales ismaïliennes et des ruines romaines.",
+      "name": "Meknès"
+    },
+    "tetouan": {
+      "region": "Côte Méditerranéenne",
+      "title": "Séjours à Tétouan",
+      "desc": "Maisons d'hôtes de style andalou reflétant une architecture hispano-marocaine unique.",
+      "name": "Tétouan"
+    },
+    "ifrane": {
+      "region": "Moyen Atlas",
+      "title": "Séjours à Ifrane",
+      "desc": "Chalets alpins et lodges forestiers entourés de cèdres et de sommets enneigés.",
+      "name": "Ifrane"
+    },
+    "el-jadida": {
+      "region": "Côte Atlantique",
+      "title": "Séjours à El Jadida",
+      "desc": "Hôtels historiques en bord de mer près des fortifications portugaises et de la citerne souterraine.",
+      "name": "El Jadida"
+    },
+    "taroudant": {
+      "region": "Vallée du Souss",
+      "title": "Séjours à Taroudant",
+      "desc": "Riads tranquilles nichés dans d'imposantes remparts de pisé rouge et des vergers fertiles.",
+      "name": "Taroudant"
+    },
+    "dakhla": {
+      "region": "Grand Sud",
+      "title": "Séjours à Dakhla",
+      "desc": "Éco-lodges et bungalows de luxe sur la lagune conçus pour les kitesurfeurs et les amoureux de la nature.",
+      "name": "Dakhla"
+    },
+    "al-hoceima": {
+      "region": "Côte Méditerranéenne",
+      "title": "Séjours à Al Hoceima",
+      "desc": "Hôtels sur les falaises et resorts balnéaires face aux baies turquoise de la Méditerranée.",
+      "name": "Al Hoceima"
+    },
+    "nador": {
+      "region": "Lagune Méditerranéenne",
+      "title": "Séjours à Nador",
+      "desc": "Hôtels contemporains avec vue sur la lagune et appartements modernes de la marina.",
+      "name": "Nador"
+    },
+    "zagora": {
+      "region": "Vallée du Drâa",
+      "title": "Séjours à Zagora",
+      "desc": "Kasbahs traditionnelles dans les palmeraies et bivouacs du désert le long du Drâa.",
+      "name": "Zagora"
+    },
+    "safi": {
+      "region": "Côte Atlantique",
+      "title": "Séjours à Safi",
+      "desc": "Maisons d'hôtes authentiques face à l'océan près des collines de poterie et de la forteresse.",
+      "name": "Safi"
+    },
+    "laayoune": {
+      "region": "Porte du Sahara",
+      "title": "Séjours à Laâyoune",
+      "desc": "Hôtels confortables à la porte du Sahara alliant culture sahraouie et horizons atlantiques.",
+      "name": "Laâyoune"
+    },
+    "merzouga": {
+      "region": "Désert du Sahara",
+      "title": "Séjours à Merzouga",
+      "desc": "Camps de luxe dans le désert et kasbahs face aux dunes au bord de l'Erg Chebbi.",
+      "name": "Merzouga"
+    },
+    "azilal": {
+      "region": "Cœur de l'Atlas",
+      "title": "Séjours à Azilal",
+      "desc": "Éco-lodges et maisons d'hôtes de montagne près des cascades d'Ouzoud et des vallées vertes.",
+      "name": "Azilal"
+    },
+    "tinghir": {
+      "region": "Gorges de Todra",
+      "title": "Séjours à Tinghir",
+      "desc": "Auberges traditionnelles au bord du canyon et oasis de vallée près des spectaculaires gorges de Todra.",
+      "name": "Tinghir"
+    },
+    "oujda": {
+      "region": "Porte de l'Est",
+      "title": "Séjours à Oujda & Saïdia",
+      "desc": "Resorts balnéaires tout inclus et hôtels de marina sur la côte méditerranéenne.",
+      "name": "Oujda"
+    },
+    "asilah": {
+      "region": "Atlantique Nord",
+      "title": "Séjours à Asilah",
+      "desc": "Maisons d'hôtes artistiques aux murs blancs dans les remparts océaniques tranquilles.",
+      "name": "Asilah"
+    },
+    "beni-mellal": {
+      "region": "Plaines du Tadla",
+      "title": "Séjours à Beni Mellal",
+      "desc": "Hôtels reposants près des kasbahs historiques et de la célèbre source Aïn Asserdoun.",
+      "name": "Beni Mellal"
+    },
+    "kenitra": {
+      "region": "Gharb Atlantique",
+      "title": "Séjours à Kénitra",
+      "desc": "Séjours modernes confortables près du fleuve Sebou et des spots de surf de Mehdia.",
+      "name": "Kénitra"
+    },
+    "mohammedia": {
+      "region": "Ville des Fleurs",
+      "title": "Séjours à Mohammedia",
+      "desc": "Hôtels balnéaires paisibles et appartements de marina près de Casablanca.",
+      "name": "Mohammedia"
+    },
+    "guelmim": {
+      "region": "Porte du Désert",
+      "title": "Séjours à Guelmim",
+      "desc": "Maisons d'hôtes locales authentiques, porte du Sahara et marchés aux chameaux.",
+      "name": "Guelmim"
+    },
+    "errachidia": {
+      "region": "Vallée du Ziz",
+      "title": "Séjours à Errachidia",
+      "desc": "Hôtels d'oasis et auberges traditionnelles face aux majestueuses gorges de la vallée du Ziz.",
+      "name": "Errachidia"
+    },
+    "midelt": {
+      "region": "Haut Atlas",
+      "title": "Séjours à Midelt",
+      "desc": "Lodges de montagne nichés entre le Haut et le Moyen Atlas, réputés pour leurs pommes.",
+      "name": "Midelt"
+    },
+    "tiznit": {
+      "region": "Cité de l'Argent",
+      "title": "Séjours à Tiznit",
+      "desc": "Maisons d'hôtes traditionnelles intramuros réputées pour l'argent et l'artisanat berbère.",
+      "name": "Tiznit"
+    },
+    "tan-tan": {
+      "region": "Désert Atlantique",
+      "title": "Séjours à Tan-Tan",
+      "desc": "Auberges du désert côtier et séjours paisibles près de Tan-Tan Plage.",
+      "name": "Tan-Tan"
+    },
+    "berkane": {
+      "region": "Vallée des Agrumes",
+      "title": "Séjours à Berkane",
+      "desc": "Hôtels régionaux de charme entourés de vergers d'agrumes et de sentiers de montagne.",
+      "name": "Berkane"
+    },
+    "khemisset": {
+      "region": "Plateau Zemmour",
+      "title": "Séjours à Khemisset",
+      "desc": "Lodges locaux authentiques et étapes pratiques au cœur de la région Zemmour.",
+      "name": "Khemisset"
+    },
+    "settat": {
+      "region": "Plaines de Chaouia",
+      "title": "Séjours à Settat",
+      "desc": "Hôtels confortables en bord de route et maisons d'hôtes du plateau agricole au sud de Casablanca.",
+      "name": "Settat"
+    },
+    "berrechid": {
+      "region": "Hub de Chaouia",
+      "title": "Séjours à Berrechid",
+      "desc": "Hôtels d'affaires modernes et hébergements pratiques près des axes de l'aéroport de Casablanca.",
+      "name": "Berrechid"
+    },
+    "larache": {
+      "region": "Estuaire du Loukkos",
+      "title": "Séjours à Larache",
+      "desc": "Hôtels portuaires historiques d'influence espagnole face à l'Atlantique et aux ruines de Lixus.",
+      "name": "Larache"
+    },
+    "ksar-el-kebir": {
+      "region": "Plaine du Loukkos",
+      "title": "Séjours à Ksar El Kebir",
+      "desc": "Maisons d'hôtes régionales traditionnelles imprégnées du patrimoine historique du nord.",
+      "name": "Ksar El Kebir"
+    },
+    "skoura": {
+      "region": "Oasis de Palmeraie",
+      "title": "Séjours à Skoura",
+      "desc": "Kasbahs restaurées magiques cachées au cœur des luxuriantes palmeraies de Skoura.",
+      "name": "Skoura"
+    }
   }
 }

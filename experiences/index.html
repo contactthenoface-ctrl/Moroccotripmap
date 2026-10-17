@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" dir="ltr" lang="en">
 <head>
-<meta name="robots" content="noindex, nofollow">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta name="google" content="notranslate"/>
-<!-- Remplacer par index, follow à la mise en production :
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
--->
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="google" content="notranslate"/>
 
-<!-- Favicon SVG (Pin de carte vert, cohérent avec le logo MoroccoTripMap) -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/></svg>"/>
 
-<!-- SEO & Metadata -->
-<title data-i18n="stub.pages.experiences_index.seo_title">Experiences | MoroccoTripMap</title>
-<meta name="description" content="Excursions &amp; Tours">
+    <!-- SEO & Metadata -->
+    <title data-i18n="experiences_page.seo.title">Morocco Experiences & Desert Tours | Best Activities, Quad & Camels</title>
+    <meta content="Discover top Moroccan adventures and activities: desert trips in Merzouga & Zagora, camel rides, quad biking in Marrakech Palmeraie, hot air balloon flights, and guided tours." name="description" data-i18n-attr="content:experiences_page.seo.description"/>
+    <meta content="Morocco experiences, desert tour Merzouga, camel ride Marrakech, quad biking Palmeraie, hot air balloon Morocco, Atlas mountains excursion" name="keywords"/>
+    <link href="https://moroccotripmap.com/experiences/index.html" rel="canonical"/>
 
-<!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
+    <!-- Open Graph / Social Media -->
+    <meta content="website" property="og:type"/>
+    <meta content="Morocco Experiences & Desert Tours | MoroccoTripMap" property="og:title" data-i18n-attr="content:experiences_page.seo.og_title"/>
+    <meta content="Explore authentic adventures across Morocco: Sahara desert camps, quad biking, camel treks, and mountain excursions." property="og:description" data-i18n-attr="content:experiences_page.seo.og_description"/>
+    <meta content="https://moroccotripmap.com/experiences/index.html" property="og:url"/>
+    <meta content="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
+
+    <!-- Hreflang Tags -->
+    <link href="https://moroccotripmap.com/experiences/index.html" hreflang="en" rel="alternate"/>
+    <link href="https://moroccotripmap.com/fr/experiences/index.html" hreflang="fr" rel="alternate"/>
+    <link href="https://moroccotripmap.com/es/experiences/index.html" hreflang="es" rel="alternate"/>
+    <link href="https://moroccotripmap.com/ar/experiences/index.html" hreflang="ar" rel="alternate"/>
+    <link href="https://moroccotripmap.com/experiences/index.html" hreflang="x-default" rel="alternate"/>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -37,204 +50,1572 @@
             }
         }
     </script>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <style>
         body { font-family: 'Outfit', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
-<!-- Header Navigation -->
-<header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
-  
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-<a class="flex items-center gap-3 group shrink-0" href="../index.html">
-<img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../images/logo.webp"/>
-</a>
-<nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-    <a class="text-vert font-bold transition" href="../destinations.html" data-i18n="nav.destinations">Destinations</a>
-    <div class="relative inline-block text-left" id="categories-menu-container">
-        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-            <span data-i18n="nav.categories">Categories</span>
-            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-        </div>
-    </div>
-    <a class="hover:text-vert transition" href="../guides/histoire.html" data-i18n="nav.history">History</a>
-    <a class="hover:text-vert transition" href="../blog/index.html" data-i18n="nav.blog">Blog</a>
-    <a class="hover:text-vert transition" href="../contact.html" data-i18n="nav.contact">Contact</a>
-</nav>
-<div class="flex items-center gap-2 sm:gap-4">
-<!-- Custom Language Dropdown Selector -->
-<div class="relative inline-block text-left">
-  <button id="lang-menu-button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="bg-white border border-sable/20 hover:border-sable text-sm font-semibold rounded-xl px-3 py-2 flex items-center gap-2 text-sombre transition shadow-sm" type="button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
-    <span id="current-lang-label">EN</span>
-    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-  </button>
-  <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white rounded-xl shadow-lg border border-sable/15 py-1 z-50">
-    <button data-lang="en" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg> English
-    </button>
-    <button data-lang="fr" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg> Français
-    </button>
-    <button data-lang="es" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg> Español
-    </button>
-    <button data-lang="ar" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg> العربية
-    </button>
-  </div>
-</div>
-<!-- Bouton Hamburger -->
-<button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition" type="button">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-</div>
-</div>
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
 
-<!-- Mobile Menu Drawer -->
-<div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
-    <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
-        <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="mobile_menu.language_title">Language / Langue</span>
-        <div class="flex gap-2">
-            <button data-lang="en" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">EN</button>
-            <button data-lang="fr" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">FR</button>
-            <button data-lang="es" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">ES</button>
-            <button data-lang="ar" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">AR</button>
-        </div>
-    </div>
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a class="flex items-center gap-3 group shrink-0" href="../index.html">
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../images/logo.webp"/>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
+                <a class="hover:text-vert transition" data-i18n="nav.destinations" href="../destinations.html">Destinations</a>
+                <div class="relative inline-block text-left" id="categories-menu-container">
+                    <button class="flex items-center gap-1.5 hover:text-vert transition" onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" type="button">
+                        <span data-i18n="nav.categories">Categories</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                    <div class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1" id="categories-menu-dropdown">
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_stays" href="../riads/index.html">Stays &amp; Riads</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html">Gastronomy</a>
+                        <a class="block px-4 py-2.5 text-sm font-bold text-vert bg-creme transition" data-i18n="nav.cat_experiences" href="index.html">Experiences</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_museums" href="../destinations.html">Monuments &amp; Museums</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_transport" href="../transport/index.html">Transport &amp; Rental</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_itineraries" href="../programmes/index.html">Itineraries</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_guides" href="../guides/index.html">Travel Guides</a>
+                    </div>
+                </div>
+                <a class="hover:text-vert transition" data-i18n="nav.history" href="../guides/histoire.html">History</a>
+                <a class="hover:text-vert transition" data-i18n="nav.blog" href="../blog/index.html">Blog</a>
+                <a class="hover:text-vert transition" data-i18n="nav.contact" href="../contact.html">Contact</a>
+            </nav>
+            
+            <!-- Lang Switcher & Mobile Toggle -->
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- SÉLECTEUR DE LANGUE -->
+                <div class="relative inline-block text-left" id="lang-menu-container">
+                    <button class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition" id="lang-menu-button">
+                        <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
+                        <span id="current-lang-label">EN</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                    
+                    <div class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden" id="lang-menu-dropdown">
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('en')">
+                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t2)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
+                            English
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('fr')">
+                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 3 2" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#ED2939" height="2" width="3"></rect><rect fill="#fff" height="2" width="2"></rect><rect fill="#002395" height="2" width="1"></rect></svg>
+                            Français
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('es')">
+                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 750 500" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#c60b1e" height="500" width="750"></rect><rect fill="#ffc400" height="250" width="750" y="125"></rect></svg>
+                            Español
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('ar')">
+                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 900 600" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#c1272d" height="600" width="900"></rect><polygon fill="none" points="450,170 361,441 593,273 307,273 639,441" stroke="#006233" stroke-width="15"></polygon></svg>
+                            العربية
+                        </button>
+                    </div>
+                </div>
 
-    <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
-            <span data-i18n="nav.cities">Cities &amp; Destinations</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <div>
-        <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                <span data-i18n="nav.categories">Categories</span>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition focus:outline-none" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" type="button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
             </div>
-            <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
         </div>
-    </div>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../guides/histoire.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-            <span data-i18n="nav.history">History of Morocco</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../blog/index.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-            <span data-i18n="nav.blog">Blog</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../contact.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-            <span data-i18n="nav.contact">Contact</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-</nav>
-</div>
-</header>
 
-<main class="flex-grow">
-<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-  <h1 class="text-4xl font-bold text-vert mt-2" data-i18n="stub.pages.experiences_index.title">Experiences</h1>
-  <p class="text-lg text-sombre/70 mt-4" data-i18n="stub.pages.experiences_index.desc">Excursions &amp; Tours</p>
-  <div class="mt-10 bg-white rounded-2xl border border-sable/10 shadow-sm p-8">
-    <h2 class="text-xl font-bold text-vert" data-i18n="stub.common.coming_title">Page in preparation</h2>
-    <p class="text-sm text-sombre/70 mt-2" data-i18n="stub.common.coming_text">We are still writing this content. Check back soon, or keep exploring the destinations in the meantime.</p>
-  </div>
-  <div class="mt-8 flex flex-wrap justify-center gap-3">
-    <a href="../destinations.html" class="px-5 py-2.5 rounded-xl bg-vert text-white font-semibold text-sm hover:opacity-90 transition" data-i18n="stub.common.see_destinations">Explore destinations</a>
-    <a href="../index.html" class="px-5 py-2.5 rounded-xl bg-white border border-sable/20 text-sombre font-semibold text-sm hover:border-vert transition" data-i18n="stub.common.back_home">Back to home</a>
-  </div>
-</section>
-</main>
+        <!-- Mobile Menu Drawer -->
+        <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="experiences_page.mobile_menu.language_title">Language / Langue</span>
+                <div class="flex gap-2">
+                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('en')">EN</button>
+                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('fr')">FR</button>
+                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('es')">ES</button>
+                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('ar')">AR</button>
+                </div>
+            </div>
 
-<footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-<div>
-<h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-<p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
-    Discover. Plan. Experience Morocco.<br/>
-    The premier tourism directory and cultural travel guide for visitors exploring Morocco.
-</p>
-</div>
-<div>
-<h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Destinations</h4>
-<ul class="text-xs space-y-2 text-creme/80">
-<li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
-<li><a class="text-white font-bold transition" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
-<ul class="text-xs space-y-2 text-creme/80">
-<li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads &amp; Hotels</a></li>
-<li><a class="hover:text-white transition" href="../index.html#restaurants" data-i18n="footer.link_restaurants">Moroccan Restaurants</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
-<p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
-<a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-    @moroccotripmap
-</a>
-</div>
-</div>
-<div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-<p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
-<p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
-</div>
-</footer>
+            <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                        <span data-i18n="nav.destinations">Cities &amp; Destinations</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <div>
+                    <button class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left" onclick="toggleMobileCategories()">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            <span data-i18n="nav.categories">Categories</span>
+                        </div>
+                        <svg class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" id="categories-arrow" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                    <div class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm" id="mobile-categories-dropdown">
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_stays" href="../riads/index.html">Stays &amp; Riads</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html">Gastronomy</a>
+                        <a class="py-1.5 hover:text-vert transition text-vert font-bold" data-i18n="nav.cat_experiences" href="index.html">Experiences</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_museums" href="../destinations.html">Monuments &amp; Museums</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_transport" href="../transport/index.html">Transport &amp; Rental</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_itineraries" href="../programmes/index.html">Itineraries</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_guides" href="../guides/index.html">Travel Guides</a>
+                    </div>
+                </div>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../guides/histoire.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                        <span data-i18n="nav.history">History of Morocco</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../blog/index.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                        <span data-i18n="nav.blog">Blog</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../contact.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                        <span data-i18n="nav.contact">Contact</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-<!-- Scripts externes (i18n.js à la racine et search.js dans /js/) -->
-<script src="../js/i18n.js"></script>
-<script src="../js/search.js"></script>
-<script>
-    function toggleMobileCategories() {
-        const dropdown = document.getElementById('mobile-categories-dropdown');
-        const arrow = document.getElementById('categories-arrow');
-        
-        if (dropdown) {
-            dropdown.classList.toggle('hidden');
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
+                    <a class="hover:text-white transition" href="../index.html" data-i18n="experiences_page.breadcrumb.home">Home</a>
+                    <span>/</span>
+                    <span class="text-white" data-i18n="experiences_page.breadcrumb.experiences">Morocco Experiences &amp; Adventures</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight" data-i18n="experiences_page.hero.title">Authentic Moroccan Adventures: Desert Trips, Quad Biking &amp; Tours</h1>
+                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed" data-i18n="experiences_page.hero.description">
+                    Immerse yourself in unforgettable Moroccan adventures. From starry nights in the Sahara desert dunes of Merzouga and camel treks in the Palmeraie to thrilling quad bike rides, sunrise hot air balloon flights, and High Atlas mountain treks, book top-rated activities across 40+ destinations.
+                </p>
+                <div class="mt-6 flex flex-wrap gap-4 text-xs sm:text-sm text-creme/90">
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">12+</strong> <span data-i18n="experiences_page.stat_signature">Iconic Activities</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">40+</strong> <span data-i18n="experiences_page.stat_cities">Adventure Cities</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">GetYourGuide &amp; Viator</strong> <span data-i18n="experiences_page.stat_partner">Verified Experiences</span></span>
+                </div>
+
+                <!-- Instant Search Bar -->
+                <div class="mt-8 max-w-lg relative">
+                    <div class="relative">
+                        <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search activity (e.g. Desert, Quad, Camel) or city..." data-i18n-placeholder="experiences_page.search_placeholder" type="text"/>
+                        <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </div>
+                    <div id="pageSearchResults" class="absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100"></div>
+                </div>
+            </div>
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-sable/10 rounded-full blur-3xl pointer-events-none"></div>
+        </div>
+
+        <!-- SECTION 1: DETAILED INTRO & ICONIC EXPERIENCES -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="max-w-4xl mb-12">
+                <span class="text-xs font-bold text-sable uppercase tracking-widest" data-i18n="experiences_page.activities_section.eyebrow">The Spirit of Adventure</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-vert mt-1" data-i18n="experiences_page.activities_section.title">Unforgettable Journeys: Deserts, Mountains &amp; Oases</h2>
+                <div class="mt-4 space-y-4 text-sombre/80 text-sm sm:text-base leading-relaxed">
+                    <p data-i18n="experiences_page.intro_p1">
+                        Morocco is a playground for diverse landscapes and thrilling cultural encounters. Whether you seek the profound silence of the Sahara desert under a blanket of stars, the adrenaline of tearing through dusty palmeries on a quad bike, or the serene beauty of snow-capped High Atlas peaks, every traveler finds their calling here.
+                    </p>
+                    <p data-i18n="experiences_page.intro_p2">
+                        Our curated selection of top-tier activities connects you directly with professional local guides. Experience traditional Berber hospitality, sleep in luxury desert bivouacs, soar above ancient valleys in a hot air balloon, and discover the vibrant heart of Morocco's imperial cities and coastal havens.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ACTIVITIES GRID SHOWCASE -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="dishes-grid">
+
+                <!-- 1. Sahara Desert Trips -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Sahara Desert Tour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.desert.badge">Ultimate Adventure</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.desert.title">Sahara Desert Tours &amp; Bivouacs</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.desert.sub">Merzouga &amp; Zagora Dune Camping</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.desert.desc">
+                                Journey across the Atlas mountains and palm valleys to the majestic Erg Chebbi or Erg Chigaga dunes. Enjoy drum music around the campfire, authentic tagines, and a night in a luxury desert tent under millions of stars.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.desert.tip">Available from Marrakech &amp; Fes</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Camel Trekking -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Camel Ride Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.camel.badge">Classic Tradition</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.camel.title">Camel Riding &amp; Trekking</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.camel.sub">Sunset Treks in Palmeraies &amp; Dunes</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.camel.desc">
+                                Dress in traditional blue scarves (chèche) and ride gentle dromedaries through palm groves or across golden sand ridges as the sun sets over the horizon, capturing timeless postcard memories.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.camel.tip">Popular in Marrakech &amp; Merzouga</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Quad & Buggy Adventures -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Quad Biking Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.quad.badge">Adrenaline Rush</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.quad.title">Quad &amp; Buggy Off-Roading</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.quad.sub">Thrilling Tracks through Palmeries &amp; Desert</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.quad.desc">
+                                Rev your engine and speed across rocky desert tracks, dusty palm groves, and dry riverbeds. Guided excursions provide full safety gear, powerful all-terrain vehicles, and stops at local Berber homes for tea.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.quad.tip">Ideal half-day action tour</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. Hot Air Ballooning -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Hot Air Balloon Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.balloon.badge">Breathtaking Views</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.balloon.title">Sunrise Hot Air Balloon Flights</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.balloon.sub">Aerial Views over Atlas Foothills &amp; Villages</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.balloon.desc">
+                                Float gracefully above the clouds at dawn. Watch the morning sun illuminate rural Berber villages, palm groves, and distant mountain peaks, followed by a traditional breakfast in a nomadic tent.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.balloon.tip">Top signature activity in Marrakech</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. Atlas Mountains & Ourika -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Atlas Mountains Trek" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.atlas.badge">Nature &amp; Trekking</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.atlas.title">High Atlas &amp; Ourika Valley Treks</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.atlas.sub">Mountain Hikes, Waterfalls &amp; Berber Villages</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.atlas.desc">
+                                Escape city heat into the cool crisp air of the Atlas Mountains. Hike to the cascading waterfalls of Setti Fatma, visit cliffside earthen villages, and share tea with local mountain families.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.atlas.tip">Day trip from Marrakech</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6. Ouzoud Waterfalls -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Ouzoud Waterfalls" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.ouzoud.badge">Scenic Wonder</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.ouzoud.title">Cascades d'Ouzoud Day Tour</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="gastronomy_page.dishes.harira.sub" data-i18n="experiences_page.activities.ouzoud.sub">North Africa's Highest Waterfalls &amp; Monkeys</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.ouzoud.desc">
+                                Discover the 110-meter high cascading waterfalls tucked in the Middle Atlas. Take a boat ride beneath the falls, spot wild Barbary macaque monkeys in the olive trees, and dine alongside the riverbanks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.ouzoud.tip">Family-friendly full day excursion</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7. Hammam & Spa Rituals -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Moroccan Hammam Spa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.hammam.badge">Wellness &amp; Ritual</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.hammam.title">Traditional Hammam &amp; Argan Spa</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.hammam.sub">Black Soap Scrub &amp; Rassoul Clay Wrap</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.hammam.desc">
+                                Indulge in an ancient cleansing ritual. Steam baths, eucalyptus black soap exfoliation with a Kessa mitt, mineral-rich rhassoul clay body wraps, and relaxing massages infused with pure organic Argan oil.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.hammam.tip">Essential relaxation experience</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8. Essaouira Coastal Day Trip -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Essaouira Coastal Trip" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.essaouira.badge">Atlantic Escape</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.essaouira.title">Essaouira Medina &amp; Port Day Trip</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.essaouira.sub">Blue-and-White Ramparts &amp; Fresh Seafood</p>
+                            <p class="text-xs text-sombre/70 mt-3 landing-relaxed" data-i18n="experiences_page.activities.essaouira.desc">
+                                Journey to the breezy Atlantic coast. Explore UNESCO-listed ramparts, bustling fishing ports, artisan wood-carving workshops, and white-washed medina alleys lined with art galleries.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.essaouira.tip">Relaxed coastal atmosphere</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 9. Chefchaouen Blue City Tour -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Chefchaouen Blue City" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.chefchaouen.badge">Photographic Gem</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.chefchaouen.title">Chefchaouen Blue City Walking Tour</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.chefchaouen.sub">Rif Mountain Azure Alleyways &amp; Culture</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.chefchaouen.desc">
+                                Wander through the iconic indigo-washed streets nestled in the Rif mountains. Discover artisan goat cheese, local weaving traditions, and panoramic mountain viewpoints at Spanish Mosque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.chefchaouen.tip">Must-visit northern treasure</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 10. Dades & Todra Canyons -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Todra Gorge Canyon" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.canyon.badge">Geological Wonder</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.canyon.title">Todra &amp; Dades Gorges Road Trip</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.canyon.sub">Towering Limestone Canyons &amp; Kasbahs</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.canyon.desc">
+                                Drive the famous Road of a Thousand Kasbahs. Walk beneath 300-meter high sheer limestone canyon walls carved by crystal river streams in the eastern Atlas foothills.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.canyon.tip">Included in desert multi-day tours</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 11. Guided Medina Cultural Tours -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Fes Medina Tour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1578593139883-294b621e25e8?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.medina.badge">Heritage Exploration</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.medina.title">Guided Historical Medina Tours</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.medina.sub">Palaces, Tanneries &amp; Ancient Souks</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.medina.desc">
+                                Navigate the labyrinthine alleyways of Fes el-Bali or Marrakech Medina with an expert historian guide. Visit medieval tanneries, stunning Quranic schools (madrasas), and vibrant artisan copper and pottery souks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.medina.tip">Essential for uncovering hidden history</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 12. Fantasia Dinner Shows -->
+                <div class="dish-card bg-white rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <img alt="Fantasia Dinner Show" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                            <span class="absolute top-4 left-4 bg-vert/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-i18n="experiences_page.activities.fantasia.badge">Evening Entertainment</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.fantasia.title">Fantasia Dinner &amp; Folklore Show</h3>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.fantasia.sub">Caidal Tent Banquet, Music &amp; Cavalry</p>
+                            <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.fantasia.desc">
+                                Enjoy a royal Moroccan banquet under a traditional caidal tent accompanied by live Gnawa music, belly dancing, acrobatic performances, and spectacular Berber horse-riding cavalry charges (Fantasia).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-sable/10 flex items-center justify-between">
+                        <span class="text-[11px] text-gray-500 font-medium" data-i18n="experiences_page.activities.fantasia.tip">Unforgettable magical night out</span>
+                        <a href="#cities-section" class="text-xs font-bold text-vert hover:underline flex items-center gap-1">
+                            <span data-i18n="experiences_page.activities.where_to_book">Find Activities</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: CITIES & ADVENTURE EXPERIENCES (WITH MAP SVG MARKERS) -->
+        <section class="bg-white py-16 border-t border-sable/15" id="cities-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-widest" data-i18n="experiences_page.cities_section.eyebrow">Explore 40+ Destinations</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-vert mt-1" data-i18n="experiences_page.cities_section.title">Find Excursions &amp; Activities By City</h2>
+                    <p class="text-sombre/70 text-sm sm:text-base mt-2" data-i18n="experiences_page.cities_section.subtitle">Select any Moroccan destination below to reveal local adventures, desert tours, and book top-rated experiences on GetYourGuide / Viator.</p>
+                </div>
+
+                <!-- SELECTOR DROPDOWN & REGION TABS CONTROL -->
+                <div class="bg-creme rounded-3xl p-6 sm:p-8 border border-sable/20 mb-10 shadow-sm">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        
+                        <!-- 40+ City Dropdown Picker -->
+                        <div class="w-full md:w-1/2">
+                            <label class="block text-xs font-bold text-sable uppercase tracking-wider mb-2" for="cityPickerSelect" data-i18n="experiences_page.city_picker.label">Choose a Destination (40+ Cities):</label>
+                            <div class="relative">
+                                <select class="w-full pl-11 pr-10 py-3.5 rounded-2xl bg-white border border-sable/30 text-sombre font-semibold text-sm outline-none shadow-sm focus:border-vert cursor-pointer appearance-none" id="cityPickerSelect">
+                                    <option value="all" data-i18n="experiences_page.city_picker.all_option">All Cities (Show All Destinations)</option>
+                                    <option value="marrakech">Marrakech (Balloon, Quad &amp; Palmeraie)</option>
+                                    <option value="merzouga">Merzouga (Sahara Dunes &amp; Bivouacs)</option>
+                                    <option value="fes">Fes (Medieval Medina &amp; Cultural Tours)</option>
+                                    <option value="essaouira">Essaouira (Watersports &amp; Medina)</option>
+                                    <option value="casablanca">Casablanca (Hassan II Mosque &amp; City Tours)</option>
+                                    <option value="tangier">Tangier (Hercules Caves &amp; Strait Tours)</option>
+                                    <option value="chefchaouen">Chefchaouen (Blue City &amp; Rif Hikes)</option>
+                                    <option value="agadir">Agadir (Quad Riding &amp; Atlantic Coast)</option>
+                                    <option value="rabat">Rabat (Kasbah of the Udayas &amp; History)</option>
+                                    <option value="ouarzazate">Ouarzazate (Film Studios &amp; Kasbahs)</option>
+                                    <option value="zagora">Zagora (Drâa Valley &amp; Desert Camps)</option>
+                                    <option value="dakhla">Dakhla (Kitesurfing &amp; Lagoon Tours)</option>
+                                    <option value="tetouan">Tetouan (Rif Mountain &amp; Coastal Excursions)</option>
+                                    <option value="meknes">Meknes &amp; Volubilis (Roman Ruins)</option>
+                                    <option value="ifrane">Ifrane &amp; Azrou (Cedar Forests &amp; Monkeys)</option>
+                                    <option value="tinghir">Tinghir (Todra Gorge Trekking)</option>
+                                    <option value="azilal">Azilal &amp; Ouzoud (Waterfalls &amp; Rafting)</option>
+                                    <option value="taroudant">Taroudant (Walled City &amp; Oasis Tours)</option>
+                                    <option value="safi">Safi (Pottery Workshops &amp; Coast)</option>
+                                    <option value="eljadida">El Jadida (Portuguese Cistern Tours)</option>
+                                    <option value="asilah">Asilah (Artistic Medina &amp; Beaches)</option>
+                                    <option value="alhoceima">Al Hoceima (National Park &amp; Beaches)</option>
+                                    <option value="nador">Nador (Lagoon &amp; Mediterranean Views)</option>
+                                    <option value="laayoune">Laayoune (Sahara Desert Expeditions)</option>
+                                    <option value="benimellal">Beni Mellal (Bin El Ouidane Lake Tours)</option>
+                                    <option value="kenitra">Kenitra (Mehdia Beach &amp; Watersports)</option>
+                                    <option value="mohammedia">Mohammedia (Coastal Walks &amp; Relax)</option>
+                                    <option value="guelmim">Guelmim (Gateway to the Desert)</option>
+                                    <option value="errachidia">Errachidia (Ziz Valley Oasis Tours)</option>
+                                    <option value="midelt">Midelt (High Atlas Mountain Passes)</option>
+                                    <option value="tiznit">Tiznit (Silver Souks &amp; Coast)</option>
+                                    <option value="tantan">Tan-Tan (Nomad Culture &amp; Coast)</option>
+                                    <option value="berkane">Berkane (Zragua Canyons &amp; Trails)</option>
+                                    <option value="khemisset">Khemisset (Plateau Heritage)</option>
+                                    <option value="settat">Settat (Chaouia Countryside)</option>
+                                    <option value="berrechid">Berrechid (Local Tours)</option>
+                                    <option value="larache">Larache (Lixus Roman Ruins)</option>
+                                    <option value="ksarelkebir">Ksar El Kebir (Loukkos Valley)</option>
+                                    <option value="skoura">Skoura (Palmery Kasbah Tours)</option>
+                                </select>
+                                <svg class="w-5 h-5 text-vert absolute left-3.5 top-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                <svg class="w-4 h-4 text-gray-400 absolute right-3.5 top-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                            </div>
+                        </div>
+
+                        <!-- Quick Region Quick Filters -->
+                        <div class="w-full md:w-1/2">
+                            <span class="block text-xs font-bold text-sable uppercase tracking-wider mb-2" data-i18n="experiences_page.filter_region_title">Filter by Adventure Style:</span>
+                            <div class="flex flex-wrap gap-2" id="region-filters">
+                                <button class="region-tab active px-3.5 py-2 rounded-xl text-xs font-semibold border border-sable/20 bg-vert text-white transition cursor-pointer" data-region="all" data-i18n="experiences_page.filter_all">All</button>
+                                <button class="region-tab px-3.5 py-2 rounded-xl text-xs font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition cursor-pointer" data-region="desert" data-i18n="experiences_page.filter_desert">Sahara &amp; Desert</button>
+                                <button class="region-tab px-3.5 py-2 rounded-xl text-xs font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition cursor-pointer" data-region="mountains" data-i18n="experiences_page.filter_mountains">Atlas &amp; Nature</button>
+                                <button class="region-tab px-3.5 py-2 rounded-xl text-xs font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition cursor-pointer" data-region="imperial" data-i18n="experiences_page.filter_imperial">Imperial Cities</button>
+                                <button class="region-tab px-3.5 py-2 rounded-xl text-xs font-semibold border border-sable/20 bg-white text-sombre hover:border-vert transition cursor-pointer" data-region="atlantic" data-i18n="experiences_page.filter_atlantic">Coastal &amp; Water</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CITIES CARDS GRID (WITH MAP SVG MARKERS) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="destinations-grid">
+
+                    <a href="https://www.getyourguide.com/s/?q=Marrakech+desert+tour+quad" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="marrakech" data-region="imperial mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.marrakech.name">Marrakech Adventures</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.marrakech.specialty">Hot Air Balloons, Quad Biking & Palmeraie Camels</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.marrakech.title">Marrakech Tours & Activities</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.marrakech.desc">Sunrise hot air ballooning, quad excursions through the palm grove, and Atlas mountain day trips.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Merzouga+desert+camp" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="merzouga" data-region="desert">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.merzouga.name">Merzouga Desert</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.merzouga.specialty">Erg Chebbi Dunes &amp; Luxury Bivouac Camps</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.merzouga.title">Merzouga Sahara Expeditions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.merzouga.desc">Camel trekking over giant orange dunes, 4x4 desert safaris, and magical starry desert nights.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Fes+medina+guided+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="fes" data-region="imperial">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.fes.name">Fes Heritage</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.fes.specialty">Medieval Medina, Tanneries &amp; Artisans</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.fes.title">Fes Cultural Walking Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.fes.desc">Immersive guided tours through the world's largest car-free medieval city, tanneries, and palaces.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Essaouira+day+trip" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="essaouira" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.essaouira.name">Essaouira Coast</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.essaouira.specialty">Watersports, Ramparts &amp; Port Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.essaouira.title">Essaouira Coastal Adventures</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.essaouira.desc">Windsurfing, quad biking on Atlantic beaches, horse riding, and historic medina exploration.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Casablanca+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="casablanca" data-region="atlantic imperial">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.casablanca.name">Casablanca Tours</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.casablanca.specialty">Hassan II Mosque &amp; Art Deco Architecture</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.casablanca.title">Casablanca Guided Excursions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.casablanca.desc">Guided tours of the magnificent Hassan II Mosque, Corniche ocean walks, and vibrant city heritage.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Tangier+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tangier" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.tangier.name">Tangier Straits</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.tangier.specialty">Hercules Caves &amp; Cape Spartel Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.tangier.title">Tangier Excursions &amp; Strait Views</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.tangier.desc">Discover where the Atlantic meets the Mediterranean, explore the legendary Caves of Hercules and the Kasbah.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Chefchaouen+day+trip" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="chefchaouen" data-region="mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.chefchaouen.name">Chefchaouen Blue City</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.chefchaouen.specialty">Rif Mountain Hiking &amp; Blue Alley Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.chefchaouen.title">Chefchaouen Walking Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.chefchaouen.desc">Guided photography and walking tours through the striking blue pearl city in the Rif mountains.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Agadir+quad+buggy" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="agadir" data-region="atlantic desert">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.agadir.name">Agadir Coast &amp; Dunes</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.agadir.specialty">Quad Biking, Buggies &amp; Paradise Valley</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.agadir.title">Agadir Adventure Excursions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.agadir.desc">Quad biking across coastal dunes, swimming in Paradise Valley rock pools, and surfing Atlantic waves.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Rabat+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="rabat" data-region="imperial">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.rabat.name">Rabat Capital Tours</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.rabat.specialty">Kasbah of the Udayas &amp; Hassan Tower</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.rabat.title">Rabat Guided Sightseeing</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.rabat.desc">Explore the blue-and-white Kasbah gardens, Roman ruins of Chellah, and historic imperial monuments.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Ouarzazate+movie+studio" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ouarzazate" data-region="desert mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.ouarzazate.name">Ouarzazate Hollywood of Morocco</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.ouarzazate.specialty">Film Studios &amp; Ait Benhaddou Kasbah</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.ouarzazate.title">Ouarzazate Studio &amp; Kasbah Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.ouarzazate.desc">Tour world-famous cinema studios (Gladiator, Game of Thrones) and the UNESCO-listed Ait Benhaddou kasbah.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Zagora+desert+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="zagora" data-region="desert">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.zagora.name">Zagora Desert</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.zagora.specialty">Drâa Valley &amp; Erg Chigaga Expeditions</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.zagora.title">Zagora Desert Adventures</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.zagora.desc">Camel treks through palm oases, 4x4 desert tracks, and starry nights in traditional desert camps.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Dakhla+kitesurfing" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="dakhla" data-region="desert atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.dakhla.name">Dakhla Lagoon</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.dakhla.specialty">Kitesurfing, Windsurfing &amp; White Dune</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.dakhla.title">Dakhla Watersports &amp; Lagoon Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.dakhla.desc">World-class kitesurfing paradise, boat trips to White Dune, and deep south desert-ocean adventures.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Tetouan+excursion" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tetouan" data-region="mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.tetouan.name">Tetouan Rif Tours</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.tetouan.specialty">Andalusian Medina &amp; Mediterranean Beaches</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.tetouan.title">Tetouan Cultural Excursions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.tetouan.desc">Explore the UNESCO Andalusian White Dove city, artisan markets, and nearby Mediterranean coves.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Meknes+Volubilis+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="meknes" data-region="imperial">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.meknes.name">Meknes &amp; Volubilis</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.meknes.specialty">Roman Ruins of Volubilis &amp; Ismaili Heritage</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.meknes.title">Meknes &amp; Volubilis Day Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.meknes.desc">Guided archaeological tours of Roman Volubilis mosaics, Moulay Ismail grand gates, and holy Moulay Idriss.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Ifrane+Azrou+forest" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ifrane" data-region="mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.ifrane.name">Ifrane &amp; Cedar Forests</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.ifrane.specialty">Alpine Chalets &amp; Barbary Macaque Monkeys</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.ifrane.title">Ifrane &amp; Middle Atlas Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.ifrane.desc">Explore Morocco's "Little Switzerland", feed wild monkeys in ancient cedar forests, and alpine national parks.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Todra+Gorge+climbing+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tinghir" data-region="mountains desert">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.tinghir.name">Tinghir &amp; Todra Gorge</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.tinghir.specialty">Canyon Rock Climbing &amp; Oasis Walks</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.tinghir.title">Todra Gorge Trekking &amp; Climbing</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.tinghir.desc">Guided rock climbing, canyon hiking, and lush palm-oasis walks between towering vertical limestone walls.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Ouzoud+waterfalls+day+trip" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="azilal" data-region="mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.azilal.name">Azilal &amp; Ouzoud Falls</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.azilal.specialty">Waterfall Boat Tours &amp; Wild Monkeys</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.azilal.title">Ouzoud Falls Excursions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.azilal.desc">Guided hiking to North Africa's highest waterfalls, boat cruises beneath the spray, and monkey encounters.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Taroudant+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="taroudant" data-region="desert mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.taroudant.name">Taroudant Ramparts</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.taroudant.specialty">Walled City Bicycle &amp; Souk Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.taroudant.title">Taroudant Cultural Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.taroudant.desc">Bicycle tours along the impressive ramparts, authentic silver souk visits, and Souss valley excursions.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Safi+pottery+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="safi" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.safi.name">Safi Pottery Coast</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.safi.specialty">Pottery Hill &amp; Portuguese Sea Castle</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.safi.title">Safi Craft &amp; Coastal Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.safi.desc">Master potter workshops on the famous hill, visits to the sea fortress, and Atlantic coastal walks.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=El+Jadida+cistern" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="eljadida" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.eljadida.name">El Jadida Portuguese City</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.eljadida.specialty">Underground Cistern &amp; Ramparts</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.eljadida.title">El Jadida UNESCO Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.eljadida.desc">Guided tours of the mysterious underground Portuguese cistern reflecting light and vaulted ceilings.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Asilah+art+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="asilah" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.asilah.name">Asilah Art Town</span>
+                            </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.asilah.specialty">Mural Paintings &amp; Atlantic Ramparts</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.asilah.title">Asilah Artistic Walking Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.asilah.desc">Discover famous annual medina mural paintings, pristine whitewashed walls, and Atlantic ocean breezes.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Al+Hoceima+national+park" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="alhoceima" data-region="mountains atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.alhoceima.name">Al Hoceima National Park</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.alhoceima.specialty">Rif Cliffs, Boat Tours &amp; Hidden Coves</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.alhoceima.title">Al Hoceima Nature &amp; Boat Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.alhoceima.desc">Explore stunning Mediterranean national park cliffs, boat trips to pristine coves, and crystal waters.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Nador+lagoon+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="nador" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.nador.name">Nador Lagoon</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.nador.specialty">Marchica Lagoon Boat &amp; Marina Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.nador.title">Nador Lagoon Excursions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.nador.desc">Boat excursions across Marchica lagoon, bird watching, and modern Mediterranean marina experiences.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Laayoune+desert+safari" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="laayoune" data-region="desert atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.laayoune.name">Laayoune Sahara</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.laayoune.specialty">Sahrawi Nomad Culture &amp; Atlantic Dunes</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.laayoune.title">Laayoune Desert Expeditions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.laayoune.desc">Deep south desert safaris, nomadic tea ceremonies, and Atlantic ocean dune explorations.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Beni+Mellal+lake+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="benimellal" data-region="mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.benimellal.name">Beni Mellal Lake Tours</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.benimellal.specialty">Bin El Ouidane Lake &amp; Ain Asserdoun Springs</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.benimellal.title">Beni Mellal Nature Excursions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.benimellal.desc">Boat trips on stunning Bin El Ouidane lake, waterfall springs, and Middle Atlas mountain hiking.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Kenitra+surfing" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="kenitra" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.kenitra.name">Kenitra Mehdia Beach</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.kenitra.specialty">Surfing Lessons &amp; Sebou River Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.kenitra.title">Kenitra Surf &amp; River Activities</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.kenitra.desc">Atlantic surfing lessons at Mehdia beach, boat excursions on Sebou river, and nature reserves.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Mohammedia+beach" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="mohammedia" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.mohammedia.name">Mohammedia Beaches</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.mohammedia.specialty">Coastal Walks &amp; Yacht Marina</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.mohammedia.title">Mohammedia Coastal Leisure</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.mohammedia.desc">Relaxing marina boat rentals, scenic Atlantic beach walks, and seaside recreation near Casablanca.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Guelmim+desert+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="guelmim" data-region="desert">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.guelmim.name">Guelmim Desert Gateway</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.guelmim.specialty">Camel Market &amp; Oasis Canyons</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.guelmim.title">Guelmim Gateway Expeditions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.guelmim.desc">Traditional Saturday camel market, hidden oasis canyons, and southern desert gateway tours.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Errachidia+Ziz+Valley" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="errachidia" data-region="desert">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.errachidia.name">Errachidia Ziz Valley</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.errachidia.specialty">Ziz Gorge &amp; Palm Oasis Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.errachidia.title">Errachidia Oasis Expeditions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.errachidia.desc">Scenic drives through Ziz Valley palm groves, dramatic gorges, and ancient desert fortresses.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Midelt+hiking" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="midelt" data-region="mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.midelt.name">Midelt Mountain Passes</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.midelt.specialty">Ayachi Mountain Hiking &amp; Apple Orchards</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.midelt.title">Midelt Mountain Trekking</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.midelt.desc">High Atlas trekking around Jebel Ayachi, apple valley tours, and mountain pass explorations.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Tiznit+silver+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tiznit" data-region="desert atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.tiznit.name">Tiznit Silver City</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.tiznit.specialty">Berber Silver Jewelry &amp; Rampart Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.tiznit.title">Tiznit Craft &amp; Coastal Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.tiznit.desc">Explore traditional Berber silver jewelry workshops, walled medina ramparts, and nearby Atlantic beaches.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Tan-Tan+festival" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tantan" data-region="desert atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.tantan.name">Tan-Tan Nomad Culture</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.tantan.specialty">UNESCO Nomad Festival &amp; Atlantic Coast</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.tantan.title">Tan-Tan Cultural Expeditions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.tantan.desc">Experience authentic Sahrawi nomad cultural gatherings, camel caravans, and pristine Atlantic shorelines.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Berkane+canyons" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="berkane" data-region="mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.berkane.name">Berkane Canyons</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.berkane.specialty">Zragua Canyons &amp; Mountain Trails</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.berkane.title">Berkane Nature &amp; Hiking Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.berkane.desc">Hiking expeditions through Zragua gorges, citrus valley trails, and eastern mountain viewpoints.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Khemisset+culture" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="khemisset" data-region="imperial">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.khemisset.name">Khemisset Plateau</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.khemisset.specialty">Zemmour Culture &amp; Equestrian Heritage</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.khemisset.title">Khemisset Heritage Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.khemisset.desc">Discover traditional Zemmour tribal heritage, equestrian folklore, and plateau landscape tours.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Settat+nature" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="settat" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.settat.name">Settat Countryside</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.settat.specialty">Chaouia Plains &amp; Al Massira Lake</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.settat.title">Settat Rural Excursions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.settat.desc">Explore Al Massira lake shores, Chaouia agricultural plains, and local farm-to-table experiences.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Berrechid+farm+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="berrechid" data-region="atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.berrechid.name">Berrechid Farms</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.berrechid.specialty">Agricultural Valley &amp; Organic Farm Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.berrechid.title">Berrechid Farm Experiences</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.berrechid.desc">Guided tours of organic agricultural cooperatives and rural Chaouia countryside traditions.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Larache+Lixus+ruins" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="larache" data-region="north atlantic">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.larache.name">Larache &amp; Lixus Ruins</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.larache.specialty">Ancient Lixus Archaeological Tours</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.larache.title">Larache &amp; Lixus History Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.larache.desc">Explore Phoenician, Carthaginian, and Roman ruins of Lixus overlooking the Loukkos river estuary.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Ksar+El+Kebir+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ksarelkebir" data-region="north">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.ksarelkebir.name">Ksar El Kebir Valley</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.ksarelkebir.specialty">Loukkos Plain &amp; Historic Heritage</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.ksarelkebir.title">Ksar El Kebir Excursions</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.ksarelkebir.desc">Explore northern agricultural heritage, Loukkos valley landscapes, and historic battle sites.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+
+                    <a href="https://www.getyourguide.com/s/?q=Skoura+palmery+kasbah" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="skoura" data-region="desert mountains">
+                        <div>
+                            <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
+                                <div class="relative z-10 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-md border border-sable/30 group-hover:border-vert transition">
+                                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span class="font-bold text-sombre text-lg tracking-tight" data-i18n="experiences_page.cities.skoura.name">Skoura Palmery</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-sable font-bold uppercase tracking-wider" data-i18n="experiences_page.cities.skoura.specialty">Amridil Kasbah &amp; Palm Grove Walks</span>
+                            <h3 class="text-xl font-bold text-sombre mt-1 group-hover:text-vert transition" data-i18n="experiences_page.cities.skoura.title">Skoura Kasbah &amp; Oasis Tours</h3>
+                            <p class="text-xs text-sombre/70 mt-2 leading-relaxed" data-i18n="experiences_page.cities.skoura.desc">Guided walking tours through the lush Skoura palm grove and historic mud-brick Amridil Kasbah.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-sable/10 flex items-center justify-between text-xs font-bold text-vert">
+                            <span data-i18n="experiences_page.book_cta">Book Activity / Tour</span>
+                            <span class="group-hover:translate-x-1 transition">→</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: FAQ SEO WITH INTERACTIVE ACCORDIONS -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-sable uppercase tracking-widest" data-i18n="experiences_page.faq.eyebrow">Adventure Guide &amp; Tips</span>
+                <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="experiences_page.faq.title">Frequently Asked Questions About Morocco Experiences</h2>
+                <p class="text-sombre/70 text-sm mt-2" data-i18n="experiences_page.faq.subtitle">Everything you need to know regarding desert trips, booking activities, safety, and excursion inclusions.</p>
+            </div>
+            <div class="space-y-4">
+                <details class="bg-white rounded-2xl border border-sable/15 p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sombre text-base">
+                        <span data-i18n="experiences_page.faq.q1">What is included in a Sahara Desert tour from Marrakech or Fes?</span>
+                        <svg class="w-5 h-5 text-sable shrink-0 group-open:rotate-180 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.faq.a1">
+                        Most multi-day desert excursions include comfortable air-conditioned transportation, professional driver/guide, camel trekking over dunes, dinner and breakfast, and overnight accommodation in a desert tent camp (standard or luxury).
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-2xl border border-sable/15 p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sombre text-base">
+                        <span data-i18n="experiences_page.faq.q2">Should I book excursions and activities in advance?</span>
+                        <svg class="w-5 h-5 text-sable shrink-0 group-open:rotate-180 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.faq.a2">
+                        Yes, highly recommended! Popular activities like sunrise hot air balloon flights in Marrakech, luxury desert camps, and private guided medina tours frequently sell out during peak travel seasons (spring and autumn).
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-2xl border border-sable/15 p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sombre text-base">
+                        <span data-i18n="experiences_page.faq.q3">What should I pack for a desert trip or quad biking tour?</span>
+                        <svg class="w-5 h-5 text-sable shrink-0 group-open:rotate-180 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.faq.a3">
+                        Bring comfortable layers, sunglasses, sunscreen, a hat, closed-toe shoes for quad biking or hiking, a light jacket (desert nights get surprisingly cold even after warm days), and a scarf (chèche) to protect against desert sand.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-2xl border border-sable/15 p-6 shadow-sm group">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-sombre text-base">
+                        <span data-i18n="experiences_page.faq.q4">Can I cancel my activity booking if plans change?</span>
+                        <svg class="w-5 h-5 text-sable shrink-0 group-open:rotate-180 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.faq.a4">
+                        Yes! All activities booked via our trusted partners (GetYourGuide and Viator) feature flexible booking policies with free cancellation up to 24 hours before the experience starts for a full refund.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- BANNIÈRE EXPÉRIENCE AFFILIATION (GETYOURGUIDE / VIATOR) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="max-w-xl text-left z-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="experiences_page.banner.badge">Top Rated Adventure Tours</span>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-1 leading-tight" data-i18n="experiences_page.banner.title">Book Sahara Desert Trips, Quads &amp; Guided Tours</h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="experiences_page.banner.desc">Secure your spot for camel rides, hot air balloon flights, and mountain excursions with top-rated local operators on GetYourGuide &amp; Viator.</p>
+                </div>
+
+                <div class="w-full md:w-auto shrink-0 z-10 text-center">
+                    <a href="https://www.getyourguide.com/s/?q=Morocco+tours+activities" target="_blank" rel="noopener sponsored" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-8 py-4 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                       <span data-i18n="experiences_page.banner.btn">Explore All Moroccan Activities</span>
+                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                    </a>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="experiences_page.banner.guarantee">✓ Free cancellation up to 24h in advance</p>
+                </div>
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
+                <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
+                    Discover. Plan. Experience Morocco.<br/>
+                    The premier tourism directory and cultural travel guide for visitors exploring Morocco.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Destinations</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
+                    <li><a class="hover:text-white transition" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads &amp; Hotels</a></li>
+                    <li><a class="hover:text-white transition" href="../gastronomy/index.html" data-i18n="footer.link_restaurants">Moroccan Restaurants &amp; Food</a></li>
+                    <li><a class="text-white font-bold transition" href="index.html" data-i18n="footer.link_experiences">Desert Tours &amp; Activities</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
+                <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
+                <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                    @moroccotripmap
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
+            <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
+            <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic & Filtering JS -->
+    <script>
+        function toggleMobileCategories() {
+            const dropdown = document.getElementById('mobile-categories-dropdown');
+            const arrow = document.getElementById('categories-arrow');
+            if (dropdown) {
+                dropdown.classList.toggle('hidden');
+                if (arrow) arrow.classList.toggle('rotate-180');
+            }
         }
-        if (arrow) {
-            arrow.classList.toggle('rotate-180');
-        }
-    }
-</script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Language Menu Toggle
+            const langButton = document.getElementById('lang-menu-button');
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+            if (langButton && langDropdown) {
+                langButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                });
+                document.addEventListener('click', function(e) {
+                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.add('hidden');
+                    }
+                });
+            }
+
+            // 40+ City Picker Select Logic & Filtering
+            const cityPickerSelect = document.getElementById('cityPickerSelect');
+            const regionTabs = document.querySelectorAll('.region-tab');
+            const cityCards = document.querySelectorAll('#destinations-grid .city-card');
+            const activityCards = document.querySelectorAll('#dishes-grid .dish-card');
+
+            // Handle Dropdown Change
+            if (cityPickerSelect) {
+                cityPickerSelect.addEventListener('change', function() {
+                    const selectedCity = this.value;
+                    
+                    // Reset Region Tabs Visual State
+                    regionTabs.forEach(t => {
+                        t.classList.remove('active', 'bg-vert', 'text-white');
+                        t.classList.add('bg-white', 'text-sombre');
+                    });
+
+                    cityCards.forEach(card => {
+                        const cardCity = card.getAttribute('data-city');
+                        if (selectedCity === 'all' || cardCity === selectedCity) {
+                            card.style.display = '';
+                            if (selectedCity !== 'all') {
+                                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            }
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+
+            // Region Tabs Handler
+            regionTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const region = this.getAttribute('data-region');
+                    
+                    regionTabs.forEach(t => {
+                        t.classList.remove('active', 'bg-vert', 'text-white');
+                        t.classList.add('bg-white', 'text-sombre');
+                    });
+                    this.classList.add('active', 'bg-vert', 'text-white');
+                    this.classList.remove('bg-white', 'text-sombre');
+
+                    // Reset Select to 'all'
+                    if (cityPickerSelect) cityPickerSelect.value = 'all';
+
+                    cityCards.forEach(card => {
+                        const cardRegions = (card.getAttribute('data-region') || '').trim().split(/\s+/);
+                        card.style.display = (region === 'all' || cardRegions.includes(region)) ? '' : 'none';
+                    });
+                });
+            });
+
+            // Instant Search Input Logic
+            const searchInput = document.getElementById('pageSearchInput');
+            const searchResults = document.getElementById('pageSearchResults');
+
+            if (searchInput && searchResults) {
+                const searchItems = [
+                    ...Array.from(activityCards).map(c => ({
+                        type: 'Activity',
+                        title: c.querySelector('h3')?.textContent || '',
+                        element: c,
+                        targetSection: 'activities'
+                    })),
+                    ...Array.from(cityCards).map(c => ({
+                        type: 'City Excursion',
+                        title: c.querySelector('h3')?.textContent || '',
+                        element: c,
+                        targetSection: 'cities'
+                    }))
+                ];
+
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    searchResults.innerHTML = '';
+
+                    if (query.length === 0) {
+                        searchResults.classList.add('hidden');
+                        activityCards.forEach(c => c.style.display = '');
+                        cityCards.forEach(c => c.style.display = '');
+                        return;
+                    }
+
+                    const matches = searchItems.filter(item => item.title.toLowerCase().includes(query));
+
+                    if (matches.length > 0) {
+                        searchResults.classList.remove('hidden');
+                        matches.forEach(match => {
+                            const div = document.createElement('div');
+                            div.className = 'px-4 py-3 hover:bg-creme cursor-pointer text-sm font-medium text-sombre flex items-center justify-between';
+                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span> <span class="text-xs text-gray-400">(${match.type})</span></div> <span class="text-xs text-sable font-bold">View →</span>`;
+                            
+                            div.addEventListener('click', function() {
+                                searchInput.value = match.title;
+                                searchResults.classList.add('hidden');
+                                match.element.style.display = '';
+                                match.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            });
+                            searchResults.appendChild(div);
+                        });
+                    } else {
+                        searchResults.classList.remove('hidden');
+                        searchResults.innerHTML = '<div class="px-4 py-3 text-sm text-gray-500">No activity or city excursion found</div>';
+                    }
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                        searchResults.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- i18n & Global Search Scripts -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/search.js"></script>
 </body>
-    </html>
+</html>

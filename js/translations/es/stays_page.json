@@ -45,5 +45,247 @@
     "a3": "Absolutamente. Los campamentos de lujo en las dunas de Erg Chebbi son muy populares, especialmente en primavera y otoño. Reservar a través de Booking.com garantiza su categoría de tienda y las opciones de paseo en camello.",
     "q4": "¿Se puede acceder en coche a los riads dentro de las medinas?",
     "a4": "La mayoría de las medinas (como Fez el-Bali o la medina de Marrakech) son zonas peatonales. Los riads se encuentran en callejones históricos. Sin embargo, la mayoría de los establecimientos ofrecen asistencia con el equipaje desde el aparcamiento vigilado o la puerta de la medina más cercana."
+  },
+  "cities": {
+    "marrakech": {
+      "region": "Ciudad Imperial",
+      "title": "Alojamientos en Marrakech",
+      "desc": "Riads palaciegos con piscinas en el patio y terrazas en la azotea cerca de Jemaa el-Fnaa.",
+      "name": "Marrakech"
+    },
+    "chefchaouen": {
+      "region": "Montañas del Rif",
+      "title": "Alojamientos en Chefchaouen",
+      "desc": "Casas de huéspedes azules acogedoras y hoteles boutique alpinos con vistas a los picos del Rif.",
+      "name": "Chefchaouen"
+    },
+    "fes": {
+      "region": "Capital Cultural",
+      "title": "Alojamientos en Fez",
+      "desc": "Palacios históricos de la medina con estuco tallado, zellige y jardines tranquilos.",
+      "name": "Fez"
+    },
+    "casablanca": {
+      "region": "Corazón Económico",
+      "title": "Alojamientos en Casablanca",
+      "desc": "Hoteles de lujo modernos y apartamentos elegantes frente al mar cerca de la mezquita Hassan II.",
+      "name": "Casablanca"
+    },
+    "essaouira": {
+      "region": "Costa Atlántica",
+      "title": "Alojamientos en Essaouira",
+      "desc": "Casas de huéspedes bohemias encaladas dentro de las antiguas murallas con vistas al océano.",
+      "name": "Essaouira"
+    },
+    "agadir": {
+      "region": "Sol y Playa",
+      "title": "Alojamientos en Agadir",
+      "desc": "Resorts frente al mar, villas familiares y hoteles modernos a lo largo de playas doradas.",
+      "name": "Agadir"
+    },
+    "tangier": {
+      "region": "Estrecho de Gibraltar",
+      "title": "Alojamientos en Tánger",
+      "desc": "Hoteles históricos en los acantilados y riads elegantes con vistas al Mediterráneo y al Atlántico.",
+      "name": "Tánger"
+    },
+    "ouarzazate": {
+      "region": "Puerta del Desierto",
+      "title": "Alojamientos en Ouarzazate",
+      "desc": "Kasbahs de tierra auténticas y hoteles de oasis cinematográficos cerca de Ait Benhaddou.",
+      "name": "Ouarzazate"
+    },
+    "rabat": {
+      "region": "Ciudad Imperial",
+      "title": "Alojamientos en Rabat",
+      "desc": "Hoteles boutique elegantes y estancias tranquilas con vistas al río en la capital administrativa.",
+      "name": "Rabat"
+    },
+    "meknes": {
+      "region": "Ciudad Imperial",
+      "title": "Alojamientos en Mequinez",
+      "desc": "Riads tradicionales cerca de las puertas monumentales ismailíes y las ruinas romanas.",
+      "name": "Mequinez"
+    },
+    "tetouan": {
+      "region": "Costa Mediterránea",
+      "title": "Alojamientos en Tetuán",
+      "desc": "Casas de huéspedes de estilo andaluz que reflejan una arquitectura hispano-marroquí única.",
+      "name": "Tetuán"
+    },
+    "ifrane": {
+      "region": "Atlas Medio",
+      "title": "Alojamientos en Ifrane",
+      "desc": "Chalets alpinos y lodges forestales rodeados de cedros y picos nevados.",
+      "name": "Ifrane"
+    },
+    "el-jadida": {
+      "region": "Costa Atlántica",
+      "title": "Alojamientos en El Jadida",
+      "desc": "Hoteles históricos junto al mar cerca de las fortificaciones portuguesas y las cisternas subterráneas.",
+      "name": "El Jadida"
+    },
+    "taroudant": {
+      "region": "Valle del Souss",
+      "title": "Alojamientos en Taroudant",
+      "desc": "Riads tranquilos enclavados entre imponentes murallas de adobe rojo y huertos fértiles.",
+      "name": "Taroudant"
+    },
+    "dakhla": {
+      "region": "Extremo Sur",
+      "title": "Alojamientos en Dakhla",
+      "desc": "Eco-lodges y bungalows de lujo en la laguna diseñados para kitesurfistas y amantes de la naturaleza.",
+      "name": "Dakhla"
+    },
+    "al-hoceima": {
+      "region": "Costa Mediterránea",
+      "title": "Alojamientos en Alhucemas",
+      "desc": "Hoteles en los acantilados y resorts de playa con vistas a las bahías turquesas del Mediterráneo.",
+      "name": "Alhucemas"
+    },
+    "nador": {
+      "region": "Laguna Mediterránea",
+      "title": "Alojamientos en Nador",
+      "desc": "Hoteles contemporáneos con vistas a la laguna y apartamentos modernos del puerto deportivo.",
+      "name": "Nador"
+    },
+    "zagora": {
+      "region": "Valle del Drâa",
+      "title": "Alojamientos en Zagora",
+      "desc": "Kasbahs tradicionales en las palmeras y bivouacs del desierto a lo largo del río Drâa.",
+      "name": "Zagora"
+    },
+    "safi": {
+      "region": "Costa Atlántica",
+      "title": "Alojamientos en Safi",
+      "desc": "Casas de huéspedes auténticas frente al océano cerca de las colinas de alfarería y la fortaleza.",
+      "name": "Safi"
+    },
+    "laayoune": {
+      "region": "Puerta del Sáhara",
+      "title": "Alojamientos en El Aaiún",
+      "desc": "Hoteles cómodos a la puerta del Sáhara que combinan la cultura saharaui con horizontes atlánticos.",
+      "name": "El Aaiún"
+    },
+    "merzouga": {
+      "region": "Desierto del Sáhara",
+      "title": "Alojamientos en Merzouga",
+      "desc": "Campamentos de lujo en el desierto y kasbahs frente a las dunas en el borde del Erg Chebbi.",
+      "name": "Merzouga"
+    },
+    "azilal": {
+      "region": "Corazón del Atlas",
+      "title": "Alojamientos en Azilal",
+      "desc": "Eco-lodges y casas de huéspedes de montaña cerca de las cascadas de Ouzoud y valles verdes.",
+      "name": "Azilal"
+    },
+    "tinghir": {
+      "region": "Garganta de Todra",
+      "title": "Alojamientos en Tinghir",
+      "desc": "Posadas tradicionales junto al cañón y oasis de valle cerca de la espectacular garganta de Todra.",
+      "name": "Tinghir"
+    },
+    "oujda": {
+      "region": "Puerta del Este",
+      "title": "Alojamientos en Oujda y Saïdia",
+      "desc": "Resorts de playa todo incluido y hoteles de marina en la costa mediterránea.",
+      "name": "Oujda"
+    },
+    "asilah": {
+      "region": "Atlántico Norte",
+      "title": "Alojamientos en Asilah",
+      "desc": "Casas de huéspedes artísticas de paredes blancas dentro de tranquilas murallas oceánicas.",
+      "name": "Asilah"
+    },
+    "beni-mellal": {
+      "region": "Llanuras del Tadla",
+      "title": "Alojamientos en Beni Mellal",
+      "desc": "Hoteles relajantes cerca de kasbahs históricas y la famosa fuente Ain Asserdoun.",
+      "name": "Beni Mellal"
+    },
+    "kenitra": {
+      "region": "Gharb Atlántico",
+      "title": "Alojamientos en Kenitra",
+      "desc": "Estancias modernas y cómodas cerca del río Sebou y los spots de surf de Mehdia.",
+      "name": "Kenitra"
+    },
+    "mohammedia": {
+      "region": "Ciudad de las Flores",
+      "title": "Alojamientos en Mohammedia",
+      "desc": "Hoteles de playa tranquilas y apartamentos de marina cerca de Casablanca.",
+      "name": "Mohammedia"
+    },
+    "guelmim": {
+      "region": "Puerta del Desierto",
+      "title": "Alojamientos en Guelmim",
+      "desc": "Casas de huéspedes locales auténticas, puerta del Sáhara y mercados de camellos.",
+      "name": "Guelmim"
+    },
+    "errachidia": {
+      "region": "Valle del Ziz",
+      "title": "Alojamientos en Errachidia",
+      "desc": "Hoteles de oasis y posadas tradicionales con vistas a las majestuosas gargantas del valle del Ziz.",
+      "name": "Errachidia"
+    },
+    "midelt": {
+      "region": "Alto Atlas",
+      "title": "Alojamientos en Midelt",
+      "desc": "Lodges de montaña entre el Alto y el Medio Atlas, famosos por sus manzanas.",
+      "name": "Midelt"
+    },
+    "tiznit": {
+      "region": "Ciudad de la Plata",
+      "title": "Alojamientos en Tiznit",
+      "desc": "Casas de huéspedes tradicionales intramuros famosas por la plata y la artesanía bereber.",
+      "name": "Tiznit"
+    },
+    "tan-tan": {
+      "region": "Desierto Atlántico",
+      "title": "Alojamientos en Tan-Tan",
+      "desc": "Posadas del desierto costero y estancias tranquilas cerca de Tan-Tan Plage.",
+      "name": "Tan-Tan"
+    },
+    "berkane": {
+      "region": "Valle de los Cítricos",
+      "title": "Alojamientos en Berkane",
+      "desc": "Hoteles regionales con encanto rodeados de huertos de cítricos y senderos de montaña.",
+      "name": "Berkane"
+    },
+    "khemisset": {
+      "region": "Meseta de Zemmour",
+      "title": "Alojamientos en Khemisset",
+      "desc": "Lodges locales auténticos y paradas de tránsito en el corazón de la región Zemmour.",
+      "name": "Khemisset"
+    },
+    "settat": {
+      "region": "Llanuras de Chaouia",
+      "title": "Alojamientos en Settat",
+      "desc": "Hoteles cómodos en la carretera y casas de huéspedes del altiplano agrícola al sur de Casablanca.",
+      "name": "Settat"
+    },
+    "berrechid": {
+      "region": "Hub de Chaouia",
+      "title": "Alojamientos en Berrechid",
+      "desc": "Hoteles de negocios modernos y alojamiento conveniente cerca de los corredores del aeropuerto de Casablanca.",
+      "name": "Berrechid"
+    },
+    "larache": {
+      "region": "Estuario del Loukkos",
+      "title": "Alojamientos en Larache",
+      "desc": "Hoteles portuarios históricos de influencia española con vistas al Atlántico y las ruinas de Lixus.",
+      "name": "Larache"
+    },
+    "ksar-el-kebir": {
+      "region": "Llanura del Loukkos",
+      "title": "Alojamientos en Ksar El Kebir",
+      "desc": "Casas de huéspedes regionales tradicionales impregnadas del patrimonio histórico del norte.",
+      "name": "Ksar El Kebir"
+    },
+    "skoura": {
+      "region": "Oasis de Palmeras",
+      "title": "Alojamientos en Skoura",
+      "desc": "Kasbahs restauradas mágicas ocultas en las exuberantes palmeras de Skoura.",
+      "name": "Skoura"
+    }
   }
 }

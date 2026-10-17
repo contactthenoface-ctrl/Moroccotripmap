@@ -116,12 +116,65 @@
 </div>
 </div>
 
-<!-- Mobile Menu Drawer -->
+<!-- Mobile Menu Drawer (Complet avec toutes les options) -->
 <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
+    <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
+        <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="mobile_menu.language_title">Language / Langue</span>
+        <div class="flex gap-2">
+            <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('en')">EN</button>
+            <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('fr')">FR</button>
+            <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('es')">ES</button>
+            <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('ar')">AR</button>
+        </div>
+    </div>
+
     <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-    <a class="py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html" data-i18n="nav.destinations">Destinations</a>
-    <a class="py-2.5 px-3 rounded-xl hover:bg-white/60 text-vert font-bold transition" href="index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-    <a class="py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../contact.html" data-i18n="nav.contact">Contact</a>
+        <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
+            <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                <span data-i18n="nav.destinations">Destinations</span>
+            </div>
+            <span class="text-xs text-gray-400">→</span>
+        </a>
+        <div>
+            <button class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left" onclick="toggleMobileCategories()">
+                <div class="flex items-center gap-3">
+                    <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    <span data-i18n="nav.categories">Categories</span>
+                </div>
+                <svg class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" id="categories-arrow" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            </button>
+            <div class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm" id="mobile-categories-dropdown">
+                <a class="py-1.5 font-bold text-vert transition" data-i18n="nav.cat_stays" href="index.html">Stays & Riads</a>
+                <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html">Gastronomy</a>
+                <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_experiences" href="../experiences/index.html">Experiences</a>
+                <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_museums" href="../destinations.html">Monuments & Museums</a>
+                <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_transport" href="../transport/index.html">Transport & Rental</a>
+                <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_itineraries" href="../programmes/index.html">Itineraries</a>
+                <a class="py-1.5 hover:text-vert transition text-sombre/80" data-i18n="nav.cat_guides" href="../guides/index.html">Travel Guides</a>
+            </div>
+        </div>
+        <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../guides/histoire.html">
+            <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                <span data-i18n="nav.history">History of Morocco</span>
+            </div>
+            <span class="text-xs text-gray-400">→</span>
+        </a>
+        <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../blog/index.html">
+            <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                <span data-i18n="nav.blog">Blog</span>
+            </div>
+            <span class="text-xs text-gray-400">→</span>
+        </a>
+        <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../contact.html">
+            <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                <span data-i18n="nav.contact">Contact</span>
+            </div>
+            <span class="text-xs text-gray-400">→</span>
+        </a>
     </nav>
 </div>
 </header>
@@ -176,8 +229,8 @@
 <!-- 1. Marrakech -->
 <a href="https://www.booking.com/city/ma/marrakech.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="marrakech" data-region="imperial">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/20 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Marrakech</span>
             </div>
@@ -195,8 +248,8 @@
 <!-- 2. Chefchaouen -->
 <a href="https://www.booking.com/city/ma/chefchaouene.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="chefchaouen" data-region="north mountains">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/25 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Chefchaouen</span>
             </div>
@@ -214,8 +267,8 @@
 <!-- 3. Fes -->
 <a href="https://www.booking.com/city/ma/fes.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="fes" data-region="imperial">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/20 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Fes</span>
             </div>
@@ -233,8 +286,8 @@
 <!-- 4. Casablanca -->
 <a href="https://www.booking.com/city/ma/casablanca.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="casablanca" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/25 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Casablanca</span>
             </div>
@@ -252,8 +305,8 @@
 <!-- 5. Essaouira -->
 <a href="https://www.booking.com/city/ma/essaouira.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="essaouira" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Essaouira</span>
             </div>
@@ -271,8 +324,8 @@
 <!-- 6. Agadir -->
 <a href="https://www.booking.com/city/ma/agadir.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="agadir" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/20 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Agadir</span>
             </div>
@@ -290,8 +343,8 @@
 <!-- 7. Tangier -->
 <a href="https://www.booking.com/city/ma/tangier.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tangier" data-region="north atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Tangier</span>
             </div>
@@ -309,8 +362,8 @@
 <!-- 8. Ouarzazate -->
 <a href="https://www.booking.com/city/ma/ouarzazate.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ouarzazate" data-region="desert">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/25 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Ouarzazate</span>
             </div>
@@ -328,8 +381,8 @@
 <!-- 9. Rabat -->
 <a href="https://www.booking.com/city/ma/rabat.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="rabat" data-region="imperial atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/20 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Rabat</span>
             </div>
@@ -347,8 +400,8 @@
 <!-- 10. Meknes -->
 <a href="https://www.booking.com/city/ma/meknes.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="meknes" data-region="imperial">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Meknes</span>
             </div>
@@ -366,8 +419,8 @@
 <!-- 11. Tetouan -->
 <a href="https://www.booking.com/city/ma/tetouan.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tetouan" data-region="north">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/25 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Tetouan</span>
             </div>
@@ -385,8 +438,8 @@
 <!-- 12. Ifrane -->
 <a href="https://www.booking.com/city/ma/ifrane.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ifrane" data-region="mountains">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/20 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Ifrane</span>
             </div>
@@ -404,8 +457,8 @@
 <!-- 13. El Jadida -->
 <a href="https://www.booking.com/city/ma/el-jadida.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="el-jadida" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">El Jadida</span>
             </div>
@@ -423,8 +476,8 @@
 <!-- 14. Taroudant -->
 <a href="https://www.booking.com/city/ma/taroudant.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="taroudant" data-region="desert">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/25 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Taroudant</span>
             </div>
@@ -442,8 +495,8 @@
 <!-- 15. Dakhla -->
 <a href="https://www.booking.com/city/ma/dakhla.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="dakhla" data-region="desert atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/20 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Dakhla</span>
             </div>
@@ -461,8 +514,8 @@
 <!-- 16. Al Hoceima -->
 <a href="https://www.booking.com/city/ma/al-hoceima.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="al-hoceima" data-region="north">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Al Hoceima</span>
             </div>
@@ -480,8 +533,8 @@
 <!-- 17. Nador -->
 <a href="https://www.booking.com/city/ma/nador.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="nador" data-region="north">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/25 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Nador</span>
             </div>
@@ -499,8 +552,8 @@
 <!-- 18. Zagora -->
 <a href="https://www.booking.com/city/ma/zagora.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="zagora" data-region="desert">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/20 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Zagora</span>
             </div>
@@ -518,8 +571,8 @@
 <!-- 19. Safi -->
 <a href="https://www.booking.com/city/ma/safi.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="safi" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Safi</span>
             </div>
@@ -537,8 +590,8 @@
 <!-- 20. Laayoune -->
 <a href="https://www.booking.com/city/ma/laayoune.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="laayoune" data-region="desert atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/25 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Laayoune</span>
             </div>
@@ -556,8 +609,8 @@
 <!-- 21. Merzouga -->
 <a href="https://www.booking.com/city/ma/merzouga.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="merzouga" data-region="desert">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/20 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Merzouga</span>
             </div>
@@ -575,8 +628,8 @@
 <!-- 22. Azilal -->
 <a href="https://www.booking.com/city/ma/azilal.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="azilal" data-region="mountains">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Azilal</span>
             </div>
@@ -594,8 +647,8 @@
 <!-- 23. Tinghir -->
 <a href="https://www.booking.com/city/ma/tinghir.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tinghir" data-region="desert mountains">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/25 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Tinghir</span>
             </div>
@@ -613,8 +666,8 @@
 <!-- 24. Oujda -->
 <a href="https://www.booking.com/city/ma/oujda.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="oujda" data-region="north">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/20 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Oujda</span>
             </div>
@@ -632,8 +685,8 @@
 <!-- 25. Asilah -->
 <a href="https://www.booking.com/city/ma/asilah.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="asilah" data-region="north atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Asilah</span>
             </div>
@@ -651,8 +704,8 @@
 <!-- 26. Beni Mellal -->
 <a href="https://www.booking.com/city/ma/beni-mellal.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="beni-mellal" data-region="mountains">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/20 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Beni Mellal</span>
             </div>
@@ -670,8 +723,8 @@
 <!-- 27. Kenitra -->
 <a href="https://www.booking.com/city/ma/kenitra.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="kenitra" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Kenitra</span>
             </div>
@@ -689,8 +742,8 @@
 <!-- 28. Mohammedia -->
 <a href="https://www.booking.com/city/ma/mohammedia.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="mohammedia" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/25 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Mohammedia</span>
             </div>
@@ -708,8 +761,8 @@
 <!-- 29. Guelmim -->
 <a href="https://www.booking.com/city/ma/guelmim.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="guelmim" data-region="desert">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/20 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Guelmim</span>
             </div>
@@ -727,8 +780,8 @@
 <!-- 30. Errachidia -->
 <a href="https://www.booking.com/city/ma/errachidia.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="errachidia" data-region="desert">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Errachidia</span>
             </div>
@@ -746,8 +799,8 @@
 <!-- 31. Midelt -->
 <a href="https://www.booking.com/city/ma/midelt.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="midelt" data-region="mountains">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/25 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Midelt</span>
             </div>
@@ -765,8 +818,8 @@
 <!-- 32. Tiznit -->
 <a href="https://www.booking.com/city/ma/tiznit.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tiznit" data-region="desert atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Tiznit</span>
             </div>
@@ -784,8 +837,8 @@
 <!-- 33. Guelmim / Tan-Tan -->
 <a href="https://www.booking.com/city/ma/tan-tan.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tan-tan" data-region="desert atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/25 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Tan-Tan</span>
             </div>
@@ -803,8 +856,8 @@
 <!-- 34. Berkane -->
 <a href="https://www.booking.com/city/ma/berkane.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="berkane" data-region="north">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/20 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Berkane</span>
             </div>
@@ -822,8 +875,8 @@
 <!-- 35. Khemisset -->
 <a href="https://www.booking.com/city/ma/khemisset.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="khemisset" data-region="imperial">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Khemisset</span>
             </div>
@@ -841,8 +894,8 @@
 <!-- 36. Settat -->
 <a href="https://www.booking.com/city/ma/settat.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="settat" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/25 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Settat</span>
             </div>
@@ -860,8 +913,8 @@
 <!-- 37. Berrechid -->
 <a href="https://www.booking.com/city/ma/berrechid.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="berrechid" data-region="atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/20 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Berrechid</span>
             </div>
@@ -879,8 +932,8 @@
 <!-- 38. Larache -->
 <a href="https://www.booking.com/city/ma/larache.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="larache" data-region="north atlantic">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/15 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Larache</span>
             </div>
@@ -898,8 +951,8 @@
 <!-- 39. Ksar El Kebir -->
 <a href="https://www.booking.com/city/ma/ksar-el-kebir.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ksar-el-kebir" data-region="north">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/20 via-sable/25 to-vert/5">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Ksar El Kebir</span>
             </div>
@@ -917,8 +970,8 @@
 <!-- 40. Ouarzazate / Skoura -->
 <a href="https://www.booking.com/city/ma/skoura.html" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-white rounded-2xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="skoura" data-region="desert">
     <div>
-        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-vert/25 via-sable/20 to-vert/10">
-            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-sable/30 group-hover:border-vert transition">
+        <div class="w-full h-28 rounded-xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-vert">
+            <div class="relative z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border-2 border-sable group-hover:border-vert transition">
                 <svg class="w-5 h-5 text-vert shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span class="font-bold text-sombre text-base tracking-tight">Skoura</span>
             </div>
@@ -1047,8 +1100,19 @@
 </div>
 </footer>
 
-<!-- Script de recherche intuitive et de filtrage par région -->
+<!-- Script de recherche intuitive, de filtrage par région et du menu mobile -->
 <script>
+    function toggleMobileCategories() {
+        const dropdown = document.getElementById('mobile-categories-dropdown');
+        const arrow = document.getElementById('categories-arrow');
+        if (dropdown) {
+            dropdown.classList.toggle('hidden');
+            if (arrow) {
+                arrow.classList.toggle('rotate-180');
+            }
+        }
+    }
+
 document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.region-tab');
     const cards = document.querySelectorAll('#destinations-grid .city-card');
@@ -1195,5 +1259,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 </script>
-</body>
 </html>

@@ -23,18 +23,24 @@ const I18N_FLAG_SVGS = {
 };
 
 /* =========================================================
-   2. CHEMIN ABSOLU DES FICHIERS TRANSLATION
+   2. CHEMIN ABSOLU / RELATIF DYNAMIQUE DES FICHIERS TRANSLATION
    ========================================================= */
 
 const I18N_BASE_URL = (() => {
+    // Si une variable globale personnalisée est définie dans la page, on l'utilise en priorité
+    if (window.i18nBasePath) return window.i18nBasePath;
+
     const scripts = document.getElementsByTagName('script');
     for (let i = 0; i < scripts.length; i++) {
         const src = scripts[i].src;
         if (src && src.includes('i18n.js')) {
-            return src.replace(/i18n\.js(\?.*)?$/, '');
+            const basePath = src.replace(/i18n\.js(\?.*)?$/, '');
+            return basePath + 'translations/';
         }
     }
-    return '/js/';
+    // Fallback intelligent basé sur le pathname si on est dans un sous-dossier
+    const isSubfolder = window.location.pathname.includes('/riads/') || window.location.pathname.includes('/gastronomy/');
+    return isSubfolder ? '../js/translations/' : 'js/translations/';
 })();
 
 function getNestedTranslation(object, path) {
@@ -121,7 +127,6 @@ function syncLanguageSwitcherUI(lang) {
     if (langBtn) {
         const flagSvg = I18N_FLAG_SVGS[activeLang] || I18N_FLAG_SVGS[DEFAULT_LANG];
         
-        // Reconstruction propre du contenu du bouton
         langBtn.innerHTML = `
             ${flagSvg}
             <span id="current-lang-label">${activeLang.toUpperCase()}</span>
@@ -131,7 +136,8 @@ function syncLanguageSwitcherUI(lang) {
 }
 
 async function ensureLangData(lang, sections) {
-    const base = `${I18N_BASE_URL}translations/${lang}/`;
+    // I18N_BASE_URL pointe déjà vers .../translations/
+    const base = `${I18N_BASE_URL}${lang}/`;
     const dict = allTranslations[lang] || (allTranslations[lang] = {});
     const tasks = pendingTasks[lang] || (pendingTasks[lang] = {});
 
@@ -173,10 +179,8 @@ window.switchLanguage = window.changeLanguage = async function(lang) {
     currentLang = lang;
     localStorage.setItem('preferred_lang', lang);
 
-    // Update du bouton principal (drapeau + label)
     syncLanguageSwitcherUI(lang);
 
-    // Fermeture automatique du dropdown s'il existe
     const dropdown = document.getElementById('lang-menu-dropdown');
     if (dropdown) {
         dropdown.classList.add('hidden');
@@ -227,16 +231,11 @@ function initI18n() {
     const savedLang = localStorage.getItem('preferred_lang');
     const initialLang = SUPPORTED_LANGS.includes(savedLang) ? savedLang : DEFAULT_LANG;
 
-    // Charger la langue active
     window.switchLanguage(initialLang);
 
-    // Écoute globale pour intercepter :
-    // 1. Les clics sur les boutons [data-lang="..."] (comme sur destinations.html)
-    // 2. La fermeture automatique du menu dropdown si on clique ailleurs
     document.addEventListener('click', (e) => {
         const langOptionBtn = e.target.closest('[data-lang]');
         
-        // S'il s'agit d'une option du menu avec data-lang="fr|en|es|ar"
         if (langOptionBtn) {
             e.preventDefault();
             const targetLang = langOptionBtn.getAttribute('data-lang');
@@ -246,7 +245,6 @@ function initI18n() {
             return;
         }
 
-        // Fermer le menu si le clic a lieu à l'extérieur
         const langContainer = e.target.closest('#lang-menu-button, #lang-menu-dropdown');
         if (!langContainer) {
             const dropdown = document.getElementById('lang-menu-dropdown');

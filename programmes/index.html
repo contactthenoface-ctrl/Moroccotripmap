@@ -195,7 +195,7 @@
     <!-- Main Content -->
     <main class="flex-grow">
         <!-- Hero Section -->
-        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative">
+        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative z-30 overflow-visible">
             <div class="absolute inset-0 overflow-hidden pointer-events-none"><div class="absolute -right-20 -bottom-20 w-80 h-80 bg-sable/10 rounded-full blur-3xl"></div></div>
             <div class="max-w-7xl mx-auto relative">
                 <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
@@ -217,17 +217,17 @@
                         <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" data-i18n-placeholder="itineraries_page.search_placeholder" placeholder="Search route (e.g. Casablanca, Fes, Chefchaouen, Desert, 7 days)..." type="text"/>
                         <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </div>
-                    <div class="absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100" id="pageSearchResults"></div>
+                    <div class="absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-[100] text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100" id="pageSearchResults"></div>
                 </div>
             </div>
         </div>
 
         <!-- 6 REGIONS CARDS SELECTOR (100% SVG - NO EMOJIS) -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
                 
                 <!-- Region 1: Villes Impériales & Centre -->
-                <button class="region-tab-btn active bg-white border-2 border-vert rounded-2xl p-3.5 text-left shadow-md hover:shadow-lg transition flex flex-col justify-between" onclick="switchRegion('imperial')">
+                <button class="region-tab-btn active bg-white border-2 border-vert rounded-2xl p-3.5 text-left shadow-md hover:shadow-lg transition flex flex-col justify-between" onclick=\"switchRegion('imperial', this)\">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Imperial</span>
@@ -239,7 +239,7 @@
                 </button>
 
                 <!-- Region 2: Nord & Méditerranée -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('north')">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick=\"switchRegion('north', this)\">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">North</span>
@@ -251,7 +251,7 @@
                 </button>
 
                 <!-- Region 3: Sud & Désert du Sahara -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('south')">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick=\"switchRegion('south', this)\">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Sahara</span>
@@ -263,7 +263,7 @@
                 </button>
 
                 <!-- Region 4: Côte Atlantique & Souss -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('atlantic')">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick=\"switchRegion('atlantic', this)\">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Coast</span>
@@ -275,7 +275,7 @@
                 </button>
 
                 <!-- Region 5: Moyen & Haut Atlas -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('atlas')">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick=\"switchRegion('atlas', this)\">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Atlas</span>
@@ -287,7 +287,7 @@
                 </button>
 
                 <!-- Region 6: Oriental & Oasis du Sud -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('oriental')">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick=\"switchRegion('oriental', this)\">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Oasis</span>
@@ -306,13 +306,13 @@
             <div class="bg-white rounded-2xl p-3 border border-sable/20 shadow-sm flex flex-wrap items-center justify-between gap-3">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider pl-2 flex items-center gap-1.5">
                     <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                    Filter Duration:
+                    <span data-i18n="itineraries_page.filter_duration_label">Filter Duration:</span>
                 </span>
                 <div class="flex gap-2">
-                    <button class="duration-btn bg-vert text-white hover:bg-vert text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('all')" data-i18n="itineraries_page.duration_all">All Durations</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('5')" data-i18n="itineraries_page.duration_5">5 Days</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('7')" data-i18n="itineraries_page.duration_7">7 Days</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('10')" data-i18n="itineraries_page.duration_10">10 Days</button>
+                    <button class="duration-btn bg-vert text-white hover:bg-vert text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('all', this)" data-days="all" data-i18n="itineraries_page.duration_all">All Durations</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('5', this)" data-days="5" data-i18n="itineraries_page.duration_5">5 Days</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('7', this)" data-days="7" data-i18n="itineraries_page.duration_7">7 Days</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('10', this)" data-days="10" data-i18n="itineraries_page.duration_10">10 Days</button>
                 </div>
             </div>
         </section>
@@ -341,29 +341,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">5 Days / 4 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_5.identity.duration">5 Days / 4 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Casablanca ➔ Rabat ➔ Marrakech</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.imperial_5.identity.key_stops">Casablanca ➔ Rabat ➔ Marrakech</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Al Boraq High-Speed Train + Private City Driver</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_5.identity.ideal_transport">Al Boraq High-Speed Train + Private City Driver</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Short-stay Visitors, Business Travelers, Couples</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_5.identity.traveler_profile">Short-stay Visitors, Business Travelers, Couples</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range to High-end</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_5.identity.estimated_budget">Mid-range to High-end</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -373,31 +373,31 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Day 1</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Casablanca Modernity &amp; Hassan II Mosque</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Arrive at Mohammed V Airport. Guided tour of the Hassan II Mosque, built on a cliff over the Atlantic, followed by a walk through the Art Deco Habous Quarter and seafood dinner along the Corniche.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_5.days.0.label">Day 1</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_5.days.0.title">Casablanca Modernity &amp; Hassan II Mosque</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_5.days.0.text">Arrive at Mohammed V Airport. Guided tour of the Hassan II Mosque, built on a cliff over the Atlantic, followed by a walk through the Art Deco Habous Quarter and seafood dinner along the Corniche.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../destinations.html">
                                     <span>Discover Casablanca city guides and monuments</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Day 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Rabat Imperial Capital &amp; Udayas Kasbah</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Take the 45-minute high-speed Al Boraq train to Rabat. Visit the majestic Hassan Tower, the Royal Mausoleum of Mohammed V, and wander through the blue-and-white Kasbah of the Udayas overlooking the Bou Regreg river.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_5.days.1.label">Day 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_5.days.1.title">Rabat Imperial Capital &amp; Udayas Kasbah</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_5.days.1.text">Take the 45-minute high-speed Al Boraq train to Rabat. Visit the majestic Hassan Tower, the Royal Mausoleum of Mohammed V, and wander through the blue-and-white Kasbah of the Udayas overlooking the Bou Regreg river.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../transport/index.html">
                                     <span>Book high-speed Al Boraq train tickets</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 3 to 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Marrakech Medina Immersion &amp; Departure</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Transfer south to Marrakech. Settle into a traditional medina riad, explore Bahia Palace, Saadian Tombs, Majorelle Garden, and experience the lively atmosphere of Jemaa el-Fna at sunset.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_5.days.2.label">Days 3 to 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_5.days.2.title">Marrakech Medina Immersion &amp; Departure</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_5.days.2.text">Transfer south to Marrakech. Settle into a traditional medina riad, explore Bahia Palace, Saadian Tombs, Majorelle Garden, and experience the lively atmosphere of Jemaa el-Fna at sunset.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../marrakech.html">
                                     <span>Explore complete Marrakech riad and activity options</span>
                                     <span>→</span>
@@ -410,7 +410,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Travel early in the morning on the Al Boraq high-speed line between Casablanca and Rabat to avoid city rush hour traffic and maximize your afternoon sightseeing in Rabat's coastal kasbah.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.imperial_5.tip">Travel early in the morning on the Al Boraq high-speed line between Casablanca and Rabat to avoid city rush hour traffic and maximize your afternoon sightseeing in Rabat's coastal kasbah.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -433,29 +433,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">7 Days / 6 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_7.identity.duration">7 Days / 6 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Casablanca ➔ Rabat ➔ Meknes &amp; Volubilis ➔ Fes ➔ Marrakech</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.imperial_7.identity.key_stops">Casablanca ➔ Rabat ➔ Meknes &amp; Volubilis ➔ Fes ➔ Marrakech</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Rental Car or Private Chauffeur</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_7.identity.ideal_transport">Rental Car or Private Chauffeur</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Culture Lovers, History Buffs, Families</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_7.identity.traveler_profile">Culture Lovers, History Buffs, Families</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range to Luxury</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_7.identity.estimated_budget">Mid-range to Luxury</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -464,27 +464,27 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 &amp; 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Casablanca Modernity &amp; Rabat Royal Heritage</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Marvel at Hassan II Mosque in Casablanca, then drive to Rabat to tour Chellah Necropolis, Hassan Tower, and Kasbah of the Udayas before enjoying evening dinner by the marina.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_7.days.0.label">Days 1 &amp; 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_7.days.0.title">Casablanca Modernity &amp; Rabat Royal Heritage</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_7.days.0.text">Marvel at Hassan II Mosque in Casablanca, then drive to Rabat to tour Chellah Necropolis, Hassan Tower, and Kasbah of the Udayas before enjoying evening dinner by the marina.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 3 &amp; 4</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Roman Volubilis, Meknes &amp; Fes Medina</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Visit the UNESCO Roman mosaics of Volubilis and imperial Meknes gate Bab Mansour. Spend two full days exploring Chouara Tanneries and Al Quaraouiyine University in Fes.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_7.days.1.label">Days 3 &amp; 4</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_7.days.1.title">Roman Volubilis, Meknes &amp; Fes Medina</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_7.days.1.text">Visit the UNESCO Roman mosaics of Volubilis and imperial Meknes gate Bab Mansour. Spend two full days exploring Chouara Tanneries and Al Quaraouiyine University in Fes.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../destinations.html">
                                     <span>Discover our Fes and Meknes travel guide</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 5 to 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">High Atlas Scenic Drive to Marrakech</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Travel south to Marrakech for two days of artisan shopping in secret souks, historical palaces, and rooftop dining overlooking Jemaa el-Fna.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_7.days.2.label">Days 5 to 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_7.days.2.title">High Atlas Scenic Drive to Marrakech</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_7.days.2.text">Travel south to Marrakech for two days of artisan shopping in secret souks, historical palaces, and rooftop dining overlooking Jemaa el-Fna.</p>
                             </div>
                         </div>
                     </div>
@@ -493,7 +493,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Hire an official local guide in Fes for your first morning. Navigating the 9,000 car-free alleys of Fes el-Bali is far more enjoyable when led by a certified local storyteller.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.imperial_7.tip">Hire an official local guide in Fes for your first morning. Navigating the 9,000 car-free alleys of Fes el-Bali is far more enjoyable when led by a certified local storyteller.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -516,29 +516,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">10 Days / 9 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_10.identity.duration">10 Days / 9 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Casablanca ➔ Rabat ➔ Fes ➔ Ifrane ➔ Merzouga Desert ➔ Dades Gorges ➔ Marrakech</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.imperial_10.identity.key_stops">Casablanca ➔ Rabat ➔ Fes ➔ Ifrane ➔ Merzouga Desert ➔ Dades Gorges ➔ Marrakech</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">4x4 SUV or Private Minivan with Chauffeur</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_10.identity.ideal_transport">4x4 SUV or Private Minivan with Chauffeur</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">First-time Explorers, Couples, Photographers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_10.identity.traveler_profile">First-time Explorers, Couples, Photographers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range to Luxury</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.imperial_10.identity.estimated_budget">Mid-range to Luxury</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -547,27 +547,27 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 to 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Casablanca, Rabat &amp; Fes Medieval Heritage</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Start in Casablanca, visit Rabat's royal landmarks, and drive to Fes for an immersive day exploring artisans, potters, and ancient madrasas.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_10.days.0.label">Days 1 to 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_10.days.0.title">Casablanca, Rabat &amp; Fes Medieval Heritage</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_10.days.0.text">Start in Casablanca, visit Rabat's royal landmarks, and drive to Fes for an immersive day exploring artisans, potters, and ancient madrasas.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 &amp; 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Middle Atlas, Ziz Valley &amp; Sahara Bivouac</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive through alpine Ifrane and the vast Ziz Valley palm groves to Erg Chebbi in Merzouga. Ride camels into golden dunes at sunset and sleep under the stars in a luxury bivouac.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_10.days.1.label">Days 4 &amp; 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_10.days.1.title">Middle Atlas, Ziz Valley &amp; Sahara Bivouac</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_10.days.1.text">Drive through alpine Ifrane and the vast Ziz Valley palm groves to Erg Chebbi in Merzouga. Ride camels into golden dunes at sunset and sleep under the stars in a luxury bivouac.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../experiences/index.html">
                                     <span>Compare luxury Merzouga desert bivouacs</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 6 to 10</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Todra Gorges, Kasbah Aït Benhaddou &amp; Marrakech</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Travel along the Road of 1,000 Kasbahs, stop at UNESCO Kasbah Aït Benhaddou, cross the High Atlas via Tizi n'Tichka pass, and end with 3 vibrant days in Marrakech.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.imperial_10.days.2.label">Days 6 to 10</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.imperial_10.days.2.title">Todra Gorges, Kasbah Aït Benhaddou &amp; Marrakech</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.imperial_10.days.2.text">Travel along the Road of 1,000 Kasbahs, stop at UNESCO Kasbah Aït Benhaddou, cross the High Atlas via Tizi n'Tichka pass, and end with 3 vibrant days in Marrakech.</p>
                             </div>
                         </div>
                     </div>
@@ -576,7 +576,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Pack a warm windbreaker for Merzouga nights, even in spring and autumn, as Sahara desert temperatures drop sharply after dusk.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.imperial_10.tip">Pack a warm windbreaker for Merzouga nights, even in spring and autumn, as Sahara desert temperatures drop sharply after dusk.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -604,29 +604,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">5 Days / 4 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_5.identity.duration">5 Days / 4 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Tangier ➔ Cap Spartel ➔ Asilah ➔ Chefchaouen</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.north_5.identity.key_stops">Tangier ➔ Cap Spartel ➔ Asilah ➔ Chefchaouen</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Rental Car or Private Chauffeur</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_5.identity.ideal_transport">Rental Car or Private Chauffeur</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Photographers, Couples, Art &amp; Culture Seekers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_5.identity.traveler_profile">Photographers, Couples, Art &amp; Culture Seekers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Budget to Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_5.identity.estimated_budget">Budget to Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -635,22 +635,22 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 &amp; 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Tangier Kasbah &amp; Asilah Coastal Murals</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Explore Tangier Kasbah, Hercules Caves, and Cap Spartel where Atlantic waters meet the Mediterranean. Drive 45 minutes south to seaside Asilah to admire artistic murals painted on ocean-facing medina walls.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.north_5.days.0.label">Days 1 &amp; 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.north_5.days.0.title">Tangier Kasbah &amp; Asilah Coastal Murals</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.north_5.days.0.text">Explore Tangier Kasbah, Hercules Caves, and Cap Spartel where Atlantic waters meet the Mediterranean. Drive 45 minutes south to seaside Asilah to admire artistic murals painted on ocean-facing medina walls.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../destinations.html">
                                     <span>Read Tangier and Asilah destination guides</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 3 to 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Rif Mountain Scenic Drive &amp; Blue Chefchaouen</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive through the mountain winding roads of the Rif to Chefchaouen. Spend two peaceful days photographing blue alleyways, drinking fresh orange juice at Plaza Uta el-Hammam, and hiking to the Spanish Mosque for panoramic sunsets.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.north_5.days.1.label">Days 3 to 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.north_5.days.1.title">Rif Mountain Scenic Drive &amp; Blue Chefchaouen</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.north_5.days.1.text">Drive through the mountain winding roads of the Rif to Chefchaouen. Spend two peaceful days photographing blue alleyways, drinking fresh orange juice at Plaza Uta el-Hammam, and hiking to the Spanish Mosque for panoramic sunsets.</p>
                             </div>
                         </div>
                     </div>
@@ -659,7 +659,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Photograph Chefchaouen between 7:30 AM and 9:00 AM before day-trip tour buses arrive for completely empty blue street shots in optimal soft sunlight.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.north_5.tip">Photograph Chefchaouen between 7:30 AM and 9:00 AM before day-trip tour buses arrive for completely empty blue street shots in optimal soft sunlight.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -682,29 +682,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">7 Days / 6 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_7.identity.duration">7 Days / 6 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Tangier ➔ Chefchaouen ➔ Akchour Waterfalls ➔ Volubilis ➔ Fes</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.north_7.identity.key_stops">Tangier ➔ Chefchaouen ➔ Akchour Waterfalls ➔ Volubilis ➔ Fes</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Rental Car or Private Driver</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_7.identity.ideal_transport">Rental Car or Private Driver</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Hikers, Culture Enthusiasts, Photographers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_7.identity.traveler_profile">Hikers, Culture Enthusiasts, Photographers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_7.identity.estimated_budget">Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -713,23 +713,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 &amp; 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Tangier Port &amp; Mediterranean Boulevard</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Discover Tangier's Grand Socco, Petit Socco, Café Hafa overlooking Spain, and enjoy oceanfront seafood dining facing the Strait of Gibraltar.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.north_7.days.0.label">Days 1 &amp; 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.north_7.days.0.title">Tangier Port &amp; Mediterranean Boulevard</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.north_7.days.0.text">Discover Tangier's Grand Socco, Petit Socco, Café Hafa overlooking Spain, and enjoy oceanfront seafood dining facing the Strait of Gibraltar.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 3 &amp; 4</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Chefchaouen &amp; Akchour Waterfalls Trek</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Explore Chefchaouen and take a day hike through Talassemtane National Park to the natural rock arch (God's Bridge) and Akchour waterfalls.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.north_7.days.1.label">Days 3 &amp; 4</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.north_7.days.1.title">Chefchaouen &amp; Akchour Waterfalls Trek</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.north_7.days.1.text">Explore Chefchaouen and take a day hike through Talassemtane National Park to the natural rock arch (God's Bridge) and Akchour waterfalls.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 5 to 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Volubilis Roman Mosaics &amp; Fes Medina</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive south past Moulay Idriss Zerhoun to Volubilis ruins, concluding with two immersive days exploring tanneries and artisan workshops in Fes.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.north_7.days.2.label">Days 5 to 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.north_7.days.2.title">Volubilis Roman Mosaics &amp; Fes Medina</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.north_7.days.2.text">Drive south past Moulay Idriss Zerhoun to Volubilis ruins, concluding with two immersive days exploring tanneries and artisan workshops in Fes.</p>
                             </div>
                         </div>
                     </div>
@@ -738,7 +738,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Wear sturdy water-resistant hiking shoes for the Akchour trail, as you will cross small river beds on smooth rocks.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.north_7.tip">Wear sturdy water-resistant hiking shoes for the Akchour trail, as you will cross small river beds on smooth rocks.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -761,29 +761,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">10 Days / 9 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_10.identity.duration">10 Days / 9 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Tangier ➔ Tetouan ➔ Chefchaouen ➔ Al Hoceima ➔ Fes</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.north_10.identity.key_stops">Tangier ➔ Tetouan ➔ Chefchaouen ➔ Al Hoceima ➔ Fes</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Rental Car (Coastal Expressway N16)</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_10.identity.ideal_transport">Rental Car (Coastal Expressway N16)</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Beach Lovers, Nature Lovers, Road Trippers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_10.identity.traveler_profile">Beach Lovers, Nature Lovers, Road Trippers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.north_10.identity.estimated_budget">Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -792,23 +792,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 to 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Tangier &amp; UNESCO-listed Tetouan Medina</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Start in Tangier, then drive east to Tetouan to explore its pristine UNESCO Spanish-Moorish medina and Royal Palace square.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.north_10.days.0.label">Days 1 to 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.north_10.days.0.title">Tangier &amp; UNESCO-listed Tetouan Medina</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.north_10.days.0.text">Start in Tangier, then drive east to Tetouan to explore its pristine UNESCO Spanish-Moorish medina and Royal Palace square.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 to 6</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Rif Mountains, Chefchaouen &amp; Mediterranean Coast</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Spend two days in Chefchaouen before driving along the breathtaking Mediterranean bypass highway (N16) toward Al Hoceima National Park.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.north_10.days.1.label">Days 4 to 6</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.north_10.days.1.title">Rif Mountains, Chefchaouen &amp; Mediterranean Coast</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.north_10.days.1.text">Spend two days in Chefchaouen before driving along the breathtaking Mediterranean bypass highway (N16) toward Al Hoceima National Park.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 7 to 10</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Al Hoceima Beaches &amp; Fes Medina Return</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Relax on Quemado Beach in Al Hoceima before heading inland through the Southern Rif hills to conclude in Fes.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.north_10.days.2.label">Days 7 to 10</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.north_10.days.2.title">Al Hoceima Beaches &amp; Fes Medina Return</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.north_10.days.2.text">Relax on Quemado Beach in Al Hoceima before heading inland through the Southern Rif hills to conclude in Fes.</p>
                             </div>
                         </div>
                     </div>
@@ -836,29 +836,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">5 Days / 4 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_5.identity.duration">5 Days / 4 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Marrakech ➔ Tizi n'Tichka ➔ Ouarzazate ➔ Merzouga Desert ➔ Marrakech</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.south_5.identity.key_stops">Marrakech ➔ Tizi n'Tichka ➔ Ouarzazate ➔ Merzouga Desert ➔ Marrakech</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Private 4x4 Driver or Experienced Rental Driver</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_5.identity.ideal_transport">Private 4x4 Driver or Experienced Rental Driver</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Couples, Friends, Express Desert Seekers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_5.identity.traveler_profile">Couples, Friends, Express Desert Seekers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_5.identity.estimated_budget">Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -868,36 +868,36 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Day 1</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Marrakech Arrival &amp; Jemaa el-Fna Sunset</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Arrive in Marrakech, settle into a traditional medina riad, and spend the evening enjoying freshly grilled skewers and mint tea on a terrace overlooking Jemaa el-Fna square.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_5.days.0.label">Day 1</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_5.days.0.title">Marrakech Arrival &amp; Jemaa el-Fna Sunset</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_5.days.0.text">Arrive in Marrakech, settle into a traditional medina riad, and spend the evening enjoying freshly grilled skewers and mint tea on a terrace overlooking Jemaa el-Fna square.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../marrakech.html">
                                     <span>Explore our Marrakech riad and guide listings</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Day 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Crossing the High Atlas &amp; Kasbah Aït Benhaddou</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Depart Marrakech early across the winding Tizi n'Tichka pass (2,260m). Tour UNESCO-listed Kasbah Aït Benhaddou and continue past Ouarzazate to sleep in Dades Valley.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_5.days.1.label">Day 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_5.days.1.title">Crossing the High Atlas &amp; Kasbah Aït Benhaddou</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_5.days.1.text">Depart Marrakech early across the winding Tizi n'Tichka pass (2,260m). Tour UNESCO-listed Kasbah Aït Benhaddou and continue past Ouarzazate to sleep in Dades Valley.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Day 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Todra Gorges &amp; Erg Chebbi Desert Camp</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Walk beneath 300m vertical canyon walls in Todra Gorges. Arrive in Merzouga by late afternoon, ride camels into the golden dunes at sunset, and spend a night in a Berber luxury bivouac.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_5.days.2.label">Day 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_5.days.2.title">Todra Gorges &amp; Erg Chebbi Desert Camp</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_5.days.2.text">Walk beneath 300m vertical canyon walls in Todra Gorges. Arrive in Merzouga by late afternoon, ride camels into the golden dunes at sunset, and spend a night in a Berber luxury bivouac.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../experiences/index.html">
                                     <span>Discover verified desert camps in Merzouga</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 &amp; 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Draâ Valley Oasis Return to Marrakech</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Watch the sunrise over the dunes, drive back via Nkob and Agdz through the Draâ Valley palm grove, before returning across the High Atlas to Marrakech for departure.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_5.days.3.label">Days 4 &amp; 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_5.days.3.title">Draâ Valley Oasis Return to Marrakech</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_5.days.3.text">Watch the sunrise over the dunes, drive back via Nkob and Agdz through the Draâ Valley palm grove, before returning across the High Atlas to Marrakech for departure.</p>
                             </div>
                         </div>
                     </div>
@@ -906,7 +906,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Due to driving distances (~9 hours total between Marrakech and Merzouga), book a private driver so you can relax, take photos at mountain viewpoints, and avoid driver fatigue.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.south_5.tip">Due to driving distances (~9 hours total between Marrakech and Merzouga), book a private driver so you can relax, take photos at mountain viewpoints, and avoid driver fatigue.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -929,29 +929,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">7 Days / 6 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_7.identity.duration">7 Days / 6 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Marrakech ➔ Tichka Pass ➔ Ouarzazate ➔ Dades Gorges ➔ Merzouga ➔ Fes</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.south_7.identity.key_stops">Marrakech ➔ Tichka Pass ➔ Ouarzazate ➔ Dades Gorges ➔ Merzouga ➔ Fes</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">4x4 SUV with Chauffeur or Rental Car</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_7.identity.ideal_transport">4x4 SUV with Chauffeur or Rental Car</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">First-time Visitors, Couples, Families</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_7.identity.traveler_profile">First-time Visitors, Couples, Families</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range to Luxury</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_7.identity.estimated_budget">Mid-range to Luxury</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -960,23 +960,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 &amp; 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Marrakech Medina &amp; High Atlas Crossing</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Tour Marrakech, then drive over the 2,260m Tizi n'Tichka pass. Visit Kasbah Aït Benhaddou and Taourirt Kasbah in Ouarzazate, spending the night in Dades Valley.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_7.days.0.label">Days 1 &amp; 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_7.days.0.title">Marrakech Medina &amp; High Atlas Crossing</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_7.days.0.text">Tour Marrakech, then drive over the 2,260m Tizi n'Tichka pass. Visit Kasbah Aït Benhaddou and Taourirt Kasbah in Ouarzazate, spending the night in Dades Valley.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 3 &amp; 4</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Valley of Roses &amp; Merzouga Sunset Bivouac</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive past Rose Valley and Todra Gorges down to Erfoud and Merzouga. Ride camels into Erg Chebbi for sunset and spend an unforgettable evening in a luxury bivouac with Gnawa music around a campfire.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_7.days.1.label">Days 3 &amp; 4</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_7.days.1.title">Valley of Roses &amp; Merzouga Sunset Bivouac</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_7.days.1.text">Drive past Rose Valley and Todra Gorges down to Erfoud and Merzouga. Ride camels into Erg Chebbi for sunset and spend an unforgettable evening in a luxury bivouac with Gnawa music around a campfire.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 5 to 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Ziz Valley, Cedar Forest &amp; Fes Medina</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive north through the green Ziz Valley palm ribbon, cross the Middle Atlas past wild Barbary macaques in Azrou cedar forest, and finish with two days exploring medieval Fes.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_7.days.2.label">Days 5 to 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_7.days.2.title">Ziz Valley, Cedar Forest &amp; Fes Medina</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_7.days.2.text">Drive north through the green Ziz Valley palm ribbon, cross the Middle Atlas past wild Barbary macaques in Azrou cedar forest, and finish with two days exploring medieval Fes.</p>
                             </div>
                         </div>
                     </div>
@@ -985,7 +985,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Save carpet and leather handicraft shopping for Fes or the Berber cooperatives in the Dades Valley—prices are typically lower and quality superior compared to Marrakech tourist stalls.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.south_7.tip">Save carpet and leather handicraft shopping for Fes or the Berber cooperatives in the Dades Valley—prices are typically lower and quality superior compared to Marrakech tourist stalls.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -1008,29 +1008,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">10 Days / 9 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_10.identity.duration">10 Days / 9 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Marrakech ➔ Imlil ➔ Skoura Oasis ➔ Draâ Valley ➔ Zagora ➔ Erg Chigaga ➔ Taroudant</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.south_10.identity.key_stops">Marrakech ➔ Imlil ➔ Skoura Oasis ➔ Draâ Valley ➔ Zagora ➔ Erg Chigaga ➔ Taroudant</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">All-Terrain 4x4 Vehicle Mandatory</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_10.identity.ideal_transport">All-Terrain 4x4 Vehicle Mandatory</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Adventurers, Hikers, Photographers, Eco-Travelers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_10.identity.traveler_profile">Adventurers, Hikers, Photographers, Eco-Travelers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Budget to Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.south_10.identity.estimated_budget">Budget to Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1039,23 +1039,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 to 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">High Atlas Imlil Trek &amp; Berber Homestay</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Trek through Imlil Valley at the base of Mount Toubkal (4,167m) with a certified local guide. Share mint tea and traditional meals in stone villages with local Berber families.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_10.days.0.label">Days 1 to 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_10.days.0.title">High Atlas Imlil Trek &amp; Berber Homestay</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_10.days.0.text">Trek through Imlil Valley at the base of Mount Toubkal (4,167m) with a certified local guide. Share mint tea and traditional meals in stone villages with local Berber families.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 &amp; 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Skoura Oasis &amp; Draâ Valley Ribbon</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Explore Kasbah Amridil in the Skoura palm grove. Drive along the Draâ river past millions of date palms down to Zagora and M'Hamid El Ghizlane, the last oasis before pure desert.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_10.days.1.label">Days 4 &amp; 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_10.days.1.title">Skoura Oasis &amp; Draâ Valley Ribbon</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_10.days.1.text">Explore Kasbah Amridil in the Skoura palm grove. Drive along the Draâ river past millions of date palms down to Zagora and M'Hamid El Ghizlane, the last oasis before pure desert.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 6 to 10</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Erg Chigaga 4x4 Track, Saffron Country &amp; Taroudant</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive 3 hours off-road across hamada stone desert to wild Erg Chigaga dunes. Return west through Taliouine (Morocco's saffron capital) to walled Taroudant before returning to Marrakech or Agadir Airport.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.south_10.days.2.label">Days 6 to 10</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.south_10.days.2.title">Erg Chigaga 4x4 Track, Saffron Country &amp; Taroudant</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.south_10.days.2.text">Drive 3 hours off-road across hamada stone desert to wild Erg Chigaga dunes. Return west through Taliouine (Morocco's saffron capital) to walled Taroudant before returning to Marrakech or Agadir Airport.</p>
                             </div>
                         </div>
                     </div>
@@ -1064,7 +1064,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Unlike Merzouga, Erg Chigaga has no paved access roads. Always hire an experienced nomadic driver from M'Hamid who understands sand navigation and tire deflation techniques.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.south_10.tip">Unlike Merzouga, Erg Chigaga has no paved access roads. Always hire an experienced nomadic driver from M'Hamid who understands sand navigation and tire deflation techniques.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -1092,29 +1092,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">5 Days / 4 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_5.identity.duration">5 Days / 4 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Essaouira ➔ N1 Coastal Highway ➔ Imsouane ➔ Taghazout ➔ Agadir</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.atlantic_5.identity.key_stops">Essaouira ➔ N1 Coastal Highway ➔ Imsouane ➔ Taghazout ➔ Agadir</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Compact Rental Car or Private Transfers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_5.identity.ideal_transport">Compact Rental Car or Private Transfers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Surfers, Solo Travelers, Couples, Wellness Seekers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_5.identity.traveler_profile">Surfers, Solo Travelers, Couples, Wellness Seekers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Flexible (Hostels to Luxury Beach Resorts)</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_5.identity.estimated_budget">Flexible (Hostels to Luxury Beach Resorts)</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1123,27 +1123,27 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 &amp; 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Essaouira Medina &amp; Grilled Seafood Harbor</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Walk along the Skala de la Ville ramparts, watch wooden trawlers return to the blue harbor, taste grilled sardines at port stalls, and listen to Gnaoua rhythms in the medina alleys.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_5.days.0.label">Days 1 &amp; 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_5.days.0.title">Essaouira Medina &amp; Grilled Seafood Harbor</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_5.days.0.text">Walk along the Skala de la Ville ramparts, watch wooden trawlers return to the blue harbor, taste grilled sardines at port stalls, and listen to Gnaoua rhythms in the medina alleys.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../gastronomy/index.html">
                                     <span>Discover top seafood restaurants in Essaouira</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Day 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Argan Forest Scenic Drive &amp; Imsouane Magic Bay</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive the coastal N1 road winding through argan tree forests with stops at certified women's cooperatives. Pause in Imsouane to surf Africa's longest wave in Magic Bay.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_5.days.1.label">Day 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_5.days.1.title">Argan Forest Scenic Drive &amp; Imsouane Magic Bay</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_5.days.1.text">Drive the coastal N1 road winding through argan tree forests with stops at certified women's cooperatives. Pause in Imsouane to surf Africa's longest wave in Magic Bay.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 &amp; 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Taghazout Yoga, Surf Culture &amp; Agadir Return</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Unwind in Taghazout with sunrise yoga on oceanfront rooftops, surfing Anchor Point, and enjoying healthy dinners at bohemian beach cafes before departure from Agadir Airport.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_5.days.2.label">Days 4 &amp; 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_5.days.2.title">Taghazout Yoga, Surf Culture &amp; Agadir Return</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_5.days.2.text">Unwind in Taghazout with sunrise yoga on oceanfront rooftops, surfing Anchor Point, and enjoying healthy dinners at bohemian beach cafes before departure from Agadir Airport.</p>
                             </div>
                         </div>
                     </div>
@@ -1152,7 +1152,7 @@
                         <div class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                             <p class="text-xs sm:text-sm text-sombre/90 leading-relaxed">
-                                <strong class="text-vert font-bold">Local Expert Tip:</strong> Purchase authentic culinary argan oil (roasted hazelnut flavor) or cosmetic oil directly from certified women-run cooperatives along the coastal N1 road between Essaouira and Agadir.
+                                <strong class="text-vert font-bold"><span data-i18n="itineraries_page.expert_tip_label">Local Expert Tip:</span></strong> <span data-i18n="itineraries_page.circuits.atlantic_5.tip">Purchase authentic culinary argan oil (roasted hazelnut flavor) or cosmetic oil directly from certified women-run cooperatives along the coastal N1 road between Essaouira and Agadir.</span>
                             </p>
                         </div>
                     </blockquote>
@@ -1175,29 +1175,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">7 Days / 6 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_7.identity.duration">7 Days / 6 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Marrakech ➔ Essaouira ➔ Taghazout ➔ Paradise Valley ➔ Agadir</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.atlantic_7.identity.key_stops">Marrakech ➔ Essaouira ➔ Taghazout ➔ Paradise Valley ➔ Agadir</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Rental Car or Supratours Bus + Private Driver</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_7.identity.ideal_transport">Rental Car or Supratours Bus + Private Driver</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Couples, Friends, Variety Seekers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_7.identity.traveler_profile">Couples, Friends, Variety Seekers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_7.identity.estimated_budget">Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1206,23 +1206,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 to 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Marrakech Medina, Palaces &amp; Hammam</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Immerse yourself in Marrakech, tour the Secret Garden and Bahia Palace, shop in spice souks, and enjoy a traditional Moroccan spa hammam.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_7.days.0.label">Days 1 to 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_7.days.0.title">Marrakech Medina, Palaces &amp; Hammam</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_7.days.0.text">Immerse yourself in Marrakech, tour the Secret Garden and Bahia Palace, shop in spice souks, and enjoy a traditional Moroccan spa hammam.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 &amp; 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Coastal Essaouira Ramparts &amp; Art Galleries</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive 2.5 hours west through argan fields to Essaouira. Walk along Skala de la Ville, explore thuya wood art galleries, and enjoy fresh seafood.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_7.days.1.label">Days 4 &amp; 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_7.days.1.title">Coastal Essaouira Ramparts &amp; Art Galleries</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_7.days.1.text">Drive 2.5 hours west through argan fields to Essaouira. Walk along Skala de la Ville, explore thuya wood art galleries, and enjoy fresh seafood.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 6 &amp; 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Taghazout Beach &amp; Paradise Valley Oasis</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Head south to Taghazout. Take a half-day hike to Paradise Valley's natural limestone swimming pools before departing from Agadir Al Massira Airport.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_7.days.2.label">Days 6 &amp; 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_7.days.2.title">Taghazout Beach &amp; Paradise Valley Oasis</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_7.days.2.text">Head south to Taghazout. Take a half-day hike to Paradise Valley's natural limestone swimming pools before departing from Agadir Al Massira Airport.</p>
                             </div>
                         </div>
                     </div>
@@ -1245,29 +1245,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">10 Days / 9 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_10.identity.duration">10 Days / 9 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Essaouira ➔ Taghazout ➔ Tiznit ➔ Mirleft ➔ Legzira Beach ➔ Sidi Ifni ➔ Taroudant</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.atlantic_10.identity.key_stops">Essaouira ➔ Taghazout ➔ Tiznit ➔ Mirleft ➔ Legzira Beach ➔ Sidi Ifni ➔ Taroudant</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Rental Car</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_10.identity.ideal_transport">Rental Car</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Off-beat Road Trippers, Photographers, Surfers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_10.identity.traveler_profile">Off-beat Road Trippers, Photographers, Surfers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Budget to Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlantic_10.identity.estimated_budget">Budget to Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1276,23 +1276,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 to 4</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Essaouira, Taghazout &amp; Agadir Promenade</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Relax in Essaouira and Taghazout before driving south through Agadir's modern beachfront boulevard.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_10.days.0.label">Days 1 to 4</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_10.days.0.title">Essaouira, Taghazout &amp; Agadir Promenade</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_10.days.0.text">Relax in Essaouira and Taghazout before driving south through Agadir's modern beachfront boulevard.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 5 to 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Tiznit Silver Medina &amp; Mirleft Cliff Beaches</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Visit Tiznit's ancient artisan silver souks, then settle in cliffside Mirleft village. Spend two days exploring secluded beaches like Aftas and Plage Sauvage.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_10.days.1.label">Days 5 to 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_10.days.1.title">Tiznit Silver Medina &amp; Mirleft Cliff Beaches</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_10.days.1.text">Visit Tiznit's ancient artisan silver souks, then settle in cliffside Mirleft village. Spend two days exploring secluded beaches like Aftas and Plage Sauvage.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 8 to 10</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Legzira Ochre Arches, Spanish Art Deco Sidi Ifni &amp; Return</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Walk under the giant red sandstone arch of Legzira Beach at low tide. Tour Art Deco buildings in Sidi Ifni before heading back via Taroudant ramparts to Agadir Airport.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlantic_10.days.2.label">Days 8 to 10</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlantic_10.days.2.title">Legzira Ochre Arches, Spanish Art Deco Sidi Ifni &amp; Return</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlantic_10.days.2.text">Walk under the giant red sandstone arch of Legzira Beach at low tide. Tour Art Deco buildings in Sidi Ifni before heading back via Taroudant ramparts to Agadir Airport.</p>
                             </div>
                         </div>
                     </div>
@@ -1319,29 +1319,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">5 Days / 4 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_5.identity.duration">5 Days / 4 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Marrakech ➔ Ourika Valley ➔ Imlil (Toubkal) ➔ Ouzoud Waterfalls</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.atlas_5.identity.key_stops">Marrakech ➔ Ourika Valley ➔ Imlil (Toubkal) ➔ Ouzoud Waterfalls</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Rental Car or Day Excursion Transfers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_5.identity.ideal_transport">Rental Car or Day Excursion Transfers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Hikers, Nature Lovers, Families</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_5.identity.traveler_profile">Hikers, Nature Lovers, Families</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Budget to Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_5.identity.estimated_budget">Budget to Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1350,27 +1350,27 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Day 1</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Marrakech Arrival &amp; Medina Orientation</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Arrive in Marrakech, check into a charming riad, and prepare your trekking day gear while dining on a rooftop overlooking Koutoubia Mosque.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_5.days.0.label">Day 1</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_5.days.0.title">Marrakech Arrival &amp; Medina Orientation</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_5.days.0.text">Arrive in Marrakech, check into a charming riad, and prepare your trekking day gear while dining on a rooftop overlooking Koutoubia Mosque.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 2 &amp; 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Ourika River &amp; Imlil Valley Berber Trekking</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive into the High Atlas. Walk alongside Ourika River, then travel to Imlil village (1,740m) for a guided day hike through walnut orchards and terraced fields clinging to Mount Toubkal.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_5.days.1.label">Days 2 &amp; 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_5.days.1.title">Ourika River &amp; Imlil Valley Berber Trekking</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_5.days.1.text">Drive into the High Atlas. Walk alongside Ourika River, then travel to Imlil village (1,740m) for a guided day hike through walnut orchards and terraced fields clinging to Mount Toubkal.</p>
                                 <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition mt-2" href="../experiences/index.html">
                                     <span>Book certified High Atlas mountain guides</span>
                                     <span>→</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 &amp; 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Ouzoud Waterfalls &amp; Departure</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Take a day trip to Ouzoud Waterfalls. Hike down to the rainbow-framed plunge pools, spot wild Barbary macaques, and take a traditional wooden boat ride before returning to Marrakech.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_5.days.2.label">Days 4 &amp; 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_5.days.2.title">Ouzoud Waterfalls &amp; Departure</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_5.days.2.text">Take a day trip to Ouzoud Waterfalls. Hike down to the rainbow-framed plunge pools, spot wild Barbary macaques, and take a traditional wooden boat ride before returning to Marrakech.</p>
                             </div>
                         </div>
                     </div>
@@ -1393,29 +1393,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">7 Days / 6 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_7.identity.duration">7 Days / 6 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Fes ➔ Ifrane ➔ Azrou Cedar Forest ➔ Lake Bin El Ouidane ➔ Ouzoud ➔ Imlil ➔ Marrakech</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.atlas_7.identity.key_stops">Fes ➔ Ifrane ➔ Azrou Cedar Forest ➔ Lake Bin El Ouidane ➔ Ouzoud ➔ Imlil ➔ Marrakech</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">4x4 SUV or Experienced Mountain Driver</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_7.identity.ideal_transport">4x4 SUV or Experienced Mountain Driver</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Trekkers, Photographers, Eco-tourists</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_7.identity.traveler_profile">Trekkers, Photographers, Eco-tourists</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_7.identity.estimated_budget">Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1424,23 +1424,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 &amp; 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Fes, Alpine Ifrane &amp; Cedar Forest Macaques</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Depart Fes past European-style Ifrane architecture to Azrou's ancient cedar forest. Observe Barbary macaques in Cèdre Gouraud and sleep in a chalet-style lodge.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_7.days.0.label">Days 1 &amp; 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_7.days.0.title">Fes, Alpine Ifrane &amp; Cedar Forest Macaques</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_7.days.0.text">Depart Fes past European-style Ifrane architecture to Azrou's ancient cedar forest. Observe Barbary macaques in Cèdre Gouraud and sleep in a chalet-style lodge.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 3 &amp; 4</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Turquoise Lake Bin El Ouidane &amp; Ouzoud Falls</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive scenic mountain passes to Lake Bin El Ouidane for kayaking and swimming. Continue west to admire Ouzoud Waterfalls at sunset.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_7.days.1.label">Days 3 &amp; 4</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_7.days.1.title">Turquoise Lake Bin El Ouidane &amp; Ouzoud Falls</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_7.days.1.text">Drive scenic mountain passes to Lake Bin El Ouidane for kayaking and swimming. Continue west to admire Ouzoud Waterfalls at sunset.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 5 to 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Imlil Valley Toubkal Hike &amp; Marrakech</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Reach Imlil in the High Atlas for two days of ridge hiking and Berber hospitality before descending to Marrakech.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_7.days.2.label">Days 5 to 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_7.days.2.title">Imlil Valley Toubkal Hike &amp; Marrakech</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_7.days.2.text">Reach Imlil in the High Atlas for two days of ridge hiking and Berber hospitality before descending to Marrakech.</p>
                             </div>
                         </div>
                     </div>
@@ -1463,29 +1463,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">10 Days / 9 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_10.identity.duration">10 Days / 9 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Marrakech ➔ Imlil ➔ Toubkal Refuge (3,207m) ➔ Toubkal Summit (4,167m) ➔ Tizi n'Tichka ➔ Jbel Saghro ➔ Dades Gorges</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.atlas_10.identity.key_stops">Marrakech ➔ Imlil ➔ Toubkal Refuge (3,207m) ➔ Toubkal Summit (4,167m) ➔ Tizi n'Tichka ➔ Jbel Saghro ➔ Dades Gorges</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Certified Mountain Guide + Muleteers + 4x4 Support</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_10.identity.ideal_transport">Certified Mountain Guide + Muleteers + 4x4 Support</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Experienced Hikers, Mountaineers, Outdoor Enthusiasts</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_10.identity.traveler_profile">Experienced Hikers, Mountaineers, Outdoor Enthusiasts</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.atlas_10.identity.estimated_budget">Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1494,23 +1494,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 to 4</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Mount Toubkal Ascent (4,167m)</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Trek from Imlil up to Neltner Refuge (3,207m). Rise at 4:00 AM for the summit push to reach Mount Toubkal for sunrise over the entire High Atlas before descending back to Imlil.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_10.days.0.label">Days 1 to 4</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_10.days.0.title">Mount Toubkal Ascent (4,167m)</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_10.days.0.text">Trek from Imlil up to Neltner Refuge (3,207m). Rise at 4:00 AM for the summit push to reach Mount Toubkal for sunrise over the entire High Atlas before descending back to Imlil.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 5 to 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Crossing the High Atlas to Jbel Saghro Nomadic Trails</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive across Tizi n'Tichka pass to the volcanic Jbel Saghro massifs. Hike past Babel Rock towers and meet Aït Atta nomadic families moving herds across high passes.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_10.days.1.label">Days 5 to 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_10.days.1.title">Crossing the High Atlas to Jbel Saghro Nomadic Trails</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_10.days.1.text">Drive across Tizi n'Tichka pass to the volcanic Jbel Saghro massifs. Hike past Babel Rock towers and meet Aït Atta nomadic families moving herds across high passes.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 8 to 10</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Dades Canyon Hikes &amp; Marrakech Return</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Hike through the "Monkey Fingers" rock formations in Dades Valley before a relaxed return drive to Marrakech for a well-deserved hammam recovery massage.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.atlas_10.days.2.label">Days 8 to 10</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.atlas_10.days.2.title">Dades Canyon Hikes &amp; Marrakech Return</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.atlas_10.days.2.text">Hike through the "Monkey Fingers" rock formations in Dades Valley before a relaxed return drive to Marrakech for a well-deserved hammam recovery massage.</p>
                             </div>
                         </div>
                     </div>
@@ -1538,29 +1538,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">5 Days / 4 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_5.identity.duration">5 Days / 4 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Errachidia Airport ➔ Ziz Gorges ➔ Erfoud Fossil Souks ➔ Merzouga Desert ➔ Rissani Market</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.oriental_5.identity.key_stops">Errachidia Airport ➔ Ziz Gorges ➔ Erfoud Fossil Souks ➔ Merzouga Desert ➔ Rissani Market</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Domestic Flight to Errachidia + Local 4x4 Driver</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_5.identity.ideal_transport">Domestic Flight to Errachidia + Local 4x4 Driver</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Express Travelers, Families, Photography Enthusiasts</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_5.identity.traveler_profile">Express Travelers, Families, Photography Enthusiasts</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range to Luxury</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_5.identity.estimated_budget">Mid-range to Luxury</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1569,18 +1569,18 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 &amp; 2</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Errachidia Arrival &amp; Ziz Valley Oases</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Arrive at Errachidia airport. Drive through the breathtaking Ziz Gorges viewpoint down to Erfoud to visit fossil workshops and taste fresh date varieties.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.oriental_5.days.0.label">Days 1 &amp; 2</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.oriental_5.days.0.title">Errachidia Arrival &amp; Ziz Valley Oases</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.oriental_5.days.0.text">Arrive at Errachidia airport. Drive through the breathtaking Ziz Gorges viewpoint down to Erfoud to visit fossil workshops and taste fresh date varieties.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 3 to 5</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Merzouga Desert Bivouac &amp; Rissani Date Market</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Ride camels into Erg Chebbi dunes for sunset and stay in a luxury desert bivouac. Visit the traditional donkey parking and spice souk in historic Rissani before catching your flight home from Errachidia.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.oriental_5.days.1.label">Days 3 to 5</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.oriental_5.days.1.title">Merzouga Desert Bivouac &amp; Rissani Date Market</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.oriental_5.days.1.text">Ride camels into Erg Chebbi dunes for sunset and stay in a luxury desert bivouac. Visit the traditional donkey parking and spice souk in historic Rissani before catching your flight home from Errachidia.</p>
                             </div>
                         </div>
                     </div>
@@ -1603,29 +1603,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">7 Days / 6 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_7.identity.duration">7 Days / 6 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Oujda ➔ Berkane ➔ Zegzel Gorges ➔ Saïdia Beach Resort ➔ Tafoughalt Caves</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.oriental_7.identity.key_stops">Oujda ➔ Berkane ➔ Zegzel Gorges ➔ Saïdia Beach Resort ➔ Tafoughalt Caves</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">Rental Car (Angad Oujda Airport Arrival)</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_7.identity.ideal_transport">Rental Car (Angad Oujda Airport Arrival)</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Beach Lovers, Culture Enthusiasts, Off-the-beaten-track Seekers</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_7.identity.traveler_profile">Beach Lovers, Culture Enthusiasts, Off-the-beaten-track Seekers</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_7.identity.estimated_budget">Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1634,18 +1634,18 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 to 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Oujda Medina &amp; Lalla Aicha Park</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Explore Bab Abdelwahab in Oujda, sample traditional Reggada music culture, and stroll through the shaded gardens of Lalla Aicha Park.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.oriental_7.days.0.label">Days 1 to 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.oriental_7.days.0.title">Oujda Medina &amp; Lalla Aicha Park</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.oriental_7.days.0.text">Explore Bab Abdelwahab in Oujda, sample traditional Reggada music culture, and stroll through the shaded gardens of Lalla Aicha Park.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 to 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Berkane Citrus Valley, Camel Cave &amp; Saïdia Riviera</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive past clementine orchards in Berkane to the prehistoric Grotte des Chameaux in Tafoughalt. Spend three relaxing days on the 14km golden sand beach of Saïdia resort.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.oriental_7.days.1.label">Days 4 to 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.oriental_7.days.1.title">Berkane Citrus Valley, Camel Cave &amp; Saïdia Riviera</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.oriental_7.days.1.text">Drive past clementine orchards in Berkane to the prehistoric Grotte des Chameaux in Tafoughalt. Spend three relaxing days on the 14km golden sand beach of Saïdia resort.</p>
                             </div>
                         </div>
                     </div>
@@ -1668,29 +1668,29 @@
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
                                     <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
-                                    <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
+                                    <th class="p-3.5 border-b border-sable/20" data-i18n="itineraries_page.detail_header">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-sable/10 text-sombre/90">
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Duration</td>
-                                    <td class="p-3.5">10 Days / 9 Nights</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_duration">Duration</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_10.identity.duration">10 Days / 9 Nights</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Key Stops</td>
-                                    <td class="p-3.5 font-medium">Oujda ➔ Bouarfa ➔ Figuig Oasis ➔ Ksar Zenaga ➔ Erfoud ➔ Errachidia</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_key_stops">Key Stops</td>
+                                    <td class="p-3.5 font-medium" data-i18n="itineraries_page.circuits.oriental_10.identity.key_stops">Oujda ➔ Bouarfa ➔ Figuig Oasis ➔ Ksar Zenaga ➔ Erfoud ➔ Errachidia</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Ideal Transport</td>
-                                    <td class="p-3.5">4x4 SUV or Long-distance Rental Car</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_transport">Ideal Transport</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_10.identity.ideal_transport">4x4 SUV or Long-distance Rental Car</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Traveler Profile</td>
-                                    <td class="p-3.5">Authenticity Seekers, Anthropologists, Heritage Enthusiasts</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_profile">Traveler Profile</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_10.identity.traveler_profile">Authenticity Seekers, Anthropologists, Heritage Enthusiasts</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3.5 font-bold text-vert bg-sable/5">Estimated Budget</td>
-                                    <td class="p-3.5">Budget to Mid-range</td>
+                                    <td class="p-3.5 font-bold text-vert bg-sable/5" data-i18n="itineraries_page.label_budget">Estimated Budget</td>
+                                    <td class="p-3.5" data-i18n="itineraries_page.circuits.oriental_10.identity.estimated_budget">Budget to Mid-range</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1699,23 +1699,23 @@
                     <div class="mt-8">
                         <h3 class="text-lg font-bold text-vert mb-6 flex items-center gap-2">
                             <svg class="w-5 h-5 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Stage Timeline &amp; Key Details
+                            <span data-i18n="itineraries_page.timeline_title">Stage Timeline &amp; Key Details</span>
                         </h3>
                         <div class="relative border-l-2 border-sable/30 ml-3 pl-6 sm:pl-8 space-y-6">
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 1 to 3</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Oujda &amp; High Steppe Plateau Drive</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Start in Oujda and drive south across the wide-open high alfa-grass plains past Bouarfa toward the desert border region.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.oriental_10.days.0.label">Days 1 to 3</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.oriental_10.days.0.title">Oujda &amp; High Steppe Plateau Drive</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.oriental_10.days.0.text">Start in Oujda and drive south across the wide-open high alfa-grass plains past Bouarfa toward the desert border region.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 4 to 7</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Figuig Oasis, Ksar Zenaga &amp; Date Palm Gardens</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Spend three peaceful days exploring Figuig's 200,000 date palms, 7 historic fortified Ksour (like Ksar Zenaga), and century-old underground water channels.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.oriental_10.days.1.label">Days 4 to 7</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.oriental_10.days.1.title">Figuig Oasis, Ksar Zenaga &amp; Date Palm Gardens</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.oriental_10.days.1.text">Spend three peaceful days exploring Figuig's 200,000 date palms, 7 historic fortified Ksour (like Ksar Zenaga), and century-old underground water channels.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider">Days 8 to 10</span>
-                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5">Ziz Valley Return via Errachidia</h4>
-                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed">Drive west along desert roads past Erfoud and the Ziz Valley before flying out from Errachidia Moulay Ali Cherif Airport.</p>
+                                <span class="text-xs font-extrabold text-sable uppercase tracking-wider" data-i18n="itineraries_page.circuits.oriental_10.days.2.label">Days 8 to 10</span>
+                                <h4 class="font-bold text-sombre text-sm sm:text-base mt-0.5" data-i18n="itineraries_page.circuits.oriental_10.days.2.title">Ziz Valley Return via Errachidia</h4>
+                                <p class="text-xs sm:text-sm text-sombre/70 mt-1 leading-relaxed" data-i18n="itineraries_page.circuits.oriental_10.days.2.text">Drive west along desert roads past Erfoud and the Ziz Valley before flying out from Errachidia Moulay Ali Cherif Airport.</p>
                             </div>
                         </div>
                     </div>
@@ -1729,17 +1729,17 @@
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="max-w-xl text-left z-10">
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider">Book With Total Confidence</span>
-                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-1 leading-tight">Chauffeurs, 4x4 Rentals &amp; Guided Tours</h3>
-                    <p class="text-creme/80 mt-2 text-sm leading-relaxed">Reserve verified driver-guides, 4x4 desert rentals, and excursion passes across all 6 Moroccan regions through our trusted GetYourGuide &amp; Rentalcars partners.</p>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="itineraries_page.banner.badge">Book With Total Confidence</span>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-1 leading-tight" data-i18n="itineraries_page.banner.title">Chauffeurs, 4x4 Rentals &amp; Guided Tours</h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="itineraries_page.banner.desc">Reserve verified driver-guides, 4x4 desert rentals, and excursion passes across all 6 Moroccan regions through our trusted GetYourGuide &amp; Rentalcars partners.</p>
                 </div>
 
                 <div class="w-full md:w-auto shrink-0 z-10 text-center">
                     <a class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-8 py-4 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5" href="https://www.getyourguide.com/s/?q=Morocco+tours" rel="noopener sponsored" target="_blank">
-                       <span>Explore Bookable Excursions</span>
+                       <span data-i18n="itineraries_page.banner.btn">Explore Bookable Excursions</span>
                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                     </a>
-                    <p class="text-[11px] text-creme/60 mt-2">✓ Free cancellation &amp; 24/7 customer support</p>
+                    <p class="text-[11px] text-creme/60 mt-2"><span data-i18n="itineraries_page.banner.guarantee">✓ Free cancellation &amp; 24/7 customer support</span></p>
                 </div>
                 <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
             </div>
@@ -1760,8 +1760,8 @@
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Driving Guide</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2">Renting &amp; Driving a Car in Morocco: Expert Advice</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-3">Navigating mountain passes, understanding police checkpoints, toll highways, and choosing between 4x4 or compact cars.</p>
+                        <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2"><span data-i18n="itineraries_page.blog_section.a1_title">Renting &amp; Driving a Car in Morocco: Expert Advice</span></h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-3"><span data-i18n="itineraries_page.blog_section.a1_desc">Navigating mountain passes, understanding police checkpoints, toll highways, and choosing between 4x4 or compact cars.</span></p>
                         <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200"><span data-i18n="itineraries_page.blog_section.read">Read Article →</span></span>
                     </div>
                 </a>
@@ -1773,8 +1773,8 @@
                         <span class="absolute top-3 left-3 bg-sable text-sombre text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Packing List</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2">Morocco Packing Essentials: Medinas to Sahara</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-3">Respectful clothing rules, desert night temperature drops, and gear required for High Atlas trekking.</p>
+                        <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2"><span data-i18n="itineraries_page.blog_section.a2_title">Morocco Packing Essentials: Medinas to Sahara</span></h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-3"><span data-i18n="itineraries_page.blog_section.a2_desc">Respectful clothing rules, desert night temperature drops, and gear required for High Atlas trekking.</span></p>
                         <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200"><span data-i18n="itineraries_page.blog_section.read">Read Article →</span></span>
                     </div>
                 </a>
@@ -1786,8 +1786,8 @@
                         <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Budget Planning</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2">Morocco Travel Budget: Daily Cost Breakdown</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-3">Realistic expenses for meals, riad stays, chauffeurs, fuel, tipping practices, and cash handling in remote oases.</p>
+                        <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2"><span data-i18n="itineraries_page.blog_section.a3_title">Morocco Travel Budget: Daily Cost Breakdown</span></h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-3"><span data-i18n="itineraries_page.blog_section.a3_desc">Realistic expenses for meals, riad stays, chauffeurs, fuel, tipping practices, and cash handling in remote oases.</span></p>
                         <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200"><span data-i18n="itineraries_page.blog_section.read">Read Article →</span></span>
                     </div>
                 </a>
@@ -1809,7 +1809,7 @@
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                        7 to 10 days is ideal. A 7-day tour allows you to combine Casablanca, Rabat, Fes, and Marrakech, or focus on Marrakech and Merzouga desert. A 10-day circuit gives you full flexibility to experience all Imperial Cities plus the Sahara without rush.
+                        <span data-i18n="itineraries_page.faq.a1">7 to 10 days is ideal. A 7-day tour allows you to combine Casablanca, Rabat, Fes, and Marrakech, or focus on Marrakech and Merzouga desert. A 10-day circuit gives you full flexibility to experience all Imperial Cities plus the Sahara without rush.</span>
                     </div>
                 </div>
 
@@ -1819,7 +1819,7 @@
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                        Yes! ONCF operates the Al Boraq high-speed train connecting Tangier, Kenitra, Rabat, and Casablanca in under 2 hours. Standard trains also connect Casablanca, Marrakech, Meknes, and Fes comfortably. For desert or mountain regions, a 4x4 or private chauffeur is recommended.
+                        <span data-i18n="itineraries_page.faq.a2">Yes! ONCF operates the Al Boraq high-speed train connecting Tangier, Kenitra, Rabat, and Casablanca in under 2 hours. Standard trains also connect Casablanca, Marrakech, Meknes, and Fes comfortably. For desert or mountain regions, a 4x4 or private chauffeur is recommended.</span>
                     </div>
                 </div>
 
@@ -1829,7 +1829,7 @@
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                        <strong>Erg Chebbi (Merzouga)</strong> features towering golden dunes accessible by paved road with luxury glamping options. <strong>Erg Chigaga</strong> is wilder, vast, and remote, requiring a 3-hour off-road 4x4 drive, making it ideal for adventurous travelers seeking pure solitude.
+                        <span data-i18n="itineraries_page.faq.a3">Erg Chebbi (Merzouga) features towering golden dunes accessible by paved road with luxury glamping options. Erg Chigaga is wilder, vast, and remote, requiring a 3-hour off-road 4x4 drive, making it ideal for adventurous travelers seeking pure solitude.</span>
                     </div>
                 </div>
             </div>
@@ -1914,60 +1914,69 @@
 
     <!-- INTERACTIVE TAB & DURATION FILTERING SCRIPT -->
     <script>
-        function switchRegion(regionId) {
-            // Hide all region blocks
-            document.querySelectorAll('.region-block').forEach(block => block.classList.add('hidden'));
-            
-            // Show selected region block
-            const selected = document.getElementById('region-' + regionId);
+        function switchRegion(regionId, btnEl) {
+            document.querySelectorAll('.region-block').forEach(function(block) {
+                block.classList.add('hidden');
+            });
+            var selected = document.getElementById('region-' + regionId);
             if (selected) selected.classList.remove('hidden');
 
-            // Reset Tab UI Buttons
-            document.querySelectorAll('.region-tab-btn').forEach(btn => {
-                btn.classList.remove('border-2', 'border-vert', 'shadow-md');
-                btn.classList.add('border-sable/20', 'shadow-sm');
-                const title = btn.querySelector('h3');
-                if(title) { title.classList.remove('text-vert'); title.classList.add('text-sombre'); }
-                const svg = btn.querySelector('svg');
-                if(svg) { svg.classList.remove('text-vert'); svg.classList.add('text-sable'); }
+            document.querySelectorAll('.region-tab-btn').forEach(function(btn) {
+                btn.classList.remove('active', 'border-2', 'border-vert', 'shadow-md');
+                btn.classList.add('border', 'border-sable/20', 'shadow-sm');
+                var title = btn.querySelector('h3');
+                if (title) { title.classList.remove('text-vert'); title.classList.add('text-sombre'); }
+                var svg = btn.querySelector('svg');
+                if (svg) { svg.classList.remove('text-vert'); svg.classList.add('text-sable'); }
+                var badge = btn.querySelector('span.rounded-full');
+                if (badge) {
+                    badge.classList.remove('bg-vert', 'text-white');
+                    badge.classList.add('bg-sable/20', 'text-sable');
+                }
             });
 
-            // Active Tab UI Styling
-            const activeBtn = event.currentTarget;
+            var activeBtn = btnEl || null;
             if (activeBtn) {
-                activeBtn.classList.remove('border-sable/20', 'shadow-sm');
-                activeBtn.classList.add('border-2', 'border-vert', 'shadow-md');
-                const activeTitle = activeBtn.querySelector('h3');
-                if(activeTitle) { activeTitle.classList.remove('text-sombre'); activeTitle.classList.add('text-vert'); }
-                const activeSvg = activeBtn.querySelector('svg');
-                if(activeSvg) { activeSvg.classList.remove('text-sable'); activeSvg.classList.add('text-vert'); }
+                activeBtn.classList.add('active', 'border-2', 'border-vert', 'shadow-md');
+                activeBtn.classList.remove('border', 'border-sable/20', 'shadow-sm');
+                var activeTitle = activeBtn.querySelector('h3');
+                if (activeTitle) { activeTitle.classList.remove('text-sombre'); activeTitle.classList.add('text-vert'); }
+                var activeSvg = activeBtn.querySelector('svg');
+                if (activeSvg) { activeSvg.classList.remove('text-sable'); activeSvg.classList.add('text-vert'); }
+                var activeBadge = activeBtn.querySelector('span.rounded-full');
+                if (activeBadge) {
+                    activeBadge.classList.remove('bg-sable/20', 'text-sable');
+                    activeBadge.classList.add('bg-vert', 'text-white');
+                }
+            }
+            if (selected) {
+                selected.querySelectorAll('.itinerary-card').forEach(function(card) { card.style.display = ''; });
+            }
+            document.querySelectorAll('.duration-btn').forEach(function(btn) {
+                btn.classList.remove('bg-vert', 'text-white');
+                btn.classList.add('bg-creme', 'text-sombre');
+            });
+            var allBtn = document.querySelector('.duration-btn[data-days="all"]');
+            if (allBtn) {
+                allBtn.classList.remove('bg-creme', 'text-sombre');
+                allBtn.classList.add('bg-vert', 'text-white');
             }
         }
 
-        function filterDuration(days) {
-            const activeRegion = document.querySelector('.region-block:not(.hidden)');
+        function filterDuration(days, btnEl) {
+            var activeRegion = document.querySelector('.region-block:not(.hidden)');
             if (!activeRegion) return;
-
-            const cards = activeRegion.querySelectorAll('.itinerary-card');
-            
-            // Update Filter Button UI
-            const clickedBtn = (typeof event !== 'undefined' && event) ? event.currentTarget : null;
-            document.querySelectorAll('.duration-btn').forEach(btn => {
-                btn.classList.remove('bg-vert', 'text-white', 'hover:bg-vert');
-                btn.classList.add('bg-creme', 'text-sombre', 'hover:bg-sable/20');
+            var cards = activeRegion.querySelectorAll('.itinerary-card');
+            document.querySelectorAll('.duration-btn').forEach(function(btn) {
+                btn.classList.remove('bg-vert', 'text-white');
+                btn.classList.add('bg-creme', 'text-sombre');
             });
-            if (clickedBtn) {
-                clickedBtn.classList.remove('bg-creme', 'text-sombre', 'hover:bg-sable/20');
-                clickedBtn.classList.add('bg-vert', 'text-white', 'hover:bg-vert');
+            if (btnEl) {
+                btnEl.classList.remove('bg-creme', 'text-sombre');
+                btnEl.classList.add('bg-vert', 'text-white');
             }
-
-            // Apply filter
-            cards.forEach(card => {
-                if (days === 'all' || card.classList.contains('duration-' + days)) {
-                    card.style.display = '';
-                } else {
-                    card.style.display = 'none';
-                }
+            cards.forEach(function(card) {
+                card.style.display = (days === 'all' || card.classList.contains('duration-' + days)) ? '' : 'none';
             });
         }
 
@@ -2028,7 +2037,7 @@
                                 
                                 // Show parent region
                                 const regionName = match.regionId.replace('region-', '');
-                                const regionTab = document.querySelector(`button[onclick="switchRegion('${regionName}')"]`);
+                                const regionTab = document.querySelector(`button[onclick*="switchRegion('${regionName}')"]`);
                                 if (regionTab) regionTab.click();
 
                                 match.element.scrollIntoView({ behavior: 'smooth', block: 'center' });

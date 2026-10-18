@@ -309,10 +309,10 @@
                     Filter Duration:
                 </span>
                 <div class="flex gap-2">
-                    <button class="duration-btn bg-vert text-white text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('all')" data-i18n="itineraries_page.duration_all">All Durations</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('5')" data-i18n="itineraries_page.duration_5">5 Days</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('7')" data-i18n="itineraries_page.duration_7">7 Days</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('10')" data-i18n="itineraries_page.duration_10">10 Days</button>
+                    <button class="duration-btn bg-vert text-white text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('all', this)" data-days="all" data-i18n="itineraries_page.duration_all">All Durations</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('5', this)" data-days="5" data-i18n="itineraries_page.duration_5">5 Days</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('7', this)" data-days="7" data-i18n="itineraries_page.duration_7">7 Days</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('10', this)" data-days="10" data-i18n="itineraries_page.duration_10">10 Days</button>
                 </div>
             </div>
         </section>
@@ -1915,76 +1915,82 @@
     <!-- INTERACTIVE TAB & DURATION FILTERING SCRIPT -->
     <script>
         function switchRegion(regionId, btnEl) {
-            // Hide all region blocks
-            document.querySelectorAll('.region-block').forEach(block => block.classList.add('hidden'));
-            
-            // Show selected region block
-            const selected = document.getElementById('region-' + regionId);
+            // Hide all region blocks, show selected
+            document.querySelectorAll('.region-block').forEach(function(block) {
+                block.classList.add('hidden');
+            });
+            var selected = document.getElementById('region-' + regionId);
             if (selected) selected.classList.remove('hidden');
 
-            // Reset ALL tab buttons to inactive (gold/sable) state
-            document.querySelectorAll('.region-tab-btn').forEach(btn => {
+            // Reset ALL region tabs to inactive (gold)
+            document.querySelectorAll('.region-tab-btn').forEach(function(btn) {
                 btn.classList.remove('active', 'border-2', 'border-vert', 'shadow-md');
                 btn.classList.add('border', 'border-sable/20', 'shadow-sm');
-                const title = btn.querySelector('h3');
-                if (title) {
-                    title.classList.remove('text-vert');
-                    title.classList.add('text-sombre');
-                }
-                const svg = btn.querySelector('svg');
-                if (svg) {
-                    svg.classList.remove('text-vert');
-                    svg.classList.add('text-sable');
-                }
-                // Badge: back to gold/sable style
-                const badge = btn.querySelector('span.rounded-full');
+                var title = btn.querySelector('h3');
+                if (title) { title.classList.remove('text-vert'); title.classList.add('text-sombre'); }
+                var svg = btn.querySelector('svg');
+                if (svg) { svg.classList.remove('text-vert'); svg.classList.add('text-sable'); }
+                var badge = btn.querySelector('span.rounded-full');
                 if (badge) {
                     badge.classList.remove('bg-vert', 'text-white');
                     badge.classList.add('bg-sable/20', 'text-sable');
                 }
             });
 
-            // Activate the clicked button (green)
-            const activeBtn = btnEl || (typeof event !== 'undefined' ? event.currentTarget : null);
+            // Activate clicked tab (green)
+            var activeBtn = btnEl || null;
             if (activeBtn) {
                 activeBtn.classList.add('active', 'border-2', 'border-vert', 'shadow-md');
                 activeBtn.classList.remove('border', 'border-sable/20', 'shadow-sm');
-                const activeTitle = activeBtn.querySelector('h3');
-                if (activeTitle) {
-                    activeTitle.classList.remove('text-sombre');
-                    activeTitle.classList.add('text-vert');
-                }
-                const activeSvg = activeBtn.querySelector('svg');
-                if (activeSvg) {
-                    activeSvg.classList.remove('text-sable');
-                    activeSvg.classList.add('text-vert');
-                }
-                const activeBadge = activeBtn.querySelector('span.rounded-full');
+                var activeTitle = activeBtn.querySelector('h3');
+                if (activeTitle) { activeTitle.classList.remove('text-sombre'); activeTitle.classList.add('text-vert'); }
+                var activeSvg = activeBtn.querySelector('svg');
+                if (activeSvg) { activeSvg.classList.remove('text-sable'); activeSvg.classList.add('text-vert'); }
+                var activeBadge = activeBtn.querySelector('span.rounded-full');
                 if (activeBadge) {
                     activeBadge.classList.remove('bg-sable/20', 'text-sable');
                     activeBadge.classList.add('bg-vert', 'text-white');
                 }
             }
-        }
 
-        function filterDuration(days) {
-            const activeRegion = document.querySelector('.region-block:not(.hidden)');
-            if (!activeRegion) return;
-
-            const cards = activeRegion.querySelectorAll('.itinerary-card');
-            
-            // Update Filter Button UI
-            document.querySelectorAll('.duration-btn').forEach(btn => {
+            // Reset duration filter to "all" when switching region
+            if (selected) {
+                selected.querySelectorAll('.itinerary-card').forEach(function(card) {
+                    card.style.display = '';
+                });
+            }
+            document.querySelectorAll('.duration-btn').forEach(function(btn) {
                 btn.classList.remove('bg-vert', 'text-white');
                 btn.classList.add('bg-creme', 'text-sombre');
             });
-            if (event && event.currentTarget) {
-                event.currentTarget.classList.remove('bg-creme', 'text-sombre');
-                event.currentTarget.classList.add('bg-vert', 'text-white');
+            var allBtn = document.querySelector('.duration-btn[data-days="all"]') || document.querySelector('.duration-btn');
+            if (allBtn) {
+                allBtn.classList.remove('bg-creme', 'text-sombre');
+                allBtn.classList.add('bg-vert', 'text-white');
+            }
+        }
+
+        function filterDuration(days, btnEl) {
+            var activeRegion = document.querySelector('.region-block:not(.hidden)');
+            if (!activeRegion) return;
+
+            var cards = activeRegion.querySelectorAll('.itinerary-card');
+
+            // Reset all duration buttons to inactive (gold/creme)
+            document.querySelectorAll('.duration-btn').forEach(function(btn) {
+                btn.classList.remove('bg-vert', 'text-white');
+                btn.classList.add('bg-creme', 'text-sombre');
+            });
+
+            // Activate clicked duration button (green)
+            var activeBtn = btnEl || null;
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-creme', 'text-sombre');
+                activeBtn.classList.add('bg-vert', 'text-white');
             }
 
             // Apply filter
-            cards.forEach(card => {
+            cards.forEach(function(card) {
                 if (days === 'all' || card.classList.contains('duration-' + days)) {
                     card.style.display = '';
                 } else {

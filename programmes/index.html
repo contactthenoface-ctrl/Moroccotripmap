@@ -79,13 +79,13 @@
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1" id="categories-menu-dropdown">
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_stays" href="../riads/index.html">Stays &amp; Riads</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html">Gastronomy</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_experiences" href="../experiences/index.html">Experiences</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_museums" href="../destinations.html">Monuments &amp; Museums</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_transport" href="../transport/index.html">Transport &amp; Rental</a>
-                        <a class="block px-4 py-2.5 text-sm font-bold text-vert bg-creme transition" data-i18n="nav.cat_itineraries" href="index.html">Itineraries</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_guides" href="../guides/index.html">Travel Guides</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_stays" href="../riads/index.html" data-i18n="nav.cat_stays">Stays &amp; Riads</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_experiences" href="../experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_museums" href="../destinations.html" data-i18n="nav.cat_museums">Monuments &amp; Museums</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_transport" href="../transport/index.html" data-i18n="nav.cat_transport">Transport &amp; Rental</a>
+                        <a class="block px-4 py-2.5 text-sm font-bold text-vert bg-creme transition" data-i18n="nav.cat_itineraries" href="index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_guides" href="../guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
                     </div>
                 </div>
                 <a class="hover:text-vert transition" data-i18n="nav.history" href="../guides/histoire.html">History</a>
@@ -132,7 +132,7 @@
         <!-- Mobile Menu Drawer -->
         <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
             <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider">Language / Langue</span>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="itineraries_page.mobile_menu.language_title">Language / Langue</span>
                 <div class="flex gap-2">
                     <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('en')">EN</button>
                     <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('fr')">FR</button>
@@ -145,7 +145,7 @@
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
                     <div class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                        <span>Cities &amp; Destinations</span>
+                        <span data-i18n="nav.destinations">Cities &amp; Destinations</span>
                     </div>
                     <span class="text-xs text-gray-400">→</span>
                 </a>
@@ -153,38 +153,38 @@
                     <button class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left" onclick="toggleMobileCategories()">
                         <div class="flex items-center gap-3">
                             <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                            <span>Categories</span>
+                            <span data-i18n="nav.categories">Categories</span>
                         </div>
                         <svg class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" id="categories-arrow" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm" id="mobile-categories-dropdown">
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../riads/index.html">Stays &amp; Riads</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../gastronomy/index.html">Gastronomy</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../experiences/index.html">Experiences</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../destinations.html">Monuments &amp; Museums</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../transport/index.html">Transport &amp; Rental</a>
-                        <a class="py-1.5 hover:text-vert transition text-vert font-bold" href="index.html">Itineraries</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../guides/index.html">Travel Guides</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../riads/index.html" data-i18n="nav.cat_stays">Stays &amp; Riads</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../destinations.html" data-i18n="nav.cat_museums">Monuments &amp; Museums</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../transport/index.html" data-i18n="nav.cat_transport">Transport &amp; Rental</a>
+                        <a class="py-1.5 hover:text-vert transition text-vert font-bold" href="index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
                     </div>
                 </div>
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../guides/histoire.html">
                     <div class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                        <span>History of Morocco</span>
+                        <span data-i18n="nav.history">History of Morocco</span>
                     </div>
                     <span class="text-xs text-gray-400">→</span>
                 </a>
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../blog/index.html">
                     <div class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                        <span>Blog</span>
+                        <span data-i18n="nav.blog">Blog</span>
                     </div>
                     <span class="text-xs text-gray-400">→</span>
                 </a>
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../contact.html">
                     <div class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                        <span>Contact</span>
+                        <span data-i18n="nav.contact">Contact</span>
                     </div>
                     <span class="text-xs text-gray-400">→</span>
                 </a>
@@ -198,24 +198,22 @@
         <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
-                    <a class="hover:text-white transition" href="../index.html">Home</a>
+                    <a class="hover:text-white transition" href="../index.html" data-i18n="itineraries_page.breadcrumb.home">Home</a>
                     <span>/</span>
-                    <span class="text-white">Morocco Itineraries</span>
+                    <span class="text-white" data-i18n="itineraries_page.breadcrumb.itineraries">Morocco Itineraries</span>
                 </div>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">Morocco Travel Circuits Across 6 Geographic Regions</h1>
-                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed">
-                    Select a region below and pick between 5, 7, or 10-day routes engineered with realistic driving times, multi-city connections, and field-tested expert advice.
-                </p>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight" data-i18n="itineraries_page.hero.title">Morocco Travel Circuits Across 6 Geographic Regions</h1>
+                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed"><span data-i18n="itineraries_page.hero.description">Select a region below and pick between 5, 7, or 10-day routes engineered with realistic driving times, multi-city connections, and field-tested expert advice.</span></p>
                 <div class="mt-6 flex flex-wrap gap-4 text-xs sm:text-sm text-creme/90">
-                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">6</strong> <span>Geographic Regions</span></span>
-                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">18</strong> <span>Custom Circuits</span></span>
-                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">100%</strong> <span>Field Tested</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">6</strong> <span data-i18n="itineraries_page.stat_regions">Geographic Regions</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">18</strong> <span data-i18n="itineraries_page.stat_circuits">Custom Circuits</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">100%</strong> <span data-i18n="itineraries_page.stat_tested">Field Tested</span></span>
                 </div>
 
                 <!-- Instant Search Bar -->
                 <div class="mt-8 max-w-lg relative">
                     <div class="relative">
-                        <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search route (e.g. Casablanca, Fes, Chefchaouen, Desert, 7 days)..." type="text"/>
+                        <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" data-i18n-placeholder="itineraries_page.search_placeholder" placeholder="Search route (e.g. Casablanca, Fes, Chefchaouen, Desert, 7 days)..." type="text"/>
                         <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </div>
                     <div class="absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100" id="pageSearchResults"></div>
@@ -235,8 +233,8 @@
                         <span class="text-[9px] font-extrabold bg-vert text-white px-2 py-0.5 rounded-full uppercase">Imperial</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-vert text-xs sm:text-sm leading-tight">Imperial Cities</h3>
-                        <p class="text-[10px] text-sombre/70 mt-0.5">Casa, Rabat, Fes</p>
+                        <h3 class="font-bold text-vert text-xs sm:text-sm leading-tight" data-i18n="itineraries_page.regions.imperial.title">Imperial Cities</h3>
+                        <p class="text-[10px] text-sombre/70 mt-0.5" data-i18n="itineraries_page.regions.imperial.subtitle">Casa, Rabat, Fes</p>
                     </div>
                 </button>
 
@@ -247,8 +245,8 @@
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">North</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight">North &amp; Rif</h3>
-                        <p class="text-[10px] text-sombre/70 mt-0.5">Tangier, Chefchaouen</p>
+                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight" data-i18n="itineraries_page.regions.north.title">North &amp; Rif</h3>
+                        <p class="text-[10px] text-sombre/70 mt-0.5" data-i18n="itineraries_page.regions.north.subtitle">Tangier, Chefchaouen</p>
                     </div>
                 </button>
 
@@ -259,8 +257,8 @@
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Sahara</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight">South &amp; Desert</h3>
-                        <p class="text-[10px] text-sombre/70 mt-0.5">Marrakech, Merzouga</p>
+                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight" data-i18n="itineraries_page.regions.south.title">South &amp; Desert</h3>
+                        <p class="text-[10px] text-sombre/70 mt-0.5" data-i18n="itineraries_page.regions.south.subtitle">Marrakech, Merzouga</p>
                     </div>
                 </button>
 
@@ -271,8 +269,8 @@
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Coast</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight">Atlantic Coast</h3>
-                        <p class="text-[10px] text-sombre/70 mt-0.5">Essaouira, Taghazout</p>
+                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight" data-i18n="itineraries_page.regions.atlantic.title">Atlantic Coast</h3>
+                        <p class="text-[10px] text-sombre/70 mt-0.5" data-i18n="itineraries_page.regions.atlantic.subtitle">Essaouira, Taghazout</p>
                     </div>
                 </button>
 
@@ -283,8 +281,8 @@
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Atlas</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight">Atlas Mountains</h3>
-                        <p class="text-[10px] text-sombre/70 mt-0.5">Imlil, Toubkal, Azrou</p>
+                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight" data-i18n="itineraries_page.regions.atlas.title">Atlas Mountains</h3>
+                        <p class="text-[10px] text-sombre/70 mt-0.5" data-i18n="itineraries_page.regions.atlas.subtitle">Imlil, Toubkal, Azrou</p>
                     </div>
                 </button>
 
@@ -295,8 +293,8 @@
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase">Oasis</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight">Oriental &amp; Oasis</h3>
-                        <p class="text-[10px] text-sombre/70 mt-0.5">Oujda, Figuig, Zagora</p>
+                        <h3 class="font-bold text-sombre text-xs sm:text-sm leading-tight" data-i18n="itineraries_page.regions.oriental.title">Oriental &amp; Oasis</h3>
+                        <p class="text-[10px] text-sombre/70 mt-0.5" data-i18n="itineraries_page.regions.oriental.subtitle">Oujda, Figuig, Zagora</p>
                     </div>
                 </button>
 
@@ -311,10 +309,10 @@
                     Filter Duration:
                 </span>
                 <div class="flex gap-2">
-                    <button class="duration-btn bg-vert text-white text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('all')">All Durations</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('5')">5 Days</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('7')">7 Days</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('10')">10 Days</button>
+                    <button class="duration-btn bg-vert text-white text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('all')" data-i18n="itineraries_page.duration_all">All Durations</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('5')" data-i18n="itineraries_page.duration_5">5 Days</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('7')" data-i18n="itineraries_page.duration_7">7 Days</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('10')" data-i18n="itineraries_page.duration_10">10 Days</button>
                 </div>
             </div>
         </section>
@@ -328,23 +326,21 @@
                 <!-- Circuit 1: 5 Days Imperial Express -->
                 <article class="itinerary-card duration-5 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">5 Days / 4 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">5-Day Express Triangle: Casablanca, Rabat &amp; Marrakech</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Tailored for short-stay travelers, culture lovers, and professionals seeking a high-efficiency immersion. Connect Morocco's economic powerhouse, its serene coastal capital, and the vibrant Red City smoothly via high-speed train and modern expressways.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.imperial_5.badge">5 Days / 4 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.imperial_5.title">5-Day Express Triangle: Casablanca, Rabat &amp; Marrakech</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.imperial_5.desc">Tailored for short-stay travelers, culture lovers, and professionals seeking a high-efficiency immersion. Connect Morocco's economic powerhouse, its serene coastal capital, and the vibrant Red City smoothly via high-speed train and modern expressways.</p>
                     </div>
 
                     <!-- Identity Card Table -->
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -423,22 +419,20 @@
                 <!-- Circuit 2: 7 Days Imperial Loop -->
                 <article class="itinerary-card duration-7 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">7 Days / 6 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">7-Day Imperial Capitals Circuit: Casablanca, Rabat, Fes &amp; Marrakech</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            The classic grand tour connecting all major historical powerhouses of Morocco. Trace centuries of royal dynasties from Atlantic ports to Roman Volubilis, medieval Fes, and vibrant Marrakech.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.imperial_7.badge">7 Days / 6 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.imperial_7.title">7-Day Imperial Capitals Circuit: Casablanca, Rabat, Fes &amp; Marrakech</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.imperial_7.desc">The classic grand tour connecting all major historical powerhouses of Morocco. Trace centuries of royal dynasties from Atlantic ports to Roman Volubilis, medieval Fes, and vibrant Marrakech.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -508,22 +502,20 @@
                 <!-- Circuit 3: 10 Days Grand Imperial & Sahara -->
                 <article class="itinerary-card duration-10 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">10 Days / 9 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">10-Day Complete Grand Tour: Imperial Cities &amp; Merzouga Sahara</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            The comprehensive Moroccan expedition combining Casablanca, Rabat, Fes, the Middle Atlas cedar forests of Azrou, Merzouga sand dunes, Dades Gorges, and Marrakech in one seamless trip.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.imperial_10.badge">10 Days / 9 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.imperial_10.title">10-Day Complete Grand Tour: Imperial Cities &amp; Merzouga Sahara</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.imperial_10.desc">The comprehensive Moroccan expedition combining Casablanca, Rabat, Fes, the Middle Atlas cedar forests of Azrou, Merzouga sand dunes, Dades Gorges, and Marrakech in one seamless trip.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -598,22 +590,20 @@
                 <!-- Circuit 1: 5 Days North Coastal -->
                 <article class="itinerary-card duration-5 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">5 Days / 4 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">5-Day Northern Pearl Trail: Tangier, Asilah &amp; Chefchaouen</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Where Mediterranean breeze meets Andalusian-Moorish heritage. Experience literary Tangier, the artists' coastal retreat of Asilah, and the world-famous blue-washed streets of Chefchaouen nestled in the Rif Mountains.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.north_5.badge">5 Days / 4 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.north_5.title">5-Day Northern Pearl Trail: Tangier, Asilah &amp; Chefchaouen</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.north_5.desc">Where Mediterranean breeze meets Andalusian-Moorish heritage. Experience literary Tangier, the artists' coastal retreat of Asilah, and the world-famous blue-washed streets of Chefchaouen nestled in the Rif Mountains.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -678,22 +668,20 @@
                 <!-- Circuit 2: 7 Days North & Fes Combo -->
                 <article class="itinerary-card duration-7 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">7 Days / 6 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">7-Day Northern Highlights, Akchour Waterfalls &amp; Fes Medina</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Combine the bohemian Mediterranean vibe of Tangier, the mountain hikes of Akchour waterfalls, the blue magic of Chefchaouen, and the imperial spiritual heritage of Fes and Volubilis in a single week.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.north_7.badge">7 Days / 6 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.north_7.title">7-Day Northern Highlights, Akchour Waterfalls &amp; Fes Medina</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.north_7.desc">Combine the bohemian Mediterranean vibe of Tangier, the mountain hikes of Akchour waterfalls, the blue magic of Chefchaouen, and the imperial spiritual heritage of Fes and Volubilis in a single week.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -759,22 +747,20 @@
                 <!-- Circuit 3: 10 Days Grand Northern Circuit -->
                 <article class="itinerary-card duration-10 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">10 Days / 9 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">10-Day Complete Northern &amp; Mediterranean Coast Loop</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            An exhaustive northern exploration connecting Tangier, Tetouan medina, Smir coast, Chefchaouen, Al Hoceima Mediterranean National Park, and ending in Fes.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.north_10.badge">10 Days / 9 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.north_10.title">10-Day Complete Northern &amp; Mediterranean Coast Loop</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.north_10.desc">An exhaustive northern exploration connecting Tangier, Tetouan medina, Smir coast, Chefchaouen, Al Hoceima Mediterranean National Park, and ending in Fes.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -828,30 +814,28 @@
                     </div>
                 </article>
 
-                    </div>
-                                <!-- ==================== REGION 3: SUD & DÉSERT DU SAHARA ==================== -->
+            </div>
+            <!-- ==================== REGION 3: SUD & DÉSERT DU SAHARA ==================== -->
             <div class="region-block hidden space-y-12" id="region-south">
                 
                 <!-- Circuit 1: 5 Days Sahara Express -->
                 <article class="itinerary-card duration-5 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">5 Days / 4 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">5-Day Sahara Express: Marrakech, Ouarzazate &amp; Merzouga Dunes</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            An intense and memorable desert gateway designed to experience the majestic dunes of Erg Chebbi without missing Marrakech. Ideal for travelers with tight schedules who want to sleep in a desert bivouac.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.south_5.badge">5 Days / 4 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.south_5.title">5-Day Sahara Express: Marrakech, Ouarzazate &amp; Merzouga Dunes</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.south_5.desc">An intense and memorable desert gateway designed to experience the majestic dunes of Erg Chebbi without missing Marrakech. Ideal for travelers with tight schedules who want to sleep in a desert bivouac.</p>
                     </div>
 
                     <!-- Identity Card Table -->
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -931,22 +915,20 @@
                 <!-- Circuit 2: 7 Days Grand South Classic -->
                 <article class="itinerary-card duration-7 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300" id="grand-classique">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">7 Days / 6 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">7-Day Grand South: Marrakech to Merzouga &amp; Fes Medina</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Morocco's most popular road trip. Seamlessly link Marrakech, the High Atlas, the ancient Kasbahs of Ouarzazate, Todra Gorges, Merzouga's high dunes, and finish in spiritual Fes.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.south_7.badge">7 Days / 6 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.south_7.title">7-Day Grand South: Marrakech to Merzouga &amp; Fes Medina</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.south_7.desc">Morocco's most popular road trip. Seamlessly link Marrakech, the High Atlas, the ancient Kasbahs of Ouarzazate, Todra Gorges, Merzouga's high dunes, and finish in spiritual Fes.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1012,22 +994,20 @@
                 <!-- Circuit 3: 10 Days Wild Draâ & Erg Chigaga -->
                 <article class="itinerary-card duration-10 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300" id="aventure-authentique">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">10 Days / 9 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">10-Day Deep Sahara &amp; Draâ Valley Expedition: Erg Chigaga 4x4 Track</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            An authentic off-the-beaten-path road trip for nature lovers and adventurers. Travel down Morocco's longest palm grove, explore ancient earthen Kasbahs, and drive 3 hours off-road to the wild, untouched dunes of Erg Chigaga.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.south_10.badge">10 Days / 9 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.south_10.title">10-Day Deep Sahara &amp; Draâ Valley Expedition: Erg Chigaga 4x4 Track</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.south_10.desc">An authentic off-the-beaten-path road trip for nature lovers and adventurers. Travel down Morocco's longest palm grove, explore ancient earthen Kasbahs, and drive 3 hours off-road to the wild, untouched dunes of Erg Chigaga.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1098,22 +1078,20 @@
                 <!-- Circuit 1: 5 Days Slow Travel Atlantic -->
                 <article class="itinerary-card duration-5 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300" id="slow-travel-atlantique">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">5 Days / 4 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">5-Day Atlantic Breeze: Essaouira, Imsouane &amp; Taghazout Surf Spots</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            A relaxing coastal getaway to recharge to the rhythm of the ocean. Blend artistic Mogador (Essaouira), women-run Argan cooperatives, longboard surfing in Imsouane's Magic Bay, and rooftop yoga in Taghazout.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.atlantic_5.badge">5 Days / 4 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.atlantic_5.title">5-Day Atlantic Breeze: Essaouira, Imsouane &amp; Taghazout Surf Spots</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.atlantic_5.desc">A relaxing coastal getaway to recharge to the rhythm of the ocean. Blend artistic Mogador (Essaouira), women-run Argan cooperatives, longboard surfing in Imsouane's Magic Bay, and rooftop yoga in Taghazout.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1183,22 +1161,20 @@
                 <!-- Circuit 2: 7 Days Marrakech + Coastal Loop -->
                 <article class="itinerary-card duration-7 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">7 Days / 6 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">7-Day Marrakech &amp; Atlantic Coast Combo: Souks to Waves</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Combine the vibrant energy of Marrakech's palaces and souks with a refreshing coastal trip to Essaouira, Paradise Valley natural rock pools, and Taghazout.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.atlantic_7.badge">7 Days / 6 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.atlantic_7.title">7-Day Marrakech &amp; Atlantic Coast Combo: Souks to Waves</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.atlantic_7.desc">Combine the vibrant energy of Marrakech's palaces and souks with a refreshing coastal trip to Essaouira, Paradise Valley natural rock pools, and Taghazout.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1255,22 +1231,20 @@
                 <!-- Circuit 3: 10 Days Deep South Atlantic & Legzira Arches -->
                 <article class="itinerary-card duration-10 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">10 Days / 9 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">10-Day Deep Atlantic &amp; Anti-Atlas Coastal Expedition: Mirleft to Legzira Arches</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Explore Morocco's dramatic southwestern coast where red ochre cliffs meet wild ocean waves. Drive from Essaouira through Agadir, Tiznit silver markets, Mirleft cliffs, and the massive red sand Arches of Legzira Beach down to Sidi Ifni.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.atlantic_10.badge">10 Days / 9 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.atlantic_10.title">10-Day Deep Atlantic &amp; Anti-Atlas Coastal Expedition: Mirleft to Legzira Arches</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.atlantic_10.desc">Explore Morocco's dramatic southwestern coast where red ochre cliffs meet wild ocean waves. Drive from Essaouira through Agadir, Tiznit silver markets, Mirleft cliffs, and the massive red sand Arches of Legzira Beach down to Sidi Ifni.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1331,22 +1305,20 @@
                 <!-- Circuit 1: 5 Days Atlas Excursions -->
                 <article class="itinerary-card duration-5 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">5 Days / 4 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">5-Day High Atlas &amp; Berber Valleys Gateway: Imlil, Ourika &amp; Ouzoud</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            A mountain adventure designed for nature enthusiasts and active travelers. Base yourself near Marrakech to explore the lush Ourika Valley, the high peaks of Imlil at the foot of Mount Toubkal, and the spectacular 110m Ouzoud Waterfalls.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.atlas_5.badge">5 Days / 4 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.atlas_5.title">5-Day High Atlas &amp; Berber Valleys Gateway: Imlil, Ourika &amp; Ouzoud</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.atlas_5.desc">A mountain adventure designed for nature enthusiasts and active travelers. Base yourself near Marrakech to explore the lush Ourika Valley, the high peaks of Imlil at the foot of Mount Toubkal, and the spectacular 110m Ouzoud Waterfalls.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1407,22 +1379,20 @@
                 <!-- Circuit 2: 7 Days Complete Atlas Traverse -->
                 <article class="itinerary-card duration-7 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">7 Days / 6 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">7-Day Middle &amp; High Atlas Mountain Traverse: Azrou, Bin El Ouidane &amp; Toubkal</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Cross both mountain ranges from north to south. Journey from Fes through the cedar forests of Azrou, the turquoise reservoir of Lake Bin El Ouidane, the limestone canyons of Cathedral Imsfrane, down to Toubkal National Park.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.atlas_7.badge">7 Days / 6 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.atlas_7.title">7-Day Middle &amp; High Atlas Mountain Traverse: Azrou, Bin El Ouidane &amp; Toubkal</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.atlas_7.desc">Cross both mountain ranges from north to south. Journey from Fes through the cedar forests of Azrou, the turquoise reservoir of Lake Bin El Ouidane, the limestone canyons of Cathedral Imsfrane, down to Toubkal National Park.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1479,22 +1449,20 @@
                 <!-- Circuit 3: 10 Days High Atlas & Sahro Summit Trail -->
                 <article class="itinerary-card duration-10 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">10 Days / 9 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">10-Day Grand Mountain Expedition: Toubkal Summit Trek &amp; Jbel Saghro Canyons</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Designed for serious hikers and trekkers. Climb Mount Toubkal (4,167m)—North Africa's highest peak—before crossing the High Atlas toward the volcanic rock towers and nomadic trails of Jbel Saghro and Dades Gorges.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.atlas_10.badge">10 Days / 9 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.atlas_10.title">10-Day Grand Mountain Expedition: Toubkal Summit Trek &amp; Jbel Saghro Canyons</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.atlas_10.desc">Designed for serious hikers and trekkers. Climb Mount Toubkal (4,167m)—North Africa's highest peak—before crossing the High Atlas toward the volcanic rock towers and nomadic trails of Jbel Saghro and Dades Gorges.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1556,22 +1524,20 @@
                 <!-- Circuit 1: 5 Days Ziz Valley & Oasis -->
                 <article class="itinerary-card duration-5 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">5 Days / 4 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">5-Day Pre-Saharan Oasis Gateway: Errachidia, Ziz Gorges &amp; Merzouga</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Fly directly into Moulay Ali Cherif Airport in Errachidia to skip long road transfers. Explore the spectacular palm forests of the Ziz Gorges, ancient Ksar Aoufous, and the towering dunes of Erg Chebbi.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.oriental_5.badge">5 Days / 4 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.oriental_5.title">5-Day Pre-Saharan Oasis Gateway: Errachidia, Ziz Gorges &amp; Merzouga</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.oriental_5.desc">Fly directly into Moulay Ali Cherif Airport in Errachidia to skip long road transfers. Explore the spectacular palm forests of the Ziz Gorges, ancient Ksar Aoufous, and the towering dunes of Erg Chebbi.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1623,22 +1589,20 @@
                 <!-- Circuit 2: 7 Days Mediterranean Oriental & Oujda -->
                 <article class="itinerary-card duration-7 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">7 Days / 6 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">7-Day Eastern Mediterranean &amp; Oriental Heritage: Oujda, Saïdia &amp; Berkane</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            Uncover Morocco's unspoiled eastern frontier. Experience the historic Andalusian medina of Oujda, the citrus groves of Berkane, the Zegzel gorges, and the turquoise waters of Saïdia Mediterranean resort beach.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.oriental_7.badge">7 Days / 6 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.oriental_7.title">7-Day Eastern Mediterranean &amp; Oriental Heritage: Oujda, Saïdia &amp; Berkane</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.oriental_7.desc">Uncover Morocco's unspoiled eastern frontier. Experience the historic Andalusian medina of Oujda, the citrus groves of Berkane, the Zegzel gorges, and the turquoise waters of Saïdia Mediterranean resort beach.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1690,22 +1654,20 @@
                 <!-- Circuit 3: 10 Days Deep Eastern Oasis & Figuig -->
                 <article class="itinerary-card duration-10 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition duration-300">
                     <div class="max-w-4xl">
-                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">10 Days / 9 Nights</span>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4">10-Day Deep Eastern Frontier &amp; Figuig Millennium Oasis Expedition</h2>
-                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6">
-                            The ultimate journey to Morocco's most remote historic oasis. Travel from Oujda across high plateau plains down to the ancient fortified Ksour and underground foggaras irrigation channels of Figuig oasis near the Algerian border.
-                        </p>
+                        <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3" data-i18n="itineraries_page.circuits.oriental_10.badge">10 Days / 9 Nights</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-vert tracking-tight leading-tight mb-4" data-i18n="itineraries_page.circuits.oriental_10.title">10-Day Deep Eastern Frontier &amp; Figuig Millennium Oasis Expedition</h2>
+                        <p class="text-sombre/80 text-sm sm:text-base leading-relaxed mb-6" data-i18n="itineraries_page.circuits.oriental_10.desc">The ultimate journey to Morocco's most remote historic oasis. Travel from Oujda across high plateau plains down to the ancient fortified Ksour and underground foggaras irrigation channels of Figuig oasis near the Algerian border.</p>
                     </div>
 
                     <div class="my-6 overflow-x-auto">
                         <h3 class="text-xs font-bold text-sable uppercase tracking-wider mb-3 flex items-center gap-2">
                             <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                            Circuit Identity Card
+                            <span data-i18n="itineraries_page.identity_card">Circuit Identity Card</span>
                         </h3>
                         <table class="w-full text-left border-collapse bg-creme rounded-2xl overflow-hidden border border-sable/15 text-xs sm:text-sm">
                             <thead>
                                 <tr class="bg-vert text-white font-semibold">
-                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20">Criterion</th>
+                                    <th class="p-3.5 w-1/3 sm:w-1/4 border-b border-sable/20" data-i18n="itineraries_page.criterion">Criterion</th>
                                     <th class="p-3.5 border-b border-sable/20">Detail &amp; Recommendation</th>
                                 </tr>
                             </thead>
@@ -1786,8 +1748,8 @@
         <!-- RECOMMENDED BLOG ARTICLES (SEO Interlinking) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/20">
             <div class="mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider">Essential Preparation</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-vert mt-1">Practical Travel Guides for Driving in Morocco</h2>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="itineraries_page.blog_section.eyebrow">Essential Preparation</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-vert mt-1" data-i18n="itineraries_page.blog_section.title">Practical Travel Guides for Driving in Morocco</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -1800,7 +1762,7 @@
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2">Renting &amp; Driving a Car in Morocco: Expert Advice</h3>
                         <p class="text-xs text-sombre/70 mt-2 line-clamp-3">Navigating mountain passes, understanding police checkpoints, toll highways, and choosing between 4x4 or compact cars.</p>
-                        <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200">Read Article →</span>
+                        <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200"><span data-i18n="itineraries_page.blog_section.read">Read Article →</span></span>
                     </div>
                 </a>
 
@@ -1813,7 +1775,7 @@
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2">Morocco Packing Essentials: Medinas to Sahara</h3>
                         <p class="text-xs text-sombre/70 mt-2 line-clamp-3">Respectful clothing rules, desert night temperature drops, and gear required for High Atlas trekking.</p>
-                        <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200">Read Article →</span>
+                        <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200"><span data-i18n="itineraries_page.blog_section.read">Read Article →</span></span>
                     </div>
                 </a>
 
@@ -1826,7 +1788,7 @@
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="font-bold text-sombre group-hover:text-vert transition text-base line-clamp-2">Morocco Travel Budget: Daily Cost Breakdown</h3>
                         <p class="text-xs text-sombre/70 mt-2 line-clamp-3">Realistic expenses for meals, riad stays, chauffeurs, fuel, tipping practices, and cash handling in remote oases.</p>
-                        <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200">Read Article →</span>
+                        <span class="mt-auto pt-4 text-xs font-bold text-sable flex items-center gap-1 group-hover:translate-x-1 transition duration-200"><span data-i18n="itineraries_page.blog_section.read">Read Article →</span></span>
                     </div>
                 </a>
             </div>
@@ -1835,15 +1797,15 @@
         <!-- FAQ ACCORDION SECTION -->
         <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/20" id="faq">
             <div class="text-center mb-10">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider">Got Questions?</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-vert mt-1">Frequently Asked Questions About Morocco Road Trips</h2>
-                <p class="text-xs sm:text-sm text-sombre/70 mt-2 max-w-xl mx-auto">Everything you need to know before choosing your circuit across Morocco's 6 regions.</p>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="itineraries_page.faq.eyebrow">Got Questions?</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-vert mt-1" data-i18n="itineraries_page.faq.title">Frequently Asked Questions About Morocco Road Trips</h2>
+                <p class="text-xs sm:text-sm text-sombre/70 mt-2 max-w-xl mx-auto"><span data-i18n="itineraries_page.faq.subtitle">Everything you need to know before choosing your circuit across Morocco\'s 6 regions.</span></p>
             </div>
 
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
-                        <span>How many days are ideal to visit both Imperial Cities and the Desert?</span>
+                        <span data-i18n="itineraries_page.faq.q1">How many days are ideal to visit both Imperial Cities and the Desert?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
@@ -1853,7 +1815,7 @@
 
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
-                        <span>Is it easy to travel between major regions by train in Morocco?</span>
+                        <span data-i18n="itineraries_page.faq.q2">Is it easy to travel between major regions by train in Morocco?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
@@ -1863,7 +1825,7 @@
 
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
-                        <span>Which desert region is better: Erg Chebbi (Merzouga) or Erg Chigaga?</span>
+                        <span data-i18n="itineraries_page.faq.q3">Which desert region is better: Erg Chebbi (Merzouga) or Erg Chigaga?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
@@ -1913,20 +1875,20 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
                 <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-                <p class="text-xs text-creme/80 leading-relaxed">
+                <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
                     Discover. Plan. Experience Morocco.<br/>
                     The premier tourism directory and cultural travel guide for visitors exploring Morocco.
                 </p>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Destinations</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Destinations</h4>
                 <ul class="text-xs space-y-2 text-creme/80">
-                    <li><a class="hover:text-white transition" href="../marrakech.html">Marrakech Travel Guide</a></li>
-                    <li><a class="hover:text-white transition" href="../destinations.html">All Destinations</a></li>
+                    <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
+                    <li><a class="hover:text-white transition" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Categories</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
                 <ul class="text-xs space-y-2 text-creme/80">
                     <li><a class="hover:text-white transition" href="../riads/index.html">Authentic Riads &amp; Hotels</a></li>
                     <li><a class="hover:text-white transition" href="../gastronomy/index.html">Moroccan Restaurants &amp; Food</a></li>
@@ -1936,7 +1898,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Connect</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
                 <p class="text-xs text-creme/80 mb-3">Follow our YouTube channel for video travel guides:</p>
                 <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
@@ -1945,7 +1907,7 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-            <p>© MoroccoTripMap. All rights reserved.</p>
+            <p><span data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</span></p>
             <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
         </div>
     </footer>
@@ -2014,6 +1976,21 @@
         }
 
         document.addEventListener('DOMContentLoaded', function () {
+            // Language Menu Toggle
+            const langButton = document.getElementById('lang-menu-button');
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+            if (langButton && langDropdown) {
+                langButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                });
+                document.addEventListener('click', function(e) {
+                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.add('hidden');
+                    }
+                });
+            }
+
             // Instant Search Input Logic across all cards
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');

@@ -60,7 +60,8 @@
         body { font-family: 'Outfit', sans-serif; }
     </style>
 </head>
-<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
+<!-- MIN-H-SCREEN SUPPRIMÉ SUR LE BODY -->
+<body class="bg-creme text-sombre antialiased relative">
     
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
@@ -193,8 +194,8 @@
         </div>
     </header>
 
-    <!-- Main Content: Contact Section (Suppression de flex-grow) -->
-    <main class="pt-8 pb-6 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+    <!-- Main Content: Contact Section -->
+    <main class="py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
         <div class="text-center mb-6">
             <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="contact_page.badge">Get in Touch</span>
             <h1 class="text-3xl sm:text-4xl font-extrabold text-vert mt-1" data-i18n="contact_page.title">Contact Us</h1>
@@ -260,8 +261,8 @@
   }
 </style>
 
-<!-- SECTION PARTENAIRES D'AFFILIATION (mt-auto permet de coller la section au bas de l'écran si nécessaire) -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-auto pb-6 w-full overflow-hidden">
+<!-- SECTION PARTENAIRES D'AFFILIATION -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full overflow-hidden">
   <div class="bg-white rounded-3xl border border-sable/15 py-6 px-4 sm:px-6 shadow-sm text-center">
     
     <div class="mb-4">
@@ -329,7 +330,7 @@
 </section>
 
     <!-- Footer -->
-    <footer class="bg-vert text-creme pt-10 pb-8 px-4 sm:px-6 lg:px-8 mt-4 rounded-t-3xl">
+    <footer class="bg-vert text-creme pt-10 pb-8 px-4 sm:px-6 lg:px-8 mt-6 rounded-t-3xl">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
                 <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>

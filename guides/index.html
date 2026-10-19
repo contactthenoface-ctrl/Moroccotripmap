@@ -132,7 +132,7 @@
         <!-- Mobile Menu Drawer -->
         <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
             <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider">Language / Langue</span>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="guides_page.mobile_menu.language_title">Language / Langue</span>
                 <div class="flex gap-2">
                     <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('en')">EN</button>
                     <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('fr')">FR</button>
@@ -198,23 +198,21 @@
         <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
-                    <a class="hover:text-white transition" href="../index.html">Home</a>
+                    <a class="hover:text-white transition" href="../index.html" data-i18n="guides_page.breadcrumb.home">Home</a>
                     <span>/</span>
                     <span class="text-white">Travel Guides</span>
                 </div>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">Essential Morocco Travel Guides &amp; Practical Advice</h1>
-                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed">
-                    Prepare your road trip smoothly with expert local insight. Explore practical logistics, car rental rules, budget breakdown, cultural customs, souk etiquette, and seasonal weather advice across Morocco.
-                </p>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight"><span data-i18n="guides_page.hero.title">Essential Morocco Travel Guides &amp; Practical Advice</span></h1>
+                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed"><span data-i18n="guides_page.hero.subtitle">Prepare your road trip smoothly with expert local insight. Explore practical logistics, car rental rules, budget breakdown, cultural customs, souk etiquette, and seasonal weather advice across Morocco.</span></p>
                 <div class="mt-6 flex flex-wrap gap-4 text-xs sm:text-sm text-creme/90">
-                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">100%</strong> <span>Verified Local Field Advice</span></span>
-                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">6</strong> <span>Geographic Regions Covered</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">100%</strong> <span data-i18n="guides_page.stat_verified">Verified Local Field Advice</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">6</strong> <span data-i18n="guides_page.stat_regions">Geographic Regions Covered</span></span>
                 </div>
 
                 <!-- Instant Search Bar -->
                 <div class="mt-8 max-w-lg relative">
                     <div class="relative">
-                        <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search guide (e.g. driving, dirham budget, hammam, bargaining, weather)..." type="text"/>
+                        <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search guide (e.g. driving, dirham budget, hammam, bargaining, weather)..." data-i18n-placeholder="guides_page.search_placeholder" type="text"/>
                         <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </div>
                     <div class="absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100" id="pageSearchResults"></div>
@@ -233,8 +231,8 @@
                         <svg class="w-6 h-6 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </div>
                     <div>
-                        <span class="text-xs font-bold text-sable uppercase tracking-wider">Step 1</span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">Logistics, Transport &amp; Budget</h2>
+                        <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="guides_page.step1.label">Step 1</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-vert" data-i18n="guides_page.step1.title">Logistics, Transport &amp; Budget</h2>
                     </div>
                 </div>
 
@@ -245,13 +243,11 @@
                             <div class="w-12 h-12 rounded-2xl bg-sable/10 text-sable flex items-center justify-center mb-5">
                                 <svg class="w-6 h-6 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                             </div>
-                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2">Driving &amp; Car Rental Rules</h3>
-                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4">
-                                Everything about highway toll systems, speed limits, mountain pass driving (Tizi n'Tichka), police checkpoints, and choosing between a compact car or a 4x4 SUV.
-                            </p>
+                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2" data-i18n="guides_page.guides.driving.title">Driving &amp; Car Rental Rules</h3>
+                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4"><span data-i18n="guides_page.guides.driving.desc">Everything about highway toll systems, speed limits, mountain pass driving (Tizi n'Tichka), police checkpoints, and choosing between a compact car or a 4x4 SUV.</span></p>
                         </div>
                         <a class="inline-flex items-center gap-2 text-xs font-bold text-vert hover:text-sable transition mt-4 pt-4 border-t border-sable/10" href="../blog/driving-in-morocco.html">
-                            <span>Read Full Driving Guide</span>
+                            <span data-i18n="guides_page.guides.driving.cta">Read Full Driving Guide</span>
                             <span>→</span>
                         </a>
                     </article>
@@ -262,13 +258,11 @@
                             <div class="w-12 h-12 rounded-2xl bg-sable/10 text-sable flex items-center justify-center mb-5">
                                 <svg class="w-6 h-6 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                             </div>
-                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2">Currency, ATMs &amp; Daily Budget</h3>
-                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4">
-                                Managing Moroccan Dirham (MAD), ATM withdrawal fees, cash versus credit cards in remote oases, tipping etiquette (Bakchich), and estimated daily meal budgets.
-                            </p>
+                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2" data-i18n="guides_page.guides.budget.title">Currency, ATMs &amp; Daily Budget</h3>
+                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4"><span data-i18n="guides_page.guides.budget.desc">Managing Moroccan Dirham (MAD), ATM withdrawal fees, cash versus credit cards in remote oases, tipping etiquette (Bakchich), and estimated daily meal budgets.</span></p>
                         </div>
                         <a class="inline-flex items-center gap-2 text-xs font-bold text-vert hover:text-sable transition mt-4 pt-4 border-t border-sable/10" href="../blog/morocco-travel-budget.html">
-                            <span>Read Budget &amp; Money Guide</span>
+                            <span data-i18n="guides_page.guides.budget.cta">Read Budget &amp; Money Guide</span>
                             <span>→</span>
                         </a>
                     </article>
@@ -279,13 +273,11 @@
                             <div class="w-12 h-12 rounded-2xl bg-sable/10 text-sable flex items-center justify-center mb-5">
                                 <svg class="w-6 h-6 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                             </div>
-                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2">When to Visit: Weather &amp; Seasons</h3>
-                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4">
-                                Season-by-season breakdown comparing winter in the Sahara desert, summer along the surf beaches of Taghazout, and spring blossom in High Atlas valleys.
-                            </p>
+                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2" data-i18n="guides_page.guides.seasons.title">When to Visit: Weather &amp; Seasons</h3>
+                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4"><span data-i18n="guides_page.guides.seasons.desc">Season-by-season breakdown comparing winter in the Sahara desert, summer along the surf beaches of Taghazout, and spring blossom in High Atlas valleys.</span></p>
                         </div>
                         <a class="inline-flex items-center gap-2 text-xs font-bold text-vert hover:text-sable transition mt-4 pt-4 border-t border-sable/10" href="../blog/desert-packing-list.html">
-                            <span>Read Seasons &amp; Packing Guide</span>
+                            <span data-i18n="guides_page.guides.seasons.cta">Read Seasons &amp; Packing Guide</span>
                             <span>→</span>
                         </a>
                     </article>
@@ -299,8 +291,8 @@
                         <svg class="w-6 h-6 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </div>
                     <div>
-                        <span class="text-xs font-bold text-sable uppercase tracking-wider">Step 2</span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">Culture, Heritage &amp; Medina Etiquette</h2>
+                        <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="guides_page.step2.label">Step 2</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-vert" data-i18n="guides_page.step2.title">Culture, Heritage &amp; Medina Etiquette</h2>
                     </div>
                 </div>
 
@@ -311,12 +303,10 @@
                             <svg class="w-6 h-6 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2">Souk Shopping &amp; Bargaining Etiquette</h3>
-                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4">
-                                Master the art of respectful negotiation with local artisans in Marrakech and Fes. Learn fair price benchmarks for handmade rugs, leather slippers (babouche), brass lamps, and spices.
-                            </p>
+                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2" data-i18n="guides_page.guides.souks.title">Souk Shopping &amp; Bargaining Etiquette</h3>
+                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4"><span data-i18n="guides_page.guides.souks.desc">Master the art of respectful negotiation with local artisans in Marrakech and Fes. Learn fair price benchmarks for handmade rugs, leather slippers (babouche), brass lamps, and spices.</span></p>
                             <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition" href="../experiences/index.html">
-                                <span>Explore artisan workshops &amp; guided souk tours</span>
+                                <span data-i18n="guides_page.guides.souks.cta">Explore artisan workshops &amp; guided souk tours</span>
                                 <span>→</span>
                             </a>
                         </div>
@@ -328,12 +318,10 @@
                             <svg class="w-6 h-6 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2">Traditional Hammam Experience</h3>
-                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4">
-                                Step-by-step guide to Moroccan bathhouses: difference between local neighborhood hammams and luxury spa riads, essential items to bring (savon noir black soap, kessa glove), and modesty rules.
-                            </p>
+                            <h3 class="font-bold text-sombre text-lg sm:text-xl mb-2" data-i18n="guides_page.guides.hammam.title">Traditional Hammam Experience</h3>
+                            <p class="text-xs sm:text-sm text-sombre/70 leading-relaxed mb-4"><span data-i18n="guides_page.guides.hammam.desc">Step-by-step guide to Moroccan bathhouses: difference between local neighborhood hammams and luxury spa riads, essential items to bring (savon noir black soap, kessa glove), and modesty rules.</span></p>
                             <a class="inline-flex items-center gap-1 text-xs font-bold text-vert hover:text-sable transition" href="../riads/index.html">
-                                <span>Discover riads with traditional spa hammams</span>
+                                <span data-i18n="guides_page.guides.hammam.cta">Discover riads with traditional spa hammams</span>
                                 <span>→</span>
                             </a>
                         </div>
@@ -344,13 +332,13 @@
             <!-- CATEGORY 3: HISTORY HIGHLIGHT -->
             <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
                 <div class="max-w-xl z-10">
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider">Deep Cultural Immersion</span>
-                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1 leading-tight">History of Morocco: From Berber Kingdoms to Dynasties</h2>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="guides_page.history_banner.badge">Deep Cultural Immersion</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1 leading-tight"><span data-i18n="guides_page.history_banner.title">History of Morocco: From Berber Kingdoms to Dynasties</span></h2>
                     <p class="text-creme/80 mt-3 text-sm leading-relaxed">
-                        Understand the rich historical tapestry behind Morocco's imperial cities, UNESCO Kasbahs, Almoravid architecture, and Saadian monuments.
+                        <span data-i18n="guides_page.history_banner.desc">Understand the rich historical tapestry behind Morocco's imperial cities, UNESCO Kasbahs, Almoravid architecture, and Saadian monuments.</span>
                     </p>
                     <a class="inline-flex items-center gap-2 bg-sable hover:bg-[#b08a52] text-sombre font-bold text-sm px-6 py-3.5 rounded-2xl shadow-md transition mt-6" href="histoire.html">
-                        <span>Read Morocco History Guide</span>
+                        <span data-i18n="guides_page.history_banner.btn">Read Morocco History Guide</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </a>
                 </div>
@@ -365,38 +353,38 @@
         <!-- FAQ ACCORDION SECTION -->
         <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/20" id="faq">
             <div class="text-center mb-10">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider">Practical FAQ</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-vert mt-1">Frequently Asked Questions for Morocco Travelers</h2>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="guides_page.faq.eyebrow">Practical FAQ</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-vert mt-1" data-i18n="guides_page.faq.title">Frequently Asked Questions for Morocco Travelers</h2>
             </div>
 
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
-                        <span>Do I need an International Driving Permit (IDP) to rent a car in Morocco?</span>
+                        <span data-i18n="guides_page.faq.q1">Do I need an International Driving Permit (IDP) to rent a car in Morocco?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                        Most car rental agencies and police checkpoints accept national driver's licenses issued in Latin characters (EU, UK, US, Canada). An International Driving Permit is recommended if your license uses non-Latin script.
+                        <span data-i18n="guides_page.faq.a1">Most car rental agencies and police checkpoints accept national driver's licenses issued in Latin characters (EU, UK, US, Canada). An International Driving Permit is recommended if your license uses non-Latin script.</span>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
-                        <span>What is the dress code when visiting medinas and rural villages?</span>
+                        <span data-i18n="guides_page.faq.q2">What is the dress code when visiting medinas and rural villages?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                        In urban tourist hubs like Marrakech or Agadir beach resorts, casual summer wear is widely accepted. In traditional medinas, religious monuments, and Atlas mountain villages, modest clothing covering shoulders and knees is appreciated as a sign of respect.
+                        <span data-i18n="guides_page.faq.a2">In urban tourist hubs like Marrakech or Agadir beach resorts, casual summer wear is widely accepted. In traditional medinas, religious monuments, and Atlas mountain villages, modest clothing covering shoulders and knees is appreciated as a sign of respect.</span>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
-                        <span>Are credit cards widely accepted or should I carry cash?</span>
+                        <span data-i18n="guides_page.faq.q3">Are credit cards widely accepted or should I carry cash?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                        Major hotels, modern restaurants, and official stores accept credit cards. However, cash in Moroccan Dirhams (MAD) is essential for souks, taxis, tipping, small eateries, and when traveling through desert or mountain oases.
+                        <span data-i18n="guides_page.faq.a3">Major hotels, modern restaurants, and official stores accept credit cards. However, cash in Moroccan Dirhams (MAD) is essential for souks, taxis, tipping, small eateries, and when traveling through desert or mountain oases.</span>
                     </div>
                 </div>
             </div>
@@ -443,19 +431,18 @@
             <div>
                 <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
                 <p class="text-xs text-creme/80 leading-relaxed">
-                    Discover. Plan. Experience Morocco.<br/>
-                    The premier tourism directory and cultural travel guide for visitors exploring Morocco.
+                    <span data-i18n="footer.about_text">Discover. Plan. Experience Morocco.<br/>The premier tourism directory and cultural travel guide for visitors exploring Morocco.</span>
                 </p>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Destinations</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Destinations</h4>
                 <ul class="text-xs space-y-2 text-creme/80">
                     <li><a class="hover:text-white transition" href="../marrakech.html">Marrakech Travel Guide</a></li>
                     <li><a class="hover:text-white transition" href="../destinations.html">All Destinations</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Categories</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
                 <ul class="text-xs space-y-2 text-creme/80">
                     <li><a class="hover:text-white transition" href="../riads/index.html">Authentic Riads &amp; Hotels</a></li>
                     <li><a class="hover:text-white transition" href="../gastronomy/index.html">Moroccan Restaurants &amp; Food</a></li>
@@ -466,8 +453,8 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Connect</h4>
-                <p class="text-xs text-creme/80 mb-3">Follow our YouTube channel for video travel guides:</p>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
+                <p class="text-xs text-creme/80 mb-3"><span data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</span></p>
                 <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
                     @moroccotripmap
@@ -475,7 +462,7 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-            <p>© MoroccoTripMap. All rights reserved.</p>
+            <p><span data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</span></p>
             <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
         </div>
     </footer>

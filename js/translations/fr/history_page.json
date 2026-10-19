@@ -33,97 +33,98 @@
   "intro": {
     "eyebrow": "Aperçu Général",
     "title": "Un Carrefour de Civilisations Unique en Afrique",
-    "text": "L'histoire du Maroc se distingue par une continuité étatique et une indépendance culturelle singulières en Afrique du Nord. Protégé par les hautes barrières naturelles de l'Atlas et bordé par deux façades maritimes (Atlantique et Méditerranée), le pays a forgé une identité plurielle où s'entremêlent l'héritage amazigh (berbère), l'apport arabo-islamique, les influences andalouses et les contacts sahariens."
+    "text": "L'histoire du Maroc se distingue par une continuité étatique et une indépendance culturelle singulières en Afrique du Nord. Protégé par les hautes barrières naturelles de l'Atlas et bordé par deux façades maritimes (Atlantique et Méditerranée), le pays a forgé une identité plurielle où s'entremêlent l'héritage amazigh (berbère), l'apport arabo-islamique, les influences andalouses et les contacts sahariens.",
+    "text2": "Contrairement à ses voisins, le Maroc n'a jamais été sous domination ottomane, préservant ainsi ses propres dynasties régnantes et ses traditions architecturales et artisanales uniques."
   },
   "periods": {
     "antiquite": {
-      "date": "VIIIe s. av. J.-C. – Ve s. apr. J.-C.",
+      "date": "Antiquité Amazighe, Phénicienne et Romaine",
       "title": "1. Origines Berbères, Comptoirs Phéniciens et Maurétanie Tingitane",
       "p1": "Les premiers habitants répertoriés du Maroc sont les Amazighs (\"hommes libres\"). Dès le VIIIe siècle av. J.-C., des marchands phéniciens puis carthaginois établissent des comptoirs maritimes le long de la côte (Lixus, Tingis/Tanger, Mogador/Essaouira).",
-      "p2": "Le royaume autochtone de Maurétanie se développe sous le règne du roi savant Juba II et de son fils Ptolémée. Annexée par Rome sous l'empereur Caligula, la province devient la *Maurétanie Tingitane*. La cité de Volubilis s'impose alors comme la capitale administrative romaine, réputée pour ses pressoirs à huile d'olive et ses magnifiques mosaïques.",
+      "p2": "Le royaume autochtone de Maurétanie se développe sous le règne du roi savant Juba II et de son fils Ptolémée. Annexée par Rome sous l'empereur Caligula, la province devient la Maurétanie Tingitane. La cité de Volubilis s'impose alors comme la capitale administrative romaine, réputée pour ses pressoirs à huile d'olive et ses magnifiques mosaïques.",
       "side_title": "Monuments & Traces Visibles",
-      "side": [
-        {
-          "name": "Volubilis ",
+      "side": {
+        "0": {
+          "name": "Volubilis",
           "place": "Arc de Triomphe & mosaïques antiques."
         },
-        {
-          "name": "Lixus (Larache) ",
+        "1": {
+          "name": "Lixus (Larache)",
           "place": "Vestiges phénico-romains."
         }
-      ]
+      }
     },
     "idrissides": {
       "date": "789 – 974",
       "title": "2. La Dynastie Idrisside et la Naissance du Premier État Marocain",
       "p1": "En 789, Idriss Ier, descendant du prophète Mahomet fuyant le califat abbasside de Bagdad, est accueilli par la tribu berbère des Awerba à Walili (Volubilis). Il fond le premier État marocain unifié et musulman.",
       "p2": "Son fils, Idriss II, érige Fès en capitale. En 859, sous leur patronage, Fatima al-Fihriya fonde la mosquée et université Al Quaraouiyine, reconnue par l'UNESCO et le Livre Guinness comme la plus ancienne université encore en activité au monde. Fès devient alors le phare spirituel, culturel et intellectuel de l'Afrique du Nord.",
-      "side_title": "Heritage Majeur",
-      "side": [
-        {
-          "name": "Fès el-Bali ",
-          "place": "Médina médiévale unesco."
+      "side_title": "Héritage Majeur",
+      "side": {
+        "0": {
+          "name": "Fès el-Bali",
+          "place": "Médina médiévale UNESCO."
         },
-        {
-          "name": "Moulay Idriss Zerhoun ",
+        "1": {
+          "name": "Moulay Idriss Zerhoun",
           "place": "Cité sainte."
         }
-      ]
+      }
     },
     "almoravides": {
       "date": "1060 – 1147",
       "title": "3. L'Empire Almoravide : Fondateurs de Marrakech et Unificateurs d'Al-Andalus",
-      "p1": "Issus des tribus berbères nomades Sanhaja du Sahara, les Almoravides (*Al-Mourabitoun*) déferlent vers le nord. En 1070, leur grand souverain Youssef Ibn Tachfin fonde la ville de Marrakech, qui devient la capitale d'un empire s'étendant du fleuve Sénégal jusqu'à l'Espagne musulmane (Al-Andalus).",
-      "p2": "Après la victoire de Zallaqa (1086), Youssef Ibn Tachfin intègre les royaumes de Taïfas d'Andalousie à son empire. Les Almoravides introduisent au Maroc le raffinement architectural andalou, les remparts en pisé rouge et les systèmes sophistiqués d'irrigation souterraine (*khettaras*).",
+      "p1": "Issus des tribus berbères nomades Sanhaja du Sahara, les Almoravides (Al-Mourabitoun) déferlent vers le nord. En 1070, leur grand souverain Youssef Ibn Tachfin fonde la ville de Marrakech, qui devient la capitale d'un empire s'étendant du fleuve Sénégal jusqu'à l'Espagne musulmane (Al-Andalus).",
+      "p2": "Après la victoire de Zallaqa (1086), Youssef Ibn Tachfin intègre les royaumes de Taïfas d'Andalousie à son empire. Les Almoravides introduisent au Maroc le raffinement architectural andalou, les remparts en pisé rouge et les systèmes sophistiqués d'irrigation souterraine (khettaras).",
       "side_title": "Vestiges d'Exception",
-      "side": [
-        {
-          "name": "Koubba Ba'adiyn ",
+      "side": {
+        "0": {
+          "name": "Koubba Ba'adiyn",
           "place": "Marrakech."
         },
-        {
-          "name": "Remparts Rouge de Marrakech ",
+        "1": {
+          "name": "Remparts Rouges de Marrakech",
           "place": "19 km d'enceinte."
         }
-      ]
+      }
     },
     "almohades": {
       "date": "1147 – 1269",
       "title": "4. L'Empire Almohade : L'Apogée de l'Architecture Monumentale",
-      "p1": "Nés de la réforme religieuse prônée par Ibn Toumert dans le Haut Atlas (Tinmel), les Almohades (*Al-Mouwahhidoun*) renversent les Almoravides. Sous les règnes d'Abd al-Mumin et de Yacoub El Mansour, l'empire atteint sa plus grande extension territoriale, unifiant le Maghreb entier et Al-Andalus.",
+      "p1": "Nés de la réforme religieuse prônée par Ibn Toumert dans le Haut Atlas (Tinmel), les Almohades (Al-Mouwahhidoun) renversent les Almoravides. Sous les règnes d'Abd al-Mumin et de Yacoub El Mansour, l'empire atteint sa plus grande extension territoriale, unifiant le Maghreb entier et Al-Andalus.",
       "p2": "Les Almohades élèvent des chefs-d'œuvre de minarets jumeaux emblématiques : la Koutoubia de Marrakech, la Tour Hassan de Rabat et la Giralda de Séville. Rabat est alors dotée de murailles monumentales et de la majestueuse porte de la Kasbah des Oudayas.",
       "side_title": "Chefs-d'œuvre Architecturaux",
-      "side": [
-        {
-          "name": "Minaret de la Koutoubia ",
+      "side": {
+        "0": {
+          "name": "Minaret de la Koutoubia",
           "place": "Marrakech."
         },
-        {
-          "name": "Tour Hassan & Oudayas ",
+        "1": {
+          "name": "Tour Hassan & Oudayas",
           "place": "Rabat."
         },
-        {
-          "name": "Mosquée de Tinmel ",
+        "2": {
+          "name": "Mosquée de Tinmel",
           "place": "Haut Atlas."
         }
-      ]
+      }
     },
     "merinides": {
       "date": "1244 – 1465",
       "title": "5. Les Mérinides : L'Âge d'Or des Médersas et du Zaouïa Art",
       "p1": "Issus des nomades Zenata, les Mérinides établissent leur capitale à Fes et construisent Fès el-Jdid (la nouvelle ville impériale) à côté de l'ancienne médina.",
-      "p2": "Les sultans mérinides se distinguent par un soutien sans réserve à l'éducation et aux arts. Ils bâtissent les plus raffinées des écoles coraniques (*médersas*) du monde islamique : Médersa Bou Inania et Médersa el-Attarine à Fès, sculptées de stucs, de bois de cèdre ciselé et de céramiques *zellige*. C'est sous les Mérinides que le célèbre explorateur fassi Ibn Battûta accomplit son pèlerinage et voyage de 120 000 km à travers l'Afro-Eurasie.",
+      "p2": "Les sultans mérinides se distinguent par un soutien sans réserve à l'éducation et aux arts. Ils bâtissent les plus raffinées des écoles coraniques (médersas) du monde islamique : Médersa Bou Inania et Médersa el-Attarine à Fès, sculptées de stucs, de bois de cèdre ciselé et de céramiques zellige. C'est sous les Mérinides que le célèbre explorateur fassi Ibn Battûta accomplit son pèlerinage et voyage de 120 000 km à travers l'Afro-Eurasie.",
       "side_title": "Joyaux Mérinides",
-      "side": [
-        {
-          "name": "Médersa Bou Inania ",
+      "side": {
+        "0": {
+          "name": "Médersa Bou Inania",
           "place": "Fès."
         },
-        {
-          "name": "Nécropole de Chellah ",
+        "1": {
+          "name": "Nécropole de Chellah",
           "place": "Rabat."
         }
-      ]
+      }
     },
     "saadiens": {
       "date": "1549 – 1659",
@@ -131,37 +132,37 @@
       "p1": "Originaire de la vallée du Draâ au Sud, la dynastie chérifienne des Saadiens s'impose en repoussant les incursions portugaises sur les côtes atlantiques. Le 4 août 1578, lors de la célèbre Bataille des Trois Rois (Oued al-Makhazin), le sultan Abdelmalek met en déroute l'armée du roi Sébastien Ier de Portugal.",
       "p2": "Le sultan Ahmed al-Mansour ed-Dahbi (\"Le Doré\") inaugure une période de grande prospérité grâce au commerce du sucre et à l'expédition du Tombouctou. Il édifie à Marrakech le somptueux Palais El Badi et les sublimes Tombeaux Saadiens en marbre d'Irak et stuc ciselé.",
       "side_title": "Monuments Saadiens",
-      "side": [
-        {
-          "name": "Tombeaux Saadiens ",
+      "side": {
+        "0": {
+          "name": "Tombeaux Saadiens",
           "place": "Marrakech."
         },
-        {
-          "name": "Palais El Badi ",
+        "1": {
+          "name": "Palais El Badi",
           "place": "Ruines majestueuses."
         }
-      ]
+      }
     },
     "alaouites": {
       "date": "1666 – Présent",
       "title": "7. La Dynastie Alaouite : De Moulay Ismaïl au Royaume Moderne",
-      "p1": "Originaire du Tafilalet (Rissani), la dynastie Alaouite règne sur le Maroc depuis le XVIIe siècle. Le sultan Moulay Ismaïl (1672-1727), contemporain de Louis XIV, fait de Meknès sa capitale impériale, la dotant de gigantesques murailles, de greniers (*Heri es-Souani*) et de la monumentale porte Bab Mansour.",
+      "p1": "Originaire du Tafilalet (Rissani), la dynastie Alaouite règne sur le Maroc depuis le XVIIe siècle. Le sultan Moulay Ismaïl (1672-1727), contemporain de Louis XIV, fait de Meknès sa capitale impériale, la dotant de gigantesques murailles, de greniers (Heri es-Souani) et de la monumentale porte Bab Mansour.",
       "p2": "Après la période du Protectorat franco-espagnol (1912-1956), le roi Mohammed V mène le pays vers l'Indépendance. Son fils Hassan II consolide l'unité territoriale et bâtit la grande mosquée de Casablanca. Aujourd'hui, sous le règne de S.M. le Roi Mohammed VI, le Maroc conjugue modernisation des infrastructures (TGV Al Boraq, complexe solaire Noor, ports mondiaux) et préservation rigoureuse de son patrimoine artisanal et architectural.",
       "side_title": "Cité Impériale Alaouite",
-      "side": [
-        {
-          "name": "Bab Mansour ",
+      "side": {
+        "0": {
+          "name": "Bab Mansour",
           "place": "Meknès."
         },
-        {
-          "name": "Mausolée Mohammed V ",
+        "1": {
+          "name": "Mausolée Mohammed V",
           "place": "Rabat."
         },
-        {
-          "name": "Mosquée Hassan II ",
+        "2": {
+          "name": "Mosquée Hassan II",
           "place": "Casablanca."
         }
-      ]
+      }
     }
   },
   "banner": {
@@ -182,5 +183,10 @@
   },
   "mobile_menu": {
     "language_title": "Language / Langue"
+  },
+  "cta": {
+    "volubilis": "Guide de Volubilis",
+    "fes": "Découvrir Fès Médina",
+    "marrakech": "Explorer Marrakech Impériale"
   }
 }

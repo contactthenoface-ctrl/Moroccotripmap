@@ -1,1 +1,277 @@
-{"marrakech":{"tag":"Imperial City","name":"Marrakech","desc":"Medina, Palaces & Desert Gateways"},"chefchaouen":{"tag":"Rif Mountains","name":"Chefchaouen","desc":"The Iconic Blue Pearl of Morocco"},"fes":{"tag":"Cultural Capital","name":"Fez","desc":"Ancient Medina & Spiritual Heritage"},"casablanca":{"tag":"Economic Heart","name":"Casablanca","desc":"The largest city in Morocco"},"essaouira":{"tag":"Atlantic Coast","name":"Essaouira","desc":"Windy City, Ramparts & Fresh Seafood"},"agadir":{"tag":"Sun & Beach","name":"Agadir","desc":"Golden Beaches & Modern Resorts"},"tangier":{"tag":"Strait of Gibraltar","name":"Tangier","desc":"The Gateway Between Europe and Africa"},"ouarzazate":{"tag":"Desert Gateway","name":"Ouarzazate","desc":"Cinematic Landscapes & Ancient Kasbahs"},"rabat":{"tag":"Imperial Capital","name":"Rabat","desc":"Historic Gardens & Atlantic Breezes"},"meknes":{"tag":"Imperial City","name":"Meknes","desc":"Bab Mansour, Volubilis & medina"},"tetouan":{"tag":"Mediterranean Coast","name":"Tetouan","desc":"Andalusian Heritage & Rif Mountains"},"ifrane":{"tag":"Middle Atlas","name":"Ifrane","desc":"Alpine Architecture & Cedar Forests"},"el_jadida":{"tag":"Atlantic Coast","name":"El Jadida","desc":"Portuguese Cistern & Ocean Forts"},"taroudant":{"tag":"Souss Valley","name":"Taroudant","desc":"Massive Ramparts & Authentic Souks"},"dakhla":{"tag":"Deep South","name":"Dakhla","desc":"Stunning Lagoons & Kitesurf Paradise"},"al_hoceima":{"tag":"Mediterranean Coast","name":"Al Hoceima","desc":"Turquoise Waters & Rif Cliffs"},"nador":{"tag":"Mediterranean Lagoon","name":"Nador","desc":"Mar Chica Lagoon & Coastal Breezes"},"zagora":{"tag":"Drâa Valley","name":"Zagora","desc":"Lush Palm Groves & Sahara Doors"},"safi":{"tag":"Atlantic Coast","name":"Safi","desc":"Pottery Capital & Sea Fortress"},"laayoune":{"tag":"Sahara Gateway","name":"Laayoune","desc":"Sahrawi Culture & Atlantic Horizon"},"merzouga":{"tag":"Sahara Desert","name":"Merzouga","desc":"Erg Chebbi Dunes & Desert Camps"},"azilal":{"tag":"Heart of the Atlas","name":"Azilal","desc":"Ouzoud Waterfalls & Green Valleys"},"tinghir":{"tag":"Todra Gorge","name":"Tinghir","desc":"Spectacular Canyons & Palm Oases"},"oujda":{"tag":"Blue Pearl of the East","name":"Oujda-Saïdia","desc":"Golden Beaches & Eastern Gateway"},"asilah":{"name":"Asilah","tag":"Atlantic North","desc":"White medina, murals & ocean ramparts"},"erfoud":{"name":"Erfoud","tag":"Fossil Gateway","desc":"Fossils, date palms & road to Merzouga"},"tiznit":{"name":"Tiznit","tag":"Silver City","desc":"Ramparts, silver souks & gateway south"},"sidi_ifni":{"name":"Sidi Ifni","tag":"Wild Coast","desc":"Art deco town, Legzira arches & Mirleft"},"guelmim":{"name":"Guelmim","tag":"Gateway to the Sahara","desc":"Camel market, oasis & road to Dakhla"}}
+{
+  "marrakech": {
+    "tag": "Imperial City",
+    "name": "Marrakech",
+    "desc": "Medina, Palaces & Desert Gateways"
+  },
+  "chefchaouen": {
+    "tag": "Rif Mountains",
+    "name": "Chefchaouen",
+    "desc": "The Iconic Blue Pearl of Morocco"
+  },
+  "fes": {
+    "tag": "Cultural Capital",
+    "name": "Fez",
+    "desc": "Ancient Medina & Spiritual Heritage"
+  },
+  "casablanca": {
+    "tag": "Economic Heart",
+    "name": "Casablanca",
+    "desc": "The largest city in Morocco"
+  },
+  "essaouira": {
+    "tag": "Atlantic Coast",
+    "name": "Essaouira",
+    "desc": "Windy City, Ramparts & Fresh Seafood"
+  },
+  "agadir": {
+    "tag": "Sun & Beach",
+    "name": "Agadir",
+    "desc": "Golden Beaches & Modern Resorts"
+  },
+  "tangier": {
+    "tag": "Strait of Gibraltar",
+    "name": "Tangier",
+    "desc": "The Gateway Between Europe and Africa"
+  },
+  "ouarzazate": {
+    "tag": "Desert Gateway",
+    "name": "Ouarzazate",
+    "desc": "Cinematic Landscapes & Ancient Kasbahs"
+  },
+  "rabat": {
+    "tag": "Imperial Capital",
+    "name": "Rabat",
+    "desc": "Historic Gardens & Atlantic Breezes"
+  },
+  "meknes": {
+    "tag": "Imperial City",
+    "name": "Meknes",
+    "desc": "Bab Mansour, Volubilis & medina"
+  },
+  "tetouan": {
+    "tag": "Mediterranean Coast",
+    "name": "Tetouan",
+    "desc": "Andalusian Heritage & Rif Mountains"
+  },
+  "ifrane": {
+    "tag": "Middle Atlas",
+    "name": "Ifrane",
+    "desc": "Alpine Architecture & Cedar Forests"
+  },
+  "el_jadida": {
+    "tag": "Atlantic Coast",
+    "name": "El Jadida",
+    "desc": "Portuguese Cistern & Ocean Forts"
+  },
+  "taroudant": {
+    "tag": "Souss Valley",
+    "name": "Taroudant",
+    "desc": "Massive Ramparts & Authentic Souks"
+  },
+  "dakhla": {
+    "tag": "Deep South",
+    "name": "Dakhla",
+    "desc": "Stunning Lagoons & Kitesurf Paradise"
+  },
+  "al_hoceima": {
+    "tag": "Mediterranean Coast",
+    "name": "Al Hoceima",
+    "desc": "Turquoise Waters & Rif Cliffs"
+  },
+  "nador": {
+    "tag": "Mediterranean Lagoon",
+    "name": "Nador",
+    "desc": "Mar Chica Lagoon & Coastal Breezes"
+  },
+  "zagora": {
+    "tag": "Drâa Valley",
+    "name": "Zagora",
+    "desc": "Lush Palm Groves & Sahara Doors"
+  },
+  "safi": {
+    "tag": "Atlantic Coast",
+    "name": "Safi",
+    "desc": "Pottery Capital & Sea Fortress"
+  },
+  "laayoune": {
+    "tag": "Sahara Gateway",
+    "name": "Laayoune",
+    "desc": "Sahrawi Culture & Atlantic Horizon"
+  },
+  "merzouga": {
+    "tag": "Sahara Desert",
+    "name": "Merzouga",
+    "desc": "Erg Chebbi Dunes & Desert Camps"
+  },
+  "azilal": {
+    "tag": "Heart of the Atlas",
+    "name": "Azilal",
+    "desc": "Ouzoud Waterfalls & Green Valleys"
+  },
+  "tinghir": {
+    "tag": "Todra Gorge",
+    "name": "Tinghir",
+    "desc": "Spectacular Canyons & Palm Oases"
+  },
+  "oujda": {
+    "tag": "Blue Pearl of the East",
+    "name": "Oujda-Saïdia",
+    "desc": "Golden Beaches & Eastern Gateway"
+  },
+  "asilah": {
+    "name": "Asilah",
+    "tag": "Atlantic North",
+    "desc": "White medina, murals & ocean ramparts"
+  },
+  "erfoud": {
+    "name": "Erfoud",
+    "tag": "Fossil Gateway",
+    "desc": "Fossils, date palms & road to Merzouga"
+  },
+  "tiznit": {
+    "name": "Tiznit",
+    "tag": "Silver City",
+    "desc": "Ramparts, silver souks & gateway south"
+  },
+  "sidi_ifni": {
+    "name": "Sidi Ifni",
+    "tag": "Wild Coast",
+    "desc": "Art deco town, Legzira arches & Mirleft"
+  },
+  "guelmim": {
+    "name": "Guelmim",
+    "tag": "Gateway to the Sahara",
+    "desc": "Camel market, oasis & road to Dakhla"
+  },
+  "ait_ben_haddou": {
+    "tag": "UNESCO Kasbah",
+    "name": "Aït Ben Haddou",
+    "desc": "Iconic fortified village near Ouarzazate"
+  },
+  "azemmour": {
+    "tag": "Oum Er-Rbia",
+    "name": "Azemmour",
+    "desc": "White medina on the river estuary"
+  },
+  "beni_mellal": {
+    "tag": "Middle Atlas Gate",
+    "name": "Beni Mellal",
+    "desc": "Waterfalls, orchards & Atlas foothills"
+  },
+  "boumalne_dades": {
+    "tag": "Dades Valley",
+    "name": "Boumalne Dades",
+    "desc": "Valley of a Thousand Kasbahs"
+  },
+  "demnate": {
+    "tag": "High Atlas",
+    "name": "Demnate",
+    "desc": "Imi-n-Ifri natural bridge nearby"
+  },
+  "errachidia": {
+    "tag": "Ziz Valley",
+    "name": "Errachidia",
+    "desc": "Gateway to Tafilalet & dunes"
+  },
+  "figuig": {
+    "tag": "Border Oasis",
+    "name": "Figuig",
+    "desc": "Palm oases at the Algerian frontier"
+  },
+  "fnideq": {
+    "tag": "Border Coast",
+    "name": "Fnideq",
+    "desc": "Mediterranean resort near Ceuta"
+  },
+  "kenitra": {
+    "tag": "Gharb Coast",
+    "name": "Kenitra",
+    "desc": "Bouregreg region, Mehdia beach & forests"
+  },
+  "ksar_el_kebir": {
+    "tag": "Loukkos Plain",
+    "name": "Ksar el-Kebir",
+    "desc": "Historic town on the northern plains"
+  },
+  "larache": {
+    "tag": "Loukkos Coast",
+    "name": "Larache",
+    "desc": "Lixus ruins, Loukkos estuary & Atlantic port"
+  },
+  "mdiq": {
+    "tag": "Mediterranean",
+    "name": "M'diq",
+    "desc": "Beaches between Ceuta and Tetouan"
+  },
+  "mhamid": {
+    "tag": "Desert Edge",
+    "name": "M'Hamid",
+    "desc": "Last oasis before the open Sahara"
+  },
+  "midelt": {
+    "tag": "Apple Valley",
+    "name": "Midelt",
+    "desc": "High plateaus between Atlas ranges"
+  },
+  "mirleft": {
+    "tag": "Wild South Coast",
+    "name": "Mirleft",
+    "desc": "Cliffs, coves & Berber villages"
+  },
+  "mohammedia": {
+    "tag": "Atlantic City",
+    "name": "Mohammedia",
+    "desc": "Beaches between Casablanca & Rabat"
+  },
+  "moulay_idriss": {
+    "tag": "Holy City",
+    "name": "Moulay Idriss Zerhoun",
+    "desc": "Pilgrimage town above Volubilis"
+  },
+  "oualidia": {
+    "tag": "Oyster Bay",
+    "name": "Oualidia",
+    "desc": "Lagoon, oysters & Atlantic cliffs"
+  },
+  "ourika": {
+    "tag": "Atlas Valley",
+    "name": "Ourika Valley",
+    "desc": "Day trips from Marrakech to the foothills"
+  },
+  "rissani": {
+    "tag": "Tafilalet",
+    "name": "Rissani",
+    "desc": "Souks, ksour & Alaouite cradle"
+  },
+  "sefrou": {
+    "tag": "Cherry Town",
+    "name": "Sefrou",
+    "desc": "Waterfalls, medina & Jewish heritage"
+  },
+  "skoura": {
+    "tag": "Palm Oasis",
+    "name": "Skoura",
+    "desc": "Thousand kasbahs near Ouarzazate"
+  },
+  "taghazout": {
+    "tag": "Surf Coast",
+    "name": "Taghazout",
+    "desc": "Surf breaks north of Agadir"
+  },
+  "taourirt": {
+    "tag": "Oriental",
+    "name": "Taourirt",
+    "desc": "Eastern Morocco stop on the road to Oujda"
+  },
+  "taza": {
+    "tag": "Taza Corridor",
+    "name": "Taza",
+    "desc": "Between Rif and Middle Atlas"
+  },
+  "volubilis": {
+    "tag": "Roman Morocco",
+    "name": "Volubilis",
+    "desc": "UNESCO mosaics & triumphal arch"
+  }
+}

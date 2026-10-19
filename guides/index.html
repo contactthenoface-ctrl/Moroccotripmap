@@ -470,6 +470,21 @@
     <!-- INSTANT SEARCH SCRIPT FOR GUIDES PAGE -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Language menu toggle
+            const langButton = document.getElementById('lang-menu-button');
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+            if (langButton && langDropdown) {
+                langButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                });
+                document.addEventListener('click', function(e) {
+                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.add('hidden');
+                    }
+                });
+            }
+
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
             const guideCards = document.querySelectorAll('.guide-card');

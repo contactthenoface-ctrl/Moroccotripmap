@@ -26,19 +26,44 @@
     "badge": "Galerie",
     "title": "Le Desert Camp en images",
     "subtitle": "Faites glisser pour découvrir les tentes de luxe, les paysages de dunes et les soirées au feu de camp.",
-    "s1": { "caption": "Vue du camp dans le désert" },
-    "s2": { "caption": "Intérieur des tentes et confort" },
-    "s3": { "caption": "Soirée autour du feu de camp" },
-    "s4": { "caption": "Coucher de soleil sur les dunes" },
-    "s5": { "caption": "Lumière matinale sur Merzouga" }
+    "s1": {
+      "caption": "Vue du camp dans le désert"
+    },
+    "s2": {
+      "caption": "Intérieur des tentes et confort"
+    },
+    "s3": {
+      "caption": "Soirée autour du feu de camp"
+    },
+    "s4": {
+      "caption": "Coucher de soleil sur les dunes"
+    },
+    "s5": {
+      "caption": "Lumière matinale sur Merzouga"
+    }
   },
   "moods": {
     "badge": "Expérience",
     "title": "À quoi s'attendre au camp",
     "subtitle": "Observation des étoiles, rythmes nomades et aventures dans les dunes — trois points forts.",
-    "1": { "tag": "Soirée", "title": "Feu de camp & Musique", "desc": "Profitez de rythmes de tambours berbères et d'histoires sous un ciel constellé d'étoiles.", "duration": "Nocturne • Astronomie" },
-    "2": { "tag": "Aventure", "title": "Randonnée à dromadaire", "desc": "Chevauchez à travers les dunes dorées de l'Erg Chebbi pour rejoindre votre camp au coucher du soleil.", "duration": "Fin d'après-midi • 1 à 1h30" },
-    "3": { "tag": "Confort", "title": "Tentes de Luxe", "desc": "Profitez de lits confortables, de couettes chaudes et d'installations privatives au Sahara.", "duration": "Nuitée sur place" }
+    "1": {
+      "tag": "Soirée",
+      "title": "Feu de camp & Musique",
+      "desc": "Profitez de rythmes de tambours berbères et d'histoires sous un ciel constellé d'étoiles.",
+      "duration": "Nocturne • Astronomie"
+    },
+    "2": {
+      "tag": "Aventure",
+      "title": "Randonnée à dromadaire",
+      "desc": "Chevauchez à travers les dunes dorées de l'Erg Chebbi pour rejoindre votre camp au coucher du soleil.",
+      "duration": "Fin d'après-midi • 1 à 1h30"
+    },
+    "3": {
+      "tag": "Confort",
+      "title": "Tentes de Luxe",
+      "desc": "Profitez de lits confortables, de couettes chaudes et d'installations privatives au Sahara.",
+      "duration": "Nuitée sur place"
+    }
   },
   "food": {
     "title": "Dîner au cœur du désert",
@@ -52,17 +77,38 @@
   },
   "tips": {
     "title": "Conseils pratiques pour votre nuit au désert",
-    "1": { "title": "Prévoyez des vêtements chauds", "desc": "Les températures chutent fortement la nuit dans le désert — emportez une veste, un polaire ou un pull." },
-    "2": { "title": "Bagages légers", "desc": "Préparez un petit sac à dos pour la nuit et laissez vos grosses valises à l'hôtel de base à Merzouga." },
-    "3": { "title": "Chaussures & Protection", "desc": "Apportez lunettes de soleil, crème solaire et chaussures confortables ou sandales pour le sable." }
+    "1": {
+      "title": "Prévoyez des vêtements chauds",
+      "desc": "Les températures chutent fortement la nuit dans le désert — emportez une veste, un polaire ou un pull."
+    },
+    "2": {
+      "title": "Bagages légers",
+      "desc": "Préparez un petit sac à dos pour la nuit et laissez vos grosses valises à l'hôtel de base à Merzouga."
+    },
+    "3": {
+      "title": "Chaussures & Protection",
+      "desc": "Apportez lunettes de soleil, crème solaire et chaussures confortables ou sandales pour le sable."
+    }
   },
   "gyg": {
     "badge": "Excursions & Activités",
     "title": "Réserver une expérience de camp dans le désert",
     "subtitle": "Forfaits de nuit au désert les mieux notés avec balade à dromadaire, dîner et observation des étoiles.",
-    "t1": { "tag": "Bivouac Standard", "title": "Merzouga : Expérience de Camp Standard", "desc": "Balade à dromadaire dans l'Erg Chebbi, dîner traditionnel autour du feu, musique et nuit en tente saharienne." },
-    "t2": { "tag": "Séjour de Luxe", "title": "Merzouga : Camp de Luxe avec Tente Privative", "desc": "Améliorez votre nuit au Sahara avec une tente haut de gamme dotée d'une douche chaude et d'une literie raffinée." },
-    "t3": { "tag": "Multi-jours", "title": "Circuit Désert 2 Jours & Camp de Luxe depuis Marrakech", "desc": "Formule complète incluant le transport, la balade à dromadaire, la nuit au camp et les paysages de l'Atlas." },
+    "t1": {
+      "tag": "Bivouac Standard",
+      "title": "Merzouga : Expérience de Camp Standard",
+      "desc": "Balade à dromadaire dans l'Erg Chebbi, dîner traditionnel autour du feu, musique et nuit en tente saharienne."
+    },
+    "t2": {
+      "tag": "Séjour de Luxe",
+      "title": "Merzouga : Camp de Luxe avec Tente Privative",
+      "desc": "Améliorez votre nuit au Sahara avec une tente haut de gamme dotée d'une douche chaude et d'une literie raffinée."
+    },
+    "t3": {
+      "tag": "Multi-jours",
+      "title": "Circuit Désert 2 Jours & Camp de Luxe depuis Marrakech",
+      "desc": "Formule complète incluant le transport, la balade à dromadaire, la nuit au camp et les paysages de l'Atlas."
+    },
     "check": "Vérifier la disponibilité sur GetYourGuide →",
     "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via ceux-ci, nous percevons une petite commission, sans frais supplémentaires pour vous."
   },
@@ -85,18 +131,58 @@
     "badge": "Le Blog",
     "title": "Articles associés",
     "all": "Tous les articles →",
-    "a1": { "tag": "Gastronomie", "title": "Guide gastronomique de Merzouga : Tajines et plaisirs du désert", "desc": "Où bien manger à Merzouga, des repas conviviaux en bivouac aux tajines traditionnels." },
-    "a2": { "tag": "Transport", "title": "Se déplacer à Merzouga : 4x4, transferts et pistes du désert", "desc": "Les meilleures solutions pour voyager depuis Errachidia et circuler entre le village et les dunes." },
-    "a3": { "tag": "Planification", "title": "Premier voyage à Merzouga : À quoi s'attendre dans le Sahara", "desc": "Comment appréhender votre premier jour dans le désert et planifier vos visites nature sans stress." },
+    "a1": {
+      "tag": "Gastronomie",
+      "title": "Guide gastronomique de Merzouga : Tajines et plaisirs du désert",
+      "desc": "Où bien manger à Merzouga, des repas conviviaux en bivouac aux tajines traditionnels."
+    },
+    "a2": {
+      "tag": "Transport",
+      "title": "Se déplacer à Merzouga : 4x4, transferts et pistes du désert",
+      "desc": "Les meilleures solutions pour voyager depuis Errachidia et circuler entre le village et les dunes."
+    },
+    "a3": {
+      "tag": "Planification",
+      "title": "Premier voyage à Merzouga : À quoi s'attendre dans le Sahara",
+      "desc": "Comment appréhender votre premier jour dans le désert et planifier vos visites nature sans stress."
+    },
     "read": "Lire l'article →"
   },
   "faq": {
     "badge": "Bon à savoir",
     "title": "FAQ Camp Désert",
-    "q1": { "question": "Combien de temps faut-il prévoir au camp ?", "answer": "Une nuit sur place est la norme ; on arrive généralement en fin d'après-midi en dromadaire ou 4x4 et on repart après le petit-déjeuner." },
-    "q2": { "question": "Qu'est-ce qui est inclus dans le séjour au camp ?", "answer": "La plupart des séjours incluent une tente privative ou partagée, le dîner, le petit-déjeuner, la balade à dromadaire ou le transfert 4x4, ainsi que la musique autour du feu." },
-    "q3": { "question": "Y a-t-il des salles de bains privatives dans les camps ?", "answer": "Les camps de luxe disposent de salles de bains privatives avec douches chaudes, tandis que les camps standards proposent des sanitaires communs propres." },
-    "q4": { "question": "Fait-il froid la nuit dans le désert ?", "answer": "Oui, les températures chutent considérablement après le coucher du soleil, en particulier en automne, en hiver et au printemps. Des vêtements chauds sont indispensables." },
-    "q5": { "question": "Comment se rendre au camp dans le désert ?", "answer": "Les visiteurs rejoignent généralement le camp via une caravane de dromadaires à travers les dunes ou grâce à un transfert en 4x4 organisé par le camp." }
+    "q1": {
+      "question": "Combien de temps faut-il prévoir au camp ?",
+      "answer": "Une nuit sur place est la norme ; on arrive généralement en fin d'après-midi en dromadaire ou 4x4 et on repart après le petit-déjeuner."
+    },
+    "q2": {
+      "question": "Qu'est-ce qui est inclus dans le séjour au camp ?",
+      "answer": "La plupart des séjours incluent une tente privative ou partagée, le dîner, le petit-déjeuner, la balade à dromadaire ou le transfert 4x4, ainsi que la musique autour du feu."
+    },
+    "q3": {
+      "question": "Y a-t-il des salles de bains privatives dans les camps ?",
+      "answer": "Les camps de luxe disposent de salles de bains privatives avec douches chaudes, tandis que les camps standards proposent des sanitaires communs propres."
+    },
+    "q4": {
+      "question": "Fait-il froid la nuit dans le désert ?",
+      "answer": "Oui, les températures chutent considérablement après le coucher du soleil, en particulier en automne, en hiver et au printemps. Des vêtements chauds sont indispensables."
+    },
+    "q5": {
+      "question": "Comment se rendre au camp dans le désert ?",
+      "answer": "Les visiteurs rejoignent généralement le camp via une caravane de dromadaires à travers les dunes ou grâce à un transfert en 4x4 organisé par le camp."
+    }
+  },
+  "footer": {
+    "destinations_title": "Destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact"
   }
 }

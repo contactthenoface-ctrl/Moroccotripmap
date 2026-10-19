@@ -26,19 +26,44 @@
     "badge": "Galerie",
     "title": "Les Ateliers de Fossiles en images",
     "subtitle": "Faites glisser pour découvrir les showrooms, les objets en pierre polie et les fossiles anciens.",
-    "s1": { "caption": "Exposition dans un showroom de fossiles" },
-    "s2": { "caption": "Spécimen ancien de trilobite" },
-    "s3": { "caption": "Découpe artisanale de la pierre" },
-    "s4": { "caption": "Mobilier en marbre incrusté de fossiles" },
-    "s5": { "caption": "Décor du désert saharien" }
+    "s1": {
+      "caption": "Exposition dans un showroom de fossiles"
+    },
+    "s2": {
+      "caption": "Spécimen ancien de trilobite"
+    },
+    "s3": {
+      "caption": "Découpe artisanale de la pierre"
+    },
+    "s4": {
+      "caption": "Mobilier en marbre incrusté de fossiles"
+    },
+    "s5": {
+      "caption": "Décor du désert saharien"
+    }
   },
   "moods": {
     "badge": "Points forts",
     "title": "Que voir aux Ateliers de Fossiles",
     "subtitle": "Savoir-faire artisanal, histoire et souvenirs uniques — trois aspects clés.",
-    "1": { "tag": "Démonstration", "title": "Travail artisanal", "desc": "Assistez au travail des artisans locaux qui découpent, façonnent et polissent la pierre riche en fossiles.", "duration": "Démonstration • 20 min" },
-    "2": { "tag": "Exposition", "title": "Showrooms", "desc": "Explorez des spécimens de qualité muséale impressionnants, des ammonites géantes aux trilobites.", "duration": "Visite • 30 min" },
-    "3": { "tag": "Souvenirs", "title": "Pièces de collection", "desc": "Acquérez d'authentiques petits fossiles ou des objets de décoration directement à la source.", "duration": "Achats • 15 min" }
+    "1": {
+      "tag": "Démonstration",
+      "title": "Travail artisanal",
+      "desc": "Assistez au travail des artisans locaux qui découpent, façonnent et polissent la pierre riche en fossiles.",
+      "duration": "Démonstration • 20 min"
+    },
+    "2": {
+      "tag": "Exposition",
+      "title": "Showrooms",
+      "desc": "Explorez des spécimens de qualité muséale impressionnants, des ammonites géantes aux trilobites.",
+      "duration": "Visite • 30 min"
+    },
+    "3": {
+      "tag": "Souvenirs",
+      "title": "Pièces de collection",
+      "desc": "Acquérez d'authentiques petits fossiles ou des objets de décoration directement à la source.",
+      "duration": "Achats • 15 min"
+    }
   },
   "food": {
     "title": "Restauration autour des ateliers",
@@ -52,17 +77,38 @@
   },
   "tips": {
     "title": "Conseils pratiques pour visiter les ateliers",
-    "1": { "title": "Expédition d'objets lourds", "desc": "Les grandes tables en marbre et les pièces lourdes peuvent généralement être expédiées à l'international par les ateliers reconnus." },
-    "2": { "title": "Espèces & Marchandage", "desc": "Prévoyez des dirhams marocains pour les petits achats, et une négociation courtoise est d'usage pour les souvenirs." },
-    "3": { "title": "Excursions combinées", "desc": "Associez votre visite d'atelier à un safari en 4x4 dans le désert pour une journée complète et variée." }
+    "1": {
+      "title": "Expédition d'objets lourds",
+      "desc": "Les grandes tables en marbre et les pièces lourdes peuvent généralement être expédiées à l'international par les ateliers reconnus."
+    },
+    "2": {
+      "title": "Espèces & Marchandage",
+      "desc": "Prévoyez des dirhams marocains pour les petits achats, et une négociation courtoise est d'usage pour les souvenirs."
+    },
+    "3": {
+      "title": "Excursions combinées",
+      "desc": "Associez votre visite d'atelier à un safari en 4x4 dans le désert pour une journée complète et variée."
+    }
   },
   "gyg": {
     "badge": "Excursions & Activités",
     "title": "Réserver un tour Désert & Fossiles",
     "subtitle": "Excursions en 4x4 les mieux notées intégrant sites géologiques et ateliers locaux.",
-    "t1": { "tag": "Safari 4x4", "title": "Merzouga : Safari 4x4 dans l'Erg Chebbi & Sites de fossiles", "desc": "Explorez les pistes du désert, visitez des carrières de fossiles et des ateliers artisanaux avec un chauffeur local expert." },
-    "t2": { "tag": "Tour Culturel", "title": "Merzouga : Culture du désert & Tour des familles nomades", "desc": "Découvrez la vie nomade, la musique traditionnelle à Khamlia et le patrimoine fossilifère régional." },
-    "t3": { "tag": "Dromadaire", "title": "Merzouga : Balade au coucher du soleil & Nuit en bivouac", "desc": "Associez vos explorations diurnes de fossiles à une nuit inoubliable au cœur des dunes de l'Erg Chebbi." },
+    "t1": {
+      "tag": "Safari 4x4",
+      "title": "Merzouga : Safari 4x4 dans l'Erg Chebbi & Sites de fossiles",
+      "desc": "Explorez les pistes du désert, visitez des carrières de fossiles et des ateliers artisanaux avec un chauffeur local expert."
+    },
+    "t2": {
+      "tag": "Tour Culturel",
+      "title": "Merzouga : Culture du désert & Tour des familles nomades",
+      "desc": "Découvrez la vie nomade, la musique traditionnelle à Khamlia et le patrimoine fossilifère régional."
+    },
+    "t3": {
+      "tag": "Dromadaire",
+      "title": "Merzouga : Balade au coucher du soleil & Nuit en bivouac",
+      "desc": "Associez vos explorations diurnes de fossiles à une nuit inoubliable au cœur des dunes de l'Erg Chebbi."
+    },
     "check": "Vérifier la disponibilité sur GetYourGuide →",
     "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via ceux-ci, nous percevons une petite commission, sans frais supplémentaires pour vous."
   },
@@ -85,18 +131,58 @@
     "badge": "Le Blog",
     "title": "Articles associés",
     "all": "Tous les articles →",
-    "a1": { "tag": "Gastronomie", "title": "Guide gastronomique de Merzouga : Tajines et plaisirs du désert", "desc": "Où bien manger à Merzouga, des repas conviviaux en bivouac aux tajines traditionnels." },
-    "a2": { "tag": "Transport", "title": "Se déplacer à Merzouga : 4x4, transferts et pistes du désert", "desc": "Les meilleures solutions pour voyager depuis Errachidia et circuler entre le village et les dunes." },
-    "a3": { "tag": "Planification", "title": "Premier voyage à Merzouga : À quoi s'attendre dans le Sahara", "desc": "Comment appréhender votre premier jour dans le désert et planifier vos visites nature sans stress." },
+    "a1": {
+      "tag": "Gastronomie",
+      "title": "Guide gastronomique de Merzouga : Tajines et plaisirs du désert",
+      "desc": "Où bien manger à Merzouga, des repas conviviaux en bivouac aux tajines traditionnels."
+    },
+    "a2": {
+      "tag": "Transport",
+      "title": "Se déplacer à Merzouga : 4x4, transferts et pistes du désert",
+      "desc": "Les meilleures solutions pour voyager depuis Errachidia et circuler entre le village et les dunes."
+    },
+    "a3": {
+      "tag": "Planification",
+      "title": "Premier voyage à Merzouga : À quoi s'attendre dans le Sahara",
+      "desc": "Comment appréhender votre premier jour dans le désert et planifier vos visites nature sans stress."
+    },
     "read": "Lire l'article →"
   },
   "faq": {
     "badge": "Bon à savoir",
     "title": "FAQ Ateliers de Fossiles",
-    "q1": { "question": "Peut-on visiter les ateliers de fossiles ?", "answer": "Oui, les ateliers et showrooms locaux accueillent les visiteurs pour découvrir comment les fossiles marins sont extraits, coupés et polis." },
-    "q2": { "question": "Quel est le meilleur moment pour visiter les ateliers ?", "answer": "Le matin ou en fin d'après-midi sont idéaux pour éviter la chaleur de la journée lors des déplacements entre Erfoud et Merzouga." },
-    "q3": { "question": "Peut-on acheter de vrais fossiles ?", "answer": "Oui, les ateliers proposent un large choix de pièces authentiques, de petits trilobites aux grandes tables en marbre incrustées." },
-    "q4": { "question": "Combien de temps dure la visite ?", "answer": "Une visite classique d'un atelier et de son showroom prend généralement entre 45 et 60 minutes." },
-    "q5": { "question": "Où se trouvent les ateliers de fossiles ?", "answer": "La plupart des grands ateliers sont situés entre Erfoud et les abords de Merzouga, facilement accessibles lors d'une excursion en 4x4." }
+    "q1": {
+      "question": "Peut-on visiter les ateliers de fossiles ?",
+      "answer": "Oui, les ateliers et showrooms locaux accueillent les visiteurs pour découvrir comment les fossiles marins sont extraits, coupés et polis."
+    },
+    "q2": {
+      "question": "Quel est le meilleur moment pour visiter les ateliers ?",
+      "answer": "Le matin ou en fin d'après-midi sont idéaux pour éviter la chaleur de la journée lors des déplacements entre Erfoud et Merzouga."
+    },
+    "q3": {
+      "question": "Peut-on acheter de vrais fossiles ?",
+      "answer": "Oui, les ateliers proposent un large choix de pièces authentiques, de petits trilobites aux grandes tables en marbre incrustées."
+    },
+    "q4": {
+      "question": "Combien de temps dure la visite ?",
+      "answer": "Une visite classique d'un atelier et de son showroom prend généralement entre 45 et 60 minutes."
+    },
+    "q5": {
+      "question": "Où se trouvent les ateliers de fossiles ?",
+      "answer": "La plupart des grands ateliers sont situés entre Erfoud et les abords de Merzouga, facilement accessibles lors d'une excursion en 4x4."
+    }
+  },
+  "footer": {
+    "destinations_title": "Destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact"
   }
 }

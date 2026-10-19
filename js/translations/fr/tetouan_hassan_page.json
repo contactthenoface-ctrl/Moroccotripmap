@@ -27,11 +27,21 @@
     "badge": "Galerie",
     "title": "La Place Hassan II en images",
     "subtitle": "Architecture, grands espaces ouverts et vie urbaine vibrante.",
-    "s1": { "caption": "Vue panoramique de la vaste place" },
-    "s2": { "caption": "Terrasses et abords d'architecture coloniale espagnole" },
-    "s3": { "caption": "Ambiance matinale et sentiers paisibles" },
-    "s4": { "caption": "Rassemblements animés au crépuscule" },
-    "s5": { "caption": "Porte d'accès menant à l'ancienne médina" }
+    "s1": {
+      "caption": "Vue panoramique de la vaste place"
+    },
+    "s2": {
+      "caption": "Terrasses et abords d'architecture coloniale espagnole"
+    },
+    "s3": {
+      "caption": "Ambiance matinale et sentiers paisibles"
+    },
+    "s4": {
+      "caption": "Rassemblements animés au crépuscule"
+    },
+    "s5": {
+      "caption": "Porte d'accès menant à l'ancienne médina"
+    }
   },
   "moods": {
     "badge": "À voir",
@@ -113,5 +123,18 @@
       "question": "Combien de temps faut-il y passer ?",
       "answer": "Environ 30 minutes pour une traversée, ou plus si vous vous détendez à la terrasse d'un café."
     }
+  },
+  "footer": {
+    "destinations_title": "Destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact"
   }
 }

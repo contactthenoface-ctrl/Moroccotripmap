@@ -26,19 +26,44 @@
     "badge": "Galería",
     "title": "El campamento en imágenes",
     "subtitle": "Desliza para ver las jaimas de lujo, los paisajes de dunas y las veladas alrededor del fuego.",
-    "s1": { "caption": "Vista del campamento en el desierto" },
-    "s2": { "caption": "Interior de las jaimas y confort" },
-    "s3": { "caption": "Velada junto a la fogata" },
-    "s4": { "caption": "Atardecer sobre las dunas" },
-    "s5": { "caption": "Luz de la mañana en Merzouga" }
+    "s1": {
+      "caption": "Vista del campamento en el desierto"
+    },
+    "s2": {
+      "caption": "Interior de las jaimas y confort"
+    },
+    "s3": {
+      "caption": "Velada junto a la fogata"
+    },
+    "s4": {
+      "caption": "Atardecer sobre las dunas"
+    },
+    "s5": {
+      "caption": "Luz de la mañana en Merzouga"
+    }
   },
   "moods": {
     "badge": "Experiencia",
     "title": "Qué esperar en un campamento",
     "subtitle": "Observación de estrellas, ritmos nómadas y aventuras en las dunas: tres aspectos clave.",
-    "1": { "tag": "Velada", "title": "Fogata y Música", "desc": "Disfruta de la música de tambores bereberes bajo un impresionante manto de estrellas.", "duration": "Nocturna • Astronomía" },
-    "2": { "tag": "Aventura", "title": "Paseo en Dromedario", "desc": "Cabalga por las dunas doradas de Erg Chebbi para llegar al campamento al atardecer.", "duration": "Atardecer • 1 – 1.5 horas" },
-    "3": { "tag": "Confort", "title": "Jaimas de Lujo", "desc": "Disfruta de camas cómodas, edredones cálidos y baños privados en plena Sahara.", "duration": "Estancia nocturna" }
+    "1": {
+      "tag": "Velada",
+      "title": "Fogata y Música",
+      "desc": "Disfruta de la música de tambores bereberes bajo un impresionante manto de estrellas.",
+      "duration": "Nocturna • Astronomía"
+    },
+    "2": {
+      "tag": "Aventura",
+      "title": "Paseo en Dromedario",
+      "desc": "Cabalga por las dunas doradas de Erg Chebbi para llegar al campamento al atardecer.",
+      "duration": "Atardecer • 1 – 1.5 horas"
+    },
+    "3": {
+      "tag": "Confort",
+      "title": "Jaimas de Lujo",
+      "desc": "Disfruta de camas cómodas, edredones cálidos y baños privados en plena Sahara.",
+      "duration": "Estancia nocturna"
+    }
   },
   "food": {
     "title": "Cena en el desierto",
@@ -52,17 +77,38 @@
   },
   "tips": {
     "title": "Consejos prácticos para tu estancia",
-    "1": { "title": "Lleva ropa de abrigo", "desc": "Las temperaturas bajan drásticamente por la noche; lleva una chaqueta, forro polar o suéter." },
-    "2": { "title": "Equipaje ligero", "desc": "Prepara una mochila pequeña para la noche y deja las maletas grandes en tu hotel base en Merzouga." },
-    "3": { "title": "Calzado y Protección", "desc": "Lleva gafas de sol, protector solar y calzado cómodo o sandalias para la arena." }
+    "1": {
+      "title": "Lleva ropa de abrigo",
+      "desc": "Las temperaturas bajan drásticamente por la noche; lleva una chaqueta, forro polar o suéter."
+    },
+    "2": {
+      "title": "Equipaje ligero",
+      "desc": "Prepara una mochila pequeña para la noche y deja las maletas grandes en tu hotel base en Merzouga."
+    },
+    "3": {
+      "title": "Calzado y Protección",
+      "desc": "Lleva gafas de sol, protector solar y calzado cómodo o sandalias para la arena."
+    }
   },
   "gyg": {
     "badge": "Excursiones y Actividades",
     "title": "Reserva una experiencia en el campamento",
     "subtitle": "Paquetes nocturnos mejor valorados con paseo en dromedario, cena y observación de estrellas.",
-    "t1": { "tag": "Campamento Estándar", "title": "Merzouga: Experiencia de Campamento Estándar", "desc": "Paseo en dromedario en Erg Chebbi, cena tradicional junto al fuego, música y noche en jaima." },
-    "t2": { "tag": "Estancia de Lujo", "title": "Merzouga: Campamento de Lujo con Baño Privado", "desc": "Mejora tu noche en el Sahara con una jaima privada de lujo con ducha caliente y ropa de cama prémium." },
-    "t3": { "tag": "Varios Días", "title": "Excursión de 2 días al desierto y campamento desde Marrakech", "desc": "Paquete completo que incluye transporte, paseo en dromedario, noche en campamento y paradas en el Atlas." },
+    "t1": {
+      "tag": "Campamento Estándar",
+      "title": "Merzouga: Experiencia de Campamento Estándar",
+      "desc": "Paseo en dromedario en Erg Chebbi, cena tradicional junto al fuego, música y noche en jaima."
+    },
+    "t2": {
+      "tag": "Estancia de Lujo",
+      "title": "Merzouga: Campamento de Lujo con Baño Privado",
+      "desc": "Mejora tu noche en el Sahara con una jaima privada de lujo con ducha caliente y ropa de cama prémium."
+    },
+    "t3": {
+      "tag": "Varios Días",
+      "title": "Excursión de 2 días al desierto y campamento desde Marrakech",
+      "desc": "Paquete completo que incluye transporte, paseo en dromedario, noche en campamento y paradas en el Atlas."
+    },
     "check": "Comprobar disponibilidad en GetYourGuide →",
     "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una pequeña comisión sin coste extra."
   },
@@ -85,18 +131,58 @@
     "badge": "Del Blog",
     "title": "Artículos relacionados",
     "all": "Todos los artículos →",
-    "a1": { "tag": "Gastronomía", "title": "Guía gastronómica de Merzouga: Tajines y cocina del desierto", "desc": "Dónde comer bien en Merzouga, desde cenas en campamentos hasta tajines tradicionales." },
-    "a2": { "tag": "Transporte", "title": "Cómo moverse por Merzouga: 4x4, traslados y pistas", "desc": "Formas prácticas de viajar desde Errachidia y desplazarse entre el pueblo y las dunas." },
-    "a3": { "tag": "Planificación", "title": "Primer viaje a Merzouga: Qué esperar en el Sahara", "desc": "Cómo se siente el desierto el primer día y cómo planificar tus visitas naturales sin prisas." },
+    "a1": {
+      "tag": "Gastronomía",
+      "title": "Guía gastronómica de Merzouga: Tajines y cocina del desierto",
+      "desc": "Dónde comer bien en Merzouga, desde cenas en campamentos hasta tajines tradicionales."
+    },
+    "a2": {
+      "tag": "Transporte",
+      "title": "Cómo moverse por Merzouga: 4x4, traslados y pistas",
+      "desc": "Formas prácticas de viajar desde Errachidia y desplazarse entre el pueblo y las dunas."
+    },
+    "a3": {
+      "tag": "Planificación",
+      "title": "Primer viaje a Merzouga: Qué esperar en el Sahara",
+      "desc": "Cómo se siente el desierto el primer día y cómo planificar tus visitas naturales sin prisas."
+    },
     "read": "Leer el artículo →"
   },
   "faq": {
     "badge": "Bueno saber",
     "title": "Preguntas frecuentes sobre el campamento",
-    "q1": { "question": "¿Cuánto tiempo se necesita en el campamento?", "answer": "Lo estándar es pasar una noche; por lo general se llega al atardecer en dromedario o 4x4 y se parte tras el desayuno." },
-    "q2": { "question": "¿Qué incluye la estancia en el campamento?", "answer": "La mayoría incluye jaima privada o compartida, cena, desayuno, paseo en dromedario o traslado en 4x4 y música nocturna junto al fuego." },
-    "q3": { "question": "¿Hay baños privados en los campamentos?", "answer": "Los campamentos de lujo cuentan con baños privados y ducha de agua caliente, mientras que los estándar ofrecen instalaciones compartidas limpias." },
-    "q4": { "question": "¿Hace frío por la noche en el desierto?", "answer": "Sí, las temperaturas bajan notablemente tras la puesta de sol, especialmente en otoño, invierno y primavera. Es fundamental llevar ropa de abrigo." },
-    "q5": { "question": "¿Cómo se llega al campamento?", "answer": "Los visitantes suelen llegar en caravana de dromedarios a través de las dunas o mediante un servicio de traslado en 4x4 organizado por el campamento." }
+    "q1": {
+      "question": "¿Cuánto tiempo se necesita en el campamento?",
+      "answer": "Lo estándar es pasar una noche; por lo general se llega al atardecer en dromedario o 4x4 y se parte tras el desayuno."
+    },
+    "q2": {
+      "question": "¿Qué incluye la estancia en el campamento?",
+      "answer": "La mayoría incluye jaima privada o compartida, cena, desayuno, paseo en dromedario o traslado en 4x4 y música nocturna junto al fuego."
+    },
+    "q3": {
+      "question": "¿Hay baños privados en los campamentos?",
+      "answer": "Los campamentos de lujo cuentan con baños privados y ducha de agua caliente, mientras que los estándar ofrecen instalaciones compartidas limpias."
+    },
+    "q4": {
+      "question": "¿Hace frío por la noche en el desierto?",
+      "answer": "Sí, las temperaturas bajan notablemente tras la puesta de sol, especialmente en otoño, invierno y primavera. Es fundamental llevar ropa de abrigo."
+    },
+    "q5": {
+      "question": "¿Cómo se llega al campamento?",
+      "answer": "Los visitantes suelen llegar en caravana de dromedarios a través de las dunas o mediante un servicio de traslado en 4x4 organizado por el campamento."
+    }
+  },
+  "footer": {
+    "destinations_title": "Destinos",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto"
   }
 }

@@ -26,19 +26,44 @@
     "badge": "Galería",
     "title": "El paseo en dromedario en imágenes",
     "subtitle": "Desliza para ver las dunas doradas, las caravanas y las noches en el campamento.",
-    "s1": { "caption": "Caravana en las dunas" },
-    "s2": { "caption": "Luz del atardecer" },
-    "s3": { "caption": "Ambiente del campamento en el desierto" },
-    "s4": { "caption": "Patrones de las crestas de arena" },
-    "s5": { "caption": "Luz de la mañana sobre Merzouga" }
+    "s1": {
+      "caption": "Caravana en las dunas"
+    },
+    "s2": {
+      "caption": "Luz del atardecer"
+    },
+    "s3": {
+      "caption": "Ambiente del campamento en el desierto"
+    },
+    "s4": {
+      "caption": "Patrones de las crestas de arena"
+    },
+    "s5": {
+      "caption": "Luz de la mañana sobre Merzouga"
+    }
   },
   "moods": {
     "badge": "Horarios",
     "title": "Qué ver en tu excursión en dromedario",
     "subtitle": "Dunas, luz y el entorno desértico: tres aspectos que no te puedes perder.",
-    "1": { "tag": "Experiencia", "title": "Paseo en dromedario", "desc": "El ritmo tradicional de cruzar las dunas.", "duration": "Excursión • 1 – 2 horas" },
-    "2": { "tag": "Luz", "title": "Atardecer y Amanecer", "desc": "La suave luz del desierto realza los paisajes.", "duration": "Hora dorada • 45 – 60 min" },
-    "3": { "tag": "Consejo", "title": "Estancia nocturna", "desc": "Combina tu ruta con una noche bajo las estrellas.", "duration": "Campamento • 1 Noche" }
+    "1": {
+      "tag": "Experiencia",
+      "title": "Paseo en dromedario",
+      "desc": "El ritmo tradicional de cruzar las dunas.",
+      "duration": "Excursión • 1 – 2 horas"
+    },
+    "2": {
+      "tag": "Luz",
+      "title": "Atardecer y Amanecer",
+      "desc": "La suave luz del desierto realza los paisajes.",
+      "duration": "Hora dorada • 45 – 60 min"
+    },
+    "3": {
+      "tag": "Consejo",
+      "title": "Estancia nocturna",
+      "desc": "Combina tu ruta con una noche bajo las estrellas.",
+      "duration": "Campamento • 1 Noche"
+    }
   },
   "food": {
     "title": "Antes o después de la excursión",
@@ -52,17 +77,38 @@
   },
   "tips": {
     "title": "Consejos prácticos para tu ruta",
-    "1": { "title": "Protección contra la arena", "desc": "Protege tus cámaras del polvo fino y usa pantalones largos para mayor comodidad." },
-    "2": { "title": "Operadores de confianza", "desc": "Contrata siempre con campamentos autorizados y guías locales experimentados." },
-    "3": { "title": "Ropa de abrigo", "desc": "Las temperaturas en el desierto bajan mucho por la noche; lleva una chaqueta o suéter." }
+    "1": {
+      "title": "Protección contra la arena",
+      "desc": "Protege tus cámaras del polvo fino y usa pantalones largos para mayor comodidad."
+    },
+    "2": {
+      "title": "Operadores de confianza",
+      "desc": "Contrata siempre con campamentos autorizados y guías locales experimentados."
+    },
+    "3": {
+      "title": "Ropa de abrigo",
+      "desc": "Las temperaturas en el desierto bajan mucho por la noche; lleva una chaqueta o suéter."
+    }
   },
   "gyg": {
     "badge": "Excursiones y Actividades",
     "title": "Reserva una experiencia en dromedario",
     "subtitle": "Excelentes opciones para rutas guiadas al atardecer y campamentos nocturnos.",
-    "t1": { "tag": "Atardecer", "title": "Paseo en dromedario al atardecer en Erg Chebbi", "desc": "Adéntrate en las dunas con un guía local, contempla la puesta de sol y disfruta de un té de menta." },
-    "t2": { "tag": "Campamento nocturno", "title": "Noche en campamento y ruta", "desc": "Pasa una noche bajo las estrellas en una jaima bereber con cena, tambores junto al fuego y amanecer." },
-    "t3": { "tag": "Combo 4x4 y Dromedario", "title": "Tour en 4x4 y paseo en dromedario", "desc": "Explora poblados nómadas, la música de Khamlia y las dunas combinando un recorrido en 4x4 y dromedario." },
+    "t1": {
+      "tag": "Atardecer",
+      "title": "Paseo en dromedario al atardecer en Erg Chebbi",
+      "desc": "Adéntrate en las dunas con un guía local, contempla la puesta de sol y disfruta de un té de menta."
+    },
+    "t2": {
+      "tag": "Campamento nocturno",
+      "title": "Noche en campamento y ruta",
+      "desc": "Pasa una noche bajo las estrellas en una jaima bereber con cena, tambores junto al fuego y amanecer."
+    },
+    "t3": {
+      "tag": "Combo 4x4 y Dromedario",
+      "title": "Tour en 4x4 y paseo en dromedario",
+      "desc": "Explora poblados nómadas, la música de Khamlia y las dunas combinando un recorrido en 4x4 y dromedario."
+    },
     "check": "Comprobar disponibilidad en GetYourGuide →",
     "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una pequeña comisión sin costarte más."
   },
@@ -85,18 +131,58 @@
     "badge": "Del Blog",
     "title": "Artículos relacionados",
     "all": "Todos los artículos →",
-    "a1": { "tag": "Gastronomía", "title": "Guía gastronómica de Merzouga: Tajines y cocina del desierto", "desc": "Dónde comer bien en Merzouga, desde cenas en campamentos hasta tajines tradicionales." },
-    "a2": { "tag": "Transporte", "title": "Cómo moverse por Merzouga: 4x4, traslados y pistas", "desc": "Formas prácticas de viajar desde Errachidia y desplazarse entre el pueblo y las dunas." },
-    "a3": { "tag": "Planificación", "title": "Primer viaje a Merzouga: Qué esperar en el Sahara", "desc": "Cómo se siente el desierto el primer día y cómo planificar tu ruta sin prisas." },
+    "a1": {
+      "tag": "Gastronomía",
+      "title": "Guía gastronómica de Merzouga: Tajines y cocina del desierto",
+      "desc": "Dónde comer bien en Merzouga, desde cenas en campamentos hasta tajines tradicionales."
+    },
+    "a2": {
+      "tag": "Transporte",
+      "title": "Cómo moverse por Merzouga: 4x4, traslados y pistas",
+      "desc": "Formas prácticas de viajar desde Errachidia y desplazarse entre el pueblo y las dunas."
+    },
+    "a3": {
+      "tag": "Planificación",
+      "title": "Primer viaje a Merzouga: Qué esperar en el Sahara",
+      "desc": "Cómo se siente el desierto el primer día y cómo planificar tu ruta sin prisas."
+    },
     "read": "Leer el artículo →"
   },
   "faq": {
     "badge": "Bueno saber",
     "title": "Preguntas frecuentes sobre el paseo en dromedario",
-    "q1": { "question": "¿Cuánto dura una excursión en dromedario?", "answer": "La mayoría de los visitantes eligen entre 1 y 2 horas para el atardecer o amanecer, o reservan la experiencia nocturna completa." },
-    "q2": { "question": "¿Hay que pagar entrada para acceder a las dunas?", "answer": "El acceso a las dunas de Erg Chebbi es libre, pero los paseos guiados en dromedario y campamentos requieren contratación previa." },
-    "q3": { "question": "¿Cuál es el mejor momento para realizar la ruta?", "answer": "Las últimas horas de la tarde antes del atardecer o la madrugada son ideales para evitar el calor fuerte y disfrutar de la mejor luz." },
-    "q4": { "question": "¿Qué ropa debo llevar para el paseo?", "answer": "Lleva pantalones largos y cómodos, calzado cerrado o sandalias adecuadas, y un pañuelo o turbante para protegerte del sol y la arena." },
-    "q5": { "question": "¿Cuánto cuesta una excursión en dromedario?", "answer": "Los precios varían según si eliges un paseo corto al atardecer o un paquete completo con noche, cena y desayuno incluidos." }
+    "q1": {
+      "question": "¿Cuánto dura una excursión en dromedario?",
+      "answer": "La mayoría de los visitantes eligen entre 1 y 2 horas para el atardecer o amanecer, o reservan la experiencia nocturna completa."
+    },
+    "q2": {
+      "question": "¿Hay que pagar entrada para acceder a las dunas?",
+      "answer": "El acceso a las dunas de Erg Chebbi es libre, pero los paseos guiados en dromedario y campamentos requieren contratación previa."
+    },
+    "q3": {
+      "question": "¿Cuál es el mejor momento para realizar la ruta?",
+      "answer": "Las últimas horas de la tarde antes del atardecer o la madrugada son ideales para evitar el calor fuerte y disfrutar de la mejor luz."
+    },
+    "q4": {
+      "question": "¿Qué ropa debo llevar para el paseo?",
+      "answer": "Lleva pantalones largos y cómodos, calzado cerrado o sandalias adecuadas, y un pañuelo o turbante para protegerte del sol y la arena."
+    },
+    "q5": {
+      "question": "¿Cuánto cuesta una excursión en dromedario?",
+      "answer": "Los precios varían según si eliges un paseo corto al atardecer o un paquete completo con noche, cena y desayuno incluidos."
+    }
+  },
+  "footer": {
+    "destinations_title": "Destinos",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto"
   }
 }

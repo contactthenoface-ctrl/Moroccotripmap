@@ -10,7 +10,65 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/></svg>"/>
 
     <!-- SEO Primary Meta Tags -->
-    <title data-i18n="history_page.seo.title">History of Morocco: From Berber Origins to Imperial Dynasties | MoroccoTripMap</a>
+    <title data-i18n="history_page.seo.title">History of Morocco: From Berber Origins to Imperial Dynasties | MoroccoTripMap</title>
+    <meta content="Explorez la grande histoire du Maroc : des royaumes berbères amazighs et Volubilis romaine aux dynasties Idrisside, Almoravide, Almohade, Saadienne et Alaouite. Guide historique exhaustif." name="description" data-i18n-attr="content:history_page.seo.description"/>
+    <meta content="histoire du maroc, dynasties marocaines, histoire berbere amazigh, volubilis empire romain, idrissides fes, almoravides marrakech, almohades, saadiens, alaouites, histoire villes imperiales" name="keywords"/>
+    <link href="https://moroccotripmap.com/guides/histoire.html" rel="canonical"/>
+
+    <!-- Open Graph / Social Media -->
+    <meta content="article" property="og:type"/>
+    <meta content="L'Histoire du Maroc : Des Origines Amazighs au Royaume Moderne | MoroccoTripMap" property="og:title" data-i18n-attr="content:history_page.seo.og_title"/>
+    <meta content="Voyagez à travers les siècles : royaumes berbères, antiquité romaine, épopées islamiques et dynasties impériales qui ont façonné le Maroc." property="og:description" data-i18n-attr="content:history_page.seo.og_description"/>
+    <meta content="https://moroccotripmap.com/guides/histoire.html" property="og:url"/>
+    <meta content="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
+
+    <!-- Hreflang Tags -->
+    <link href="https://moroccotripmap.com/guides/histoire.html" hreflang="fr" rel="alternate"/>
+    <link href="https://moroccotripmap.com/en/guides/history.html" hreflang="en" rel="alternate"/>
+    <link href="https://moroccotripmap.com/es/guides/historia.html" hreflang="es" rel="alternate"/>
+    <link href="https://moroccotripmap.com/ar/guides/history.html" hreflang="ar" rel="alternate"/>
+    <link href="https://moroccotripmap.com/guides/histoire.html" hreflang="x-default" rel="alternate"/>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creme: '#F9F6F0',
+                        vert: '#185336',
+                        sable: '#C29B62',
+                        sombre: '#1A1A1A',
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a class="flex items-center gap-3 group shrink-0" href="../index.html">
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../images/logo.webp"/>
+            </a>
             
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
@@ -113,9 +171,7 @@
                 </nav>
 
                 <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight max-w-4xl"><span data-i18n="history_page.hero.title">The History of Morocco: From Amazigh Origins to Imperial Dynasties</span></h1>
-                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed">
-                    <span data-i18n="history_page.hero.subtitle">Explore more than two millennia of civilization at the crossroads of Africa, Europe and the Arab-Muslim world. From ancient Berber kingdoms to the architectural masterpieces of ruling dynasties.</span>
-                </p>
+                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed"><span data-i18n="history_page.hero.subtitle">Explore more than two millennia of civilization at the crossroads of Africa, Europe and the Arab-Muslim world. From ancient Berber kingdoms to the architectural masterpieces of ruling dynasties.</span></p>
 
                 <!-- Key Metric Badges -->
                 <div class="mt-8 flex flex-wrap gap-3 text-xs sm:text-sm text-creme/90">
@@ -135,7 +191,7 @@
                     <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                     <span data-i18n="history_page.timeline_label">Periods:</span>
                 </span>
-                <a href="#antiquite" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition" data-i18n="history_page.timeline.antiquite">1. Origins &amp; Antiquity</a>
+                <a href="#antiquite" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition" data-i18n="history_page.timeline.antiquite">1. Origins & Antiquity</a>
                 <a href="#idrissides" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition" data-i18n="history_page.timeline.idrissides">2. Idrisids (789)</a>
                 <a href="#almoravides" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition" data-i18n="history_page.timeline.almoravides">3. Almoravids (1060)</a>
                 <a href="#almohades" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition" data-i18n="history_page.timeline.almohades">4. Almohads (1147)</a>
@@ -153,7 +209,9 @@
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="history_page.intro.eyebrow">Overview</span>
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-vert" data-i18n="history_page.intro.title">A Unique Crossroads of Civilizations in Africa</h2>
                 <p class="text-sm sm:text-base text-sombre/80 leading-relaxed"><span data-i18n="history_page.intro.text">Morocco's history stands out for remarkable state continuity and cultural independence in North Africa. Shielded by the high natural barriers of the Atlas and bordered by two seafronts (Atlantic and Mediterranean), the country forged a plural identity where Amazigh (Berber) heritage, Arab-Islamic influence, Andalusian currents and Saharan contacts intertwine.</span></p>
-                <p class="text-sm sm:text-base text-sombre/80 leading-relaxed"><span data-i18n="history_page.intro.text2">Unlike its neighbours, Morocco was never under Ottoman rule, thus preserving its own ruling dynasties and unique architectural and craft traditions.</span></p>
+                <p class="text-sm sm:text-base text-sombre/80 leading-relaxed">
+                    Contrairement à ses voisins, le Maroc n'a jamais été sous domination ottomane, préservant ainsi ses propres dynasties régnantes et ses traditions architecturales et artisanales uniques.
+                </p>
             </section>
 
             <!-- CHRONOLOGY SECTION BY PERIOD -->
@@ -161,19 +219,17 @@
 
                 <!-- PERIODE 1: ANTIQUITE -->
                 <article class="scroll-mt-36 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition" id="antiquite">
-                    <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
-                        <div class="space-y-3 max-w-2xl">
-                            <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider"><span data-i18n="history_page.periods.antiquite.date">Amazigh, Phoenician and Roman Antiquity</span></span>
+    <p class="text-sm sm:text-base text-sombre/80 leading-relaxed"><span data-i18n="history_page.intro.text2">Unlike its neighbours, Morocco was never under Ottoman rule, thus preserving its own ruling dynasties and unique architectural and craft traditions.</span></p>ider">VIIIe s. av. J.-C. – Ve s. apr. J.-C.</span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-vert"><span data-i18n="history_page.periods.antiquite.title">1. Berber Origins, Phoenician Trading Posts and Mauretania Tingitana</span></h2>
                             <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.antiquite.p1">The first recorded inhabitants of Morocco are the Amazigh ("free people"). From the 8th century BC, Phoenician and later Carthaginian merchants established coastal trading posts (Lixus, Tingis/Tangier, Mogador/Essaouira).</span></p>
                             <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.antiquite.p2">The indigenous kingdom of Mauretania flourished under the learned King Juba II and his son Ptolemy. Annexed by Rome under Emperor Caligula, the province became Mauretania Tingitana. The city of Volubilis then rose as the Roman administrative capital, famed for its olive-oil presses and magnificent mosaics.</span></p>
                         </div>
                         <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
-                            <span class="font-bold text-vert uppercase text-[11px] block"><span data-i18n="history_page.periods.antiquite.side_title">Monuments &amp; Visible Traces</span></span>
+                            <span class="font-bold text-vert uppercase text-[11px] block"><span data-i18n="history_page.periods.antiquite.side_title">Monuments & Visible Traces</span></span>
                             <ul class="space-y-1.5 text-sombre/80">
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.antiquite.side.0.name">Volubilis</strong> <span data-i18n="history_page.periods.antiquite.side.0.place">Triumphal Arch &amp; ancient mosaics.</span></span>
+                                    <span><strong data-i18n="history_page.periods.antiquite.side.0.name">Volubilis</strong> <span data-i18n="history_page.periods.antiquite.side.0.place">Triumphal Arch & ancient mosaics.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
@@ -261,7 +317,7 @@
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.almohades.side.1.name">Hassan Tower &amp; Oudayas</strong> <span data-i18n="history_page.periods.almohades.side.1.place">Rabat.</span></span>
+                                    <span><strong data-i18n="history_page.periods.almohades.side.1.name">Hassan Tower & Oudayas</strong> <span data-i18n="history_page.periods.almohades.side.1.place">Rabat.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
@@ -385,7 +441,8 @@
                             <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         </button>
                         <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                            <span data-i18n="history_page.faq.a1">The four imperial cities chosen as capitals by successive ruling dynasties are Fez (Idrisids, Marinids), Marrakech (Almoravids, Almohads, Saadians), Meknes (Alaouites under Moulay Ismail) and Rabat (Almohads and current capital under the Alaouites).</span></div>
+                            <span data-i18n="history_page.faq.a1">The four imperial cities chosen as capitals by successive ruling dynasties are Fez (Idrisids, Marinids), Marrakech (Almoravids, Almohads, Saadians), Meknes (Alaouites under Moulay Ismail) and Rabat (Almohads and current capital under the Alaouites).</span>
+                        </div>
                     </div>
 
                     <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
@@ -394,7 +451,8 @@
                             <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         </button>
                         <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                            <span data-i18n="history_page.faq.a2">No. Morocco is the only North African country to have kept its independence from the Ottoman Empire. The Saadian then Alaouite dynasties stopped Ottoman advances at the Moulouya border (near Oujda).</span></div>
+                            <span data-i18n="history_page.faq.a2">No. Morocco is the only North African country to have kept its independence from the Ottoman Empire. The Saadian then Alaouite dynasties stopped Ottoman advances at the Moulouya border (near Oujda).</span>
+                        </div>
                     </div>
 
                     <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
@@ -403,7 +461,8 @@
                             <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         </button>
                         <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                            <span data-i18n="history_page.faq.a3">It is Al Quaraouiyine University in the Fez medina, founded in 859 by Fatima al-Fihriya.</span></div>
+                            <span data-i18n="history_page.faq.a3">It is Al Quaraouiyine University in the Fez medina, founded in 859 by Fatima al-Fihriya.</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -423,11 +482,7 @@
           "description": "Complete historical guide to Morocco through the centuries: Amazigh kingdoms, Roman Volubilis and the Idrisid, Almoravid, Almohad, Marinid, Saadian and Alaouite dynasties.",
           "inLanguage": "en",
           "mainEntityOfPage": "https://moroccotripmap.com/guides/histoire.html",
-          "publisher": {
-            "@type": "Organization",
-            "name": "MoroccoTripMap",
-            "url": "https://moroccotripmap.com"
-          }
+          "publisher": {"@type": "Organization", "name": "MoroccoTripMap", "url": "https://moroccotripmap.com"}
         },
         {
           "@type": "BreadcrumbList",
@@ -440,30 +495,9 @@
         {
           "@type": "FAQPage",
           "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What are the 4 Imperial Cities of Morocco?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The four imperial cities are Fez, Marrakech, Meknes and Rabat."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Was Morocco part of the Ottoman Empire?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Morocco is the only North African country to have kept full independence from the Ottoman Empire."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the oldest continuously operating university in the world?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Al Quaraouiyine University in the Fez medina, founded in 859 by Fatima al-Fihriya."
-              }
-            }
+            {"@type": "Question", "name": "What are the 4 Imperial Cities of Morocco?", "acceptedAnswer": {"@type": "Answer", "text": "The four imperial cities are Fez, Marrakech, Meknes and Rabat."}},
+            {"@type": "Question", "name": "Was Morocco part of the Ottoman Empire?", "acceptedAnswer": {"@type": "Answer", "text": "No. Morocco is the only North African country to have kept full independence from the Ottoman Empire."}},
+            {"@type": "Question", "name": "What is the oldest continuously operating university in the world?", "acceptedAnswer": {"@type": "Answer", "text": "Al Quaraouiyine University in the Fez medina, founded in 859 by Fatima al-Fihriya."}}
           ]
         }
       ]
@@ -480,16 +514,16 @@
                 </p>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title" data-i18n="footer.destinations_title">Destinations</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Destinations</h4>
                 <ul class="text-xs space-y-2 text-creme/80">
                     <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
                     <li><a class="hover:text-white transition" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title" data-i18n="footer.categories_title">Categories</h4>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
                 <ul class="text-xs space-y-2 text-creme/80">
-                    <li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads &amp; Hotels</a></li>
+                    <li><a class="hover:text-white transition" href="../riads/index.html">Authentic Riads &amp; Hotels</a></li>
                     <li><a class="hover:text-white transition" href="../gastronomy/index.html">Moroccan Restaurants &amp; Food</a></li>
                     <li><a class="hover:text-white transition" href="../experiences/index.html">Desert Tours &amp; Activities</a></li>
                     <li><a class="hover:text-white transition" href="../transport/index.html">Transport &amp; Rental Cars</a></li>

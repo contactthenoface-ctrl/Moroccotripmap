@@ -749,64 +749,133 @@ Search
 </section>
 </main>
 
-<!-- SECTION PARTENAIRES D'AFFILIATION (RESPONSIVE & VERT #185336) -->
+
+<!-- Style pour l'animation de défilement fluide de droite à gauche -->
+<style>
+  @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 25s linear infinite;
+  }
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+</style>
+
+<!-- SECTION PARTENAIRES D'AFFILIATION -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-  <div class="bg-white rounded-3xl border border-sable/15 py-8 px-6 shadow-sm">
+  <div class="bg-white rounded-3xl border border-sable/15 py-8 px-6 shadow-sm overflow-hidden">
     <div class="text-center mb-6">
       <span class="text-xs font-bold uppercase tracking-widest text-sable">Trusted Partners</span>
       <h3 class="text-lg sm:text-xl font-bold text-sombre mt-0.5">Plan, Stay & Explore with Our Official Partners</h3>
     </div>
     
-    <!-- Grille des logos partenaires en couleur #185336 -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center mb-6">
+    <!-- Conteneur du défilement infini sur 1 ligne -->
+    <div class="relative w-full overflow-hidden py-2 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-12 before:bg-gradient-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-12 after:bg-gradient-to-l after:from-white after:to-transparent">
       
-      <!-- 1. Booking.com -->
-      <a href="https://www.booking.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center p-3 w-full h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Booking.com Stays">
-        <svg class="h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19.78 3.5h-15.5C2.69 3.5 2 4.19 2 5.03v13.94c0 .84.69 1.53 1.53 1.53h15.5c.84 0 1.53-.69 1.53-1.53V5.03c0-.84-.69-1.53-1.53-1.53zM8.5 15.5H7V8.5h1.5v7zm4 0H11V8.5h1.5v7zm5.5 0h-1.5v-3.75h-1v3.75H13.5V8.5H15v3.25h1V8.5h1.5v7z"/>
-        </svg>
-      </a>
+      <div class="animate-marquee flex items-center gap-6 sm:gap-10">
+        
+        <!-- BLOC 1 DE LOGOS OFFICIELS -->
+        <div class="flex items-center gap-6 sm:gap-10 shrink-0">
+          <!-- 1. Booking.com -->
+          <a href="https://www.booking.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Booking.com">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 328 56" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 42.4V10.2h17.9c5.2 0 9.1 1.1 11.7 3.3 2.6 2.2 3.9 5.2 3.9 9 0 2.5-.7 4.7-2.1 6.5-1.4 1.8-3.4 3-6 3.7 3.3.6 5.8 2 7.6 4.1 1.8 2.1 2.7 4.7 2.7 7.8 0 4.2-1.5 7.5-4.4 9.9-2.9 2.4-7 3.6-12.3 3.6H0zm8.2-20.1h9.1c2.8 0 4.8-.5 6.1-1.6 1.3-1.1 1.9-2.6 1.9-4.5 0-1.9-.6-3.3-1.8-4.3-1.2-1-3.2-1.5-6-1.5H8.2v11.9zm0 13.9h10c2.8 0 5-.6 6.4-1.7 1.4-1.1 2.1-2.8 2.1-4.9 0-2.2-.7-3.8-2.1-4.9-1.4-1.1-3.6-1.7-6.5-1.7H8.2v13.2zm43.3-4.1c0 3.2.9 5.8 2.7 7.7 1.8 1.9 4.3 2.8 7.4 2.8 3.2 0 5.6-.9 7.4-2.8 1.8-1.9 2.7-4.5 2.7-7.7 0-3.2-.9-5.7-2.7-7.6-1.8-1.9-4.3-2.8-7.4-2.8-3.1 0-5.6.9-7.4 2.8-1.8 1.9-2.7 4.4-2.7 7.6zm-8.3 0c0-5.3 1.7-9.5 5.2-12.6 3.5-3.1 8.1-4.7 13.7-4.7 5.6 0 10.1 1.6 13.6 4.7 3.5 3.1 5.2 7.3 5.2 12.6 0 5.3-1.7 9.5-5.2 12.6-3.5 3.1-8 4.7-13.6 4.7-5.6 0-10.2-1.6-13.7-4.7-3.5-3.1-5.2-7.3-5.2-12.6zm51 0c0 3.2.9 5.8 2.7 7.7 1.8 1.9 4.3 2.8 7.4 2.8 3.2 0 5.6-.9 7.4-2.8 1.8-1.9 2.7-4.5 2.7-7.7 0-3.2-.9-5.7-2.7-7.6-1.8-1.9-4.3-2.8-7.4-2.8-3.1 0-5.6.9-7.4 2.8-1.8 1.9-2.7 4.4-2.7 7.6zm-8.3 0c0-5.3 1.7-9.5 5.2-12.6 3.5-3.1 8.1-4.7 13.7-4.7 5.6 0 10.1 1.6 13.6 4.7 3.5 3.1 5.2 7.3 5.2 12.6 0 5.3-1.7 9.5-5.2 12.6-3.5 3.1-8 4.7-13.6 4.7-5.6 0-10.2-1.6-13.7-4.7-3.5-3.1-5.2-7.3-5.2-12.6zm49.9 14.2V10.2h8.2v20.4l11.7-13h10.3L155.6 29l13.6 13.4h-10.8l-10-10.3-3.7 4.1v6.2h-8.2zm34-31.9c0-1.4.5-2.6 1.4-3.5.9-.9 2.1-1.4 3.5-1.4 1.4 0 2.6.5 3.5 1.4.9.9 1.4 2.1 1.4 3.5 0 1.4-.5 2.6-1.4 3.5-.9.9-2.1 1.4-3.5 1.4-1.4 0-2.6-.5-3.5-1.4-.9-.9-1.4-2.1-1.4-3.5zm.8 31.9V17.6h8.2v24.8h-8.2zm21.4 0V17.6h7.9v3.8c1.3-1.4 2.8-2.5 4.6-3.2 1.8-.7 3.7-1.1 5.7-1.1 4.2 0 7.4 1.2 9.6 3.6 2.2 2.4 3.3 5.9 3.3 10.5v11.2h-8.2V31.8c0-2.7-.6-4.6-1.7-5.8-1.1-1.2-2.7-1.8-4.8-1.8-2.3 0-4.1.8-5.4 2.4-1.3 1.6-2 3.8-2 6.7v9.1h-9zm40.8 1c-1.9 0-3.6-.3-5.2-1-1.6-.7-2.9-1.7-4-3-1.1-1.3-1.9-2.9-2.4-4.7-.5-1.8-.8-3.9-.8-6.1 0-2.3.3-4.3.8-6.1.5-1.8 1.3-3.4 2.4-4.7 1.1-1.3 2.4-2.3 4-3 1.6-.7 3.3-1 5.2-1 3.1 0 5.7.8 7.8 2.3 2.1 1.5 3.5 3.7 4.3 6.6l-7.7 2c-.4-1.4-1.1-2.4-2-3.1-.9-.7-2-1-3.3-1-1.7 0-3 .6-4 1.7-1 1.1-1.5 2.8-1.5 5.1 0 2.3.5 4 1.5 5.1 1 1.1 2.3 1.7 4 1.7 1.4 0 2.5-.3 3.4-1 .9-.7 1.6-1.7 2-3.1l7.7 2c-.8 2.8-2.2 5.1-4.3 6.6-2.1 1.5-4.7 2.3-7.8 2.3zm19.9-5.1c0-1.6.6-3 1.7-4.1 1.1-1.1 2.5-1.7 4.1-1.7 1.6 0 3 .6 4.1 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.6-.6 3-1.7 4.1-1.1 1.1-2.5 1.7-4.1 1.7-1.6 0-3-.6-4.1-1.7-1.1-1.1-1.7-2.5-1.7-4.1zm28.3 4.1c0 3.2.9 5.8 2.7 7.7 1.8 1.9 4.3 2.8 7.4 2.8 3.2 0 5.6-.9 7.4-2.8 1.8-1.9 2.7-4.5 2.7-7.7 0-3.2-.9-5.7-2.7-7.6-1.8-1.9-4.3-2.8-7.4-2.8-3.1 0-5.6.9-7.4 2.8-1.8 1.9-2.7 4.4-2.7 7.6zm-8.3 0c0-5.3 1.7-9.5 5.2-12.6 3.5-3.1 8.1-4.7 13.7-4.7 5.6 0 10.1 1.6 13.6 4.7 3.5 3.1 5.2 7.3 5.2 12.6 0 5.3-1.7 9.5-5.2 12.6-3.5 3.1-8 4.7-13.6 4.7-5.6 0-10.2-1.6-13.7-4.7-3.5-3.1-5.2-7.3-5.2-12.6zm51 0c0 2.2.3 4.1.9 5.8.6 1.7 1.5 3.1 2.7 4.2 1.2 1.1 2.6 1.9 4.3 2.4 1.7.5 3.5.8 5.5.8 2.7 0 5-.5 7-1.6 2-1.1 3.5-2.6 4.6-4.5v5.3h7.9V17.6h-7.9v3.9c-1.1-1.8-2.6-3.3-4.6-4.3-2-1-4.3-1.5-7-1.5-2 0-3.8.3-5.5.8-1.7.5-3.1 1.3-4.3 2.4-1.2 1.1-2.1 2.5-2.7 4.2-.6 1.7-.9 3.6-.9 5.8zm8.2 0c0-3.2.8-5.7 2.5-7.6 1.7-1.9 4-2.8 6.9-2.8 3 0 5.3.9 7 2.8 1.7 1.9 2.5 4.4 2.5 7.6 0 3.2-.8 5.7-2.5 7.6-1.7 1.9-4 2.8-7 2.8-2.9 0-5.2-.9-6.9-2.8-1.7-1.9-2.5-4.4-2.5-7.6z"/>
+            </svg>
+          </a>
 
-      <!-- 2. GetYourGuide -->
-      <a href="https://www.getyourguide.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center p-3 w-full h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="GetYourGuide Activities">
-        <svg class="h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-        </svg>
-      </a>
+          <!-- 2. GetYourGuide -->
+          <a href="https://www.getyourguide.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="GetYourGuide">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 220 40" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="28" font-family="'Outfit', sans-serif" font-weight="700" font-size="28" letter-spacing="-0.5">GetYourGuide</text>
+            </svg>
+          </a>
 
-      <!-- 3. Viator -->
-      <a href="https://www.viator.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center p-3 w-full h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Viator Tours">
-        <svg class="h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-        </svg>
-      </a>
+          <!-- 3. Viator -->
+          <a href="https://www.viator.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Viator">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 140 36" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="28" font-family="'Outfit', sans-serif" font-weight="800" font-size="32" letter-spacing="1">Viator</text>
+            </svg>
+          </a>
 
-      <!-- 4. Discover Cars -->
-      <a href="https://www.discovercars.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center p-3 w-full h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Discover Cars Rental">
-        <svg class="h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3zM19 17H5v-4.66l.12-.34h13.77l.11.34V17z"/>
-          <circle cx="7.5" cy="14.5" r="1.5"/>
-          <circle cx="16.5" cy="14.5" r="1.5"/>
-        </svg>
-      </a>
+          <!-- 4. Discover Cars -->
+          <a href="https://www.discovercars.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Discover Cars">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 210 36" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="26" font-family="'Outfit', sans-serif" font-weight="700" font-size="26">DISCOVER CARS</text>
+            </svg>
+          </a>
 
-      <!-- 5. Airbnb -->
-      <a href="https://www.airbnb.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center p-3 w-full h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Airbnb Stays">
-        <svg class="h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9zm.5-13.5c-2.33 0-4.22 1.89-4.22 4.22 0 3.17 4.22 7.28 4.22 7.28s4.22-4.11 4.22-7.28c0-2.33-1.89-4.22-4.22-4.22zm0 6.22c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-        </svg>
-      </a>
+          <!-- 5. Airbnb -->
+          <a href="https://www.airbnb.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Airbnb">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 120 36" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 0C6.5 0 0 6.5 0 14.5c0 8.5 14.5 21.5 14.5 21.5S29 23 29 14.5C29 6.5 22.5 0 14.5 0zm0 19.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+              <text x="36" y="27" font-family="'Outfit', sans-serif" font-weight="700" font-size="28">airbnb</text>
+            </svg>
+          </a>
 
-      <!-- 6. Rentalcars -->
-      <a href="https://www.rentalcars.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center p-3 w-full h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Rentalcars.com">
-        <svg class="h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 10.5V6h-2v4.5H7V6H5v12h14v-7.5zM19 4h2v16h-2V4zM3 20h2V4H3v16z"/>
-        </svg>
-      </a>
+          <!-- 6. Rentalcars -->
+          <a href="https://www.rentalcars.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" title="Rentalcars.com">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 200 36" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="26" font-family="'Outfit', sans-serif" font-weight="700" font-size="25">Rentalcars.com</text>
+            </svg>
+          </a>
+        </div>
+
+        <!-- BLOC 2 DE LOGOS OFFICIELS (Répétition identique pour créer l'effet de boucle infinie sans saut) -->
+        <div class="flex items-center gap-6 sm:gap-10 shrink-0" aria-hidden="true">
+          <!-- 1. Booking.com -->
+          <a href="https://www.booking.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" tabindex="-1">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 328 56" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 42.4V10.2h17.9c5.2 0 9.1 1.1 11.7 3.3 2.6 2.2 3.9 5.2 3.9 9 0 2.5-.7 4.7-2.1 6.5-1.4 1.8-3.4 3-6 3.7 3.3.6 5.8 2 7.6 4.1 1.8 2.1 2.7 4.7 2.7 7.8 0 4.2-1.5 7.5-4.4 9.9-2.9 2.4-7 3.6-12.3 3.6H0zm8.2-20.1h9.1c2.8 0 4.8-.5 6.1-1.6 1.3-1.1 1.9-2.6 1.9-4.5 0-1.9-.6-3.3-1.8-4.3-1.2-1-3.2-1.5-6-1.5H8.2v11.9zm0 13.9h10c2.8 0 5-.6 6.4-1.7 1.4-1.1 2.1-2.8 2.1-4.9 0-2.2-.7-3.8-2.1-4.9-1.4-1.1-3.6-1.7-6.5-1.7H8.2v13.2zm43.3-4.1c0 3.2.9 5.8 2.7 7.7 1.8 1.9 4.3 2.8 7.4 2.8 3.2 0 5.6-.9 7.4-2.8 1.8-1.9 2.7-4.5 2.7-7.7 0-3.2-.9-5.7-2.7-7.6-1.8-1.9-4.3-2.8-7.4-2.8-3.1 0-5.6.9-7.4 2.8-1.8 1.9-2.7 4.4-2.7 7.6zm-8.3 0c0-5.3 1.7-9.5 5.2-12.6 3.5-3.1 8.1-4.7 13.7-4.7 5.6 0 10.1 1.6 13.6 4.7 3.5 3.1 5.2 7.3 5.2 12.6 0 5.3-1.7 9.5-5.2 12.6-3.5 3.1-8 4.7-13.6 4.7-5.6 0-10.2-1.6-13.7-4.7-3.5-3.1-5.2-7.3-5.2-12.6zm51 0c0 3.2.9 5.8 2.7 7.7 1.8 1.9 4.3 2.8 7.4 2.8 3.2 0 5.6-.9 7.4-2.8 1.8-1.9 2.7-4.5 2.7-7.7 0-3.2-.9-5.7-2.7-7.6-1.8-1.9-4.3-2.8-7.4-2.8-3.1 0-5.6.9-7.4 2.8-1.8 1.9-2.7 4.4-2.7 7.6zm-8.3 0c0-5.3 1.7-9.5 5.2-12.6 3.5-3.1 8.1-4.7 13.7-4.7 5.6 0 10.1 1.6 13.6 4.7 3.5 3.1 5.2 7.3 5.2 12.6 0 5.3-1.7 9.5-5.2 12.6-3.5 3.1-8 4.7-13.6 4.7-5.6 0-10.2-1.6-13.7-4.7-3.5-3.1-5.2-7.3-5.2-12.6zm49.9 14.2V10.2h8.2v20.4l11.7-13h10.3L155.6 29l13.6 13.4h-10.8l-10-10.3-3.7 4.1v6.2h-8.2zm34-31.9c0-1.4.5-2.6 1.4-3.5.9-.9 2.1-1.4 3.5-1.4 1.4 0 2.6.5 3.5 1.4.9.9 1.4 2.1 1.4 3.5 0 1.4-.5 2.6-1.4 3.5-.9.9-2.1 1.4-3.5 1.4-1.4 0-2.6-.5-3.5-1.4-.9-.9-1.4-2.1-1.4-3.5zm.8 31.9V17.6h8.2v24.8h-8.2zm21.4 0V17.6h7.9v3.8c1.3-1.4 2.8-2.5 4.6-3.2 1.8-.7 3.7-1.1 5.7-1.1 4.2 0 7.4 1.2 9.6 3.6 2.2 2.4 3.3 5.9 3.3 10.5v11.2h-8.2V31.8c0-2.7-.6-4.6-1.7-5.8-1.1-1.2-2.7-1.8-4.8-1.8-2.3 0-4.1.8-5.4 2.4-1.3 1.6-2 3.8-2 6.7v9.1h-9zm40.8 1c-1.9 0-3.6-.3-5.2-1-1.6-.7-2.9-1.7-4-3-1.1-1.3-1.9-2.9-2.4-4.7-.5-1.8-.8-3.9-.8-6.1 0-2.3.3-4.3.8-6.1.5-1.8 1.3-3.4 2.4-4.7 1.1-1.3 2.4-2.3 4-3 1.6-.7 3.3-1 5.2-1 3.1 0 5.7.8 7.8 2.3 2.1 1.5 3.5 3.7 4.3 6.6l-7.7 2c-.4-1.4-1.1-2.4-2-3.1-.9-.7-2-1-3.3-1-1.7 0-3 .6-4 1.7-1 1.1-1.5 2.8-1.5 5.1 0 2.3.5 4 1.5 5.1 1 1.1 2.3 1.7 4 1.7 1.4 0 2.5-.3 3.4-1 .9-.7 1.6-1.7 2-3.1l7.7 2c-.8 2.8-2.2 5.1-4.3 6.6-2.1 1.5-4.7 2.3-7.8 2.3zm19.9-5.1c0-1.6.6-3 1.7-4.1 1.1-1.1 2.5-1.7 4.1-1.7 1.6 0 3 .6 4.1 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.6-.6 3-1.7 4.1-1.1 1.1-2.5 1.7-4.1 1.7-1.6 0-3-.6-4.1-1.7-1.1-1.1-1.7-2.5-1.7-4.1zm28.3 4.1c0 3.2.9 5.8 2.7 7.7 1.8 1.9 4.3 2.8 7.4 2.8 3.2 0 5.6-.9 7.4-2.8 1.8-1.9 2.7-4.5 2.7-7.7 0-3.2-.9-5.7-2.7-7.6-1.8-1.9-4.3-2.8-7.4-2.8-3.1 0-5.6.9-7.4 2.8-1.8 1.9-2.7 4.4-2.7 7.6zm-8.3 0c0-5.3 1.7-9.5 5.2-12.6 3.5-3.1 8.1-4.7 13.7-4.7 5.6 0 10.1 1.6 13.6 4.7 3.5 3.1 5.2 7.3 5.2 12.6 0 5.3-1.7 9.5-5.2 12.6-3.5 3.1-8 4.7-13.6 4.7-5.6 0-10.2-1.6-13.7-4.7-3.5-3.1-5.2-7.3-5.2-12.6zm51 0c0 2.2.3 4.1.9 5.8.6 1.7 1.5 3.1 2.7 4.2 1.2 1.1 2.6 1.9 4.3 2.4 1.7.5 3.5.8 5.5.8 2.7 0 5-.5 7-1.6 2-1.1 3.5-2.6 4.6-4.5v5.3h7.9V17.6h-7.9v3.9c-1.1-1.8-2.6-3.3-4.6-4.3-2-1-4.3-1.5-7-1.5-2 0-3.8.3-5.5.8-1.7.5-3.1 1.3-4.3 2.4-1.2 1.1-2.1 2.5-2.7 4.2-.6 1.7-.9 3.6-.9 5.8zm8.2 0c0-3.2.8-5.7 2.5-7.6 1.7-1.9 4-2.8 6.9-2.8 3 0 5.3.9 7 2.8 1.7 1.9 2.5 4.4 2.5 7.6 0 3.2-.8 5.7-2.5 7.6-1.7 1.9-4 2.8-7 2.8-2.9 0-5.2-.9-6.9-2.8-1.7-1.9-2.5-4.4-2.5-7.6z"/>
+            </svg>
+          </a>
+
+          <!-- 2. GetYourGuide -->
+          <a href="https://www.getyourguide.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" tabindex="-1">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 220 40" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="28" font-family="'Outfit', sans-serif" font-weight="700" font-size="28" letter-spacing="-0.5">GetYourGuide</text>
+            </svg>
+          </a>
+
+          <!-- 3. Viator -->
+          <a href="https://www.viator.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" tabindex="-1">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 140 36" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="28" font-family="'Outfit', sans-serif" font-weight="800" font-size="32" letter-spacing="1">Viator</text>
+            </svg>
+          </a>
+
+          <!-- 4. Discover Cars -->
+          <a href="https://www.discovercars.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" tabindex="-1">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 210 36" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="26" font-family="'Outfit', sans-serif" font-weight="700" font-size="26">DISCOVER CARS</text>
+            </svg>
+          </a>
+
+          <!-- 5. Airbnb -->
+          <a href="https://www.airbnb.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" tabindex="-1">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 120 36" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 0C6.5 0 0 6.5 0 14.5c0 8.5 14.5 21.5 14.5 21.5S29 23 29 14.5C29 6.5 22.5 0 14.5 0zm0 19.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+              <text x="36" y="27" font-family="'Outfit', sans-serif" font-weight="700" font-size="28">airbnb</text>
+            </svg>
+          </a>
+
+          <!-- 6. Rentalcars -->
+          <a href="https://www.rentalcars.com" target="_blank" rel="sponsored noopener noreferrer" class="group flex items-center justify-center px-6 py-3 h-16 bg-creme/50 hover:bg-creme rounded-2xl transition border border-transparent hover:border-sable/20" tabindex="-1">
+            <svg class="h-6 sm:h-7 w-auto fill-[#185336] group-hover:scale-105 transition-transform duration-200" viewBox="0 0 200 36" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="26" font-family="'Outfit', sans-serif" font-weight="700" font-size="25">Rentalcars.com</text>
+            </svg>
+          </a>
+        </div>
+
+      </div>
     </div>
 
     <!-- Mention d'affiliation discrète en anglais -->
-    <p class="text-[11px] text-sombre/60 text-center max-w-2xl mx-auto leading-relaxed">
+    <p class="text-[11px] text-sombre/60 text-center max-w-2xl mx-auto mt-6 leading-relaxed">
       Some links on this page are affiliate links. If you book or make a purchase through them, we may earn a small commission at no extra cost to you.
     </p>
   </div>

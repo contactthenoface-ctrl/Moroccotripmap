@@ -1,1 +1,277 @@
-{"marrakech":{"tag":"Ciudad Imperial","name":"Marrakech","desc":"Medina, Palacios y Puertas del Desierto"},"chefchaouen":{"tag":"Montañas del Rif","name":"Chefchaouen","desc":"La Emblemática Perla Azul de Marruecos"},"fes":{"tag":"Capital Cultural","name":"Fez","desc":"Antigua Medina y Patrimonio Espiritual"},"casablanca":{"tag":"Corazón Económico","name":"Casablanca","desc":"La ciudad más grande de Marruecos"},"essaouira":{"tag":"Costa Atlántica","name":"Essaouira","desc":"Ciudad del Viento, Murallas y Mariscos"},"agadir":{"tag":"Sol y Playa","name":"Agadir","desc":"Playas Doradas y Complejos Modernos"},"tangier":{"tag":"Estrecho de Gibraltar","name":"Tánger","desc":"La Puerta entre Europa y África"},"ouarzazate":{"tag":"Puerta del Desierto","name":"Ouarzazate","desc":"Paisajes Cinematográficos y Kasbahs"},"rabat":{"tag":"Capital Imperial","name":"Rabat","desc":"Jardines Históricos y Brisa Atlántica"},"meknes":{"tag":"Ciudad Imperial","name":"Mequínez","desc":"Puertas Monumentales y Ruinas Romanas"},"tetouan":{"tag":"Costa Mediterránea","name":"Tetuán","desc":"Herencia Andaluza y Montañas del Rif"},"ifrane":{"tag":"Medio Atlas","name":"Ifrane","desc":"Arquitectura Alpina y Bosques de Cedros"},"el_jadida":{"tag":"Costa Atlántica","name":"El Jadida","desc":"Cisterna Portuguesa y Fortalezas del Océano"},"taroudant":{"tag":"Valle del Souss","name":"Tarudant","desc":"Murallas Grandes y Zocos Auténticos"},"dakhla":{"tag":"Gran Sur","name":"Dajla","desc":"Lagunas Impresionantes y Paraíso del Kitesurf"},"al_hoceima":{"tag":"Costa Mediterránea","name":"Alhucemas","desc":"Aguas Turquesas y Acantilados del Rif"},"nador":{"tag":"Laguna Mediterránea","name":"Nador","desc":"Laguna Mar Chica y Brisas Costeras"},"zagora":{"tag":"Valle del Draa","name":"Zagora","desc":"Palmerales Frondosos y Puertas del Sáhara"},"safi":{"tag":"Costa Atlántica","name":"Safi","desc":"Capital de la Cerámica y Fortaleza Marina"},"laayoune":{"tag":"Puerta del Sáhara","name":"El Aaiún","desc":"Cultura Saharaui y Horizonte Atlántico"},"merzouga":{"tag":"Desierto del Sáhara","name":"Merzouga","desc":"Dunas de Erg Chebbi y Campamentos"},"azilal":{"tag":"Corazón del Atlas","name":"Azilal","desc":"Cascadas de Ouzoud y Valles Verdes"},"tinghir":{"tag":"Gargantas del Todra","name":"Tinghir","desc":"Cañones Espectaculares y Oasis de Palmeras"},"oujda":{"tag":"Perla Azul de Oriente","name":"Oujda-Saïdia","desc":"Playas Doradas y Puerta del Este"},"asilah":{"name":"Asilah","tag":"Atlántico norte","desc":"Medina blanca, murales y murallas frente al océano"},"erfoud":{"name":"Erfoud","tag":"Puerta de los fósiles","desc":"Fósiles, palmeral y camino a Merzouga"},"tiznit":{"name":"Tiznit","tag":"Ciudad de la plata","desc":"Murallas, zocos de plata y puerta del Sur"},"sidi_ifni":{"name":"Sidi Ifni","tag":"Costa salvaje","desc":"Pueblo art déco, arcos de Legzira y Mirleft"},"guelmim":{"name":"Guelmim","tag":"Puerta del Sáhara","desc":"Mercado de camellos, oasis y ruta a Dajla"}}
+{
+  "marrakech": {
+    "tag": "Ciudad Imperial",
+    "name": "Marrakech",
+    "desc": "Medina, Palacios y Puertas del Desierto"
+  },
+  "chefchaouen": {
+    "tag": "Montañas del Rif",
+    "name": "Chefchaouen",
+    "desc": "La Emblemática Perla Azul de Marruecos"
+  },
+  "fes": {
+    "tag": "Capital Cultural",
+    "name": "Fez",
+    "desc": "Antigua Medina y Patrimonio Espiritual"
+  },
+  "casablanca": {
+    "tag": "Corazón Económico",
+    "name": "Casablanca",
+    "desc": "La ciudad más grande de Marruecos"
+  },
+  "essaouira": {
+    "tag": "Costa Atlántica",
+    "name": "Essaouira",
+    "desc": "Ciudad del Viento, Murallas y Mariscos"
+  },
+  "agadir": {
+    "tag": "Sol y Playa",
+    "name": "Agadir",
+    "desc": "Playas Doradas y Complejos Modernos"
+  },
+  "tangier": {
+    "tag": "Estrecho de Gibraltar",
+    "name": "Tánger",
+    "desc": "La Puerta entre Europa y África"
+  },
+  "ouarzazate": {
+    "tag": "Puerta del Desierto",
+    "name": "Ouarzazate",
+    "desc": "Paisajes Cinematográficos y Kasbahs"
+  },
+  "rabat": {
+    "tag": "Capital Imperial",
+    "name": "Rabat",
+    "desc": "Jardines Históricos y Brisa Atlántica"
+  },
+  "meknes": {
+    "tag": "Ciudad Imperial",
+    "name": "Mequínez",
+    "desc": "Puertas Monumentales y Ruinas Romanas"
+  },
+  "tetouan": {
+    "tag": "Costa Mediterránea",
+    "name": "Tetuán",
+    "desc": "Herencia Andaluza y Montañas del Rif"
+  },
+  "ifrane": {
+    "tag": "Medio Atlas",
+    "name": "Ifrane",
+    "desc": "Arquitectura Alpina y Bosques de Cedros"
+  },
+  "el_jadida": {
+    "tag": "Costa Atlántica",
+    "name": "El Jadida",
+    "desc": "Cisterna Portuguesa y Fortalezas del Océano"
+  },
+  "taroudant": {
+    "tag": "Valle del Souss",
+    "name": "Tarudant",
+    "desc": "Murallas Grandes y Zocos Auténticos"
+  },
+  "dakhla": {
+    "tag": "Gran Sur",
+    "name": "Dajla",
+    "desc": "Lagunas Impresionantes y Paraíso del Kitesurf"
+  },
+  "al_hoceima": {
+    "tag": "Costa Mediterránea",
+    "name": "Alhucemas",
+    "desc": "Aguas Turquesas y Acantilados del Rif"
+  },
+  "nador": {
+    "tag": "Laguna Mediterránea",
+    "name": "Nador",
+    "desc": "Laguna Mar Chica y Brisas Costeras"
+  },
+  "zagora": {
+    "tag": "Valle del Draa",
+    "name": "Zagora",
+    "desc": "Palmerales Frondosos y Puertas del Sáhara"
+  },
+  "safi": {
+    "tag": "Costa Atlántica",
+    "name": "Safi",
+    "desc": "Capital de la Cerámica y Fortaleza Marina"
+  },
+  "laayoune": {
+    "tag": "Puerta del Sáhara",
+    "name": "El Aaiún",
+    "desc": "Cultura Saharaui y Horizonte Atlántico"
+  },
+  "merzouga": {
+    "tag": "Desierto del Sáhara",
+    "name": "Merzouga",
+    "desc": "Dunas de Erg Chebbi y Campamentos"
+  },
+  "azilal": {
+    "tag": "Corazón del Atlas",
+    "name": "Azilal",
+    "desc": "Cascadas de Ouzoud y Valles Verdes"
+  },
+  "tinghir": {
+    "tag": "Gargantas del Todra",
+    "name": "Tinghir",
+    "desc": "Cañones Espectaculares y Oasis de Palmeras"
+  },
+  "oujda": {
+    "tag": "Perla Azul de Oriente",
+    "name": "Oujda-Saïdia",
+    "desc": "Playas Doradas y Puerta del Este"
+  },
+  "asilah": {
+    "name": "Asilah",
+    "tag": "Atlántico norte",
+    "desc": "Medina blanca, murales y murallas frente al océano"
+  },
+  "erfoud": {
+    "name": "Erfoud",
+    "tag": "Puerta de los fósiles",
+    "desc": "Fósiles, palmeral y camino a Merzouga"
+  },
+  "tiznit": {
+    "name": "Tiznit",
+    "tag": "Ciudad de la plata",
+    "desc": "Murallas, zocos de plata y puerta del Sur"
+  },
+  "sidi_ifni": {
+    "name": "Sidi Ifni",
+    "tag": "Costa salvaje",
+    "desc": "Pueblo art déco, arcos de Legzira y Mirleft"
+  },
+  "guelmim": {
+    "name": "Guelmim",
+    "tag": "Puerta del Sáhara",
+    "desc": "Mercado de camellos, oasis y ruta a Dajla"
+  },
+  "ait_ben_haddou": {
+    "tag": "Kasbah UNESCO",
+    "name": "Aït Ben Haddou",
+    "desc": "Pueblo fortificado icónico cerca de Ouarzazate"
+  },
+  "azemmour": {
+    "tag": "Oum Er-Rbia",
+    "name": "Azemmour",
+    "desc": "Medina blanca en el estuario"
+  },
+  "beni_mellal": {
+    "tag": "Puerta del Atlas Medio",
+    "name": "Beni Mellal",
+    "desc": "Cascadas, huertos y piedemonte del Atlas"
+  },
+  "boumalne_dades": {
+    "tag": "Valle del Dadès",
+    "name": "Boumalne Dadès",
+    "desc": "Valle de las Mil Kasbahs"
+  },
+  "demnate": {
+    "tag": "Alto Atlas",
+    "name": "Demnate",
+    "desc": "Puente natural de Imi-n-Ifri cerca"
+  },
+  "errachidia": {
+    "tag": "Valle del Ziz",
+    "name": "Errachidia",
+    "desc": "Puerta del Tafilalet y las dunas"
+  },
+  "figuig": {
+    "tag": "Oasis fronterizo",
+    "name": "Figuig",
+    "desc": "Oasis de palmeras en la frontera argelina"
+  },
+  "fnideq": {
+    "tag": "Costa fronteriza",
+    "name": "Fnideq",
+    "desc": "Balneario mediterráneo cerca de Ceuta"
+  },
+  "kenitra": {
+    "tag": "Costa del Gharb",
+    "name": "Kenitra",
+    "desc": "Región del Bouregreg, playa de Mehdia y bosques"
+  },
+  "ksar_el_kebir": {
+    "tag": "Llanura del Lucus",
+    "name": "Ksar el-Kebir",
+    "desc": "Ciudad histórica de las llanuras del norte"
+  },
+  "larache": {
+    "tag": "Costa del Lucus",
+    "name": "Larache",
+    "desc": "Ruinas de Lixus, estuario del Lucus y puerto atlántico"
+  },
+  "mdiq": {
+    "tag": "Mediterráneo",
+    "name": "M'diq",
+    "desc": "Playas entre Ceuta y Tetuán"
+  },
+  "mhamid": {
+    "tag": "Borde del desierto",
+    "name": "M'Hamid",
+    "desc": "Último oasis antes del Sáhara abierto"
+  },
+  "midelt": {
+    "tag": "Valle de las manzanas",
+    "name": "Midelt",
+    "desc": "Altiplanos entre las cadenas del Atlas"
+  },
+  "mirleft": {
+    "tag": "Costa salvaje del sur",
+    "name": "Mirleft",
+    "desc": "Acantilados, calas y pueblos bereberes"
+  },
+  "mohammedia": {
+    "tag": "Ciudad atlántica",
+    "name": "Mohammedia",
+    "desc": "Playas entre Casablanca y Rabat"
+  },
+  "moulay_idriss": {
+    "tag": "Ciudad santa",
+    "name": "Moulay Idriss Zerhoun",
+    "desc": "Ciudad de peregrinación sobre Volubilis"
+  },
+  "oualidia": {
+    "tag": "Bahía de ostras",
+    "name": "Oualidia",
+    "desc": "Laguna, ostras y acantilados atlánticos"
+  },
+  "ourika": {
+    "tag": "Valle del Atlas",
+    "name": "Valle del Ourika",
+    "desc": "Excursiones de un día desde Marrakech"
+  },
+  "rissani": {
+    "tag": "Tafilalet",
+    "name": "Rissani",
+    "desc": "Zocos, ksour y cuna alauí"
+  },
+  "sefrou": {
+    "tag": "Ciudad de las cerezas",
+    "name": "Sefrou",
+    "desc": "Cascadas, medina y patrimonio judío"
+  },
+  "skoura": {
+    "tag": "Oasis de palmeras",
+    "name": "Skoura",
+    "desc": "Mil kasbahs cerca de Ouarzazate"
+  },
+  "taghazout": {
+    "tag": "Costa del surf",
+    "name": "Taghazout",
+    "desc": "Rompeolas de surf al norte de Agadir"
+  },
+  "taourirt": {
+    "tag": "Oriental",
+    "name": "Taourirt",
+    "desc": "Parada del Oriente en la ruta a Oujda"
+  },
+  "taza": {
+    "tag": "Corredor de Taza",
+    "name": "Taza",
+    "desc": "Entre el Rif y el Atlas Medio"
+  },
+  "volubilis": {
+    "tag": "Marruecos romano",
+    "name": "Volubilis",
+    "desc": "Mosaicos UNESCO y arco de triunfo"
+  }
+}

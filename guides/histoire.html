@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" dir="ltr" lang="en">
+<html class="scroll-smooth" dir="ltr" lang="fr">
 <head>
-<meta name="robots" content="noindex, nofollow">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta name="google" content="notranslate"/>
-<!-- Remplacer par index, follow à la mise en production :
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
--->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="google" content="notranslate"/>
 
-<!-- Favicon SVG (Pin de carte vert, cohérent avec le logo MoroccoTripMap) -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/></svg>"/>
 
-<!-- SEO & Metadata -->
-<title data-i18n="stub.pages.guides_histoire.seo_title">Morocco History | MoroccoTripMap</title>
-<meta name="description" content="Morocco History - MoroccoTripMap">
+    <!-- SEO Primary Meta Tags -->
+    <title data-i18n="history_page.seo.title">Histoire du Maroc : Des Origines Berbères aux Dynasties Impériales | MoroccoTripMap</title>
+    <meta content="Explorez la grande histoire du Maroc : des royaumes berbères amazighs et Volubilis romaine aux dynasties Idrisside, Almoravide, Almohade, Saadienne et Alaouite. Guide historique exhaustif." name="description" data-i18n-attr="content:history_page.seo.description"/>
+    <meta content="histoire du maroc, dynasties marocaines, histoire berbere amazigh, volubilis empire romain, idrissides fes, almoravides marrakech, almohades, saadiens, alaouites, histoire villes imperiales" name="keywords"/>
+    <link href="https://moroccotripmap.com/guides/histoire.html" rel="canonical"/>
 
-<!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
+    <!-- Open Graph / Social Media -->
+    <meta content="article" property="og:type"/>
+    <meta content="L'Histoire du Maroc : Des Origines Amazighs au Royaume Moderne | MoroccoTripMap" property="og:title" data-i18n-attr="content:history_page.seo.og_title"/>
+    <meta content="Voyagez à travers les siècles : royaumes berbères, antiquité romaine, épopées islamiques et dynasties impériales qui ont façonné le Maroc." property="og:description" data-i18n-attr="content:history_page.seo.og_description"/>
+    <meta content="https://moroccotripmap.com/guides/histoire.html" property="og:url"/>
+    <meta content="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
+
+    <!-- Hreflang Tags -->
+    <link href="https://moroccotripmap.com/guides/histoire.html" hreflang="fr" rel="alternate"/>
+    <link href="https://moroccotripmap.com/en/guides/history.html" hreflang="en" rel="alternate"/>
+    <link href="https://moroccotripmap.com/es/guides/historia.html" hreflang="es" rel="alternate"/>
+    <link href="https://moroccotripmap.com/ar/guides/history.html" hreflang="ar" rel="alternate"/>
+    <link href="https://moroccotripmap.com/guides/histoire.html" hreflang="x-default" rel="alternate"/>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -37,203 +50,572 @@
             }
         }
     </script>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <style>
         body { font-family: 'Outfit', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
-<!-- Header Navigation -->
-<header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
-  
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-<a class="flex items-center gap-3 group shrink-0" href="../index.html">
-<img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../images/logo.webp"/>
-</a>
-<nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-    <a class="text-vert font-bold transition" href="../destinations.html" data-i18n="nav.destinations">Destinations</a>
-    <div class="relative inline-block text-left" id="categories-menu-container">
-        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-            <span data-i18n="nav.categories">Categories</span>
-            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-        </div>
-    </div>
-    <a class="hover:text-vert transition" href="../guides/histoire.html" data-i18n="nav.history">History</a>
-    <a class="hover:text-vert transition" href="../blog/index.html" data-i18n="nav.blog">Blog</a>
-    <a class="hover:text-vert transition" href="../contact.html" data-i18n="nav.contact">Contact</a>
-</nav>
-<div class="flex items-center gap-2 sm:gap-4">
-<!-- Custom Language Dropdown Selector -->
-<div class="relative inline-block text-left">
-  <button id="lang-menu-button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="bg-white border border-sable/20 hover:border-sable text-sm font-semibold rounded-xl px-3 py-2 flex items-center gap-2 text-sombre transition shadow-sm" type="button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
-    <span id="current-lang-label">EN</span>
-    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-  </button>
-  <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white rounded-xl shadow-lg border border-sable/15 py-1 z-50">
-    <button data-lang="en" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg> English
-    </button>
-    <button data-lang="fr" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg> Français
-    </button>
-    <button data-lang="es" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg> Español
-    </button>
-    <button data-lang="ar" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg> العربية
-    </button>
-  </div>
-</div>
-<!-- Bouton Hamburger -->
-<button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition" type="button">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-</div>
-</div>
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
 
-<!-- Mobile Menu Drawer -->
-<div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
-    <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
-        <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="mobile_menu.language_title">Language / Langue</span>
-        <div class="flex gap-2">
-            <button data-lang="en" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">EN</button>
-            <button data-lang="fr" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">FR</button>
-            <button data-lang="es" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">ES</button>
-            <button data-lang="ar" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">AR</button>
-        </div>
-    </div>
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a class="flex items-center gap-3 group shrink-0" href="../index.html">
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../images/logo.webp"/>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
+                <a class="hover:text-vert transition" data-i18n="nav.destinations" href="../destinations.html">Destinations</a>
+                <div class="relative inline-block text-left" id="categories-menu-container">
+                    <button class="flex items-center gap-1.5 hover:text-vert transition" onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" type="button">
+                        <span data-i18n="nav.categories">Catégories</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                    <div class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1" id="categories-menu-dropdown">
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_stays" href="../riads/index.html">Hébergements &amp; Riads</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html">Gastronomie</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_experiences" href="../experiences/index.html">Expériences</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_museums" href="../destinations.html">Monuments &amp; Musées</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_transport" href="../transport/index.html">Transport &amp; Location</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_itineraries" href="../programmes/index.html">Itinéraires</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_guides" href="index.html">Guides de Voyage</a>
+                    </div>
+                </div>
+                <a class="text-vert font-bold transition" data-i18n="nav.history" href="histoire.html">Histoire</a>
+                <a class="hover:text-vert transition" data-i18n="nav.blog" href="../blog/index.html">Blog</a>
+                <a class="hover:text-vert transition" data-i18n="nav.contact" href="../contact.html">Contact</a>
+            </nav>
+            
+            <!-- Lang Switcher & Mobile Toggle -->
+            <div class="flex items-center gap-2 sm:gap-4">
+                <div class="relative inline-block text-left" id="lang-menu-container">
+                    <button class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition" id="lang-menu-button">
+                        <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 3 2" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#ED2939" height="2" width="3"></rect><rect fill="#fff" height="2" width="2"></rect><rect fill="#002395" height="2" width="1"></rect></svg>
+                        <span id="current-lang-label">FR</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                    
+                    <div class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden" id="lang-menu-dropdown">
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('fr')">
+                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 3 2" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#ED2939" height="2" width="3"></rect><rect fill="#fff" height="2" width="2"></rect><rect fill="#002395" height="2" width="1"></rect></svg>
+                            Français
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('en')">
+                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t2)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
+                            English
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('es')">
+                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 750 500" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#c60b1e" height="500" width="750"></rect><rect fill="#ffc400" height="250" width="750" y="125"></rect></svg>
+                            Español
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('ar')">
+                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 900 600" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#c1272d" height="600" width="900"></rect><polygon fill="none" points="450,170 361,441 593,273 307,273 639,441" stroke="#006233" stroke-width="15"></polygon></svg>
+                            العربية
+                        </button>
+                    </div>
+                </div>
 
-    <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
-            <span data-i18n="nav.cities">Cities &amp; Destinations</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <div>
-        <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                <span data-i18n="nav.categories">Categories</span>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition focus:outline-none" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" type="button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
             </div>
-            <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="../guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
         </div>
-    </div>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../guides/histoire.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-            <span data-i18n="nav.history">History of Morocco</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../blog/index.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-            <span data-i18n="nav.blog">Blog</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../contact.html">
-        <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-            <span data-i18n="nav.contact">Contact</span>
-        </div>
-        <span class="text-xs text-gray-400">→</span>
-    </a>
-</nav>
-</div>
-</header>
 
-<main class="flex-grow">
-<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-  <h1 class="text-4xl font-bold text-vert mt-2" data-i18n="stub.pages.guides_histoire.title">Morocco History</h1>
-  <div class="mt-10 bg-white rounded-2xl border border-sable/10 shadow-sm p-8">
-    <h2 class="text-xl font-bold text-vert" data-i18n="stub.common.coming_title">Page in preparation</h2>
-    <p class="text-sm text-sombre/70 mt-2" data-i18n="stub.common.coming_text">We are still writing this content. Check back soon, or keep exploring the destinations in the meantime.</p>
-  </div>
-  <div class="mt-8 flex flex-wrap justify-center gap-3">
-    <a href="../destinations.html" class="px-5 py-2.5 rounded-xl bg-vert text-white font-semibold text-sm hover:opacity-90 transition" data-i18n="stub.common.see_destinations">Explore destinations</a>
-    <a href="../index.html" class="px-5 py-2.5 rounded-xl bg-white border border-sable/20 text-sombre font-semibold text-sm hover:border-vert transition" data-i18n="stub.common.back_home">Back to home</a>
-  </div>
-</section>
-</main>
+        <!-- Mobile Menu Drawer -->
+        <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
+            <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
+                    <span>Villes &amp; Destinations</span>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="index.html">
+                    <span>Guides de Voyage</span>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl bg-white text-vert font-bold shadow-sm" href="histoire.html">
+                    <span>Histoire du Maroc</span>
+                    <span class="text-xs text-vert">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../programmes/index.html">
+                    <span>Itinéraires</span>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../blog/index.html">
+                    <span>Blog</span>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-<footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-<div>
-<h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-<p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
-    Discover. Plan. Experience Morocco.<br/>
-    The premier tourism directory and cultural travel guide for visitors exploring Morocco.
-</p>
-</div>
-<div>
-<h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Destinations</h4>
-<ul class="text-xs space-y-2 text-creme/80">
-<li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
-<li><a class="text-white font-bold transition" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
-<ul class="text-xs space-y-2 text-creme/80">
-<li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads &amp; Hotels</a></li>
-<li><a class="hover:text-white transition" href="../index.html#restaurants" data-i18n="footer.link_restaurants">Moroccan Restaurants</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
-<p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
-<a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-    @moroccotripmap
-</a>
-</div>
-</div>
-<div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-<p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
-<p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
-</div>
-</footer>
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <div class="bg-vert text-creme py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto relative z-10">
+                <!-- Breadcrumbs -->
+                <nav class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider" aria-label="Breadcrumb">
+                    <a class="hover:text-white transition" href="../index.html">Accueil</a>
+                    <span>/</span>
+                    <a class="hover:text-white transition" href="index.html">Guides</a>
+                    <span>/</span>
+                    <span class="text-white">Histoire du Maroc</span>
+                </nav>
 
-<!-- Scripts externes (i18n.js à la racine et search.js dans /js/) -->
-<script src="../js/i18n.js"></script>
-<script src="../js/search.js"></script>
-<script>
-    function toggleMobileCategories() {
-        const dropdown = document.getElementById('mobile-categories-dropdown');
-        const arrow = document.getElementById('categories-arrow');
-        
-        if (dropdown) {
-            dropdown.classList.toggle('hidden');
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight max-w-4xl">
+                    L'Histoire du Maroc : Des Origines Amazighs aux Dynasties Impériales
+                </h1>
+                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed">
+                    Explorez plus de deux millénaires de civilisation au carrefour de l'Afrique, de l'Europe et du monde arabo-musulman. Des royaumes berbères antiques aux chefs-d'œuvre architecturaux des dynasties régnantes.
+                </p>
+
+                <!-- Key Metric Badges -->
+                <div class="mt-8 flex flex-wrap gap-3 text-xs sm:text-sm text-creme/90">
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">2 500+</strong> <span>Ans d'Histoire</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">6</strong> <span>Grandes Dynasties</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">4</strong> <span>Villes Impériales</span></span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">9</strong> <span>Sites UNESCO</span></span>
+                </div>
+            </div>
+            <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-sable/10 rounded-full blur-3xl pointer-events-none"></div>
+        </div>
+
+        <!-- QUICK TIMELINE NAV (STICKY BAR) -->
+        <div class="sticky top-20 z-40 bg-white/95 backdrop-blur-md border-b border-sable/20 shadow-sm py-3 px-4 overflow-x-auto hide-scrollbar">
+            <div class="max-w-7xl mx-auto flex items-center gap-2 sm:gap-4 text-xs font-bold whitespace-nowrap">
+                <span class="text-sable uppercase tracking-wider text-[11px] shrink-0 mr-2 flex items-center gap-1">
+                    <svg class="w-4 h-4 text-vert" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                    Périodes :
+                </span>
+                <a href="#antiquite" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition">1. Origines &amp; Antiquité</a>
+                <a href="#idrissides" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition">2. Idrissides (789)</a>
+                <a href="#almoravides" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition">3. Almoravides (1060)</a>
+                <a href="#almohades" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition">4. Almohades (1147)</a>
+                <a href="#merinides" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition">5. Mérinides (1244)</a>
+                <a href="#saadiens" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition">6. Saadiens (1549)</a>
+                <a href="#alaouites" class="bg-creme hover:bg-sable/20 text-sombre px-3.5 py-1.5 rounded-full transition">7. Alaouites (1666 - Présent)</a>
+            </div>
+        </div>
+
+        <!-- MAIN HISTORICAL CONTENT -->
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+            <!-- INTRODUCTION ARTICLE -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm leading-relaxed space-y-4">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider">Aperçu Général</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">Un Carrefour de Civilisations Unique en Afrique</h2>
+                <p class="text-sm sm:text-base text-sombre/80 leading-relaxed">
+                    L'histoire du Maroc se distingue par une continuité étatique et une indépendance culturelle singulières en Afrique du Nord. Protégé par les hautes barrières naturelles de l'Atlas et bordé par deux façades maritimes (Atlantique et Méditerranée), le pays a forgé une identité plurielle où s'entremêlent l'héritage amazigh (berbère), l'apport arabo-islamique, les influences andalouses et les contacts sahariens.
+                </p>
+                <p class="text-sm sm:text-base text-sombre/80 leading-relaxed">
+                    Contrairement à ses voisins, le Maroc n'a jamais été sous domination ottomane, préservant ainsi ses propres dynasties régnantes et ses traditions architecturales et artisanales uniques.
+                </p>
+            </section>
+
+            <!-- CHRONOLOGY SECTION BY PERIOD -->
+            <div class="space-y-12">
+
+                <!-- PERIODE 1: ANTIQUITE -->
+                <article class="scroll-mt-36 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition" id="antiquite">
+                    <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="space-y-3 max-w-2xl">
+                            <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">VIIIe s. av. J.-C. – Ve s. apr. J.-C.</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">1. Origines Berbères, Comptoirs Phéniciens et Maurétanie Tingitane</h2>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Les premiers habitants répertoriés du Maroc sont les **Amazighs** ("hommes libres"). Dès le VIIIe siècle av. J.-C., des marchands phéniciens puis carthaginois établissent des comptoirs maritimes le long de la côte (Lixus, Tingis/Tanger, Mogador/Essaouira).
+                            </p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Le royaume autochtone de **Maurétanie** se développe sous le règne du roi savant **Juba II** et de son fils Ptolémée. Annexée par Rome sous l'empereur Caligula, la province devient la *Maurétanie Tingitane*. La cité de **Volubilis** s'impose alors comme la capitale administrative romaine, réputée pour ses pressoirs à huile d'olive et ses magnifiques mosaïques.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
+                            <span class="font-bold text-vert uppercase text-[11px] block">Monuments &amp; Traces Visibles</span>
+                            <ul class="space-y-1.5 text-sombre/80">
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Volubilis :</strong> Arc de Triomphe &amp; mosaïques antiques.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Lixus (Larache) :</strong> Vestiges phénico-romains.</span>
+                                </li>
+                            </ul>
+                            <a class="inline-flex items-center gap-1 font-bold text-vert hover:text-sable transition pt-2 block" href="../destinations.html">
+                                <span>Guide de Volubilis</span> →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PERIODE 2: IDRISSIDES -->
+                <article class="scroll-mt-36 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition" id="idrissides">
+                    <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="space-y-3 max-w-2xl">
+                            <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">789 – 974</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">2. La Dynastie Idrisside et la Naissance du Premier État Marocain</h2>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                En 789, **Idriss Ier**, descendant du prophète Mahomet fuyant le califat abbasside de Bagdad, est accueilli par la tribu berbère des Awerba à Walili (Volubilis). Il fond le premier État marocain unifié et musulman.
+                            </p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Son fils, **Idriss II**, érige **Fès** en capitale. En 859, sous leur patronage, **Fatima al-Fihriya** fonde la mosquée et université **Al Quaraouiyine**, reconnue par l'UNESCO et le Livre Guinness comme la plus ancienne université encore en activité au monde. Fès devient alors le phare spirituel, culturel et intellectuel de l'Afrique du Nord.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
+                            <span class="font-bold text-vert uppercase text-[11px] block">Heritage Majeur</span>
+                            <ul class="space-y-1.5 text-sombre/80">
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Fès el-Bali :</strong> Médina médiévale unesco.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Moulay Idriss Zerhoun :</strong> Cité sainte.</span>
+                                </li>
+                            </ul>
+                            <a class="inline-flex items-center gap-1 font-bold text-vert hover:text-sable transition pt-2 block" href="../destinations.html">
+                                <span>Découvrir Fès Médina</span> →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PERIODE 3: ALMORAVIDES -->
+                <article class="scroll-mt-36 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition" id="almoravides">
+                    <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="space-y-3 max-w-2xl">
+                            <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">1060 – 1147</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">3. L'Empire Almoravide : Fondateurs de Marrakech et Unificateurs d'Al-Andalus</h2>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Issus des tribus berbères nomades Sanhaja du Sahara, les **Almoravides** (*Al-Mourabitoun*) déferlent vers le nord. En 1070, leur grand souverain **Youssef Ibn Tachfin** fonde la ville de **Marrakech**, qui devient la capitale d'un empire s'étendant du fleuve Sénégal jusqu'à l'Espagne musulmane (Al-Andalus).
+                            </p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Après la victoire de Zallaqa (1086), Youssef Ibn Tachfin intègre les royaumes de Taïfas d'Andalousie à son empire. Les Almoravides introduisent au Maroc le raffinement architectural andalou, les remparts en pisé rouge et les systèmes sophistiqués d'irrigation souterraine (*khettaras*).
+                            </p>
+                        </div>
+                        <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
+                            <span class="font-bold text-vert uppercase text-[11px] block">Vestiges d'Exception</span>
+                            <ul class="space-y-1.5 text-sombre/80">
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Koubba Ba'adiyn :</strong> Marrakech.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Remparts Rouge de Marrakech :</strong> 19 km d'enceinte.</span>
+                                </li>
+                            </ul>
+                            <a class="inline-flex items-center gap-1 font-bold text-vert hover:text-sable transition pt-2 block" href="../marrakech.html">
+                                <span>Explorer Marrakech Impériale</span> →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PERIODE 4: ALMOHADES -->
+                <article class="scroll-mt-36 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition" id="almohades">
+                    <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="space-y-3 max-w-2xl">
+                            <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">1147 – 1269</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">4. L'Empire Almohade : L'Apogée de l'Architecture Monumentale</h2>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Nés de la réforme religieuse prônée par Ibn Toumert dans le Haut Atlas (Tinmel), les **Almohades** (*Al-Mouwahhidoun*) renversent les Almoravides. Sous les règnes d'Abd al-Mumin et de **Yacoub El Mansour**, l'empire atteint sa plus grande extension territoriale, unifiant le Maghreb entier et Al-Andalus.
+                            </p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Les Almohades élèvent des chefs-d'œuvre de minarets jumeaux emblématiques : la **Koutoubia** de Marrakech, la **Tour Hassan** de Rabat et la **Giralda** de Séville. Rabat est alors dotée de murailles monumentales et de la majestueuse porte de la Kasbah des Oudayas.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
+                            <span class="font-bold text-vert uppercase text-[11px] block">Chefs-d'œuvre Architecturaux</span>
+                            <ul class="space-y-1.5 text-sombre/80">
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Minaret de la Koutoubia :</strong> Marrakech.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Tour Hassan &amp; Oudayas :</strong> Rabat.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Mosquée de Tinmel :</strong> Haut Atlas.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PERIODE 5: MERINIDES -->
+                <article class="scroll-mt-36 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition" id="merinides">
+                    <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="space-y-3 max-w-2xl">
+                            <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">1244 – 1465</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">5. Les Mérinides : L'Âge d'Or des Médersas et du Zaouïa Art</h2>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Issus des nomades Zenata, les **Mérinides** établissent leur capitale à Fes et construisent **Fès el-Jdid** (la nouvelle ville impériale) à côté de l'ancienne médina.
+                            </p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Les sultans mérinides se distinguent par un soutien sans réserve à l'éducation et aux arts. Ils bâtissent les plus raffinées des écoles coraniques (*médersas*) du monde islamique : **Médersa Bou Inania** et **Médersa el-Attarine** à Fès, sculptées de stucs, de bois de cèdre ciselé et de céramiques *zellige*. C'est sous les Mérinides que le célèbre explorateur fassi **Ibn Battûta** accomplit son pèlerinage et voyage de 120 000 km à travers l'Afro-Eurasie.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
+                            <span class="font-bold text-vert uppercase text-[11px] block">Joyaux Mérinides</span>
+                            <ul class="space-y-1.5 text-sombre/80">
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Médersa Bou Inania :</strong> Fès.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Nécropole de Chellah :</strong> Rabat.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PERIODE 6: SAADIENS -->
+                <article class="scroll-mt-36 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition" id="saadiens">
+                    <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="space-y-3 max-w-2xl">
+                            <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">1549 – 1659</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">6. La Dynastie Saadienne : La BATAILLE des Trois Rois et le Palais El Badi</h2>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Originaire de la vallée du Draâ au Sud, la dynastie chérifienne des **Saadiens** s'impose en repoussant les incursions portugaises sur les côtes atlantiques. Le 4 août 1578, lors de la célèbre **Bataille des Trois Rois** (Oued al-Makhazin), le sultan Abdelmalek met en déroute l'armée du roi Sébastien Ier de Portugal.
+                            </p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Le sultan **Ahmed al-Mansour ed-Dahbi** ("Le Doré") inaugure une période de grande prospérité grâce au commerce du sucre et à l'expédition du Tombouctou. Il édifie à Marrakech le somptueux **Palais El Badi** et les sublimes **Tombeaux Saadiens** en marbre d'Irak et stuc ciselé.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
+                            <span class="font-bold text-vert uppercase text-[11px] block">Monuments Saadiens</span>
+                            <ul class="space-y-1.5 text-sombre/80">
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Tombeaux Saadiens :</strong> Marrakech.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Palais El Badi :</strong> Ruines majestueuses.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PERIODE 7: ALAOUITES -->
+                <article class="scroll-mt-36 bg-white rounded-3xl p-6 sm:p-10 border border-sable/20 shadow-sm hover:shadow-md transition" id="alaouites">
+                    <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="space-y-3 max-w-2xl">
+                            <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">1666 – Présent</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-vert">7. La Dynastie Alaouite : De Moulay Ismaïl au Royaume Moderne</h2>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Originaire du Tafilalet (Rissani), la dynastie **Alaouite** règne sur le Maroc depuis le XVIIe siècle. Le sultan **Moulay Ismaïl** (1672-1727), contemporain de Louis XIV, fait de **Meknès** sa capitale impériale, la dotant de gigantesques murailles, de greniers (*Heri es-Souani*) et de la monumentale porte **Bab Mansour**.
+                            </p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed">
+                                Après la période du Protectorat franco-espagnol (1912-1956), le roi **Mohammed V** mène le pays vers l'Indépendance. Son fils **Hassan II** consolide l'unité territoriale et bâtit la grande mosquée de Casablanca. Aujourd'hui, sous le règne de **S.M. le Roi Mohammed VI**, le Maroc conjugue modernisation des infrastructures (TGV Al Boraq, complexe solaire Noor, ports mondiaux) et préservation rigoureuse de son patrimoine artisanal et architectural.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
+                            <span class="font-bold text-vert uppercase text-[11px] block">Cité Impériale Alaouite</span>
+                            <ul class="space-y-1.5 text-sombre/80">
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Bab Mansour :</strong> Meknès.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Mausolée Mohammed V :</strong> Rabat.</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                                    <span><strong>Mosquée Hassan II :</strong> Casablanca.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- IMPERIAL CITIES LINKING BANNER -->
+            <section class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="max-w-xl z-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider">Suivez les Traces des Dynasties</span>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-1 leading-tight">Explorez les 4 Villes Impériales du Maroc</h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed">
+                        Réservez un circuit clé en main pour visiter Fès, Marrakech, Rabat et Meknès avec des guides historiens certifiés.
+                    </p>
+                </div>
+                <div class="w-full md:w-auto shrink-0 z-10">
+                    <a class="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-sm px-6 py-4 rounded-2xl shadow-md transition" href="../programmes/index.html">
+                        <span>Découvrir les Itinéraires Impériaux</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                    </a>
+                </div>
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+            </section>
+
+            <!-- FAQ SECTION FOR HISTORY -->
+            <section class="border-t border-sable/20 pt-12" id="faq-histoire">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider">Questions Fréquentes</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-vert mt-1">FAQ sur l'Histoire du Maroc</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
+                        <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
+                            <span>Quelles sont les 4 Villes Impériales du Maroc ?</span>
+                            <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                        </button>
+                        <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
+                            Les quatre villes impériales choisies comme capitales par les différentes dynasties régnantes sont **Fès** (Idrissides, Mérinides), **Marrakech** (Almoravides, Almohades, Saadiens), **Meknès** (Alaouites sous Moulay Ismaïl) et **Rabat** (Almohades et capitale actuelle sous les Alaouites).
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
+                        <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
+                            <span>Le Maroc a-t-il fait partie de l'Empire Ottoman ?</span>
+                            <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                        </button>
+                        <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
+                            Non, le Maroc est le seul pays d'Afrique du Nord à avoir conservé son indépendance vis-à-vis de l'Empire Ottoman. Les dynasties Saaddienne puis Alaouite ont arrêté les avancées ottomanes à la frontière de la Moulouya (près d'Oujda).
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
+                        <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
+                            <span>Quelle est la plus ancienne université au monde encore en activité ?</span>
+                            <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                        </button>
+                        <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
+                            Il s'agit de l'université **Al Quaraouiyine** située dans la médina de Fès, fondée en 859 par **Fatima al-Fihriya**.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- SCHEMA.ORG STRUCTURAL DATA (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://moroccotripmap.com/guides/histoire.html#article",
+          "headline": "Histoire du Maroc : Des Origines Berbères aux Dynasties Impériales",
+          "description": "Guide historique complet du Maroc à travers les siècles : royaumes amazighs, Volubilis romaine et dynasties Idrisside, Almoravide, Almohade, Mérinide, Saadienne et Alaouite.",
+          "inLanguage": "fr",
+          "mainEntityOfPage": "https://moroccotripmap.com/guides/histoire.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MoroccoTripMap",
+            "url": "https://moroccotripmap.com"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://moroccotripmap.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Guides",
+              "item": "https://moroccotripmap.com/guides/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Histoire du Maroc",
+              "item": "https://moroccotripmap.com/guides/histoire.html"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quelles sont les 4 Villes Impériales du Maroc ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Les quatre villes impériales sont Fès, Marrakech, Meknès et Rabat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Le Maroc a-t-il fait partie de l'Empire Ottoman ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non, le Maroc est le seul pays d'Afrique du Nord à avoir conservé son indépendance complète vis-à-vis de l'Empire Ottoman."
+              }
+            }
+          ]
         }
-        if (arrow) {
-            arrow.classList.toggle('rotate-180');
-        }
+      ]
     }
-</script>
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
+                <p class="text-xs text-creme/80 leading-relaxed">
+                    Découvrez. Planifiez. Vivez le Maroc.<br/>
+                    Le guide culturel et annuaire touristique de référence pour votre voyage au Maroc.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Destinations</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="../marrakech.html">Guide Marrakech</a></li>
+                    <li><a class="hover:text-white transition" href="../destinations.html">Toutes les Destinations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Catégories</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="../riads/index.html">Riads &amp; Hébergements</a></li>
+                    <li><a class="hover:text-white transition" href="../gastronomy/index.html">Gastronomie Marocaine</a></li>
+                    <li><a class="hover:text-white transition" href="../experiences/index.html">Excursions &amp; Activités</a></li>
+                    <li><a class="hover:text-white transition" href="../transport/index.html">Transport &amp; Location</a></li>
+                    <li><a class="hover:text-white transition" href="../programmes/index.html">Itinéraires &amp; Circuits</a></li>
+                    <li><a class="text-white font-bold transition" href="histoire.html">Histoire du Maroc</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider">Réseaux</h4>
+                <p class="text-xs text-creme/80 mb-3">Suivez notre chaîne YouTube pour nos guides vidéo :</p>
+                <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                    @moroccotripmap
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
+            <p>© MoroccoTripMap. Tous droits réservés.</p>
+            <p>Créé par <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/search.js"></script>
 </body>
-    </html>
+</html>

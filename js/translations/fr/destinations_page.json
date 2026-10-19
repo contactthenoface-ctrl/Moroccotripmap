@@ -37,5 +37,374 @@
   "blog2_tag": "Côte",
   "blog2_title": "Road trip atlantique : Essaouira, Agadir et au-delà",
   "blog3_tag": "Nord",
-  "blog3_title": "Fès, Chefchaouen et Tanger en une boucle nord"
+  "blog3_title": "Fès, Chefchaouen et Tanger en une boucle nord",
+  "seo": {
+    "destinations_title": "[FR] Destinations title"
+  },
+  "nav": {
+    "destinations": "[FR] Destinations",
+    "categories": "[FR] Categories",
+    "cat_stays": "[FR] Cat stays",
+    "cat_gastronomy": "[FR] Cat gastronomy",
+    "cat_experiences": "[FR] Cat experiences",
+    "cat_museums": "[FR] Cat museums",
+    "cat_transport": "[FR] Cat transport",
+    "cat_itineraries": "[FR] Cat itineraries",
+    "cat_guides": "[FR] Cat guides",
+    "history": "[FR] History",
+    "blog": "[FR] Blog",
+    "contact": "[FR] Contact",
+    "cities": "[FR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[FR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[FR] Home",
+    "destinations": "[FR] Destinations"
+  },
+  "destinations_page": {
+    "title": "[FR] Title",
+    "description": "[FR] Description",
+    "stat_cities": "[FR] Stat cities",
+    "stat_cities_label": "[FR] Stat cities label",
+    "stat_guides": "[FR] Stat guides",
+    "stat_guides_label": "[FR] Stat guides label",
+    "stat_langs": "[FR] Stat langs",
+    "stat_langs_label": "[FR] Stat langs label",
+    "search_placeholder": "[FR] Search placeholder",
+    "tip1_title": "[FR] Tip1 title",
+    "tip1_desc": "[FR] Tip1 desc",
+    "tip2_title": "[FR] Tip2 title",
+    "tip2_desc": "[FR] Tip2 desc",
+    "tip3_title": "[FR] Tip3 title",
+    "tip3_desc": "[FR] Tip3 desc",
+    "filter_all": "[FR] Filter all",
+    "filter_imperial": "[FR] Filter imperial",
+    "filter_north": "[FR] Filter north",
+    "filter_atlantic": "[FR] Filter atlantic",
+    "filter_desert": "[FR] Filter desert",
+    "filter_mountains": "[FR] Filter mountains",
+    "blog_badge": "[FR] Blog badge",
+    "blog_title": "[FR] Blog title",
+    "blog_subtitle": "[FR] Blog subtitle",
+    "blog_all": "[FR] Blog all",
+    "blog1_tag": "[FR] Blog1 tag",
+    "blog1_title": "[FR] Blog1 title",
+    "blog2_tag": "[FR] Blog2 tag",
+    "blog2_title": "[FR] Blog2 title",
+    "blog3_tag": "[FR] Blog3 tag",
+    "blog3_title": "[FR] Blog3 title"
+  },
+  "cities": {
+    "marrakech": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "chefchaouen": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "fes": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "casablanca": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "essaouira": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "agadir": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "tangier": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "ouarzazate": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "rabat": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "meknes": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "tetouan": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "ifrane": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "el_jadida": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "taroudant": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "dakhla": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "al_hoceima": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "nador": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "zagora": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "safi": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "laayoune": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "merzouga": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "azilal": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "tinghir": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "oujda": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "asilah": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "larache": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "erfoud": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "tiznit": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "sidi_ifni": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "guelmim": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "kenitra": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "mohammedia": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "oualidia": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "azemmour": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "taghazout": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "mirleft": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "beni_mellal": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "midelt": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "errachidia": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "rissani": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "mhamid": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "skoura": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "boumalne_dades": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "taza": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "sefrou": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "moulay_idriss": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "volubilis": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "mdiq": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "fnideq": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "ksar_el_kebir": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "taourirt": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "figuig": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "demnate": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "ourika": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    },
+    "ait_ben_haddou": {
+      "tag": "[FR] Tag",
+      "name": "[FR] Name",
+      "desc": "[FR] Desc"
+    }
+  },
+  "map": {
+    "badge": "[FR] Badge",
+    "title": "[FR] Title",
+    "subtitle": "[FR] Subtitle",
+    "explore_marrakech": "[FR] Explore marrakech"
+  },
+  "intro": {
+    "badge": "[FR] Badge",
+    "text": "[FR] Text"
+  },
+  "footer": {
+    "about_text": "[FR] About text",
+    "destinations_title": "[FR] Destinations title",
+    "link_marrakech": "[FR] Link marrakech",
+    "link_fes": "[FR] Link fes",
+    "link_chefchaouen": "[FR] Link chefchaouen",
+    "link_essaouira": "[FR] Link essaouira",
+    "link_merzouga": "[FR] Link merzouga",
+    "link_rabat": "[FR] Link rabat",
+    "link_all_destinations": "[FR] Link all destinations",
+    "categories_title": "[FR] Categories title",
+    "link_stays": "[FR] Link stays",
+    "link_restaurants": "[FR] Link restaurants",
+    "link_experiences": "[FR] Link experiences",
+    "link_transport": "[FR] Link transport",
+    "link_itineraries": "[FR] Link itineraries",
+    "link_history": "[FR] Link history",
+    "link_guides": "[FR] Link guides",
+    "link_blog": "[FR] Link blog",
+    "link_contact": "[FR] Link contact",
+    "connect_title": "[FR] Connect title",
+    "youtube_text": "[FR] Youtube text",
+    "copyright": "[FR] Copyright"
+  }
 }

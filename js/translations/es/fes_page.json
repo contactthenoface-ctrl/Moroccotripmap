@@ -29,14 +29,46 @@
     "title": "Lugares que Visitar en Fez",
     "subtitle": "Escuelas históricas, barrios de artesanos, miradores y rincones tranquilos que revelan el carácter de la ciudad imperial más antigua de Marruecos.",
     "explore": "Explorar lugar →",
-    "fes_el_bali": { "tag": "Medina UNESCO", "title": "Fes el-Bali", "desc": "La laberíntica ciudad vieja donde zocos, mezquitas, talleres y casas históricas se unen." },
-    "al_quaraouiyine": { "tag": "Patrimonio", "title": "Al Quaraouiyine", "desc": "Un centro histórico de aprendizaje y uno de los hitos espirituales más importantes de la ciudad." },
-    "bou_inania": { "tag": "Arquitectura", "title": "Madraza Bou Inania", "desc": "Zellige, estuco tallado y detalles de cedro hacen de este uno de los edificios históricos más destacados de Fez." },
-    "nejjarine": { "tag": "Artesanía", "title": "Museo Nejjarine", "desc": "Un funduq bellamente restaurado que celebra la herencia de la carpintería y la artesanía tradicional de Marruecos." },
-    "chouara": { "tag": "Oficios", "title": "Curtiembre de Chouara", "desc": "Una de las escenas artesanales más famosas de Fez, donde el trabajo del cuero sigue vivo en la economía local." },
-    "bab_bou_jeloud": { "tag": "Puerta de la Ciudad", "title": "Bab Bou Jeloud", "desc": "La famosa puerta azul es el punto de partida natural para explorar la antigua medina." },
-    "mellah": { "tag": "Historia", "title": "El Mellah de Fez", "desc": "Descubre otra capa de Fez a través de su histórico barrio judío y el distrito real circundante." },
-    "marinid_tombs": { "tag": "Panorama", "title": "Tumbas benimerines", "desc": "Ven al atardecer para disfrutar de una de las vistas panorámicas más memorables sobre la medina." }
+    "fes_el_bali": {
+      "tag": "Medina UNESCO",
+      "title": "Fes el-Bali",
+      "desc": "La laberíntica ciudad vieja donde zocos, mezquitas, talleres y casas históricas se unen."
+    },
+    "al_quaraouiyine": {
+      "tag": "Patrimonio",
+      "title": "Al Quaraouiyine",
+      "desc": "Un centro histórico de aprendizaje y uno de los hitos espirituales más importantes de la ciudad."
+    },
+    "bou_inania": {
+      "tag": "Arquitectura",
+      "title": "Madraza Bou Inania",
+      "desc": "Zellige, estuco tallado y detalles de cedro hacen de este uno de los edificios históricos más destacados de Fez."
+    },
+    "nejjarine": {
+      "tag": "Artesanía",
+      "title": "Museo Nejjarine",
+      "desc": "Un funduq bellamente restaurado que celebra la herencia de la carpintería y la artesanía tradicional de Marruecos."
+    },
+    "chouara": {
+      "tag": "Oficios",
+      "title": "Curtiembre de Chouara",
+      "desc": "Una de las escenas artesanales más famosas de Fez, donde el trabajo del cuero sigue vivo en la economía local."
+    },
+    "bab_bou_jeloud": {
+      "tag": "Puerta de la Ciudad",
+      "title": "Bab Bou Jeloud",
+      "desc": "La famosa puerta azul es el punto de partida natural para explorar la antigua medina."
+    },
+    "mellah": {
+      "tag": "Historia",
+      "title": "El Mellah de Fez",
+      "desc": "Descubre otra capa de Fez a través de su histórico barrio judío y el distrito real circundante."
+    },
+    "marinid_tombs": {
+      "tag": "Panorama",
+      "title": "Tumbas benimerines",
+      "desc": "Ven al atardecer para disfrutar de una de las vistas panorámicas más memorables sobre la medina."
+    }
   },
   "itinerary": {
     "badge": "Planifica tu Estancia",
@@ -101,37 +133,352 @@
     "badge": "Comer y Beber",
     "title": "Qué Comer en Fez",
     "subtitle": "Fez es una ciudad excelente para los amantes de la comida, desde modestas cocinas de medina hasta restaurantes refinados.",
-    "fassi": { "title": "Cocina Fassi", "desc": "Prueba platos como la pastilla, tagines a fuego lento, harira y ensaladas de temporada. Destaca por su equilibrio dulce y salado." },
-    "medina": { "title": "Paradas en la Medina", "desc": "Sigue tu apetito por las calles: panaderías, sopas, carnes a la parrilla, aceitunas, dátiles y zumos frescos para un almuerzo informal." },
-    "rooftop": { "title": "Té en Azoteas", "desc": "Para una tarde más tranquila, elige una terraza en la azotea con vistas a la ciudad vieja y pide té de menta." },
-    "cooking": { "title": "Clases de Cocina", "desc": "Una clase de cocina local o visita al mercado es una forma divertida de entender los ingredientes de la cocina marroquí." },
-    "sweets": { "title": "Dulces y Pasteles", "desc": "Prueba la repostería marroquí, chebakia y dulces de almendra con café o té cuando necesites un descanso." },
-    "order": { "title": "Qué Pedir", "desc": "Si es tu primera visita, pregunta a tu anfitrión o camarero qué se ha preparado fresco ese día. Fez premia la curiosidad." }
+    "fassi": {
+      "title": "Cocina Fassi",
+      "desc": "Prueba platos como la pastilla, tagines a fuego lento, harira y ensaladas de temporada. Destaca por su equilibrio dulce y salado."
+    },
+    "medina": {
+      "title": "Paradas en la Medina",
+      "desc": "Sigue tu apetito por las calles: panaderías, sopas, carnes a la parrilla, aceitunas, dátiles y zumos frescos para un almuerzo informal."
+    },
+    "rooftop": {
+      "title": "Té en Azoteas",
+      "desc": "Para una tarde más tranquila, elige una terraza en la azotea con vistas a la ciudad vieja y pide té de menta."
+    },
+    "cooking": {
+      "title": "Clases de Cocina",
+      "desc": "Una clase de cocina local o visita al mercado es una forma divertida de entender los ingredientes de la cocina marroquí."
+    },
+    "sweets": {
+      "title": "Dulces y Pasteles",
+      "desc": "Prueba la repostería marroquí, chebakia y dulces de almendra con café o té cuando necesites un descanso."
+    },
+    "order": {
+      "title": "Qué Pedir",
+      "desc": "Si es tu primera visita, pregunta a tu anfitrión o camarero qué se ha preparado fresco ese día. Fez premia la curiosidad."
+    }
   },
   "tips": {
     "title": "Consejos Prácticos para Visitar Fez",
-    "shoes": { "title": "Lleva Zapatos Cómodos", "desc": "La ciudad vieja se explora a pie. Espera adoquines irregulares, escalones y mucho caminar." },
-    "stay": { "title": "Quédate en o cerca de la Medina", "desc": "Un riad ofrece una experiencia inmersiva, mientras que alojarse fuera facilita el acceso en taxi." },
-    "guide": { "title": "Usa un Guía Local si Quieres Contexto", "desc": "Fez tiene muchas capas de historia y un guía añade contexto valioso, especialmente en una primera visita." },
-    "cash": { "title": "Lleva Algo de Efectivo", "desc": "Mantén dirhams marroquíes para pequeñas compras, cafés, taxis y puestos de mercado." }
+    "shoes": {
+      "title": "Lleva Zapatos Cómodos",
+      "desc": "La ciudad vieja se explora a pie. Espera adoquines irregulares, escalones y mucho caminar."
+    },
+    "stay": {
+      "title": "Quédate en o cerca de la Medina",
+      "desc": "Un riad ofrece una experiencia inmersiva, mientras que alojarse fuera facilita el acceso en taxi."
+    },
+    "guide": {
+      "title": "Usa un Guía Local si Quieres Contexto",
+      "desc": "Fez tiene muchas capas de historia y un guía añade contexto valioso, especialmente en una primera visita."
+    },
+    "cash": {
+      "title": "Lleva Algo de Efectivo",
+      "desc": "Mantén dirhams marroquíes para pequeñas compras, cafés, taxis y puestos de mercado."
+    }
   },
   "daytrips": {
     "badge": "Más Allá de la Ciudad",
     "title": "Mejores Excursiones desde Fez",
     "subtitle": "Fez es también una base útil para explorar la historia y los paisajes del norte y centro de Marruecos.",
-    "volubilis": { "title": "Volubilis", "desc": "Explora las ruinas romanas, mosaicos y paisajes abiertos de uno de los yacimientos arqueológicos más famosos." },
-    "moulay_idriss": { "title": "Moulay Idriss", "desc": "Una ciudad de peregrinación en la ladera con calles encalizadas y vistas al campo circundante." },
-    "meknes": { "title": "Meknes", "desc": "Combina tu estancia en Fez con otra ciudad imperial, conocida por sus puertas monumentales y arquitectura." },
-    "ifrane": { "title": "Ifrane y Atlas Medio", "desc": "Adéntrate en el Atlas Medio para ver bosques de cedros, aire fresco y paisajes muy distintos a la medina." }
+    "volubilis": {
+      "title": "Volubilis",
+      "desc": "Explora las ruinas romanas, mosaicos y paisajes abiertos de uno de los yacimientos arqueológicos más famosos."
+    },
+    "moulay_idriss": {
+      "title": "Moulay Idriss",
+      "desc": "Una ciudad de peregrinación en la ladera con calles encalizadas y vistas al campo circundante."
+    },
+    "meknes": {
+      "title": "Meknes",
+      "desc": "Combina tu estancia en Fez con otra ciudad imperial, conocida por sus puertas monumentales y arquitectura."
+    },
+    "ifrane": {
+      "title": "Ifrane y Atlas Medio",
+      "desc": "Adéntrate en el Atlas Medio para ver bosques de cedros, aire fresco y paisajes muy distintos a la medina."
+    }
   },
   "faq": {
     "badge": "Bueno Saberlo",
     "title": "Preguntas Frecuentes sobre Fez",
-    "q1": { "question": "¿Cuántos días debo pasar en Fez?", "answer": "Dos días completos cubren lo principal, pero tres días permiten explorar la medina sin prisas y añadir una excursión." },
-    "q2": { "question": "¿Es Fez un buen destino para un primer viaje a Marruecos?", "answer": "Sí, especialmente si te interesa la historia, la arquitectura, la artesanía y la comida marroquí." },
-    "q3": { "question": "¿Cuál es la mejor zona para alojarse en Fez?", "answer": "Quédate en o cerca de Fes el-Bali si buscas ambiente. La Ville Nouvelle es más cómoda si prefieres hoteles modernos." },
-    "q4": { "question": "¿Puedo visitar la medina de Fez sin guía?", "answer": "Puedes explorar por cuenta propia, aunque la medina es grande. Un guía es útil para profundizar en la historia." },
-    "q5": { "question": "¿Qué debo comer en Fez?", "answer": "Prueba especialidades fassies como pastilla y tagines tradicionales, además de ensaladas y repostería." },
-    "q6": { "question": "¿Cuáles son las mejores excursiones desde Fez?", "answer": "Volubilis, Moulay Idriss, Meknes e Ifrane son las opciones más fáciles y enriquecedoras." }
+    "q1": {
+      "question": "¿Cuántos días debo pasar en Fez?",
+      "answer": "Dos días completos cubren lo principal, pero tres días permiten explorar la medina sin prisas y añadir una excursión."
+    },
+    "q2": {
+      "question": "¿Es Fez un buen destino para un primer viaje a Marruecos?",
+      "answer": "Sí, especialmente si te interesa la historia, la arquitectura, la artesanía y la comida marroquí."
+    },
+    "q3": {
+      "question": "¿Cuál es la mejor zona para alojarse en Fez?",
+      "answer": "Quédate en o cerca de Fes el-Bali si buscas ambiente. La Ville Nouvelle es más cómoda si prefieres hoteles modernos."
+    },
+    "q4": {
+      "question": "¿Puedo visitar la medina de Fez sin guía?",
+      "answer": "Puedes explorar por cuenta propia, aunque la medina es grande. Un guía es útil para profundizar en la historia."
+    },
+    "q5": {
+      "question": "¿Qué debo comer en Fez?",
+      "answer": "Prueba especialidades fassies como pastilla y tagines tradicionales, además de ensaladas y repostería."
+    },
+    "q6": {
+      "question": "¿Cuáles son las mejores excursiones desde Fez?",
+      "answer": "Volubilis, Moulay Idriss, Meknes e Ifrane son las opciones más fáciles y enriquecedoras."
+    }
+  },
+  "fes_page": {
+    "seo": {
+      "title": "[ES] Title"
+    },
+    "breadcrumb_home": "[ES] Breadcrumb home",
+    "breadcrumb_destinations": "[ES] Breadcrumb destinations",
+    "hero_title": "[ES] Hero title",
+    "hero_subtitle": "[ES] Hero subtitle",
+    "info": {
+      "best_time_label": "[ES] Best time label",
+      "best_time_val": "[ES] Best time val",
+      "stay_label": "[ES] Stay label",
+      "stay_val": "[ES] Stay val",
+      "vibe_label": "[ES] Vibe label",
+      "vibe_val": "[ES] Vibe val",
+      "airport_label": "[ES] Airport label",
+      "airport_val": "[ES] Airport val"
+    },
+    "overview": {
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "p2": "[ES] P2"
+    },
+    "places": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "fes_el_bali": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "explore": "[ES] Explore",
+      "al_quaraouiyine": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bou_inania": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "nejjarine": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "chouara": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bab_bou_jeloud": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "mellah": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "marinid_tombs": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[ES] Day1 tab",
+      "day2_tab": "[ES] Day2 tab",
+      "day3_tab": "[ES] Day3 tab",
+      "day1_m": "[ES] Day1 m",
+      "day1_md": "[ES] Day1 md",
+      "day1_a": "[ES] Day1 a",
+      "day1_ad": "[ES] Day1 ad",
+      "day1_e": "[ES] Day1 e",
+      "day1_ed": "[ES] Day1 ed",
+      "day2_m": "[ES] Day2 m",
+      "day2_md": "[ES] Day2 md",
+      "day2_a": "[ES] Day2 a",
+      "day2_ad": "[ES] Day2 ad",
+      "day2_e": "[ES] Day2 e",
+      "day2_ed": "[ES] Day2 ed",
+      "day3_m": "[ES] Day3 m",
+      "day3_md": "[ES] Day3 md",
+      "day3_a": "[ES] Day3 a",
+      "day3_ad": "[ES] Day3 ad",
+      "day3_e": "[ES] Day3 e",
+      "day3_ed": "[ES] Day3 ed"
+    },
+    "stays": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "card1": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      },
+      "book": "[ES] Book",
+      "card2": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      },
+      "card3": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "desc": "[ES] Desc",
+      "btn": "[ES] Btn",
+      "guarantee": "[ES] Guarantee"
+    },
+    "eat": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "fassi": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "medina": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "rooftop": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "cooking": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "sweets": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "order": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "tips": {
+      "title": "[ES] Title",
+      "shoes": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "stay": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "guide": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "cash": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "volubilis": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "moulay_idriss": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "meknes": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "ifrane": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "q1": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q2": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q3": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q4": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q5": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q6": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      }
+    }
+  },
+  "nav": {
+    "destinations": "[ES] Destinations",
+    "categories": "[ES] Categories",
+    "cat_stays": "[ES] Cat stays",
+    "cat_gastronomy": "[ES] Cat gastronomy",
+    "cat_experiences": "[ES] Cat experiences",
+    "cat_museums": "[ES] Cat museums",
+    "cat_transport": "[ES] Cat transport",
+    "cat_itineraries": "[ES] Cat itineraries",
+    "cat_guides": "[ES] Cat guides",
+    "history": "[ES] History",
+    "blog": "[ES] Blog",
+    "contact": "[ES] Contact",
+    "cities": "[ES] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[ES] Language title"
+  },
+  "footer": {
+    "about_text": "[ES] About text",
+    "destinations_title": "[ES] Destinations title",
+    "link_all_destinations": "[ES] Link all destinations",
+    "categories_title": "[ES] Categories title",
+    "link_stays": "[ES] Link stays",
+    "link_restaurants": "[ES] Link restaurants",
+    "connect_title": "[ES] Connect title",
+    "youtube_text": "[ES] Youtube text",
+    "copyright": "[ES] Copyright"
   }
 }

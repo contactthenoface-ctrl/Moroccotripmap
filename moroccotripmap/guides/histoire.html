@@ -73,100 +73,22 @@
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
 
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
+        <!-- Header -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a class="flex items-center gap-3 group shrink-0" href="../index.html">
-                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../images/logo.webp"/>
+            <a class="flex items-center gap-3 group shrink-0" href="index.html">
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" src="images/logo.webp"/>
             </a>
-            
-            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-                <a class="hover:text-vert transition" data-i18n="nav.destinations" href="../destinations.html">Destinations</a>
-                <div class="relative inline-block text-left" id="categories-menu-container">
-                    <button class="flex items-center gap-1.5 hover:text-vert transition" onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" type="button">
-                        <span data-i18n="nav.categories" data-i18n="nav.categories">Categories</span>
-                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                    </button>
-                    <div class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1" id="categories-menu-dropdown">
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_stays" href="../riads/index.html">Stays &amp; Riads</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html">Gastronomy</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_experiences" href="../experiences/index.html">Experiences</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_museums" href="../destinations.html">Monuments &amp; Museums</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_transport" href="../transport/index.html">Transport &amp; Rental</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_itineraries" href="../programmes/index.html">Itineraries</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_guides" href="index.html">Travel Guides</a>
-                    </div>
-                </div>
-                <a class="text-vert font-bold transition" data-i18n="nav.history" href="histoire.html">History</a>
-                <a class="hover:text-vert transition" data-i18n="nav.blog" href="../blog/index.html">Blog</a>
-                <a class="hover:text-vert transition" data-i18n="nav.contact" href="../contact.html">Contact</a>
+                <a class="hover:text-vert transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
+                <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
             </nav>
-            
-            <!-- Lang Switcher & Mobile Toggle -->
-            <div class="flex items-center gap-2 sm:gap-4">
-                <div class="relative inline-block text-left" id="lang-menu-container">
-                    <button class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition" id="lang-menu-button">
-                        <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
-                        <span id="current-lang-label">EN</span>
-                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                    </button>
-                    
-                    <div class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden" id="lang-menu-dropdown">
-                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('fr')">
-                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 3 2" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#ED2939" height="2" width="3"></rect><rect fill="#fff" height="2" width="2"></rect><rect fill="#002395" height="2" width="1"></rect></svg>
-                            Français
-                        </button>
-                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('en')">
-                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t2)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
-                            English
-                        </button>
-                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('es')">
-                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 750 500" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#c60b1e" height="500" width="750"></rect><rect fill="#ffc400" height="250" width="750" y="125"></rect></svg>
-                            Español
-                        </button>
-                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('ar')">
-                            <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 900 600" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#c1272d" height="600" width="900"></rect><polygon fill="none" points="450,170 361,441 593,273 307,273 639,441" stroke="#006233" stroke-width="15"></polygon></svg>
-                            العربية
-                        </button>
-                    </div>
+            <div class="flex items-center gap-4">
+                <!-- Selecteur de langue i18n -->
+                <div class="relative inline-block text-left" id="lang-selector">
+                    <!-- Généré dynamiquement par i18n.js -->
                 </div>
-
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition focus:outline-none" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" type="button">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                </button>
             </div>
-        </div>
-
-        <!-- Mobile Menu Drawer -->
-        <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
-            <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
-                    <span data-i18n="nav.cities">Cities &amp; Destinations</span>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="index.html">
-                    <span data-i18n="nav.cat_guides">Travel Guides</span>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl bg-white text-vert font-bold shadow-sm" href="histoire.html">
-                    <span data-i18n="nav.history">History of Morocco</span>
-                    <span class="text-xs text-vert">→</span>
-                </a>
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../programmes/index.html">
-                    <span data-i18n="nav.cat_itineraries">Itineraries</span>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../blog/index.html">
-                    <span data-i18n="nav.blog">Blog</span>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../contact.html">
-                    <span data-i18n="nav.contact">Contact</span>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-            </nav>
         </div>
     </header>
 

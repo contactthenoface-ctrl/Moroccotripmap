@@ -26,44 +26,19 @@
     "badge": "Galerie",
     "title": "Hassi Labied en images",
     "subtitle": "Faites glisser pour découvrir les palmeraies verdoyantes, les dunes dorées et l'architecture locale.",
-    "s1": {
-      "caption": "L'oasis bordant les dunes"
-    },
-    "s2": {
-      "caption": "Sentiers ombragés de la palmeraie"
-    },
-    "s3": {
-      "caption": "Architecture traditionnelle du village"
-    },
-    "s4": {
-      "caption": "Lumière de coucher de soleil sur les dunes"
-    },
-    "s5": {
-      "caption": "Atmosphère paisible du village"
-    }
+    "s1": { "caption": "L'oasis bordant les dunes" },
+    "s2": { "caption": "Sentiers ombragés de la palmeraie" },
+    "s3": { "caption": "Architecture traditionnelle du village" },
+    "s4": { "caption": "Lumière de coucher de soleil sur les dunes" },
+    "s5": { "caption": "Atmosphère paisible du village" }
   },
   "moods": {
     "badge": "Points forts",
     "title": "Que vivre à Hassi Labied",
     "subtitle": "Nature, culture et sérénité — trois dimensions clés du village.",
-    "1": {
-      "tag": "Nature",
-      "title": "La Palmeraie",
-      "desc": "Promenez-vous le long des sentiers verdoyants sous les dattiers et découvrez les canaux d'irrigation ancestraux.",
-      "duration": "Balade • 45 min"
-    },
-    "2": {
-      "tag": "Aventure",
-      "title": "Accès aux dunes",
-      "desc": "Grimpez directement depuis la lisière du village sur les magnifiques dunes de sable de l'Erg Chebbi.",
-      "duration": "Randonnée • 30 min"
-    },
-    "3": {
-      "tag": "Culture",
-      "title": "Hospitalité locale",
-      "desc": "Partagez un thé à la menthe avec les habitants et découvrez les traditions amazighes dans les maisons d'hôtes.",
-      "duration": "Détente • 1 heure"
-    }
+    "1": { "tag": "Nature", "title": "La Palmeraie", "desc": "Promenez-vous le long des sentiers verdoyants sous les dattiers et découvrez les canaux d'irrigation ancestraux.", "duration": "Balade • 45 min" },
+    "2": { "tag": "Aventure", "title": "Accès aux dunes", "desc": "Grimpez directement depuis la lisière du village sur les magnifiques dunes de sable de l'Erg Chebbi.", "duration": "Randonnée • 30 min" },
+    "3": { "tag": "Culture", "title": "Hospitalité locale", "desc": "Partagez un thé à la menthe avec les habitants et découvrez les traditions amazighes dans les maisons d'hôtes.", "duration": "Détente • 1 heure" }
   },
   "food": {
     "title": "Se restaurer à Hassi Labied",
@@ -77,38 +52,17 @@
   },
   "tips": {
     "title": "Conseils pratiques pour visiter Hassi Labied",
-    "1": {
-      "title": "Chaussures et vêtements",
-      "desc": "Portez des chaussures de marche confortables pour les sentiers sablonneux et des vêtements légers et respirants."
-    },
-    "2": {
-      "title": "Protection solaire",
-      "desc": "Prévoyez chapeau, lunettes de soleil et crème solaire, en particulier lors des balades près des dunes à midi."
-    },
-    "3": {
-      "title": "Tourisme respectueux",
-      "desc": "Demandez toujours la permission avant de photographier les habitants travaillant dans l'oasis."
-    }
+    "1": { "title": "Chaussures et vêtements", "desc": "Portez des chaussures de marche confortables pour les sentiers sablonneux et des vêtements légers et respirants." },
+    "2": { "title": "Protection solaire", "desc": "Prévoyez chapeau, lunettes de soleil et crème solaire, en particulier lors des balades près des dunes à midi." },
+    "3": { "title": "Tourisme respectueux", "desc": "Demandez toujours la permission avant de photographier les habitants travaillant dans l'oasis." }
   },
   "gyg": {
     "badge": "Excursions & Activités",
     "title": "Réserver un tour Désert & Oasis",
     "subtitle": "Excursions les mieux notées au départ de la région de Merzouga et Hassi Labied.",
-    "t1": {
-      "tag": "Safari 4x4",
-      "title": "Merzouga : Safari 4x4 dans l'Erg Chebbi & Tour des oasis",
-      "desc": "Explorez les pistes du désert, les campements nomades et les villages oasiens avec un chauffeur local expert."
-    },
-    "t2": {
-      "tag": "Dromadaire",
-      "title": "Merzouga : Balade au coucher du soleil & Nuit en bivouac",
-      "desc": "Partez à travers les dunes dorées de l'Erg Chebbi et passez une nuit inoubliable sous les étoiles."
-    },
-    "t3": {
-      "tag": "Tour Culturel",
-      "title": "Merzouga : Village de Khamlia & Musique du désert",
-      "desc": "Découvrez la culture et la musique traditionnelle Gnawa dans le village voisin de Khamlia."
-    },
+    "t1": { "tag": "Safari 4x4", "title": "Merzouga : Safari 4x4 dans l'Erg Chebbi & Tour des oasis", "desc": "Explorez les pistes du désert, les campements nomades et les villages oasiens avec un chauffeur local expert." },
+    "t2": { "tag": "Dromadaire", "title": "Merzouga : Balade au coucher du soleil & Nuit en bivouac", "desc": "Partez à travers les dunes dorées de l'Erg Chebbi et passez une nuit inoubliable sous les étoiles." },
+    "t3": { "tag": "Tour Culturel", "title": "Merzouga : Village de Khamlia & Musique du désert", "desc": "Découvrez la culture et la musique traditionnelle Gnawa dans le village voisin de Khamlia." },
     "check": "Vérifier la disponibilité sur GetYourGuide →",
     "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via ceux-ci, nous percevons une petite commission, sans frais supplémentaires pour vous."
   },
@@ -131,66 +85,18 @@
     "badge": "Le Blog",
     "title": "Articles associés",
     "all": "Tous les articles →",
-    "a1": {
-      "tag": "Gastronomie",
-      "title": "Guide gastronomique de Merzouga : Tajines et plaisirs du désert",
-      "desc": "Où bien manger à Merzouga, des repas conviviaux en bivouac aux tajines traditionnels."
-    },
-    "a2": {
-      "tag": "Transport",
-      "title": "Se déplacer à Merzouga : 4x4, transferts et pistes du désert",
-      "desc": "Les meilleures solutions pour voyager depuis Errachidia et circuler entre le village et les dunes."
-    },
-    "a3": {
-      "tag": "Planification",
-      "title": "Premier voyage à Merzouga : À quoi s'attendre dans le Sahara",
-      "desc": "Comment appréhender votre premier jour dans le désert et planifier vos visites nature sans stress."
-    },
+    "a1": { "tag": "Gastronomie", "title": "Guide gastronomique de Merzouga : Tajines et plaisirs du désert", "desc": "Où bien manger à Merzouga, des repas conviviaux en bivouac aux tajines traditionnels." },
+    "a2": { "tag": "Transport", "title": "Se déplacer à Merzouga : 4x4, transferts et pistes du désert", "desc": "Les meilleures solutions pour voyager depuis Errachidia et circuler entre le village et les dunes." },
+    "a3": { "tag": "Planification", "title": "Premier voyage à Merzouga : À quoi s'attendre dans le Sahara", "desc": "Comment appréhender votre premier jour dans le désert et planifier vos visites nature sans stress." },
     "read": "Lire l'article →"
   },
   "faq": {
     "badge": "Bon à savoir",
     "title": "FAQ Hassi Labied",
-    "q1": {
-      "question": "Qu'est-ce qui caractérise Hassi Labied ?",
-      "answer": "Hassi Labied est un village oasien paisible blotti contre les impressionnantes dunes dorées de l'Erg Chebbi, célèbre pour ses palmeraies luxuriantes, son agriculture traditionnelle et ses maisons d'hôtes accueillantes."
-    },
-    "q2": {
-      "question": "Peut-on se promener dans la palmeraie ?",
-      "answer": "Oui, flâner à travers les palmeraies ombragées et longer les anciens canaux d'irrigation (khettaras) est l'une des activités les plus relaxantes de la région."
-    },
-    "q3": {
-      "question": "Quel est le meilleur moment pour visiter Hassi Labied ?",
-      "answer": "Tôt le matin ou en fin d'après-midi offrent les températures les plus agréables et une magnifique lumière dorée sur les dunes et l'oasis."
-    },
-    "q4": {
-      "question": "Combien de temps dure la visite ?",
-      "answer": "Une promenade tranquille à travers le village et la palmeraie prend environ 1 à 2 heures, bien que de nombreux voyageurs choisissent d'y séjourner plusieurs jours."
-    },
-    "q5": {
-      "question": "Hassi Labied est-il proche des dunes ?",
-      "answer": "Extrêmement proche — le village borde directement les dunes de sable de l'Erg Chebbi, constituant un point de départ idéal pour les randonnées à dromadaire et les camps dans le désert."
-    }
-  },
-  "footer": {
-    "destinations_title": "Destinations",
-    "categories_title": "Catégories",
-    "link_stays": "Riads & Hébergements",
-    "link_restaurants": "Restaurants Marocains",
-    "link_culture": "Culture & Désert",
-    "link_transport": "Transport & Chauffeurs",
-    "link_circuits": "Circuits & Itinéraires",
-    "link_history": "Histoire du Maroc",
-    "link_guides": "Guides de Voyage",
-    "link_blog": "Blog",
-    "link_contact": "Contact",
-    "link_itineraries": "Circuits & Itinéraires",
-    "col_imperial": "Villes Impériales & Culture",
-    "col_desert": "Désert & Grand Sud",
-    "col_practical": "Guides Pratiques & Séjour",
-    "connect_title": "Suivez-nous",
-    "youtube_text": "Abonnez-vous à notre chaîne YouTube pour nos guides vidéo :",
-    "created_by": "Créé par",
-    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés."
+    "q1": { "question": "Qu'est-ce qui caractérise Hassi Labied ?", "answer": "Hassi Labied est un village oasien paisible blotti contre les impressionnantes dunes dorées de l'Erg Chebbi, célèbre pour ses palmeraies luxuriantes, son agriculture traditionnelle et ses maisons d'hôtes accueillantes." },
+    "q2": { "question": "Peut-on se promener dans la palmeraie ?", "answer": "Oui, flâner à travers les palmeraies ombragées et longer les anciens canaux d'irrigation (khettaras) est l'une des activités les plus relaxantes de la région." },
+    "q3": { "question": "Quel est le meilleur moment pour visiter Hassi Labied ?", "answer": "Tôt le matin ou en fin d'après-midi offrent les températures les plus agréables et une magnifique lumière dorée sur les dunes et l'oasis." },
+    "q4": { "question": "Combien de temps dure la visite ?", "answer": "Une promenade tranquille à travers le village et la palmeraie prend environ 1 à 2 heures, bien que de nombreux voyageurs choisissent d'y séjourner plusieurs jours." },
+    "q5": { "question": "Hassi Labied est-il proche des dunes ?", "answer": "Extrêmement proche — le village borde directement les dunes de sable de l'Erg Chebbi, constituant un point de départ idéal pour les randonnées à dromadaire et les camps dans le désert." }
   }
 }

@@ -26,51 +26,15 @@
     "title": "Incontournables à Merzouga",
     "subtitle": "Dunes, méharées, bivouacs et étapes phares de la porte du désert.",
     "explore": "Explorer le lieu →",
-    "erg": {
-      "tag": "Dunes",
-      "title": "Erg Chebbi",
-      "desc": "Vastes dunes dorées dominant Merzouga — le cœur de toute découverte du Sahara ici."
-    },
-    "village": {
-      "tag": "Village",
-      "title": "Village de Merzouga",
-      "desc": "Petit village aux portes du désert abritant hôtels, cafés et le départ vers l'erg."
-    },
-    "camel": {
-      "tag": "Expérience",
-      "title": "Balade à dromadaire",
-      "desc": "Promenade classique dans les dunes au coucher ou lever du soleil — l'expérience emblématique de Merzouga."
-    },
-    "camp": {
-      "tag": "Bivouac",
-      "title": "Camp dans le désert",
-      "desc": "Nuit sous les étoiles dans un campement berbère — dîner, percussions et silence des dunes."
-    },
-    "khamlia": {
-      "tag": "Culture",
-      "title": "Khamlia",
-      "desc": "Village du sud connu pour sa musique Gnawa, son thé et son hospitalité chaleureuse près des dunes."
-    },
-    "dayet": {
-      "tag": "Nature",
-      "title": "Dayet Srji",
-      "desc": "Lac saisonnier au pied des dunes — observation de flamants roses en période de pluies."
-    },
-    "rissani": {
-      "tag": "Ville",
-      "title": "Rissani",
-      "desc": "Ville historique et marché traditionnel — jours de souk, kasbahs et mausolée Moulay Ali Cherif."
-    },
-    "hassilabied": {
-      "tag": "Village",
-      "title": "Hassilabied",
-      "desc": "Village paisible en bordure de l'erg — hôtels avec vue sur les dunes et cadre plus calme que le centre."
-    },
-    "fossils": {
-      "tag": "Artisanat",
-      "title": "Ateliers de fossiles",
-      "desc": "Ateliers et boutiques locales proposant trilobites et fossiles polis de la région d'Erfoud."
-    }
+    "erg": { "tag": "Dunes", "title": "Erg Chebbi", "desc": "Vastes dunes dorées dominant Merzouga — le cœur de toute découverte du Sahara ici." },
+    "village": { "tag": "Village", "title": "Village de Merzouga", "desc": "Petit village aux portes du désert abritant hôtels, cafés et le départ vers l'erg." },
+    "camel": { "tag": "Expérience", "title": "Balade à dromadaire", "desc": "Promenade classique dans les dunes au coucher ou lever du soleil — l'expérience emblématique de Merzouga." },
+    "camp": { "tag": "Bivouac", "title": "Camp dans le désert", "desc": "Nuit sous les étoiles dans un campement berbère — dîner, percussions et silence des dunes." },
+    "khamlia": { "tag": "Culture", "title": "Khamlia", "desc": "Village du sud connu pour sa musique Gnawa, son thé et son hospitalité chaleureuse près des dunes." },
+    "dayet": { "tag": "Nature", "title": "Dayet Srji", "desc": "Lac saisonnier au pied des dunes — observation de flamants roses en période de pluies." },
+    "rissani": { "tag": "Ville", "title": "Rissani", "desc": "Ville historique et marché traditionnel — jours de souk, kasbahs et mausolée Moulay Ali Cherif." },
+    "hassilabied": { "tag": "Village", "title": "Hassilabied", "desc": "Village paisible en bordure de l'erg — hôtels avec vue sur les dunes et cadre plus calme que le centre." },
+    "fossils": { "tag": "Artisanat", "title": "Ateliers de fossiles", "desc": "Ateliers et boutiques locales proposant trilobites et fossiles polis de la région d'Erfoud." }
   },
   "itinerary": {
     "badge": "Planification",
@@ -125,42 +89,12 @@
     "badge": "Gastronomie",
     "title": "Où manger à Merzouga",
     "subtitle": "Tajines, viandes grillées et thé à la menthe — restaurants du village et tables avec vue sur les dunes.",
-    "dunes": {
-      "tag": "Local · Vue sur les dunes",
-      "title": "Restaurant Les Dunes",
-      "desc": "Tajines classiques et grillades sur une terrasse face à l'erg — une valeur sûre du village.",
-      "loc": "Village de Merzouga · Terrasse"
-    },
-    "yasmina": {
-      "tag": "Restaurant d'hôtel",
-      "title": "Restaurant Yasmina",
-      "desc": "Restaurant d'hôtel ouvert aux visiteurs extérieurs — menus marocains et vue sur l'Erg Chebbi.",
-      "loc": "Hôtel Yasmina · Village"
-    },
-    "sud": {
-      "tag": "Café · Décontracté",
-      "title": "Café du Sud",
-      "desc": "Café-restaurant simple pour le petit-déjeuner, omelettes, thé à la menthe et pause rafraîchissante.",
-      "loc": "Centre du village de Merzouga"
-    },
-    "mohayut": {
-      "tag": "Cadre Kasbah",
-      "title": "Kasbah Mohayut Restaurant",
-      "desc": "Menus marocains dans un décor de kasbah au pied des dunes — très apprécié des voyageurs.",
-      "loc": "Kasbah Mohayut · Bord des dunes"
-    },
-    "berbere": {
-      "tag": "Hassilabied",
-      "title": "Restaurant Berbère",
-      "desc": "Cuisine berbère familiale à Hassilabied — couscous, tajine et ambiance plus intime.",
-      "loc": "Hassilabied · Cuisine locale"
-    },
-    "camp": {
-      "tag": "Bivouac dans le désert",
-      "title": "Dîner au camp du désert",
-      "desc": "La plupart des camps inclus un dîner berbère sous les étoiles — un moment fort du séjour à Merzouga.",
-      "loc": "Camps de l'Erg Chebbi · Repas inclus"
-    }
+    "dunes": { "tag": "Local · Vue sur les dunes", "title": "Restaurant Les Dunes", "desc": "Tajines classiques et grillades sur une terrasse face à l'erg — une valeur sûre du village.", "loc": "Village de Merzouga · Terrasse" },
+    "yasmina": { "tag": "Restaurant d'hôtel", "title": "Restaurant Yasmina", "desc": "Restaurant d'hôtel ouvert aux visiteurs extérieurs — menus marocains et vue sur l'Erg Chebbi.", "loc": "Hôtel Yasmina · Village" },
+    "sud": { "tag": "Café · Décontracté", "title": "Café du Sud", "desc": "Café-restaurant simple pour le petit-déjeuner, omelettes, thé à la menthe et pause rafraîchissante.", "loc": "Centre du village de Merzouga" },
+    "mohayut": { "tag": "Cadre Kasbah", "title": "Kasbah Mohayut Restaurant", "desc": "Menus marocains dans un décor de kasbah au pied des dunes — très apprécié des voyageurs.", "loc": "Kasbah Mohayut · Bord des dunes" },
+    "berbere": { "tag": "Hassilabied", "title": "Restaurant Berbère", "desc": "Cuisine berbère familiale à Hassilabied — couscous, tajine et ambiance plus intime.", "loc": "Hassilabied · Cuisine locale" },
+    "camp": { "tag": "Bivouac dans le désert", "title": "Dîner au camp du désert", "desc": "La plupart des camps inclus un dîner berbère sous les étoiles — un moment fort du séjour à Merzouga.", "loc": "Camps de l'Erg Chebbi · Repas inclus" }
   },
   "tips": {
     "title": "Conseils pratiques pour visiter Merzouga",
@@ -181,310 +115,17 @@
     "badge": "Excursions",
     "title": "Meilleures excursions depuis Merzouga",
     "subtitle": "Circuits et escapades dans le désert réalisables sur une journée.",
-    "rabat": {
-      "title": "Erfoud & Vallée du Draa",
-      "desc": "Vers le sud et la vallée du Draa — palmeraies, kasbahs et route menant vers les grands espaces."
-    },
-    "zagora": {
-      "title": "Erfoud",
-      "desc": "Capitale des fossiles et porte du désert, située à environ 40 minutes au nord de Merzouga."
-    },
-    "mohammedia": {
-      "title": "Gorges du Dadès & Toudra",
-      "desc": "Paysages de canyons et vallées verdoyantes sur la route de l'ouest — souvent combinés en circuit."
-    },
-    "azemmour": {
-      "title": "Marrakech (via l'Atlas)",
-      "desc": "De nombreux voyageurs poursuivent ou reviennent en traversant le col du Tizi n’Tichka vers Marrakech."
-    }
+    "rabat": { "title": "Erfoud & Vallée du Draa", "desc": "Vers le sud et la vallée du Draa — palmeraies, kasbahs et route menant vers les grands espaces." },
+    "zagora": { "title": "Erfoud", "desc": "Capitale des fossiles et porte du désert, située à environ 40 minutes au nord de Merzouga." },
+    "mohammedia": { "title": "Gorges du Dadès & Toudra", "desc": "Paysages de canyons et vallées verdoyantes sur la route de l'ouest — souvent combinés en circuit." },
+    "azemmour": { "title": "Marrakech (via l'Atlas)", "desc": "De nombreux voyageurs poursuivent ou reviennent en traversant le col du Tizi n’Tichka vers Marrakech." }
   },
   "faq": {
     "badge": "Bon à savoir",
     "title": "FAQ Voyage à Merzouga",
-    "q1": {
-      "question": "Combien de jours passer à Merzouga ?",
-      "answer": "Deux jours complets permettent de voir l'essentiel sereinement. Trois à quatre jours offrent un rythme plus détendu avec une excursion vers Rissani ou les oasis."
-    },
-    "q2": {
-      "question": "Merzouga est-il sûr pour les touristes ?",
-      "answer": "Oui, Merzouga est un endroit très sûr et accueillant. Veillez simplement à réserver vos excursions et camps auprès d'agences agréées."
-    },
-    "q3": {
-      "question": "Quelle monnaie est utilisée et peut-on payer par carte ?",
-      "answer": "Le dirham marocain (MAD) est la monnaie locale. Les cartes sont acceptées dans les grands hôtels, mais prévoyez des espèces pour les petits commerces, taxis et pourboires."
-    },
-    "q4": {
-      "question": "Comment se rendre à Merzouga depuis l'aéroport le plus proche ?",
-      "answer": "L'aéroport d'Errachidia (ERH) est le plus proche (environ 2h de route). Des transferts privés, taxis et voitures de location permettent de rejoindre facilement les dunes."
-    }
-  },
-  "merzouga_page": {
-    "seo": {
-      "title": "[FR] Title"
-    },
-    "hero_subtitle": "[FR] Hero subtitle",
-    "info": {
-      "best_time_label": "[FR] Best time label",
-      "best_time_val": "[FR] Best time val",
-      "stay_label": "[FR] Stay label",
-      "stay_val": "[FR] Stay val",
-      "vibe_label": "[FR] Vibe label",
-      "vibe_val": "[FR] Vibe val",
-      "airport_label": "[FR] Airport label",
-      "airport_val": "[FR] Airport val"
-    },
-    "overview": {
-      "title": "[FR] Title",
-      "p1": "[FR] P1",
-      "p2": "[FR] P2"
-    },
-    "places": {
-      "badge": "[FR] Badge",
-      "title": "[FR] Title",
-      "subtitle": "[FR] Subtitle",
-      "erg": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "explore": "[FR] Explore",
-      "village": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "camel": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "camp": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "khamlia": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "dayet": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "rissani": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "hassilabied": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "fossils": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      }
-    },
-    "itinerary": {
-      "badge": "[FR] Badge",
-      "title": "[FR] Title",
-      "subtitle": "[FR] Subtitle"
-    },
-    "detailed_itinerary": {
-      "day1_tab": "[FR] Day1 tab",
-      "day2_tab": "[FR] Day2 tab",
-      "day3_tab": "[FR] Day3 tab",
-      "day1_m": "[FR] Day1 m",
-      "day1_md": "[FR] Day1 md",
-      "day1_a": "[FR] Day1 a",
-      "day1_ad": "[FR] Day1 ad",
-      "day1_e": "[FR] Day1 e",
-      "day1_ed": "[FR] Day1 ed",
-      "day2_m": "[FR] Day2 m",
-      "day2_md": "[FR] Day2 md",
-      "day2_a": "[FR] Day2 a",
-      "day2_ad": "[FR] Day2 ad",
-      "day2_e": "[FR] Day2 e",
-      "day2_ed": "[FR] Day2 ed",
-      "day3_m": "[FR] Day3 m",
-      "day3_md": "[FR] Day3 md",
-      "day3_a": "[FR] Day3 a",
-      "day3_ad": "[FR] Day3 ad",
-      "day3_e": "[FR] Day3 e",
-      "day3_ed": "[FR] Day3 ed"
-    },
-    "directory": {
-      "badge": "[FR] Badge",
-      "title": "[FR] Title",
-      "subtitle": "[FR] Subtitle",
-      "filter_type_label": "[FR] Filter type label",
-      "type_all": "[FR] Type all",
-      "type_hotel": "[FR] Type hotel",
-      "type_riad": "[FR] Type riad",
-      "type_camp": "[FR] Type camp",
-      "filter_location_label": "[FR] Filter location label",
-      "location_all": "[FR] Location all",
-      "location_village": "[FR] Location village",
-      "location_hassilabied": "[FR] Location hassilabied",
-      "location_dunes": "[FR] Location dunes",
-      "location_rissani": "[FR] Location rissani",
-      "counter": "[FR] Counter",
-      "district_label": "[FR] District label",
-      "type_label": "[FR] Type label",
-      "check_availability": "[FR] Check availability",
-      "no_results": "[FR] No results"
-    },
-    "eat": {
-      "badge": "[FR] Badge",
-      "title": "[FR] Title",
-      "subtitle": "[FR] Subtitle",
-      "dunes": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc",
-        "loc": "[FR] Loc"
-      },
-      "yasmina": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc",
-        "loc": "[FR] Loc"
-      },
-      "sud": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc",
-        "loc": "[FR] Loc"
-      },
-      "mohayut": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc",
-        "loc": "[FR] Loc"
-      },
-      "berbere": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc",
-        "loc": "[FR] Loc"
-      },
-      "camp": {
-        "tag": "[FR] Tag",
-        "title": "[FR] Title",
-        "desc": "[FR] Desc",
-        "loc": "[FR] Loc"
-      }
-    },
-    "tips": {
-      "title": "[FR] Title",
-      "transport": {
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "bargain": {
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "water": {
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      }
-    },
-    "daytrips": {
-      "badge": "[FR] Badge",
-      "title": "[FR] Title",
-      "subtitle": "[FR] Subtitle",
-      "rabat": {
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "zagora": {
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "mohammedia": {
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      },
-      "azemmour": {
-        "title": "[FR] Title",
-        "desc": "[FR] Desc"
-      }
-    },
-    "faq": {
-      "badge": "[FR] Badge",
-      "title": "[FR] Title",
-      "q1": {
-        "question": "[FR] Question",
-        "answer": "[FR] Answer"
-      },
-      "q2": {
-        "question": "[FR] Question",
-        "answer": "[FR] Answer"
-      },
-      "q3": {
-        "question": "[FR] Question",
-        "answer": "[FR] Answer"
-      },
-      "q4": {
-        "question": "[FR] Question",
-        "answer": "[FR] Answer"
-      }
-    }
-  },
-  "nav": {
-    "destinations": "[FR] Destinations",
-    "categories": "[FR] Categories",
-    "cat_stays": "[FR] Cat stays",
-    "cat_gastronomy": "[FR] Cat gastronomy",
-    "cat_experiences": "[FR] Cat experiences",
-    "cat_museums": "[FR] Cat museums",
-    "cat_transport": "[FR] Cat transport",
-    "cat_itineraries": "[FR] Cat itineraries",
-    "cat_guides": "[FR] Cat guides",
-    "history": "[FR] History",
-    "blog": "[FR] Blog",
-    "contact": "[FR] Contact",
-    "cities": "[FR] Cities"
-  },
-  "mobile_menu": {
-    "language_title": "[FR] Language title"
-  },
-  "breadcrumb": {
-    "home": "[FR] Home",
-    "destinations": "[FR] Destinations"
-  },
-  "destinations": {
-    "merzouga": {
-      "name": "[FR] Name"
-    }
-  },
-  "footer": {
-    "about_text": "[FR] About text",
-    "destinations_title": "Destinations",
-    "link_merzouga": "[FR] Link merzouga",
-    "link_all_destinations": "[FR] Link all destinations",
-    "categories_title": "Catégories",
-    "link_stays": "Riads & Hébergements",
-    "link_restaurants": "Restaurants Marocains",
-    "connect_title": "Suivez-nous",
-    "youtube_text": "Abonnez-vous à notre chaîne YouTube pour nos guides vidéo :",
-    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés.",
-    "link_culture": "Culture & Désert",
-    "link_transport": "Transport & Chauffeurs",
-    "link_circuits": "Circuits & Itinéraires",
-    "link_history": "Histoire du Maroc",
-    "link_guides": "Guides de Voyage",
-    "link_blog": "Blog",
-    "link_contact": "Contact",
-    "link_itineraries": "Circuits & Itinéraires",
-    "col_imperial": "Villes Impériales & Culture",
-    "col_desert": "Désert & Grand Sud",
-    "col_practical": "Guides Pratiques & Séjour",
-    "created_by": "Créé par"
+    "q1": { "question": "Combien de jours passer à Merzouga ?", "answer": "Deux jours complets permettent de voir l'essentiel sereinement. Trois à quatre jours offrent un rythme plus détendu avec une excursion vers Rissani ou les oasis." },
+    "q2": { "question": "Merzouga est-il sûr pour les touristes ?", "answer": "Oui, Merzouga est un endroit très sûr et accueillant. Veillez simplement à réserver vos excursions et camps auprès d'agences agréées." },
+    "q3": { "question": "Quelle monnaie est utilisée et peut-on payer par carte ?", "answer": "Le dirham marocain (MAD) est la monnaie locale. Les cartes sont acceptées dans les grands hôtels, mais prévoyez des espèces pour les petits commerces, taxis et pourboires." },
+    "q4": { "question": "Comment se rendre à Merzouga depuis l'aéroport le plus proche ?", "answer": "L'aéroport d'Errachidia (ERH) est le plus proche (environ 2h de route). Des transferts privés, taxis et voitures de location permettent de rejoindre facilement les dunes." }
   }
 }

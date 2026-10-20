@@ -26,44 +26,19 @@
     "badge": "Galería",
     "title": "Erg Chebbi en imágenes",
     "subtitle": "Desliza para ver paisajes de dunas doradas, caravanas de dromedarios y vistas del desierto.",
-    "s1": {
-      "caption": "Vastas dunas doradas de Erg Chebbi"
-    },
-    "s2": {
-      "caption": "Ruta en dromedario por el desierto"
-    },
-    "s3": {
-      "caption": "Luz del atardecer sobre la arena"
-    },
-    "s4": {
-      "caption": "Campamento de jaimas en el desierto"
-    },
-    "s5": {
-      "caption": "Luz matinal sobre el erg"
-    }
+    "s1": { "caption": "Vastas dunas doradas de Erg Chebbi" },
+    "s2": { "caption": "Ruta en dromedario por el desierto" },
+    "s3": { "caption": "Luz del atardecer sobre la arena" },
+    "s4": { "caption": "Campamento de jaimas en el desierto" },
+    "s5": { "caption": "Luz matinal sobre el erg" }
   },
   "moods": {
     "badge": "Momentos clave",
     "title": "Qué hacer en Erg Chebbi",
     "subtitle": "Atardeceres, subir a las dunas y excursiones en dromedario: tres imprescindibles.",
-    "1": {
-      "tag": "Hora Dorada",
-      "title": "Atardecer y Amanecer",
-      "desc": "Disfruta de transformaciones espectaculares de color sobre las crestas de arena.",
-      "duration": "Mejor luz • 1 hora"
-    },
-    "2": {
-      "tag": "Aventura",
-      "title": "Subida a las dunas",
-      "desc": "Asciende a las dunas más altas para disfrutar de vistas panorámicas de 360° del Sahara.",
-      "duration": "Activo • 45 – 60 min"
-    },
-    "3": {
-      "tag": "Calma",
-      "title": "Noches tranquilas del desierto",
-      "desc": "Experimenta el silencio absoluto y la observación de estrellas lejos de la luz urbana.",
-      "duration": "Experiencia nocturna"
-    }
+    "1": { "tag": "Hora Dorada", "title": "Atardecer y Amanecer", "desc": "Disfruta de transformaciones espectaculares de color sobre las crestas de arena.", "duration": "Mejor luz • 1 hora" },
+    "2": { "tag": "Aventura", "title": "Subida a las dunas", "desc": "Asciende a las dunas más altas para disfrutar de vistas panorámicas de 360° del Sahara.", "duration": "Activo • 45 – 60 min" },
+    "3": { "tag": "Calma", "title": "Noches tranquilas del desierto", "desc": "Experimenta el silencio absoluto y la observación de estrellas lejos de la luz urbana.", "duration": "Experiencia nocturna" }
   },
   "food": {
     "title": "Restauración alrededor de Erg Chebbi",
@@ -77,38 +52,17 @@
   },
   "tips": {
     "title": "Consejos prácticos para visitar Erg Chebbi",
-    "1": {
-      "title": "Protección de Sol y Arena",
-      "desc": "Lleva gafas de sol, crema solar y un pañuelo tradicional (shechiah) para protegerte del viento y la arena."
-    },
-    "2": {
-      "title": "Guías autorizados",
-      "desc": "Reserva tus paseos en dromedario y excursiones en 4x4 a través de hoteles reconocidos u operadores locales oficiales."
-    },
-    "3": {
-      "title": "Ropa de abrigo",
-      "desc": "Las temperaturas bajan rápidamente tras la puesta de sol; lleva siempre una chaqueta cálida para la noche."
-    }
+    "1": { "title": "Protección de Sol y Arena", "desc": "Lleva gafas de sol, crema solar y un pañuelo tradicional (shechiah) para protegerte del viento y la arena." },
+    "2": { "title": "Guías autorizados", "desc": "Reserva tus paseos en dromedario y excursiones en 4x4 a través de hoteles reconocidos u operadores locales oficiales." },
+    "3": { "title": "Ropa de abrigo", "desc": "Las temperaturas bajan rápidamente tras la puesta de sol; lleva siempre una chaqueta cálida para la noche." }
   },
   "gyg": {
     "badge": "Excursiones y Actividades",
     "title": "Reserva una aventura en Erg Chebbi",
     "subtitle": "Rutas en dromedario, safaris en 4x4 y campamentos nocturnos mejor valorados.",
-    "t1": {
-      "tag": "Dromedario",
-      "title": "Merzouga: Paseo en dromedario al atardecer o amanecer",
-      "desc": "Recorre las majestuosas dunas con un guía experimentado y contempla la puesta de sol."
-    },
-    "t2": {
-      "tag": "Safari 4x4",
-      "title": "Merzouga: Safari 4x4 en Erg Chebbi y pueblo de Khamlia",
-      "desc": "Explora pistas del desierto, visita familias nómadas y escucha música Gnawa en Khamlia."
-    },
-    "t3": {
-      "tag": "Campamento",
-      "title": "Merzouga: Noche en campamento del desierto y estrellas",
-      "desc": "Combina paseo en dromedario y noche en jaima con cena tradicional, fuego y tambores."
-    },
+    "t1": { "tag": "Dromedario", "title": "Merzouga: Paseo en dromedario al atardecer o amanecer", "desc": "Recorre las majestuosas dunas con un guía experimentado y contempla la puesta de sol." },
+    "t2": { "tag": "Safari 4x4", "title": "Merzouga: Safari 4x4 en Erg Chebbi y pueblo de Khamlia", "desc": "Explora pistas del desierto, visita familias nómadas y escucha música Gnawa en Khamlia." },
+    "t3": { "tag": "Campamento", "title": "Merzouga: Noche en campamento del desierto y estrellas", "desc": "Combina paseo en dromedario y noche en jaima con cena tradicional, fuego y tambores." },
     "check": "Comprobar disponibilidad en GetYourGuide →",
     "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una pequeña comisión sin coste extra."
   },
@@ -131,66 +85,18 @@
     "badge": "Del Blog",
     "title": "Artículos relacionados",
     "all": "Todos los artículos →",
-    "a1": {
-      "tag": "Gastronomía",
-      "title": "Guía gastronómica de Merzouga: Tajines y cocina del desierto",
-      "desc": "Dónde comer bien en Merzouga, desde cenas en campamentos hasta tajines tradicionales."
-    },
-    "a2": {
-      "tag": "Transporte",
-      "title": "Cómo moverse por Merzouga: 4x4, traslados y pistas",
-      "desc": "Formas prácticas de viajar desde Errachidia y desplazarse entre el pueblo y las dunas."
-    },
-    "a3": {
-      "tag": "Planificación",
-      "title": "Primer viaje a Merzouga: Qué esperar en el Sahara",
-      "desc": "Cómo se siente el desierto el primer día y cómo planificar tus visitas naturales sin prisas."
-    },
+    "a1": { "tag": "Gastronomía", "title": "Guía gastronómica de Merzouga: Tajines y cocina del desierto", "desc": "Dónde comer bien en Merzouga, desde cenas en campamentos hasta tajines tradicionales." },
+    "a2": { "tag": "Transporte", "title": "Cómo moverse por Merzouga: 4x4, traslados y pistas", "desc": "Formas prácticas de viajar desde Errachidia y desplazarse entre el pueblo y las dunas." },
+    "a3": { "tag": "Planificación", "title": "Primer viaje a Merzouga: Qué esperar en el Sahara", "desc": "Cómo se siente el desierto el primer día y cómo planificar tus visitas naturales sin prisas." },
     "read": "Leer el artículo →"
   },
   "faq": {
     "badge": "Bueno saber",
     "title": "Preguntas frecuentes sobre Erg Chebbi",
-    "q1": {
-      "question": "¿Cuánto tiempo se necesita en Erg Chebbi?",
-      "answer": "La mayoría dedica al menos medio día o una noche para vivir plenamente el amanecer y el atardecer en las dunas."
-    },
-    "q2": {
-      "question": "¿Es de pago el acceso a Erg Chebbi?",
-      "answer": "No, las dunas de arena son un espacio natural de acceso libre. Solo se pagan los servicios de guía, dromedarios o 4x4."
-    },
-    "q3": {
-      "question": "¿Cuál es el mejor momento para visitar Erg Chebbi?",
-      "answer": "El amancecer y el atardecer ofrecen la luz más bonita para fotos y temperaturas más suaves."
-    },
-    "q4": {
-      "question": "¿Se puede subir a la cima de las dunas?",
-      "answer": "Sí, subir a las dunas más altas (algunas alcanzan los 150 m) es una actividad muy popular, especialmente al atardecer."
-    },
-    "q5": {
-      "question": "¿Qué ropa llevar al desierto?",
-      "answer": "Ropa ligera y transpirable de día, gafas de sol, pañuelo para el viento y ropa de abrigo para la noche."
-    }
-  },
-  "footer": {
-    "destinations_title": "Destinos",
-    "categories_title": "Categorías",
-    "link_stays": "Riad y Alojamiento",
-    "link_restaurants": "Restaurantes Marroquíes",
-    "link_culture": "Cultura y Desierto",
-    "link_transport": "Transporte y Conductores",
-    "link_circuits": "Circuitos e Itinerarios",
-    "link_history": "Historia de Marruecos",
-    "link_guides": "Guías de Viaje",
-    "link_blog": "Blog",
-    "link_contact": "Contacto",
-    "link_itineraries": "Circuitos e Itinerarios",
-    "col_imperial": "Ciudades Imperiales y Cultura",
-    "col_desert": "Desierto y Gran Sur",
-    "col_practical": "Guías Prácticas y Estancias",
-    "connect_title": "Conéctate con Nosotros",
-    "youtube_text": "Suscríbete a nuestro canal de YouTube para ver guías en vídeo:",
-    "created_by": "Creado por",
-    "copyright": "© 2026 MoroccoTripMap. Todos los derechos reservados."
+    "q1": { "question": "¿Cuánto tiempo se necesita en Erg Chebbi?", "answer": "La mayoría dedica al menos medio día o una noche para vivir plenamente el amanecer y el atardecer en las dunas." },
+    "q2": { "question": "¿Es de pago el acceso a Erg Chebbi?", "answer": "No, las dunas de arena son un espacio natural de acceso libre. Solo se pagan los servicios de guía, dromedarios o 4x4." },
+    "q3": { "question": "¿Cuál es el mejor momento para visitar Erg Chebbi?", "answer": "El amancecer y el atardecer ofrecen la luz más bonita para fotos y temperaturas más suaves." },
+    "q4": { "question": "¿Se puede subir a la cima de las dunas?", "answer": "Sí, subir a las dunas más altas (algunas alcanzan los 150 m) es una actividad muy popular, especialmente al atardecer." },
+    "q5": { "question": "¿Qué ropa llevar al desierto?", "answer": "Ropa ligera y transpirable de día, gafas de sol, pañuelo para el viento y ropa de abrigo para la noche." }
   }
 }

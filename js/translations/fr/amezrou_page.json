@@ -1,19 +1,404 @@
 {
+  "seo": {
+    "title": "Amezrou Zagora | Balade au village & Ancien Mellah | MoroccoTripMap",
+    "description": "Découvrez Amezrou près de Zagora : architecture en pisé, ancien quartier juif et vie authentique au cœur de l'oasis.",
+    "keywords": "Amezrou, Amazrou, mellah de Zagora"
+  },
+  "name": "Amezrou",
+  "hero_subtitle": "Ruelles en pisé et ancien quartier juif — un coin d'histoire pittoresque au cœur de l'oasis de Zagora.",
+  "info": {
+    "best_time_label": "Meilleur moment",
+    "best_time_val": "Matin ou fin d'après-midi",
+    "duration_label": "Durée suggérée",
+    "duration_val": "1 – 2 heures",
+    "entry_label": "Entrée",
+    "entry_val": "Libre d'accès ; pourboire pour les guides",
+    "area_label": "Localisation",
+    "area_val": "Lisière de l'oasis de Zagora"
+  },
+  "overview": {
+    "title": "Ruelles de terre et de mémoire",
+    "p1": "Amezrou (Amazrou) incarne le village traditionnel de l'oasis de Zagora : ruelles étroites, murs en pisé et vestiges de l'ancien quartier juif (mellah) qui témoignaient autrefois de la mixité sociale de la région.",
+    "p2": "La visite se fait idéalement à pied. Une courte promenade offre un aperçu beaucoup plus authentique de la vie quotidienne dans la vallée du Drâa que l'axe routier principal. Des guides locaux sont souvent disponibles pour vous raconter l'histoire des lieux en échange d'un petit pourboire.",
+    "p3": "Restez respectueux dans les ruelles résidentielles et demandez toujours la permission avant de photographier des personnes ou des portes privées."
+  },
+  "gallery": {
+    "badge": "Galerie photo",
+    "title": "Amezrou en images",
+    "subtitle": "Vues d'Amezrou à Zagora.",
+    "s1": {
+      "caption": "Amezrou — vue 1"
+    },
+    "s2": {
+      "caption": "Amezrou — vue 2"
+    },
+    "s3": {
+      "caption": "Amezrou — vue 3"
+    },
+    "s4": {
+      "caption": "Amezrou — vue 4"
+    },
+    "s5": {
+      "caption": "Amezrou — vue 5"
+    }
+  },
+  "moods": {
+    "badge": "Horaires",
+    "title": "Amezrou au fil de la journée",
+    "subtitle": "Quand s'y rendre.",
+    "1": {
+      "tag": "Matin",
+      "title": "Départ matinal",
+      "desc": "Lumière douce et air plus frais.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Lumière crue",
+      "desc": "Soleil intense — limitez l'exposition.",
+      "duration": "Midi"
+    },
+    "3": {
+      "tag": "Fin d'après-midi",
+      "title": "Belles couleurs",
+      "desc": "Lumière dorée sur les palmiers et le sable.",
+      "duration": "Fin d'après-midi"
+    }
+  },
+  "food": {
+    "title": "Où manger près d'Amezrou",
+    "p1": "Prévoyez vos repas dans le centre de Zagora ou emportez des encas pour vos escapades hors de la ville.",
+    "li1": "Tajines et plats simples au centre-ville.",
+    "li2": "Emportez de l'eau pour chaque sortie dans le désert ou en montagne.",
+    "li3": "Dattes et collations au souk les jours de marché.",
+    "li4": "Les dîners en bivouac sont des menus fixes lors des excursions.",
+    "li5": "Vérifiez les horaires des restaurants en basse saison.",
+    "p2": "L'argent liquide est indispensable pour les petits achats dans l'oasis."
+  },
+  "tips": {
+    "title": "Conseils pratiques pour Amezrou",
+    "1": {
+      "title": "Accès",
+      "desc": "Confirmez les horaires de transport et l'état des pistes avant de quitter la ville."
+    },
+    "2": {
+      "title": "Chaleur & eau",
+      "desc": "Haute protection solaire, chapeau et plus d'eau que vous ne le pensez."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Restez sur les sentiers autorisés ; demandez avant de photographier les habitants."
+    }
+  },
+  "gyg": {
+    "badge": "Excursions & expériences",
+    "title": "Excursions liées à Amezrou",
+    "subtitle": "Options si vous préférez un opérateur local.",
+    "t1": {
+      "tag": "Oasis",
+      "title": "Palmeraie & panneau",
+      "desc": "Orientation vers les sites incontournables de Zagora."
+    },
+    "t2": {
+      "tag": "Désert",
+      "title": "Dunes ou bivouac",
+      "desc": "Excursion à Tinfou ou nuit magique dans le désert."
+    },
+    "t3": {
+      "tag": "Culture",
+      "title": "Visite de Tamegroute",
+      "desc": "Poterie et bibliothèque ancienne avec chauffeur local."
+    },
+    "check": "Vérifier la disponibilité sur GetYourGuide →",
+    "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via ces liens, nous touchons une petite commission sans frais supplémentaires pour vous."
+  },
+  "blog": {
+    "badge": "Le blog",
+    "title": "Articles associés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Planification",
+      "title": "Première fois à Zagora",
+      "desc": "Oasis, panneau et durée idéale de séjour."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Journée dans la vallée du Drâa",
+      "desc": "Palmiers, villages et luminosité."
+    },
+    "a3": {
+      "tag": "Désert",
+      "title": "Camps depuis Zagora",
+      "desc": "À quoi s'attendre pour une nuit sous les tentes."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ Amezrou",
+    "q1": {
+      "question": "À quelle distance du centre ?",
+      "answer": "À la lisière de l'oasis — tout près du centre de Zagora."
+    },
+    "q2": {
+      "question": "Un guide est-il nécessaire ?",
+      "answer": "Pas obligatoire, mais très utile pour comprendre l'histoire du mellah et des ksars."
+    },
+    "q3": {
+      "question": "Combien de temps y passer ?",
+      "answer": "Comptez une à deux heures à un rythme détendu."
+    },
+    "q4": {
+      "question": "Quid de la photographie ?",
+      "answer": "Soyez discret et demandez la permission dans les zones résidentielles."
+    },
+    "q5": {
+      "question": "Peut-on combiner avec le souk ?",
+      "answer": "Oui, les jours de marché, pour une matinée locale complète."
+    }
+  },
+  "nearby": {
+    "badge": "Continuer l'exploration",
+    "title": "Plus de lieux à Zagora",
+    "back": "← Retour au guide de Zagora"
+  },
+  "destinations": {
+    "zagora": {
+      "name": "Zagora"
+    }
+  },
   "amezrou_page": {
     "seo": {
-      "title": "Guide de Voyage Amezrou 2026 | Choses à faire & Conseils | MoroccoTripMap",
-      "description": "Plan your trip to Amezrou: top attractions, local food, and travel tips."
+      "title": "[FR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Amezrou.",
+    "name": "[FR] Name",
+    "hero_subtitle": "[FR] Hero subtitle",
+    "info": {
+      "best_time_label": "[FR] Best time label",
+      "best_time_val": "[FR] Best time val",
+      "duration_label": "[FR] Duration label",
+      "duration_val": "[FR] Duration val",
+      "entry_label": "[FR] Entry label",
+      "entry_val": "[FR] Entry val",
+      "area_label": "[FR] Area label",
+      "area_val": "[FR] Area val"
+    },
     "overview": {
-      "title": "Bienvenue à Amezrou",
-      "p1": "Explore Amezrou and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[FR] Title",
+      "p1": "[FR] P1",
+      "p2": "[FR] P2",
+      "p3": "[FR] P3"
     },
-    "places": {
-      "badge": "À voir",
-      "title": "Les incontournables à Amezrou",
-      "subtitle": "Discover top points of interest in Amezrou."
+    "gallery": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "s1": {
+        "caption": "[FR] Caption"
+      },
+      "s2": {
+        "caption": "[FR] Caption"
+      },
+      "s3": {
+        "caption": "[FR] Caption"
+      },
+      "s4": {
+        "caption": "[FR] Caption"
+      },
+      "s5": {
+        "caption": "[FR] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      },
+      "2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      },
+      "3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      }
+    },
+    "food": {
+      "title": "[FR] Title",
+      "p1": "[FR] P1",
+      "li1": "[FR] Li1",
+      "li2": "[FR] Li2",
+      "li3": "[FR] Li3",
+      "li4": "[FR] Li4",
+      "li5": "[FR] Li5",
+      "p2": "[FR] P2"
+    },
+    "tips": {
+      "title": "[FR] Title",
+      "1": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "2": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "3": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "t1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "check": "[FR] Check",
+      "t2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "t3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "disclosure": "[FR] Disclosure"
+    },
+    "nearby": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "back": "[FR] Back"
+    },
+    "blog": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "all": "[FR] All",
+      "a1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "read": "[FR] Read",
+      "a2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "a3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "q1": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q2": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q3": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q4": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q5": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[FR] Destinations",
+    "categories": "[FR] Categories",
+    "cat_stays": "[FR] Cat stays",
+    "cat_gastronomy": "[FR] Cat gastronomy",
+    "cat_experiences": "[FR] Cat experiences",
+    "cat_museums": "[FR] Cat museums",
+    "cat_transport": "[FR] Cat transport",
+    "cat_itineraries": "[FR] Cat itineraries",
+    "cat_guides": "[FR] Cat guides",
+    "history": "[FR] History",
+    "blog": "[FR] Blog",
+    "contact": "[FR] Contact",
+    "cities": "[FR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[FR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[FR] Home",
+    "destinations": "[FR] Destinations"
+  },
+  "zagora_page": {
+    "places": {
+      "draa_valley": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "explore": "[FR] Explore",
+      "timbuktu_sign": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "tinfou": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "tamegroute": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    }
+  },
+  "footer": {
+    "about_text": "[FR] About text",
+    "destinations_title": "Destinations",
+    "link_zagora": "[FR] Link zagora",
+    "link_all_destinations": "[FR] Link all destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
+    "connect_title": "Suivez-nous",
+    "youtube_text": "Abonnez-vous à notre chaîne YouTube pour nos guides vidéo :",
+    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés.",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itinéraires",
+    "col_imperial": "Villes Impériales & Culture",
+    "col_desert": "Désert & Grand Sud",
+    "col_practical": "Guides Pratiques & Séjour",
+    "created_by": "Créé par"
   }
 }

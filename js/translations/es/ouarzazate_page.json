@@ -1,19 +1,544 @@
 {
+  "seo": {
+    "title": "Guía de Ouarzazate | Kasbahs, estudios de cine y Aït Benhaddou | MoroccoTripMap",
+    "description": "Planifica Ouarzazate: Kasbah Taourirt, Atlas Studios, Aït Benhaddou y rutas del desierto.",
+    "keywords": "Ouarzazate, Kasbah Taourirt, Atlas Studios, Aït Benhaddou, desert gateway Morocco",
+    "og_title": "Ouarzazate Travel Guide | Kasbahs, Film Studios & Desert Gateway | MoroccoTripMap",
+    "og_description": "Plan Ouarzazate: kasbahs, film studios and Aït Benhaddou — gateway between the High Atlas and the desert."
+  },
+  "name": "Ouarzazate",
+  "hero_subtitle": "Kasbahs, decorados de cine y puerta entre el Alto Atlas y las rutas del desierto.",
+  "info": {
+    "best_time_label": "Mejor época",
+    "best_time_val": "Marzo – mayo y septiembre – noviembre",
+    "stay_label": "Estancia ideal",
+    "stay_val": "2 – 3 días",
+    "vibe_label": "Ambiente",
+    "vibe_val": "Borde del desierto, kasbahs y Marruecos de cine",
+    "airport_label": "Acceso",
+    "airport_val": "OZZ Ouarzazate · Carretera desde Marraquech (~4–5 h)"
+  },
+  "overview": {
+    "title": "Bienvenido a Ouarzazate — puerta del desierto",
+    "p1": "Ouarzazate se abre donde el Alto Atlas da paso a las mesetas pre-saharianas. La Kasbah Taourirt ancla la ciudad; Atlas Studios y Aït Benhaddou explican su papel en el cine y el patrimonio.",
+    "p2": "Dos o tres días cubren la kasbah, los estudios y Aït Benhaddou, con Fint o Tifoultoute como opción."
+  },
+  "places": {
+    "badge": "Destacados",
+    "title": "Lugares imprescindibles en Ouarzazate",
+    "subtitle": "Kasbahs, estudios, ksar UNESCO y oasis.",
+    "explore": "Explorar el lugar →",
+    "taourirt": {
+      "name": "Kasbah Taourirt",
+      "desc": "Antigua fortaleza Glaoui y ambiente de puerta del desierto.",
+      "tag": "Kasbah"
+    },
+    "atlas-studios": {
+      "name": "Atlas Film Studios",
+      "desc": "Decorados al aire libre — el Hollywood de Marruecos.",
+      "tag": "Estudios"
+    },
+    "ait-benhaddou": {
+      "name": "Aït Benhaddou",
+      "desc": "Ksar de tierra icónico en la antigua ruta caravanera.",
+      "tag": "Ksar UNESCO"
+    },
+    "tifoultoute": {
+      "name": "Kasbah Tifoultoute",
+      "desc": "Kasbah en lo alto, vistas amplias, más tranquila.",
+      "tag": "Mirador"
+    },
+    "fint": {
+      "name": "Oasis de Fint",
+      "desc": "Corredor de palmeras al sur de la ciudad.",
+      "tag": "Oasis"
+    },
+    "cinema-museum": {
+      "name": "Museo del Cine",
+      "desc": "Trajes e historia del rodaje en Ouarzazate.",
+      "tag": "Museo"
+    },
+    "skoura": {
+      "name": "Palmeral de Skoura",
+      "desc": "Gran oasis y kasbahs hacia el Dadès.",
+      "tag": "Palmeral"
+    },
+    "souk": {
+      "name": "Zoco de Ouarzazate",
+      "desc": "Calles de mercado y ritmo local.",
+      "tag": "Zoco"
+    }
+  },
+  "itinerary": {
+    "badge": "Planificación",
+    "title": "3 días en Ouarzazate",
+    "subtitle": "Ciudad y estudios, luego Aït Benhaddou, luego oasis o ruta este."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Día 1 — Ciudad y estudios",
+    "day2_tab": "Día 2 — Aït Benhaddou",
+    "day3_tab": "Día 3 — Oasis o ruta este",
+    "day1_m": "Mañana — Kasbah Taourirt",
+    "day1_md": "Explora patios y terrazas de la kasbah Glaoui al borde de la ciudad.",
+    "day1_a": "Tarde — Atlas Film Studios",
+    "day1_ad": "Recorre los decorados al aire libre que hicieron de Ouarzazate un hub de cine.",
+    "day1_e": "Noche — Centro",
+    "day1_ed": "Cena sencilla; acuesta temprano si mañana es Aït Benhaddou.",
+    "day2_m": "Mañana — Camino a Aït Benhaddou",
+    "day2_md": "Sal temprano al ksar UNESCO; sube para el panorama clásico.",
+    "day2_a": "Tarde — Calles del ksar y comida",
+    "day2_ad": "Explora el pueblo fortificado y come en la orilla moderna.",
+    "day2_e": "Noche — Regreso a Ouarzazate",
+    "day2_ed": "Vuelta a la ciudad; museo del cine opcional.",
+    "day3_m": "Mañana — Oasis de Fint o Tifoultoute",
+    "day3_md": "Palmeras y senderos, o kasbah más tranquila en lo alto.",
+    "day3_a": "Tarde — Skoura o tiempo libre",
+    "day3_ad": "Palmeral hacia el Dadès, o compras y descanso.",
+    "day3_e": "Noche — Siguiente etapa",
+    "day3_ed": "Hacia Dadès, Draa/Zagora o regreso a Marraquech."
+  },
+  "directory": {
+    "badge": "Directorio",
+    "title": "Encuentra tu estancia ideal en Ouarzazate",
+    "subtitle": "Hoteles en la ciudad y lodges en el palmeral hacia Skoura.",
+    "type_label": "Tipo:",
+    "area_label": "Zona:",
+    "filter_type_label": "Tipo:",
+    "filter_location_label": "Zona:",
+    "type_all": "Todos los tipos",
+    "location_all": "Todas las zonas",
+    "all_types": "Todos los tipos",
+    "all_areas": "Todas las zonas",
+    "district_label": "Zona:",
+    "check_availability": "Ver disponibilidad →",
+    "check": "Ver disponibilidad →",
+    "counter": "alojamientos",
+    "found": "alojamientos",
+    "no_results": "No stays match these filters.",
+    "type_riad": "Riad",
+    "type_hotel": "Hotel",
+    "type_dar": "Dar / guesthouse",
+    "type_guesthouse": "Guesthouse",
+    "type_boutique": "Boutique",
+    "location_town": "Centro",
+    "location_outskirts": "Zona kasbah",
+    "location_outside": "Skoura / Este",
+    "area_medina": "Town centre",
+    "area_kasbah": "Kasbah area",
+    "area_beach": "Carretera de Skoura",
+    "area_newtown": "New town"
+  },
+  "eat": {
+    "badge": "Comer",
+    "title": "Dónde comer en Ouarzazate",
+    "subtitle": "Tajines en la ciudad y terrazas en Aït Benhaddou.",
+    "bacha": {
+      "title": "Tajines en la ciudad",
+      "tag": "Local",
+      "loc": "Centro",
+      "desc": "Platos marroquíes clásicos."
+    },
+    "elfenn": {
+      "title": "Cafés cerca de la kasbah",
+      "tag": "Café",
+      "loc": "Taourirt",
+      "desc": "Bebidas junto a la gran kasbah."
+    },
+    "fassia": {
+      "title": "Restaurantes de hotel",
+      "tag": "Hotel",
+      "loc": "Ciudad",
+      "desc": "Opciones fiables tras excursiones."
+    },
+    "jardin": {
+      "title": "Terrazas de Aït Benhaddou",
+      "tag": "Excursión",
+      "loc": "Ksar",
+      "desc": "Comida con vistas al pueblo fortificado."
+    },
+    "moha": {
+      "title": "Parrillas sencillas",
+      "tag": "Parrilla",
+      "loc": "Centro",
+      "desc": "Carne y pan del día a día."
+    },
+    "nomad": {
+      "title": "Lodges de Skoura",
+      "tag": "Oasis",
+      "loc": "Skoura",
+      "desc": "Menús fijos en el palmeral."
+    }
+  },
+  "food": {
+    "badge": "Comer",
+    "title": "Dónde comer en Ouarzazate",
+    "subtitle": "Tajines en la ciudad y terrazas en Aït Benhaddou.",
+    "items": {
+      "1": {
+        "name": "Tajines en la ciudad",
+        "rating": "4.3",
+        "type": "Local",
+        "area": "Centro",
+        "desc": "Platos marroquíes clásicos."
+      },
+      "2": {
+        "name": "Cafés cerca de la kasbah",
+        "rating": "4.2",
+        "type": "Café",
+        "area": "Taourirt",
+        "desc": "Bebidas junto a la kasbah."
+      },
+      "3": {
+        "name": "Restaurantes de hotel",
+        "rating": "4.4",
+        "type": "Hotel",
+        "area": "Ciudad",
+        "desc": "Opciones fiables."
+      },
+      "4": {
+        "name": "Terrazas de Aït Benhaddou",
+        "rating": "4.5",
+        "type": "Excursión",
+        "area": "Ksar",
+        "desc": "Comida con vistas al ksar."
+      },
+      "5": {
+        "name": "Parrillas sencillas",
+        "rating": "4.1",
+        "type": "Parrilla",
+        "area": "Centro",
+        "desc": "Carne y pan del día a día."
+      },
+      "6": {
+        "name": "Lodges de Skoura",
+        "rating": "4.4",
+        "type": "Oasis",
+        "area": "Skoura",
+        "desc": "Menús fijos en el palmeral."
+      }
+    }
+  },
+  "tips": {
+    "badge": "Consejos prácticos",
+    "title": "Consejos prácticos para Ouarzazate",
+    "1": {
+      "title": "Moverse",
+      "desc": "Taxis pequeños en la ciudad; conductores privados para Aït Benhaddou, Skoura y Fint."
+    },
+    "2": {
+      "title": "Sol y altitud",
+      "desc": "Sol fuerte y aire seco. Las noches pueden ser frescas."
+    },
+    "3": {
+      "title": "Excursiones",
+      "desc": "Aït Benhaddou es esencial. Skoura, Dadès y Draa piden más tiempo."
+    },
+    "transport": {
+      "title": "Moverse",
+      "desc": "Taxis pequeños en la ciudad; conductores privados para Aït Benhaddou, Skoura y Fint."
+    },
+    "bargain": {
+      "title": "Sol y altitud",
+      "desc": "Sol fuerte y aire seco. Las noches pueden ser frescas."
+    },
+    "water": {
+      "title": "Excursiones",
+      "desc": "Aït Benhaddou es esencial. Skoura, Dadès y Draa piden más tiempo."
+    }
+  },
+  "daytrips": {
+    "badge": "Más allá de la ciudad",
+    "title": "Excursiones desde Ouarzazate",
+    "subtitle": "Ksar UNESCO, oasis y gargantas del este.",
+    "ait_benhaddou": {
+      "name": "Aït Benhaddou",
+      "title": "Aït Benhaddou",
+      "desc": "Ksar UNESCO a unos 30–40 minutos."
+    },
+    "dades": {
+      "name": "Garganta del Dadès",
+      "title": "Dadès Gorge",
+      "desc": "Ruta de kasbahs al este de Skoura."
+    },
+    "draa": {
+      "name": "Valle del Draa",
+      "title": "Draa Valley",
+      "desc": "Palmeras y kasbahs hacia Zagora."
+    }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "FAQ sobre Ouarzazate",
+    "q1": {
+      "question": "¿Cuántos días en Ouarzazate?",
+      "answer": "Dos días para Taourirt, estudios y Aït Benhaddou. Un tercero para Fint, Skoura o el desierto."
+    },
+    "q2": {
+      "question": "¿Ouarzazate es solo escala?",
+      "answer": "Es un hub, pero kasbah, estudios y Aït Benhaddou justifican una o dos noches."
+    },
+    "q3": {
+      "question": "¿Cómo llegar?",
+      "answer": "Aeropuerto OZZ limitado. A menudo por carretera desde Marraquech (4–5 h)."
+    },
+    "q4": {
+      "question": "¿Mejor época?",
+      "answer": "Primavera y otoño. Verano muy caluroso; invierno frío de noche."
+    }
+  },
   "ouarzazate_page": {
     "seo": {
-      "title": "Guía de Viaje Ouarzazate 2026 | Cosas que hacer | MoroccoTripMap",
-      "description": "Plan your trip to Ouarzazate: top attractions, local food, and travel tips."
+      "title": "[ES] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Ouarzazate.",
+    "name": "[ES] Name",
+    "hero_subtitle": "[ES] Hero subtitle",
+    "info": {
+      "best_time_label": "[ES] Best time label",
+      "best_time_val": "[ES] Best time val",
+      "stay_label": "[ES] Stay label",
+      "stay_val": "[ES] Stay val",
+      "vibe_label": "[ES] Vibe label",
+      "vibe_val": "[ES] Vibe val",
+      "airport_label": "[ES] Airport label",
+      "airport_val": "[ES] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Ouarzazate",
-      "p1": "Explore Ouarzazate and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "p2": "[ES] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Ouarzazate",
-      "subtitle": "Discover top points of interest in Ouarzazate."
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "taourirt": {
+        "tag": "[ES] Tag",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "explore": "[ES] Explore",
+      "atlas-studios": {
+        "tag": "[ES] Tag",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "ait-benhaddou": {
+        "tag": "[ES] Tag",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "tifoultoute": {
+        "tag": "[ES] Tag",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "fint": {
+        "tag": "[ES] Tag",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "cinema-museum": {
+        "tag": "[ES] Tag",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "skoura": {
+        "tag": "[ES] Tag",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "souk": {
+        "tag": "[ES] Tag",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[ES] Day1 tab",
+      "day2_tab": "[ES] Day2 tab",
+      "day3_tab": "[ES] Day3 tab",
+      "day1_m": "[ES] Day1 m",
+      "day1_md": "[ES] Day1 md",
+      "day1_a": "[ES] Day1 a",
+      "day1_ad": "[ES] Day1 ad",
+      "day1_e": "[ES] Day1 e",
+      "day1_ed": "[ES] Day1 ed",
+      "day2_m": "[ES] Day2 m",
+      "day2_md": "[ES] Day2 md",
+      "day2_a": "[ES] Day2 a",
+      "day2_ad": "[ES] Day2 ad",
+      "day2_e": "[ES] Day2 e",
+      "day2_ed": "[ES] Day2 ed",
+      "day3_m": "[ES] Day3 m",
+      "day3_md": "[ES] Day3 md",
+      "day3_a": "[ES] Day3 a",
+      "day3_ad": "[ES] Day3 ad",
+      "day3_e": "[ES] Day3 e",
+      "day3_ed": "[ES] Day3 ed"
+    },
+    "directory": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "filter_type_label": "[ES] Filter type label",
+      "type_all": "[ES] Type all",
+      "type_hotel": "[ES] Type hotel",
+      "type_riad": "[ES] Type riad",
+      "type_guesthouse": "[ES] Type guesthouse",
+      "filter_location_label": "[ES] Filter location label",
+      "location_all": "[ES] Location all",
+      "location_town": "[ES] Location town",
+      "location_outside": "[ES] Location outside",
+      "location_outskirts": "[ES] Location outskirts",
+      "counter": "[ES] Counter",
+      "district_label": "[ES] District label",
+      "type_label": "[ES] Type label",
+      "check_availability": "[ES] Check availability",
+      "no_results": "[ES] No results"
+    },
+    "eat": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "nomad": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "jardin": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "fassia": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "moha": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bacha": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "elfenn": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "tips": {
+      "title": "[ES] Title",
+      "transport": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bargain": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "water": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "ait_benhaddou": {
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "dades": {
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      },
+      "draa": {
+        "name": "[ES] Name",
+        "desc": "[ES] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "q1": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q2": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q3": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q4": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[ES] Destinations",
+    "categories": "[ES] Categories",
+    "cat_stays": "[ES] Cat stays",
+    "cat_gastronomy": "[ES] Cat gastronomy",
+    "cat_experiences": "[ES] Cat experiences",
+    "cat_museums": "[ES] Cat museums",
+    "cat_transport": "[ES] Cat transport",
+    "cat_itineraries": "[ES] Cat itineraries",
+    "cat_guides": "[ES] Cat guides",
+    "history": "[ES] History",
+    "blog": "[ES] Blog",
+    "contact": "[ES] Contact",
+    "cities": "[ES] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[ES] Language title"
+  },
+  "breadcrumb": {
+    "home": "[ES] Home",
+    "destinations": "[ES] Destinations"
+  },
+  "footer": {
+    "about_text": "[ES] About text",
+    "destinations_title": "Destinos",
+    "link_ouarzazate": "[ES] Link ouarzazate",
+    "link_all_destinations": "[ES] Link all destinations",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "connect_title": "Conéctate con Nosotros",
+    "youtube_text": "Suscríbete a nuestro canal de YouTube para ver guías en vídeo:",
+    "copyright": "© 2026 MoroccoTripMap. Todos los derechos reservados.",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto",
+    "link_itineraries": "Circuitos e Itinerarios",
+    "col_imperial": "Ciudades Imperiales y Cultura",
+    "col_desert": "Desierto y Gran Sur",
+    "col_practical": "Guías Prácticas y Estancias",
+    "created_by": "Creado por"
   }
 }

@@ -1,19 +1,425 @@
 {
+  "seo": {
+    "title": "ساحل هوارة | الجديدة | MoroccoTripMap",
+    "description": "Coastal stretch and lighthouse moods near El Jadida — open Atlantic air beyond the main resort strip.",
+    "keywords": "ساحل هوارة, El Jadida"
+  },
+  "name": "ساحل هوارة",
+  "hero_subtitle": "شريط ساحلي وأجواء فنار قرب الجديدة — هواء أطلسي مفتوح أبعد من شريط المنتجع الرئيسي.",
+  "info": {
+    "best_time_label": "أفضل وقت",
+    "best_time_val": "أواخر العصر",
+    "duration_label": "المدة المقترحة",
+    "duration_val": "2 – 3 ساعات",
+    "entry_label": "الدخول",
+    "entry_val": "مجاني",
+    "area_label": "الموقع",
+    "area_val": "الساحل قرب الجديدة"
+  },
+  "overview": {
+    "title": "حافة أطلسية أهدأ",
+    "p1": "هوارة تقدّم تغييراً ساحلياً عن أسوار المدينة وشريط سيدي بوزيد المزدحم — مزيد من الشاطئ والرياح والأفق أقل من المعالم.",
+    "p2": "تعال للمشي وظلال الفنار وضوء الأطلسي المفتوح. الخدمات أخف؛ أحضر ماءً وطبقة ضد النسيم.",
+    "p3": "تعمل كإضافة مرنة حين تكون قد رأيت النواة البرتغالية وتريد ساعة بحر إضافية."
+  },
+  "gallery": {
+    "badge": "معرض الصور",
+    "title": "ساحل هوارة في صور",
+    "subtitle": "مشاهد من ساحل هوارة في الجديدة.",
+    "s1": {
+      "caption": "ساحل هوارة — 1"
+    },
+    "s2": {
+      "caption": "ساحل هوارة — 2"
+    },
+    "s3": {
+      "caption": "ساحل هوارة — 3"
+    },
+    "s4": {
+      "caption": "ساحل هوارة — 4"
+    },
+    "s5": {
+      "caption": "ساحل هوارة — 5"
+    }
+  },
+  "moods": {
+    "badge": "التوقيت",
+    "title": "ساحل هوارة خلال اليوم",
+    "subtitle": "متى تزور.",
+    "1": {
+      "tag": "الصباح",
+      "title": "بداية هادئة",
+      "desc": "ضوء أنعم وعدد أقل من الزوار.",
+      "duration": "الصباح"
+    },
+    "2": {
+      "tag": "الظهر",
+      "title": "شمس ورياح قوية",
+      "desc": "واقٍ من الشمس وطبقة ضد الرياح.",
+      "duration": "الظهر"
+    },
+    "3": {
+      "tag": "أواخر العصر",
+      "title": "أفضل الألوان",
+      "desc": "ضوء دافئ على الحجر والبحر.",
+      "duration": "أواخر العصر"
+    }
+  },
+  "food": {
+    "title": "الطعام قرب ساحل هوارة",
+    "p1": "خطّط للوجبات في ميناء الصيد أو طاولات المدينة أو مقاهي سيدي بوزيد.",
+    "li1": "سمك مشوي عند الميناء بالقوارب الزرقاء.",
+    "li2": "مطاعم بسيطة في المدينة.",
+    "li3": "مقاهي تواجه المحيط على الواجهة.",
+    "li4": "سيدي بوزيد لطعام شاطئ عفوي.",
+    "li5": "احمل ماءً عند مشي الأسوار والساحل.",
+    "p2": "النقد مفيد للأكشاك الصغيرة والتاكسي."
+  },
+  "tips": {
+    "title": "نصائح عملية لـ ساحل هوارة",
+    "1": {
+      "title": "الوصول",
+      "desc": "أكد مسارات المشي أو أوقات التاكسي من إقامتك."
+    },
+    "2": {
+      "title": "الرياح والشمس",
+      "desc": "نسيم الأطلسي حقيقي — طبقة وواقٍ عالٍ."
+    },
+    "3": {
+      "title": "الاحترام",
+      "desc": "في الميناء والملاح، اسأل قبل صور قريبة للناس."
+    }
+  },
+  "gyg": {
+    "badge": "جولات وتجارب",
+    "title": "جولات مرتبطة بـ ساحل هوارة",
+    "subtitle": "خيارات إن فضّلت منظماً محلياً.",
+    "t1": {
+      "tag": "تراث",
+      "title": "مشي المدينة البرتغالية",
+      "desc": "صهريج وأسوار وحصن مع سياق."
+    },
+    "t2": {
+      "tag": "ساحل",
+      "title": "وقت شاطئ أطلسي",
+      "desc": "سيدي بوزيد أو شاطئ المدينة."
+    },
+    "t3": {
+      "tag": "رحلة يوم",
+      "title": "أزمور أو الوليدية",
+      "desc": "فن شوارع المدينة أو محار البحيرة."
+    },
+    "check": "تحقق من التوفر على GetYourGuide ←",
+    "disclosure": "بعض الروابط عمولة. إن حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك."
+  },
+  "blog": {
+    "badge": "من المدونة",
+    "title": "مقالات ذات صلة",
+    "all": "جميع المقالات ←",
+    "read": "اقرأ المقال ←",
+    "a1": {
+      "tag": "تخطيط",
+      "title": "أول مرة في الجديدة",
+      "desc": "المدينة البرتغالية ومدة الإقامة."
+    },
+    "a2": {
+      "tag": "دليل",
+      "title": "ساحل دكالة الأطلسي",
+      "desc": "شواطئ ونصائح الميناء."
+    },
+    "a3": {
+      "tag": "تراث",
+      "title": "مازاغان اليونسكو",
+      "desc": "أسوار وصهريج وحصن."
+    }
+  },
+  "faq": {
+    "badge": "من الجيد معرفته",
+    "title": "أسئلة شائعة حول ساحل هوارة",
+    "q1": {
+      "question": "كيف أصل؟",
+      "answer": "تاكسي من المركز؛ اتفق على السعر وخطة العودة."
+    },
+    "q2": {
+      "question": "شاطئ أم منحدرات؟",
+      "answer": "مزيج من الشريط الساحلي — أكد نقطة الوصول مع السائق."
+    },
+    "q3": {
+      "question": "سباحة؟",
+      "answer": "فقط إن كانت الظروف آمنة بوضوح؛ أطلسي مفتوح."
+    },
+    "q4": {
+      "question": "هل تستحق دون سيارة؟",
+      "answer": "نعم مع تاكسي؛ ليست زيارة معالم طويلة."
+    },
+    "q5": {
+      "question": "أفضل وقت؟",
+      "answer": "أواخر العصر لضوء أنعم وهواء أبرد."
+    }
+  },
+  "nearby": {
+    "badge": "واصل الاستكشاف",
+    "title": "المزيد من الأماكن في الجديدة",
+    "back": "← العودة إلى دليل الجديدة"
+  },
+  "destinations": {
+    "el_jadida": {
+      "name": "الجديدة"
+    },
+    "el-jadida": {
+      "name": "[AR] Name"
+    }
+  },
   "haouzia_page": {
     "seo": {
-      "title": "دليل سفر Haouzia 2026 | أهم المعالم ونقاط اهتمام | MoroccoTripMap",
-      "description": "Plan your trip to Haouzia: top attractions, local food, and travel tips."
+      "title": "[AR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Haouzia.",
+    "name": "[AR] Name",
+    "hero_subtitle": "[AR] Hero subtitle",
+    "info": {
+      "best_time_label": "[AR] Best time label",
+      "best_time_val": "[AR] Best time val",
+      "duration_label": "[AR] Duration label",
+      "duration_val": "[AR] Duration val",
+      "entry_label": "[AR] Entry label",
+      "entry_val": "[AR] Entry val",
+      "area_label": "[AR] Area label",
+      "area_val": "[AR] Area val"
+    },
     "overview": {
-      "title": "Welcome to Haouzia",
-      "p1": "Explore Haouzia and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "p2": "[AR] P2",
+      "p3": "[AR] P3"
+    },
+    "gallery": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "s1": {
+        "caption": "[AR] Caption"
+      },
+      "s2": {
+        "caption": "[AR] Caption"
+      },
+      "s3": {
+        "caption": "[AR] Caption"
+      },
+      "s4": {
+        "caption": "[AR] Caption"
+      },
+      "s5": {
+        "caption": "[AR] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "1": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc",
+        "duration": "[AR] Duration"
+      },
+      "2": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc",
+        "duration": "[AR] Duration"
+      },
+      "3": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc",
+        "duration": "[AR] Duration"
+      }
+    },
+    "food": {
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "li1": "[AR] Li1",
+      "li2": "[AR] Li2",
+      "li3": "[AR] Li3",
+      "li4": "[AR] Li4",
+      "li5": "[AR] Li5",
+      "p2": "[AR] P2"
+    },
+    "tips": {
+      "title": "[AR] Title",
+      "1": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "2": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "3": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "t1": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "check": "[AR] Check",
+      "t2": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "t3": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "disclosure": "[AR] Disclosure"
+    },
+    "nearby": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "back": "[AR] Back"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Haouzia",
-      "subtitle": "Discover top points of interest in Haouzia."
+      "citerne": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "explore": "[AR] Explore",
+      "remparts": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "plage": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "port": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "mellah": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "souks": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "sidi_bouzid": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "cite_portugaise": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "blog": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "all": "[AR] All",
+      "a1": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "read": "[AR] Read",
+      "a2": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "a3": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "q1": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q2": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q3": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q4": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q5": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[AR] Destinations",
+    "categories": "[AR] Categories",
+    "cat_stays": "[AR] Cat stays",
+    "cat_gastronomy": "[AR] Cat gastronomy",
+    "cat_experiences": "[AR] Cat experiences",
+    "cat_museums": "[AR] Cat museums",
+    "cat_transport": "[AR] Cat transport",
+    "cat_itineraries": "[AR] Cat itineraries",
+    "cat_guides": "[AR] Cat guides",
+    "history": "[AR] History",
+    "blog": "[AR] Blog",
+    "contact": "[AR] Contact",
+    "cities": "[AR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[AR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[AR] Home",
+    "destinations": "[AR] Destinations"
+  },
+  "footer": {
+    "about_text": "[AR] About text",
+    "destinations_title": "الوجهات",
+    "link_el-jadida": "[AR] Link el-jadida",
+    "link_all_destinations": "[AR] Link all destinations",
+    "categories_title": "الفئات",
+    "link_stays": "رياض وفنادق أصيلة",
+    "link_restaurants": "مطاعم مغربية",
+    "connect_title": "تواصل معنا",
+    "youtube_text": "تابع قناتنا على يوتيوب لمشاهدة أدلة السفر بالفيديو:",
+    "copyright": "© 2026 MoroccoTripMap. جميع الحقوق محفوظة.",
+    "link_culture": "تجارب الصحراء والثقافة",
+    "link_transport": "المواصلات والسائقين الخاصين",
+    "link_circuits": "الرحلات والمسارات",
+    "link_history": "تاريخ المغرب",
+    "link_guides": "أدلة السفر",
+    "link_blog": "المدونة",
+    "link_contact": "اتصل بنا",
+    "link_itineraries": "الرحلات والمسارات",
+    "col_imperial": "المدن الإمبراطورية والثقافة",
+    "col_desert": "الصحراء والجنوب الكبير",
+    "col_practical": "أدلة عملية وإقامة",
+    "created_by": "تم الإنشاء بواسطة"
   }
 }

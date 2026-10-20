@@ -1,19 +1,497 @@
 {
+  "seo": {
+    "title": "دليل السفر إلى زاكورة 2026 | وادي درعة، لافتة تمبكتو وبوابة الصحراء | MoroccoTripMap",
+    "description": "خطط لرحلتك إلى زاكورة: واحات وادي درعة، لافتة 52 يوماً إلى تمبكتو، كثبان تينفكو، فخار ومكتبة تمجروت، أمزرو، جبل زاكورة والمخيمات الصحراوية.",
+    "keywords": "زاكورة, وادي درعة, تمبكتو 52 يوما, كثبان تينفكو, تمجروت, أمزرو, جبل زاكورة, صحراء المغرب, مخيمات زاكورة"
+  },
+  "name": "زاكورة",
+  "hero_subtitle": "بوابة الصحراء: وادي درعة المزين بالنخيل، لافتة تمبكتو الشهيرة، الكثبان الرملية القريبة والإيقاع الهادئ لمدن الواحات الجنوبية.",
+  "info": {
+    "best_time_label": "أفضل وقت",
+    "best_time_val": "أكتوبر – أبريل (تجنب حرارة الصيف الشديدة)",
+    "stay_label": "المدة المثالية",
+    "stay_val": "2 – 4 أيام",
+    "vibe_label": "الأجواء",
+    "vibe_val": "واحات، بساتين النخيل، بوابة الصحراء",
+    "airport_label": "الوصول",
+    "airport_val": "طريق من ورزازات · روابط إقليمية"
+  },
+  "overview": {
+    "title": "مرحباً بكم في زاكورة — النخيل، تاريخ القوافل وطريق الكثبان الرملية",
+    "p1": "تقع زاكورة في وادي درعة جنوب المغرب، وكانت لقرون محطة رئيسية على طرق القوافل التجارية المتجهة نحو تمبكتو. اليوم، تبدو المدينة أكثر هدوءاً مقارنة بالمدن الإمبراطورية الكبرى، وتتميز بواحات النخيل المترامية الأطراف والقرى الطينية العريقة.",
+    "p2": "يتوقف معظم المسافرين لرؤية لافتة \"تمبكتو 52 يوماً\" الشهيرة، أو للقيام بجولة عبر بساتين النخيل، أو رحلة قصيرة إلى كثبان تينفكو، إضافة إلى زيارة نصف يوم لتمجروت للتعرف على الفخار الأخضر والمكتبة التاريخية. كما يضيف كل من أمزرو وجبل زاكورة أزقة تقليدية وإطلالة رائعة عند غروب الشمس.",
+    "p3": "تكفي مدة تتراوح بين يومين إلى أربعة أيام إذا كنت ترغب في استكشاف الواحة وقضاء ليلة واحدة في الصحراء. ترتفع درجات الحرارة بشكل كبير خلال الصيف، لذا يُعد الموسم المفضل من الخريف إلى الربيع عندما تكون الأمسيات منعشة."
+  },
+  "places": {
+    "badge": "أبرز المعالم",
+    "title": "أماكن تستحق الزيارة في زاكورة",
+    "subtitle": "وادي النخيل، أطراف الصحراء، قرية الفخار ولافتة القوافل الشهيرة.",
+    "explore": "استكشف المكان ←",
+    "draa_valley": {
+      "tag": "واحة",
+      "title": "بساتين وادي درعة",
+      "desc": "نهر من أشجار النخيل والقرى الطينية — القلب الأخضر على طريق زاكورة."
+    },
+    "timbuktu_sign": {
+      "tag": "معلم",
+      "title": "لافتة تمبكتو 52 يوماً",
+      "desc": "اللافتة الأكثر تصويراً في الجنوب — تذكير بطرق القوافل القديمة."
+    },
+    "tinfou": {
+      "tag": "كثبان",
+      "title": "كثبان تينفكو",
+      "desc": "كثبان رملية سهلة الوصول جنوب المدينة — تذوق أول لطعم الصحراء دون رحلة شاقة."
+    },
+    "tamegroute": {
+      "tag": "ثقافة",
+      "title": "تمجروت",
+      "desc": "ورش الفخار الأخضر والمكتبة القرآنية التاريخية على بعد حوالي 20 كم جنوب زاكورة."
+    },
+    "amezrou": {
+      "tag": "قرية",
+      "title": "أمزرو",
+      "desc": "أزقة طينية والحي اليهودي القديم — ركن تراثي ساحر داخل الواحة."
+    },
+    "jebel_zagora": {
+      "tag": "إطلالة",
+      "title": "جبل زاكورة",
+      "desc": "الجبل المطل على المدينة — تسلقه باكراً للاستمتاع بإطلالة الواحة وأطراف الصحراء."
+    },
+    "souk_zagora": {
+      "tag": "سوق",
+      "title": "سوق زاكورة",
+      "desc": "سوق إقليمي نابض بالحياة لشراء التمور، المنتجات المحلية والتعرف على حياة وادي درعة."
+    },
+    "desert_camps": {
+      "tag": "صحراء",
+      "title": "المخيمات الصحراوية وركوب الجمال",
+      "desc": "مخيمات ليلية ورحلات على ظهر الجمال نحو الكثبان — تجربة الصحراء الكلاسيكية في زاكورة."
+    }
+  },
+  "itinerary": {
+    "badge": "التخطيط",
+    "title": "برنامج مقترح لمدة 3 أيام في زاكورة",
+    "subtitle": "الواحة واللافتة أولاً، ثم تمجروت أو الكثبان، تليها ليلة صحراوية أو يوم حر.",
+    "day1": {
+      "tag": "اليوم 1",
+      "title": "المدينة، اللافتة والنخيل",
+      "desc": "لافتة تمبكتو، جولة في بساتين النخيل ومتابعة غروب الشمس باتجاه جبل زاكورة.",
+      "duration": "يوم كامل · استكشاف واستئناس"
+    },
+    "day2": {
+      "tag": "اليوم 2",
+      "title": "تمجروت أو تينفكو",
+      "desc": "الفخار والمكتبة في تمجروت، أو قضاء فترة ما بعد الظهر على كثبان تينفكو.",
+      "duration": "يوم كامل · ثقافة أو كثبان"
+    },
+    "day3": {
+      "tag": "اليوم 3",
+      "title": "الصحراء أو أمزرو",
+      "desc": "رحلة على ظهر الجمال والمخيم، أو جولة هادئة بأزقة أمزرو قبل المغادرة.",
+      "duration": "يوم كامل · مرن"
+    }
+  },
+  "detailed_itinerary": {
+    "day1_tab": "اليوم 1 — الواحة واللافتة",
+    "day1_m": "الصباح — لافتة تمبكتو والمركز",
+    "day1_md": "محطة لالتقاط الصور بجانب اللافتة الشهيرة، ثم جولة استكشافية في المركز.",
+    "day1_a": "بعد الظهر — بساتين النخيل",
+    "day1_ad": "جولة سيراً على الأقدام أو بالسيارة وسط نخيل وادي درعة والقرى الطينية.",
+    "day1_e": "المساء — إطلالة جبل زاكورة",
+    "day1_ed": "صعود الجبل أو نقطة المراقبة لمشاهدة غروب الشمس فوق الواحة.",
+    "day2_tab": "اليوم 2 — ثقافة أو كثبان",
+    "day2_m": "الصباح — تمجروت",
+    "day2_md": "زيارة ورش الفخار الأخضر والمكتبة التاريخية جنوب المدينة.",
+    "day2_a": "بعد الظهر — خيار تينفكو",
+    "day2_ad": "رحلة قصيرة إلى الكثبان الرملية قبل قضاء ليلة في الصحراء غداً.",
+    "day2_e": "المساء — عشاء هادئ",
+    "day2_ed": "وجبة خفيفة في الواحة ونوم مبكر تحضيراً لليلة المخيم.",
+    "day3_tab": "اليوم 3 — صحراء أو قرية",
+    "day3_m": "الصباح — الجمال أو أمزرو",
+    "day3_md": "بدء رحلة نحو المخيم الصحراوي، أو استكشاف أزقة أمزرو ببطء.",
+    "day3_a": "بعد الظهر — المخيم أو وقت حر",
+    "day3_ad": "وقت ممتع بين الكثبان وتناول الشاي، أو تجهيز الأغراض وجولة أخيرة.",
+    "day3_e": "المساء — النجوم أو المغادرة",
+    "day3_ed": "سماء الصحراء المرصعة بالنجوم، أو العودة إلى المدينة لمواصلة الرحلة."
+  },
+  "directory": {
+    "badge": "الإقامة",
+    "title": "اعثر على إقامتك المثالية في زاكورة",
+    "subtitle": "قم بالتصفية حسب النوع والمنطقة — افتح أي عرض لمعرفة التفاصيل وتوفر الغرف.",
+    "filter_type_label": "النوع:",
+    "filter_location_label": "المنطقة:",
+    "type_all": "جميع الأنواع",
+    "type_hotel": "فنادق",
+    "type_riad": "رياض ودور ضيافة",
+    "type_guesthouse": "مخيمات صحراوية ودور ضيافة",
+    "location_all": "جميع المناطق",
+    "location_town": "وسط المدينة",
+    "location_outside": "أطراف البساتين",
+    "location_outskirts": "الصحراء / الجنوب",
+    "counter": "مكان إقامة تم العثور عليه",
+    "district_label": "المنطقة",
+    "type_label": "النوع",
+    "check_availability": "التحقق من التوفر ←",
+    "no_results": "لا توجد أماكن إقامة تطابق هذه التصفية."
+  },
+  "eat": {
+    "badge": "المطاعم",
+    "title": "أين تسنح لك الأكل في زاكورة",
+    "subtitle": "طاجين، تمور وموائد واحات بسيطة.",
+    "nomad": {
+      "tag": "مخيم",
+      "loc": "الصحراء",
+      "title": "وجبات العشاء في المخيم",
+      "desc": "قوائم طعام محددة في المخيمات الصحراوية خلال الرحلات الليلية."
+    },
+    "jardin": {
+      "tag": "فندق",
+      "loc": "المدينة",
+      "title": "مطاعم الفنادق",
+      "desc": "خيارات طعام موثوقة إذا كنت تقيم في فندق كبير."
+    },
+    "fassia": {
+      "tag": "مقهى",
+      "loc": "المركز",
+      "title": "مقهى صباحي",
+      "desc": "تناول القهوة قبل الانطلاق المبكر نحو الكثبان أو الجبل."
+    },
+    "moha": {
+      "tag": "محلي",
+      "loc": "أيام السوق",
+      "title": "وجبات خفيفة في السوق",
+      "desc": "تمور ووجبات خفيفة بسيطة خلال صباح أيام السوق."
+    },
+    "bacha": {
+      "tag": "محلي",
+      "loc": "المدينة",
+      "title": "أطباق الأحياء",
+      "desc": "أطباق شعبية منزلية بعيداً عن الشارع الرئيسي."
+    },
+    "elfenn": {
+      "tag": "محلي",
+      "loc": "المركز",
+      "title": "طاجين المساء",
+      "desc": "وجبة عشاء متأخرة بعد انخفاض حرارة الجو."
+    }
+  },
+  "tips": {
+    "title": "نصائح عملية لزيارة زاكورة",
+    "transport": {
+      "title": "التنقل",
+      "desc": "وسط المدينة صغير ويمكن استكشافه سيراً؛ أما تمجروت، تينفكو والمخيمات فتحتاج إلى سيارة أجرة أو جولة منظمة. اتفق على الأسعار مسبقاً."
+    },
+    "bargain": {
+      "title": "الحرارة والماء",
+      "desc": "درجات الحرارة مرتفعة للغاية صيفاً. احرص على حمل كمية وافرة من الماء، قبعة وواقي شمس. يفضل البدء باكراً لزيارة جبل زاكورة والكثبان."
+    },
+    "water": {
+      "title": "النقود والموسم",
+      "desc": "احمل الدراهم النقدية لسيارات الأجرة والمرشدين والمشتريات البسيطة. احجز المخيمات الصحراوية مسبقاً خلال موسم الشتاء السياحي."
+    }
+  },
+  "daytrips": {
+    "badge": "ما حول زاكورة",
+    "title": "أفضل الرحلات الخارجية من زاكورة",
+    "subtitle": "الكثبان الرملية، قرية الفخار وخيارات الصحراء العميقة.",
+    "tiout": {
+      "title": "كثبان تينفكو",
+      "desc": "رحلة قصيرة للكثبان جنوب المدينة — الوجهة المفضلة لمشاهدة الغروب."
+    },
+    "antiatlas": {
+      "title": "تمجروت",
+      "desc": "الفخار الأخضر التقليدي والمكتبة القرآنية التاريخية."
+    },
+    "taliouine": {
+      "title": "ليلة في مخيم صحراوي",
+      "desc": "رحلة على الجمال والمبيت تحت سماء النجوم."
+    },
+    "agadir": {
+      "title": "باتجاه محاميد الغزلان",
+      "desc": "التعمق نحو الجنوب لاستكشاف حقول كثبان أوسع إذا كان لديك يوم إضافي."
+    }
+  },
+  "faq": {
+    "badge": "معلومات مفيدة",
+    "title": "الأسئلة الشائعة حول السفر إلى زاكورة",
+    "q1": {
+      "question": "كم يوماً تحتاج لزيارة زاكورة؟",
+      "answer": "يومان كافيان لمشاهدة اللافتة، النخيل وتمجروت أو تينفكو. وتستغرق مدة 3 إلى 4 أيام إذا أردت إضافة ليلة صحراوية واستكشاف الواحة بتمهل."
+    },
+    "q2": {
+      "question": "هل زاكورة مجرد محطة عبور نحو الصحراء؟",
+      "answer": "على الرغم من أن المخيمات الصحراوية تحظى بشعبية كبيرة، إلا أن واحات درعة، تمجروت، أمزرو وجبل زاكورة تجعل الواحة تستحق الاستكشاف لوحدها."
+    },
+    "q3": {
+      "question": "كيف أصل إلى زاكورة؟",
+      "answer": "يصل معظم الزوار عبر الطريق البري من ورزازات (حوالي 2.5 إلى 3 ساعات) أو عبر رحلات أطول من مراكش عبر الجنوب."
+    },
+    "q4": {
+      "question": "ما هو أفضل وقت للزيارة؟",
+      "answer": "من أكتوبر إلى أبريل حيث تكون الأجواء معتدلة. قد تتجاوز حرارة الصيف 45-50 درجة مئوية مما يحد من الأنشطة الخارجية."
+    }
+  },
+  "destinations": {
+    "zagora": {
+      "name": "زاكورة"
+    }
+  },
   "zagora_page": {
     "seo": {
-      "title": "دليل سفر Zagora 2026 | أهم المعالم ونقاط اهتمام | MoroccoTripMap",
-      "description": "Plan your trip to Zagora: top attractions, local food, and travel tips."
+      "title": "[AR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Zagora.",
+    "name": "[AR] Name",
+    "hero_subtitle": "[AR] Hero subtitle",
+    "info": {
+      "best_time_label": "[AR] Best time label",
+      "best_time_val": "[AR] Best time val",
+      "stay_label": "[AR] Stay label",
+      "stay_val": "[AR] Stay val",
+      "vibe_label": "[AR] Vibe label",
+      "vibe_val": "[AR] Vibe val",
+      "airport_label": "[AR] Airport label",
+      "airport_val": "[AR] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Zagora",
-      "p1": "Explore Zagora and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "p2": "[AR] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Zagora",
-      "subtitle": "Discover top points of interest in Zagora."
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "draa_valley": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "explore": "[AR] Explore",
+      "timbuktu_sign": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "tinfou": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "tamegroute": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "amezrou": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "jebel_zagora": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "souk_zagora": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "desert_camps": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[AR] Day1 tab",
+      "day2_tab": "[AR] Day2 tab",
+      "day3_tab": "[AR] Day3 tab",
+      "day1_m": "[AR] Day1 m",
+      "day1_md": "[AR] Day1 md",
+      "day1_a": "[AR] Day1 a",
+      "day1_ad": "[AR] Day1 ad",
+      "day1_e": "[AR] Day1 e",
+      "day1_ed": "[AR] Day1 ed",
+      "day2_m": "[AR] Day2 m",
+      "day2_md": "[AR] Day2 md",
+      "day2_a": "[AR] Day2 a",
+      "day2_ad": "[AR] Day2 ad",
+      "day2_e": "[AR] Day2 e",
+      "day2_ed": "[AR] Day2 ed",
+      "day3_m": "[AR] Day3 m",
+      "day3_md": "[AR] Day3 md",
+      "day3_a": "[AR] Day3 a",
+      "day3_ad": "[AR] Day3 ad",
+      "day3_e": "[AR] Day3 e",
+      "day3_ed": "[AR] Day3 ed"
+    },
+    "directory": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "filter_type_label": "[AR] Filter type label",
+      "type_all": "[AR] Type all",
+      "type_hotel": "[AR] Type hotel",
+      "type_riad": "[AR] Type riad",
+      "type_guesthouse": "[AR] Type guesthouse",
+      "filter_location_label": "[AR] Filter location label",
+      "location_all": "[AR] Location all",
+      "location_town": "[AR] Location town",
+      "location_outside": "[AR] Location outside",
+      "location_outskirts": "[AR] Location outskirts",
+      "counter": "[AR] Counter",
+      "district_label": "[AR] District label",
+      "check_availability": "[AR] Check availability",
+      "no_results": "[AR] No results"
+    },
+    "eat": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "nomad": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "jardin": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "fassia": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "moha": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bacha": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "elfenn": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[AR] Title",
+      "transport": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bargain": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "water": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "tiout": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "antiatlas": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "taliouine": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "agadir": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "q1": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q2": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q3": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q4": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[AR] Destinations",
+    "categories": "[AR] Categories",
+    "cat_stays": "[AR] Cat stays",
+    "cat_gastronomy": "[AR] Cat gastronomy",
+    "cat_experiences": "[AR] Cat experiences",
+    "cat_museums": "[AR] Cat museums",
+    "cat_transport": "[AR] Cat transport",
+    "cat_itineraries": "[AR] Cat itineraries",
+    "cat_guides": "[AR] Cat guides",
+    "history": "[AR] History",
+    "blog": "[AR] Blog",
+    "contact": "[AR] Contact",
+    "cities": "[AR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[AR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[AR] Home",
+    "destinations": "[AR] Destinations"
+  },
+  "footer": {
+    "about_text": "[AR] About text",
+    "destinations_title": "الوجهات",
+    "link_zagora": "[AR] Link zagora",
+    "link_all_destinations": "[AR] Link all destinations",
+    "categories_title": "الفئات",
+    "link_stays": "رياض وفنادق أصيلة",
+    "link_restaurants": "مطاعم مغربية",
+    "connect_title": "تواصل معنا",
+    "youtube_text": "تابع قناتنا على يوتيوب لمشاهدة أدلة السفر بالفيديو:",
+    "copyright": "© 2026 MoroccoTripMap. جميع الحقوق محفوظة.",
+    "link_culture": "تجارب الصحراء والثقافة",
+    "link_transport": "المواصلات والسائقين الخاصين",
+    "link_circuits": "الرحلات والمسارات",
+    "link_history": "تاريخ المغرب",
+    "link_guides": "أدلة السفر",
+    "link_blog": "المدونة",
+    "link_contact": "اتصل بنا",
+    "link_itineraries": "الرحلات والمسارات",
+    "col_imperial": "المدن الإمبراطورية والثقافة",
+    "col_desert": "الصحراء والجنوب الكبير",
+    "col_practical": "أدلة عملية وإقامة",
+    "created_by": "تم الإنشاء بواسطة"
   }
 }

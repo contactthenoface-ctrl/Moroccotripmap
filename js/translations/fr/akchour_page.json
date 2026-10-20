@@ -1,19 +1,396 @@
 {
+  "seo": {
+    "title": "Cascades d'Akchour et Pont de Dieu : randonnée depuis Chefchaouen | MoroccoTripMap",
+    "description": "Vous préparez une excursion à Akchour depuis Chefchaouen ? Pont de Dieu, cascades et vasques : accès, conseils de randonnée et meilleure saison.",
+    "og_title": "Cascades d'Akchour et Pont de Dieu : randonnée depuis Chefchaouen",
+    "og_description": "Vous préparez une excursion à Akchour depuis Chefchaouen ? Pont de Dieu, cascades et vasques : accès, conseils de randonnée et meilleure saison."
+  },
+  "name": "Cascades d'Akchour et Pont de Dieu",
+  "hero_subtitle": "Des vasques d'un vert émeraude, une arche rocheuse naturelle et la plus belle randonnée à la journée près de Chefchaouen.",
+  "info": {
+    "best_time_label": "Meilleur moment",
+    "best_time_val": "Printemps et début d'automne",
+    "duration_label": "Durée de visite",
+    "duration_val": "Journée complète",
+    "entry_label": "Entrée",
+    "entry_val": "Gratuit, randonnée à votre rythme",
+    "area_label": "Où",
+    "area_val": "À environ 45 min de Chefchaouen"
+  },
+  "overview": {
+    "title": "La sortie préférée du Rif",
+    "p1": "Akchour se trouve dans le parc national de Talassemtane, à environ 45 minutes de route de Chefchaouen. Depuis le village, un sentier longe l'oued à travers des gorges, devant de petits cafés et des vasques de baignade, jusqu'à deux temps forts : les cascades et le Pont de Dieu, une arche rocheuse naturelle qui domine la vallée.",
+    "p2": "Partez préparé. Le sentier est inégal, avec des passages sur des rochers : portez de vraies chaussures, emportez de l'eau et partez tôt. Les vasques sont fraîches et superbes en été. Renseignez-vous sur place sur l'état du sentier, car le niveau de l'eau et l'accès changent avec la saison et après la pluie. Beaucoup de visiteurs engagent un guide local."
+  },
+  "gallery": {
+    "badge": "Galerie",
+    "title": "Cascades d'Akchour et Pont de Dieu en images",
+    "subtitle": "Faites défiler les détails qui valent le coup d'œil.",
+    "s1": {
+      "caption": "La rivière qui serpente dans les gorges d'Akchour"
+    },
+    "s2": {
+      "caption": "Le Pont de Dieu, l'arche rocheuse naturelle"
+    },
+    "s3": {
+      "caption": "Des vasques émeraude pour une baignade fraîche"
+    },
+    "s4": {
+      "caption": "Randonneurs sur le sentier au bord de la rivière"
+    },
+    "s5": {
+      "caption": "La grande cascade de la vallée"
+    }
+  },
+  "moods": {
+    "badge": "Points forts",
+    "title": "Que faire à Akchour",
+    "subtitle": "Trois façons de passer une journée dans la vallée.",
+    "1": {
+      "tag": "Pont",
+      "title": "Le Pont de Dieu",
+      "desc": "Une arche de pierre naturelle qui enjambe les gorges. Prévoyez quelques heures de marche aller-retour.",
+      "duration": "Longue randonnée • Demi-journée"
+    },
+    "2": {
+      "tag": "Cascade",
+      "title": "Les cascades",
+      "desc": "Plus court que la marche vers le pont et plus facile pour les familles. Idéal après les pluies de printemps.",
+      "duration": "Randonnée modérée • 1 à 2 h"
+    },
+    "3": {
+      "tag": "Vasques",
+      "title": "Vasques et cafés au bord de l'eau",
+      "desc": "Baignez-vous dans les vasques fraîches et faites une pause dans un café au bord de l'eau pour un thé ou un repas simple.",
+      "duration": "Détente • 1 à 2 h"
+    }
+  },
+  "tips": {
+    "title": "Conseils pratiques pour visiter Cascades d'Akchour et Pont de Dieu",
+    "1": {
+      "title": "Comment s'y rendre",
+      "desc": "Depuis Chefchaouen, prenez un grand taxi, un chauffeur privé ou une excursion (environ 45 minutes). Convenez de l'heure du retour avant de partir."
+    },
+    "2": {
+      "title": "Bon moment",
+      "desc": "Le printemps et le début de l'automne sont idéaux : chaud, vert et peu fréquenté. Les week-ends d'été peuvent être très chargés."
+    },
+    "3": {
+      "title": "Bon à savoir",
+      "desc": "Emportez de l'eau, une protection solaire et des chaussures qui accrochent. Les espèces sont utiles pour les cafés et le parking. Vérifiez les conditions locales après de fortes pluies."
+    }
+  },
+  "gyg": {
+    "badge": "Visites et expériences",
+    "title": "Réserver une visite : Cascades d'Akchour et Pont de Dieu",
+    "subtitle": "Visites guidées et billets pour que la visite se passe sans accroc.",
+    "t1": {
+      "tag": "Excursion à la journée",
+      "title": "Randonnée guidée aux cascades d'Akchour et au Pont de Dieu",
+      "desc": "Le transport et un guide local sont organisés : concentrez-vous sur le sentier et les vasques."
+    },
+    "check": "Voir les disponibilités sur GetYourGuide →",
+    "t2": {
+      "tag": "Visite guidée",
+      "title": "Visite à pied de la médina bleue de Chefchaouen",
+      "desc": "Un guide local vous emmène dans les ruelles bleues et vous raconte leurs histoires."
+    },
+    "t3": {
+      "tag": "Excursion à la journée",
+      "title": "Excursion à la journée dans le Rif et à Akchour",
+      "desc": "Une journée complète en montagne, transport et guide compris."
+    },
+    "disclosure": "Certains de ces liens sont des liens d'affiliation. Si vous réservez via ceux-ci, nous pouvons percevoir une petite commission, sans frais supplémentaires pour vous."
+  },
+  "nearby": {
+    "badge": "Continuez à explorer",
+    "title": "Autres lieux incontournables à Chefchaouen",
+    "back": "← Retour au guide de Chefchaouen"
+  },
+  "blog": {
+    "badge": "Depuis le blog",
+    "title": "Articles associés",
+    "all": "Tous les articles →",
+    "a1": {
+      "tag": "Randonnée",
+      "title": "Cascades d'Akchour et Pont de Dieu : guide de randonnée",
+      "desc": "Itinéraires, durée et quoi emporter."
+    },
+    "read": "Lire l'article →",
+    "a2": {
+      "tag": "Préparer son voyage",
+      "title": "Meilleure période pour visiter Chefchaouen, saison par saison",
+      "desc": "Météo, affluence et mois calmes."
+    },
+    "a3": {
+      "tag": "Itinéraire",
+      "title": "Chefchaouen en 2 jours : un itinéraire bleu et tranquille",
+      "desc": "Ruelles, points de vue et thé à la menthe sans se presser."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ : Cascades d'Akchour et Pont de Dieu",
+    "q1": {
+      "question": "À quelle distance d'Akchour se trouve Chefchaouen ?",
+      "answer": "Environ 45 minutes de route, en général en grand taxi, avec chauffeur privé ou excursion organisée."
+    },
+    "q2": {
+      "question": "Peut-on se baigner à Akchour ?",
+      "answer": "Oui, dans les vasques de la rivière quand les conditions le permettent. L'eau est froide : c'est plus agréable en été."
+    },
+    "q3": {
+      "question": "Faut-il un guide pour Akchour ?",
+      "answer": "Pas pour le sentier principal, mais un guide local aide pour l'itinéraire, les conditions et les randonnées plus longues."
+    },
+    "q4": {
+      "question": "Quel est le meilleur moment pour la randonnée d'Akchour ?",
+      "answer": "Le printemps pour la verdure et l'eau vive, ou le début de l'automne pour des journées chaudes sans la foule de l'été."
+    }
+  },
   "akchour_page": {
     "seo": {
-      "title": "Guide de Voyage Akchour 2026 | Choses à faire & Conseils | MoroccoTripMap",
-      "description": "Plan your trip to Akchour: top attractions, local food, and travel tips."
+      "title": "[FR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Akchour.",
+    "name": "[FR] Name",
+    "hero_subtitle": "[FR] Hero subtitle",
+    "info": {
+      "best_time_label": "[FR] Best time label",
+      "best_time_val": "[FR] Best time val",
+      "duration_label": "[FR] Duration label",
+      "duration_val": "[FR] Duration val",
+      "entry_label": "[FR] Entry label",
+      "entry_val": "[FR] Entry val",
+      "area_label": "[FR] Area label",
+      "area_val": "[FR] Area val"
+    },
     "overview": {
-      "title": "Bienvenue à Akchour",
-      "p1": "Explore Akchour and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[FR] Title",
+      "p1": "[FR] P1",
+      "p2": "[FR] P2"
     },
-    "places": {
-      "badge": "À voir",
-      "title": "Les incontournables à Akchour",
-      "subtitle": "Discover top points of interest in Akchour."
+    "gallery": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "s1": {
+        "caption": "[FR] Caption"
+      },
+      "s2": {
+        "caption": "[FR] Caption"
+      },
+      "s3": {
+        "caption": "[FR] Caption"
+      },
+      "s4": {
+        "caption": "[FR] Caption"
+      },
+      "s5": {
+        "caption": "[FR] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      },
+      "2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      },
+      "3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      }
+    },
+    "tips": {
+      "title": "[FR] Title",
+      "1": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "2": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "3": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "t1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "check": "[FR] Check",
+      "t2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "t3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "disclosure": "[FR] Disclosure"
+    },
+    "nearby": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "back": "[FR] Back"
+    },
+    "blog": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "all": "[FR] All",
+      "a1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "read": "[FR] Read",
+      "a2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "a3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "q1": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q2": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q3": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q4": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[FR] Destinations",
+    "categories": "[FR] Categories",
+    "cat_stays": "[FR] Cat stays",
+    "cat_gastronomy": "[FR] Cat gastronomy",
+    "cat_experiences": "[FR] Cat experiences",
+    "cat_museums": "[FR] Cat museums",
+    "cat_transport": "[FR] Cat transport",
+    "cat_itineraries": "[FR] Cat itineraries",
+    "cat_guides": "[FR] Cat guides",
+    "history": "[FR] History",
+    "blog": "[FR] Blog",
+    "contact": "[FR] Contact",
+    "cities": "[FR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[FR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[FR] Home",
+    "destinations": "[FR] Destinations"
+  },
+  "destinations": {
+    "chefchaouen": {
+      "name": "[FR] Name"
+    }
+  },
+  "chefchaouen_page": {
+    "places": {
+      "outa": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "explore": "[FR] Explore",
+      "kasbah": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "mosquee": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "raselmaa": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "haouta": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "babelain": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "souika": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "talassemtane": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    }
+  },
+  "footer": {
+    "about_text": "[FR] About text",
+    "destinations_title": "Destinations",
+    "link_marrakech": "[FR] Link marrakech",
+    "link_chefchaouen": "[FR] Link chefchaouen",
+    "link_all_destinations": "[FR] Link all destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
+    "connect_title": "Suivez-nous",
+    "youtube_text": "Abonnez-vous à notre chaîne YouTube pour nos guides vidéo :",
+    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés.",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itinéraires",
+    "col_imperial": "Villes Impériales & Culture",
+    "col_desert": "Désert & Grand Sud",
+    "col_practical": "Guides Pratiques & Séjour",
+    "created_by": "Créé par"
   }
 }

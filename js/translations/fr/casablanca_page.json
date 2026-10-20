@@ -1,26 +1,544 @@
 {
+  "seo": {
+    "title": "Guide de Voyage Casablanca 2026 | Mosquée Hassan II, Corniche & Art Déco | MoroccoTripMap",
+    "description": "Préparez votre voyage à Casablanca : incontournables (Mosquée Hassan II, Corniche Ain Diab, Quartier Habous, Ancienne Médina), meilleurs hôtels et riads, restaurants, itinéraire de 3 jours, excursions à Rabat et El Jadida, et conseils pratiques.",
+    "og_title": "Guide de Voyage Casablanca | Mosquée Hassan II, Corniche & Art Déco | MoroccoTripMap",
+    "og_description": "Principales attractions, hôtels, restaurants, itinéraire clé en main et excursions depuis Casablanca, le tout dans un seul guide."
+  },
+  "hero_subtitle": "La capitale économique du Maroc où le plus haut minaret du monde côtoie des boulevards Art Déco et des couchers de soleil sur l'Atlantique.",
+  "info": {
+    "best_time_label": "Meilleure Période",
+    "best_time_val": "Avr – Juin & Sep – Nov",
+    "stay_label": "Séjour Idéal",
+    "stay_val": "2 – 4 Jours",
+    "vibe_label": "Ambiance",
+    "vibe_val": "Moderne & Côtière",
+    "airport_label": "Aéroport Proche",
+    "airport_val": "CMN (Mohammed V)"
+  },
+  "overview": {
+    "title": "Bienvenue dans la Ville Blanche du Maroc",
+    "p1": "Casablanca n'est pas le Maroc des riads de cartes postales et des charmeurs de serpents. C'est une métropole active de plus de trois millions d'habitants, où les façades Art Déco de l'époque du Protectorat français côtoient des tours de verre, et où l'océan Atlantique vient s'échouer contre les murs de la Mosquée Hassan II. Pour beaucoup de voyageurs, ce n'est qu'une porte d'entrée, mais ceux qui s'y attardent découvrent une ville au caractère authentique : excellents fruits de mer, cœur historique compact et littoral vivant.",
+    "p2": "Que vous veniez pour l'intérieur grandiose de la plus grande mosquée d'Afrique, une promenade au coucher du soleil sur la Corniche ou une excursion vers la paisible capitale de Rabat, Casablanca saura éveiller votre curiosité. C'est le Maroc dans sa version la plus contemporaine, tout en restant profondément marocain."
+  },
+  "places": {
+    "badge": "À Voir Absolument",
+    "title": "Lieux Incontournables à Casablanca",
+    "subtitle": "Monuments emblématiques, promenades côtières et quartiers Art Déco à ne pas manquer.",
+    "explore": "Explorer le lieu →",
+    "hassan_ii": {
+      "tag": "Monument",
+      "title": "Mosquée Hassan II",
+      "desc": "L'une des plus grandes mosquées au monde, construite en partie sur l'Atlantique avec un minaret de 210 m. Visites guidées pour non-musulmans."
+    },
+    "corniche": {
+      "tag": "Littoral",
+      "title": "Corniche & Ain Diab",
+      "desc": "La promenade maritime de 7 km de Casablanca, bordée de clubs de plage, de cafés et de restaurants face à l'océan."
+    },
+    "habous": {
+      "tag": "Quartier Historique",
+      "title": "Quartier des Habous",
+      "desc": "Un charmant quartier néo-mauresque des années 1930 doté de souks, de cafés et de la Mahkama du Pacha près du Palais Royal."
+    },
+    "old_medina": {
+      "tag": "Cœur Historique",
+      "title": "Ancienne Médina",
+      "desc": "Une médina authentique et à taille humaine, avec ses échoppes d'épices et la vie quotidienne — plus calme que Marrakech ou Fès."
+    },
+    "place_mohammed_v": {
+      "tag": "Architecture",
+      "title": "Place Mohammed V",
+      "desc": "Le cœur civique de Casablanca, entouré d'imposants bâtiments publics Art Déco et néo-mauresques."
+    },
+    "ricks_cafe": {
+      "tag": "Icône Cinéma",
+      "title": "Rick’s Café",
+      "desc": "Une superbe reconstitution du bar du film culte de 1942, avec piano, décor d'époque et menu raffiné."
+    },
+    "villa_des_arts": {
+      "tag": "Musée",
+      "title": "Villa des Arts",
+      "desc": "Une magnifique villa Art Déco transformée en musée d'art contemporain mettant en valeur des œuvres marocaines et internationales."
+    },
+    "marche_central": {
+      "tag": "Marché",
+      "title": "Marché Central",
+      "desc": "Le principal marché de la ville pour les poissons frais, épices, fleurs et produits locaux — un vrai bain de vie marocaine."
+    },
+    "notre_dame": {
+      "tag": "Architecture",
+      "title": "Notre-Dame de Lourdes",
+      "desc": "Une église moderne saisissante, célèbre pour ses immenses vitraux qui baignent l'intérieur d'une lumière colorée."
+    }
+  },
+  "itinerary": {
+    "badge": "Planification",
+    "title": "Itinéraire Suggéré de 3 Jours",
+    "subtitle": "Un rythme équilibré pour découvrir les points forts sans se presser."
+  },
+  "stays": {
+    "badge": "Sélection & Conseils",
+    "title": "Où dormir à Casablanca ? Nos Coups de Cœur",
+    "subtitle": "Des luxueux hôtels de front de mer aux riads Art Déco de charme et suites urbaines modernes, voici nos meilleurs choix.",
+    "book": "Réserver →",
+    "card1": {
+      "badge": "★ Luxe Front de Mer",
+      "name": "Four Seasons Hotel Casablanca",
+      "desc": "Luxe de style complexe hôtelier surplombant l'océan Atlantique le long de la Corniche, avec spa et gastronomie.",
+      "location": "Côte d'Ain Diab"
+    },
+    "card2": {
+      "badge": "★ Boutique Art Déco",
+      "name": "Hôtel particulier Le Doge",
+      "desc": "Établissement Relais & Châteaux installé dans une magnifique villa Art Déco des années 1930 en plein centre-ville.",
+      "location": "Centre-Ville"
+    },
+    "card3": {
+      "badge": "★ Affaires & Central",
+      "name": "Hyatt Regency Casablanca",
+      "desc": "Hôtel emblématique du centre-ville surplombant la Place des Nations Unies, à deux pas de l'ancienne médina.",
+      "location": "Place des Nations"
+    },
+    "card4": {
+      "badge": "★ Riad Traditionnel",
+      "name": "Ryad 91",
+      "desc": "Un riad traditionnel paisible offrant une hospitalité marocaine authentique et un havre de paix au cœur de la ville.",
+      "location": "Sidi Belyout"
+    }
+  },
+  "booking_banner": {
+    "badge": "Plus de 200+ hébergements à Casablanca",
+    "title": "Explorez tous les séjours à Casablanca",
+    "desc": "Comparez les tarifs en temps réel, lisez les avis vérifiés de voyageurs et profitez de l'annulation gratuite sur les meilleurs hôtels et appartements.",
+    "btn": "Voir tous les hébergements sur Booking.com",
+    "guarantee": "✓ Meilleur prix garanti & réservation sécurisée"
+  },
+  "directory": {
+    "badge": "Répertoire & Base de Données",
+    "title": "Trouvez Votre Hébergement Idéal à Casablanca",
+    "subtitle": "Utilisez les filtres ci-dessous pour trier instantanément les meilleurs établissements selon vos critères.",
+    "filter_type_label": "Type d'hébergement :",
+    "type_all": "Tous les types",
+    "type_hotel": "Hôtels & Resorts",
+    "type_riad": "Riads Traditionnels",
+    "type_guesthouse": "Maisons d'hôtes",
+    "filter_location_label": "Quartier / Zone :",
+    "location_all": "Toutes les zones",
+    "location_centre": "Centre-ville / Downtown",
+    "location_corniche": "Corniche & Ain Diab",
+    "location_gauthier": "Gauthier & Maarif",
+    "location_outskirts": "Périphérie & Aéroport",
+    "counter": "28 établissements trouvés",
+    "district_label": "Quartier",
+    "type_label": "Type",
+    "tel_label": "Tél",
+    "no_results": "Aucun établissement ne correspond à ces filtres. Essayez d'élargir votre recherche.",
+    "check_availability": "Vérifier la disponibilité →"
+  },
+  "eat": {
+    "badge": "Gastronomie",
+    "title": "Meilleurs Restaurants & Rooftops",
+    "subtitle": "Expériences culinaires sélectionnées avec les meilleures notes visiteurs",
+    "ricks": {
+      "tag": "Marocain Moderne",
+      "loc": "Vieille ville / Port",
+      "title": "Rick’s Café",
+      "desc": "Un restaurant et piano-bar légendaire recréant le décor du film de 1942 près du vieux port."
+    },
+    "sqala": {
+      "tag": "Dîner en Jardin",
+      "loc": "Forteresse du Port",
+      "title": "La Sqala",
+      "desc": "Une cour de forteresse du XVIIIe siècle verdoyante servant une cuisine marocaine traditionnelle et des petits-déjeuners."
+    },
+    "mounia": {
+      "tag": "Cuisine Traditionnelle",
+      "loc": "Centre-Ville",
+      "title": "Al-Mounia",
+      "desc": "Une adresse historique renommée pour ses plats marocains authentiques, tajines et pastillas."
+    },
+    "grande_table": {
+      "tag": "Haute Gastronomie",
+      "loc": "Centre-Ville",
+      "title": "La Grande Table Marocaine",
+      "desc": "Gastronomie marocaine raffinée mêlant recettes traditionnelles et art culinaire moderne."
+    },
+    "cabestan": {
+      "tag": "Lounge Océan",
+      "loc": "Ain Diab",
+      "title": "Le Cabestan",
+      "desc": "Restaurant iconique juché sur les rochers d'Ain Diab, offrant fruits de mer frais et superbes couchers de soleil."
+    },
+    "table3": {
+      "tag": "Rooftop Chic",
+      "loc": "Centre-Ville",
+      "title": "Table 3",
+      "desc": "Lounge rooftop élégant offrant des vues panoramiques, des cocktails créatifs et des tapas sophistiquées."
+    }
+  },
+  "tips": {
+    "title": "Conseils Pratiques pour Visiter Casablanca",
+    "transport": {
+      "title": "Se Déplacer",
+      "desc": "Le tramway de Casablanca est propre, économique et pratique pour les trajets centraux. Pour de plus longues distances, utilisez les petits taxis rouges (exigez le compteur) ou les applications VTC. Le train depuis l'aéroport est l'option la plus simple."
+    },
+    "bargain": {
+      "title": "Tenue & Étiquette",
+      "desc": "Casablanca est plus décontractée que les villes de l'intérieur, mais une tenue pudique reste appréciée, en particulier lors de la visite de la mosquée. Prévoyez une veste légère — la brise atlantique peut être fraîche."
+    },
+    "water": {
+      "title": "Sécurité & Ambiance",
+      "desc": "Casablanca est une grande métropole. Faites preuve d'une vigilance normale, surtout la nuit dans les rues calmes. La Corniche et les zones touristiques principales sont très animées et sûres en soirée."
+    }
+  },
+  "daytrips": {
+    "badge": "Excursions",
+    "title": "Meilleures Excursions depuis Casablanca",
+    "subtitle": "Des escapades faciles en train ou en voiture qui s'intègrent parfaitement sur une journée.",
+    "rabat": {
+      "title": "Rabat",
+      "desc": "La capitale élégante — Kasbah des Oudayas, Tour Hassan et Chellah, à seulement 1 heure en train."
+    },
+    "el_jadida": {
+      "title": "El Jadida",
+      "desc": "Citadelle portugaise classée par l'UNESCO et sa célèbre citerne souterraine, à environ 1h20 en train ou voiture."
+    },
+    "mohammedia": {
+      "title": "Mohammedia",
+      "desc": "L'échappée plage la plus proche — sable propre, marina et restaurants de poissons, à seulement 25-30 minutes."
+    },
+    "azemmour": {
+      "title": "Azemmour",
+      "desc": "Ville historique paisible aux superbes fresques de street art et vues sur le fleuve, souvent combinée avec El Jadida."
+    }
+  },
+  "faq": {
+    "badge": "Bon à Savoir",
+    "title": "FAQ Voyage à Casablanca",
+    "q1": {
+      "question": "Combien de jours passer à Casablanca ?",
+      "answer": "Deux jours complets permettent de voir les principaux sites confortablement. Trois ou quatre jours offrent un rythme détendu avec une excursion à Rabat ou El Jadida."
+    },
+    "q2": {
+      "question": "Casablanca est-elle sûre pour les touristes ?",
+      "answer": "Oui. Comme dans toute grande ville, appliquez les précautions d'usage. Les zones touristiques, la Corniche et le centre sont très fréquentés et sûrs."
+    },
+    "q3": {
+      "question": "Quelle monnaie est utilisée et peut-on payer par carte ?",
+      "answer": "Le Maroc utilise le dirham (MAD). Les cartes bancaires sont largement acceptées dans les hôtels et restaurants ; gardez un peu de monnaie pour les taxis et marchés."
+    },
+    "q4": {
+      "question": "Comment aller de l'aéroport Mohammed V au centre-ville ?",
+      "answer": "Le train de l'ONCF est l'option la plus pratique (environ 35-45 minutes). Des taxis officiels et transferts privés sont également disponibles ; mettez-vous d'accord sur le prix ou exigez le compteur."
+    }
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Jour 1 — Mosquée & Corniche",
+    "day1_m": "Matin — Mosquée Hassan II",
+    "day1_md": "Réservez une visite guidée de la mosquée (en dehors des heures de prière). Prévoyez du temps pour l'esplanade extérieure et l'océan.",
+    "day1_a": "Après-midi — Corniche & Ain Diab",
+    "day1_ad": "Marchez ou prenez un taxi le long de la corniche pour profiter des cafés et de la vue atlantique.",
+    "day1_e": "Soirée — Dîner au centre ou à la marina",
+    "day1_ed": "Dîner au centre-ville, à Maarif ou près de la marina — Casablanca vit tard et de façon urbaine.",
+    "day2_tab": "Jour 2 — Ancienne & Nouvelle Ville",
+    "day2_m": "Matin — Ancienne Médina & port",
+    "day2_md": "Explorez les ruelles de l'ancienne médina et les abords du port de commerce (gardez des attentes réalistes, ce n'est pas Fès).",
+    "day2_a": "Après-midi — Habous & Art Déco",
+    "day2_ad": "Visitez le quartier des Habous pour l'architecture et le shopping, puis les façades Art Déco du centre-ville.",
+    "day2_e": "Soirée — Quartiers modernes",
+    "day2_ed": "Maarif ou Gauthier pour une soirée casablancaise branchée et contemporaine.",
+    "day3_tab": "Jour 3 — Culture ou Excursion",
+    "day3_m": "Matin — Musée ou Cathédrale",
+    "day3_md": "Musée de l'Histoire du Maroc ou l'extérieur de la cathédrale, selon vos intérêts.",
+    "day3_a": "Après-midi — Rabat en train",
+    "day3_ad": "Trajet facile en ONCF vers Rabat pour la Kasbah et la Tour Hassan si vous souhaitez contraster avec la capitale.",
+    "day3_e": "Soirée — Retour ou départ",
+    "day3_ed": "Casablanca est un carrefour — trains de soir, transferts aéroport ou dernière balade sur la corniche."
+  },
   "casablanca_page": {
     "seo": {
-      "title": "Guide de Voyage Casablanca 2026 | MoroccoTripMap",
-      "description": "Préparez votre voyage à Casablanca : incontournables, monuments historiques, gastronomie locale et conseils."
+      "title": "[FR] Title"
     },
-    "hero_subtitle": "Discover Casablanca - Authentic charm & culture.",
+    "hero_subtitle": "[FR] Hero subtitle",
+    "info": {
+      "best_time_label": "[FR] Best time label",
+      "best_time_val": "[FR] Best time val",
+      "stay_label": "[FR] Stay label",
+      "stay_val": "[FR] Stay val",
+      "vibe_label": "[FR] Vibe label",
+      "vibe_val": "[FR] Vibe val",
+      "airport_label": "[FR] Airport label",
+      "airport_val": "[FR] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Casablanca",
-      "p1": "Explore Casablanca, a unique destination in Morocco known for its cultural heritage and stunning landscapes."
+      "title": "[FR] Title",
+      "p1": "[FR] P1",
+      "p2": "[FR] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Casablanca",
-      "subtitle": "Discover top points of interest in Casablanca."
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "hassan_ii": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "explore": "[FR] Explore",
+      "corniche": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "habous": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "old_medina": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "place_mohammed_v": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "ricks_cafe": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "villa_des_arts": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "marche_central": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "notre_dame": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[FR] Day1 tab",
+      "day2_tab": "[FR] Day2 tab",
+      "day3_tab": "[FR] Day3 tab",
+      "day1_m": "[FR] Day1 m",
+      "day1_md": "[FR] Day1 md",
+      "day1_a": "[FR] Day1 a",
+      "day1_ad": "[FR] Day1 ad",
+      "day1_e": "[FR] Day1 e",
+      "day1_ed": "[FR] Day1 ed",
+      "day2_m": "[FR] Day2 m",
+      "day2_md": "[FR] Day2 md",
+      "day2_a": "[FR] Day2 a",
+      "day2_ad": "[FR] Day2 ad",
+      "day2_e": "[FR] Day2 e",
+      "day2_ed": "[FR] Day2 ed",
+      "day3_m": "[FR] Day3 m",
+      "day3_md": "[FR] Day3 md",
+      "day3_a": "[FR] Day3 a",
+      "day3_ad": "[FR] Day3 ad",
+      "day3_e": "[FR] Day3 e",
+      "day3_ed": "[FR] Day3 ed"
+    },
+    "stays": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "card1": {
+        "badge": "[FR] Badge",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc",
+        "location": "[FR] Location"
+      },
+      "book": "[FR] Book",
+      "card2": {
+        "badge": "[FR] Badge",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc",
+        "location": "[FR] Location"
+      },
+      "card3": {
+        "badge": "[FR] Badge",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc",
+        "location": "[FR] Location"
+      },
+      "card4": {
+        "badge": "[FR] Badge",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc",
+        "location": "[FR] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "desc": "[FR] Desc",
+      "btn": "[FR] Btn",
+      "guarantee": "[FR] Guarantee"
+    },
+    "eat": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "ricks": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "sqala": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "mounia": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "grande_table": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "cabestan": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "table3": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[FR] Title",
+      "transport": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "bargain": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "water": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "rabat": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "el_jadida": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "mohammedia": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "azemmour": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "q1": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q2": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q3": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q4": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      }
+    }
+  },
+  "nav": {
+    "destinations": "[FR] Destinations",
+    "categories": "[FR] Categories",
+    "cat_stays": "[FR] Cat stays",
+    "cat_gastronomy": "[FR] Cat gastronomy",
+    "cat_experiences": "[FR] Cat experiences",
+    "cat_museums": "[FR] Cat museums",
+    "cat_transport": "[FR] Cat transport",
+    "cat_itineraries": "[FR] Cat itineraries",
+    "cat_guides": "[FR] Cat guides",
+    "history": "[FR] History",
+    "blog": "[FR] Blog",
+    "contact": "[FR] Contact",
+    "cities": "[FR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[FR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[FR] Home",
+    "destinations": "[FR] Destinations"
+  },
+  "destinations": {
+    "casablanca": {
+      "name": "[FR] Name"
     }
   },
   "footer": {
-    "col_imperial": "Villes Impériales & Culture",
-    "col_desert": "Désert & Grand Sud",
+    "about_text": "[FR] About text",
+    "destinations_title": "Destinations",
+    "link_casablanca": "[FR] Link casablanca",
+    "link_all_destinations": "[FR] Link all destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
     "connect_title": "Suivez-nous",
     "youtube_text": "Abonnez-vous à notre chaîne YouTube pour nos guides vidéo :",
-    "created_by": "Créé par",
-    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés."
+    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés.",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itinéraires",
+    "col_imperial": "Villes Impériales & Culture",
+    "col_desert": "Désert & Grand Sud",
+    "col_practical": "Guides Pratiques & Séjour",
+    "created_by": "Créé par"
   }
 }

@@ -1,19 +1,417 @@
 {
+  "seo": {
+    "title": "Chefchaouen Travel Guide | The Blue Pearl of Morocco | MoroccoTripMap",
+    "description": "Plan your trip to Chefchaouen: top attractions (Outa el Hammam, Ras El Maa, Spanish Mosque), best riads and dars, local restaurants, Akchour waterfalls day trip, and practical travel tips.",
+    "og_title": "Chefchaouen Travel Guide | Things to Do, Dars & Akchour Hikes | MoroccoTripMap",
+    "og_description": "Discover Morocco's Blue Pearl: top sights, authentic guesthouses, Akchour waterfalls, and travel advice."
+  },
+  "hero_subtitle": "The Iconic Blue Pearl of Morocco Nested in the Scenic Rif Mountains.",
+  "info": {
+    "best_time_label": "Best Time to Visit",
+    "best_time_val": "Mar – May & Sep – Nov",
+    "stay_label": "Ideal Stay",
+    "stay_val": "2 – 3 Days",
+    "vibe_label": "Vibe",
+    "vibe_val": "Relaxed & Photogenic",
+    "airport_label": "Nearest Airport",
+    "airport_val": "TNG (Tangier) or FES (Fez)"
+  },
+  "overview": {
+    "title": "Welcome to the Blue Pearl",
+    "p1": "Chefchaouen is world-famous for its striking palette of blue-washed buildings tucked into the dramatic peaks of the Rif Mountains. Founded in 1471 as a fortress, this tranquil mountain town offers a peaceful retreat from Morocco's bustling imperial cities.",
+    "p2": "Wander through winding cobblestone alleys, relax in vibrant squares with mint tea, watch the sunset over the valley from the Spanish Mosque, or trek through the lush natural trails of Talassemtane National Park."
+  },
+  "places": {
+    "badge": "Must-See",
+    "title": "Top Places to Visit in Chefchaouen",
+    "subtitle": "Iconic blue alleyways, historic kasbahs, and scenic mountain viewpoints.",
+    "explore": "Explore place →",
+    "outa": {
+      "tag": "Main Square",
+      "title": "Place Outa el Hammam",
+      "desc": "The vibrant central square lined with outdoor cafés, dominated by the red-walled Kasbah and Grand Mosque."
+    },
+    "kasbah": {
+      "tag": "History & Museum",
+      "title": "Chefchaouen Kasbah",
+      "desc": "A 15th-century fortress featuring lush Andalusian gardens, an ethnographic museum, and panoramic tower views."
+    },
+    "akchour": {
+      "tag": "Nature Excursion",
+      "title": "Akchour Waterfalls & God's Bridge",
+      "desc": "Stunning river hikes, emerald pools, and natural rock arches in Talassemtane National Park."
+    },
+    "mosquee": {
+      "tag": "Panoramas",
+      "title": "Spanish Mosque (Bouzafar)",
+      "desc": "A hilltop mosque offering the ultimate sunset view over the entire blue medina and surrounding valley."
+    }
+  },
+  "itinerary": {
+    "badge": "Planning",
+    "title": "Suggested 3-Day Itinerary",
+    "subtitle": "A relaxed schedule to capture the best photography spots and mountain landscapes."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Day 1 — The Blue Medina",
+    "day1_m": "Morning — Place Outa el Hammam & the Kasbah",
+    "day1_md": "Start in the main square, visit the Kasbah and its gardens, then wander into the blue alleys while the light is soft and the streets are quiet.",
+    "day1_a": "Afternoon — Lost in the Blue Alleys",
+    "day1_ad": "Take your time in the medina’s lanes, stopping at small shops and cafés. Enjoy mint tea on the square and keep the camera ready for every corner.",
+    "day1_e": "Evening — Sunset at the Spanish Mosque",
+    "day1_ed": "Hike up to the Spanish Mosque for panoramic views over the blue rooftops at golden hour, then walk back down for dinner in the medina.",
+    "day2_tab": "Day 2 — Akchour & Flavors",
+    "day2_m": "Morning — Akchour Waterfalls",
+    "day2_md": "Take an early grand taxi to Akchour for a scenic river walk through Talassemtane National Park, with the Little Waterfall or the God’s Bridge trail if you have the energy.",
+    "day2_a": "Afternoon — Return & Local Cheese",
+    "day2_ad": "Head back to town in the afternoon and taste the region’s famous goat cheese, along with fresh bread and olives from a local vendor.",
+    "day2_e": "Evening — Rooftop Dinner",
+    "day2_ed": "Finish the day with a traditional dinner on a rooftop terrace overlooking the medina lights.",
+    "day3_tab": "Day 3 — Artisans & Ras El Maa",
+    "day3_m": "Morning — Ras El Maa Spring",
+    "day3_md": "Walk to the Ras El Maa spring at the edge of the medina, where locals gather, wash and relax by the water.",
+    "day3_a": "Afternoon — Weavers & Handmade Crafts",
+    "day3_ad": "Visit local weavers and craft shops to see woven blankets, wool goods and handmade products being made, and buy directly from the artisans.",
+    "day3_e": "Evening — Relaxed Departure",
+    "day3_ed": "Enjoy a last mint tea in the square before heading on to your next destination."
+  },
+  "stays": {
+    "badge": "Selection & Tips",
+    "title": "Where to stay in Chefchaouen? Our Favorites",
+    "subtitle": "From luxurious riads with spas to charming mountainside boutique hotels, here are our top picks for an unforgettable stay.",
+    "book": "Book →",
+    "card1": {
+      "badge": "★ Luxury Riad & Spa",
+      "name": "Lina Ryad & Spa",
+      "desc": "An exquisite luxury riad featuring an indoor pool, spa facilities, and elegant rooms overlooking the blue medina.",
+      "location": "Blue Medina"
+    },
+    "card2": {
+      "badge": "★ Mountain View Boutique",
+      "name": "Dar Jasmine Boutique Hotel",
+      "desc": "A stunning hillside boutique hotel with a pool, lush garden, and breathtaking panoramic views over Chefchaouen.",
+      "location": "Spanish Mosque Area"
+    },
+    "card3": {
+      "badge": "★ Andalusian Guesthouse",
+      "name": "Casa Perleta",
+      "desc": "A charming, intimate guesthouse blending traditional Andalusian style with warm hospitality and a wonderful terrace.",
+      "location": "Bab El Souk"
+    }
+  },
+  "booking_banner": {
+    "badge": "Over 200+ properties across Chefchaouen",
+    "title": "Explore all stays in Chefchaouen",
+    "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation on traditional dars, riads, and mountain guesthouses.",
+    "btn": "View all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
+  },
+  "eat": {
+    "badge": "Gastronomy",
+    "title": "Best Restaurants & Cafés",
+    "subtitle": "Authentic Northern Moroccan dishes, goat cheese, and rooftop views",
+    "ssour": {
+      "tag": "Traditional Moroccan",
+      "loc": "Medina Alleyway",
+      "title": "Bab Ssour",
+      "desc": "Cozy multi-story restaurant serving home-cooked Tagines, fresh salads, and local specialties."
+    },
+    "sofia": {
+      "tag": "Home Cooking",
+      "loc": "Near Outa el Hammam",
+      "title": "Restaurant Sofia",
+      "desc": "Family-run eatery known for heartwarming pastillas, tajines, and friendly hospitality."
+    },
+    "aladdin": {
+      "tag": "Outa Hammam Panorama",
+      "loc": "Main Square",
+      "title": "Restaurant Aladdin",
+      "desc": "Arabo-Andalusian palace offering panoramic Kasbah views from three rooftop terraces."
+    }
+  },
+  "tips": {
+    "title": "Practical Tips for Visiting Chefchaouen",
+    "shoes": {
+      "title": "Steep Alleyways & Shoes",
+      "desc": "Wear comfortable walking shoes with good grip — the cobblestone steps and blue streets can be steep and slippery."
+    },
+    "photo": {
+      "title": "Photography Etiquette",
+      "desc": "Always ask permission before taking close-up photos of locals, especially elders and children in the medina."
+    },
+    "cash": {
+      "title": "Cash & ATMs",
+      "desc": "Most small shops, cafés, and local Dars only accept cash (Moroccan Dirham MAD). ATMs are available near Place Outa el Hammam."
+    }
+  },
+  "daytrips": {
+    "badge": "Beyond the Blue Streets",
+    "title": "Best Day Trips from Chefchaouen",
+    "subtitle": "Discover waterfalls, national parks, and coastal mountain roads nearby.",
+    "akchour": {
+      "title": "Akchour Waterfalls & Bridge",
+      "desc": "Emerald pools, river hikes, and the natural rock arch of God's Bridge (45 min drive)."
+    },
+    "tetouan": {
+      "title": "Tetouan Medina",
+      "desc": "UNESCO-listed Andalusian medina with rich artisan heritage (1h30 drive)."
+    },
+    "ouedlaou": {
+      "title": "Mediterranean Coast (Oued Laou)",
+      "desc": "Pebble beaches and turquoise waters of the Mediterranean coast (1h15 drive)."
+    },
+    "tanger": {
+      "title": "Tangier - Gateway to Africa",
+      "desc": "Combine your journey with the legendary coastal city on the Strait of Gibraltar (2h15 drive)."
+    }
+  },
+  "faq": {
+    "badge": "Good to Know",
+    "title": "Chefchaouen Travel FAQ",
+    "q1": {
+      "question": "How many days should I spend in Chefchaouen?",
+      "answer": "2 to 3 days is ideal to wander the medina, catch the sunset at the Spanish Mosque, and take a day trip to the Akchour waterfalls."
+    },
+    "q2": {
+      "question": "Is Chefchaouen easy to reach by train or bus?",
+      "answer": "No, Chefchaouen has no train station. The easiest options are CTM buses, grand taxis, or private transfers from Tangier, Tetouan, or Fez."
+    },
+    "q3": {
+      "question": "Why is Chefchaouen painted blue?",
+      "answer": "Several theories exist: introduced by Jewish refugees in the 1930s symbolizing heaven, kept as a natural mosquito repellent, or maintained to keep homes cool and attract visitors."
+    }
+  },
   "chefchaouen_page": {
     "seo": {
-      "title": "Chefchaouen Travel Guide 2026 | Things to Do & Tips | MoroccoTripMap",
-      "description": "Plan your trip to Chefchaouen: top attractions, local food, and travel tips."
+      "title": "[EN] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Chefchaouen.",
+    "hero_subtitle": "[EN] Hero subtitle",
+    "info": {
+      "best_time_label": "[EN] Best time label",
+      "best_time_val": "[EN] Best time val",
+      "stay_label": "[EN] Stay label",
+      "stay_val": "[EN] Stay val",
+      "vibe_label": "[EN] Vibe label",
+      "vibe_val": "[EN] Vibe val",
+      "airport_label": "[EN] Airport label",
+      "airport_val": "[EN] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Chefchaouen",
-      "p1": "Explore Chefchaouen and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[EN] Title",
+      "p1": "[EN] P1",
+      "p2": "[EN] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Chefchaouen",
-      "subtitle": "Discover top points of interest in Chefchaouen."
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "outa": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "explore": "[EN] Explore",
+      "kasbah": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "akchour": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "mosquee": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[EN] Day1 tab",
+      "day2_tab": "[EN] Day2 tab",
+      "day3_tab": "[EN] Day3 tab",
+      "day1_m": "[EN] Day1 m",
+      "day1_md": "[EN] Day1 md",
+      "day1_a": "[EN] Day1 a",
+      "day1_ad": "[EN] Day1 ad",
+      "day1_e": "[EN] Day1 e",
+      "day1_ed": "[EN] Day1 ed",
+      "day2_m": "[EN] Day2 m",
+      "day2_md": "[EN] Day2 md",
+      "day2_a": "[EN] Day2 a",
+      "day2_ad": "[EN] Day2 ad",
+      "day2_e": "[EN] Day2 e",
+      "day2_ed": "[EN] Day2 ed",
+      "day3_m": "[EN] Day3 m",
+      "day3_md": "[EN] Day3 md",
+      "day3_a": "[EN] Day3 a",
+      "day3_ad": "[EN] Day3 ad",
+      "day3_e": "[EN] Day3 e",
+      "day3_ed": "[EN] Day3 ed"
+    },
+    "stays": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "card1": {
+        "badge": "[EN] Badge",
+        "name": "[EN] Name",
+        "desc": "[EN] Desc",
+        "location": "[EN] Location"
+      },
+      "book": "[EN] Book",
+      "card2": {
+        "badge": "[EN] Badge",
+        "name": "[EN] Name",
+        "desc": "[EN] Desc",
+        "location": "[EN] Location"
+      },
+      "card3": {
+        "badge": "[EN] Badge",
+        "name": "[EN] Name",
+        "desc": "[EN] Desc",
+        "location": "[EN] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "desc": "[EN] Desc",
+      "btn": "[EN] Btn",
+      "guarantee": "[EN] Guarantee"
+    },
+    "eat": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "ssour": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "sofia": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "aladdin": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "tips": {
+      "title": "[EN] Title",
+      "shoes": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "photo": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "cash": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "akchour": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "tetouan": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "ouedlaou": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "tanger": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "q1": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q2": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q3": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[EN] Destinations",
+    "categories": "[EN] Categories",
+    "cat_stays": "[EN] Cat stays",
+    "cat_gastronomy": "[EN] Cat gastronomy",
+    "cat_experiences": "[EN] Cat experiences",
+    "cat_museums": "[EN] Cat museums",
+    "cat_transport": "[EN] Cat transport",
+    "cat_itineraries": "[EN] Cat itineraries",
+    "cat_guides": "[EN] Cat guides",
+    "history": "[EN] History",
+    "blog": "[EN] Blog",
+    "contact": "[EN] Contact",
+    "cities": "[EN] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[EN] Language title"
+  },
+  "breadcrumb": {
+    "home": "[EN] Home",
+    "destinations": "[EN] Destinations"
+  },
+  "destinations": {
+    "chefchaouen": {
+      "name": "[EN] Name"
+    }
+  },
+  "footer": {
+    "about_text": "[EN] About text",
+    "destinations_title": "Destinations",
+    "link_marrakech": "[EN] Link marrakech",
+    "link_chefchaouen": "[EN] Link chefchaouen",
+    "link_all_destinations": "[EN] Link all destinations",
+    "categories_title": "Categories",
+    "link_stays": "Stays & Riads",
+    "link_restaurants": "Moroccan Restaurants",
+    "connect_title": "Connect With Us",
+    "youtube_text": "Subscribe to our YouTube channel for travel video guides:",
+    "copyright": "© 2026 MoroccoTripMap. All rights reserved.",
+    "link_culture": "Culture & Desert",
+    "link_transport": "Transport & Drivers",
+    "link_circuits": "Circuits & Itineraries",
+    "link_history": "History of Morocco",
+    "link_guides": "Travel Guides",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itineraries",
+    "col_imperial": "Imperial Cities & Culture",
+    "col_desert": "Desert & Deep South",
+    "col_practical": "Practical Guides & Stays",
+    "created_by": "Created by"
   }
 }

@@ -1,19 +1,420 @@
 {
+  "seo": {
+    "title": "بحيرة الداخلة الداخلة | MoroccoTripMap",
+    "description": "A 40 km turquoise lagoon between Sahara dunes and the Atlantic — the geographic and sporting heart of Dakhla.",
+    "og_title": "Dakhla Lagoon",
+    "og_description": "A 40 km turquoise lagoon between Sahara dunes and the Atlantic — the geographic and sporting heart of Dakhla."
+  },
+  "name": "بحيرة الداخلة",
+  "hero_subtitle": "بحيرة فيروزية بطول 40 كم بين كثبان الصحراء والأطلسي — القلب الجغرافي والرياضي للداخلة.",
+  "info": {
+    "best_time_label": "أفضل وقت",
+    "best_time_val": "الصباح وأواخر العصر",
+    "duration_label": "المدة المقترحة",
+    "duration_val": "نصف يوم إلى يوم كامل",
+    "entry_label": "الدخول",
+    "entry_val": "مجاني (الأنشطة إضافية)",
+    "area_label": "الموقع",
+    "area_val": "بحيرة شبه الجزيرة"
+  },
+  "overview": {
+    "title": "البحيرة التي تعرّف الداخلة",
+    "p1": "تمتد بحيرة الداخلة نحو أربعين كيلومتراً على شبه جزيرة رملية. محمية من أمواج المحيط المفتوح، يبقى ماؤها الضحل فيروزياً ومسطحاً بشكل ملحوظ — ولهذا يأتي العالم للكيتسرف والوينغ فويل.",
+    "p2": "حتى دون لوح، البحيرة هي المسرح الرئيسي: رحلات قارب ومزارع محار ونحام في الموسم وضوء ينتقل من الفضي إلى الأزرق العميق.",
+    "p3": "معظم المخيمات والمدارس على شاطئ البحيرة. المدينة على مسافة قصيرة؛ الكثيب الأبيض وجزيرة التنين خرجات كلاسيكية من البحيرة."
+  },
+  "gallery": {
+    "badge": "معرض الصور",
+    "title": "بحيرة الداخلة في صور",
+    "subtitle": "مشاهد من بحيرة الداخلة.",
+    "s1": {
+      "caption": "البحيرة عند الغسق"
+    },
+    "s2": {
+      "caption": "شاطئ البحيرة والمخيمات"
+    },
+    "s3": {
+      "caption": "ماء فيروزي مسطّح"
+    },
+    "s4": {
+      "caption": "ضوء متأخر على البحيرة"
+    },
+    "s5": {
+      "caption": "إطلالة نحو الكثبان"
+    }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Dakhla Lagoon through the day",
+    "subtitle": "متى تزور.",
+    "1": {
+      "tag": "الصباح",
+      "title": "بداية هادئة",
+      "desc": "ضوء أنعم وعدد أقل من الزوار.",
+      "duration": "الصباح"
+    },
+    "2": {
+      "tag": "الظهر",
+      "title": "ضوء ساطع",
+      "desc": "شمس قوية — احمِ البشرة والمعدات.",
+      "duration": "الظهر"
+    },
+    "3": {
+      "tag": "أواخر العصر",
+      "title": "أفضل الألوان",
+      "desc": "ضوء دافئ على الماء والرمال.",
+      "duration": "أواخر العصر"
+    }
+  },
+  "food": {
+    "title": "الطعام قرب بحيرة الداخلة",
+    "p1": "خطط للوجبات في المدينة أو مخيم البحيرة أو محطة تذوق.",
+    "li1": "مياه معبأة في كل خرجة.",
+    "li2": "سمك وأطباق بسيطة في المدينة.",
+    "li3": "وجبات المخيم إن أقمت على البحيرة.",
+    "li4": "تذوق محار عند فتح المزارع.",
+    "li5": "أكد الساعات قبل الذهاب.",
+    "p2": "النقد مفيد خارج الفنادق الكبيرة."
+  },
+  "tips": {
+    "title": "نصائح عملية لـ بحيرة الداخلة",
+    "1": {
+      "title": "الوصول",
+      "desc": "أكد النقل أو المد أو حجز المدرسة قبل مغادرة المدينة."
+    },
+    "2": {
+      "title": "الشمس والرياح",
+      "desc": "واقٍ عالٍ ونظارات شمسية وطبقة ضد الرياح التجارية."
+    },
+    "3": {
+      "title": "الاحترام",
+      "desc": "التزم بالمسارات المسموحة واحمل نفاياتك معك."
+    }
+  },
+  "gyg": {
+    "badge": "جولات وتجارب",
+    "title": "جولات مرتبطة ببحيرة الداخلة",
+    "subtitle": "خيارات إن فضّلت مشغّلاً محلياً.",
+    "t1": {
+      "tag": "بحيرة",
+      "title": "نزهة قارب في البحيرة",
+      "desc": "إطلالات واقتراب من الجزر مع قبطان."
+    },
+    "t2": {
+      "tag": "طبيعة",
+      "title": "حلقة الكثيب الأبيض",
+      "desc": "سيارة رباعية أو معالم البحيرة مجتمعة."
+    },
+    "t3": {
+      "tag": "رياضة",
+      "title": "درس كيتسرف",
+      "desc": "جلسة مدرسة على ماء البحيرة المسطّح."
+    },
+    "check": "تحقق من التوفر على GetYourGuide ←",
+    "disclosure": "بعض هذه الروابط روابط عمولة. إن حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك."
+  },
+  "nearby": {
+    "badge": "واصل الاستكشاف",
+    "title": "المزيد من الأماكن في الداخلة",
+    "back": "← العودة إلى دليل الداخلة"
+  },
+  "blog": {
+    "badge": "من المدونة",
+    "title": "مقالات ذات صلة",
+    "all": "كل المقالات ←",
+    "read": "اقرأ المقال ←",
+    "a1": {
+      "tag": "تخطيط",
+      "title": "أول مرة في الداخلة",
+      "desc": "البحيرة والرياح ومدة الإقامة."
+    },
+    "a2": {
+      "tag": "دليل",
+      "title": "الكثيب الأبيض وجزيرة التنين",
+      "desc": "كيف تجمع المعلمين."
+    },
+    "a3": {
+      "tag": "رياضة",
+      "title": "الكيتسرف في الداخلة",
+      "desc": "المواقع والمواسم والمدارس."
+    }
+  },
+  "faq": {
+    "badge": "من الجيد معرفته",
+    "title": "أسئلة شائعة حول بحيرة الداخلة",
+    "q1": {
+      "question": "هل يستمتع غير ممارسي الكيتسرف بالبحيرة؟",
+      "answer": "نعم — رحلات القارب والإطلالات والمحار والمشي على الشاطئ دون لوح."
+    },
+    "q2": {
+      "question": "ما طول البحيرة؟",
+      "answer": "نحو 40 كم على طول شبه الجزيرة مع عدة نقاط وصول ومخيمات."
+    },
+    "q3": {
+      "question": "هل السباحة آمنة؟",
+      "answer": "المياه الضحلة شائعة، لكن اتبع نصيحة السكان حول التيارات والقوارب ومناطق الكيتسرف."
+    },
+    "q4": {
+      "question": "هل أحتاج سيارة؟",
+      "answer": "المخيمات غالباً تنظّم النقل. تاكسي المدينة وسيارات الوكالة الرباعية تغطي الخرجات."
+    },
+    "q5": {
+      "question": "أفضل ضوء للصور؟",
+      "answer": "الصباح الباكر وأواخر العصر للون على الماء."
+    }
+  },
+  "destinations": {
+    "dakhla": {
+      "name": "الداخلة"
+    }
+  },
   "lagune_page": {
     "seo": {
-      "title": "دليل سفر Lagune 2026 | أهم المعالم ونقاط اهتمام | MoroccoTripMap",
-      "description": "Plan your trip to Lagune: top attractions, local food, and travel tips."
+      "title": "[AR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Lagune.",
+    "name": "[AR] Name",
+    "hero_subtitle": "[AR] Hero subtitle",
+    "info": {
+      "best_time_label": "[AR] Best time label",
+      "best_time_val": "[AR] Best time val",
+      "duration_label": "[AR] Duration label",
+      "duration_val": "[AR] Duration val",
+      "entry_label": "[AR] Entry label",
+      "entry_val": "[AR] Entry val",
+      "area_label": "[AR] Area label",
+      "area_val": "[AR] Area val"
+    },
     "overview": {
-      "title": "Welcome to Lagune",
-      "p1": "Explore Lagune and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "p2": "[AR] P2",
+      "p3": "[AR] P3"
     },
-    "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Lagune",
-      "subtitle": "Discover top points of interest in Lagune."
+    "gallery": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "s1": {
+        "caption": "[AR] Caption"
+      },
+      "s2": {
+        "caption": "[AR] Caption"
+      },
+      "s3": {
+        "caption": "[AR] Caption"
+      },
+      "s4": {
+        "caption": "[AR] Caption"
+      },
+      "s5": {
+        "caption": "[AR] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "1": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc",
+        "duration": "[AR] Duration"
+      },
+      "2": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc",
+        "duration": "[AR] Duration"
+      },
+      "3": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc",
+        "duration": "[AR] Duration"
+      }
+    },
+    "food": {
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "li1": "[AR] Li1",
+      "li2": "[AR] Li2",
+      "li3": "[AR] Li3",
+      "li4": "[AR] Li4",
+      "li5": "[AR] Li5",
+      "p2": "[AR] P2"
+    },
+    "tips": {
+      "title": "[AR] Title",
+      "1": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "2": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "3": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "t1": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "check": "[AR] Check",
+      "t2": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "t3": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "disclosure": "[AR] Disclosure"
+    },
+    "nearby": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "back": "[AR] Back"
+    },
+    "blog": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "all": "[AR] All",
+      "a1": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "read": "[AR] Read",
+      "a2": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "a3": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "q1": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q2": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q3": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q4": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q5": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[AR] Destinations",
+    "categories": "[AR] Categories",
+    "cat_stays": "[AR] Cat stays",
+    "cat_gastronomy": "[AR] Cat gastronomy",
+    "cat_experiences": "[AR] Cat experiences",
+    "cat_museums": "[AR] Cat museums",
+    "cat_transport": "[AR] Cat transport",
+    "cat_itineraries": "[AR] Cat itineraries",
+    "cat_guides": "[AR] Cat guides",
+    "history": "[AR] History",
+    "blog": "[AR] Blog",
+    "contact": "[AR] Contact",
+    "cities": "[AR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[AR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[AR] Home",
+    "destinations": "[AR] Destinations"
+  },
+  "dakhla_page": {
+    "places": {
+      "dune_blanche": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "explore": "[AR] Explore",
+      "ile_dragon": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "kitesurf": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "foum_el_bouir": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "huitres": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "port": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "sources_asnaa": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    }
+  },
+  "footer": {
+    "about_text": "[AR] About text",
+    "destinations_title": "الوجهات",
+    "link_dakhla": "[AR] Link dakhla",
+    "link_all_destinations": "[AR] Link all destinations",
+    "categories_title": "الفئات",
+    "link_stays": "رياض وفنادق أصيلة",
+    "link_restaurants": "مطاعم مغربية",
+    "connect_title": "تواصل معنا",
+    "youtube_text": "تابع قناتنا على يوتيوب لمشاهدة أدلة السفر بالفيديو:",
+    "copyright": "© 2026 MoroccoTripMap. جميع الحقوق محفوظة.",
+    "link_culture": "تجارب الصحراء والثقافة",
+    "link_transport": "المواصلات والسائقين الخاصين",
+    "link_circuits": "الرحلات والمسارات",
+    "link_history": "تاريخ المغرب",
+    "link_guides": "أدلة السفر",
+    "link_blog": "المدونة",
+    "link_contact": "اتصل بنا",
+    "link_itineraries": "الرحلات والمسارات",
+    "col_imperial": "المدن الإمبراطورية والثقافة",
+    "col_desert": "الصحراء والجنوب الكبير",
+    "col_practical": "أدلة عملية وإقامة",
+    "created_by": "تم الإنشاء بواسطة"
   }
 }

@@ -1,19 +1,430 @@
 {
+  "seo": {
+    "title": "دليل السفر إلى أصيلة 2026 | المدينة الفنية، الأسوار وشاطئ الرميلات | MoroccoTripMap",
+    "description": "خطط لزيارتك إلى أصيلة: المدينة القديمة ذات الجداريات الفنية، الأسوار البرتغالية، برج القمرة، شاطئ الرميلات (شاطئ الجنة)، قصر الريسوني ومطاعم السمك على الأطلسي.",
+    "keywords": "أصيلة, دليل أصيلة, مدينة أصيلة الفنية, الأسوار البرتغالية, شاطئ الرميلات, قصر الريسوني, الساحل الأطلسي المغرب"
+  },
+  "name": "أصيلة",
+  "hero_subtitle": "حيث تلتقي الأسوار البيضاء بالجداريات الفنية الملونة — أسوار برتغالية، غروب الشمس على الأطلسي وشواطئ شاسعة.",
+  "info": {
+    "best_time_label": "أفضل وقت",
+    "best_time_val": "مايو – أكتوبر للشواطئ ومهرجان الفنون",
+    "stay_label": "الإقامة المثالية",
+    "stay_val": "1 – 3 أيام",
+    "vibe_label": "الأجواء",
+    "vibe_val": "فنية، نسيم بحري، ومدينة أطلسية هادئة",
+    "airport_label": "الوصول",
+    "airport_val": "45 دقيقة من مطار طنجة (TNG) · القطار والطريق السريع"
+  },
+  "overview": {
+    "title": "مرحباً بك في أصيلة — نسيم الأطلسي، جدران بيضاء وفن الشارع",
+    "p1": "تقع أصيلة على الساحل الأطلسي لشمال المغرب، وهي واحة من الهدوء الملاذ الفني الشاهير بمدينتها القديمة الناصعة البياض، والجداريات الملونة بريشة فنانين عالميين، وأسوارها البرتغالية المطلة على المحيط.",
+    "p2": "سواء كنت تزورها لحضور الموسم الثقافي السنوي، أو للتجول في أزقتها الهادئة المزدانة باللمسات الزرقاء، أو لتناول الأسماك المشوية الطازجة قرب الميناء، فإن أصيلة تضمن لك استرخاءً ساحلياً فريداً."
+  },
+  "places": {
+    "badge": "أبرز المعالم",
+    "title": "أماكن لا تفوت زيارتها في أصيلة",
+    "subtitle": "أزقة فنية، حصون تاريخية وشواطئ محيطية ساحرة.",
+    "explore": "استكشف المكان ←",
+    "art_medina": {
+      "tag": "فن وتراث",
+      "title": "المدينة الفنية القديمة",
+      "desc": "أزقة جيرية بيضاء مزينة بجداريات لوحات مفتوحة وشرفات من الحديد المشغول."
+    },
+    "ramparts_krikia": {
+      "tag": "نقطة إطلالة",
+      "title": "الأسوار وبرج الكريكية",
+      "desc": "حصون بحرية يعود تاريخها للقرن 15 تضم أشهر نقطة لمشاهدة غروب الشمس على الأطلسي."
+    },
+    "paradise_beach": {
+      "tag": "شاطئ",
+      "title": "شاطئ الرميلات (شاطئ الجنة)",
+      "desc": "شريط شاسع من الرمال الذهبية تحيط به الجروف، يقع على بعد 30 دقيقة جنوب المدينة."
+    },
+    "raissouni_palace": {
+      "tag": "تاريخ",
+      "title": "قصر الريسوني",
+      "desc": "قصر مغربي أندلسي بني في بداية القرن العشرين ويستضيف ورشات وفعاليات ثقافية."
+    },
+    "borj_kamra": {
+      "tag": "معلم تاريخي",
+      "title": "برج القمرة",
+      "desc": "برج برتغالي مربع الشرفات ينتصب شامخاً قرب البوابة الرئيسية للمدينة القديمة."
+    },
+    "corniche_harbour": {
+      "tag": "واجهة بحرية",
+      "title": "الكورنيش والميناء",
+      "desc": "ممشى مسائي حيوي محاط بمطاعم الأسماك وإطلالات على قوارب الصيد الزرقاء."
+    }
+  },
+  "stays": {
+    "badge": "ترشيحات ونصائح",
+    "title": "أين تقيم في أصيلة؟ خياراتنا المفضلة",
+    "subtitle": "من رياضات المواجهة للبحر إلى الدور البيضاء والإقامات الساحلية المريحة، إليك أفضل الخيارات.",
+    "book": "احجز ←",
+    "card1": {
+      "badge": "★ خيار كلاسيكي",
+      "name": "Hotel Maison Garcia",
+      "desc": "فندق عائلي شهير يقع قبالة الأسوار، معروف بمطعمه الإسباني المتميز للمأكولات البحرية.",
+      "location": "الواجهة البحرية / المدينة"
+    },
+    "card2": {
+      "badge": "★ رياض بالمدينة",
+      "name": "Dar Oasis Medina",
+      "desc": "دار ضيافة ساحرة في قلب المدينة الفنية، تتميز بسطح بانورامي يلفه نسيم المحيط.",
+      "location": "المدينة القديمة"
+    },
+    "card3": {
+      "badge": "★ راحة حديثة",
+      "name": "Hotel Zelis",
+      "desc": "فندق حديث ومريح يقع قرب وسط المدينة والشارع الرئيسي، يضم مسبحاً ويوفر وجبة إفطار.",
+      "location": "وسط المدينة"
+    },
+    "card4": {
+      "badge": "★ منتجع شاطئي",
+      "name": "Asilah Marina Golf Resort",
+      "desc": "شقق مجهزة في مجمع آمن على البحر مع مسابح وحدائق، مثالية للعائلات.",
+      "location": "الشاطئ الشمالي"
+    }
+  },
+  "booking_banner": {
+    "badge": "أكثر من 80+ عقار",
+    "title": "استكشف جميع أماكن الإقامة في أصيلة",
+    "desc": "قارن الأسعار في الوقت الفعلي، واقرأ تقييمات النزلاء الموثوقة واستمتع بالإلغاء المجاني في أغلب الفنادق.",
+    "btn": "عرض جميع الإقامات على Booking.com",
+    "guarantee": "✓ ضمان أفضل الأسعار وحجز آمن"
+  },
+  "eat": {
+    "badge": "المطاعم",
+    "title": "أين تجد أطيب الأكل في أصيلة",
+    "subtitle": "أسماك مقلية طازجة، مطاعم بنكهة إسبانية وجلسات شاي.",
+    "pepe": {
+      "tag": "مأكولات بحرية",
+      "loc": "باب المدينة",
+      "title": "كازا بيبيه (Casa Pepe)",
+      "desc": "مطعم شهير بالأسماك المشوية، الباييلا والأطباق المغربية الإسبانية."
+    },
+    "port": {
+      "tag": "محلي",
+      "loc": "الميناء",
+      "title": "أكشاك السمك المقلي بالميناء",
+      "desc": "طاولات بسيطة في الهواء الطلق تقدم صيد اليوم مع السلطة المغربية والهريسة."
+    },
+    "ramparts": {
+      "tag": "مقهى",
+      "loc": "الأسوار القديمة",
+      "title": "مقهى مقهى الأسوار",
+      "desc": "شاي بالنعناع، عصائر طازجة وحلويات مغربية مع إطلالة بانورامية على المحيط."
+    }
+  },
+  "tips": {
+    "title": "نصائح عملية لزيارة أصيلة",
+    "transport": {
+      "title": "التنقل",
+      "desc": "المدينة القديمة مخصصة للراجلين بالكامل. يمكنك استئجار سيارة أجرة صغيرة أو عربة خيل للذهاب لشاطئ الرميلات."
+    },
+    "bargain": {
+      "title": "الفن والموسم",
+      "desc": "يقام المهرجان الثقافي الدولي في شهري يوليو/أغسطس حيث يتم تجديد الجداريات الفنية للمدينة."
+    },
+    "water": {
+      "title": "الأجواء",
+      "desc": "أصيلة هادئة جداً مقارنة بطنجة. مثالية للاسترخاء، التقاط الصور ومتابعة غروب الشمس."
+    }
+  },
+  "daytrips": {
+    "badge": "رحلات قريبة",
+    "title": "أفضل الرحلات اليومية من أصيلة",
+    "subtitle": "استكشف الساحل الأطلسي للشمال والمدن الثقافية القريبة.",
+    "tangier": {
+      "title": "طنجة (45 دقيقة)",
+      "desc": "استكشف القصبة، رأس سبارطيل، مغارة هرقل والمقاهي التاريخية."
+    },
+    "larache": {
+      "title": "العرائش ولكمسوس (35 دقيقة)",
+      "desc": "استكشف الآثار الفينيقية الرومانية في ليكسوس وساحة التحرير بالعرائش."
+    },
+    "chefchaouen": {
+      "title": "شفشاون (ساعتان)",
+      "desc": "رحلة جبلية رائعة بين جبال الريف لزيارة الجوهرة الزرقاء."
+    }
+  },
+  "faq": {
+    "badge": "معلومات مفيدة",
+    "title": "الأسئلة الشائعة حول زيارة أصيلة",
+    "q1": {
+      "question": "كم يوماً أحتاج لزيارة أصيلة؟",
+      "answer": "يوم واحد أو يومان كافيان لاستكشاف المدينة القديمة، تناول السمك الطازج، مشاهدة الغروب وقضاء وقت في شاطئ الرميلات."
+    },
+    "q2": {
+      "question": "متى يقام مهرجان أصيلة الفني؟",
+      "answer": "يقام موسم أصيلة الثقافي الدولي سنوياً في منتصف الصيف (غالباً يوليو أو أغسطس) ويستقطب فنانين عالميين لتجديد الجداريات."
+    },
+    "q3": {
+      "question": "كيف أصل من طنجة إلى أصيلة؟",
+      "answer": "تقع أصيلة على بعد 45 كم جنوب طنجة. يمكنك استقلال قطار ONCF المباشر (30 دقيقة)، سيارة أجرة كبيرة أو القيادة عبر الطريق السريع A1."
+    },
+    "q4": {
+      "question": "هل تعتبر أصيلة وجهة جيدة لعشاق الشواطئ؟",
+      "answer": "نعم، تضم أصيلة شواطئ رملية واسعة شمالاً وجنوباً، وتعد الرميلات (شاطئ الجنة) واحدة من أجمل الشواطئ الطبيعية في الشمال."
+    }
+  },
+  "itinerary": {
+    "badge": "التخطيط",
+    "title": "برنامج مقترح لمدة يومين في أصيلة",
+    "subtitle": "جولة فنية، غروب الشمس على الأسوار واسترخاء شاطئي."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "اليوم 1 — جداريات الفن وغروب الأسوار",
+    "day1_m": "صباحاً — الجداريات وأزقة المدينة",
+    "day1_md": "ادخل عبر باب القصبة، التقط صور الجداريات واستمتع بهدوء الأزقة البيضاء.",
+    "day1_a": "بعد الظهر — القصر والمعالم",
+    "day1_ad": "قم بزيارة قصر الريسوني (في حال فتحه) وتأمل برج القمرة البرتغالي.",
+    "day1_e": "مساءً — غروب الشمس في برج الكريكية",
+    "day1_ed": "توجه إلى برج الكريكية لمشاهدة غروب الشمس الأطلسي ثم تناول العشاء بالميناء.",
+    "day2_tab": "اليوم 2 — شاطئ الرميلات والسمك المقلي",
+    "day2_m": "صباحاً — رحلة إلى شاطئ الرميلات",
+    "day2_md": "استقل سيارة أجرة أو عربة خيل جنوباً نحو شاطئ الرميلات لصباح شاطئي ممتع.",
+    "day2_a": "بعد الظهر — استرخاء الشاطئ وركوب الأمواج",
+    "day2_ad": "استمتع بالشاي في الأكواخ الشاطئية الموسمية أو تنزه بين الجروف الذهبية.",
+    "day2_e": "مساءً — جولة الكورنيش",
+    "day2_ed": "العودة إلى المدينة لجولة مسائية ختامية على كورنيش البحر الحيوي."
+  },
   "asilah_page": {
     "seo": {
-      "title": "دليل سفر Asilah 2026 | أهم المعالم ونقاط اهتمام | MoroccoTripMap",
-      "description": "Plan your trip to Asilah: top attractions, local food, and travel tips."
+      "title": "[AR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Asilah.",
+    "name": "[AR] Name",
+    "hero_subtitle": "[AR] Hero subtitle",
+    "info": {
+      "best_time_label": "[AR] Best time label",
+      "best_time_val": "[AR] Best time val",
+      "stay_label": "[AR] Stay label",
+      "stay_val": "[AR] Stay val",
+      "vibe_label": "[AR] Vibe label",
+      "vibe_val": "[AR] Vibe val",
+      "airport_label": "[AR] Airport label",
+      "airport_val": "[AR] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Asilah",
-      "p1": "Explore Asilah and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "p2": "[AR] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Asilah",
-      "subtitle": "Discover top points of interest in Asilah."
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "art_medina": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "explore": "[AR] Explore",
+      "ramparts_krikia": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "paradise_beach": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "raissouni_palace": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "borj_kamra": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "corniche_harbour": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[AR] Day1 tab",
+      "day2_tab": "[AR] Day2 tab",
+      "day1_m": "[AR] Day1 m",
+      "day1_md": "[AR] Day1 md",
+      "day1_a": "[AR] Day1 a",
+      "day1_ad": "[AR] Day1 ad",
+      "day1_e": "[AR] Day1 e",
+      "day1_ed": "[AR] Day1 ed",
+      "day2_m": "[AR] Day2 m",
+      "day2_md": "[AR] Day2 md",
+      "day2_a": "[AR] Day2 a",
+      "day2_ad": "[AR] Day2 ad",
+      "day2_e": "[AR] Day2 e",
+      "day2_ed": "[AR] Day2 ed"
+    },
+    "stays": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "card1": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      },
+      "book": "[AR] Book",
+      "card2": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      },
+      "card3": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      },
+      "card4": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "desc": "[AR] Desc",
+      "btn": "[AR] Btn",
+      "guarantee": "[AR] Guarantee"
+    },
+    "eat": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "pepe": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "port": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "ramparts": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[AR] Title",
+      "transport": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bargain": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "water": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "tangier": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "larache": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "chefchaouen": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "q1": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q2": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q3": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q4": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[AR] Destinations",
+    "categories": "[AR] Categories",
+    "cat_stays": "[AR] Cat stays",
+    "cat_gastronomy": "[AR] Cat gastronomy",
+    "cat_experiences": "[AR] Cat experiences",
+    "cat_museums": "[AR] Cat museums",
+    "cat_transport": "[AR] Cat transport",
+    "cat_itineraries": "[AR] Cat itineraries",
+    "cat_guides": "[AR] Cat guides",
+    "history": "[AR] History",
+    "blog": "[AR] Blog",
+    "contact": "[AR] Contact",
+    "cities": "[AR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[AR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[AR] Home",
+    "destinations": "[AR] Destinations"
+  },
+  "footer": {
+    "about_text": "[AR] About text",
+    "destinations_title": "الوجهات",
+    "link_asilah": "[AR] Link asilah",
+    "link_all_destinations": "[AR] Link all destinations",
+    "categories_title": "الفئات",
+    "link_stays": "رياض وفنادق أصيلة",
+    "link_restaurants": "مطاعم مغربية",
+    "connect_title": "تواصل معنا",
+    "youtube_text": "تابع قناتنا على يوتيوب لمشاهدة أدلة السفر بالفيديو:",
+    "copyright": "© 2026 MoroccoTripMap. جميع الحقوق محفوظة.",
+    "link_culture": "تجارب الصحراء والثقافة",
+    "link_transport": "المواصلات والسائقين الخاصين",
+    "link_circuits": "الرحلات والمسارات",
+    "link_history": "تاريخ المغرب",
+    "link_guides": "أدلة السفر",
+    "link_blog": "المدونة",
+    "link_contact": "اتصل بنا",
+    "link_itineraries": "الرحلات والمسارات",
+    "col_imperial": "المدن الإمبراطورية والثقافة",
+    "col_desert": "الصحراء والجنوب الكبير",
+    "col_practical": "أدلة عملية وإقامة",
+    "created_by": "تم الإنشاء بواسطة"
   }
 }

@@ -1,19 +1,579 @@
 {
+  "seo": {
+    "title": "Guide de Voyage Tétouan | Médina Blanche, Rif & Méditerranée | MoroccoTripMap",
+    "description": "Planifiez votre voyage à Tétouan : médina UNESCO, Place Hassan II, kasbah, musées, plage de Martil et itinéraire clair.",
+    "keywords": "guide voyage tétouan, choses à faire tétouan, médina tétouan, kasbah tétouan, musées, martil, artisanat, rif, hôtels tétouan, excursions tétouan"
+  },
+  "name": "Tétouan",
+  "hero_subtitle": "Médina blanche d'inspiration andalouse sous le Rif — artisanat, musées et la Méditerranée toute proche.",
+  "info": {
+    "best_time": "Avr – Juin & Sep – Nov",
+    "duration": "2 – 3 jours",
+    "vibe": "Andalouse & Rif",
+    "access": "TTU Tétouan · TNG Tanger",
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Avr – Juin & Sep – Nov",
+    "stay_label": "Séjour idéal",
+    "stay_val": "2 – 3 Jours",
+    "vibe_label": "Ambiance",
+    "vibe_val": "Andalouse & Rif",
+    "airport_label": "Aéroport proche",
+    "airport_val": "TTU / TNG",
+    "duration_label": "Durée suggérée",
+    "entry_label": "Entrée",
+    "area_label": "Localisation"
+  },
+  "overview": {
+    "title": "Tétouan : Médina blanche, Place Hassan II et route de la mer",
+    "p1": "Tétouan est la cité blanche de mémoire andalouse : portes monumentales, vastes greniers et une médina plus aisée à parcourir à pied qu'à Fès. La Place Hassan II plante le décor ; la kasbah témoigne de l'envergure de l'ancienne place forte. C'est également la base idéale pour rayonner vers Martil et Chefchaouen sans subir la cohue des excursions d'une journée depuis des villes plus éloignées.",
+    "p2": "Deux jours complets suffisent pour couvrir le cœur impérial et la médina ; une troisième journée s'accorde parfaitement avec la station balnéaire de Martil ou les montagnes du Rif. Les hébergements se concentrent près de la médina et de la Ville Nouvelle — pratique si vous recherchez à la fois l'histoire et des soirées calmes."
+  },
+  "places": {
+    "badge": "À voir absolument",
+    "title": "Lieux incontournables à Tétouan",
+    "subtitle": "Médina, place, kasbah, musées et étapes qui définissent le nord du pays.",
+    "explore": "Explorer →",
+    "medina": {
+      "tag": "UNESCO",
+      "title": "Médina de Tétouan",
+      "desc": "Rues blanches andalouses, artisanat et vie quotidienne."
+    },
+    "hassan": {
+      "tag": "Place",
+      "title": "Place Hassan II",
+      "desc": "Le cœur ouvert entre médina et ville nouvelle."
+    },
+    "kasbah": {
+      "tag": "Forteresse",
+      "title": "Kasbah",
+      "desc": "Hauteurs, remparts et panoramas sur les toits blancs."
+    },
+    "arch": {
+      "tag": "Musée",
+      "title": "Musée Archéologique",
+      "desc": "Découvertes romaines et locales dans un musée intimiste et clair."
+    },
+    "art": {
+      "tag": "Musée",
+      "title": "Musée d'Art Moderne",
+      "desc": "Œuvres marocaines contemporaines dans un cadre apaisé."
+    },
+    "palace": {
+      "tag": "Monument",
+      "title": "Palais Royal",
+      "desc": "Façade et parvis cérémoniel — extérieur uniquement."
+    },
+    "mellah": {
+      "tag": "Quartier",
+      "title": "Mellah",
+      "desc": "Rues de l'ancien quartier juif au tissu plus calme."
+    },
+    "martil": {
+      "tag": "Plage",
+      "title": "Martil",
+      "desc": "Station balnéaire méditerranéenne à courte distance."
+    },
+    "artisan": {
+      "tag": "Artisanat",
+      "title": "Quartier des Artisans",
+      "desc": "Ateliers de cuir, textiles et savoir-faire traditionnels."
+    }
+  },
+  "directory": {
+    "badge": "Répertoire & Base de données",
+    "title": "Trouvez votre séjour idéal à Tétouan",
+    "subtitle": "Utilisez les filtres ci-dessous pour trier instantanément les meilleurs hébergements selon vos critères.",
+    "filter_type_label": "Type",
+    "type_label": "Type de séjour",
+    "type_all": "Tous",
+    "type_hotel": "Hôtel",
+    "type_riad": "Riad",
+    "type_guesthouse": "Maison d'hôtes",
+    "filter_location_label": "Quartier / Zone :",
+    "district_label": "Zone",
+    "location_all": "Toutes les zones",
+    "location_town": "Médina",
+    "location_outside": "Ville Nouvelle",
+    "location_outskirts": "Près des remparts / vues",
+    "counter": "28 hébergements répertoriés",
+    "no_results": "Aucun hébergement ne correspond à vos filtres.",
+    "check_availability": "Vérifier la disponibilité →",
+    "stays": "hébergements",
+    "all_types": "Tous",
+    "all_areas": "Toutes les zones"
+  },
+  "eat": {
+    "badge": "Où manger",
+    "title": "Où manger à Tétouan",
+    "subtitle": "Terrasses de places, grillades de médina et tables fiables en Ville Nouvelle.",
+    "placehedim": {
+      "tag": "Place",
+      "loc": "Place",
+      "title": "Cafés de la Place Hassan II",
+      "desc": "Thé à la menthe et repas simples avec vue sur la Place Hassan II — idéal à l'heure dorée lorsque la porte s'illumine."
+    },
+    "medina_grill": {
+      "tag": "Local",
+      "loc": "Médina",
+      "title": "Grillades de médina & échoppes d'olives",
+      "desc": "Brochettes, pain et olives prisés des locaux. Suivez les tables fréquentées plutôt que les panneaux touristiques vides."
+    },
+    "riad_restaurant": {
+      "tag": "Riad",
+      "loc": "Médina",
+      "title": "Restaurants de cour de riad",
+      "desc": "Menus fixes dans des demeures restaurées à quelques minutes de la place — réservez pour un dîner au calme."
+    },
+    "ville_nouvelle": {
+      "tag": "Moderne",
+      "loc": "Ville Nouvelle",
+      "title": "Cafés & brasseries de la Ville Nouvelle",
+      "desc": "Café, viennoiseries et assises confortables après une journée de marche du côté de la gare."
+    },
+    "rooftop": {
+      "tag": "Vue",
+      "loc": "Remparts",
+      "title": "Panoramas en terrasse (Rooftops)",
+      "desc": "Quelques toits-terrasses près des remparts pour admirer le coucher de soleil sur la cité impériale — demandez conseil à votre riad."
+    },
+    "local_tagine": {
+      "tag": "Classique",
+      "loc": "Centre",
+      "title": "Adresses de tajines & couscous",
+      "desc": "Plats mijotés traditionnels. Commandez le plat du jour plutôt qu'un menu touristique figé."
+    }
+  },
+  "tips": {
+    "title": "Conseils pratiques pour visiter Tétouan",
+    "transport": {
+      "title": "Se déplacer sans perdre de temps",
+      "desc": "La médina et la Place Hassan II se visitent à pied. Utilisez les petits taxis pour aller à Martil ou sur les hauteurs de la kasbah. Négociez le tarif avant de monter ou exigez le compteur."
+    },
+    "bargain": {
+      "title": "Achats et attentes",
+      "desc": "Les souks sont plus calmes qu'à Fès. Le marchandage poli est d'usage pour l'artisanat. Les billets de musée et les sites officiels ont des prix fixes."
+    },
+    "water": {
+      "title": "Chaleur, eau et timing",
+      "desc": "Les après-midi d'été sont chauds dans les ruelles. Privilégiez la médina et la kasbah le matin, emportez de l'eau et réservez Martil ou les musées pour plus tard."
+    }
+  },
+  "daytrips": {
+    "badge": "Excursions",
+    "title": "Meilleures excursions d'un jour depuis Tétouan",
+    "subtitle": "Des escapades faciles à caser confortablement dans une seule journée.",
+    "volubilis_combo": {
+      "title": "Excursion à Chefchaouen",
+      "desc": "La ville bleue dans le Rif — une journée complète classique depuis Tétouan en grand taxi ou via une visite organisée."
+    },
+    "fes": {
+      "title": "Tanger",
+      "desc": "À environ une heure de route — médina, cafés et le Détroit pour une journée côtière plus animée."
+    },
+    "rabat": {
+      "title": "Frontière de Ceuta / Fnideq",
+      "desc": "Ambiance frontalière et shopping au nord de la ville — uniquement si vos formalités et votre timing s'y prêtent."
+    },
+    "azrou": {
+      "title": "Martil & la côte",
+      "desc": "Détente sur la plage méditerranéenne à un court trajet en taxi — idéal en fin d'après-midi après la médina."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ Voyage Tétouan",
+    "q1": {
+      "question": "Combien de jours passer à Tétouan ?",
+      "answer": "Deux jours complets permettent de voir les principaux sites sereinement. Trois ou quatre jours offrent un rythme détendu ainsi qu'une excursion vers Chefchaouen ou Tanger."
+    },
+    "q2": {
+      "question": "Tétouan est-elle sûre pour les touristes ?",
+      "answer": "Oui. Comme dans toute grande ville, appliquez les précautions d'usage. Les zones touristiques, la plage et le centre sont très fréquentés et sûrs."
+    },
+    "q3": {
+      "question": "Quelle monnaie utilise-t-on et peut-on payer par carte ?",
+      "answer": "Le Maroc utilise le dirham (MAD). Les cartes sont largement acceptées dans les hôtels et restaurants ; gardez un peu de monnaie pour les taxis, marchés et petits commerces."
+    },
+    "q4": {
+      "question": "Comment aller à Tétouan depuis Tanger ou l'aéroport ?",
+      "answer": "Les grands taxis et transferts privés relient Tanger à Tétouan en environ une heure. Tétouan dispose également de l'aéroport Sania Ramel pour les vols régionaux."
+    }
+  },
+  "itinerary": {
+    "badge": "Planification",
+    "title": "Itinéraire suggéré de 3 jours",
+    "subtitle": "Un rythme détendu pour découvrir l'essentiel sans se presser."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Jour 1 — Médina & place",
+    "day1_m": "Matin — Place Hassan II & lisière de la médina",
+    "day1_md": "Commencez sur la Place Hassan II sous une lumière douce, puis pénétrez dans les ruelles blanches de la médina pour découvrir l'artisanat et la vie locale.",
+    "day1_a": "Après-midi — Les hauteurs de la kasbah",
+    "day1_ad": "Montez vers les remparts de la kasbah pour admirer la vue sur les toits, puis redressez-vous par des rues résidentielles plus calmes.",
+    "day1_e": "Soir — Dîner au centre",
+    "day1_ed": "Dînez près de la place ou dans la ville nouvelle — les soirées à Tétouan sont plus paisibles qu'à Tanger.",
+    "day2_tab": "Jour 2 — Musées & Mellah",
+    "day2_m": "Matin — Musée Archéologique",
+    "day2_md": "Visitez le Musée Archéologique pour ses pièces romaines, puis dirigez-vous vers la façade du Palais Royal (extérieur).",
+    "day2_a": "Après-midi — Musée d'Art Moderne & Mellah",
+    "day2_ad": "Découvrez le Musée d'Art Moderne, puis parcourez le tissu plus calme du Mellah avant les pics de chaleur.",
+    "day2_e": "Soir — Nuit urbaine douce",
+    "day2_ed": "Un dîner tranquille au centre ; couchez-vous tôt si vous partez pour Martil le lendemain.",
+    "day3_tab": "Jour 3 — Martil ou le Rif",
+    "day3_m": "Matin — Quartier des artisans ou quartier libre",
+    "day3_md": "Retournez dans votre coin favori de la médina ou dans les allées artisanales sans programme figé.",
+    "day3_a": "Après-midi — Plage de Martil",
+    "day3_ad": "Prenez un taxi vers Martil pour respirer l'air marin, marcher sur le sable et déguster du poisson frais.",
+    "day3_e": "Soir — Départ ou dernière promenade",
+    "day3_ed": "Dernière flânerie sur la Place Hassan II avant de poursuivre vers Tanger, Chefchaouen ou la côte."
+  },
   "tetouan_page": {
     "seo": {
-      "title": "Guide de Voyage Tetouan 2026 | Choses à faire & Conseils | MoroccoTripMap",
-      "description": "Plan your trip to Tetouan: top attractions, local food, and travel tips."
+      "title": "[FR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Tetouan.",
+    "hero_subtitle": "[FR] Hero subtitle",
+    "info": {
+      "best_time_label": "[FR] Best time label",
+      "best_time_val": "[FR] Best time val",
+      "stay_label": "[FR] Stay label",
+      "stay_val": "[FR] Stay val",
+      "vibe_label": "[FR] Vibe label",
+      "vibe_val": "[FR] Vibe val",
+      "airport_label": "[FR] Airport label",
+      "airport_val": "[FR] Airport val"
+    },
     "overview": {
-      "title": "Bienvenue à Tetouan",
-      "p1": "Explore Tetouan and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[FR] Title",
+      "p1": "[FR] P1",
+      "p2": "[FR] P2"
     },
     "places": {
-      "badge": "À voir",
-      "title": "Les incontournables à Tetouan",
-      "subtitle": "Discover top points of interest in Tetouan."
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "medina": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "hassan": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "kasbah": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "arch": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "art": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "palace": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "mellah": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "martil": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "artisan": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[FR] Day1 tab",
+      "day2_tab": "[FR] Day2 tab",
+      "day3_tab": "[FR] Day3 tab",
+      "day1_m": "[FR] Day1 m",
+      "day1_md": "[FR] Day1 md",
+      "day1_a": "[FR] Day1 a",
+      "day1_ad": "[FR] Day1 ad",
+      "day1_e": "[FR] Day1 e",
+      "day1_ed": "[FR] Day1 ed",
+      "day2_m": "[FR] Day2 m",
+      "day2_md": "[FR] Day2 md",
+      "day2_a": "[FR] Day2 a",
+      "day2_ad": "[FR] Day2 ad",
+      "day2_e": "[FR] Day2 e",
+      "day2_ed": "[FR] Day2 ed",
+      "day3_m": "[FR] Day3 m",
+      "day3_md": "[FR] Day3 md",
+      "day3_a": "[FR] Day3 a",
+      "day3_ad": "[FR] Day3 ad",
+      "day3_e": "[FR] Day3 e",
+      "day3_ed": "[FR] Day3 ed"
+    },
+    "directory": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "filter_type_label": "[FR] Filter type label",
+      "type_all": "[FR] Type all",
+      "type_hotel": "[FR] Type hotel",
+      "type_riad": "[FR] Type riad",
+      "type_guesthouse": "[FR] Type guesthouse",
+      "filter_location_label": "[FR] Filter location label",
+      "location_all": "[FR] Location all",
+      "location_medina": "[FR] Location medina",
+      "location_ville": "[FR] Location ville",
+      "location_walls": "[FR] Location walls",
+      "location_volubilis": "[FR] Location volubilis",
+      "counter": "[FR] Counter",
+      "district_label": "[FR] District label",
+      "type_label": "[FR] Type label",
+      "h1": {
+        "desc": "[FR] Desc"
+      },
+      "check_availability": "[FR] Check availability",
+      "h2": {
+        "desc": "[FR] Desc"
+      },
+      "h3": {
+        "desc": "[FR] Desc"
+      },
+      "h4": {
+        "desc": "[FR] Desc"
+      },
+      "h5": {
+        "desc": "[FR] Desc"
+      },
+      "h6": {
+        "desc": "[FR] Desc"
+      },
+      "h7": {
+        "desc": "[FR] Desc"
+      },
+      "h8": {
+        "desc": "[FR] Desc"
+      },
+      "h9": {
+        "desc": "[FR] Desc"
+      },
+      "h10": {
+        "desc": "[FR] Desc"
+      },
+      "h11": {
+        "desc": "[FR] Desc"
+      },
+      "h12": {
+        "desc": "[FR] Desc"
+      },
+      "h13": {
+        "desc": "[FR] Desc"
+      },
+      "h14": {
+        "desc": "[FR] Desc"
+      },
+      "h15": {
+        "desc": "[FR] Desc"
+      },
+      "h16": {
+        "desc": "[FR] Desc"
+      },
+      "h17": {
+        "desc": "[FR] Desc"
+      },
+      "h18": {
+        "desc": "[FR] Desc"
+      },
+      "h19": {
+        "desc": "[FR] Desc"
+      },
+      "h20": {
+        "desc": "[FR] Desc"
+      },
+      "h21": {
+        "desc": "[FR] Desc"
+      },
+      "h22": {
+        "desc": "[FR] Desc"
+      },
+      "h23": {
+        "desc": "[FR] Desc"
+      },
+      "h24": {
+        "desc": "[FR] Desc"
+      },
+      "h25": {
+        "desc": "[FR] Desc"
+      },
+      "h26": {
+        "desc": "[FR] Desc"
+      },
+      "h27": {
+        "desc": "[FR] Desc"
+      },
+      "h28": {
+        "desc": "[FR] Desc"
+      },
+      "no_results": "[FR] No results"
+    },
+    "eat": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "placehedim": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "medina_grill": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "riad_restaurant": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "ville_nouvelle": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "rooftop": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "local_tagine": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[FR] Title",
+      "transport": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "bargain": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "water": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "volubilis_combo": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "fes": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "rabat": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "azrou": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "q1": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q2": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q3": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q4": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[FR] Destinations",
+    "categories": "[FR] Categories",
+    "cat_stays": "[FR] Cat stays",
+    "cat_gastronomy": "[FR] Cat gastronomy",
+    "cat_experiences": "[FR] Cat experiences",
+    "cat_museums": "[FR] Cat museums",
+    "cat_transport": "[FR] Cat transport",
+    "cat_itineraries": "[FR] Cat itineraries",
+    "cat_guides": "[FR] Cat guides",
+    "history": "[FR] History",
+    "blog": "[FR] Blog",
+    "contact": "[FR] Contact",
+    "cities": "[FR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[FR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[FR] Home",
+    "destinations": "[FR] Destinations"
+  },
+  "destinations": {
+    "tetouan": {
+      "name": "[FR] Name"
+    }
+  },
+  "common": {
+    "explore": "[FR] Explore"
+  },
+  "footer": {
+    "about_text": "[FR] About text",
+    "destinations_title": "Destinations",
+    "link_tetouan": "[FR] Link tetouan",
+    "link_all_destinations": "[FR] Link all destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
+    "connect_title": "Suivez-nous",
+    "youtube_text": "Abonnez-vous à notre chaîne YouTube pour nos guides vidéo :",
+    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés.",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itinéraires",
+    "col_imperial": "Villes Impériales & Culture",
+    "col_desert": "Désert & Grand Sud",
+    "col_practical": "Guides Pratiques & Séjour",
+    "created_by": "Créé par"
   }
 }

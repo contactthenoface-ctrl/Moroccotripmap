@@ -1,19 +1,497 @@
 {
+  "seo": {
+    "title": "Guide Taroudant | Petite Marrakech du Souss | MoroccoTripMap",
+    "description": "Préparez Taroudant : remparts ocre, place Assarag, souks, Bab El Kasbah et palmeraie de Tioute. La Petite Marrakech du Souss.",
+    "keywords": "Taroudant, Petite Marrakech, remparts Taroudant, place Assarag, souks Taroudant, Souss",
+    "og_title": "Guide Taroudant | Remparts ocre & médina du Souss | MoroccoTripMap",
+    "og_description": "Taroudant : remparts ocre, médina et oasis du Souss — la Petite Marrakech sans la foule."
+  },
+  "name": "Taroudant",
+  "hero_subtitle": "Remparts ocre, médina vivante et rythme calme du Souss — la Petite Marrakech.",
+  "info": {
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Mars – mai & septembre – novembre",
+    "stay_label": "Durée idéale",
+    "stay_val": "1 – 2 jours",
+    "vibe_label": "Ambiance",
+    "vibe_val": "Ville fortifiée, brique ocre et calme du Souss",
+    "airport_label": "Accès",
+    "airport_val": "AGA Agadir (~1,5–2 h) · Route depuis Marrakech (~3,5–4 h)"
+  },
+  "overview": {
+    "title": "Bienvenue à Taroudant — Petite Marrakech du Souss",
+    "p1": "Taroudant s’étend dans la plaine du Souss derrière de longs remparts ocre. On la surnomme la Petite Marrakech pour ses murs et sa médina — sans l’intensité des villes impériales. La place Assarag organise le quotidien ; souks et portes invitent à marcher lentement.",
+    "p2": "Une journée pleine couvre les remparts, Assarag et les marchés ; un second matin convient à Tioute ou à une médina plus profonde. Dormez près des murs pour l’ambiance, ou utilisez Taroudant comme base plus calme dans le Souss."
+  },
+  "places": {
+    "badge": "Points forts",
+    "title": "Lieux incontournables à Taroudant",
+    "subtitle": "Remparts, place, souks et oasis de palmiers.",
+    "explore": "Explorer le lieu →",
+    "assarag": {
+      "name": "Place Assarag",
+      "desc": "Place principale — cafés, taxis et pouls quotidien de la ville.",
+      "tag": "Place"
+    },
+    "remparts": {
+      "name": "Remparts de Taroudant",
+      "desc": "Remparts ocre qui ont valu le surnom de Petite Marrakech.",
+      "tag": "Remparts"
+    },
+    "bab-el-kasbah": {
+      "name": "Bab El Kasbah",
+      "desc": "Porte historique des murs côté kasbah.",
+      "tag": "Porte"
+    },
+    "souks": {
+      "name": "Souks de Taroudant",
+      "desc": "Épices, artisanat et vie de marché dans les murs.",
+      "tag": "Souk"
+    },
+    "grande-mosquee": {
+      "name": "Grande Mosquée",
+      "desc": "Repère de la médina — visite extérieure respectueuse.",
+      "tag": "Mosquée"
+    },
+    "tioute": {
+      "name": "Palmeraie de Tioute",
+      "desc": "Palmeraie et village au sud de Taroudant.",
+      "tag": "Oasis"
+    },
+    "medina": {
+      "name": "Médina de Taroudant",
+      "desc": "Ruelles résidentielles et vie quotidienne dans les murs.",
+      "tag": "Médina"
+    },
+    "kasbah": {
+      "name": "Quartier de la Kasbah",
+      "desc": "Rues historiques plus calmes côté kasbah.",
+      "tag": "Quartier"
+    }
+  },
+  "itinerary": {
+    "badge": "Organisation",
+    "title": "2–3 jours à Taroudant",
+    "subtitle": "Remparts et place d’abord, puis médina, puis Tioute ou routes du Souss."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Jour 1 — Remparts & place",
+    "day2_tab": "Jour 2 — Médina & souks",
+    "day3_tab": "Jour 3 — Tioute ou suite",
+    "day1_m": "Matin — Segment de remparts",
+    "day1_md": "Marchez un tronçon extérieur des murs ocre ; arrêtez-vous à une grande porte pour les photos.",
+    "day1_a": "Après-midi — Place Assarag",
+    "day1_ad": "Café sur la place principale ; orientez-vous pour la médina.",
+    "day1_e": "Soir — Bord de médina",
+    "day1_ed": "Courte balade dans les ruelles et dîner simple près du centre.",
+    "day2_m": "Matin — Souks",
+    "day2_md": "Allées du marché les plus animées ; épices et courses locales.",
+    "day2_a": "Après-midi — Bab El Kasbah & côté kasbah",
+    "day2_ad": "Photos de la porte et rues historiques plus calmes.",
+    "day2_e": "Soir — Assarag à nouveau",
+    "day2_ed": "Thé sur la place quand la chaleur baisse.",
+    "day3_m": "Matin — Palmeraie de Tioute",
+    "day3_md": "Oasis de palmiers et chemins de village au sud de la ville.",
+    "day3_a": "Après-midi — Libre ou route sud",
+    "day3_ad": "Retour à Taroudant ou poursuite vers d’autres étapes du Souss.",
+    "day3_e": "Soir — Suite du voyage",
+    "day3_ed": "Encore une nuit ou départ vers Agadir ou les routes de l’Anti-Atlas."
+  },
+  "directory": {
+    "badge": "Annuaire",
+    "title": "Trouvez votre séjour idéal à Taroudant",
+    "subtitle": "Riads et hôtels dans ou près des murs — plus calme que les grandes villes impériales.",
+    "type_label": "Type :",
+    "area_label": "Quartier :",
+    "filter_type_label": "Type:",
+    "filter_location_label": "Area:",
+    "type_all": "Tous les types",
+    "location_all": "Tous les quartiers",
+    "all_types": "Tous les types",
+    "all_areas": "Tous les quartiers",
+    "district_label": "Area:",
+    "check_availability": "Vérifier dispo →",
+    "check": "Vérifier dispo →",
+    "counter": "hébergements",
+    "found": "hébergements",
+    "no_results": "Aucun hébergement pour ces filtres.",
+    "type_riad": "Riad",
+    "type_hotel": "Hotel",
+    "type_dar": "Dar / guesthouse",
+    "type_guesthouse": "Guesthouse",
+    "type_boutique": "Boutique",
+    "location_town": "Centre-ville",
+    "location_outskirts": "Près des remparts",
+    "location_outside": "Hors les murs",
+    "counter_tpl": "{n} hébergements"
+  },
+  "eat": {
+    "badge": "Table",
+    "title": "Où manger à Taroudant",
+    "subtitle": "Terrasses de café sur Assarag, tajines de médina et restaurants d’hôtel.",
+    "bacha": {
+      "title": "Cafés Assarag",
+      "tag": "Café",
+      "loc": "Assarag",
+      "desc": "Thé et observation sur la place principale."
+    },
+    "elfenn": {
+      "title": "Tajines de médina",
+      "tag": "Local",
+      "loc": "Médina",
+      "desc": "Plats marocains simples dans les ruelles."
+    },
+    "fassia": {
+      "title": "Restaurants d’hôtel",
+      "tag": "Hôtel",
+      "loc": "Ville",
+      "desc": "Options fiables après une longue marche sur les remparts."
+    },
+    "jardin": {
+      "title": "Grillades",
+      "tag": "Grill",
+      "loc": "Centre",
+      "desc": "Viande et pain du quotidien près du centre."
+    },
+    "moha": {
+      "title": "Boulangeries",
+      "tag": "Boulangerie",
+      "loc": "Médina",
+      "desc": "Pain frais et en-cas rapides."
+    },
+    "nomad": {
+      "title": "Déjeuner à Tioute",
+      "tag": "Oasis",
+      "loc": "Tioute",
+      "desc": "Repas simples si organisés lors d’une sortie oasis."
+    }
+  },
+  "food": {
+    "badge": "Table",
+    "title": "Où manger à Taroudant",
+    "subtitle": "Terrasses de café sur Assarag, tajines de médina et restaurants d’hôtel."
+  },
+  "tips": {
+    "badge": "Conseils pratiques",
+    "title": "Conseils pratiques pour Taroudant",
+    "1": {
+      "title": "Se déplacer",
+      "desc": "Tout le centre se fait à pied. Petits taxis pour les trajets plus longs ; chauffeurs privés pour Tioute."
+    },
+    "2": {
+      "title": "Chaleur sur les remparts",
+      "desc": "Les promenades ouvertes ont peu d’ombre. Matin et fin d’après-midi sont plus agréables."
+    },
+    "3": {
+      "title": "Petite Marrakech, pas Marrakech",
+      "desc": "Attendez-vous à des souks plus calmes et moins de monuments payants — l’ambiance est le principal atout."
+    },
+    "transport": {
+      "title": "Se déplacer",
+      "desc": "Tout le centre se fait à pied. Petits taxis pour les trajets plus longs ; chauffeurs privés pour Tioute."
+    },
+    "bargain": {
+      "title": "Chaleur sur les remparts",
+      "desc": "Les promenades ouvertes ont peu d’ombre. Matin et fin d’après-midi sont plus agréables."
+    },
+    "water": {
+      "title": "Petite Marrakech, pas Marrakech",
+      "desc": "Attendez-vous à des souks plus calmes et moins de monuments payants — l’ambiance est le principal atout."
+    }
+  },
+  "daytrips": {
+    "badge": "Au-delà des murs",
+    "title": "Excursions depuis Taroudant",
+    "subtitle": "Oasis de palmiers, campagne du Souss et routes vers l’Anti-Atlas.",
+    "tioute": {
+      "name": "Palmeraie de Tioute",
+      "title": "Palmeraie de Tioute",
+      "desc": "Oasis et village à environ 30–45 minutes au sud de la ville."
+    },
+    "souss": {
+      "name": "Plaine du Souss",
+      "title": "Plaine du Souss",
+      "desc": "Pays de l’arganier et des agrumes autour de Taroudant."
+    },
+    "anti_atlas": {
+      "name": "Vers l’Anti-Atlas",
+      "title": "Vers l’Anti-Atlas",
+      "desc": "Routes de montagne au sud pour continuer dans l’arrière-pays du Souss."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ sur Taroudant",
+    "q1": {
+      "question": "Combien de jours à Taroudant ?",
+      "answer": "Une journée pleine couvre remparts, Assarag et souks. Un second jour convient à Tioute ou à une médina plus lente."
+    },
+    "q2": {
+      "question": "Pourquoi « Petite Marrakech » ?",
+      "answer": "Les remparts ocre et la silhouette de médina rappellent Marrakech, à une échelle plus petite et plus calme dans le Souss."
+    },
+    "q3": {
+      "question": "Comment rejoindre Taroudant ?",
+      "answer": "La plupart des visiteurs arrivent par la route depuis Agadir (environ 1,5–2 h) ou Marrakech (environ 3,5–4 h)."
+    },
+    "q4": {
+      "question": "Meilleure période ?",
+      "answer": "Printemps et automne. L’été est très chaud sur les remparts ouverts ; l’hiver est doux le jour et frais la nuit."
+    }
+  },
   "taroudant_page": {
     "seo": {
-      "title": "Guide de Voyage Taroudant 2026 | Choses à faire & Conseils | MoroccoTripMap",
-      "description": "Plan your trip to Taroudant: top attractions, local food, and travel tips."
+      "title": "[FR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Taroudant.",
+    "name": "[FR] Name",
+    "hero_subtitle": "[FR] Hero subtitle",
+    "info": {
+      "best_time_label": "[FR] Best time label",
+      "best_time_val": "[FR] Best time val",
+      "stay_label": "[FR] Stay label",
+      "stay_val": "[FR] Stay val",
+      "vibe_label": "[FR] Vibe label",
+      "vibe_val": "[FR] Vibe val",
+      "airport_label": "[FR] Airport label",
+      "airport_val": "[FR] Airport val"
+    },
     "overview": {
-      "title": "Bienvenue à Taroudant",
-      "p1": "Explore Taroudant and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[FR] Title",
+      "p1": "[FR] P1",
+      "p2": "[FR] P2"
     },
     "places": {
-      "badge": "À voir",
-      "title": "Les incontournables à Taroudant",
-      "subtitle": "Discover top points of interest in Taroudant."
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "assarag": {
+        "tag": "[FR] Tag",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "explore": "[FR] Explore",
+      "remparts": {
+        "tag": "[FR] Tag",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "bab-el-kasbah": {
+        "tag": "[FR] Tag",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "souks": {
+        "tag": "[FR] Tag",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "grande-mosquee": {
+        "tag": "[FR] Tag",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "tioute": {
+        "tag": "[FR] Tag",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "medina": {
+        "tag": "[FR] Tag",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "kasbah": {
+        "tag": "[FR] Tag",
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[FR] Day1 tab",
+      "day2_tab": "[FR] Day2 tab",
+      "day3_tab": "[FR] Day3 tab",
+      "day1_m": "[FR] Day1 m",
+      "day1_md": "[FR] Day1 md",
+      "day1_a": "[FR] Day1 a",
+      "day1_ad": "[FR] Day1 ad",
+      "day1_e": "[FR] Day1 e",
+      "day1_ed": "[FR] Day1 ed",
+      "day2_m": "[FR] Day2 m",
+      "day2_md": "[FR] Day2 md",
+      "day2_a": "[FR] Day2 a",
+      "day2_ad": "[FR] Day2 ad",
+      "day2_e": "[FR] Day2 e",
+      "day2_ed": "[FR] Day2 ed",
+      "day3_m": "[FR] Day3 m",
+      "day3_md": "[FR] Day3 md",
+      "day3_a": "[FR] Day3 a",
+      "day3_ad": "[FR] Day3 ad",
+      "day3_e": "[FR] Day3 e",
+      "day3_ed": "[FR] Day3 ed"
+    },
+    "directory": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "filter_type_label": "[FR] Filter type label",
+      "type_all": "[FR] Type all",
+      "type_hotel": "[FR] Type hotel",
+      "type_riad": "[FR] Type riad",
+      "type_guesthouse": "[FR] Type guesthouse",
+      "filter_location_label": "[FR] Filter location label",
+      "location_all": "[FR] Location all",
+      "location_town": "[FR] Location town",
+      "location_outside": "[FR] Location outside",
+      "location_outskirts": "[FR] Location outskirts",
+      "counter": "[FR] Counter",
+      "district_label": "[FR] District label",
+      "type_label": "[FR] Type label",
+      "check_availability": "[FR] Check availability",
+      "no_results": "[FR] No results"
+    },
+    "eat": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "nomad": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "jardin": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "fassia": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "moha": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "bacha": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "elfenn": {
+        "tag": "[FR] Tag",
+        "loc": "[FR] Loc",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[FR] Title",
+      "transport": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "bargain": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "water": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "tioute": {
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "souss": {
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      },
+      "anti_atlas": {
+        "name": "[FR] Name",
+        "desc": "[FR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "q1": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q2": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q3": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q4": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[FR] Destinations",
+    "categories": "[FR] Categories",
+    "cat_stays": "[FR] Cat stays",
+    "cat_gastronomy": "[FR] Cat gastronomy",
+    "cat_experiences": "[FR] Cat experiences",
+    "cat_museums": "[FR] Cat museums",
+    "cat_transport": "[FR] Cat transport",
+    "cat_itineraries": "[FR] Cat itineraries",
+    "cat_guides": "[FR] Cat guides",
+    "history": "[FR] History",
+    "blog": "[FR] Blog",
+    "contact": "[FR] Contact",
+    "cities": "[FR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[FR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[FR] Home",
+    "destinations": "[FR] Destinations"
+  },
+  "footer": {
+    "about_text": "[FR] About text",
+    "destinations_title": "Destinations",
+    "link_taroudant": "[FR] Link taroudant",
+    "link_all_destinations": "[FR] Link all destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
+    "connect_title": "Suivez-nous",
+    "youtube_text": "Abonnez-vous à notre chaîne YouTube pour nos guides vidéo :",
+    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés.",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itinéraires",
+    "col_imperial": "Villes Impériales & Culture",
+    "col_desert": "Désert & Grand Sud",
+    "col_practical": "Guides Pratiques & Séjour",
+    "created_by": "Créé par"
   }
 }

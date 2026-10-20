@@ -1,19 +1,404 @@
 {
+  "seo": {
+    "title": "Dunas de Tinfou Zagora | MoroccoTripMap",
+    "description": "¿Visitas las dunas de Tinfou en Zagora? Mejor época, paseos en camello, consejos fotográficos, seguridad y datos prácticos.",
+    "keywords": "Dunas de Tinfou, Tinfou Zagora, excursión desierto Zagora, paseo en camello Tinfou, Sahara Zagora"
+  },
+  "name": "Dunas de Tinfou",
+  "hero_subtitle": "Dunas de arena accesibles al sur de Zagora: un primer contacto con el Sahara sin expediciones lejanas.",
+  "info": {
+    "best_time_label": "Mejor época",
+    "best_time_val": "Tarde para el atardecer",
+    "duration_label": "Duración sugerida",
+    "duration_val": "2 – 4 horas",
+    "entry_label": "Entrada",
+    "entry_val": "Paisaje libre; actividades de pago",
+    "area_label": "Ubicación",
+    "area_val": "Al sur de Zagora / cerca de Tamegroute"
+  },
+  "overview": {
+    "title": "Dunas pequeñas, arena real",
+    "p1": "Las dunas de Tinfou no compiten en tamaño con Erg Chigaga, pero ofrecen auténtica arena del Sahara muy cerca de Zagora: escálalas, fotografíelas, haz un breve paseo en camello o simplemente contempla el cambio de luz.",
+    "p2": "En días concurridos puede parecer un parque de juegos; las visitas temprano por la mañana o al atardecer son más tranquilas. Combínalas con Tamegroute si buscas cultura y desierto en una sola salida.",
+    "p3": "Lleva agua, calzado cerrado para la arena caliente y sentido de la medida: esto es un aperitivo del desierto, no la inmensidad total."
+  },
+  "gallery": {
+    "badge": "Galería de fotos",
+    "title": "Las dunas de Tinfou en imágenes",
+    "subtitle": "Vistas de las dunas de Tinfou en Zagora.",
+    "s1": {
+      "caption": "Dunas de Tinfou — vista 1"
+    },
+    "s2": {
+      "caption": "Dunas de Tinfou — vista 2"
+    },
+    "s3": {
+      "caption": "Dunas de Tinfou — vista 3"
+    },
+    "s4": {
+      "caption": "Dunas de Tinfou — vista 4"
+    },
+    "s5": {
+      "caption": "Dunas de Tinfou — vista 5"
+    }
+  },
+  "moods": {
+    "badge": "Horarios",
+    "title": "Las dunas de Tinfou a lo largo del día",
+    "subtitle": "Cuándo ir.",
+    "1": {
+      "tag": "Mañana",
+      "title": "Inicio tranquilo",
+      "desc": "Luz más suave y aire más fresco para un paseo apacible.",
+      "duration": "Mañana"
+    },
+    "2": {
+      "tag": "Mediodía",
+      "title": "Luz intensa",
+      "desc": "Sol fuerte y arena caliente; es mejor limitar la exposición.",
+      "duration": "Mediodía"
+    },
+    "3": {
+      "tag": "Tarde",
+      "title": "Mejor color",
+      "desc": "Cálida luz dorada sobre las crestas de arena.",
+      "duration": "Tarde"
+    }
+  },
+  "food": {
+    "title": "Comida cerca de las dunas de Tinfou",
+    "p1": "Planifica tus comidas en el centro de Zagora o lleva provisiones sencillas para las salidas fuera de la ciudad.",
+    "li1": "Tagines tradicionales y platos sencillos en Zagora.",
+    "li2": "Lleva abundante agua embotellada en las excursiones por el desierto.",
+    "li3": "Dátiles frescos y aperitivos de los mercados locales.",
+    "li4": "Menús fijos disponibles en campamentos y alojamientos cercanos.",
+    "li5": "Pequeños cafés a lo largo de la carretera para té de menta.",
+    "p2": "El efectivo es útil para pequeñas paradas en el oasis."
+  },
+  "tips": {
+    "title": "Consejos prácticos para las dunas de Tinfou",
+    "1": {
+      "title": "Acceso",
+      "desc": "Fácilmente accesibles en taxi o coche de alquiler al sur de Zagora por la carretera principal."
+    },
+    "2": {
+      "title": "Calor y agua",
+      "desc": "Lleva protector solar, gorro y mucha agua; la arena absorbe el calor rápidamente."
+    },
+    "3": {
+      "title": "Respeto",
+      "desc": "No dejes basura y respeta a los guías locales y cuidadores de camellos."
+    }
+  },
+  "gyg": {
+    "badge": "Tours y experiencias",
+    "title": "Excursiones relacionadas con las dunas de Tinfou",
+    "subtitle": "Options si prefieres un operador local.",
+    "t1": {
+      "tag": "Desierto",
+      "title": "Excursión a las dunas de Tinfou al atardecer",
+      "desc": "Salida guiada por la tarde desde Zagora hacia las dunas."
+    },
+    "t2": {
+      "tag": "Paseo en camello",
+      "title": "Experiencia de paseo en camello en Tinfou",
+      "desc": "Breve recorrido en camello por las dunas de arena."
+    },
+    "t3": {
+      "tag": "Cultura",
+      "title": "Tour de un día por lo más destacado del sur de Zagora",
+      "desc": "Combina las dunas de Tinfou con la visita a la biblioteca de Tamegroute."
+    },
+    "check": "Consultar disponibilidad en GetYourGuide →",
+    "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una pequeña comisión sin coste adicional para ti."
+  },
+  "blog": {
+    "badge": "Desde el blog",
+    "title": "Artículos relacionados",
+    "all": "Todos los artículos →",
+    "read": "Leer artículo →",
+    "a1": {
+      "tag": "Planificación",
+      "title": "Primera vez en Zagora",
+      "desc": "Oasis, cartel y cuánto tiempo quedarse."
+    },
+    "a2": {
+      "tag": "Guía",
+      "title": "Día en el valle del Draa",
+      "desc": "Palmeras, pueblos y luz."
+    },
+    "a3": {
+      "tag": "Desierto",
+      "title": "Campamentos desde Zagora",
+      "desc": "Qué esperar de una noche allí."
+    }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "Preguntas frecuentes sobre las dunas de Tinfou",
+    "q1": {
+      "question": "¿A qué distancia de Zagora?",
+      "answer": "Aproximadamente 25–30 km al sur, unos 30 minutos en coche desde la ciudad."
+    },
+    "q2": {
+      "question": "¿Paseos en camello?",
+      "answer": "Suelen ofrecerse en el lugar; acuerda precio y duración antes de subir."
+    },
+    "q3": {
+      "question": "¿Adecuado para niños?",
+      "answer": "Sí, para trepar y jugar un rato; supervisa en pendientes pronunciadas."
+    },
+    "q4": {
+      "question": "¿Atardecer?",
+      "answer": "Muy popular; llega antes de la hora punta si buscas tranquilidad."
+    },
+    "q5": {
+      "question": "¿Se puede pernoctar?",
+      "answer": "Es posible en las inmediaciones; muchos visitantes van solo unas horas."
+    }
+  },
+  "nearby": {
+    "badge": "Sigue explorando",
+    "title": "Más lugares en Zagora",
+    "back": "← Volver a la guía de Zagora"
+  },
+  "destinations": {
+    "zagora": {
+      "name": "Zagora"
+    }
+  },
   "tinfou_page": {
     "seo": {
-      "title": "Guía de Viaje Tinfou 2026 | Cosas que hacer | MoroccoTripMap",
-      "description": "Plan your trip to Tinfou: top attractions, local food, and travel tips."
+      "title": "[ES] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Tinfou.",
+    "name": "[ES] Name",
+    "hero_subtitle": "[ES] Hero subtitle",
+    "info": {
+      "best_time_label": "[ES] Best time label",
+      "best_time_val": "[ES] Best time val",
+      "duration_label": "[ES] Duration label",
+      "duration_val": "[ES] Duration val",
+      "entry_label": "[ES] Entry label",
+      "entry_val": "[ES] Entry val",
+      "area_label": "[ES] Area label",
+      "area_val": "[ES] Area val"
+    },
     "overview": {
-      "title": "Welcome to Tinfou",
-      "p1": "Explore Tinfou and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "p2": "[ES] P2",
+      "p3": "[ES] P3"
     },
-    "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Tinfou",
-      "subtitle": "Discover top points of interest in Tinfou."
+    "gallery": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "s1": {
+        "caption": "[ES] Caption"
+      },
+      "s2": {
+        "caption": "[ES] Caption"
+      },
+      "s3": {
+        "caption": "[ES] Caption"
+      },
+      "s4": {
+        "caption": "[ES] Caption"
+      },
+      "s5": {
+        "caption": "[ES] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      },
+      "2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      },
+      "3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      }
+    },
+    "food": {
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "li1": "[ES] Li1",
+      "li2": "[ES] Li2",
+      "li3": "[ES] Li3",
+      "li4": "[ES] Li4",
+      "li5": "[ES] Li5",
+      "p2": "[ES] P2"
+    },
+    "tips": {
+      "title": "[ES] Title",
+      "1": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "2": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "3": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "t1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "check": "[ES] Check",
+      "t2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "t3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "disclosure": "[ES] Disclosure"
+    },
+    "nearby": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "back": "[ES] Back"
+    },
+    "blog": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "all": "[ES] All",
+      "a1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "read": "[ES] Read",
+      "a2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "a3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "q1": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q2": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q3": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q4": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q5": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[ES] Destinations",
+    "categories": "[ES] Categories",
+    "cat_stays": "[ES] Cat stays",
+    "cat_gastronomy": "[ES] Cat gastronomy",
+    "cat_experiences": "[ES] Cat experiences",
+    "cat_museums": "[ES] Cat museums",
+    "cat_transport": "[ES] Cat transport",
+    "cat_itineraries": "[ES] Cat itineraries",
+    "cat_guides": "[ES] Cat guides",
+    "history": "[ES] History",
+    "blog": "[ES] Blog",
+    "contact": "[ES] Contact",
+    "cities": "[ES] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[ES] Language title"
+  },
+  "breadcrumb": {
+    "home": "[ES] Home",
+    "destinations": "[ES] Destinations"
+  },
+  "zagora_page": {
+    "places": {
+      "draa_valley": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "explore": "[ES] Explore",
+      "amezrou": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "timbuktu_sign": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "tamegroute": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    }
+  },
+  "footer": {
+    "about_text": "[ES] About text",
+    "destinations_title": "Destinos",
+    "link_zagora": "[ES] Link zagora",
+    "link_all_destinations": "[ES] Link all destinations",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "connect_title": "Conéctate con Nosotros",
+    "youtube_text": "Suscríbete a nuestro canal de YouTube para ver guías en vídeo:",
+    "copyright": "© 2026 MoroccoTripMap. Todos los derechos reservados.",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto",
+    "link_itineraries": "Circuitos e Itinerarios",
+    "col_imperial": "Ciudades Imperiales y Cultura",
+    "col_desert": "Desierto y Gran Sur",
+    "col_practical": "Guías Prácticas y Estancias",
+    "created_by": "Creado por"
   }
 }

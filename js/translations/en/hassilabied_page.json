@@ -1,19 +1,230 @@
 {
-  "hassilabied_page": {
+  "seo": {
+    "title": "MoroccoTripMap - Hassilabied",
+    "description": "Discover insights and details about hassilabied in Morocco."
+  },
+  "merzouga_hassilabied_page": {
     "seo": {
-      "title": "Hassilabied Travel Guide 2026 | Things to Do & Tips | MoroccoTripMap",
-      "description": "Plan your trip to Hassilabied: top attractions, local food, and travel tips."
+      "title": "[EN] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Hassilabied.",
+    "name": "[EN] Name",
+    "hero_subtitle": "[EN] Hero subtitle",
+    "info": {
+      "best_time_label": "[EN] Best time label",
+      "best_time_val": "[EN] Best time val",
+      "duration_label": "[EN] Duration label",
+      "duration_val": "[EN] Duration val",
+      "entry_label": "[EN] Entry label",
+      "entry_val": "[EN] Entry val",
+      "area_label": "[EN] Area label",
+      "area_val": "[EN] Area val"
+    },
     "overview": {
-      "title": "Welcome to Hassilabied",
-      "p1": "Explore Hassilabied and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[EN] Title",
+      "p1": "[EN] P1",
+      "p2": "[EN] P2",
+      "p3": "[EN] P3"
     },
-    "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Hassilabied",
-      "subtitle": "Discover top points of interest in Hassilabied."
+    "gallery": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "s1": {
+        "caption": "[EN] Caption"
+      },
+      "s2": {
+        "caption": "[EN] Caption"
+      },
+      "s3": {
+        "caption": "[EN] Caption"
+      },
+      "s4": {
+        "caption": "[EN] Caption"
+      },
+      "s5": {
+        "caption": "[EN] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "1": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc",
+        "duration": "[EN] Duration"
+      },
+      "2": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc",
+        "duration": "[EN] Duration"
+      },
+      "3": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc",
+        "duration": "[EN] Duration"
+      }
+    },
+    "food": {
+      "title": "[EN] Title",
+      "p1": "[EN] P1",
+      "li1": "[EN] Li1",
+      "li2": "[EN] Li2",
+      "li3": "[EN] Li3",
+      "li4": "[EN] Li4",
+      "li5": "[EN] Li5",
+      "p2": "[EN] P2"
+    },
+    "tips": {
+      "title": "[EN] Title",
+      "1": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "2": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "3": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "t1": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "check": "[EN] Check",
+      "t2": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "t3": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "disclosure": "[EN] Disclosure"
+    },
+    "nearby": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "back": "[EN] Back",
+      "tag": "[EN] Tag",
+      "erg": "[EN] Erg",
+      "erg_desc": "[EN] Erg desc",
+      "explore": "[EN] Explore",
+      "camel": "[EN] Camel",
+      "camel_desc": "[EN] Camel desc",
+      "camp": "[EN] Camp",
+      "camp_desc": "[EN] Camp desc",
+      "khamlia": "[EN] Khamlia",
+      "khamlia_desc": "[EN] Khamlia desc"
+    },
+    "blog": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "all": "[EN] All",
+      "a1": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "read": "[EN] Read",
+      "a2": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "a3": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "q1": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q2": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q3": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q4": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q5": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[EN] Destinations",
+    "categories": "[EN] Categories",
+    "cat_stays": "[EN] Cat stays",
+    "cat_gastronomy": "[EN] Cat gastronomy",
+    "cat_experiences": "[EN] Cat experiences",
+    "cat_museums": "[EN] Cat museums",
+    "cat_transport": "[EN] Cat transport",
+    "cat_itineraries": "[EN] Cat itineraries",
+    "cat_guides": "[EN] Cat guides",
+    "history": "[EN] History",
+    "blog": "[EN] Blog",
+    "contact": "[EN] Contact",
+    "cities": "[EN] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[EN] Language title"
+  },
+  "breadcrumb": {
+    "home": "[EN] Home",
+    "destinations": "[EN] Destinations"
+  },
+  "destinations": {
+    "merzouga": {
+      "name": "[EN] Name"
+    }
+  },
+  "footer": {
+    "about_text": "[EN] About text",
+    "destinations_title": "Destinations",
+    "link_merzouga": "[EN] Link merzouga",
+    "link_all_destinations": "[EN] Link all destinations",
+    "categories_title": "Categories",
+    "link_stays": "Stays & Riads",
+    "link_restaurants": "Moroccan Restaurants",
+    "connect_title": "Connect With Us",
+    "youtube_text": "Subscribe to our YouTube channel for travel video guides:",
+    "copyright": "© 2026 MoroccoTripMap. All rights reserved.",
+    "link_culture": "Culture & Desert",
+    "link_transport": "Transport & Drivers",
+    "link_circuits": "Circuits & Itineraries",
+    "link_history": "History of Morocco",
+    "link_guides": "Travel Guides",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itineraries",
+    "col_imperial": "Imperial Cities & Culture",
+    "col_desert": "Desert & Deep South",
+    "col_practical": "Practical Guides & Stays",
+    "created_by": "Created by"
   }
 }

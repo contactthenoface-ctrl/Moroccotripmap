@@ -1,19 +1,422 @@
 {
-  "plage_page": {
-    "seo": {
-      "title": "Guía de Viaje Plage 2026 | Cosas que hacer | MoroccoTripMap",
-      "description": "Plan your trip to Plage: top attractions, local food, and travel tips."
+  "seo": {
+    "title": "Playa de El Jadida | El Jadida | MoroccoTripMap",
+    "description": "City Atlantic beach a short hop from the medina walls — sand, swell and easy town access.",
+    "keywords": "Playa de El Jadida, El Jadida"
+  },
+  "name": "Playa de El Jadida",
+  "hero_subtitle": "City Atlantic beach a short hop from the medina walls — sand, swell and easy town access.",
+  "info": {
+    "best_time_label": "Best time",
+    "best_time_val": "Morning or late day",
+    "duration_label": "Suggested duration",
+    "duration_val": "2 – 4 hours",
+    "entry_label": "Entry",
+    "entry_val": "Free public beach",
+    "area_label": "Location",
+    "area_val": "Near the city centre"
+  },
+  "overview": {
+    "title": "Atlantic sand by town",
+    "p1": "El Jadida’s city beach puts Atlantic water within easy reach of the Portuguese walls and the modern town. It is an urban shore — practical, busy in summer, and shaped by trade winds and swell.",
+    "p2": "Conditions change with the ocean. Swimming is best when the sea is calm; always respect local flags and advice. For wider resort sand, continue to Sidi Bouzid.",
+    "p3": "Use it for a simple swim-and-walk half day between heritage mornings and port evenings."
+  },
+  "gallery": {
+    "badge": "Galería de fotos",
+    "title": "Playa de El Jadida en imágenes",
+    "subtitle": "Vistas de Playa de El Jadida en El Jadida.",
+    "s1": {
+      "caption": "Playa de El Jadida — 1"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Plage.",
-    "overview": {
-      "title": "Welcome to Plage",
-      "p1": "Explore Plage and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+    "s2": {
+      "caption": "Playa de El Jadida — 2"
     },
-    "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Plage",
-      "subtitle": "Discover top points of interest in Plage."
+    "s3": {
+      "caption": "Playa de El Jadida — 3"
+    },
+    "s4": {
+      "caption": "Playa de El Jadida — 4"
+    },
+    "s5": {
+      "caption": "Playa de El Jadida — 5"
     }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "El Jadida Beach through the day",
+    "subtitle": "When to go.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet start",
+      "desc": "Softer light and fewer people.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Strong sun & wind",
+      "desc": "SPF and a wind layer help.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Late afternoon",
+      "title": "Best colour",
+      "desc": "Warm light on stone and sea.",
+      "duration": "Late afternoon"
+    }
+  },
+  "food": {
+    "title": "Food near El Jadida Beach",
+    "p1": "Plan meals at the fishing port, medina tables or Sidi Bouzid cafés.",
+    "li1": "Grilled fish by the blue-boat harbour.",
+    "li2": "Simple medina restaurants.",
+    "li3": "Ocean-facing cafés on the seafront.",
+    "li4": "Sidi Bouzid for casual beach food.",
+    "li5": "Carry water on wall and coast walks.",
+    "p2": "Cash helps at small stalls and taxis."
+  },
+  "tips": {
+    "title": "Practical tips for El Jadida Beach",
+    "1": {
+      "title": "Access",
+      "desc": "Confirm walking routes or taxi times from your stay."
+    },
+    "2": {
+      "title": "Wind & sun",
+      "desc": "Atlantic breeze is real — layer plus high SPF."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "On the port and in the Mellah, ask before close photos of people."
+    }
+  },
+  "gyg": {
+    "badge": "Tours & experiences",
+    "title": "Tours linked to El Jadida Beach",
+    "subtitle": "Options if you prefer a local operator.",
+    "t1": {
+      "tag": "Heritage",
+      "title": "Portuguese City walk",
+      "desc": "Cistern, walls and bastion with context."
+    },
+    "t2": {
+      "tag": "Coast",
+      "title": "Atlantic beach time",
+      "desc": "Sidi Bouzid or city beach orientation."
+    },
+    "t3": {
+      "tag": "Day trip",
+      "title": "Azemmour or Oualidia",
+      "desc": "Nearby medina art or lagoon oysters."
+    },
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+  },
+  "blog": {
+    "badge": "From the blog",
+    "title": "Related articles",
+    "all": "All articles →",
+    "read": "Read article →",
+    "a1": {
+      "tag": "Planning",
+      "title": "First time in El Jadida",
+      "desc": "Portuguese City and how long to stay."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Atlantic Doukkala coast",
+      "desc": "Beaches and harbour tips."
+    },
+    "a3": {
+      "tag": "Heritage",
+      "title": "Mazagan UNESCO",
+      "desc": "Walls, cistern and bastion."
+    }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "FAQ Playa de El Jadida",
+    "q1": {
+      "question": "Safe for swimming?",
+      "answer": "When conditions are calm and flags allow. The Atlantic can be rough — check locally."
+    },
+    "q2": {
+      "question": "Far from the cistern?",
+      "answer": "A short walk or taxi from the Portuguese City."
+    },
+    "q3": {
+      "question": "Facilities?",
+      "answer": "Seasonal cafés and basic services along the front in summer."
+    },
+    "q4": {
+      "question": "Quieter than Sidi Bouzid?",
+      "answer": "Different mood: more urban, closer to town amenities."
+    },
+    "q5": {
+      "question": "Best season?",
+      "answer": "Summer for swimming; shoulder seasons for walks with fewer crowds."
+    }
+  },
+  "nearby": {
+    "badge": "Sigue explorando",
+    "title": "Más lugares en El Jadida",
+    "back": "← Volver a la guía de El Jadida"
+  },
+  "destinations": {
+    "el_jadida": {
+      "name": "El Jadida"
+    },
+    "essaouira": {
+      "name": "[ES] Name"
+    }
+  },
+  "essaouira_plage_page": {
+    "seo": {
+      "title": "[ES] Title"
+    },
+    "name": "[ES] Name",
+    "hero_subtitle": "[ES] Hero subtitle",
+    "info": {
+      "best_time_label": "[ES] Best time label",
+      "best_time_val": "[ES] Best time val",
+      "duration_label": "[ES] Duration label",
+      "duration_val": "[ES] Duration val",
+      "entry_label": "[ES] Entry label",
+      "entry_val": "[ES] Entry val",
+      "area_label": "[ES] Area label",
+      "area_val": "[ES] Area val"
+    },
+    "overview": {
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "p2": "[ES] P2",
+      "p3": "[ES] P3"
+    },
+    "gallery": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "s1": {
+        "caption": "[ES] Caption"
+      },
+      "s2": {
+        "caption": "[ES] Caption"
+      },
+      "s3": {
+        "caption": "[ES] Caption"
+      },
+      "s4": {
+        "caption": "[ES] Caption"
+      },
+      "s5": {
+        "caption": "[ES] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      },
+      "2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      },
+      "3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      }
+    },
+    "food": {
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "li1": "[ES] Li1",
+      "li2": "[ES] Li2",
+      "li3": "[ES] Li3",
+      "li4": "[ES] Li4",
+      "li5": "[ES] Li5",
+      "p2": "[ES] P2"
+    },
+    "tips": {
+      "title": "[ES] Title",
+      "1": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "2": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "3": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "t1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "check": "[ES] Check",
+      "t2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "t3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "disclosure": "[ES] Disclosure"
+    },
+    "nearby": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "back": "[ES] Back"
+    },
+    "blog": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "all": "[ES] All",
+      "a1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "read": "[ES] Read",
+      "a2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "a3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "q1": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q2": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q3": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q4": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q5": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      }
+    }
+  },
+  "nav": {
+    "destinations": "[ES] Destinations",
+    "categories": "[ES] Categories",
+    "cat_stays": "[ES] Cat stays",
+    "cat_gastronomy": "[ES] Cat gastronomy",
+    "cat_experiences": "[ES] Cat experiences",
+    "cat_museums": "[ES] Cat museums",
+    "cat_transport": "[ES] Cat transport",
+    "cat_itineraries": "[ES] Cat itineraries",
+    "cat_guides": "[ES] Cat guides",
+    "history": "[ES] History",
+    "blog": "[ES] Blog",
+    "contact": "[ES] Contact",
+    "cities": "[ES] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[ES] Language title"
+  },
+  "breadcrumb": {
+    "home": "[ES] Home",
+    "destinations": "[ES] Destinations"
+  },
+  "essaouira_page": {
+    "places": {
+      "medina": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "explore": "[ES] Explore",
+      "skala_ville": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "skala_port": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "port": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "mellah": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "iles": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "souks": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    }
+  },
+  "footer": {
+    "about_text": "[ES] About text",
+    "destinations_title": "Destinos",
+    "link_essaouira": "[ES] Link essaouira",
+    "link_all_destinations": "[ES] Link all destinations",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "connect_title": "Conéctate con Nosotros",
+    "youtube_text": "Suscríbete a nuestro canal de YouTube para ver guías en vídeo:",
+    "copyright": "© 2026 MoroccoTripMap. Todos los derechos reservados.",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto",
+    "link_itineraries": "Circuitos e Itinerarios",
+    "col_imperial": "Ciudades Imperiales y Cultura",
+    "col_desert": "Desierto y Gran Sur",
+    "col_practical": "Guías Prácticas y Estancias",
+    "created_by": "Creado por"
   }
 }

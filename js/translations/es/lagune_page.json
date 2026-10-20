@@ -1,19 +1,420 @@
 {
+  "seo": {
+    "title": "Laguna de Dakhla Dakhla | MoroccoTripMap",
+    "description": "A 40 km turquoise lagoon between Sahara dunes and the Atlantic — the geographic and sporting heart of Dakhla.",
+    "og_title": "Dakhla Lagoon",
+    "og_description": "A 40 km turquoise lagoon between Sahara dunes and the Atlantic — the geographic and sporting heart of Dakhla."
+  },
+  "name": "Laguna de Dakhla",
+  "hero_subtitle": "Una laguna turquesa de 40 km entre dunas del Sáhara y el Atlántico — corazón geográfico y deportivo de Dakhla.",
+  "info": {
+    "best_time_label": "Mejor momento",
+    "best_time_val": "Mañana y final de tarde",
+    "duration_label": "Duración sugerida",
+    "duration_val": "Media jornada a día completo",
+    "entry_label": "Entrada",
+    "entry_val": "Gratis (actividades aparte)",
+    "area_label": "Ubicación",
+    "area_val": "Laguna de la península"
+  },
+  "overview": {
+    "title": "La laguna que define Dakhla",
+    "p1": "La laguna de Dakhla se extiende unos cuarenta kilómetros a lo largo de una península de arena. Protegida del oleaje del océano abierto, su agua turquesa poco profunda permanece notablemente plana — por eso el mundo viene aquí a practicar kitesurf y wingfoil.",
+    "p2": "Incluso sin tabla, la laguna es el escenario principal: paseos en barco, granjas de ostras, flamencos en temporada y una luz que pasa de plateada a azul profundo.",
+    "p3": "La mayoría de campamentos y escuelas están en la orilla de la laguna. La ciudad queda a poca distancia; la Duna Blanca y la Isla del Dragón son salidas clásicas desde la laguna."
+  },
+  "gallery": {
+    "badge": "Galería de fotos",
+    "title": "Laguna de Dakhla en imágenes",
+    "subtitle": "Vistas de Laguna de Dakhla en Dakhla.",
+    "s1": {
+      "caption": "Laguna de Dakhla — vista 1"
+    },
+    "s2": {
+      "caption": "Laguna de Dakhla — vista 2"
+    },
+    "s3": {
+      "caption": "Laguna de Dakhla — vista 3"
+    },
+    "s4": {
+      "caption": "Laguna de Dakhla — vista 4"
+    },
+    "s5": {
+      "caption": "Laguna de Dakhla — vista 5"
+    }
+  },
+  "moods": {
+    "badge": "Horario",
+    "title": "Laguna de Dakhla a lo largo del día",
+    "subtitle": "Cuándo ir.",
+    "1": {
+      "tag": "Mañana",
+      "title": "Inicio tranquilo",
+      "desc": "Luz más suave y menos gente.",
+      "duration": "Mañana"
+    },
+    "2": {
+      "tag": "Mediodía",
+      "title": "Luz intensa",
+      "desc": "Sol fuerte — protege piel y equipo.",
+      "duration": "Mediodía"
+    },
+    "3": {
+      "tag": "Finales de tarde",
+      "title": "Mejor color",
+      "desc": "Luz cálida sobre agua y arena.",
+      "duration": "Finales de tarde"
+    }
+  },
+  "food": {
+    "title": "Comer cerca de Laguna de Dakhla",
+    "p1": "Planifica las comidas en la ciudad, en un campamento de laguna o con una degustación.",
+    "li1": "Agua embotellada en cada salida.",
+    "li2": "Pescado y platos sencillos en la ciudad.",
+    "li3": "Comidas del campamento si te alojas en la laguna.",
+    "li4": "Degustación de ostras cuando las granjas estén abiertas.",
+    "li5": "Confirma horarios antes de ir.",
+    "p2": "El efectivo es útil fuera de grandes hoteles."
+  },
+  "tips": {
+    "title": "Consejos prácticos para Laguna de Dakhla",
+    "1": {
+      "title": "Acceso",
+      "desc": "Confirma traslado, marea o reserva de escuela antes de salir de la ciudad."
+    },
+    "2": {
+      "title": "Sol y viento",
+      "desc": "SPF alto, gafas y una capa contra el alisio."
+    },
+    "3": {
+      "title": "Respeto",
+      "desc": "Quédate en caminos permitidos; llévate la basura."
+    }
+  },
+  "gyg": {
+    "badge": "Tours y experiencias",
+    "title": "Tours relacionados con Laguna de Dakhla",
+    "subtitle": "Opciones si prefieres un operador local.",
+    "t1": {
+      "tag": "Laguna",
+      "title": "Paseo en barco por la laguna",
+      "desc": "Miradores y acercamientos a islas con patrón."
+    },
+    "t2": {
+      "tag": "Naturaleza",
+      "title": "Bucle Duna Blanca",
+      "desc": "4x4 o hitos de la laguna combinados."
+    },
+    "t3": {
+      "tag": "Deporte",
+      "title": "Clase de kitesurf",
+      "desc": "Sesión de escuela en el agua plana de la laguna."
+    },
+    "check": "Ver disponibilidad en GetYourGuide →",
+    "disclosure": "Algunos de estos enlaces son de afiliados. Si reservas a través de ellos podemos recibir una comisión sin coste extra para ti."
+  },
+  "nearby": {
+    "badge": "Sigue explorando",
+    "title": "Más lugares en Dakhla",
+    "back": "← Volver a la guía de Dakhla"
+  },
+  "blog": {
+    "badge": "Del blog",
+    "title": "Artículos relacionados",
+    "all": "Todos los artículos →",
+    "read": "Leer el artículo →",
+    "a1": {
+      "tag": "Planificar",
+      "title": "Primera vez en Dakhla",
+      "desc": "Laguna, viento y duración de la estancia."
+    },
+    "a2": {
+      "tag": "Guía",
+      "title": "Duna Blanca e Isla del Dragón",
+      "desc": "Cómo combinar los dos sitios."
+    },
+    "a3": {
+      "tag": "Deporte",
+      "title": "Kitesurf en Dakhla",
+      "desc": "Spots, temporadas y escuelas."
+    }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "FAQ Laguna de Dakhla",
+    "q1": {
+      "question": "Can I swim in the lagoon?",
+      "answer": "Some edges are used for swimming; always check local conditions and currents. Many visitors come primarily for wind sports on the flat water."
+    },
+    "q2": {
+      "question": "Best time of day on the lagoon?",
+      "answer": "Late afternoon for golden light; morning for calmer shore walks before the trade wind builds."
+    },
+    "q3": {
+      "question": "Do I need a guide for the lagoon?",
+      "answer": "Not for main shore access. A local operator helps for boat trips or finding quieter stretches away from the camps."
+    },
+    "q4": {
+      "question": "How long should I spend at the lagoon?",
+      "answer": "Two to four hours for a first shore visit. Full days if you kitesurf or wingfoil."
+    },
+    "q5": {
+      "question": "Is lagoon shore access free?",
+      "answer": "Yes, general shore access is free. Camps, lessons, rentals and boat trips are paid activities."
+    }
+  },
+  "destinations": {
+    "dakhla": {
+      "name": "Dakhla"
+    }
+  },
   "lagune_page": {
     "seo": {
-      "title": "Guía de Viaje Lagune 2026 | Cosas que hacer | MoroccoTripMap",
-      "description": "Plan your trip to Lagune: top attractions, local food, and travel tips."
+      "title": "[ES] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Lagune.",
+    "name": "[ES] Name",
+    "hero_subtitle": "[ES] Hero subtitle",
+    "info": {
+      "best_time_label": "[ES] Best time label",
+      "best_time_val": "[ES] Best time val",
+      "duration_label": "[ES] Duration label",
+      "duration_val": "[ES] Duration val",
+      "entry_label": "[ES] Entry label",
+      "entry_val": "[ES] Entry val",
+      "area_label": "[ES] Area label",
+      "area_val": "[ES] Area val"
+    },
     "overview": {
-      "title": "Welcome to Lagune",
-      "p1": "Explore Lagune and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "p2": "[ES] P2",
+      "p3": "[ES] P3"
     },
-    "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Lagune",
-      "subtitle": "Discover top points of interest in Lagune."
+    "gallery": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "s1": {
+        "caption": "[ES] Caption"
+      },
+      "s2": {
+        "caption": "[ES] Caption"
+      },
+      "s3": {
+        "caption": "[ES] Caption"
+      },
+      "s4": {
+        "caption": "[ES] Caption"
+      },
+      "s5": {
+        "caption": "[ES] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      },
+      "2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      },
+      "3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc",
+        "duration": "[ES] Duration"
+      }
+    },
+    "food": {
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "li1": "[ES] Li1",
+      "li2": "[ES] Li2",
+      "li3": "[ES] Li3",
+      "li4": "[ES] Li4",
+      "li5": "[ES] Li5",
+      "p2": "[ES] P2"
+    },
+    "tips": {
+      "title": "[ES] Title",
+      "1": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "2": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "3": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "t1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "check": "[ES] Check",
+      "t2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "t3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "disclosure": "[ES] Disclosure"
+    },
+    "nearby": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "back": "[ES] Back"
+    },
+    "blog": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "all": "[ES] All",
+      "a1": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "read": "[ES] Read",
+      "a2": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "a3": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "q1": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q2": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q3": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q4": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q5": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[ES] Destinations",
+    "categories": "[ES] Categories",
+    "cat_stays": "[ES] Cat stays",
+    "cat_gastronomy": "[ES] Cat gastronomy",
+    "cat_experiences": "[ES] Cat experiences",
+    "cat_museums": "[ES] Cat museums",
+    "cat_transport": "[ES] Cat transport",
+    "cat_itineraries": "[ES] Cat itineraries",
+    "cat_guides": "[ES] Cat guides",
+    "history": "[ES] History",
+    "blog": "[ES] Blog",
+    "contact": "[ES] Contact",
+    "cities": "[ES] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[ES] Language title"
+  },
+  "breadcrumb": {
+    "home": "[ES] Home",
+    "destinations": "[ES] Destinations"
+  },
+  "dakhla_page": {
+    "places": {
+      "dune_blanche": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "explore": "[ES] Explore",
+      "ile_dragon": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "kitesurf": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "foum_el_bouir": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "huitres": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "port": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "sources_asnaa": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    }
+  },
+  "footer": {
+    "about_text": "[ES] About text",
+    "destinations_title": "Destinos",
+    "link_dakhla": "[ES] Link dakhla",
+    "link_all_destinations": "[ES] Link all destinations",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "connect_title": "Conéctate con Nosotros",
+    "youtube_text": "Suscríbete a nuestro canal de YouTube para ver guías en vídeo:",
+    "copyright": "© 2026 MoroccoTripMap. Todos los derechos reservados.",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto",
+    "link_itineraries": "Circuitos e Itinerarios",
+    "col_imperial": "Ciudades Imperiales y Cultura",
+    "col_desert": "Desierto y Gran Sur",
+    "col_practical": "Guías Prácticas y Estancias",
+    "created_by": "Creado por"
   }
 }

@@ -1,19 +1,544 @@
 {
+  "seo": {
+    "title": "دليل ورزازات | القصبات واستوديوهات السينما وأيت بن حدو | MoroccoTripMap",
+    "description": "خطط لورزازات: قصبة تاوريرت واستوديوهات أطلس وأيت بن حدو وطرق الصحراء.",
+    "keywords": "Ouarzazate, Kasbah Taourirt, Atlas Studios, Aït Benhaddou, desert gateway Morocco",
+    "og_title": "Ouarzazate Travel Guide | Kasbahs, Film Studios & Desert Gateway | MoroccoTripMap",
+    "og_description": "Plan Ouarzazate: kasbahs, film studios and Aït Benhaddou — gateway between the High Atlas and the desert."
+  },
+  "name": "ورزازات",
+  "hero_subtitle": "قصبات وديكورات سينما وبوابة بين الأطلس الكبير وطرق الصحراء.",
+  "info": {
+    "best_time_label": "أفضل وقت",
+    "best_time_val": "مارس – مايو وسبتمبر – نوفمبر",
+    "stay_label": "مدة مثالية",
+    "stay_val": "2 – 3 أيام",
+    "vibe_label": "الأجواء",
+    "vibe_val": "حافة الصحراء وقصبات ومغرب السينما",
+    "airport_label": "الوصول",
+    "airport_val": "OZZ ورزازات · الطريق من مراكش (~4–5 س)"
+  },
+  "overview": {
+    "title": "مرحباً في ورزازات — بوابة الصحراء",
+    "p1": "تقع ورزازات حيث ينفتح الأطلس الكبير على الهضاب ما قبل الصحراوية. قصبة تاوريرت تثبّت المدينة؛ واستوديوهات أطلس وأيت بن حدو تفسّر مكانتها في السينما والتراث.",
+    "p2": "يومان أو ثلاثة تغطي قصبة المدينة والاستوديوهات وأيت بن حدو، مع وقت لواحة فنت أو تفولتوت."
+  },
+  "places": {
+    "badge": "أبرز المعالم",
+    "title": "أماكن يجب زيارتها في ورزازات",
+    "subtitle": "قصبات واستوديوهات وقصر يونسكو وواحات.",
+    "explore": "استكشف المكان ←",
+    "taourirt": {
+      "name": "قصبة تاوريرت",
+      "desc": "حصن كلاوي سابقاً وأجواء بوابة الصحراء.",
+      "tag": "قصبة"
+    },
+    "atlas-studios": {
+      "name": "استوديوهات أطلس",
+      "desc": "ديكورات في الهواء الطلق — هوليوود المغرب.",
+      "tag": "ديكورات"
+    },
+    "ait-benhaddou": {
+      "name": "أيت بن حدو",
+      "desc": "قصر طيني شهير على طريق القوافل القديم.",
+      "tag": "قصر يونسكو"
+    },
+    "tifoultoute": {
+      "name": "قصبة تفولتوت",
+      "desc": "قصبة على التل بإطلالات واسعة وأهدأ.",
+      "tag": "إطلالة"
+    },
+    "fint": {
+      "name": "واحة فنت",
+      "desc": "ممر نخيل جنوب المدينة.",
+      "tag": "واحة"
+    },
+    "cinema-museum": {
+      "name": "متحف السينما",
+      "desc": "أزياء وقصة التصوير في ورزازات.",
+      "tag": "متحف"
+    },
+    "skoura": {
+      "name": "واحة سكورة",
+      "desc": "واحة واسعة وقصبات نحو دادس.",
+      "tag": "واحة نخيل"
+    },
+    "souk": {
+      "name": "سوق ورزازات",
+      "desc": "شوارع سوق وإيقاع محلي.",
+      "tag": "سوق"
+    }
+  },
+  "itinerary": {
+    "badge": "التخطيط",
+    "title": "3 أيام في ورزازات",
+    "subtitle": "المدينة والاستوديوهات، ثم أيت بن حدو، ثم واحة أو طريق الشرق."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "اليوم 1 — المدينة والاستوديوهات",
+    "day2_tab": "اليوم 2 — أيت بن حدو",
+    "day3_tab": "اليوم 3 — واحة أو طريق الشرق",
+    "day1_m": "صباح — قصبة تاوريرت",
+    "day1_md": "تجوّل في ساحات وشرفات قصبة الكلاوي على طرف المدينة.",
+    "day1_a": "بعد الظهر — استوديوهات أطلس",
+    "day1_ad": "سر بين الديكورات المفتوحة التي جعلت ورزازات مركزاً سينمائياً.",
+    "day1_e": "مساء — وسط المدينة",
+    "day1_ed": "عشاء بسيط في الوسط؛ نم مبكراً إن كان الغد لأيت بن حدو.",
+    "day2_m": "صباح — الطريق إلى أيت بن حدو",
+    "day2_md": "انطلق مبكراً للقصر اليونسكو؛ اصعد للبانوراما الكلاسيكية.",
+    "day2_a": "بعد الظهر — أزقة القصر والغداء",
+    "day2_ad": "استكشف القرية المحصّنة ثم تغدَّ على الضفة الحديثة.",
+    "day2_e": "مساء — العودة إلى ورزازات",
+    "day2_ed": "العودة للمدينة؛ متحف السينما اختياري.",
+    "day3_m": "صباح — واحة فنت أو تفولتوت",
+    "day3_md": "نخيل ومسارات قرية، أو قصبة أهدأ على التل.",
+    "day3_a": "بعد الظهر — سكورة أو وقت حر",
+    "day3_ad": "واحة نحو دادس، أو تسوق وراحة في المدينة.",
+    "day3_e": "مساء — المرحلة التالية",
+    "day3_ed": "نحو دادس أو درعة/زاكورة أو العودة لمراكش حسب مسارك."
+  },
+  "directory": {
+    "badge": "الدليل",
+    "title": "اعثر على إقامتك المثالية في ورزازات",
+    "subtitle": "فنادق المدينة وإقامات النخيل نحو سكورة.",
+    "type_label": "النوع:",
+    "area_label": "المنطقة:",
+    "filter_type_label": "النوع:",
+    "filter_location_label": "المنطقة:",
+    "type_all": "جميع الأنواع",
+    "location_all": "جميع المناطق",
+    "all_types": "جميع الأنواع",
+    "all_areas": "جميع المناطق",
+    "district_label": "المنطقة:",
+    "check_availability": "تحقق من التوفر ←",
+    "check": "تحقق من التوفر ←",
+    "counter": "إقامات",
+    "found": "إقامات",
+    "no_results": "لا توجد إقامات بهذه الفلاتر.",
+    "type_riad": "رياض",
+    "type_hotel": "فندق",
+    "type_dar": "دار / ضيافة",
+    "type_guesthouse": "دار ضيافة",
+    "type_boutique": "بوتيك",
+    "location_town": "وسط المدينة",
+    "location_outskirts": "منطقة القصبة",
+    "location_outside": "سكورة / الشرق",
+    "area_medina": "وسط المدينة",
+    "area_kasbah": "منطقة القصبة",
+    "area_beach": "طريق سكورة",
+    "area_newtown": "المدينة الجديدة"
+  },
+  "eat": {
+    "badge": "مأكولات",
+    "title": "أين تأكل في ورزازات",
+    "subtitle": "طواجن في المدينة وشرفات أيت بن حدو.",
+    "bacha": {
+      "title": "طواجن المدينة",
+      "tag": "محلي",
+      "loc": "الوسط",
+      "desc": "أطباق مغربية كلاسيكية في الوسط."
+    },
+    "elfenn": {
+      "title": "مقاهي قرب القصبة",
+      "tag": "مقهى",
+      "loc": "تاوريرت",
+      "desc": "مشروبات قرب القصبة الرئيسية."
+    },
+    "fassia": {
+      "title": "مطاعم الفنادق",
+      "tag": "فندق",
+      "loc": "المدينة",
+      "desc": "خيارات موثوقة بعد رحلات طويلة."
+    },
+    "jardin": {
+      "title": "شرفات أيت بن حدو",
+      "tag": "رحلة يوم",
+      "loc": "القصر",
+      "desc": "غداء بإطلالة على القرية المحصّنة."
+    },
+    "moha": {
+      "title": "مشويات بسيطة",
+      "tag": "مشوي",
+      "loc": "الوسط",
+      "desc": "لحم وخبز يومي."
+    },
+    "nomad": {
+      "title": "إقامات سكورة",
+      "tag": "واحة",
+      "loc": "سكورة",
+      "desc": "قوائم ثابتة في النخيل."
+    }
+  },
+  "food": {
+    "badge": "مأكولات",
+    "title": "أين تأكل في ورزازات",
+    "subtitle": "طواجن في المدينة وشرفات أيت بن حدو.",
+    "items": {
+      "1": {
+        "name": "طواجن المدينة",
+        "rating": "4.3",
+        "type": "محلي",
+        "area": "الوسط",
+        "desc": "أطباق مغربية كلاسيكية في الوسط."
+      },
+      "2": {
+        "name": "مقاهي قرب القصبة",
+        "rating": "4.2",
+        "type": "مقهى",
+        "area": "تاوريرت",
+        "desc": "مشروبات قرب القصبة الرئيسية."
+      },
+      "3": {
+        "name": "مطاعم الفنادق",
+        "rating": "4.4",
+        "type": "فندق",
+        "area": "المدينة",
+        "desc": "خيارات موثوقة بعد رحلات طويلة."
+      },
+      "4": {
+        "name": "شرفات أيت بن حدو",
+        "rating": "4.5",
+        "type": "رحلة يوم",
+        "area": "القصر",
+        "desc": "غداء بإطلالة على القرية المحصّنة."
+      },
+      "5": {
+        "name": "مشويات بسيطة",
+        "rating": "4.1",
+        "type": "مشوي",
+        "area": "الوسط",
+        "desc": "لحم وخبز يومي."
+      },
+      "6": {
+        "name": "إقامات سكورة",
+        "rating": "4.4",
+        "type": "واحة",
+        "area": "سكورة",
+        "desc": "قوائم ثابتة في النخيل."
+      }
+    }
+  },
+  "tips": {
+    "badge": "نصائح عملية",
+    "title": "نصائح عملية لورزازات",
+    "1": {
+      "title": "التنقل",
+      "desc": "طاكسيات صغيرة في المدينة؛ سائقون خاصون لأيت بن حدو وسكورة وفنت."
+    },
+    "2": {
+      "title": "الشمس والارتفاع",
+      "desc": "شمس قوية وهواء جاف. الليالي قد تكون باردة."
+    },
+    "3": {
+      "title": "رحلات يومية",
+      "desc": "أيت بن حدو أساسية. سكورة ودادس ودرعة تحتاج وقتاً أطول."
+    },
+    "transport": {
+      "title": "التنقل",
+      "desc": "طاكسيات صغيرة في المدينة؛ سائقون خاصون لأيت بن حدو وسكورة وفنت."
+    },
+    "bargain": {
+      "title": "الشمس والارتفاع",
+      "desc": "شمس قوية وهواء جاف. الليالي قد تكون باردة."
+    },
+    "water": {
+      "title": "رحلات يومية",
+      "desc": "أيت بن حدو أساسية. سكورة ودادس ودرعة تحتاج وقتاً أطول."
+    }
+  },
+  "daytrips": {
+    "badge": "خارج المدينة",
+    "title": "رحلات من ورزازات",
+    "subtitle": "قصر يونسكو وواحات ومضايق الشرق.",
+    "ait_benhaddou": {
+      "name": "أيت بن حدو",
+      "title": "Aït Benhaddou",
+      "desc": "قصر يونسكو على بعد 30–40 دقيقة تقريباً."
+    },
+    "dades": {
+      "name": "مضيق دادس",
+      "title": "Dadès Gorge",
+      "desc": "طريق القصبات شرق سكورة."
+    },
+    "draa": {
+      "name": "وادي درعة",
+      "title": "Draa Valley",
+      "desc": "نخيل وقصبات نحو زاكورة."
+    }
+  },
+  "faq": {
+    "badge": "حسنٌ أن تعرف",
+    "title": "أسئلة شائعة عن ورزازات",
+    "q1": {
+      "question": "كم يوماً في ورزازات؟",
+      "answer": "يومان لتاوريرت والاستوديوهات وأيت بن حدو. ثالث لفنت أو سكورة أو بداية الصحراء."
+    },
+    "q2": {
+      "question": "هل ورزازات مجرد محطة؟",
+      "answer": "محور لوجستي، لكن القصبة والاستوديوهات وأيت بن حدو تستحق ليلة أو ليلتين."
+    },
+    "q3": {
+      "question": "كيف أصل؟",
+      "answer": "مطار OZZ برحلات محدودة. غالباً براً من مراكش (4–5 ساعات)."
+    },
+    "q4": {
+      "question": "أفضل وقت؟",
+      "answer": "الربيع والخريف. الصيف حار جداً؛ الشتاء بارد ليلاً."
+    }
+  },
   "ouarzazate_page": {
     "seo": {
-      "title": "دليل سفر Ouarzazate 2026 | أهم المعالم ونقاط اهتمام | MoroccoTripMap",
-      "description": "Plan your trip to Ouarzazate: top attractions, local food, and travel tips."
+      "title": "[AR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Ouarzazate.",
+    "name": "[AR] Name",
+    "hero_subtitle": "[AR] Hero subtitle",
+    "info": {
+      "best_time_label": "[AR] Best time label",
+      "best_time_val": "[AR] Best time val",
+      "stay_label": "[AR] Stay label",
+      "stay_val": "[AR] Stay val",
+      "vibe_label": "[AR] Vibe label",
+      "vibe_val": "[AR] Vibe val",
+      "airport_label": "[AR] Airport label",
+      "airport_val": "[AR] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Ouarzazate",
-      "p1": "Explore Ouarzazate and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "p2": "[AR] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Ouarzazate",
-      "subtitle": "Discover top points of interest in Ouarzazate."
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "taourirt": {
+        "tag": "[AR] Tag",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "explore": "[AR] Explore",
+      "atlas-studios": {
+        "tag": "[AR] Tag",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "ait-benhaddou": {
+        "tag": "[AR] Tag",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "tifoultoute": {
+        "tag": "[AR] Tag",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "fint": {
+        "tag": "[AR] Tag",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "cinema-museum": {
+        "tag": "[AR] Tag",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "skoura": {
+        "tag": "[AR] Tag",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "souk": {
+        "tag": "[AR] Tag",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[AR] Day1 tab",
+      "day2_tab": "[AR] Day2 tab",
+      "day3_tab": "[AR] Day3 tab",
+      "day1_m": "[AR] Day1 m",
+      "day1_md": "[AR] Day1 md",
+      "day1_a": "[AR] Day1 a",
+      "day1_ad": "[AR] Day1 ad",
+      "day1_e": "[AR] Day1 e",
+      "day1_ed": "[AR] Day1 ed",
+      "day2_m": "[AR] Day2 m",
+      "day2_md": "[AR] Day2 md",
+      "day2_a": "[AR] Day2 a",
+      "day2_ad": "[AR] Day2 ad",
+      "day2_e": "[AR] Day2 e",
+      "day2_ed": "[AR] Day2 ed",
+      "day3_m": "[AR] Day3 m",
+      "day3_md": "[AR] Day3 md",
+      "day3_a": "[AR] Day3 a",
+      "day3_ad": "[AR] Day3 ad",
+      "day3_e": "[AR] Day3 e",
+      "day3_ed": "[AR] Day3 ed"
+    },
+    "directory": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "filter_type_label": "[AR] Filter type label",
+      "type_all": "[AR] Type all",
+      "type_hotel": "[AR] Type hotel",
+      "type_riad": "[AR] Type riad",
+      "type_guesthouse": "[AR] Type guesthouse",
+      "filter_location_label": "[AR] Filter location label",
+      "location_all": "[AR] Location all",
+      "location_town": "[AR] Location town",
+      "location_outside": "[AR] Location outside",
+      "location_outskirts": "[AR] Location outskirts",
+      "counter": "[AR] Counter",
+      "district_label": "[AR] District label",
+      "type_label": "[AR] Type label",
+      "check_availability": "[AR] Check availability",
+      "no_results": "[AR] No results"
+    },
+    "eat": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "nomad": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "jardin": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "fassia": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "moha": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bacha": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "elfenn": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[AR] Title",
+      "transport": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bargain": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "water": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "ait_benhaddou": {
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "dades": {
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      },
+      "draa": {
+        "name": "[AR] Name",
+        "desc": "[AR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "q1": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q2": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q3": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q4": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[AR] Destinations",
+    "categories": "[AR] Categories",
+    "cat_stays": "[AR] Cat stays",
+    "cat_gastronomy": "[AR] Cat gastronomy",
+    "cat_experiences": "[AR] Cat experiences",
+    "cat_museums": "[AR] Cat museums",
+    "cat_transport": "[AR] Cat transport",
+    "cat_itineraries": "[AR] Cat itineraries",
+    "cat_guides": "[AR] Cat guides",
+    "history": "[AR] History",
+    "blog": "[AR] Blog",
+    "contact": "[AR] Contact",
+    "cities": "[AR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[AR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[AR] Home",
+    "destinations": "[AR] Destinations"
+  },
+  "footer": {
+    "about_text": "[AR] About text",
+    "destinations_title": "الوجهات",
+    "link_ouarzazate": "[AR] Link ouarzazate",
+    "link_all_destinations": "[AR] Link all destinations",
+    "categories_title": "الفئات",
+    "link_stays": "رياض وفنادق أصيلة",
+    "link_restaurants": "مطاعم مغربية",
+    "connect_title": "تواصل معنا",
+    "youtube_text": "تابع قناتنا على يوتيوب لمشاهدة أدلة السفر بالفيديو:",
+    "copyright": "© 2026 MoroccoTripMap. جميع الحقوق محفوظة.",
+    "link_culture": "تجارب الصحراء والثقافة",
+    "link_transport": "المواصلات والسائقين الخاصين",
+    "link_circuits": "الرحلات والمسارات",
+    "link_history": "تاريخ المغرب",
+    "link_guides": "أدلة السفر",
+    "link_blog": "المدونة",
+    "link_contact": "اتصل بنا",
+    "link_itineraries": "الرحلات والمسارات",
+    "col_imperial": "المدن الإمبراطورية والثقافة",
+    "col_desert": "الصحراء والجنوب الكبير",
+    "col_practical": "أدلة عملية وإقامة",
+    "created_by": "تم الإنشاء بواسطة"
   }
 }

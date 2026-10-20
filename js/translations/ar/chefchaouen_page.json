@@ -1,19 +1,417 @@
 {
+  "seo": {
+    "title": "دليل سفر شفشاون | جوهرة المغرب الزرقاء | MoroccoTripMap",
+    "description": "خطط لرحلتك إلى شفشاون: أبرز المعالم (وطاء الحمام، راس الماء، المسجد الإسباني)، أفضل الرياضات والدارات، المطاعم المحلية، رحلة شلالات أقشور، ونصائح عملية.",
+    "og_title": "دليل سفر شفشاون | الأنشطة، الإقامة ورحلات أقشور | MoroccoTripMap",
+    "og_description": "اكتشف جوهرة المغرب الزرقاء: أبرز المعالم، دور الضيافة الأصيلة، شلالات أقشور، ونصائح السفر."
+  },
+  "hero_subtitle": "جوهرة المغرب الزرقاء الأيقونية المتألقة في قلب جبال الريف الخلابة.",
+  "info": {
+    "best_time_label": "أفضل وقت للزيارة",
+    "best_time_val": "مارس – ماي & سبتمبر – نوفمبر",
+    "stay_label": "مدة الإقامة المثالية",
+    "stay_val": "2 – 3 أيام",
+    "vibe_label": "الأجواء",
+    "vibe_val": "مريحة وساحرة للتصوير",
+    "airport_label": "أقرب مطار",
+    "airport_val": "مطار طنجة (TNG) أو فاس (FES)"
+  },
+  "overview": {
+    "title": "مرحباً بك في الجوهرة الزرقاء",
+    "p1": "تشتهر شفشاون عالمياً بلوحتها الفنية المذهلة من المباني المطلية بالأزرق والمزروعة في قمم جبال الريف الدرامية. تأسست سنة 1471 كقلعة، وتوفر هذه المدينة الجبلية الهادئة ملاذاً مريحاً بعيداً عن صخب المدن الإمبراطورية الكبرى.",
+    "p2": "تجول في الأزقة المرصوفة بالحصى المتعرجة، استرخِ في الساحات النابضة بالحياة مع الشاي بالنعناع، شاهد غروب الشمس فوق الوادي من المسجد الإسباني، أو انطلق في مسارات الطبيعة الساحرة بمنتزه تلاسمتان الوطني."
+  },
+  "places": {
+    "badge": "أماكن لا تفوت",
+    "title": "أبرز المعالم السياحية في شفشاون",
+    "subtitle": "أزقة زرقاء أيقونية، قلاع تاريخية، وإطلالات جبلية ساحرة.",
+    "explore": "استكشف المكان ←",
+    "outa": {
+      "tag": "الساحة الرئيسية",
+      "title": "ساحة وطاء الحمام",
+      "desc": "القلب النابض للمدينة وتحيط بها المقاهي الخارجية، وتتوسطها القصبة ذات الجدران الحمراء والمسجد الأعظم."
+    },
+    "kasbah": {
+      "tag": "تاريخ ومتحف",
+      "title": "قصبة شفشاون",
+      "desc": "حصن يعود للقرن الخامس عشر يضم حدائق أندلسية غنّاء، متحفاً إثنوغرافياً وبرجاً بإطلالات بانورامية."
+    },
+    "akchour": {
+      "tag": "رحلة طبيعية",
+      "title": "شلالات أقشور وقنطرة الله",
+      "desc": "مسارات نهرية مذهلة، برك مائية زمردية، وأقواس صخرية طبيعية في متنزه تلاسمتان الوطني."
+    },
+    "mosquee": {
+      "tag": "إطلالات بانورامية",
+      "title": "المسجد الإسباني (بوزعفر)",
+      "desc": "مسجد يقع على قمة تل يوفر أفضل إطلالة لغروب الشمس فوق المدينة الزرقاء والوادي المحيط."
+    }
+  },
+  "itinerary": {
+    "badge": "التخطيط",
+    "title": "برنامج سياحي مقترح لمدة 3 أيام",
+    "subtitle": "جدول متوازن لالتقاط أفضل صور لقطات وتجارب جبلية ممتعة."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "اليوم 1 — المدينة العتيقة الزرقاء",
+    "day1_m": "الصباح — ساحة وطاء الحمام والقصبة",
+    "day1_md": "ابدأ جولتك في الساحة الرئيسية، زر القصبة وحدائقها، ثم تجول في الأزقة الزرقاء عندما يكون الضوء هادئاً والشوارع هادئة.",
+    "day1_a": "الظهيرة — التيه في الأزقة الزرقاء",
+    "day1_ad": "خذ وقتك في ممرات المدينة العتيقة، وتوقف عند المتاجر والمقاهي الصغيرة. استمتع بالشاي بالنعناع في الساحة واجعل الكاميرا جاهزة في كل زاوية.",
+    "day1_e": "المساء — غروب الشمس في المسجد الإسباني",
+    "day1_ed": "اصعد مشياً إلى المسجد الإسباني للاستمتاع بإطلالات بانورامية فوق الأسطح الزرقاء وقت الغروب، ثم انزل لتناول العشاء في المدينة العتيقة.",
+    "day2_tab": "اليوم 2 — أقشور والنكهات",
+    "day2_m": "الصباح — شلالات أقشور",
+    "day2_md": "استقل سيارة أجرة كبيرة مبكراً نحو أقشور لتمشية نهرية خلابة عبر متنزه تلاسمتان الوطني، نحو الشلال الصغير أو مسار قنطرة الله إن كانت لديك طاقة.",
+    "day2_a": "الظهيرة — العودة والجبن المحلي",
+    "day2_ad": "عد إلى المدينة بعد الظهر وتذوق جبن الماعز الشهير بالمنطقة، إلى جانب الخبز الطازج والزيتون المحلي.",
+    "day2_e": "المساء — عشاء على السطح",
+    "day2_ed": "اختتم يومك بعشاء تقليدي على شرفة سطح مطلة على أضواء المدينة العتيقة.",
+    "day3_tab": "اليوم 3 — الحرفيون وراس الماء",
+    "day3_m": "الصباح — منبع راس الماء",
+    "day3_md": "امشِ نحو ينبوع راس الماء على أطراف المدينة العتيقة، حيث يتجمع السكان المحليون ويغسلون الملابس ويسترخون قرب المياه.",
+    "day3_a": "الظهيرة — النساجون والحرف اليدوية",
+    "day3_ad": "زيارة النساجين المحليين ومحلات الحرف لرؤية صناعة الأغطية المنسوجة ومنتجات الصوف والمشغولات اليدوية مباشرة من الحرفيين.",
+    "day3_e": "المساء — المغادرة بهدوء",
+    "day3_ed": "استمتع بكأس أخيرة من الشاي بالنعناع في الساحة قبل التوجه إلى وجهتك القادمة."
+  },
+  "stays": {
+    "badge": "الاختيار والنصائح",
+    "title": "أين تقيم في شفشاون؟ توصياتنا المفضلة",
+    "subtitle": "من الرياضات الفاخرة ذات السبا إلى الفنادق البوتيكية الساحرة على سفوح الجبال، إليك أفضل عناوين الإقامة.",
+    "book": "احجز ←",
+    "card1": {
+      "badge": "★ رياض فاخر وسبا",
+      "name": "لينا رياض وسبا",
+      "desc": "رياض فاخر استثنائي يتميز بمسابح داخلية ومرافق سبا راقية وغرف أنيقة تطل على المدينة الزرقاء.",
+      "location": "المدينة الزرقاء"
+    },
+    "card2": {
+      "badge": "★ إطلالة جبلية ساحرة",
+      "name": "فندق بوتيك دار ياسمين",
+      "desc": "فندق بوتيكي رائع على سفح التل يوفر مسبحاً وحديقة غناء وإطلالات بانورامية خلابة على شفشاون.",
+      "location": "منطقة المسجد الإسباني"
+    },
+    "card3": {
+      "badge": "★ دار ضيافة أندلسية",
+      "name": "كازا برليتا",
+      "desc": "دار ضيافة تقليدية دافئة وحميمة تجمع بين الطراز الأندلسي الأصيل والضيافة الكريمة مع تراس رائع.",
+      "location": "باب السوق"
+    }
+  },
+  "booking_banner": {
+    "badge": "أكثر من 200+ مكان إقامة في شفشاون",
+    "title": "استكشف جميع الفنادق والرياضات في شفشاون",
+    "desc": "قارن الأسعار المباشرة، واقرأ تقييمات الزوار الموثوقة، واستفد من إلغاء الحجز المجاني في معظم الرياضات والدور الجبلية.",
+    "btn": "عرض جميع أماكن الإقامة على Booking.com",
+    "guarantee": "✓ أفضل سعر مضمون وحجز آمن"
+  },
+  "eat": {
+    "badge": "المطاعم والطبخ",
+    "title": "أفضل المطاعم والمقاهي",
+    "subtitle": "أطباق شمال المغرب الأصيلة، جبن الماعز، وإطلالات السطوح البانورامية",
+    "ssour": {
+      "tag": "مغربي تقليدي",
+      "loc": "زقاق المدينة القديمة",
+      "title": "باب الصور",
+      "desc": "مطعم دافئ متعدد الطوابق يقدم طواجن منزلية، سلطات طازجة وتخصصات محلية."
+    },
+    "sofia": {
+      "tag": "طبخ منزلي",
+      "loc": "قرب وطاء الحمام",
+      "title": "مطعم صوفيا",
+      "desc": "مطعم عائلي يشتهر بالبسطيلة الطيبة، الطواجن، والضيافة الودودة."
+    },
+    "aladdin": {
+      "tag": "بانوراما وطاء الحمام",
+      "loc": "الساحة الرئيسية",
+      "title": "مطعم علاء الدين",
+      "desc": "قصر عربي أندلسي يوفر إطلالات بانورامية على القصبة من ثلاث شاشات سطحية."
+    }
+  },
+  "tips": {
+    "title": "نصائح عملية لزيارة شفشاون",
+    "shoes": {
+      "title": "أزقة منحدرة وأحذية مريحة",
+      "desc": "ارتدِ أحذية مشي مريحة ذات قبضة جيدة — فالدرجات المرصوفة والشوارع الزرقاء قد تكون منحدرة وزلقة."
+    },
+    "photo": {
+      "title": "آداب التصوير الفوتوغرافي",
+      "desc": "اطلب دائماً الإذن قبل التقاط صور مقربة للسكان المحليين، لا سيما كبار السن والأطفال في المدينة العتيقة."
+    },
+    "cash": {
+      "title": "النقد والصرافات الآلية",
+      "desc": "معظم المتاجر الصغيرة والمقاهي ودور الضيافة تقبل النقود فقط (الدرهم المغربي MAD). تتوفر الصرافات الآلية قرب ساحة وطاء الحمام."
+    }
+  },
+  "daytrips": {
+    "badge": "خارج الأزقة الزرقاء",
+    "title": "أفضل الرحلات اليومية من شفشاون",
+    "subtitle": "اكتشف الشلالات، المتنزهات الوطنية وطرق الجبال الساحلية القريبة.",
+    "akchour": {
+      "title": "شلالات أقشور والقنطرة",
+      "desc": "برك مائية زمردية، مسارات نهرية وقنطرة الله الصخرية الطبيعية (على بعد 45 دقيقة بالسيارة)."
+    },
+    "tetouan": {
+      "title": "مدينة تطوان العتيقة",
+      "desc": "مدينه أندلسية مسجلة في اليونسكو وغنية بالتراث الحرفي (على بعد ساعة ونصف بالسيارة)."
+    },
+    "ouedlaou": {
+      "title": "الساحل المتوسطي (واد لو)",
+      "desc": "شواطئ حصوية ومياه تركوازية على ساحل البحر الأبيض المتوسط (على بعد ساعة وربع بالسيارة)."
+    },
+    "tanger": {
+      "title": "طنجة - بوابة إفريقيا",
+      "desc": "ادمج رحلتك بالمدينة الساحلية الأسطورية على مضيق جبل طارق (على بعد ساعتين وربع بالسيارة)."
+    }
+  },
+  "faq": {
+    "badge": "معلومات مفيدة",
+    "title": "الأسئلة الشائعة حول شفشاون",
+    "q1": {
+      "question": "كم يوماً يجب أن أقيم في شفشاون؟",
+      "answer": "يُعد قضاء يومين إلى 3 أيام أمراً مثالياً للتجول في المدينة القديمة، مشاهدة غروب الشمس في المسجد الإسباني، والقيام برحلة ليوم واحد إلى شلالات أقشور."
+    },
+    "q2": {
+      "question": "هل الوصول إلى شفشاون سهل بالقطار أو الحافلة؟",
+      "answer": "لا، شفشاون لا تتوفر على محطة قطار. أسهل الخيارات هي حافلات CTM، سيارات الأجرة الكبيرة، أو التنقلات الخاصة من طنجة أو تطوان أو فاس."
+    },
+    "q3": {
+      "question": "لماذا تم طلاء شفشاون باللون الأزرق؟",
+      "answer": "توجد عدة نظريات: قدمه اللاجئون اليهود في الثلاثينيات كرمز للسماء، أُبقي عليه كطارد طبيعي للبعوض، أو للحفاظ على برودة المنازل وجذب الزوار."
+    }
+  },
   "chefchaouen_page": {
     "seo": {
-      "title": "دليل سفر Chefchaouen 2026 | أهم المعالم ونقاط اهتمام | MoroccoTripMap",
-      "description": "Plan your trip to Chefchaouen: top attractions, local food, and travel tips."
+      "title": "[AR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Chefchaouen.",
+    "hero_subtitle": "[AR] Hero subtitle",
+    "info": {
+      "best_time_label": "[AR] Best time label",
+      "best_time_val": "[AR] Best time val",
+      "stay_label": "[AR] Stay label",
+      "stay_val": "[AR] Stay val",
+      "vibe_label": "[AR] Vibe label",
+      "vibe_val": "[AR] Vibe val",
+      "airport_label": "[AR] Airport label",
+      "airport_val": "[AR] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Chefchaouen",
-      "p1": "Explore Chefchaouen and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "p2": "[AR] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Chefchaouen",
-      "subtitle": "Discover top points of interest in Chefchaouen."
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "outa": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "explore": "[AR] Explore",
+      "kasbah": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "akchour": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "mosquee": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[AR] Day1 tab",
+      "day2_tab": "[AR] Day2 tab",
+      "day3_tab": "[AR] Day3 tab",
+      "day1_m": "[AR] Day1 m",
+      "day1_md": "[AR] Day1 md",
+      "day1_a": "[AR] Day1 a",
+      "day1_ad": "[AR] Day1 ad",
+      "day1_e": "[AR] Day1 e",
+      "day1_ed": "[AR] Day1 ed",
+      "day2_m": "[AR] Day2 m",
+      "day2_md": "[AR] Day2 md",
+      "day2_a": "[AR] Day2 a",
+      "day2_ad": "[AR] Day2 ad",
+      "day2_e": "[AR] Day2 e",
+      "day2_ed": "[AR] Day2 ed",
+      "day3_m": "[AR] Day3 m",
+      "day3_md": "[AR] Day3 md",
+      "day3_a": "[AR] Day3 a",
+      "day3_ad": "[AR] Day3 ad",
+      "day3_e": "[AR] Day3 e",
+      "day3_ed": "[AR] Day3 ed"
+    },
+    "stays": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "card1": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      },
+      "book": "[AR] Book",
+      "card2": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      },
+      "card3": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "desc": "[AR] Desc",
+      "btn": "[AR] Btn",
+      "guarantee": "[AR] Guarantee"
+    },
+    "eat": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "ssour": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "sofia": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "aladdin": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[AR] Title",
+      "shoes": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "photo": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "cash": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "akchour": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "tetouan": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "ouedlaou": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "tanger": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "q1": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q2": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q3": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[AR] Destinations",
+    "categories": "[AR] Categories",
+    "cat_stays": "[AR] Cat stays",
+    "cat_gastronomy": "[AR] Cat gastronomy",
+    "cat_experiences": "[AR] Cat experiences",
+    "cat_museums": "[AR] Cat museums",
+    "cat_transport": "[AR] Cat transport",
+    "cat_itineraries": "[AR] Cat itineraries",
+    "cat_guides": "[AR] Cat guides",
+    "history": "[AR] History",
+    "blog": "[AR] Blog",
+    "contact": "[AR] Contact",
+    "cities": "[AR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[AR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[AR] Home",
+    "destinations": "[AR] Destinations"
+  },
+  "destinations": {
+    "chefchaouen": {
+      "name": "[AR] Name"
+    }
+  },
+  "footer": {
+    "about_text": "[AR] About text",
+    "destinations_title": "الوجهات",
+    "link_marrakech": "[AR] Link marrakech",
+    "link_chefchaouen": "[AR] Link chefchaouen",
+    "link_all_destinations": "[AR] Link all destinations",
+    "categories_title": "الفئات",
+    "link_stays": "رياض وفنادق أصيلة",
+    "link_restaurants": "مطاعم مغربية",
+    "connect_title": "تواصل معنا",
+    "youtube_text": "تابع قناتنا على يوتيوب لمشاهدة أدلة السفر بالفيديو:",
+    "copyright": "© 2026 MoroccoTripMap. جميع الحقوق محفوظة.",
+    "link_culture": "تجارب الصحراء والثقافة",
+    "link_transport": "المواصلات والسائقين الخاصين",
+    "link_circuits": "الرحلات والمسارات",
+    "link_history": "تاريخ المغرب",
+    "link_guides": "أدلة السفر",
+    "link_blog": "المدونة",
+    "link_contact": "اتصل بنا",
+    "link_itineraries": "الرحلات والمسارات",
+    "col_imperial": "المدن الإمبراطورية والثقافة",
+    "col_desert": "الصحراء والجنوب الكبير",
+    "col_practical": "أدلة عملية وإقامة",
+    "created_by": "تم الإنشاء بواسطة"
   }
 }

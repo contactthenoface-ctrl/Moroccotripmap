@@ -1,19 +1,487 @@
 {
+  "seo": {
+    "title": "دليل الصويرة 2026 | المدينة اليونسكو والسقالة ورياح الأطلسي | MoroccoTripMap",
+    "description": "دليل الصويرة: مدينة مدرجة في اليونسكو، السقالة، ميناء الصيد، الشاطئ الأطلسي، الملاح وروح الكناوة. متى تزور وماذا ترى ورحلات يومية على الساحل العاصف.",
+    "keywords": "الصويرة, مدينة الصويرة, سقالة الصويرة, موغادور, أطلسي المغرب, كناوة"
+  },
+  "name": "الصويرة",
+  "hero_subtitle": "رياح تجارية أطلسية، مدينة يونسكو بيضاء وزرقاء، مدافع السقالة في وجه المحيط وميناء صيد نابض — أكثر مدن المغرب الساحلية رياحاً وجمالاً للتصوير.",
+  "info": {
+    "best_time_label": "أفضل وقت للزيارة",
+    "best_time_val": "أبريل – يونيو وسبتمبر – أكتوبر",
+    "stay_label": "مدة الإقامة المثالية",
+    "stay_val": "2 – 3 أيام",
+    "vibe_label": "الأجواء",
+    "vibe_val": "أطلسي عاصف ومدينة بيضاء",
+    "airport_label": "الوصول",
+    "airport_val": "مطار الصويرة (ESU) · الدار البيضاء (CMN) · مراكش (RAK)"
+  },
+  "overview": {
+    "title": "مرحباً في الصويرة — رياح وأسوار وضوء أطلسي",
+    "p1": "تقع الصويرة على الساحل الأطلسي للمغرب، على بعد نحو ساعتين ونصف غرب مراكش. مدينتها العتيقة مدرجة ضمن قائمة التراث العالمي لليونسكو: شوارع مستقيمة، جدران مبيّضة، نوافذ زرقاء، وأسوار السقالة المصفّوفة بمدافع تاريخية مواجهة للموج.",
+    "p2": "ميناء الصيد النابض بالحياة، الشاطئ الطويل، أسواق الحرف التقليدية، والجزر الأرجوانية قبالة الساحل تمنح المدينة إيقاعاً متناغماً — أسوار يمكن المشي فوقها، مأكولات بحرية طازجة عند الميناء، ورياح تجارية ثابتة جعلت منها وجهة عالمية لعشاق الرياضات المائية والفنانين.",
+    "p3": "تعال للاستمتاع بالضوء الساطع، صباحات الميناء الهادئة، وجولات السقالة. ليلتان أو ثلاث ليالٍ تكفي للاستمتاع بالشاطئ ورحلة يومية نحو الريف أو القرى الساحلية المجاورة."
+  },
+  "places": {
+    "badge": "أبرز المعالم",
+    "title": "أماكن يجب زيارتها في الصويرة",
+    "subtitle": "أسوار المدينة التاريخية، حياة الميناء النشطة، والرمال الأطلسية الساحرة.",
+    "explore": "استكشف المكان ←",
+    "medina": {
+      "tag": "يونسكو",
+      "title": "المدينة والأسوار",
+      "desc": "مدينة يونسكو بيضاء وزرقاء بشوارع هندسية مستقيمة وأسوار دفاعية على البحر."
+    },
+    "skala_ville": {
+      "tag": "أسوار",
+      "title": "سقالة المدينة",
+      "desc": "منصة المدافع الشهيرة فوق المحيط — أشهر نقاط مشاهدة الغروب في الصويرة."
+    },
+    "skala_port": {
+      "tag": "أسوار الميناء",
+      "title": "سقالة الميناء",
+      "desc": "حصن الميناء المحصّن الذي يوفر إطلالات مذهلة على القوارب والجزر."
+    },
+    "port": {
+      "tag": "ميناء",
+      "title": "ميناء الصيد",
+      "desc": "مرفأ يعج بالقوارب الزرقاء التقليدية، صيد الصباح، ووجبات شواء السمك الطازج."
+    },
+    "plage": {
+      "tag": "شاطئ",
+      "title": "شاطئ الصويرة",
+      "desc": "شريط رملي أطلسي واسع مثالي للمشي، ممارسة الكايت سيرف، ومراقبة الغروب (مع رياح متكررة)."
+    },
+    "mellah": {
+      "tag": "تراث",
+      "title": "الملاح",
+      "desc": "أزقة الحي اليهودي التاريخي التي تضفي طابعاً عريقاً ضمن نسيج المدينة."
+    },
+    "iles": {
+      "tag": "جزر",
+      "title": "الجزر الأرجوانية",
+      "desc": "جزر صخرية قبالة الساحل — يمكن الاستمتاع بإطلالاتها من السقالة أو القيام برحلة بحرية قصيرة عند السماح."
+    },
+    "souks": {
+      "tag": "حرف",
+      "title": "الأسواق وحي الحرفيين",
+      "desc": "محلات صناعة خشب العرعار، الفضة، وأزقة التوابل العطرية داخل المدينة العتيقة."
+    }
+  },
+  "itinerary": {
+    "badge": "التخطيط",
+    "title": "خطة مقترحة لمدة 3 أيام في الصويرة",
+    "subtitle": "الأسوار والميناء أولاً، ثم الشاطئ والجزر، مع استكشاف هادئ للأسواق والحرف."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "اليوم 1 — المدينة والسقالة",
+    "day1_m": "صباحاً — المدينة والأسوار",
+    "day1_md": "دخول المدينة البيضاء والزرقاء المدرجة في اليونسكو؛ والمشي فوق سقالة المدينة المطلة على الأطلسي.",
+    "day1_a": "بعد الظهر — الميناء وسقالة الميناء",
+    "day1_ad": "زيارة ميناء الصيد والقوارب الزرقاء، ثم الصعود إلى سقالة الميناء لمشاهدة المدافع وإطلالات البحر.",
+    "day1_e": "مساءً — الملاح وعشاء المأكولات البحرية",
+    "day1_ed": "التجول في أزقة الحي اليهودي القديم، وتناول وجبة مأكولات بحرية طازجة قرب الميناء أو الإقامة في رياض تقليدي.",
+    "day2_tab": "اليوم 2 — الشاطئ والأسواق",
+    "day2_m": "صباحاً — شاطئ الصويرة",
+    "day2_md": "نزهة على الرمال الأطلسية الطويلة جنوب الأسوار — أو مراقبة ممارسي الكايت سيرف والرياضات البحرية.",
+    "day2_a": "بعد الظهر — أسواق الحرف اليدوية",
+    "day2_ad": "استكشاف ورش خشب العرعار، الفضة، وأزقة التوابل داخل المدينة العتيقة.",
+    "day2_e": "مساءً — غروب الشمس على الأسوار",
+    "day2_ed": "العودة إلى السقالة للاستمتاع بالرياح والضوء الذهبي الغارب فوق الجزر.",
+    "day3_tab": "اليوم 3 — الجزر أو رحلة ساحلية",
+    "day3_m": "صباحاً — الجزر الأرجوانية أو جولة حرة",
+    "day3_md": "القيام برحلة بحرية بالقارب نحو الجزر الأرجوانية (حسب حالة البحر)، أو قضاء صباح هادئ في أزقة المدينة.",
+    "day3_a": "بعد الظهر — الشاطئ أو قرية ديابات",
+    "day3_ad": "قضاء وقت إضافي على الشاطئ، أو القيام بزيارة قصيرة نحو قرية ديابات والكثبان الساحلية المجاورة.",
+    "day3_e": "مساءً — الختام والمغادرة",
+    "day3_ed": "نزهة أخيرة في الميناء، والاستعداد للتوجه نحو مراكش أو أكادير."
+  },
+  "directory": {
+    "badge": "الإقامة",
+    "title": "اعثر على إقامتك المثالية في الصويرة",
+    "subtitle": "رياضات تقليدية داخل المدينة، فنادق بإطلالات بحرية، وإقامات هادئة قرب الشاطئ.",
+    "filter_type_label": "النوع:",
+    "type_label": "النوع:",
+    "type_all": "جميع الأنواع",
+    "type_hotel": "فندق",
+    "type_riad": "رياض",
+    "type_guesthouse": "دار ضيافة",
+    "filter_location_label": "المنطقة:",
+    "district_label": "المنطقة:",
+    "location_all": "جميع المناطق",
+    "location_town": "المدينة",
+    "location_outside": "خارج الأسوار",
+    "location_outskirts": "الأطراف",
+    "counter": "إقامات",
+    "no_results": "لا توجد إقامات مطابقة.",
+    "check_availability": "تحقق من التوفر ←",
+    "stays": "إقامات",
+    "all_types": "جميع الأنواع",
+    "all_areas": "جميع المناطق"
+  },
+  "eat": {
+    "badge": "فن الطهي",
+    "title": "أين تأكل في الصويرة",
+    "subtitle": "أسماك مشوية طازجة في الميناء، طاولات المدينة، ومقاهي الشاطئ.",
+    "nomad": {
+      "tag": "مأكولات بحرية",
+      "loc": "الميناء",
+      "title": "شواء الميناء",
+      "desc": "طاولات شعبية مزدحمة وقت الظهيرة عند وصول قوارب الصيد."
+    },
+    "jardin": {
+      "tag": "مقهى",
+      "loc": "الشاطئ",
+      "title": "مقاهي الشاطئ",
+      "desc": "أطعمة خفيفة ومشروبات على شريط الساحل الأطلسي."
+    },
+    "moha": {
+      "tag": "فندق",
+      "loc": "المركز",
+      "title": "مطاعم الفنادق",
+      "desc": "خيارات طعام موثوقة ومتميزة بالقرب من الأسوار."
+    },
+    "fassia": {
+      "tag": "مقهى",
+      "loc": "المدينة",
+      "title": "مقاهي المدينة",
+      "desc": "جلسات قهوة يومية ممتعة بعيداً عن صخب الشاطئ."
+    },
+    "elfenn": {
+      "tag": "محلي",
+      "loc": "المدينة",
+      "title": "طواجن وسلطات",
+      "desc": "أطباق مغربية تقليدية متنوعة إلى جانب المأكولات البحرية."
+    },
+    "bacha": {
+      "tag": "محلي",
+      "loc": "الواجهة",
+      "title": "عشاء المساء",
+      "desc": "أجواء مريحة وخدمة لاحقة حين تهدأ رياح المساء."
+    }
+  },
+  "tips": {
+    "title": "نصائح عملية لزيارة الصويرة",
+    "transport": {
+      "title": "التنقل",
+      "desc": "يمكن استكشاف المدينة بالكامل سيراً على الأقدام. تتوفر سيارات الأجرة الصغيرة للتنقل نحو الشاطئ ومحطة الحافلات، ويُفضل الاتفاق على السعر مسبقاً للرحلات الساحلية الأطول."
+    },
+    "bargain": {
+      "title": "الرياح والشمس",
+      "desc": "الرياح التجارية جزء أصيل من طابع المدينة — احرص على إحضار سترة خفيفة حتى في الصيف، واستخدم واقياً للشمس بدرجة عالية على السقالة والشاطئ."
+    },
+    "water": {
+      "title": "التذاكر والنقد",
+      "desc": "معظم المعالم والمسارات داخل المدينة مجانية. احرص على حمل النقود بالدرهم لسيارات الأجرة، وجبات الميناء، ومشتريات الأسواق."
+    }
+  },
+  "daytrips": {
+    "badge": "حول الصويرة",
+    "title": "أفضل الرحلات اليومية من الصويرة",
+    "subtitle": "شواطئ ساحلية، قرى هادئة، ومناظر طبيعية مميزة.",
+    "sidi_kaouki": {
+      "title": "سيدي كاوكي",
+      "desc": "شاطئ شهير برياضه وأجوائه الهادئة لركوب الأمواج على بعد 25 دقيقة جنوباً."
+    },
+    "diabat": {
+      "title": "ديابات",
+      "desc": "قرية هادئة وكثبان رملية ساحرة تقع بالقرب من المدينة."
+    },
+    "marrakech": {
+      "title": "مراكش",
+      "desc": "مدينة تاريخية وأسواق عريقة على بعد ساعتين ونصف شرقاً."
+    },
+    "argan": {
+      "title": "بلاد الأركان الساحلية",
+      "desc": "طرق ريفية غنية بأشجار الأركان ومناظر أطلسية خلابة."
+    }
+  },
+  "faq": {
+    "badge": "معلومات مفيدة",
+    "title": "الأسئلة الشائعة حول الصويرة",
+    "q1": {
+      "question": "كم يوماً تكفي لزيارة الصويرة؟",
+      "answer": "يومان كاملان يغطيان المدينة القديمة، السقالة، الميناء والشاطئ براحة. وثلاثة أيام تتيح لك إيقاعاً أهدأ مع إمكانية القيام برحلة ساحلية."
+    },
+    "q2": {
+      "question": "هل الصويرة مدينة عاصفة جداً؟",
+      "answer": "نعم، الرياح التجارية جزء أساسي من هويتها؛ وهي ممتازة للأجواء ورياضات الرياح، لكن يُنصح بإحضار سترة خفيفة عند زيارة الأسوار."
+    },
+    "q3": {
+      "question": "كيف أصل إلى الصويرة؟",
+      "answer": "يستقبل مطار الصويرة (ESU) رحلات موسمية، كما توجد حافلات منتظمة وخدمات نقل خاص تربطها بمراكش (حوالي ساعتين ونصف) والدار البيضاء."
+    },
+    "q4": {
+      "question": "ما هو أفضل وقت للزيارة؟",
+      "answer": "فترة الربيع وأوائل الخريف توفر مناخاً ورياحاً ألطف. فصل الصيف حيوي ونشط لكنه عاصف، بينما الشتاء يكون أهدأ وأبرز برودة."
+    },
+    "q5": {
+      "question": "هل الشاطئ مناسب للسباحة؟",
+      "answer": "الشاطئ ممتاز للمشي الطويل والرياضات البحرية؛ أما السباحة فتعتمد بشكل مباشر على حالة الموج وقوة الرياح، لذا يُنصح بالتحقق من الظروف المحلية."
+    }
+  },
+  "destinations": {
+    "essaouira": {
+      "name": "الصويرة"
+    }
+  },
   "essaouira_page": {
     "seo": {
-      "title": "دليل سفر Essaouira 2026 | أهم المعالم ونقاط اهتمام | MoroccoTripMap",
-      "description": "Plan your trip to Essaouira: top attractions, local food, and travel tips."
+      "title": "[AR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Essaouira.",
+    "name": "[AR] Name",
+    "hero_subtitle": "[AR] Hero subtitle",
+    "info": {
+      "best_time_label": "[AR] Best time label",
+      "best_time_val": "[AR] Best time val",
+      "stay_label": "[AR] Stay label",
+      "stay_val": "[AR] Stay val",
+      "vibe_label": "[AR] Vibe label",
+      "vibe_val": "[AR] Vibe val",
+      "airport_label": "[AR] Airport label",
+      "airport_val": "[AR] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Essaouira",
-      "p1": "Explore Essaouira and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "p2": "[AR] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Essaouira",
-      "subtitle": "Discover top points of interest in Essaouira."
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "medina": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "explore": "[AR] Explore",
+      "skala_ville": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "skala_port": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "port": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "plage": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "mellah": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "iles": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "souks": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[AR] Day1 tab",
+      "day2_tab": "[AR] Day2 tab",
+      "day3_tab": "[AR] Day3 tab",
+      "day1_m": "[AR] Day1 m",
+      "day1_md": "[AR] Day1 md",
+      "day1_a": "[AR] Day1 a",
+      "day1_ad": "[AR] Day1 ad",
+      "day1_e": "[AR] Day1 e",
+      "day1_ed": "[AR] Day1 ed",
+      "day2_m": "[AR] Day2 m",
+      "day2_md": "[AR] Day2 md",
+      "day2_a": "[AR] Day2 a",
+      "day2_ad": "[AR] Day2 ad",
+      "day2_e": "[AR] Day2 e",
+      "day2_ed": "[AR] Day2 ed",
+      "day3_m": "[AR] Day3 m",
+      "day3_md": "[AR] Day3 md",
+      "day3_a": "[AR] Day3 a",
+      "day3_ad": "[AR] Day3 ad",
+      "day3_e": "[AR] Day3 e",
+      "day3_ed": "[AR] Day3 ed"
+    },
+    "directory": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "filter_type_label": "[AR] Filter type label",
+      "type_all": "[AR] Type all",
+      "type_hotel": "[AR] Type hotel",
+      "type_riad": "[AR] Type riad",
+      "type_guesthouse": "[AR] Type guesthouse",
+      "filter_location_label": "[AR] Filter location label",
+      "location_all": "[AR] Location all",
+      "location_town": "[AR] Location town",
+      "location_outside": "[AR] Location outside",
+      "location_outskirts": "[AR] Location outskirts",
+      "counter": "[AR] Counter",
+      "district_label": "[AR] District label",
+      "type_label": "[AR] Type label",
+      "check_availability": "[AR] Check availability",
+      "no_results": "[AR] No results"
+    },
+    "eat": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "nomad": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "jardin": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "fassia": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "moha": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bacha": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "elfenn": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[AR] Title",
+      "transport": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bargain": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "water": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "sidi_kaouki": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "diabat": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "marrakech": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "argan": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "q1": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q2": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q3": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q4": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[AR] Destinations",
+    "categories": "[AR] Categories",
+    "cat_stays": "[AR] Cat stays",
+    "cat_gastronomy": "[AR] Cat gastronomy",
+    "cat_experiences": "[AR] Cat experiences",
+    "cat_museums": "[AR] Cat museums",
+    "cat_transport": "[AR] Cat transport",
+    "cat_itineraries": "[AR] Cat itineraries",
+    "cat_guides": "[AR] Cat guides",
+    "history": "[AR] History",
+    "blog": "[AR] Blog",
+    "contact": "[AR] Contact",
+    "cities": "[AR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[AR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[AR] Home",
+    "destinations": "[AR] Destinations"
+  },
+  "footer": {
+    "about_text": "[AR] About text",
+    "destinations_title": "الوجهات",
+    "link_essaouira": "[AR] Link essaouira",
+    "link_all_destinations": "[AR] Link all destinations",
+    "categories_title": "الفئات",
+    "link_stays": "رياض وفنادق أصيلة",
+    "link_restaurants": "مطاعم مغربية",
+    "connect_title": "تواصل معنا",
+    "youtube_text": "تابع قناتنا على يوتيوب لمشاهدة أدلة السفر بالفيديو:",
+    "copyright": "© 2026 MoroccoTripMap. جميع الحقوق محفوظة.",
+    "link_culture": "تجارب الصحراء والثقافة",
+    "link_transport": "المواصلات والسائقين الخاصين",
+    "link_circuits": "الرحلات والمسارات",
+    "link_history": "تاريخ المغرب",
+    "link_guides": "أدلة السفر",
+    "link_blog": "المدونة",
+    "link_contact": "اتصل بنا",
+    "link_itineraries": "الرحلات والمسارات",
+    "col_imperial": "المدن الإمبراطورية والثقافة",
+    "col_desert": "الصحراء والجنوب الكبير",
+    "col_practical": "أدلة عملية وإقامة",
+    "created_by": "تم الإنشاء بواسطة"
   }
 }

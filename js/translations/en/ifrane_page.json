@@ -1,19 +1,499 @@
 {
+  "seo": {
+    "title": "Ifrane Travel Guide | Middle Atlas, Cedars & Lakes | MoroccoTripMap",
+    "description": "Ifrane guide: Little Switzerland of Morocco — cedar forests, Dayet Aoua, Michlifen, stone lion and cool Middle Atlas air. When to go, where to stay and what to see.",
+    "keywords": "Ifrane, Ifrane Morocco, Middle Atlas, Dayet Aoua, Michlifen, cedar forest Ifrane, Al Akhawayn",
+    "og_title": "Ifrane Travel Guide | Middle Atlas, Cedars & Lakes | MoroccoTripMap",
+    "og_description": "Explore Ifrane: alpine-style town, cedar forests, mountain lakes and Michlifen in Morocco’s Middle Atlas."
+  },
+  "name": "Ifrane",
+  "hero_subtitle": "Morocco’s alpine town in the Middle Atlas — cedars, lakes, cool air and the stone lion.",
+  "info": {
+    "best_time_label": "Best time",
+    "best_time_val": "May–October (snow sports Dec–Mar)",
+    "duration_label": "Suggested stay",
+    "duration_val": "1 – 3 days",
+    "entry_label": "Getting there",
+    "entry_val": "Road from Fes (~1 h) or Meknes (~1 h)",
+    "area_label": "Region",
+    "area_val": "Middle Atlas · Ifrane Province"
+  },
+  "overview": {
+    "title": "Alpine air in the Middle Atlas",
+    "p1": "Ifrane sits above 1,600 m in the Middle Atlas, built in the 1930s with pitched roofs and European-style chalets. Locals call it the Little Switzerland of Morocco: cool summers, possible snow in winter, cedar forests and a string of mountain lakes nearby. It is a short drive from Fes or Meknes and a natural base for Dayet Aoua, the Ifrane National Park and Michlifen.",
+    "p2": "One full day covers the town, the stone lion, a lake and a walk under the cedars. Stay longer for hiking, skiing in season at Michlifen, or a quieter pace than the imperial cities. Expect mountain weather — pack a layer even in summer."
+  },
+  "places": {
+    "badge": "Highlights",
+    "title": "Must-visit places in Ifrane",
+    "subtitle": "Lakes, cedars, the stone lion and mountain viewpoints.",
+    "explore": "Explore the place →",
+    "lion": {
+      "tag": "Landmark",
+      "title": "Stone Lion of Ifrane",
+      "desc": "The town’s iconic carved lion in the centre."
+    },
+    "aoua": {
+      "tag": "Lake",
+      "title": "Dayet Aoua",
+      "desc": "Mountain lake with walks, birds and Atlas views."
+    },
+    "hachlaf": {
+      "tag": "Lake",
+      "title": "Dayet Hachlaf",
+      "desc": "Quieter lake near Ifrane for a peaceful stop."
+    },
+    "cedar": {
+      "tag": "Forest",
+      "title": "Cedar Forest",
+      "desc": "Atlas cedars, trails and the famous Gouraud cedar area."
+    },
+    "michlifen": {
+      "tag": "Mountain",
+      "title": "Michlifen",
+      "desc": "Ski station and high viewpoint above Ifrane."
+    },
+    "park": {
+      "tag": "Park",
+      "title": "Ifrane National Park",
+      "desc": "Protected forest and wildlife in the Middle Atlas."
+    },
+    "tizguit": {
+      "tag": "Nature",
+      "title": "Source Tizguit",
+      "desc": "Spring and green valley near town."
+    },
+    "vittel": {
+      "tag": "Spring",
+      "title": "Source Vittel",
+      "desc": "Named spring and picnic area in the hills."
+    },
+    "uni": {
+      "tag": "Campus",
+      "title": "Al Akhawayn University",
+      "desc": "Campus with open views — exterior visit only."
+    }
+  },
+  "itinerary": {
+    "badge": "Plan",
+    "title": "Suggested 2–3 day itinerary",
+    "subtitle": "Town and lion first, then lakes and cedars."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Day 1",
+    "day2_tab": "Day 2",
+    "day3_tab": "Day 3",
+    "day1_m": "Morning",
+    "day1_md": "Stone lion, town centre and a café stop in the cool air.",
+    "day1_a": "Afternoon",
+    "day1_ad": "Dayet Aoua — walk the shore and watch for birds.",
+    "day1_e": "Evening",
+    "day1_ed": "Dinner in town; mountain nights can be chilly.",
+    "day2_m": "Morning",
+    "day2_md": "Cedar forest trails and the Gouraud cedar area.",
+    "day2_a": "Afternoon",
+    "day2_ad": "Michlifen viewpoint or a quiet stop at Dayet Hachlaf.",
+    "day2_e": "Evening",
+    "day2_ed": "Return to Ifrane for a relaxed meal.",
+    "day3_m": "Morning",
+    "day3_md": "Source Tizguit or Source Vittel and a short nature walk.",
+    "day3_a": "Afternoon",
+    "day3_ad": "Ifrane National Park edge or campus viewpoints at Al Akhawayn.",
+    "day3_e": "Evening",
+    "day3_ed": "Last mint tea before the road back to Fes or Meknes."
+  },
+  "directory": {
+    "badge": "Stay",
+    "title": "Find Your Ideal Stay in Ifrane",
+    "subtitle": "Mountain hotels and chalets — filter by type and area.",
+    "filter_type_label": "Type:",
+    "filter_location_label": "Area:",
+    "type_all": "All types",
+    "type_hotel": "Hotel",
+    "type_riad": "Chalet / guesthouse",
+    "type_guesthouse": "Guesthouse",
+    "location_all": "All areas",
+    "location_centre": "Town centre",
+    "location_lakes": "Near the lakes",
+    "location_forest": "Forest edge",
+    "location_michlifen": "Toward Michlifen",
+    "counter": "stays found",
+    "no_results": "No stays match these filters.",
+    "check_availability": "Check availability →",
+    "area_label": "Area:",
+    "type_label": "Type:"
+  },
+  "eat": {
+    "badge": "Food",
+    "title": "Where to eat in Ifrane",
+    "subtitle": "Hotel restaurants, mountain cafés and simple grills in the town centre.",
+    "centre": {
+      "tag": "Centre",
+      "title": "Town-centre cafés",
+      "loc": "Centre",
+      "desc": "Coffee, pastries and light meals on the main streets."
+    },
+    "hotel": {
+      "tag": "Hotel",
+      "title": "Hotel restaurants",
+      "loc": "Various",
+      "desc": "Reliable option for full dinners after a day outdoors."
+    },
+    "grill": {
+      "tag": "Grill",
+      "title": "Local grills",
+      "loc": "Centre",
+      "desc": "Simple meat and bread — mountain-town basics."
+    },
+    "lake": {
+      "tag": "Day trip",
+      "title": "Near Dayet Aoua",
+      "loc": "Lakes",
+      "desc": "Seasonal stalls and picnic spots by the water."
+    },
+    "picnic": {
+      "tag": "Picnic",
+      "title": "Forest picnic",
+      "loc": "Cedars",
+      "desc": "Bring food for a cedar-forest stop — facilities are limited."
+    },
+    "tea": {
+      "tag": "Café",
+      "title": "Mint tea stops",
+      "loc": "Centre",
+      "desc": "Warm up after a windy viewpoint or winter walk."
+    }
+  },
+  "food": {
+    "title": "Eating in the mountains",
+    "p1": "Ifrane’s food scene is simpler than Fes or Marrakech: hotel restaurants, cafés and grills. Fresh air and walking build an appetite; plan a proper meal in town after lake or forest outings.",
+    "li1": "Hotel restaurants for dependable dinners.",
+    "li2": "Centre cafés for breakfast and coffee.",
+    "li3": "Bring water and snacks for lake and forest trips.",
+    "li4": "Mountain evenings can be cold — indoor seating helps.",
+    "li5": "Limited options at remote viewpoints — eat before you go."
+  },
+  "tips": {
+    "title": "Practical tips for Ifrane",
+    "1": {
+      "title": "Altitude & weather",
+      "desc": "Above 1,600 m — nights are cool year-round; snow is possible in winter. Pack layers."
+    },
+    "2": {
+      "title": "Getting around",
+      "desc": "A car is ideal for lakes, cedars and Michlifen. Grand taxis from Fes or Meknes reach the town."
+    },
+    "3": {
+      "title": "Nature respect",
+      "desc": "Stay on paths in the national park and cedar areas; do not disturb wildlife or carve trees."
+    }
+  },
+  "daytrips": {
+    "badge": "Excursions",
+    "title": "Day trips from Ifrane",
+    "subtitle": "Lakes, forests and routes toward Azrou and the wider Middle Atlas.",
+    "azrou": {
+      "title": "Azrou",
+      "desc": "Cedar market town about 30 minutes south — forest roads and often macaques nearby."
+    },
+    "fes": {
+      "title": "Fes",
+      "desc": "About 1 hour by road — imperial medina if you combine mountain and city."
+    },
+    "meknes": {
+      "title": "Meknes",
+      "desc": "About 1 hour by road — another imperial city on the way to or from Ifrane."
+    },
+    "timahdite": {
+      "title": "Timahdite area",
+      "desc": "High plateau and rural Middle Atlas landscapes south of Ifrane."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "FAQ about Ifrane",
+    "q1": {
+      "question": "How many days in Ifrane?",
+      "answer": "One full day covers the highlights; two or three suit hiking, lakes and a slower mountain pace."
+    },
+    "q2": {
+      "question": "Is Ifrane cold?",
+      "answer": "Cooler than the plains year-round. Summers are pleasant; winters can bring snow and freezing nights."
+    },
+    "q3": {
+      "question": "Do I need a car?",
+      "answer": "Strongly recommended for Dayet Aoua, the cedars and Michlifen. The town centre is walkable."
+    },
+    "q4": {
+      "question": "Can I ski?",
+      "answer": "Michlifen offers limited ski facilities in season (roughly December–March); conditions vary year to year."
+    },
+    "q5": {
+      "question": "Far from Fes?",
+      "answer": "About one hour by road — an easy day trip or overnight from Fes or Meknes."
+    }
+  },
   "ifrane_page": {
     "seo": {
-      "title": "Ifrane Travel Guide 2026 | Things to Do & Tips | MoroccoTripMap",
-      "description": "Plan your trip to Ifrane: top attractions, local food, and travel tips."
+      "title": "[EN] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Ifrane.",
+    "name": "[EN] Name",
+    "hero_subtitle": "[EN] Hero subtitle",
+    "info": {
+      "best_time_label": "[EN] Best time label",
+      "best_time_val": "[EN] Best time val",
+      "duration_label": "[EN] Duration label",
+      "duration_val": "[EN] Duration val",
+      "area_label": "[EN] Area label",
+      "area_val": "[EN] Area val",
+      "entry_label": "[EN] Entry label",
+      "entry_val": "[EN] Entry val"
+    },
     "overview": {
-      "title": "Welcome to Ifrane",
-      "p1": "Explore Ifrane and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[EN] Title",
+      "p1": "[EN] P1",
+      "p2": "[EN] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Ifrane",
-      "subtitle": "Discover top points of interest in Ifrane."
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "lion": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "explore": "[EN] Explore",
+      "aoua": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "hachlaf": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "cedar": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "michlifen": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "park": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "tizguit": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "vittel": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "uni": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[EN] Day1 tab",
+      "day2_tab": "[EN] Day2 tab",
+      "day3_tab": "[EN] Day3 tab",
+      "day1_m": "[EN] Day1 m",
+      "day1_md": "[EN] Day1 md",
+      "day1_a": "[EN] Day1 a",
+      "day1_ad": "[EN] Day1 ad",
+      "day1_e": "[EN] Day1 e",
+      "day1_ed": "[EN] Day1 ed",
+      "day2_m": "[EN] Day2 m",
+      "day2_md": "[EN] Day2 md",
+      "day2_a": "[EN] Day2 a",
+      "day2_ad": "[EN] Day2 ad",
+      "day2_e": "[EN] Day2 e",
+      "day2_ed": "[EN] Day2 ed",
+      "day3_m": "[EN] Day3 m",
+      "day3_md": "[EN] Day3 md",
+      "day3_a": "[EN] Day3 a",
+      "day3_ad": "[EN] Day3 ad",
+      "day3_e": "[EN] Day3 e",
+      "day3_ed": "[EN] Day3 ed"
+    },
+    "directory": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "filter_type_label": "[EN] Filter type label",
+      "type_all": "[EN] Type all",
+      "type_hotel": "[EN] Type hotel",
+      "type_riad": "[EN] Type riad",
+      "type_guesthouse": "[EN] Type guesthouse",
+      "filter_location_label": "[EN] Filter location label",
+      "location_all": "[EN] Location all",
+      "location_lakes": "[EN] Location lakes",
+      "location_centre": "[EN] Location centre",
+      "location_forest": "[EN] Location forest",
+      "counter": "[EN] Counter",
+      "type_label": "[EN] Type label",
+      "check_availability": "[EN] Check availability",
+      "no_results": "[EN] No results"
+    },
+    "eat": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "centre": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "loc": "[EN] Loc",
+        "desc": "[EN] Desc"
+      },
+      "hotel": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "loc": "[EN] Loc",
+        "desc": "[EN] Desc"
+      },
+      "grill": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "loc": "[EN] Loc",
+        "desc": "[EN] Desc"
+      },
+      "lake": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "loc": "[EN] Loc",
+        "desc": "[EN] Desc"
+      },
+      "picnic": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "loc": "[EN] Loc",
+        "desc": "[EN] Desc"
+      },
+      "tea": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "loc": "[EN] Loc",
+        "desc": "[EN] Desc"
+      }
+    },
+    "tips": {
+      "title": "[EN] Title",
+      "1": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "3": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "2": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "azrou": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "fes": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "meknes": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "timahdite": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "q1": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q2": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q3": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q4": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[EN] Destinations",
+    "categories": "[EN] Categories",
+    "cat_stays": "[EN] Cat stays",
+    "cat_gastronomy": "[EN] Cat gastronomy",
+    "cat_experiences": "[EN] Cat experiences",
+    "cat_museums": "[EN] Cat museums",
+    "cat_transport": "[EN] Cat transport",
+    "cat_itineraries": "[EN] Cat itineraries",
+    "cat_guides": "[EN] Cat guides",
+    "history": "[EN] History",
+    "blog": "[EN] Blog",
+    "contact": "[EN] Contact",
+    "cities": "[EN] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[EN] Language title"
+  },
+  "breadcrumb": {
+    "home": "[EN] Home",
+    "destinations": "[EN] Destinations"
+  },
+  "footer": {
+    "about_text": "[EN] About text",
+    "destinations_title": "Destinations",
+    "link_ifrane": "[EN] Link ifrane",
+    "link_all_destinations": "[EN] Link all destinations",
+    "categories_title": "Categories",
+    "link_stays": "Stays & Riads",
+    "link_restaurants": "Moroccan Restaurants",
+    "connect_title": "Connect With Us",
+    "youtube_text": "Subscribe to our YouTube channel for travel video guides:",
+    "copyright": "© 2026 MoroccoTripMap. All rights reserved.",
+    "link_culture": "Culture & Desert",
+    "link_transport": "Transport & Drivers",
+    "link_circuits": "Circuits & Itineraries",
+    "link_history": "History of Morocco",
+    "link_guides": "Travel Guides",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itineraries",
+    "col_imperial": "Imperial Cities & Culture",
+    "col_desert": "Desert & Deep South",
+    "col_practical": "Practical Guides & Stays",
+    "created_by": "Created by"
   }
 }

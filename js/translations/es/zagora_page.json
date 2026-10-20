@@ -1,19 +1,497 @@
 {
+  "seo": {
+    "title": "Guía de Viaje de Zagora 2026 | Valle del Draa, Cartel de Tombuctú y Puerta del Sahara | MoroccoTripMap",
+    "description": "Planifica Zagora: palmerales del valle del Draa, cartel de los 52 días a Tombuctú, dunas de Tinfou, cerámica y biblioteca de Tamegroute, Amezrou, Jebel Zagora y campamentos en el desierto.",
+    "keywords": "Zagora, Valle del Draa, Tombuctú 52 días, dunas de Tinfou, Tamegroute, Amezrou, Jebel Zagora, Sahara Marruecos, campamentos Zagora"
+  },
+  "name": "Zagora",
+  "hero_subtitle": "Puerta del Sahara: el valle del Draa repleto de palmeras, el famoso cartel de Tombuctú, dunas cercanas y la apacible vida de los oasis del sur.",
+  "info": {
+    "best_time_label": "Mejor época",
+    "best_time_val": "Octubre – Abril (evitar el calor pico del verano)",
+    "stay_label": "Estancia ideal",
+    "stay_val": "2 – 4 días",
+    "vibe_label": "Ambiente",
+    "vibe_val": "Oasis, palmerales, puerta al desierto",
+    "airport_label": "Acceso",
+    "airport_val": "Carretera desde Uarzazat · enlaces regionales"
+  },
+  "overview": {
+    "title": "Bienvenido a Zagora — palmeras, memoria caravanera y la ruta de las dunas",
+    "p1": "Zagora se sitúa en el valle del Draa, en el sur de Marruecos, un histórico punto de paso de las rutas comerciales hacia Tombuctú. Hoy en día es una localidad más tranquila que las grandes ciudades imperiales, enmarcada por inmensos palmerales y kasbahs de adobe.",
+    "p2": "La mayoría de los viajeros se detienen para ver el icónico cartel de «Tembuctú 52 días», pasear por los palmerales, realizar una excursión rápida a las dunas de Tinfou y pasar medio día en Tamegroute descubriendo su cerámica verde y su biblioteca histórica.",
+    "p3": "De dos a cuatro días son suficientes si deseas disfrutar del oasis y pasar una noche en el desierto. El verano es extremadamente caluroso; la temporada ideal va desde el otoño hasta la primavera, cuando las tardes son frescas y la luz sobre las palmeras es suave."
+  },
+  "places": {
+    "badge": "Lugares clave",
+    "title": "Lugares imprescindibles en Zagora",
+    "subtitle": "Valle de palmeras, linde del desierto, pueblo alfarero y el cartel de las caravanas.",
+    "explore": "Explorar lugar →",
+    "draa_valley": {
+      "tag": "Oasis",
+      "title": "Palmerales del Valle del Draa",
+      "desc": "Un río de palmeras datileras y pueblos de adobe: el corazón verde de la ruta hacia Zagora."
+    },
+    "timbuktu_sign": {
+      "tag": "Monumento",
+      "title": "Cartel Tombuctú 52 Días",
+      "desc": "El letrero más fotografiado del sur, símbolo de las antiguas rutas de caravanas de camellos."
+    },
+    "tinfou": {
+      "tag": "Dunas",
+      "title": "Dunas de Tinfou",
+      "desc": "Dunas de arena accesibles al sur de la ciudad, un primer contacto con el Sahara sin grandes expediciones."
+    },
+    "tamegroute": {
+      "tag": "Cultura",
+      "title": "Tamegroute",
+      "desc": "Talleres de cerámica verde y una histórica biblioteca coránica a unos 20 km al sur de Zagora."
+    },
+    "amezrou": {
+      "tag": "Pueblo",
+      "title": "Amezrou",
+      "desc": "Callejones de adobe y el antiguo barrio judío: un rincón con encanto histórico en el oasis."
+    },
+    "jebel_zagora": {
+      "tag": "Mirador",
+      "title": "Jebel Zagora",
+      "desc": "La montaña que domina la ciudad; súbela temprano para disfrutar de vistas panorámicas al atardecer."
+    },
+    "souk_zagora": {
+      "tag": "Mercado",
+      "title": "Zoco de Zagora",
+      "desc": "Un mercado regional activo para comprar dátiles, productos locales y conocer la vida del valle del Draa."
+    },
+    "desert_camps": {
+      "tag": "Desierto",
+      "title": "Campamentos y Paseos en Camello",
+      "desc": "Campamentos nocturnos y rutas en camello hacia las dunas: la experiencia clásica en el desierto de Zagora."
+    }
+  },
+  "itinerary": {
+    "badge": "Planificación",
+    "title": "Plan sugerido de 3 días en Zagora",
+    "subtitle": "Oasis y cartel el primer día, Tamegroute o dunas el segundo, y noche en el desierto o día libre.",
+    "day1": {
+      "tag": "Día 1",
+      "title": "Ciudad, cartel y palmeras",
+      "desc": "Cartel de Tombuctú, paseo por el palmeral y atardecer hacia el Jebel Zagora.",
+      "duration": "Día completo · orientación"
+    },
+    "day2": {
+      "tag": "Día 2",
+      "title": "Tamegroute o Tinfou",
+      "desc": "Cerámica y biblioteca en Tamegroute, o tarde en las dunas de Tinfou.",
+      "duration": "Día completo · cultura o dunas"
+    },
+    "day3": {
+      "tag": "Día 3",
+      "title": "Desierto o Amezrou",
+      "desc": "Excursión en camello y campamento, o una mañana tranquila por las calles de Amezrou antes de marchar.",
+      "duration": "Día completo · flexible"
+    }
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Día 1 — Oasis y cartel",
+    "day1_m": "Mañana — Cartel de Tombuctú y centro",
+    "day1_md": "Parada fotográfica en el famoso cartel y recorrido de orientación por el centro.",
+    "day1_a": "Tarde — Palmerales",
+    "day1_ad": "Paseo a pie o en coche entre las palmeras y pueblos de adobe del valle del Draa.",
+    "day1_e": "Atardecer — Luz en el Jebel Zagora",
+    "day1_ed": "Subida a un mirador para contemplar la puesta de sol sobre el oasis si las fuerzas acompañan.",
+    "day2_tab": "Día 2 — Cultura o dunas",
+    "day2_m": "Mañana — Tamegroute",
+    "day2_md": "Talleres de alfarería verde y visita a la biblioteca histórica al sur de la localidad.",
+    "day2_a": "Tarde — Opción Tinfou",
+    "day2_ad": "Breve excursión a las dunas si deseas disfrutar de la arena antes de la noche en el desierto.",
+    "day2_e": "Noche — Cena tranquila",
+    "day2_ed": "Cena ligera en el oasis y descanso temprano de cara a la experiencia en el campamento.",
+    "day3_tab": "Día 3 — Desierto o pueblo",
+    "day3_m": "Mañana — Camellos o Amezrou",
+    "day3_md": "Inicia una ruta hacia el campamento o explora los callejones de Amezrou a ritmo pausado.",
+    "day3_a": "Tarde — Campamento o tiempo libre",
+    "day3_ad": "Tiempo en las dunas con té a la menta, o recogida y último paseo por el palmeral.",
+    "day3_e": "Noche — Estrellas o partida",
+    "day3_ed": "Cielo estrellado en el desierto o regreso a la ciudad para continuar el viaje."
+  },
+  "directory": {
+    "badge": "Alojamiento",
+    "title": "Encuentra tu estancia ideal en Zagora",
+    "subtitle": "Filtra por tipo y zona; abre un alojamiento para ver detalles y disponibilidad.",
+    "filter_type_label": "Tipo:",
+    "filter_location_label": "Zona:",
+    "type_all": "Todos los tipos",
+    "type_hotel": "Hoteles",
+    "type_riad": "Riads y casas de huéspedes",
+    "type_guesthouse": "Campamentos del desierto y Guesthouses",
+    "location_all": "Todas las zonas",
+    "location_town": "Centro de la ciudad",
+    "location_outside": "Borde del palmeral",
+    "location_outskirts": "Desierto / sur",
+    "counter": "alojamientos encontrados",
+    "district_label": "Zona",
+    "type_label": "Tipo",
+    "check_availability": "Consultar disponibilidad →",
+    "no_results": "Ningún alojamiento coincide con estos filtros."
+  },
+  "eat": {
+    "badge": "Gastronomía",
+    "title": "Dónde comer en Zagora",
+    "subtitle": "Tajines, dátiles y sencillas mesas en el oasis.",
+    "nomad": {
+      "tag": "Campamento",
+      "loc": "Desierto",
+      "title": "Cenas en el campamento",
+      "desc": "Menús fijos en campamentos del desierto durante las excursiones nocturnas."
+    },
+    "jardin": {
+      "tag": "Hotel",
+      "loc": "Ciudad",
+      "title": "Restaurantes de hotel",
+      "desc": "Opciones fiables si te hospedas en un hotel de mayor tamaño."
+    },
+    "fassia": {
+      "tag": "Café",
+      "loc": "Centro",
+      "title": "Café matutino",
+      "desc": "Café antes de iniciar una excursión madrugadora a las dunas o la montaña."
+    },
+    "moha": {
+      "tag": "Local",
+      "loc": "Días de zoco",
+      "title": "Aperitivos de mercado",
+      "desc": "Dátiles y pequeños tentempiés en las mañanas de zoco."
+    },
+    "bacha": {
+      "tag": "Local",
+      "loc": "Ciudad",
+      "title": "Platos locales",
+      "desc": "Comida casera cotidiana alejada de la carretera principal."
+    },
+    "elfenn": {
+      "tag": "Local",
+      "loc": "Centro",
+      "title": "Tajine nocturno",
+      "desc": "Cena tardía cuando el calor del día desciende."
+    }
+  },
+  "tips": {
+    "title": "Consejos prácticos para Zagora",
+    "transport": {
+      "title": "Cómo moverse",
+      "desc": "El centro es compacto; para Tamegroute, Tinfou y los campamentos necesitarás taxi, tour o coche de alquiler. Acuerda los precios antes de salir."
+    },
+    "bargain": {
+      "title": "Calor y agua",
+      "desc": "El verano es extremo. Lleva más agua de la que creas necesaria, alta protección solar y sombrero. Prefiere madrugar para el Jebel Zagora y las dunas."
+    },
+    "water": {
+      "title": "Efectivo y temporada",
+      "desc": "Lleva dirhams para taxis, guías y pequeños gastos. Reserva los campamentos con antelación en temporada alta de invierno."
+    }
+  },
+  "daytrips": {
+    "badge": "Alrededores",
+    "title": "Mejores excursiones desde Zagora",
+    "subtitle": "Dunas, pueblo de alfareros y opciones en el desierto profundo.",
+    "tiout": {
+      "title": "Dunas de Tinfou",
+      "desc": "Excursión corta al sur de la ciudad, favorita para el atardecer."
+    },
+    "antiatlas": {
+      "title": "Tamegroute",
+      "desc": "Cerámica verde tradicional y la histórica biblioteca coránica."
+    },
+    "taliouine": {
+      "title": "Noche en campamento",
+      "desc": "Paseo en camello y pernoctación bajo las estrellas."
+    },
+    "agadir": {
+      "title": "Hacia M’Hamid",
+      "desc": "Más al sur para explorar mayores campos de dunas si dispones de un día extra."
+    }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "Preguntas frecuentes sobre Zagora",
+    "q1": {
+      "question": "¿Cuántos días pasar en Zagora?",
+      "answer": "Dos días cubren el cartel, las palmeras y Tamegroute o Tinfou. De tres a cuatro días permiten disfrutar de una noche en el desierto con la calma del oasis."
+    },
+    "q2": {
+      "question": "¿Zagora es solo una parada hacia el desierto?",
+      "answer": "Los campamentos son un gran atractivo, pero las palmeras del Draa, Tamegroute, Amezrou y el Jebel Zagora hacen que el oasis en sí merezca tiempo."
+    },
+    "q3": {
+      "question": "¿Cómo llegar a Zagora?",
+      "answer": "La mayoría de los visitantes llegan por carretera desde Uarzazat (unas 2,5 o 3 horas) o en rutas más largas desde Marrakech a través del sur."
+    },
+    "q4": {
+      "question": "¿Cuál es la mejor época para visitar?",
+      "answer": "De octubre a abril para disfrutar de días más suaves. El calor estival puede superar los 45-50°C y limita los planes al aire libre."
+    }
+  },
+  "destinations": {
+    "zagora": {
+      "name": "Zagora"
+    }
+  },
   "zagora_page": {
     "seo": {
-      "title": "Guía de Viaje Zagora 2026 | Cosas que hacer | MoroccoTripMap",
-      "description": "Plan your trip to Zagora: top attractions, local food, and travel tips."
+      "title": "[ES] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Zagora.",
+    "name": "[ES] Name",
+    "hero_subtitle": "[ES] Hero subtitle",
+    "info": {
+      "best_time_label": "[ES] Best time label",
+      "best_time_val": "[ES] Best time val",
+      "stay_label": "[ES] Stay label",
+      "stay_val": "[ES] Stay val",
+      "vibe_label": "[ES] Vibe label",
+      "vibe_val": "[ES] Vibe val",
+      "airport_label": "[ES] Airport label",
+      "airport_val": "[ES] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Zagora",
-      "p1": "Explore Zagora and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "p2": "[ES] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Zagora",
-      "subtitle": "Discover top points of interest in Zagora."
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "draa_valley": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "explore": "[ES] Explore",
+      "timbuktu_sign": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "tinfou": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "tamegroute": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "amezrou": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "jebel_zagora": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "souk_zagora": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "desert_camps": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[ES] Day1 tab",
+      "day2_tab": "[ES] Day2 tab",
+      "day3_tab": "[ES] Day3 tab",
+      "day1_m": "[ES] Day1 m",
+      "day1_md": "[ES] Day1 md",
+      "day1_a": "[ES] Day1 a",
+      "day1_ad": "[ES] Day1 ad",
+      "day1_e": "[ES] Day1 e",
+      "day1_ed": "[ES] Day1 ed",
+      "day2_m": "[ES] Day2 m",
+      "day2_md": "[ES] Day2 md",
+      "day2_a": "[ES] Day2 a",
+      "day2_ad": "[ES] Day2 ad",
+      "day2_e": "[ES] Day2 e",
+      "day2_ed": "[ES] Day2 ed",
+      "day3_m": "[ES] Day3 m",
+      "day3_md": "[ES] Day3 md",
+      "day3_a": "[ES] Day3 a",
+      "day3_ad": "[ES] Day3 ad",
+      "day3_e": "[ES] Day3 e",
+      "day3_ed": "[ES] Day3 ed"
+    },
+    "directory": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "filter_type_label": "[ES] Filter type label",
+      "type_all": "[ES] Type all",
+      "type_hotel": "[ES] Type hotel",
+      "type_riad": "[ES] Type riad",
+      "type_guesthouse": "[ES] Type guesthouse",
+      "filter_location_label": "[ES] Filter location label",
+      "location_all": "[ES] Location all",
+      "location_town": "[ES] Location town",
+      "location_outside": "[ES] Location outside",
+      "location_outskirts": "[ES] Location outskirts",
+      "counter": "[ES] Counter",
+      "district_label": "[ES] District label",
+      "check_availability": "[ES] Check availability",
+      "no_results": "[ES] No results"
+    },
+    "eat": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "nomad": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "jardin": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "fassia": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "moha": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bacha": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "elfenn": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "tips": {
+      "title": "[ES] Title",
+      "transport": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bargain": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "water": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "tiout": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "antiatlas": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "taliouine": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "agadir": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "q1": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q2": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q3": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q4": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[ES] Destinations",
+    "categories": "[ES] Categories",
+    "cat_stays": "[ES] Cat stays",
+    "cat_gastronomy": "[ES] Cat gastronomy",
+    "cat_experiences": "[ES] Cat experiences",
+    "cat_museums": "[ES] Cat museums",
+    "cat_transport": "[ES] Cat transport",
+    "cat_itineraries": "[ES] Cat itineraries",
+    "cat_guides": "[ES] Cat guides",
+    "history": "[ES] History",
+    "blog": "[ES] Blog",
+    "contact": "[ES] Contact",
+    "cities": "[ES] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[ES] Language title"
+  },
+  "breadcrumb": {
+    "home": "[ES] Home",
+    "destinations": "[ES] Destinations"
+  },
+  "footer": {
+    "about_text": "[ES] About text",
+    "destinations_title": "Destinos",
+    "link_zagora": "[ES] Link zagora",
+    "link_all_destinations": "[ES] Link all destinations",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "connect_title": "Conéctate con Nosotros",
+    "youtube_text": "Suscríbete a nuestro canal de YouTube para ver guías en vídeo:",
+    "copyright": "© 2026 MoroccoTripMap. Todos los derechos reservados.",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto",
+    "link_itineraries": "Circuitos e Itinerarios",
+    "col_imperial": "Ciudades Imperiales y Cultura",
+    "col_desert": "Desierto y Gran Sur",
+    "col_practical": "Guías Prácticas y Estancias",
+    "created_by": "Creado por"
   }
 }

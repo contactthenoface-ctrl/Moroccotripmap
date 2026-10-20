@@ -1,19 +1,414 @@
 {
+  "seo": {
+    "title": "Lagune Marchica (Mar Chica) | Nador | MoroccoTripMap",
+    "description": "Marchica — aussi appelée Mar Chica — est une vaste lagune salée séparée de la Méditerranée ouverte par une étroite bande côtière. C’est souvent la première chos",
+    "keywords": "Lagune Marchica (Mar Chica), Nador"
+  },
+  "name": "Lagune Marchica (Mar Chica)",
+  "hero_subtitle": "Marchica — aussi appelée Mar Chica — est une vaste lagune salée séparée de la Méditerranée ouverte par une étroite bande…",
+  "info": {
+    "best_time_label": "Meilleur moment",
+    "best_time_val": "Fin d’après-midi pour la lumière",
+    "duration_label": "Durée suggérée",
+    "duration_val": "2 – 4 heures",
+    "entry_label": "Entrée",
+    "entry_val": "Gratuit",
+    "area_label": "Emplacement",
+    "area_val": "Au bord de Nador"
+  },
+  "overview": {
+    "title": "L’eau qui façonne la ville",
+    "p1": "Marchica — aussi appelée Mar Chica — est une vaste lagune salée séparée de la Méditerranée ouverte par une étroite bande côtière. C’est souvent la première chose que voient les visiteurs.",
+    "p2": "Marchez sur les bords, observez les oiseaux de saison dont les flamants, et revenez au coucher du soleil quand les lumières de la corniche rejoignent l’eau.",
+    "p3": "Ce n’est pas une piscine : conditions et accès varient. Traitez-la comme paysage et ambiance du soir autant que comme un “site” unique."
+  },
+  "gallery": {
+    "badge": "Galerie photo",
+    "title": "Lagune Marchica (Mar Chica) en images",
+    "subtitle": "Vues de Lagune Marchica (Mar Chica) à Nador.",
+    "s1": {
+      "caption": "Lagune Marchica (Mar Chica) — vue 1"
+    },
+    "s2": {
+      "caption": "Lagune Marchica (Mar Chica) — vue 2"
+    },
+    "s3": {
+      "caption": "Lagune Marchica (Mar Chica) — vue 3"
+    },
+    "s4": {
+      "caption": "Lagune Marchica (Mar Chica) — vue 4"
+    },
+    "s5": {
+      "caption": "Lagune Marchica (Mar Chica) — vue 5"
+    }
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Lagune Marchica (Mar Chica)",
+    "subtitle": "Quand y aller.",
+    "1": {
+      "tag": "Matin",
+      "title": "Début calme",
+      "desc": "Lumière plus douce, moins de monde.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Lumière vive",
+      "desc": "Soleil fort — protégez peau et matériel.",
+      "duration": "Midi"
+    },
+    "3": {
+      "tag": "Fin d’après-midi",
+      "title": "Meilleures couleurs",
+      "desc": "Lumière chaude sur l’eau et la côte.",
+      "duration": "Fin d’après-midi"
+    }
+  },
+  "food": {
+    "title": "Manger près de la lagune Marchica",
+    "p1": "Mangez sur la corniche face à la lagune, ou en ville pour un poisson grillé et des assiettes marocaines simples.",
+    "li1": "Grillades de fruits de mer sur la corniche le soir.",
+    "li2": "Cafés avec vue lagune pour le thé et les jus.",
+    "li3": "Poisson frais à Beni Ansar quand les bateaux sont rentrés.",
+    "li4": "Tables locales simples en centre-ville.",
+    "li5": "Vérifiez les horaires hors haute saison.",
+    "p2": "Les espèces sont utiles pour les petits arrêts côté lagune."
+  },
+  "tips": {
+    "title": "Conseils pratiques pour Lagune Marchica (Mar Chica)",
+    "1": {
+      "title": "Accès",
+      "desc": "Confirmez le transfert avant de partir."
+    },
+    "2": {
+      "title": "Soleil",
+      "desc": "SPF élevé et eau."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Chemins autorisés ; déchets avec vous."
+    }
+  },
+  "gyg": {
+    "badge": "Visites & expériences",
+    "title": "Lagune Marchica (Mar Chica)",
+    "subtitle": "Options avec un opérateur local.",
+    "t1": {
+      "tag": "Lagune",
+      "title": "Balade Marchica",
+      "desc": "Orientation le long de la lagune."
+    },
+    "t2": {
+      "tag": "Nature",
+      "title": "Gourougou ou Cap",
+      "desc": "Sortie montagne ou promontoire."
+    },
+    "t3": {
+      "tag": "Côte",
+      "title": "Transfert plage",
+      "desc": "Charrana ou Ras El Ma."
+    },
+    "check": "Voir les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains liens sont affiliés sans frais supplémentaires pour vous."
+  },
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles liés",
+    "all": "Tous les articles →",
+    "read": "Lire l’article →",
+    "a1": {
+      "tag": "Préparer",
+      "title": "Première fois à Nador",
+      "desc": "Lagune, corniche et durée."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Marchica et corniche",
+      "desc": "Le front de mer."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Cap des Trois Fourches",
+      "desc": "Journée promontoire."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ Lagune Marchica (Mar Chica)",
+    "q1": {
+      "question": "Peut-on se baigner dans la lagune ?",
+      "answer": "Certains bords sont utilisés pour la baignade ; vérifiez les conditions. La baignade plus claire est souvent sur des plages comme Charrana."
+    },
+    "q2": {
+      "question": "Y a-t-il des flamants ?",
+      "answer": "Saisonnier — plus probable à certaines périodes sur les rives calmes."
+    },
+    "q3": {
+      "question": "Meilleur moment de la journée ?",
+      "answer": "Fin d’après-midi et soir pour la lumière et la corniche."
+    },
+    "q4": {
+      "question": "Faut-il un guide ?",
+      "answer": "Pas pour la promenade principale ; utile pour les segments en bateau."
+    },
+    "q5": {
+      "question": "Combien de temps prévoir ?",
+      "answer": "Deux à quatre heures pour une première marche et le coucher de soleil."
+    }
+  },
+  "nearby": {
+    "badge": "Continuer l’exploration",
+    "title": "Plus de lieux à Nador",
+    "back": "← Retour au guide Nador"
+  },
+  "destinations": {
+    "nador": {
+      "name": "Nador"
+    }
+  },
   "marchica_page": {
     "seo": {
-      "title": "Guide de Voyage Marchica 2026 | Choses à faire & Conseils | MoroccoTripMap",
-      "description": "Plan your trip to Marchica: top attractions, local food, and travel tips."
+      "title": "[FR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Marchica.",
+    "name": "[FR] Name",
+    "hero_subtitle": "[FR] Hero subtitle",
+    "info": {
+      "best_time_label": "[FR] Best time label",
+      "best_time_val": "[FR] Best time val",
+      "duration_label": "[FR] Duration label",
+      "duration_val": "[FR] Duration val",
+      "entry_label": "[FR] Entry label",
+      "entry_val": "[FR] Entry val",
+      "area_label": "[FR] Area label",
+      "area_val": "[FR] Area val"
+    },
     "overview": {
-      "title": "Bienvenue à Marchica",
-      "p1": "Explore Marchica and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[FR] Title",
+      "p1": "[FR] P1",
+      "p2": "[FR] P2",
+      "p3": "[FR] P3"
     },
-    "places": {
-      "badge": "À voir",
-      "title": "Les incontournables à Marchica",
-      "subtitle": "Discover top points of interest in Marchica."
+    "gallery": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "s1": {
+        "caption": "[FR] Caption"
+      },
+      "s2": {
+        "caption": "[FR] Caption"
+      },
+      "s3": {
+        "caption": "[FR] Caption"
+      },
+      "s4": {
+        "caption": "[FR] Caption"
+      },
+      "s5": {
+        "caption": "[FR] Caption"
+      }
+    },
+    "moods": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      },
+      "2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      },
+      "3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc",
+        "duration": "[FR] Duration"
+      }
+    },
+    "food": {
+      "title": "[FR] Title",
+      "p1": "[FR] P1",
+      "li1": "[FR] Li1",
+      "li2": "[FR] Li2",
+      "li3": "[FR] Li3",
+      "li4": "[FR] Li4",
+      "li5": "[FR] Li5",
+      "p2": "[FR] P2"
+    },
+    "tips": {
+      "title": "[FR] Title",
+      "1": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "2": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "3": {
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "gyg": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "subtitle": "[FR] Subtitle",
+      "t1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "check": "[FR] Check",
+      "t2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "t3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "disclosure": "[FR] Disclosure"
+    },
+    "nearby": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "back": "[FR] Back"
+    },
+    "blog": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "all": "[FR] All",
+      "a1": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "read": "[FR] Read",
+      "a2": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "a3": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[FR] Badge",
+      "title": "[FR] Title",
+      "q1": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q2": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q3": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q4": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      },
+      "q5": {
+        "question": "[FR] Question",
+        "answer": "[FR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[FR] Destinations",
+    "categories": "[FR] Categories",
+    "cat_stays": "[FR] Cat stays",
+    "cat_gastronomy": "[FR] Cat gastronomy",
+    "cat_experiences": "[FR] Cat experiences",
+    "cat_museums": "[FR] Cat museums",
+    "cat_transport": "[FR] Cat transport",
+    "cat_itineraries": "[FR] Cat itineraries",
+    "cat_guides": "[FR] Cat guides",
+    "history": "[FR] History",
+    "blog": "[FR] Blog",
+    "contact": "[FR] Contact",
+    "cities": "[FR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[FR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[FR] Home",
+    "destinations": "[FR] Destinations"
+  },
+  "nador_page": {
+    "places": {
+      "marchica": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "explore": "[FR] Explore",
+      "corniche": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "gourougou": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "cap_trois_fourches": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "charrana": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      },
+      "kasbah_selouane": {
+        "tag": "[FR] Tag",
+        "title": "[FR] Title",
+        "desc": "[FR] Desc"
+      }
+    }
+  },
+  "footer": {
+    "about_text": "[FR] About text",
+    "destinations_title": "Destinations",
+    "link_nador": "[FR] Link nador",
+    "link_all_destinations": "[FR] Link all destinations",
+    "categories_title": "Catégories",
+    "link_stays": "Riads & Hébergements",
+    "link_restaurants": "Restaurants Marocains",
+    "connect_title": "Suivez-nous",
+    "youtube_text": "Abonnez-vous à notre chaîne YouTube pour nos guides vidéo :",
+    "copyright": "© 2026 MoroccoTripMap. Tous droits réservés.",
+    "link_culture": "Culture & Désert",
+    "link_transport": "Transport & Chauffeurs",
+    "link_circuits": "Circuits & Itinéraires",
+    "link_history": "Histoire du Maroc",
+    "link_guides": "Guides de Voyage",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itinéraires",
+    "col_imperial": "Villes Impériales & Culture",
+    "col_desert": "Désert & Grand Sud",
+    "col_practical": "Guides Pratiques & Séjour",
+    "created_by": "Créé par"
   }
 }

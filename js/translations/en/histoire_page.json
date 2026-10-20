@@ -1,19 +1,230 @@
 {
-  "histoire_page": {
+  "seo": {
+    "title": "MoroccoTripMap - Histoire",
+    "description": "Discover insights and details about histoire in Morocco."
+  },
+  "history_page": {
     "seo": {
-      "title": "Histoire Travel Guide 2026 | Things to Do & Tips | MoroccoTripMap",
-      "description": "Plan your trip to Histoire: top attractions, local food, and travel tips."
+      "title": "[EN] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Histoire.",
-    "overview": {
-      "title": "Welcome to Histoire",
-      "p1": "Explore Histoire and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+    "breadcrumb": {
+      "home": "[EN] Home",
+      "guides": "[EN] Guides",
+      "history": "[EN] History"
     },
-    "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Histoire",
-      "subtitle": "Discover top points of interest in Histoire."
+    "hero": {
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle"
+    },
+    "stats": {
+      "years": "[EN] Years",
+      "dynasties": "[EN] Dynasties",
+      "cities": "[EN] Cities",
+      "unesco": "[EN] Unesco"
+    },
+    "timeline_label": "[EN] Timeline label",
+    "timeline": {
+      "antiquite": "[EN] Antiquite",
+      "idrissides": "[EN] Idrissides",
+      "almoravides": "[EN] Almoravides",
+      "almohades": "[EN] Almohades",
+      "merinides": "[EN] Merinides",
+      "saadiens": "[EN] Saadiens",
+      "alaouites": "[EN] Alaouites"
+    },
+    "intro": {
+      "eyebrow": "[EN] Eyebrow",
+      "title": "[EN] Title",
+      "text": "[EN] Text"
+    },
+    "periods": {
+      "antiquite": {
+        "date": "[EN] Date",
+        "title": "[EN] Title",
+        "p1": "[EN] P1",
+        "p2": "[EN] P2",
+        "side_title": "[EN] Side title",
+        "side": {
+          "0": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "1": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          }
+        }
+      },
+      "idrissides": {
+        "date": "[EN] Date",
+        "title": "[EN] Title",
+        "p1": "[EN] P1",
+        "p2": "[EN] P2",
+        "side_title": "[EN] Side title",
+        "side": {
+          "0": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "1": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          }
+        }
+      },
+      "almoravides": {
+        "date": "[EN] Date",
+        "title": "[EN] Title",
+        "p1": "[EN] P1",
+        "p2": "[EN] P2",
+        "side_title": "[EN] Side title",
+        "side": {
+          "0": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "1": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          }
+        }
+      },
+      "almohades": {
+        "date": "[EN] Date",
+        "title": "[EN] Title",
+        "p1": "[EN] P1",
+        "p2": "[EN] P2",
+        "side_title": "[EN] Side title",
+        "side": {
+          "0": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "1": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "2": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          }
+        }
+      },
+      "merinides": {
+        "date": "[EN] Date",
+        "title": "[EN] Title",
+        "p1": "[EN] P1",
+        "p2": "[EN] P2",
+        "side_title": "[EN] Side title",
+        "side": {
+          "0": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "1": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          }
+        }
+      },
+      "saadiens": {
+        "date": "[EN] Date",
+        "title": "[EN] Title",
+        "p1": "[EN] P1",
+        "p2": "[EN] P2",
+        "side_title": "[EN] Side title",
+        "side": {
+          "0": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "1": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          }
+        }
+      },
+      "alaouites": {
+        "date": "[EN] Date",
+        "title": "[EN] Title",
+        "p1": "[EN] P1",
+        "p2": "[EN] P2",
+        "side_title": "[EN] Side title",
+        "side": {
+          "0": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "1": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          },
+          "2": {
+            "name": "[EN] Name",
+            "place": "[EN] Place"
+          }
+        }
+      }
+    },
+    "cta": {
+      "volubilis": "[EN] Volubilis",
+      "fes": "[EN] Fes",
+      "marrakech": "[EN] Marrakech"
+    },
+    "banner": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "desc": "[EN] Desc",
+      "btn": "[EN] Btn"
+    },
+    "faq": {
+      "eyebrow": "[EN] Eyebrow",
+      "title": "[EN] Title",
+      "q1": "[EN] Q1",
+      "a1": "[EN] A1",
+      "q2": "[EN] Q2",
+      "a2": "[EN] A2",
+      "q3": "[EN] Q3",
+      "a3": "[EN] A3"
     }
+  },
+  "nav": {
+    "destinations": "[EN] Destinations",
+    "categories": "[EN] Categories",
+    "cat_stays": "[EN] Cat stays",
+    "cat_gastronomy": "[EN] Cat gastronomy",
+    "cat_experiences": "[EN] Cat experiences",
+    "cat_museums": "[EN] Cat museums",
+    "cat_transport": "[EN] Cat transport",
+    "cat_itineraries": "[EN] Cat itineraries",
+    "cat_guides": "[EN] Cat guides",
+    "history": "[EN] History",
+    "blog": "[EN] Blog",
+    "contact": "[EN] Contact",
+    "cities": "[EN] Cities"
+  },
+  "footer": {
+    "about_text": "[EN] About text",
+    "destinations_title": "Destinations",
+    "link_marrakech": "[EN] Link marrakech",
+    "link_all_destinations": "[EN] Link all destinations",
+    "categories_title": "Categories",
+    "connect_title": "Connect With Us",
+    "youtube_text": "Subscribe to our YouTube channel for travel video guides:",
+    "copyright": "© 2026 MoroccoTripMap. All rights reserved.",
+    "link_stays": "Stays & Riads",
+    "link_restaurants": "Moroccan Restaurants",
+    "link_culture": "Culture & Desert",
+    "link_transport": "Transport & Drivers",
+    "link_circuits": "Circuits & Itineraries",
+    "link_history": "History of Morocco",
+    "link_guides": "Travel Guides",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itineraries",
+    "col_imperial": "Imperial Cities & Culture",
+    "col_desert": "Desert & Deep South",
+    "col_practical": "Practical Guides & Stays",
+    "created_by": "Created by"
   }
 }

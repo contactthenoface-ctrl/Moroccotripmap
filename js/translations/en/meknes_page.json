@@ -1,19 +1,446 @@
 {
+  "seo": {
+    "title": "Meknes Travel Guide 2026 | Imperial City, Volubilis & Moulay Idriss | MoroccoTripMap",
+    "description": "Plan your trip to Meknes: Bab Mansour & Place el-Hedim, Heri es-Souani, Royal Mausoleum, Volubilis, medina, hotels and practical tips.",
+    "keywords": "Meknes travel guide, things to do in Meknes, Meknes medina, Bab Mansour, Place el-Hedim, Volubilis, Heri es-Souani, Moulay Idriss, best hotels Meknes, day trips from Meknes"
+  },
+  "name": "Meknes",
+  "hero_subtitle": "Bab Mansour, Place el-Hedim, Heri es-Souani and the gateway to Roman Volubilis — the Ismaili imperial city.",
+  "info": {
+    "best_time": "Apr – Jun & Sep – Nov",
+    "duration": "2 – 3 Days",
+    "vibe": "Imperial & Historic",
+    "access": "Train from Fez / Rabat / Casablanca",
+    "best_time_label": "Best Time to Visit",
+    "best_time_val": "Apr – Jun & Sep – Nov",
+    "stay_label": "Ideal Stay",
+    "stay_val": "2 – 3 Days",
+    "vibe_label": "Top Vibe",
+    "vibe_val": "Imperial & Historic",
+    "airport_label": "Nearest Airport",
+    "airport_val": "FEZ (Saïss) / RBA",
+    "duration_label": "Suggested Duration",
+    "entry_label": "Entry",
+    "area_label": "Area"
+  },
+  "overview": {
+    "title": "Meknes: Imperial Gates, Granaries and the Road to Volubilis",
+    "p1": "Meknes is the majestic imperial city of Sultan Moulay Ismail: monumental gates, immense granaries, and a medina that offers a relaxed atmosphere compared to bustling Fez. Place el-Hedim and the monumental Bab Mansour set the stage, while Heri es-Souani highlights the sheer scale of ancient royal logistics.",
+    "p2": "Two full days allow you to explore the imperial monuments and the old medina comfortably, while a third day is perfect for visiting the nearby Roman ruins of Volubilis and the holy mountain town of Moulay Idriss Zerhoun."
+  },
+  "places": {
+    "badge": "Top Sightseeing",
+    "title": "Must-Visit Places in Meknes",
+    "subtitle": "Imperial gates, ancient royal granaries, Roman ruins, and historic sites you cannot miss.",
+    "explore": "Explore Place →",
+    "bab": {
+      "tag": "Imperial Gate",
+      "title": "Bab Mansour",
+      "desc": "One of North Africa's most magnificent and ornate imperial gateways."
+    },
+    "hedim": {
+      "tag": "Historic Square",
+      "title": "Place el-Hedim",
+      "desc": "Meknes's vibrant main square, lively with storytellers, musicians, and terrace cafés."
+    },
+    "ismail": {
+      "tag": "Mausoleum",
+      "title": "Mausoleum of Moulay Ismail",
+      "desc": "Exquisite resting place of the founder, showcasing fine Moroccan tilework and peaceful courtyards."
+    },
+    "heri": {
+      "tag": "Royal Granaries",
+      "title": "Heri es-Souani",
+      "desc": "Vast royal stables and granaries built to withstand sieges and house imperial horses."
+    },
+    "medina": {
+      "tag": "Medina",
+      "title": "Meknes Medina & Souks",
+      "desc": "Traditional artisan markets and peaceful residential alleys full of local charm."
+    },
+    "jamai": {
+      "tag": "Museum",
+      "title": "Dar Jamai Museum",
+      "desc": "A late 19th-century palace showcasing Moroccan arts, carpets, ceramics, and traditional jewelry."
+    },
+    "volubilis": {
+      "tag": "Roman Ruins",
+      "title": "Volubilis Archaeological Site",
+      "desc": "UNESCO-listed Roman ruins featuring exceptional preserved mosaics and triumphal arches."
+    },
+    "idriss": {
+      "tag": "Holy Town",
+      "title": "Moulay Idriss Zerhoun",
+      "desc": "A picturesque hillside pilgrimage town draped across twin green hills near Volubilis."
+    },
+    "medersa": {
+      "tag": "Islamic Heritage",
+      "title": "Bou Inania Madrasa",
+      "desc": "A 14th-century theological college renowned for its stunning wood carvings and zellige tiles."
+    }
+  },
+  "directory": {
+    "badge": "Directory & Database",
+    "title": "Find Your Ideal Stay in Meknes",
+    "subtitle": "Use the filters below to instantly sort the best places based on your search criteria.",
+    "filter_type_label": "Accommodation Type:",
+    "type_label": "Type:",
+    "type_all": "All Types",
+    "type_hotel": "Hotels",
+    "type_riad": "Traditional Riads",
+    "type_guesthouse": "Guesthouse",
+    "filter_location_label": "District / Area:",
+    "district_label": "Area",
+    "location_all": "All Areas",
+    "location_medina": "Medina",
+    "location_ville": "Ville Nouvelle",
+    "counter": "Accommodations found",
+    "no_results": "No accommodations match your filters.",
+    "check_availability": "Check availability →",
+    "stays": "Stays",
+    "all_types": "All Types",
+    "all_areas": "All Areas"
+  },
+  "eat": {
+    "badge": "Gastronomy",
+    "title": "Where to Eat in Meknes",
+    "subtitle": "Square cafés, medina grills, and top dining spots in the new town.",
+    "placehedim": {
+      "tag": "Square",
+      "loc": "Place el-Hedim",
+      "title": "Place el-Hedim Cafés",
+      "desc": "Mint tea and light snacks overlooking Bab Mansour at sunset."
+    },
+    "medina_grill": {
+      "tag": "Local",
+      "loc": "Medina Alleys",
+      "title": "Medina Grills & Olive Shops",
+      "desc": "Brochettes, fresh bread, and olives where locals eat."
+    },
+    "riad_restaurant": {
+      "tag": "Riad",
+      "loc": "Medina",
+      "title": "Riad Courtyard Restaurants",
+      "desc": "Authentic Moroccan dishes served inside beautifully restored courtyard homes."
+    },
+    "ville_nouvelle": {
+      "tag": "Modern",
+      "loc": "Ville Nouvelle",
+      "title": "New Town Cafés & Dining",
+      "desc": "Coffee, pastries, and comfortable seating near the train station."
+    },
+    "rooftop": {
+      "tag": "View",
+      "loc": "Near Medina",
+      "title": "Panoramic Rooftops",
+      "desc": "Elevated terraces offering views over the imperial ramparts."
+    },
+    "local_tagine": {
+      "tag": "Classic",
+      "loc": "Medina / New Town",
+      "title": "Tagine & Couscous Spots",
+      "desc": "Slow-cooked Moroccan classics made with local spices."
+    }
+  },
+  "tips": {
+    "title": "Practical Tips for Visiting Meknes",
+    "transport": {
+      "title": "Getting Around",
+      "desc": "The medina and Place el-Hedim are easily explored on foot. Use petit taxis for quick trips to Heri es-Souani, and grand taxis or arranged transport for Volubilis."
+    },
+    "bargain": {
+      "title": "Souk Bargaining",
+      "desc": "Shopping in Meknes is much calmer than in Marrakech or Fez. Friendly bargaining is welcome in the souks for local handicrafts and carpets."
+    },
+    "water": {
+      "title": "Stay Hydrated",
+      "desc": "Spring and autumn offer ideal weather for walking the ruins of Volubilis and the historic ramparts. Always carry bottled water during warmer months."
+    }
+  },
+  "daytrips": {
+    "badge": "Beyond the City",
+    "title": "Best Day Trips from Meknes",
+    "subtitle": "Explore Roman history, sacred towns, and imperial neighbors within easy reach.",
+    "volubilis": {
+      "title": "Volubilis & Moulay Idriss",
+      "desc": "The classic combination of Roman mosaics and the sacred hillside town."
+    },
+    "fes": {
+      "title": "Fez Imperial City",
+      "desc": "Only 30–45 minutes away by train for a full day in Morocco's spiritual capital."
+    },
+    "atlas": {
+      "title": "Middle Atlas & Ifrane",
+      "desc": "Alpine-style town, cedar forests, and wild monkeys in Azrou."
+    }
+  },
+  "faq": {
+    "badge": "Good to Know",
+    "title": "Meknes Travel FAQ",
+    "q1": {
+      "question": "How many days should I spend in Meknes?",
+      "answer": "2 to 3 days is ideal to explore the imperial monuments, medina, and make a half-day trip to Volubilis."
+    },
+    "q2": {
+      "question": "Is Meknes safe for tourists?",
+      "answer": "Yes, Meknes is very safe and much calmer than Morocco's larger tourist hubs, allowing for a relaxed travel experience."
+    },
+    "q3": {
+      "question": "What currency is used and can I pay by card?",
+      "answer": "Morocco uses the dirham (MAD). Cards are accepted in major hotels and restaurants, but cash is needed for small shops and taxis."
+    },
+    "q4": {
+      "question": "How do I get to Meknes?",
+      "answer": "Meknes is extremely well connected by the ONCF train network from Fez, Rabat, Casablanca, and Tangier."
+    }
+  },
+  "itinerary": {
+    "badge": "Planning",
+    "title": "Suggested 3-Day Itinerary",
+    "subtitle": "A balanced schedule to see the imperial highlights and Roman ruins."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Day 1 — Imperial Gates & Medina",
+    "day2_tab": "Day 2 — Granaries & Madrasas",
+    "day3_tab": "Day 3 — Volubilis & Moulay Idriss",
+    "day1_m": "Morning — Bab Mansour & Place el-Hedim",
+    "day1_md": "Start at Place el-Hedim and admire the majestic architecture of Bab Mansour in the morning light.",
+    "day1_a": "Afternoon — Medina Souks",
+    "day1_ad": "Wander through the peaceful artisan souks and discover local crafts at your own pace.",
+    "day1_e": "Evening — Terrace mint tea",
+    "day1_ed": "Relax on a rooftop café overlooking the bustling square as evening falls.",
+    "day2_m": "Morning — Heri es-Souani & Mausoleum",
+    "day2_md": "Explore the massive royal granaries and stables, followed by a visit to the Mausoleum of Moulay Ismail.",
+    "day2_a": "Afternoon — Bou Inania & Dar Jamai",
+    "day2_ad": "Visit the intricate Bou Inania Madrasa and explore Moroccan artifacts at the Dar Jamai Museum.",
+    "day2_e": "Evening — Traditional dinner",
+    "day2_ed": "Enjoy a slow-cooked tagine in a traditional riad courtyard.",
+    "day3_m": "Morning — Volubilis Roman Ruins",
+    "day3_md": "Take a short trip out to Volubilis to walk among the ancient Roman colonnades and mosaics.",
+    "day3_a": "Afternoon — Moulay Idriss Zerhoun",
+    "day3_ad": "Stop by the sacred hillside town of Moulay Idriss for panoramic views and local pastries.",
+    "day3_e": "Evening — Return to Meknes",
+    "day3_ed": "A final dinner in town before your onward journey."
+  },
   "meknes_page": {
     "seo": {
-      "title": "Meknes Travel Guide 2026 | Things to Do & Tips | MoroccoTripMap",
-      "description": "Plan your trip to Meknes: top attractions, local food, and travel tips."
+      "title": "[EN] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Meknes.",
+    "hero_subtitle": "[EN] Hero subtitle",
+    "info": {
+      "best_time_label": "[EN] Best time label",
+      "best_time_val": "[EN] Best time val",
+      "stay_label": "[EN] Stay label",
+      "stay_val": "[EN] Stay val",
+      "vibe_label": "[EN] Vibe label",
+      "vibe_val": "[EN] Vibe val",
+      "airport_label": "[EN] Airport label",
+      "airport_val": "[EN] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Meknes",
-      "p1": "Explore Meknes and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[EN] Title",
+      "p1": "[EN] P1",
+      "p2": "[EN] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Meknes",
-      "subtitle": "Discover top points of interest in Meknes."
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "bab": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "explore": "[EN] Explore",
+      "hedim": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "heri": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "volubilis": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "ismail": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "medina": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "medersa": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "jamai": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "idriss": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[EN] Day1 tab",
+      "day2_tab": "[EN] Day2 tab",
+      "day3_tab": "[EN] Day3 tab",
+      "day1_m": "[EN] Day1 m",
+      "day1_md": "[EN] Day1 md",
+      "day1_a": "[EN] Day1 a",
+      "day1_ad": "[EN] Day1 ad",
+      "day1_e": "[EN] Day1 e",
+      "day1_ed": "[EN] Day1 ed",
+      "day2_m": "[EN] Day2 m",
+      "day2_md": "[EN] Day2 md",
+      "day2_a": "[EN] Day2 a",
+      "day2_ad": "[EN] Day2 ad",
+      "day2_e": "[EN] Day2 e",
+      "day2_ed": "[EN] Day2 ed",
+      "day3_m": "[EN] Day3 m",
+      "day3_md": "[EN] Day3 md",
+      "day3_a": "[EN] Day3 a",
+      "day3_ad": "[EN] Day3 ad",
+      "day3_e": "[EN] Day3 e",
+      "day3_ed": "[EN] Day3 ed"
+    },
+    "directory": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "filter_type_label": "[EN] Filter type label",
+      "type_all": "[EN] Type all",
+      "type_hotel": "[EN] Type hotel",
+      "type_riad": "[EN] Type riad",
+      "filter_location_label": "[EN] Filter location label",
+      "location_all": "[EN] Location all",
+      "location_medina": "[EN] Location medina",
+      "location_ville": "[EN] Location ville",
+      "counter": "[EN] Counter",
+      "district_label": "[EN] District label",
+      "type_label": "[EN] Type label",
+      "check_availability": "[EN] Check availability",
+      "no_results": "[EN] No results"
+    },
+    "tips": {
+      "title": "[EN] Title",
+      "transport": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "bargain": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "water": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "volubilis": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "fes": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "atlas": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "q1": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q2": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q3": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q4": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[EN] Destinations",
+    "categories": "[EN] Categories",
+    "cat_stays": "[EN] Cat stays",
+    "cat_gastronomy": "[EN] Cat gastronomy",
+    "cat_experiences": "[EN] Cat experiences",
+    "cat_museums": "[EN] Cat museums",
+    "cat_transport": "[EN] Cat transport",
+    "cat_itineraries": "[EN] Cat itineraries",
+    "cat_guides": "[EN] Cat guides",
+    "history": "[EN] History",
+    "blog": "[EN] Blog",
+    "contact": "[EN] Contact",
+    "cities": "[EN] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[EN] Language title"
+  },
+  "breadcrumb": {
+    "home": "[EN] Home",
+    "destinations": "[EN] Destinations"
+  },
+  "destinations": {
+    "meknes": {
+      "name": "[EN] Name"
+    }
+  },
+  "footer": {
+    "about_text": "[EN] About text",
+    "destinations_title": "Destinations",
+    "link_meknes": "[EN] Link meknes",
+    "link_all_destinations": "[EN] Link all destinations",
+    "categories_title": "Categories",
+    "link_stays": "Stays & Riads",
+    "link_restaurants": "Moroccan Restaurants",
+    "connect_title": "Connect With Us",
+    "youtube_text": "Subscribe to our YouTube channel for travel video guides:",
+    "copyright": "© 2026 MoroccoTripMap. All rights reserved.",
+    "link_culture": "Culture & Desert",
+    "link_transport": "Transport & Drivers",
+    "link_circuits": "Circuits & Itineraries",
+    "link_history": "History of Morocco",
+    "link_guides": "Travel Guides",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itineraries",
+    "col_imperial": "Imperial Cities & Culture",
+    "col_desert": "Desert & Deep South",
+    "col_practical": "Practical Guides & Stays",
+    "created_by": "Created by"
   }
 }

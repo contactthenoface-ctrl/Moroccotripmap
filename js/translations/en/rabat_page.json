@@ -1,19 +1,491 @@
 {
+  "seo": {
+    "title": "Rabat Travel Guide | Capital, Kasbah & Atlantic Coast | MoroccoTripMap",
+    "description": "Rabat travel guide: Kasbah of the Udayas, Hassan Tower, Chellah, Medina, Bouregreg marina and Atlantic beach. When to go, where to stay and how to explore Morocco’s calm capital.",
+    "keywords": "Rabat, Rabat Morocco, Kasbah Udayas, Hassan Tower, Chellah, Rabat medina, Bouregreg, Morocco capital",
+    "og_title": "Rabat Travel Guide | Capital, Kasbah & Atlantic Coast | MoroccoTripMap",
+    "og_description": "Explore Rabat: Udayas kasbah, Hassan Tower, Chellah ruins, medina lanes and the Bouregreg estuary on the Atlantic."
+  },
+  "name": "Rabat",
+  "hero_subtitle": "Morocco’s capital on the Atlantic — kasbah cliffs, Hassan Tower, Chellah and a calm Bouregreg waterfront.",
+  "info": {
+    "best_time_label": "Best time",
+    "best_time_val": "March–May & September–November",
+    "duration_label": "Suggested stay",
+    "duration_val": "2 – 3 days",
+    "entry_label": "Getting there",
+    "entry_val": "RBA airport · ONCF trains · motorway",
+    "area_label": "Region",
+    "area_val": "Rabat-Salé-Kénitra · Atlantic"
+  },
+  "overview": {
+    "title": "A capital that still feels walkable",
+    "p1": "Rabat sits where the Bouregreg meets the Atlantic: the white-and-blue Kasbah of the Udayas above the river mouth, the unfinished Hassan Tower and Mohammed V Mausoleum, the Roman-Islamic ruins of Chellah, and a medina that stays manageable compared with Fez or Marrakech. As the political capital it is ordered and green, yet the ocean wind and estuary light keep it from feeling purely administrative.",
+    "p2": "Two or three days cover the kasbah, Hassan complex, Chellah, medina and a walk along the marina or beach. Day trips reach Salé across the river, or further to Casablanca and the coast toward Kenitra. Base yourself near the medina, Hassan district or Agdal depending on whether you prefer historic lanes or modern cafés."
+  },
+  "places": {
+    "badge": "Highlights",
+    "title": "Must-visit places in Rabat",
+    "subtitle": "Kasbah, tower, necropolis, medina and the Bouregreg shore.",
+    "explore": "Explore the place →",
+    "oudayas": {
+      "tag": "Kasbah",
+      "title": "Kasbah of the Udayas",
+      "desc": "White-and-blue quarter above the river mouth with Andalusian gardens."
+    },
+    "hassan": {
+      "tag": "Monument",
+      "title": "Hassan Tower",
+      "desc": "Iconic Almohad minaret and the esplanade of the unfinished mosque."
+    },
+    "mausoleum": {
+      "tag": "Mausoleum",
+      "title": "Mohammed V Mausoleum",
+      "desc": "Marble and zellige memorial beside Hassan Tower."
+    },
+    "chellah": {
+      "tag": "Ruins",
+      "title": "Chellah",
+      "desc": "Roman and Merinid necropolis in a walled garden by the Bouregreg."
+    },
+    "medina": {
+      "tag": "Medina",
+      "title": "Rabat Medina",
+      "desc": "Compact lanes, souks and the Andalusian wall near the ocean."
+    },
+    "gardens": {
+      "tag": "Gardens",
+      "title": "Andalusian Gardens",
+      "desc": "Shaded gardens inside the Udayas kasbah."
+    },
+    "marina": {
+      "tag": "Waterfront",
+      "title": "Bouregreg Marina",
+      "desc": "Modern marina and promenade facing Salé across the estuary."
+    },
+    "beach": {
+      "tag": "Beach",
+      "title": "Rabat Beach",
+      "desc": "Atlantic sand below the walls and along the corniche."
+    },
+    "museum": {
+      "tag": "Museum",
+      "title": "Museums of Rabat",
+      "desc": "Archaeology and modern collections in the capital."
+    }
+  },
+  "itinerary": {
+    "badge": "Plan",
+    "title": "Suggested 3-day itinerary",
+    "subtitle": "Kasbah and Hassan first, then Chellah and the waterfront."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Day 1",
+    "day2_tab": "Day 2",
+    "day3_tab": "Day 3",
+    "day1_m": "Morning",
+    "day1_md": "Kasbah of the Udayas & Andalusian Gardens — views over the Bouregreg and Atlantic.",
+    "day1_a": "Afternoon",
+    "day1_ad": "Medina lanes, Rue des Consuls and a café stop near the ocean walls.",
+    "day1_e": "Evening",
+    "day1_ed": "Sunset from the kasbah platform or a quiet dinner in the medina (Dinarjat, Dar Naji).",
+    "day2_m": "Morning",
+    "day2_md": "Hassan Tower esplanade and Mohammed V Mausoleum — allow time for security checks.",
+    "day2_a": "Afternoon",
+    "day2_ad": "Chellah ruins and gardens; storks on the walls in season.",
+    "day2_e": "Evening",
+    "day2_ed": "Bouregreg marina promenade or a rooftop near Hassan / Agdal.",
+    "day3_m": "Morning",
+    "day3_md": "Museum stop or ferry/walk toward Salé’s medina across the river.",
+    "day3_a": "Afternoon",
+    "day3_ad": "Rabat beach or corniche walk; free time in Agdal cafés if you prefer the modern city.",
+    "day3_e": "Evening",
+    "day3_ed": "Last mint tea in the Udayas or dinner facing the estuary."
+  },
+  "directory": {
+    "badge": "Stay",
+    "title": "Find Your Ideal Stay in Rabat",
+    "subtitle": "Medina riads, Hassan hotels and Agdal apartments — filter by type and area.",
+    "filter_type_label": "Type:",
+    "filter_location_label": "Area:",
+    "type_all": "All types",
+    "type_hotel": "Hotel",
+    "type_riad": "Riad",
+    "type_guesthouse": "Guesthouse",
+    "location_all": "All areas",
+    "location_medina": "Medina / Ocean",
+    "location_hassan": "Centre / Hassan",
+    "location_agdal": "Agdal",
+    "location_hayriad": "Hay Riad",
+    "counter": "stays found",
+    "no_results": "No stays match these filters.",
+    "check_availability": "Check availability →",
+    "area_label": "Area:",
+    "type_label": "Type:"
+  },
+  "eat": {
+    "badge": "Food",
+    "title": "Where to eat in Rabat",
+    "subtitle": "Medina houses, kasbah cafés and modern tables in Agdal and Hassan.",
+    "dinarjat": {
+      "tag": "Medina",
+      "title": "Le Dinarjat",
+      "loc": "Medina",
+      "desc": "Traditional Moroccan in a restored house — booking advised."
+    },
+    "naji": {
+      "tag": "Medina",
+      "title": "Dar Naji",
+      "loc": "Medina",
+      "desc": "Reliable tagines and salads in a lively medina setting."
+    },
+    "imprevu": {
+      "tag": "Modern",
+      "title": "L'Imprévu",
+      "loc": "Hassan / centre",
+      "desc": "Contemporary cooking popular with locals and diplomats."
+    },
+    "maure": {
+      "tag": "Kasbah",
+      "title": "Café Maure",
+      "loc": "Udayas",
+      "desc": "Mint tea and pastries with river views inside the kasbah."
+    },
+    "goeland": {
+      "tag": "Seafood",
+      "title": "Le Goéland",
+      "loc": "Near ocean",
+      "desc": "Seafood and Atlantic catch when you want fish."
+    },
+    "tour": {
+      "tag": "Classic",
+      "title": "Restaurant de la Tour Hassan",
+      "loc": "Hassan",
+      "desc": "Hotel restaurant near the tower — convenient after sightseeing."
+    }
+  },
+  "food": {
+    "title": "Eating in the capital",
+    "p1": "Rabat’s food scene mixes medina houses, simple grills and a growing list of modern restaurants in Hassan and Agdal. Seafood follows the Atlantic; tagines and salads stay central to everyday meals.",
+    "li1": "Book Le Dinarjat for a classic medina dinner.",
+    "li2": "Café Maure for tea with a view in the Udayas.",
+    "li3": "Agdal and Hassan for international and contemporary menus.",
+    "li4": "Fresh juice and pastries along Avenue Mohammed V.",
+    "li5": "Salé across the river for a different local lunch scene."
+  },
+  "tips": {
+    "title": "Practical tips for Rabat",
+    "1": {
+      "title": "Getting around",
+      "desc": "Tram links Rabat and Salé; taxis are plentiful. The historic core is walkable between Udayas, medina and Hassan."
+    },
+    "2": {
+      "title": "Dress & visits",
+      "desc": "Modest dress helps at the mausoleum; security checks are normal at official sites."
+    },
+    "3": {
+      "title": "Wind & weather",
+      "desc": "Atlantic wind can be cool even in sun — a light layer helps on the kasbah terrace."
+    }
+  },
+  "daytrips": {
+    "badge": "Excursions",
+    "title": "Day trips from Rabat",
+    "subtitle": "Across the Bouregreg or further along the coast and inland.",
+    "sale": {
+      "title": "Salé",
+      "desc": "Medina and beach just across the Bouregreg — tram or boat."
+    },
+    "casa": {
+      "title": "Casablanca",
+      "desc": "About 1 hour by train — Hassan II Mosque and corniche."
+    },
+    "kenitra": {
+      "title": "Kenitra & Mehdia",
+      "desc": "Coast and lagoon north of the capital."
+    },
+    "meknes": {
+      "title": "Meknes & Volubilis",
+      "desc": "Longer day — imperial city and Roman ruins inland."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "FAQ about Rabat",
+    "q1": {
+      "question": "How many days in Rabat?",
+      "answer": "Two full days cover the main sites; three let you add Salé, museums or a slower beach afternoon."
+    },
+    "q2": {
+      "question": "Is Rabat worth visiting vs Marrakech?",
+      "answer": "Yes if you want a calmer capital with ocean air, major monuments and fewer souk crowds."
+    },
+    "q3": {
+      "question": "Airport code?",
+      "answer": "RBA (Rabat-Salé). Casablanca CMN is an alternative with more flights, then train to Rabat."
+    },
+    "q4": {
+      "question": "Safe for walking?",
+      "answer": "The main tourist areas are generally fine by day; use normal city awareness at night."
+    },
+    "q5": {
+      "question": "Best area to stay?",
+      "answer": "Medina/Udayas for atmosphere, Hassan for monuments, Agdal for modern cafés and space."
+    }
+  },
   "rabat_page": {
     "seo": {
-      "title": "Rabat Travel Guide 2026 | Things to Do & Tips | MoroccoTripMap",
-      "description": "Plan your trip to Rabat: top attractions, local food, and travel tips."
+      "title": "[EN] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Rabat.",
+    "name": "[EN] Name",
+    "hero_subtitle": "[EN] Hero subtitle",
+    "info": {
+      "best_time_label": "[EN] Best time label",
+      "best_time_val": "[EN] Best time val",
+      "duration_label": "[EN] Duration label",
+      "duration_val": "[EN] Duration val",
+      "area_label": "[EN] Area label",
+      "area_val": "[EN] Area val",
+      "entry_label": "[EN] Entry label",
+      "entry_val": "[EN] Entry val"
+    },
     "overview": {
-      "title": "Welcome to Rabat",
-      "p1": "Explore Rabat and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[EN] Title",
+      "p1": "[EN] P1",
+      "p2": "[EN] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Rabat",
-      "subtitle": "Discover top points of interest in Rabat."
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "oudayas": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "explore": "[EN] Explore",
+      "hassan": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "mausoleum": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "chellah": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "medina": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "gardens": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "marina": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "beach": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "museum": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[EN] Day1 tab",
+      "day2_tab": "[EN] Day2 tab",
+      "day3_tab": "[EN] Day3 tab",
+      "day1_m": "[EN] Day1 m",
+      "day1_md": "[EN] Day1 md",
+      "day1_a": "[EN] Day1 a",
+      "day1_ad": "[EN] Day1 ad",
+      "day1_e": "[EN] Day1 e",
+      "day1_ed": "[EN] Day1 ed",
+      "day2_m": "[EN] Day2 m",
+      "day2_md": "[EN] Day2 md",
+      "day2_a": "[EN] Day2 a",
+      "day2_ad": "[EN] Day2 ad",
+      "day2_e": "[EN] Day2 e",
+      "day2_ed": "[EN] Day2 ed",
+      "day3_m": "[EN] Day3 m",
+      "day3_md": "[EN] Day3 md",
+      "day3_a": "[EN] Day3 a",
+      "day3_ad": "[EN] Day3 ad",
+      "day3_e": "[EN] Day3 e",
+      "day3_ed": "[EN] Day3 ed"
+    },
+    "directory": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "filter_type_label": "[EN] Filter type label",
+      "type_all": "[EN] Type all",
+      "type_hotel": "[EN] Type hotel",
+      "type_riad": "[EN] Type riad",
+      "type_guesthouse": "[EN] Type guesthouse",
+      "filter_location_label": "[EN] Filter location label",
+      "location_all": "[EN] Location all",
+      "location_hassan": "[EN] Location hassan",
+      "location_medina": "[EN] Location medina",
+      "location_agdal": "[EN] Location agdal",
+      "counter": "[EN] Counter",
+      "type_label": "[EN] Type label",
+      "check_availability": "[EN] Check availability",
+      "no_results": "[EN] No results"
+    },
+    "eat": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "dinarjat": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "imprevu": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "naji": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "goeland": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "tour": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "maure": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "tips": {
+      "title": "[EN] Title",
+      "1": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "3": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "2": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "sale": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "casa": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "q1": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q2": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q3": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q4": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[EN] Destinations",
+    "categories": "[EN] Categories",
+    "cat_stays": "[EN] Cat stays",
+    "cat_gastronomy": "[EN] Cat gastronomy",
+    "cat_experiences": "[EN] Cat experiences",
+    "cat_museums": "[EN] Cat museums",
+    "cat_transport": "[EN] Cat transport",
+    "cat_itineraries": "[EN] Cat itineraries",
+    "cat_guides": "[EN] Cat guides",
+    "history": "[EN] History",
+    "blog": "[EN] Blog",
+    "contact": "[EN] Contact",
+    "cities": "[EN] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[EN] Language title"
+  },
+  "breadcrumb": {
+    "home": "[EN] Home",
+    "destinations": "[EN] Destinations"
+  },
+  "footer": {
+    "about_text": "[EN] About text",
+    "destinations_title": "Destinations",
+    "link_rabat": "[EN] Link rabat",
+    "link_all_destinations": "[EN] Link all destinations",
+    "categories_title": "Categories",
+    "link_stays": "Stays & Riads",
+    "link_restaurants": "Moroccan Restaurants",
+    "connect_title": "Connect With Us",
+    "youtube_text": "Subscribe to our YouTube channel for travel video guides:",
+    "copyright": "© 2026 MoroccoTripMap. All rights reserved.",
+    "link_culture": "Culture & Desert",
+    "link_transport": "Transport & Drivers",
+    "link_circuits": "Circuits & Itineraries",
+    "link_history": "History of Morocco",
+    "link_guides": "Travel Guides",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itineraries",
+    "col_imperial": "Imperial Cities & Culture",
+    "col_desert": "Desert & Deep South",
+    "col_practical": "Practical Guides & Stays",
+    "created_by": "Created by"
   }
 }

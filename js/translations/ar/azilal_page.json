@@ -1,19 +1,464 @@
 {
+  "seo": {
+    "title": "دليل السفر إلى أزيلال 2026 | الأطلس الكبير، شلالات أوزود والوديان السعيدة | MoroccoTripMap",
+    "description": "خطط لزيارة أزيلال: شلالات أوزود، وتادي أيت بوكمز (الوادي السعيد)، بحيرة بين الويدان، آثار ديناصورات إيوريدن ورياضة المشي في الأطلس الكبير.",
+    "keywords": "أزيلال, دليل أزيلال, شلالات أوزود, أيت بوكمز, الوادي السعيد المغرب, بحيرة بين الويدان, ديناصورات أزيلال, الأطلس الكبير"
+  },
+  "name": "أزيلال",
+  "hero_subtitle": "بوابة الأطلس الكبير — شلالات هادرة، الوادي السعيد أيت بوكمز، بحيرات جبلية ومسارات الديناصورات التاريخية.",
+  "info": {
+    "best_time_label": "أفضل وقت",
+    "best_time_val": "أبريل – أكتوبر للمشي · الشلالات طوال العام",
+    "stay_label": "الإقامة المثالية",
+    "stay_val": "3 – 5 أيام",
+    "vibe_label": "الأجواء",
+    "vibe_val": "طبيعة جبلية، ثقافة الأمازيغ، والمشي لمسافات طويلة",
+    "airport_label": "الوصول",
+    "airport_val": "ساعتان ونصف من مطار مراكش (RAK) · الطريق البري"
+  },
+  "overview": {
+    "title": "مرحباً بك في أزيلال — طبيعة الأطلس الكبير العذراء، الشلالات والوديان التاريخية",
+    "p1": "تستقر أزيلال في قلب الأطلس الكبير الأوسط بالمغرب، وتتميز بمناظر طبيعية درامية تضم خنادق عميقة، قمم مغطاة بالثلوج، وديان زراعية مدرجة وعجائب جيولوجية معترفة بها من اليونسكو.",
+    "p2": "تعد موطناً لشلالات أوزود الشهيرة عالمياً، ووديان أيت بوكمز (الوادي السعيد)، والمياه الفيروزية لبحيرة بين الويدان، وآثار الديناصورات المتحجرة، مما يجعلها وجهة مثالية لعشاق الطبيعة والمغامرة."
+  },
+  "places": {
+    "badge": "أبرز المعالم",
+    "title": "أماكن لا تفوت زيارتها في أزيلال",
+    "subtitle": "شلالات مهيبة، وديان جبلية بكر ومواقع جيولوجية عريقة.",
+    "explore": "استكشف المكان ←",
+    "ouzoud": {
+      "tag": "شلال",
+      "title": "شلالات أوزود",
+      "desc": "أروع الشلالات المائية في المغرب بارتفاع 110 أمتار، برك مائية قوس قزح وقردة المكاك البربرية."
+    },
+    "bouguemez": {
+      "tag": "وادي ومشي",
+      "title": "أيت بوكمز (الوادي السعيد)",
+      "desc": "وادي أخضر خلاب يضم قرى الأمازيغ التقليدية، بساتين التفاح ومسارات مشي مشهورة."
+    },
+    "binelouidane": {
+      "tag": "بحيرة ومياه",
+      "title": "بحيرة بين الويدان",
+      "desc": "خزان مائي ألبيني فيروز مذهل تحيط به المنحدرات الحمراء، مفضل لركوب القوارب والاسترخاء."
+    },
+    "dinosaurs": {
+      "tag": "جيولوجيا",
+      "title": "آثار أقدام الديناصورات بإيوريدن",
+      "desc": "آثار ديناصورات صوروبود التاريخية المحفوظة داخل طبقات الصخور في جبال الأطلس الكبير."
+    },
+    "demnate": {
+      "tag": "حديقة جيولوجية",
+      "title": "قنطرة إيمي نيفري الطبيعية",
+      "desc": "جسر صخري طبيعي مذهل قرب دمنات نحتته عوامل التعرية المائية تحت الأرض."
+    },
+    "cathedral": {
+      "tag": "تسلق",
+      "title": "صخرة الكاتدرائية (أنرغي)",
+      "desc": "تكوين صخري جيولوجي ضخم يشبه كاتدرائية جبلية مطلة على أخدود نهر العطشان."
+    },
+    "museum": {
+      "tag": "متحف",
+      "title": "متحف جيوبارك مكون بأزيلال",
+      "desc": "متحف حديث في مدينة أزيلال يعرض هياكل عظمية للديناصورات، أحافير وتاريخ الأطلس."
+    },
+    "zaouia": {
+      "tag": "تراث",
+      "title": "زاوية أحنصال",
+      "desc": "محمية روحية تاريخية ومخازن حبوب حجرية مخفية في أعماق خنادق جبلية."
+    }
+  },
+  "stays": {
+    "badge": "ترشيحات ونصائح",
+    "title": "أين تقيم في أزيلال والأطلس؟ خياراتنا المفضلة",
+    "subtitle": "من دور الضيافة الجبلية في أيت بوكمز إلى المنتجعات الفندقية على البحيرة ونزل الشلالات.",
+    "book": "احجز ←",
+    "card1": {
+      "badge": "★ منتجع البحيرة",
+      "name": "Hotel Chems Le Lac",
+      "desc": "فندق منتجع مطل على المياه الفيروزية لبحيرة بين الويدان مع مسبح خارجي وأنشطة رياضية مائية.",
+      "location": "بين الويدان"
+    },
+    "card2": {
+      "badge": "★ نزل جبلي",
+      "name": "Dar Itrane (Bouguemez)",
+      "desc": "نزل بيئي تقليدي في الوادي السعيد يوفر ضيافة أمازيغية أصيلة، طعاما منزليا ومرشدين جبليين.",
+      "location": "أيت بوكمز"
+    },
+    "card3": {
+      "badge": "★ نزل الشلالات",
+      "name": "Riad Cascade Ouzoud",
+      "desc": "دار ضيافة هادئة تقع على بعد دقائق من شلالات أوزود الشهيرة مع حديقة وإطلالة جبلية.",
+      "location": "شلالات أوزود"
+    },
+    "card4": {
+      "badge": "★ فندق المدينة",
+      "name": "Hotel Azilal Center",
+      "desc": "فندق مريح في المدينة مثالي للمسافرين الذين يستكشفون جيوبارك مكون والمتاحف والممر الجبلي.",
+      "location": "وسط أزيلال"
+    }
+  },
+  "booking_banner": {
+    "badge": "أكثر من 50+ عقار في الأطلس والبحيرات",
+    "title": "استكشف جميع أماكن الإقامة في أزيلال وأوزود",
+    "desc": "قارن الأسعار في الوقت الفعلي، واقرأ تقييمات النزلاء الموثوقة واستمتع بالإلغاء المجاني في أغلب النزل والفنادق.",
+    "btn": "عرض جميع الإقامات على Booking.com",
+    "guarantee": "✓ ضمان أفضل الأسعار وحجز آمن"
+  },
+  "eat": {
+    "badge": "المطاعم",
+    "title": "أين تجد أطيب الأكل في أزيلال وأوزود",
+    "subtitle": "مطاعم الشرفات المطلة على الشلالات، الطواجن الأمازيغية وتذوق العسل.",
+    "ouzoud": {
+      "tag": "إطلالة الشلال",
+      "loc": "شلالات أوزود",
+      "title": "شرفات الإطلالة على الشلال",
+      "desc": "طواجن ضفة النهر وعصير البرتقال الطازج مع بانوراما الشلالات المنحدرة."
+    },
+    "bouguemez": {
+      "tag": "تقليدي",
+      "loc": "أيت بوكمز",
+      "title": "مأكولات النزل الجبلي",
+      "desc": "كسكس مصنوع يدويًا، خضروات عضوية من الحديقة وخبز أمازيغي طازج من أفران الطين."
+    },
+    "lakeside": {
+      "tag": "على البحيرة",
+      "loc": "بين الويدان",
+      "title": "مطاعم ضفاف البحيرة",
+      "desc": "لحوم مشوية وأسماك البحيرة تقدم على شرفات مشمسة مطلة على الخزان المائي."
+    }
+  },
+  "tips": {
+    "title": "نصائح عملية لأزيلال والأطلس الكبير",
+    "transport": {
+      "title": "التنقل",
+      "desc": "استئجار سيارة رباعية الدفع أو سيارة من مراكش هو الأفضل لاستكشاف الممرات الجبلية، أوزود وطرق أيت بوكمز."
+    },
+    "bargain": {
+      "title": "طقس الجبل",
+      "desc": "يتغير طقس الأطلس الكبير بسرعة. حتى في الربيع تكون ليالي الجبل باردة — احمل ملابس دافئة وأحذية مشي متينة."
+    },
+    "water": {
+      "title": "المرشدون والثقافة",
+      "desc": "توظيف مرشد جبلي محلي في أيت بوكمز يثري الرحلات، وحمل النقد ضروري لندرة أجهزة الصراف الآلي في الوديان النائية."
+    }
+  },
+  "daytrips": {
+    "badge": "رحلات قريبة",
+    "title": "أفضل الرحلات اليومية من أزيلال",
+    "subtitle": "استكشف الخنادق المحيطة، البحيرات والمدن الإمبراطورية.",
+    "marrakech": {
+      "title": "مراكش (ساعتان ونصف)",
+      "desc": "تواصل بسهولة مع المدينة العتيقة والقصور الحية في مراكش."
+    },
+    "benimellal": {
+      "title": "بني ملال وعين أسردون (ساعة واحدة)",
+      "desc": "زوروا حديقة العيون التاريخية والقلعة المطلة على سهل تادلة."
+    },
+    "imilchil": {
+      "title": "بحيرات إميلشيل (طريق خلاب)",
+      "desc": "قم بالقيادة عبر هضاب الجبال العالية نحو البحيرتين التوأم إيسلي وتسليت."
+    }
+  },
+  "faq": {
+    "badge": "معلومات مفيدة",
+    "title": "الأسئلة الشائعة حول أزيلال",
+    "q1": {
+      "question": "كم يوماً أحتاج في أزيلال؟",
+      "answer": "ثلاثة إلى أربعة أيام مثالية لزيارة شلالات أوزود، استكشاف وادي أيت بوكمز والاسترخاء بجانب بحيرة بين الويدان."
+    },
+    "q2": {
+      "question": "ما هو أفضل وقت لزيارة أيت بوكمز؟",
+      "answer": "الربيع (من أبريل إلى يونيو) والخريف (من سبتمبر إلى نوفمبر) يوفران أجواء مشي مثالية ووديان خضراء خلابة."
+    },
+    "q3": {
+      "question": "هل يمكنني رؤية آثار الديناصورات في أزيلال؟",
+      "answer": "نعم! أزيلال جزء من المنتزه العالمي لليونسكو جيوبارك مكون، ويضم آثار أقدام ديناصورات صوروبود في إيوريدن ومتحف بأزيلال."
+    },
+    "q4": {
+      "question": "كيف أصل إلى أزيلال؟",
+      "answer": "يمكن الوصول إلى أزيلال براً في حوالي ساعتين ونصف من مراكش أو ساعة واحدة من بني ملال عبر طرق وطنية معبدة."
+    }
+  },
+  "itinerary": {
+    "badge": "التخطيط",
+    "title": "برنامج مقترح لمدة 3 أيام لأزيلال والأطلس الكبير",
+    "subtitle": "الشلالات أولاً، ثم الوادي السعيد وتراث الديناصورات."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "اليوم 1 — شلالات أوزود ومدينة أزيلال",
+    "day1_m": "صباحاً — شلالات أوزود",
+    "day1_md": "الوصول من مراكش أو بني ملال؛ المشي نحو قاعدة شلالات أوزود (110 متر) ومراقبة القردة البرية.",
+    "day1_a": "بعد الظهر — متحف جيوبارك في أزيلال",
+    "day1_ad": "القيادة نحو مدينة أزيلال وزيارة متحف جيوبارك مكون لاستكشاف الأحافير وتاريخ المنطقة.",
+    "day1_e": "مساءً — المبيت في نزل جبلي",
+    "day1_ed": "تسجيل الدخول في دار ضيافة تقليدية أو فندق جبلي لتناول عشاء طاجين الأمازيغ الدافئ.",
+    "day2_tab": "اليوم 2 — الوادي السعيد أيت بوكمز",
+    "day2_m": "صباحاً — السفر إلى وادي أيت بوكمز",
+    "day2_md": "رحلة عبر ممرات جبلية مذهلة نحو «الوادي السعيد» أيت بوكمز.",
+    "day2_a": "بعد الظهر — المشي في الوادي والقرى",
+    "day2_ad": "استكشاف الحقول المدرجة، المخازن المحصنة من الطين والتعرف على القرويين المحليين.",
+    "day2_e": "مساءً — تجربة النزل القروي",
+    "day2_ed": "المبيت في نزل جبلي أصيل محاط بقمم الأطلس الكبير الشاهقة.",
+    "day3_tab": "اليوم 3 — بين الويدان والديناصورات",
+    "day3_m": "صباحاً — آثار أقدام الديناصورات في إيوريدن",
+    "day3_md": "اكتشاف مسارات صوروبود التاريخية المغمورة داخل تكوينات الصخور الجبلية.",
+    "day3_a": "بعد الظهر — بحيرة بين الويدان",
+    "day3_ad": "الاسترخاء قرب المياه الفيروزية لبحيرة بين الويدان، جولة بالقارب أو تناول الغداء البانورامي.",
+    "day3_e": "مساءً — المغادرة أو الغروب",
+    "day3_ed": "إطلالات بانورامية أخيرّة فوق الأطلس قبل العودة إلى مراكش أو بني ملال."
+  },
   "azilal_page": {
     "seo": {
-      "title": "دليل سفر Azilal 2026 | أهم المعالم ونقاط اهتمام | MoroccoTripMap",
-      "description": "Plan your trip to Azilal: top attractions, local food, and travel tips."
+      "title": "[AR] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Azilal.",
+    "name": "[AR] Name",
+    "hero_subtitle": "[AR] Hero subtitle",
+    "info": {
+      "best_time_label": "[AR] Best time label",
+      "best_time_val": "[AR] Best time val",
+      "stay_label": "[AR] Stay label",
+      "stay_val": "[AR] Stay val",
+      "vibe_label": "[AR] Vibe label",
+      "vibe_val": "[AR] Vibe val",
+      "airport_label": "[AR] Airport label",
+      "airport_val": "[AR] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Azilal",
-      "p1": "Explore Azilal and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[AR] Title",
+      "p1": "[AR] P1",
+      "p2": "[AR] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Azilal",
-      "subtitle": "Discover top points of interest in Azilal."
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "ouzoud": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "explore": "[AR] Explore",
+      "bouguemez": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "binelouidane": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "dinosaurs": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "demnate": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "cathedral": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "museum": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "zaouia": {
+        "tag": "[AR] Tag",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[AR] Day1 tab",
+      "day2_tab": "[AR] Day2 tab",
+      "day3_tab": "[AR] Day3 tab",
+      "day1_m": "[AR] Day1 m",
+      "day1_md": "[AR] Day1 md",
+      "day1_a": "[AR] Day1 a",
+      "day1_ad": "[AR] Day1 ad",
+      "day1_e": "[AR] Day1 e",
+      "day1_ed": "[AR] Day1 ed",
+      "day2_m": "[AR] Day2 m",
+      "day2_md": "[AR] Day2 md",
+      "day2_a": "[AR] Day2 a",
+      "day2_ad": "[AR] Day2 ad",
+      "day2_e": "[AR] Day2 e",
+      "day2_ed": "[AR] Day2 ed",
+      "day3_m": "[AR] Day3 m",
+      "day3_md": "[AR] Day3 md",
+      "day3_a": "[AR] Day3 a",
+      "day3_ad": "[AR] Day3 ad",
+      "day3_e": "[AR] Day3 e",
+      "day3_ed": "[AR] Day3 ed"
+    },
+    "stays": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "card1": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      },
+      "book": "[AR] Book",
+      "card2": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      },
+      "card3": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      },
+      "card4": {
+        "badge": "[AR] Badge",
+        "name": "[AR] Name",
+        "desc": "[AR] Desc",
+        "location": "[AR] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "desc": "[AR] Desc",
+      "btn": "[AR] Btn",
+      "guarantee": "[AR] Guarantee"
+    },
+    "eat": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "ouzoud": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bouguemez": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "lakeside": {
+        "tag": "[AR] Tag",
+        "loc": "[AR] Loc",
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "tips": {
+      "title": "[AR] Title",
+      "transport": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "bargain": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "water": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "subtitle": "[AR] Subtitle",
+      "marrakech": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "benimellal": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      },
+      "imilchil": {
+        "title": "[AR] Title",
+        "desc": "[AR] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[AR] Badge",
+      "title": "[AR] Title",
+      "q1": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q2": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q3": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      },
+      "q4": {
+        "question": "[AR] Question",
+        "answer": "[AR] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[AR] Destinations",
+    "categories": "[AR] Categories",
+    "cat_stays": "[AR] Cat stays",
+    "cat_gastronomy": "[AR] Cat gastronomy",
+    "cat_experiences": "[AR] Cat experiences",
+    "cat_museums": "[AR] Cat museums",
+    "cat_transport": "[AR] Cat transport",
+    "cat_itineraries": "[AR] Cat itineraries",
+    "cat_guides": "[AR] Cat guides",
+    "history": "[AR] History",
+    "blog": "[AR] Blog",
+    "contact": "[AR] Contact",
+    "cities": "[AR] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[AR] Language title"
+  },
+  "breadcrumb": {
+    "home": "[AR] Home",
+    "destinations": "[AR] Destinations"
+  },
+  "footer": {
+    "about_text": "[AR] About text",
+    "destinations_title": "الوجهات",
+    "link_azilal": "[AR] Link azilal",
+    "link_all_destinations": "[AR] Link all destinations",
+    "categories_title": "الفئات",
+    "link_stays": "رياض وفنادق أصيلة",
+    "link_restaurants": "مطاعم مغربية",
+    "connect_title": "تواصل معنا",
+    "youtube_text": "تابع قناتنا على يوتيوب لمشاهدة أدلة السفر بالفيديو:",
+    "copyright": "© 2026 MoroccoTripMap. جميع الحقوق محفوظة.",
+    "link_culture": "تجارب الصحراء والثقافة",
+    "link_transport": "المواصلات والسائقين الخاصين",
+    "link_circuits": "الرحلات والمسارات",
+    "link_history": "تاريخ المغرب",
+    "link_guides": "أدلة السفر",
+    "link_blog": "المدونة",
+    "link_contact": "اتصل بنا",
+    "link_itineraries": "الرحلات والمسارات",
+    "col_imperial": "المدن الإمبراطورية والثقافة",
+    "col_desert": "الصحراء والجنوب الكبير",
+    "col_practical": "أدلة عملية وإقامة",
+    "created_by": "تم الإنشاء بواسطة"
   }
 }

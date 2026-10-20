@@ -1,19 +1,464 @@
 {
+  "seo": {
+    "title": "Guía de viaje de Azilal 2026 | Alto Atlas, Cascadas de Ouzoud y Valle Feliz | MoroccoTripMap",
+    "description": "Planifica Azilal: Cascadas de Ouzoud, Valle de Ait Bouguemez (Valle Feliz), Lago Bin el Ouidane, huellas de dinosaurios en Iouaridene y trekking en el Alto Atlas.",
+    "keywords": "Azilal, guía Azilal, cascadas de Ouzoud, Ait Bouguemez, valle feliz Marruecos, lago Bin el Ouidane, dinosaurios Azilal, trekking Alto Atlas"
+  },
+  "name": "Azilal",
+  "hero_subtitle": "La puerta de entrada al Alto Atlas: cascadas colosales, el Valle Feliz de Ait Bouguemez, lagos alpinos y rutas de dinosaurios prehistóricos.",
+  "info": {
+    "best_time_label": "Mejor época",
+    "best_time_val": "Abr – Oct para trekking · Cascades todo el año",
+    "stay_label": "Estancia ideal",
+    "stay_val": "3 – 5 días",
+    "vibe_label": "Ambiente",
+    "vibe_val": "Naturaleza salvaje, cultura bereber, senderismo",
+    "airport_label": "Acceso",
+    "airport_val": "2h30 desde el aeropuerto de Marrakech (RAK) · Carretera"
+  },
+  "overview": {
+    "title": "Bienvenido a Azilal — Naturaleza del Alto Atlas, cascadas y valles milenarios",
+    "p1": "Enclavada en el corazón del Alto Atlas central de Marruecos, la provincia de Azilal ofrece paisajes espectaculares de cañones profundos, picos nevados, valles agrícolas en terrazas y maravillas geológicas reconocidas por la UNESCO.",
+    "p2": "Hogar de las mundialmente famosas cascadas de Ouzoud, el idílico valle de Ait Bouguemez conocido como el 'Valle Feliz', las aguas turquesas del lago Bin el Ouidane y rastros de dinosaurios, Azilal es el paraíso definitivo para excursionistas y amantes de la naturaleza."
+  },
+  "places": {
+    "badge": "Lo más destacado",
+    "title": "Lugares imprescindibles en Azilal",
+    "subtitle": "Cascadas majestuosas, valles alpinos prístinos y antiguos yacimientos geológicos.",
+    "explore": "Explorar lugar →",
+    "ouzoud": {
+      "tag": "Cascada",
+      "title": "Cascadas de Ouzoud",
+      "desc": "Las cataratas más espectaculares de Marruecos (110m), pozas con arcoíris y monos de Berbería residentes."
+    },
+    "bouguemez": {
+      "tag": "Valle y Trek",
+      "title": "Ait Bouguemez (Valle Feliz)",
+      "desc": "Un frondoso valle verde de pueblos bereberes tradicionales, huertos de manzanos y emblemáticas rutas de senderismo."
+    },
+    "binelouidane": {
+      "tag": "Lago y Agua",
+      "title": "Lago Bin el Ouidane",
+      "desc": "Un impresionante embalse alpino turquesa rodeado de acantilados rojos, ideal para paseos en barco y relax."
+    },
+    "dinosaurs": {
+      "tag": "Geología",
+      "title": "Huellas de Dinosaurios de Iouaridene",
+      "desc": "Rastros prehistóricos de saurópodos conservados en las capas rocosas de las montañas del Alto Atlas."
+    },
+    "demnate": {
+      "tag": "Geoparque",
+      "title": "Puente Natural de Imi n'Ifri",
+      "desc": "Un asombroso arco de piedra natural cerca de Demnate esculpido por la erosión de un río subterráneo."
+    },
+    "cathedral": {
+      "tag": "Escalada",
+      "title": "Roca de la Catedral (Anergui)",
+      "desc": "Una formación geológica colosal que asemeja una catedral montañosa sobre el cañón del río Ahansal."
+    },
+    "museum": {
+      "tag": "Museo",
+      "title": "Museo del Geoparque de M'Goun",
+      "desc": "Moderno museo en la ciudad de Azilal con esqueletos de dinosaurios, fósiles e historia geológica del Atlas."
+    },
+    "zaouia": {
+      "tag": "Patrimonio",
+      "title": "Zaouia Ahansal",
+      "desc": "Histórico santuario espiritual y graneros de piedra encajados en lo profundo de dramáticas gargantas."
+    }
+  },
+  "stays": {
+    "badge": "Selección y Consejos",
+    "title": "¿Dónde alojarse en Azilal y el Atlas? Nuestros Favoritos",
+    "subtitle": "Desde alojamientos de montaña en Ait Bouguemez hasta hoteles turísticos junto al lago y lodges de cascadas.",
+    "book": "Reservar →",
+    "card1": {
+      "badge": "★ Resort junto al Lago",
+      "name": "Hotel Chems Le Lac",
+      "desc": "Hotel vacacional con vistas a las aguas azules del lago Bin el Ouidane, piscina exterior y deportes acuáticos.",
+      "location": "Bin el Ouidane"
+    },
+    "card2": {
+      "badge": "★ Alojamiento de Montaña",
+      "name": "Dar Itrane (Bouguemez)",
+      "desc": "Ecolodge tradicional en el Valle Feliz que ofrece auténtica hospitalidad bereber, comida casera y guías.",
+      "location": "Ait Bouguemez"
+    },
+    "card3": {
+      "badge": "★ Lodge de Cascadas",
+      "name": "Riad Cascade Ouzoud",
+      "desc": "Tranquila casa de huéspedes situada a pocos minutos de las famosas cascadas de Ouzoud con jardín y vistas.",
+      "location": "Cascadas de Ouzoud"
+    },
+    "card4": {
+      "badge": "★ Hotel Urbano",
+      "name": "Hotel Azilal Center",
+      "desc": "Práctico hotel urbano ideal para viajeros que exploran el Geoparque de M'Goun, museos y puertos de montaña.",
+      "location": "Centro de Azilal"
+    }
+  },
+  "booking_banner": {
+    "badge": "Más de 50+ propiedades en el Atlas y lagos",
+    "title": "Explora todos los alojamientos en Azilal y Ouzoud",
+    "desc": "Compara tarifas en tiempo real, lee opiniones de huéspedes verificados y disfruta de cancelación gratuita en la mayoría de alojamientos.",
+    "btn": "Ver todos los alojamientos en Booking.com",
+    "guarantee": "✓ Mejor precio garantizado y reserva segura"
+  },
+  "eat": {
+    "badge": "Gastronomía",
+    "title": "Dónde comer en Azilal y Ouzoud",
+    "subtitle": "Restaurantes con terraza junto a cascadas, tajines bereberes y degustación de miel.",
+    "ouzoud": {
+      "tag": "Vista Cascada",
+      "loc": "Cascadas de Ouzoud",
+      "title": "Terrazas con Vista a la Cascada",
+      "desc": "Tajines junto al río y zumo de naranja fresco con vistas panorámicas de las cataratas."
+    },
+    "bouguemez": {
+      "tag": "Tradicional",
+      "loc": "Ait Bouguemez",
+      "title": "Comida Casera del Valle",
+      "desc": "Cuscús artesanal, verduras orgánicas del huerto y pan bereber recién horneado en hornos de arcilla."
+    },
+    "lakeside": {
+      "tag": "Junto al Lago",
+      "loc": "Bin el Ouidane",
+      "title": "Comida Panorámica del Lago",
+      "desc": "Carnes a la parrilla y pescado del lago servidos en terrazas soleadas frente al embalse."
+    }
+  },
+  "tips": {
+    "title": "Consejos prácticos para Azilal y el Alto Atlas",
+    "transport": {
+      "title": "Cómo moverse",
+      "desc": "Alquilar un 4x4 o coche en Marrakech es ideal para explorar los puertos de montaña, Ouzoud y las carreteras de Ait Bouguemez."
+    },
+    "bargain": {
+      "title": "Clima de montaña",
+      "desc": "El tiempo en el Alto Atlas cambia rápido. Incluso en primavera las noches son frías: lleva ropa de abrigo y botas de montaña."
+    },
+    "water": {
+      "title": "Guías y Cultura",
+      "desc": "Contratar un guía de montaña local en Ait Bouguemez enriquece las rutas. Lleva efectivo, ya que los cajeros escasean en valles remotos."
+    }
+  },
+  "daytrips": {
+    "badge": "Excursiones",
+    "title": "Mejores excursiones desde Azilal",
+    "subtitle": "Explora gargantas circundantes, lagos y ciudades imperiales.",
+    "marrakech": {
+      "title": "Marrakech (2.5 hrs)",
+      "desc": "Conecta fácilmente con la vibrante medina y los palacios de Marrakech."
+    },
+    "benimellal": {
+      "title": "Beni Mellal y Ain Asserdoune (1 hr)",
+      "desc": "Visita el histórico jardín de la fuente y la fortaleza con vistas a la llanura de Tadla."
+    },
+    "imilchil": {
+      "title": "Lagos de Imilchil (Ruta panorámica)",
+      "desc": "Conduce a través de mesetas de alta montaña hacia los lagos gemelos Isli y Tislit."
+    }
+  },
+  "faq": {
+    "badge": "Información útil",
+    "title": "Preguntas frecuentes sobre Azilal",
+    "q1": {
+      "question": "¿Cuántos días necesito en Azilal?",
+      "answer": "De tres a cuatro días son ideales para visitar las cascadas de Ouzoud, explorar el valle de Ait Bouguemez y relajarse junto al lago Bin el Ouidane."
+    },
+    "q2": {
+      "question": "¿Cuál es la mejor época para visitar Ait Bouguemez?",
+      "answer": "La primavera (de abril a junio) y el otoño (de septiembre a noviembre) ofrecen un clima de trekking perfecto y valles muy verdes."
+    },
+    "q3": {
+      "question": "¿Se pueden ver huellas de dinosaurios en Azilal?",
+      "answer": "¡Sí! Azilal forma parte del Geoparque Global UNESCO de M'Goun, que alberga auténticas huellas de saurópodos en Iouaridene y un museo en Azilal."
+    },
+    "q4": {
+      "question": "¿Cómo llegar a Azilal?",
+      "answer": "Se puede llegar a Azilal por carretera en unas 2.5 horas desde Marrakech o 1 hora desde Beni Mellal por carreteras nacionales asfaltadas."
+    }
+  },
+  "itinerary": {
+    "badge": "Planificación",
+    "title": "Plan de 3 días sugerido para Azilal y Alto Atlas",
+    "subtitle": "Cascadas primero, luego el Valle Feliz y la herencia de los dinosaurios."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Día 1 — Cascadas de Ouzoud y Azilal",
+    "day1_m": "Mañana — Cascadas de Ouzoud",
+    "day1_md": "Llegada desde Marrakech o Beni Mellal; caminata hasta la base de las cataratas de Ouzoud (110m) y observación de monos.",
+    "day1_a": "Tarde — Museo del Geoparque en Azilal",
+    "day1_ad": "Conducción a la ciudad de Azilal y visita al Museo del Geoparque de M'Goun para explorar fósiles e historia regional.",
+    "day1_e": "Noche — Alojamiento de Montaña",
+    "day1_ed": "Check-in en una casa de huéspedes tradicional o hotel de montaña para una cena de tajín bereber.",
+    "day2_tab": "Día 2 — Valle Feliz de Ait Bouguemez",
+    "day2_m": "Mañana — Ruta al Valle de Ait Bouguemez",
+    "day2_md": "Viaje a través de espectaculares puertos de montaña hacia el legendario 'Valle Feliz' de Ait Bouguemez.",
+    "day2_a": "Tarde — Senderismo en el Valle y Pueblos",
+    "day2_ad": "Exploración de campos en terrazas, graneros fortificados de adobe y encuentro con los lugareños.",
+    "day2_e": "Noche — Experiencia en Gîte Rural",
+    "day2_ed": "Alojamiento en un auténtico gîte de montaña rodeado de imponentes picos del Alto Atlas.",
+    "day3_tab": "Día 3 — Bin el Ouidane y Dinosaurios",
+    "day3_m": "Mañana — Huellas de Dinosaurios en Iouaridene",
+    "day3_md": "Descubrimiento de rastros prehistóricos de saurópodos incrustados en las formaciones rocosas de las montañas.",
+    "day3_a": "Tarde — Lago Bin el Ouidane",
+    "day3_ad": "Relax junto a las aguas turquesas del lago Bin el Ouidane, paseo en barco o almuerzo panorámico.",
+    "day3_e": "Noche — Salida o Atardecer",
+    "day3_ed": "Últimas vistas panorámicas sobre el Atlas antes de regresar a Marrakech o Beni Mellal."
+  },
   "azilal_page": {
     "seo": {
-      "title": "Guía de Viaje Azilal 2026 | Cosas que hacer | MoroccoTripMap",
-      "description": "Plan your trip to Azilal: top attractions, local food, and travel tips."
+      "title": "[ES] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Azilal.",
+    "name": "[ES] Name",
+    "hero_subtitle": "[ES] Hero subtitle",
+    "info": {
+      "best_time_label": "[ES] Best time label",
+      "best_time_val": "[ES] Best time val",
+      "stay_label": "[ES] Stay label",
+      "stay_val": "[ES] Stay val",
+      "vibe_label": "[ES] Vibe label",
+      "vibe_val": "[ES] Vibe val",
+      "airport_label": "[ES] Airport label",
+      "airport_val": "[ES] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Azilal",
-      "p1": "Explore Azilal and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "p2": "[ES] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Azilal",
-      "subtitle": "Discover top points of interest in Azilal."
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "ouzoud": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "explore": "[ES] Explore",
+      "bouguemez": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "binelouidane": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "dinosaurs": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "demnate": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "cathedral": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "museum": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "zaouia": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[ES] Day1 tab",
+      "day2_tab": "[ES] Day2 tab",
+      "day3_tab": "[ES] Day3 tab",
+      "day1_m": "[ES] Day1 m",
+      "day1_md": "[ES] Day1 md",
+      "day1_a": "[ES] Day1 a",
+      "day1_ad": "[ES] Day1 ad",
+      "day1_e": "[ES] Day1 e",
+      "day1_ed": "[ES] Day1 ed",
+      "day2_m": "[ES] Day2 m",
+      "day2_md": "[ES] Day2 md",
+      "day2_a": "[ES] Day2 a",
+      "day2_ad": "[ES] Day2 ad",
+      "day2_e": "[ES] Day2 e",
+      "day2_ed": "[ES] Day2 ed",
+      "day3_m": "[ES] Day3 m",
+      "day3_md": "[ES] Day3 md",
+      "day3_a": "[ES] Day3 a",
+      "day3_ad": "[ES] Day3 ad",
+      "day3_e": "[ES] Day3 e",
+      "day3_ed": "[ES] Day3 ed"
+    },
+    "stays": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "card1": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      },
+      "book": "[ES] Book",
+      "card2": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      },
+      "card3": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      },
+      "card4": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "desc": "[ES] Desc",
+      "btn": "[ES] Btn",
+      "guarantee": "[ES] Guarantee"
+    },
+    "eat": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "ouzoud": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bouguemez": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "lakeside": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "tips": {
+      "title": "[ES] Title",
+      "transport": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bargain": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "water": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "marrakech": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "benimellal": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "imilchil": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "q1": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q2": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q3": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q4": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[ES] Destinations",
+    "categories": "[ES] Categories",
+    "cat_stays": "[ES] Cat stays",
+    "cat_gastronomy": "[ES] Cat gastronomy",
+    "cat_experiences": "[ES] Cat experiences",
+    "cat_museums": "[ES] Cat museums",
+    "cat_transport": "[ES] Cat transport",
+    "cat_itineraries": "[ES] Cat itineraries",
+    "cat_guides": "[ES] Cat guides",
+    "history": "[ES] History",
+    "blog": "[ES] Blog",
+    "contact": "[ES] Contact",
+    "cities": "[ES] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[ES] Language title"
+  },
+  "breadcrumb": {
+    "home": "[ES] Home",
+    "destinations": "[ES] Destinations"
+  },
+  "footer": {
+    "about_text": "[ES] About text",
+    "destinations_title": "Destinos",
+    "link_azilal": "[ES] Link azilal",
+    "link_all_destinations": "[ES] Link all destinations",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "connect_title": "Conéctate con Nosotros",
+    "youtube_text": "Suscríbete a nuestro canal de YouTube para ver guías en vídeo:",
+    "copyright": "© 2026 MoroccoTripMap. Todos los derechos reservados.",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto",
+    "link_itineraries": "Circuitos e Itinerarios",
+    "col_imperial": "Ciudades Imperiales y Cultura",
+    "col_desert": "Desierto y Gran Sur",
+    "col_practical": "Guías Prácticas y Estancias",
+    "created_by": "Creado por"
   }
 }

@@ -1,19 +1,529 @@
 {
+  "seo": {
+    "title": "Guía de viaje de Agadir | Playa, Kasbah y Costa Atlántica | MoroccoTripMap",
+    "description": "Planifica tu viaje a Agadir: gran playa atlántica, ciudad moderna reconstruida, mirador de la Kasbah, Marina, Souk El Had, surf en Taghazout y excursiones a Paradise Valley.",
+    "keywords": "Guía de viaje Agadir, playa Agadir, Kasbah Agadir Oufella, Marina Agadir, Souk El Had, Taghazout, Paradise Valley, Crocoparc, Souss-Massa"
+  },
+  "name": "Agadir",
+  "hero_subtitle": "Amplia playa atlántica, una ciudad moderna reconstruida tras 1960, un mirador único en la kasbah y enlaces rápidos a Taghazout y Paradise Valley.",
+  "info": {
+    "best_time": "Marzo – Junio y Septiembre – Noviembre",
+    "duration": "2 – 4 días",
+    "vibe": "Sol, playa y modernidad atlántica",
+    "access": "AGA Agadir · CMN Casablanca · RAK Marrakech",
+    "best_time_label": "Mejor época",
+    "best_time_val": "Marzo – Junio y Septiembre – Noviembre",
+    "stay_label": "Estancia ideal",
+    "stay_val": "2 – 4 días",
+    "vibe_label": "Ambiente",
+    "vibe_val": "Sol, playa y modernidad atlántica",
+    "airport_label": "Acceso",
+    "airport_val": "AGA Agadir · CMN Casablanca · RAK Marrakech",
+    "duration_label": "Duración sugerida",
+    "entry_label": "Entrada",
+    "area_label": "Ubicación"
+  },
+  "overview": {
+    "title": "Bienvenido a Agadir — Playa atlántica y una ciudad diseñada para el sol",
+    "p1": "Agadir se encuentra en la costa atlántica de Marruecos, a tres horas al suroeste de Marrakech. Reconstruida con un diseño moderno tras el terremoto de 1960, ofrece amplias avenidas, una extensa playa pública y un puerto deportivo moderno. Los restos de la antigua kasbah dominan la bahía.",
+    "p2": "Más allá de la arena: visite el Souk El Had para hacer compras, viaje al pueblo de surf de Taghazout al norte, explore las piscinas naturales de Paradise Valley o descubra la naturaleza en el parque nacional Souss-Massa."
+  },
+  "places": {
+    "badge": "Lo más destacado",
+    "title": "Lugares imprecindibles en Agadir",
+    "subtitle": "Playa, mirador, marina, zoco y costa cercana.",
+    "explore": "Explorar lugar →",
+    "beach": {
+      "tag": "Playa",
+      "title": "Playa de Agadir",
+      "desc": "Extensa franja de arena pública atlántica con un amplio paseo marítimo."
+    },
+    "kasbah": {
+      "tag": "Mirador",
+      "title": "Kasbah Agadir Oufella",
+      "desc": "Ruinas en la cima de la colina con vistas panorámicas espectaculares."
+    },
+    "marina": {
+      "tag": "Puerto",
+      "title": "Marina de Agadir",
+      "desc": "Puerto deportivo, cafeterías elegantes y paseo junto a los yates."
+    },
+    "souk": {
+      "tag": "Mercado",
+      "title": "Souk El Had",
+      "desc": "Uno de los mercados semanales más grandes de Marruecos."
+    },
+    "corniche": {
+      "tag": "Paseo",
+      "title": "La Corniche",
+      "desc": "Paseo marítimo que une los hoteles de playa y el puerto."
+    },
+    "taghazout": {
+      "tag": "Surf",
+      "title": "Taghazout",
+      "desc": "Famoso pueblo de surfistas y pesca situado al norte de la ciudad."
+    },
+    "paradise": {
+      "tag": "Naturaleza",
+      "title": "Paradise Valley",
+      "desc": "Cañones de palmeras y pozas naturales en las estribaciones del Anti-Atlas."
+    },
+    "crocoparc": {
+      "tag": "Fauna",
+      "title": "Crocoparc",
+      "desc": "Parque de cocodrilos y jardines botánicos ideal para familias."
+    },
+    "birds": {
+      "tag": "Naturaleza",
+      "title": "Reserva Souss-Massa",
+      "desc": "Humedales y reserva de aves a lo largo de la costa del parque nacional."
+    }
+  },
+  "stays": {
+    "badge": "Selección y Consejos",
+    "title": "¿Dónde alojarse en Agadir? Nuestros Favoritos",
+    "subtitle": "Desde resorts de lujo frente al mar hasta acogedoras casas de huéspedes y alojamientos de surf, aquí tienes nuestras mejores recomendaciones.",
+    "book": "Reservar →",
+    "card1": {
+      "badge": "★ Resort de Lujo",
+      "name": "Sofitel Agadir Royal Bay",
+      "desc": "Suntuoso resort frente al océano que combina la artesanía tradicional marroquí con el lujo moderno y piscinas privadas.",
+      "location": "Frente a la playa"
+    },
+    "card2": {
+      "badge": "★ Boutique y Spa",
+      "name": "Riad Villa Blanche",
+      "desc": "Un íntimo hotel boutique de 28 habitaciones que combina el diseño del riad marroquí con el confort moderno y spa.",
+      "location": "Bahía de Agadir"
+    },
+    "card3": {
+      "badge": "★ Surf y Vistas",
+      "name": "Hyatt Place Taghazout Bay",
+      "desc": "Ubicado sobre los puntos de surf de Taghazout con vistas al Atlántico, piscina infinita y acceso al campo de golf.",
+      "location": "Bahía de Taghazout"
+    },
+    "card4": {
+      "badge": "★ Marina y Comodidad",
+      "name": "Marina Agadir Suites",
+      "desc": "Apartamentos y suites modernos junto al puerto deportivo, a pocos pasos de restaurantes y del paseo marítimo.",
+      "location": "Marina de Agadir"
+    }
+  },
+  "booking_banner": {
+    "badge": "Más de 400+ alojamientos",
+    "title": "Explora todos los alojamientos en Agadir y Taghazout",
+    "desc": "Compara tarifas en tiempo real, lee opiniones verificadas de huéspedes y disfruta de cancelación gratuita en la mayoría de hoteles y apartamentos.",
+    "btn": "Ver todos los alojamientos en Booking.com",
+    "guarantee": "✓ Mejor precio garantizado y reserva segura"
+  },
+  "eat": {
+    "badge": "Gastronomía",
+    "title": "Dónde comer en Agadir",
+    "subtitle": "Mariscos en el puerto deportivo, cafeterías de playa y parrillas locales.",
+    "nomad": {
+      "tag": "Pescado y Marisco",
+      "loc": "Marina",
+      "title": "Restaurantes de la Marina",
+      "desc": "Pescado fresco con vistas al puerto de yates."
+    },
+    "jardin": {
+      "tag": "Cafetería",
+      "loc": "Playa",
+      "title": "Cafés de la playa",
+      "desc": "Snacks y bebidas frente al mar."
+    },
+    "moha": {
+      "tag": "Parrilla",
+      "loc": "Zoco",
+      "title": "Parrillas tradicionales",
+      "desc": "Platos marroquíes auténticos cerca de Souk El Had."
+    },
+    "fassia": {
+      "tag": "Hotel",
+      "loc": "Corniche",
+      "title": "Restaurantes de hotel",
+      "desc": "Opciones elegantes en la avenida marítima."
+    },
+    "elfenn": {
+      "tag": "Comida Local",
+      "loc": "Centro",
+      "title": "Centro de la ciudad",
+      "desc": "Tajines caseros lejos de las zonas turísticas."
+    },
+    "bacha": {
+      "tag": "Pescado Fresco",
+      "loc": "Puerto",
+      "title": "Lonja del puerto",
+      "desc": "Pescado recién desembarcado por los barcos de pesca."
+    }
+  },
+  "tips": {
+    "title": "Consejos prácticos para Agadir",
+    "transport": {
+      "title": "Cómo moverse",
+      "desc": "Los pequeños taxis rojos recorren toda la ciudad. Hay autobuses regulares hacia Taghazout y excursiones privadas a Paradise Valley."
+    },
+    "bargain": {
+      "title": "Sol y Viento",
+      "desc": "Agadir es una de las ciudades más soleadas de Marruecos. Traiga protección solar alta y una chaqueta fina para las brisas nocturnas."
+    },
+    "water": {
+      "title": "Efectivo y Tarjetas",
+      "desc": "Las tarjetas funcionan en la mayoría de hoteles y restaurantes. Lleve dirhams en efectivo para taxis y compras en el zoco."
+    }
+  },
+  "daytrips": {
+    "badge": "Alrededores de Agadir",
+    "title": "Las mejores excursiones desde Agadir",
+    "subtitle": "Costa de surf, valles de palmeras y parques naturales a poca distancia.",
+    "taghazout": {
+      "title": "Taghazout",
+      "desc": "Pueblo marinero y meca del surf a solo 20-30 minutos."
+    },
+    "paradise": {
+      "title": "Paradise Valley",
+      "desc": "Garganta verde con pozas naturales a 1 hora en el interior."
+    },
+    "crocoparc": {
+      "title": "Crocoparc",
+      "desc": "Reserva de cocodrilos a pocos minutos al sur de la ciudad."
+    },
+    "mass": {
+      "title": "Costa Souss-Massa",
+      "desc": "Reserva natural costera y playas salvajes."
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "¿Cuántos días pasar en Agadir?",
+      "answer": "Dos días completos bastan para la playa, la kasbah y el zoco. Añada de 3 a 4 días para explorar Taghazout o Paradise Valley."
+    },
+    "q2": {
+      "question": "¿Es Agadir solo un destino de playa?",
+      "answer": "La playa es el centro, pero el mirador de la Kasbah, el Souk El Had y las excursiones de naturaleza ofrecen mucha variedad."
+    },
+    "q3": {
+      "question": "¿Cómo llegar a Agadir?",
+      "answer": "El Aeropuerto Agadir Al Massira (AGA) recibe vuelos internacionales. Hay conexiones en autobús directo con Marrakech (3h) y Casablanca."
+    },
+    "q4": {
+      "question": "¿Cuándo es la mejor época para viajar a Agadir?",
+      "answer": "Primavera u otoño para disfrutar de días cálidos de playa sin excesivo calor. El invierno es suave y soleado."
+    },
+    "q5": {
+      "question": "¿Está Taghazout lejos de Agadir?",
+      "answer": "Está a solo 20-30 minutos en coche hacia el norte."
+    },
+    "badge": "Información útil",
+    "title": "Preguntas frecuentes sobre Agadir"
+  },
+  "itinerary": {
+    "badge": "Planificación",
+    "title": "Plan de 3 días sugerido para Agadir",
+    "subtitle": "Playa y kasbah el primer día, zoco y excursiones en los días siguientes."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Día 1 — Playa y Kasbah",
+    "day1_m": "Mañana — Playa de Agadir",
+    "day1_md": "Paseo por la larga arena pública y el paseo marítimo para orientarse.",
+    "day1_a": "Tarde — Kasbah Oufella",
+    "day1_ad": "Suba a las ruinas para disfrutar de la vista panorámica de la bahía.",
+    "day1_e": "Noche — La Marina",
+    "day1_ed": "Cena de marisco y paseo junto a los yates en el puerto deportivo.",
+    "day2_tab": "Día 2 — Zoco y Corniche",
+    "day2_m": "Mañana — Souk El Had",
+    "day2_md": "El gran mercado diario para comprar especias, artesanía y productos locales.",
+    "day2_a": "Tarde — Tiempo libre en la Corniche",
+    "day2_ad": "Playa, terraza de café o un paseo largo por la avenida costera.",
+    "day2_e": "Noche — Cena frente al mar",
+    "day2_ed": "Restaurantes de la línea de playa con vistas al atardecer.",
+    "day3_tab": "Día 3 — Taghazout o Paradise Valley",
+    "day3_m": "Mañana — Taghazout o inicio en el valle",
+    "day3_md": "Ruta hacia el pueblo surfero o hacia los cañones del interior.",
+    "day3_a": "Tarde — Costa o garganta",
+    "day3_ad": "Nado y cafés en Taghazout o pozas de agua clara en Paradise Valley.",
+    "day3_e": "Noche — Regreso a Agadir",
+    "day3_ed": "Último paseo marítimo por la ciudad antes de su partida."
+  },
   "agadir_page": {
     "seo": {
-      "title": "Guía de Viaje Agadir 2026 | Cosas que hacer | MoroccoTripMap",
-      "description": "Plan your trip to Agadir: top attractions, local food, and travel tips."
+      "title": "[ES] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Agadir.",
+    "name": "[ES] Name",
+    "hero_subtitle": "[ES] Hero subtitle",
+    "info": {
+      "best_time_label": "[ES] Best time label",
+      "best_time_val": "[ES] Best time val",
+      "stay_label": "[ES] Stay label",
+      "stay_val": "[ES] Stay val",
+      "vibe_label": "[ES] Vibe label",
+      "vibe_val": "[ES] Vibe val",
+      "airport_label": "[ES] Airport label",
+      "airport_val": "[ES] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Agadir",
-      "p1": "Explore Agadir and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[ES] Title",
+      "p1": "[ES] P1",
+      "p2": "[ES] P2"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Agadir",
-      "subtitle": "Discover top points of interest in Agadir."
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "beach": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "explore": "[ES] Explore",
+      "kasbah": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "marina": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "souk": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "corniche": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "taghazout": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "paradise": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "crocoparc": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "birds": {
+        "tag": "[ES] Tag",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[ES] Day1 tab",
+      "day2_tab": "[ES] Day2 tab",
+      "day3_tab": "[ES] Day3 tab",
+      "day1_m": "[ES] Day1 m",
+      "day1_md": "[ES] Day1 md",
+      "day1_a": "[ES] Day1 a",
+      "day1_ad": "[ES] Day1 ad",
+      "day1_e": "[ES] Day1 e",
+      "day1_ed": "[ES] Day1 ed",
+      "day2_m": "[ES] Day2 m",
+      "day2_md": "[ES] Day2 md",
+      "day2_a": "[ES] Day2 a",
+      "day2_ad": "[ES] Day2 ad",
+      "day2_e": "[ES] Day2 e",
+      "day2_ed": "[ES] Day2 ed",
+      "day3_m": "[ES] Day3 m",
+      "day3_md": "[ES] Day3 md",
+      "day3_a": "[ES] Day3 a",
+      "day3_ad": "[ES] Day3 ad",
+      "day3_e": "[ES] Day3 e",
+      "day3_ed": "[ES] Day3 ed"
+    },
+    "stays": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "card1": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      },
+      "book": "[ES] Book",
+      "card2": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      },
+      "card3": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      },
+      "card4": {
+        "badge": "[ES] Badge",
+        "name": "[ES] Name",
+        "desc": "[ES] Desc",
+        "location": "[ES] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "desc": "[ES] Desc",
+      "btn": "[ES] Btn",
+      "guarantee": "[ES] Guarantee"
+    },
+    "eat": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "nomad": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "jardin": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "fassia": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "moha": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bacha": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "elfenn": {
+        "tag": "[ES] Tag",
+        "loc": "[ES] Loc",
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "tips": {
+      "title": "[ES] Title",
+      "transport": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "bargain": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "water": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "subtitle": "[ES] Subtitle",
+      "taghazout": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "paradise": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "crocoparc": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      },
+      "mass": {
+        "title": "[ES] Title",
+        "desc": "[ES] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[ES] Badge",
+      "title": "[ES] Title",
+      "q1": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q2": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q3": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      },
+      "q4": {
+        "question": "[ES] Question",
+        "answer": "[ES] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[ES] Destinations",
+    "categories": "[ES] Categories",
+    "cat_stays": "[ES] Cat stays",
+    "cat_gastronomy": "[ES] Cat gastronomy",
+    "cat_experiences": "[ES] Cat experiences",
+    "cat_museums": "[ES] Cat museums",
+    "cat_transport": "[ES] Cat transport",
+    "cat_itineraries": "[ES] Cat itineraries",
+    "cat_guides": "[ES] Cat guides",
+    "history": "[ES] History",
+    "blog": "[ES] Blog",
+    "contact": "[ES] Contact",
+    "cities": "[ES] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[ES] Language title"
+  },
+  "breadcrumb": {
+    "home": "[ES] Home",
+    "destinations": "[ES] Destinations"
+  },
+  "footer": {
+    "about_text": "[ES] About text",
+    "destinations_title": "Destinos",
+    "link_agadir": "[ES] Link agadir",
+    "link_all_destinations": "[ES] Link all destinations",
+    "categories_title": "Categorías",
+    "link_stays": "Riad y Alojamiento",
+    "link_restaurants": "Restaurantes Marroquíes",
+    "connect_title": "Conéctate con Nosotros",
+    "youtube_text": "Suscríbete a nuestro canal de YouTube para ver guías en vídeo:",
+    "copyright": "© 2026 MoroccoTripMap. Todos los derechos reservados.",
+    "link_culture": "Cultura y Desierto",
+    "link_transport": "Transporte y Conductores",
+    "link_circuits": "Circuitos e Itinerarios",
+    "link_history": "Historia de Marruecos",
+    "link_guides": "Guías de Viaje",
+    "link_blog": "Blog",
+    "link_contact": "Contacto",
+    "link_itineraries": "Circuitos e Itinerarios",
+    "col_imperial": "Ciudades Imperiales y Cultura",
+    "col_desert": "Desierto y Gran Sur",
+    "col_practical": "Guías Prácticas y Estancias",
+    "created_by": "Creado por"
   }
 }

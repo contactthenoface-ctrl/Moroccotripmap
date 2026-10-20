@@ -1,19 +1,532 @@
 {
+  "seo": {
+    "title": "Dakhla Travel Guide 2026 | Lagoon, Kitesurf & Sahara | MoroccoTripMap",
+    "description": "Plan your trip to Dakhla: turquoise lagoon, kitesurf, White Dune, Dragon Island, oyster farms, Foum El Bouir and the edge of the desert in southern Morocco.",
+    "og_title": "Dakhla Travel Guide | Lagoon, Kitesurf & Sahara | MoroccoTripMap",
+    "og_description": "Turquoise lagoon, kitesurf winds, White Dune and Dragon Island in southern Morocco."
+  },
+  "hero_subtitle": "Where a turquoise lagoon meets the Atlantic and the Sahara — wind sports, white dunes and quiet shores.",
+  "info": {
+    "best_time_label": "Best Time to Visit",
+    "best_time_val": "Year-round wind; peak from October to June",
+    "stay_label": "Ideal Stay",
+    "stay_val": "3 – 7 Days",
+    "vibe_label": "Top Vibe",
+    "vibe_val": "Lagoon & water sports",
+    "airport_label": "Nearest Airport",
+    "airport_val": "Dakhla Airport (VIL)"
+  },
+  "overview": {
+    "title": "Welcome to Dakhla — lagoon, wind and the edge of the desert",
+    "p1": "Dakhla sits on a long peninsula in southern Morocco, between a vast turquoise lagoon and the open Atlantic Ocean. Trade winds, shallow waters, and empty shores have made it one of Africa's leading destinations for kitesurfing.",
+    "p2": "Beyond the water: the White Dune rising from the lagoon, Dragon Island's rocky silhouette, oyster farms, Foum El Bouir on the ocean side, and desert tracks toward Sebkha Imlili. Life in town is calm and revolves around the wind and the horizon.",
+    "p3": "A 3 to 7-day stay is ideal to combine water sports, a sand dune excursion, and relaxing evenings by the lagoon."
+  },
+  "places": {
+    "badge": "Top Sightseeing",
+    "title": "Must-Visit Places in Dakhla",
+    "subtitle": "Lagoon, dunes, island, wind spots, and the ocean side.",
+    "explore": "Explore Place ←",
+    "lagune": {
+      "tag": "Lagoon",
+      "title": "Dakhla Lagoon",
+      "desc": "A 40 km turquoise lagoon between the Sahara and the Atlantic Ocean — the beating heart of Dakhla."
+    },
+    "dune_blanche": {
+      "tag": "Dune",
+      "title": "White Dune",
+      "desc": "A pure white sand dune rising from the lagoon — a favorite spot for watching the sunset."
+    },
+    "ile_dragon": {
+      "tag": "Island",
+      "title": "Dragon Island",
+      "desc": "A small rocky island whose shape resembles a sleeping dragon."
+    },
+    "kitesurf": {
+      "tag": "Wind Sports",
+      "title": "Kitesurf & Wingfoil Spots",
+      "desc": "Flat water, steady winds, and sports camps along the lagoon."
+    },
+    "foum_el_bouir": {
+      "tag": "Ocean",
+      "title": "Foum El Bouir",
+      "desc": "Atlantic wave spot on the oceanic side of the peninsula."
+    },
+    "huitres": {
+      "tag": "Food",
+      "title": "Oyster Farms",
+      "desc": "Lagoon oyster farms — tasting tables overlooking the water."
+    },
+    "port": {
+      "tag": "Town",
+      "title": "Port & Waterfront",
+      "desc": "An active harbor and a pleasant evening promenade in town."
+    },
+    "sources_asnaa": {
+      "tag": "Desert",
+      "title": "Asnaa Spring",
+      "desc": "Natural springs and a peaceful getaway on the edge of the desert near Dakhla."
+    }
+  },
+  "itinerary": {
+    "badge": "Planning",
+    "title": "Suggested 3-day plan for Dakhla",
+    "subtitle": "Wind and lagoon first, then dunes and the ocean side."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Day 1 — Arrival & Lagoon",
+    "day1_m": "Morning — Arrival",
+    "day1_md": "Pick-up from Dakhla Airport; check-in near the lagoon or in town.",
+    "day1_a": "Afternoon — First Lagoon View",
+    "day1_ad": "Walk along the shore, check wind directions, and plan tomorrow's session.",
+    "day1_e": "Evening — Sunset on the Water",
+    "day1_ed": "Peaceful light over the lagoon and a simple dinner.",
+    "day2_tab": "Day 2 — Wind",
+    "day2_m": "Morning — Sports Session",
+    "day2_md": "Kitesurfing or wingfoiling on the calm waters of the lagoon.",
+    "day2_a": "Afternoon — Second Session or Rest",
+    "day2_ad": "More water time or relaxing at a shore-side café.",
+    "day2_e": "Evening — Camp or Town",
+    "day2_ed": "An evening by the lagoon or along the waterfront.",
+    "day3_tab": "Day 3 — Dunes & Island",
+    "day3_m": "Morning — White Dune",
+    "day3_md": "Drive or take a boat toward the White Dune to enjoy the views.",
+    "day3_a": "Afternoon — Dragon Island View",
+    "day3_ad": "Spot the rocky formation, take photos, and enjoy the lagoon light.",
+    "day3_e": "Evening — Optional Oysters",
+    "day3_ed": "Taste lagoon oysters if in season.",
+    "day4_tab": "Day 4 — Ocean or Desert",
+    "day4_m": "Morning — Foum El Bouir or Sebkha Imlili",
+    "day4_md": "Ocean waves on the far side or a track on the edge of the desert.",
+    "day4_a": "Afternoon — Free Time or Second Session",
+    "day4_ad": "Head back to the lagoon for wind or relax before departure.",
+    "day4_e": "Evening — Last Lagoon Light",
+    "day4_ed": "Final sunset if flight schedules allow."
+  },
+  "directory": {
+    "badge": "Stays",
+    "title": "Find your ideal stay in Dakhla",
+    "subtitle": "Lagoon camps, town hotels, and stays near kite spots — open the list for details.",
+    "check_availability": "Book ←"
+  },
+  "stays": {
+    "card1": {
+      "badge": "★ Kite Camp Resort",
+      "name": "Dakhla Attitude",
+      "desc": "World-renowned kite camp directly on the lagoon with top-notch facilities.",
+      "location": "Lagoon side"
+    },
+    "card2": {
+      "badge": "★ Ocean & Surf",
+      "name": "West Point Dakhla",
+      "desc": "Eco-resort located directly on the ocean side near Foum El Bouir, ideal for wave enthusiasts.",
+      "location": "Ocean side"
+    },
+    "card3": {
+      "badge": "★ Luxury Lagoon Camp",
+      "name": "PK25 Dakhla",
+      "desc": "Sophisticated bungalows blending modern comfort with raw desert nature along the lagoon.",
+      "location": "PK 25 Lagoon"
+    },
+    "card4": {
+      "badge": "★ Town & Comfort",
+      "name": "Hotel Dakhla South Rod",
+      "desc": "A comfortable hotel base in town offering easy access to local markets and restaurants.",
+      "location": "Town centre"
+    }
+  },
+  "booking_banner": {
+    "badge": "Over 50 camps and hotels in Dakhla",
+    "title": "Explore all accommodations in Dakhla",
+    "desc": "Compare real-time prices, read guest reviews, and enjoy free cancellation.",
+    "btn": "View all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
+  },
+  "eat": {
+    "badge": "Gastronomy",
+    "title": "Where to eat in Dakhla",
+    "subtitle": "Oysters, grilled fish, and calm tables by the lagoon",
+    "roudani": {
+      "tag": "Seafood",
+      "loc": "Lagoon",
+      "title": "Oyster Tables",
+      "desc": "Fresh lagoon oysters when the farms welcome visitors."
+    },
+    "maryam": {
+      "tag": "Café",
+      "loc": "Town",
+      "title": "Town Cafés",
+      "desc": "Coffee and fresh juices between sports sessions."
+    },
+    "zitoune": {
+      "tag": "Local",
+      "loc": "Town",
+      "title": "Grilled Fish",
+      "desc": "Simple fish dishes in local town restaurants."
+    },
+    "nomad": {
+      "tag": "Camp",
+      "loc": "Lagoon",
+      "title": "Camp Meals",
+      "desc": "Set menus at kite camps along the water."
+    },
+    "jardin": {
+      "tag": "Hotel",
+      "loc": "Town",
+      "title": "Hotel Restaurants",
+      "desc": "Reliable options if you are staying in town."
+    },
+    "fassia": {
+      "tag": "Café",
+      "loc": "Lagoon",
+      "title": "Shore Café",
+      "desc": "Tea overlooking the lagoon after the wind calms down."
+    }
+  },
+  "tips": {
+    "title": "Practical tips for visiting Dakhla",
+    "transport": {
+      "title": "Getting Around",
+      "desc": "Airport transfers and camp shuttles cover most needs. Agree on taxi fares before taking long trips."
+    },
+    "bargain": {
+      "title": "Wind & Sun",
+      "desc": "Trade winds are strong. Bring high sun protection, a windbreaker, and plenty of water."
+    },
+    "water": {
+      "title": "Cash & Bookings",
+      "desc": "Carry dirhams for small expenses. Book your kite camps in advance during peak season."
+    }
+  },
+  "daytrips": {
+    "badge": "Around Dakhla",
+    "title": "Best day trips from Dakhla",
+    "subtitle": "Sand dunes, ocean side, and the edge of the desert.",
+    "tiout": {
+      "title": "White Dune Sunset",
+      "desc": "Classic dune excursion to enjoy the light and photography."
+    },
+    "antiatlas": {
+      "title": "Dragon Island View",
+      "desc": "Spotting the unique rock formation from the shores of the lagoon."
+    },
+    "taliouine": {
+      "title": "Foum El Bouir",
+      "desc": "Atlantic waves on the outer coast of the peninsula."
+    },
+    "agadir": {
+      "title": "Sebkha Imlili",
+      "desc": "Salt flats and open desert located south of the town."
+    }
+  },
+  "faq": {
+    "badge": "Useful Information",
+    "title": "Dakhla travel FAQ",
+    "q1": {
+      "question": "How many days are appropriate in Dakhla?",
+      "answer": "Three days cover exploring the lagoon along with a sports or dune day. An intensive kitesurfing trip requires 5 to 7 days."
+    },
+    "q2": {
+      "question": "Is Dakhla only for kitesurfing?",
+      "answer": "Wind sports are the main attraction, but the lagoon, White Dune, and oyster tasting also appeal greatly to non-participants."
+    },
+    "q3": {
+      "question": "How do I get to Dakhla?",
+      "answer": "By plane via Dakhla Airport (VIL). Regular domestic flights connect from Casablanca; traveling by road is a very long journey."
+    },
+    "q4": {
+      "question": "What is the best time to visit?",
+      "answer": "Wind is available almost year-round. The period from October to June is very popular due to comfortable temperatures."
+    }
+  },
   "dakhla_page": {
     "seo": {
-      "title": "Dakhla Travel Guide 2026 | Things to Do & Tips | MoroccoTripMap",
-      "description": "Plan your trip to Dakhla: top attractions, local food, and travel tips."
+      "title": "[EN] Title"
     },
-    "hero_subtitle": "Discover the authentic charm, culture, and heritage of Dakhla.",
+    "hero_subtitle": "[EN] Hero subtitle",
+    "info": {
+      "best_time_label": "[EN] Best time label",
+      "best_time_val": "[EN] Best time val",
+      "stay_label": "[EN] Stay label",
+      "stay_val": "[EN] Stay val",
+      "vibe_label": "[EN] Vibe label",
+      "vibe_val": "[EN] Vibe val",
+      "airport_label": "[EN] Airport label",
+      "airport_val": "[EN] Airport val"
+    },
     "overview": {
-      "title": "Welcome to Dakhla",
-      "p1": "Explore Dakhla and its unique cultural and geographical treasures.",
-      "p2": "Enjoy an authentic experience discovering local landmarks."
+      "title": "[EN] Title",
+      "p1": "[EN] P1",
+      "p2": "[EN] P2",
+      "p3": "[EN] P3"
     },
     "places": {
-      "badge": "Sightseeing",
-      "title": "Must-Visit Places in Dakhla",
-      "subtitle": "Discover top points of interest in Dakhla."
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "lagune": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "explore": "[EN] Explore",
+      "dune_blanche": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "ile_dragon": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "kitesurf": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "foum_el_bouir": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "huitres": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "port": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "sources_asnaa": {
+        "tag": "[EN] Tag",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "itinerary": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle"
+    },
+    "detailed_itinerary": {
+      "day1_tab": "[EN] Day1 tab",
+      "day2_tab": "[EN] Day2 tab",
+      "day3_tab": "[EN] Day3 tab",
+      "day4_tab": "[EN] Day4 tab",
+      "day1_m": "[EN] Day1 m",
+      "day1_md": "[EN] Day1 md",
+      "day1_a": "[EN] Day1 a",
+      "day1_ad": "[EN] Day1 ad",
+      "day1_e": "[EN] Day1 e",
+      "day1_ed": "[EN] Day1 ed",
+      "day2_m": "[EN] Day2 m",
+      "day2_md": "[EN] Day2 md",
+      "day2_a": "[EN] Day2 a",
+      "day2_ad": "[EN] Day2 ad",
+      "day2_e": "[EN] Day2 e",
+      "day2_ed": "[EN] Day2 ed",
+      "day3_m": "[EN] Day3 m",
+      "day3_md": "[EN] Day3 md",
+      "day3_a": "[EN] Day3 a",
+      "day3_ad": "[EN] Day3 ad",
+      "day3_e": "[EN] Day3 e",
+      "day3_ed": "[EN] Day3 ed",
+      "day4_m": "[EN] Day4 m",
+      "day4_md": "[EN] Day4 md",
+      "day4_a": "[EN] Day4 a",
+      "day4_ad": "[EN] Day4 ad",
+      "day4_e": "[EN] Day4 e",
+      "day4_ed": "[EN] Day4 ed"
+    },
+    "directory": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "check_availability": "[EN] Check availability"
+    },
+    "stays": {
+      "card1": {
+        "badge": "[EN] Badge",
+        "name": "[EN] Name",
+        "desc": "[EN] Desc",
+        "location": "[EN] Location"
+      },
+      "card2": {
+        "badge": "[EN] Badge",
+        "name": "[EN] Name",
+        "desc": "[EN] Desc",
+        "location": "[EN] Location"
+      },
+      "card3": {
+        "badge": "[EN] Badge",
+        "name": "[EN] Name",
+        "desc": "[EN] Desc",
+        "location": "[EN] Location"
+      },
+      "card4": {
+        "badge": "[EN] Badge",
+        "name": "[EN] Name",
+        "desc": "[EN] Desc",
+        "location": "[EN] Location"
+      }
+    },
+    "booking_banner": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "desc": "[EN] Desc",
+      "btn": "[EN] Btn",
+      "guarantee": "[EN] Guarantee"
+    },
+    "eat": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "roudani": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "maryam": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "zitoune": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "nomad": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "jardin": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "fassia": {
+        "tag": "[EN] Tag",
+        "loc": "[EN] Loc",
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "tips": {
+      "title": "[EN] Title",
+      "transport": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "bargain": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "water": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "daytrips": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "subtitle": "[EN] Subtitle",
+      "tiout": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "antiatlas": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "taliouine": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      },
+      "agadir": {
+        "title": "[EN] Title",
+        "desc": "[EN] Desc"
+      }
+    },
+    "faq": {
+      "badge": "[EN] Badge",
+      "title": "[EN] Title",
+      "q1": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q2": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q3": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      },
+      "q4": {
+        "question": "[EN] Question",
+        "answer": "[EN] Answer"
+      }
     }
+  },
+  "nav": {
+    "destinations": "[EN] Destinations",
+    "categories": "[EN] Categories",
+    "cat_stays": "[EN] Cat stays",
+    "cat_gastronomy": "[EN] Cat gastronomy",
+    "cat_experiences": "[EN] Cat experiences",
+    "cat_museums": "[EN] Cat museums",
+    "cat_transport": "[EN] Cat transport",
+    "cat_itineraries": "[EN] Cat itineraries",
+    "cat_guides": "[EN] Cat guides",
+    "history": "[EN] History",
+    "blog": "[EN] Blog",
+    "contact": "[EN] Contact",
+    "cities": "[EN] Cities"
+  },
+  "mobile_menu": {
+    "language_title": "[EN] Language title"
+  },
+  "breadcrumb": {
+    "home": "[EN] Home",
+    "destinations": "[EN] Destinations"
+  },
+  "destinations": {
+    "dakhla": {
+      "name": "[EN] Name"
+    }
+  },
+  "footer": {
+    "about_text": "[EN] About text",
+    "destinations_title": "Destinations",
+    "link_dakhla": "[EN] Link dakhla",
+    "link_all_destinations": "[EN] Link all destinations",
+    "categories_title": "Categories",
+    "link_stays": "Stays & Riads",
+    "link_restaurants": "Moroccan Restaurants",
+    "connect_title": "Connect With Us",
+    "youtube_text": "Subscribe to our YouTube channel for travel video guides:",
+    "copyright": "© 2026 MoroccoTripMap. All rights reserved.",
+    "link_culture": "Culture & Desert",
+    "link_transport": "Transport & Drivers",
+    "link_circuits": "Circuits & Itineraries",
+    "link_history": "History of Morocco",
+    "link_guides": "Travel Guides",
+    "link_blog": "Blog",
+    "link_contact": "Contact",
+    "link_itineraries": "Circuits & Itineraries",
+    "col_imperial": "Imperial Cities & Culture",
+    "col_desert": "Desert & Deep South",
+    "col_practical": "Practical Guides & Stays",
+    "created_by": "Created by"
   }
 }

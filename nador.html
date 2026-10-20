@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" dir="ltr" lang="en">
 <head>
-    <title data-i18n="nador_page.seo.title">Nador Travel Guide | MoroccoTripMap</title>
+    <title>MoroccoTripMap - Nador</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -16,23 +16,23 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     
     <meta name="google" content="notranslate"/>
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="robots" content="noindex, nofollow" />
 
-    <!-- Favicon SVG -->
+    <!-- Favicon SVG (Pin de carte vert, cohérent avec le logo MoroccoTripMap) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
 
     <!-- SEO & Metadata -->
-    <title data-i18n="nador_page.seo.title">Nador Travel Guide 2026 | Things to Do, Riads &amp; Day Trips | MoroccoTripMap</title>
-    <meta content="Plan your trip to Nador: top things to do (Nador Medina, Nador Coastal Views, souks), best riads and hotels, restaurants, a 3-day itinerary, day trips to the Atlas Mountains and Agafay desert, and practical travel tips." name="description" data-i18n-attr="content:nador_page.seo.description"/>
-    <meta content="Nador travel guide, things to do in Nador, Nador Medina, Nador Coastal Views, Nador riads, best time to visit Nador, day trips from Nador, Atlas Mountains, Agafay desert, Nador souks" name="keywords"/>
+    <title data-i18n="nador_page.seo.title">Nador Travel Guide 2026 | Bay, Coast, National Park &amp; Gourougou | MoroccoTripMap</title>
+    <meta content="Plan Nador: cliff-backed bay, coast, National Park, Gourougou, Bades Bay and Rif-meets-Mediterranean landscapes in southern Morocco." name="description" data-i18n-attr="content:nador_page.seo.description"/>
+    <meta content="Nador, Nador bay, coast Nador, National Park, Dune Blanche, Gourougou, Île du Dragon, Nador travel guide, Rif Mediterranean, swimming Morocco" name="keywords"/>
     <link href="https://moroccotripmap.com/nador.html" rel="canonical"/>
 
     <!-- Open Graph / Social Media -->
     <meta content="website" property="og:type"/>
-    <meta content="Nador Travel Guide | Things to Do, Riads & Day Trips | MoroccoTripMap" property="og:title" data-i18n-attr="content:nador_page.seo.og_title"/>
-    <meta content="Top attractions, riads, restaurants, a ready-made itinerary, and day trips from Nador, all in one guide." property="og:description" data-i18n-attr="content:nador_page.seo.og_description"/>
+    <meta content="Nador Travel Guide | Rif meets the Mediterranean – Ramparts, Souks &amp; Riads | MoroccoTripMap" property="og:title" data-i18n-attr="content:nador_page.seo.og_title"/>
+    <meta content="Discover Nador, nicknamed the Rif meets the Mediterranean: intact turquoise bay, authentic souks, bay camps, itinerary and day trips in one guide." property="og:description" data-i18n-attr="content:nador_page.seo.og_description"/>
     <meta content="https://moroccotripmap.com/nador.html" property="og:url"/>
-    <meta content="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
+    <meta content="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
 
     <!-- Hreflang Tags (Multilingual SEO) -->
     <link href="https://moroccotripmap.com/nador.html" hreflang="en" rel="alternate"/>
@@ -48,7 +48,7 @@
       "@type": "TouristDestination",
       "name": "Nador",
       "url": "https://moroccotripmap.com/nador.html",
-      "description": "Nador travel guide covering top attractions, riads, restaurants, itineraries, and day trips from the Coastal Gem.",
+      "description": "Nador, known as the Rif meets the Mediterranean: travel guide covering the cliff-backed bay, National Park, Gourougou, coast and Rif-meets-Mediterranean landscapes.",
       "touristType": ["Culture", "Family", "Adventure"],
       "containedInPlace": {
         "@type": "Country",
@@ -86,7 +86,7 @@
     <style>
         body { font-family: 'Outfit', sans-serif; }
 
-        /* Integrated itinerary styles */
+        /* Styles intégrés pour l'itinéraire et les filtres */
         .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
         .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
         .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
@@ -96,6 +96,26 @@
         .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
         .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
         .day-card h3:first-of-type { margin-top: 0; }
+        .steps-list { list-style: none; padding: 0; margin-top: 15px; }
+        .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
+
+        /* Styles pour les Filtres d'hébergement */
+        .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
+        .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
+        .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
+        .filter-group select:focus { border-color: #185336; }
+        .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
+        .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
+        .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
+        .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
+        .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
+        .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
+        .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
+        .acc-contact a:hover { text-decoration: underline; }
+        .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -110,30 +130,30 @@
             
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-                <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
-                <div class="relative inline-block text-left" id="categories-menu-container">
-                    <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-                        <span data-i18n="nav.categories">Categories</span>
-                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </button>
-                    <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-                    </div>
-                </div>
-                <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
-                <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
-                <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
-            </nav>
+    <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
+    <div class="relative inline-block text-left" id="categories-menu-container">
+        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
+            <span data-i18n="nav.categories">Categories</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+        </div>
+    </div>
+    <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">Art &amp; garden</a>
+    <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
+    <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
+</nav>
             
             <!-- Lang Switcher & Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-4">
-                <!-- LANGUAGE SELECTOR -->
+                <!-- SÉLECTEUR DE LANGUE -->
                 <div class="relative inline-block text-left" id="lang-menu-container">
                     <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
@@ -181,53 +201,53 @@
             </div>
 
             <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
-                    <div class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
-                        <span data-i18n="nav.cities">Cities &amp; Destinations</span>
-                    </div>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-                <div>
-                    <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                            <span data-i18n="nav.categories">Categories</span>
-                        </div>
-                        <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </button>
-                    <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-                    </div>
-                </div>
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
-                    <div class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                        <span data-i18n="nav.history">History of Morocco</span>
-                    </div>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
-                    <div class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                        <span data-i18n="nav.blog">Blog</span>
-                    </div>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="contact.html">
-                    <div class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span data-i18n="nav.contact">Contact</span>
-                    </div>
-                    <span class="text-xs text-gray-400">→</span>
-                </a>
-            </nav>
+    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
+        <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
+            <span data-i18n="nav.cities">Cities &amp; Destinations</span>
+        </div>
+        <span class="text-xs text-gray-400">→</span>
+    </a>
+    <div>
+        <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
+            <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                <span data-i18n="nav.categories">Categories</span>
+            </div>
+            <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+            <a class="py-1.5 hover:text-vert transition text-sombre/80" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+        </div>
+    </div>
+    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
+        <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            <span data-i18n="nav.history">Art &amp; garden of Morocco</span>
+        </div>
+        <span class="text-xs text-gray-400">→</span>
+    </a>
+    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
+        <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+            <span data-i18n="nav.blog">Blog</span>
+        </div>
+        <span class="text-xs text-gray-400">→</span>
+    </a>
+    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="contact.html">
+        <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span data-i18n="nav.contact">Contact</span>
+        </div>
+        <span class="text-xs text-gray-400">→</span>
+    </a>
+</nav>
         </div>
     </header>
 
@@ -235,7 +255,7 @@
     <main class="flex-grow">
         <!-- Hero Section -->
         <div class="relative h-[400px] sm:h-[480px] lg:h-[520px] flex items-end">
-            <img alt="Nador Cityscape with Historic Ramparts" class="absolute inset-0 w-full h-full object-cover" src="images/nador-art.webp?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"/>
+            <img alt="Nador turquoise bay and Nador" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"/>
             <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
                 <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
@@ -243,12 +263,10 @@
                     <span>/</span>
                     <a class="hover:text-white transition" href="destinations.html" data-i18n="breadcrumb.destinations">Destinations</a>
                     <span>/</span>
-                    <span class="text-white" data-i18n="destinations.nador.name">Nador</span>
+                    <span class="text-white" data-i18n="nador_page.name">Nador</span>
                 </div>
-                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-3" data-i18n="destinations.nador.name"><span data-i18n="page.title">Nador</span></h1>
-                <p class="text-lg sm:text-xl text-creme/90 max-w-2xl font-light" data-i18n="nador_page.hero_subtitle">
-                    The Coastal Gem of Palaces, Vibrant Souks, Secret Gardens &amp; Endless Desert Gateways.
-                </p>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-3" data-i18n="nador_page.name">Nador</h1>
+                <p class="text-lg sm:text-xl text-creme/90 max-w-2xl font-light" data-i18n="nador_page.hero_subtitle">Where the Rif meets a vast Mediterranean lagoon: Marchica, a lively corniche, mountain viewpoints and wild headlands toward Cap des Trois Fourches.</p>
             </div>
         </div>
 
@@ -256,20 +274,20 @@
         <div class="bg-vert text-creme py-6 border-b border-sable/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div>
-                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="nador_page.info.best_time_label">Best Time to Visit</span>
-                    <span class="text-base font-bold" data-i18n="nador_page.info.best_time_val">Oct – May</span>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="nador_page.info.best_time_label">Best time</span>
+                    <span class="text-base font-bold" data-i18n="nador_page.info.best_time_val">May – October for beaches; spring & autumn for hiking and views</span>
                 </div>
                 <div>
-                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="nador_page.info.stay_label">Ideal Stay</span>
-                    <span class="text-base font-bold" data-i18n="nador_page.info.stay_val">3 – 5 Days</span>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="nador_page.info.stay_label">Ideal stay</span>
+                    <span class="text-base font-bold" data-i18n="nador_page.info.stay_val">3 – 5 days</span>
                 </div>
                 <div>
-                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="nador_page.info.vibe_label">Top Vibe</span>
-                    <span class="text-base font-bold" data-i18n="nador_page.info.vibe_val">Historic &amp; Exotic</span>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="nador_page.info.vibe_label">Vibe</span>
+                    <span class="text-base font-bold" data-i18n="nador_page.info.vibe_val">Lagoon, corniche, Rif coast, ferry gateway</span>
                 </div>
                 <div>
-                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="nador_page.info.airport_label">Nearest Airport</span>
-                    <span class="text-base font-bold" data-i18n="nador_page.info.airport_val">Tangier / Rabat Airport</span>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="nador_page.info.airport_label">Airport / port</span>
+                    <span class="text-base font-bold" data-i18n="nador_page.info.airport_val">Nador (NDR) · Beni Ansar ferry</span>
                 </div>
             </div>
         </div>
@@ -277,237 +295,375 @@
         <!-- Overview Section -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="max-w-3xl">
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="nador_page.overview.title">Welcome to Nador</h2>
-                <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="nador_page.overview.p1">
-                    Nador is a magnificent destination in Morocco, offering a unique blend of cultural heritage, authentic local traditions, and stunning landscapes that promise an unforgettable journey.
-                </p>
-                <p class="text-sombre/80 leading-relaxed text-base" data-i18n="nador_page.overview.p2">
-                    Whether you are exploring historical monuments, discovering local artisan markets, or enjoying the warm hospitality of the region, Nador has something special for every traveler.
-                </p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="nador_page.overview.title">Welcome to Nador — lagoon light and Rif coast</h2>
+                <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="nador_page.overview.p1">Nador sits on Morocco’s northeastern Mediterranean shore, defined less by an old town than by water: the Marchica lagoon (Mar Chica), one of the largest saltwater lagoons in the Mediterranean basin, stretches for roughly twenty-five kilometres beside the city.<em>la where Rif meets the Mediterranean</em> — for its vast turquoise bay and desert-meets-ocean horizon. Framed by the High Atlas to the north and the Anti-Atlas to the south, this Nador market town offers the atmosphere of a historic walled city without the intensity of larger tourist hubs.</p>
+                <p class="text-sombre/80 leading-relaxed text-base" data-i18n="nador_page.overview.p2">Evenings belong to the corniche. Day trips pull you toward Mount Gourougou, the dramatic Cap des Trois Fourches peninsula, quieter beaches like Charrana and Ras El Ma, and the working port of Beni Ansar. Melilla lies just across the border for a short passport day if you want the contrast.</p>
             </div>
         </section>
 
-        <!-- Must-Visit Places Section (9 Essential Attractions) -->
+        <!-- Must-Visit Places Section (9 Lieux Incontournables) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-        <div>
-            <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.places.badge">Top Sightseeing</span>
-            <h2 class="text-3xl font-bold text-vert" data-i18n="nador_page.places.title">Must-Visit Places in Nador</h2>
-        </div>
-        <p class="text-sm text-sombre/70 max-w-md" data-i18n="nador_page.places.subtitle">Explore the top historical landmarks and iconic sites in Nador.</p>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="places/nador/historic-center.html">
-            <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Nador Historic Medina</h3>
-            <p class="text-xs text-sombre/70 mt-2">Discover the traditional markets, historical alleys, and local life in Nador.</p>
-            <span class="mt-4 text-xs font-semibold text-sable group-hover:text-vert transition">Explore Place →</span>
-        </a>
-    </div>
-</section>
-
-        <!-- Recommended Itinerary Section -->
-        <section class="itinerary-section">
-            <div class="text-center mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.itinerary.badge">Planning</span>
-                <h2 class="text-3xl font-bold text-vert" data-i18n="nador_page.itinerary.title">Suggested 3-Day Itinerary</h2>
-                <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="nador_page.itinerary.subtitle">A balanced plan to discover the essential sights without rushing through the city.</p>
-            </div>
-            <div class="itinerary-tabs">
-                <button class="tab-btn active" data-i18n="nador_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — The Heart of the Medina</button>
-                <button class="tab-btn" data-i18n="nador_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Palaces &amp; Gardens</button>
-                <button class="tab-btn" data-i18n="nador_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Day Trip or Free Time</button>
-            </div>
-            <div class="tab-content active" id="day1">
-                <div class="day-card">
-                    <h3 data-i18n="nador_page.detailed_itinerary.day1_m">Morning — Nador Medina &amp; Koutoubia</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day1_md">Start at the Koutoubia gardens for soft morning light on the minaret, then stroll into Nador Medina while the square is still calm and easy to navigate.</p>
-                    <h3 data-i18n="nador_page.detailed_itinerary.day1_a">Afternoon — Souks &amp; Ben Youssef</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day1_ad">Get lost in the vibrant artisan souks toward Ben Youssef Madrasa. Admire its intricate marble and stucco courtyard, then continue browsing spice and leather shops.</p>
-                    <h3 data-i18n="nador_page.detailed_itinerary.day1_e">Evening — Square at night</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day1_ed">Return to Nador Medina as food stalls light up and the square turns into a magical open-air theatre. Enjoy dinner at a rooftop terrace with panoramic views.</p>
-                </div>
-            </div>
-            <div class="tab-content" id="day2">
-                <div class="day-card">
-                    <h3 data-i18n="nador_page.detailed_itinerary.day2_m">Morning — Bahia Palace &amp; Saadian Tombs</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day2_md">Arrive early at Bahia Palace to beat the tour groups, then take a short walk to the Saadian Tombs located in the historic Kasbah neighborhood.</p>
-                    <h3 data-i18n="nador_page.detailed_itinerary.day2_a">Afternoon — El Badi or Nador Coastal Views</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day2_ad">Choose El Badi Palace for grand open-air ruins and nesting storks, or head to Gueliz for Nador Coastal Views and the Yves Saint Laurent Museum.</p>
-                    <h3 data-i18n="nador_page.detailed_itinerary.day2_e">Evening — Relaxed Riad Dining</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day2_ed">Unwind in a peaceful riad courtyard or reserve a cozy spot at one of Nador's high-end Moroccan fine dining venues.</p>
-                </div>
-            </div>
-            <div class="tab-content" id="day3">
-                <div class="day-card">
-                    <h3 data-i18n="nador_page.detailed_itinerary.day3_m">Morning — Day Trip Departure or Menara</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day3_md">Head out on an excursion to the High Atlas Mountains, Agafay Desert, or Ouzoud Waterfalls. Alternatively, enjoy a peaceful morning walk through the Menara Gardens.</p>
-                    <h3 data-i18n="nador_page.detailed_itinerary.day3_a">Afternoon — Medina Leisure &amp; Hammam</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day3_ad">Back in the city, revisit favorite souk stalls, sip coffee at Dar El Bacha, or indulge in a traditional Moroccan spa and hammam treatment.</p>
-                    <h3 data-i18n="nador_page.detailed_itinerary.day3_e">Evening — Last Night in the Coastal Gem</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day3_ed">Enjoy a final glass of fresh mint tea on a rooftop lounge as sunset colors paint the city skyline.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================
-             ACCOMMODATION HYBRID SECTION: FEATURED PICKS + BOOKING BANNER
-             ========================================== -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            
-            <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div>
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.stays.badge">Selection &amp; Advice</span>
-                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="nador_page.stays.title">Where to stay in Nador? Our Favorites</h2>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.places.badge">Highlights</span>
+                    <h2 class="text-3xl font-bold text-vert" data-i18n="nador_page.places.title">Must-visit places in Nador</h2>
                 </div>
-                <p class="text-sm text-sombre/70 max-w-md" data-i18n="nador_page.stays.subtitle">
-                    Legendary palaces, charming boutique riads, or peaceful sanctuaries: explore our top recommended addresses for an unforgettable stay in Nador.
-                </p>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="nador_page.places.subtitle">Lagoon, corniche, mountain, headland and nearby beaches.</p>
             </div>
-
-            <!-- Featured Highlights Grid (4 Handpicked Stays) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 1. Bades Bay Nador -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/nador-places/marchica.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Marchica Beach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/place-marchica/place-marchica-04.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.places.marchica.tag">Lagoon</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.places.marchica.title">Marchica Lagoon (Mar Chica)</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="nador_page.places.marchica.desc">A vast Mediterranean lagoon beside the city — calm water, birdlife and the defining landscape of Nador.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="nador_page.places.explore">Explore place →</span>
+                    </div>
+                </a>
                 
-                <!-- Pick 1: La Mamounia -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                <!-- 2. National Park -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/nador-places/corniche.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="https://mamounia.com/media/cache/jadro_resize/rc/iBZUaTNn1785918630/jadroRoot/medias/653fcee154467/6540e50e0c796/6540e5783a736/accueil-entree.jpeg?auto=format&fit=crop&w=800&q=80" alt="La Mamounia Hotel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.stays.card1.badge">
-                            ★ Iconic Palace
-                        </span>
+                        <img alt="National Park" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/jardin-majorelle/jardin-majorelle-04.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.places.corniche.tag">Promenade</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="nador_page.stays.card1.name">La Mamounia Hotel</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="nador_page.stays.card1.desc">
-                            A legendary palace hotel set in historic gardens in the City Center district, celebrated worldwide for timeless elegance.
-                        </p>
-                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="nador_page.stays.card1.location">City Center</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Nador+Hotel+Nador" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="nador_page.stays.book">
-                                Book Now →
-                            </a>
-                        </div>
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.places.corniche.title">Nador Corniche</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="nador_page.places.corniche.desc">The city’s evening waterfront — cafés, lagoon views and the social heart of town.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="nador_page.places.explore">Explore place →</span>
                     </div>
-                </div>
+                </a>
 
-                <!-- Pick 2: The Oberoi Nador -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                <!-- 3. Gourougou -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/nador-places/gourougou.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="https://www.oberoihotels.com/-/media/oberoi-hotel/nador-resized/nador_latest/overview/welcome/mobile400x450/image1.jpg?auto=format&fit=crop&w=800&q=80" alt="The Oberoi Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.stays.card2.badge">
-                            ★ Luxury &amp; Gardens
-                        </span>
+                        <img alt="Arab &amp; Berber Souks" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/palais-bahia/palais-bahia-01.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase trackinqg-wider" data-i18n="nador_page.places.gourougou.tag">Mountain</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="nador_page.stays.card2.name">The Oberoi Nador</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="nador_page.stays.card2.desc">
-                            A majestic sanctuary inspired by Andalusian architecture, surrounded by citrus orchards and ancient olive groves.
-                        </p>
-                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="nador_page.stays.card2.location">Route de Fès</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Nador+Resort+Nador" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="nador_page.stays.book">
-                                Book Now →
-                            </a>
-                        </div>
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.places.gourougou.title">Mount Gourougou</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="nador_page.places.gourougou.desc">A low mountain above Nador with trails and wide views over lagoon, coast and Melilla on clear days.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="nador_page.places.explore">Explore place →</span>
                     </div>
-                </div>
+                </a>
 
-                <!-- Pick 3: Royal Mansour -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                <!-- 4. Cap des Trois Fourches Beach -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/nador-places/cap-trois-fourches.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="https://www.royalmansour.com/wp-content/uploads/2023/05/RM-Nador-14-1.jpg?auto=format&fit=crop&w=800&q=80" alt="Royal Mansour Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.stays.card3.badge">
-                            ★ Exceptional Riad
-                        </span>
+                        <img alt="Cap des Trois Fourches Beach of Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/nador/kasbah.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.places.cap_trois_fourches.tag">Headland</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="nador_page.stays.card3.name">Royal Mansour</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="nador_page.stays.card3.desc">
-                            A unique architectural masterpiece made of private luxury riads, offering unrivaled service and world-class spas.
-                        </p>
-                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="nador_page.stays.card3.location">Medina</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Nador+Riad+Nador" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="nador_page.stays.book">
-                                Book Now →
-                            </a>
-                        </div>
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.places.cap_trois_fourches.title">Cap des Trois Fourches</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="nador_page.places.cap_trois_fourches.desc">A dramatic peninsula of cliffs and empty coast — one of Morocco’s wildest Mediterranean landscapes.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="nador_page.places.explore">Explore place →</span>
                     </div>
-                </div>
+                </a>
 
-                <!-- Pick 4: El Fenn -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                <!-- 5. Nador fishing port -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/nador-places/charrana.html">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="https://el-fenn.b-cdn.net/wp-content/uploads/2025/11/Moggi-Photography-Rooftop-Loungers-Towels-1536x1024.jpg.webp?auto=format&fit=crop&w=800&q=80" alt="El Fenn" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.stays.card4.badge">
-                            ★ Boho-Chic
-                        </span>
+                        <img alt="Nador fishing port" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/saadian-tombs-nador.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.places.charrana.tag">Beach</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="nador_page.stays.card4.name">El Fenn</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="nador_page.stays.card4.desc">
-                            An artistic, vibrant boutique riad featuring vibrant interior design and an iconic rooftop terrace with Medina views.
-                        </p>
-                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="nador_page.stays.card4.location">Mouassine</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Nador+Boutique+Nador" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="nador_page.stays.book">
-                                Book Now →
-                            </a>
-                        </div>
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.places.charrana.title">Charrana Beach</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="nador_page.places.charrana.desc">A cliff-backed cove of clear water about an hour from town — quieter swimming away from the lagoon strip.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="nador_page.places.explore">Explore place →</span>
                     </div>
-                </div>
+                </a>
 
-            </div>
+                <!-- 6. Cala Iris -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/nador-places/beni-ansar.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Cala Iris" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/el-badi-palace-nador.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.places.beni_ansar.tag">Port</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.places.beni_ansar.title">Beni Ansar Port</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="nador_page.places.beni_ansar.desc">Working harbour and ferry terminal — landings, seafood and the practical edge of the city.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="nador_page.places.explore">Explore place →</span>
+                    </div>
+                </a>
 
-            <!-- BOOKING REDIRECTION BANNER TO EXPAND SEARCH -->
-            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- 7. Nador Oasis -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/nador-places/kasbah-selouane.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Torres de Alcalá" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/menara-garden-nador.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.places.kasbah_selouane.tag">Heritage</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.places.kasbah_selouane.title">Kasbah of Selouane</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="nador_page.places.kasbah_selouane.desc">A 17th-century Alaouite fortification inland from Nador — history with a short road hop.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="nador_page.places.explore">Explore place →</span>
+                    </div>
+                </a>
                 
-                <div class="max-w-xl text-left z-10">
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.booking_banner.badge">
-                        Over 500+ Accommodations
-                    </span>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="nador_page.booking_banner.title">
-                        Explore All Places to Stay in Nador
-                    </h3>
-                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="nador_page.booking_banner.desc">
-                        Compare real-time rates, read verified guest reviews, and enjoy free cancellation options on most riads, hotels, and luxury resorts.
-                    </p>
-                </div>
+                <!-- 8. Bades Bay Nador -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/nador-places/ras-el-ma.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Bades Bay Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/nador/talmoklate.webp?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="nador_page.places.ras_el_ma.tag">Coast</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.places.ras_el_ma.title">Ras El Ma (Cap de l’Eau)</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="nador_page.places.ras_el_ma.desc">A calmer coastal town and beach east of Nador — sand, fishing boats and open Mediterranean light.</p>
+                        <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="nador_page.places.explore">Explore place →</span>
+                    </div>
+                </a>
+                
+                <!-- 9. Nador -->
+            </div>
+        </section>
 
-                <div class="w-full md:w-auto shrink-0 z-10 text-center">
-                    <a href="https://www.booking.com/searchresults.html?ss=Nador+Morocco" 
-                       target="_blank" 
-                       rel="noopener sponsored" 
-                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
-                       <span data-i18n="nador_page.booking_banner.btn">View All Riads on Booking.com</span>
-                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                       </svg>
-                    </a>
-                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="nador_page.booking_banner.guarantee">✓ Best price guaranteed &amp; secure booking</p>
-                </div>
+        <!-- Recommended Itinerary Section -->
+        
+<section class="itinerary-section">
+<div class="text-center mb-8">
+<span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.itinerary.badge">Planning</span>
+<h2 class="text-3xl font-bold text-vert" data-i18n="nador_page.itinerary.title">Suggested 3-day plan for Nador</h2>
+<p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="nador_page.itinerary.subtitle">Lagoon and corniche first, then mountain or headland, then a beach day.</p>
+</div>
+<div class="itinerary-tabs">
+<button class="tab-btn active" data-i18n="nador_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Lagoon & town</button>
+<button class="tab-btn" data-i18n="nador_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Height or headland</button>
+<button class="tab-btn" data-i18n="nador_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Beach or port</button>
+</div>
+<div class="tab-content active" id="day1"><div class="day-card">
+<h3 data-i18n="nador_page.detailed_itinerary.day1_m">Morning — Marchica viewpoints</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day1_md">First look at the lagoon from the corniche and open water edges.</p>
+<h3 data-i18n="nador_page.detailed_itinerary.day1_a">Afternoon — Town pace</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day1_ad">Simple lunch, optional short lagoon walk or rest before evening.</p>
+<h3 data-i18n="nador_page.detailed_itinerary.day1_e">Evening — Corniche</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day1_ed">Cafés, lagoon light and seafood when the promenade fills.</p>
+</div></div>
+<div class="tab-content" id="day2"><div class="day-card">
+<h3 data-i18n="nador_page.detailed_itinerary.day2_m">Morning — Gourougou or road west</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day2_md">Trail or transfer toward mountain viewpoints, or start toward Cap des Trois Fourches.</p>
+<h3 data-i18n="nador_page.detailed_itinerary.day2_a">Afternoon — Views & return</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day2_ad">Panoramas over lagoon and coast; allow time for the road back.</p>
+<h3 data-i18n="nador_page.detailed_itinerary.day2_e">Evening — Quiet dinner</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day2_ed">Town or corniche table after a long outdoor day.</p>
+</div></div>
+<div class="tab-content" id="day3"><div class="day-card">
+<h3 data-i18n="nador_page.detailed_itinerary.day3_m">Morning — Charrana or Ras El Ma</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day3_md">Swim and sand away from the main lagoon strip.</p>
+<h3 data-i18n="nador_page.detailed_itinerary.day3_a">Afternoon — Flexible</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day3_ad">Beni Ansar harbour energy or a second lagoon stroll.</p>
+<h3 data-i18n="nador_page.detailed_itinerary.day3_e">Evening — Optional</h3>
+<p class="text-sm text-sombre/75 leading-relaxed" data-i18n="nador_page.detailed_itinerary.day3_ed">Corniche again or early night before onward travel.</p>
+</div></div>
+</section>
 
-                <!-- Decorative Background Glow -->
-                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+
+        <!-- ==========================================
+             SECTION RÉPERTOIRE & FILTRES DES 60 HÉBERGEMENTS
+             ========================================== -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="filter-section mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.directory.badge">Stays</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
+                    <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <span data-i18n="nador_page.directory.title">Find your ideal stay in Nador</span>
+                </h2>
+                <p class="text-sm text-sombre/70 mt-2" data-i18n="nador_page.directory.subtitle">Hotels near the corniche, lagoon-side options and practical bases toward Beni Ansar.</p>
+                
+                <div class="filter-container mt-6 flex flex-wrap gap-4">
+                    <!-- Filter by Accommodation Type -->
+                    <div class="filter-group flex flex-col">
+                        <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="nador_page.directory.filter_type_label">Type:</label>
+                        <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
+                            <option value="all" data-i18n="nador_page.directory.type_all">All types</option>
+                            <option value="hotel" data-i18n="nador_page.directory.type_hotel">Hotels</option>
+                            <option value="riad" data-i18n="nador_page.directory.type_riad">Lodges & residences</option>
+                            <option value="maison" data-i18n="nador_page.directory.type_guesthouse">Guesthouses</option>
+                        </select>
+                    </div>
+
+                    <!-- Filter by District / Area -->
+                    <div class="filter-group flex flex-col">
+                        <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="nador_page.directory.filter_location_label">Area:</label>
+                        <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
+                            <option value="all" data-i18n="nador_page.directory.location_all">All areas</option>
+                            <option value="town" data-i18n="nador_page.directory.location_town">Town centre</option>
+                            <option value="outside" data-i18n="nador_page.directory.location_outside">Near lagoon / corniche</option>
+                            <option value="outskirts" data-i18n="nador_page.directory.location_outskirts">Beni Ansar / coast</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Dynamic Counter -->
+                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="nador_page.directory.counter">stays found</div>
             </div>
 
+            <!-- Nador accommodations -->
+            <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel Bayview Nador" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">1. Hotel Bayview Nador</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.2</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60" data-i18n="nador_page.directory.district_label">Area<span>Medina</span> · <span data-i18n="nador_page.directory.type_label">Type</span> Riad-palace</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Palais+Oumensour+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Hotel Rif Nador" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">2. Hotel Rif Nador</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Town · <span data-i18n="nador_page.directory.type_label">Type</span> Riad</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Hotel Corniche Nador" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">3. Hotel Corniche Nador</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.1</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Town · <span data-i18n="nador_page.directory.type_label">Type</span> Boutique riad</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Tania+Mozaik+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Riad Nador" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">4. Riad Nador</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.3</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Town · <span data-i18n="nador_page.directory.type_label">Type</span> Dar / guesthouse</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Zahia+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hotel Rif Regency" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">5. Hotel Rif Regency</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.8</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Town · <span data-i18n="nador_page.directory.type_label">Type</span> Riad</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Amnay+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="outside">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Dunes de Nador" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">6. Dunes de Nador</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Outside the walls · <span data-i18n="nador_page.directory.type_label">Type</span> Garden hotel</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Zitoune+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="outside">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Westpoint Nador" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">7. Westpoint Nador</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.4</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Outside the walls · <span data-i18n="nador_page.directory.type_label">Type</span> Botanical lodge</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Hossoun+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="town">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Residence Lagune" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">8. Residence Lagune</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Town · <span data-i18n="nador_page.directory.type_label">Type</span> Riad</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Ines+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="guesthouse" data-location="town">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="La Maison Nador" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">9. La Maison Nador</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.9</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Town · <span data-i18n="nador_page.directory.type_label">Type</span> Guesthouse</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=La+Maison+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="outskirts">
+                    <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80" alt="Hotel in Nador" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-vert">10. Studio Marchica</h3>
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.7</span>
+                        </div>
+                        <p class="acc-meta text-xs text-sombre/60"><span data-i18n="nador_page.directory.district_label">Area</span> Outskirts · <span data-i18n="nador_page.directory.type_label">Type</span> Riad</p>
+                        <div class="acc-contact mt-3">
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Tafilag+Nador" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="nador_page.directory.check_availability">Check availability →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Message d'alerte si aucun filtre ne correspond -->
+            <div id="no-results" class="no-results-msg mt-8 text-center text-gray-500 font-semibold" style="display: none;" data-i18n="nador_page.directory.no_results">No stays match these filters.</div>
         </section>
         
-        <!-- Where to Eat Section (6 Top Restaurants) -->
+        <!-- Where to Eat Section (6 Restaurants) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between">
                 <div>
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.eat.badge">Gastronomy</span>
-                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="nador_page.eat.title">Best Restaurants &amp; Rooftops</h2>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.eat.badge">Food</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="nador_page.eat.title">Where to eat in Nador</h2>
                 </div>
-                <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="nador_page.eat.subtitle">Handpicked culinary experiences with top guest reviews</p>
+                <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="nador_page.eat.subtitle">Fresh fish, lagoon-side tables and simple town plates.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- 1. Nomad -->
+                <!-- 1. Restaurant Roudani -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/nomad.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Nomad Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Restaurant Roudani" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.4</span>
@@ -517,11 +673,11 @@
                     <div class="p-6 flex flex-col justify-between flex-grow">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.nomad.tag">Modern Moroccan</span>
-                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.nomad.loc">Medina Rooftop</span>
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.nomad.tag">Port</span>
+                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.nomad.loc">Beni Ansar</span>
                             </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.nomad.title">Nomad Nador</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.nomad.desc">A trendy rooftop terrace overlooking Spice Square, serving light local cuisine with a modern twist.</p>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.nomad.title">Port-side fish</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.nomad.desc">Fresh catch near the harbour when boats are in.</p>
                         </div>
                     </div>
                 </a>
@@ -539,19 +695,19 @@
                     <div class="p-6 flex flex-col justify-between flex-grow">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.jardin.tag">Garden Dining</span>
-                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.jardin.loc">Medina Oasis</span>
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.jardin.tag">Hotel</span>
+                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.jardin.loc">Town</span>
                             </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.jardin.title">Le Jardin</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.jardin.desc">A lush 16th-century courtyard filled with greenery and banana plants, offering authentic tagines in a tranquil atmosphere.</p>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.jardin.title">Hotel restaurants</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.jardin.desc">Reliable options if you stay in a larger hotel.</p>
                         </div>
                     </div>
                 </a>
 
-                <!-- 3. Al Fassia -->
+                <!-- 3. Al Dunes de Nador -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/al-fassia.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Al Fassia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Al Dunes de Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
@@ -561,19 +717,19 @@
                     <div class="p-6 flex flex-col justify-between flex-grow">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.fassia.tag">Traditional Cuisine</span>
-                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.fassia.loc">Gueliz</span>
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.fassia.tag">Café</span>
+                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.fassia.loc">Centre</span>
                             </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.fassia.title">Al Fassia</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.fassia.desc">Run entirely by women, famous for its slow-cooked shoulder of lamb and rich traditional pastilla recipes.</p>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.fassia.title">Town café stop</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.fassia.desc">Coffee and a pause between errands.</p>
                         </div>
                     </div>
                 </a>
 
-                <!-- 4. Dar Moha -->
+                <!-- 4. Hotel Corniche Nador -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/dar-moha.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Dar Moha" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Hotel Corniche Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
@@ -583,19 +739,19 @@
                     <div class="p-6 flex flex-col justify-between flex-grow">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.moha.tag">Fine Dining</span>
-                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.moha.loc">Medina Riad</span>
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.moha.tag">Seafood</span>
+                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.moha.loc">Centre</span>
                             </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.moha.title">Dar Moha</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.moha.desc">Refined Moroccan gastronomy served around a tranquil courtyard pool in Pierre Balmain's former palace.</p>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.moha.title">Town seafood</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.moha.desc">Fish and salads in the centre between lagoon walks.</p>
                         </div>
                     </div>
                 </a>
 
-                <!-- 5. Bacha Coffee -->
+                <!-- 5. Café Nador -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/bacha-coffee.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Bacha Coffee" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Café Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.6</span>
@@ -605,19 +761,19 @@
                     <div class="p-6 flex flex-col justify-between flex-grow">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.bacha.tag">Café &amp; Pastry</span>
-                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.bacha.loc">Dar El Bacha</span>
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.bacha.tag">Local</span>
+                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.bacha.loc">Town</span>
                             </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.bacha.title">Bacha Coffee</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.bacha.desc">An iconic 1930s coffee room offering fine Arabica coffees and French pastries in an opulent palace setting.</p>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.bacha.title">Neighbourhood tables</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.bacha.desc">Quiet plates preferred by residents.</p>
                         </div>
                     </div>
                 </a>
 
-                <!-- 6. El Fenn Rooftop -->
+                <!-- 6. Hotel Rif Nador -->
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/el-fenn.html">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="El Fenn Rooftop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Hotel Rif Nador" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
@@ -627,11 +783,11 @@
                     <div class="p-6 flex flex-col justify-between flex-grow">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.elfenn.tag">Chic Rooftop</span>
-                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.elfenn.loc">Medina View</span>
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="nador_page.eat.elfenn.tag">Seafood</span>
+                                <span class="text-xs text-gray-400" data-i18n="nador_page.eat.elfenn.loc">Corniche</span>
                             </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.elfenn.title">El Fenn Rooftop</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.elfenn.desc">A stylish rooftop lounge featuring panoramic Koutoubia views, signature cocktails, and gourmet tapas.</p>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="nador_page.eat.elfenn.title">Evening fish</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="nador_page.eat.elfenn.desc">Later sitting when the corniche fills up.</p>
                         </div>
                     </div>
                 </a>
@@ -641,28 +797,28 @@
 
         <!-- Practical Travel Tips -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <h2 class="text-2xl font-bold text-vert mb-6" data-i18n="nador_page.tips.title">Practical Tips for Visiting Nador</h2>
+            <h2 class="text-2xl font-bold text-vert mb-6" data-i18n="nador_page.tips.title">Practical tips for Nador</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
                 <div class="bg-white p-5 rounded-xl border border-sable/10">
                     <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
                         <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8m-9 5h10M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2zM7 9h.01M17 9h.01"/></svg>
-                        <span data-i18n="nador_page.tips.transport.title">Getting Around</span>
+                        <span data-i18n="nador_page.tips.transport.title">Getting around</span>
                     </h3>
-                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="nador_page.tips.transport.desc">Walking is best inside the Medina. For longer journeys, take yellow "Petit Taxis" and ask the driver to use the meter (compteur) before starting.</p>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="nador_page.tips.transport.desc">Town and corniche are walkable; beaches and Cap des Trois Fourches need a car or organised transfer. Beni Ansar is a short hop for ferries. Agree taxi prices clearly.</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-sable/10">
                     <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
                         <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-                        <span data-i18n="nador_page.tips.bargain.title">Souk Bargaining</span>
+                        <span data-i18n="nador_page.tips.bargain.title">Sun & seasons</span>
                     </h3>
-                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="nador_page.tips.bargain.desc">Haggling is part of the experience! Start at roughly 50% of the initial price and keep negotiations friendly and lighthearted.</p>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="nador_page.tips.bargain.desc">Mediterranean sun is strong in summer. High SPF and water for lagoon and beach days. Spring and autumn are ideal for Gourougou and the Cap.</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-sable/10">
                     <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
                         <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
-                        <span data-i18n="nador_page.tips.water.title">Stay Hydrated</span>
+                        <span data-i18n="nador_page.tips.water.title">Cash & border</span>
                     </h3>
-                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="nador_page.tips.water.desc">Nador temperatures can soar, especially in summer. Stick to bottled water and enjoy fresh orange juice in Nador Medina.</p>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="nador_page.tips.water.desc">Carry dirhams for taxis and small stops. If you day-trip to Melilla, bring a valid passport and check border hours.</p>
                 </div>
             </div>
         </section>
@@ -670,41 +826,41 @@
         <!-- Day Trips from Nador -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.daytrips.badge">Beyond the City</span>
-                <h2 class="text-3xl font-bold text-vert" data-i18n="nador_page.daytrips.title">Best Day Trips from Nador</h2>
-                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="nador_page.daytrips.subtitle">Rent a car, hire a private driver, or join a small tour to reach these stunning destinations in a single day.</p>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.daytrips.badge">Around Nador</span>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="nador_page.daytrips.title">Best outings from Nador</h2>
+                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="nador_page.daytrips.subtitle">Lagoon loops, mountain views and wilder Mediterranean coast.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Atlas Mountains and Berber villages near Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Nador Oasis palm grove near Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 class="text-base font-bold" data-i18n="nador_page.daytrips.atlas.title">Atlas Mountains &amp; Imlil</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="nador_page.daytrips.atlas.desc">Traditional Berber villages, valley treks, and alpine scenery about 1.5 hours from Nador.</p>
+                        <h3 class="text-base font-bold" data-i18n="nador_page.daytrips.tiout.title">Cap des Trois Fourches</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="nador_page.daytrips.tiout.desc">Half or full day to cliffs, empty coast and one of the region’s strongest viewpoints.</p>
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Agafay desert stone landscape near Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Imlili sebkha near Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 class="text-base font-bold" data-i18n="nador_page.daytrips.agafay.title">Agafay Stone Desert</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="nador_page.daytrips.agafay.desc">Sunset camel rides, quad biking, and dinner under the stars, just 40 minutes from town.</p>
+                        <h3 class="text-base font-bold" data-i18n="nador_page.daytrips.antiatlas.title">Mount Gourougou</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="nador_page.daytrips.antiatlas.desc">Short hikes and panoramas over Nador, the lagoon and Melilla on clear days.</p>
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Ouzoud Waterfalls near Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Ocean beaches near Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 class="text-base font-bold" data-i18n="nador_page.daytrips.ouzoud.title">Ouzoud Waterfalls</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="nador_page.daytrips.ouzoud.desc">Morocco's tallest waterfalls surrounded by lush greenery and playful Barbary macaques.</p>
+                        <h3 class="text-base font-bold" data-i18n="nador_page.daytrips.taliouine.title">Charrana or Ras El Ma</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="nador_page.daytrips.taliouine.desc">Beach day with clearer swimming than the inner lagoon edges.</p>
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Essaouira coastal ramparts day trip from Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1613057157282-cc3cbe630b26?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Tropic of Cancer marker Nador" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1613057157282-cc3cbe630b26?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 class="text-base font-bold" data-i18n="nador_page.daytrips.essaouira.title">Essaouira Coast</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="nador_page.daytrips.essaouira.desc">Fresh sea breeze, historical ramparts, and grilled seafood along the Atlantic coast.</p>
+                        <h3 class="text-base font-bold" data-i18n="nador_page.daytrips.agadir.title">Melilla (passport day)</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="nador_page.daytrips.agadir.desc">Spanish enclave across the border — modernist streets and a sharp cultural contrast.</p>
                     </div>
                 </div>
             </div>
@@ -713,37 +869,37 @@
         <!-- FAQ -->
         <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="mb-8 text-center">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.faq.badge">Good to Know</span>
-                <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="nador_page.faq.title">Nador Travel FAQ</h2>
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="nador_page.faq.badge">Good to know</span>
+                <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="nador_page.faq.title">Nador travel FAQ</h2>
             </div>
             <div class="space-y-3">
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
-                        <span data-i18n="nador_page.faq.q1.question">How many days should I spend in Nador?</span>
+                        <span data-i18n="nador_page.faq.q1.question">How many days in Nador?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="nador_page.faq.q1.answer">3 to 5 days allows you to explore the Medina, palaces, and gardens at an enjoyable pace, with time left for an excursion to the High Atlas or Agafay Desert.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="nador_page.faq.q1.answer">Three days cover the lagoon, corniche and one mountain or beach outing. Five days suit Cap des Trois Fourches, Charrana and a slower rhythm without rushing.</p>
                 </details>
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
-                        <span data-i18n="nador_page.faq.q2.question">Is Nador safe for international tourists?</span>
+                        <span data-i18n="nador_page.faq.q2.question">Is Nador only the lagoon?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="nador_page.faq.q2.answer">Yes, Nador is generally very safe for travelers. As in any major tourism city, keep an eye on your belongings in crowded souks and agree on taxi prices upfront.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="nador_page.faq.q2.answer">Marchica is the signature landscape, but Gourougou, Cap des Trois Fourches, nearby beaches and Beni Ansar add mountain, wild coast and working-port energy.</p>
                 </details>
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
-                        <span data-i18n="nador_page.faq.q3.question">What currency is used and can I pay by credit card?</span>
+                        <span data-i18n="nador_page.faq.q3.question">How do I get to Nador?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="nador_page.faq.q3.answer">Morocco uses the Moroccan Dirham (MAD). Cards are accepted at most hotels, fine restaurants, and larger shops, but carrying cash is essential for souks, taxis, and small cafes.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="nador_page.faq.q3.answer">Flights to NDR, ferries via Beni Ansar, or road links along the northeastern Rif. Melilla is adjacent for some cross-border itineraries.</p>
                 </details>
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
-                        <span data-i18n="nador_page.faq.q4.question">How do I get from Nador Menara Airport to the Medina?</span>
+                        <span data-i18n="nador_page.faq.q4.question">Best time to visit?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="nador_page.faq.q4.answer">Nearest Airport is only 15 minutes away. Official taxis, pre-booked airport transfers, and local buses are all readily available right outside the arrivals terminal.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="nador_page.faq.q4.answer">May to October for swimming and corniche evenings. Spring and autumn are excellent for hiking and clearer long views.</p>
                 </details>
             </div>
         </section>
@@ -801,7 +957,7 @@
   </div>
 </footer>
 
-    <!-- Combined JavaScript Scripts (Language Switcher, Mobile Menu, Tabs) -->
+    <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
     <script>
         function openDay(evt, dayId) {
             var tabContents = document.getElementsByClassName("tab-content");
@@ -814,6 +970,42 @@
             }
             document.getElementById(dayId).classList.add("active");
             evt.currentTarget.classList.add("active");
+        }
+
+        function filterAccommodations() {
+            var selectedType = document.getElementById("filter-type").value;
+            var selectedLocation = document.getElementById("filter-location").value;
+            var cards = document.getElementsByClassName("acc-card");
+            var visibleCount = 0;
+
+            for (var i = 0; i < cards.length; i++) {
+                var card = cards[i];
+                var cardType = card.getAttribute("data-type");
+                var cardLocation = card.getAttribute("data-location");
+
+                var matchType = (selectedType === "all" || cardType === selectedType);
+                var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
+
+                if (matchType && matchLocation) {
+                    card.style.display = "block";
+                    visibleCount++;
+                } else {
+                    card.style.display = "none";
+                }
+            }
+
+            var counterDiv = document.getElementById("accommodation-counter");
+            var noResults = document.getElementById("no-results");
+            if (visibleCount === 0) {
+                counterDiv.innerText = "0 accommodations found";
+                if (noResults) noResults.style.display = "block";
+            } else if (visibleCount === 1) {
+                counterDiv.innerText = "1 accommodation found";
+                if (noResults) noResults.style.display = "none";
+            } else {
+                counterDiv.innerText = visibleCount + " accommodations found";
+                if (noResults) noResults.style.display = "none";
+            }
         }
 
         function toggleMobileCategories() {
@@ -844,7 +1036,7 @@
                 });
             }
 
-            const savedLang = localStorage.getItem('preferred_lang') || 'en';
+            const savedLang = localStorage.getItem('preferred_lang') || 'fr';
             switchLanguage(savedLang);
         });
 
@@ -856,8 +1048,6 @@
         };
 
         function switchLanguage(lang) {
-            try { localStorage.setItem('preferred_lang', lang); } catch (e) {}
-
             const langLabel = document.getElementById('current-lang-label');
             const langButton = document.getElementById('lang-menu-button');
 
@@ -877,16 +1067,13 @@
                 langDropdown.classList.add('hidden');
             }
 
-            document.documentElement.setAttribute('lang', lang);
-            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-
             if (typeof changeLanguage === 'function') {
                 changeLanguage(lang);
             }
         }
     </script>
     
-    <!-- External Scripts -->
+    <!-- Scripts externes -->
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>
 </body>

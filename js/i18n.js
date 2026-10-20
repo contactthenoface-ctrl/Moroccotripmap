@@ -54,6 +54,10 @@ async function fetchJson(url) {
 
 function collectI18nSections() {
     const sections = new Set();
+    // Charger la page courante basée sur l'URL (ex: destinations.html -> destinations_page)
+    let pageName = window.location.pathname.split('/').pop().replace('.html', '');
+    if (!pageName || pageName === '/') pageName = 'index';
+    sections.add(pageName + '_page');
     function addKey(key) {
         if (!key) return;
         const section = key.trim().split('.')[0];

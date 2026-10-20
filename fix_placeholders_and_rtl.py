@@ -1,0 +1,123 @@
+import os, re, json
+from pathlib import Path
+
+print("🛠️ --- UNIFORMISATION DES DRESSAGES ET DIRECTION DU TEXTE --- 🛠️\n")
+
+PROTECTED = [
+    'index.html', 'destinations.html', 'marrakech.html', 'contact.html',
+    'agadir.html', 'essaouira.html', 'rabat.html', 'casablanca.html', 'fes.html',
+    'chefchaouen.html', 'ouarzazate.html', 'tangier.html', 'tanger.html', 'meknes.html'
+]
+
+html_files = [
+    f for f in Path('.').rglob('*.html') 
+    if 'node_modules' not in f.parts and f.name not in PROTECTED
+]
+
+count = 0
+
+for file_path in html_files:
+    city_slug = file_path.stem
+    city_name = city_slug.replace('-', ' ').title()
+
+    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+        content = f.read()
+
+    # 1. Forcer la direction LTR de base dans la balise <html> si elle etait en RTL
+    content = re.sub(r'<html([^>]*)\sdir=["\']rtl["\']', r'<html\1 dir="ltr"', content)
+
+    # 2. Remplacer le bloc "الصفحة قيد الإعداد" (Placeholder) par une mise en page propre
+    if 'الصفحة قيد الإعداد' in content or 'Discover, Plan & Experience' in content:        
+        depth = len(file_path.parts) - 1
+        prefix = "../" * depth
+
+        clean_layout = f"""<!DOCTYPE html>
+<html class="scroll-smooth" dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="{city_slug}_page.seo.title">{city_name} Travel Guide | MoroccoTripMap</title>
+    <meta name="description" content="Plan your trip to {city_name}: top attractions, historic sights, local food, and travel tips." data-i18n-attr="content:{city_slug}_page.seo.description"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{prefix}css/styles.css" />
+    <link rel="stylesheet" href="{prefix}css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
+
+    <script>
+        tailwind.config = {{
+            theme: {{
+                extend: {{
+                    colors: {{ creme: '#F9F6F0', vert: '#185336', sable: '#C29B62', sombre: '#1A1A1A' }}
+                }}
+            }}
+        }}
+    </script>
+</head>
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
+    
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a class="flex items-center gap-3 group shrink-0" href="{prefix}index.html">
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" src="{prefix}images/logo.webp"/>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
+                <a class="hover:text-vert transition" href="{prefix}destinations.html" data-i18n="nav.destinations">Destinations</a>
+                <a class="hover:text-vert transition" href="{prefix}contact.html" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <div class="relative inline-block text-left" id="lang-selector"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="relative h-[300px] sm:h-[380px] bg-vert flex items-end">
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 w-full text-white">
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-2" data-i18n="{city_slug}_page.hero_title">{city_name}</h1>
+                <p class="text-base sm:text-lg text-creme/90 max-w-2xl font-light" data-i18n="{city_slug}_page.hero_subtitle">
+                    Discover the culture, heritage, and unique beauty of {city_name}.
+                </p>
+            </div>
+        </div>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-sable/10 shadow-sm mb-8">
+                <h2 class="text-xl sm:text-2xl font-bold text-vert mb-3" data-i18n="{city_slug}_page.overview.title">Welcome to {city_name}</h2>
+                <p class="text-sombre/80 leading-relaxed text-base mb-3" data-i18n="{city_slug}_page.overview.p1">
+                    {city_name} stands as a remarkable destination in Morocco, offering travelers an authentic immersion into local traditions and culture.
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-2xl p-6 sm:p-8 shadow-md flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white" data-i18n="{city_slug}_page.booking.title">Plan Your Stay in {city_name}</h3>
+                    <p class="text-creme/80 mt-1 text-sm" data-i18n="{city_slug}_page.booking.desc">Explore accommodations and guided tours.</p>
+                </div>
+                <a href="{prefix}searchresults.html?ss={city_name}+Morocco" class="bg-sable hover:bg-[#b08a52] text-sombre font-bold px-6 py-3 rounded-xl transition shadow-sm text-sm" data-i18n="{city_slug}_page.booking.btn">
+                    Explore Accommodations
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-vert text-creme pt-6 pb-6 px-4 text-center mt-12">
+        <p data-i18n="footer.copyright">© 2026 MoroccoTripMap. All rights reserved.</p>
+    </footer>
+
+    <script src="{prefix}js/i18n.js"></script>
+</body>
+</html>"""
+        content = clean_layout
+
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+    count += 1
+
+print(f"✅ Terminé ! {count} pages ont été réalignées et nettoyées.")

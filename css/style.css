@@ -1,15 +1,43 @@
-/* css/style.css — utilitaires complémentaires (hors Tailwind) */
+/* css/style.css */
+
+/* Styles de base */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
+header { background: #d35400; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { margin: 0; }
+nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+
+/* Barre de recherche */
+.search-container { position: relative; width: 300px; }
+.search-container input { width: 100%; padding: 10px; border-radius: 20px; border: none; outline: none; box-sizing: border-box; }
+.search-results { 
+    position: absolute; top: 40px; left: 0; width: 100%; background: white; border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: none; overflow: hidden; z-index: 1000;
+}
+.search-results a { display: block; padding: 10px 15px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; }
+.search-results a:hover { background: #f0f0f0; color: #d35400; }
+
+/* Grille et Cartes (index et destinations) */
+.hero { text-align: center; padding: 60px 20px; background: white; }
+.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card-link { text-decoration: none; color: inherit; display: block; transition: transform 0.2s; }
+.card-link:hover { transform: translateY(-5px); }
+.card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card h3 { margin: 15px; color: #d35400; text-align: center; }
 
 /* =========================================================
    SÉLECTEUR DE LANGUE & DRAPEAUX (I18N)
    ========================================================= */
 
+/* Alignement du bouton principal de langue */
 #lang-menu-button {
     display: inline-flex !important;
     align-items: center !important;
     gap: 0.4rem !important;
 }
 
+/* Wrapper du drapeau inséré automatiquement */
 #lang-menu-button .lang-flag,
 #lang-menu-dropdown .lang-flag {
     display: inline-flex;
@@ -19,6 +47,7 @@
     flex-shrink: 0;
 }
 
+/* Dimensionnement et style des drapeaux SVG */
 #lang-menu-button .lang-flag svg,
 #lang-menu-dropdown .lang-flag svg,
 #lang-menu-dropdown svg {
@@ -30,126 +59,50 @@
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Flèche du menu (ne pas la traiter comme un drapeau) */
+/* Flèche du menu déroulant (pour éviter qu'elle soit déformée comme un drapeau) */
 #lang-menu-button > svg:not(.lang-flag svg) {
     width: 12px;
     height: 12px;
     margin-left: 2px;
 }
 
-/* RTL arabe */
+/* Adaptabilité RTL (pour la langue arabe) */
 [dir="rtl"] #lang-menu-button {
     flex-direction: row-reverse;
 }
-
-/* =========================================================
-   BARRE DE RECHERCHE
-   ========================================================= */
-
-.search-container {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-}
-
-.search-container input {
-    width: 100%;
-    padding: 10px 14px;
-    border-radius: 12px;
-    border: 1px solid rgba(194, 155, 98, 0.35);
-    outline: none;
-    box-sizing: border-box;
-    background: #fff;
-    color: #1A1A1A;
-}
-
-.search-container input:focus {
-    border-color: #185336;
-}
-
-.search-results {
-    position: absolute;
-    top: calc(100% + 6px);
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border-radius: 12px;
-    border: 1px solid rgba(194, 155, 98, 0.2);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    display: none;
-    overflow: hidden;
-    z-index: 1000;
-}
-
-.search-results a {
-    display: block;
-    padding: 10px 14px;
-    color: #1A1A1A;
-    text-decoration: none;
-    border-bottom: 1px solid #f0ebe3;
-    font-size: 0.875rem;
-}
-
-.search-results a:last-child {
-    border-bottom: none;
-}
-
-.search-results a:hover {
-    background: #F9F6F0;
-    color: #185336;
-}
-
-/* =========================================================
-   CARTE (image statique éventuelle)
-   ========================================================= */
-
+/* Container de la carte */
 .map-container {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    text-align: center;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
 }
 
+/* Image responsive */
 .responsive-map {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Effet au survol (optionnel) */
 .responsive-map:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
-/* =========================================================
-   ACCESSIBILITÉ
-   ========================================================= */
-
+/* Style d'accessibilité pour le texte alternatif masqué */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-/* Marquee partenaires (si utilisé hors Tailwind animate) */
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
-.marquee-track {
-    animation: marquee 40s linear infinite;
-}
-
-.marquee-container:hover .marquee-track {
-    animation-play-state: paused;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

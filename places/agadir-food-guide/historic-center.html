@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" dir="ltr" lang="en">
+<head>
+    <title>MoroccoTripMap - Agadir Food Guide Historic Center</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
+    <title data-i18n="agadir-food-guide_page.seo.title">Agadir Food Guide Historic Center Travel Guide | Things to Do &amp; Tips | MoroccoTripMap</title>
+    <meta content="Explore Agadir Food Guide Historic Center: top attractions, local culture, best places to stay, and travel tips." name="description" data-i18n-attr="content:agadir-food-guide_page.seo.description"/>
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
+        .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
+        .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
+        .tab-btn.active { background: #185336; color: #fff; border-color: #185336; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
+    </style>
+</head>
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
+    
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a class="flex items-center gap-3 group shrink-0" href="../../index.html">
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" src="../../images/logo.webp"/>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
+                <a class="text-vert font-bold transition" href="../../destinations.html" data-i18n="nav.destinations">Destinations</a>
+                <a class="hover:text-vert transition" href="../../guides/histoire.html" data-i18n="nav.history">History</a>
+                <a class="hover:text-vert transition" href="../../blog/index.html" data-i18n="nav.blog">Blog</a>
+                <a class="hover:text-vert transition" href="../../contact.html" data-i18n="nav.contact">Contact</a>
+            </nav>
+            
+            <div class="flex items-center gap-2 sm:gap-4">
+                <div class="relative inline-block text-left" id="lang-menu-container">
+                    <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
+                        <span id="current-lang-label">EN</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden">
+                        <button onclick="switchLanguage('en')" class="w-full px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">English</button>
+                        <button onclick="switchLanguage('fr')" class="w-full px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">Français</button>
+                        <button onclick="switchLanguage('es')" class="w-full px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">Español</button>
+                        <button onclick="switchLanguage('ar')" class="w-full px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">العربية</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="relative h-[400px] sm:h-[480px] flex items-end">
+            <img alt="Agadir Food Guide Historic Center" class="absolute inset-0 w-full h-full object-cover" src="../../images/marrakech-art.webp"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-3" data-i18n="agadir-food-guide_page.hero_title">Agadir Food Guide Historic Center</h1>
+                <p class="text-lg sm:text-xl text-creme/90 max-w-2xl font-light" data-i18n="agadir-food-guide_page.hero_subtitle">
+                    Discover the authentic charm, historical heritage and unique experiences of Agadir Food Guide Historic Center.
+                </p>
+            </div>
+        </div>
+
+        <!-- Overview Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="agadir-food-guide_page.overview.title">Welcome to Agadir Food Guide Historic Center</h2>
+                <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="agadir-food-guide_page.overview.p1">
+                    Agadir Food Guide Historic Center is a captivating destination offering unforgettable landscapes, historical heritage, and rich cultural experiences in Morocco.
+                </p>
+            </div>
+        </section>
+
+        <!-- Places Section pointing to /places/agadir-food-guide/ -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <h2 class="text-3xl font-bold text-vert mb-6" data-i18n="agadir-food-guide_page.places.title">Top Places in Agadir Food Guide Historic Center</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a class="group bg-white rounded-2xl p-6 border border-sable/10 shadow-sm hover:shadow-xl transition" href="../../places/agadir-food-guide/historic-center.html">
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Historic Center &amp; Medina</h3>
+                    <p class="text-xs text-sombre/70 mt-2">Explore the traditional heart, local markets and authentic architecture.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
+        <div class="max-w-7xl mx-auto text-center text-xs text-creme/70">
+            <p>© 2026 MoroccoTripMap. All rights reserved. <span data-i18n="footer.created_by">Created by</span> <a href="https://kamliseo.com" class="underline text-sable">Kamliseo</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            localStorage.setItem('preferred_lang', lang);
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            if (typeof changeLanguage === 'function') { changeLanguage(lang); }
+        }
+    </script>
+    <script src="../../js/i18n.js"></script>
+</body>
+</html>

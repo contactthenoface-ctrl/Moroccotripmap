@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" dir="ltr" lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/style.css" />
  <title>Agadir Travel Guide | Beach, Kasbah &amp; Atlantic Coast | MoroccoTripMap</title>
  <meta name="robots" content="noindex, nofollow">
  <meta charset="utf-8"/>
@@ -50,7 +59,28 @@
  </script>
 
  <!-- Tailwind CSS CDN -->
-<!-- Google Fonts -->
+ 
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ creme: '#F9F6F0',
+ vert: '#185336',
+ sable: '#C29B62',
+ sombre: '#1A1A1A',
+ },
+ borderRadius: {
+ 'xl': '1rem',
+ '2xl': '1.5rem',
+ '3xl': '2rem',
+ }
+ }
+ }
+ }
+ </script>
+ 
+ <!-- Google Fonts -->
  <link href="https://fonts.googleapis.com" rel="preconnect"/>
  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -68,11 +98,6 @@
  .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
  .day-card h3:first-of-type { margin-top: 0; }
  </style>
-
-<!-- Tailwind build local -->
-<link rel="stylesheet" href="css/styles.css" />
-<link rel="stylesheet" href="css/style.css" />
-
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
  

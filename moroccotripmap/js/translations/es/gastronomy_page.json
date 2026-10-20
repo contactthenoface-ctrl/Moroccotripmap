@@ -1,0 +1,394 @@
+{
+  "seo": {
+    "title": "Gastronomía Marroquí y Guía Culinaria | Platos, Restaurantes y Food Tours",
+    "description": "Descubra el patrimonio culinario de Marruecos: cuscús, tajine, pastela, rfissa, tanjia, food tours, clases de cocina y especialidades regionales en más de 40 ciudades.",
+    "og_title": "Gastronomía Marroquí y Guía Culinaria | MoroccoTripMap",
+    "og_description": "Explore los sabores de Marruecos: talleres de cocina tradicionales, mercados de street food y delicias regionales."
+  },
+  "mobile_menu": {
+    "language_title": "Idioma / Language"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "gastronomy": "Gastronomía Marroquí y Patrimonio Culinario"
+  },
+  "hero": {
+    "title": "Patrimonio Culinario Marroquí: Especialidades, Restaurantes y Food Tours",
+    "description": "La cocina marroquí es un extraordinario tapiz tejido con tradiciones amazigh, árabes, andalusíes, mediterráneas y saharauis. Del icónico cuscús al vapor a los tajines de cocción lenta, de la pastela real a la tanjia de street food, explore platos regionales auténticos y reserve talleres de cocina en más de 40 ciudades."
+  },
+  "stat_signature": "Platos Emblemáticos",
+  "stat_cities": "Ciudades Cubiertas",
+  "stat_partner": "Socio Seguro",
+  "dishes_section": {
+    "eyebrow": "El Arte de la Mesa Marroquí",
+    "title": "Un Arte de Vivir: Especias, Hospitalidad y Rituales"
+  },
+  "intro_p1": "Clasificada entre las mejores cocinas del mundo, la gastronomía marroquí es un viaje sensorial definido por armonías agridulces, especias fragantes y una cálida hospitalidad. El alma de la cocina marroquí se basa en especias fundamentales: azafrán de Taliouine, comino de Alnif, pimentón dulce, jengibre, canela y la legendaria mezcla Ras el Hanout.",
+  "intro_p2": "Comer en Marruecos es fundamentalmente comunitario. Las comidas se comparten en grandes mesas redondas, donde el pan redondo fresco (khobz) sirve de utensilio principal para mojar las salsas del tajine. Cada comida se abre con ensaladas de verduras cocidas como el zaalouk y se cierra con té de menta dulce —apodado «whisky bereber»— vertido desde lo alto para crear una espuma característica.",
+  "dishes": {
+    "where_to_eat": "Buscar Food Tour",
+    "couscous": {
+      "badge": "Plato del Patrimonio Nacional",
+      "title": "Cuscús (7 Verduras y Tfaya)",
+      "sub": "Sémola al Vapor con Carne Tierna y Caldo Especiado",
+      "desc": "Sémola de trigo duro enrollada a mano, triple cocción al vapor sobre un caldo aromático de ternera, cordero o pollo. El cuscús tradicional del viernes incluye 7 verduras de temporada (calabaza, calabacín, zanahorias, nabos, col, garbanzos, tomates), mientras que el Cuscús Tfaya se corona con cebolla caramelizada, pasas y canela.",
+      "tip": "Consejo: se sirve los viernes después de la oración"
+    },
+    "tajine": {
+      "badge": "Cocción en Olla de Barro",
+      "title": "Tajine (Pollo al Limón y Cordero con Ciruelas)",
+      "sub": "Guisos de Cocción Lenta en Ollas Cónicas de Barro",
+      "desc": "El icónico recipiente cónico de barro retiene el vapor para una carne tierna. Clásicos: tajine de pollo con limones confitados, aceitunas verdes y jengibre, o tajine de cordero estofado con ciruelas dulces, almendras tostadas, sésamo y azafrán.",
+      "tip": "Consejo: se come con pan fresco"
+    },
+    "pastilla": {
+      "badge": "Festín Imperial Andalusí",
+      "title": "Pastela (Pollo/Paloma y Mariscos)",
+      "sub": "Pastel de Hojaldre Crujiente Dulce-Salado",
+      "desc": "Obra maestra del arte culinario marroquí: fina masa warqa rellena de paloma o pollo desmenuzado especiado, huevos en salsa de hierbas y almendras tostadas espolvoreadas con azúcar glas y canela. Versiones costeras con mariscos al ajo y fideos de arroz.",
+      "tip": "Especialidad de Fez y Rabat"
+    },
+    "rfissa": {
+      "badge": "Consuelo y Celebración",
+      "title": "Rfissa (Pollo de Corral y Fenogreco)",
+      "sub": "Pan Plano Desmenuzado con Pollo de Corral y Caldo Especiado",
+      "desc": "Plato reconfortante de crepes finas (msemmen/trid) desmenuzadas bañadas en un caldo aromático de pollo de corral, semillas de fenogreco (halba), lentejas, azafrán, ras el hanout y cabezas de ajo enteras. Tradicionalmente se prepara para recibir a los recién nacidos y honrar a los invitados.",
+      "tip": "Caldo tonificante de hierbas"
+    },
+    "tanjia": {
+      "badge": "Especialidad de Marrakech",
+      "title": "Tanjia Marrakchia",
+      "sub": "Guiso en Urna de Barro Cocido en las Cenizas del Hammam",
+      "desc": "¡El plato del soltero de Marrakech! Jarrete de ternera o cordero sellado en una jarra de barro con limón confitado, ajo, comino, azafrán y smen. La urna se lleva al horno del hammam para cocinar bajo las cenizas calientes durante 6 horas hasta que se deshaga en la boca.",
+      "tip": "Imprescindible en la medina de Marrakech"
+    },
+    "harira": {
+      "badge": "Ramadán y Street Food",
+      "title": "Harira y Chebakia",
+      "sub": "Sopa Aterciopelada de Tomate y Lentejas con Pastelería de Miel",
+      "desc": "La sopa tradicional para romper el ayuno del Ramadán. Caldo aromático con tomates, lentejas, garbanzos, fideos, cilantro, apio y jengibre. Siempre acompañada de dátiles y chebakia: pastelería de sésamo en forma de flor frita y bañada en miel pura.",
+      "tip": "Se vende cada noche en las plazas de las medinas"
+    },
+    "mechoui": {
+      "badge": "Asado Festivo",
+      "title": "Mechoui de Cordero",
+      "sub": "Cordero Entero Asado en Foso con Comino y Sal",
+      "desc": "Cordero entero asado lentamente en fosos de leña durante horas. La piel queda dorada y crujiente, la carne ultra jugosa, servido simplemente con cuencos de comino grueso y sal marina.",
+      "tip": "Famoso callejón del Mechoui en Marrakech"
+    },
+    "salads": {
+      "badge": "Ensaladas de Verduras Cocidas",
+      "title": "Zaalouk y Taktouka",
+      "sub": "Caviares de Berenjena Ahumada y Pimientos",
+      "desc": "Entrantes esenciales: el zaalouk es un caviar caliente de berenjena con tomates asados, ajo, aceite de oliva, pimentón y comino. La taktouka combina pimientos asados cocidos con tomates frescos y hierbas.",
+      "tip": "100% vegetariano y vegano"
+    },
+    "bsarra": {
+      "badge": "Consuelo del Norte",
+      "title": "Bsarra (Sopa de Habas)",
+      "sub": "Puré de Habas con Aceite de Oliva y Comino",
+      "desc": "Básico del desayuno en el norte (Chefchaouen, Tánger). Habas o guisantes verdes cocidos a fuego lento con ajo, triturados y servidos bien calientes con un chorro de aceite de oliva crudo, chili y comino.",
+      "tip": "Ideal por la mañana en puestos callejeros"
+    },
+    "seffa": {
+      "badge": "Tesoro Escondido",
+      "title": "Seffa Medfouna",
+      "sub": "Cúpula de Fideos al Vapor que Esconde Pollo Especiado",
+      "desc": "Fideos finos o cuscús al vapor con mantequilla y pasas, formados en cúpula espolvoreada de canela, azúcar glas y almendras tostadas. Dentro, pollo o cordero en salsa de azafrán y cebolla.",
+      "tip": "Sorpresa dulce-salada"
+    },
+    "seafood": {
+      "badge": "Especialidad Costera",
+      "title": "Pescado Atlántico a la Chermoula",
+      "sub": "Mariscos a la Parrilla Marinados en Pesto de Hierbas",
+      "desc": "Lubina, sardinas o calamares marinados en chermoula — pasta verde de ajo, cilantro, pimentón, comino, limón y aceite de oliva — cocinados en tajine con pimientos y tomates o fritos en el puerto.",
+      "tip": "Essaouira, Safi, Casablanca y Dakhla"
+    },
+    "sweets": {
+      "badge": "Dulces",
+      "title": "Amlou y Cuernos de Gacela",
+      "sub": "Cremas de Frutos Secos, Pastelería de Almendra y Té de Menta",
+      "desc": "El amlou del Souss es una crema de almendras tostadas, miel de azahar y aceite de argán culinario. Se disfruta con los Kaab el Ghazal (cuernos de gacela rellenos de pasta de almendra y agua de azahar).",
+      "tip": "Acompañado de té de menta Gunpowder"
+    }
+  },
+  "cities_section": {
+    "eyebrow": "Explorar 40+ Destinos",
+    "title": "Encontrar Food Tours y Clases de Cocina por Ciudad",
+    "subtitle": "Seleccione un destino marroquí a continuación para descubrir especialidades locales, mercados y reservar experiencias culinarias en GetYourGuide / Viator."
+  },
+  "city_picker": {
+    "label": "Elegir un Destino (40+ Ciudades):",
+    "all_option": "Todas las Ciudades (Mostrar Todos los Destinos)"
+  },
+  "filter_region_title": "Filtrar por Estilo Culinario Geográfico:",
+  "cities": {
+    "marrakech": {
+      "name": "Comida de Marrakech",
+      "specialty": "Tanjia Marrakchia y Puestos de Jemaa el-Fnaa",
+      "title": "Food Tours y Clases en Marrakech",
+      "desc": "Famosa tanjia de cocción lenta, callejones de mechoui y degustación de especias en Jemaa el-Fnaa."
+    },
+    "fes": {
+      "name": "Comida de Fez",
+      "specialty": "Pastela de Paloma y Gastronomía Fassi",
+      "title": "Food Tours y Clases en Fez",
+      "desc": "Capital culinaria imperial: pastela agridulce de paloma, khlea y recetas reales."
+    },
+    "essaouira": {
+      "name": "Comida de Essaouira",
+      "specialty": "Pescado a la Brasa y Aceite de Argán",
+      "title": "Mariscos y Talleres en Essaouira",
+      "desc": "Sardinas a la brasa en el puerto, catas de argán ecológico y talleres de mariscos atlánticos."
+    },
+    "casablanca": {
+      "name": "Comida de Casablanca",
+      "specialty": "Marché Central y Gastronomía Moderna",
+      "title": "Food Tours en Casablanca",
+      "desc": "Elija su pescado fresco en el Marché Central, mariscos frente al mar y cocina marroquí moderna."
+    },
+    "tangier": {
+      "name": "Comida de Tánger",
+      "specialty": "Kalinte y Té del Café Hafa",
+      "title": "Experiencias Culinarias en Tánger",
+      "desc": "Fusión andalusí-mediterránea, kalinte de garbanzos y té de menta en el Café Hafa."
+    },
+    "chefchaouen": {
+      "name": "Comida de Chefchaouen",
+      "specialty": "Queso de Cabra Jben y Bsarra",
+      "title": "Experiencias Culinarias en Chefchaouen",
+      "desc": "Queso de cabra de montaña, sopa bsarra de habas y ajo, y hierbas del Rif."
+    },
+    "agadir": {
+      "name": "Comida de Agadir y Souss",
+      "specialty": "Amlou y Cocina con Argán",
+      "title": "Clases de Cocina en Agadir",
+      "desc": "Origen del amlou de almendras-miel-argán, mieles silvestres y clases en el mercado del Souss."
+    },
+    "rabat": {
+      "name": "Comida de Rabat",
+      "specialty": "Pastelería Imperial y Cuscús",
+      "title": "Experiencias Culinarias en Rabat",
+      "desc": "Pastelería imperial refinada, cuscús del viernes y mesas junto al río en la capital."
+    },
+    "meknes": {
+      "name": "Comida de Mequinez",
+      "specialty": "Vinos de Guerrouane y Aceite de Oliva",
+      "title": "Gastronomía y Vinos en Mequinez",
+      "desc": "País del vino marroquí: viñedos de Guerrouane, aceites de oliva y recetas de la era ismailí."
+    },
+    "safi": {
+      "name": "Comida de Safi",
+      "specialty": "Tajine de Arcilla y Capital de la Sardina",
+      "title": "Experiencias Culinarias en Safi",
+      "desc": "Cocina en tajine de arcilla de las colinas de alfarería y albóndigas de pescado con limón confitado."
+    },
+    "merzouga": {
+      "name": "Merzouga y Sáhara",
+      "specialty": "Medfouna y Cenas en las Dunas",
+      "title": "Cocina del Desierto en Merzouga",
+      "desc": "Medfouna cocida en embers de arena, dátiles del Ziz y banquetes bajo las estrellas."
+    },
+    "ouarzazate": {
+      "name": "Comida de Ouarzazate",
+      "specialty": "Dátiles de Oasis y Tajines de Kasbah",
+      "title": "Tours Culinarios en Ouarzazate",
+      "desc": "Dátiles de oasis, tajines de kasbah y hospitalidad bereber cerca de Ait Benhaddou."
+    },
+    "tetouan": {
+      "name": "Comida de Tetuán",
+      "specialty": "Pastelería Hispano-Mora",
+      "title": "Experiencias Culinarias en Tetuán",
+      "desc": "Dulces de influencia andalusí, mariscos y recetas únicas del norte."
+    },
+    "alhoceima": {
+      "name": "Comida de Alhucemas",
+      "specialty": "Sardinas a la Parrilla Mediterráneas",
+      "title": "Mariscos en Alhucemas",
+      "desc": "Sardinas frescas del Mediterráneo, parrillas costeras del Rif y restaurantes en los acantilados."
+    },
+    "dakhla": {
+      "name": "Comida de Dakhla",
+      "specialty": "Ostras y Té Saharaui",
+      "title": "Experiencias Culinarias en Dakhla",
+      "desc": "Ostras de laguna, ceremonia del té saharaui y fusión Atlántico-desierto."
+    },
+    "ifrane": {
+      "name": "Comida de Ifrane",
+      "specialty": "Trucha del Atlas y Miel de Cedro",
+      "title": "Cocina de Montaña en Ifrane",
+      "desc": "Trucha fresca del Atlas, miel de montaña y mesas entre los cedros."
+    },
+    "eljadida": {
+      "name": "Comida de El Jadida",
+      "specialty": "Mercados de Mariscos Atlánticos",
+      "title": "Food Tours en El Jadida",
+      "desc": "Mariscos del puerto portugués, mercados de pescado y cocina costera atlántica."
+    },
+    "taroudant": {
+      "name": "Comida de Taroudant",
+      "specialty": "Azafrán del Souss y Cítricos",
+      "title": "Tours Culinarios en Taroudant",
+      "desc": "Azafrán del valle del Souss, huertos de cítricos y cocina de los mercados intramuros."
+    },
+    "oujda": {
+      "name": "Comida de Oujda",
+      "specialty": "Karan y Panes Tradicionales",
+      "title": "Experiencias Culinarias en Oujda",
+      "desc": "Especialidades del Este: karan de garbanzos y panes barrados tradicionales."
+    },
+    "zagora": {
+      "name": "Comida de Zagora",
+      "specialty": "Dátiles del Drâa y Tajines de Arcilla",
+      "title": "Cocina del Desierto en Zagora",
+      "desc": "Dátiles del valle del Drâa, tajines de arcilla de las palmeras y hospitalidad de oasis."
+    },
+    "nador": {
+      "name": "Comida de Nador",
+      "specialty": "Mariscos del Rif y Paella",
+      "title": "Experiencias Culinarias en Nador",
+      "desc": "Mariscos de laguna, paella de influencia española y comedores de marina."
+    },
+    "laayoune": {
+      "name": "Comida de El Aaiún",
+      "specialty": "Asado Saharaui y Té",
+      "title": "Cocina Saharaui en El Aaiún",
+      "desc": "Asado saharaui tradicional, rituales de té nómada y patrimonio Atlántico-desierto."
+    },
+    "azilal": {
+      "name": "Comida de Azilal",
+      "specialty": "Tajine Bereber de Nueces",
+      "title": "Cocina de Montaña en Azilal",
+      "desc": "Tajines de nueces del Alto Atlas, hierbas de montaña y cocina bereber cerca de Ouzoud."
+    },
+    "tinghir": {
+      "name": "Comida de Tinghir",
+      "specialty": "Hierbas de Todra y Cordero",
+      "title": "Tours Culinarios en Tinghir",
+      "desc": "Hierbas de la garganta de Todra, cordero de valle y cocina de oasis a la puerta de los cañones."
+    },
+    "asilah": {
+      "name": "Comida de Asilah",
+      "specialty": "Pescado en Costra de Sal",
+      "title": "Mariscos en Asilah",
+      "desc": "Pescado en costra de sal, cafés de medina artística y mesas tranquilas frente al Atlántico."
+    },
+    "benimellal": {
+      "name": "Comida de Beni Mellal",
+      "specialty": "Aceite de Oliva del Tadla y Miel",
+      "title": "Food Tours en Beni Mellal",
+      "desc": "Aceite de oliva de las llanuras del Tadla, miel de montaña y recetas de la región de kasbahs."
+    },
+    "kenitra": {
+      "name": "Comida de Kenitra",
+      "specialty": "Pescado del Sebou y Cítricos",
+      "title": "Experiencias Culinarias en Kenitra",
+      "desc": "Pescado del río Sebou, cítricos del Gharb y mariscos de Mehdia."
+    },
+    "mohammedia": {
+      "name": "Comida de Mohammedia",
+      "specialty": "Pescado a la Parrilla de Chiringuito",
+      "title": "Mesas de Playa en Mohammedia",
+      "desc": "Pescado a la parrilla frente al mar, ambiente chiringuito y dining costero cerca de Casablanca."
+    },
+    "guelmim": {
+      "name": "Comida de Guelmim",
+      "specialty": "Guisos de Camello",
+      "title": "Cocina del Desierto en Guelmim",
+      "desc": "Guisos de camello de la puerta del Sáhara, especias saharianas y mercados del sur."
+    },
+    "errachidia": {
+      "name": "Comida de Errachidia",
+      "specialty": "Madfouna y Zoco de Dátiles",
+      "title": "Tours Culinarios en Errachidia",
+      "desc": "Madfouna rellena, dátiles del valle del Ziz y gastronomía de los zocos de oasis."
+    },
+    "midelt": {
+      "name": "Comida de Midelt",
+      "specialty": "Pastelería de Manzana y Cordero",
+      "title": "Cocina de Montaña en Midelt",
+      "desc": "Famosos manzanares, cordero de montaña y hospitalidad de los pasos del Atlas."
+    },
+    "tiznit": {
+      "name": "Comida de Tiznit",
+      "specialty": "Miel de la Costa y Almendras",
+      "title": "Experiencias Culinarias en Tiznit",
+      "desc": "Miel costera, dulces de almendra y cocina de los mercados de la ciudad de la plata."
+    },
+    "tantan": {
+      "name": "Comida de Tan-Tan",
+      "specialty": "Ceremonia del Té Saharaui",
+      "title": "Cocina Saharaui en Tan-Tan",
+      "desc": "Ceremonias de té nómada, hospitalidad del desierto y cocina Atlántico-Sáhara."
+    },
+    "berkane": {
+      "name": "Comida de Berkane",
+      "specialty": "Clementinas y Cítricos",
+      "title": "Cocina de Cítricos en Berkane",
+      "desc": "Especialidades del valle de cítricos, postres de clementina y mesas de montaña."
+    },
+    "khemisset": {
+      "name": "Comida de Khemisset",
+      "specialty": "Panes Planos Zemmour y Miel",
+      "title": "Cocina Regional en Khemisset",
+      "desc": "Panes planos del Zemmour, miel local y cocina tradicional de la meseta."
+    },
+    "settat": {
+      "name": "Comida de Settat",
+      "specialty": "Trigo de Chaouia y Cuscús de Cordero",
+      "title": "Experiencias Culinarias en Settat",
+      "desc": "Campos de trigo de Chaouia, cuscús de cordero clásico y hospitalidad de las llanuras."
+    },
+    "berrechid": {
+      "name": "Comida de Berrechid",
+      "specialty": "Verduras Ecológicas de Granja",
+      "title": "Cocina de Granja en Berrechid",
+      "desc": "Verduras ecológicas de granja, mercados periurbanos y mesas farm-to-table modernas."
+    },
+    "larache": {
+      "name": "Comida de Larache",
+      "specialty": "Anchoas de Lixus y Tapas",
+      "title": "Cocina Costera en Larache",
+      "desc": "Herencia de anchoas cerca de las ruinas de Lixus, tapas atlánticas y puerto hispano-marroquí."
+    },
+    "ksarelkebir": {
+      "name": "Comida de Ksar El Kebir",
+      "specialty": "Tajines del Valle del Loukkos",
+      "title": "Cocina de Ksar El Kebir",
+      "desc": "Tajines de la llanura del Loukkos, recetas del patrimonio del norte y hospitalidad regional."
+    },
+    "skoura": {
+      "name": "Comida de Skoura",
+      "specialty": "Higos de Palmera y Aceite de Oliva",
+      "title": "Mesas de Oasis en Skoura",
+      "desc": "Higos de palmeral, aceite de oliva de oasis y comidas en kasbah restaurada."
+    }
+  },
+  "book_cta": "Reservar Food Tour / Clase",
+  "faq": {
+    "eyebrow": "Guía Culinaria y Consejos",
+    "title": "Preguntas Frecuentes sobre la Gastronomía Marroquí",
+    "subtitle": "Todo lo que necesita saber sobre costumbres de mesa, opciones vegetarianas, seguridad del street food y clases de cocina en Marruecos.",
+    "q1": "¿Cuáles son los platos tradicionales imprescindibles en Marruecos?",
+    "a1": "Los esenciales: tajines de cocción lenta (cordero con ciruelas, pollo con limones confitados), cuscús del viernes con 7 verduras, pastela dulce-salada, tanjia marrakchia y sopa harira con chebakia.",
+    "q2": "¿Hay opciones vegetarianas y veganas en la cocina marroquí?",
+    "a2": "¡Sí! Ensaladas cocidas (zaalouk, taktouka), cuscús de verduras, guisos de lentejas y garbanzos, aceitunas frescas y pan con za'atar: Marruecos acoge muy bien a los vegetarianos.",
+    "q3": "¿Es seguro comer street food en las medinas?",
+    "a3": "Absolutamente. Elija puestos concurridos por locales donde se cocina a alta temperatura. Un food tour oficial también es una excelente forma de descubrir joyas culinarias con seguridad.",
+    "q4": "¿Qué ocurre en un taller de cocina marroquí?",
+    "a4": "La mayoría de talleres empiezan con una visita a los zocos de especias y productos frescos, seguida de cocina práctica en un riad o jardín con una Dada, y terminan con una comida de sus platos y té de menta."
+  },
+  "banner": {
+    "badge": "Talleres Culinarios Mejor Valorados",
+    "title": "Reserve Clases de Cocina y Food Tours Auténticos",
+    "desc": "Domine las especias del tajine, pruebe el street food de las medinas y reserve con los mejores anfitriones culinarios en GetYourGuide y Viator.",
+    "btn": "Explorar Todos los Talleres de Cocina",
+    "guarantee": "✓ Cancelación gratuita hasta 24h antes"
+  },
+  "search_placeholder": "Buscar plato (ej. Pastela, Tajine) o ciudad (ej. Marrakech, Fez)...",
+  "filter_all": "Todos",
+  "filter_imperial": "Imperial",
+  "filter_atlantic": "Mariscos Atlánticos",
+  "filter_north": "Norte y Rif",
+  "filter_desert": "Sáhara y Oasis"
+}

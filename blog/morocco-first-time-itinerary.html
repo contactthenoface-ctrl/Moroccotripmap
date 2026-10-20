@@ -17,6 +17,26 @@
 <meta name="description" content="How Chefchaouen fits with Fez, Tangier and beyond.">
 
 <!-- Tailwind CSS CDN -->
+<link rel="stylesheet" href="./css/styles.css"><link rel="stylesheet" href="./css/style.css">
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creme: '#F9F6F0',
+                        vert: '#185336',
+                        sable: '#C29B62',
+                        sombre: '#1A1A1A',
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -24,11 +44,6 @@
 <style>
         body { font-family: 'Outfit', sans-serif; }
     </style>
-
-<!-- Tailwind build local -->
-<link rel="stylesheet" href="../css/styles.css" />
-<link rel="stylesheet" href="../css/style.css" />
-
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
 <!-- Header Navigation -->

@@ -1,0 +1,643 @@
+{
+  "seo": {
+    "title": "Itinéraires de Voyage au Maroc par Région & Durée | MoroccoTripMap",
+    "description": "Explorez le Maroc avec des circuits complets de 5, 7 et 10 jours dans 6 régions : Villes Impériales, Rif du Nord, Sahara, Côte Atlantique, Atlas et Oasis de l'Est.",
+    "og_title": "Circuits Complets au Maroc par Région | MoroccoTripMap",
+    "og_description": "Choisissez votre région et la durée du séjour pour découvrir des itinéraires multi-villes conçus par des experts."
+  },
+  "mobile_menu": {
+    "language_title": "Langue / Language"
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "itineraries": "Itinéraires Maroc"
+  },
+  "hero": {
+    "title": "Circuits de Voyage au Maroc à Travers 6 Régions Géographiques",
+    "description": "Sélectionnez une région ci-dessous et choisissez des parcours de 5, 7 ou 10 jours conçus avec des temps de route réalistes, des liaisons multi-villes et des conseils d'experts testés sur le terrain."
+  },
+  "stat_regions": "Régions Géographiques",
+  "stat_circuits": "Circuits Sur Mesure",
+  "stat_tested": "Testés sur le Terrain",
+  "search_placeholder": "Rechercher un parcours (ex. Casablanca, Fès, Chefchaouen, Désert, 7 jours)...",
+  "regions_section": {
+    "eyebrow": "Choisissez Votre Région",
+    "title": "6 Régions Géographiques du Maroc",
+    "subtitle": "Cliquez sur une région pour afficher les circuits de 5, 7 et 10 jours."
+  },
+  "duration_all": "Toutes Durées",
+  "duration_5": "5 Jours",
+  "duration_7": "7 Jours",
+  "duration_10": "10 Jours",
+  "identity_card": "Fiche d'Identité du Circuit",
+  "criterion": "Critère",
+  "regions": {
+    "imperial": {
+      "badge": "Impérial",
+      "title": "Villes Impériales",
+      "subtitle": "Casa, Rabat, Fès"
+    },
+    "north": {
+      "badge": "Nord",
+      "title": "Nord & Rif",
+      "subtitle": "Tanger, Chefchaouen"
+    },
+    "south": {
+      "badge": "Sahara",
+      "title": "Sud & Désert",
+      "subtitle": "Marrakech, Merzouga"
+    },
+    "atlantic": {
+      "badge": "Côte",
+      "title": "Côte Atlantique",
+      "subtitle": "Essaouira, Agadir"
+    },
+    "atlas": {
+      "badge": "Atlas",
+      "title": "Montagnes de l'Atlas",
+      "subtitle": "Imlil, Toubkal, Azrou"
+    },
+    "oriental": {
+      "badge": "Oasis",
+      "title": "Est & Oasis",
+      "subtitle": "Oujda, Figuig"
+    }
+  },
+  "circuits": {
+    "imperial_5": {
+      "badge": "5 Jours / 4 Nuits",
+      "title": "Triangle Express 5 Jours : Casablanca, Rabat & Marrakech",
+      "desc": "Conçu pour les séjours courts, les amateurs de culture et les professionnels. Reliez la capitale économique, la capitale administrative et la Ville Rouge via le train à grande vitesse et les autoroutes modernes.",
+      "identity": {
+        "duration": "5 Jours / 4 Nuits",
+        "key_stops": "Casablanca ➔ Rabat ➔ Marrakech",
+        "ideal_transport": "Train Al Boraq + chauffeur privé en ville",
+        "traveler_profile": "Séjours courts, voyageurs d'affaires, couples",
+        "estimated_budget": "Moyen à haut de gamme"
+      },
+      "days": {
+        "0": {
+          "label": "Jour 1",
+          "title": "Modernité de Casablanca & Mosquée Hassan II",
+          "text": "Arrivée à l'aéroport Mohammed V. Visite guidée de la mosquée Hassan II, construite sur une falaise face à l'Atlantique, puis balade dans le quartier Habous Art déco et dîner de fruits de mer sur la Corniche."
+        },
+        "1": {
+          "label": "Jour 2",
+          "title": "Rabat Capitale Impériale & Kasbah des Oudayas",
+          "text": "Prenez le train Al Boraq (45 min) vers Rabat. Visitez la Tour Hassan, le Mausolée Mohammed V et flânez dans la kasbah bleue et blanche des Oudayas face au Bouregreg."
+        },
+        "2": {
+          "label": "Jours 3 à 5",
+          "title": "Immersion Médina de Marrakech & Départ",
+          "text": "Route vers Marrakech. Installation en riad traditionnel, Bahia, Tombeaux saadiens, Jardin Majorelle et ambiance de Jemaa el-Fna au coucher du soleil."
+        }
+      },
+      "tip": "Prenez le train Al Boraq tôt le matin entre Casablanca et Rabat pour éviter les embouteillages et maximiser l'après-midi dans la kasbah côtière de Rabat."
+    },
+    "imperial_7": {
+      "badge": "7 Jours / 6 Nuits",
+      "title": "Circuit des Capitales Impériales 7 Jours : Casablanca, Rabat, Fès & Marrakech",
+      "desc": "Le grand classique des villes impériales : Casablanca, Rabat, Fès et Marrakech en une semaine, avec temps pour médinas, monuments et gastronomie.",
+      "identity": {
+        "duration": "7 Jours / 6 Nuits",
+        "key_stops": "Casablanca ➔ Rabat ➔ Meknès & Volubilis ➔ Fès ➔ Marrakech",
+        "ideal_transport": "Voiture de location ou chauffeur privé",
+        "traveler_profile": "Amoureux de culture, passionnés d'histoire, familles",
+        "estimated_budget": "Moyen à luxe"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 & 2",
+          "title": "Modernité de Casablanca & Patrimoine Royal de Rabat",
+          "text": "Admirez la mosquée Hassan II à Casablanca, puis route vers Rabat : nécropole de Chellah, Tour Hassan et kasbah des Oudayas, dîner au bord de la marina."
+        },
+        "1": {
+          "label": "Jours 3 & 4",
+          "title": "Volubilis Romain, Meknès & Médina de Fès",
+          "text": "Mosaiques romaines UNESCO de Volubilis et porte Bab Mansour à Meknès. Deux journées dans les tanneries Chouara et l'université Al Quaraouiyine à Fès."
+        },
+        "2": {
+          "label": "Jours 5 à 7",
+          "title": "Route Scénique du Haut Atlas vers Marrakech",
+          "text": "Descente vers Marrakech pour deux jours de souks, palais et dîners en rooftop face à Jemaa el-Fna."
+        }
+      },
+      "tip": "Engagez un guide officiel à Fès pour votre première matinée. Naviguer dans les 9 000 ruelles sans voitures de Fès el-Bali est bien plus agréable avec un conteur local certifié."
+    },
+    "imperial_10": {
+      "badge": "10 Jours / 9 Nuits",
+      "title": "Grand Tour Complet 10 Jours : Villes Impériales & Sahara de Merzouga",
+      "desc": "L'itinéraire complet : toutes les villes impériales plus les dunes de Merzouga, sans précipitation, avec étapes désert et retours confortables.",
+      "identity": {
+        "duration": "10 Jours / 9 Nuits",
+        "key_stops": "Casablanca ➔ Rabat ➔ Fès ➔ Merzouga ➔ Marrakech",
+        "ideal_transport": "Mix train, 4x4 désert et chauffeur",
+        "traveler_profile": "Voyageurs complets, photographes, couples",
+        "estimated_budget": "Moyen à luxe"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 à 3",
+          "title": "Villes Impériales : Casa, Rabat & Fès",
+          "text": "Découverte approfondie de Casablanca, Rabat et Fès avec temps libre dans les médinas et monuments majeurs."
+        },
+        "1": {
+          "label": "Jours 4 à 7",
+          "title": "Route des Kasbahs & Dunes de Merzouga",
+          "text": "Via le Moyen Atlas et la vallée du Ziz jusqu'aux dunes d'Erg Chebbi : nuit en bivouac, chameaux et lever de soleil sur le Sahara."
+        },
+        "2": {
+          "label": "Jours 8 à 10",
+          "title": "Retour & Marrakech",
+          "text": "Remontée vers Marrakech pour souks, jardins et départ."
+        }
+      },
+      "tip": "Réservez le camp de désert à l'avance en haute saison (printemps et automne). Les camps de luxe à Erg Chebbi se remplissent rapidement."
+    },
+    "north_5": {
+      "badge": "5 Jours / 4 Nuits",
+      "title": "Perle du Nord 5 Jours : Tanger, Asilah & Chefchaouen",
+      "desc": "Côte atlantique nord, médina artistique d'Asilah et rues bleues de Chefchaouen — l'essentiel du nord en cinq jours.",
+      "identity": {
+        "duration": "5 Jours / 4 Nuits",
+        "key_stops": "Tanger ➔ Asilah ➔ Chefchaouen",
+        "ideal_transport": "Voiture de location ou grands taxis",
+        "traveler_profile": "Photographes, couples, voyageurs solo",
+        "estimated_budget": "Économique à moyen"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 & 2",
+          "title": "Tanger & Asilah sur l'Atlantique",
+          "text": "Cap Spartel, Grottes d'Hercule et médina de Tanger ; journée à Asilah, cité artistique blanche face à l'océan."
+        },
+        "1": {
+          "label": "Jours 3 à 5",
+          "title": "Chefchaouen Ville Bleue",
+          "text": "Immersion dans les ruelles indigo de Chefchaouen, point de vue Ras El Maa et ambiance du Rif."
+        }
+      },
+      "tip": "Portez des chaussures confortables à Chefchaouen : les ruelles sont escarpées et les points de vue demandent un peu de marche."
+    },
+    "north_7": {
+      "badge": "7 Jours / 6 Nuits",
+      "title": "Nord Complet 7 Jours : Cascades d'Akchour & Médina de Fès",
+      "desc": "Tanger, Chefchaouen, cascades d'Akchour et immersion dans la médina de Fès pour une semaine nordique riche.",
+      "identity": {
+        "duration": "7 Jours / 6 Nuits",
+        "key_stops": "Tanger ➔ Chefchaouen ➔ Akchour ➔ Fès",
+        "ideal_transport": "Voiture de location",
+        "traveler_profile": "Randonneurs, culture, familles",
+        "estimated_budget": "Moyen de gamme"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 & 2",
+          "title": "Tanger & Côte Atlantique",
+          "text": "Tanger, Cap Spartel et route vers Asilah ou directement vers le Rif."
+        },
+        "1": {
+          "label": "Jours 3 & 4",
+          "title": "Chefchaouen & Cascades d'Akchour",
+          "text": "Ville bleue et randonnée vers les cascades d'Akchour dans le parc Talassemtane."
+        },
+        "2": {
+          "label": "Jours 5 à 7",
+          "title": "Médina de Fès",
+          "text": "Descente vers Fès pour explorer la plus vaste médina piétonne du monde."
+        }
+      },
+      "tip": "Les cascades d'Akchour se visitent mieux en matinée pour éviter la foule et profiter de la lumière dans les gorges."
+    },
+    "north_10": {
+      "badge": "10 Jours / 9 Nuits",
+      "title": "Boucle Nord & Méditerranée 10 Jours",
+      "desc": "Tour complet du nord et de la côte méditerranéenne : Tanger, Rif, Chefchaouen et prolongements vers l'est côtier.",
+      "identity": {
+        "duration": "10 Jours / 9 Nuits",
+        "key_stops": "Tanger ➔ Asilah ➔ Tétouan ➔ Chefchaouen ➔ Fès",
+        "ideal_transport": "Voiture de location",
+        "traveler_profile": "Explorateurs du nord, photographes",
+        "estimated_budget": "Moyen de gamme"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 à 3",
+          "title": "Tanger, Asilah & Tétouan",
+          "text": "Nord atlantique et méditerranéen : ports, médinas et héritage andalou."
+        },
+        "1": {
+          "label": "Jours 4 à 6",
+          "title": "Chefchaouen & Rif",
+          "text": "Ville bleue, randonnées et villages du Rif."
+        },
+        "2": {
+          "label": "Jours 7 à 10",
+          "title": "Fès & Région",
+          "text": "Immersion Fès et environs avant départ."
+        }
+      }
+    },
+    "south_5": {
+      "badge": "5 Jours / 4 Nuits",
+      "title": "Express Sahara 5 Jours : Marrakech, Ouarzazate & Dunes de Merzouga",
+      "desc": "De Marrakech aux dunes d'Erg Chebbi via Ouarzazate — le désert en format condensé mais mémorable.",
+      "identity": {
+        "duration": "5 Jours / 4 Nuits",
+        "key_stops": "Marrakech ➔ Ouarzazate ➔ Merzouga",
+        "ideal_transport": "4x4 ou minibus avec chauffeur",
+        "traveler_profile": "Amoureux du désert, couples, familles",
+        "estimated_budget": "Moyen de gamme"
+      },
+      "days": {
+        "0": {
+          "label": "Jour 1",
+          "title": "Marrakech à Ouarzazate via Tizi n'Tichka",
+          "text": "Traversée du Haut Atlas par le col Tizi n'Tichka, arrêt éventuel à Aït Benhaddou, arrivée à Ouarzazate."
+        },
+        "1": {
+          "label": "Jour 2",
+          "title": "Vallées du Dadès ou Route vers Merzouga",
+          "text": "Gorges et kasbahs du sud, progression vers les portes du désert."
+        },
+        "2": {
+          "label": "Jour 3",
+          "title": "Dunes d'Erg Chebbi & Nuit en Camp",
+          "text": "Balade à chameau, coucher de soleil sur les dunes et nuit en bivouac."
+        },
+        "3": {
+          "label": "Jour 4–5",
+          "title": "Lever de Soleil Sahara & Retour",
+          "text": "Aube sur les dunes et retour vers Ouarzazate ou Marrakech."
+        }
+      },
+      "tip": "Emportez un foulard (chèche) et une veste légère : les nuits dans les dunes sont fraîches même après des journées chaudes."
+    },
+    "south_7": {
+      "badge": "7 Jours / 6 Nuits",
+      "title": "Grand Sud 7 Jours : Marrakech à Merzouga & Médina de Fès",
+      "desc": "Sahara, vallées du sud et retour vers Fès : le grand classique Marrakech–désert–Fès en une semaine.",
+      "identity": {
+        "duration": "7 Jours / 6 Nuits",
+        "key_stops": "Marrakech ➔ Merzouga ➔ Fès",
+        "ideal_transport": "4x4 ou circuit organisé",
+        "traveler_profile": "Aventuriers, photographes",
+        "estimated_budget": "Moyen à luxe"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 & 2",
+          "title": "Marrakech – Atlas – Ouarzazate",
+          "text": "Col de Tichka, Aït Benhaddou et Ouarzazate, porte du désert."
+        },
+        "1": {
+          "label": "Jours 3 à 5",
+          "title": "Merzouga & Erg Chebbi",
+          "text": "Dunes, campements, chameaux et vie saharienne."
+        },
+        "2": {
+          "label": "Jours 6 & 7",
+          "title": "Vers Fès via le Moyen Atlas",
+          "text": "Remontée par Midelt ou Errachidia vers Fès."
+        }
+      },
+      "tip": "Un 4x4 n'est pas obligatoire jusqu'à Merzouga (route bitumée), mais utile pour les pistes autour des dunes."
+    },
+    "south_10": {
+      "badge": "10 Jours / 9 Nuits",
+      "title": "Expédition Sahara Profond & Vallée du Drâa : Piste 4x4 Erg Chigaga",
+      "desc": "Désert sauvage d'Erg Chigaga, vallée du Drâa et pistes 4x4 pour voyageurs en quête d'immersion profonde.",
+      "identity": {
+        "duration": "10 Jours / 9 Nuits",
+        "key_stops": "Marrakech ➔ Drâa ➔ Erg Chigaga",
+        "ideal_transport": "4x4 avec guide",
+        "traveler_profile": "Aventuriers, hors des sentiers battus",
+        "estimated_budget": "Économique à moyen"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 à 3",
+          "title": "Marrakech & Route des Kasbahs",
+          "text": "Atlas, Aït Benhaddou, Ouarzazate et vallée du Drâa."
+        },
+        "1": {
+          "label": "Jours 4 à 7",
+          "title": "Erg Chigaga en 4x4",
+          "text": "Piste vers les dunes sauvages d'Erg Chigaga, bivouacs isolés."
+        },
+        "2": {
+          "label": "Jours 8 à 10",
+          "title": "Retour & Oasis",
+          "text": "Remontée par les oasis et retour Marrakech ou Fès."
+        }
+      },
+      "tip": "Erg Chigaga exige un 4x4 expérimenté et un guide local : ne partez pas seul sur la piste."
+    },
+    "atlantic_5": {
+      "badge": "5 Jours / 4 Nuits",
+      "title": "Brise Atlantique 5 Jours : Essaouira, Imsouane & Taghazout",
+      "desc": "Côte atlantique, spots de surf et médina d'Essaouira — détente et vagues en cinq jours.",
+      "identity": {
+        "duration": "5 Jours / 4 Nuits",
+        "key_stops": "Essaouira ➔ Imsouane ➔ Taghazout",
+        "ideal_transport": "Voiture compacte ou transferts",
+        "traveler_profile": "Surfeurs, solo, couples, bien-être",
+        "estimated_budget": "Flexible (auberges aux resorts de luxe)"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 & 2",
+          "title": "Essaouira Médina & Port",
+          "text": "Remparts UNESCO, port de pêche, ateliers d'artisans et fruits de mer."
+        },
+        "1": {
+          "label": "Jour 3",
+          "title": "Imsouane & Spots de Surf",
+          "text": "Côte atlantique, baies et ambiance surf."
+        },
+        "2": {
+          "label": "Jours 4 & 5",
+          "title": "Taghazout & Retour",
+          "text": "Villages de surf et route vers Agadir ou Marrakech."
+        }
+      },
+      "tip": "Essaouira est venteuse toute l'année : prévoyez un coupe-vent même en été."
+    },
+    "atlantic_7": {
+      "badge": "7 Jours / 6 Nuits",
+      "title": "Combo Marrakech & Côte Atlantique 7 Jours : Souks aux Vagues",
+      "desc": "Médina de Marrakech puis route vers Essaouira et la côte pour allier culture et océan.",
+      "identity": {
+        "duration": "7 Jours / 6 Nuits",
+        "key_stops": "Marrakech ➔ Essaouira ➔ Taghazout",
+        "ideal_transport": "Location ou Supratours + chauffeur",
+        "traveler_profile": "Couples, amis, variété",
+        "estimated_budget": "Moyen de gamme"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 & 2",
+          "title": "Marrakech Souks & Palais",
+          "text": "Médina, jardins et départ vers la côte."
+        },
+        "1": {
+          "label": "Jours 3 à 5",
+          "title": "Essaouira & Côte",
+          "text": "Essaouira et villages côtiers vers le sud."
+        },
+        "2": {
+          "label": "Jours 6 & 7",
+          "title": "Taghazout / Paradise Valley",
+          "text": "Surf, plages et éventuelle escapade vallée."
+        }
+      }
+    },
+    "atlantic_10": {
+      "badge": "10 Jours / 9 Nuits",
+      "title": "Expédition Atlantique & Anti-Atlas : Mirleft à l'Arche de Legzira",
+      "desc": "Côte sud atlantique, Anti-Atlas et arche de Legzira pour une exploration maritime et montagneuse.",
+      "identity": {
+        "duration": "10 Jours / 9 Nuits",
+        "key_stops": "Essaouira ➔ Taghazout ➔ Tiznit ➔ Mirleft ➔ Legzira",
+        "ideal_transport": "Voiture de location",
+        "traveler_profile": "Road trips hors des sentiers, photographes",
+        "estimated_budget": "Économique à moyen"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 à 3",
+          "title": "Essaouira & Taghazout",
+          "text": "Côte centrale atlantique."
+        },
+        "1": {
+          "label": "Jours 4 à 7",
+          "title": "Tiznit, Mirleft & Legzira",
+          "text": "Sud atlantique, falaises et arche de Legzira."
+        },
+        "2": {
+          "label": "Jours 8 à 10",
+          "title": "Anti-Atlas & Retour",
+          "text": "Intérieur et retour vers Agadir ou Marrakech."
+        }
+      }
+    },
+    "atlas_5": {
+      "badge": "5 Jours / 4 Nuits",
+      "title": "Porte de l'Atlas 5 Jours : Imlil, Ourika & Ouzoud",
+      "desc": "Vallées berbères, cascades d'Ouzoud et villages d'Imlil — l'Atlas accessible depuis Marrakech.",
+      "identity": {
+        "duration": "5 Jours / 4 Nuits",
+        "key_stops": "Marrakech ➔ Ourika ➔ Imlil ➔ Ouzoud",
+        "ideal_transport": "Location ou transferts jour",
+        "traveler_profile": "Randonneurs, nature, familles",
+        "estimated_budget": "Économique à moyen"
+      },
+      "days": {
+        "0": {
+          "label": "Jour 1",
+          "title": "Vallée de l'Ourika",
+          "text": "Cascades, villages berbères et déjeuner chez l'habitant."
+        },
+        "1": {
+          "label": "Jours 2 & 3",
+          "title": "Imlil & Toubkal Base",
+          "text": "Village de montagne, randonnées faciles vers les refuges."
+        },
+        "2": {
+          "label": "Jours 4 & 5",
+          "title": "Cascades d'Ouzoud & Retour",
+          "text": "Plus hautes cascades d'Afrique du Nord et retour Marrakech."
+        }
+      }
+    },
+    "atlas_7": {
+      "badge": "7 Jours / 6 Nuits",
+      "title": "Traversée Moyen & Haut Atlas 7 Jours : Azrou, Bin El Ouidane & Toubkal",
+      "desc": "Cèdres d'Azrou, lacs de barrage et approches du Toubkal pour une semaine de montagne.",
+      "identity": {
+        "duration": "7 Jours / 6 Nuits",
+        "key_stops": "Fès ➔ Ifrane ➔ Azrou ➔ Lacs ➔ Toubkal",
+        "ideal_transport": "SUV 4x4 ou chauffeur montagne",
+        "traveler_profile": "Trekkers, photographes, écotourisme",
+        "estimated_budget": "Moyen de gamme"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 & 2",
+          "title": "Fès – Ifrane – Azrou",
+          "text": "Moyen Atlas, cèdres et singes magots."
+        },
+        "1": {
+          "label": "Jours 3 à 5",
+          "title": "Lacs & Bin El Ouidane",
+          "text": "Barrages, lacs et routes de montagne."
+        },
+        "2": {
+          "label": "Jours 6 & 7",
+          "title": "Approches du Toubkal",
+          "text": "Imlil et randonnées avant retour."
+        }
+      }
+    },
+    "atlas_10": {
+      "badge": "10 Jours / 9 Nuits",
+      "title": "Grande Expédition Montagne : Sommet du Toubkal & Canyons du Jbel Saghro",
+      "desc": "Trek vers le Toubkal et canyons du Saghro pour alpinistes et randonneurs expérimentés.",
+      "identity": {
+        "duration": "10 Jours / 9 Nuits",
+        "key_stops": "Marrakech ➔ Imlil ➔ Refuge Toubkal ➔ Saghro",
+        "ideal_transport": "Guide de montagne certifié + mulets + 4x4",
+        "traveler_profile": "Randonneurs expérimentés, alpinistes",
+        "estimated_budget": "Moyen de gamme"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 à 3",
+          "title": "Préparation & Imlil",
+          "text": "Acclimatation et montée vers les refuges."
+        },
+        "1": {
+          "label": "Jours 4 à 7",
+          "title": "Ascension du Toubkal",
+          "text": "Trek vers le sommet (4 167 m) avec guide certifié."
+        },
+        "2": {
+          "label": "Jours 8 à 10",
+          "title": "Jbel Saghro ou Descente",
+          "text": "Canyons du Saghro ou retour progressif vers Marrakech."
+        }
+      }
+    },
+    "oriental_5": {
+      "badge": "5 Jours / 4 Nuits",
+      "title": "Porte des Oasis 5 Jours : Errachidia, Gorges du Ziz & Merzouga",
+      "desc": "Oasis pré-sahariennes, gorges du Ziz et dunes de Merzouga depuis l'est.",
+      "identity": {
+        "duration": "5 Jours / 4 Nuits",
+        "key_stops": "Errachidia ➔ Gorges du Ziz ➔ Erfoud ➔ Merzouga",
+        "ideal_transport": "Vol intérieur + 4x4 local",
+        "traveler_profile": "Séjours express, familles, photo",
+        "estimated_budget": "Moyen à luxe"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 & 2",
+          "title": "Errachidia & Gorges du Ziz",
+          "text": "Arrivée, oasis et gorges spectaculaires."
+        },
+        "1": {
+          "label": "Jours 3 à 5",
+          "title": "Erfoud & Merzouga",
+          "text": "Mer d'ergs, dunes et campements."
+        }
+      }
+    },
+    "oriental_7": {
+      "badge": "7 Jours / 6 Nuits",
+      "title": "Méditerranée Orientale & Patrimoine 7 Jours : Oujda, Saïdia & Berkane",
+      "desc": "Côte de Saïdia, Oujda et montagnes de Berkane — l'Oriental méconnu.",
+      "identity": {
+        "duration": "7 Jours / 6 Nuits",
+        "key_stops": "Oujda ➔ Berkane ➔ Zegzel ➔ Saïdia",
+        "ideal_transport": "Location (aéroport Angad)",
+        "traveler_profile": "Plage, culture, hors des sentiers",
+        "estimated_budget": "Moyen de gamme"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 à 3",
+          "title": "Oujda & Berkane",
+          "text": "Patrimoine de l'Oriental et gorges de Zegzel."
+        },
+        "1": {
+          "label": "Jours 4 à 7",
+          "title": "Saïdia & Côte Méditerranéenne",
+          "text": "Plages de Saïdia et détente en bord de mer."
+        }
+      }
+    },
+    "oriental_10": {
+      "badge": "10 Jours / 9 Nuits",
+      "title": "Frontière Est & Oasis Millénaire de Figuig 10 Jours",
+      "desc": "Expédition vers Figuig et les confins orientaux, oasis historiques et paysages uniques.",
+      "identity": {
+        "duration": "10 Jours / 9 Nuits",
+        "key_stops": "Oujda ➔ Bouarfa ➔ Figuig",
+        "ideal_transport": "SUV 4x4 ou longue location",
+        "traveler_profile": "Authenticité, anthropologie, histoire",
+        "estimated_budget": "Économique à moyen"
+      },
+      "days": {
+        "0": {
+          "label": "Jours 1 à 3",
+          "title": "Oujda & Est",
+          "text": "Découverte d'Oujda et départ vers le sud-est."
+        },
+        "1": {
+          "label": "Jours 4 à 7",
+          "title": "Figuig Oasis Millénaire",
+          "text": "Oasis frontalière, ksours et patrimoine unique."
+        },
+        "2": {
+          "label": "Jours 8 à 10",
+          "title": "Retour via Bouarfa",
+          "text": "Steppe et retour vers Oujda ou Errachidia."
+        }
+      }
+    }
+  },
+  "blog_section": {
+    "eyebrow": "Préparation Essentielle",
+    "title": "Guides Pratiques pour Conduire au Maroc",
+    "read": "Lire l'Article →",
+    "a1_badge": "Guide de Conduite",
+    "a1_title": "Louer & Conduire une Voiture au Maroc : Conseils d'Experts",
+    "a1_desc": "Cols de montagne, contrôles de police, autoroutes à péage, et choix entre 4x4 ou citadine.",
+    "a2_badge": "Liste de Bagages",
+    "a2_title": "Essentiels à Emporter : Médinas au Sahara",
+    "a2_desc": "Tenue respectueuse, nuits froides du désert et équipement pour le trekking dans le Haut Atlas.",
+    "a3_badge": "Budget",
+    "a3_title": "Budget Voyage Maroc : Coûts Quotidiens Détaillés",
+    "a3_desc": "Repas, riads, chauffeurs, carburant, pourboires et gestion du cash dans les oasis isolées."
+  },
+  "faq": {
+    "eyebrow": "Des Questions ?",
+    "title": "Questions Fréquentes sur les Road Trips au Maroc",
+    "subtitle": "Tout ce qu'il faut savoir avant de choisir votre circuit dans les 6 régions.",
+    "q1": "Combien de jours pour visiter les Villes Impériales et le Désert ?",
+    "a1": "7 à 10 jours sont idéaux. Un circuit de 7 jours permet de combiner Casablanca, Rabat, Fès et Marrakech, ou de se concentrer sur Marrakech et le désert de Merzouga. Un parcours de 10 jours offre la flexibilité pour tout voir sans précipitation.",
+    "q2": "Est-il facile de voyager en train entre les grandes régions du Maroc ?",
+    "a2": "Oui ! L'ONCF exploite le TGV Al Boraq entre Tanger, Kénitra, Rabat et Casablanca en moins de 2 heures. Des trains classiques relient aussi Casablanca, Marrakech, Meknès et Fès. Pour le désert ou la montagne, un 4x4 ou un chauffeur privé est recommandé.",
+    "q3": "Quel désert choisir : Erg Chebbi (Merzouga) ou Erg Chigaga ?",
+    "a3": "Erg Chebbi (Merzouga) offre de hautes dunes dorées accessibles par route bitumée et des camps de glamping. Erg Chigaga est plus sauvage et isolé, accessible après 3 heures de piste 4x4 — idéal pour les voyageurs en quête de solitude."
+  },
+  "banner": {
+    "badge": "Réservez en Toute Confiance",
+    "title": "Chauffeurs, Locations 4x4 & Tours Guidés",
+    "desc": "Réservez des chauffeurs-guides vérifiés, des 4x4 désert et des excursions dans les 6 régions du Maroc via nos partenaires GetYourGuide et Rentalcars.",
+    "btn": "Explorer les Excursions",
+    "guarantee": "✓ Annulation gratuite & support client 24/7"
+  },
+  "detail_header": "Détail & Recommandation",
+  "label_duration": "Durée",
+  "label_key_stops": "Étapes Clés",
+  "label_transport": "Transport Idéal",
+  "label_profile": "Profil Voyageur",
+  "label_budget": "Budget Estimé",
+  "timeline_title": "Calendrier des Étapes & Détails",
+  "expert_tip_label": "Conseil d'Expert Local :",
+  "filter_duration_label": "Filtrer par durée :",
+  "cta": {
+    "casablanca": "Découvrir les guides et monuments de Casablanca",
+    "alboraq": "Réserver le train à grande vitesse Al Boraq",
+    "fes_meknes": "Découvrir notre guide Fès et Meknès",
+    "tangier_asilah": "Lire les guides Tanger et Asilah",
+    "marrakech": "Explorer nos riads et guides Marrakech",
+    "atlas_guides": "Réserver un guide certifié du Haut Atlas",
+    "marrakech_options": "Explorer les riads et activités à Marrakech",
+    "merzouga_bivouacs": "Comparer les bivouacs de luxe à Merzouga",
+    "merzouga_camps": "Découvrir les camps désert vérifiés à Merzouga",
+    "essaouira_seafood": "Découvrir les meilleurs restaurants de fruits de mer à Essaouira"
+  },
+  "youtube_text": "Suivez notre chaîne YouTube pour des guides vidéo :"
+}

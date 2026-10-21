@@ -30,7 +30,7 @@
     <link href="https://moroccotripmap.com/guides/histoire.html" hreflang="x-default" rel="alternate"/>
 
     <!-- Tailwind CSS CDN -->
-    <link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -133,7 +133,6 @@
 
         <!-- Mobile Menu Drawer -->
         <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
-            <!-- Sélecteur de langue rapide pour Mobile -->
             <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="mobile_menu.language_title">Language / Langue</span>
                 <div class="flex gap-2">
@@ -144,7 +143,6 @@
                 </div>
             </div>
 
-            <!-- Navigation Mobile Principale -->
             <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
                     <div class="flex items-center gap-3">
@@ -254,7 +252,7 @@
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="history_page.intro.eyebrow">Overview</span>
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-vert" data-i18n="history_page.intro.title">A Unique Crossroads of Civilizations in Africa</h2>
                 <p class="text-sm sm:text-base text-sombre/80 leading-relaxed">
-                    <span data-i18n="history_page.intro.text">Morocco's history stands out for remarkable state continuity and cultural independence in North Africa. Shielded by the high natural barriers of the Atlas and bordered by two seafronts (Atlantic and Mediterranean), the country forged a plural identity where Amazigh (Berber) heritage, Arab-Islamic influence, Andalusian currents and Saharan contacts intertwine. Contrairement à ses voisins, le Maroc n'a jamais été sous domination ottomane, préservant ainsi ses propres dynasties régnantes et ses traditions architecturales et artisanales uniques.</span>
+                    <span data-i18n="history_page.intro.text">Morocco's history stands out for remarkable state continuity and cultural independence in North Africa. Shielded by the high natural barriers of the <a href="../destinations.html" class="text-vert font-semibold underline hover:text-sable transition">Atlas</a> and bordered by two seafronts (Atlantic and Mediterranean), the country forged a plural identity where Amazigh (Berber) heritage, Arab-Islamic influence, Andalusian currents and Saharan contacts intertwine. Contrairement à ses voisins, le Maroc n'a jamais été sous domination ottomane, préservant ainsi ses propres dynasties régnantes et ses traditions architecturales et artisanales uniques, visibles à travers ses grandes cités comme <a href="../fes.html" class="text-vert font-semibold underline hover:text-sable transition">Fez</a> et <a href="../marrakech.html" class="text-vert font-semibold underline hover:text-sable transition">Marrakech</a>.</span>
                 </p>
             </section>
 
@@ -267,19 +265,19 @@
                         <div class="space-y-3 max-w-2xl">
                             <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider"><span data-i18n="history_page.periods.antiquite.date">Antiquity – 7th Century</span></span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-vert"><span data-i18n="history_page.periods.antiquite.title">1. Berber Origins, Phoenician Trading Posts and Mauretania Tingitana</span></h2>
-                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.antiquite.p1">The first recorded inhabitants of Morocco are the Amazigh ("free people"). From the 8th century BC, Phoenician and later Carthaginian merchants established coastal trading posts (Lixus, Tingis/Tangier, Mogador/Essaouira).</span></p>
-                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.antiquite.p2">The indigenous kingdom of Mauretania flourished under the learned King Juba II and his son Ptolemy. Annexed by Rome under Emperor Caligula, the province became Mauretania Tingitana. The city of Volubilis then rose as the Roman administrative capital, famed for its olive-oil presses and magnificent mosaics.</span></p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.antiquite.p1">The first recorded inhabitants of Morocco are the Amazigh ("free people"). From the 8th century BC, Phoenician and later Carthaginian merchants established coastal trading posts (<a href="../tanger.html" class="text-vert font-semibold underline hover:text-sable transition">Tingis/Tangier</a>, <a href="../essaouira.html" class="text-vert font-semibold underline hover:text-sable transition">Mogador/Essaouira</a>).</span></p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.antiquite.p2">The indigenous kingdom of Mauretania flourished under the learned King Juba II and his son Ptolemy. Annexed by Rome under Emperor Caligula, the province became Mauretania Tingitana. The ancient city of <a href="../destinations.html" class="text-vert font-semibold underline hover:text-sable transition">Volubilis</a> then rose as the Roman administrative capital, famed for its olive-oil presses and magnificent mosaics.</span></p>
                         </div>
                         <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
                             <span class="font-bold text-vert uppercase text-[11px] block"><span data-i18n="history_page.periods.antiquite.side_title">Monuments & Visible Traces</span></span>
                             <ul class="space-y-1.5 text-sombre/80">
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.antiquite.side.0.name">Volubilis</strong> <span data-i18n="history_page.periods.antiquite.side.0.place">Triumphal Arch & ancient mosaics.</span></span>
+                                    <span><a href="../destinations.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.antiquite.side.0.name">Volubilis</a> <span data-i18n="history_page.periods.antiquite.side.0.place">Triumphal Arch & ancient mosaics.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.antiquite.side.1.name">Lixus (Larache)</strong> <span data-i18n="history_page.periods.antiquite.side.1.place">Phoenician-Roman remains.</span></span>
+                                    <span><a href="../destinations.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.antiquite.side.1.name">Lixus (Larache)</a> <span data-i18n="history_page.periods.antiquite.side.1.place">Phoenician-Roman remains.</span></span>
                                 </li>
                             </ul>
                             <a class="inline-flex items-center gap-1 font-bold text-vert hover:text-sable transition pt-2 block" href="../destinations.html">
@@ -296,21 +294,21 @@
                             <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider"><span data-i18n="history_page.periods.idrissides.date">789 – 974</span></span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-vert"><span data-i18n="history_page.periods.idrissides.title">2. The Idrisid Dynasty and the Birth of the First Moroccan State</span></h2>
                             <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.idrissides.p1">In 789, Idris I, a descendant of the Prophet Muhammad fleeing the Abbasid caliphate of Baghdad, was welcomed by the Berber Awerba tribe at Walili (Volubilis). He founded the first unified Muslim Moroccan state.</span></p>
-                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.idrissides.p2">His son, Idris II, made Fez the capital. In 859, under their patronage, Fatima al-Fihriya founded the Al Quaraouiyine mosque and university, recognized by UNESCO and Guinness as the oldest continuously operating university in the world. Fez then became the spiritual, cultural and intellectual beacon of North Africa.</span></p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.idrissides.p2">His son, Idris II, made <a href="../fes.html" class="text-vert font-semibold underline hover:text-sable transition">Fez</a> the capital. In 859, under their patronage, Fatima al-Fihriya founded the Al Quaraouiyine mosque and university, recognized by UNESCO and Guinness as the oldest continuously operating university in the world. Fez then became the spiritual, cultural and intellectual beacon of North Africa.</span></p>
                         </div>
                         <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
                             <span class="font-bold text-vert uppercase text-[11px] block"><span data-i18n="history_page.periods.idrissides.side_title">Major Heritage</span></span>
                             <ul class="space-y-1.5 text-sombre/80">
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.idrissides.side.0.name">Fes el-Bali</strong> <span data-i18n="history_page.periods.idrissides.side.0.place">UNESCO medieval medina.</span></span>
+                                    <span><a href="../fes.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.idrissides.side.0.name">Fes el-Bali</a> <span data-i18n="history_page.periods.idrissides.side.0.place">UNESCO medieval medina.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.idrissides.side.1.name">Moulay Idriss Zerhoun</strong> <span data-i18n="history_page.periods.idrissides.side.1.place">Holy city.</span></span>
+                                    <span><a href="../destinations.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.idrissides.side.1.name">Moulay Idriss Zerhoun</a> <span data-i18n="history_page.periods.idrissides.side.1.place">Holy city.</span></span>
                                 </li>
                             </ul>
-                            <a class="inline-flex items-center gap-1 font-bold text-vert hover:text-sable transition pt-2 block" href="../destinations.html">
+                            <a class="inline-flex items-center gap-1 font-bold text-vert hover:text-sable transition pt-2 block" href="../fes.html">
                                 <span data-i18n="history_page.cta.fes">Discover Fez Medina</span> →
                             </a>
                         </div>
@@ -323,7 +321,7 @@
                         <div class="space-y-3 max-w-2xl">
                             <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider"><span data-i18n="history_page.periods.almoravides.date">1060 – 1147</span></span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-vert"><span data-i18n="history_page.periods.almoravides.title">3. The Almoravid Empire: Founders of Marrakech and Unifiers of Al-Andalus</span></h2>
-                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.almoravides.p1">From the nomadic Sanhaja Berber tribes of the Sahara, the Almoravids (Al-Murabitun) swept north. In 1070 their great ruler Yusuf ibn Tashfin founded Marrakech, capital of an empire stretching from the Senegal River to Muslim Spain (Al-Andalus).</span></p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.almoravides.p1">From the nomadic Sanhaja Berber tribes of the Sahara, the Almoravids (Al-Murabitun) swept north. In 1070 their great ruler Yusuf ibn Tashfin founded <a href="../marrakech.html" class="text-vert font-semibold underline hover:text-sable transition">Marrakech</a>, capital of an empire stretching from the Senegal River to Muslim Spain (Al-Andalus).</span></p>
                             <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.almoravides.p2">After the victory of Zallaqa (1086), Yusuf ibn Tashfin incorporated the Andalusian taifa kingdoms. The Almoravids brought Andalusian architectural refinement, red pisé ramparts and sophisticated underground irrigation (khettaras) to Morocco.</span></p>
                         </div>
                         <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
@@ -331,11 +329,11 @@
                             <ul class="space-y-1.5 text-sombre/80">
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.almoravides.side.0.name">Koubba Ba'adiyn</strong> <span data-i18n="history_page.periods.almoravides.side.0.place">Marrakech.</span></span>
+                                    <span><a href="../marrakech.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.almoravides.side.0.name">Koubba Ba'adiyn</a> <span data-i18n="history_page.periods.almoravides.side.0.place">Marrakech.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.almoravides.side.1.name">Red Ramparts of Marrakech</strong> <span data-i18n="history_page.periods.almoravides.side.1.place">19 km of walls.</span></span>
+                                    <span><a href="../marrakech.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.almoravides.side.1.name">Red Ramparts of Marrakech</a> <span data-i18n="history_page.periods.almoravides.side.1.place">19 km of walls.</span></span>
                                 </li>
                             </ul>
                             <a class="inline-flex items-center gap-1 font-bold text-vert hover:text-sable transition pt-2 block" href="../marrakech.html">
@@ -352,22 +350,22 @@
                             <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider"><span data-i18n="history_page.periods.almohades.date">1147 – 1269</span></span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-vert"><span data-i18n="history_page.periods.almohades.title">4. The Almohad Empire: The Peak of Monumental Architecture</span></h2>
                             <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.almohades.p1">Born of the religious reform preached by Ibn Tumart in the High Atlas (Tinmel), the Almohads (Al-Muwahhidun) overthrew the Almoravids. Under Abd al-Mu'min and Yaqub al-Mansur, the empire reached its greatest territorial extent, uniting the whole Maghreb and Al-Andalus.</span></p>
-                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.almohades.p2">The Almohads raised emblematic twin minarets: the Koutoubia in Marrakech, the Hassan Tower in Rabat and the Giralda in Seville. Rabat was given monumental walls and the majestic gate of the Kasbah of the Udayas.</span></p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.almohades.p2">The Almohads raised emblematic twin minarets: the Koutoubia in <a href="../marrakech.html" class="text-vert font-semibold underline hover:text-sable transition">Marrakech</a>, the Hassan Tower in <a href="../destinations.html" class="text-vert font-semibold underline hover:text-sable transition">Rabat</a> and the Giralda in Seville. Rabat was given monumental walls and the majestic gate of the Kasbah of the Udayas.</span></p>
                         </div>
                         <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
                             <span class="font-bold text-vert uppercase text-[11px] block"><span data-i18n="history_page.periods.almohades.side_title">Architectural Masterpieces</span></span>
                             <ul class="space-y-1.5 text-sombre/80">
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.almohades.side.0.name">Koutoubia Minaret</strong> <span data-i18n="history_page.periods.almohades.side.0.place">Marrakech.</span></span>
+                                    <span><a href="../marrakech.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.almohades.side.0.name">Koutoubia Minaret</a> <span data-i18n="history_page.periods.almohades.side.0.place">Marrakech.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.almohades.side.1.name">Hassan Tower & Oudayas</strong> <span data-i18n="history_page.periods.almohades.side.1.place">Rabat.</span></span>
+                                    <span><a href="../destinations.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.almohades.side.1.name">Hassan Tower & Oudayas</a> <span data-i18n="history_page.periods.almohades.side.1.place">Rabat.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.almohades.side.2.name">Tinmel Mosque</strong> <span data-i18n="history_page.periods.almohades.side.2.place">High Atlas.</span></span>
+                                    <span><a href="../destinations.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.almohades.side.2.name">Tinmel Mosque</a> <span data-i18n="history_page.periods.almohades.side.2.place">High Atlas.</span></span>
                                 </li>
                             </ul>
                         </div>
@@ -380,7 +378,7 @@
                         <div class="space-y-3 max-w-2xl">
                             <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider"><span data-i18n="history_page.periods.merinides.date">1244 – 1465</span></span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-vert"><span data-i18n="history_page.periods.merinides.title">5. The Marinids: The Golden Age of Madrasas and Zaouia Art</span></h2>
-                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.merinides.p1">From the Zenata nomads, the Marinids established their capital in Fez and built Fes el-Jdid (the new imperial city) beside the old medina.</span></p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.merinides.p1">From the Zenata nomads, the Marinids established their capital in <a href="../fes.html" class="text-vert font-semibold underline hover:text-sable transition">Fez</a> and built Fes el-Jdid (the new imperial city) beside the old medina.</span></p>
                             <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.merinides.p2">Marinid sultans strongly supported education and the arts. They built the most refined Quranic schools (madrasas) of the Islamic world: Bou Inania and el-Attarine in Fez, carved in stucco, cedar and zellige. Under the Marinids, the famous Fez explorer Ibn Battuta completed his pilgrimage and 120,000 km journey across Afro-Eurasia.</span></p>
                         </div>
                         <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
@@ -388,11 +386,11 @@
                             <ul class="space-y-1.5 text-sombre/80">
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.merinides.side.0.name">Bou Inania Madrasa</strong> <span data-i18n="history_page.periods.merinides.side.0.place">Fez.</span></span>
+                                    <span><a href="../fes.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.merinides.side.0.name">Bou Inania Madrasa</a> <span data-i18n="history_page.periods.merinides.side.0.place">Fez.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.merinides.side.1.name">Chellah Necropolis</strong> <span data-i18n="history_page.periods.merinides.side.1.place">Rabat.</span></span>
+                                    <span><a href="../destinations.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.merinides.side.1.name">Chellah Necropolis</a> <span data-i18n="history_page.periods.merinides.side.1.place">Rabat.</span></span>
                                 </li>
                             </ul>
                         </div>
@@ -406,18 +404,18 @@
                             <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider"><span data-i18n="history_page.periods.saadiens.date">1549 – 1659</span></span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-vert"><span data-i18n="history_page.periods.saadiens.title">6. The Saadian Dynasty: The Battle of the Three Kings and El Badi Palace</span></h2>
                             <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.saadiens.p1">From the Draa Valley in the south, the Sharifian Saadian dynasty rose by repelling Portuguese raids on the Atlantic coast. On 4 August 1578, at the famous Battle of the Three Kings (Wadi al-Makhazin), Sultan Abdelmalek routed the army of King Sebastian I of Portugal.</span></p>
-                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.saadiens.p2">Sultan Ahmed al-Mansur al-Dhahabi ("the Golden") ushered in great prosperity through the sugar trade and the Timbuktu expedition. He built the sumptuous El Badi Palace and the sublime Saadian Tombs in Iraqi marble and carved stucco in Marrakech.</span></p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.saadiens.p2">Sultan Ahmed al-Mansur al-Dhahabi ("the Golden") ushered in great prosperity through the sugar trade and the Timbuktu expedition. He built the sumptuous El Badi Palace and the sublime Saadian Tombs in Iraqi marble and carved stucco in <a href="../marrakech.html" class="text-vert font-semibold underline hover:text-sable transition">Marrakech</a>.</span></p>
                         </div>
                         <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
                             <span class="font-bold text-vert uppercase text-[11px] block"><span data-i18n="history_page.periods.saadiens.side_title">Saadian Monuments</span></span>
                             <ul class="space-y-1.5 text-sombre/80">
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.saadiens.side.0.name">Saadian Tombs</strong> <span data-i18n="history_page.periods.saadiens.side.0.place">Marrakech.</span></span>
+                                    <span><a href="../marrakech.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.saadiens.side.0.name">Saadian Tombs</a> <span data-i18n="history_page.periods.saadiens.side.0.place">Marrakech.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.saadiens.side.1.name">El Badi Palace</strong> <span data-i18n="history_page.periods.saadiens.side.1.place">Majestic ruins.</span></span>
+                                    <span><a href="../marrakech.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.saadiens.side.1.name">El Badi Palace</a> <span data-i18n="history_page.periods.saadiens.side.1.place">Majestic ruins.</span></span>
                                 </li>
                             </ul>
                         </div>
@@ -431,7 +429,7 @@
                             <span class="inline-block bg-sable/15 text-sable font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider"><span data-i18n="history_page.periods.alaouites.date">1666 – Present</span></span>
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-vert"><span data-i18n="history_page.periods.alaouites.title">7. The Alaouite Dynasty: From Moulay Ismail to the Modern Kingdom</span></h2>
                             <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.alaouites.p1">From the Tafilalet (Rissani), the Alaouite dynasty has ruled Morocco since the 17th century. Sultan Moulay Ismail (1672–1727), a contemporary of Louis XIV, made Meknes his imperial capital, with vast walls, granaries (Heri es-Souani) and the monumental Bab Mansour gate.</span></p>
-                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.alaouites.p2">After the Franco-Spanish Protectorate (1912–1956), King Mohammed V led the country to Independence. His son Hassan II consolidated territorial unity and built the great mosque of Casablanca. Today, under HM King Mohammed VI, Morocco combines infrastructure modernization (Al Boraq high-speed rail, Noor solar complex, global ports) with rigorous preservation of its craft and architectural heritage.</span></p>
+                            <p class="text-xs sm:text-sm text-sombre/80 leading-relaxed"><span data-i18n="history_page.periods.alaouites.p2">After the Franco-Spanish Protectorate (1912–1956), King Mohammed V led the country to Independence. His son Hassan II consolidated territorial unity and built the great mosque of <a href="../casablanca.html" class="text-vert font-semibold underline hover:text-sable transition">Casablanca</a>. Today, under HM King Mohammed VI, Morocco combines infrastructure modernization (Al Boraq high-speed rail, Noor solar complex, global ports) with rigorous preservation of its craft and architectural heritage.</span></p>
                         </div>
                         <div class="w-full md:w-64 bg-creme rounded-2xl p-4 border border-sable/20 text-xs shrink-0 space-y-2">
                             <span class="font-bold text-vert uppercase text-[11px] block"><span data-i18n="history_page.periods.alaouites.side_title">Alaouite Imperial City</span></span>
@@ -442,11 +440,11 @@
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.alaouites.side.1.name">Mohammed V Mausoleum</strong> <span data-i18n="history_page.periods.alaouites.side.1.place">Rabat.</span></span>
+                                    <span><a href="../destinations.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.alaouites.side.1.name">Mohammed V Mausoleum</a> <span data-i18n="history_page.periods.alaouites.side.1.place">Rabat.</span></span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <svg class="w-4 h-4 text-sable shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-                                    <span><strong data-i18n="history_page.periods.alaouites.side.2.name">Hassan II Mosque</strong> <span data-i18n="history_page.periods.alaouites.side.2.place">Casablanca.</span></span>
+                                    <span><a href="../casablanca.html" class="font-bold text-vert hover:underline" data-i18n="history_page.periods.alaouites.side.2.name">Hassan II Mosque</a> <span data-i18n="history_page.periods.alaouites.side.2.place">Casablanca.</span></span>
                                 </li>
                             </ul>
                         </div>
@@ -461,7 +459,7 @@
                     <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="history_page.banner.badge">Follow in the Footsteps of the Dynasties</span>
                     <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-1 leading-tight" data-i18n="history_page.banner.title">Explore Morocco's 4 Imperial Cities</h3>
                     <p class="text-creme/80 mt-2 text-sm leading-relaxed">
-                        <span data-i18n="history_page.banner.desc">Book a turnkey circuit to visit Fez, Marrakech, Rabat and Meknes with certified historian guides.</span>
+                        <span data-i18n="history_page.banner.desc">Book a turnkey circuit to visit <a href="../fes.html" class="text-sable underline font-semibold">Fez</a>, <a href="../marrakech.html" class="text-sable underline font-semibold">Marrakech</a>, <a href="../destinations.html" class="text-sable underline font-semibold">Rabat</a> and Meknes with certified historian guides.</span>
                     </p>
                 </div>
                 <div class="w-full md:w-auto shrink-0 z-10">
@@ -487,7 +485,7 @@
                             <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         </button>
                         <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                            <span data-i18n="history_page.faq.a1">The four imperial cities chosen as capitals by successive ruling dynasties are Fez (Idrisids, Marinids), Marrakech (Almoravids, Almohads, Saadians), Meknes (Alaouites under Moulay Ismail) and Rabat (Almohads and current capital under the Alaouites).</span>
+                            <span data-i18n="history_page.faq.a1">The four imperial cities chosen as capitals by successive ruling dynasties are <a href="../fes.html" class="text-vert font-semibold underline hover:text-sable transition">Fez</a> (Idrisids, Marinids), <a href="../marrakech.html" class="text-vert font-semibold underline hover:text-sable transition">Marrakech</a> (Almoravids, Almohads, Saadians), Meknes (Alaouites under Moulay Ismail) and Rabat (Almohads and current capital under the Alaouites).</span>
                         </div>
                     </div>
 
@@ -507,7 +505,7 @@
                             <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         </button>
                         <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                            <span data-i18n="history_page.faq.a3">It is Al Quaraouiyine University in the Fez medina, founded in 859 by Fatima al-Fihriya.</span>
+                            <span data-i18n="history_page.faq.a3">It is Al Quaraouiyine University in the <a href="../fes.html" class="text-vert font-semibold underline hover:text-sable transition">Fez</a> medina, founded in 859 by Fatima al-Fihriya.</span>
                         </div>
                     </div>
                 </div>
@@ -567,7 +565,6 @@
                 <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
                 <li><a class="hover:text-white transition" href="../programmes/index.html" data-i18n="footer.link_itineraries">Circuits & Itineraries</a></li>
                 <li><a class="hover:text-white transition" href="../blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
-
                 <li><a class="hover:text-white transition font-semibold text-sable" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
             </ul>
         </div>
@@ -597,7 +594,6 @@
     </div>
 </footer>
 
-    
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const langButton = document.getElementById('lang-menu-button');

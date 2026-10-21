@@ -1,0 +1,150 @@
+import os, glob, re
+
+def get_perfect_template_html(title, depth):
+    prefix = "../" * depth
+    return f"""<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} — MoroccoTripMap</title>
+    <link rel="stylesheet" href="{prefix}css/style.css">
+</head>
+<body class="bg-creme text-vert font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- HEADER OFFICIEL AVEC MENU BURGER & SÉLECTEUR DE LANGUE -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-creme/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <button id="mobile-menu-button" class="p-2 rounded-xl text-vert hover:bg-creme/50 transition focus:outline-none" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Sélecteur de langue -->
+                <div class="relative">
+                    <button id="lang-menu-button" class="flex items-center gap-2 bg-creme/40 border border-creme/60 px-3 py-1.5 rounded-xl text-xs font-semibold text-vert hover:bg-creme/80 transition">
+                        <span id="current-lang-label">FR</span>
+                        <svg class="w-4 h-4 text-vert/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="lang-menu-dropdown" class="hidden absolute left-0 mt-2 w-32 bg-white rounded-2xl shadow-xl border border-creme/40 py-2 z-50">
+                        <button data-lang="fr" class="w-full text-left px-4 py-2 text-xs font-medium text-vert hover:bg-creme/30 transition">Français</button>
+                        <button data-lang="en" class="w-full text-left px-4 py-2 text-xs font-medium text-vert hover:bg-creme/30 transition">English</button>
+                        <button data-lang="es" class="w-full text-left px-4 py-2 text-xs font-medium text-vert hover:bg-creme/30 transition">Español</button>
+                        <button data-lang="ar" class="w-full text-left px-4 py-2 text-xs font-medium text-vert hover:bg-creme/30 transition">العربية</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGO OFFICIEL MOROCCOTRIPMAP -->
+            <a href="{prefix}index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full bg-vert flex items-center justify-center text-sable shadow-sm">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-vert">Morocco<span class="text-sable">TripMap</span></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- SECTION PRINCIPALE (STYLE PHOTO 2) -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-12 text-center max-w-3xl mx-auto w-full">
+        <!-- Sur-titre -->
+        <span class="text-xs font-semibold text-sable uppercase tracking-widest mb-2" data-i18n="placeholder.subtitle">Guide Touristique</span>
+        
+        <!-- Nom de la destination / lieu -->
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-vert mb-3 tracking-tight">{title}</h1>
+        
+        <!-- Sous-titre descriptif -->
+        <p class="text-sm text-vert/70 mb-8 max-w-lg" data-i18n="placeholder.description">Découvrez le patrimoine, la culture et les meilleurs endroits à visiter.</p>
+
+        <!-- Carte centrale blanche épurée -->
+        <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-creme/50 w-full mb-8">
+            <h2 class="text-xl font-bold text-vert mb-3" data-i18n="placeholder.status_title">Page en cours d'élaboration</h2>
+            <p class="text-xs text-gray-500 leading-relaxed max-w-md mx-auto" data-i18n="placeholder.status_desc">
+                Nous préparons actuellement ce contenu. Revenez bientôt ou poursuivez votre exploration des destinations en attendant.
+            </p>
+        </div>
+
+        <!-- Boutons d'action côte à côte -->
+        <div class="flex flex-row items-center justify-center gap-4 w-full">
+            <a href="{prefix}destinations.html" class="bg-vert text-creme font-semibold px-6 py-3 rounded-2xl hover:bg-vert/90 transition text-xs shadow-sm" data-i18n="placeholder.btn_explore">
+                Explorer les destinations
+            </a>
+            <a href="{prefix}index.html" class="bg-white text-vert font-semibold px-6 py-3 rounded-2xl border border-creme/80 hover:bg-creme/30 transition text-xs shadow-sm" data-i18n="placeholder.btn_home">
+                Retour à l'accueil
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER ENRICHI & DIVERSIFIÉ -->
+    <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
+                <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
+                    Discover. Plan. Experience Morocco.<br/>
+                    The premier tourism directory and cultural travel guide for visitors exploring Morocco.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.recommended_title">Pages Recommandées</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="{prefix}marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
+                    <li><a class="hover:text-white transition" href="{prefix}chefchaouen.html" data-i18n="footer.link_chefchaouen">Chefchaouen Blue City</a></li>
+                    <li><a class="hover:text-white transition" href="{prefix}fes.html" data-i18n="footer.link_fes">Fes Ancient Medina</a></li>
+                    <li><a class="hover:text-white transition font-semibold text-sable" href="{prefix}destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Catégories de Voyage</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="{prefix}riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
+                    <li><a class="hover:text-white transition" href="{prefix}gastronomy/index.html" data-i18n="footer.link_restaurants">Moroccan Gastronomy & Food</a></li>
+                    <li><a class="hover:text-white transition" href="{prefix}experiences/index.html" data-i18n="footer.link_experiences">Desert Tours & Activities</a></li>
+                    <li><a class="hover:text-white transition" href="{prefix}transport/index.html" data-i18n="footer.link_transport">Transport & Rental Cars</a></li>
+                    <li><a class="hover:text-white transition" href="{prefix}blog/index.html" data-i18n="footer.link_blog">Blog Voyage & Conseils</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
+                <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
+                <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
+                    @moroccotripmap
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
+            <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
+            <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
+        </div>
+    </footer>
+
+    <script src="{prefix}js/i18n.js"></script>
+</body>
+</html>"""
+
+# Scan et remplacement de toutes les pages temporaires
+html_files = glob.glob("**/*.html", recursive=True)
+updated_count = 0
+
+for filepath in html_files:
+    if "node_modules" in filepath:
+        continue
+    
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    # Identification des pages temporaires créées précédemment
+    if "Bientôt disponible" in content or "Page en cours d'élaboration" in content:
+        dir_name = os.path.dirname(filepath)
+        file_name_core = os.path.splitext(os.path.basename(filepath))[0]
+        readable_title = file_name_core.replace("-", " ").capitalize()
+        depth = filepath.replace("\\", "/").count("/")
+        
+        new_html = get_perfect_template_html(readable_title, depth)
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(new_html)
+        updated_count += 1
+
+print(f"{updated_count} pages temporaires re-générées selon le design exact de la photo 2 !")

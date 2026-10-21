@@ -72,6 +72,8 @@
     <a class="hover:text-vert transition" href="../contact.html" data-i18n="nav.contact">Contact</a>
 </nav>
 <div class="flex items-center gap-2 sm:gap-4">
+
+<!-- Custom Language Dropdown Selector avec Drapeaux SVG -->
 <div class="relative inline-block text-left">
   <button id="lang-menu-button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="bg-white border border-sable/20 hover:border-sable text-sm font-semibold rounded-xl px-3 py-2 flex items-center gap-2 text-sombre transition shadow-sm" type="button">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
@@ -79,42 +81,42 @@
     <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
   </button>
   <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white rounded-xl shadow-lg border border-sable/15 py-1 z-50">
-    <button data-lang="en" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">English</button>
-    <button data-lang="fr" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">Français</button>
-    <button data-lang="es" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">Español</button>
-    <button data-lang="ar" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">العربية</button>
+    <button data-lang="en" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg> English
+    </button>
+    <button data-lang="fr" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg> Français
+    </button>
+    <button data-lang="es" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg> Español
+    </button>
+    <button data-lang="ar" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg> العربية
+    </button>
   </div>
 </div>
+
+<!-- Bouton Hamburger -->
 <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition" type="button">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
 </div>
 </div>
-
-<div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
-    <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../destinations.html">
-        <span data-i18n="nav.cities">Cities & Destinations</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../blog/index.html">
-        <span data-i18n="nav.blog">Blog</span>
-    </a>
-    </nav>
 </div>
 </header>
 
 <main class="flex-grow">
 <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-  <span class="text-xs font-bold text-sable uppercase tracking-wider">Guide Touristique</span>
+  <span class="text-xs font-bold text-sable uppercase tracking-wider">Travel Guide</span>
   <h1 class="text-4xl font-bold text-vert mt-2">Tanger</h1>
-  <p class="text-lg text-sombre/70 mt-4">Explorez les richesses de cette destination</p>
+  <p class="text-lg text-sombre/70 mt-4">Discover the culture, heritage, and best places to visit.</p>
   <div class="mt-10 bg-white rounded-2xl border border-sable/10 shadow-sm p-8">
-    <h2 class="text-xl font-bold text-vert">Page en cours d'élaboration</h2>
-    <p class="text-sm text-sombre/70 mt-2">Nous préparons actuellement ce contenu. Revenez bientôt, ou poursuivez votre exploration des destinations dans l'andant.</p>
+    <h2 class="text-xl font-bold text-vert">Page in preparation</h2>
+    <p class="text-sm text-sombre/70 mt-2">We are still writing this content. Check back soon, or keep exploring the destinations in the meantime.</p>
   </div>
   <div class="mt-8 flex flex-wrap justify-center gap-3">
-    <a href="../destinations.html" class="px-5 py-2.5 rounded-xl bg-vert text-white font-semibold text-sm hover:opacity-90 transition">Explorer les destinations</a>
-    <a href="../index.html" class="px-5 py-2.5 rounded-xl bg-white border border-sable/20 text-sombre font-semibold text-sm hover:border-vert transition">Retour à l'accueil</a>
+    <a href="../destinations.html" class="px-5 py-2.5 rounded-xl bg-vert text-white font-semibold text-sm hover:opacity-90 transition">Explore destinations</a>
+    <a href="../index.html" class="px-5 py-2.5 rounded-xl bg-white border border-sable/20 text-sombre font-semibold text-sm hover:border-vert transition">Back to home</a>
   </div>
 </section>
 </main>
@@ -164,13 +166,5 @@
 
 <script src="../js/i18n.js"></script>
 <script src="../js/search.js"></script>
-<script>
-    function toggleMobileCategories() {
-        const dropdown = document.getElementById('mobile-categories-dropdown');
-        const arrow = document.getElementById('categories-arrow');
-        if (dropdown) dropdown.classList.toggle('hidden');
-        if (arrow) arrow.classList.toggle('rotate-180');
-    }
-</script>
 </body>
 </html>

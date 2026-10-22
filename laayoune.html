@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 1 1 0 6.76Z'/></svg>"/>
 
   <!-- SEO & Metadata -->
   <title data-i18n="laayoune_page.seo.title">Laâyoune Travel Guide 2026 | Sahara, Dunes & Atlantic Coast | MoroccoTripMap</title>
@@ -269,7 +269,7 @@
  </div>
  </section>
 
- <!-- Must-Visit Places Section -->
+ <!-- Must-Visit Places Section (Cartes avec liens vers sous-pages) -->
  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
  <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
  <div>
@@ -279,101 +279,129 @@
  <p class="text-sm text-sombre/70 max-w-md" data-i18n="laayoune_page.places.subtitle">Monuments, Atlantic beaches, desert oases, and vibrant local markets.</p>
  </div>
  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Place Mechouar -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="place-mechouar-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Place Mechouar Laayoune" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.jemaa.tag">Monument</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.jemaa.title">Place Mechouar</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="place-mechouar-laayoune.html" data-i18n="laayoune_page.places.jemaa.title">Place Mechouar</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.jemaa.desc">The landmark monumental square lined with palatial Sahrawi gates and lush gardens.</p>
                 </div>
             </div>
 
+            <!-- Foum El Oued Beach -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="foum-el-oued-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Foum El Oued Beach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.majorelle.tag">Coast & Beach</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.majorelle.title">Foum El Oued Beach</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="foum-el-oued-laayoune.html" data-i18n="laayoune_page.places.majorelle.title">Foum El Oued Beach</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.majorelle.desc">A long expanse of Atlantic sandy coastline ideal for seaside walks and fresh air.</p>
                 </div>
             </div>
 
+            <!-- El Marsa Port -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="port-el-marsa-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Port of El Marsa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1555881403-32fb2e4c8e2e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.bahia.tag">Port & Seafood</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.bahia.title">El Marsa Port</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="port-el-marsa-laayoune.html" data-i18n="laayoune_page.places.bahia.title">El Marsa Port</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.bahia.desc">Bustling fishing port known for daily ocean catches and grilled sardines.</p>
                 </div>
             </div>
 
+            <!-- Saguia el-Hamra -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="saguia-el-hamra-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Saguia el-Hamra Oasis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.ben_youssef.tag">Nature & Valley</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.ben_youssef.title">Saguia el-Hamra</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="saguia-el-hamra-laayoune.html" data-i18n="laayoune_page.places.ben_youssef.title">Saguia el-Hamra</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.ben_youssef.desc">Historic river valley oasis featuring date palm groves and surrounding desert landscapes.</p>
                 </div>
             </div>
 
+            <!-- Souk Soune -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="souk-soune-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Souk Soune Traditional Market" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.saadian.tag">Culture & Craft</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.saadian.title">Souk Soune</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="souk-soune-laayoune.html" data-i18n="laayoune_page.places.saadian.title">Souk Soune</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.saadian.desc">Traditional bazaar with Sahrawi silver crafts, camel leather goods, and colorful melhfa fabrics.</p>
                 </div>
             </div>
 
+            <!-- Quartier Espagnol & Cathédrale -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="quartier-espagnol-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Spanish Cathedral Laayoune" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.elbadi.tag">History</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.elbadi.title">Spanish Quarter & Cathedral</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="quartier-espagnol-laayoune.html" data-i18n="laayoune_page.places.elbadi.title">Spanish Quarter & Cathedral</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.elbadi.desc">Historic colonial architecture standing in contrast with modern desert buildings.</p>
                 </div>
             </div>
 
+            <!-- Mosquée Moulay Abdellah -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="mosquee-moulay-abdellah-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Mosquée Moulay Abdellah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1588609715324-78072fc77cee?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.jardin_menara.tag">Architecture</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.jardin_menara.title">Moulay Abdellah Mosque</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="mosquee-moulay-abdellah-laayoune.html" data-i18n="laayoune_page.places.jardin_menara.title">Moulay Abdellah Mosque</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.jardin_menara.desc">An emblem of Islamic architecture with modern Sahrawi decorative touches.</p>
                 </div>
             </div>
 
+            <!-- Dunes de Lemsid -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="dunes-lemsid-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Dunes de Lemsid" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.dar_el_bacha.tag">Desert Dunes</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.dar_el_bacha.title">Lemsid Dune Sea</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="dunes-lemsid-laayoune.html" data-i18n="laayoune_page.places.dar_el_bacha.title">Lemsid Dune Sea</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.dar_el_bacha.desc">Majestic golden sand dunes on the outskirts of the city ideal for sunset watching.</p>
                 </div>
             </div>
 
+            <!-- Place Oulad Tedrarag -->
             <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="relative h-48 overflow-hidden">
+                <a href="place-oulad-tedrarag-laayoune.html" class="block relative h-48 overflow-hidden">
                     <img alt="Parc Municipal Laayoune" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1588609715324-78072fc77cee?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="laayoune_page.places.koutoubia.tag">Gardens</span>
-                </div>
+                </a>
                 <div class="p-5 flex flex-col flex-grow">
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="laayoune_page.places.koutoubia.title">Place Oulad Tedrarag</h3>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">
+                        <a href="place-oulad-tedrarag-laayoune.html" data-i18n="laayoune_page.places.koutoubia.title">Place Oulad Tedrarag</a>
+                    </h3>
                     <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="laayoune_page.places.koutoubia.desc">Lush palm park providing cool shade and evening family promenades.</p>
                 </div>
             </div>
@@ -720,16 +748,12 @@
  </main>
 
  <!-- Footer -->
-<footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
+ <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-        <!-- À propos -->
         <div>
             <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-            <p class="text-xs text-creme/80 leading-relaxed whitespace-pre-line" data-i18n="footer.about_text">
-                Discover. Plan. Experience Morocco.<br/>Your ultimate directory for exploring Moroccan culture and destinations.
-            </p>
+            <p class="text-xs text-creme/80 leading-relaxed whitespace-pre-line" data-i18n="footer.about_text">Discover. Plan. Experience Morocco.<br/>Your ultimate directory for exploring Moroccan culture and destinations.</p>
         </div>
-        <!-- Destinations principales -->
         <div>
             <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.destinations_title">Top Destinations</h4>
             <ul class="text-xs space-y-2 text-creme/80">
@@ -740,7 +764,6 @@
                 <li><a class="hover:text-white transition font-semibold text-sable" href="destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
             </ul>
         </div>
-        <!-- Catégories -->
         <div>
             <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Categories</h4>
             <ul class="text-xs space-y-2 text-creme/80">
@@ -750,14 +773,12 @@
                 <li><a class="hover:text-white transition" href="transport/index.html" data-i18n="footer.link_transport">Transport & Private Drivers</a></li>
             </ul>
         </div>
-        <!-- Réseaux sociaux & YouTube -->
         <div>
             <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
             <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Watch our video guides on YouTube:</p>
             <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" target="_blank">@moroccotripmap</a>
         </div>
     </div>
-    <!-- Copyright -->
     <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
         <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
         <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" target="_blank">Kamliseo</a></p>
@@ -834,4 +855,4 @@
  <script src="js/i18n.js"></script>
  <script src="js/search.js"></script>
 </body>
-</html>
+   </html>

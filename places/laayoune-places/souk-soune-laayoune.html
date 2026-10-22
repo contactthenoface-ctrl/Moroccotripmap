@@ -24,7 +24,16 @@
 <link rel="stylesheet" href="../../css/style.css">
 <script>tailwind.config={theme:{extend:{colors:{creme:'#F9F6F0',vert:'#185336',sable:'#C29B62',sombre:'#1A1A1A'},borderRadius:{'xl':'1rem','2xl':'1.5rem','3xl':'2rem'}}}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<style>body{font-family:'Outfit',sans-serif}</style>
+<style>body{font-family:'Outfit',sans-serif}
+        /* Carrousel galerie (responsive, swipe natif via scroll-snap) */
+        .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .carousel-dot { width: 10px; height: 10px; border-radius: 9999px; background: rgba(194, 155, 98, 0.35); transition: 0.2s; border: 0; padding: 0; cursor: pointer; }
+        .carousel-dot.active { background: #185336; width: 26px; }
+        .carousel-btn:focus-visible, .carousel-dot:focus-visible, .carousel-track:focus-visible { outline: 2px solid #185336; outline-offset: 2px; }
+        @media (prefers-reduced-motion: reduce) { .carousel-track { scroll-behavior: auto !important; } }
+
+    </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
 <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10">
@@ -83,7 +92,43 @@
 <div><span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="laayoune_souk.info.area_label">Where</span><span class="text-base font-bold" data-i18n="laayoune_souk.info.area_val">Central Laâyoune</span></div>
 </div>
 </div>
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Gallery Carousel -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <div class="mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="laayoune_souk.gallery.badge">Gallery</span>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="laayoune_souk.gallery.title">Gallery</h2>
+                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="laayoune_souk.gallery.subtitle">Swipe through the photos.</p>
+            </div>
+            <div id="souk-carousel" class="relative max-w-5xl mx-auto" role="region" aria-roledescription="carousel" aria-label="Souk Soune photo gallery">
+                <div class="carousel-track no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl shadow-sm border border-sable/10" tabindex="0">
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="1 / 5">
+                        <img alt="Colourful melhfa fabrics on display" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="eager" decoding="async" src="https://images.unsplash.com/photo-1555529902-526909daca8b?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_souk.gallery.s1.caption">Colourful melhfa fabrics on display</figcaption>
+                    </figure>
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="2 / 5">
+                        <img alt="Sahrawi silver jewellery and traditional designs" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1590073242678-70ee3fc28f81?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_souk.gallery.s2.caption">Sahrawi silver jewellery and traditional designs</figcaption>
+                    </figure>
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="3 / 5">
+                        <img alt="Camel leather goods and local crafts" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_souk.gallery.s3.caption">Camel leather goods and local crafts</figcaption>
+                    </figure>
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="4 / 5">
+                        <img alt="Busy market lanes and local shoppers" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_souk.gallery.s4.caption">Busy market lanes and local shoppers</figcaption>
+                    </figure>
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="5 / 5">
+                        <img alt="Spices, textiles and everyday goods" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1539037116277-4db20889fcd6?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_souk.gallery.s5.caption">Spices, textiles and everyday goods</figcaption>
+                    </figure>
+                </div>
+                <button type="button" class="carousel-btn carousel-prev absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-vert rounded-full p-2 shadow-md transition" aria-label="Previous photo"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></button>
+                <button type="button" class="carousel-btn carousel-next absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-vert rounded-full p-2 shadow-md transition" aria-label="Next photo"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                <div class="carousel-dots flex justify-center items-center gap-2 mt-4" role="tablist" aria-label="Choose a photo"></div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div class="max-w-3xl">
 <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="laayoune_souk.overview.title">The Everyday Heart of Sahrawi Commerce</h2>
 <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="laayoune_souk.overview.p1">Souk Soune is one of the most important fishing harbours in Morocco and a major economic engine for the southern provinces. Every day, coastal and artisanal boats land hundreds of tonnes of fish – sardines, octopus, cuttlefish, sole and many other Atlantic species.</p>
@@ -127,10 +172,26 @@
 <a class="text-sm font-semibold text-sable hover:text-vert" href="../../laayoune.html" data-i18n="laayoune_souk.nearby.back">← Back to Laâyoune Guide</a>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="place-mechouar-laayoune.html"><span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3">Monument</span><h3 class="text-lg font-bold text-sombre group-hover:text-vert">Place Mechouar</h3><p class="text-xs text-sombre/70 mt-2">The landmark monumental square lined with palatial Sahrawi gates.</p></a>
-<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="foum-el-oued-laayoune.html"><span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3">Coast &amp; Beach</span><h3 class="text-lg font-bold text-sombre group-hover:text-vert">Foum El Oued Beach</h3><p class="text-xs text-sombre/70 mt-2">Long Atlantic sandy coastline ideal for seaside walks.</p></a>
-<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="saguia-el-hamra-laayoune.html"><span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3">Nature &amp; Valley</span><h3 class="text-lg font-bold text-sombre group-hover:text-vert">Saguia el-Hamra</h3><p class="text-xs text-sombre/70 mt-2">Historic river valley oasis with date palm groves.</p></a>
-<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="souk-soune-laayoune.html"><span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3">Culture &amp; Craft</span><h3 class="text-lg font-bold text-sombre group-hover:text-vert">Souk Soune</h3><p class="text-xs text-sombre/70 mt-2">Traditional bazaar with Sahrawi silver crafts and melhfa.</p></a>
+<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="place-mechouar-laayoune.html">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_souk.nearby.card1_tag">Monument</span>
+<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_souk.nearby.card1_title">Place Mechouar</h3>
+<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_souk.nearby.card1_desc">The landmark monumental square lined with palatial Sahrawi gates.</p>
+</a>
+<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="foum-el-oued-laayoune.html">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_souk.nearby.card2_tag">Coast & Beach</span>
+<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_souk.nearby.card2_title">Foum El Oued Beach</h3>
+<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_souk.nearby.card2_desc">Long Atlantic sandy coastline ideal for seaside walks.</p>
+</a>
+<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="quartier-espagnol-laayoune.html">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_souk.nearby.card3_tag">Colonial</span>
+<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_souk.nearby.card3_title">Quartier Espagnol</h3>
+<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_souk.nearby.card3_desc">Original Spanish colonial quarter with characteristic dome houses.</p>
+</a>
+<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="mosquee-moulay-abdellah-laayoune.html">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_souk.nearby.card4_tag">Spiritual</span>
+<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_souk.nearby.card4_title">Mosquée Moulay Abdellah</h3>
+<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_souk.nearby.card4_desc">Important modern mosque with a striking minaret.</p>
+</a>
 </div>
 </section>
 <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
@@ -204,6 +265,53 @@
                 changeLanguage(lang);
             }
         }
+    </script>
+
+    
+    <!-- Carrousel galerie -->
+    <script>
+        (function () {
+            var root = document.getElementById('souk-carousel');
+            if (!root) return;
+            var track = root.querySelector('.carousel-track');
+            var slides = root.querySelectorAll('.carousel-slide');
+            var dotsBox = root.querySelector('.carousel-dots');
+            var dots = [];
+
+            slides.forEach(function (_, i) {
+                var d = document.createElement('button');
+                d.type = 'button';
+                d.className = 'carousel-dot';
+                d.setAttribute('role', 'tab');
+                d.setAttribute('aria-label', 'Photo ' + (i + 1));
+                d.addEventListener('click', function () { goTo(i); });
+                dotsBox.appendChild(d);
+                dots.push(d);
+            });
+
+            function current() { return Math.round(track.scrollLeft / track.clientWidth); }
+            function goTo(i) {
+                i = Math.max(0, Math.min(slides.length - 1, i));
+                track.scrollTo({ left: i * track.clientWidth });
+            }
+            function sync() {
+                var c = current();
+                dots.forEach(function (d, i) {
+                    d.classList.toggle('active', i === c);
+                    d.setAttribute('aria-selected', i === c ? 'true' : 'false');
+                });
+            }
+
+            root.querySelector('.carousel-prev').addEventListener('click', function () { goTo(current() - 1); });
+            root.querySelector('.carousel-next').addEventListener('click', function () { goTo(current() + 1); });
+            track.addEventListener('scroll', function () { window.requestAnimationFrame(sync); }, { passive: true });
+            track.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(current() - 1); }
+                if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current() + 1); }
+            });
+            window.addEventListener('resize', function () { goTo(current()); });
+            sync();
+        })();
     </script>
 
     <script src="../../js/i18n.js"></script>

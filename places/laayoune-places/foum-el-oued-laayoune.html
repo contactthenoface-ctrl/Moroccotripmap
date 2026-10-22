@@ -258,6 +258,42 @@
         </div>
 
         <!-- Overview -->
+                <!-- Gallery Carousel -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <div class="mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="laayoune_foum.gallery.badge">Gallery</span>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="laayoune_foum.gallery.title">Gallery</h2>
+                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="laayoune_foum.gallery.subtitle">Swipe through the photos.</p>
+            </div>
+            <div id="foum-carousel" class="relative max-w-5xl mx-auto" role="region" aria-roledescription="carousel" aria-label="Foum El Oued Beach photo gallery">
+                <div class="carousel-track no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl shadow-sm border border-sable/10" tabindex="0">
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="1 / 5">
+                        <img alt="Wide Atlantic beach with fine sand and gentle waves" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="eager" decoding="async" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_foum.gallery.s1.caption">Wide Atlantic beach with fine sand and gentle waves</figcaption>
+                    </figure>
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="2 / 5">
+                        <img alt="Promenade and shaded areas along the coast" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149c?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_foum.gallery.s2.caption">Promenade and shaded areas along the coast</figcaption>
+                    </figure>
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="3 / 5">
+                        <img alt="Kitesurfers catching the steady Atlantic wind" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1502680390469-be75c86b3509?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_foum.gallery.s3.caption">Kitesurfers catching the steady Atlantic wind</figcaption>
+                    </figure>
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="4 / 5">
+                        <img alt="Golden hour light over the dunes and sea" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_foum.gallery.s4.caption">Golden hour light over the dunes and sea</figcaption>
+                    </figure>
+                    <figure class="carousel-slide relative shrink-0 w-full snap-center m-0" role="group" aria-roledescription="slide" aria-label="5 / 5">
+                        <img alt="Families enjoying the Blue Flag shoreline" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1519046904884-4511b0d9a6b6?auto=format&fit=crop&w=1600&q=80"/>
+                        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-sombre/80 to-transparent text-white text-xs sm:text-sm px-4 pt-10 pb-4" data-i18n="laayoune_foum.gallery.s5.caption">Families enjoying the Blue Flag shoreline</figcaption>
+                    </figure>
+                </div>
+                <button type="button" class="carousel-btn carousel-prev absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-vert rounded-full p-2 shadow-md transition" aria-label="Previous photo"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></button>
+                <button type="button" class="carousel-btn carousel-next absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-vert rounded-full p-2 shadow-md transition" aria-label="Next photo"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                <div class="carousel-dots flex justify-center items-center gap-2 mt-4" role="tablist" aria-label="Choose a photo"></div>
+            </div>
+        </section>
+
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="max-w-3xl">
                 <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="laayoune_foum.overview.title">The Atlantic Escape of the Moroccan Sahara</h2>
@@ -325,27 +361,27 @@
                 <a class="text-sm font-semibold text-sable hover:text-vert transition" href="../../laayoune.html" data-i18n="laayoune_foum.nearby.back">← Back to Laâyoune Guide</a>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="place-mechouar-laayoune.html">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3">Monument</span>
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Place Mechouar</h3>
-                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2">The landmark monumental square lined with palatial Sahrawi gates.</p>
-                </a>
-                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="port-el-marsa-laayoune.html">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3">Port &amp; Seafood</span>
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">El Marsa Port</h3>
-                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Bustling fishing port known for daily ocean catches and grilled sardines.</p>
-                </a>
-                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="saguia-el-hamra-laayoune.html">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3">Nature &amp; Valley</span>
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Saguia el-Hamra</h3>
-                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Historic river valley oasis featuring date palm groves.</p>
-                </a>
-                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="souk-soune-laayoune.html">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3">Culture &amp; Craft</span>
-                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition">Souk Soune</h3>
-                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2">Traditional bazaar with Sahrawi silver crafts and melhfa fabrics.</p>
-                </a>
-            </div>
+<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="place-mechouar-laayoune.html">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_foum.nearby.card1_tag">Monument</span>
+<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_foum.nearby.card1_title">Place Mechouar</h3>
+<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_foum.nearby.card1_desc">The landmark monumental square lined with palatial Sahrawi gates.</p>
+</a>
+<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="port-el-marsa-laayoune.html">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_foum.nearby.card2_tag">Port</span>
+<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_foum.nearby.card2_title">Port El Marsa</h3>
+<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_foum.nearby.card2_desc">Busy fishing port with the freshest Atlantic seafood.</p>
+</a>
+<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="saguia-el-hamra-laayoune.html">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_foum.nearby.card3_tag">Nature & Valley</span>
+<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_foum.nearby.card3_title">Saguia el-Hamra</h3>
+<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_foum.nearby.card3_desc">Historic river valley oasis with date palm groves.</p>
+</a>
+<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="souk-soune-laayoune.html">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_foum.nearby.card4_tag">Culture & Craft</span>
+<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_foum.nearby.card4_title">Souk Soune</h3>
+<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_foum.nearby.card4_desc">Traditional bazaar with Sahrawi silver crafts and melhfa.</p>
+</a>
+</div>
         </section>
 
         <!-- FAQ -->
@@ -476,6 +512,53 @@
                 changeLanguage(lang);
             }
         }
+    </script>
+
+    
+    <!-- Carrousel galerie -->
+    <script>
+        (function () {
+            var root = document.getElementById('foum-carousel');
+            if (!root) return;
+            var track = root.querySelector('.carousel-track');
+            var slides = root.querySelectorAll('.carousel-slide');
+            var dotsBox = root.querySelector('.carousel-dots');
+            var dots = [];
+
+            slides.forEach(function (_, i) {
+                var d = document.createElement('button');
+                d.type = 'button';
+                d.className = 'carousel-dot';
+                d.setAttribute('role', 'tab');
+                d.setAttribute('aria-label', 'Photo ' + (i + 1));
+                d.addEventListener('click', function () { goTo(i); });
+                dotsBox.appendChild(d);
+                dots.push(d);
+            });
+
+            function current() { return Math.round(track.scrollLeft / track.clientWidth); }
+            function goTo(i) {
+                i = Math.max(0, Math.min(slides.length - 1, i));
+                track.scrollTo({ left: i * track.clientWidth });
+            }
+            function sync() {
+                var c = current();
+                dots.forEach(function (d, i) {
+                    d.classList.toggle('active', i === c);
+                    d.setAttribute('aria-selected', i === c ? 'true' : 'false');
+                });
+            }
+
+            root.querySelector('.carousel-prev').addEventListener('click', function () { goTo(current() - 1); });
+            root.querySelector('.carousel-next').addEventListener('click', function () { goTo(current() + 1); });
+            track.addEventListener('scroll', function () { window.requestAnimationFrame(sync); }, { passive: true });
+            track.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(current() - 1); }
+                if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current() + 1); }
+            });
+            window.addEventListener('resize', function () { goTo(current()); });
+            sync();
+        })();
     </script>
 
     <script src="../../js/i18n.js"></script>

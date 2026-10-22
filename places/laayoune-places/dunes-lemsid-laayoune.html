@@ -49,14 +49,27 @@
             <div class="flex items-center gap-2 sm:gap-4">
                 <div class="relative inline-block text-left" id="lang-menu-container">
                     <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm" id="lemsid-flag-btn"><clipPath id="lemsid-s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="lemsid-t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#lemsid-s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#lemsid-t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
                         <span id="current-lang-label">EN</span>
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden">
-                        <button onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" type="button">English</button>
-                        <button onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" type="button">Français</button>
-                        <button onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" type="button">Español</button>
-                        <button onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" type="button">العربية</button>
+                    <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-40 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden">
+                        <button onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="lemsid-s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="lemsid-t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#lemsid-s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#lemsid-t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                            English
+                        </button>
+                        <button onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>
+                            Français
+                        </button>
+                        <button onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>
+                            Español
+                        </button>
+                        <button onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>
+                            العربية
+                        </button>
                     </div>
                 </div>
                 <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" id="mobile-menu-btn" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition focus:outline-none" type="button">
@@ -181,25 +194,37 @@
 <a class="text-sm font-semibold text-sable hover:text-vert" href="../../laayoune.html" data-i18n="laayoune_lemsid.nearby.back">← Back to Laâyoune Guide</a>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="place-mechouar-laayoune.html">
-<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_lemsid.nearby.card1_tag">Monument</span>
-<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_lemsid.nearby.card1_title">Place Mechouar</h3>
-<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_lemsid.nearby.card1_desc">The landmark monumental square lined with palatial Sahrawi gates.</p>
+<a class="group bg-white rounded-2xl border border-sable/10 overflow-hidden flex flex-col hover:shadow-lg transition" href="place-mechouar-laayoune.html">
+<img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=300&q=80" alt="Place Mechouar" class="w-full h-28 object-cover group-hover:scale-105 transition duration-300" loading="lazy"/>
+<div class="p-4 flex flex-col flex-1">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-2" data-i18n="laayoune_lemsid.nearby.card1_tag">Monument</span>
+<h3 class="text-base font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_lemsid.nearby.card1_title">Place Mechouar</h3>
+<p class="text-xs text-sombre/70 mt-1.5 line-clamp-2" data-i18n="laayoune_lemsid.nearby.card1_desc">The landmark monumental square lined with palatial Sahrawi gates.</p>
+</div>
 </a>
-<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="saguia-el-hamra-laayoune.html">
-<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_lemsid.nearby.card2_tag">Nature & Valley</span>
-<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_lemsid.nearby.card2_title">Saguia el-Hamra</h3>
-<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_lemsid.nearby.card2_desc">Historic river valley oasis with date palm groves.</p>
+<a class="group bg-white rounded-2xl border border-sable/10 overflow-hidden flex flex-col hover:shadow-lg transition" href="saguia-el-hamra-laayoune.html">
+<img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=300&q=80" alt="Saguia el-Hamra" class="w-full h-28 object-cover group-hover:scale-105 transition duration-300" loading="lazy"/>
+<div class="p-4 flex flex-col flex-1">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-2" data-i18n="laayoune_lemsid.nearby.card2_tag">Nature & Valley</span>
+<h3 class="text-base font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_lemsid.nearby.card2_title">Saguia el-Hamra</h3>
+<p class="text-xs text-sombre/70 mt-1.5 line-clamp-2" data-i18n="laayoune_lemsid.nearby.card2_desc">Historic river valley oasis with date palm groves.</p>
+</div>
 </a>
-<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="foum-el-oued-laayoune.html">
-<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_lemsid.nearby.card3_tag">Coast & Beach</span>
-<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_lemsid.nearby.card3_title">Foum El Oued Beach</h3>
-<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_lemsid.nearby.card3_desc">Long Atlantic sandy coastline ideal for seaside walks.</p>
+<a class="group bg-white rounded-2xl border border-sable/10 overflow-hidden flex flex-col hover:shadow-lg transition" href="foum-el-oued-laayoune.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=300&q=80" alt="Foum El Oued Beach" class="w-full h-28 object-cover group-hover:scale-105 transition duration-300" loading="lazy"/>
+<div class="p-4 flex flex-col flex-1">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-2" data-i18n="laayoune_lemsid.nearby.card3_tag">Coast & Beach</span>
+<h3 class="text-base font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_lemsid.nearby.card3_title">Foum El Oued Beach</h3>
+<p class="text-xs text-sombre/70 mt-1.5 line-clamp-2" data-i18n="laayoune_lemsid.nearby.card3_desc">Long Atlantic sandy coastline ideal for seaside walks.</p>
+</div>
 </a>
-<a class="group bg-white rounded-2xl border border-sable/10 p-5 flex flex-col" href="port-el-marsa-laayoune.html">
-<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-3" data-i18n="laayoune_lemsid.nearby.card4_tag">Port</span>
-<h3 class="text-lg font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_lemsid.nearby.card4_title">Port El Marsa</h3>
-<p class="text-xs text-sombre/70 mt-2" data-i18n="laayoune_lemsid.nearby.card4_desc">Busy fishing port with the freshest Atlantic seafood.</p>
+<a class="group bg-white rounded-2xl border border-sable/10 overflow-hidden flex flex-col hover:shadow-lg transition" href="port-el-marsa-laayoune.html">
+<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=300&q=80" alt="Port El Marsa" class="w-full h-28 object-cover group-hover:scale-105 transition duration-300" loading="lazy"/>
+<div class="p-4 flex flex-col flex-1">
+<span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase mb-2" data-i18n="laayoune_lemsid.nearby.card4_tag">Port</span>
+<h3 class="text-base font-bold text-sombre group-hover:text-vert" data-i18n="laayoune_lemsid.nearby.card4_title">Port El Marsa</h3>
+<p class="text-xs text-sombre/70 mt-1.5 line-clamp-2" data-i18n="laayoune_lemsid.nearby.card4_desc">Busy fishing port with the freshest Atlantic seafood.</p>
+</div>
 </a>
 </div>
 </section>

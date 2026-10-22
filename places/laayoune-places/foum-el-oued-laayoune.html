@@ -718,7 +718,6 @@
                 langDropdown.classList.add('hidden');
             }
 
-            // Gestion dynamique du sens de lecture RTL/LTR pour l'arabe
             const htmlTag = document.documentElement;
             if (lang === 'ar') {
                 htmlTag.setAttribute('dir', 'rtl');
@@ -782,7 +781,12 @@
         })();
     </script>
 
-    <!-- Scripts externes avec chemins corrigés -->
+    <!-- Forçage du nom de fichier JSON avec des underscores -->
+    <script>
+        window.i18nOverrideFilename = "foum_el_oued_laayoune";
+    </script>
+
+    <!-- Scripts externes de traduction et recherche -->
     <script src="../../js/i18n.js"></script>
     <script src="../../js/search.js"></script>
 </body>

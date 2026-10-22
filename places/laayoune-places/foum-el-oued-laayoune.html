@@ -426,18 +426,58 @@
         </div>
     </footer>
 
+    
     <script>
-        function switchLanguage(lang) {
-            const langLabel = document.getElementById('current-lang-label');
-            if (langLabel) langLabel.textContent = lang.toUpperCase();
-            localStorage.setItem('preferred_lang', lang);
-            if (typeof changeLanguage === 'function') changeLanguage(lang);
+        function toggleMobileCategories() {
+            const dropdown = document.getElementById('mobile-categories-dropdown');
+            const arrow = document.getElementById('categories-arrow');
+            if (dropdown) {
+                dropdown.classList.toggle('hidden');
+                if (arrow) arrow.classList.toggle('rotate-180');
+            }
         }
+
         document.addEventListener('DOMContentLoaded', function () {
+            const langButton = document.getElementById('lang-menu-button');
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+
+            if (langButton && langDropdown) {
+                langButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                });
+                document.addEventListener('click', function(e) {
+                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.add('hidden');
+                    }
+                });
+            }
+
             const savedLang = localStorage.getItem('preferred_lang') || 'en';
             switchLanguage(savedLang);
         });
+
+        function switchLanguage(lang) {
+            const langLabel = document.getElementById('current-lang-label');
+            if (langLabel) {
+                langLabel.textContent = lang.toUpperCase();
+            }
+
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+            if (langDropdown) {
+                langDropdown.classList.add('hidden');
+            }
+
+            localStorage.setItem('preferred_lang', lang);
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(lang);
+            }
+        }
     </script>
+
     <script src="../../js/i18n.js"></script>
     <script src="../../js/search.js"></script>
 </body>

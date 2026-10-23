@@ -790,5 +790,10 @@
     
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>
+  <script>
+  window.onerror = function(msg, url, line) {
+    alert("Erreur JS : " + msg + " à la ligne " + line);
+  };
+</script>
 </body>
   </html>

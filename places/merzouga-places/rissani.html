@@ -207,7 +207,8 @@
 
         /* RTL / overflow safety (fixes blank half-page on Arabic mobile) */
         html, body { max-width: 100%; overflow-x: hidden; }
-        img, video, svg, iframe { max-width: 100%; height: auto; }
+        main img, .carousel-track img, footer img { max-width: 100%; height: auto; }
+        header img { max-height: 3.5rem; width: auto; height: auto; }
         .day-card h3 { border-inline-start: 4px solid #C29B62; border-left: none; padding-inline-start: 12px; padding-left: 0; }
         .step-item { padding-inline-start: 24px; padding-left: 0; }
         [dir="rtl"] .carousel-track { direction: ltr; } /* keep photo order LTR */
@@ -224,7 +225,7 @@
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
             <!-- Logo -->
             <a class="flex items-center gap-2 group shrink-0" href="../../index.html">
-                <img alt="MoroccoTripMap Logo" class="h-10 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../../images/logo.webp"/>
+                <img alt="MoroccoTripMap Logo" class="h-10 sm:h-14 w-auto max-h-14 max-w-[160px] object-contain shrink-0" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../../images/logo.webp"/>
             </a>
             
             <!-- Desktop Nav -->
@@ -362,7 +363,7 @@
                     <span>/</span>
                     <a class="hover:text-white transition" href="../../destinations.html" data-i18n="breadcrumb.destinations">Destinations</a>
                     <span>/</span>
-                    <a class="hover:text-white transition" href="../../merzouga.html" data-i18n="merzouga_page.name">Merzouga</a>
+                    <a class="hover:text-white transition" href="../../merzouga.html" data-i18n="merzouga_rissani_page.breadcrumb_parent">Merzouga</a>
                     <span>/</span>
                     <span class="text-white" data-i18n="merzouga_rissani_page.name">Rissani</span>
                 </div>

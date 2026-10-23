@@ -1,8 +1,9 @@
 {
   "seo": {
     "title": "Al Hoceima Port & Corniche | Harbour & Promenade | MoroccoTripMap",
-    "description": "Al Hoceima port and corniche: fishing harbour atmosphere, evening walks, seafood and practical tips.",
-    "keywords": "Al Hoceima port, corniche Al Hoceima, fishing harbour"
+    "description": "Visiting Port & Corniche in Al Hoceima? Best time, cafés, harbour access, safety tips and how long to stay.",
+    "og_title": "Al Hoceima Port & Corniche | Harbour & Promenade | MoroccoTripMap",
+    "og_description": "Al Hoceima port and corniche: fishing harbour atmosphere, evening walks, seafood and practical tips."
   },
   "name": "Port & Corniche",
   "hero_subtitle": "Working fishing harbour and evening seafront promenade in Al Hoceima.",
@@ -12,15 +13,38 @@
     "duration_label": "Suggested duration",
     "duration_val": "1 – 2 hours",
     "entry_label": "Entry",
-    "entry_val": "Free",
+    "entry_val": "Free public access",
     "area_label": "Location",
     "area_val": "Town seafront"
   },
   "overview": {
-    "title": "Daily life on the waterfront",
-    "p1": "The port and corniche show Al Hoceima as a working coastal town: fishing boats, evening walkers and simple restaurants facing the Mediterranean.",
-    "p2": "It is not a monumental harbour — come for atmosphere, a stroll after the beach and grilled fish near the water.",
-    "p3": "Sunset and early evening are the liveliest times. Combine with Quemado Beach for a full town-and-bay day."
+    "title": "Harbour and seafront promenade",
+    "p1": "The port and corniche are the everyday seafront of Al Hoceima — fishing boats, evening walks and simple seafood near the water.",
+    "p2": "It links town beach life with the working harbour. Ideal for a short stroll, photos at golden hour and a meal stop.",
+    "p3": "Combine easily with Quemado Beach on the same day."
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Port & Corniche through the day",
+    "subtitle": "When to go.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet start",
+      "duration": "Morning",
+      "desc": "Softer light and cooler air."
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Strong sun",
+      "duration": "Midday",
+      "desc": "High SPF and shade matter."
+    },
+    "3": {
+      "tag": "Late afternoon",
+      "title": "Best colour",
+      "duration": "Late afternoon",
+      "desc": "Warm light on cliffs and sea."
+    }
   },
   "gallery": {
     "badge": "Photo gallery",
@@ -42,39 +66,6 @@
       "caption": "Port & Corniche — 5"
     }
   },
-  "moods": {
-    "badge": "Timing",
-    "title": "Port & Corniche through the day",
-    "subtitle": "When to go.",
-    "1": {
-      "tag": "Morning",
-      "title": "Quiet start",
-      "desc": "Softer light and cooler air.",
-      "duration": "Morning"
-    },
-    "2": {
-      "tag": "Midday",
-      "title": "Strong sun",
-      "desc": "High SPF and shade matter.",
-      "duration": "Midday"
-    },
-    "3": {
-      "tag": "Late afternoon",
-      "title": "Best colour",
-      "desc": "Warm light on cliffs and sea.",
-      "duration": "Late afternoon"
-    }
-  },
-  "food": {
-    "title": "Food near Port & Corniche",
-    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
-    "li1": "Grilled fish near the port and corniche.",
-    "li2": "Simple cafés at Quemado and Sfiha in season.",
-    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
-    "li4": "Hotel restaurants if you stay on the bay.",
-    "li5": "Confirm opening hours outside peak summer.",
-    "p2": "Cash helps at small beach and village stops."
-  },
   "tips": {
     "title": "Practical tips for Port & Corniche",
     "1": {
@@ -82,22 +73,34 @@
       "desc": "Confirm taxi or transfer times from your stay."
     },
     "2": {
-      "title": "Sun & cliffs",
-      "desc": "High SPF, water and steady shoes on coastal paths."
+      "title": "Sun & conditions",
+      "desc": "High SPF, water and suitable footwear."
     },
     "3": {
       "title": "Respect",
-      "desc": "Stay on allowed paths in the national park; mind swimmers and boats."
+      "desc": "Stay on allowed paths; mind others and the environment."
     }
+  },
+  "food": {
+    "title": "Food near Port & Corniche",
+    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for outings.",
+    "p2": "Cash helps at small beach and village stops.",
+    "li1": "Grilled fish near the port and corniche.",
+    "li2": "Simple cafés at Quemado and Sfiha in season.",
+    "li3": "Carry water and snacks for park-coast sites.",
+    "li4": "Hotel restaurants if you stay on the bay.",
+    "li5": "Confirm opening hours outside peak summer."
   },
   "gyg": {
     "badge": "Tours & experiences",
     "title": "Tours linked to Port & Corniche",
-    "subtitle": "Options if you prefer a local operator.",
+    "subtitle": "Coast, park and boat options when available.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
     "t1": {
       "tag": "Coast",
       "title": "Bay orientation",
-      "desc": "Town beaches and corniche introduction."
+      "desc": "Introduction to the area and nearby viewpoints."
     },
     "t2": {
       "tag": "Park",
@@ -108,15 +111,18 @@
       "tag": "Boat",
       "title": "Coastal boat trip",
       "desc": "Cliffs and coves from the water when operators run."
-    },
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+    }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Al Hoceima",
+    "back": "← Back to the Al Hoceima guide"
   },
   "blog": {
     "badge": "From the blog",
     "title": "Related articles",
-    "all": "All articles →",
     "read": "Read article →",
+    "all": "All articles →",
     "a1": {
       "tag": "Planning",
       "title": "First time in Al Hoceima",
@@ -155,16 +161,6 @@
     "q5": {
       "question": "How long?",
       "answer": "One to two hours for a walk and a meal stop is enough for most visits."
-    }
-  },
-  "nearby": {
-    "badge": "Keep exploring",
-    "title": "More places in Al Hoceima",
-    "back": "← Back to the Al Hoceima guide"
-  },
-  "destinations": {
-    "al_hoceima": {
-      "name": "Al Hoceima"
     }
   }
 }

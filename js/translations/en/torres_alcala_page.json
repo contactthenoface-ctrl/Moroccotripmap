@@ -1,26 +1,50 @@
 {
   "seo": {
     "title": "Torres de Alcalá Al Hoceima | Watchtowers & Cliff Trails | MoroccoTripMap",
-    "description": "Torres de Alcalá near Al Hoceima: historic watchtowers, coastal walks, views and practical tips for the park shoreline.",
-    "keywords": "Torres de Alcalá, Al Hoceima, Rif watchtowers, coastal trails"
+    "description": "Visiting Torres de Alcalá in Al Hoceima? Best time, access, safety tips and how long to stay.",
+    "og_title": "Torres de Alcalá Al Hoceima | Watchtowers & Cliff Trails | MoroccoTripMap",
+    "og_description": "Torres de Alcalá near Al Hoceima: historic watchtowers, coastal walks, views and practical tips for the park shoreline."
   },
   "name": "Torres de Alcalá",
   "hero_subtitle": "Historic coastal watchtowers and trails with open views over Rif cliffs and the Mediterranean.",
   "info": {
     "best_time_label": "Best time",
-    "best_time_val": "Morning for cooler paths",
+    "best_time_val": "Morning preferred",
     "duration_label": "Suggested duration",
     "duration_val": "2 – 4 hours",
     "entry_label": "Entry",
-    "entry_val": "Free landscape; watch your step",
+    "entry_val": "Free / check local rules",
     "area_label": "Location",
-    "area_val": "Park coast area"
+    "area_val": "Park coast / west"
   },
   "overview": {
-    "title": "Towers above the sea",
-    "p1": "Torres de Alcalá refers to the historic coastal watchtowers and the surrounding cliff paths on the park shoreline — a heritage and viewpoint stop rather than a swimming beach.",
-    "p2": "Walks here reward you with wide Mediterranean horizons and a sense of how this coast was watched and worked for centuries.",
-    "p3": "Wear proper shoes, avoid cliff edges in wind, and carry water. Pair with Cala Iris for a full park-coast outing."
+    "title": "Watchtowers and cliff trails",
+    "p1": "Torres de Alcalá offers historic coastal watchtowers and trails with open views over Rif cliffs and the Mediterranean.",
+    "p2": "Short sections are moderate; exposure and uneven ground matter more than distance. Morning light and cooler air are best.",
+    "p3": "Pairs well with Cala Iris or Bades Bay on a longer park-coast day with a driver who knows the road."
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Torres de Alcalá through the day",
+    "subtitle": "When to go.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet start",
+      "duration": "Morning",
+      "desc": "Softer light and cooler air."
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Strong sun",
+      "duration": "Midday",
+      "desc": "High SPF and shade matter."
+    },
+    "3": {
+      "tag": "Late afternoon",
+      "title": "Best colour",
+      "duration": "Late afternoon",
+      "desc": "Warm light on cliffs and sea."
+    }
   },
   "gallery": {
     "badge": "Photo gallery",
@@ -42,39 +66,6 @@
       "caption": "Torres de Alcalá — 5"
     }
   },
-  "moods": {
-    "badge": "Timing",
-    "title": "Torres de Alcalá through the day",
-    "subtitle": "When to go.",
-    "1": {
-      "tag": "Morning",
-      "title": "Quiet start",
-      "desc": "Softer light and cooler air.",
-      "duration": "Morning"
-    },
-    "2": {
-      "tag": "Midday",
-      "title": "Strong sun",
-      "desc": "High SPF and shade matter.",
-      "duration": "Midday"
-    },
-    "3": {
-      "tag": "Late afternoon",
-      "title": "Best colour",
-      "desc": "Warm light on cliffs and sea.",
-      "duration": "Late afternoon"
-    }
-  },
-  "food": {
-    "title": "Food near Torres de Alcalá",
-    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
-    "li1": "Grilled fish near the port and corniche.",
-    "li2": "Simple cafés at Quemado and Sfiha in season.",
-    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
-    "li4": "Hotel restaurants if you stay on the bay.",
-    "li5": "Confirm opening hours outside peak summer.",
-    "p2": "Cash helps at small beach and village stops."
-  },
   "tips": {
     "title": "Practical tips for Torres de Alcalá",
     "1": {
@@ -82,22 +73,34 @@
       "desc": "Confirm taxi or transfer times from your stay."
     },
     "2": {
-      "title": "Sun & cliffs",
-      "desc": "High SPF, water and steady shoes on coastal paths."
+      "title": "Sun & conditions",
+      "desc": "High SPF, water and suitable footwear."
     },
     "3": {
       "title": "Respect",
-      "desc": "Stay on allowed paths in the national park; mind swimmers and boats."
+      "desc": "Stay on allowed paths; mind others and the environment."
     }
+  },
+  "food": {
+    "title": "Food near Torres de Alcalá",
+    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for outings.",
+    "p2": "Cash helps at small beach and village stops.",
+    "li1": "Grilled fish near the port and corniche.",
+    "li2": "Simple cafés at Quemado and Sfiha in season.",
+    "li3": "Carry water and snacks for park-coast sites.",
+    "li4": "Hotel restaurants if you stay on the bay.",
+    "li5": "Confirm opening hours outside peak summer."
   },
   "gyg": {
     "badge": "Tours & experiences",
     "title": "Tours linked to Torres de Alcalá",
-    "subtitle": "Options if you prefer a local operator.",
+    "subtitle": "Coast, park and boat options when available.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
     "t1": {
       "tag": "Coast",
       "title": "Bay orientation",
-      "desc": "Town beaches and corniche introduction."
+      "desc": "Introduction to the area and nearby viewpoints."
     },
     "t2": {
       "tag": "Park",
@@ -108,15 +111,18 @@
       "tag": "Boat",
       "title": "Coastal boat trip",
       "desc": "Cliffs and coves from the water when operators run."
-    },
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+    }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Al Hoceima",
+    "back": "← Back to the Al Hoceima guide"
   },
   "blog": {
     "badge": "From the blog",
     "title": "Related articles",
-    "all": "All articles →",
     "read": "Read article →",
+    "all": "All articles →",
     "a1": {
       "tag": "Planning",
       "title": "First time in Al Hoceima",
@@ -155,16 +161,6 @@
     "q5": {
       "question": "Combine with Bades?",
       "answer": "Possible on a longer day with a driver who knows the coast road."
-    }
-  },
-  "nearby": {
-    "badge": "Keep exploring",
-    "title": "More places in Al Hoceima",
-    "back": "← Back to the Al Hoceima guide"
-  },
-  "destinations": {
-    "al_hoceima": {
-      "name": "Al Hoceima"
     }
   }
 }

@@ -1,16 +1,13 @@
 {
   "seo": {
-    "title": "Guía de Viaje Al Hoceima 2026 | Costa del Rif y Mediterráneo | MoroccoTripMap",
+    "title": "Guía de Viaje Al Hoceima 2026 | Bahía, Costa, Parque Nacional y Cala Bonita | MoroccoTripMap",
     "description": "Planifica Al Hoceima: Playa Quemado, Cala Bonita, Sfiha, Parque Nacional de Alhucemas, Cala Iris, Torres de Alcalá, Bahía de Badis y el puerto en la costa mediterránea del Rif.",
-    "keywords": "Al Hoceima, bahía de Alhucemas, costa Alhucemas, Parque Nacional, Cala Bonita, Sfiha, Cala Iris, Torres de Alcalá, bahía de Badis, Mediterráneo"
+    "og_title": "Guía de Viaje Al Hoceima 2026 | Costa del Rif y Mediterráneo | MoroccoTripMap",
+    "og_description": "Planifica Al Hoceima: Playa Quemado, Cala Bonita, Sfiha, Parque Nacional de Alhucemas, Cala Iris, Torres de Alcalá, Bahía de Badis y el puerto en la costa mediterránea del Rif."
   },
   "name": "Al Hoceima",
   "hero_subtitle": "Donde las montañas del Rif se encuentran con el Mediterráneo — calas flanqueadas por acantilados, playas urbanas doradas y un parque nacional de mar y roca.",
   "info": {
-    "best_time": "May – Oct. playas · primavera/otoño senderismo",
-    "duration": "3 – 5 días",
-    "vibe": "Bahía mediterránea, acantilados, costa del Rif relajada",
-    "access": "Aeropuerto de Al Hoceima (AHU) · conexiones por carretera",
     "best_time_label": "Mejor época",
     "best_time_val": "May – Oct. playas · primavera/otoño senderismo",
     "stay_label": "Estancia ideal",
@@ -37,7 +34,7 @@
     },
     "parc_national": {
       "tag": "Naturaleza",
-      "title": "Parc Nacional d'Al Hoceima",
+      "title": "Parque Nacional de Alhucemas",
       "desc": "Costa de acantilados, reserva marina y senderos donde el Rif se une al Mediterráneo."
     },
     "cala_bonita": {
@@ -53,7 +50,7 @@
     "port_corniche": {
       "tag": "Ciudad",
       "title": "Puerto y Cornisa",
-      "desc": "Puerto pesquero activo y animado paseo marítimo alatardecer."
+      "desc": "Puerto pesquero activo y animado paseo marítimo al atardecer."
     },
     "cala_iris": {
       "tag": "Costa del parque",
@@ -70,6 +67,34 @@
       "title": "Bahía de Badis",
       "desc": "Pintoresca bahía frente a la histórica peña de Badis — arena y horizonte tranquilo."
     }
+  },
+  "itinerary": {
+    "badge": "Planificación",
+    "title": "Plan sugerido de 3 días en Al Hoceima",
+    "subtitle": "Playas de la ciudad primero, luego la costa del parque y una bahía tranquila."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Día 1 — Llegada y Quemado",
+    "day2_tab": "Día 2 — Calas",
+    "day3_tab": "Día 3 — Costa del parque nacional",
+    "day1_m": "Mañana — Llegada",
+    "day1_md": "Traslado desde el aeropuerto AHU o por carretera; check-in cerca de la bahía.",
+    "day1_a": "Tarde — Playa Quemado",
+    "day1_ad": "Principal playa urbana para un primer baño y orientación en la bahía.",
+    "day1_e": "Noche — Puerto y Cornisa",
+    "day1_ed": "Paseo marítimo y marisco sencillo cerca del puerto.",
+    "day2_m": "Mañana — Cala Bonita",
+    "day2_md": "Cala resguardada para nadar en aguas transparentes cerca de los acantilados.",
+    "day2_a": "Tarde — Playa Sfiha",
+    "day2_ad": "Arena más amplia, ambiente familiar y vistas hacia el Peñón.",
+    "day2_e": "Noche — Ciudad",
+    "day2_ed": "Paseo por la cornisa o café tranquilo de vuelta en el centro.",
+    "day3_m": "Mañana — Cala Iris o Torres",
+    "day3_md": "Costa del parque: cala del pueblo pesquero o rutas de las torres vigía.",
+    "day3_a": "Tarde — Bahía de Badis (opcional)",
+    "day3_ad": "Amplia bahía y entorno histórico de Badis si el tiempo lo permite.",
+    "day3_e": "Noche — Última vista al mar",
+    "day3_ed": "Luz del atardecer sobre los acantilados antes de la salida o una noche más."
   },
   "stays": {
     "badge": "Selección y Consejos",
@@ -161,26 +186,26 @@
     },
     "water": {
       "title": "Efectivo y temporada",
-      "desc": "Llevadirhams para taxis y pequeños cafés de playa. Reserva estancias de verano con antelación; las temporadas medias son más tranquilas y suaves."
+      "desc": "Lleva dirhams para taxis y pequeños cafés de playa. Reserva estancias de verano con antelación; las temporadas medias son más tranquilas y suaves."
     }
   },
   "daytrips": {
     "badge": "Alrededores",
     "title": "Las mejores excursiones desde Al Hoceima",
     "subtitle": "Costa del parque, torres vigía y bahías tranquilas.",
-    "cala_iris": {
+    "tiout": {
       "title": "Excursión a Cala Iris",
       "desc": "Pueblo pesquero y cala en la costa del parque nacional."
     },
-    "torres": {
+    "antiatlas": {
       "title": "Torres de Alcalá",
       "desc": "Torres vigía e itinerarios costeros con vistas a los acantilados."
     },
-    "bades": {
+    "taliouine": {
       "title": "Bahía de Badis",
       "desc": "Amplia bahía y entorno histórico de Badis."
     },
-    "park_views": {
+    "agadir": {
       "title": "Miradores del parque",
       "desc": "Vistas panorámicas sobre los acantilados dentro del Parque Nacional."
     }
@@ -204,33 +229,5 @@
       "question": "¿Cuál es la mejor época para visitar?",
       "answer": "De mayo a octubre para el baño y clima de playa. La primavera y el otoño son mejores para hacer senderismo por la costa del parque con menos calor."
     }
-  },
-  "itinerary": {
-    "badge": "Planificación",
-    "title": "Plan sugerido de 3 días en Al Hoceima",
-    "subtitle": "Playas de la ciudad primero, luego la costa del parque y una bahía tranquila."
-  },
-  "detailed_itinerary": {
-    "day1_tab": "Día 1 — Llegada y Quemado",
-    "day1_m": "Mañana — Llegada",
-    "day1_md": "Traslado desde el aeropuerto AHU o por carretera; check-in cerca de la bahía.",
-    "day1_a": "Tarde — Playa Quemado",
-    "day1_ad": "Principal playa urbana para un primer baño y orientación en la bahía.",
-    "day1_e": "Noche — Puerto y Cornisa",
-    "day1_ed": "Paseo marítimo y marisco sencillo cerca del puerto.",
-    "day2_tab": "Día 2 — Calas",
-    "day2_m": "Mañana — Cala Bonita",
-    "day2_md": "Cala resguardada para nadar en aguas transparentes cerca de los acantilados.",
-    "day2_a": "Tarde — Playa Sfiha",
-    "day2_ad": "Arena más amplia, ambiente familiar y vistas hacia el Peñón.",
-    "day2_e": "Noche — Ciudad",
-    "day2_ed": "Paseo por la cornisa o café tranquilo de vuelta en el centro.",
-    "day3_tab": "Día 3 — Costa del parque nacional",
-    "day3_m": "Mañana — Cala Iris o Torres",
-    "day3_md": "Costa del parque: cala del pueblo pesquero o rutas de las torres vigía.",
-    "day3_a": "Tarde — Bahía de Badis (opcional)",
-    "day3_ad": "Amplia bahía y entorno histórico de Badis si el tiempo lo permite.",
-    "day3_e": "Noche — Última vista al mar",
-    "day3_ed": "Luz del atardecer sobre los acantilados antes de la salida o una noche más."
   }
 }

@@ -18,7 +18,7 @@
 
   <!-- SEO & Metadata -->
   <meta content="Plan Al Hoceima: Quemado Beach, Cala Bonita, Sfiha, Al Hoceima National Park, Cala Iris, Torres de Alcalá, Bades Bay and the port corniche on Morocco’s Rif Mediterranean coast." name="description" data-i18n-attr="content:al_hoceima_page.seo.description"/>
-  <meta content="Al Hoceima, Al Hoceima bay, coast Al Hoceima, National Park, Dune Blanche, Cala Bonita, Île du Dragon, Al Hoceima travel guide, Rif Mediterranean, swimming Morocco" name="keywords"/>
+  <meta content="Al Hoceima, Al Hoceima bay, coast Al Hoceima, National Park, Cala Bonita, Al Hoceima travel guide, Rif Mediterranean, swimming Morocco" name="keywords"/>
   <link href="https://moroccotripmap.com/al-hoceima.html" rel="canonical"/>
 
   <!-- Open Graph -->
@@ -34,18 +34,6 @@
   <link href="https://moroccotripmap.com/es/al-hoceima.html" hreflang="es" rel="alternate"/>
   <link href="https://moroccotripmap.com/ar/al-hoceima.html" hreflang="ar" rel="alternate"/>
   <link href="https://moroccotripmap.com/al-hoceima.html" hreflang="x-default" rel="alternate"/>
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristDestination",
-    "name": "Al Hoceima",
-    "url": "https://moroccotripmap.com/al-hoceima.html",
-    "description": "Al Hoceima travel guide.",
-    "containedInPlace": { "@type": "Country", "name": "Morocco" }
-  }
-  </script>
 
   <!-- Tailwind CSS -->
   <script>
@@ -112,6 +100,7 @@
             </nav>
             
             <div class="flex items-center gap-2 sm:gap-4">
+                <!-- SÉLECTEUR DE LANGUE -->
                 <div class="relative inline-block text-left" id="lang-menu-container">
                     <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
@@ -120,10 +109,22 @@
                     </button>
                     
                     <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden">
-                        <button onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">English</button>
-                        <button onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">Français</button>
-                        <button onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">Español</button>
-                        <button onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">العربية</button>
+                        <button onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                            English
+                        </button>
+                        <button onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>
+                            Français
+                        </button>
+                        <button onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>
+                            Español
+                        </button>
+                        <button onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>
+                            العربية
+                        </button>
                     </div>
                 </div>
 
@@ -224,7 +225,6 @@
                 <p class="text-sm text-sombre/70 max-w-md" data-i18n="al_hoceima_page.places.subtitle">Beaches, national park, coves and the working port.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Places Cards avec data-i18n -->
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/al-hoceima-places/quemado.html">
                     <div class="relative h-48 overflow-hidden">
                         <img alt="Quemado Beach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
@@ -449,7 +449,7 @@
             </div>
         </section>
         
-        <!-- Where to Eat Section (TOUTES LES CARTES SONT DÉSORMAIS TRADUITES) -->
+        <!-- Where to Eat Section -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between">
                 <div>
@@ -605,7 +605,7 @@
             </div>
         </section>
 
-        <!-- Day Trips from Al Hoceima (TOUTES LES CARTES SONT DÉSORMAIS TRADUITES) -->
+        <!-- Day Trips from Al Hoceima -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="mb-8">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="al_hoceima_page.daytrips.badge">Around Al Hoceima</span>
@@ -732,7 +732,7 @@
     </div>
 </footer>
 
-    <!-- Scripts JavaScript -->
+    <!-- Scripts JavaScript (avec gestion correcte des drapeaux) -->
     <script>
         function openDay(evt, dayId) {
             var tabContents = document.getElementsByClassName("tab-content");
@@ -768,10 +768,26 @@
             switchLanguage(savedLang);
         });
 
+        const FLAG_SVGS = {
+            en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
+            fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
+            es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
+            ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
+        };
+
         function switchLanguage(lang) {
             const langLabel = document.getElementById('current-lang-label');
+            const langButton = document.getElementById('lang-menu-button');
+
             if (langLabel) {
                 langLabel.textContent = lang.toUpperCase();
+            }
+
+            if (langButton && FLAG_SVGS[lang]) {
+                const svgElement = langButton.querySelector('svg');
+                if (svgElement) {
+                    svgElement.outerHTML = FLAG_SVGS[lang];
+                }
             }
 
             const langDropdown = document.getElementById('lang-menu-dropdown');
@@ -791,4 +807,4 @@
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>
 </body>
-  </html>
+</html>

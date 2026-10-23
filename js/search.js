@@ -21,7 +21,7 @@
         { name: "Zagora", arabicName: "زاكورة", type: "Ville", url: "zagora.html", tags: ["zagora", "draa valley", "palm", "desert", "زاكورة"] },
         { name: "Safi", arabicName: "آسفي", type: "Ville", url: "safi.html", tags: ["safi", "pottery", "coast", "fortress", "آسفي"] },
         { name: "Laayoune", arabicName: "العيون", type: "Ville", url: "laayoune.html", tags: ["laayoune", "sahara", "atlantic", "sahrawi", "العيون"] },
-        { name: "Merzouga", arabicName: "مرزوقة", type: "Ville", url: "merzouga.html", tags: ["merzouga", "desert", "dunes", "sahara", "erg chebbi", "camp", "مرزوقة"] },
+        { name: "Merzouga", arabicName: "مرزوكة", type: "Ville", url: "merzouga.html", tags: ["merzouga", "desert", "dunes", "sahara", "erg chebbi", "camp", "مرزوقة"] },
 
         ];
 

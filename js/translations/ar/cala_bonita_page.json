@@ -1,31 +1,55 @@
 {
   "seo": {
-    "title": "كالا بونيتا | الحسيمة | MoroccoTripMap",
-    "description": "A sheltered cove of clear Mediterranean water close to Al Hoceima town.",
-    "keywords": "كالا بونيتا, Al Hoceima"
+    "title": "كالا بونيتا الحسيمة | خليج بمياه صافية | MoroccoTripMap",
+    "description": "زيارة كالا بونيتا في الحسيمة؟ أفضل وقت، المقاهي، الوصول، نصائح السلامة ومدة الإقامة.",
+    "og_title": "كالا بونيتا الحسيمة | خليج بمياه صافية | MoroccoTripMap",
+    "og_description": "كالا بونيتا في الحسيمة: السباحة، الوصول، شاطئ حصى ورمل ونصائح لهذا الخليج المتوسطي المحمي."
   },
   "name": "كالا بونيتا",
-  "hero_subtitle": "A sheltered cove of clear Mediterranean water close to Al Hoceima town.",
+  "hero_subtitle": "خليج صغير محمي بمياه متوسطية صافية قرب وسط مدينة الحسيمة.",
   "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Morning preferred",
-    "duration_label": "Suggested duration",
-    "duration_val": "2 – 3 hours",
-    "entry_label": "Entry",
-    "entry_val": "Free shore access",
-    "area_label": "Location",
-    "area_val": "Close to town"
+    "best_time_label": "أفضل وقت",
+    "best_time_val": "الصباح مفضل",
+    "duration_label": "المدة المقترحة",
+    "duration_val": "2 – 3 ساعات",
+    "entry_label": "الدخول",
+    "entry_val": "دخول الشاطئ مجاني",
+    "area_label": "الموقع",
+    "area_val": "قرب وسط المدينة"
   },
   "overview": {
-    "title": "Clear water near town",
-    "p1": "Cala Bonita is a small, sheltered cove a short hop from Al Hoceima’s centre — clearer water and a more intimate scale than the main Quemado strip.",
-    "p2": "The mix of pebbles and sand, plus cliff backdrop, makes it popular for swimming when the sea is calm. Space is limited compared with Sfiha or Quemado.",
-    "p3": "Arrive earlier in summer for room on the shore. Combine with Quemado or a corniche evening rather than treating it as a full-day destination alone."
+    "title": "مياه صافية قرب المدينة",
+    "p1": "كالا بونيتا خليج صغير محمي على مسافة قصيرة من وسط الحسيمة — مياه أصفى ومقياس أكثر حميمية من الشاطئ الحضري الرئيسي.",
+    "p2": "مزيج الحصى والرمل مع خلفية المنحدرات يجعله شائعاً للسباحة عندما يكون البحر هادئاً. المساحة محدودة مقارنة بصفيحة أو كيومادو.",
+    "p3": "صل مبكراً في الصيف لإيجاد مكان. اجمعه مع كيومادو أو أمسية على الكورنيش بدلاً من اعتباره وجهة يوم كامل وحده."
+  },
+  "moods": {
+    "badge": "التوقيت",
+    "title": "كالا بونيتا على مدار اليوم",
+    "subtitle": "متى تزوره.",
+    "1": {
+      "tag": "صباحاً",
+      "title": "بداية هادئة",
+      "duration": "صباحاً",
+      "desc": "ضوء أنعم وهواء أبرد."
+    },
+    "2": {
+      "tag": "ظهراً",
+      "title": "شمس قوية",
+      "duration": "ظهراً",
+      "desc": "حماية عالية من الشمس والظل مهمان."
+    },
+    "3": {
+      "tag": "أواخر بعد الظهر",
+      "title": "أفضل الألوان",
+      "duration": "أواخر بعد الظهر",
+      "desc": "ضوء دافئ على المنحدرات والبحر."
+    }
   },
   "gallery": {
     "badge": "معرض الصور",
-    "title": "كالا بونيتا في صور",
-    "subtitle": "مشاهد من كالا بونيتا في الحسيمة.",
+    "title": "كالا بونيتا بالصور",
+    "subtitle": "إطلالات من كالا بونيتا في الحسيمة.",
     "s1": {
       "caption": "كالا بونيتا — 1"
     },
@@ -42,129 +66,101 @@
       "caption": "كالا بونيتا — 5"
     }
   },
-  "moods": {
-    "badge": "Timing",
-    "title": "كالا بونيتا خلال اليوم",
-    "subtitle": "When to go.",
+  "tips": {
+    "title": "نصائح عملية لكالا بونيتا",
     "1": {
-      "tag": "Morning",
-      "title": "Quiet start",
-      "desc": "Softer light and cooler air.",
-      "duration": "Morning"
+      "title": "الوصول",
+      "desc": "أكد مواعيد التاكسي أو النقل من مكان إقامتك."
     },
     "2": {
-      "tag": "Midday",
-      "title": "Strong sun",
-      "desc": "High SPF and shade matter.",
-      "duration": "Midday"
+      "title": "الشمس والمنحدرات",
+      "desc": "حماية عالية من الشمس، ماء وأحذية ثابتة على المسارات الساحلية."
     },
     "3": {
-      "tag": "Late afternoon",
-      "title": "Best colour",
-      "desc": "Warm light on cliffs and sea.",
-      "duration": "Late afternoon"
+      "title": "الاحترام",
+      "desc": "ابقَ على المسارات المسموح بها؛ انتبه للسباحين والقوارب."
     }
   },
   "food": {
     "title": "الطعام قرب كالا بونيتا",
-    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
-    "li1": "Grilled fish near the port and corniche.",
-    "li2": "Simple cafés at Quemado and Sfiha in season.",
-    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
-    "li4": "Hotel restaurants if you stay on the bay.",
-    "li5": "Confirm opening hours outside peak summer.",
-    "p2": "Cash helps at small beach and village stops."
-  },
-  "tips": {
-    "title": "نصائح لـ كالا بونيتا",
-    "1": {
-      "title": "Access",
-      "desc": "Confirm taxi or transfer times from your stay."
-    },
-    "2": {
-      "title": "Sun & cliffs",
-      "desc": "High SPF, water and steady shoes on coastal paths."
-    },
-    "3": {
-      "title": "Respect",
-      "desc": "Stay on allowed paths in the national park; mind swimmers and boats."
-    }
+    "p1": "خطط للوجبات في المدينة أو مقاهي الشاطئ الموسمية؛ احمل الماء للخليج.",
+    "p2": "النقد يساعد في المحطات الصغيرة.",
+    "li1": "سمك مشوي قرب الميناء والكورنيش.",
+    "li2": "مقاهٍ بسيطة في كيومادو وصفيحة في الموسم.",
+    "li3": "احمل الماء والوجبات الخفيفة للخليج.",
+    "li4": "مطاعم الفنادق إذا أقمت على الخليج.",
+    "li5": "تأكد من ساعات العمل خارج الذروة."
   },
   "gyg": {
-    "badge": "Tours & experiences",
-    "title": "جولات مرتبطة بـ كالا بونيتا",
-    "subtitle": "Options if you prefer a local operator.",
+    "badge": "جولات وتجارب",
+    "title": "جولات مرتبطة بكالا بونيتا",
+    "subtitle": "خيارات الساحل والمنتزه والقارب عند توفرها.",
+    "check": "تحقق من التوفر على GetYourGuide ←",
+    "disclosure": "بعض هذه الروابط روابط تابعة. إذا حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك.",
     "t1": {
-      "tag": "Coast",
-      "title": "Bay orientation",
-      "desc": "Town beaches and corniche introduction."
+      "tag": "ساحل",
+      "title": "توجيه الخليج",
+      "desc": "مقدمة عن الخليج ونقاط المشاهدة القريبة."
     },
     "t2": {
-      "tag": "Park",
-      "title": "National park coast",
-      "desc": "Cala Iris, viewpoints or Torres trails."
+      "tag": "منتزه",
+      "title": "ساحل المنتزه الوطني",
+      "desc": "كالا إريس أو نقاط المشاهدة أو مسارات توريس."
     },
     "t3": {
-      "tag": "Boat",
-      "title": "Coastal boat trip",
-      "desc": "Cliffs and coves from the water when operators run."
-    },
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
-  },
-  "blog": {
-    "badge": "From the blog",
-    "title": "Related articles",
-    "all": "All articles →",
-    "read": "Read article →",
-    "a1": {
-      "tag": "Planning",
-      "title": "First time in Al Hoceima",
-      "desc": "Beaches, park and how long to stay."
-    },
-    "a2": {
-      "tag": "Guide",
-      "title": "Rif Mediterranean coast",
-      "desc": "Coves, cliffs and practical tips."
-    },
-    "a3": {
-      "tag": "Nature",
-      "title": "Al Hoceima National Park",
-      "desc": "Trails and marine reserve basics."
-    }
-  },
-  "faq": {
-    "badge": "من الجيد معرفته",
-    "title": "أسئلة شائعة حول كالا بونيتا",
-    "q1": {
-      "question": "How far from Quemado?",
-      "answer": "A short taxi or walk depending on where you stay — ask locally for the current easiest path."
-    },
-    "q2": {
-      "question": "Sand or pebbles?",
-      "answer": "A mix; water shoes help if you are sensitive."
-    },
-    "q3": {
-      "question": "Good for snorkelling?",
-      "answer": "In calm clear conditions the cove can be pleasant for a look under the surface."
-    },
-    "q4": {
-      "question": "Crowded?",
-      "answer": "It can fill up in peak summer afternoons — morning is quieter."
-    },
-    "q5": {
-      "question": "Facilities?",
-      "answer": "More limited than Quemado; bring water and what you need."
+      "tag": "قارب",
+      "title": "رحلة قارب ساحلية",
+      "desc": "منحدرات وخلجان من الماء عندما تعمل الشركات."
     }
   },
   "nearby": {
-    "badge": "واصل الاستكشاف",
-    "title": "المزيد من الأماكن في الحسيمة",
+    "badge": "استمر في الاستكشاف",
+    "title": "مزيد من الأماكن في الحسيمة",
     "back": "← العودة إلى دليل الحسيمة"
   },
-  "destinations": {
-    "al_hoceima": {
-      "name": "الحسيمة"
+  "blog": {
+    "badge": "من المدونة",
+    "title": "مقالات ذات صلة",
+    "read": "اقرأ المقال ←",
+    "all": "جميع المقالات ←",
+    "a1": {
+      "tag": "تخطيط",
+      "title": "المرة الأولى في الحسيمة",
+      "desc": "الشواطئ والمنتزه ومدة الإقامة."
+    },
+    "a2": {
+      "tag": "دليل",
+      "title": "ساحل الريف المتوسطي",
+      "desc": "خلجان ومنحدرات ونصائح عملية."
+    },
+    "a3": {
+      "tag": "طبيعة",
+      "title": "المنتزه الوطني للحسيمة",
+      "desc": "مسارات وأساسيات المحمية البحرية."
+    }
+  },
+  "faq": {
+    "badge": "معلومات مفيدة",
+    "title": "الأسئلة الشائعة حول كالا بونيتا",
+    "q1": {
+      "question": "كم يبعد عن كيومادو؟",
+      "answer": "مشوار تاكسي قصير أو مشياً حسب مكان إقامتك — اسأل محلياً عن أسهل طريق حالياً."
+    },
+    "q2": {
+      "question": "رمل أم حصى؟",
+      "answer": "مزيج؛ أحذية الماء تساعد إن كنت حساساً."
+    },
+    "q3": {
+      "question": "جيد للغطس السطحي؟",
+      "answer": "في ظروف هادئة وصافية يمكن أن يكون الخليج لطيفاً لإلقاء نظرة تحت السطح."
+    },
+    "q4": {
+      "question": "هل هو مزدحم؟",
+      "answer": "قد يمتلئ بعد ظهر الصيف — الصباح أهدأ."
+    },
+    "q5": {
+      "question": "المرافق؟",
+      "answer": "أكثر محدودية من كيومادو؛ احمل الماء وما تحتاجه."
     }
   }
 }

@@ -1,16 +1,13 @@
 {
   "seo": {
-    "title": "Al Hoceima Travel Guide 2026 | Rif Coast & Mediterranean | MoroccoTripMap",
+    "title": "Al Hoceima Travel Guide 2026 | Bay, Coast, National Park & Cala Bonita | MoroccoTripMap",
     "description": "Plan Al Hoceima: Quemado Beach, Cala Bonita, Sfiha, Al Hoceima National Park, Cala Iris, Torres de Alcalá, Bades Bay and the port corniche on Morocco’s Rif Mediterranean coast.",
-    "keywords": "Al Hoceima travel guide, Al Hoceima bay, coast Al Hoceima, National Park, Cala Bonita, Sfiha, Al Hoceima National Park, Cala Iris, Torres de Alcalá, Bades Bay"
+    "og_title": "Al Hoceima Travel Guide 2026 | Rif Coast & Mediterranean | MoroccoTripMap",
+    "og_description": "Plan Al Hoceima: Quemado Beach, Cala Bonita, Sfiha, Al Hoceima National Park, Cala Iris, Torres de Alcalá, Bades Bay and the port corniche on Morocco’s Rif Mediterranean coast."
   },
   "name": "Al Hoceima",
   "hero_subtitle": "Where the Rif mountains meet the Mediterranean — cliff-backed coves, golden urban beaches and a national park of sea and limestone cliffs.",
   "info": {
-    "best_time": "May – Oct beaches · spring/autumn for hiking",
-    "duration": "3 – 5 days",
-    "vibe": "Mediterranean bay, cliffs, relaxed Rif coast",
-    "access": "Al Hoceima Airport (AHU) · road links",
     "best_time_label": "Best time",
     "best_time_val": "May – Oct beaches · spring/autumn for hiking",
     "stay_label": "Ideal stay",
@@ -70,6 +67,34 @@
       "title": "Bades Bay",
       "desc": "Picturesque bay facing the historic rock of Badis — sand and quiet horizon."
     }
+  },
+  "itinerary": {
+    "badge": "Planning",
+    "title": "Suggested 3-day plan for Al Hoceima",
+    "subtitle": "Town beaches first, then park coast and a quieter bay."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Day 1 — Arrival & Quemado",
+    "day2_tab": "Day 2 — Coves",
+    "day3_tab": "Day 3 — National park coast",
+    "day1_m": "Morning — Arrive",
+    "day1_md": "Transfer from Al Hoceima Airport (AHU) or by road; check in near the bay.",
+    "day1_a": "Afternoon — Quemado Beach",
+    "day1_ad": "Main urban beach for a first swim and orientation of the bay.",
+    "day1_e": "Evening — Port & Corniche",
+    "day1_ed": "Promenade and simple seafood near the harbour.",
+    "day2_m": "Morning — Cala Bonita",
+    "day2_md": "Sheltered cove for clear-water swimming closer to the cliffs.",
+    "day2_a": "Afternoon — Sfiha Beach",
+    "day2_ad": "Wider sand, family atmosphere, views toward the Peñón.",
+    "day2_e": "Evening — Town",
+    "day2_ed": "Corniche walk or a quiet café back in the centre.",
+    "day3_m": "Morning — Cala Iris or Torres",
+    "day3_md": "Park shoreline: fishing village cove or watchtower trails.",
+    "day3_a": "Afternoon — Bades Bay optional",
+    "day3_ad": "Wider bay and historic Badis setting if time allows.",
+    "day3_e": "Evening — Last sea view",
+    "day3_ed": "Sunset light on the cliffs before departure or another night."
   },
   "stays": {
     "badge": "Selection & Tips",
@@ -186,6 +211,8 @@
     }
   },
   "faq": {
+    "badge": "Good to know",
+    "title": "Al Hoceima travel FAQ",
     "q1": {
       "question": "How many days in Al Hoceima?",
       "answer": "Three days cover Quemado, one or two nearby coves and a park-coast outing. Five days allow a slower pace plus Bades Bay and Torres de Alcalá."
@@ -201,36 +228,6 @@
     "q4": {
       "question": "Best time to visit?",
       "answer": "May to October for swimming and beach weather. Spring and autumn are better for hiking the park coast with less heat."
-    },
-    "badge": "Good to know",
-    "title": "Al Hoceima travel FAQ"
-  },
-  "itinerary": {
-    "badge": "Planning",
-    "title": "Suggested 3-day plan for Al Hoceima",
-    "subtitle": "Town beaches first, then park coast and a quieter bay."
-  },
-  "detailed_itinerary": {
-    "day1_tab": "Day 1 — Arrival & Quemado",
-    "day1_m": "Morning — Arrive",
-    "day1_md": "Transfer from Al Hoceima Airport (AHU) or by road; check in near the bay.",
-    "day1_a": "Afternoon — Quemado Beach",
-    "day1_ad": "Main urban beach for a first swim and orientation of the bay.",
-    "day1_e": "Evening — Port & Corniche",
-    "day1_ed": "Promenade and simple seafood near the harbour.",
-    "day2_tab": "Day 2 — Coves",
-    "day2_m": "Morning — Cala Bonita",
-    "day2_md": "Sheltered cove for clear-water swimming closer to the cliffs.",
-    "day2_a": "Afternoon — Sfiha Beach",
-    "day2_ad": "Wider sand, family atmosphere, views toward the Peñón.",
-    "day2_e": "Evening — Town",
-    "day2_ed": "Corniche walk or a quiet café back in the centre.",
-    "day3_tab": "Day 3 — National park coast",
-    "day3_m": "Morning — Cala Iris or Torres",
-    "day3_md": "Park shoreline: fishing village cove or watchtower trails.",
-    "day3_a": "Afternoon — Bades Bay optional",
-    "day3_ad": "Wider bay and historic Badis setting if time allows.",
-    "day3_e": "Evening — Last sea view",
-    "day3_ed": "Sunset light on the cliffs before departure or another night."
+    }
   }
 }

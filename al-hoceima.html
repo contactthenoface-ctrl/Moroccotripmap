@@ -732,22 +732,23 @@
     </div>
 </footer>
 
-    <!-- Scripts JavaScript (avec gestion correcte des drapeaux) -->
+    <!-- Scripts -->
     <script>
-    function openDay(evt, dayId) {
-        var tabContents = document.getElementsByClassName("tab-content");
-        for (var i = 0; i < tabContents.length; i++) {
-            tabContents[i].classList.remove("active");
+        function openDay(evt, dayId) {
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            var tabBtns = document.getElementsByClassName("tab-btn");
+            for (var i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove("active");
+            }
+            document.getElementById(dayId).classList.add("active");
+            evt.currentTarget.classList.add("active");
         }
-        var tabBtns = document.getElementsByClassName("tab-btn");
-        for (var i = 0; i < tabBtns.length; i++) {
-            tabBtns[i].classList.remove("active");
-        }
-        document.getElementById(dayId).classList.add("active");
-        evt.currentTarget.classList.add("active");
-    }
-</script>
-<script src="js/i18n.js"></script>
-<script src="js/search.js"></script>
+    </script>
+    
+    <script src="js/i18n.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

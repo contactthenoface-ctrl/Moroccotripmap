@@ -1,170 +1,256 @@
 {
-  "seo": {
-    "title": "Haouzia Coast El Jadida | Atlantic Shore & Lighthouse Moods | MoroccoTripMap",
-    "description": "Haouzia coast near El Jadida: shoreline walks, coastal views and tips for a quieter Atlantic outing.",
-    "keywords": "Haouzia, El Jadida coast, Atlantic Morocco"
-  },
-  "name": "Haouzia Coast",
-  "hero_subtitle": "Coastal stretch and lighthouse moods near El Jadida — open Atlantic air beyond the main resort strip.",
-  "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Late afternoon",
-    "duration_label": "Suggested duration",
-    "duration_val": "2 – 3 hours",
-    "entry_label": "Entry",
-    "entry_val": "Free",
-    "area_label": "Location",
-    "area_val": "Coast near El Jadida"
-  },
-  "overview": {
-    "title": "Quieter Atlantic edge",
-    "p1": "Haouzia offers a coastal change of pace from the medina walls and the busy Sidi Bouzid strip — more shoreline, wind and horizon than monuments.",
-    "p2": "Come for a walk, lighthouse silhouettes and open Atlantic light. Services are lighter; bring water and a layer against the breeze.",
-    "p3": "It works as a flexible add-on when you have already seen the Portuguese core and want one more sea hour."
-  },
-  "gallery": {
-    "badge": "Photo gallery",
-    "title": "Haouzia Coast in pictures",
-    "subtitle": "Views from Haouzia Coast in El Jadida.",
-    "s1": {
-      "caption": "Haouzia Coast — 1"
+  "haouzia_page": {
+    "seo": {
+      "title": "Haouzia Coast, El Jadida | MoroccoTripMap",
+      "description": "Haouzia coast near El Jadida: shoreline walks, coastal views and tips for a quieter Atlantic outing.",
+      "og_title": "Haouzia Coast El Jadida | Atlantic Shore & Lighthouse Moods | MoroccoTripMap",
+      "og_description": "Haouzia coast near El Jadida: shoreline walks, coastal views and tips for a quieter Atlantic outing."
     },
-    "s2": {
-      "caption": "Haouzia Coast — 2"
+    "name": "Haouzia Coast",
+    "hero_subtitle": "Coastal stretch and lighthouse moods near El Jadida — open Atlantic air beyond the main resort strip.",
+    "info": {
+      "best_time_label": "Best time",
+      "best_time_val": "Late afternoon",
+      "duration_label": "Suggested duration",
+      "duration_val": "2 – 3 hours",
+      "entry_label": "Entry",
+      "entry_val": "Free",
+      "area_label": "Location",
+      "area_val": "Coast near El Jadida"
     },
-    "s3": {
-      "caption": "Haouzia Coast — 3"
+    "overview": {
+      "title": "Quieter Atlantic edge",
+      "p1": "Haouzia offers a coastal change of pace from the medina walls and the busy Sidi Bouzid strip — more shoreline, wind and horizon than monuments.",
+      "p2": "Come for a walk, lighthouse silhouettes and open Atlantic light. Services are lighter; bring water and a layer against the breeze.",
+      "p3": "It works as a flexible add-on when you have already seen the Portuguese core and want one more sea hour."
     },
-    "s4": {
-      "caption": "Haouzia Coast — 4"
+    "gallery": {
+      "badge": "Photo gallery",
+      "title": "Haouzia Coast in pictures",
+      "subtitle": "Views from Haouzia Coast in El Jadida.",
+      "s1": {
+        "caption": "Haouzia Coast — 1"
+      },
+      "s2": {
+        "caption": "Haouzia Coast — 2"
+      },
+      "s3": {
+        "caption": "Haouzia Coast — 3"
+      },
+      "s4": {
+        "caption": "Haouzia Coast — 4"
+      },
+      "s5": {
+        "caption": "Haouzia Coast — 5"
+      }
     },
-    "s5": {
-      "caption": "Haouzia Coast — 5"
+    "moods": {
+      "badge": "Timing",
+      "title": "Haouzia Coast through the day",
+      "subtitle": "When to go.",
+      "1": {
+        "tag": "Morning",
+        "title": "Quiet start",
+        "desc": "Softer light and fewer people.",
+        "duration": "Morning"
+      },
+      "2": {
+        "tag": "Midday",
+        "title": "Strong sun & wind",
+        "desc": "SPF and a wind layer help.",
+        "duration": "Midday"
+      },
+      "3": {
+        "tag": "Late afternoon",
+        "title": "Best colour",
+        "desc": "Warm light on stone and sea.",
+        "duration": "Late afternoon"
+      }
+    },
+    "food": {
+      "title": "Food near Haouzia Coast",
+      "p1": "Plan meals at the fishing port, medina tables or Sidi Bouzid cafés.",
+      "li1": "Grilled fish by the blue-boat harbour.",
+      "li2": "Simple medina restaurants.",
+      "li3": "Ocean-facing cafés on the seafront.",
+      "li4": "Sidi Bouzid for casual beach food.",
+      "li5": "Carry water on wall and coast walks.",
+      "p2": "Cash helps at small stalls and taxis."
+    },
+    "tips": {
+      "title": "Practical tips for Haouzia Coast",
+      "1": {
+        "title": "Access",
+        "desc": "Confirm walking routes or taxi times from your stay."
+      },
+      "2": {
+        "title": "Wind & sun",
+        "desc": "Atlantic breeze is real — layer plus high SPF."
+      },
+      "3": {
+        "title": "Respect",
+        "desc": "On the port and in the Mellah, ask before close photos of people."
+      }
+    },
+    "gyg": {
+      "badge": "Tours & experiences",
+      "title": "Tours linked to Haouzia Coast",
+      "subtitle": "Options if you prefer a local operator.",
+      "t1": {
+        "tag": "Heritage",
+        "title": "Portuguese City walk",
+        "desc": "Cistern, walls and bastion with context."
+      },
+      "check": "Check availability on GetYourGuide →",
+      "t2": {
+        "tag": "Coast",
+        "title": "Atlantic beach time",
+        "desc": "Sidi Bouzid or city beach orientation."
+      },
+      "t3": {
+        "tag": "Day trip",
+        "title": "Azemmour or Oualidia",
+        "desc": "Nearby medina art or Atlantic oysters."
+      },
+      "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+    },
+    "nearby": {
+      "badge": "Keep exploring",
+      "title": "More places in El Jadida",
+      "back": "← Back to the El Jadida guide"
+    },
+    "places": {
+      "citerne": {
+        "tag": "UNESCO",
+        "title": "Portuguese Cistern",
+        "desc": "Vaulted cistern with a beam of light on the water."
+      },
+      "explore": "Explore Place →",
+      "remparts": {
+        "tag": "Ramparts",
+        "title": "Ramparts & Bastion of the Angel",
+        "desc": "Portuguese walls and Atlantic viewpoints."
+      },
+      "plage": {
+        "tag": "Beach",
+        "title": "El Jadida Beach",
+        "desc": "City Atlantic sand near the medina walls."
+      },
+      "port": {
+        "tag": "Harbour",
+        "title": "Fishing Port",
+        "desc": "Blue boats, nets and morning catch."
+      },
+      "mellah": {
+        "tag": "Heritage",
+        "title": "Old Jewish Mellah",
+        "desc": "Historic Jewish quarter lanes."
+      },
+      "souks": {
+        "tag": "Medina",
+        "title": "Medina Souks",
+        "desc": "Everyday markets and narrow streets."
+      },
+      "sidi_bouzid": {
+        "tag": "Resort",
+        "title": "Sidi Bouzid",
+        "desc": "Atlantic resort beach south of town."
+      },
+      "cite_portugaise": {
+        "tag": "UNESCO",
+        "title": "Portuguese City (Mazagan)",
+        "desc": "The fortified UNESCO ensemble."
+      }
+    },
+    "blog": {
+      "badge": "From the blog",
+      "title": "Related articles",
+      "all": "All articles →",
+      "a1": {
+        "tag": "Planning",
+        "title": "First time in El Jadida",
+        "desc": "Portuguese City and how long to stay."
+      },
+      "read": "Read article →",
+      "a2": {
+        "tag": "Guide",
+        "title": "Atlantic Doukkala coast",
+        "desc": "Beaches and harbour tips."
+      },
+      "a3": {
+        "tag": "Heritage",
+        "title": "Mazagan UNESCO",
+        "desc": "Walls, cistern and bastion."
+      }
+    },
+    "faq": {
+      "badge": "Good to know",
+      "title": "Haouzia Coast FAQ",
+      "q1": {
+        "question": "How do I get there?",
+        "answer": "Taxi from the centre; agree the price and return plan."
+      },
+      "q2": {
+        "question": "Beach or cliffs?",
+        "answer": "A mix of coastal stretch — check the exact access point with your driver."
+      },
+      "q3": {
+        "question": "Swimming?",
+        "answer": "Only if conditions are clearly safe; this is open Atlantic."
+      },
+      "q4": {
+        "question": "Worth it without a car?",
+        "answer": "Yes with a taxi; not a long monument visit."
+      },
+      "q5": {
+        "question": "Best time?",
+        "answer": "Late afternoon for softer light and cooler air."
+      }
     }
   },
-  "moods": {
-    "badge": "Timing",
-    "title": "Haouzia Coast through the day",
-    "subtitle": "When to go.",
-    "1": {
-      "tag": "Morning",
-      "title": "Quiet start",
-      "desc": "Softer light and fewer people.",
-      "duration": "Morning"
-    },
-    "2": {
-      "tag": "Midday",
-      "title": "Strong sun & wind",
-      "desc": "SPF and a wind layer help.",
-      "duration": "Midday"
-    },
-    "3": {
-      "tag": "Late afternoon",
-      "title": "Best colour",
-      "desc": "Warm light on stone and sea.",
-      "duration": "Late afternoon"
-    }
+  "nav": {
+    "destinations": "Destinations",
+    "categories": "Categories",
+    "cat_stays": "Stays & Riads",
+    "cat_gastronomy": "Gastronomy",
+    "cat_experiences": "Experiences",
+    "cat_museums": "Monuments & Museums",
+    "cat_transport": "Transport & Rental",
+    "cat_itineraries": "Itineraries",
+    "cat_guides": "Travel Guides",
+    "history": "History of Morocco",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cities": "Cities & Destinations"
   },
-  "food": {
-    "title": "Food near Haouzia Coast",
-    "p1": "Plan meals at the fishing port, medina tables or Sidi Bouzid cafés.",
-    "li1": "Grilled fish by the blue-boat harbour.",
-    "li2": "Simple medina restaurants.",
-    "li3": "Ocean-facing cafés on the seafront.",
-    "li4": "Sidi Bouzid for casual beach food.",
-    "li5": "Carry water on wall and coast walks.",
-    "p2": "Cash helps at small stalls and taxis."
+  "mobile_menu": {
+    "language_title": "Language / Langue"
   },
-  "tips": {
-    "title": "Practical tips for Haouzia Coast",
-    "1": {
-      "title": "Access",
-      "desc": "Confirm walking routes or taxi times from your stay."
-    },
-    "2": {
-      "title": "Wind & sun",
-      "desc": "Atlantic breeze is real — layer plus high SPF."
-    },
-    "3": {
-      "title": "Respect",
-      "desc": "On the port and in the Mellah, ask before close photos of people."
-    }
-  },
-  "gyg": {
-    "badge": "Tours & experiences",
-    "title": "Tours linked to Haouzia Coast",
-    "subtitle": "Options if you prefer a local operator.",
-    "t1": {
-      "tag": "Heritage",
-      "title": "Portuguese City walk",
-      "desc": "Cistern, walls and bastion with context."
-    },
-    "t2": {
-      "tag": "Coast",
-      "title": "Atlantic beach time",
-      "desc": "Sidi Bouzid or city beach orientation."
-    },
-    "t3": {
-      "tag": "Day trip",
-      "title": "Azemmour or Oualidia",
-      "desc": "Nearby medina art or lagoon oysters."
-    },
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
-  },
-  "blog": {
-    "badge": "From the blog",
-    "title": "Related articles",
-    "all": "All articles →",
-    "read": "Read article →",
-    "a1": {
-      "tag": "Planning",
-      "title": "First time in El Jadida",
-      "desc": "Portuguese City and how long to stay."
-    },
-    "a2": {
-      "tag": "Guide",
-      "title": "Atlantic Doukkala coast",
-      "desc": "Beaches and harbour tips."
-    },
-    "a3": {
-      "tag": "Heritage",
-      "title": "Mazagan UNESCO",
-      "desc": "Walls, cistern and bastion."
-    }
-  },
-  "faq": {
-    "badge": "Good to know",
-    "title": "Haouzia Coast FAQ",
-    "q1": {
-      "question": "How do I get there?",
-      "answer": "Taxi from the centre; agree the price and return plan."
-    },
-    "q2": {
-      "question": "Beach or cliffs?",
-      "answer": "A mix of coastal stretch — check the exact access point with your driver."
-    },
-    "q3": {
-      "question": "Swimming?",
-      "answer": "Only if conditions are clearly safe; this is open Atlantic."
-    },
-    "q4": {
-      "question": "Worth it without a car?",
-      "answer": "Yes with a taxi; not a long monument visit."
-    },
-    "q5": {
-      "question": "Best time?",
-      "answer": "Late afternoon for softer light and cooler air."
-    }
-  },
-  "nearby": {
-    "badge": "Keep exploring",
-    "title": "More places in El Jadida",
-    "back": "← Back to the El Jadida guide"
+  "breadcrumb": {
+    "home": "Home",
+    "destinations": "Destinations"
   },
   "destinations": {
-    "el_jadida": {
+    "el-jadida": {
       "name": "El Jadida"
     }
+  },
+  "footer": {
+    "about_text": "Discover. Plan. Experience Morocco.<br/> The premier tourism directory and cultural travel guide for visitors exploring Morocco.",
+    "recommended_title": "Recommended Pages",
+    "link_marrakech": "Marrakech Travel Guide",
+    "link_chefchaouen": "Chefchaouen Blue City",
+    "link_blog": "Travel Blog & Tips",
+    "link_history": "History of Morocco",
+    "link_all_destinations": "All Destinations →",
+    "categories_title": "Travel Categories",
+    "link_stays": "Authentic Riads & Hotels",
+    "link_restaurants": "Moroccan Gastronomy & Food",
+    "link_experiences": "Desert Tours & Activities",
+    "link_transport": "Transport & Rental Cars",
+    "link_itineraries": "Circuits & Itineraries",
+    "connect_title": "Connect",
+    "youtube_text": "Follow our YouTube channel for video travel guides:",
+    "copyright": "© MoroccoTripMap. All rights reserved."
   }
 }

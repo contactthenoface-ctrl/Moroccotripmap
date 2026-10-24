@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/style.css" />
  <title>El Jadida Travel Guide 2026 | Portuguese City &amp; Atlantic | MoroccoTripMap</title>
  <meta name="robots" content="noindex, nofollow">
  <meta charset="utf-8"/>
@@ -59,7 +58,6 @@
  </script>
 
  <!-- Tailwind CSS CDN -->
- 
  <script>
  tailwind.config = {
  theme: {
@@ -89,8 +87,28 @@
 
  /* Styles intégrés pour l'itinéraire et les filtres */
  .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
- .itinerary-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px; flex-wrap: wrap; }
- .tab-btn { background: #F9F6F0; border: 1px solid rgba(194, 155, 98, 0.3); padding: 10px 20px; cursor: pointer; font-weight: 600; border-radius: 0.75rem; transition: 0.3s; color: #1A1A1A; font-size: 0.95rem; }
+ .itinerary-tabs { 
+     display: flex; 
+     flex-direction: column; 
+     align-items: flex-start; 
+     gap: 10px; 
+     margin-bottom: 20px; 
+     border-bottom: 2px solid #E5E7EB; 
+     padding-bottom: 15px; 
+ }
+ .tab-btn { 
+     background: #F9F6F0; 
+     border: 1px solid rgba(194, 155, 98, 0.3); 
+     padding: 10px 20px; 
+     cursor: pointer; 
+     font-weight: 600; 
+     border-radius: 0.75rem; 
+     transition: 0.3s; 
+     color: #1A1A1A; 
+     font-size: 0.95rem; 
+     width: auto; 
+     display: inline-block;
+ }
  .tab-btn.active { background: #185336; color: #fff; border-color: #185336; }
  .tab-content { display: none; }
  .tab-content.active { display: block; }
@@ -99,24 +117,6 @@
  .day-card h3:first-of-type { margin-top: 0; }
  .steps-list { list-style: none; padding: 0; margin-top: 15px; }
  .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
-
- /* Styles pour les Filtres d'hébergement */
- .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
- .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
- .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
- .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
- .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
- .filter-group select:focus { border-color: #185336; }
- .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
- .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
- .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
- .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
- .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
- .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
- .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
- .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
- .acc-contact a:hover { text-decoration: underline; }
- .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
  </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -147,7 +147,7 @@
  <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
  </div>
  </div>
- <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">Art &amp; garden</a>
+ <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History of Morocco</a>
  <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
  <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
 </nav>
@@ -230,7 +230,7 @@
  <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
  <div class="flex items-center gap-3">
  <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
- <span data-i18n="nav.history">Art &amp; garden of Morocco</span>
+ <span data-i18n="nav.history">History of Morocco</span>
  </div>
  <span class="text-xs text-gray-400">→</span>
  </a>
@@ -302,7 +302,7 @@
  </div>
  </section>
 
- <!-- Must-Visit Places Section (9 Lieux Incontournables) -->
+ <!-- Must-Visit Places Section (9 Lieux Incontournables) structuré en 4 colonnes comme Dakhla -->
  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
  <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
  <div>
@@ -312,280 +312,266 @@
  <p class="text-sm text-sombre/70 max-w-md" data-i18n="el_jadida_page.places.subtitle">Portuguese heritage, harbour life and Atlantic beaches.</p>
  </div>
  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- 1. Portuguese Cistern -->
             <a href="places/el-jadida-places/citerne-portugaise.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.citerne.tag">UNESCO</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Portuguese Cistern" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.citerne.tag">UNESCO</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.citerne.title">Portuguese Cistern</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.citerne.desc">Vaulted underground reservoir with a single beam of light on the water — the city’s most atmospheric stop.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.citerne.desc">Vaulted underground reservoir with a single beam of light on the water — the city’s most atmospheric stop.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
+            
+            <!-- 2. Ramparts & Bastion of the Angel -->
             <a href="places/el-jadida-places/remparts-bastion.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.remparts.tag">Ramparts</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Ramparts & Bastion of the Angel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.remparts.tag">Ramparts</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.remparts.title">Ramparts & Bastion of the Angel</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.remparts.desc">Walk the Portuguese walls for Atlantic views and the iconic sea-facing bastion.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.remparts.desc">Walk the Portuguese walls for Atlantic views and the iconic sea-facing bastion.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
+
+            <!-- 3. El Jadida Beach -->
             <a href="places/el-jadida-places/plage-el-jadida.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.plage.tag">Beach</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="El Jadida Beach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.plage.tag">Beach</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.plage.title">El Jadida Beach</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.plage.desc">City sand and Atlantic swell a short hop from the medina walls.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.plage.desc">City sand and Atlantic swell a short hop from the medina walls.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
+
+            <!-- 4. Fishing Port -->
             <a href="places/el-jadida-places/port-peche.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.port.tag">Harbour</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Fishing Port" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.port.tag">Harbour</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.port.title">Fishing Port</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.port.desc">Working harbour of blue boats, nets and morning catch.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.port.desc">Working harbour of blue boats, nets and morning catch.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
+
+            <!-- 5. Old Jewish Mellah -->
             <a href="places/el-jadida-places/mellah.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.mellah.tag">Heritage</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Old Jewish Mellah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.mellah.tag">Heritage</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.mellah.title">Old Jewish Mellah</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.mellah.desc">Historic Jewish quarter lanes within the wider old town fabric.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.mellah.desc">Historic Jewish quarter lanes within the wider old town fabric.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
+
+            <!-- 6. Medina Souks -->
             <a href="places/el-jadida-places/souks-medina.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.souks.tag">Medina</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Medina Souks" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.souks.tag">Medina</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.souks.title">Medina Souks</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.souks.desc">Everyday markets and narrow streets for spices, produce and local life.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.souks.desc">Everyday markets and narrow streets for spices, produce and local life.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
+
+            <!-- 7. Sidi Bouzid -->
             <a href="places/el-jadida-places/sidi-bouzid.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.sidi_bouzid.tag">Resort</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Sidi Bouzid" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.sidi_bouzid.tag">Resort</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.sidi_bouzid.title">Sidi Bouzid</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.sidi_bouzid.desc">Atlantic resort beach south of town — wider sand and seaside cafés.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.sidi_bouzid.desc">Atlantic resort beach south of town — wider sand and seaside cafés.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
+
+            <!-- 8. Portuguese City (Mazagan) -->
             <a href="places/el-jadida-places/cite-portugaise.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.cite_portugaise.tag">UNESCO</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Portuguese City (Mazagan)" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.cite_portugaise.tag">UNESCO</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.cite_portugaise.title">Portuguese City (Mazagan)</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.cite_portugaise.desc">The fortified ensemble as a whole — gates, walls and the urban core inside.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.cite_portugaise.desc">The fortified ensemble as a whole — gates, walls and the urban core inside.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
+
+            <!-- 9. Haouzia Coast -->
             <a href="places/el-jadida-places/haouzia.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="el_jadida_page.places.haouzia.tag">Coast</span>
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Haouzia Coast" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="el_jadida_page.places.haouzia.tag">Coast</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
                     <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="el_jadida_page.places.haouzia.title">Haouzia Coast</h3>
-                    <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="el_jadida_page.places.haouzia.desc">Coastal stretch and lighthouse moods north of the main resort strip.</p>
-                    <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="el_jadida_page.places.explore">Explore place →</span>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="el_jadida_page.places.haouzia.desc">Coastal stretch and lighthouse moods north of the main resort strip.</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="el_jadida_page.places.explore">Explore place →</span>
                 </div>
             </a>
-        </div></div>
-</section>
+        </div>
+    </section>
 
 
- <!-- ==========================================
- SECTION RÉPERTOIRE & FILTRES DES 60 HÉBERGEMENTS
- ========================================== -->
+ <!-- ========================================== -->
+ <!-- SECTION HÉBERGEMENTS HYBRIDE : COUPS DE CŒUR + BANNIÈRE BOOKING (Structure Dakhla) -->
+ <!-- ========================================== -->
  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
- <div class="filter-section mb-8">
- <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="el_jadida_page.directory.badge">Stays</span>
- <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
- <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
- <span data-i18n="el_jadida_page.directory.title">Find your ideal stay in El Jadida</span>
- </h2>
- <p class="text-sm text-sombre/70 mt-2" data-i18n="el_jadida_page.directory.subtitle">Medina-edge hotels, beach stays and rooms near the Portuguese walls — open a listing for details.</p>
- 
- <div class="filter-container mt-6 flex flex-wrap gap-4">
- <!-- Filter by Accommodation Type -->
- <div class="filter-group flex flex-col">
- <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="el_jadida_page.directory.filter_type_label">Type:</label>
- <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
- <option value="all" data-i18n="el_jadida_page.directory.type_all">All types</option>
- <option value="hotel" data-i18n="el_jadida_page.directory.type_hotel">Hotels</option>
- <option value="riad" data-i18n="el_jadida_page.directory.type_riad">Guesthouses</option>
- <option value="maison" data-i18n="el_jadida_page.directory.type_guesthouse">Apartments</option>
- </select>
- </div>
+     
+     <!-- Section Header -->
+     <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+         <div>
+             <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="el_jadida_page.directory.badge">Stays</span>
+             <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="el_jadida_page.directory.title">Find your ideal stay in El Jadida</h2>
+         </div>
+         <p class="text-sm text-sombre/70 max-w-md" data-i18n="el_jadida_page.directory.subtitle">
+             Medina-edge hotels, beach stays and rooms near the Portuguese walls — open a listing for details.
+         </p>
+     </div>
 
- <!-- Filter by District / Area -->
- <div class="filter-group flex flex-col">
- <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="el_jadida_page.directory.filter_location_label">Area:</label>
- <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
- <option value="all" data-i18n="el_jadida_page.directory.location_all">All areas</option>
- <option value="centre" data-i18n="el_jadida_page.directory.location_town">Centre</option>
- <option value="beach" data-i18n="el_jadida_page.directory.location_outside">Beach</option>
- <option value="newtown" data-i18n="el_jadida_page.directory.location_outskirts">New town / periphery</option>
- <option value="peripherie" data-i18n="el_jadida_page.directory.location_outskirts">New town / periphery</option>
- </select>
- </div>
- </div>
- 
- <!-- Dynamic Counter -->
- <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="el_jadida_page.directory.counter">stays found</div>
- </div>
+     <!-- Top Pick Grid (4 Targeted Cards) -->
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+         
+         <!-- Pick 1 -->
+         <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+             <div class="relative h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Palais Oumensour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                 <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                     ★ Riad-palace
+                 </span>
+             </div>
+             <div class="p-5 flex flex-col flex-grow">
+                 <h3 class="text-lg font-bold text-sombre">Palais Oumensour</h3>
+                 <p class="text-xs text-sombre/70 mt-2 flex-grow">
+                     Exquisite riad-palace offering traditional architecture and refined comfort near the medina.
+                 </p>
+                 <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                     <span class="text-xs font-bold text-vert">Medina</span>
+                     <a href="https://www.booking.com/searchresults.html?ss=Palais+Oumensour+El+Jadida" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="el_jadida_page.directory.check_availability">
+                         Book →
+                     </a>
+                 </div>
+             </div>
+         </div>
 
- <!-- El Jadida accommodations -->
- <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
+         <!-- Pick 2 -->
+         <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+             <div class="relative h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Riad Maryam" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                 <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                     ★ Boutique Riad
+                 </span>
+             </div>
+             <div class="p-5 flex flex-col flex-grow">
+                 <h3 class="text-lg font-bold text-sombre">Riad Maryam</h3>
+                 <p class="text-xs text-sombre/70 mt-2 flex-grow">
+                     Charming boutique riad nestled within the old medina streets with personalized hospitality.
+                 </p>
+                 <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                     <span class="text-xs font-bold text-vert">Medina</span>
+                     <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+El+Jadida" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="el_jadida_page.directory.check_availability">
+                         Book →
+                     </a>
+                 </div>
+             </div>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="newtown">
- <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel Bayview El Jadida" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">1. Hotel Bayview El Jadida</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.2</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60" data-i18n="el_jadida_page.directory.district_label">Area<span>Medina</span> · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Riad-palace</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Palais+Oumensour+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+         <!-- Pick 3 -->
+         <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+             <div class="relative h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hotel the Portuguese walls" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                 <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                     ★ Historic Hotel
+                 </span>
+             </div>
+             <div class="p-5 flex flex-col flex-grow">
+                 <h3 class="text-lg font-bold text-sombre">Hotel the Portuguese walls</h3>
+                 <p class="text-xs text-sombre/70 mt-2 flex-grow">
+                     Unique stay offering panoramic views directly over the ancient Portuguese fortifications.
+                 </p>
+                 <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                     <span class="text-xs font-bold text-vert">Medina Walls</span>
+                     <a href="https://www.booking.com/searchresults.html?ss=El+Jadida" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="el_jadida_page.directory.check_availability">
+                         Book →
+                     </a>
+                 </div>
+             </div>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Villa Atlantique" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">2. Villa Atlantique</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Medina · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+         <!-- Pick 4 -->
+         <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+             <div class="relative h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Westpoint El Jadida" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                 <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                     ★ Beachfront Lodge
+                 </span>
+             </div>
+             <div class="p-5 flex flex-col flex-grow">
+                 <h3 class="text-lg font-bold text-sombre">Westpoint El Jadida</h3>
+                 <p class="text-xs text-sombre/70 mt-2 flex-grow">
+                     Relaxed beachfront lodge situated near Sidi Bouzid, perfect for ocean lovers and long walks.
+                 </p>
+                 <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                     <span class="text-xs font-bold text-vert">Sidi Bouzid Beach</span>
+                     <a href="https://www.booking.com/searchresults.html?ss=El+Jadida" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="el_jadida_page.directory.check_availability">
+                         Book →
+                     </a>
+                 </div>
+             </div>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Hotel the Portuguese walls" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">3. Hotel the Portuguese walls</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.1</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Medina · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Boutique riad</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Tania+Mozaik+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+     </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Riad El Jadida" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">4. Riad El Jadida</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.3</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Medina · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Dar / guesthouse</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Zahia+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+     <!-- BOOKING REDIRECTION BANNER -->
+     <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+         
+         <div class="max-w-xl text-left z-10">
+             <span class="text-xs font-bold text-sable uppercase tracking-wider">
+                 Over 50+ riads, hotels &amp; apartments across El Jadida
+             </span>
+             <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight">
+                 Explore all stays in El Jadida
+             </h3>
+             <p class="text-creme/80 mt-2 text-sm leading-relaxed">
+                 Compare real-time rates, read verified guest reviews, and enjoy free cancellation on top medina riads and coastal resorts.
+             </p>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hotel Doukkala Regency" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">5. Hotel Doukkala Regency</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.8</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Medina · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2">Practical hotel in town with easy transfers to the bay.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Amnay+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+         <div class="w-full md:w-auto shrink-0 z-10 text-center">
+             <a href="https://www.booking.com/city/ma/el-jadida.html" 
+                target="_blank" 
+                rel="noopener sponsored" 
+                class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                <span data-i18n="el_jadida_page.booking_banner.btn">View all stays on Booking.com</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+             </a>
+             <p class="text-[11px] text-creme/60 mt-2">✓ Best price guarantee &amp; secure booking</p>
+         </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="beach">
- <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Jardin El Jadida" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">6. Jardin El Jadida</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Outside the walls · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Garden hotel</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Zitoune+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
+         <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+     </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="beach">
- <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Westpoint El Jadida" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">7. Westpoint El Jadida</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.4</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Outside the walls · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Botanical lodge</p>
- <p class="text-xs text-sombre/70 mt-2">Beachfront base popular for longer stays.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Hossoun+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
-
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Hotel Maghreb" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">8. Hotel Maghreb</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Medina · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2">Comfort stay between town and the bay shore.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Ines+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
-
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="guesthouse" data-location="centre">
- <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="La Maison El Jadida" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">9. La Maison El Jadida</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.9</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Medina · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Guesthouse</p>
- <p class="text-xs text-sombre/70 mt-2">Simple guesthouse-style stay in or near town.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=La+Maison+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
-
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="peripherie">
- <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80" alt="Hotel in El Jadida" class="w-full h-48 object-cover" loading="lazy">
- <div class="p-4">
- <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">10. Apartments Corniche</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 8.7</span>
- </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="el_jadida_page.directory.district_label">Area</span> Outskirts · <span data-i18n="el_jadida_page.directory.type_label">Type</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2"></p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Tafilag+El Jadida" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="el_jadida_page.directory.check_availability">Check availability →</a>
- </div>
- </div>
- </div>
-
- </div>
-
- <!-- Message d'alerte si aucun filtre ne correspond -->
- <div id="no-results" class="no-results-msg mt-8 text-center text-gray-500 font-semibold" style="display: none;" data-i18n="el_jadida_page.directory.no_results">No stays match these filters.</div>
  </section>
  
  <!-- Where to Eat Section (6 Restaurants) -->
@@ -892,48 +878,12 @@
     </div>
 </footer>
 
- <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
+ <!-- Scripts JavaScript combinés -->
  <script>
  function openDay(evt, dayId) {
  var tabContents = document.getElementsByClassName("tab-content");
  for (var i = 0; i < tabContents.length; i++) {
  tabContents[i].classList.remove("active");
- }
-
- function filterAccommodations() {
- var typeEl = document.getElementById("filter-type");
- var locEl = document.getElementById("filter-location");
- var selectedType = typeEl ? typeEl.value : "all";
- var selectedLocation = locEl ? locEl.value : "all";
- var cards = document.getElementsByClassName("acc-card");
- var visibleCount = 0;
- for (var i = 0; i < cards.length; i++) {
- var card = cards[i];
- var cardType = card.getAttribute("data-type") || "";
- var cardLocation = card.getAttribute("data-location") || "";
- var matchType = (selectedType === "all" || cardType === selectedType);
- var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
- if (matchType && matchLocation) {
- card.style.display = "block";
- visibleCount++;
- } else {
- card.style.display = "none";
- }
- }
- var counterDiv = document.getElementById("accommodation-counter");
- var noResults = document.getElementById("no-results");
- if (counterDiv) {
- if (visibleCount === 0) {
- counterDiv.innerText = "0 stays found";
- if (noResults) noResults.style.display = "block";
- } else if (visibleCount === 1) {
- counterDiv.innerText = "1 stay found";
- if (noResults) noResults.style.display = "none";
- } else {
- counterDiv.innerText = visibleCount + " stays found";
- if (noResults) noResults.style.display = "none";
- }
- }
  }
  var tabBtns = document.getElementsByClassName("tab-btn");
  for (var i = 0; i < tabBtns.length; i++) {
@@ -942,8 +892,6 @@
  document.getElementById(dayId).classList.add("active");
  evt.currentTarget.classList.add("active");
  }
-
- 
 
  function toggleMobileCategories() {
  const dropdown = document.getElementById('mobile-categories-dropdown');
@@ -973,7 +921,7 @@
  });
  }
 
- const savedLang = localStorage.getItem('preferred_lang') || 'fr';
+ const savedLang = localStorage.getItem('preferred_lang') || 'en';
  switchLanguage(savedLang);
  });
 
@@ -1003,6 +951,9 @@
  if (langDropdown) {
  langDropdown.classList.add('hidden');
  }
+
+ document.documentElement.setAttribute('lang', lang);
+ document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
 
  if (typeof changeLanguage === 'function') {
  changeLanguage(lang);

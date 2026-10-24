@@ -1,256 +1,228 @@
 {
-  "el_jadida_page": {
-    "seo": {
-      "title": "El Jadida Travel Guide 2026 | Bay, Coast, Portuguese City & the Medina Walls | MoroccoTripMap",
-      "description": "Plan El Jadida: UNESCO Portuguese City, Cistern, Bastion of the Angel, fishing port with blue boats, Medina, Mellah, El Jadida beach and Sidi Bouzid on Morocco’s Atlantic Doukkala coast.",
-      "og_title": "El Jadida Travel Guide 2026 | Portuguese City & Atlantic | MoroccoTripMap",
-      "og_description": "Plan El Jadida: UNESCO Portuguese City, Cistern, Bastion of the Angel, fishing port with blue boats, Medina, Mellah, El Jadida beach and Sidi Bouzid on Morocco’s Atlantic Doukkala coast."
+  "seo": {
+    "title": "El Jadida Travel Guide 2026 | Portuguese City, Cistern & Beaches | MoroccoTripMap",
+    "description": "Plan your stay in El Jadida: UNESCO Portuguese City, Portuguese Cistern, ramparts, Haouzia and Sidi Bouzid beaches, fishing port, mellah and Atlantic corniche. Portuguese heritage meets the Atlantic 100 km from Casablanca.",
+    "og_title": "El Jadida Travel Guide | Portuguese City & Beaches | MoroccoTripMap",
+    "og_description": "UNESCO Portuguese City, magical cistern, ramparts, beaches and fishing port on Morocco’s Atlantic coast."
+  },
+  "hero_subtitle": "Where a 16th-century Portuguese citadel rises above the Atlantic — ramparts, underground cistern and golden beaches.",
+  "info": {
+    "best_time_label": "Best Time",
+    "best_time_val": "Apr–Jun & Sep–Oct; summer for the beach",
+    "stay_label": "Ideal Duration",
+    "stay_val": "1 to 3 Days",
+    "vibe_label": "Main Vibe",
+    "vibe_val": "Heritage & Beach",
+    "airport_label": "Nearest Airport",
+    "airport_val": "CMN (Casablanca Mohammed V)"
+  },
+  "overview": {
+    "title": "Welcome to El Jadida — Portuguese citadel and Atlantic shores",
+    "p1": "El Jadida, formerly Mazagan, preserves one of the finest Portuguese citadels in North Africa, a UNESCO World Heritage Site. Its massive ramparts rise directly from the ocean, its bastions offer exceptional panoramas and its underground cistern creates a unique spectacle of light and reflections.",
+    "p2": "Beyond the walls: a lively fishing port, a long corniche, the beaches of Sidi Bouzid and Haouzia, the historic mellah and colourful markets. The city remains authentic and less crowded than major tourist hubs — ideal as a stop from Casablanca or a coastal base.",
+    "p3": "One to three days are enough to explore the Portuguese City, enjoy seafood and relax on the beaches. Extend to Oualidia for oysters if time allows."
+  },
+  "places": {
+    "badge": "Must-See Places",
+    "title": "What to see in El Jadida",
+    "subtitle": "UNESCO citadel, cistern, ramparts, beaches and port.",
+    "explore": "Explore the place →",
+    "cistern": {
+      "tag": "UNESCO",
+      "title": "Portuguese Cistern",
+      "desc": "Underground vaulted hall with columns reflected in water — the city’s jewel."
     },
-    "name": "El Jadida",
-    "hero_subtitle": "Atlantic trade winds, UNESCO Portuguese ramparts, a glowing underground cistern and a working harbour of blue fishing boats — the Doukkala coast at its most characterful.",
-    "info": {
-      "best_time_label": "Best time",
-      "best_time_val": "Apr – Jun & Sep – Nov",
-      "stay_label": "Ideal stay",
-      "stay_val": "2 – 3 days",
-      "vibe_label": "Vibe",
-      "vibe_val": "Atlantic & Portuguese ramparts",
-      "airport_label": "Access",
-      "airport_val": "CMN Casablanca · train & road"
+    "walls": {
+      "tag": "Ramparts",
+      "title": "Ramparts & Bastions",
+      "desc": "Wall circuit facing the ocean, Angel and Holy Spirit bastions, period cannons."
     },
-    "overview": {
-      "title": "Welcome to El Jadida — Portuguese stone on the Atlantic",
-      "p1": "El Jadida sits on Morocco’s Atlantic Doukkala coast, about an hour south of Casablanca. Its heart is the UNESCO-listed Portuguese City (Mazagan): thick ramparts, the Bastion of the Angel, and the famous underground cistern where a shaft of light falls on still water. With its wide turquoise bay and a horizon where land meets ocean, this coastal town offers the atmosphere of a historic walled city without the intensity of larger tourist hubs.",
-      "p2": "Beyond the walls: a working fishing port packed with blue boats, the old Jewish Mellah, Medina lanes and souks, the city beach, and the resort strip of Sidi Bouzid with its open Atlantic horizon. This is rocky and sandy Atlantic shore — not desert, not lagoon harbours, not mountain trail country."
+    "church": {
+      "tag": "Heritage",
+      "title": "Church of the Assumption",
+      "desc": "Rare Manueline church still standing inside the citadel."
     },
-    "places": {
-      "badge": "Highlights",
-      "title": "Must-visit places in El Jadida",
-      "subtitle": "Portuguese heritage, harbour life and Atlantic beaches.",
-      "citerne": {
-        "tag": "UNESCO",
-        "title": "Portuguese Cistern",
-        "desc": "Vaulted underground reservoir with a single beam of light on the water — the city’s most atmospheric stop."
-      },
-      "explore": "Explore place →",
-      "remparts": {
-        "tag": "Ramparts",
-        "title": "Ramparts & Bastion of the Angel",
-        "desc": "Walk the Portuguese walls for Atlantic views and the iconic sea-facing bastion."
-      },
-      "plage": {
-        "tag": "Beach",
-        "title": "El Jadida Beach",
-        "desc": "City sand and Atlantic swell a short hop from the medina walls."
-      },
-      "port": {
-        "tag": "Harbour",
-        "title": "Fishing Port",
-        "desc": "Working harbour of blue boats, nets and morning catch."
-      },
-      "mellah": {
-        "tag": "Heritage",
-        "title": "Old Jewish Mellah",
-        "desc": "Historic Jewish quarter lanes within the wider old town fabric."
-      },
-      "souks": {
-        "tag": "Medina",
-        "title": "Medina Souks",
-        "desc": "Everyday markets and narrow streets for spices, produce and local life."
-      },
-      "sidi_bouzid": {
-        "tag": "Resort",
-        "title": "Sidi Bouzid",
-        "desc": "Atlantic resort beach south of town — wider sand and seaside cafés."
-      },
-      "cite_portugaise": {
-        "tag": "UNESCO",
-        "title": "Portuguese City (Mazagan)",
-        "desc": "The fortified ensemble as a whole — gates, walls and the urban core inside."
-      },
-      "haouzia": {
-        "tag": "Coast",
-        "title": "Haouzia Coast",
-        "desc": "Coastal stretch and lighthouse moods north of the main resort strip."
-      }
+    "harbor": {
+      "tag": "Port",
+      "title": "Fishing Port",
+      "desc": "Blue boats, daily fish landing and quay activity."
     },
-    "directory": {
-      "badge": "Stays",
-      "title": "Find your ideal stay in El Jadida",
-      "subtitle": "Medina-edge hotels, beach stays and rooms near the Portuguese walls — open a listing for details.",
-      "check_availability": "Book →"
+    "beach": {
+      "tag": "Beach",
+      "title": "Beach & Corniche",
+      "desc": "Long stretch of sand and lively promenade at the foot of the ramparts."
     },
-    "booking_banner": {
-      "btn": "View all stays on Booking.com"
+    "haouzia": {
+      "tag": "Beach",
+      "title": "Haouzia Beach",
+      "desc": "Large dune-backed beach to the north, often quieter."
     },
-    "eat": {
-      "badge": "Food",
-      "title": "Where to eat in El Jadida",
-      "subtitle": "Grilled fish at the port, medina tables and cafés facing the ocean.",
-      "nomad": {
-        "tag": "Beach",
-        "loc": "Sidi Bouzid",
-        "title": "Sidi Bouzid cafés",
-        "desc": "Casual seaside food on the resort strip."
-      },
-      "jardin": {
-        "tag": "Hotel",
-        "loc": "Centre",
-        "title": "Hotel restaurants",
-        "desc": "Reliable options near the walls."
-      },
-      "fassia": {
-        "tag": "Café",
-        "loc": "Centre",
-        "title": "Town café",
-        "desc": "Everyday coffee away from the beach."
-      },
-      "moha": {
-        "tag": "Local",
-        "loc": "Medina",
-        "title": "Tagines & salads",
-        "desc": "Moroccan plates beyond seafood."
-      },
-      "bacha": {
-        "tag": "Seafood",
-        "loc": "Port",
-        "title": "Harbour lunch",
-        "desc": "Busy midday tables when the catch is in."
-      },
-      "elfenn": {
-        "tag": "Local",
-        "loc": "Seafront",
-        "title": "Evening table",
-        "desc": "Later sitting when the wind eases."
-      }
+    "mellah": {
+      "tag": "Quarter",
+      "title": "Mellah",
+      "desc": "Former Jewish quarter inside the walls, lanes and traces of synagogues."
     },
-    "tips": {
-      "title": "Practical tips for El Jadida",
-      "transport": {
-        "title": "Getting around",
-        "desc": "Trains and buses link Casablanca (CMN). Petits taxis cover town, Sidi Bouzid and the station; agree prices for longer coastal hops."
-      },
-      "bargain": {
-        "title": "Wind & sun",
-        "desc": "Atlantic trade winds can be strong. Bring a layer for the ramparts and high SPF for beach days."
-      },
-      "water": {
-        "title": "Tickets & cash",
-        "desc": "The cistern has a small entry fee. Carry dirhams for taxis, port snacks and medina shops."
-      }
-    },
-    "daytrips": {
-      "badge": "Around El Jadida",
-      "title": "Best day trips from El Jadida",
-      "subtitle": "Nearby coast and cities on real road and rail links.",
-      "tiout": {
-        "title": "Azemmour",
-        "desc": "Historic medina and street art about 20 minutes away."
-      },
-      "antiatlas": {
-        "title": "Oualidia",
-        "desc": "Lagoon and oysters about 1h15 south along the coast."
-      },
-      "taliouine": {
-        "title": "Casablanca",
-        "desc": "Hassan II Mosque and the metropolis about 1h north by train or car."
-      },
-      "agadir": {
-        "title": "Sidi Bouzid & Haouzia",
-        "desc": "Resort beaches and coastal lighthouse moods near town."
-      }
-    },
-    "faq": {
-      "badge": "Good to know",
-      "title": "El Jadida travel FAQ",
-      "q1": {
-        "question": "How many days in El Jadida?",
-        "answer": "Two days cover the Portuguese City, cistern, ramparts and port. Three days add Sidi Bouzid beach time or a short trip to Azemmour."
-      },
-      "q2": {
-        "question": "Is El Jadida only about the Portuguese ruins?",
-        "answer": "The UNESCO walls and cistern are the headline, but the fishing port, Mellah, souks and Atlantic beaches give a full coastal-town stay."
-      },
-      "q3": {
-        "question": "How do I get to El Jadida?",
-        "answer": "Fly into Casablanca (CMN), then continue by train or road in about an hour. Direct coaches also run from major cities."
-      },
-      "q4": {
-        "question": "Best time to visit?",
-        "answer": "April–June and September–November for milder weather and fewer crowds. Summer is for swimming; winter can be windy and wetter."
-      }
-    },
-    "stay": {
-      "p1": {
-        "badge": "★ Riad-palace",
-        "name": "Palais Oumensour",
-        "desc": "Exquisite riad-palace offering traditional architecture and refined comfort near the medina.",
-        "loc": "Medina"
-      },
-      "p2": {
-        "badge": "★ Boutique Riad",
-        "name": "Riad Maryam",
-        "desc": "Charming boutique riad nestled within the old medina streets with personalized hospitality.",
-        "loc": "Medina"
-      },
-      "p3": {
-        "badge": "★ Historic Hotel",
-        "name": "Hotel the Portuguese walls",
-        "desc": "Unique stay offering panoramic views directly over the ancient Portuguese fortifications.",
-        "loc": "Medina Walls"
-      },
-      "p4": {
-        "badge": "★ Beachfront Lodge",
-        "name": "Westpoint El Jadida",
-        "desc": "Relaxed beachfront lodge situated near Sidi Bouzid, perfect for ocean lovers and long walks.",
-        "loc": "Sidi Bouzid Beach"
-      }
-    },
-    "banner": {
-      "badge": "Over 50+ riads, hotels & apartments across El Jadida",
-      "title": "Explore all stays in El Jadida",
-      "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation on top medina riads and coastal resorts.",
-      "guarantee": "✓ Best price guarantee & secure booking"
+    "souks": {
+      "tag": "Market",
+      "title": "Souks & Central Market",
+      "desc": "Spices, fresh fish and crafts in the commercial heart of the city."
     }
   },
-  "nav": {
-    "destinations": "Destinations",
-    "categories": "Categories",
-    "cat_stays": "Stays & Riads",
-    "cat_gastronomy": "Gastronomy",
-    "cat_experiences": "Experiences",
-    "cat_museums": "Monuments & Museums",
-    "cat_transport": "Transport & Rental",
-    "cat_itineraries": "Itineraries",
-    "cat_guides": "Travel Guides",
-    "history": "History of Morocco",
-    "blog": "Blog",
-    "contact": "Contact",
-    "cities": "Cities & Destinations"
+  "itinerary": {
+    "badge": "Planning",
+    "title": "Suggested 2-day itinerary in El Jadida",
+    "subtitle": "Citadel and port first, then beaches and relaxation."
   },
-  "mobile_menu": {
-    "language_title": "Language / Langue"
+  "detailed_itinerary": {
+    "day1_tab": "Day 1 — Portuguese City & Port",
+    "day1_m": "Morning — Arrival & Cistern",
+    "day1_md": "Arrival from Casablanca; visit the Portuguese Cistern in the best light.",
+    "day1_a": "Afternoon — Ramparts & Bastions",
+    "day1_ad": "Full wall circuit, Church of the Assumption and ocean views.",
+    "day1_e": "Evening — Port & Seafood",
+    "day1_ed": "Walk at the fishing port and grilled fish dinner.",
+    "day2_tab": "Day 2 — Beaches & Mellah",
+    "day2_m": "Morning — Mellah & Lanes",
+    "day2_md": "Stroll through the former Jewish quarter and citadel streets.",
+    "day2_a": "Afternoon — Beach or Haouzia",
+    "day2_ad": "Relax on the central beach or trip to Haouzia / Sidi Bouzid.",
+    "day2_e": "Evening — Corniche at sunset",
+    "day2_ed": "Promenade on the corniche and mint tea facing the Atlantic."
   },
-  "breadcrumb": {
-    "home": "Home",
-    "destinations": "Destinations"
+  "directory": {
+    "badge": "Accommodation",
+    "title": "Find your ideal stay in El Jadida",
+    "subtitle": "City hotels, riads near the citadel and beach resorts — check the details.",
+    "check_availability": "Book →"
   },
-  "footer": {
-    "about_text": "Discover. Plan. Experience Morocco.<br/> The premier tourism directory and cultural travel guide for visitors exploring Morocco.",
-    "recommended_title": "Recommended Pages",
-    "link_marrakech": "Marrakech Travel Guide",
-    "link_chefchaouen": "Chefchaouen Blue City",
-    "link_blog": "Travel Blog & Tips",
-    "link_history": "History of Morocco",
-    "link_all_destinations": "All Destinations →",
-    "categories_title": "Travel Categories",
-    "link_stays": "Authentic Riads & Hotels",
-    "link_restaurants": "Moroccan Gastronomy & Food",
-    "link_experiences": "Desert Tours & Activities",
-    "link_transport": "Transport & Rental Cars",
-    "link_itineraries": "Circuits & Itineraries",
-    "connect_title": "Connect",
-    "youtube_text": "Follow our YouTube channel for video travel guides:",
-    "copyright": "© MoroccoTripMap. All rights reserved."
+  "stays": {
+    "card1": {
+      "badge": "★ Citadel",
+      "name": "Hôtel L'Iglesia",
+      "desc": "Former church converted into a charming hotel in the heart of the Portuguese City.",
+      "location": "Portuguese City"
+    },
+    "card2": {
+      "badge": "★ Resort",
+      "name": "Mazagan Beach & Golf Resort",
+      "desc": "5* resort with golf, private beach and spa a few kilometres north.",
+      "location": "North of the city"
+    },
+    "card3": {
+      "badge": "★ Centre",
+      "name": "Hôtel Pullman Mazagan",
+      "desc": "Comfortable modern hotel close to the corniche and restaurants.",
+      "location": "City centre"
+    },
+    "card4": {
+      "badge": "★ Beach",
+      "name": "Résidence Sidi Bouzid",
+      "desc": "Apartments and rooms facing the sea, ideal for a relaxed beach stay.",
+      "location": "Sidi Bouzid"
+    }
+  },
+  "booking_banner": {
+    "badge": "More than 40 hotels & riads in El Jadida",
+    "title": "Explore all accommodation in El Jadida",
+    "desc": "Compare real-time rates, read verified reviews and enjoy free cancellation.",
+    "btn": "See all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
+  },
+  "eat": {
+    "badge": "Food",
+    "title": "Where to eat in El Jadida",
+    "subtitle": "Grilled fish, seafood and tables by the water",
+    "port": {
+      "tag": "Seafood",
+      "loc": "Port",
+      "title": "Port restaurants",
+      "desc": "Day’s catch grilled a few metres from the boats."
+    },
+    "corniche": {
+      "tag": "Café",
+      "loc": "Corniche",
+      "title": "Corniche cafés",
+      "desc": "Tea, juice and sea view for a relaxed break."
+    },
+    "medina": {
+      "tag": "Local",
+      "loc": "City",
+      "title": "Medina tables",
+      "desc": "Simple authentic Moroccan cuisine near the citadel."
+    },
+    "resort": {
+      "tag": "Resort",
+      "loc": "North",
+      "title": "Resort restaurants",
+      "desc": "International cuisine and seafood in a polished setting."
+    },
+    "market": {
+      "tag": "Market",
+      "loc": "Centre",
+      "title": "Central market",
+      "desc": "Buy fresh fish and have it cooked in the small stalls."
+    },
+    "sidi": {
+      "tag": "Beach",
+      "loc": "Sidi Bouzid",
+      "title": "Beach tables",
+      "desc": "Grills and drinks facing the waves."
+    }
+  },
+  "tips": {
+    "title": "Practical tips for El Jadida",
+    "transport": {
+      "title": "Getting around",
+      "desc": "Train or bus from Casablanca (about 1h30). Petits taxis in town; agree the price for beach trips."
+    },
+    "bargain": {
+      "title": "Sun & wind",
+      "desc": "The Atlantic breeze cools things down. Sunscreen, hat and a light jacket remain useful even in summer."
+    },
+    "water": {
+      "title": "Cash & opening hours",
+      "desc": "Carry dirhams for the cistern and small shops. Check cistern opening times (often closed on Tuesdays)."
+    }
+  },
+  "daytrips": {
+    "badge": "Around El Jadida",
+    "title": "Best day trips from El Jadida",
+    "subtitle": "Beaches, lagoon and coastal villages.",
+    "oualidia": {
+      "title": "Oualidia & oysters",
+      "desc": "Famous lagoon and oyster farms about 1 hour south."
+    },
+    "azemmour": {
+      "title": "Azemmour",
+      "desc": "Small historic town and medina on the Oum Er-Rbia."
+    },
+    "haouzia_trip": {
+      "title": "Haouzia Beach",
+      "desc": "Large dune beach for a day of sand and sea."
+    },
+    "casablanca": {
+      "title": "Casablanca",
+      "desc": "Return or departure via the big city (1h–1h30)."
+    }
+  },
+  "faq": {
+    "badge": "Good to know",
+    "title": "FAQ — El Jadida",
+    "q1": {
+      "question": "How many days in El Jadida?",
+      "answer": "One day is enough for the Portuguese City and cistern. Two to three days give time for the beaches, port and a possible trip to Oualidia."
+    },
+    "q2": {
+      "question": "Is El Jadida interesting beyond the beach?",
+      "answer": "Yes: the UNESCO citadel, cistern, ramparts and port form a unique heritage ensemble on the Atlantic coast."
+    },
+    "q3": {
+      "question": "How to get to El Jadida?",
+      "answer": "Train or bus from Casablanca (about 1h30). Nearest airport is Casablanca Mohammed V (CMN), then about 1h20 transfer."
+    },
+    "q4": {
+      "question": "What is the best time to visit?",
+      "answer": "April to June and September–October offer a good balance of temperature and crowds. Summer is ideal for the beach but busier."
+    }
   }
 }

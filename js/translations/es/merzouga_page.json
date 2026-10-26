@@ -99,7 +99,9 @@
     "day3_ad": "Música gnawa y té en Khamlia, o zoco de Rissani y mausoleo Moulay Ali Cherif.",
     "day1_tab": "Día 1 — Dunas y pueblo",
     "day2_tab": "Día 2 — Camello y campamento",
-    "day3_tab": "Día 3 — Khamlia y Rissani"
+    "day3_tab": "Día 3 — Khamlia y Rissani",
+    "day3_e": "Noche — Última noche en Merzouga",
+    "day3_ed": "Cena tranquila antes de continuar hacia Erfoud, Tinghir o Ouarzazate."
   },
   "directory": {
     "badge": "Dónde dormir",
@@ -113,24 +115,40 @@
     "title": "Restaurantes en Merzouga",
     "subtitle": "Tajines, carnes a la parrilla y té de menta — restaurantes del pueblo y mesas de hotel frente a las dunas.",
     "dunes": {
-      "title": "Restaurante de las dunas",
-      "desc": "Tajines clásicos y parrilladas con terraza frente al erg — dirección fiable del pueblo."
+      "title": "Restaurant Les Dunes",
+      "desc": "Tajines clásicos y parrilladas con terraza frente al erg — dirección fiable del pueblo.",
+      "tag": "Local · Vista dunas",
+      "loc": "Pueblo · Terraza"
     },
     "yasmina": {
       "title": "Hotel Yasmina",
-      "desc": "Restaurante de hotel abierto a externos — menús marroquíes y vistas hacia Erg Chebbi."
+      "desc": "Restaurante de hotel abierto a externos — menús marroquíes y vistas hacia Erg Chebbi.",
+      "tag": "Restaurante de hotel",
+      "loc": "Hotel Yasmina · Pueblo"
     },
     "mohayut": {
       "title": "Kasbah Mohayut",
-      "desc": "Menús marroquíes en un marco de kasbah al pie de las dunas — popular entre viajeros."
+      "desc": "Menús marroquíes en un marco de kasbah al pie de las dunas — popular entre viajeros.",
+      "tag": "Mesa kasbah",
+      "loc": "Kasbah Mohayut · Borde de dunas"
     },
     "berbere": {
       "title": "Cocina bereber (Hassi Labied)",
-      "desc": "Cocina bereber casera en Hassi Labied — cuscús, tajine y noche más tranquila."
+      "desc": "Cocina bereber casera en Hassi Labied — cuscús, tajine y noche más tranquila.",
+      "tag": "Hassi Labied",
+      "loc": "Hassi Labied · Cocina local"
     },
     "camp": {
       "title": "Cena en el campamento",
-      "desc": "La mayoría de campamentos nocturnos incluyen cena bereber bajo las estrellas — a menudo el momento estrella."
+      "desc": "La mayoría de campamentos nocturnos incluyen cena bereber bajo las estrellas — a menudo el momento estrella.",
+      "tag": "Campamento",
+      "loc": "Campamento Erg Chebbi"
+    },
+    "sud": {
+      "tag": "Café · Informal",
+      "loc": "Centro del pueblo",
+      "title": "Café du Sud",
+      "desc": "Café-restaurante sencillo para desayuno, tortillas, té de menta y una pausa del calor."
     }
   },
   "tips": {

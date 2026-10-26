@@ -9,17 +9,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="google" content="notranslate"/>
+  <link rel="stylesheet" href="css/style.css" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    
+    <meta name="google" content="notranslate"/>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-  <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
+    <!-- Favicon SVG (Pin de carte vert, cohérent avec le logo MoroccoTripMap) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
 
-  <!-- SEO & Metadata -->
-  <title>Safi | MoroccoTripMap</title>
-  <meta name="description" content="Discover Morocco with MoroccoTripMap">
+    <!-- SEO & Metadata -->
+    <title data-i18n="safi_page.seo.title">Safi Travel Guide 2026 | Pottery, Sea Castle &amp; Atlantic | MoroccoTripMap</title>
+    <meta content="Plan your stay in Safi: UNESCO Safi, Sea Castle, medina, Lalla Fatna and Cap Beddouza beaches, fishing port, potters-quarter and Atlantic corniche." name="description" data-i18n-attr="content:safi_page.seo.description"/>
+    <meta content="Safi, Safi, Sea Castle, Safi, medina, Lalla Fatna, Cap Beddouza, potters-quarter, fishing port" name="keywords"/>
+    <link href="https://moroccotripmap.com/safi.html" rel="canonical"/>
 
-  <script>
+    <!-- Open Graph / Social Media -->
+    <meta content="website" property="og:type"/>
+    <meta content="Safi Travel Guide | Safi, Sea Castle &amp; Beaches | MoroccoTripMap" property="og:title" data-i18n-attr="content:safi_page.seo.og_title"/>
+    <meta content="UNESCO Safi, magical sea castle, medina, beaches and fishing port on Morocco’s Atlantic coast." property="og:description" data-i18n-attr="content:safi_page.seo.og_description"/>
+    <meta content="https://moroccotripmap.com/safi.html" property="og:url"/>
+    <meta content="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
+
+    <!-- Hreflang Tags (Multilingual SEO) -->
+    <link href="https://moroccotripmap.com/safi.html" hreflang="en" rel="alternate"/>
+    <link href="https://moroccotripmap.com/fr/safi.html" hreflang="fr" rel="alternate"/>
+    <link href="https://moroccotripmap.com/es/safi.html" hreflang="es" rel="alternate"/>
+    <link href="https://moroccotripmap.com/ar/safi.html" hreflang="ar" rel="alternate"/>
+    <link href="https://moroccotripmap.com/safi.html" hreflang="x-default" rel="alternate"/>
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Safi",
+      "url": "https://moroccotripmap.com/safi.html",
+      "description": "Safi travel guide covering the UNESCO Safi, Sea Castle, medina, beaches and fishing port on Morocco’s Atlantic coast.",
+      "touristType": ["Adventure", "Nature", "Water Sports"],
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "Morocco"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -38,88 +77,708 @@
             }
         }
     </script>
-  <style>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <style>
         body { font-family: 'Outfit', sans-serif; }
+
+        /* Styles intégrés pour l'itinéraire et les filtres */
+        .itinerary-section { max-width: 1200px; margin: 40px auto; padding: 0 1rem; }
+        .itinerary-tabs { 
+            display: flex; 
+            flex-direction: column; /* Aligne les boutons les uns sous les autres */
+            align-items: flex-start; /* Aligne les boutons à gauche (ou 'center' si vous préférez au centre) */
+            gap: 10px; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #E5E7EB; 
+            padding-bottom: 15px; 
+        }
+        .tab-btn { 
+            background: #F9F6F0; 
+            border: 1px solid rgba(194, 155, 98, 0.3); 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            font-weight: 600; 
+            border-radius: 0.75rem; 
+            transition: 0.3s; 
+            color: #1A1A1A; 
+            font-size: 0.95rem; 
+            width: auto; /* Ajuste la largeur automatiquement selon le texte */
+            display: inline-block;
+        }
+        .tab-btn.active { background: #185336; color: #fff; border-color: #185336; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
+        .day-card h3:first-of-type { margin-top: 0; }
+        .steps-list { list-style: none; padding: 0; margin-top: 15px; }
+        .step-item { margin-bottom: 15px; line-height: 1.6; position: relative; padding-left: 24px; color: #1A1A1A; font-size: 0.95rem; }
     </style>
 </head>
-<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
+    
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a class="flex items-center gap-3 group shrink-0" href="index.html">
+                <img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="images/logo.webp"/>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
+                <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
+                <div class="relative inline-block text-left" id="categories-menu-container">
+                    <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
+                        <span data-i18n="nav.categories">Categories</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+                    </div>
+                </div>
+                <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
+                <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
+                <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
+            </nav>
+            
+            <!-- Lang Switcher & Mobile Toggle -->
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- SÉLECTEUR DE LANGUE -->
+                <div class="relative inline-block text-left" id="lang-menu-container">
+                    <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                        <span id="current-lang-label">EN</span>
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    
+                    <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden">
+                        <button onclick="switchLanguage('en')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                            English
+                        </button>
+                        <button onclick="switchLanguage('fr')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>
+                            Français
+                        </button>
+                        <button onclick="switchLanguage('es')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>
+                            Español
+                        </button>
+                        <button onclick="switchLanguage('ar')" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>
+                            العربية
+                        </button>
+                    </div>
+                </div>
 
-<!-- Header Navigation -->
-<header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-<a class="flex items-center gap-3 group shrink-0" href="index.html">
-<img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="images/logo.webp"/>
-</a>
-<nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-    <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
-    <div class="relative inline-block text-left" id="categories-menu-container">
-        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-            <span data-i18n="nav.categories">Categories</span>
-            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+                <!-- Mobile Menu Button -->
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" id="mobile-menu-btn" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition focus:outline-none" type="button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+            </div>
         </div>
-    </div>
-    <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
-    <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
-    <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
-</nav>
-<div class="flex items-center gap-2 sm:gap-4">
-<div class="relative inline-block text-left">
-  <button id="lang-menu-button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="bg-white border border-sable/20 hover:border-sable text-sm font-semibold rounded-xl px-3 py-2 flex items-center gap-2 text-sombre transition shadow-sm" type="button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
-    <span id="current-lang-label">EN</span>
-    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-  </button>
-  <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white rounded-xl shadow-lg border border-sable/15 py-1 z-50">
-    <button data-lang="en" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">English</button>
-    <button data-lang="fr" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">Français</button>
-    <button data-lang="es" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">Español</button>
-    <button data-lang="ar" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">العربية</button>
-  </div>
-</div>
-<button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition" type="button">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-</div>
-</div>
 
-<div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
-    <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
-        <span data-i18n="nav.cities">Cities & Destinations</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
-        <span data-i18n="nav.blog">Blog</span>
-    </a>
-    </nav>
-</div>
-</header>
+        <!-- Mobile Menu Drawer -->
+        <div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="mobile_menu.language_title">Language / Langue</span>
+                <div class="flex gap-2">
+                    <button onclick="switchLanguage('en')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">EN</button>
+                    <button onclick="switchLanguage('fr')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">FR</button>
+                    <button onclick="switchLanguage('es')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">ES</button>
+                    <button onclick="switchLanguage('ar')" class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition">AR</button>
+                </div>
+            </div>
 
-<main class="flex-grow">
-<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-  <span class="text-xs font-bold text-sable uppercase tracking-wider">Guide Touristique</span>
-  <h1 class="text-4xl font-bold text-vert mt-2">Safi</h1>
-  <p class="text-lg text-sombre/70 mt-4">Explorez les richesses de cette destination</p>
-  <div class="mt-10 bg-white rounded-2xl border border-sable/10 shadow-sm p-8">
-    <h2 class="text-xl font-bold text-vert">Page en cours d'élaboration</h2>
-    <p class="text-sm text-sombre/70 mt-2">Nous préparons actuellement ce contenu. Revenez bientôt, ou poursuivez votre exploration des destinations dans l'andant.</p>
-  </div>
-  <div class="mt-8 flex flex-wrap justify-center gap-3">
-    <a href="destinations.html" class="px-5 py-2.5 rounded-xl bg-vert text-white font-semibold text-sm hover:opacity-90 transition">Explorer les destinations</a>
-    <a href="index.html" class="px-5 py-2.5 rounded-xl bg-white border border-sable/20 text-sombre font-semibold text-sm hover:border-vert transition">Retour à l'accueil</a>
-  </div>
-</section>
-</main>
+            <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
+                        <span data-i18n="nav.cities">Cities &amp; Destinations</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <div>
+                    <button onclick="toggleMobileCategories()" class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                            <span data-i18n="nav.categories">Categories</span>
+                        </div>
+                        <svg id="categories-arrow" class="w-4 h-4 transform transition-transform duration-200 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="mobile-categories-dropdown" class="hidden flex flex-col gap-2 pl-11 py-2 mt-1 border-l-2 border-sable/30 text-sm">
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
+                        <a class="py-1.5 hover:text-vert transition text-sombre/80" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+                    </div>
+                </div>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="guides/histoire.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <span data-i18n="nav.history">History of Morocco</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        <span data-i18n="nav.blog">Blog</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="contact.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span data-i18n="nav.contact">Contact</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-<footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <div class="relative h-[400px] sm:h-[480px] lg:h-[520px] flex items-end">
+            <img alt="Safi citadel and Desert" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
+                <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
+                    <a class="hover:text-white transition" href="index.html" data-i18n="breadcrumb.home">Home</a>
+                    <span>/</span>
+                    <a class="hover:text-white transition" href="destinations.html" data-i18n="breadcrumb.destinations">Destinations</a>
+                    <span>/</span>
+                    <span class="text-white" data-i18n="destinations.safi.name">Safi</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-3" data-i18n="destinations.safi.name">Safi</h1>
+                <p class="text-lg sm:text-xl text-creme/90 max-w-2xl font-light" data-i18n="safi_page.hero_subtitle">
+                    Morocco's pottery capital — Portuguese sea castle, living medina and Atlantic coast.</p>
+            </div>
+        </div>
+
+        <!-- Quick Info Bar -->
+        <div class="bg-vert text-creme py-6 border-b border-sable/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="safi_page.info.best_time_label">Best Time to Visit</span>
+                    <span class="text-base font-bold" data-i18n="safi_page.info.best_time_val">Apr–Jun & Sep–Oct; summer for the beach</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="safi_page.info.stay_label">Ideal Stay</span>
+                    <span class="text-base font-bold" data-i18n="safi_page.info.stay_val">3 – 5 Days</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="safi_page.info.vibe_label">Top Vibe</span>
+                    <span class="text-base font-bold" data-i18n="safi_page.info.vibe_val">citadel &amp; heritage</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-sable font-semibold" data-i18n="safi_page.info.airport_label">Nearest Airport</span>
+                    <span class="text-base font-bold" data-i18n="safi_page.info.airport_val">RAK (Marrakech) or CMN (Casablanca)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overview Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="safi_page.overview.title">Welcome to Safi — Portuguese citadel and Atlantic shores</h2>
+                <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="safi_page.overview.p1">
+                    Safi (Asfi), on Morocco's Atlantic coast between El Jadida and Essaouira, is the kingdom's pottery capital. Its Portuguese sea castle, medina, National Ceramics Museum and potters' quarter make it an authentic stop away from the major tourist circuits.</p>
+                <p class="text-sombre/80 leading-relaxed text-base mb-4" data-i18n="safi_page.overview.p2">
+                    Beyond the walls: the National Ceramics Museum, the potters' quarter, the fishing port and Cap Beddouza. Town life is calm and authentic.</p>
+                <p class="text-sombre/80 leading-relaxed text-base" data-i18n="safi_page.overview.p3">
+                    Three to five days work well if you mix water time with the citadel, port and a lalla-fatna afternoon. Summer is lively; winter is milder and still excellent for sports.
+                </p>
+            </div>
+        </section>
+
+        <!-- Must-Visit Places Section (8 Lieux Incontournables) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.places.badge">Top Sightseeing</span>
+                    <h2 class="text-3xl font-bold text-vert" data-i18n="safi_page.places.title">Must-Visit Places in Safi</h2>
+                </div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="safi_page.places.subtitle">citadel, dunes, island, pottery and the sea castle.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- 1. Sea Castle -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/sea-castle.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Sea Castle Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.sea_castle.tag">UNESCO</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.sea_castle.title">Sea Castle</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.sea_castle.desc">Underground vaulted hall with columns reflected in water — the city's jewel.</p>
+                        <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
+                    </div>
+                </a>
+                <!-- 2. Medina -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/medina.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Medina Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.medina.tag">Medina</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.medina.title">Safi Medina</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.medina.desc">Wall circuit facing the ocean, Angel and Holy Spirit fortifications, period cannons.</p>
+                        <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
+                    </div>
+                </a>
+                <!-- 3. Church -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/ceramics-museum.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="National Ceramics Museum Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.ceramics.tag">Heritage</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.ceramics.title">National Ceramics Museum</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.ceramics.desc">Rare Manueline church still standing inside the citadel.</p>
+                        <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
+                    </div>
+                </a>
+                <!-- 4. Fishing Port -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/fishing-port.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Fishing Port Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.harbor.tag">Port</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.harbor.title">Fishing Port</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.harbor.desc">Blue boats, daily fish landing and quay activity.</p>
+                        <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
+                    </div>
+                </a>
+                <!-- 5. Lalla Fatna Beach -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/lalla-fatna.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Beach Corniche Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.lalla_fatna.tag">Beach</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.lalla_fatna.title">Lalla Fatna Beach</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.lalla_fatna.desc">Long stretch of sand and lively promenade at the foot of the medina.</p>
+                        <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
+                    </div>
+                </a>
+                <!-- 6. Cap Beddouza -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/cap-beddouza.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Cap Beddouza" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.cap_beddouza.tag">Beach</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.cap_beddouza.title">Cap Beddouza</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.cap_beddouza.desc">Large dune-backed beach to the north, often quieter.</p>
+                        <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
+                    </div>
+                </a>
+                <!-- 7. Potters' Quarter -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/potters-quarter.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Potters' Quarter Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.potters.tag">Crafts</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.potters.title">Potters' Quarter</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.potters.desc">Kilns, workshops and artisans that made Safi's name.</p>
+                        <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
+                    </div>
+                </a>
+                <!-- 8. Souks -->
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/souks.html">
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Souks Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.souks.tag">Market</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.souks.title">Souks & Central Market</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.souks.desc">Spices, fresh fish and crafts in the commercial heart of the city.</p>
+                        <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Recommended Itinerary Section (Corrigé à 3 jours) -->
+        <section class="itinerary-section">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.itinerary.badge">Planning</span>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="safi_page.itinerary.title">Suggested 2-day itinerary in Safi</h2>
+                <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="safi_page.itinerary.subtitle">Heritage and pottery first, then coast and relaxation.</p>
+            </div>
+            <div class="itinerary-tabs">
+                <button class="tab-btn active" data-i18n="safi_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Medina, castle &amp; potters</button>
+                <button class="tab-btn" data-i18n="safi_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Kechla &amp; coast</button>
+            </div>
+            <div class="tab-content active" id="day1">
+                <div class="space-y-4">
+                    <h3 data-i18n="safi_page.detailed_itinerary.day1_m">Morning — Sea Castle &amp; medina</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="safi_page.detailed_itinerary.day1_md">Visit the sea castle and walk the medina.</p>
+                    <h3 data-i18n="safi_page.detailed_itinerary.day1_a">Afternoon — Museum &amp; potters' quarter</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="safi_page.detailed_itinerary.day1_ad">National Ceramics Museum then potters' workshops.</p>
+                    <h3 data-i18n="safi_page.detailed_itinerary.day1_e">Evening — Port &amp; grilled fish</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="safi_page.detailed_itinerary.day1_ed">Fishing port atmosphere and dinner by the sea.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="day2">
+                <div class="space-y-4">
+                    <h3 data-i18n="safi_page.detailed_itinerary.day2_m">Morning — Kechla &amp; views</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="safi_page.detailed_itinerary.day2_md">Citadel and panoramas over town and ocean.</p>
+                    <h3 data-i18n="safi_page.detailed_itinerary.day2_a">Afternoon — Lalla Fatna or Cap Beddouza</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="safi_page.detailed_itinerary.day2_ad">Beach or wild headland as you prefer.</p>
+                    <h3 data-i18n="safi_page.detailed_itinerary.day2_e">Evening — Corniche or medina</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="safi_page.detailed_itinerary.day2_ed">Last stroll and mint tea.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION HÉBERGEMENTS HYBRIDE : COUPS DE CŒUR + BANNIÈRE BOOKING -->
+        <!-- ========================================== -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.directory.badge">Stays</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="safi_page.directory.title">Find your ideal stay in Safi</h2>
+                </div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="safi_page.directory.subtitle">
+                    City hotels, riads near the medina and seafront options — open a listing for details.
+                </p>
+            </div>
+
+            <!-- Top Pick Grid (4 Targeted Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                
+                <!-- Pick 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Safi Attitude" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.stays.card1.badge">
+                            ★ Citadel Hotel
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="safi_page.stays.card1.name">Safi Attitude</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="safi_page.stays.card1.desc">
+                            Former ceramics-museum converted into a charming hotel in the heart of the Safi.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="safi_page.stays.card1.location">citadel Side</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Safi+Attitude" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="safi_page.directory.check_availability">
+                                Book →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pick 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="West Point Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.stays.card2.badge">
+                            ★ Ocean &amp; Surf
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="safi_page.stays.card2.name">West Point Safi</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="safi_page.stays.card2.desc">
+                            Eco-resort situated right on the ocean side near Fishing Port, perfect for surf and wave enthusiasts.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="safi_page.stays.card2.location">Ocean Side</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=West+Point+Safi" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="safi_page.directory.check_availability">
+                                Book →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pick 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Corniche hotels" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.stays.card3.badge">
+                            ★ Seafront hotel
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="safi_page.stays.card3.name">Corniche hotels</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="safi_page.stays.card3.desc">
+                            Sea view and quick access to the port.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="safi_page.stays.card3.location">PK 25 citadel</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Safi+Morocco" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="safi_page.directory.check_availability">
+                                Book →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pick 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hotel & Spa Safi South Rod" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.stays.card4.badge">
+                            ★ Town &amp; Comfort
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="safi_page.stays.card4.name">Hotel Safi South Rod</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="safi_page.stays.card4.desc">
+                            Convenient hotel base in town offering easy access to local markets, restaurants and coastal walks.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="safi_page.stays.card4.location">Town Centre</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Safi" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="safi_page.directory.check_availability">
+                                Book →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOOKING REDIRECTION BANNER -->
+            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="max-w-xl text-left z-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.booking_banner.badge">
+                        Over 40 hotels &amp; riads across Safi
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="safi_page.booking_banner.title">
+                        Explore all stays in Safi
+                    </h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="safi_page.booking_banner.desc">
+                        Compare real-time rates, read verified guest reviews, and enjoy free cancellation on hotels and riads in Safi.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-auto shrink-0 z-10 text-center">
+                    <a href="https://www.booking.com/city/ma/safi.html" 
+                       target="_blank" 
+                       rel="noopener sponsored" 
+                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                       <span data-i18n="safi_page.booking_banner.btn">View all stays on Booking.com</span>
+                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                       </svg>
+                    </a>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="safi_page.booking_banner.guarantee">✓ Best price guarantee &amp; secure booking</p>
+                </div>
+
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+            </div>
+
+        </section>
+        
+        <!-- Where to Eat Section (6 Restaurants) -->
+                <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.eat.badge">Food</span>
+                    <h2 class="text-3xl font-bold text-vert" data-i18n="safi_page.eat.title">Where to eat in Safi</h2>
+                </div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="safi_page.eat.subtitle">Grilled fish, seafood and local tables</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.port.tag">Seafood</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.port.loc">Port</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.port.title">Port restaurants</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.port.desc">Day's catch grilled a few steps from the boats.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.medina.tag">Local</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.medina.loc">Medina</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.medina.title">Medina tables</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.medina.desc">Simple authentic Moroccan cuisine.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.corniche.tag">Café</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.corniche.loc">Corniche</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.corniche.title">Corniche cafés</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.corniche.desc">Tea, juice and sea view.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.grill.tag">Grill</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.grill.loc">Town</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.grill.title">Fish grills</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.grill.desc">Sardines and sea bream typical of the coast.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.market.tag">Market</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.market.loc">Centre</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.market.title">Central market</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.market.desc">Buy fish and have it cooked on the spot.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.beach.tag">Beach</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.beach.loc">Lalla Fatna</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.beach.title">Beach tables</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.beach.desc">Relaxed setting for lunch facing the waves.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Travel Tips -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h2 class="text-2xl font-bold text-vert mb-6" data-i18n="safi_page.tips.title">Practical tips for Safi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                <div class="bg-white p-5 rounded-xl border border-sable/10">
+                    <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8m-9 5h10M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2zM7 9h.01M17 9h.01"/></svg>
+                        <span data-i18n="safi_page.tips.transport.title">Getting around</span>
+                    </h3>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="safi_page.tips.transport.desc">Airport transfers and camp shuttles cover most needs. Agree taxi prices before longer citadel or desert tracks.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-sable/10">
+                    <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                        <span data-i18n="safi_page.tips.bargain.title">Wind &amp; sun</span>
+                    </h3>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="safi_page.tips.bargain.desc">In the potters' quarter, watch the artisans at work. Bargaining is common for craft pieces.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-sable/10">
+                    <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+                        <span data-i18n="safi_page.tips.water.title">Cash &amp; bookings</span>
+                    </h3>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="safi_page.tips.water.desc">Carry dirhams for taxis and small stops. Book accommodation ahead in peak season.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day Trips from Safi (4 cartes) -->
+                <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.daytrips.badge">Around Safi</span>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="safi_page.daytrips.title">Best day trips from Safi</h2>
+                <p class="text-sm text-sombre/70 mt-1 max-w-xl mx-auto" data-i18n="safi_page.daytrips.subtitle">Coast, nature and nearby towns.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="relative rounded-2xl overflow-hidden h-56 group">
+                    <img alt="Cap Beddouza" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.cap_beddouza.title">Cap Beddouza</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.cap_beddouza.desc">Cliffs and Atlantic panoramas about 25 km away.</p>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden h-56 group">
+                    <img alt="Essaouira" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.essaouira.title">Essaouira</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.essaouira.desc">UNESCO medina and port, about 2 hours by road.</p>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden h-56 group">
+                    <img alt="El Jadida" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.el_jadida.title">El Jadida</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.el_jadida.desc">UNESCO Portuguese City, about 1h30.</p>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden h-56 group">
+                    <img alt="Marrakech" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.marrakech.title">Marrakech</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.marrakech.desc">Leave or return via the ochre city (about 2h30).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+            <div class="mb-8 text-center">
+                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.faq.badge">Good to know</span>
+                <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="safi_page.faq.title">Safi travel FAQ</h2>
+            </div>
+            <div class="space-y-3">
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="safi_page.faq.q1.question">How many days in Safi?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q1.answer">One day covers the castle, medina and potters. Two to three days add the museum, Kechla and a beach or Cap Beddouza.</p>
+                </details>
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="safi_page.faq.q2.question">Is Safi interesting beyond pottery?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q2.answer">Yes: Portuguese sea castle, medina, fishing port and Atlantic coast form a complete heritage and maritime ensemble.</p>
+                </details>
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="safi_page.faq.q3.question">How do I get to Safi?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q3.answer">Bus from Casablanca, Marrakech or El Jadida. Nearest airports: Marrakech (RAK) or Casablanca (CMN), then road transfer.</p>
+                </details>
+                <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+                        <span data-i18n="safi_page.faq.q4.question">Best time to visit?</span>
+                        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q4.answer">April to June and September–October offer a good balance. Summer suits the beach but can be windy.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         <div>
             <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
@@ -131,27 +790,30 @@
         <div>
             <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.recommended_title">Recommended Pages</h4>
             <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="marrakech.html">Marrakech Travel Guide</a></li>
-                <li><a class="hover:text-white transition" href="chefchaouen.html">Chefchaouen Blue City</a></li>
-                <li><a class="hover:text-white transition" href="blog/index.html">Travel Blog & Tips</a></li>
-                <li><a class="hover:text-white transition" href="guides/histoire.html">History of Morocco</a></li>
-                <li><a class="hover:text-white transition font-semibold text-sable" href="destinations.html">All Destinations →</a></li>
+                <li><a class="hover:text-white transition" href="marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
+                <li><a class="hover:text-white transition" href="chefchaouen.html" data-i18n="footer.link_chefchaouen">Chefchaouen Blue City</a></li>
+                <li><a class="hover:text-white transition" href="blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
+                <li><a class="hover:text-white transition" href="guides/histoire.html" data-i18n="footer.link_history">History of Morocco</a></li>
+
+                <li><a class="hover:text-white transition font-semibold text-sable" href="destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
             </ul>
         </div>
         <div>
             <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Travel Categories</h4>
             <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="riads/index.html">Authentic Riads & Hotels</a></li>
-                <li><a class="hover:text-white transition" href="gastronomy/index.html">Moroccan Gastronomy & Food</a></li>
-                <li><a class="hover:text-white transition" href="experiences/index.html">Desert Tours & Activities</a></li>
-                <li><a class="hover:text-white transition" href="transport/index.html">Transport & Rental Cars</a></li>
-                <li><a class="hover:text-white transition" href="blog/index.html">Travel Blog & Tips</a></li>
+                <li><a class="hover:text-white transition" href="riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
+                <li><a class="hover:text-white transition" href="gastronomy/index.html" data-i18n="footer.link_restaurants">Moroccan Gastronomy & Food</a></li>
+                <li><a class="hover:text-white transition" href="experiences/index.html" data-i18n="footer.link_experiences">Desert Tours & Activities</a></li>
+                <li><a class="hover:text-white transition" href="transport/index.html" data-i18n="footer.link_transport">Transport & Rental Cars</a></li>
+                <li><a class="hover:text-white transition" href="programmes/index.html" data-i18n="footer.link_itineraries">Circuits & Itineraries</a></li>
+                <li><a class="hover:text-white transition" href="blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
             </ul>
         </div>
         <div>
             <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
             <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
             <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
                 @moroccotripmap
             </a>
         </div>
@@ -162,15 +824,90 @@
     </div>
 </footer>
 
-<script src="js/i18n.js"></script>
-<script src="js/search.js"></script>
-<script>
-    function toggleMobileCategories() {
-        const dropdown = document.getElementById('mobile-categories-dropdown');
-        const arrow = document.getElementById('categories-arrow');
-        if (dropdown) dropdown.classList.toggle('hidden');
-        if (arrow) arrow.classList.toggle('rotate-180');
-    }
-</script>
+    <!-- Scripts JavaScript -->
+    <script>
+        function openDay(evt, dayId) {
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            var tabBtns = document.getElementsByClassName("tab-btn");
+            for (var i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove("active");
+            }
+            document.getElementById(dayId).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        function toggleMobileCategories() {
+            const dropdown = document.getElementById('mobile-categories-dropdown');
+            const arrow = document.getElementById('categories-arrow');
+            if (dropdown) {
+                dropdown.classList.toggle('hidden');
+                if (arrow) {
+                    arrow.classList.toggle('rotate-180');
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const langButton = document.getElementById('lang-menu-button');
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+
+            if (langButton && langDropdown) {
+                langButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.add('hidden');
+                    }
+                });
+            }
+
+            const savedLang = localStorage.getItem('preferred_lang') || 'en';
+            switchLanguage(savedLang);
+        });
+
+        const FLAG_SVGS = {
+            en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
+            fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
+            es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
+            ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
+        };
+
+        function switchLanguage(lang) {
+            const langLabel = document.getElementById('current-lang-label');
+            const langButton = document.getElementById('lang-menu-button');
+
+            if (langLabel) {
+                langLabel.textContent = lang.toUpperCase();
+            }
+
+            if (langButton && FLAG_SVGS[lang]) {
+                const svgElement = langButton.querySelector('svg');
+                if (svgElement) {
+                    svgElement.outerHTML = FLAG_SVGS[lang];
+                }
+            }
+
+            const langDropdown = document.getElementById('lang-menu-dropdown');
+            if (langDropdown) {
+                langDropdown.classList.add('hidden');
+            }
+
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(lang);
+            }
+        }
+    </script>
+    
+    <script src="js/i18n.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

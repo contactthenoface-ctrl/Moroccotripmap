@@ -136,7 +136,7 @@
   </script>
 
     <!-- Tailwind CSS CDN -->
-    <link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -344,12 +344,12 @@
             <img alt="Al Hoceima National Park square in Al Hoceima at dusk" class="absolute inset-0 w-full h-full object-cover" onerror="this.onerror=null; this.src='images/places/parc-national/parc-national-hero.webp?auto=format&fit=crop&w=1600&q=80';" src="../../images/places/parc-national/parc-national-hero.webp"/>
             <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
+                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold text-sable mb-3 tracking-wider">
                     <a class="hover:text-white transition" href="../../index.html" data-i18n="breadcrumb.home">Home</a>
                     <span>/</span>
                     <a class="hover:text-white transition" href="../../destinations.html" data-i18n="breadcrumb.destinations">Destinations</a>
                     <span>/</span>
-                    <a class="hover:text-white transition" href="../../al-hoceima.html" data-i18n="destinations.al-hoceima.name">Al Hoceima</a>
+                    <a class="hover:text-white transition" href="../../al-hoceima.html" data-i18n="al_hoceima_page.name">Al Hoceima</a>
                     <span>/</span>
                     <span class="text-white" data-i18n="parc_national_page.name">Al Hoceima National Park</span>
                 </div>
@@ -714,123 +714,42 @@
     </div>
 </footer>
 
-    <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
+    <!-- Scripts -->
     <script>
         function openDay(evt, dayId) {
             var tabContents = document.getElementsByClassName("tab-content");
-            for (var i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.remove("active");
-            }
+            for (var i = 0; i < tabContents.length; i++) tabContents[i].classList.remove("active");
             var tabBtns = document.getElementsByClassName("tab-btn");
-            for (var i = 0; i < tabBtns.length; i++) {
-                tabBtns[i].classList.remove("active");
-            }
+            for (var i = 0; i < tabBtns.length; i++) tabBtns[i].classList.remove("active");
             document.getElementById(dayId).classList.add("active");
             evt.currentTarget.classList.add("active");
         }
-
         function filterAccommodations() {
-            var selectedType = document.getElementById("filter-type").value;
-            var selectedLocation = document.getElementById("filter-location").value;
+            var selectedType = document.getElementById("filter-type") ? document.getElementById("filter-type").value : "all";
+            var selectedLocation = document.getElementById("filter-location") ? document.getElementById("filter-location").value : "all";
             var cards = document.getElementsByClassName("acc-card");
             var visibleCount = 0;
-
             for (var i = 0; i < cards.length; i++) {
                 var card = cards[i];
-                var cardType = card.getAttribute("data-type");
-                var cardLocation = card.getAttribute("data-location");
-
-                var matchType = (selectedType === "all" || cardType === selectedType);
-                var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
-
-                if (matchType && matchLocation) {
-                    card.style.display = "block";
-                    visibleCount++;
-                } else {
-                    card.style.display = "none";
-                }
+                var matchType = (selectedType === "all" || card.getAttribute("data-type") === selectedType);
+                var matchLocation = (selectedLocation === "all" || card.getAttribute("data-location") === selectedLocation);
+                if (matchType && matchLocation) { card.style.display = "block"; visibleCount++; }
+                else card.style.display = "none";
             }
-
             var counterDiv = document.getElementById("accommodation-counter");
             var noResults = document.getElementById("no-results");
-            if (visibleCount === 0) {
-                counterDiv.innerText = "0 établissement trouvé";
-                if (noResults) noResults.style.display = "block";
-            } else if (visibleCount === 1) {
-                counterDiv.innerText = "1 établissement trouvé";
-                if (noResults) noResults.style.display = "none";
-            } else {
-                counterDiv.innerText = visibleCount + " établissements trouvés";
-                if (noResults) noResults.style.display = "none";
+            if (counterDiv) {
+                if (visibleCount === 0) { counterDiv.innerText = "0 établissement trouvé"; if (noResults) noResults.style.display = "block"; }
+                else if (visibleCount === 1) { counterDiv.innerText = "1 établissement trouvé"; if (noResults) noResults.style.display = "none"; }
+                else { counterDiv.innerText = visibleCount + " établissements trouvés"; if (noResults) noResults.style.display = "none"; }
             }
         }
-
         function toggleMobileCategories() {
             const dropdown = document.getElementById('mobile-categories-dropdown');
             const arrow = document.getElementById('categories-arrow');
-            if (dropdown) {
-                dropdown.classList.toggle('hidden');
-                if (arrow) {
-                    arrow.classList.toggle('rotate-180');
-                }
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const langButton = document.getElementById('lang-menu-button');
-            const langDropdown = document.getElementById('lang-menu-dropdown');
-
-            if (langButton && langDropdown) {
-                langButton.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    langDropdown.classList.toggle('hidden');
-                });
-
-                document.addEventListener('click', function(e) {
-                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
-                        langDropdown.classList.add('hidden');
-                    }
-                });
-            }
-
-            const savedLang = localStorage.getItem('preferred_lang') || 'fr';
-            switchLanguage(savedLang);
-        });
-
-        const FLAG_SVGS = {
-            en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
-            fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
-            es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
-            ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
-        };
-
-        function switchLanguage(lang) {
-            const langLabel = document.getElementById('current-lang-label');
-            const langButton = document.getElementById('lang-menu-button');
-
-            if (langLabel) {
-                langLabel.textContent = lang.toUpperCase();
-            }
-
-            if (langButton && FLAG_SVGS[lang]) {
-                const svgElement = langButton.querySelector('svg');
-                if (svgElement) {
-                    svgElement.outerHTML = FLAG_SVGS[lang];
-                }
-            }
-
-            const langDropdown = document.getElementById('lang-menu-dropdown');
-            if (langDropdown) {
-                langDropdown.classList.add('hidden');
-            }
-
-            if (typeof changeLanguage === 'function') {
-                changeLanguage(lang);
-            }
+            if (dropdown) { dropdown.classList.toggle('hidden'); if (arrow) arrow.classList.toggle('rotate-180'); }
         }
     </script>
-    
-    <!-- Carrousel galerie -->
     <script>
         (function () {
             var root = document.getElementById('parc-national-carousel');
@@ -838,34 +757,25 @@
             var track = root.querySelector('.carousel-track');
             var slides = root.querySelectorAll('.carousel-slide');
             var dotsBox = root.querySelector('.carousel-dots');
+            if (!track || !slides.length || !dotsBox) return;
             var dots = [];
-
             slides.forEach(function (_, i) {
                 var d = document.createElement('button');
-                d.type = 'button';
-                d.className = 'carousel-dot';
-                d.setAttribute('role', 'tab');
-                d.setAttribute('aria-label', 'Photo ' + (i + 1));
+                d.type = 'button'; d.className = 'carousel-dot';
+                d.setAttribute('role', 'tab'); d.setAttribute('aria-label', 'Photo ' + (i + 1));
                 d.addEventListener('click', function () { goTo(i); });
-                dotsBox.appendChild(d);
-                dots.push(d);
+                dotsBox.appendChild(d); dots.push(d);
             });
-
             function current() { return Math.round(track.scrollLeft / track.clientWidth); }
-            function goTo(i) {
-                i = Math.max(0, Math.min(slides.length - 1, i));
-                track.scrollTo({ left: i * track.clientWidth });
-            }
+            function goTo(i) { i = Math.max(0, Math.min(slides.length - 1, i)); track.scrollTo({ left: i * track.clientWidth }); }
             function sync() {
                 var c = current();
-                dots.forEach(function (d, i) {
-                    d.classList.toggle('active', i === c);
-                    d.setAttribute('aria-selected', i === c ? 'true' : 'false');
-                });
+                dots.forEach(function (d, i) { d.classList.toggle('active', i === c); d.setAttribute('aria-selected', i === c ? 'true' : 'false'); });
             }
-
-            root.querySelector('.carousel-prev').addEventListener('click', function () { goTo(current() - 1); });
-            root.querySelector('.carousel-next').addEventListener('click', function () { goTo(current() + 1); });
+            var prev = root.querySelector('.carousel-prev');
+            var next = root.querySelector('.carousel-next');
+            if (prev) prev.addEventListener('click', function () { goTo(current() - 1); });
+            if (next) next.addEventListener('click', function () { goTo(current() + 1); });
             track.addEventListener('scroll', function () { window.requestAnimationFrame(sync); }, { passive: true });
             track.addEventListener('keydown', function (e) {
                 if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(current() - 1); }
@@ -875,8 +785,6 @@
             sync();
         })();
     </script>
-
-    <!-- Scripts externes -->
     <script src="../../js/i18n.js"></script>
     <script src="../../js/search.js"></script>
 </body>

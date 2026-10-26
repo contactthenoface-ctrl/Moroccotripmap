@@ -1,27 +1,47 @@
 {
-  "seo": {
-    "title": "كالا إريس الحسيمة | خليج المنتزه وقرية الصيادين | MoroccoTripMap",
-    "description": "زيارة كالا إريس في الحسيمة؟ أفضل وقت، الوصول، نصائح السلامة ومدة الإقامة على ساحل المنتزه.",
-    "og_title": "كالا إريس الحسيمة | خليج المنتزه وقرية الصيادين | MoroccoTripMap",
-    "og_description": "كالا إريس قرب الحسيمة: خليج المنتزه الوطني، قرية صيادين، نصائح الوصول ويوم على ساحل المنتزه."
-  },
   "name": "كالا إريس",
-  "hero_subtitle": "قرية صيادين وخليج بري على ساحل المنتزه الوطني للحسيمة.",
+  "seo": {
+    "title": "كالا إريس | MoroccoTripMap",
+    "description": "Charming fishing village and wild bay at the edge of the national park.",
+    "og_title": "كالا إريس",
+    "og_description": "Charming fishing village and wild bay at the edge of the national park."
+  },
+  "hero_subtitle": "قرية صيد وخليج عذري على أطراف المنتزه الوطني.",
   "info": {
     "best_time_label": "أفضل وقت",
-    "best_time_val": "نصف يوم",
+    "best_time_val": "صباحاً",
     "duration_label": "المدة المقترحة",
-    "duration_val": "نصف يوم",
+    "duration_val": "2 – 4 ساعات",
     "entry_label": "الدخول",
-    "entry_val": "دخول الشاطئ مجاني",
+    "entry_val": "مجاني",
     "area_label": "الموقع",
-    "area_val": "ساحل المنتزه / الغرب"
+    "area_val": "ساحل المنتزه الوطني"
   },
   "overview": {
-    "title": "خليج المنتزه وقرية الصيادين",
-    "p1": "كالا إريس قرية صيادين وخليج بري على ساحل المنتزه الوطني للحسيمة — أكثر طبيعية من الشواطئ الحضرية.",
-    "p2": "يناسب المسافرين الذين يريدون مناظر ساحل المنتزه بعد كيومادو والخلجان الحضرية. الخدمات محدودة؛ خطط للنقل والماء.",
-    "p3": "يتناسب جيداً مع توريس دي ألكالا أو خليج باديس في يوم واحد على ساحل المنتزه."
+    "title": "قرية صيد وخليج في المنتزه",
+    "p1": "قرية صيد وخليج بري على شاطئ المنتزه الوطني للحسيمة.",
+    "p2": "أكثر هدوءاً من شواطئ المدينة؛ خطط للنقل مسبقاً.",
+    "p3": "يتناسب جيداً مع توريس دي ألكالا في يوم ساحلي."
+  },
+  "gallery": {
+    "badge": "Gallery",
+    "title": "Cala Iris in Pictures",
+    "subtitle": "Views of Cala Iris in Al Hoceima.",
+    "s1": {
+      "caption": "Cala Iris — 1"
+    },
+    "s2": {
+      "caption": "Cala Iris — 2"
+    },
+    "s3": {
+      "caption": "Cala Iris — 3"
+    },
+    "s4": {
+      "caption": "Cala Iris — 4"
+    },
+    "s5": {
+      "caption": "Cala Iris — 5"
+    }
   },
   "moods": {
     "badge": "التوقيت",
@@ -30,113 +50,94 @@
     "1": {
       "tag": "صباحاً",
       "title": "بداية هادئة",
-      "duration": "صباحاً",
-      "desc": "ضوء أنعم وهواء أبرد."
+      "desc": "ضوء أنعم وهواء أبرد.",
+      "duration": "صباحاً"
     },
     "2": {
       "tag": "ظهراً",
       "title": "شمس قوية",
-      "duration": "ظهراً",
-      "desc": "حماية عالية من الشمس والظل مهمان."
+      "desc": "حماية عالية من الشمس والظل مهمان.",
+      "duration": "ظهراً"
     },
     "3": {
       "tag": "أواخر بعد الظهر",
       "title": "أفضل الألوان",
-      "duration": "أواخر بعد الظهر",
-      "desc": "ضوء دافئ على المنحدرات والبحر."
-    }
-  },
-  "gallery": {
-    "badge": "معرض الصور",
-    "title": "كالا إريس بالصور",
-    "subtitle": "إطلالات من كالا إريس في الحسيمة.",
-    "s1": {
-      "caption": "كالا إريس — 1"
-    },
-    "s2": {
-      "caption": "كالا إريس — 2"
-    },
-    "s3": {
-      "caption": "كالا إريس — 3"
-    },
-    "s4": {
-      "caption": "كالا إريس — 4"
-    },
-    "s5": {
-      "caption": "كالا إريس — 5"
-    }
-  },
-  "tips": {
-    "title": "نصائح عملية لكالا إريس",
-    "1": {
-      "title": "الوصول",
-      "desc": "أكد مواعيد التاكسي أو النقل من مكان إقامتك."
-    },
-    "2": {
-      "title": "الشمس والمنحدرات",
-      "desc": "حماية عالية من الشمس، ماء وأحذية ثابتة على المسارات الساحلية."
-    },
-    "3": {
-      "title": "الاحترام",
-      "desc": "ابقَ على المسارات المسموح بها في المنتزه الوطني؛ انتبه للسباحين والقوارب."
+      "desc": "ضوء دافئ على الساحل.",
+      "duration": "أواخر بعد الظهر"
     }
   },
   "food": {
     "title": "الطعام قرب كالا إريس",
-    "p1": "خطط للوجبات في مدينة الحسيمة؛ احمل الماء والوجبات الخفيفة لساحل المنتزه.",
-    "p2": "النقد يساعد في المحطات الصغيرة في القرى.",
-    "li1": "سمك مشوي قرب الميناء والكورنيش في المدينة.",
-    "li2": "مقاهٍ بسيطة في كيومادو وصفيحة في الموسم.",
-    "li3": "احمل الماء والوجبات الخفيفة لكالا إريس وتوريس وباديس.",
-    "li4": "مطاعم الفنادق إذا أقمت على الخليج.",
-    "li5": "تأكد من ساعات العمل خارج الذروة."
+    "p1": "Plan meals in town or seasonal beach cafés; carry water on park-coast stops.",
+    "li1": "Grilled fish near the port and corniche.",
+    "li2": "Simple cafés in Quemado and Isli in season.",
+    "li3": "Carry water and snacks for remote coastal sites.",
+    "li4": "Hotel restaurants if you stay on the bay.",
+    "li5": "Check opening hours off-peak.",
+    "p2": "Cash helps at small stops."
+  },
+  "tips": {
+    "title": "نصائح عملية لـ كالا إريس",
+    "1": {
+      "title": "Getting There",
+      "desc": "Confirm taxi or transfer times from your stay."
+    },
+    "2": {
+      "title": "Sun & Conditions",
+      "desc": "High sun protection, water and suitable footwear."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Stay on allowed paths; respect others and the environment."
+    }
   },
   "gyg": {
-    "badge": "جولات وتجارب",
-    "title": "جولات مرتبطة بكالا إريس",
-    "subtitle": "خيارات الساحل والمنتزه والقارب عند توفرها.",
-    "check": "تحقق من التوفر على GetYourGuide ←",
-    "disclosure": "بعض هذه الروابط روابط تابعة. إذا حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك.",
+    "badge": "Tours & Experiences",
+    "title": "Tours Linked to Cala Iris",
+    "subtitle": "Coast, park and boat options when available.",
     "t1": {
-      "tag": "ساحل",
-      "title": "توجيه الخليج",
-      "desc": "مقدمة عن الخليج ونقاط المشاهدة القريبة."
+      "tag": "Coast",
+      "title": "Orientation",
+      "desc": "Introduction to the area and nearby viewpoints."
     },
     "t2": {
-      "tag": "منتزه",
-      "title": "ساحل المنتزه الوطني",
-      "desc": "كالا إريس أو نقاط المشاهدة أو مسارات توريس."
+      "tag": "Park",
+      "title": "National Park Coast",
+      "desc": "Cala Iris, viewpoints or coastal trails."
     },
     "t3": {
-      "tag": "قارب",
-      "title": "رحلة قارب ساحلية",
-      "desc": "منحدرات وخلجان من الماء عندما تعمل الشركات."
-    }
+      "tag": "Boat",
+      "title": "Coastal Boat Trip",
+      "desc": "Cliffs and bays from the water when operators run."
+    },
+    "check": "تحقق من التوفر على GetYourGuide ←",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission, at no extra cost to you."
   },
   "nearby": {
     "badge": "استمر في الاستكشاف",
     "title": "مزيد من الأماكن في الحسيمة",
-    "back": "← العودة إلى دليل الحسيمة"
+    "back": "← العودة إلى دليل الحسيمة",
+    "explore": "استكشف المكان ←"
   },
   "blog": {
-    "badge": "من المدونة",
-    "title": "مقالات ذات صلة",
-    "read": "اقرأ المقال ←",
-    "all": "جميع المقالات ←",
+    "badge": "From the Blog",
+    "title": "Related Articles",
+    "all": "All articles →",
+    "read": "Read the article →",
     "a1": {
-      "tag": "تخطيط",
-      "title": "المرة الأولى في الحسيمة",
-      "desc": "الشواطئ والمنتزه ومدة الإقامة."
+      "tag": "Planning",
+      "title": "First Time in Al Hoceima",
+      "desc": "Beaches, the park and how long to stay."
     },
     "a2": {
-      "tag": "دليل",
-      "title": "ساحل الريف المتوسطي",
-      "desc": "خلجان ومنحدرات ونصائح عملية."
+      "tag": "Guide",
+      "title": "Rif Mediterranean Coast",
+      "desc": "Bays, cliffs and practical tips."
     },
     "a3": {
-      "tag": "طبيعة",
-      "title": "المنتزه الوطني للحسيمة",
-      "desc": "مسارات وأساسيات المحمية البحرية."
+      "tag": "Nature",
+      "title": "Al Hoceima National Park",
+      "desc": "Trails and marine reserve basics."
     }
   },
   "faq": {
@@ -144,23 +145,23 @@
     "title": "الأسئلة الشائعة حول كالا إريس",
     "q1": {
       "question": "كم يبعد عن الحسيمة؟",
-      "answer": "طريق ساحلي غرباً إلى منطقة المنتزه — أكد المدة مع سائقك."
+      "answer": "قيادة ساحلية غرباً نحو منطقة المنتزه — أكد المدة مع السائق."
     },
     "q2": {
       "question": "هل يستحق بدون سيارة؟",
-      "answer": "نعم إذا نظمت تاكسي أو جولة؛ خيارات النقل العام قد تكون محدودة."
+      "answer": "نعم إذا رتبت تاكسي أو جولة؛ الخيارات العامة قد تكون محدودة."
     },
     "q3": {
       "question": "السباحة؟",
-      "answer": "ممكنة في ظروف هادئة؛ هذا خليج أكثر طبيعية من شواطئ المدينة."
+      "answer": "ممكنة في الظروف الهادئة؛ خليج أكثر طبيعية من شواطئ المدينة."
     },
     "q4": {
       "question": "الجمع مع توريس دي ألكالا؟",
-      "answer": "نعم — كلاهما على ساحل المنتزه الأوسع ويتناسبان جيداً في يوم واحد."
+      "answer": "نعم — كلاهما على ساحل المنتزه الأوسع ويتناسبان في يوم واحد."
     },
     "q5": {
       "question": "طعام في الموقع؟",
-      "answer": "محدود جداً — احمل الماء والوجبات الخفيفة أو كل قبل/بعد في المدينة."
+      "answer": "محدود جداً — احمل ماء ووجبات خفيفة أو كل قبل/بعد في المدينة."
     }
   }
 }

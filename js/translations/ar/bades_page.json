@@ -1,27 +1,47 @@
 {
-  "seo": {
-    "title": "خليج باديس الحسيمة | شاطئ باديس والصخرة التاريخية | MoroccoTripMap",
-    "description": "زيارة خليج باديس في الحسيمة؟ أفضل وقت، المقاهي، الوصول، نصائح السلامة ومدة الإقامة.",
-    "og_title": "خليج باديس الحسيمة | شاطئ باديس والصخرة التاريخية | MoroccoTripMap",
-    "og_description": "خليج باديس قرب الحسيمة: خليج رملي، إطار تاريخي لباديس، نصائح الوصول وكيفية تنظيم الرحلة."
-  },
   "name": "خليج باديس",
-  "hero_subtitle": "خليج خلاب يواجه صخرة باديس التاريخية — رمال مفتوحة وأفق هادئ على ساحل المنتزه.",
+  "seo": {
+    "title": "خليج باديس | MoroccoTripMap",
+    "description": "Quiet bay facing the historic Bades rock, with clean sand and calm horizons.",
+    "og_title": "خليج باديس",
+    "og_description": "Quiet bay facing the historic Bades rock, with clean sand and calm horizons."
+  },
+  "hero_subtitle": "خليج خلاب يواجه صخرة باديس التاريخية.",
   "info": {
     "best_time_label": "أفضل وقت",
-    "best_time_val": "نصف يوم إلى يوم كامل",
+    "best_time_val": "صباحاً",
     "duration_label": "المدة المقترحة",
-    "duration_val": "نصف يوم+",
+    "duration_val": "نصف يوم",
     "entry_label": "الدخول",
-    "entry_val": "دخول الشاطئ مجاني",
+    "entry_val": "مجاني",
     "area_label": "الموقع",
-    "area_val": "ساحل المنتزه / الغرب"
+    "area_val": "ساحل المنتزه غرباً"
   },
   "overview": {
-    "title": "الخليج والصخرة التاريخية",
-    "p1": "خليج باديس (شاطئ باديس) أوسع من الخلجان الصغيرة في المدينة، برمال وخلفية مرتبطة بصخرة باديس التاريخية.",
-    "p2": "يناسب المسافرين الذين يريدون مساحة أكبر وأجواء ساحل المنتزه بعد كيومادو وصفيحة. الخدمات محدودة مقارنة بالشواطئ الحضرية.",
-    "p3": "خطط للنقل مسبقاً واحمل الماء. يوم هادئ هنا يتناسب طبيعياً مع كالا إريس أو مسارات توريس دي ألكالا."
+    "title": "خليج أمام صخرة باديس",
+    "p1": "خليج خلاب يواجه صخرة باديس التاريخية — رمل مفتوح وأفق أهدأ على ساحل المنتزه.",
+    "p2": "رحلة يومية أكثر منها زيارة سريعة من المدينة.",
+    "p3": "أكد حالة الطريق مسبقاً مع السائق."
+  },
+  "gallery": {
+    "badge": "Gallery",
+    "title": "Bades Bay in Pictures",
+    "subtitle": "Views of Bades Bay in Al Hoceima.",
+    "s1": {
+      "caption": "Bades Bay — 1"
+    },
+    "s2": {
+      "caption": "Bades Bay — 2"
+    },
+    "s3": {
+      "caption": "Bades Bay — 3"
+    },
+    "s4": {
+      "caption": "Bades Bay — 4"
+    },
+    "s5": {
+      "caption": "Bades Bay — 5"
+    }
   },
   "moods": {
     "badge": "التوقيت",
@@ -30,103 +50,94 @@
     "1": {
       "tag": "صباحاً",
       "title": "بداية هادئة",
-      "duration": "صباحاً",
-      "desc": "ضوء أنعم وهواء أبرد."
+      "desc": "ضوء أنعم وهواء أبرد.",
+      "duration": "صباحاً"
     },
     "2": {
       "tag": "ظهراً",
       "title": "شمس قوية",
-      "duration": "ظهراً",
-      "desc": "حماية عالية من الشمس والظل مهمان."
+      "desc": "حماية عالية من الشمس والظل مهمان.",
+      "duration": "ظهراً"
     },
     "3": {
       "tag": "أواخر بعد الظهر",
       "title": "أفضل الألوان",
-      "duration": "أواخر بعد الظهر",
-      "desc": "ضوء دافئ على المنحدرات والبحر."
-    }
-  },
-  "gallery": {
-    "badge": "معرض الصور",
-    "title": "خليج باديس بالصور",
-    "subtitle": "إطلالات من خليج باديس في الحسيمة.",
-    "s1": { "caption": "خليج باديس — 1" },
-    "s2": { "caption": "خليج باديس — 2" },
-    "s3": { "caption": "خليج باديس — 3" },
-    "s4": { "caption": "خليج باديس — 4" },
-    "s5": { "caption": "خليج باديس — 5" }
-  },
-  "tips": {
-    "title": "نصائح عملية لخليج باديس",
-    "1": {
-      "title": "الوصول",
-      "desc": "أكد مواعيد التاكسي أو النقل من مكان إقامتك."
-    },
-    "2": {
-      "title": "الشمس والمنحدرات",
-      "desc": "حماية عالية من الشمس، ماء وأحذية ثابتة على المسارات الساحلية."
-    },
-    "3": {
-      "title": "الاحترام",
-      "desc": "ابقَ على المسارات المسموح بها في المنتزه الوطني؛ انتبه للسباحين والقوارب."
+      "desc": "ضوء دافئ على الساحل.",
+      "duration": "أواخر بعد الظهر"
     }
   },
   "food": {
     "title": "الطعام قرب خليج باديس",
-    "p1": "خطط للوجبات في مدينة الحسيمة أو مقاهي الشاطئ الموسمية؛ احمل الماء لرحلات ساحل المنتزه.",
-    "p2": "النقد يساعد في المحطات الصغيرة على الشاطئ وفي القرى.",
-    "li1": "سمك مشوي قرب الميناء والكورنيش.",
-    "li2": "مقاهٍ بسيطة في كيومادو وصفيحة في الموسم.",
-    "li3": "احمل الماء والوجبات الخفيفة لكالا إريس وتوريس وباديس.",
-    "li4": "مطاعم الفنادق إذا أقمت على الخليج.",
-    "li5": "تأكد من ساعات العمل خارج ذروة الصيف."
+    "p1": "Plan meals in town or seasonal beach cafés; carry water on park-coast stops.",
+    "li1": "Grilled fish near the port and corniche.",
+    "li2": "Simple cafés in Quemado and Isli in season.",
+    "li3": "Carry water and snacks for remote coastal sites.",
+    "li4": "Hotel restaurants if you stay on the bay.",
+    "li5": "Check opening hours off-peak.",
+    "p2": "Cash helps at small stops."
+  },
+  "tips": {
+    "title": "نصائح عملية لـ خليج باديس",
+    "1": {
+      "title": "Getting There",
+      "desc": "Confirm taxi or transfer times from your stay."
+    },
+    "2": {
+      "title": "Sun & Conditions",
+      "desc": "High sun protection, water and suitable footwear."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Stay on allowed paths; respect others and the environment."
+    }
   },
   "gyg": {
-    "badge": "جولات وتجارب",
-    "title": "جولات مرتبطة بخليج باديس",
-    "subtitle": "خيارات الساحل والمنتزه والقارب عند توفرها.",
-    "check": "تحقق من التوفر على GetYourGuide ←",
-    "disclosure": "بعض هذه الروابط روابط تابعة. إذا حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك.",
+    "badge": "Tours & Experiences",
+    "title": "Tours Linked to Bades Bay",
+    "subtitle": "Coast, park and boat options when available.",
     "t1": {
-      "tag": "ساحل",
-      "title": "توجيه الخليج",
-      "desc": "مقدمة عن الخليج ونقاط المشاهدة القريبة."
+      "tag": "Coast",
+      "title": "Orientation",
+      "desc": "Introduction to the area and nearby viewpoints."
     },
     "t2": {
-      "tag": "منتزه",
-      "title": "ساحل المنتزه الوطني",
-      "desc": "كالا إريس أو نقاط المشاهدة أو مسارات توريس."
+      "tag": "Park",
+      "title": "National Park Coast",
+      "desc": "Cala Iris, viewpoints or coastal trails."
     },
     "t3": {
-      "tag": "قارب",
-      "title": "رحلة قارب ساحلية",
-      "desc": "منحدرات وخلجان من الماء عندما تعمل الشركات."
-    }
+      "tag": "Boat",
+      "title": "Coastal Boat Trip",
+      "desc": "Cliffs and bays from the water when operators run."
+    },
+    "check": "تحقق من التوفر على GetYourGuide ←",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission, at no extra cost to you."
   },
   "nearby": {
     "badge": "استمر في الاستكشاف",
     "title": "مزيد من الأماكن في الحسيمة",
-    "back": "← العودة إلى دليل الحسيمة"
+    "back": "← العودة إلى دليل الحسيمة",
+    "explore": "استكشف المكان ←"
   },
   "blog": {
-    "badge": "من المدونة",
-    "title": "مقالات ذات صلة",
-    "read": "اقرأ المقال ←",
-    "all": "جميع المقالات ←",
+    "badge": "From the Blog",
+    "title": "Related Articles",
+    "all": "All articles →",
+    "read": "Read the article →",
     "a1": {
-      "tag": "تخطيط",
-      "title": "المرة الأولى في الحسيمة",
-      "desc": "الشواطئ والمنتزه ومدة الإقامة."
+      "tag": "Planning",
+      "title": "First Time in Al Hoceima",
+      "desc": "Beaches, the park and how long to stay."
     },
     "a2": {
-      "tag": "دليل",
-      "title": "ساحل الريف المتوسطي",
-      "desc": "خلجان ومنحدرات ونصائح عملية."
+      "tag": "Guide",
+      "title": "Rif Mediterranean Coast",
+      "desc": "Bays, cliffs and practical tips."
     },
     "a3": {
-      "tag": "طبيعة",
-      "title": "المنتزه الوطني للحسيمة",
-      "desc": "مسارات وأساسيات المحمية البحرية."
+      "tag": "Nature",
+      "title": "Al Hoceima National Park",
+      "desc": "Trails and marine reserve basics."
     }
   },
   "faq": {
@@ -134,23 +145,23 @@
     "title": "الأسئلة الشائعة حول خليج باديس",
     "q1": {
       "question": "كم يبعد عن الحسيمة؟",
-      "answer": "أبعد غرباً على طول ساحل المنتزه — اعتبره رحلة يومية وليس مشوار تاكسي سريع."
+      "answer": "أبعد غرباً على ساحل المنتزه — اعتبره نزهة يوم لا قفزة تاكسي قصيرة."
     },
     "q2": {
       "question": "السباحة؟",
       "answer": "نعم في ظروف مناسبة؛ تحقق من النصائح المحلية حول التيارات والوصول."
     },
     "q3": {
-      "question": "باديس التاريخي؟",
-      "answer": "يقع الخليج في إطار ساحلي تاريخي؛ اسأل محلياً عن نقاط المشاهدة وأي قواعد وصول."
+      "question": "باديس التاريخية؟",
+      "answer": "الخليج يقع في إطار ساحلي تاريخي؛ اسأل محلياً عن نقاط المشاهدة وأي قواعد وصول."
     },
     "q4": {
-      "question": "هل هو مزدحم؟",
-      "answer": "عادة أهدأ من كيومادو في المدينة — عطلات نهاية الأسبوع الصيفية قد تجذب الزوار."
+      "question": "مزدحم؟",
+      "answer": "عادة أهدأ من كيومادو في المدينة — عطل الصيف قد تجذب زواراً."
     },
     "q5": {
-      "question": "هل تحتاج سيارة رباعية الدفع؟",
-      "answer": "سيارة عادية مع سائق حذر غالباً كافية؛ أكد حالة الطريق مسبقاً."
+      "question": "هل أحتاج سيارة رباعية الدفع؟",
+      "answer": "سيارة عادية مع سائق حذر غالباً تكفي؛ أكد حالة الطريق مسبقاً."
     }
   }
 }

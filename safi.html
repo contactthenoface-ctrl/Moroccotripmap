@@ -395,11 +395,11 @@
                 <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col" href="places/safi-places/potters-quarter.html">
                     <div class="relative h-48 overflow-hidden">
                         <img alt="Potters' Quarter Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
-                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.potters-quarter.tag">Quarter</span>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="safi_page.places.potters.tag">Crafts</span>
                     </div>
                     <div class="p-5 flex-1 flex flex-col">
-                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.potters-quarter.title">Potters' Quarter</h3>
-                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.potters-quarter.desc">Former Jewish quarter inside the walls, lanes and traces of synagogues.</p>
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.places.potters.title">Potters' Quarter</h3>
+                        <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="safi_page.places.potters.desc">Kilns, workshops and artisans that made Safi's name.</p>
                         <span class="mt-auto pt-3 text-vert text-xs font-semibold" data-i18n="safi_page.places.explore">Explore the place →</span>
                     </div>
                 </a>
@@ -595,149 +595,75 @@
         </section>
         
         <!-- Where to Eat Section (6 Restaurants) -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between">
+                <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div>
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.eat.badge">Gastronomy</span>
-                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="safi_page.eat.title">Where to eat in Safi</h2>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.eat.badge">Food</span>
+                    <h2 class="text-3xl font-bold text-vert" data-i18n="safi_page.eat.title">Where to eat in Safi</h2>
                 </div>
-                <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="safi_page.eat.subtitle">Grilled fish, seafood and local tables</p>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="safi_page.eat.subtitle">Grilled fish, seafood and local tables</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- 1. Port restaurants -->
-                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/roudani.html">
-                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Port restaurants Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
-                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
-                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <span>4.6</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.port.tag">Seafood</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.port.loc">Port</span>
                         </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.port.title">Port restaurants</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.port.desc">Day's catch grilled a few steps from the boats.</p>
                     </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.resort.tag">Seafood</span>
-                                <span class="text-xs text-gray-400" data-i18n="safi_page.eat.resort.loc">citadel</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.resort.title">Port restaurants</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.resort.desc">Day's catch grilled a few steps from the boats.</p>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.medina.tag">Local</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.medina.loc">Medina</span>
                         </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.medina.title">Medina tables</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.medina.desc">Simple authentic Moroccan cuisine.</p>
                     </div>
-                </a>
-
-                <!-- 2. Town cafés -->
-                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/maryam.html">
-                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Town cafés Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
-                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
-                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <span>4.3</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.corniche.tag">Café</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.corniche.loc">Corniche</span>
                         </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.corniche.title">Corniche cafés</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.corniche.desc">Tea, juice and sea view.</p>
                     </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.medina.tag">Café</span>
-                                <span class="text-xs text-gray-400" data-i18n="safi_page.eat.medina.loc">Town</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.medina.title">Town cafés</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.medina.desc">Coffee and juice between sessions.</p>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.grill.tag">Grill</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.grill.loc">Town</span>
                         </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.grill.title">Fish grills</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.grill.desc">Sardines and sea bream typical of the coast.</p>
                     </div>
-                </a>
-
-                <!-- 3. Grilled fish -->
-                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/zitoune.html">
-                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Grilled fish Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
-                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
-                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <span>4.4</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.market.tag">Market</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.market.loc">Centre</span>
                         </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.market.title">Central market</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.market.desc">Buy fish and have it cooked on the spot.</p>
                     </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.sidi.tag">Local</span>
-                                <span class="text-xs text-gray-400" data-i18n="safi_page.eat.sidi.loc">Town</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.sidi.title">Grilled fish</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.sidi.desc">Simple fish plates in town restaurants.</p>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.beach.tag">Beach</span>
+                            <span class="text-xs text-gray-400" data-i18n="safi_page.eat.beach.loc">Lalla Fatna</span>
                         </div>
+                        <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.beach.title">Beach tables</h3>
+                        <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.beach.desc">Relaxed setting for lunch facing the waves.</p>
                     </div>
-                </a>
-
-                <!-- 4. Camp meals -->
-                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="#">
-                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Camp meals Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
-                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
-                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <span>4.5</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.market.tag">Camp</span>
-                                <span class="text-xs text-gray-400" data-i18n="safi_page.eat.market.loc">citadel</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.market.title">Camp meals</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.market.desc">Complete meals and convivial atmosphere at local restaurants.</p>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- 5. Hotel restaurants -->
-                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/jardin.html">
-                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hotel restaurants Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
-                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
-                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <span>4.4</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.corniche.tag">Hotel</span>
-                                <span class="text-xs text-gray-400" data-i18n="safi_page.eat.corniche.loc">Town</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.corniche.title">Hotel restaurants</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.corniche.desc">Reliable options if you stay in town.</p>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- 6. Shore café -->
-                <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="restaurants/fassia.html">
-                    <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Shore café Safi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
-                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
-                            <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <span>4.5</span>
-                            <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-grow">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="safi_page.eat.port.tag">Café</span>
-                                <span class="text-xs text-gray-400" data-i18n="safi_page.eat.port.loc">citadel</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="safi_page.eat.port.title">Shore café</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="safi_page.eat.port.desc">Tea with a citadel view after the wind drops.</p>
-                        </div>
-                    </div>
-                </a>
-
+                </div>
             </div>
         </section>
 
@@ -770,43 +696,43 @@
         </section>
 
         <!-- Day Trips from Safi (4 cartes) -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
-            <div class="mb-8">
+                <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
+            <div class="text-center mb-8">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="safi_page.daytrips.badge">Around Safi</span>
-                <h2 class="text-3xl font-bold text-vert" data-i18n="safi_page.daytrips.title">Best outings from Safi</h2>
-                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="safi_page.daytrips.subtitle">Coast, nature and nearby towns.</p>
+                <h2 class="text-3xl font-bold text-vert" data-i18n="safi_page.daytrips.title">Best day trips from Safi</h2>
+                <p class="text-sm text-sombre/70 mt-1 max-w-xl mx-auto" data-i18n="safi_page.daytrips.subtitle">Coast, nature and nearby towns.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Cap Beddouza" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
-                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                <div class="relative rounded-2xl overflow-hidden h-56 group">
+                    <img alt="Cap Beddouza" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.cap_beddouza.title">Cap Beddouza</h3>
                         <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.cap_beddouza.desc">Cliffs and Atlantic panoramas about 25 km away.</p>
                     </div>
                 </div>
-                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Cap Beddouza" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
-                    <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.essaouira.title">Cap Beddouza</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.essaouira.desc">Small historic town and medina on the Oum Er-Rbia.</p>
+                <div class="relative rounded-2xl overflow-hidden h-56 group">
+                    <img alt="Essaouira" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.essaouira.title">Essaouira</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.essaouira.desc">UNESCO medina and port, about 2 hours by road.</p>
                     </div>
                 </div>
-                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Fishing Port waves" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
-                    <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.cap_beddouza.title">Fishing Port</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.cap_beddouza.desc">Large dune beach for a day of sand and sea.</p>
+                <div class="relative rounded-2xl overflow-hidden h-56 group">
+                    <img alt="El Jadida" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.el_jadida.title">El Jadida</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.el_jadida.desc">UNESCO Portuguese City, about 1h30.</p>
                     </div>
                 </div>
-                <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Oualidia desert" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
-                    <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.marrakech.title">Oualidia</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.marrakech.desc">Leave or return via the ochre city (about 2h30)..</p>
+                <div class="relative rounded-2xl overflow-hidden h-56 group">
+                    <img alt="Marrakech" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                        <h3 class="text-base font-bold" data-i18n="safi_page.daytrips.marrakech.title">Marrakech</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="safi_page.daytrips.marrakech.desc">Leave or return via the ochre city (about 2h30).</p>
                     </div>
                 </div>
             </div>
@@ -824,14 +750,14 @@
                         <span data-i18n="safi_page.faq.q1.question">How many days in Safi?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q1.answer">One day is enough for the Safi and sea castle. Two to three days give time for the beaches, port and a possible trip to Oualidia.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q1.answer">One day covers the castle, medina and potters. Two to three days add the museum, Kechla and a beach or Cap Beddouza.</p>
                 </details>
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
-                        <span data-i18n="safi_page.faq.q2.question">Is Safi only for heritage?</span>
+                        <span data-i18n="safi_page.faq.q2.question">Is Safi interesting beyond pottery?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q2.answer">Yes: the UNESCO citadel, sea castle, medina and port form a unique heritage ensemble on the Atlantic coast.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q2.answer">Yes: Portuguese sea castle, medina, fishing port and Atlantic coast form a complete heritage and maritime ensemble.</p>
                 </details>
                 <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
@@ -845,7 +771,7 @@
                         <span data-i18n="safi_page.faq.q4.question">Best time to visit?</span>
                         <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q4.answer">Wind is present much of the year. October to June is popular for comfortable temperatures and reliable sessions.</p>
+                    <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="safi_page.faq.q4.answer">April to June and September–October offer a good balance. Summer suits the beach but can be windy.</p>
                 </details>
             </div>
         </section>

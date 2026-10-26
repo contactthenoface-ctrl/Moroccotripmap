@@ -99,7 +99,9 @@
     "day3_ad": "Musique gnawa et thé à Khamlia, ou souk de Rissani et mausolée Moulay Ali Cherif.",
     "day1_tab": "Jour 1 — Dunes & village",
     "day2_tab": "Jour 2 — Trek chameau & camp",
-    "day3_tab": "Jour 3 — Khamlia & Rissani"
+    "day3_tab": "Jour 3 — Khamlia & Rissani",
+    "day3_e": "Soir — Dernière soirée à Merzouga",
+    "day3_ed": "Dîner tranquille avant de continuer vers Erfoud, Tinghir ou Ouarzazate."
   },
   "directory": {
     "badge": "Où dormir",
@@ -113,24 +115,40 @@
     "title": "Restaurants à Merzouga",
     "subtitle": "Tajines, viandes grillées et thé à la menthe — restaurants du village et tables d’hôtel face aux dunes.",
     "dunes": {
-      "title": "Restaurant des dunes",
-      "desc": "Tajines classiques et grillades avec terrasse face à l’erg — adresse fiable du village."
+      "title": "Restaurant Les Dunes",
+      "desc": "Tajines classiques et grillades avec terrasse face à l’erg — adresse fiable du village.",
+      "tag": "Local · Vue dunes",
+      "loc": "Village · Terrasse"
     },
     "yasmina": {
       "title": "Hôtel Yasmina",
-      "desc": "Restaurant d’hôtel ouvert aux extérieurs — menus marocains et vue vers Erg Chebbi."
+      "desc": "Restaurant d’hôtel ouvert aux extérieurs — menus marocains et vue vers Erg Chebbi.",
+      "tag": "Restaurant d’hôtel",
+      "loc": "Hôtel Yasmina · Village"
     },
     "mohayut": {
       "title": "Kasbah Mohayut",
-      "desc": "Menus marocains dans un cadre kasbah au pied des dunes — populaire auprès des voyageurs."
+      "desc": "Menus marocains dans un cadre kasbah au pied des dunes — populaire auprès des voyageurs.",
+      "tag": "Table kasbah",
+      "loc": "Kasbah Mohayut · Bord des dunes"
     },
     "berbere": {
       "title": "Cuisine berbère (Hassi Labied)",
-      "desc": "Cuisine berbère maison à Hassi Labied — couscous, tajine et soirée plus calme."
+      "desc": "Cuisine berbère maison à Hassi Labied — couscous, tajine et soirée plus calme.",
+      "tag": "Hassi Labied",
+      "loc": "Hassi Labied · Cuisine locale"
     },
     "camp": {
       "title": "Dîner au camp",
-      "desc": "La plupart des camps de nuit incluent un dîner berbère sous les étoiles — souvent le moment fort."
+      "desc": "La plupart des camps de nuit incluent un dîner berbère sous les étoiles — souvent le moment fort.",
+      "tag": "Camp du désert",
+      "loc": "Camp Erg Chebbi"
+    },
+    "sud": {
+      "tag": "Café · Décontracté",
+      "loc": "Centre du village",
+      "title": "Café du Sud",
+      "desc": "Café-restaurant simple pour le petit-déjeuner, omelettes, thé à la menthe et une pause à l’ombre."
     }
   },
   "tips": {

@@ -241,7 +241,7 @@
             <div class="flex items-center gap-2 sm:gap-4">
                 <!-- SÉLECTEUR DE LANGUE -->
                 <div class="relative inline-block text-left" id="lang-menu-container">
-                    <button id="lang-menu-button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
+                    <button id="lang-menu-button" type="button" class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
                         <span id="current-lang-label">EN</span>
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -785,6 +785,65 @@
             sync();
         })();
     </script>
+    
+    <script>
+        const FLAG_SVGS = {
+            en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
+            fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
+            es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
+            ar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="20" height="15" class="rounded-sm shadow-sm"><rect width="900" height="600" fill="#c1272d"/><polygon fill="none" stroke="#006233" stroke-width="15" points="450,170 361,441 593,273 307,273 639,441"/></svg>'
+        };
+
+        function switchLanguage(lang) {
+            try { localStorage.setItem('preferred_lang', lang); } catch (e) {}
+
+            var langLabel = document.getElementById('current-lang-label');
+            var langButton = document.getElementById('lang-menu-button');
+            var langDropdown = document.getElementById('lang-menu-dropdown');
+
+            if (langLabel) langLabel.textContent = lang.toUpperCase();
+            if (langButton && FLAG_SVGS[lang]) {
+                var svg = langButton.querySelector('svg');
+                if (svg) svg.outerHTML = FLAG_SVGS[lang];
+            }
+            if (langDropdown) langDropdown.classList.add('hidden');
+
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(lang);
+            } else if (typeof window.changeLanguage === 'function') {
+                window.changeLanguage(lang);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var langButton = document.getElementById('lang-menu-button');
+            var langDropdown = document.getElementById('lang-menu-dropdown');
+
+            if (langButton && langDropdown) {
+                langButton.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                });
+                document.addEventListener('click', function (e) {
+                    if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.add('hidden');
+                    }
+                });
+            }
+
+            var savedLang = localStorage.getItem('preferred_lang') || 'fr';
+            if (typeof changeLanguage === 'function' || typeof window.changeLanguage === 'function') {
+                switchLanguage(savedLang);
+            } else {
+                window.addEventListener('load', function () { switchLanguage(savedLang); });
+            }
+        });
+    </script>
+
     <script src="../../js/i18n.js"></script>
     <script src="../../js/search.js"></script>
 </body>

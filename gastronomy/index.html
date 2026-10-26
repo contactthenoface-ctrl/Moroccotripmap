@@ -95,7 +95,6 @@
             
             <!-- Lang Switcher & Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-4">
-                <!-- SÉLECTEUR DE LANGUE -->
                 <div class="relative inline-block text-left" id="lang-menu-container">
                     <button class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition" id="lang-menu-button">
                         <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
@@ -213,7 +212,7 @@
                     <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">GetYourGuide &amp; Viator</strong> <span data-i18n="gastronomy_page.stat_partner">Verified Experiences</span></span>
                 </div>
 
-                <!-- Instant Search Bar (Correction: ajout de relative z-20) -->
+                <!-- Instant Search Bar -->
                 <div class="mt-8 max-w-lg relative z-20">
                     <div class="relative">
                         <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search dish (e.g. Pastilla, Tajine) or city (e.g. Marrakech, Fes)..." data-i18n-placeholder="gastronomy_page.search_placeholder" type="text"/>
@@ -534,7 +533,7 @@
             </div>
         </section>
 
-        <!-- SECTION 2: CITIES & GASTRONOMIC EXPERIENCES (WITH MAP SVG MARKERS) -->
+        <!-- SECTION 2: CITIES & GASTRONOMIC EXPERIENCES -->
         <section class="bg-white py-16 border-t border-sable/15" id="cities-section">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-10">
@@ -614,7 +613,7 @@
                     </div>
                 </div>
 
-                <!-- CITIES CARDS GRID (WITH MAP SVG MARKERS) -->
+                <!-- CITIES CARDS GRID (40+ Villes complètes) -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="destinations-grid">
 
                     <a href="https://www.getyourguide.com/s/?q=Marrakech+cooking+class" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="marrakech" data-region="imperial">
@@ -635,7 +634,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Fes+food+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="fes" data-region="imperial">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -653,7 +651,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Essaouira+seafood" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="essaouira" data-region="atlantic">
                         <div>
@@ -673,7 +670,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Casablanca+food+tour" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="casablanca" data-region="atlantic">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -691,7 +687,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Tangier+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tangier" data-region="north atlantic">
                         <div>
@@ -711,7 +706,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Chefchaouen+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="chefchaouen" data-region="north">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -729,7 +723,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Agadir+cooking" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="agadir" data-region="atlantic">
                         <div>
@@ -749,7 +742,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Rabat+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="rabat" data-region="imperial">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -767,7 +759,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Meknes+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="meknes" data-region="imperial">
                         <div>
@@ -787,7 +778,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Safi+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="safi" data-region="atlantic">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -805,7 +795,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Merzouga+desert+dinner" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="merzouga" data-region="desert">
                         <div>
@@ -825,7 +814,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Ouarzazate+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ouarzazate" data-region="desert">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -843,7 +831,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Tetouan+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tetouan" data-region="north">
                         <div>
@@ -863,7 +850,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Al+Hoceima+seafood" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="alhoceima" data-region="north">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -881,7 +867,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Dakhla+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="dakhla" data-region="desert atlantic">
                         <div>
@@ -901,7 +886,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Ifrane+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ifrane" data-region="mountains">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -919,7 +903,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=El+Jadida+seafood" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="eljadida" data-region="atlantic">
                         <div>
@@ -939,7 +922,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Taroudant+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="taroudant" data-region="desert">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -957,7 +939,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Oujda+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="oujda" data-region="north">
                         <div>
@@ -977,7 +958,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Zagora+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="zagora" data-region="desert">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -995,7 +975,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Nador+seafood" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="nador" data-region="north">
                         <div>
@@ -1015,7 +994,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Laayoune+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="laayoune" data-region="desert atlantic">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1033,7 +1011,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Azilal+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="azilal" data-region="mountains">
                         <div>
@@ -1053,7 +1030,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Tinghir+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tinghir" data-region="desert mountains">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1071,7 +1047,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Asilah+seafood" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="asilah" data-region="north atlantic">
                         <div>
@@ -1091,7 +1066,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Beni+Mellal+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="benimellal" data-region="mountains">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1109,7 +1083,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Kenitra+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="kenitra" data-region="atlantic">
                         <div>
@@ -1129,7 +1102,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Mohammedia+seafood" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="mohammedia" data-region="atlantic">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1147,7 +1119,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Guelmim+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="guelmim" data-region="desert">
                         <div>
@@ -1167,7 +1138,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Errachidia+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="errachidia" data-region="desert">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1185,7 +1155,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Midelt+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="midelt" data-region="mountains">
                         <div>
@@ -1205,7 +1174,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Tiznit+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tiznit" data-region="desert atlantic">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1223,7 +1191,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Tan-Tan+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="tantan" data-region="desert atlantic">
                         <div>
@@ -1243,7 +1210,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Berkane+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="berkane" data-region="north">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1261,7 +1227,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Khemisset+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="khemisset" data-region="imperial">
                         <div>
@@ -1281,7 +1246,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Settat+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="settat" data-region="atlantic">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1299,7 +1263,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Berrechid+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="berrechid" data-region="atlantic">
                         <div>
@@ -1319,7 +1282,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Larache+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="larache" data-region="north atlantic">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1338,7 +1300,6 @@
                         </div>
                     </a>
 
-
                     <a href="https://www.getyourguide.com/s/?q=Ksar+El+Kebir+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="ksarelkebir" data-region="north">
                         <div>
                             <div class="w-full h-32 rounded-2xl mb-4 flex items-center justify-center border border-sable/20 relative overflow-hidden bg-gradient-to-br from-sable/25 via-vert/20 to-sable/10">
@@ -1356,7 +1317,6 @@
                             <span class="group-hover:translate-x-1 transition">→</span>
                         </div>
                     </a>
-
 
                     <a href="https://www.getyourguide.com/s/?q=Skoura+food" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="skoura" data-region="desert">
                         <div>
@@ -1380,7 +1340,7 @@
             </div>
         </section>
 
-        <!-- SECTION 3: FAQ SEO WITH INTERACTIVE ACCORDIONS -->
+        <!-- SECTION 3: FAQ SEO -->
         <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="text-center mb-10">
                 <span class="text-xs font-bold text-sable uppercase tracking-widest" data-i18n="gastronomy_page.faq.eyebrow">Culinary Guide &amp; Tips</span>
@@ -1430,7 +1390,7 @@
             </div>
         </section>
 
-        <!-- BANNIÈRE CULINAIRE AFFILIATION (GETYOURGUIDE / VIATOR) -->
+        <!-- BANNIÈRE CULINAIRE AFFILIATION -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="max-w-xl text-left z-10">
@@ -1453,50 +1413,49 @@
 
     <!-- Footer -->
     <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-        <div>
-            <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-            <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
-                Discover. Plan. Experience Morocco.<br/>
-                The premier tourism directory and cultural travel guide for visitors exploring Morocco.
-            </p>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
+                <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
+                    Discover. Plan. Experience Morocco.<br/>
+                    The premier tourism directory and cultural travel guide for visitors exploring Morocco.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.recommended_title">Recommended Pages</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
+                    <li><a class="hover:text-white transition" href="../fes.html" data-i18n="footer.link_fes">Fes Ancient Medina</a></li>
+                    <li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
+                    <li><a class="hover:text-white transition" href="../blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
+                    <li><a class="hover:text-white transition font-semibold text-sable" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Travel Categories</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
+                    <li><a class="hover:text-white transition" href="../gastronomy/index.html" data-i18n="footer.link_restaurants">Moroccan Gastronomy & Food</a></li>
+                    <li><a class="hover:text-white transition" href="../experiences/index.html" data-i18n="footer.link_experiences">Desert Tours & Activities</a></li>
+                    <li><a class="hover:text-white transition" href="../transport/index.html" data-i18n="footer.link_transport">Transport & Rental Cars</a></li>
+                    <li><a class="hover:text-white transition" href="../programmes/index.html" data-i18n="footer.link_itineraries">Circuits & Itineraries</a></li>
+                    <li><a class="hover:text-white transition" href="../blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
+                <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
+                <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                    @moroccotripmap
+                </a>
+            </div>
         </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.recommended_title">Recommended Pages</h4>
-            <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
-                <li><a class="hover:text-white transition" href="../fes.html" data-i18n="footer.link_fes">Fes Ancient Medina</a></li>
-                <li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
-                <li><a class="hover:text-white transition" href="../blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
-
-                <li><a class="hover:text-white transition font-semibold text-sable" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
-            </ul>
+        <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
+            <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
+            <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
         </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Travel Categories</h4>
-            <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
-                <li><a class="hover:text-white transition" href="../gastronomy/index.html" data-i18n="footer.link_restaurants">Moroccan Gastronomy & Food</a></li>
-                <li><a class="hover:text-white transition" href="../experiences/index.html" data-i18n="footer.link_experiences">Desert Tours & Activities</a></li>
-                <li><a class="hover:text-white transition" href="../transport/index.html" data-i18n="footer.link_transport">Transport & Rental Cars</a></li>
-                <li><a class="hover:text-white transition" href="../programmes/index.html" data-i18n="footer.link_itineraries">Circuits & Itineraries</a></li>
-                <li><a class="hover:text-white transition" href="../blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
-            <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
-            <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-                @moroccotripmap
-            </a>
-        </div>
-    </div>
-    <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-        <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
-        <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
-    </div>
-</footer>
+    </footer>
 
     <!-- Interactive Logic & Filtering JS -->
     <script>
@@ -1536,7 +1495,6 @@
                 cityPickerSelect.addEventListener('change', function() {
                     const selectedCity = this.value;
                     
-                    // Reset Region Tabs Visual State
                     regionTabs.forEach(t => {
                         t.classList.remove('active', 'bg-vert', 'text-white');
                         t.classList.add('bg-white', 'text-sombre');
@@ -1568,7 +1526,6 @@
                     this.classList.add('active', 'bg-vert', 'text-white');
                     this.classList.remove('bg-white', 'text-sombre');
 
-                    // Reset Select to 'all'
                     if (cityPickerSelect) cityPickerSelect.value = 'all';
 
                     cityCards.forEach(card => {
@@ -1578,26 +1535,11 @@
                 });
             });
 
-            // Instant Search Input Logic
+            // CORRECTION : Instant Search Input Logic (Multilingue Dynamique)
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
 
             if (searchInput && searchResults) {
-                const searchItems = [
-                    ...Array.from(dishCards).map(c => ({
-                        type: 'Dish',
-                        title: c.querySelector('h3')?.textContent || '',
-                        element: c,
-                        targetSection: 'dishes'
-                    })),
-                    ...Array.from(cityCards).map(c => ({
-                        type: 'City Food Tour',
-                        title: c.querySelector('h3')?.textContent || '',
-                        element: c,
-                        targetSection: 'cities'
-                    }))
-                ];
-
                 searchInput.addEventListener('input', function() {
                     const query = this.value.toLowerCase().trim();
                     searchResults.innerHTML = '';
@@ -1609,7 +1551,21 @@
                         return;
                     }
 
-                    const matches = searchItems.filter(item => item.title.toLowerCase().includes(query));
+                    // Récupération dynamique à chaque frappe pour s'adapter à la langue active (Arabe, Français, etc.)
+                    const currentSearchItems = [
+                        ...Array.from(dishCards).map(c => ({
+                            type: 'Dish',
+                            title: c.querySelector('h3')?.textContent.trim() || '',
+                            element: c
+                        })),
+                        ...Array.from(cityCards).map(c => ({
+                            type: 'City Food Tour',
+                            title: c.querySelector('h3')?.textContent.trim() || '',
+                            element: c
+                        }))
+                    ];
+
+                    const matches = currentSearchItems.filter(item => item.title.toLowerCase().includes(query));
 
                     if (matches.length > 0) {
                         searchResults.classList.remove('hidden');

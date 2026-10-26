@@ -1,55 +1,32 @@
 {
-  "seo": {
-    "title": "Cala Bonita Al Hoceima | Cala de aguas claras | MoroccoTripMap",
-    "description": "¿Visitas Cala Bonita en Al Hoceima? Mejor época, cafés, acceso, consejos de seguridad y duración de la visita.",
-    "og_title": "Cala Bonita Al Hoceima | Cala de aguas claras | MoroccoTripMap",
-    "og_description": "Cala Bonita en Al Hoceima: baño, acceso, orilla de guijarros y arena y consejos para esta cala mediterránea resguardada."
-  },
   "name": "Cala Bonita",
-  "hero_subtitle": "Una cala resguardada de aguas mediterráneas claras cerca del centro de Al Hoceima.",
+  "seo": {
+    "title": "Cala Bonita | MoroccoTripMap",
+    "description": "Sheltered small bay with clear water near the city, ideal for swimming.",
+    "og_title": "Cala Bonita",
+    "og_description": "Sheltered small bay with clear water near the city, ideal for swimming."
+  },
+  "hero_subtitle": "Pequeña bahía resguardada con agua clara cerca de la ciudad.",
   "info": {
-    "best_time_label": "Mejor época",
-    "best_time_val": "Mañana preferible",
-    "duration_label": "Duración sugerida",
+    "best_time_label": "Mejor momento",
+    "best_time_val": "Mañana",
+    "duration_label": "Tiempo sugerido",
     "duration_val": "2 – 3 horas",
     "entry_label": "Entrada",
-    "entry_val": "Acceso libre a la orilla",
-    "area_label": "Ubicación",
-    "area_val": "Cerca del centro"
+    "entry_val": "Gratis",
+    "area_label": "Dónde",
+    "area_val": "Cerca de la ciudad"
   },
   "overview": {
-    "title": "Aguas claras cerca de la ciudad",
-    "p1": "Cala Bonita es una pequeña cala resguardada a un corto trayecto del centro de Al Hoceima — aguas más claras y una escala más íntima que la playa urbana principal.",
-    "p2": "La mezcla de guijarros y arena, más el fondo de acantilados, la hace popular para nadar con mar en calma. El espacio es limitado comparado con Sfiha o Quemado.",
-    "p3": "Llega más temprano en verano para encontrar sitio. Combínala con Quemado o una tarde en el paseo en lugar de tratarla como destino de día completo sola."
-  },
-  "moods": {
-    "badge": "Horario",
-    "title": "Cala Bonita a lo largo del día",
-    "subtitle": "Cuándo ir.",
-    "1": {
-      "tag": "Mañana",
-      "title": "Inicio tranquilo",
-      "duration": "Mañana",
-      "desc": "Luz más suave y aire más fresco."
-    },
-    "2": {
-      "tag": "Mediodía",
-      "title": "Sol fuerte",
-      "duration": "Mediodía",
-      "desc": "Protector solar alto y sombra importan."
-    },
-    "3": {
-      "tag": "Final de tarde",
-      "title": "Mejores colores",
-      "duration": "Final de tarde",
-      "desc": "Luz cálida sobre acantilados y mar."
-    }
+    "title": "Cala de aguas claras",
+    "p1": "Cala protegida de aguas mediterráneas claras cerca de Alhucemas.",
+    "p2": "Buena para nadar con mar calmado; calzado de agua útil.",
+    "p3": "Menos equipada que Quemado — lleve lo necesario."
   },
   "gallery": {
-    "badge": "Galería de fotos",
-    "title": "Cala Bonita en imágenes",
-    "subtitle": "Vistas de Cala Bonita en Al Hoceima.",
+    "badge": "Gallery",
+    "title": "Cala Bonita in Pictures",
+    "subtitle": "Views of Cala Bonita in Al Hoceima.",
     "s1": {
       "caption": "Cala Bonita — 1"
     },
@@ -66,101 +43,125 @@
       "caption": "Cala Bonita — 5"
     }
   },
-  "tips": {
-    "title": "Consejos prácticos para Cala Bonita",
+  "moods": {
+    "badge": "Horarios",
+    "title": "Cala Bonita a lo largo del día",
+    "subtitle": "Cuándo visitar.",
     "1": {
-      "title": "Acceso",
-      "desc": "Confirma horarios de taxi o traslado desde tu alojamiento."
+      "tag": "Mañana",
+      "title": "Inicio tranquilo",
+      "desc": "Luz más suave y aire más fresco.",
+      "duration": "Mañana"
     },
     "2": {
-      "title": "Sol y acantilados",
-      "desc": "Protector solar alto, agua y calzado estable en los senderos costeros."
+      "tag": "Mediodía",
+      "title": "Sol fuerte",
+      "desc": "Alta protección solar y sombra importan.",
+      "duration": "Mediodía"
     },
     "3": {
-      "title": "Respeto",
-      "desc": "Permanece en los caminos permitidos; ten cuidado con nadadores y embarcaciones."
+      "tag": "Final de la tarde",
+      "title": "Mejores colores",
+      "desc": "Luz cálida en la costa.",
+      "duration": "Final de la tarde"
     }
   },
   "food": {
     "title": "Comer cerca de Cala Bonita",
-    "p1": "Planifica las comidas en la ciudad o en cafés de playa de temporada; lleva agua para la cala.",
-    "p2": "El efectivo ayuda en pequeñas paradas.",
-    "li1": "Pescado a la parrilla cerca del puerto y el paseo.",
-    "li2": "Cafés sencillos en Quemado y Sfiha en temporada.",
-    "li3": "Lleva agua y snacks para la cala.",
-    "li4": "Restaurantes de hotel si te alojas en la bahía.",
-    "li5": "Confirma horarios fuera de temporada alta."
+    "p1": "Plan meals in town or seasonal beach cafés; carry water on park-coast stops.",
+    "li1": "Grilled fish near the port and corniche.",
+    "li2": "Simple cafés in Quemado and Isli in season.",
+    "li3": "Carry water and snacks for remote coastal sites.",
+    "li4": "Hotel restaurants if you stay on the bay.",
+    "li5": "Check opening hours off-peak.",
+    "p2": "Cash helps at small stops."
   },
-  "gyg": {
-    "badge": "Tours y experiencias",
-    "title": "Tours vinculados a Cala Bonita",
-    "subtitle": "Opciones de costa, parque y barco cuando están disponibles.",
-    "check": "Consultar disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos de estos enlaces son de afiliados. Si reservas a través de ellos podemos ganar una pequeña comisión sin coste extra para ti.",
-    "t1": {
-      "tag": "Costa",
-      "title": "Orientación de la cala",
-      "desc": "Introducción a la cala y miradores cercanos."
+  "tips": {
+    "title": "Consejos prácticos para Cala Bonita",
+    "1": {
+      "title": "Getting There",
+      "desc": "Confirm taxi or transfer times from your stay."
     },
-    "t2": {
-      "tag": "Parque",
-      "title": "Costa del parque nacional",
-      "desc": "Cala Iris, miradores o senderos de Torres."
+    "2": {
+      "title": "Sun & Conditions",
+      "desc": "High sun protection, water and suitable footwear."
     },
-    "t3": {
-      "tag": "Barco",
-      "title": "Paseo en barco costero",
-      "desc": "Acantilados y calas desde el agua cuando operan los barcos."
+    "3": {
+      "title": "Respect",
+      "desc": "Stay on allowed paths; respect others and the environment."
     }
   },
+  "gyg": {
+    "badge": "Tours & Experiences",
+    "title": "Tours Linked to Cala Bonita",
+    "subtitle": "Coast, park and boat options when available.",
+    "t1": {
+      "tag": "Coast",
+      "title": "Orientation",
+      "desc": "Introduction to the area and nearby viewpoints."
+    },
+    "t2": {
+      "tag": "Park",
+      "title": "National Park Coast",
+      "desc": "Cala Iris, viewpoints or coastal trails."
+    },
+    "t3": {
+      "tag": "Boat",
+      "title": "Coastal Boat Trip",
+      "desc": "Cliffs and bays from the water when operators run."
+    },
+    "check": "Ver disponibilidad en GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission, at no extra cost to you."
+  },
   "nearby": {
-    "badge": "Sigue explorando",
+    "badge": "Seguir explorando",
     "title": "Más lugares en Al Hoceima",
-    "back": "← Volver a la guía de Al Hoceima"
+    "back": "← Volver a la guía de Al Hoceima",
+    "explore": "Explorar el lugar →"
   },
   "blog": {
-    "badge": "Del blog",
-    "title": "Artículos relacionados",
-    "read": "Leer artículo →",
-    "all": "Todos los artículos →",
+    "badge": "From the Blog",
+    "title": "Related Articles",
+    "all": "All articles →",
+    "read": "Read the article →",
     "a1": {
-      "tag": "Planificación",
-      "title": "Primera vez en Al Hoceima",
-      "desc": "Playas, parque y cuánto tiempo quedarse."
+      "tag": "Planning",
+      "title": "First Time in Al Hoceima",
+      "desc": "Beaches, the park and how long to stay."
     },
     "a2": {
-      "tag": "Guía",
-      "title": "Costa mediterránea del Rif",
-      "desc": "Calas, acantilados y consejos prácticos."
+      "tag": "Guide",
+      "title": "Rif Mediterranean Coast",
+      "desc": "Bays, cliffs and practical tips."
     },
     "a3": {
-      "tag": "Naturaleza",
-      "title": "Parque Nacional de Al Hoceima",
-      "desc": "Senderos y bases de la reserva marina."
+      "tag": "Nature",
+      "title": "Al Hoceima National Park",
+      "desc": "Trails and marine reserve basics."
     }
   },
   "faq": {
     "badge": "Bueno saber",
-    "title": "Preguntas frecuentes Cala Bonita",
+    "title": "FAQ Cala Bonita",
     "q1": {
       "question": "¿A qué distancia de Quemado?",
-      "answer": "Un corto trayecto en taxi o a pie según tu alojamiento — pregunta en local el camino más sencillo."
+      "answer": "Taxi corto o a pie según el alojamiento — pregunte la ruta más fácil."
     },
     "q2": {
-      "question": "¿Arena o guijarros?",
-      "answer": "Una mezcla; los zapatos de agua ayudan si eres sensible."
+      "question": "¿Arena o piedras?",
+      "answer": "Una mezcla; el calzado de agua ayuda si es sensible."
     },
     "q3": {
       "question": "¿Buena para snorkel?",
-      "answer": "Con mar en calma y clara, la cala puede ser agradable para mirar bajo la superficie."
+      "answer": "Con agua calmada y clara, la cala puede ser agradable para mirar bajo la superficie."
     },
     "q4": {
-      "question": "¿Aglomeraciones?",
-      "answer": "Puede llenarse las tardes de verano — la mañana es más tranquila."
+      "question": "¿Hay mucha gente?",
+      "answer": "Puede llenarse en las tardes de verano; la mañana es más tranquila."
     },
     "q5": {
-      "question": "¿Instalaciones?",
-      "answer": "Más limitadas que Quemado; lleva agua y lo que necesites."
+      "question": "¿Qué instalaciones?",
+      "answer": "Más limitadas que Quemado; lleve agua y lo que necesite."
     }
   }
 }

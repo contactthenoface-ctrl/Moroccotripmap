@@ -1,50 +1,27 @@
 {
+  "name": "Sfiha Beach",
   "seo": {
-    "title": "Sfiha Beach Al Hoceima | Family Sand & Peñón Views | MoroccoTripMap",
-    "description": "Visiting Sfiha Beach in Al Hoceima? Best time, cafés, access, safety tips and how long to stay.",
-    "og_title": "Sfiha Beach Al Hoceima | Family Sand & Peñón Views | MoroccoTripMap",
+    "title": "Sfiha Beach Al Hoceima | MoroccoTripMap",
+    "description": "Visiting Sfiha Beach in Al Hoceima? Best time to go, cafés, access to the  harbour, safety tips and how long to stay.",
+    "og_title": "Sfiha Beach Al Hoceima | Family Sand &amp; Peñón Views | MoroccoTripMap",
     "og_description": "Sfiha Beach in Al Hoceima: family-friendly sand, Peñón views, access tips and how it differs from Quemado."
   },
-  "name": "Sfiha Beach",
   "hero_subtitle": "Wide family beach east of town with views toward the Peñón de Alhucemas.",
   "info": {
     "best_time_label": "Best time",
-    "best_time_val": "Morning or late afternoon",
+    "best_time_val": "Full beach day possible",
     "duration_label": "Suggested duration",
-    "duration_val": "2 – 4 hours",
+    "duration_val": "Half day to full day",
     "entry_label": "Entry",
-    "entry_val": "Free beach access",
+    "entry_val": "Free public beach",
     "area_label": "Location",
-    "area_val": "East of town"
+    "area_val": "East of the centre"
   },
   "overview": {
-    "title": "Family sand and Peñón views",
-    "p1": "Sfiha is a wider family beach east of the centre, with more space than Quemado and views toward the Peñón de Alhucemas on clear days.",
-    "p2": "Seasonal cafés and basic beach services appear in summer. A short taxi from town is the usual access.",
-    "p3": "Many families prefer the extra room; both Sfiha and Quemado are urban-style Mediterranean beaches."
-  },
-  "moods": {
-    "badge": "Timing",
-    "title": "Sfiha Beach through the day",
-    "subtitle": "When to go.",
-    "1": {
-      "tag": "Morning",
-      "title": "Quiet start",
-      "duration": "Morning",
-      "desc": "Softer light and cooler air."
-    },
-    "2": {
-      "tag": "Midday",
-      "title": "Strong sun",
-      "duration": "Midday",
-      "desc": "High SPF and shade matter."
-    },
-    "3": {
-      "tag": "Late afternoon",
-      "title": "Best colour",
-      "duration": "Late afternoon",
-      "desc": "Warm light on cliffs and sea."
-    }
+    "title": "Space and a horizon view",
+    "p1": "Sfiha Beach offers a wider band of sand than the central Quemado strip, with a more open feel and views out toward the Peñón de Alhucemas islet on the horizon.",
+    "p2": "Families favour it for space and a slightly calmer atmosphere. Services appear in season; the setting remains classic Mediterranean Rif coast.",
+    "p3": "Pair a Sfiha afternoon with a morning at Cala Bonita, or use it as your main swim base if you prefer more room than town-centre sand."
   },
   "gallery": {
     "badge": "Photo gallery",
@@ -66,6 +43,39 @@
       "caption": "Sfiha Beach — 5"
     }
   },
+  "moods": {
+    "badge": "Timing",
+    "title": "Sfiha Beach through the day",
+    "subtitle": "When to go.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet start",
+      "desc": "Softer light and cooler air.",
+      "duration": "Morning"
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Strong sun",
+      "desc": "High SPF and shade matter.",
+      "duration": "Midday"
+    },
+    "3": {
+      "tag": "Late afternoon",
+      "title": "Best colour",
+      "desc": "Warm light on cliffs and sea.",
+      "duration": "Late afternoon"
+    }
+  },
+  "food": {
+    "title": "Food near Sfiha Beach",
+    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
+    "li1": "Grilled fish near the port and corniche.",
+    "li2": "Simple cafés at Quemado and Sfiha in season.",
+    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
+    "li4": "Hotel restaurants if you stay on the bay.",
+    "li5": "Confirm opening hours outside peak summer.",
+    "p2": "Cash helps at small beach and village stops."
+  },
   "tips": {
     "title": "Practical tips for Sfiha Beach",
     "1": {
@@ -73,34 +83,22 @@
       "desc": "Confirm taxi or transfer times from your stay."
     },
     "2": {
-      "title": "Sun & conditions",
-      "desc": "High SPF, water and suitable footwear."
+      "title": "Sun & cliffs",
+      "desc": "High SPF, water and steady shoes on coastal paths."
     },
     "3": {
       "title": "Respect",
-      "desc": "Stay on allowed paths; mind others and the environment."
+      "desc": "Stay on allowed paths in the national park; mind swimmers and boats."
     }
-  },
-  "food": {
-    "title": "Food near Sfiha Beach",
-    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for outings.",
-    "p2": "Cash helps at small beach and village stops.",
-    "li1": "Grilled fish near the port and corniche.",
-    "li2": "Simple cafés at Quemado and Sfiha in season.",
-    "li3": "Carry water and snacks for park-coast sites.",
-    "li4": "Hotel restaurants if you stay on the bay.",
-    "li5": "Confirm opening hours outside peak summer."
   },
   "gyg": {
     "badge": "Tours & experiences",
     "title": "Tours linked to Sfiha Beach",
-    "subtitle": "Coast, park and boat options when available.",
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
+    "subtitle": "Options if you prefer a local operator.",
     "t1": {
       "tag": "Coast",
       "title": "Bay orientation",
-      "desc": "Introduction to the area and nearby viewpoints."
+      "desc": "Town beaches and corniche introduction."
     },
     "t2": {
       "tag": "Park",
@@ -111,18 +109,21 @@
       "tag": "Boat",
       "title": "Coastal boat trip",
       "desc": "Cliffs and coves from the water when operators run."
-    }
+    },
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
   },
   "nearby": {
     "badge": "Keep exploring",
     "title": "More places in Al Hoceima",
-    "back": "← Back to the Al Hoceima guide"
+    "back": "← Back to the Al Hoceima guide",
+    "explore": "Explore place →"
   },
   "blog": {
     "badge": "From the blog",
     "title": "Related articles",
-    "read": "Read article →",
     "all": "All articles →",
+    "read": "Read article →",
     "a1": {
       "tag": "Planning",
       "title": "First time in Al Hoceima",

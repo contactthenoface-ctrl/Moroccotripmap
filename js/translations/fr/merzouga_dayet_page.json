@@ -1,102 +1,176 @@
 {
   "seo": {
-    "title": "Dayet Srji à Merzouga 2026 | Lac Saisonnier & Flamingos | MoroccoTripMap",
-    "description": "Visite de Dayet Srji à Merzouga : guide du lac saisonnier, flamants roses, observation des oiseaux, meilleurs moments photo et conseils pratiques.",
-    "og_title": "Dayet Srji, Merzouga : Lac Saisonnier, Flamingos & Conseils | MoroccoTripMap",
-    "og_description": "Comment visiter ce site naturel de Merzouga : faune du lac saisonnier, observation des oiseaux dans l'Erg Chebbi et conseils pratiques."
+    "title": "Dayet Srji | MoroccoTripMap",
+    "description": "Visiting Dayet Srji in Merzouga? Seasonal lake guide, flamingos, birdwatching spots, best photo timing and practical desert tips.",
+    "og_title": "Dayet Srji, Merzouga: Seasonal Lake, Flamingos & Tips",
+    "og_description": "How to visit this Merzouga highlight: seasonal lake wildlife, birdwatching in Erg Chebbi, best visiting hours and practical advice."
   },
-  "hero_subtitle": "Lac saisonnier qui attire parfois des flamants roses après les pluies.",
+  "name": "Dayet Srji",
+  "hero_subtitle": "Lac saisonnier et observation des oiseaux près de l’Erg Chebbi.",
   "info": {
     "best_time_label": "Meilleur moment",
-    "best_time_val": "Matin (plus frais)",
-    "duration_label": "Durée idéale",
-    "duration_val": "Demi-journée depuis Merzouga",
+    "best_time_val": "Matin ou fin d’après-midi",
+    "duration_label": "Durée suggérée",
+    "duration_val": "30 – 60 minutes",
     "entry_label": "Entrée",
-    "entry_val": "Accès libre aux zones humides",
-    "area_label": "Localisation",
-    "area_val": "Près des dunes de l'Erg Chebbi"
+    "entry_val": "Gratuit",
+    "area_label": "Emplacement",
+    "area_val": "Près de Merzouga / Erg Chebbi"
   },
   "overview": {
-    "title": "Le lac saisonnier de Merzouga",
-    "p1": "Lac saisonnier qui peut attirer des flamants roses après les pluies. Dayet Srji invite à prendre le temps d'observer les reflets de l'eau, les oiseaux migrateurs et la vie sauvage aux portes du désert.",
-    "p2": "Le niveau d'eau varie selon les précipitations récentes. Vérifiez les conditions sur place à l'arrivée et restez flexible face à la chaleur diurne.",
-    "p3": "Associez Dayet Srji à une randonnée à dromadaire ou à une excursion dans les dunes pour parfaire votre découverte du désert à Merzouga."
+    "title": "Le lac saisonnier et l’Erg Chebbi",
+    "p1": "Dayet Srji est un lac saisonnier près de Merzouga, connu pour l’observation des oiseaux et les vues sur les dunes lorsqu’il se remplit après les pluies.",
+    "p2": "Flamants et oiseaux migrateurs apparaissent surtout après des pluies d’hiver ou de printemps suffisantes. En période sèche, le fond peut être complètement à sec.",
+    "p3": "Une courte visite se combine bien avec une excursion dans les dunes ou le village."
   },
   "gallery": {
-    "badge": "Galerie",
+    "badge": "Galerie photo",
     "title": "Dayet Srji en images",
-    "subtitle": "Faites glisser pour découvrir le lac saisonnier, les habitats d'oiseaux et les paysages sahariens.",
-    "s1": { "caption": "Vue du lac" },
-    "s2": { "caption": "Ambiance d'observation des oiseaux" },
-    "s3": { "caption": "Contraste entre l'eau et le désert" },
-    "s4": { "caption": "Aux alentours du site" },
-    "s5": { "caption": "Lumière du soir sur Merzouga" }
+    "subtitle": "Vues depuis Dayet Srji à Merzouga.",
+    "s1": {
+      "caption": "Dayet Srji — 1"
+    },
+    "s2": {
+      "caption": "Dayet Srji — 2"
+    },
+    "s3": {
+      "caption": "Dayet Srji — 3"
+    },
+    "s4": {
+      "caption": "Dayet Srji — 4"
+    },
+    "s5": {
+      "caption": "Dayet Srji — 5"
+    }
   },
   "moods": {
     "badge": "Timing",
-    "title": "À voir à Dayet Srji",
-    "subtitle": "Zones humides, ornithologie et horizon désertique : trois aspects incontournables.",
-    "1": { "tag": "Nature", "title": "Habitat humide", "desc": "Découvrez les oiseaux migrateurs et l'eau saisonnière au Sahara.", "duration": "Visite • 30 – 45 min" },
-    "2": { "tag": "Lumière", "title": "Meilleures heures", "desc": "La lumière du matin offre des eaux calmes et une faune active.", "duration": "Matin • Heure dorée" },
-    "3": { "tag": "Conseil", "title": "Jumelles", "desc": "Apportez des jumelles ou un téléobjectif pour observer les flamants roses.", "duration": "Observation • 30 min" }
+    "title": "What to See at Dayet Srji",
+    "subtitle": "Wetlands, birdlife and desert horizon — three angles worth experiencing.",
+    "1": {
+      "tag": "Nature",
+      "title": "Wetland Habitat",
+      "desc": "Discover migratory birds and seasonal water in the Sahara.",
+      "duration": "Visit • 30 – 45 min"
+    },
+    "2": {
+      "tag": "Light",
+      "title": "Best Hours",
+      "desc": "Morning light offers calm waters and active birdlife.",
+      "duration": "Morning • Golden hour"
+    },
+    "3": {
+      "tag": "Tip",
+      "title": "Binoculars",
+      "desc": "Bring binoculars or a telephoto lens for flamingos.",
+      "duration": "Observation • 30 min"
+    }
   },
   "food": {
-    "title": "Avant ou après la visite du lac",
-    "p1": "La gastronomie du désert comprend tajines de bivouac, demi-pension en hôtel et repas locaux après l'exploration.",
-    "li1": "Thé à la menthe matinal dans le village de Merzouga",
-    "li2": "Dîner traditionnel berbère en campement",
-    "li3": "Restaurant d'hôtel près des dunes",
-    "li4": "Grillades et tajines locaux",
-    "li5": "Détente autour d'une boisson fraîche après l'observation",
-    "p2": "Pensez à réserver la demi-pension avec votre hébergement, car les options extérieures sont limitées après la tombée de la nuit."
+    "title": "Before or After Visiting the Lake",
+    "p1": "Desert dining includes camp tagines, hotel half-board and village meals after exploring the area.",
+    "li1": "Morning mint tea in Merzouga village",
+    "li2": "Traditional Berber camp dinner",
+    "li3": "Hotel restaurant near the dunes",
+    "li4": "Local grill and tagine spots",
+    "li5": "Relaxing with refreshments after birdwatching",
+    "p2": "Book half-board with your accommodation; options outside are limited after dark."
   },
   "tips": {
-    "title": "Conseils pratiques pour visiter Dayet Srji",
-    "1": { "title": "Eau saisonnière", "desc": "Renseignez-vous sur place pour savoir si l'eau et les flamants roses sont présents après les pluies." },
-    "2": { "title": "4x4 ou Quad", "desc": "L'accès aux pistes du lac est plus simple en véhicule 4x4 ou avec un guide local." },
-    "3": { "title": "Protection solaire", "desc": "La zone dégagée du lac offre peu d'ombre — prévoyez lunettes, chapeau et crème solaire." }
+    "title": "Conseils pratiques pour Dayet Srji",
+    "1": {
+      "title": "Saisonnalité",
+      "desc": "Vérifiez l’état de l’eau sur place avant d’y aller."
+    },
+    "2": {
+      "title": "Jumelles",
+      "desc": "Jumelles ou téléobjectif utiles pour les oiseaux."
+    },
+    "3": {
+      "title": "Respect",
+      "desc": "Restez à distance des berges humides et ne dérangez pas les oiseaux."
+    }
   },
   "gyg": {
-    "badge": "Excursions & Activités",
-    "title": "Réserver une excursion désert & lac",
-    "subtitle": "De superbes safaris 4x4 combinant Dayet Srji, les dunes de l'Erg Chebbi et le village de Khamlia.",
-    "t1": { "tag": "Safari 4x4", "title": "Safari 4x4 Erg Chebbi & Dayet Srji", "desc": "Explorez le lac saisonnier, les campements nomades et les pistes de dunes avec un chauffeur expérimenté." },
-    "t2": { "tag": "Ornithologie", "title": "Visite guidée observation des oiseaux", "desc": "Partez à la rencontre des flamants roses et des oiseaux migrateurs autour de Dayet Srji avec un guide naturaliste." },
-    "t3": { "tag": "Quad & Buggy", "title": "Excursion Quad & Pistes du lac à Merzouga", "desc": "Pilustez à travers les pistes du désert et visitez Dayet Srji lors d'une aventure guidée en quad ou buggy." },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via ceux-ci, nous percevons une petite commission, sans frais supplémentaires pour vous."
+    "badge": "Visites et expériences",
+    "title": "Book a Desert & Lake Excursion",
+    "subtitle": "Great guided 4x4 tours combining Dayet Srji with Erg Chebbi dunes and Khamlia village.",
+    "t1": {
+      "tag": "4x4 Desert Tour",
+      "title": "Erg Chebbi & Dayet Srji 4x4 Safari",
+      "desc": "Explore the seasonal lake, nomad settlements, and dune tracks with an experienced local driver."
+    },
+    "check": "Voir la disponibilité sur GetYourGuide →",
+    "t2": {
+      "tag": "Birdwatching",
+      "title": "Merzouga Birdwatching & Nature Tour",
+      "desc": "Discover flamingos, desert sparrows and migratory birds around Dayet Srji with a nature guide."
+    },
+    "t3": {
+      "tag": "Quad & Buggy",
+      "title": "Merzouga Quad Bike & Lake Track Tour",
+      "desc": "Ride through desert tracks and visit Dayet Srji on an exciting guided quad or buggy adventure."
+    },
+    "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via eux, nous pouvons toucher une petite commission sans frais supplémentaires pour vous."
   },
   "nearby": {
-    "badge": "Continuer l'exploration",
-    "title": "Autres incontournables à Merzouga",
-    "back": "← Retour au guide de Merzouga",
-    "tag": "Incontournable",
+    "badge": "Continuer à explorer",
+    "title": "Autres lieux à Merzouga",
+    "back": "← Retour au guide Merzouga",
+    "tag": "Lieu",
     "erg": "Erg Chebbi",
-    "erg_desc": "Vastes dunes dorées — le cœur de Merzouga.",
-    "camel": "Balade à dromadaire",
-    "camel_desc": "Promenade au coucher ou lever du soleil dans l'erg.",
-    "camp": "Bivouac dans le désert",
-    "camp_desc": "Nuit magique sous le ciel saharien.",
+    "erg_desc": "Vast golden dunes — the heart of Merzouga.",
+    "explore": "Explorer le lieu →",
+    "camel": "Camel Trek",
+    "camel_desc": "Sunset or sunrise ride into the erg.",
+    "camp": "Desert Camp",
+    "camp_desc": "Overnight under the Saharan sky.",
     "khamlia": "Khamlia",
-    "khamlia_desc": "Village de la musique Gnawa près des dunes.",
-    "explore": "Explorer le lieu →"
+    "khamlia_desc": "Gnawa music village near the dunes."
   },
   "blog": {
-    "badge": "Le Blog",
-    "title": "Articles associés",
+    "badge": "Du blog",
+    "title": "Articles liés",
     "all": "Tous les articles →",
-    "a1": { "tag": "Gastronomie", "title": "Guide gastronomique de Merzouga : Tajines et plaisirs du désert", "desc": "Où bien manger à Merzouga, des repas conviviaux en bivouac aux tajines traditionnels." },
-    "a2": { "tag": "Transport", "title": "Se déplacer à Merzouga : 4x4, transferts et pistes du désert", "desc": "Les meilleures solutions pour voyager depuis Errachidia et circuler entre le village et les dunes." },
-    "a3": { "tag": "Planification", "title": "Premier voyage à Merzouga : À quoi s'attendre dans le Sahara", "desc": "Comment appréhender votre premier jour dans le désert et planifier vos visites nature sans stress." },
-    "read": "Lire l'article →"
+    "a1": {
+      "tag": "Préparer",
+      "title": "Première fois à Merzouga",
+      "desc": "Dunes, chameaux et durée de séjour."
+    },
+    "read": "Lire l’article →",
+    "a2": {
+      "tag": "Guide",
+      "title": "Désert marocain",
+      "desc": "Conseils pratiques pour l’Erg Chebbi."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Erg Chebbi",
+      "desc": "Dunes, lever et coucher de soleil."
+    }
   },
   "faq": {
     "badge": "Bon à savoir",
     "title": "FAQ Dayet Srji",
-    "q1": { "question": "Combien de temps faut-il prévoir à Dayet Srji ?", "answer": "La plupart des visiteurs passent 30 à 45 minutes à observer le lac et les oiseaux." },
-    "q2": { "question": "Y a-t-il des frais d'entrée pour Dayet Srji ?", "answer": "Non, Dayet Srji est une zone humide naturelle et saisonnière entièrement gratuite d'accès." },
-    "q3": { "question": "Quel est le meilleur moment pour visiter le lac ?", "answer": "Les matinées sont plus fraîches et idéales pour l'observation des oiseaux, tandis que la fin d'après-midi offre une lumière magnifique." },
-    "q4": { "question": "Verra-t-on toujours des flamants roses sur place ?", "answer": "Les flamants roses et les oiseaux d'eau dépendent entièrement des précipitations ; en période de sécheresse, le lit du lac peut être totalement à sec." },
-    "q5": { "question": "Comment se rendre à Dayet Srji depuis Merzouga ?", "answer": "Le lac est situé à quelques kilomètres du village de Merzouga et s'atteint facilement en 4x4, en quad ou lors d'une excursion guidée." }
+    "q1": {
+      "question": "Combien de temps faut-il à Dayet Srji ?",
+      "answer": "La plupart des visiteurs passent entre 30 et 45 minutes à observer le lac et les oiseaux."
+    },
+    "q2": {
+      "question": "Y a-t-il un droit d’entrée ?",
+      "answer": "Non, Dayet Srji est une zone humide saisonnière naturelle et gratuite."
+    },
+    "q3": {
+      "question": "Quand est-il préférable de visiter ?",
+      "answer": "Le matin est plus frais et idéal pour les oiseaux ; la fin d’après-midi offre une belle lumière chaude."
+    },
+    "q4": {
+      "question": "Verrai-je toujours des flamants ?",
+      "answer": "Flamants et oiseaux d’eau dépendent entièrement des pluies saisonnières ; en période sèche le fond peut être sec."
+    },
+    "q5": {
+      "question": "Comment aller à Dayet Srji depuis Merzouga ?",
+      "answer": "À quelques kilomètres du village, accessible en 4x4, quad ou excursion désertique guidée."
+    }
   }
 }

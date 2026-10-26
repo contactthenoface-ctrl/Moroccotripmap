@@ -1,102 +1,176 @@
 {
   "seo": {
-    "title": "Randonnée à dromadaire à Merzouga 2026 | Dunes de l'Erg Chebbi & Bivouacs | MoroccoTripMap",
-    "description": "Vivez l'expérience ultime de la balade à dromadaire à Merzouga : dunes de l'Erg Chebbi, excursions au coucher/lever du soleil, tenue, conseils et astuces.",
-    "og_title": "Balade à dromadaire, Merzouga : Horaires, Excursions & Conseils | MoroccoTripMap",
-    "og_description": "Comment vivre cette expérience incontournable à Merzouga : méharées dans l'Erg Chebbi, bivouacs dans le désert, tenue vestimentaire et conseils pratiques."
+    "title": "Camel Trek | MoroccoTripMap",
+    "description": "Experience the ultimate Camel Trek in Merzouga: Erg Chebbi dunes routes, sunset and sunrise tours, dress code, best photo spots and practical tips.",
+    "og_title": "Camel Trek, Merzouga: Visiting Hours, Tours & Tips",
+    "og_description": "How to experience this Merzouga highlight: camel rides in Erg Chebbi, desert camps, dress code and practical advice."
   },
-  "hero_subtitle": "Classique promenade en caravane au cœur des dunes de l'Erg Chebbi.",
+  "name": "Balade à dos de chameau",
+  "hero_subtitle": "Marche caravanière classique dans les dunes de l’Erg Chebbi.",
   "info": {
     "best_time_label": "Meilleur moment",
-    "best_time_val": "Matin ou Coucher du soleil",
-    "duration_label": "Durée idéale",
-    "duration_val": "1 – 2 heures ou Nuitée",
-    "entry_label": "Expérience",
-    "entry_val": "Excursion & Bivouac",
-    "area_label": "Lieu",
-    "area_val": "Dunes de l'Erg Chebbi"
+    "best_time_val": "Morning or Sunset",
+    "duration_label": "Durée suggérée",
+    "duration_val": "1 – 2 Hours or Overnight",
+    "entry_label": "Entrée",
+    "entry_val": "Guided trek & camp",
+    "area_label": "Emplacement",
+    "area_val": "Erg Chebbi Dunes"
   },
   "overview": {
-    "title": "La classique caravane de l'Erg Chebbi",
-    "p1": "Classique promenade en caravane au cœur des dunes de l'Erg Chebbi. Une balade à dromadaire invite à prendre le temps : savourez le silence du désert, les nuances dorées changeantes et le rythme traditionnel de l'hospitalité berbère.",
-    "p2": "Les formules vont d'une courte promenade au coucher du soleil à une nuit complète en campement berbère. Confirmez les détails sur place et adaptez votre planning face à la chaleur de la journée.",
-    "p3": "Complétez votre excursion par la visite du village de Khamlia ou des ateliers de fossiles locaux pour parfaire votre immersion saharienne."
+    "title": "La caravane classique de l’Erg Chebbi",
+    "p1": "Classic caravan walk into the Erg Chebbi dunes. A camel trek rewards a slow visit: absorb the silence of the desert, the shifting golden colors, and the traditional rhythm of Berber hospitality.",
+    "p2": "Practical details vary from short sunset rides to full overnight stays in Berber desert camps. Confirm arrangements on arrival and keep plans flexible around daytime heat.",
+    "p3": "Pair your camel trek with visits to Khamlia village or local fossil workshops to round out your desert experience."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "La balade à dromadaire en images",
-    "subtitle": "Faites glisser pour admirer les dunes dorées, les caravanes et les soirées en bivouac.",
-    "s1": { "caption": "Caravane dans les dunes" },
-    "s2": { "caption": "Lueur du coucher de soleil" },
-    "s3": { "caption": "Ambiance du bivouac dans le désert" },
-    "s4": { "caption": "Motifs des crêtes de sable" },
-    "s5": { "caption": "Lumière matinale sur Merzouga" }
+    "badge": "Galerie photo",
+    "title": "Balade à dos de chameau en images",
+    "subtitle": "Vues depuis Balade à dos de chameau à Merzouga.",
+    "s1": {
+      "caption": "Balade à dos de chameau — 1"
+    },
+    "s2": {
+      "caption": "Balade à dos de chameau — 2"
+    },
+    "s3": {
+      "caption": "Balade à dos de chameau — 3"
+    },
+    "s4": {
+      "caption": "Balade à dos de chameau — 4"
+    },
+    "s5": {
+      "caption": "Balade à dos de chameau — 5"
+    }
   },
   "moods": {
     "badge": "Timing",
-    "title": "À quoi s'attendre lors de votre excursion",
-    "subtitle": "Dunes, luminosité et ambiance désertique : trois aspects incontournables.",
-    "1": { "tag": "Expérience", "title": "Balade à dromadaire", "desc": "Le rythme authentique de la traversée des dunes.", "duration": "Excursion • 1 – 2 heures" },
-    "2": { "tag": "Lumière", "title": "Coucher & Lever du soleil", "desc": "La lumière douce du désert sublime les paysages.", "duration": "Heure dorée • 45 – 60 min" },
-    "3": { "tag": "Conseil", "title": "Nuitée en bivouac", "desc": "Associez votre excursion à une nuit sous les tentes.", "duration": "Bivouac • 1 Nuit" }
+    "title": "What to See on Your Camel Trek",
+    "subtitle": "Dunes, light and the desert setting — three angles worth experiencing.",
+    "1": {
+      "tag": "Experience",
+      "title": "Camel Ride",
+      "desc": "The essential rhythm of crossing the dunes.",
+      "duration": "Trek • 1 – 2 hours"
+    },
+    "2": {
+      "tag": "Light",
+      "title": "Sunset & Sunrise",
+      "desc": "Soft desert light flatters the dunes most.",
+      "duration": "Golden hour • 45 – 60 min"
+    },
+    "3": {
+      "tag": "Tip",
+      "title": "Overnight Stay",
+      "desc": "Combine your trek with a night in a desert camp.",
+      "duration": "Camp • 1 Night"
+    }
   },
   "food": {
-    "title": "Avant ou après l'excursion",
-    "p1": "La gastronomie du désert comprend tajines de bivouac, demi-pension en hôtel et repas locaux au village après le retour des dunes.",
-    "li1": "Thé à la menthe au coucher du soleil",
-    "li2": "Dîner traditionnel berbère au camp",
-    "li3": "Restaurant d'hôtel dans le village de Merzouga",
-    "li4": "Grillades et tajines locaux",
-    "li5": "Détente autour d'une boisson fraîche après l'effort",
-    "p2": "Pensez à réserver la demi-pension avec votre camp ou hôtel, car les options extérieures sont limitées une fois la nuit tombée."
+    "title": "Before or After the Trek",
+    "p1": "Desert dining includes camp tagines, hotel half-board and village meals after returning from the sand.",
+    "li1": "Sunset mint tea on the dunes",
+    "li2": "Traditional Berber camp dinner",
+    "li3": "Hotel restaurant in Merzouga village",
+    "li4": "Local grill and tagine spots",
+    "li5": "Relaxing with refreshments after the trek",
+    "p2": "Book half-board with your camp or hotel; options outside are limited after dark."
   },
   "tips": {
-    "title": "Conseils pratiques pour votre balade",
-    "1": { "title": "Protection contre le sable", "desc": "Protégez vos appareils de la poussière fine et portez un pantalon long pour plus de confort." },
-    "2": { "title": "Opérateurs de confiance", "desc": "Réservez auprès de camps et de guides locaux agréés et reconnus." },
-    "3": { "title": "Vêtements chauds", "desc": "Les températures chutent rapidement la nuit dans le désert — prévoyez une veste ou un pull." }
+    "title": "Practical Tips for Your Camel Trek",
+    "1": {
+      "title": "Sand Protection",
+      "desc": "Protect cameras from fine sand and wear long trousers for a comfortable ride."
+    },
+    "2": {
+      "title": "Trusted Operators",
+      "desc": "Book through licensed desert camps and experienced local guides."
+    },
+    "3": {
+      "title": "Warm Layers",
+      "desc": "Desert temperatures drop sharply at night — pack a warm jacket or sweater."
+    }
   },
   "gyg": {
-    "badge": "Excursions & Activités",
-    "title": "Réserver une excursion à dromadaire",
-    "subtitle": "De superbes options pour des balades au coucher du soleil et des nuits en bivouac.",
-    "t1": { "tag": "Coucher de soleil", "title": "Balade à dromadaire au coucher du soleil (Erg Chebbi)", "desc": "Partez à travers les dunes avec un guide local, admirez le coucher de soleil et savourez un thé à la menthe." },
-    "t2": { "tag": "Bivouac nuitée", "title": "Nuit en campement & Randonnée", "desc": "Passez une nuit sous les étoiles dans une tente berbère avec dîner, chants autour du feu et lever du soleil." },
-    "t3": { "tag": "Combo 4x4 & Dromadaire", "title": "Tour 4x4 dans le désert & Dromadaire", "desc": "Explorez les villages nomades, la musique de Khamlia et les dunes en combinant excursion 4x4 et méharée." },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via ceux-ci, nous percevons une petite commission, sans frais supplémentaires pour vous."
+    "badge": "Visites et expériences",
+    "title": "Book a Camel Trek Experience",
+    "subtitle": "Great options for guided sunset rides and overnight desert camps.",
+    "t1": {
+      "tag": "Sunset Trek",
+      "title": "Erg Chebbi Sunset Camel Ride",
+      "desc": "Ride into the dunes with a local guide, watch the sunset, and enjoy mint tea in the desert."
+    },
+    "check": "Voir la disponibilité sur GetYourGuide →",
+    "t2": {
+      "tag": "Overnight Camp",
+      "title": "Overnight Desert Camp & Trek",
+      "desc": "Spend a night under the stars in a Berber tent with dinner, drumming around the fire, and sunrise views."
+    },
+    "t3": {
+      "tag": "4x4 & Camel Combo",
+      "title": "Desert 4x4 Tour & Camel Trek",
+      "desc": "Explore nomadic villages, Khamlia music, and the dunes combining a 4x4 excursion with a camel ride."
+    },
+    "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via eux, nous pouvons toucher une petite commission sans frais supplémentaires pour vous."
   },
   "nearby": {
-    "badge": "Continuer l'exploration",
-    "title": "Autres incontournables à Merzouga",
-    "back": "← Retour au guide de Merzouga",
-    "tag": "Incontournable",
+    "badge": "Continuer à explorer",
+    "title": "Autres lieux à Merzouga",
+    "back": "← Retour au guide Merzouga",
+    "tag": "Lieu",
     "erg": "Erg Chebbi",
-    "erg_desc": "Vastes dunes dorées — le cœur de Merzouga.",
-    "camel": "Balade à dromadaire",
-    "camel_desc": "Promenade au coucher ou lever du soleil.",
-    "camp": "Bivouac dans le désert",
-    "camp_desc": "Nuit magique sous le ciel saharien.",
+    "erg_desc": "Vast golden dunes — the heart of Merzouga.",
+    "explore": "Explorer le lieu →",
+    "camel": "Camel Trek",
+    "camel_desc": "Sunset or sunrise ride into the erg.",
+    "camp": "Desert Camp",
+    "camp_desc": "Overnight under the Saharan sky.",
     "khamlia": "Khamlia",
-    "khamlia_desc": "Village de la musique Gnawa près des dunes.",
-    "explore": "Explorer le lieu →"
+    "khamlia_desc": "Gnawa music village near the dunes."
   },
   "blog": {
-    "badge": "Le Blog",
-    "title": "Articles associés",
+    "badge": "Du blog",
+    "title": "Articles liés",
     "all": "Tous les articles →",
-    "a1": { "tag": "Gastronomie", "title": "Guide gastronomique de Merzouga : Tajines et plaisirs du désert", "desc": "Où bien manger à Merzouga, des repas conviviaux en bivouac aux tajines traditionnels." },
-    "a2": { "tag": "Transport", "title": "Se déplacer à Merzouga : 4x4, transferts et pistes du désert", "desc": "Les meilleures solutions pour voyager depuis Errachidia et circuler entre le village et les dunes." },
-    "a3": { "tag": "Planification", "title": "Premier voyage à Merzouga : À quoi s'attendre dans le Sahara", "desc": "Comment appréhender votre premier jour dans le désert et planifier votre méharée sans stress." },
-    "read": "Lire l'article →"
+    "a1": {
+      "tag": "Préparer",
+      "title": "Première fois à Merzouga",
+      "desc": "Dunes, chameaux et durée de séjour."
+    },
+    "read": "Lire l’article →",
+    "a2": {
+      "tag": "Guide",
+      "title": "Désert marocain",
+      "desc": "Conseils pratiques pour l’Erg Chebbi."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Erg Chebbi",
+      "desc": "Dunes, lever et coucher de soleil."
+    }
   },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ Balade à dromadaire",
-    "q1": { "question": "Combien de temps dure une randonnée à dromadaire ?", "answer": "La plupart des visiteurs optent pour 1 à 2 heures pour le coucher ou le lever du soleil, ou choisissent une formule avec nuitée." },
-    "q2": { "question": "Y a-t-il des frais d'entrée pour accéder aux dunes ?", "answer": "L'accès aux dunes de l'Erg Chebbi est entièrement libre, mais les randonnées à dromadaire et les camps nécessitent de réserver auprès d'agences." },
-    "q3": { "question": "Quel est le meilleur moment pour faire la balade ?", "answer": "La fin d'après-midi avant le coucher du soleil ou tôt le matin sont parfaits pour éviter les fortes chaleurs et profiter d'une lumière dorée." },
-    "q4": { "question": "Comment dois-je m'habiller pour la balade ?", "answer": "Privilégiez un pantalon long et confortable, des chaussures fermées ou des sandales adaptées, et munissez-vous d'un chèche ou d'un foulard." },
-    "q5": { "question": "Quel est le tarif d'une randonnée à dromadaire ?", "answer": "Les prix varient selon qu'il s'agit d'une simple promenade en fin de journée ou d'un forfait complet avec nuit, dîner et petit-déjeuner inclus." }
+    "title": "FAQ Balade à dos de chameau",
+    "q1": {
+      "question": "Combien de temps pour un trek ?",
+      "answer": "La plupart passent 1–2 h pour lever ou coucher de soleil, ou réservent une expérience nocturne en camp."
+    },
+    "q2": {
+      "question": "Frais d’accès aux dunes ?",
+      "answer": "Les dunes sont gratuites ; treks et camps se réservent avec des opérateurs locaux."
+    },
+    "q3": {
+      "question": "Meilleur moment ?",
+      "answer": "Fin d’après-midi avant le coucher ou tôt le matin pour le lever, pour éviter la chaleur et profiter de la lumière dorée."
+    },
+    "q4": {
+      "question": "Que porter ?",
+      "answer": "Pantalon long confortable, chaussures stables, foulard ou turban contre le sable et le soleil."
+    },
+    "q5": {
+      "question": "Quel prix ?",
+      "answer": "Varie selon une courte balade au coucher ou un forfait camp avec dîner et petit-déjeuner."
+    }
   }
 }

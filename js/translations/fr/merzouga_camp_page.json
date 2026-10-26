@@ -1,47 +1,177 @@
 {
-  "name": "Camp du desert",
+  "name": "Camp du désert",
   "seo": {
-    "title": "Camp du desert Merzouga | MoroccoTripMap",
-    "description": "Camp du desert",
-    "og_title": "Camp du desert",
-    "og_description": "Camp du desert"
+    "title": "Camp du désert Merzouga | Nuit dans Erg Chebbi | MoroccoTripMap",
+    "description": "Nuit en camp dans Erg Chebbi près de Merzouga : dîner berbère, tambours, ciel étoilé et lever de soleil sur les dunes.",
+    "og_title": "Camp du désert Merzouga | Nuit au Sahara",
+    "og_description": "Dormez sous tente au milieu des dunes d’Erg Chebbi — dîner sous les étoiles et lever de soleil sur le sable."
   },
-  "hero_subtitle": "Une nuit magique sous les etoiles au bord des grandes dunes.",
+  "hero_subtitle": "Une nuit magique sous les étoiles au bord des grandes dunes de sable.",
   "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Sunset / evening",
-    "duration_label": "Ideal stay",
-    "duration_val": "1 night",
-    "entry_label": "Experience",
-    "entry_val": "Tents & stars",
-    "area_label": "Location",
-    "area_val": "Erg Chebbi"
+    "best_time_label": "Meilleur moment",
+    "best_time_val": "Coucher du soleil / soir",
+    "duration_label": "Durée idéale",
+    "duration_val": "1 nuit",
+    "entry_label": "Expérience",
+    "entry_val": "Tentes & ciel étoilé",
+    "area_label": "Lieu",
+    "area_val": "Dunes d’Erg Chebbi"
   },
   "overview": {
-    "title": "Camp du desert",
-    "p1": "Camp du desert",
-    "p2": "",
-    "p3": ""
+    "title": "Une nuit au Sahara",
+    "p1": "Un camp près d’Erg Chebbi est la façon classique de dormir au milieu des dunes : dîner berbère, musique et ciel étoilé après un transfert chameau ou 4x4 depuis Merzouga ou Hassi Labied.",
+    "p2": "Des bivouacs simples aux tentes de luxe avec salle de bain privée. La plupart des formules incluent dîner, petit-déjeuner et transport.",
+    "p3": "Associez à un trek chameau au coucher du soleil, puis levez-vous pour le lever de soleil sur les crêtes."
+  },
+  "gallery": {
+    "badge": "Galerie",
+    "title": "Le camp en images",
+    "subtitle": "Tentes, dunes et nuits sous le ciel saharien.",
+    "s1": {
+      "caption": "Tentes au milieu des dunes d’Erg Chebbi"
+    },
+    "s2": {
+      "caption": "Lumière du coucher de soleil sur les crêtes"
+    },
+    "s3": {
+      "caption": "Dîner berbère sous les étoiles"
+    },
+    "s4": {
+      "caption": "Arrivée à dos de chameau au camp"
+    },
+    "s5": {
+      "caption": "Lumière du matin sur l’erg"
+    }
+  },
+  "moods": {
+    "badge": "Déroulement",
+    "title": "À quoi s’attendre au camp",
+    "subtitle": "Arrivée, soirée et lever de soleil — trois moments clés.",
+    "1": {
+      "tag": "Arrivée",
+      "title": "Rejoindre le camp",
+      "desc": "Trek chameau ou 4x4 depuis le bord du village vers les dunes.",
+      "duration": "Transfert • 45 – 90 min"
+    },
+    "2": {
+      "tag": "Soir",
+      "title": "Dîner & étoiles",
+      "desc": "Tajine berbère, thé, tambours et ciel sans lumières de ville.",
+      "duration": "Soirée • 2 – 3 h"
+    },
+    "3": {
+      "tag": "Matin",
+      "title": "Lever de soleil sur les dunes",
+      "desc": "Montez une crête à l’aube, puis petit-déjeuner avant le retour au village.",
+      "duration": "Lever de soleil • 30 – 60 min"
+    }
+  },
+  "food": {
+    "title": "Repas au camp",
+    "p1": "La plupart des camps de nuit incluent un dîner berbère et le petit-déjeuner. Options végétariennes souvent possibles en le signalant à la réservation.",
+    "li1": "Thé au coucher du soleil sur les dunes",
+    "li2": "Dîner berbère partagé au camp",
+    "li3": "Petit-déjeuner avant le transfert retour",
+    "li4": "Repas d’hôtel ou de village si vous ne restez que le soir",
+    "li5": "Eau et collations pour le trek chameau",
+    "p2": "Réservez la demi-pension avec le camp ; il n’y a pas de restaurants indépendants dans les dunes la nuit."
+  },
+  "tips": {
+    "badge": "Conseils pratiques",
+    "title": "Conseils pour les camps du désert",
+    "1": {
+      "title": "Couches chaudes",
+      "desc": "Les nuits sont froides même après des journées chaudes — emportez une veste ou un polaire."
+    },
+    "2": {
+      "title": "Réservez à l’avance",
+      "desc": "Passez par un hôtel ou un opérateur de confiance ; la qualité varie beaucoup."
+    },
+    "3": {
+      "title": "Espèces & téléphone",
+      "desc": "Prévoyez du liquide pour les pourboires ; le réseau peut être faible dans les dunes."
+    }
+  },
+  "gyg": {
+    "badge": "Circuits & expériences",
+    "title": "Réserver une expérience camp du désert",
+    "subtitle": "Trek chameau, nuit en camp et formules lever de soleil avec des opérateurs locaux.",
+    "t1": {
+      "tag": "Nuit",
+      "title": "Trek chameau & nuit en camp",
+      "desc": "Balade au coucher du soleil, dîner berbère et nuit sous les étoiles."
+    },
+    "t2": {
+      "tag": "Luxe",
+      "title": "Camp de luxe avec tente privée",
+      "desc": "Tentes haut de gamme, salle de bain privée et cadre plus calme."
+    },
+    "t3": {
+      "tag": "Lever de soleil",
+      "title": "Lever de soleil sur les dunes & retour",
+      "desc": "Aube sur les crêtes, petit-déjeuner au camp, puis retour au village."
+    },
+    "check": "Voir les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains liens sont affiliés. Si vous réservez via ces liens, nous pouvons recevoir une petite commission sans frais supplémentaires pour vous."
+  },
+  "blog": {
+    "badge": "Blog",
+    "title": "Articles liés",
+    "all": "Tous les articles →",
+    "read": "Lire l’article →",
+    "a1": {
+      "tag": "Planification",
+      "title": "Première fois à Merzouga",
+      "desc": "Dunes, treks chameau et durée de séjour."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Le Sahara marocain",
+      "desc": "Conseils pratiques pour Erg Chebbi et les camps."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Erg Chebbi",
+      "desc": "Dunes, levers et couchers de soleil."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ camp du désert",
+    "q1": {
+      "question": "Combien de temps prévoir au camp ?",
+      "answer": "Une nuit est le classique : arrivée en fin d’après-midi, départ après le lever du soleil. Des séjours plus longs existent."
+    },
+    "q2": {
+      "question": "Y a-t-il un billet d’entrée ?",
+      "answer": "Vous réservez une formule avec le camp (transfert, dîner, nuit, petit-déjeuner). Pas de billet public séparé."
+    },
+    "q3": {
+      "question": "Quelle est la meilleure période ?",
+      "answer": "Soirées claires toute l’année ; printemps et automne sont plus confortables que la chaleur de l’été ou le froid de l’hiver."
+    },
+    "q4": {
+      "question": "Que emporter ?",
+      "answer": "Couche chaude, foulard contre le sable, batterie externe et liquide pour les pourboires."
+    },
+    "q5": {
+      "question": "Comment y aller ?",
+      "answer": "La plupart des camps incluent un transfert chameau ou 4x4 depuis Merzouga ou Hassi Labied. Confirmez le point de rendez-vous à la réservation."
+    }
   },
   "nearby": {
     "badge": "Continuer l'exploration",
-    "title": "Plus d'endroits a Merzouga",
+    "title": "Plus d’endroits à Merzouga",
     "back": "← Retour au guide Merzouga",
     "tag": "Site",
     "explore": "Explorer →",
     "erg": "Erg Chebbi",
-    "erg_desc": "Immenses dunes dorees — le coeur de Merzouga.",
-    "camel": "Trek a dos de chameau",
-    "camel_desc": "Balade au lever ou coucher du soleil dans l'erg.",
-    "camp": "Camp du desert",
+    "erg_desc": "Immenses dunes dorées — le cœur de Merzouga.",
+    "camel": "Trek à dos de chameau",
+    "camel_desc": "Balade au lever ou coucher du soleil dans l’erg.",
+    "camp": "Camp du désert",
     "camp_desc": "Nuit sous le ciel saharien.",
     "khamlia": "Khamlia",
-    "khamlia_desc": "Village de musique gnawa pres des dunes.",
-    "dayet": "Dayet Srji",
-    "dayet_desc": "Lac saisonnier et habitat de flamants.",
-    "lake": "Dayet Srji",
-    "lake_desc": "Lac saisonnier et habitat de flamants.",
-    "rissani": "Rissani",
-    "rissani_desc": "Ville de marche historique et porte de Tafilalet."
+    "khamlia_desc": "Village de musique gnawa près des dunes."
   }
 }

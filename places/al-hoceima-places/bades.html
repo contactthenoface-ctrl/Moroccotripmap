@@ -832,34 +832,41 @@
         };
 
         function switchLanguage(lang) {
-            try { localStorage.setItem('preferred_lang', lang); } catch (e) {}
-
             var langLabel = document.getElementById('current-lang-label');
             var langButton = document.getElementById('lang-menu-button');
             var langDropdown = document.getElementById('lang-menu-dropdown');
 
-            if (langLabel) langLabel.textContent = lang.toUpperCase();
-            if (langButton && FLAG_SVGS[lang]) {
-                var svg = langButton.querySelector('svg');
-                if (svg) svg.outerHTML = FLAG_SVGS[lang];
+            if (langLabel) {
+                langLabel.textContent = lang.toUpperCase();
             }
-            if (langDropdown) langDropdown.classList.add('hidden');
+            if (langButton && FLAG_SVGS[lang]) {
+                var svgElement = langButton.querySelector('svg');
+                if (svgElement) {
+                    svgElement.outerHTML = FLAG_SVGS[lang];
+                }
+            }
+            if (langDropdown) {
+                langDropdown.classList.add('hidden');
+            }
+
+            try { localStorage.setItem('preferred_lang', lang); } catch (e) {}
 
             document.documentElement.setAttribute('lang', lang);
             document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
 
             if (typeof changeLanguage === 'function') {
                 changeLanguage(lang);
-            } else if (typeof window.changeLanguage === 'function') {
-                window.changeLanguage(lang);
             }
         }
+        // expose globally for inline onclick handlers
+        window.switchLanguage = switchLanguage;
 
-        document.addEventListener('DOMContentLoaded', function () {
+        function initLangMenu() {
             var langButton = document.getElementById('lang-menu-button');
             var langDropdown = document.getElementById('lang-menu-dropdown');
 
-            if (langButton && langDropdown) {
+            if (langButton && langDropdown && !langButton.dataset.langBound) {
+                langButton.dataset.langBound = '1';
                 langButton.addEventListener('click', function (e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -873,10 +880,21 @@
             }
 
             var savedLang = localStorage.getItem('preferred_lang') || 'fr';
-            if (typeof changeLanguage === 'function' || typeof window.changeLanguage === 'function') {
+            if (typeof changeLanguage === 'function') {
                 switchLanguage(savedLang);
-            } else {
-                window.addEventListener('load', function () { switchLanguage(savedLang); });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initLangMenu);
+        } else {
+            initLangMenu();
+        }
+        // After i18n.js loads, re-apply saved language
+        window.addEventListener('load', function () {
+            var savedLang = localStorage.getItem('preferred_lang') || 'fr';
+            if (typeof changeLanguage === 'function') {
+                switchLanguage(savedLang);
             }
         });
     </script>

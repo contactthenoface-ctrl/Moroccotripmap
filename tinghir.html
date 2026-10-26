@@ -1,176 +1,166 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" dir="ltr" lang="en">
+<html class="scroll-smooth" lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/style.css" />
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="google" content="notranslate"/>
-
-  <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
-
-  <!-- SEO & Metadata -->
-  <title>Tinghir | MoroccoTripMap</title>
-  <meta name="description" content="Discover Morocco with MoroccoTripMap">
-
-  <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        creme: '#F9F6F0',
-                        vert: '#185336',
-                        sable: '#C29B62',
-                        sombre: '#1A1A1A',
-                    },
-                    borderRadius: {
-                        'xl': '1rem',
-                        '2xl': '1.5rem',
-                        '3xl': '2rem',
-                    }
-                }
-            }
-        }
-    </script>
-  <style>
-        body { font-family: 'Outfit', sans-serif; }
-    </style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title data-i18n="tinghir_page.seo.title">Tinghir Travel Guide 2026 | Todra Gorges & Oasis | MoroccoTripMap</title>
+  <meta name="description" content="Plan Tinghir: Todra Gorges, palm grove, ksar and desert route." data-i18n-attr="content:tinghir_page.seo.description"/>
+  <link rel="canonical" href="https://moroccotripmap.com/tinghir.html"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{creme:'#F9F6F0',vert:'#185336',sable:'#C29B62',sombre:'#1A1A1A'}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>body{font-family:'Outfit',sans-serif}.tab-btn{background:#F9F6F0;border:1px solid rgba(194,155,98,.3);padding:10px 20px;cursor:pointer;font-weight:600;border-radius:.75rem}.tab-btn.active{background:#185336;color:#fff}.tab-content{display:none}.tab-content.active{display:block}</style>
 </head>
-<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
-
-<!-- Header Navigation -->
-<header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-<a class="flex items-center gap-3 group shrink-0" href="index.html">
-<img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="images/logo.webp"/>
-</a>
-<nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-    <a class="text-vert font-bold transition" href="destinations.html" data-i18n="nav.destinations">Destinations</a>
-    <div class="relative inline-block text-left" id="categories-menu-container">
-        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-            <span data-i18n="nav.categories">Categories</span>
-            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-        </div>
-    </div>
-    <a class="hover:text-vert transition" href="guides/histoire.html" data-i18n="nav.history">History</a>
-    <a class="hover:text-vert transition" href="blog/index.html" data-i18n="nav.blog">Blog</a>
-    <a class="hover:text-vert transition" href="contact.html" data-i18n="nav.contact">Contact</a>
-</nav>
-<div class="flex items-center gap-2 sm:gap-4">
-<div class="relative inline-block text-left">
-  <button id="lang-menu-button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="bg-white border border-sable/20 hover:border-sable text-sm font-semibold rounded-xl px-3 py-2 flex items-center gap-2 text-sombre transition shadow-sm" type="button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
-    <span id="current-lang-label">EN</span>
-    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-  </button>
-  <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white rounded-xl shadow-lg border border-sable/15 py-1 z-50">
-    <button data-lang="en" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">English</button>
-    <button data-lang="fr" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">Français</button>
-    <button data-lang="es" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">Español</button>
-    <button data-lang="ar" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">العربية</button>
+<body class="bg-creme text-sombre antialiased">
+<header class="sticky top-0 z-50 bg-creme/90 backdrop-blur border-b border-sable/10">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="index.html" class="font-bold text-vert text-lg">Morocco<span class="text-sable">TripMap</span></a>
+    <a href="destinations.html" class="text-sm text-sable hover:text-vert" data-i18n="nav.destinations">Destinations</a>
   </div>
-</div>
-<button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition" type="button">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-</div>
-</div>
-
-<div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
-    <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
-        <span data-i18n="nav.cities">Cities & Destinations</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="blog/index.html">
-        <span data-i18n="nav.blog">Blog</span>
-    </a>
-    </nav>
-</div>
 </header>
+<main>
+  <section class="relative h-80 bg-vert flex items-end">
+    <img alt="" class="absolute inset-0 w-full h-full object-cover opacity-40" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"/>
+    <div class="relative max-w-7xl mx-auto px-4 pb-10 w-full">
+      <h1 class="text-4xl md:text-5xl font-bold text-white" data-i18n="tinghir_page.name">Tinghir</h1>
+      <p class="text-creme/90 mt-2 max-w-2xl text-lg" data-i18n="tinghir_page.hero_subtitle">Gateway to the Todra Gorges — palm oasis, mudbrick ksour and the desert road.</p>
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="bg-white rounded-xl p-4 border border-sable/10"><p class="text-xs text-sable uppercase" data-i18n="tinghir_page.info.best_time_label">Best time</p><p class="font-bold" data-i18n="tinghir_page.info.best_time_val">Mar–May & Sep–Nov</p></div>
+    <div class="bg-white rounded-xl p-4 border border-sable/10"><p class="text-xs text-sable uppercase" data-i18n="tinghir_page.info.stay_label">Stay</p><p class="font-bold" data-i18n="tinghir_page.info.stay_val">1–2 nights</p></div>
+    <div class="bg-white rounded-xl p-4 border border-sable/10"><p class="text-xs text-sable uppercase" data-i18n="tinghir_page.info.vibe_label">Vibe</p><p class="font-bold" data-i18n="tinghir_page.info.vibe_val">Canyon, oasis, Amazigh villages</p></div>
+    <div class="bg-white rounded-xl p-4 border border-sable/10"><p class="text-xs text-sable uppercase" data-i18n="tinghir_page.info.airport_label">Access</p><p class="font-bold" data-i18n="tinghir_page.info.airport_val">Road from Ouarzazate or desert route</p></div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold text-vert mb-4" data-i18n="tinghir_page.overview.title">Welcome to Tinghir — oasis town at the foot of the Todra Gorges</h2>
+    <p class="text-sombre/80 mb-3" data-i18n="tinghir_page.overview.p1">Tinghir sits in a long palm oasis between the High Atlas and the Sahara road. It is the natural base for the Todra Gorges.</p>
+    <p class="text-sombre/80" data-i18n="tinghir_page.overview.p2">Explore the palmery, the old ksar, the Glaoui Kasbah and the road through the gorge toward Tamtatouchte.</p>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-10 border-t border-sable/10">
+    <span class="text-xs font-bold text-sable uppercase" data-i18n="tinghir_page.places.badge">Highlights</span>
+    <h2 class="text-3xl font-bold text-vert mb-6" data-i18n="tinghir_page.places.title">Must-see places</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-sable/10 flex flex-col" href="places/tinghir-places/todra-gorges.html">
+        <div class="h-40 bg-vert/20"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <span class="text-[10px] font-bold text-vert uppercase" data-i18n="tinghir_page.places.todra.tag">Tag</span>
+          <h3 class="text-lg font-bold mt-1 group-hover:text-vert transition" data-i18n="tinghir_page.places.todra.title">Title</h3>
+          <p class="text-xs text-sombre/70 mt-2 flex-1" data-i18n="tinghir_page.places.todra.desc">Desc</p>
+          <span class="mt-3 text-vert text-xs font-semibold" data-i18n="tinghir_page.places.explore">Explore →</span>
+        </div>
+      </a>
+      <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-sable/10 flex flex-col" href="places/tinghir-places/tinghir-palmeraie.html">
+        <div class="h-40 bg-vert/20"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <span class="text-[10px] font-bold text-vert uppercase" data-i18n="tinghir_page.places.palmeraie.tag">Tag</span>
+          <h3 class="text-lg font-bold mt-1 group-hover:text-vert transition" data-i18n="tinghir_page.places.palmeraie.title">Title</h3>
+          <p class="text-xs text-sombre/70 mt-2 flex-1" data-i18n="tinghir_page.places.palmeraie.desc">Desc</p>
+          <span class="mt-3 text-vert text-xs font-semibold" data-i18n="tinghir_page.places.explore">Explore →</span>
+        </div>
+      </a>
+      <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-sable/10 flex flex-col" href="places/tinghir-places/ksar-tinghir.html">
+        <div class="h-40 bg-vert/20"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <span class="text-[10px] font-bold text-vert uppercase" data-i18n="tinghir_page.places.ksar.tag">Tag</span>
+          <h3 class="text-lg font-bold mt-1 group-hover:text-vert transition" data-i18n="tinghir_page.places.ksar.title">Title</h3>
+          <p class="text-xs text-sombre/70 mt-2 flex-1" data-i18n="tinghir_page.places.ksar.desc">Desc</p>
+          <span class="mt-3 text-vert text-xs font-semibold" data-i18n="tinghir_page.places.explore">Explore →</span>
+        </div>
+      </a>
+      <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-sable/10 flex flex-col" href="places/tinghir-places/glaoui-kasbah.html">
+        <div class="h-40 bg-vert/20"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <span class="text-[10px] font-bold text-vert uppercase" data-i18n="tinghir_page.places.glaoui.tag">Tag</span>
+          <h3 class="text-lg font-bold mt-1 group-hover:text-vert transition" data-i18n="tinghir_page.places.glaoui.title">Title</h3>
+          <p class="text-xs text-sombre/70 mt-2 flex-1" data-i18n="tinghir_page.places.glaoui.desc">Desc</p>
+          <span class="mt-3 text-vert text-xs font-semibold" data-i18n="tinghir_page.places.explore">Explore →</span>
+        </div>
+      </a>
+      <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-sable/10 flex flex-col" href="places/tinghir-places/tamtatouchte.html">
+        <div class="h-40 bg-vert/20"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <span class="text-[10px] font-bold text-vert uppercase" data-i18n="tinghir_page.places.tamtatouchte.tag">Tag</span>
+          <h3 class="text-lg font-bold mt-1 group-hover:text-vert transition" data-i18n="tinghir_page.places.tamtatouchte.title">Title</h3>
+          <p class="text-xs text-sombre/70 mt-2 flex-1" data-i18n="tinghir_page.places.tamtatouchte.desc">Desc</p>
+          <span class="mt-3 text-vert text-xs font-semibold" data-i18n="tinghir_page.places.explore">Explore →</span>
+        </div>
+      </a>
+      <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-sable/10 flex flex-col" href="places/tinghir-places/el-hart-pottery.html">
+        <div class="h-40 bg-vert/20"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <span class="text-[10px] font-bold text-vert uppercase" data-i18n="tinghir_page.places.elhart.tag">Tag</span>
+          <h3 class="text-lg font-bold mt-1 group-hover:text-vert transition" data-i18n="tinghir_page.places.elhart.title">Title</h3>
+          <p class="text-xs text-sombre/70 mt-2 flex-1" data-i18n="tinghir_page.places.elhart.desc">Desc</p>
+          <span class="mt-3 text-vert text-xs font-semibold" data-i18n="tinghir_page.places.explore">Explore →</span>
+        </div>
+      </a>
+      <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-sable/10 flex flex-col" href="places/tinghir-places/tinghir-souk.html">
+        <div class="h-40 bg-vert/20"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <span class="text-[10px] font-bold text-vert uppercase" data-i18n="tinghir_page.places.souk.tag">Tag</span>
+          <h3 class="text-lg font-bold mt-1 group-hover:text-vert transition" data-i18n="tinghir_page.places.souk.title">Title</h3>
+          <p class="text-xs text-sombre/70 mt-2 flex-1" data-i18n="tinghir_page.places.souk.desc">Desc</p>
+          <span class="mt-3 text-vert text-xs font-semibold" data-i18n="tinghir_page.places.explore">Explore →</span>
+        </div>
+      </a>
+      <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-sable/10 flex flex-col" href="places/tinghir-places/tizgui-viewpoints.html">
+        <div class="h-40 bg-vert/20"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <span class="text-[10px] font-bold text-vert uppercase" data-i18n="tinghir_page.places.tizgui.tag">Tag</span>
+          <h3 class="text-lg font-bold mt-1 group-hover:text-vert transition" data-i18n="tinghir_page.places.tizgui.title">Title</h3>
+          <p class="text-xs text-sombre/70 mt-2 flex-1" data-i18n="tinghir_page.places.tizgui.desc">Desc</p>
+          <span class="mt-3 text-vert text-xs font-semibold" data-i18n="tinghir_page.places.explore">Explore →</span>
+        </div>
+      </a>
 
-<main class="flex-grow">
-<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-  <span class="text-xs font-bold text-sable uppercase tracking-wider">Guide Touristique</span>
-  <h1 class="text-4xl font-bold text-vert mt-2">Tinghir</h1>
-  <p class="text-lg text-sombre/70 mt-4">Explorez les richesses de cette destination</p>
-  <div class="mt-10 bg-white rounded-2xl border border-sable/10 shadow-sm p-8">
-    <h2 class="text-xl font-bold text-vert">Page en cours d'élaboration</h2>
-    <p class="text-sm text-sombre/70 mt-2">Nous préparons actuellement ce contenu. Revenez bientôt, ou poursuivez votre exploration des destinations dans l'andant.</p>
-  </div>
-  <div class="mt-8 flex flex-wrap justify-center gap-3">
-    <a href="destinations.html" class="px-5 py-2.5 rounded-xl bg-vert text-white font-semibold text-sm hover:opacity-90 transition">Explorer les destinations</a>
-    <a href="index.html" class="px-5 py-2.5 rounded-xl bg-white border border-sable/20 text-sombre font-semibold text-sm hover:border-vert transition">Retour à l'accueil</a>
-  </div>
-</section>
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-10 border-t border-sable/10">
+    <span class="text-xs font-bold text-sable uppercase" data-i18n="tinghir_page.itinerary.badge">Planning</span>
+    <h2 class="text-3xl font-bold text-vert mb-2" data-i18n="tinghir_page.itinerary.title">Suggested 2-day plan in Tinghir</h2>
+    <p class="text-sm text-sombre/70 mb-6" data-i18n="tinghir_page.itinerary.subtitle">Gorges first, then oasis and villages.</p>
+    <div class="flex gap-2 mb-4 flex-wrap">
+      <button class="tab-btn active" data-i18n="tinghir_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1</button>
+      <button class="tab-btn" data-i18n="tinghir_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2</button>
+    </div>
+    <div class="tab-content active bg-white rounded-2xl border border-sable/10 p-6" id="day1">
+      <h3 class="font-bold text-vert" data-i18n="tinghir_page.detailed_itinerary.day1_m">Morning — Drive to the gorges</h3>
+      <p class="text-sm text-sombre/75 mt-1 mb-4" data-i18n="tinghir_page.detailed_itinerary.day1_md">Leave Tinghir for Todra; walk the narrows.</p>
+      <h3 class="font-bold text-vert" data-i18n="tinghir_page.detailed_itinerary.day1_a">Afternoon — Tizgui or Tamtatouchte</h3>
+      <p class="text-sm text-sombre/75 mt-1 mb-4" data-i18n="tinghir_page.detailed_itinerary.day1_ad">Viewpoints or continue up the canyon.</p>
+      <h3 class="font-bold text-vert" data-i18n="tinghir_page.detailed_itinerary.day1_e">Evening — Back in Tinghir</h3>
+      <p class="text-sm text-sombre/75 mt-1" data-i18n="tinghir_page.detailed_itinerary.day1_ed">Dinner in town.</p>
+    </div>
+    <div class="tab-content bg-white rounded-2xl border border-sable/10 p-6" id="day2">
+      <h3 class="font-bold text-vert" data-i18n="tinghir_page.detailed_itinerary.day2_m">Morning — Palmeraie walk</h3>
+      <p class="text-sm text-sombre/75 mt-1 mb-4" data-i18n="tinghir_page.detailed_itinerary.day2_md">Explore gardens and irrigation channels.</p>
+      <h3 class="font-bold text-vert" data-i18n="tinghir_page.detailed_itinerary.day2_a">Afternoon — Ksar & Glaoui Kasbah</h3>
+      <p class="text-sm text-sombre/75 mt-1 mb-4" data-i18n="tinghir_page.detailed_itinerary.day2_ad">Old quarter and hilltop view.</p>
+      <h3 class="font-bold text-vert" data-i18n="tinghir_page.detailed_itinerary.day2_e">Evening — Souk or departure</h3>
+      <p class="text-sm text-sombre/75 mt-1" data-i18n="tinghir_page.detailed_itinerary.day2_ed">Market streets or continue the desert route.</p>
+    </div>
+  </section>
+  <section class="max-w-4xl mx-auto px-4 py-12 border-t border-sable/10">
+    <div class="text-center mb-8">
+      <span class="text-xs font-bold text-sable uppercase" data-i18n="tinghir_page.faq.badge">Good to know</span>
+      <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="tinghir_page.faq.title">Tinghir travel FAQ</h2>
+    </div>
+    <div class="space-y-3">
+      <details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="tinghir_page.faq.q1.question">How many days in Tinghir?</summary><p class="text-sm text-sombre/70 mt-3" data-i18n="tinghir_page.faq.q1.answer">One full day for gorges and palmery; two nights if you prefer a slower pace.</p></details>
+      <details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="tinghir_page.faq.q2.question">How far are the Todra Gorges?</summary><p class="text-sm text-sombre/70 mt-3" data-i18n="tinghir_page.faq.q2.answer">About 15–20 minutes by road north of Tinghir.</p></details>
+      <details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="tinghir_page.faq.q3.question">Good stop on the desert route?</summary><p class="text-sm text-sombre/70 mt-3" data-i18n="tinghir_page.faq.q3.answer">Yes — between Ouarzazate/Dades and Erfoud/Merzouga.</p></details>
+      <details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="tinghir_page.faq.q4.question">Best time?</summary><p class="text-sm text-sombre/70 mt-3" data-i18n="tinghir_page.faq.q4.answer">Spring and autumn are most comfortable.</p></details>
+    </div>
+  </section>
 </main>
-
-<footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-        <div>
-            <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-            <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
-                Discover. Plan. Experience Morocco.<br/>
-                The premier tourism directory and cultural travel guide for visitors exploring Morocco.
-            </p>
-        </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.recommended_title">Recommended Pages</h4>
-            <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="marrakech.html">Marrakech Travel Guide</a></li>
-                <li><a class="hover:text-white transition" href="chefchaouen.html">Chefchaouen Blue City</a></li>
-                <li><a class="hover:text-white transition" href="blog/index.html">Travel Blog & Tips</a></li>
-                <li><a class="hover:text-white transition" href="guides/histoire.html">History of Morocco</a></li>
-                <li><a class="hover:text-white transition font-semibold text-sable" href="destinations.html">All Destinations →</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Travel Categories</h4>
-            <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="riads/index.html">Authentic Riads & Hotels</a></li>
-                <li><a class="hover:text-white transition" href="gastronomy/index.html">Moroccan Gastronomy & Food</a></li>
-                <li><a class="hover:text-white transition" href="experiences/index.html">Desert Tours & Activities</a></li>
-                <li><a class="hover:text-white transition" href="transport/index.html">Transport & Rental Cars</a></li>
-                <li><a class="hover:text-white transition" href="blog/index.html">Travel Blog & Tips</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
-            <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
-            <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
-                @moroccotripmap
-            </a>
-        </div>
-    </div>
-    <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-        <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
-        <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
-    </div>
-</footer>
-
-<script src="js/i18n.js"></script>
-<script src="js/search.js"></script>
+<footer class="bg-vert text-creme mt-12 py-8 px-4 text-center text-xs"><p>© MoroccoTripMap</p></footer>
 <script>
-    function toggleMobileCategories() {
-        const dropdown = document.getElementById('mobile-categories-dropdown');
-        const arrow = document.getElementById('categories-arrow');
-        if (dropdown) dropdown.classList.toggle('hidden');
-        if (arrow) arrow.classList.toggle('rotate-180');
-    }
+function openDay(evt,id){document.querySelectorAll('.tab-content').forEach(function(e){e.classList.remove('active')});document.querySelectorAll('.tab-btn').forEach(function(e){e.classList.remove('active')});document.getElementById(id).classList.add('active');evt.currentTarget.classList.add('active');}
+document.addEventListener('DOMContentLoaded',function(){var lang=localStorage.getItem('preferred_lang')||'en';if(typeof changeLanguage==='function')changeLanguage(lang);document.documentElement.setAttribute('dir',lang==='ar'?'rtl':'ltr');});
 </script>
+<script src="js/i18n.js"></script>
 </body>
 </html>

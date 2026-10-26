@@ -419,11 +419,11 @@
                 <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="merzouga_page.itinerary.subtitle">Dunes, a night in camp, and the villages around Erg Chebbi.</p>
             </div>
             <div class="itinerary-tabs">
-                <button type="button" class="tab-btn active" data-i18n="merzouga_page.detailed_itinerary.day1_tab" onclick="openDay(event,\'day1\')">Day 1 — Dunes &amp; Village</button>
-                <button type="button" class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day2_tab" onclick="openDay(event,\'day2\')">Day 2 — Camel Trek &amp; Camp</button>
-                <button type="button" class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day3_tab" onclick="openDay(event,\'day3\')">Day 3 — Khamlia &amp; Rissani</button>
+                <button type="button" class="tab-btn active" data-i18n="merzouga_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Dunes &amp; Village</button>
+                <button type="button" class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Camel Trek &amp; Camp</button>
+                <button type="button" class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Khamlia &amp; Rissani</button>
             </div>
-            <div class="tab-content active" id="day1" class="tab-content active">
+            <div id="day1" class="tab-content active">
                 <div class="day-card">
                     <h3 data-i18n="merzouga_page.detailed_itinerary.day1_m">Morning — Erg Chebbi viewpoint</h3>
                     <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day1_md">Drive or walk to the edge of Erg Chebbi. Climb a dune for the first panoramic view before the heat peaks.</p>
@@ -828,6 +828,22 @@
         }
         window.openDay = openDay;
 
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.tab-btn[data-i18n*="detailed_itinerary.day"]').forEach(function (btn) {
+                btn.addEventListener('click', function (e) {
+                    var m = (btn.getAttribute('onclick') || '').match(/day(\d)/);
+                    var dayId = m ? 'day' + m[1] : null;
+                    if (!dayId) {
+                        var key = btn.getAttribute('data-i18n') || '';
+                        var km = key.match(/day(\d)_tab/);
+                        if (km) dayId = 'day' + km[1];
+                    }
+                    if (dayId && typeof openDay === 'function') openDay(e, dayId);
+                });
+            });
+        });
+
+
         function filterAccommodations() {
             var selectedType = document.getElementById("filter-type").value;
             var selectedLocation = document.getElementById("filter-location").value;
@@ -879,28 +895,7 @@
 
         
 
-            if (langButton && FLAG_SVGS[lang]) {
-                const svgElement = langButton.querySelector('svg');
-                if (svgElement) {
-                    svgElement.outerHTML = FLAG_SVGS[lang];
-                }
-            }
-
-            const langDropdown = document.getElementById('lang-menu-dropdown');
-            if (langDropdown) {
-                langDropdown.classList.add('hidden');
-            }
-
-            if (typeof changeLanguage === 'function') {
-                changeLanguage(lang);
-            }
-        }
-    </script>
-    
-    <!-- Scripts externes -->
-    <script>
-
-        const FLAG_SVGS = {
+            const FLAG_SVGS = {
             en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
             fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
             es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
@@ -916,23 +911,6 @@
             if (langLabel) langLabel.textContent = lang.toUpperCase();
 
             var langButton = document.getElementById('lang-menu-button');
-            if (langButton && FLAG_SVGS[lang]) {
-                var svgElement = langButton.querySelector('svg');
-                if (svgElement) svgElement.outerHTML = FLAG_SVGS[lang];
-            }
-
-            var langDropdown = document.getElementById('lang-menu-dropdown');
-            if (langDropdown) langDropdown.classList.add('hidden');
-
-            document.documentElement.setAttribute('lang', lang);
-            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-
-            if (typeof changeLanguage === 'function') {
-                changeLanguage(lang);
-            } else if (typeof window.changeLanguage === 'function') {
-                window.changeLanguage(lang);
-            }
-        }
 
         document.addEventListener('DOMContentLoaded', function () {
             var langButton = document.getElementById('lang-menu-button');
@@ -974,5 +952,28 @@
 
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>
+
+<script>
+(function(){
+  function openDay(evt, dayId) {
+    if (evt && evt.preventDefault) evt.preventDefault();
+    document.querySelectorAll('.tab-content').forEach(function(el){ el.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn').forEach(function(el){ el.classList.remove('active'); });
+    var panel = document.getElementById(dayId);
+    if (panel) panel.classList.add('active');
+    var btn = (evt && evt.currentTarget) || document.querySelector('.tab-btn[onclick*="'+dayId+'"]');
+    if (btn) btn.classList.add('active');
+  }
+  window.openDay = openDay;
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.itinerary-tabs .tab-btn').forEach(function(btn, i){
+      btn.addEventListener('click', function(e){
+        openDay(e, 'day' + (i+1));
+      });
+    });
+  });
+})();
+</script>
+
 </body>
 </html>

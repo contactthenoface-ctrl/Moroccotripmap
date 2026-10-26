@@ -1,26 +1,50 @@
 {
   "seo": {
-    "title": "Cala Bonita | Al Hoceima | MoroccoTripMap",
-    "description": "A sheltered cove of clear Mediterranean water close to Al Hoceima town.",
-    "keywords": "Cala Bonita, Al Hoceima"
+    "title": "Cala Bonita Al Hoceima | Crique aux eaux claires | MoroccoTripMap",
+    "description": "Visiter Cala Bonita à Al Hoceima ? Meilleure période, cafés, accès, conseils de sécurité et durée de visite.",
+    "og_title": "Cala Bonita Al Hoceima | Crique aux eaux claires | MoroccoTripMap",
+    "og_description": "Cala Bonita à Al Hoceima : baignade, accès, rivage galets-sable et conseils pour cette crique méditerranéenne abritée."
   },
   "name": "Cala Bonita",
-  "hero_subtitle": "A sheltered cove of clear Mediterranean water close to Al Hoceima town.",
+  "hero_subtitle": "Une crique abritée aux eaux méditerranéennes claires près du centre d’Al Hoceima.",
   "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Morning preferred",
-    "duration_label": "Suggested duration",
-    "duration_val": "2 – 3 hours",
-    "entry_label": "Entry",
-    "entry_val": "Free shore access",
-    "area_label": "Location",
-    "area_val": "Close to town"
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Matin de préférence",
+    "duration_label": "Durée suggérée",
+    "duration_val": "2 – 3 heures",
+    "entry_label": "Entrée",
+    "entry_val": "Accès libre au rivage",
+    "area_label": "Emplacement",
+    "area_val": "Proche du centre"
   },
   "overview": {
-    "title": "Clear water near town",
-    "p1": "Cala Bonita is a small, sheltered cove a short hop from Al Hoceima’s centre — clearer water and a more intimate scale than the main Quemado strip.",
-    "p2": "The mix of pebbles and sand, plus cliff backdrop, makes it popular for swimming when the sea is calm. Space is limited compared with Sfiha or Quemado.",
-    "p3": "Arrive earlier in summer for room on the shore. Combine with Quemado or a corniche evening rather than treating it as a full-day destination alone."
+    "title": "Eaux claires près de la ville",
+    "p1": "Cala Bonita est une petite crique abritée à deux pas du centre d’Al Hoceima — eaux plus claires et échelle plus intime que la plage urbaine principale.",
+    "p2": "Le mélange de galets et de sable, plus le fond de falaises, la rend populaire pour la baignade par mer calme. L’espace est limité par rapport à Sfiha ou Quemado.",
+    "p3": "Arrivez plus tôt en été pour trouver de la place. Combinez avec Quemado ou une soirée corniche plutôt que d’en faire une journée entière seule."
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Cala Bonita au fil de la journée",
+    "subtitle": "Quand y aller.",
+    "1": {
+      "tag": "Matin",
+      "title": "Début tranquille",
+      "duration": "Matin",
+      "desc": "Lumière plus douce et air plus frais."
+    },
+    "2": {
+      "tag": "Midi",
+      "title": "Soleil fort",
+      "duration": "Midi",
+      "desc": "Haute protection SPF et ombre comptent."
+    },
+    "3": {
+      "tag": "Fin d’après-midi",
+      "title": "Meilleures couleurs",
+      "duration": "Fin d’après-midi",
+      "desc": "Lumière chaude sur les falaises et la mer."
+    }
   },
   "gallery": {
     "badge": "Galerie photo",
@@ -42,119 +66,51 @@
       "caption": "Cala Bonita — 5"
     }
   },
-  "moods": {
-    "badge": "Timing",
-    "title": "Cala Bonita dans la journée",
-    "subtitle": "When to go.",
+  "tips": {
+    "title": "Conseils pratiques pour Cala Bonita",
     "1": {
-      "tag": "Morning",
-      "title": "Quiet start",
-      "desc": "Softer light and cooler air.",
-      "duration": "Morning"
+      "title": "Accès",
+      "desc": "Confirmez les horaires de taxi ou de transfert depuis votre hébergement."
     },
     "2": {
-      "tag": "Midday",
-      "title": "Strong sun",
-      "desc": "High SPF and shade matter.",
-      "duration": "Midday"
+      "title": "Soleil & falaises",
+      "desc": "Haute protection SPF, eau et chaussures stables sur les sentiers côtiers."
     },
     "3": {
-      "tag": "Late afternoon",
-      "title": "Best colour",
-      "desc": "Warm light on cliffs and sea.",
-      "duration": "Late afternoon"
+      "title": "Respect",
+      "desc": "Restez sur les chemins autorisés ; attention aux nageurs et aux bateaux."
     }
   },
   "food": {
     "title": "Manger près de Cala Bonita",
-    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
-    "li1": "Grilled fish near the port and corniche.",
-    "li2": "Simple cafés at Quemado and Sfiha in season.",
-    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
-    "li4": "Hotel restaurants if you stay on the bay.",
-    "li5": "Confirm opening hours outside peak summer.",
-    "p2": "Cash helps at small beach and village stops."
-  },
-  "tips": {
-    "title": "Conseils pour Cala Bonita",
-    "1": {
-      "title": "Access",
-      "desc": "Confirm taxi or transfer times from your stay."
-    },
-    "2": {
-      "title": "Sun & cliffs",
-      "desc": "High SPF, water and steady shoes on coastal paths."
-    },
-    "3": {
-      "title": "Respect",
-      "desc": "Stay on allowed paths in the national park; mind swimmers and boats."
-    }
+    "p1": "Prévoyez les repas en ville ou dans les cafés de plage saisonniers ; emportez de l’eau pour la crique.",
+    "p2": "Le liquide aide dans les petits arrêts.",
+    "li1": "Poisson grillé près du port et de la corniche.",
+    "li2": "Cafés simples à Quemado et Sfiha en saison.",
+    "li3": "Emportez eau et en-cas pour la crique.",
+    "li4": "Restaurants d’hôtels si vous séjournez sur la baie.",
+    "li5": "Vérifiez les horaires hors haute saison."
   },
   "gyg": {
-    "badge": "Tours & experiences",
+    "badge": "Visites & expériences",
     "title": "Visites liées à Cala Bonita",
-    "subtitle": "Options if you prefer a local operator.",
+    "subtitle": "Options côte, parc et bateau quand elles sont disponibles.",
+    "check": "Voir les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains de ces liens sont des liens d’affiliation. Si vous réservez via eux, nous pouvons percevoir une petite commission sans frais supplémentaires pour vous.",
     "t1": {
-      "tag": "Coast",
-      "title": "Bay orientation",
-      "desc": "Town beaches and corniche introduction."
+      "tag": "Côte",
+      "title": "Orientation crique",
+      "desc": "Introduction à la crique et aux points de vue proches."
     },
     "t2": {
-      "tag": "Park",
-      "title": "National park coast",
-      "desc": "Cala Iris, viewpoints or Torres trails."
+      "tag": "Parc",
+      "title": "Côte du parc national",
+      "desc": "Cala Iris, points de vue ou sentiers de Torres."
     },
     "t3": {
-      "tag": "Boat",
-      "title": "Coastal boat trip",
-      "desc": "Cliffs and coves from the water when operators run."
-    },
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
-  },
-  "blog": {
-    "badge": "From the blog",
-    "title": "Related articles",
-    "all": "All articles →",
-    "read": "Read article →",
-    "a1": {
-      "tag": "Planning",
-      "title": "First time in Al Hoceima",
-      "desc": "Beaches, park and how long to stay."
-    },
-    "a2": {
-      "tag": "Guide",
-      "title": "Rif Mediterranean coast",
-      "desc": "Coves, cliffs and practical tips."
-    },
-    "a3": {
-      "tag": "Nature",
-      "title": "Al Hoceima National Park",
-      "desc": "Trails and marine reserve basics."
-    }
-  },
-  "faq": {
-    "badge": "Bon à savoir",
-    "title": "FAQ Cala Bonita",
-    "q1": {
-      "question": "How far from Quemado?",
-      "answer": "A short taxi or walk depending on where you stay — ask locally for the current easiest path."
-    },
-    "q2": {
-      "question": "Sand or pebbles?",
-      "answer": "A mix; water shoes help if you are sensitive."
-    },
-    "q3": {
-      "question": "Good for snorkelling?",
-      "answer": "In calm clear conditions the cove can be pleasant for a look under the surface."
-    },
-    "q4": {
-      "question": "Crowded?",
-      "answer": "It can fill up in peak summer afternoons — morning is quieter."
-    },
-    "q5": {
-      "question": "Facilities?",
-      "answer": "More limited than Quemado; bring water and what you need."
+      "tag": "Bateau",
+      "title": "Sortie en bateau côtier",
+      "desc": "Falaises et criques depuis l’eau quand les opérateurs tournent."
     }
   },
   "nearby": {
@@ -162,9 +118,49 @@
     "title": "Plus de lieux à Al Hoceima",
     "back": "← Retour au guide Al Hoceima"
   },
-  "destinations": {
-    "al_hoceima": {
-      "name": "Al Hoceima"
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles liés",
+    "read": "Lire l’article →",
+    "all": "Tous les articles →",
+    "a1": {
+      "tag": "Planification",
+      "title": "Première fois à Al Hoceima",
+      "desc": "Plages, parc et durée de séjour."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Côte méditerranéenne du Rif",
+      "desc": "Criques, falaises et conseils pratiques."
+    },
+    "a3": {
+      "tag": "Nature",
+      "title": "Parc national d’Al Hoceima",
+      "desc": "Sentiers et bases de la réserve marine."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ Cala Bonita",
+    "q1": {
+      "question": "À quelle distance de Quemado ?",
+      "answer": "Un court trajet en taxi ou à pied selon votre hébergement — demandez localement le chemin le plus simple."
+    },
+    "q2": {
+      "question": "Sable ou galets ?",
+      "answer": "Un mélange ; les chaussures d’eau aident si vous êtes sensibles."
+    },
+    "q3": {
+      "question": "Bon pour le snorkelling ?",
+      "answer": "Par mer calme et claire, la crique peut être agréable pour un regard sous la surface."
+    },
+    "q4": {
+      "question": "Affluence ?",
+      "answer": "Elle peut se remplir les après-midi d’été — le matin est plus calme."
+    },
+    "q5": {
+      "question": "Équipements ?",
+      "answer": "Plus limités que Quemado ; emportez de l’eau et ce dont vous avez besoin."
     }
   }
 }

@@ -102,8 +102,8 @@
   },
   "directory": {
     "badge": "Where to Stay",
-    "title": "Hotels, Kasbahs & Desert Camps in Merzouga",
-    "subtitle": "Filter by type and area — village edge, Hassilabied, or overnight in the dunes.",
+    "title": "Find your ideal stay in Merzouga",
+    "subtitle": "Desert camps in Erg Chebbi, kasbah hotels and quiet auberges in Hassi Labied — open a listing for details.",
     "filter_type_label": "Accommodation Type",
     "type_all": "All types",
     "type_hotel": "Hotels & Kasbahs",
@@ -118,7 +118,7 @@
     "counter": "28 accommodations listed",
     "district_label": "Area",
     "type_label": "Type",
-    "check_availability": "Check availability →",
+    "check_availability": "Book →",
     "no_results": "No accommodations match your filters."
   },
   "eat": {
@@ -218,5 +218,32 @@
       "answer": "The closest airport is Errachidia (ERH), about a 2-hour drive. Private transfers, taxis or rental cars are readily available to take you directly to the dunes."
     }
   },
-  "name": "Merzouga"
+  "name": "Merzouga",
+  "stays": {
+    "card1": {
+      "badge": "★ Desert Camp",
+      "name": "Luxury Camp Erg Chebbi",
+      "desc": "Overnight in a tented camp among the dunes — Berber dinner, drums and sunrise over the erg.",
+      "location": "Erg Chebbi dunes"
+    },
+    "card2": {
+      "badge": "★ Kasbah & Views",
+      "name": "Kasbah Hotel with Dune Views",
+      "desc": "Comfortable rooms and terraces facing Erg Chebbi — ideal base before or after a camel trek.",
+      "location": "Merzouga village edge"
+    },
+    "card3": {
+      "badge": "★ Oasis Quiet",
+      "name": "Auberge Hassi Labied",
+      "desc": "Calm auberges in the palm grove at the foot of the erg — direct dune access and fewer crowds.",
+      "location": "Hassi Labied"
+    }
+  },
+  "booking_banner": {
+    "badge": "Camps, kasbahs & auberges around Erg Chebbi",
+    "title": "Explore all stays in Merzouga",
+    "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation on top desert camps and village hotels.",
+    "btn": "View all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
+  }
 }

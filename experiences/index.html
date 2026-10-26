@@ -30,7 +30,7 @@
     <link href="https://moroccotripmap.com/experiences/index.html" hreflang="x-default" rel="alternate"/>
 
     <!-- Tailwind CSS CDN -->
-    <link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -195,8 +195,8 @@
 
     <!-- Main Content -->
     <main class="flex-grow">
-        <!-- Hero Section -->
-        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <!-- Hero Section (Correction: pas de overflow-hidden pour laisser respirer la recherche) -->
+        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative">
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
                     <a class="hover:text-white transition" href="../index.html" data-i18n="experiences_page.breadcrumb.home">Home</a>
@@ -213,8 +213,8 @@
                     <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">GetYourGuide &amp; Viator</strong> <span data-i18n="experiences_page.stat_partner">Verified Experiences</span></span>
                 </div>
 
-                <!-- Instant Search Bar -->
-                <div class="mt-8 max-w-lg relative">
+                <!-- Instant Search Bar (Correction: z-50 et position relative claire) -->
+                <div class="mt-8 max-w-lg relative z-50">
                     <div class="relative">
                         <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search activity (e.g. Desert, Quad, Camel) or city..." data-i18n-placeholder="experiences_page.search_placeholder" type="text"/>
                         <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
@@ -372,7 +372,7 @@
                         </div>
                         <div class="p-6">
                             <h3 class="text-2xl font-bold text-sombre group-hover:text-vert transition" data-i18n="experiences_page.activities.ouzoud.title">Cascades d'Ouzoud Day Tour</h3>
-                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="gastronomy_page.dishes.harira.sub" data-i18n="experiences_page.activities.ouzoud.sub">North Africa's Highest Waterfalls &amp; Monkeys</p>
+                            <p class="text-xs font-semibold text-sable mt-1" data-i18n="experiences_page.activities.ouzoud.sub">North Africa's Highest Waterfalls &amp; Monkeys</p>
                             <p class="text-xs text-sombre/70 mt-3 leading-relaxed" data-i18n="experiences_page.activities.ouzoud.desc">
                                 Discover the 110-meter high cascading waterfalls tucked in the Middle Atlas. Take a boat ride beneath the falls, spot wild Barbary macaque monkeys in the olive trees, and dine alongside the riverbanks.
                             </p>
@@ -534,7 +534,7 @@
             </div>
         </section>
 
-        <!-- SECTION 2: CITIES & ADVENTURE EXPERIENCES (WITH MAP SVG MARKERS) -->
+        <!-- SECTION 2: CITIES & ADVENTURE EXPERIENCES -->
         <section class="bg-white py-16 border-t border-sable/15" id="cities-section">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-10">
@@ -613,7 +613,7 @@
                     </div>
                 </div>
 
-                <!-- CITIES CARDS GRID (WITH MAP SVG MARKERS) -->
+                <!-- CITIES CARDS GRID -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="destinations-grid">
 
                     <a href="https://www.getyourguide.com/s/?q=Marrakech+desert+tour+quad" target="_blank" rel="noopener sponsored" class="city-card block group relative bg-creme rounded-3xl overflow-hidden border border-sable/20 shadow-sm hover:shadow-xl transition duration-300 p-6 flex flex-col justify-between" data-city="marrakech" data-region="imperial mountains">
@@ -1410,7 +1410,7 @@
             </div>
         </section>
 
-        <!-- BANNIÈRE EXPÉRIENCE AFFILIATION (GETYOURGUIDE / VIATOR) -->
+        <!-- BANNIÈRE EXPÉRIENCE AFFILIATION -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="max-w-xl text-left z-10">
@@ -1433,50 +1433,49 @@
 
     <!-- Footer -->
     <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-        <div>
-            <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-            <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
-                Discover. Plan. Experience Morocco.<br/>
-                The premier tourism directory and cultural travel guide for visitors exploring Morocco.
-            </p>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
+                <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
+                    Discover. Plan. Experience Morocco.<br/>
+                    The premier tourism directory and cultural travel guide for visitors exploring Morocco.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.recommended_title">Recommended Pages</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="../merzouga.html" data-i18n="footer.link_merzouga">Sahara Desert & Merzouga</a></li>
+                    <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
+                    <li><a class="hover:text-white transition" href="../transport/index.html" data-i18n="footer.link_transport">Transport & Rental Cars</a></li>
+                    <li><a class="hover:text-white transition" href="../programmes/index.html" data-i18n="footer.link_itineraries">Circuits & Itineraries</a></li>
+                    <li><a class="hover:text-white transition font-semibold text-sable" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Travel Categories</h4>
+                <ul class="text-xs space-y-2 text-creme/80">
+                    <li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
+                    <li><a class="hover:text-white transition" href="../gastronomy/index.html" data-i18n="footer.link_restaurants">Moroccan Gastronomy & Food</a></li>
+                    <li><a class="hover:text-white transition" href="../experiences/index.html" data-i18n="footer.link_experiences">Desert Tours & Activities</a></li>
+                    <li><a class="hover:text-white transition" href="../transport/index.html" data-i18n="footer.link_transport">Transport & Rental Cars</a></li>
+                    <li><a class="hover:text-white transition" href="../programmes/index.html" data-i18n="footer.link_itineraries">Circuits & Itineraries</a></li>
+                    <li><a class="hover:text-white transition" href="../blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
+                <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
+                <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                    @moroccotripmap
+                </a>
+            </div>
         </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.recommended_title">Recommended Pages</h4>
-            <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="../merzouga.html" data-i18n="footer.link_merzouga">Sahara Desert & Merzouga</a></li>
-                <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
-                <li><a class="hover:text-white transition" href="../transport/index.html" data-i18n="footer.link_transport">Transport & Rental Cars</a></li>
-                <li><a class="hover:text-white transition" href="../programmes/index.html" data-i18n="footer.link_itineraries">Circuits & Itineraries</a></li>
-
-                <li><a class="hover:text-white transition font-semibold text-sable" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
-            </ul>
+        <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
+            <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
+            <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
         </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Travel Categories</h4>
-            <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="../riads/index.html" data-i18n="footer.link_stays">Authentic Riads & Hotels</a></li>
-                <li><a class="hover:text-white transition" href="../gastronomy/index.html" data-i18n="footer.link_restaurants">Moroccan Gastronomy & Food</a></li>
-                <li><a class="hover:text-white transition" href="../experiences/index.html" data-i18n="footer.link_experiences">Desert Tours & Activities</a></li>
-                <li><a class="hover:text-white transition" href="../transport/index.html" data-i18n="footer.link_transport">Transport & Rental Cars</a></li>
-                <li><a class="hover:text-white transition" href="../programmes/index.html" data-i18n="footer.link_itineraries">Circuits & Itineraries</a></li>
-                <li><a class="hover:text-white transition" href="../blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
-            <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
-            <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-                @moroccotripmap
-            </a>
-        </div>
-    </div>
-    <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-        <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
-        <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
-    </div>
-</footer>
+    </footer>
 
     <!-- Interactive Logic & Filtering JS -->
     <script>

@@ -851,6 +851,15 @@
   }
   window.openDay = openDay;
 
+  
+  function toggleMobileCategories() {
+    var dropdown = document.getElementById('mobile-categories-dropdown');
+    var arrow = document.getElementById('categories-arrow');
+    if (dropdown) dropdown.classList.toggle('hidden');
+    if (arrow) arrow.classList.toggle('rotate-180');
+  }
+  window.toggleMobileCategories = toggleMobileCategories;
+
   function init() {
     var btn = document.getElementById('lang-menu-button');
     var dd = document.getElementById('lang-menu-dropdown');

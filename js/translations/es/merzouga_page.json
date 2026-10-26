@@ -96,13 +96,17 @@
     "day3_m": "Mañana — Amanecer",
     "day3_md": "Subida para el amanecer, desayuno en el campamento y regreso en camello o 4x4 al pueblo.",
     "day3_a": "Tarde — Cultura",
-    "day3_ad": "Música gnawa y té en Khamlia, o zoco de Rissani y mausoleo Moulay Ali Cherif."
+    "day3_ad": "Música gnawa y té en Khamlia, o zoco de Rissani y mausoleo Moulay Ali Cherif.",
+    "day1_tab": "Día 1 — Dunas y pueblo",
+    "day2_tab": "Día 2 — Camello y campamento",
+    "day3_tab": "Día 3 — Khamlia y Rissani"
   },
   "directory": {
-    "badge": "Alojamientos",
-    "title": "Dónde dormir en Merzouga",
-    "subtitle": "Filtra por tipo y zona — borde del pueblo, Hassi Labied o noche en las dunas.",
-    "no_results": "Ningún alojamiento coincide con tus filtros."
+    "badge": "Dónde dormir",
+    "title": "Encuentra tu estancia ideal en Merzouga",
+    "subtitle": "Campamentos en Erg Chebbi, hoteles kasbah y posadas tranquilas en Hassi Labied — abre un anuncio para ver detalles.",
+    "no_results": "Ningún alojamiento coincide con tus filtros.",
+    "check_availability": "Reservar →"
   },
   "eat": {
     "badge": "Dónde comer",
@@ -287,5 +291,32 @@
       "desc": "Khamlia y Rissani.",
       "duration": "Medio día"
     }
+  },
+  "stays": {
+    "card1": {
+      "badge": "★ Campamento desierto",
+      "name": "Campamento de lujo Erg Chebbi",
+      "desc": "Noche en tienda entre las dunas — cena bereber, tambores y amanecer sobre el erg.",
+      "location": "Dunas de Erg Chebbi"
+    },
+    "card2": {
+      "badge": "★ Kasbah y vistas",
+      "name": "Hotel kasbah con vistas a las dunas",
+      "desc": "Habitaciones cómodas y terrazas frente a Erg Chebbi — base ideal antes o después de un paseo en camello.",
+      "location": "Borde del pueblo de Merzouga"
+    },
+    "card3": {
+      "badge": "★ Oasis tranquilo",
+      "name": "Posada Hassi Labied",
+      "desc": "Posadas tranquilas en el palmeral al pie del erg — acceso directo a las dunas y menos gente.",
+      "location": "Hassi Labied"
+    }
+  },
+  "booking_banner": {
+    "badge": "Campamentos, kasbahs y posadas alrededor de Erg Chebbi",
+    "title": "Explora todos los alojamientos en Merzouga",
+    "desc": "Compara tarifas en tiempo real, lee reseñas verificadas y disfruta de cancelación gratuita en los mejores campamentos y hoteles.",
+    "btn": "Ver todos los alojamientos en Booking.com",
+    "guarantee": "✓ Mejor precio y reserva segura"
   }
 }

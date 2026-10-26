@@ -45,36 +45,36 @@
   },
   "moods": {
     "badge": "التوقيت",
-    "title": "What to Experience at Erg Chebbi",
-    "subtitle": "Sunsets, dune climbing and camel adventures — three core highlights.",
+    "title": "ماذا ترى في عرق الشبي",
+    "subtitle": "كثبان وضوء وصمت — تجربة صحراوية أصيلة.",
     "1": {
-      "tag": "Golden Hour",
-      "title": "Sunset & Sunrise",
-      "desc": "Witness breathtaking color transformations over the sand ridges.",
-      "duration": "Best lighting • 1 hour"
+      "tag": "مكان",
+      "title": "قمم الكثبان",
+      "desc": "اصعد إلى القمم لإطلالات 360° على العرق.",
+      "duration": "صعود • 30 – 60 د"
     },
     "2": {
-      "tag": "Adventure",
-      "title": "Dune Climbing",
-      "desc": "Hike up the highest sand dunes for panoramic views across the Sahara.",
-      "duration": "Active • 45 – 60 min"
+      "tag": "الضوء",
+      "title": "الشروق والغروب",
+      "desc": "أفضل الأوقات للألوان والتصوير.",
+      "duration": "جلسة ضوء • 45 – 90 د"
     },
     "3": {
-      "tag": "Relaxation",
-      "title": "Quiet Desert Nights",
-      "desc": "Experience total silence and magnificent stargazing away from city lights.",
-      "duration": "Overnight experience"
+      "tag": "نصيحة",
+      "title": "ابقَ لليلة",
+      "desc": "مخيم في الكثبان يطيل التجربة.",
+      "duration": "مخيم • ليلة كاملة"
     }
   },
   "food": {
-    "title": "Dining Around Erg Chebbi",
-    "p1": "Desert dining combines traditional camp tagines, hotel hospitality and local village meals.",
-    "li1": "Welcome mint tea served upon arrival in the dunes",
-    "li2": "Traditional Moroccan tagines cooked over open coals",
-    "li3": "Berber pizzas baked in sand ovens",
-    "li4": "Hotel restaurants and cafés in Merzouga village",
-    "li5": "Fresh seasonal fruits and Moroccan pastries",
-    "p2": "Most desert camp stays include half-board dining, as dining options directly in the deep dunes are limited to organized camps."
+    "title": "قبل أو بعد الزيارة",
+    "p1": "غالباً ما تُتناول الوجبات في المخيم أو نزل حاسي لبيض / قرية مرزوكة.",
+    "li1": "عشاء أمازيغي في مخيم الصحراء",
+    "li2": "فطور عند الشروق على الكثبان",
+    "li3": "طاجين وشاي بالنعناع في النزل",
+    "li4": "وجبات خفيفة للمسير (ماء وتمور)",
+    "li5": "وجبة عند العودة إلى قرية مرزوكة",
+    "p2": "احمل ماءً؛ خيارات الطعام محدودة على الكثبان نفسها."
   },
   "tips": {
     "title": "Practical Tips for Visiting Erg Chebbi",
@@ -93,24 +93,24 @@
   },
   "gyg": {
     "badge": "جولات وتجارب",
-    "title": "Book an Erg Chebbi Adventure",
-    "subtitle": "Top-rated camel treks, 4x4 desert safaris and overnight bivouacs.",
+    "title": "احجز تجربة عرق الشبي",
+    "subtitle": "سفاري وجمال وليالٍ في المخيم — مع دليل محلي.",
     "t1": {
-      "tag": "Camel Ride",
-      "title": "Merzouga: Sunset or Sunrise Camel Trek in Erg Chebbi",
-      "desc": "Ride a camel across the majestic sand dunes with an experienced guide and watch the sun dip below the horizon."
+      "tag": "جمال",
+      "title": "رحلة جمال عند الغروب في عرق الشبي",
+      "desc": "نزهة نحو الكثبان في الساعة الذهبية مع شاي وصور."
     },
-    "check": "تحقق من التوفر على GetYourGuide ←",
     "t2": {
-      "tag": "4x4 Safari",
-      "title": "Merzouga: Erg Chebbi 4x4 Desert Safari & Khamlia",
-      "desc": "Explore desert tracks, visit nomadic families, discover fossil sites and listen to traditional Gnawa music in Khamlia."
+      "tag": "مخيم",
+      "title": "ليلة في مخيم فاخر في العرق",
+      "desc": "عشاء وموسيقى وليلة تحت النجوم وسط الكثبان."
     },
     "t3": {
-      "tag": "Overnight Camp",
-      "title": "Merzouga: Overnight Desert Camp & Stargazing Experience",
-      "desc": "Combine a camel trek with a night in a desert bivouac featuring traditional dinner, campfires and Berber drumming."
+      "tag": "سفاري رباعي",
+      "title": "سفاري الكثبان والقرى",
+      "desc": "يوم بسيارة رباعية يجمع القمم والواحات والقرى المجاورة."
     },
+    "check": "تحقق من التوفر على GetYourGuide ←",
     "disclosure": "بعض هذه الروابط روابط تابعة. إذا حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك."
   },
   "nearby": {
@@ -118,15 +118,15 @@
     "title": "مزيد من الأماكن في مرزوكة",
     "back": "← العودة إلى دليل مرزوكة",
     "tag": "معلم",
-    "camel": "Camel Trek",
-    "camel_desc": "Sunset or sunrise ride into the erg.",
     "explore": "استكشف المكان ←",
-    "camp": "Desert Camp",
-    "camp_desc": "Overnight under the Saharan sky.",
-    "lake": "Dayet Srji",
-    "lake_desc": "Seasonal lake and seasonal flamingo habitat.",
-    "khamlia": "Khamlia",
-    "khamlia_desc": "Gnawa music village near the dunes."
+    "erg": "عرق الشبي",
+    "erg_desc": "كثبان ذهبية شاسعة — قلب مرزوكة.",
+    "camel": "رحلة الجمال",
+    "camel_desc": "ركوب عند الشروق أو الغروب في العرق.",
+    "camp": "مخيم صحراوي",
+    "camp_desc": "ليلة تحت سماء الصحراء.",
+    "khamlia": "خملية",
+    "khamlia_desc": "قرية موسيقى الكناوة قرب الكثبان."
   },
   "blog": {
     "badge": "من المدونة",

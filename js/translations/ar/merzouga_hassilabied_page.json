@@ -45,36 +45,36 @@
   },
   "moods": {
     "badge": "التوقيت",
-    "title": "What to Experience in Hassi Labied",
-    "subtitle": "Nature, culture and serenity — three key dimensions of the village.",
+    "title": "ماذا ترى في حاسي لبيض",
+    "subtitle": "واحة وبستان نخيل ووصول مباشر للكثبان.",
     "1": {
-      "tag": "Nature",
-      "title": "The Palm Grove",
-      "desc": "Stroll along lush garden paths under date palms and discover ancient water channels.",
-      "duration": "Walk • 45 min"
+      "tag": "واحة",
+      "title": "بستان النخيل",
+      "desc": "خضرة وري تقليدي عند سفح العرق.",
+      "duration": "جولة • 30 – 60 د"
     },
     "2": {
-      "tag": "Adventure",
-      "title": "Dune Access",
-      "desc": "Climb directly from the edge of the village onto the magnificent Erg Chebbi sand dunes.",
-      "duration": "Hiking • 30 min"
+      "tag": "كثبان",
+      "title": "الوصول إلى عرق الشبي",
+      "desc": "انطلاق الجمال والرباعي من النزل.",
+      "duration": "رحلة • نصف يوم أو أكثر"
     },
     "3": {
-      "tag": "Culture",
-      "title": "Local Hospitality",
-      "desc": "Sip mint tea with friendly locals and learn about Amazigh traditions in family guesthouses.",
-      "duration": "Relaxation • 1 hour"
+      "tag": "نصيحة",
+      "title": "إقامة هادئة",
+      "desc": "حركة أقل من وسط مرزوكة.",
+      "duration": "ليلة إلى ليلتين"
     }
   },
   "food": {
-    "title": "Dining in Hassi Labied",
-    "p1": "Enjoy authentic traditional cuisine in cozy family-run riads and local village restaurants.",
-    "li1": "Slow-cooked Berber tagines with local vegetables and spices",
-    "li2": "Freshly baked nomad bread cooked over hot coals",
-    "li3": "Traditional mint tea welcoming guests in shaded courtyards",
-    "li4": "Local sweet dates harvested directly from the surrounding oasis",
-    "li5": "Evening meals under the stars at village guesthouses",
-    "p2": "Most local guesthouses and riads offer delicious home-cooked dinners upon request."
+    "title": "أين تأكل",
+    "p1": "تقدم النزل نصف إقامة أو إقامة كاملة بمطبخ محلي.",
+    "li1": "طاجين وكسكس في النزل",
+    "li2": "فطور مقابل الكثبان",
+    "li3": "شاي بالنعناع على الشرفة",
+    "li4": "نزهة منظمة للرحلات",
+    "li5": "عشاء أمازيغي في المخيم إن خرجت للمبيت",
+    "p2": "أبلغ عن الأنظمة الغذائية الخاصة مسبقاً."
   },
   "tips": {
     "title": "Practical Tips for Visiting Hassi Labied",
@@ -93,24 +93,24 @@
   },
   "gyg": {
     "badge": "جولات وتجارب",
-    "title": "Book a Desert & Oasis Tour",
-    "subtitle": "Top-rated excursions starting right from the Merzouga and Hassi Labied area.",
+    "title": "من حاسي لبيض",
+    "subtitle": "وصول مباشر للكثبان والمخيمات.",
     "t1": {
-      "tag": "4x4 Safari",
-      "title": "Merzouga: Erg Chebbi 4x4 Desert Safari & Oasis Tour",
-      "desc": "Explore desert tracks, nomadic settlements and oasis villages with an expert local driver."
+      "tag": "جمال",
+      "title": "رحلة من حاسي لبيض",
+      "desc": "انطلاق عند سفح الكثبان، شروق أو غروب."
     },
-    "check": "تحقق من التوفر على GetYourGuide ←",
     "t2": {
-      "tag": "Camel Trek",
-      "title": "Merzouga: Sunset Camel Trek & Overnight Desert Camp",
-      "desc": "Ride across the golden dunes of Erg Chebbi and spend an unforgettable night under the stars."
+      "tag": "مخيم",
+      "title": "ليلة في المخيم",
+      "desc": "نقل قصير إلى مخيمات العرق."
     },
     "t3": {
-      "tag": "Cultural Tour",
-      "title": "Merzouga: Khamlia Village & Desert Music Tour",
-      "desc": "Discover traditional Gnawa music and culture in the neighboring village of Khamlia."
+      "tag": "سفاري",
+      "title": "رباعي كثبان وقرى",
+      "desc": "مسار يشمل المناظر وخملية."
     },
+    "check": "تحقق من التوفر على GetYourGuide ←",
     "disclosure": "بعض هذه الروابط روابط تابعة. إذا حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك."
   },
   "nearby": {
@@ -118,15 +118,15 @@
     "title": "مزيد من الأماكن في مرزوكة",
     "back": "← العودة إلى دليل مرزوكة",
     "tag": "معلم",
-    "erg": "Erg Chebbi",
-    "erg_desc": "Vast golden dunes — the heart of Merzouga.",
     "explore": "استكشف المكان ←",
-    "camel": "Camel Trek",
-    "camel_desc": "Sunset or sunrise ride into the erg.",
-    "camp": "Desert Camp",
-    "camp_desc": "Overnight under the Saharan sky.",
-    "khamlia": "Khamlia",
-    "khamlia_desc": "Gnawa music village near the dunes."
+    "erg": "عرق الشبي",
+    "erg_desc": "كثبان ذهبية شاسعة — قلب مرزوكة.",
+    "camel": "رحلة الجمال",
+    "camel_desc": "ركوب عند الشروق أو الغروب في العرق.",
+    "camp": "مخيم صحراوي",
+    "camp_desc": "ليلة تحت سماء الصحراء.",
+    "khamlia": "خملية",
+    "khamlia_desc": "قرية موسيقى الكناوة قرب الكثبان."
   },
   "blog": {
     "badge": "من المدونة",

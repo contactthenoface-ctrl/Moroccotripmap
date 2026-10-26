@@ -44,37 +44,37 @@
     }
   },
   "moods": {
-    "badge": "التوقيت",
-    "title": "What to See on Your Camel Trek",
-    "subtitle": "Dunes, light and the desert setting — three angles worth experiencing.",
+    "badge": "التجربة",
+    "title": "تجربة ركوب الجمال",
+    "subtitle": "إيقاع بطيء وصمت وضوء الصحراء.",
     "1": {
-      "tag": "Experience",
-      "title": "Camel Ride",
-      "desc": "The essential rhythm of crossing the dunes.",
-      "duration": "Trek • 1 – 2 hours"
+      "tag": "التوقيت",
+      "title": "الشروق أو الغروب",
+      "desc": "الجولات الأكثر طلباً للضوء واعتدال الحرارة.",
+      "duration": "2 – 3 ساعات"
     },
     "2": {
-      "tag": "Light",
-      "title": "Sunset & Sunrise",
-      "desc": "Soft desert light flatters the dunes most.",
-      "duration": "Golden hour • 45 – 60 min"
+      "tag": "المسار",
+      "title": "نحو الكثبان الكبرى",
+      "desc": "الانطلاق غالباً من حاسي لبيض أو حافة العرق.",
+      "duration": "ذهاب وإياب حسب العرض"
     },
     "3": {
-      "tag": "Tip",
-      "title": "Overnight Stay",
-      "desc": "Combine your trek with a night in a desert camp.",
-      "duration": "Camp • 1 Night"
+      "tag": "نصيحة",
+      "title": "اللباس والماء",
+      "desc": "سروال طويل ووشاح وواقي شمس وماء.",
+      "duration": "تحضير • 15 د"
     }
   },
   "food": {
-    "title": "Before or After the Trek",
-    "p1": "Desert dining includes camp tagines, hotel half-board and village meals after returning from the sand.",
-    "li1": "Sunset mint tea on the dunes",
-    "li2": "Traditional Berber camp dinner",
-    "li3": "Hotel restaurant in Merzouga village",
-    "li4": "Local grill and tagine spots",
-    "li5": "Relaxing with refreshments after the trek",
-    "p2": "Book half-board with your camp or hotel; options outside are limited after dark."
+    "title": "قبل أو بعد",
+    "p1": "الشاي بالنعناع غالباً مشمول؛ الوجبات حسب العرض (نصف يوم أو ليلة في المخيم).",
+    "li1": "شاي أمازيغي أثناء الاستراحة",
+    "li2": "عشاء في المخيم إن كانت ليلة",
+    "li3": "فطور في المخيم عند الشروق",
+    "li4": "وجبة في نزل حاسي لبيض",
+    "li5": "يُنصح بالماء والتمور",
+    "p2": "أبلغ عن الحساسية عند الحجز."
   },
   "tips": {
     "title": "Practical Tips for Your Camel Trek",
@@ -93,24 +93,24 @@
   },
   "gyg": {
     "badge": "جولات وتجارب",
-    "title": "Book a Camel Trek Experience",
-    "subtitle": "Great options for guided sunset rides and overnight desert camps.",
+    "title": "احجز رحلة جمال",
+    "subtitle": "عروض الشروق/الغروب وليلة في المخيم.",
     "t1": {
-      "tag": "Sunset Trek",
-      "title": "Erg Chebbi Sunset Camel Ride",
-      "desc": "Ride into the dunes with a local guide, watch the sunset, and enjoy mint tea in the desert."
+      "tag": "غروب",
+      "title": "رحلة جمال عند الغروب",
+      "desc": "انطلاق في آخر بعد الظهر نحو الكثبان والعودة مع حلول الظلام."
     },
-    "check": "تحقق من التوفر على GetYourGuide ←",
     "t2": {
-      "tag": "Overnight Camp",
-      "title": "Overnight Desert Camp & Trek",
-      "desc": "Spend a night under the stars in a Berber tent with dinner, drumming around the fire, and sunrise views."
+      "tag": "شروق",
+      "title": "رحلة جمال عند الشروق",
+      "desc": "انطلاق باكراً جداً لمشاهدة شروق الشمس على العرق."
     },
     "t3": {
-      "tag": "4x4 & Camel Combo",
-      "title": "Desert 4x4 Tour & Camel Trek",
-      "desc": "Explore nomadic villages, Khamlia music, and the dunes combining a 4x4 excursion with a camel ride."
+      "tag": "ليلة",
+      "title": "جمال + ليلة في المخيم",
+      "desc": "رحلة وعشاء وموسيقى وليلة تحت النجوم."
     },
+    "check": "تحقق من التوفر على GetYourGuide ←",
     "disclosure": "بعض هذه الروابط روابط تابعة. إذا حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك."
   },
   "nearby": {
@@ -118,15 +118,15 @@
     "title": "مزيد من الأماكن في مرزوكة",
     "back": "← العودة إلى دليل مرزوكة",
     "tag": "معلم",
-    "erg": "Erg Chebbi",
-    "erg_desc": "Vast golden dunes — the heart of Merzouga.",
     "explore": "استكشف المكان ←",
-    "camel": "Camel Trek",
-    "camel_desc": "Sunset or sunrise ride into the erg.",
-    "camp": "Desert Camp",
-    "camp_desc": "Overnight under the Saharan sky.",
-    "khamlia": "Khamlia",
-    "khamlia_desc": "Gnawa music village near the dunes."
+    "erg": "عرق الشبي",
+    "erg_desc": "كثبان ذهبية شاسعة — قلب مرزوكة.",
+    "camel": "رحلة الجمال",
+    "camel_desc": "ركوب عند الشروق أو الغروب في العرق.",
+    "camp": "مخيم صحراوي",
+    "camp_desc": "ليلة تحت سماء الصحراء.",
+    "khamlia": "خملية",
+    "khamlia_desc": "قرية موسيقى الكناوة قرب الكثبان."
   },
   "blog": {
     "badge": "من المدونة",

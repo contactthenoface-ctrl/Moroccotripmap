@@ -1557,27 +1557,11 @@
                 });
             });
 
-            // Instant Search Input Logic (Mis à jour pour supporter le multilingue / i18n et l'arabe)
+            // Instant Search Input Logic (Correction multilingue dynamique capturant l'arabe traduit)
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
 
             if (searchInput && searchResults) {
-                const searchItems = [
-                    ...Array.from(activityCards).map(c => ({
-                        type: 'Activity',
-                        title: c.querySelector('h3')?.textContent || '',
-                        element: c,
-                        targetSection: 'activities'
-                    })),
-                    ...Array.from(cityCards).map(c => ({
-                        type: 'City Excursion',
-                        title: c.querySelector('h3')?.textContent || '',
-                        cityName: c.querySelector('[data-i18n*="name"]')?.textContent || '',
-                        element: c,
-                        targetSection: 'cities'
-                    }))
-                ];
-
                 searchInput.addEventListener('input', function() {
                     const query = this.value.toLowerCase().trim();
                     searchResults.innerHTML = '';
@@ -1589,12 +1573,22 @@
                         return;
                     }
 
-                    // Recherche élargie incluant les textes dynamiques traduits (arabe, français, espagnol, anglais)
-                    const matches = searchItems.filter(item => {
-                        const titleMatch = item.title.toLowerCase().includes(query);
-                        const cityMatch = item.cityName && item.cityName.toLowerCase().includes(query);
-                        const cardTextMatch = item.element.textContent.toLowerCase().includes(query);
-                        return titleMatch || cityMatch || cardTextMatch;
+                    // Extraction dynamique à chaque frappe pour récupérer le texte traduit à l'écran (ex: en arabe)
+                    const dynamicSearchItems = [
+                        ...Array.from(activityCards).map(c => ({
+                            type: c.querySelector('[data-i18n*="badge"]')?.textContent || 'Activity',
+                            title: c.querySelector('h3')?.textContent || '',
+                            element: c
+                        })),
+                        ...Array.from(cityCards).map(c => ({
+                            type: c.querySelector('span.uppercase')?.textContent || 'City Excursion',
+                            title: c.querySelector('h3')?.textContent || '',
+                            element: c
+                        }))
+                    ];
+
+                    const matches = dynamicSearchItems.filter(item => {
+                        return item.title.toLowerCase().includes(query) || item.element.textContent.toLowerCase().includes(query);
                     });
 
                     if (matches.length > 0) {

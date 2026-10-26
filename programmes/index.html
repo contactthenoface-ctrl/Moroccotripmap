@@ -1983,6 +1983,17 @@
             if (dropdown) dropdown.classList.toggle('hidden');
         }
 
+        // Fonction de normalisation pour supporter l'arabe (harakats, alifs, ta marbuta) et les accents latins
+        function normalizeText(text) {
+            if (!text) return '';
+            return text
+                .toLowerCase()
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                .replace(/[\u064b-\u065f]/g, '')
+                .replace(/[أإآا]/g, 'ا')
+                .replace(/ة/g, 'ه');
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
             // Language Menu Toggle
             const langButton = document.getElementById('lang-menu-button');
@@ -1999,7 +2010,7 @@
                 });
             }
 
-            // Instant Search Input Logic across all cards
+            // Instant Search Input Logic (avec support Arabe complet)
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
             const itineraryCards = document.querySelectorAll('.itinerary-card');
@@ -2007,12 +2018,13 @@
             if (searchInput && searchResults) {
                 const searchItems = Array.from(itineraryCards).map(card => ({
                     title: card.querySelector('h2')?.textContent || '',
+                    description: card.querySelector('p')?.textContent || '',
                     element: card,
-                    regionId: card.closest('.region-block').id
+                    regionId: card.closest('.region-block')?.id || ''
                 }));
 
                 searchInput.addEventListener('input', function() {
-                    const query = this.value.toLowerCase().trim();
+                    const query = normalizeText(this.value.trim());
                     searchResults.innerHTML = '';
 
                     if (query.length === 0) {
@@ -2020,23 +2032,35 @@
                         return;
                     }
 
-                    const matches = searchItems.filter(item => item.title.toLowerCase().includes(query));
+                    const matches = searchItems.filter(item => {
+                        const normTitle = normalizeText(item.title);
+                        const normDesc = normalizeText(item.description);
+                        return normTitle.includes(query) || normDesc.includes(query);
+                    });
 
                     if (matches.length > 0) {
                         searchResults.classList.remove('hidden');
                         matches.forEach(match => {
                             const div = document.createElement('div');
                             div.className = 'px-4 py-3 hover:bg-creme cursor-pointer text-sm font-medium text-sombre flex items-center justify-between';
-                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span></div> <span class="text-xs text-sable font-bold">View →</span>`;
+                            
+                            const isArabic = document.documentElement.lang === 'ar';
+                            if (isArabic) {
+                                div.setAttribute('dir', 'rtl');
+                            }
+
+                            const viewText = isArabic ? '← عرض' : 'View →';
+                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span></div> <span class="text-xs text-sable font-bold">${viewText}</span>`;
                             
                             div.addEventListener('click', function() {
                                 searchInput.value = match.title;
                                 searchResults.classList.add('hidden');
                                 
-                                // Show parent region
-                                const regionName = match.regionId.replace('region-', '');
-                                const regionTab = document.querySelector(`button[onclick*="switchRegion('${regionName}')"]`);
-                                if (regionTab) regionTab.click();
+                                if (match.regionId) {
+                                    const regionName = match.regionId.replace('region-', '');
+                                    const regionTab = document.querySelector(`button[onclick*="switchRegion('${regionName}')"]`);
+                                    if (regionTab) regionTab.click();
+                                }
 
                                 match.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
                             });
@@ -2044,7 +2068,8 @@
                         });
                     } else {
                         searchResults.classList.remove('hidden');
-                        searchResults.innerHTML = '<div class="px-4 py-3 text-sm text-gray-500">No matching itineraries found</div>';
+                        const noResultText = document.documentElement.lang === 'ar' ? 'لا توجد نتائج مطابقة' : 'No matching itineraries found';
+                        searchResults.innerHTML = `<div class="px-4 py-3 text-sm text-gray-500">${noResultText}</div>`;
                     }
                 });
 

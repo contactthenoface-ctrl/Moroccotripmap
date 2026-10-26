@@ -21,7 +21,7 @@
         { name: "Zagora", arabicName: "زاكورة", type: "Ville", url: "zagora.html", tags: ["zagora", "draa valley", "palm", "desert", "زاكورة"] },
         { name: "Safi", arabicName: "آسفي", type: "Ville", url: "safi.html", tags: ["safi", "pottery", "coast", "fortress", "آسفي"] },
         { name: "Laayoune", arabicName: "العيون", type: "Ville", url: "laayoune.html", tags: ["laayoune", "sahara", "atlantic", "sahrawi", "العيون"] },
-        { name: "Merzouga", arabicName: "مرزوقة", type: "Ville", url: "merzouga.html", tags: ["merzouga", "desert", "dunes", "sahara", "erg chebbi", "camp", "مرزوكة"] },
+        { name: "Merzouga", arabicName: "مرزوكة", type: "Ville", url: "merzouga.html", tags: ["merzouga", "desert", "dunes", "sahara", "erg chebbi", "camp", "مرزوكة"] },
         { name: "Azilal", arabicName: "أزيلال", type: "Ville", url: "azilal.html", tags: ["azilal", "ouzoud", "waterfalls", "atlas", "أزيلال"] },
         { name: "Tinghir", arabicName: "تنغير", type: "Ville", url: "tinghir.html", tags: ["tinghir", "todra", "gorge", "canyon", "oasis", "تنغير"] },
         { name: "Oujda-Saïdia", arabicName: "وجدة السعيدية", type: "Ville", url: "oujda.html", tags: ["oujda", "saidia", "east", "mediterranean", "وجدة", "السعيدية"] },

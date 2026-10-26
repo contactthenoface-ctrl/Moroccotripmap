@@ -25,16 +25,52 @@
     "badge": "Top Sightseeing",
     "title": "Must-Visit Places in Merzouga",
     "subtitle": "Dunes, camel treks, camps and the stops that define the desert gateway.",
+    "erg": {
+      "tag": "Dunes",
+      "title": "Erg Chebbi",
+      "desc": "Vast golden dunes rising above Merzouga — the heart of every Sahara visit here."
+    },
     "explore": "Explore Place →",
-    "erg": { "tag": "Dunes", "title": "Erg Chebbi", "desc": "Vast golden dunes rising above Merzouga — the heart of every Sahara visit here." },
-    "village": { "tag": "Village", "title": "Merzouga Village", "desc": "Small desert gateway village with hotels, cafés and the trailhead to the erg." },
-    "camel": { "tag": "Experience", "title": "Camel Trek", "desc": "Classic camel ride into the dunes at sunset or sunrise — the signature Merzouga experience." },
-    "camp": { "tag": "Camp", "title": "Desert Camp", "desc": "Overnight in a Berber-style camp under the stars — dinner, drums and dune silence." },
-    "khamlia": { "tag": "Culture", "title": "Khamlia", "desc": "Black desert village known for Gnawa music, tea and warm hospitality near the dunes." },
-    "dayet": { "tag": "Nature", "title": "Dayet Srji", "desc": "Seasonal lake at the foot of the dunes — flamingos when water is present after rains." },
-    "rissani": { "tag": "Town", "title": "Rissani", "desc": "Historic market town and gateway — souk days, kasbahs and the Moulay Ali Cherif mausoleum." },
-    "hassilabied": { "tag": "Village", "title": "Hassilabied", "desc": "Quiet village on the edge of the erg — hotels with dune views and a calmer base than central Merzouga." },
-    "fossils": { "tag": "Craft", "title": "Fossil Workshops", "desc": "Local workshops and shops selling trilobites and polished fossils from the Erfoud region." }
+    "village": {
+      "tag": "Village",
+      "title": "Merzouga Village",
+      "desc": "Small desert gateway village with hotels, cafés and the trailhead to the erg."
+    },
+    "camel": {
+      "tag": "Experience",
+      "title": "Camel Trek",
+      "desc": "Classic camel ride into the dunes at sunset or sunrise — the signature Merzouga experience."
+    },
+    "camp": {
+      "tag": "Camp",
+      "title": "Desert Camp",
+      "desc": "Overnight in a Berber-style camp under the stars — dinner, drums and dune silence."
+    },
+    "khamlia": {
+      "tag": "Culture",
+      "title": "Khamlia",
+      "desc": "Black desert village known for Gnawa music, tea and warm hospitality near the dunes."
+    },
+    "dayet": {
+      "tag": "Nature",
+      "title": "Dayet Srji",
+      "desc": "Seasonal lake at the foot of the dunes — flamingos when water is present after rains."
+    },
+    "rissani": {
+      "tag": "Town",
+      "title": "Rissani",
+      "desc": "Historic market town and gateway — souk days, kasbahs and the Moulay Ali Cherif mausoleum."
+    },
+    "hassilabied": {
+      "tag": "Village",
+      "title": "Hassilabied",
+      "desc": "Quiet village on the edge of the erg — hotels with dune views and a calmer base than central Merzouga."
+    },
+    "fossils": {
+      "tag": "Craft",
+      "title": "Fossil Workshops",
+      "desc": "Local workshops and shops selling trilobites and polished fossils from the Erfoud region."
+    }
   },
   "itinerary": {
     "badge": "Planning",
@@ -89,12 +125,42 @@
     "badge": "Gastronomy",
     "title": "Where to Eat in Merzouga",
     "subtitle": "Tagines, grilled meats and mint tea — village restaurants and hotel tables with dune views.",
-    "dunes": { "tag": "Local · Dune view", "title": "Restaurant Les Dunes", "desc": "Classic tagines and grilled dishes with a terrace facing the erg — a reliable village favourite.", "loc": "Merzouga village · Terrace" },
-    "yasmina": { "tag": "Hotel restaurant", "title": "Restaurant Yasmina", "desc": "Hotel restaurant open to outside guests — Moroccan menus and views toward Erg Chebbi.", "loc": "Hotel Yasmina · Village" },
-    "sud": { "tag": "Café · Casual", "title": "Café du Sud", "desc": "Simple café-restaurant for breakfast, omelettes, mint tea and a break from the heat.", "loc": "Merzouga village centre" },
-    "mohayut": { "tag": "Kasbah dining", "title": "Kasbah Mohayut Restaurant", "desc": "Moroccan set menus in a kasbah setting at the foot of the dunes — popular with overnight guests.", "loc": "Kasbah Mohayut · Dune edge" },
-    "berbere": { "tag": "Hassilabied", "title": "Restaurant Berbère", "desc": "Home-style Berber cooking in Hassilabied — couscous, tagine and a quieter evening than the main village strip.", "loc": "Hassilabied · Local kitchen" },
-    "camp": { "tag": "Desert camp", "title": "Dinner at Desert Camp", "desc": "Most overnight camps include a Berber dinner under the stars — often the highlight of a Merzouga stay.", "loc": "Erg Chebbi camps · Included meal" }
+    "dunes": {
+      "tag": "Local · Dune view",
+      "title": "Restaurant Les Dunes",
+      "desc": "Classic tagines and grilled dishes with a terrace facing the erg — a reliable village favourite.",
+      "loc": "Merzouga village · Terrace"
+    },
+    "yasmina": {
+      "tag": "Hotel restaurant",
+      "title": "Restaurant Yasmina",
+      "desc": "Hotel restaurant open to outside guests — Moroccan menus and views toward Erg Chebbi.",
+      "loc": "Hotel Yasmina · Village"
+    },
+    "sud": {
+      "tag": "Café · Casual",
+      "title": "Café du Sud",
+      "desc": "Simple café-restaurant for breakfast, omelettes, mint tea and a break from the heat.",
+      "loc": "Merzouga village centre"
+    },
+    "mohayut": {
+      "tag": "Kasbah dining",
+      "title": "Kasbah Mohayut Restaurant",
+      "desc": "Moroccan set menus in a kasbah setting at the foot of the dunes — popular with overnight guests.",
+      "loc": "Kasbah Mohayut · Dune edge"
+    },
+    "berbere": {
+      "tag": "Hassilabied",
+      "title": "Restaurant Berbère",
+      "desc": "Home-style Berber cooking in Hassilabied — couscous, tagine and a quieter evening than the main village strip.",
+      "loc": "Hassilabied · Local kitchen"
+    },
+    "camp": {
+      "tag": "Desert camp",
+      "title": "Dinner at Desert Camp",
+      "desc": "Most overnight camps include a Berber dinner under the stars — often the highlight of a Merzouga stay.",
+      "loc": "Erg Chebbi camps · Included meal"
+    }
   },
   "tips": {
     "title": "Practical Tips for Visiting Merzouga",
@@ -115,17 +181,42 @@
     "badge": "Day Trips",
     "title": "Best Day Trips from Merzouga",
     "subtitle": "Easy excursions and desert routes that fit comfortably into a single day.",
-    "rabat": { "title": "Erfoud & Draa Valley", "desc": "South into the Draa Valley — palm groves, kasbahs and the road toward the desert." },
-    "zagora": { "title": "Erfoud", "desc": "Fossil capital and desert gateway, about 40 minutes north of Merzouga." },
-    "mohammedia": { "title": "Dadès & Todra", "desc": "Gorges and valley scenery on the road west — often combined with a desert circuit." },
-    "azemmour": { "title": "Marrakech (circuit)", "desc": "Many travellers continue or return via the High Atlas Tizi n’Tichka pass to Marrakech." }
+    "rabat": {
+      "title": "Erfoud & Draa Valley",
+      "desc": "South into the Draa Valley — palm groves, kasbahs and the road toward the desert."
+    },
+    "zagora": {
+      "title": "Erfoud",
+      "desc": "Fossil capital and desert gateway, about 40 minutes north of Merzouga."
+    },
+    "mohammedia": {
+      "title": "Dadès & Todra",
+      "desc": "Gorges and valley scenery on the road west — often combined with a desert circuit."
+    },
+    "azemmour": {
+      "title": "Marrakech (circuit)",
+      "desc": "Many travellers continue or return via the High Atlas Tizi n’Tichka pass to Marrakech."
+    }
   },
   "faq": {
     "badge": "Good to Know",
     "title": "Merzouga Travel FAQ",
-    "q1": { "question": "How many days should I spend in Merzouga?", "answer": "Two full days cover the main sights comfortably. Three or four days allow a relaxed pace plus a day trip to Rissani or surrounding oases." },
-    "q2": { "question": "Is Merzouga safe for tourists?", "answer": "Yes. Merzouga is very safe and welcoming. Always book your desert camps and guides through verified local operators." },
-    "q3": { "question": "What currency is used and can I pay by card?", "answer": "Morocco uses the dirham (MAD). Cards are accepted in larger hotels, but keep cash handy for small shops, tips and local markets." },
-    "q4": { "question": "How do I get to Merzouga from the nearest airport?", "answer": "The closest airport is Errachidia (ERH), about a 2-hour drive. Private transfers, taxis or rental cars are readily available to take you directly to the dunes." }
-  }
+    "q1": {
+      "question": "How many days should I spend in Merzouga?",
+      "answer": "Two full days cover the main sights comfortably. Three or four days allow a relaxed pace plus a day trip to Rissani or surrounding oases."
+    },
+    "q2": {
+      "question": "Is Merzouga safe for tourists?",
+      "answer": "Yes. Merzouga is very safe and welcoming. Always book your desert camps and guides through verified local operators."
+    },
+    "q3": {
+      "question": "What currency is used and can I pay by card?",
+      "answer": "Morocco uses the dirham (MAD). Cards are accepted in larger hotels, but keep cash handy for small shops, tips and local markets."
+    },
+    "q4": {
+      "question": "How do I get to Merzouga from the nearest airport?",
+      "answer": "The closest airport is Errachidia (ERH), about a 2-hour drive. Private transfers, taxis or rental cars are readily available to take you directly to the dunes."
+    }
+  },
+  "name": "Merzouga"
 }

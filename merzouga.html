@@ -813,89 +813,21 @@
     <script>
         function openDay(evt, dayId) {
             if (evt && evt.preventDefault) evt.preventDefault();
-            var tabContents = document.querySelectorAll(".itinerary-section .tab-content, .tab-content");
-            tabContents.forEach(function (el) { el.classList.remove("active"); });
-            var tabBtns = document.querySelectorAll(".itinerary-section .tab-btn, .tab-btn");
-            tabBtns.forEach(function (el) { el.classList.remove("active"); });
+            document.querySelectorAll('.tab-content').forEach(function (el) { el.classList.remove('active'); });
+            document.querySelectorAll('.tab-btn').forEach(function (el) { el.classList.remove('active'); });
             var panel = document.getElementById(dayId);
-            if (panel) panel.classList.add("active");
+            if (panel) panel.classList.add('active');
             var target = (evt && (evt.currentTarget || evt.target)) || null;
-            if (target && target.classList) target.classList.add("active");
-            else {
+            if (target && target.classList && target.classList.contains('tab-btn')) {
+                target.classList.add('active');
+            } else {
                 var btn = document.querySelector('.tab-btn[onclick*="' + dayId + '"]');
-                if (btn) btn.classList.add("active");
+                if (btn) btn.classList.add('active');
             }
         }
         window.openDay = openDay;
 
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.tab-btn[data-i18n*="detailed_itinerary.day"]').forEach(function (btn) {
-                btn.addEventListener('click', function (e) {
-                    var m = (btn.getAttribute('onclick') || '').match(/day(\d)/);
-                    var dayId = m ? 'day' + m[1] : null;
-                    if (!dayId) {
-                        var key = btn.getAttribute('data-i18n') || '';
-                        var km = key.match(/day(\d)_tab/);
-                        if (km) dayId = 'day' + km[1];
-                    }
-                    if (dayId && typeof openDay === 'function') openDay(e, dayId);
-                });
-            });
-        });
-
-
-        function filterAccommodations() {
-            var selectedType = document.getElementById("filter-type").value;
-            var selectedLocation = document.getElementById("filter-location").value;
-            var cards = document.getElementsByClassName("acc-card");
-            var visibleCount = 0;
-
-            for (var i = 0; i < cards.length; i++) {
-                var card = cards[i];
-                var cardType = card.getAttribute("data-type");
-                var cardLocation = card.getAttribute("data-location");
-
-                var matchType = (selectedType === "all" || cardType === selectedType);
-                var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
-
-                if (matchType && matchLocation) {
-                    card.style.display = "block";
-                    visibleCount++;
-                } else {
-                    card.style.display = "none";
-                }
-            }
-
-            var counterDiv = document.getElementById("accommodation-counter");
-            var noResults = document.getElementById("no-results");
-            if (visibleCount === 0) {
-                counterDiv.innerText = "0 établissement trouvé";
-                if (noResults) noResults.style.display = "block";
-            } else if (visibleCount === 1) {
-                counterDiv.innerText = "1 établissement trouvé";
-                if (noResults) noResults.style.display = "none";
-            } else {
-                counterDiv.innerText = visibleCount + " établissements trouvés";
-                if (noResults) noResults.style.display = "none";
-            }
-        }
-
-        function toggleMobileCategories() {
-            const dropdown = document.getElementById('mobile-categories-dropdown');
-            const arrow = document.getElementById('categories-arrow');
-            if (dropdown) {
-                dropdown.classList.toggle('hidden');
-                if (arrow) {
-                    arrow.classList.toggle('rotate-180');
-                }
-            }
-        }
-
-        
-
-        
-
-            const FLAG_SVGS = {
+        var FLAG_SVGS = {
             en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
             fr: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="20" height="15" class="rounded-sm shadow-sm"><rect width="3" height="2" fill="#ED2939"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#002395"/></svg>',
             es: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="20" height="15" class="rounded-sm shadow-sm"><rect width="750" height="500" fill="#c60b1e"/><rect y="125" width="750" height="250" fill="#ffc400"/></svg>',
@@ -911,6 +843,24 @@
             if (langLabel) langLabel.textContent = lang.toUpperCase();
 
             var langButton = document.getElementById('lang-menu-button');
+            if (langButton && FLAG_SVGS[lang]) {
+                var svgElement = langButton.querySelector('svg');
+                if (svgElement) svgElement.outerHTML = FLAG_SVGS[lang];
+            }
+
+            var langDropdown = document.getElementById('lang-menu-dropdown');
+            if (langDropdown) langDropdown.classList.add('hidden');
+
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(lang);
+            } else if (typeof window.changeLanguage === 'function') {
+                window.changeLanguage(lang);
+            }
+        }
+        window.switchLanguage = switchLanguage;
 
         document.addEventListener('DOMContentLoaded', function () {
             var langButton = document.getElementById('lang-menu-button');
@@ -929,7 +879,6 @@
                 });
             }
 
-            // Wire option buttons (with or without onclick)
             document.querySelectorAll('#lang-menu-dropdown button[data-lang], #lang-menu-dropdown button[onclick]').forEach(function (btn) {
                 btn.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -943,37 +892,50 @@
                 });
             });
 
+            document.querySelectorAll('.itinerary-tabs .tab-btn').forEach(function (btn, i) {
+                btn.addEventListener('click', function (e) {
+                    openDay(e, 'day' + (i + 1));
+                });
+            });
+
             var saved = null;
             try { saved = localStorage.getItem('preferred_lang') || localStorage.getItem('lang'); } catch (e) {}
             switchLanguage(saved || 'fr');
         });
-
     </script>
 
     <script src="js/i18n.js"></script>
     <script src="js/search.js"></script>
 
+
 <script>
+/* LANG_MENU_BACKUP */
 (function(){
-  function openDay(evt, dayId) {
-    if (evt && evt.preventDefault) evt.preventDefault();
-    document.querySelectorAll('.tab-content').forEach(function(el){ el.classList.remove('active'); });
-    document.querySelectorAll('.tab-btn').forEach(function(el){ el.classList.remove('active'); });
-    var panel = document.getElementById(dayId);
-    if (panel) panel.classList.add('active');
-    var btn = (evt && evt.currentTarget) || document.querySelector('.tab-btn[onclick*="'+dayId+'"]');
-    if (btn) btn.classList.add('active');
-  }
-  window.openDay = openDay;
-  document.addEventListener('DOMContentLoaded', function(){
-    document.querySelectorAll('.itinerary-tabs .tab-btn').forEach(function(btn, i){
-      btn.addEventListener('click', function(e){
-        openDay(e, 'day' + (i+1));
+  function bindLang(){
+    var btn = document.getElementById('lang-menu-button');
+    var dd = document.getElementById('lang-menu-dropdown');
+    if (!btn || !dd) return;
+    btn.addEventListener('click', function(e){
+      e.preventDefault(); e.stopPropagation();
+      dd.classList.toggle('hidden');
+    });
+    document.addEventListener('click', function(e){
+      if (!btn.contains(e.target) && !dd.contains(e.target)) dd.classList.add('hidden');
+    });
+    dd.querySelectorAll('button[data-lang]').forEach(function(b){
+      b.addEventListener('click', function(e){
+        e.preventDefault(); e.stopPropagation();
+        var lang = b.getAttribute('data-lang');
+        if (typeof window.switchLanguage === 'function') window.switchLanguage(lang);
+        else if (typeof switchLanguage === 'function') switchLanguage(lang);
+        else if (typeof changeLanguage === 'function') changeLanguage(lang);
+        dd.classList.add('hidden');
       });
     });
-  });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bindLang);
+  else bindLang();
 })();
 </script>
-
 </body>
 </html>

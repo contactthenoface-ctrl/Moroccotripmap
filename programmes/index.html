@@ -30,7 +30,7 @@
     <link href="https://moroccotripmap.com/programmes/index.html" hreflang="x-default" rel="alternate"/>
 
     <!-- Tailwind CSS CDN -->
-    <link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -79,13 +79,13 @@
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     <div class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1" id="categories-menu-dropdown">
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_stays" href="../riads/index.html" data-i18n="nav.cat_stays">Stays &amp; Riads</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_experiences" href="../experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_museums" href="../destinations.html" data-i18n="nav.cat_museums">Monuments &amp; Museums</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_transport" href="../transport/index.html" data-i18n="nav.cat_transport">Transport &amp; Rental</a>
-                        <a class="block px-4 py-2.5 text-sm font-bold text-vert bg-creme transition" data-i18n="nav.cat_itineraries" href="index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_guides" href="../guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_stays" href="../riads/index.html">Stays &amp; Riads</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_gastronomy" href="../gastronomy/index.html">Gastronomy</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_experiences" href="../experiences/index.html">Experiences</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_museums" href="../destinations.html">Monuments &amp; Museums</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_transport" href="../transport/index.html">Transport &amp; Rental</a>
+                        <a class="block px-4 py-2.5 text-sm font-bold text-vert bg-creme transition" data-i18n="nav.cat_itineraries" href="index.html">Itineraries</a>
+                        <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" data-i18n="nav.cat_guides" href="../guides/index.html">Travel Guides</a>
                     </div>
                 </div>
                 <a class="hover:text-vert transition" data-i18n="nav.history" href="../guides/histoire.html">History</a>
@@ -96,26 +96,27 @@
             <!-- Lang Switcher & Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-4">
                 <div class="relative inline-block text-left" id="lang-menu-container">
-                    <button class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition" id="lang-menu-button">
+                    <button class="flex items-center gap-2 bg-white border border-sable/20 text-sm font-semibold rounded-xl px-3 py-2 outline-none text-sombre cursor-pointer hover:border-sable transition" id="lang-menu-button" type="button">
                         <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
                         <span id="current-lang-label">EN</span>
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     
-                    <div class="hidden absolute right-0 mt-2 w-32 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden" id="lang-menu-dropdown">
-                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('en')">
+                    <!-- CORRECTION DE LA SUPERPOSITION DU MENU DE LANGUES -->
+                    <div class="hidden absolute right-0 mt-3 w-40 bg-white border border-sable/20 rounded-xl shadow-xl z-50 overflow-hidden py-1" id="lang-menu-dropdown">
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('en')" type="button">
                             <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t2)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
                             English
                         </button>
-                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('fr')">
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('fr')" type="button">
                             <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 3 2" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#ED2939" height="2" width="3"></rect><rect fill="#fff" height="2" width="2"></rect><rect fill="#002395" height="2" width="1"></rect></svg>
                             Français
                         </button>
-                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('es')">
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('es')" type="button">
                             <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 750 500" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#c60b1e" height="500" width="750"></rect><rect fill="#ffc400" height="250" width="750" y="125"></rect></svg>
                             Español
                         </button>
-                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('ar')">
+                        <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('ar')" type="button">
                             <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 900 600" width="20" xmlns="http://www.w3.org/2000/svg"><rect fill="#c1272d" height="600" width="900"></rect><polygon fill="none" points="450,170 361,441 593,273 307,273 639,441" stroke="#006233" stroke-width="15"></polygon></svg>
                             العربية
                         </button>
@@ -134,10 +135,10 @@
             <div class="flex items-center justify-between pb-4 mb-4 border-b border-sable/20">
                 <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="itineraries_page.mobile_menu.language_title">Language / Langue</span>
                 <div class="flex gap-2">
-                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('en')">EN</button>
-                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('fr')">FR</button>
-                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('es')">ES</button>
-                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('ar')">AR</button>
+                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('en')" type="button">EN</button>
+                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('fr')" type="button">FR</button>
+                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('es')" type="button">ES</button>
+                    <button class="px-2.5 py-1 bg-white border border-sable/20 rounded-lg text-xs font-semibold hover:border-vert transition" onclick="switchLanguage('ar')" type="button">AR</button>
                 </div>
             </div>
 
@@ -150,7 +151,7 @@
                     <span class="text-xs text-gray-400">→</span>
                 </a>
                 <div>
-                    <button class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left" onclick="toggleMobileCategories()">
+                    <button class="w-full flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold text-left" onclick="toggleMobileCategories()" type="button">
                         <div class="flex items-center gap-3">
                             <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                             <span data-i18n="nav.categories">Categories</span>
@@ -227,7 +228,7 @@
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
                 
                 <!-- Region 1: Villes Impériales & Centre -->
-                <button class="region-tab-btn active bg-white border-2 border-vert rounded-2xl p-3.5 text-left shadow-md hover:shadow-lg transition flex flex-col justify-between" onclick="switchRegion('imperial', this)">
+                <button class="region-tab-btn active bg-white border-2 border-vert rounded-2xl p-3.5 text-left shadow-md hover:shadow-lg transition flex flex-col justify-between" onclick="switchRegion('imperial', this)" type="button">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase" data-i18n="itineraries_page.regions.imperial.badge">Imperial</span>
@@ -239,7 +240,7 @@
                 </button>
 
                 <!-- Region 2: Nord & Méditerranée -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('north', this)">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('north', this)" type="button">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase" data-i18n="itineraries_page.regions.north.badge">North</span>
@@ -251,7 +252,7 @@
                 </button>
 
                 <!-- Region 3: Sud & Désert du Sahara -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('south', this)">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('south', this)" type="button">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase" data-i18n="itineraries_page.regions.south.badge">Sahara</span>
@@ -263,7 +264,7 @@
                 </button>
 
                 <!-- Region 4: Côte Atlantique & Souss -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('atlantic', this)">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('atlantic', this)" type="button">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M2 12c1.5-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0 3.5 1.5 5 0M2 16c1.5-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0 3.5 1.5 5 0M2 8c1.5-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0 3.5 1.5 5 0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase" data-i18n="itineraries_page.regions.atlantic.badge">Coast</span>
@@ -275,7 +276,7 @@
                 </button>
 
                 <!-- Region 5: Moyen & Haut Atlas -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('atlas', this)">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('atlas', this)" type="button">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 20L9 8l3 6 2-4 6 10H4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase" data-i18n="itineraries_page.regions.atlas.badge">Atlas</span>
@@ -287,7 +288,7 @@
                 </button>
 
                 <!-- Region 6: Oriental & Oasis du Sud -->
-                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('oriental', this)">
+                <button class="region-tab-btn bg-white border border-sable/20 rounded-2xl p-3.5 text-left shadow-sm hover:shadow-md transition flex flex-col justify-between" onclick="switchRegion('oriental', this)" type="button">
                     <div class="flex items-center justify-between w-full mb-2">
                         <svg class="w-6 h-6 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         <span class="text-[9px] font-extrabold bg-sable/20 text-sable px-2 py-0.5 rounded-full uppercase" data-i18n="itineraries_page.regions.oriental.badge">Oasis</span>
@@ -309,10 +310,10 @@
                     <span data-i18n="itineraries_page.filter_duration_label">Filter Duration:</span>
                 </span>
                 <div class="flex gap-2">
-                    <button class="duration-btn bg-vert text-white hover:bg-vert text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('all', this)" data-days="all" data-i18n="itineraries_page.duration_all">All Durations</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('5', this)" data-days="5" data-i18n="itineraries_page.duration_5">5 Days</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('7', this)" data-days="7" data-i18n="itineraries_page.duration_7">7 Days</button>
-                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('10', this)" data-days="10" data-i18n="itineraries_page.duration_10">10 Days</button>
+                    <button class="duration-btn bg-vert text-white hover:bg-vert text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('all', this)" data-days="all" data-i18n="itineraries_page.duration_all" type="button">All Durations</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('5', this)" data-days="5" data-i18n="itineraries_page.duration_5" type="button">5 Days</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('7', this)" data-days="7" data-i18n="itineraries_page.duration_7" type="button">7 Days</button>
+                    <button class="duration-btn bg-creme text-sombre hover:bg-sable/20 text-xs font-bold px-4 py-2 rounded-xl transition" onclick="filterDuration('10', this)" data-days="10" data-i18n="itineraries_page.duration_10" type="button">10 Days</button>
                 </div>
             </div>
         </section>
@@ -815,6 +816,7 @@
                 </article>
 
             </div>
+
             <!-- ==================== REGION 3: SUD & DÉSERT DU SAHARA ==================== -->
             <div class="region-block hidden space-y-12" id="region-south">
                 
@@ -1804,7 +1806,7 @@
 
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
-                    <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
+                    <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')" type="button">
                         <span data-i18n="itineraries_page.faq.q1">How many days are ideal to visit both Imperial Cities and the Desert?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
@@ -1814,7 +1816,7 @@
                 </div>
 
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
-                    <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
+                    <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')" type="button">
                         <span data-i18n="itineraries_page.faq.q2">Is it easy to travel between major regions by train in Morocco?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
@@ -1824,7 +1826,7 @@
                 </div>
 
                 <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
-                    <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
+                    <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')" type="button">
                         <span data-i18n="itineraries_page.faq.q3">Which desert region is better: Erg Chebbi (Merzouga) or Erg Chigaga?</span>
                         <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
@@ -1887,7 +1889,6 @@
                 <li><a class="hover:text-white transition" href="../merzouga.html" data-i18n="footer.link_merzouga">Sahara Desert & Merzouga</a></li>
                 <li><a class="hover:text-white transition" href="../marrakech.html" data-i18n="footer.link_marrakech">Marrakech Travel Guide</a></li>
                 <li><a class="hover:text-white transition" href="../blog/index.html" data-i18n="footer.link_blog">Travel Blog & Tips</a></li>
-
                 <li><a class="hover:text-white transition font-semibold text-sable" href="../destinations.html" data-i18n="footer.link_all_destinations">All Destinations →</a></li>
             </ul>
         </div>

@@ -40,3 +40,75 @@
         { name: "Midelt", arabicName: "ميدلت", type: "Ville", url: "midelt.html", tags: ["midelt", "apples", "atlas passes", "ميدلت"] },
         { name: "Imilchil", arabicName: "إملشيل", type: "Ville", url: "imilchil.html", tags: ["imilchil", "lakes", "high atlas", "wedding festival", "إملشيل"] }
     ];
+
+
+    // --- Logique de recherche globale ---
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('searchResults');
+        const cityCards = document.querySelectorAll('.city-card');
+
+        if (searchInput) {
+            searchInput.addEventListener('input', function (e) {
+                const input = e.target.value.toLowerCase().trim();
+                resultsContainer.innerHTML = '';
+                
+                if (input.length < 1) {
+                    resultsContainer.style.display = 'none';
+                    cityCards.forEach(card => card.style.display = 'block');
+                    return;
+                }
+
+                // Filtrage dans tout le site (Villes, Riads, etc.)
+                const filtered = searchData.filter(item => 
+                    item.name.toLowerCase().includes(input) || 
+                    (item.arabicName && item.arabicName.includes(input)) ||
+                    item.tags.some(tag => tag.toLowerCase().includes(input))
+                );
+
+                if (filtered.length > 0) {
+                    filtered.forEach(item => {
+                        const link = document.createElement('a');
+                        link.href = item.url;
+                        link.className = "block px-4 py-3 hover:bg-creme hover:text-vert transition border-b border-gray-100 last:border-none flex justify-between items-center";
+                        
+                        const typeBadge = item.type ? `<span class="text-[10px] font-bold bg-sable/20 text-sable px-2 py-0.5 rounded uppercase">${item.type}</span>` : '';
+                        
+                        link.innerHTML = `
+                            <div>
+                                <span class="font-semibold text-vert">${item.name}</span>
+                                ${item.arabicName ? `<span class="text-xs text-gray-400 ml-2">(${item.arabicName})</span>` : ''}
+                            </div>
+                            <div class="flex items-center gap-2">
+                                ${typeBadge}
+                                <span class="text-xs text-gray-400">🔗</span>
+                            </div>
+                        `;
+                        resultsContainer.appendChild(link);
+                    });
+                    resultsContainer.style.display = 'block';
+                } else {
+                    resultsContainer.style.display = 'none';
+                }
+
+                // Filtrage des cartes de la grille si on est sur la page des destinations
+                if (cityCards.length > 0) {
+                    cityCards.forEach(card => {
+                        const textContent = card.innerText.toLowerCase();
+                        if (textContent.includes(input)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        }
+
+        // Cacher les résultats lors d'un clic extérieur
+        document.addEventListener('click', function(e) {
+            if (searchInput && resultsContainer && !searchInput.contains(e.target) && !resultsContainer.contains(e.target)) {
+                resultsContainer.style.display = 'none';
+            }
+        });
+    });

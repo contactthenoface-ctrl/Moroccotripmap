@@ -1,14 +1,15 @@
 {
   "seo": {
     "title": "Quemado Beach Al Hoceima | Main Urban Beach | MoroccoTripMap",
-    "description": "Quemado Beach in Al Hoceima: facilities, best time, how to get there and tips for the city’s main Mediterranean beach.",
-    "keywords": "Quemado Beach, Plage Quemado, Al Hoceima beach"
+    "description": "Visiting Quemado Beach in Al Hoceima? Best time, cafés, access, safety tips and how long to stay.",
+    "og_title": "Quemado Beach Al Hoceima | Main Urban Beach | MoroccoTripMap",
+    "og_description": "Quemado Beach in Al Hoceima: facilities, best time, how to get there and tips for the city’s main Mediterranean beach."
   },
   "name": "Quemado Beach",
   "hero_subtitle": "Al Hoceima’s main urban beach — golden sand, easy town access and the everyday face of the bay.",
   "info": {
     "best_time_label": "Best time",
-    "best_time_val": "Late afternoon for softer light",
+    "best_time_val": "Morning or late afternoon",
     "duration_label": "Suggested duration",
     "duration_val": "2 – 4 hours",
     "entry_label": "Entry",
@@ -17,10 +18,33 @@
     "area_val": "Town centre bay"
   },
   "overview": {
-    "title": "The city’s beach",
-    "p1": "Quemado Beach is the sandy front of Al Hoceima town — the place most visitors swim first and the easiest shoreline to reach on foot or by short taxi.",
-    "p2": "Expect a classic urban Mediterranean beach: services in season, families, and clear views across the bay. It is practical rather than wild; for quieter coves head to Cala Bonita or the park coast.",
-    "p3": "Bring sun protection and plan shade in peak summer. Evenings on the nearby corniche pair well with a Quemado afternoon."
+    "title": "The city’s main beach",
+    "p1": "Quemado is Al Hoceima’s main urban beach — golden sand, easy town access and the everyday face of the bay.",
+    "p2": "In season you will find cafés, showers and basic services along the front. It is free and public; loungers from private operators are optional.",
+    "p3": "Morning is quieter; late afternoon brings softer light. Pair with the port and corniche for a full seafront day."
+  },
+  "moods": {
+    "badge": "Timing",
+    "title": "Quemado Beach through the day",
+    "subtitle": "When to go.",
+    "1": {
+      "tag": "Morning",
+      "title": "Quiet start",
+      "duration": "Morning",
+      "desc": "Softer light and cooler air."
+    },
+    "2": {
+      "tag": "Midday",
+      "title": "Strong sun",
+      "duration": "Midday",
+      "desc": "High SPF and shade matter."
+    },
+    "3": {
+      "tag": "Late afternoon",
+      "title": "Best colour",
+      "duration": "Late afternoon",
+      "desc": "Warm light on cliffs and sea."
+    }
   },
   "gallery": {
     "badge": "Photo gallery",
@@ -42,39 +66,6 @@
       "caption": "Quemado Beach — 5"
     }
   },
-  "moods": {
-    "badge": "Timing",
-    "title": "Quemado Beach through the day",
-    "subtitle": "When to go.",
-    "1": {
-      "tag": "Morning",
-      "title": "Quiet start",
-      "desc": "Softer light and cooler air.",
-      "duration": "Morning"
-    },
-    "2": {
-      "tag": "Midday",
-      "title": "Strong sun",
-      "desc": "High SPF and shade matter.",
-      "duration": "Midday"
-    },
-    "3": {
-      "tag": "Late afternoon",
-      "title": "Best colour",
-      "desc": "Warm light on cliffs and sea.",
-      "duration": "Late afternoon"
-    }
-  },
-  "food": {
-    "title": "Food near Quemado Beach",
-    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
-    "li1": "Grilled fish near the port and corniche.",
-    "li2": "Simple cafés at Quemado and Sfiha in season.",
-    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
-    "li4": "Hotel restaurants if you stay on the bay.",
-    "li5": "Confirm opening hours outside peak summer.",
-    "p2": "Cash helps at small beach and village stops."
-  },
   "tips": {
     "title": "Practical tips for Quemado Beach",
     "1": {
@@ -82,22 +73,34 @@
       "desc": "Confirm taxi or transfer times from your stay."
     },
     "2": {
-      "title": "Sun & cliffs",
-      "desc": "High SPF, water and steady shoes on coastal paths."
+      "title": "Sun & conditions",
+      "desc": "High SPF, water and suitable footwear."
     },
     "3": {
       "title": "Respect",
-      "desc": "Stay on allowed paths in the national park; mind swimmers and boats."
+      "desc": "Stay on allowed paths; mind others and the environment."
     }
+  },
+  "food": {
+    "title": "Food near Quemado Beach",
+    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for outings.",
+    "p2": "Cash helps at small beach and village stops.",
+    "li1": "Grilled fish near the port and corniche.",
+    "li2": "Simple cafés at Quemado and Sfiha in season.",
+    "li3": "Carry water and snacks for park-coast sites.",
+    "li4": "Hotel restaurants if you stay on the bay.",
+    "li5": "Confirm opening hours outside peak summer."
   },
   "gyg": {
     "badge": "Tours & experiences",
     "title": "Tours linked to Quemado Beach",
-    "subtitle": "Options if you prefer a local operator.",
+    "subtitle": "Coast, park and boat options when available.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
     "t1": {
       "tag": "Coast",
       "title": "Bay orientation",
-      "desc": "Town beaches and corniche introduction."
+      "desc": "Introduction to the area and nearby viewpoints."
     },
     "t2": {
       "tag": "Park",
@@ -108,15 +111,18 @@
       "tag": "Boat",
       "title": "Coastal boat trip",
       "desc": "Cliffs and coves from the water when operators run."
-    },
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+    }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Al Hoceima",
+    "back": "← Back to the Al Hoceima guide"
   },
   "blog": {
     "badge": "From the blog",
     "title": "Related articles",
-    "all": "All articles →",
     "read": "Read article →",
+    "all": "All articles →",
     "a1": {
       "tag": "Planning",
       "title": "First time in Al Hoceima",
@@ -155,16 +161,6 @@
     "q5": {
       "question": "How long to spend?",
       "answer": "Two to four hours is typical; full days work if you like urban beach life."
-    }
-  },
-  "nearby": {
-    "badge": "Keep exploring",
-    "title": "More places in Al Hoceima",
-    "back": "← Back to the Al Hoceima guide"
-  },
-  "destinations": {
-    "al_hoceima": {
-      "name": "Al Hoceima"
     }
   }
 }

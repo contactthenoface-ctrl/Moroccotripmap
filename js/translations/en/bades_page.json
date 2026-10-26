@@ -1,8 +1,9 @@
 {
   "seo": {
     "title": "Bades Bay Al Hoceima | Badis Beach & Historic Rock | MoroccoTripMap",
-    "description": "Bades Bay near Al Hoceima: sandy bay, historic Badis setting, access tips and how to plan the outing.",
-    "keywords": "Bades Bay, Badis, Plage de Badis, Al Hoceima"
+    "description": "Visiting Bades Bay in Al Hoceima? Best time to go, cafés, access to the harbour, safety tips and how long to stay.",
+    "og_title": "Bades Bay Al Hoceima | Badis Beach & Historic Rock | MoroccoTripMap",
+    "og_description": "Bades Bay near Al Hoceima: sandy bay, historic Badis setting, access tips and how to plan the outing."
   },
   "name": "Bades Bay",
   "hero_subtitle": "Picturesque bay facing the historic rock of Badis — open sand and a quieter horizon on the park coast.",
@@ -18,29 +19,9 @@
   },
   "overview": {
     "title": "Bay and historic rock",
-    "p1": "Bades Bay (Plage de Badis) opens wider than the small town coves, with sand and a backdrop tied to the historic site of Badis on this stretch of Mediterranean coast.",
-    "p2": "It suits travellers who want more space and a park-coast atmosphere after Quemado and Sfiha. Services are lighter; the landscape does the work.",
-    "p3": "Plan transport in advance and bring water. A calm day here pairs naturally with Cala Iris or the Torres viewpoints."
-  },
-  "gallery": {
-    "badge": "Photo gallery",
-    "title": "Bades Bay in pictures",
-    "subtitle": "Views from Bades Bay in Al Hoceima.",
-    "s1": {
-      "caption": "Bades Bay — 1"
-    },
-    "s2": {
-      "caption": "Bades Bay — 2"
-    },
-    "s3": {
-      "caption": "Bades Bay — 3"
-    },
-    "s4": {
-      "caption": "Bades Bay — 4"
-    },
-    "s5": {
-      "caption": "Bades Bay — 5"
-    }
+    "p1": "Bades Bay (Plage de Badis) opens wider than the small town coves, with sand and a backdrop tied to the historic rock of Badis.",
+    "p2": "It suits travellers who want more space and a park-coast atmosphere after Quemado and Sfiha. Services are limited compared with the urban beaches.",
+    "p3": "Plan transport in advance and bring water. A calm day here pairs naturally with Cala Iris or the Torres de Alcalá trails."
   },
   "moods": {
     "badge": "Timing",
@@ -49,31 +30,31 @@
     "1": {
       "tag": "Morning",
       "title": "Quiet start",
-      "desc": "Softer light and cooler air.",
-      "duration": "Morning"
+      "duration": "Morning",
+      "desc": "Softer light and cooler air."
     },
     "2": {
       "tag": "Midday",
       "title": "Strong sun",
-      "desc": "High SPF and shade matter.",
-      "duration": "Midday"
+      "duration": "Midday",
+      "desc": "High SPF and shade matter."
     },
     "3": {
       "tag": "Late afternoon",
       "title": "Best colour",
-      "desc": "Warm light on cliffs and sea.",
-      "duration": "Late afternoon"
+      "duration": "Late afternoon",
+      "desc": "Warm light on cliffs and sea."
     }
   },
-  "food": {
-    "title": "Food near Bades Bay",
-    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
-    "li1": "Grilled fish near the port and corniche.",
-    "li2": "Simple cafés at Quemado and Sfiha in season.",
-    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
-    "li4": "Hotel restaurants if you stay on the bay.",
-    "li5": "Confirm opening hours outside peak summer.",
-    "p2": "Cash helps at small beach and village stops."
+  "gallery": {
+    "badge": "Photo gallery",
+    "title": "Bades Bay in pictures",
+    "subtitle": "Views from Bades Bay in Al Hoceima.",
+    "s1": { "caption": "Bades Bay — 1" },
+    "s2": { "caption": "Bades Bay — 2" },
+    "s3": { "caption": "Bades Bay — 3" },
+    "s4": { "caption": "Bades Bay — 4" },
+    "s5": { "caption": "Bades Bay — 5" }
   },
   "tips": {
     "title": "Practical tips for Bades Bay",
@@ -90,14 +71,26 @@
       "desc": "Stay on allowed paths in the national park; mind swimmers and boats."
     }
   },
+  "food": {
+    "title": "Food near Bades Bay",
+    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
+    "p2": "Cash helps at small beach and village stops.",
+    "li1": "Grilled fish near the port and corniche.",
+    "li2": "Simple cafés at Quemado and Sfiha in season.",
+    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
+    "li4": "Hotel restaurants if you stay on the bay.",
+    "li5": "Confirm opening hours outside peak summer."
+  },
   "gyg": {
     "badge": "Tours & experiences",
     "title": "Tours linked to Bades Bay",
-    "subtitle": "Options if you prefer a local operator.",
+    "subtitle": "Coast, park and boat options when available.",
+    "check": "Check availability on GetYourGuide →",
+    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you.",
     "t1": {
       "tag": "Coast",
       "title": "Bay orientation",
-      "desc": "Town beaches and corniche introduction."
+      "desc": "Introduction to the bay and nearby viewpoints."
     },
     "t2": {
       "tag": "Park",
@@ -108,15 +101,18 @@
       "tag": "Boat",
       "title": "Coastal boat trip",
       "desc": "Cliffs and coves from the water when operators run."
-    },
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
+    }
+  },
+  "nearby": {
+    "badge": "Keep exploring",
+    "title": "More places in Al Hoceima",
+    "back": "← Back to the Al Hoceima guide"
   },
   "blog": {
     "badge": "From the blog",
     "title": "Related articles",
-    "all": "All articles →",
     "read": "Read article →",
+    "all": "All articles →",
     "a1": {
       "tag": "Planning",
       "title": "First time in Al Hoceima",
@@ -155,16 +151,6 @@
     "q5": {
       "question": "Need a 4x4?",
       "answer": "A normal car with a careful driver is often enough; confirm road conditions in advance."
-    }
-  },
-  "nearby": {
-    "badge": "Keep exploring",
-    "title": "More places in Al Hoceima",
-    "back": "← Back to the Al Hoceima guide"
-  },
-  "destinations": {
-    "al_hoceima": {
-      "name": "Al Hoceima"
     }
   }
 }

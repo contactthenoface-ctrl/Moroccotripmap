@@ -1,26 +1,50 @@
 {
   "seo": {
-    "title": "Cala Iris | Al Hoceima | MoroccoTripMap",
-    "description": "Fishing village and wild cove on the Al Hoceima National Park shoreline.",
-    "keywords": "Cala Iris, Al Hoceima"
+    "title": "Cala Iris Al Hoceima | Cala del parque y pueblo de pescadores | MoroccoTripMap",
+    "description": "¿Visitas Cala Iris en Al Hoceima? Mejor época, acceso, consejos de seguridad y duración de la visita en la costa del parque.",
+    "og_title": "Cala Iris Al Hoceima | Cala del parque y pueblo de pescadores | MoroccoTripMap",
+    "og_description": "Cala Iris cerca de Al Hoceima: cala del parque nacional, pueblo de pescadores, consejos de acceso y día de costa del parque."
   },
   "name": "Cala Iris",
-  "hero_subtitle": "Fishing village and wild cove on the Al Hoceima National Park shoreline.",
+  "hero_subtitle": "Pueblo de pescadores y cala salvaje en la orilla del Parque Nacional de Al Hoceima.",
   "info": {
-    "best_time_label": "Best time",
-    "best_time_val": "Full half-day outing",
-    "duration_label": "Suggested duration",
-    "duration_val": "Half day",
-    "entry_label": "Entry",
-    "entry_val": "Free shore; respect park rules",
-    "area_label": "Location",
-    "area_val": "Park coast west of town"
+    "best_time_label": "Mejor época",
+    "best_time_val": "Medio día",
+    "duration_label": "Duración sugerida",
+    "duration_val": "Medio día",
+    "entry_label": "Entrada",
+    "entry_val": "Acceso libre a la orilla",
+    "area_label": "Ubicación",
+    "area_val": "Costa del parque / oeste"
   },
   "overview": {
-    "title": "Village and wild water",
-    "p1": "Cala Iris is a small fishing settlement and cove along the national park coast — a clear step away from Al Hoceima’s urban beaches into a quieter Rif Mediterranean shoreline.",
-    "p2": "The draw is the setting: boats, clear water and cliffs rather than city services. It works well as the anchor of a park-coast day with a driver or organised transfer.",
-    "p3": "Bring what you need for sun and swimming. Facilities are limited compared with Quemado or Sfiha."
+    "title": "Cala del parque y pueblo de pescadores",
+    "p1": "Cala Iris es un pueblo de pescadores y una cala salvaje en la orilla del Parque Nacional de Al Hoceima — más natural que las playas urbanas.",
+    "p2": "Conviene a viajeros que buscan paisaje de costa del parque tras Quemado y las bahías urbanas. Los servicios son limitados; planifica transporte y agua.",
+    "p3": "Combina bien con Torres de Alcalá o la bahía de Bades en un mismo día de costa del parque."
+  },
+  "moods": {
+    "badge": "Horario",
+    "title": "Cala Iris a lo largo del día",
+    "subtitle": "Cuándo ir.",
+    "1": {
+      "tag": "Mañana",
+      "title": "Inicio tranquilo",
+      "duration": "Mañana",
+      "desc": "Luz más suave y aire más fresco."
+    },
+    "2": {
+      "tag": "Mediodía",
+      "title": "Sol fuerte",
+      "duration": "Mediodía",
+      "desc": "Protector solar alto y sombra importan."
+    },
+    "3": {
+      "tag": "Final de tarde",
+      "title": "Mejores colores",
+      "duration": "Final de tarde",
+      "desc": "Luz cálida sobre acantilados y mar."
+    }
   },
   "gallery": {
     "badge": "Galería de fotos",
@@ -42,119 +66,51 @@
       "caption": "Cala Iris — 5"
     }
   },
-  "moods": {
-    "badge": "Timing",
-    "title": "Cala Iris a lo largo del día",
-    "subtitle": "When to go.",
+  "tips": {
+    "title": "Consejos prácticos para Cala Iris",
     "1": {
-      "tag": "Morning",
-      "title": "Quiet start",
-      "desc": "Softer light and cooler air.",
-      "duration": "Morning"
+      "title": "Acceso",
+      "desc": "Confirma horarios de taxi o traslado desde tu alojamiento."
     },
     "2": {
-      "tag": "Midday",
-      "title": "Strong sun",
-      "desc": "High SPF and shade matter.",
-      "duration": "Midday"
+      "title": "Sol y acantilados",
+      "desc": "Protector solar alto, agua y calzado estable en los senderos costeros."
     },
     "3": {
-      "tag": "Late afternoon",
-      "title": "Best colour",
-      "desc": "Warm light on cliffs and sea.",
-      "duration": "Late afternoon"
+      "title": "Respeto",
+      "desc": "Permanece en los caminos permitidos del parque nacional; ten cuidado con nadadores y embarcaciones."
     }
   },
   "food": {
     "title": "Comer cerca de Cala Iris",
-    "p1": "Plan meals in Al Hoceima town or at seasonal beach cafés; pack water for park-coast outings.",
-    "li1": "Grilled fish near the port and corniche.",
-    "li2": "Simple cafés at Quemado and Sfiha in season.",
-    "li3": "Carry water and snacks for Cala Iris, Torres and Bades.",
-    "li4": "Hotel restaurants if you stay on the bay.",
-    "li5": "Confirm opening hours outside peak summer.",
-    "p2": "Cash helps at small beach and village stops."
-  },
-  "tips": {
-    "title": "Consejos para Cala Iris",
-    "1": {
-      "title": "Access",
-      "desc": "Confirm taxi or transfer times from your stay."
-    },
-    "2": {
-      "title": "Sun & cliffs",
-      "desc": "High SPF, water and steady shoes on coastal paths."
-    },
-    "3": {
-      "title": "Respect",
-      "desc": "Stay on allowed paths in the national park; mind swimmers and boats."
-    }
+    "p1": "Planifica las comidas en la ciudad de Al Hoceima; lleva agua y snacks para la costa del parque.",
+    "p2": "El efectivo ayuda en pequeñas paradas de pueblo.",
+    "li1": "Pescado a la parrilla cerca del puerto y el paseo en la ciudad.",
+    "li2": "Cafés sencillos en Quemado y Sfiha en temporada.",
+    "li3": "Lleva agua y snacks para Cala Iris, Torres y Bades.",
+    "li4": "Restaurantes de hotel si te alojas en la bahía.",
+    "li5": "Confirma horarios fuera de temporada alta."
   },
   "gyg": {
-    "badge": "Tours & experiences",
+    "badge": "Tours y experiencias",
     "title": "Tours vinculados a Cala Iris",
-    "subtitle": "Options if you prefer a local operator.",
+    "subtitle": "Opciones de costa, parque y barco cuando están disponibles.",
+    "check": "Consultar disponibilidad en GetYourGuide →",
+    "disclosure": "Algunos de estos enlaces son de afiliados. Si reservas a través de ellos podemos ganar una pequeña comisión sin coste extra para ti.",
     "t1": {
-      "tag": "Coast",
-      "title": "Bay orientation",
-      "desc": "Town beaches and corniche introduction."
+      "tag": "Costa",
+      "title": "Orientación de la cala",
+      "desc": "Introducción a la cala y miradores cercanos."
     },
     "t2": {
-      "tag": "Park",
-      "title": "National park coast",
-      "desc": "Cala Iris, viewpoints or Torres trails."
+      "tag": "Parque",
+      "title": "Costa del parque nacional",
+      "desc": "Cala Iris, miradores o senderos de Torres."
     },
     "t3": {
-      "tag": "Boat",
-      "title": "Coastal boat trip",
-      "desc": "Cliffs and coves from the water when operators run."
-    },
-    "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate links. If you book through them we may earn a small commission at no extra cost to you."
-  },
-  "blog": {
-    "badge": "From the blog",
-    "title": "Related articles",
-    "all": "All articles →",
-    "read": "Read article →",
-    "a1": {
-      "tag": "Planning",
-      "title": "First time in Al Hoceima",
-      "desc": "Beaches, park and how long to stay."
-    },
-    "a2": {
-      "tag": "Guide",
-      "title": "Rif Mediterranean coast",
-      "desc": "Coves, cliffs and practical tips."
-    },
-    "a3": {
-      "tag": "Nature",
-      "title": "Al Hoceima National Park",
-      "desc": "Trails and marine reserve basics."
-    }
-  },
-  "faq": {
-    "badge": "Bueno saber",
-    "title": "FAQ Cala Iris",
-    "q1": {
-      "question": "How far from Al Hoceima?",
-      "answer": "A coastal drive west into the park zone — confirm duration with your driver."
-    },
-    "q2": {
-      "question": "Worth it without a car?",
-      "answer": "Yes if you arrange a taxi or tour; public options may be limited."
-    },
-    "q3": {
-      "question": "Swimming?",
-      "answer": "Possible in calm conditions; this is a more natural cove than town beaches."
-    },
-    "q4": {
-      "question": "Combine with Torres de Alcalá?",
-      "answer": "Yes — both sit on the broader park coast and pair well in one day."
-    },
-    "q5": {
-      "question": "Food on site?",
-      "answer": "Very limited — pack water and snacks or eat before/after in town."
+      "tag": "Barco",
+      "title": "Paseo en barco costero",
+      "desc": "Acantilados y calas desde el agua cuando operan los barcos."
     }
   },
   "nearby": {
@@ -162,9 +118,49 @@
     "title": "Más lugares en Al Hoceima",
     "back": "← Volver a la guía de Al Hoceima"
   },
-  "destinations": {
-    "al_hoceima": {
-      "name": "Al Hoceima"
+  "blog": {
+    "badge": "Del blog",
+    "title": "Artículos relacionados",
+    "read": "Leer artículo →",
+    "all": "Todos los artículos →",
+    "a1": {
+      "tag": "Planificación",
+      "title": "Primera vez en Al Hoceima",
+      "desc": "Playas, parque y cuánto tiempo quedarse."
+    },
+    "a2": {
+      "tag": "Guía",
+      "title": "Costa mediterránea del Rif",
+      "desc": "Calas, acantilados y consejos prácticos."
+    },
+    "a3": {
+      "tag": "Naturaleza",
+      "title": "Parque Nacional de Al Hoceima",
+      "desc": "Senderos y bases de la reserva marina."
+    }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "Preguntas frecuentes Cala Iris",
+    "q1": {
+      "question": "¿A qué distancia de Al Hoceima?",
+      "answer": "Una carretera costera hacia el oeste en la zona del parque — confirma la duración con tu conductor."
+    },
+    "q2": {
+      "question": "¿Merece la pena sin coche?",
+      "answer": "Sí si organizas un taxi o un tour; las opciones de transporte público pueden ser limitadas."
+    },
+    "q3": {
+      "question": "¿Baño?",
+      "answer": "Posible en condiciones calmadas; es una cala más natural que las playas de la ciudad."
+    },
+    "q4": {
+      "question": "¿Combinar con Torres de Alcalá?",
+      "answer": "Sí — ambas están en la costa más amplia del parque y combinan bien en un día."
+    },
+    "q5": {
+      "question": "¿Comida en el lugar?",
+      "answer": "Muy limitada — lleva agua y snacks o come antes/después en la ciudad."
     }
   }
 }

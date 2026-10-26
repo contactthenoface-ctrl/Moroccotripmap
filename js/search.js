@@ -1,4 +1,4 @@
-    // --- Données globales du site (Villes + Riads/Hébergements + Activités) ---
+    // --- Données globales du site (Toutes les villes de la page destinations) ---
     const searchData = [
         // --- 1. VILLES / DESTINATIONS ---
         { name: "Marrakech", arabicName: "مراكش", type: "Ville", url: "marrakech.html", tags: ["marrakech", "medina", "palaces", "desert", "imperial", "riad", "مراكش", "مدينة"] },
@@ -22,76 +22,21 @@
         { name: "Safi", arabicName: "آسفي", type: "Ville", url: "safi.html", tags: ["safi", "pottery", "coast", "fortress", "آسفي"] },
         { name: "Laayoune", arabicName: "العيون", type: "Ville", url: "laayoune.html", tags: ["laayoune", "sahara", "atlantic", "sahrawi", "العيون"] },
         { name: "Merzouga", arabicName: "مرزوقة", type: "Ville", url: "merzouga.html", tags: ["merzouga", "desert", "dunes", "sahara", "erg chebbi", "camp", "مرزوقة"] },
-
-        ];
-
-    // --- Logique de recherche globale ---
-    document.addEventListener('DOMContentLoaded', function () {
-        const searchInput = document.getElementById('searchInput');
-        const resultsContainer = document.getElementById('searchResults');
-        const cityCards = document.querySelectorAll('.city-card');
-
-        if (searchInput) {
-            searchInput.addEventListener('input', function (e) {
-                const input = e.target.value.toLowerCase().trim();
-                resultsContainer.innerHTML = '';
-                
-                if (input.length < 1) {
-                    resultsContainer.style.display = 'none';
-                    cityCards.forEach(card => card.style.display = 'block');
-                    return;
-                }
-
-                // Filtrage dans tout le site (Villes, Riads, etc.)
-                const filtered = searchData.filter(item => 
-                    item.name.toLowerCase().includes(input) || 
-                    (item.arabicName && item.arabicName.includes(input)) ||
-                    item.tags.some(tag => tag.toLowerCase().includes(input))
-                );
-
-                if (filtered.length > 0) {
-                    filtered.forEach(item => {
-                        const link = document.createElement('a');
-                        link.href = item.url;
-                        link.className = "block px-4 py-3 hover:bg-creme hover:text-vert transition border-b border-gray-100 last:border-none flex justify-between items-center";
-                        
-                        const typeBadge = item.type ? `<span class="text-[10px] font-bold bg-sable/20 text-sable px-2 py-0.5 rounded uppercase">${item.type}</span>` : '';
-                        
-                        link.innerHTML = `
-                            <div>
-                                <span class="font-semibold text-vert">${item.name}</span>
-                                ${item.arabicName ? `<span class="text-xs text-gray-400 ml-2">(${item.arabicName})</span>` : ''}
-                            </div>
-                            <div class="flex items-center gap-2">
-                                ${typeBadge}
-                                <span class="text-xs text-gray-400">🔗</span>
-                            </div>
-                        `;
-                        resultsContainer.appendChild(link);
-                    });
-                    resultsContainer.style.display = 'block';
-                } else {
-                    resultsContainer.style.display = 'none';
-                }
-
-                // Filtrage des cartes de la grille si on est sur la page des destinations
-                if (cityCards.length > 0) {
-                    cityCards.forEach(card => {
-                        const textContent = card.innerText.toLowerCase();
-                        if (textContent.includes(input)) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                }
-            });
-        }
-
-        // Cacher les résultats lors d'un clic extérieur
-        document.addEventListener('click', function(e) {
-            if (searchInput && resultsContainer && !searchInput.contains(e.target) && !resultsContainer.contains(e.target)) {
-                resultsContainer.style.display = 'none';
-            }
-        });
-    });
+        { name: "Azilal", arabicName: "أزيلال", type: "Ville", url: "azilal.html", tags: ["azilal", "ouzoud", "waterfalls", "atlas", "أزيلال"] },
+        { name: "Tinghir", arabicName: "تنغير", type: "Ville", url: "tinghir.html", tags: ["tinghir", "todra", "gorge", "canyon", "oasis", "تنغير"] },
+        { name: "Oujda-Saïdia", arabicName: "وجدة السعيدية", type: "Ville", url: "oujda.html", tags: ["oujda", "saidia", "east", "mediterranean", "وجدة", "السعيدية"] },
+        { name: "Asilah", arabicName: "أصيلة", type: "Ville", url: "asilah.html", tags: ["asilah", "white medina", "murals", "atlantic", "أصيلة"] },
+        { name: "Erfoud", arabicName: "أرفود", type: "Ville", url: "erfoud.html", tags: ["erfoud", "fossils", "dates", "merzouga gateway", "أرفود"] },
+        { name: "Tiznit", arabicName: "تيزنيت", type: "Ville", url: "tiznit.html", tags: ["tiznit", "silver", "ramparts", "south", "تيزنيت"] },
+        { name: "Sidi Ifni", arabicName: "سيدي إفني", type: "Ville", url: "sidi-ifni.html", tags: ["sidi ifni", "legzira", "arches", "art deco", "mirleft", "سيدي إفني"] },
+        { name: "Guelmim", arabicName: "كلميم", type: "Ville", url: "guelmim.html", tags: ["guelmim", "camel market", "sahara gateway", "كلميم"] },
+        { name: "Oualidia", arabicName: "الوليدية", type: "Ville", url: "oualidia.html", tags: ["oualidia", "lagoon", "oysters", "beach", "الوليدية"] },
+        { name: "Azrou", arabicName: "أزرو", type: "Ville", url: "azrou.html", tags: ["azrou", "cedar forest", "macaques", "middle atlas", "أزرو"] },
+        { name: "Sefrou", arabicName: "صفرو", type: "Ville", url: "sefrou.html", tags: ["sefrou", "waterfalls", "medina", "cherry", "صفرو"] },
+        { name: "Errachidia", arabicName: "الرشيدية", type: "Ville", url: "errachidia.html", tags: ["errachidia", "desert hub", "kasbahs", "الرشيدية"] },
+        { name: "Larache", arabicName: "العرايش", type: "Ville", url: "larache.html", tags: ["larache", "lixus", "atlantic", "medina", "العرايش"] },
+        { name: "Beni Mellal", arabicName: "بني ملال", type: "Ville", url: "beni-mellal.html", tags: ["beni mellal", "middle atlas", "ouzoud", "بني ملال"] },
+        { name: "Figuig", arabicName: "فجيج", type: "Ville", url: "figuig.html", tags: ["figuig", "oasis", "ksour", "east", "فجيج"] },
+        { name: "Midelt", arabicName: "ميدلت", type: "Ville", url: "midelt.html", tags: ["midelt", "apples", "atlas passes", "ميدلت"] },
+        { name: "Imilchil", arabicName: "إملشيل", type: "Ville", url: "imilchil.html", tags: ["imilchil", "lakes", "high atlas", "wedding festival", "إملشيل"] }
+    ];

@@ -1,102 +1,176 @@
 {
   "seo": {
-    "title": "ورش الحفريات بمرزوكة وأرفود 2026 | MoroccoTripMap",
-    "description": "تخطط لزيارة ورش الحفريات في مرزوكة وأرفود؟ أوقات الجولات السياحية، علم الحفريات المغربي، التريسيرات، ونصائح السفر.",
-    "og_title": "ورش الحفريات، مرزوكة: علم الحفريات، الجولات والنصائح | MoroccoTripMap",
-    "og_description": "كيف تزور ورش الحفريات بالقرب من مرزوكة وأرفود: الحفريات البحرية القديمة، تقنيات صقل الرخام والنصائح العملية."
+    "title": "Fossil Workshops | MoroccoTripMap",
+    "description": "Visiting the Fossil Workshops in Merzouga and Erfoud? Guided tour times, Moroccan paleontology, trilobites, and practical travel tips.",
+    "og_title": "Fossil Workshops, Merzouga: Paleontology, Tours & Tips",
+    "og_description": "How to visit the fossil workshops near Merzouga and Erfoud: ancient trilobites, polishing techniques, workshops and practical advice."
   },
-  "hero_subtitle": "اكتشف حفريات التريسيرات القديمة، الأمونيت وعلم الحفريات بين أرفود ومرزوكة.",
+  "name": "ورش الحفريات",
+  "hero_subtitle": "ورش وتجار الحفريات بين أرفود ومرزوكة — ثلاثيات الفصوص والأمونيت.",
   "info": {
-    "best_time_label": "أفضل وقت للزيارة",
-    "best_time_val": "الصباح (أكثر برودة)",
-    "duration_label": "المدة المثالية",
-    "duration_val": "45 إلى 60 دقيقة",
+    "best_time_label": "أفضل وقت",
+    "best_time_val": "Morning (cooler)",
+    "duration_label": "المدة المقترحة",
+    "duration_val": "45 to 60 Minutes",
     "entry_label": "الدخول",
-    "entry_val": "دخول مجاني / جولات العرض",
+    "entry_val": "Free entry / showroom tours",
     "area_label": "الموقع",
-    "area_val": "منطقة أرفود - مرزوكة"
+    "area_val": "Erfoud - Merzouga region"
   },
   "overview": {
-    "title": "كنوز من بحر عريق",
-    "p1": "قبل أن تتحول الصحراء إلى بحر من الرمال، كانت هذه المنطقة مغطاة بمحيط ما قبل التاريخ الغني بالحياة البحرية. اليوم، تقوم الورش المحلية باكتشاف وتقطيع وصقل حفريات مذهلة تعود لمئات ملايين السنين.",
-    "p2": "تقدم زيارة ورشة الحفريات نظرة رائعة على الحرف اليدوية المحلية، حيث يمكنك مشاهدة الحرفيين وهم يستخرجون الحفريات بعناية ويشكلون الرخام المصقول المرصع بالأمونيت القديم.",
-    "p3": "يمكن دمج هذه الزيارة بسهولة مع رحلة سفاري بالدفع الرباعي في الصحراء أو أثناء التنقل بين أرفود ومرزوكة، لتصبح تجربة تعليمية لا تُنسى لعشاق الجيولوجيا والفضوليين."
+    "title": "حفريات بحرية قديمة",
+    "p1": "Long before the Sahara became a sea of sand, this region was covered by a prehistoric ocean teeming with marine life. Today, local workshops unearth, cut, and polish incredible fossils dating back hundreds of millions of years.",
+    "p2": "Visiting a fossil workshop offers a fascinating look into local craftsmanship. You can observe artisans carefully extracting trilobites from rock matrices and shaping polished marble inlaid with prehistoric ammonites and orthoceras.",
+    "p3": "Easily paired with a desert 4x4 excursion or as a stopover between Erfoud and Merzouga, visiting the workshops is an educational and memorable experience for geology enthusiasts and curious travelers alike."
   },
   "gallery": {
     "badge": "معرض الصور",
     "title": "ورش الحفريات بالصور",
-    "subtitle": "تصفح الصور لاستكشاف صالات العرض، قطع الحجر المصقول والحفريات القديمة.",
-    "s1": { "caption": "عرض في صالة الحفريات" },
-    "s2": { "caption": "عينة حفريات التريسيرات القديمة" },
-    "s3": { "caption": "قص وتقطيع الحجر يدوياً" },
-    "s4": { "caption": "أثاث رخامي مرصع بالحفريات" },
-    "s5": { "caption": "خلفية مشهد الصحراء الكبرى" }
+    "subtitle": "إطلالات من ورش الحفريات في مرزوكة.",
+    "s1": {
+      "caption": "ورش الحفريات — 1"
+    },
+    "s2": {
+      "caption": "ورش الحفريات — 2"
+    },
+    "s3": {
+      "caption": "ورش الحفريات — 3"
+    },
+    "s4": {
+      "caption": "ورش الحفريات — 4"
+    },
+    "s5": {
+      "caption": "ورش الحفريات — 5"
+    }
   },
   "moods": {
-    "badge": "أبرز المحطات",
-    "title": "ماذا ترى في ورش الحفريات",
-    "subtitle": "الحرف اليدوية، التاريخ والهدايا الفريدة — ثلاثة جوانب أساسية.",
-    "1": { "tag": "عرض حي", "title": "الصناعة اليدوية", "desc": "شاهد الحرفيين المحليين وهم يقطعون ويشكلون ويصقلون كتل الحجارة المحملة بالحفريات القديمة.", "duration": "عرض • 20 دقيقة" },
-    "2": { "tag": "معرض", "title": "صالات العرض", "desc": "تصفح عينات رائعة بجودة المتاحف، بدءاً من الأمونيت العملاق وحتى الحفريات الدقيقة.", "duration": "جولة • 30 دقيقة" },
-    "3": { "tag": "هدايا تذكارية", "title": "مقتنيات فريدة", "desc": "اشترِ حفريات صغيرة أصلية أو قطع ديكور منزلية مباشرة من المصدر.", "duration": "تسوق • 15 دقيقة" }
+    "badge": "التوقيت",
+    "title": "What to See at Fossil Workshops",
+    "subtitle": "Craftsmanship, history and unique souvenirs — three key aspects.",
+    "1": {
+      "tag": "Demonstration",
+      "title": "Artisan Crafting",
+      "desc": "Watch local artisans cut, shape, and polish stone blocks embedded with ancient fossils.",
+      "duration": "Demonstration • 20 min"
+    },
+    "2": {
+      "tag": "Exhibition",
+      "title": "Showrooms",
+      "desc": "Browse impressive museum-quality specimens, from giant ammonites to delicate trilobites.",
+      "duration": "Browsing • 30 min"
+    },
+    "3": {
+      "tag": "Souvenirs",
+      "title": "Unique Collectibles",
+      "desc": "Purchase authentic small fossils or decorative pieces directly from the source.",
+      "duration": "Shopping • 15 min"
+    }
   },
   "food": {
-    "title": "المطاعم حول ورش الحفريات",
-    "p1": "يضيف دمج جولة الحفريات مع محطات طعام في أرفود أو مرزوكة نكهة محلية مميزة ليومك.",
-    "li1": "شاي النعناع المنعش المقدم في صالات الورش",
-    "li2": "طواجن الأمازيغ التقليدية في مطاعم البلدة المحلية",
-    "li3": "المقاهي والمخابز المحلية في أرفود ومرزوكة",
-    "li4": "تناول الطعام في فنادق الصحراء مع إطلالات بانورامية على الكثبان",
-    "li5": "التّمور الطازجة المستخرجة من واحات النخيل بالمنطقة",
-    "p2": "يستمتع معظم المسافرين بتناول الغداء في أرفود قبل التوجه إلى الكثبان الصحراوية أو العكس."
+    "title": "Dining Around the Workshops",
+    "p1": "Combining your fossil tour with culinary stops in Erfoud or Merzouga adds local flavor to your day.",
+    "li1": "Refreshing mint tea offered in workshop showrooms",
+    "li2": "Traditional Berber tagines in local town restaurants",
+    "li3": "Local cafés and bakeries in Erfoud and Merzouga",
+    "li4": "Desert hotel dining with panoramic dune views",
+    "li5": "Fresh dates from regional palm groves",
+    "p2": "Most travelers enjoy lunch in Erfoud before heading out to the desert dunes or vice versa."
   },
   "tips": {
-    "title": "نصائح عملية لزيارة ورش الحفريات",
-    "1": { "title": "شحن القطع الثقيلة", "desc": "يمكن عادةً شحن الطاولات الرخامية الكبيرة والقطع الثقيلة دولياً عن طريق الورش المعروفة." },
-    "2": { "title": "الدفع النقدي والمفاوضة", "desc": "احرص على جلب الدرهم المغربي للمشتريات البسيطة، وتعتبر المساومة المهذبة أمراً شائعاً عند شراء الهدايا." },
-    "3": { "title": "الجولات المشتركة", "desc": "اجمع بين زيارتك لورش الحفريات ورحلة سفاري بالدفع الرباعي للحصول على يوم سياحي متكامل." }
+    "title": "Practical Tips for Visiting Fossil Workshops",
+    "1": {
+      "title": "Shipping Heavy Items",
+      "desc": "Large marble tables and heavy fossil pieces can usually be shipped internationally by reputable workshops."
+    },
+    "2": {
+      "title": "Cash & Bargaining",
+      "desc": "Carry Moroccan Dirhams for small purchases, and polite negotiation is customary for souvenirs."
+    },
+    "3": {
+      "title": "Combined Tours",
+      "desc": "Combine your fossil workshop visit with a 4x4 desert safari for a comprehensive day out."
+    }
   },
   "gyg": {
-    "badge": "الرحلات والتجارب",
-    "title": "احجز جولة الصحراء والحفريات",
-    "subtitle": "أفضل رحلات الدفع الرباعي التي تجمع بين المواقع الجيولوجية والورش المحلية.",
-    "t1": { "tag": "سفاري 4x4", "title": "مرزوكة: سفاري الدفع الرباعي في عرق الشبي ومواقع الحفريات", "desc": "استكشف مسارات الصحراء، وزر مقالع الحفريات والورش الحرفية برفقة سائق محلي خبير." },
-    "t2": { "tag": "جولة ثقافية", "title": "مرزوكة: ثقافة الصحراء وجولة العائلات البدوية", "desc": "اكتشف حياة البدو، الموسيقى التقليدية في خملية والتراث الأحفوري الإقليمي في جولة متكاملة." },
-    "t3": { "tag": "ركوب الجمال", "title": "مرزوكة: رحلة الجمال عند الغروب ومبيت في المخيم الصحراوي", "desc": "اجمع بين الاستكشاف النهاري للحفريات وليلة لا تُنسى وسط كثبان عرق الشبي." },
-    "check": "تحقق من التوفر على GetYourGuide →",
-    "disclosure": "بعض هذه الروابط هي روابط إحالة. إذا قمت بالحجز من خلالها فقد نربح عمولة بسيطة دون أي تكلفة إضافية عليك."
+    "badge": "جولات وتجارب",
+    "title": "Book a Desert & Fossil Tour",
+    "subtitle": "Top-rated 4x4 excursions incorporating geological sites and local workshops.",
+    "t1": {
+      "tag": "4x4 Safari",
+      "title": "Merzouga: Erg Chebbi 4x4 Desert Safari & Fossil Sites",
+      "desc": "Explore desert tracks, visit fossil quarries and artisan workshops with an expert local driver."
+    },
+    "check": "تحقق من التوفر على GetYourGuide ←",
+    "t2": {
+      "tag": "Cultural Tour",
+      "title": "Merzouga: Desert Culture & Nomadic Family Tour",
+      "desc": "Discover nomadic desert life, traditional music in Khamlia and regional fossil heritage in one complete tour."
+    },
+    "t3": {
+      "tag": "Camel Trek",
+      "title": "Merzouga: Sunset Camel Trek & Overnight Desert Camp",
+      "desc": "Pair your daytime fossil and cultural explorations with an unforgettable night in the Erg Chebbi dunes."
+    },
+    "disclosure": "بعض هذه الروابط روابط تابعة. إذا حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك."
   },
   "nearby": {
-    "badge": "واصل الاستكشاف",
-    "title": "المزيد من الأماكن التي يجب زيارتها في مرزوكة",
+    "badge": "استمر في الاستكشاف",
+    "title": "مزيد من الأماكن في مرزوكة",
     "back": "← العودة إلى دليل مرزوكة",
-    "tag": "معلم بارز",
-    "erg": "عرق الشبي",
-    "erg_desc": "الكثبان الذهبية الشاسعة — قلب مرزوكة النابض.",
-    "camel": "رحلة الجمال",
-    "camel_desc": "ركوب الجمال عند الغروب أو الشروق في العرق.",
-    "camp": "المخيم الصحراوي",
-    "camp_desc": "مبيت سحري تحت نجوم الصحراء.",
-    "khamlia": "خمليا",
-    "khamlia_desc": "قرية موسيقى كناوة بالقرب من الكثبان.",
-    "explore": "استكشف المكان ←"
+    "tag": "معلم",
+    "erg": "Erg Chebbi",
+    "erg_desc": "Vast golden dunes — the heart of Merzouga.",
+    "explore": "استكشف المكان ←",
+    "camel": "Camel Trek",
+    "camel_desc": "Sunset or sunrise ride into the erg.",
+    "camp": "Desert Camp",
+    "camp_desc": "Overnight under the Saharan sky.",
+    "khamlia": "Khamlia",
+    "khamlia_desc": "Gnawa music village near the dunes."
   },
   "blog": {
     "badge": "من المدونة",
     "title": "مقالات ذات صلة",
     "all": "جميع المقالات ←",
-    "a1": { "tag": "طعام", "title": "دليل الطعام في مرزوكة: الطواجن وجلسات الصحراء التقليدية", "desc": "أين تسترخي وتأكل جيداً في مرزوكة، من وجبات المخيم الدافئة إلى الطواجن المغربية الأصيلة." },
-    "a2": { "tag": "نقل", "title": "التنقل في مرزوكة: سيارات الدفع الرباعي، التحويلات والمسارات", "desc": "طرق عملية للسفر من مطار الرشيدية والتنقل بين القرية والكثبان الرملية." },
-    "a3": { "tag": "تخطيط", "title": "زيارتك الأولى لمرزوكة: ما الذي تتوقعه في الصحراء", "desc": "كيف تبدو الصحراء في اليوم الأول، وكيف تخطط لزيارات الطبيعة والمخيم دون إجهاد." },
-    "read": "اقرأ المقال ←"
+    "a1": {
+      "tag": "تخطيط",
+      "title": "المرة الأولى في مرزوكة",
+      "desc": "الكثبان، الجمال ومدة الإقامة."
+    },
+    "read": "اقرأ المقال ←",
+    "a2": {
+      "tag": "دليل",
+      "title": "الصحراء المغربية",
+      "desc": "نصائح عملية لعرق الشبي."
+    },
+    "a3": {
+      "tag": "طبيعة",
+      "title": "عرق الشبي",
+      "desc": "الكثبان والشروق والغروب."
+    }
   },
   "faq": {
     "badge": "معلومات مفيدة",
     "title": "الأسئلة الشائعة حول ورش الحفريات",
-    "q1": { "question": "هل يمكن للزوار جولة ورش الحفريات؟", "answer": "نعم، ترحب الورش والمعارض المحلية بالزوار لمشاهدة كيف يتم استخراج الحفريات البحرية وتقطيعها وصقلها لتحويلها إلى قطع فنية." },
-    "q2": { "question": "ما هو أفضل وقت لزيارة الورش؟", "answer": "تعتبر الصباحات أو أوقات ما بعد الظهيرة مثالية لتجنب حرارة منتصف النهار أثناء السفر بين أرفود ومرزوكة." },
-    "q3": { "question": "هل يمكنك شراء حفريات أصلية؟", "answer": "نعم، توفر الورش مجموعة واسعة من القطع الأصلية، بدءاً من الحفريات الصغيرة وحتى طاولات الرخام الكبيرة والمرصعة." },
-    "q4": { "question": "كم تستغرق الزيارة؟", "answer": "تستغرق الزيارة النموذجية للورشة وصالة العرض ما بين 45 إلى 60 دقيقة تقريباً." },
-    "q5": { "question": "أين تقع ورش الحفريات؟", "answer": "تقع معظم الورش الرئيسية بين مدينة أرفود وأطراف مرزوكة، وهي سهلة الوصول أثناء جولات الدفع الرباعي أو التنقل بالسيارة." }
+    "q1": {
+      "question": "هل يمكن زيارة الورش؟",
+      "answer": "نعم، الورش والمعارض ترحب بالزوار لرؤية استخراج وقطع وتلميع الحفريات."
+    },
+    "q2": {
+      "question": "أفضل وقت؟",
+      "answer": "الصباح أو أواخر بعد الظهر لتجنب حرارة الظهيرة بين مرزوكة وأرفود."
+    },
+    "q3": {
+      "question": "هل يمكن شراء حفريات أصيلة؟",
+      "answer": "نعم، من ثلاثيات الفصوص الصغيرة إلى طاولات رخام مطعمة."
+    },
+    "q4": {
+      "question": "كم تدوم الزيارة؟",
+      "answer": "حوالي 45 إلى 60 دقيقة لورشة ومعرض."
+    },
+    "q5": {
+      "question": "أين تقع الورش؟",
+      "answer": "معظمها بين أرفود وأطراف مرزوكة، سهلة الوصول في جولة 4x4 أو نقل."
+    }
   }
 }

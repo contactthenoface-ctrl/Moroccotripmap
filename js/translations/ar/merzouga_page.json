@@ -1,131 +1,278 @@
 {
   "seo": {
-    "title": "دليل السفر إلى مرزوكة 2026 | القصبات، ركوب الجمال وعرق الشبي | MoroccoTripMap",
-    "description": "خطط لرحلتك إلى مرزوكة: كثبان عرق الشبي، رحلات الجمال، المخيمات الصحراوية، خمليا، الرشيدية، الفنادق ونصائح عملية.",
-    "og_title": "دليل السفر إلى مرزوكة | كثبان عرق الشبي، رحلات الجمال والمخيمات الصحراوية | MoroccoTripMap",
-    "og_description": "كثبان عرق الشبي، رحلات الجمال، المخيمات الصحراوية، الرياضات، واحة وبرنامج جاهز لمرزوكة في دليل شامل."
+    "title": "دليل سفر مرزوكة 2026 | القصبات ورحلة الجمال وعرق الشبي | MoroccoTripMap",
+    "description": "خطط لرحلتك إلى مرزوكة: كثبان عرق الشبي، رحلات الجمال، مخيمات الصحراء، خاملية، الريصاني، الفنادق ونصائح عملية.",
+    "og_title": "دليل مرزوكة | كثبان عرق الشبي ورحلات الجمال ومخيمات الصحراء | MoroccoTripMap",
+    "og_description": "كثبان عرق الشبي، رحلات الجمال، مخيمات الصحراء، الرياض، الواحات وبرنامج جاهز لمرزوكة في دليل واحد."
   },
-  "hero_subtitle": "بوابة الصحراء وكثبان عرق الشبي الذهبية: رحلات الجمال، المخيمات الصحراوية والآفاق الساحرة — مرزوكة هي البوابة بين الأطلس والرمال.",
+  "hero_subtitle": "Gateway to the Sahara and Erg Chebbi dunes: camel treks, desert camps and Saharan horizons — Merzouga is the door between the Atlas and the dunes.",
   "info": {
-    "best_time_label": "أفضل وقت للزيارة",
-    "best_time_val": "أبريل - يونيو وسبتمبر - نوفمبر",
-    "stay_label": "الإقامة المثالية",
-    "stay_val": "2 – 3 أيام",
-    "vibe_label": "الطابع العام",
-    "vibe_val": "صحراء وكثبان",
-    "airport_label": "أقرب مطار",
-    "airport_val": "ERH (الرشيدية)"
+    "best_time_label": "Best Time to Visit",
+    "best_time_val": "Apr – Jun & Sep – Nov",
+    "stay_label": "Ideal Stay",
+    "stay_val": "2 – 3 Days",
+    "vibe_label": "Top Vibe",
+    "vibe_val": "Desert & Dunes",
+    "airport_label": "Nearest Airport",
+    "airport_val": "ERH (Errachidia)"
   },
   "overview": {
-    "title": "مرحباً بك في بوابة الصحراء في مرزوكة",
-    "p1": "تقع مرزوكة على حافة كثبان عرق الشبي المهيبة. تشتهر المنطقة بالقصبات، المسارات الصحراوية والآفاق المرصعة بالنجوم، وتعد قاعدة مثالية لرحلات الجمال والمخيمات الليلية.",
-    "p2": "تتيح لك مدة يومين أو ثلاثة أيام الاستمتاع بالكثبان، رحلة على ظهر الجمال وليلة تحت النجوم، بالإضافة إلى زيارة خمليا، ديت سرجي أو الرساني."
+    "title": "Welcome to the Sahara Gateway",
+    "p1": "Merzouga sits on the edge of the majestic Erg Chebbi dunes. Kasbahs, desert tracks and starry horizons define the area. It is the ultimate base for Erg Chebbi, camel treks and overnight desert camps.",
+    "p2": "Two to three days cover the dunes, a camel trek and a night in camp — plus Khamlia, Dayet Srji or Rissani oasis if you stay longer. Use Merzouga as a highlight on a Moroccan desert circuit."
   },
   "places": {
-    "badge": "أبرز المعالم السياحية",
-    "title": "أماكن يجب زيارتها في مرزوكة",
-    "subtitle": "الكثبان الرملية، رحلات الجمال، المخيمات والمحطات التي تعرّف بوابة الصحراء.",
-    "explore": "استكشف المكان ←",
-    "erg": { "tag": "كثبان رملية", "title": "عرق الشبي", "desc": "كثبان ذهبية شاسعة ترتفع فوق مرزوكة — قلب كل زيارة للصحراء هنا." },
-    "village": { "tag": "قرية", "title": "قرية مرزوكة", "desc": "قرية صحراوية صغيرة تضم فنادق، مقاهي ونقطة انطلاق نحو العرق." },
-    "camel": { "tag": "تجربة", "title": "رحلة الجمال", "desc": "ركوب الجمال الكلاسيكي وسط الكثبان عند الغروب أو الشروق — تجربة مرزوكة المميزة." },
-    "camp": { "tag": "مخيم", "title": "مخيم صحراوي", "desc": "المبيت في مخيم على الطراز الأمازيغي تحت النجوم — عشاء، إيقاع الطبول وسكون الكثبان." },
-    "khamlia": { "tag": "ثقافة", "title": "خمليا", "desc": "قرية في الصحراء السوداء تشتهر بموسيقى كناوة، الشاي والضيافة الدافئة." },
-    "dayet": { "tag": "طبيعة", "title": "ديت سرجي", "desc": "بحيرة موسمية عند سفح الكثبان — تأوي طيور النحام (الفلامينغو) عند توفر المياه بعد الأمطار." },
-    "rissani": { "tag": "بلدة", "title": "الرساني", "desc": "مدينة تجارية تاريخية وبوابة — أيام الأسواق الشعبية، القصبات وضريح مولاي علي الشريف." },
-    "hassilabied": { "tag": "قرية", "title": "حاسي البيض", "desc": "قرية هادئة على حافة العرق — فنادق مطلة على الكثبان وقاعدة أكثر هدوءاً من مركز مرزوكة." },
-    "fossils": { "tag": "حرف", "title": "ورش الحفريات", "desc": "ورش ومتاجر محلية تبيع الحفريات ثلاثية الفصوص والأحجار المصقولة من منطقة أرفود." }
+    "badge": "Top Sightseeing",
+    "title": "Must-Visit Places in Merzouga",
+    "subtitle": "Dunes, camel treks, camps and the stops that define the desert gateway.",
+    "erg": {
+      "tag": "Dunes",
+      "title": "Erg Chebbi",
+      "desc": "Vast golden dunes rising above Merzouga — the heart of every Sahara visit here."
+    },
+    "explore": "Explore Place →",
+    "village": {
+      "tag": "Village",
+      "title": "Merzouga Village",
+      "desc": "Small desert gateway village with hotels, cafés and the trailhead to the erg."
+    },
+    "camel": {
+      "tag": "Experience",
+      "title": "Camel Trek",
+      "desc": "Classic camel ride into the dunes at sunset or sunrise — the signature Merzouga experience."
+    },
+    "camp": {
+      "tag": "Camp",
+      "title": "Desert Camp",
+      "desc": "Overnight in a Berber-style camp under the stars — dinner, drums and dune silence."
+    },
+    "khamlia": {
+      "tag": "Culture",
+      "title": "Khamlia",
+      "desc": "Black desert village known for Gnawa music, tea and warm hospitality near the dunes."
+    },
+    "dayet": {
+      "tag": "Nature",
+      "title": "Dayet Srji",
+      "desc": "Seasonal lake at the foot of the dunes — flamingos when water is present after rains."
+    },
+    "rissani": {
+      "tag": "Town",
+      "title": "Rissani",
+      "desc": "Historic market town and gateway — souk days, kasbahs and the Moulay Ali Cherif mausoleum."
+    },
+    "hassilabied": {
+      "tag": "Village",
+      "title": "Hassilabied",
+      "desc": "Quiet village on the edge of the erg — hotels with dune views and a calmer base than central Merzouga."
+    },
+    "fossils": {
+      "tag": "Craft",
+      "title": "Fossil Workshops",
+      "desc": "Local workshops and shops selling trilobites and polished fossils from the Erfoud region."
+    }
   },
   "itinerary": {
-    "badge": "التخطيط",
-    "title": "برنامج مقترح لمدة 3 أيام",
-    "subtitle": "الكثبان، ليلة في المخيم والقرى المحيطة بعرق الشبي."
+    "badge": "Planning",
+    "title": "Suggested 3-Day Itinerary",
+    "subtitle": "Dunes, a night in camp, and the villages around Erg Chebbi."
   },
   "detailed_itinerary": {
-    "day1_tab": "اليوم 1 — الكثبان والقرية",
-    "day2_tab": "اليوم 2 — رحلة الجمال والمخيم",
-    "day3_tab": "اليوم 3 — خمليا والرساني",
-    "day1_m": "الصباح — إطلالة عرق الشبي",
-    "day1_md": "قم بالقيادة أو المشي إلى حافة عرق الشبي. تسلق الكثبان للحصول على أول منظر بانورامي قبل اشتداد الحرارة.",
-    "day1_a": "بعد الظهر — قرية مرزوكة والحفريات",
-    "day1_ad": "العودة إلى القرية لتناول الغداء، زيارة محلات الحفريات، والترتيب لرحلة الجمال والمخيم.",
-    "day1_e": "المساء — غروب الشمس على الكثبان",
-    "day1_ed": "استمتع بمشاهدة غروب الشمس من قمة الكثبان، ثم تناول العشاء في فندقك أو مطعم بالقرية.",
-    "day2_m": "الصباح — وقت حر أو مشي خفيف",
-    "day2_md": "صباح هادئ في القرية أو حاسي البيض والراحة قبل رحلة بعد الظهر.",
-    "day2_a": "بعد الظهر — رحلة الجمال داخل عرق الشبي",
-    "day2_ad": "الانطلاق بحسب الترتيب مع مخيمك: رحلة جمال في الكثبان نحو مكان إقامتك الليلية.",
-    "day2_e": "المساء — ليلة في الصحراء",
-    "day2_ed": "عشاء أمازيغي، طبول ونجوم؛ المبيت في خيمة أو مخيم مع إمكانية تسلق الكثبان لشروق الشمس.",
-    "day3_m": "الصباح — الشروق والعودة",
-    "day3_md": "التسلق لرؤية الشروق، الإفطار في المخيم ثم العودة بالجمال أو سيارات الدفع الرباعي للقرية.",
-    "day3_a": "بعد الظهر — خمليا والرساني",
-    "day3_ad": "موسيقى كناوة والشاي في خمليا، أو سوق الرساني وضريح مولاي علي الشريف.",
-    "day3_e": "المساء — الليلة الأخيرة في مرزوكة",
-    "day3_ed": "عشاء هادئ قبل مواصلة السفر نحو أرفود، تنغير أو ورزازات."
+    "day1_tab": "Day 1 — Dunes & Village",
+    "day2_tab": "Day 2 — Camel Trek & Camp",
+    "day3_tab": "Day 3 — Khamlia & Rissani",
+    "day1_m": "Morning — Erg Chebbi viewpoint",
+    "day1_md": "Drive or walk to the edge of Erg Chebbi. Climb a dune for the first panoramic view before the heat peaks.",
+    "day1_a": "Afternoon — Merzouga village & fossils",
+    "day1_ad": "Return to the village for lunch, fossil shops, and time to arrange your camel trek and camp.",
+    "day1_e": "Evening — Sunset on the dunes",
+    "day1_ed": "Watch sunset from a dune ridge, then dinner at your hotel or a village restaurant.",
+    "day2_m": "Morning — Free or short walk",
+    "day2_md": "A quiet morning in the village or Hassilabied; rest before the afternoon trek.",
+    "day2_a": "Afternoon — Camel trek into Erg Chebbi",
+    "day2_ad": "Depart as arranged with your camp: camel trek into the dunes toward your overnight stay.",
+    "day2_e": "Evening — Night in the Sahara",
+    "day2_ed": "Berber dinner, drums and stars; sleep in a tent or camp with optional sunrise climb.",
+    "day3_m": "Morning — Sunrise & return",
+    "day3_md": "Climb for sunrise, breakfast at camp, then camel or 4x4 back to the village.",
+    "day3_a": "Afternoon — Khamlia or Rissani",
+    "day3_ad": "Gnawa music and tea in Khamlia, or Rissani’s souk and Moulay Ali Cherif mausoleum.",
+    "day3_e": "Evening — Last night in Merzouga",
+    "day3_ed": "Quiet dinner before onward travel toward Erfoud, Tinghir or Ouarzazate."
   },
   "directory": {
-    "badge": "أين تقيم",
-    "title": "الفنادق، القصبات والمخيمات الصحراوية في مرزوكة",
-    "subtitle": "قم بالتصفية حسب النوع والمنطقة — أطراف القرية، حاسي البيض أو المبيت في الكثبان.",
-    "filter_type_label": "نوع الإقامة",
-    "type_all": "جميع الأنواع",
-    "type_hotel": "الفنادق والقصبات",
-    "type_riad": "الرياضات ودور الضيافة",
-    "type_camp": "المخيمات الصحراوية",
-    "filter_location_label": "المنطقة",
-    "location_all": "جميع المناطق",
-    "location_village": "قرية مرزوكة",
-    "location_hassilabied": "حاسي البيض",
-    "location_dunes": "الكثبان / المخيم الصحراوي",
-    "location_rissani": "منطقة الرساني",
-    "counter": "تم إدراج 28 مكان إقامة",
-    "district_label": "المنطقة",
-    "type_label": "النوع",
-    "check_availability": "تحقق من التوفر ←",
-    "no_results": "لا توجد أماكن إقامة تطابق عوامل التصفية الخاصة بك."
+    "badge": "Where to Stay",
+    "title": "Hotels, Kasbahs & Desert Camps in Merzouga",
+    "subtitle": "Filter by type and area — village edge, Hassilabied, or overnight in the dunes.",
+    "filter_type_label": "Accommodation Type",
+    "type_all": "All types",
+    "type_hotel": "Hotels & Kasbahs",
+    "type_riad": "Riads & Guesthouses",
+    "type_camp": "Desert Camps",
+    "filter_location_label": "Area",
+    "location_all": "All areas",
+    "location_village": "Merzouga village",
+    "location_hassilabied": "Hassilabied",
+    "location_dunes": "Dunes / desert camp",
+    "location_rissani": "Rissani area",
+    "counter": "28 accommodations listed",
+    "district_label": "Area",
+    "type_label": "Type",
+    "check_availability": "Check availability →",
+    "no_results": "No accommodations match your filters."
   },
   "eat": {
-    "badge": "فن الطهي",
-    "title": "أين تأكل في مرزوكة",
-    "subtitle": "الطواجن، المشويات وشاي النعناع — مطاعم القرية وطاولات الفنادق مع إطلالات على الكثبان.",
-    "dunes": { "tag": "محلي · إطلالة على الكثبان", "title": "مطعم ليس دونيس", "desc": "طواجن كلاسيكية وأطباق مشوية مع تراس يواجه العرق — خيار مفضل وموثوق في القرية.", "loc": "قرية مرزوكة · تراس" },
-    "yasmina": { "tag": "مطعم فندق", "title": "مطعم ياسمينة", "desc": "مطعم فندق مفتوح للضيوف الخارجيين — قوائم مغربية وإطلالات نحو عرق الشبي.", "loc": "فندق ياسمينة · القرية" },
-    "sud": { "tag": "مقهى · غير رسمي", "title": "مقهى السو", "desc": "مقهى ومطعم بسيط للإفطار، العجة، شاي النعناع وأخذ قسط من الراحة من الحر.", "loc": "وسط قرية مرزوكة" },
-    "mohayut": { "tag": "طابع قصبة", "title": "مطعم قصبة محيوط", "desc": "قوائم مغربية محددة في أجواء قصبة عند سفح الكثبان — يحظى بشعبية لدى المقيمين ليلاً.", "loc": "قصبة محيوط · حافة الكثبان" },
-    "berbere": { "tag": "حاسي البيض", "title": "المطعم الأمازيغي", "desc": "طهي أمازيغي منزلي في حاسي البيض — كسكس، طاجين وأمسية أهدأ من شارع القرية الرئيسي.", "loc": "حاسي البيض · مطبخ محلي" },
-    "camp": { "tag": "مخيم صحراوي", "title": "العشاء في المخيم الصحراوي", "desc": "تتضمن معظم المخيمات الليلية عشاءً أمازيغياً تحت النجوم — وغالباً ما يكون أبرز ما في إقامة مرزوكة.", "loc": "مخيمات عرق الشبي · وجبة مشمولة" }
+    "badge": "Gastronomy",
+    "title": "Where to Eat in Merzouga",
+    "subtitle": "Tagines, grilled meats and mint tea — village restaurants and hotel tables with dune views.",
+    "dunes": {
+      "tag": "Local · Dune view",
+      "title": "Restaurant Les Dunes",
+      "desc": "Classic tagines and grilled dishes with a terrace facing the erg — a reliable village favourite.",
+      "loc": "Merzouga village · Terrace"
+    },
+    "yasmina": {
+      "tag": "Hotel restaurant",
+      "title": "Restaurant Yasmina",
+      "desc": "Hotel restaurant open to outside guests — Moroccan menus and views toward Erg Chebbi.",
+      "loc": "Hotel Yasmina · Village"
+    },
+    "sud": {
+      "tag": "Café · Casual",
+      "title": "Café du Sud",
+      "desc": "Simple café-restaurant for breakfast, omelettes, mint tea and a break from the heat.",
+      "loc": "Merzouga village centre"
+    },
+    "mohayut": {
+      "tag": "Kasbah dining",
+      "title": "Kasbah Mohayut Restaurant",
+      "desc": "Moroccan set menus in a kasbah setting at the foot of the dunes — popular with overnight guests.",
+      "loc": "Kasbah Mohayut · Dune edge"
+    },
+    "berbere": {
+      "tag": "Hassilabied",
+      "title": "Restaurant Berbère",
+      "desc": "Home-style Berber cooking in Hassilabied — couscous, tagine and a quieter evening than the main village strip.",
+      "loc": "Hassilabied · Local kitchen"
+    },
+    "camp": {
+      "tag": "Desert camp",
+      "title": "Dinner at Desert Camp",
+      "desc": "Most overnight camps include a Berber dinner under the stars — often the highlight of a Merzouga stay.",
+      "loc": "Erg Chebbi camps · Included meal"
+    }
   },
   "tips": {
-    "title": "نصائح عملية لزيارة مرزوكة",
+    "title": "Practical Tips for Visiting Merzouga",
     "transport": {
-      "title": "التنقل",
-      "desc": "أقرب مطار هو الرشيدية (ERH)، على بعد حوالي ساعتين بالسيارة. تعد سيارات الدفع الرباعي والتحويلات الخاصة مثالية لاستكشاف المسارات الصحراوية حول مرزوكة."
+      "title": "Getting Around",
+      "desc": "The nearest airport is Errachidia (ERH), about a 2-hour drive away. 4x4 vehicles and private transfers are ideal for exploring the desert tracks around Merzouga."
     },
     "bargain": {
-      "title": "اللباس والإتيكيت",
-      "desc": "ارتدِ ملابس خفيفة وقابلة للتنفس خلال النهار، وأحضر طبقات دافئة ليالي الصحراء الباردة. الشال أو الغطاء ضروري للحماية من الرمال والشمس."
+      "title": "Dress & Etiquette",
+      "desc": "Wear light, breathable clothing during the day and pack warm layers for chilly desert nights. A scarf or head wrap is essential for protection against sand and sun."
     },
     "water": {
-      "title": "السلامة والأجواء",
-      "desc": "مرزوكة مرحبة للغاية وآمنة للمسافرين. احرص دائماً على الترطيب، شرب المياه المعبأة، وحجز المخيمات الصحراوية من خلال مشغلين موثوقين."
+      "title": "Safety & Atmosphere",
+      "desc": "Merzouga is very welcoming and safe for travellers. Always stay hydrated, drink bottled water, and book desert camps through trusted operators."
     }
   },
   "daytrips": {
-    "badge": "رحلات يومية",
-    "title": "أفضل الرحلات اليومية من مرزوقة",
-    "subtitle": "رحلات سهلة ومسارات صحراوية تتناسب بشكل مريح مع يوم واحد.",
-    "rabat": { "title": "أرفود وواد درعة", "desc": "جنوباً نحو وواد درعة — بساتين النخيل، القصبات والطريق نحو الصحراء." },
-    "zagora": { "title": "أرفود", "desc": "عاصمة الحفريات وبوابة الصحراء، على بعد حوالي 40 دقيقة شمال مرزوكة." },
-    "mohammedia": { "title": "وادي دادس وتودغا", "desc": "مناظر الوديان والخانات على الطريق الغربي — وغالباً ما تقترن بجولة صحراوية." },
-    "azemmour": { "title": "مراكش (العودة)", "desc": "يواصل العديد من المسافرين أو يعودون عبر ممر تيزي نتيشكا بالأطلس الكبير إلى مراكش." }
+    "badge": "Day Trips",
+    "title": "Best Day Trips from Merzouga",
+    "subtitle": "Easy excursions and desert routes that fit comfortably into a single day.",
+    "rabat": {
+      "title": "Erfoud & Draa Valley",
+      "desc": "South into the Draa Valley — palm groves, kasbahs and the road toward the desert."
+    },
+    "zagora": {
+      "title": "Erfoud",
+      "desc": "Fossil capital and desert gateway, about 40 minutes north of Merzouga."
+    },
+    "mohammedia": {
+      "title": "Dadès & Todra",
+      "desc": "Gorges and valley scenery on the road west — often combined with a desert circuit."
+    },
+    "azemmour": {
+      "title": "Marrakech (circuit)",
+      "desc": "Many travellers continue or return via the High Atlas Tizi n’Tichka pass to Marrakech."
+    }
   },
   "faq": {
     "badge": "معلومات مفيدة",
-    "title": "الأسئلة الشائعة حول السفر إلى مرزوكة",
-    "q1": { "question": "كم يوماً يجب أن أضيعه في مرزوكة؟", "answer": "يومان كاملان يغطيان المعالم الرئيسية براحة. ثلاثة أو أربعة أيام تسمح بوتيرة مريحة بالإضافة إلى رحلة ليوم واحد إلى الرساني أو الواحات المحيطة." },
-    "q2": { "question": "هل مرزوقة آمنة للسياح؟", "answer": "نعم. مرزوقة آمنة للغاية ومرحب بها. احرص دائماً على حجز مخيماتك الصحراوية ومرشديك من خلال مشغلين محليين موثوقين." },
-    "q3": { "question": "ما هي العملة المستخدمة وهل يمكنني الدفع بالبطاقة؟", "answer": "المغرب يستخدم الدرهم (MAD). تُقبل البطاقات في الفنادق الكبرى؛ احتفظ ببعض النقود للمتاجر الصغيرة، الإرشادات والأسواق المحلية." },
-    "q4": { "question": "كيف أصل إلى مرزوقة من أقرب مطار؟", "answer": "أقرب مطار هو الرشيدية (ERH)، على بعد حوالي ساعتين بالسيارة. تتوفر خدمات النقل الخاصة، سيارات التاكسي أو سيارات الإيجار بسهولة لنقلك مباشرة إلى الكثبان." }
+    "title": "الأسئلة الشائعة حول سفر مرزوكة",
+    "q1": {
+      "question": "كم يوماً أحتاج في مرزوكة؟",
+      "answer": "يومان كاملان يغطيان المعالم الرئيسية براحة. ثلاثة أو أربعة أيام تسمح بإيقاع هادئ ورحلة يوم إلى الريصاني أو الواحات المحيطة."
+    },
+    "q2": {
+      "question": "هل مرزوكة آمنة للسياح؟",
+      "answer": "نعم. مرزوكة آمنة جداً وترحب بالزوار. احجز دائماً مخيمات الصحراء والمرشدين عبر مشغّلين محليين موثوقين."
+    },
+    "q3": {
+      "question": "ما العملة وهل يمكن الدفع بالبطاقة؟",
+      "answer": "المغرب يستخدم الدرهم (MAD). البطاقات مقبولة في الفنادق الأكبر، لكن احتفظ بنقد للمحلات الصغيرة والإكراميات والأسواق."
+    },
+    "q4": {
+      "question": "كيف أصل إلى مرزوكة من أقرب مطار؟",
+      "answer": "أقرب مطار هو الرشيدية (ERH)، على بعد حوالي ساعتين بالسيارة. التحويلات الخاصة والتاكسي والسيارات المستأجرة متوفرة بسهولة."
+    }
+  },
+  "name": "مرزوكة",
+  "gallery": {
+    "badge": "معرض الصور",
+    "title": "مرزوكة بالصور",
+    "subtitle": "إطلالات من مرزوكة في مرزوكة.",
+    "s1": {
+      "caption": "مرزوكة — 1"
+    },
+    "s2": {
+      "caption": "مرزوكة — 2"
+    },
+    "s3": {
+      "caption": "مرزوكة — 3"
+    },
+    "s4": {
+      "caption": "مرزوكة — 4"
+    },
+    "s5": {
+      "caption": "مرزوكة — 5"
+    }
+  },
+  "nearby": {
+    "badge": "استمر في الاستكشاف",
+    "title": "مزيد من الأماكن في مرزوكة",
+    "back": "← العودة إلى دليل مرزوكة",
+    "explore": "استكشف المكان ←",
+    "tag": "معلم"
+  },
+  "blog": {
+    "badge": "من المدونة",
+    "title": "مقالات ذات صلة",
+    "all": "جميع المقالات ←",
+    "read": "اقرأ المقال ←",
+    "a1": {
+      "tag": "تخطيط",
+      "title": "المرة الأولى في مرزوكة",
+      "desc": "الكثبان، الجمال ومدة الإقامة."
+    },
+    "a2": {
+      "tag": "دليل",
+      "title": "الصحراء المغربية",
+      "desc": "نصائح عملية لعرق الشبي."
+    },
+    "a3": {
+      "tag": "طبيعة",
+      "title": "عرق الشبي",
+      "desc": "الكثبان والشروق والغروب."
+    }
+  },
+  "gyg": {
+    "badge": "جولات وتجارب",
+    "check": "تحقق من التوفر على GetYourGuide ←",
+    "disclosure": "بعض هذه الروابط روابط تابعة. إذا حجزت عبرها قد نحصل على عمولة صغيرة دون تكلفة إضافية عليك."
+  },
+  "moods": {
+    "badge": "التوقيت"
   }
 }

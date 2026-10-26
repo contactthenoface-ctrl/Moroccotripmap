@@ -195,7 +195,7 @@
 
     <!-- Main Content -->
     <main class="flex-grow">
-        <!-- Hero Section (Correction: pas de overflow-hidden pour laisser respirer la recherche) -->
+        <!-- Hero Section -->
         <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative">
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
@@ -213,7 +213,7 @@
                     <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">GetYourGuide &amp; Viator</strong> <span data-i18n="experiences_page.stat_partner">Verified Experiences</span></span>
                 </div>
 
-                <!-- Instant Search Bar (Correction: z-50 et position relative claire) -->
+                <!-- Instant Search Bar -->
                 <div class="mt-8 max-w-lg relative z-50">
                     <div class="relative">
                         <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search activity (e.g. Desert, Quad, Camel) or city..." data-i18n-placeholder="experiences_page.search_placeholder" type="text"/>
@@ -1557,7 +1557,7 @@
                 });
             });
 
-            // Instant Search Input Logic
+            // Instant Search Input Logic (Mis à jour pour supporter le multilingue / i18n et l'arabe)
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
 
@@ -1572,6 +1572,7 @@
                     ...Array.from(cityCards).map(c => ({
                         type: 'City Excursion',
                         title: c.querySelector('h3')?.textContent || '',
+                        cityName: c.querySelector('[data-i18n*="name"]')?.textContent || '',
                         element: c,
                         targetSection: 'cities'
                     }))
@@ -1588,14 +1589,24 @@
                         return;
                     }
 
-                    const matches = searchItems.filter(item => item.title.toLowerCase().includes(query));
+                    // Recherche élargie incluant les textes dynamiques traduits (arabe, français, espagnol, anglais)
+                    const matches = searchItems.filter(item => {
+                        const titleMatch = item.title.toLowerCase().includes(query);
+                        const cityMatch = item.cityName && item.cityName.toLowerCase().includes(query);
+                        const cardTextMatch = item.element.textContent.toLowerCase().includes(query);
+                        return titleMatch || cityMatch || cardTextMatch;
+                    });
 
                     if (matches.length > 0) {
                         searchResults.classList.remove('hidden');
                         matches.forEach(match => {
                             const div = document.createElement('div');
                             div.className = 'px-4 py-3 hover:bg-creme cursor-pointer text-sm font-medium text-sombre flex items-center justify-between';
-                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span> <span class="text-xs text-gray-400">(${match.type})</span></div> <span class="text-xs text-sable font-bold">View →</span>`;
+                            
+                            const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+                            div.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+
+                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span> <span class="text-xs text-gray-400">(${match.type})</span></div> <span class="text-xs text-sable font-bold">${isRTL ? '← عرض' : 'View →'}</span>`;
                             
                             div.addEventListener('click', function() {
                                 searchInput.value = match.title;
@@ -1607,7 +1618,8 @@
                         });
                     } else {
                         searchResults.classList.remove('hidden');
-                        searchResults.innerHTML = '<div class="px-4 py-3 text-sm text-gray-500">No activity or city excursion found</div>';
+                        const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+                        searchResults.innerHTML = `<div class="px-4 py-3 text-sm text-gray-500">${isRTL ? 'لم يتم العثور على أي نشاط أو مدينة' : 'No activity or city excursion found'}</div>`;
                     }
                 });
 

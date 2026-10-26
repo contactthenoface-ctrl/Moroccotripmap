@@ -1,102 +1,176 @@
 {
   "seo": {
-    "title": "Erg Chebbi Merzouga 2026 | Dunas de Arena y Dromedarios | MoroccoTripMap",
-    "description": "¿Visitas Erg Chebbi en Merzouga? Guía de dunas doradas, miradores de amanecer y atardecer, rutas en dromedario, 4x4 y consejos prácticos.",
-    "og_title": "Erg Chebbi, Merzouga: Dunas, Atardeceres y Consejos | MoroccoTripMap",
-    "og_description": "Cómo visitar las majestuosas dunas de Erg Chebbi en Merzouga: mejores miradores, paseos en dromedario, excursiones en 4x4 y consejos."
+    "title": "Erg Chebbi | MoroccoTripMap",
+    "description": "Visiting Erg Chebbi in Merzouga? Golden dunes guide, sunrise and sunset viewpoints, camel treks, 4x4 desert tours and practical travel tips.",
+    "og_title": "Erg Chebbi, Merzouga: Dunes, Sunsets & Tips",
+    "og_description": "How to visit the majestic Erg Chebbi dunes in Merzouga: best viewpoints, camel rides, desert tours and practical advice."
   },
-  "hero_subtitle": "Altas dunas doradas del Sahara de Merzouga.",
+  "name": "Erg Chebbi",
+  "hero_subtitle": "Mar de dunas doradas en Merzouga — amanecer, atardecer y treks en camello.",
   "info": {
     "best_time_label": "Mejor momento",
-    "best_time_val": "Amanecer y Atardecer",
-    "duration_label": "Duración ideal",
-    "duration_val": "Medio día a 1 Noche",
-    "entry_label": "Acceso",
-    "entry_val": "Gratuito / Tours guiados",
+    "best_time_val": "Sunrise & Sunset",
+    "duration_label": "Duración sugerida",
+    "duration_val": "Half day to 1 Night",
+    "entry_label": "Entrada",
+    "entry_val": "Free / Guided tours",
     "area_label": "Ubicación",
-    "area_val": "Desierto de Merzouga"
+    "area_val": "Merzouga Sahara"
   },
   "overview": {
-    "title": "El majestuoso mar de dunas",
-    "p1": "Erg Chebbi representa la imagen icónica del Sahara marroquí: impresionantes crestas de arena dorada y anaranjada que alcanzan hasta 150 metros de altura frente a Merzouga.",
-    "p2": "Visitar las dunas requiere tomárselo con calma. Observa cómo la luz cambiante del sol transforma los colores de la arena, del amarillo pálido a mediodía al ámbar profundo al atardecer.",
-    "p3": "Ya sea en ruta en dromedario, en safari 4x4 o subiendo a pie a la cima más alta, Erg Chebbi ofrece una experiencia inolvidable en la naturaleza."
+    "title": "Las dunas doradas del Erg Chebbi",
+    "p1": "Erg Chebbi represents the iconic image of the Moroccan Sahara: breathtaking ridges of golden-orange sand rising up to 150 meters high, stretching across the horizon near Merzouga.",
+    "p2": "Visiting the dunes rewards a slower pace. Watch how the shifting sunlight transforms the colors of the sand from pale gold at noon to deep amber and fiery red at sunset.",
+    "p3": "Whether you explore via camel trek, 4x4 safari, or by hiking to the highest summit, Erg Chebbi offers an unforgettable wilderness experience."
   },
   "gallery": {
-    "badge": "Galería",
+    "badge": "Galería de fotos",
     "title": "Erg Chebbi en imágenes",
-    "subtitle": "Desliza para ver paisajes de dunas doradas, caravanas de dromedarios y vistas del desierto.",
-    "s1": { "caption": "Vastas dunas doradas de Erg Chebbi" },
-    "s2": { "caption": "Ruta en dromedario por el desierto" },
-    "s3": { "caption": "Luz del atardecer sobre la arena" },
-    "s4": { "caption": "Campamento de jaimas en el desierto" },
-    "s5": { "caption": "Luz matinal sobre el erg" }
+    "subtitle": "Vistas desde Erg Chebbi en Merzouga.",
+    "s1": {
+      "caption": "Erg Chebbi — 1"
+    },
+    "s2": {
+      "caption": "Erg Chebbi — 2"
+    },
+    "s3": {
+      "caption": "Erg Chebbi — 3"
+    },
+    "s4": {
+      "caption": "Erg Chebbi — 4"
+    },
+    "s5": {
+      "caption": "Erg Chebbi — 5"
+    }
   },
   "moods": {
-    "badge": "Momentos clave",
-    "title": "Qué hacer en Erg Chebbi",
-    "subtitle": "Atardeceres, subir a las dunas y excursiones en dromedario: tres imprescindibles.",
-    "1": { "tag": "Hora Dorada", "title": "Atardecer y Amanecer", "desc": "Disfruta de transformaciones espectaculares de color sobre las crestas de arena.", "duration": "Mejor luz • 1 hora" },
-    "2": { "tag": "Aventura", "title": "Subida a las dunas", "desc": "Asciende a las dunas más altas para disfrutar de vistas panorámicas de 360° del Sahara.", "duration": "Activo • 45 – 60 min" },
-    "3": { "tag": "Calma", "title": "Noches tranquilas del desierto", "desc": "Experimenta el silencio absoluto y la observación de estrellas lejos de la luz urbana.", "duration": "Experiencia nocturna" }
+    "badge": "Horarios",
+    "title": "What to Experience at Erg Chebbi",
+    "subtitle": "Sunsets, dune climbing and camel adventures — three core highlights.",
+    "1": {
+      "tag": "Golden Hour",
+      "title": "Sunset & Sunrise",
+      "desc": "Witness breathtaking color transformations over the sand ridges.",
+      "duration": "Best lighting • 1 hour"
+    },
+    "2": {
+      "tag": "Adventure",
+      "title": "Dune Climbing",
+      "desc": "Hike up the highest sand dunes for panoramic views across the Sahara.",
+      "duration": "Active • 45 – 60 min"
+    },
+    "3": {
+      "tag": "Relaxation",
+      "title": "Quiet Desert Nights",
+      "desc": "Experience total silence and magnificent stargazing away from city lights.",
+      "duration": "Overnight experience"
+    }
   },
   "food": {
-    "title": "Restauración alrededor de Erg Chebbi",
-    "p1": "Comer en el desierto combina tajines tradicionales en jaimas, cocina de hotel y comida en el pueblo.",
-    "li1": "Té de menta de bienvenida al llegar a las dunas",
-    "li2": "Tajines marroquíes tradicionales cocinados a fuego lento",
-    "li3": "Pizza bereber (Madfuna) horneada tradicionalmente",
-    "li4": "Restaurantes de hoteles y cafés en el pueblo de Merzouga",
-    "li5": "Frutas frescas de temporada y repostería local",
-    "p2": "La mayoría de estancias en campamentos incluyen media pensión, ya que las opciones dentro de las dunas están limitadas a los campamentos organizados."
+    "title": "Dining Around Erg Chebbi",
+    "p1": "Desert dining combines traditional camp tagines, hotel hospitality and local village meals.",
+    "li1": "Welcome mint tea served upon arrival in the dunes",
+    "li2": "Traditional Moroccan tagines cooked over open coals",
+    "li3": "Berber pizzas baked in sand ovens",
+    "li4": "Hotel restaurants and cafés in Merzouga village",
+    "li5": "Fresh seasonal fruits and Moroccan pastries",
+    "p2": "Most desert camp stays include half-board dining, as dining options directly in the deep dunes are limited to organized camps."
   },
   "tips": {
-    "title": "Consejos prácticos para visitar Erg Chebbi",
-    "1": { "title": "Protección de Sol y Arena", "desc": "Lleva gafas de sol, crema solar y un pañuelo tradicional (shechiah) para protegerte del viento y la arena." },
-    "2": { "title": "Guías autorizados", "desc": "Reserva tus paseos en dromedario y excursiones en 4x4 a través de hoteles reconocidos u operadores locales oficiales." },
-    "3": { "title": "Ropa de abrigo", "desc": "Las temperaturas bajan rápidamente tras la puesta de sol; lleva siempre una chaqueta cálida para la noche." }
+    "title": "Practical Tips for Visiting Erg Chebbi",
+    "1": {
+      "title": "Sun & Sand Protection",
+      "desc": "Bring sunglasses, sunscreen, and a traditional scarf (shechiah) to protect against sun and blowing sand."
+    },
+    "2": {
+      "title": "Licensed Guides",
+      "desc": "Book camel treks and 4x4 desert tours through reputable local hotels or certified camp operators."
+    },
+    "3": {
+      "title": "Warm Layers",
+      "desc": "Desert temperatures plummet after sunset — always pack a jacket or fleece for the night."
+    }
   },
   "gyg": {
-    "badge": "Excursiones y Actividades",
-    "title": "Reserva una aventura en Erg Chebbi",
-    "subtitle": "Rutas en dromedario, safaris en 4x4 y campamentos nocturnos mejor valorados.",
-    "t1": { "tag": "Dromedario", "title": "Merzouga: Paseo en dromedario al atardecer o amanecer", "desc": "Recorre las majestuosas dunas con un guía experimentado y contempla la puesta de sol." },
-    "t2": { "tag": "Safari 4x4", "title": "Merzouga: Safari 4x4 en Erg Chebbi y pueblo de Khamlia", "desc": "Explora pistas del desierto, visita familias nómadas y escucha música Gnawa en Khamlia." },
-    "t3": { "tag": "Campamento", "title": "Merzouga: Noche en campamento del desierto y estrellas", "desc": "Combina paseo en dromedario y noche en jaima con cena tradicional, fuego y tambores." },
-    "check": "Comprobar disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una pequeña comisión sin coste extra."
+    "badge": "Tours y experiencias",
+    "title": "Book an Erg Chebbi Adventure",
+    "subtitle": "Top-rated camel treks, 4x4 desert safaris and overnight bivouacs.",
+    "t1": {
+      "tag": "Camel Ride",
+      "title": "Merzouga: Sunset or Sunrise Camel Trek in Erg Chebbi",
+      "desc": "Ride a camel across the majestic sand dunes with an experienced guide and watch the sun dip below the horizon."
+    },
+    "check": "Ver disponibilidad en GetYourGuide →",
+    "t2": {
+      "tag": "4x4 Safari",
+      "title": "Merzouga: Erg Chebbi 4x4 Desert Safari & Khamlia",
+      "desc": "Explore desert tracks, visit nomadic families, discover fossil sites and listen to traditional Gnawa music in Khamlia."
+    },
+    "t3": {
+      "tag": "Overnight Camp",
+      "title": "Merzouga: Overnight Desert Camp & Stargazing Experience",
+      "desc": "Combine a camel trek with a night in a desert bivouac featuring traditional dinner, campfires and Berber drumming."
+    },
+    "disclosure": "Algunos de estos enlaces son de afiliados. Si reserva a través de ellos, podemos recibir una pequeña comisión sin coste extra para usted."
   },
   "nearby": {
-    "badge": "Sigue explorando",
-    "title": "Más lugares imprescindibles en Merzouga",
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Merzouga",
     "back": "← Volver a la guía de Merzouga",
-    "tag": "Imprescindible",
-    "camel": "Paseo en dromedario",
-    "camel_desc": "Ruta al atardecer o amanecer por el erg.",
-    "camp": "Campamento Desierto",
-    "camp_desc": "Noche mágica bajo las estrellas del Sahara.",
+    "tag": "Lugar",
+    "camel": "Camel Trek",
+    "camel_desc": "Sunset or sunrise ride into the erg.",
+    "explore": "Explorar el lugar →",
+    "camp": "Desert Camp",
+    "camp_desc": "Overnight under the Saharan sky.",
     "lake": "Dayet Srji",
-    "lake_desc": "Lago estacional y hábitat de flamencos.",
+    "lake_desc": "Seasonal lake and seasonal flamingo habitat.",
     "khamlia": "Khamlia",
-    "khamlia_desc": "Pueblo de música Ganaue junto a las dunas.",
-    "explore": "Explorar lugar →"
+    "khamlia_desc": "Gnawa music village near the dunes."
   },
   "blog": {
-    "badge": "Del Blog",
+    "badge": "Del blog",
     "title": "Artículos relacionados",
     "all": "Todos los artículos →",
-    "a1": { "tag": "Gastronomía", "title": "Guía gastronómica de Merzouga: Tajines y cocina del desierto", "desc": "Dónde comer bien en Merzouga, desde cenas en campamentos hasta tajines tradicionales." },
-    "a2": { "tag": "Transporte", "title": "Cómo moverse por Merzouga: 4x4, traslados y pistas", "desc": "Formas prácticas de viajar desde Errachidia y desplazarse entre el pueblo y las dunas." },
-    "a3": { "tag": "Planificación", "title": "Primer viaje a Merzouga: Qué esperar en el Sahara", "desc": "Cómo se siente el desierto el primer día y cómo planificar tus visitas naturales sin prisas." },
-    "read": "Leer el artículo →"
+    "a1": {
+      "tag": "Planificar",
+      "title": "Primera vez en Merzouga",
+      "desc": "Dunas, camellos y duración de la estancia."
+    },
+    "read": "Leer el artículo →",
+    "a2": {
+      "tag": "Guía",
+      "title": "Desierto marroquí",
+      "desc": "Consejos prácticos para el Erg Chebbi."
+    },
+    "a3": {
+      "tag": "Naturaleza",
+      "title": "Erg Chebbi",
+      "desc": "Dunas, amanecer y atardecer."
+    }
   },
   "faq": {
     "badge": "Bueno saber",
-    "title": "Preguntas frecuentes sobre Erg Chebbi",
-    "q1": { "question": "¿Cuánto tiempo se necesita en Erg Chebbi?", "answer": "La mayoría dedica al menos medio día o una noche para vivir plenamente el amanecer y el atardecer en las dunas." },
-    "q2": { "question": "¿Es de pago el acceso a Erg Chebbi?", "answer": "No, las dunas de arena son un espacio natural de acceso libre. Solo se pagan los servicios de guía, dromedarios o 4x4." },
-    "q3": { "question": "¿Cuál es el mejor momento para visitar Erg Chebbi?", "answer": "El amancecer y el atardecer ofrecen la luz más bonita para fotos y temperaturas más suaves." },
-    "q4": { "question": "¿Se puede subir a la cima de las dunas?", "answer": "Sí, subir a las dunas más altas (algunas alcanzan los 150 m) es una actividad muy popular, especialmente al atardecer." },
-    "q5": { "question": "¿Qué ropa llevar al desierto?", "answer": "Ropa ligera y transpirable de día, gafas de sol, pañuelo para el viento y ropa de abrigo para la noche." }
+    "title": "FAQ Erg Chebbi",
+    "q1": {
+      "question": "¿Cuánto tiempo en el Erg Chebbi?",
+      "answer": "La mayoría pasa al menos medio día o una noche para vivir dunas, atardecer y amanecer."
+    },
+    "q2": {
+      "question": "¿Hay entrada de pago?",
+      "answer": "No, las dunas son espacios naturales gratuitos. Tours, treks y campamentos tienen tarifas aparte."
+    },
+    "q3": {
+      "question": "¿Mejor momento?",
+      "answer": "Temprano por la mañana y final de tarde para la luz y temperaturas más suaves."
+    },
+    "q4": {
+      "question": "¿Se pueden subir las dunas?",
+      "answer": "Sí, subir las dunas altas (hasta 150 m) es popular sobre todo para el atardecer."
+    },
+    "q5": {
+      "question": "¿Qué llevar puesto?",
+      "answer": "Ropa ligera de día, gafas, pañuelo y capas abrigadas de noche."
+    }
   }
 }

@@ -1,102 +1,176 @@
 {
   "seo": {
-    "title": "Hassi Labied Merzouga: Oasis y Dunas 2026 | MoroccoTripMap",
-    "description": "¿Visitas Hassi Labied en Merzouga? Paseos por el oasis, palmerales, acceso a las dunas de Erg Chebbi, cultura tradicional y consejos.",
-    "og_title": "Hassi Labied, Merzouga: Oasis, Palmeral y Consejos | MoroccoTripMap",
-    "og_description": "Cómo visitar Hassi Labied cerca de Merzouga: paseos por el palmeral, arquitectura de adobe, cultura local y consejos prácticos."
+    "title": "Hassi Labied | MoroccoTripMap",
+    "description": "Visiting Hassi Labied in Merzouga? Oasis walks, palm groves, Erg Chebbi dunes access, traditional culture and practical tips.",
+    "og_title": "Hassi Labied, Merzouga: Oasis, Palm Grove & Tips",
+    "og_description": "How to visit Hassi Labied near Merzouga: palm grove walks, desert architecture, local culture and practical travel advice."
   },
-  "hero_subtitle": "Un tranquilo pueblo oasis enclavado al pie de las dunas de Erg Chebbi.",
+  "name": "Hassi Labied",
+  "hero_subtitle": "Pueblo oasis al pie del Erg Chebbi — palmeral y cultura local.",
   "info": {
     "best_time_label": "Mejor momento",
-    "best_time_val": "Temprano en la mañana o atardecer",
-    "duration_label": "Duración ideal",
-    "duration_val": "1 a 2 horas (o estancia de varios días)",
-    "entry_label": "Acceso",
-    "entry_val": "Acceso libre al pueblo y palmeral",
+    "best_time_val": "Early morning or late afternoon",
+    "duration_label": "Duración sugerida",
+    "duration_val": "1 to 2 Hours (or multi-day stay)",
+    "entry_label": "Entrada",
+    "entry_val": "Free village & palm grove access",
     "area_label": "Ubicación",
-    "area_val": "Región de Merzouga / Erg Chebbi"
+    "area_val": "Merzouga / Erg Chebbi outskirts"
   },
   "overview": {
-    "title": "El oasis al borde de las dunas",
-    "p1": "Hassi Labied es un encantador y tranquilo pueblo oasis situado justo donde los fértiles palmerales se encuentran con las imponentes dunas de arena dorada de Erg Chebbi. Ofrece a los visitantes una visión más auténtica y serena de la vida tradicional en el desierto.",
-    "p2": "Un paseo por el pueblo revela arquitectura tradicional de adobe, senderos sombreados bajo las palmeras datileras y antiguos sistemas de riego (khettaras). Los amantes de las aves también disfrutarán observando aves migratorias del desierto.",
-    "p3": "Con acogedores hostales, tiendas de artesanía y acceso directo a excursiones en camello, Hassi Labied es una parada esencial para explorar la región de Merzouga."
+    "title": "Oasis al pie de las dunas",
+    "p1": "Hassi Labied is a charming and tranquil oasis village situated right where the fertile palm groves meet the towering golden sand dunes of Erg Chebbi. It offers visitors a more authentic and serene glimpse into traditional desert life away from larger tourist hubs.",
+    "p2": "A walk through the village reveals traditional mud-brick architecture, shaded pathways beneath date palms, and ancient irrigation systems (khettaras) that bring life to the desert soil. Birdwatchers will also delight in spotting migratory desert birds near seasonal water sources.",
+    "p3": "With welcoming local guesthouses, artisan shops, and direct access to camel treks and desert safaris, Hassi Labied is an essential stop for anyone exploring the Merzouga region."
   },
   "gallery": {
-    "badge": "Galería",
+    "badge": "Galería de fotos",
     "title": "Hassi Labied en imágenes",
-    "subtitle": "Desliza para ver los exuberantes palmerales, las dunas doradas y la arquitectura tradicional.",
-    "s1": { "caption": "Oasis bordeando las dunas" },
-    "s2": { "caption": "Senderos sombreados en el palmeral" },
-    "s3": { "caption": "Arquitectura tradicional del pueblo" },
-    "s4": { "caption": "Luz de atardecer en las dunas" },
-    "s5": { "caption": "Ambiente tranquilo del pueblo" }
+    "subtitle": "Vistas desde Hassi Labied en Merzouga.",
+    "s1": {
+      "caption": "Hassi Labied — 1"
+    },
+    "s2": {
+      "caption": "Hassi Labied — 2"
+    },
+    "s3": {
+      "caption": "Hassi Labied — 3"
+    },
+    "s4": {
+      "caption": "Hassi Labied — 4"
+    },
+    "s5": {
+      "caption": "Hassi Labied — 5"
+    }
   },
   "moods": {
-    "badge": "Destacados",
-    "title": "Qué experimentar en Hassi Labied",
-    "subtitle": "Naturaleza, cultura y serenidad: tres dimensiones clave del pueblo.",
-    "1": { "tag": "Naturaleza", "title": "El Palmeral", "desc": "Pasea por frondosos senderos de jardín bajo las palmeras y descubre canales de agua ancestrales.", "duration": "Paseo • 45 min" },
-    "2": { "tag": "Aventura", "title": "Acceso a las dunas", "desc": "Sube directamente desde el borde del pueblo a las magníficas dunas de arena de Erg Chebbi.", "duration": "Senderismo • 30 min" },
-    "3": { "tag": "Cultura", "title": "Hospitalidad local", "desc": "Toma un té de menta con los lugareños y aprende sobre las tradiciones bereberes en hostales familiares.", "duration": "Relajación • 1 hora" }
+    "badge": "Horarios",
+    "title": "What to Experience in Hassi Labied",
+    "subtitle": "Nature, culture and serenity — three key dimensions of the village.",
+    "1": {
+      "tag": "Nature",
+      "title": "The Palm Grove",
+      "desc": "Stroll along lush garden paths under date palms and discover ancient water channels.",
+      "duration": "Walk • 45 min"
+    },
+    "2": {
+      "tag": "Adventure",
+      "title": "Dune Access",
+      "desc": "Climb directly from the edge of the village onto the magnificent Erg Chebbi sand dunes.",
+      "duration": "Hiking • 30 min"
+    },
+    "3": {
+      "tag": "Culture",
+      "title": "Local Hospitality",
+      "desc": "Sip mint tea with friendly locals and learn about Amazigh traditions in family guesthouses.",
+      "duration": "Relaxation • 1 hour"
+    }
   },
   "food": {
-    "title": "Gastronomía en Hassi Labied",
-    "p1": "Disfruta de auténtica cocina tradicional en acogedores riads familiares y restaurantes locales.",
-    "li1": "Tajines bereberes cocinados a fuego lento con verduras locales y especias",
-    "li2": "Pan nómada recién horneado sobre brasas calientes",
-    "li3": "Té de menta tradicional ofrecido en patios sombreados",
-    "li4": "Dátiles dulces cosechados directamente en el oasis circundante",
-    "li5": "Cenas nocturnas bajo las estrellas en los alojamientos del pueblo",
-    "p2": "La mayoría de los alojamientos locales ofrecen deliciosas cenas caseras bajo petición."
+    "title": "Dining in Hassi Labied",
+    "p1": "Enjoy authentic traditional cuisine in cozy family-run riads and local village restaurants.",
+    "li1": "Slow-cooked Berber tagines with local vegetables and spices",
+    "li2": "Freshly baked nomad bread cooked over hot coals",
+    "li3": "Traditional mint tea welcoming guests in shaded courtyards",
+    "li4": "Local sweet dates harvested directly from the surrounding oasis",
+    "li5": "Evening meals under the stars at village guesthouses",
+    "p2": "Most local guesthouses and riads offer delicious home-cooked dinners upon request."
   },
   "tips": {
-    "title": "Consejos prácticos para visitar Hassi Labied",
-    "1": { "title": "Calzado y ropa", "desc": "Lleva zapatos de caminar cómodos para los senderos arenosos y ropa ligera y transpirable." },
-    "2": { "title": "Protección solar", "desc": "Lleva sombrero, gafas de sol y protector solar, especialmente al caminar cerca de las dunas al mediodía." },
-    "3": { "title": "Turismo respetuoso", "desc": "Pide siempre permiso antes de tomar fotos de los lugareños trabajando en el oasis." }
+    "title": "Practical Tips for Visiting Hassi Labied",
+    "1": {
+      "title": "Footwear & Clothing",
+      "desc": "Wear comfortable walking shoes for sandy oasis trails and light, breathable clothing."
+    },
+    "2": {
+      "title": "Sun Protection",
+      "desc": "Bring a hat, sunglasses, and sunscreen, especially when walking near open dunes at midday."
+    },
+    "3": {
+      "title": "Respectful Tourism",
+      "desc": "Always ask permission before taking photos of local residents working in the oasis."
+    }
   },
   "gyg": {
-    "badge": "Excursiones y Actividades",
-    "title": "Reserva un tour de Desierto y Oasis",
-    "subtitle": "Excursiones mejor valoradas que parten directamente desde Merzouga y Hassi Labied.",
-    "t1": { "tag": "Safari 4x4", "title": "Merzouga: Safari 4x4 en Erg Chebbi y tour de oasis", "desc": "Explora pistas del desierto, asentamientos nómadas y pueblos oasis con un conductor experto." },
-    "t2": { "tag": "Dromedario", "title": "Merzouga: Paseo en camello al atardecer y campamento nocturno", "desc": "Cruza las dunas doradas de Erg Chebbi y pasa una noche inolvidable bajo las estrellas." },
-    "t3": { "tag": "Tour Cultural", "title": "Merzouga: Pueblo de Khamlia y música del desierto", "desc": "Descubre la música tradicional Ganaue y la cultura en el pueblo vecino de Khamlia." },
-    "check": "Comprobar disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una pequeña comisión sin coste extra."
+    "badge": "Tours y experiencias",
+    "title": "Book a Desert & Oasis Tour",
+    "subtitle": "Top-rated excursions starting right from the Merzouga and Hassi Labied area.",
+    "t1": {
+      "tag": "4x4 Safari",
+      "title": "Merzouga: Erg Chebbi 4x4 Desert Safari & Oasis Tour",
+      "desc": "Explore desert tracks, nomadic settlements and oasis villages with an expert local driver."
+    },
+    "check": "Ver disponibilidad en GetYourGuide →",
+    "t2": {
+      "tag": "Camel Trek",
+      "title": "Merzouga: Sunset Camel Trek & Overnight Desert Camp",
+      "desc": "Ride across the golden dunes of Erg Chebbi and spend an unforgettable night under the stars."
+    },
+    "t3": {
+      "tag": "Cultural Tour",
+      "title": "Merzouga: Khamlia Village & Desert Music Tour",
+      "desc": "Discover traditional Gnawa music and culture in the neighboring village of Khamlia."
+    },
+    "disclosure": "Algunos de estos enlaces son de afiliados. Si reserva a través de ellos, podemos recibir una pequeña comisión sin coste extra para usted."
   },
   "nearby": {
-    "badge": "Sigue explorando",
-    "title": "Más lugares imprescindibles en Merzouga",
+    "badge": "Seguir explorando",
+    "title": "Más lugares en Merzouga",
     "back": "← Volver a la guía de Merzouga",
-    "tag": "Imprescindible",
+    "tag": "Lugar",
     "erg": "Erg Chebbi",
-    "erg_desc": "Vastas dunas doradas: el corazón de Merzouga.",
-    "camel": "Paseo en dromedario",
-    "camel_desc": "Ruta al atardecer o amanecer por el erg.",
-    "camp": "Campamento Desierto",
-    "camp_desc": "Noche mágica bajo las estrellas del Sahara.",
+    "erg_desc": "Vast golden dunes — the heart of Merzouga.",
+    "explore": "Explorar el lugar →",
+    "camel": "Camel Trek",
+    "camel_desc": "Sunset or sunrise ride into the erg.",
+    "camp": "Desert Camp",
+    "camp_desc": "Overnight under the Saharan sky.",
     "khamlia": "Khamlia",
-    "khamlia_desc": "Pueblo de música Ganaue junto a las dunas.",
-    "explore": "Explorar lugar →"
+    "khamlia_desc": "Gnawa music village near the dunes."
   },
   "blog": {
-    "badge": "Del Blog",
+    "badge": "Del blog",
     "title": "Artículos relacionados",
     "all": "Todos los artículos →",
-    "a1": { "tag": "Gastronomía", "title": "Guía gastronómica de Merzouga: Tajines y cocina del desierto", "desc": "Dónde comer bien en Merzouga, desde cenas en campamentos hasta tajines tradicionales." },
-    "a2": { "tag": "Transporte", "title": "Cómo moverse por Merzouga: 4x4, traslados y pistas", "desc": "Formas prácticas de viajar desde Errachidia y desplazarse entre el pueblo y las dunas." },
-    "a3": { "tag": "Planificación", "title": "Primer viaje a Merzouga: Qué esperar en el Sahara", "desc": "Cómo se siente el desierto el primer día y cómo planificar tus visitas naturales sin prisas." },
-    "read": "Leer el artículo →"
+    "a1": {
+      "tag": "Planificar",
+      "title": "Primera vez en Merzouga",
+      "desc": "Dunas, camellos y duración de la estancia."
+    },
+    "read": "Leer el artículo →",
+    "a2": {
+      "tag": "Guía",
+      "title": "Desierto marroquí",
+      "desc": "Consejos prácticos para el Erg Chebbi."
+    },
+    "a3": {
+      "tag": "Naturaleza",
+      "title": "Erg Chebbi",
+      "desc": "Dunas, amanecer y atardecer."
+    }
   },
   "faq": {
     "badge": "Bueno saber",
-    "title": "Preguntas frecuentes sobre Hassi Labied",
-    "q1": { "question": "¿Por qué es conocido Hassi Labied?", "answer": "Hassi Labied es un apacible pueblo oasis situado junto a las imponentes dunas de Erg Chebbi, famoso por sus exuberantes palmerales, agricultura tradicional y acogedores hostales." },
-    "q2": { "question": "¿Se puede caminar por el palmeral?", "answer": "Sí, pasear por los palmerales sombreados y explorar los antiguos canales de riego (khettaras) es una de las actividades más relajantes de la zona." },
-    "q3": { "question": "¿Cuál es el mejor momento para visitar Hassi Labied?", "answer": "Las mañanas tempranas o las últimas horas de la tarde ofrecen temperaturas agradables y una hermosa luz dorada sobre las dunas y el oasis." },
-    "q4": { "question": "¿Cuánto tiempo toma la visita?", "answer": "Un paseo tranquilo por el pueblo y el palmeral dura entre 1 y 2 horas, aunque muchos viajeros deciden alojarse varios días en riads locales." },
-    "q5": { "question": "¿Está Hassi Labied cerca de las dunas?", "answer": "Extremadamente cerca: el pueblo limita directamente con las dunas de arena de Erg Chebbi, lo que lo convierte en un punto de partida ideal para excursiones en camello." }
+    "title": "FAQ Hassi Labied",
+    "q1": {
+      "question": "¿Por qué es conocido Hassi Labied?",
+      "answer": "Pueblo oasis tranquilo pegado a las dunas doradas del Erg Chebbi, palmeral, agricultura tradicional y casas de huéspedes acogedoras."
+    },
+    "q2": {
+      "question": "¿Se puede caminar por el palmeral?",
+      "answer": "Sí, caminar a la sombra de las palmeras y explorar los antiguos canales (khettaras) es una de las actividades más tranquilas."
+    },
+    "q3": {
+      "question": "¿Mejor momento?",
+      "answer": "Temprano por la mañana o final de tarde para temperaturas agradables y luz dorada."
+    },
+    "q4": {
+      "question": "¿Duración de la visita?",
+      "answer": "Un paseo tranquilo por pueblo y palmeral dura 1–2 h; muchos se quedan días en riads."
+    },
+    "q5": {
+      "question": "¿Cerca de las dunas?",
+      "answer": "Muy cerca — el pueblo bordea directamente el Erg Chebbi, ideal para salidas de treks y campamentos."
+    }
   }
 }

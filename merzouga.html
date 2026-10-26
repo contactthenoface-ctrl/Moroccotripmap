@@ -419,11 +419,11 @@
                 <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="merzouga_page.itinerary.subtitle">Dunes, a night in camp, and the villages around Erg Chebbi.</p>
             </div>
             <div class="itinerary-tabs">
-                <button class="tab-btn active" data-i18n="merzouga_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Dunes &amp; Village</button>
-                <button class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Camel Trek &amp; Camp</button>
-                <button class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Khamlia &amp; Rissani</button>
+                <button type="button" class="tab-btn active" data-i18n="merzouga_page.detailed_itinerary.day1_tab" onclick="openDay(event,\'day1\')">Day 1 — Dunes &amp; Village</button>
+                <button type="button" class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day2_tab" onclick="openDay(event,\'day2\')">Day 2 — Camel Trek &amp; Camp</button>
+                <button type="button" class="tab-btn" data-i18n="merzouga_page.detailed_itinerary.day3_tab" onclick="openDay(event,\'day3\')">Day 3 — Khamlia &amp; Rissani</button>
             </div>
-            <div class="tab-content active" id="day1">
+            <div class="tab-content active" id="day1" class="tab-content active">
                 <div class="day-card">
                     <h3 data-i18n="merzouga_page.detailed_itinerary.day1_m">Morning — Erg Chebbi viewpoint</h3>
                     <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="merzouga_page.detailed_itinerary.day1_md">Drive or walk to the edge of Erg Chebbi. Climb a dune for the first panoramic view before the heat peaks.</p>
@@ -456,350 +456,92 @@
         </section>
 
         <!-- Accommodation Directory & Filters -->
+        
+        <!-- ========================================== -->
+        <!-- SECTION HÉBERGEMENTS : 3 COUPS DE CŒUR + BANNIÈRE BOOKING -->
+        <!-- ========================================== -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
-            <div class="mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.directory.badge">Where to Stay</span>
-                <h2 class="text-3xl font-bold text-vert" data-i18n="merzouga_page.directory.title">Hotels, Kasbahs &amp; Desert Camps in Merzouga</h2>
-                <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="merzouga_page.directory.subtitle">Filter by type and area — village edge, Hassilabied, or overnight in the dunes.</p>
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.directory.badge">Where to Stay</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="merzouga_page.directory.title">Find your ideal stay in Merzouga</h2>
+                </div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="merzouga_page.directory.subtitle">
+                    Desert camps in Erg Chebbi, kasbah hotels and quiet auberges in Hassi Labied — open a listing for details.
+                </p>
             </div>
 
-            <div class="filter-section">
-                <div class="filter-container">
-                    <div class="filter-group">
-                        <label for="filter-type" data-i18n="merzouga_page.directory.filter_type_label">Accommodation Type</label>
-                        <select id="filter-type" onchange="filterAccommodations()">
-                            <option value="all" data-i18n="merzouga_page.directory.type_all">All types</option>
-                            <option value="hotel" data-i18n="merzouga_page.directory.type_hotel">Hotels &amp; Kasbahs</option>
-                            <option value="riad" data-i18n="merzouga_page.directory.type_riad">Riads &amp; Guesthouses</option>
-                            <option value="camp" data-i18n="merzouga_page.directory.type_camp">Desert Camps</option>
-                        </select>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                
+                <!-- Pick 1 — Desert Camp -->
+                <a href="https://www.booking.com/searchresults.html?ss=Merzouga+Desert+Camp" target="_blank" rel="noopener sponsored" class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Desert camp Erg Chebbi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.stays.card1.badge">★ Desert Camp</span>
                     </div>
-                    <div class="filter-group">
-                        <label for="filter-location" data-i18n="merzouga_page.directory.filter_location_label">Area</label>
-                        <select id="filter-location" onchange="filterAccommodations()">
-                            <option value="all" data-i18n="merzouga_page.directory.location_all">All areas</option>
-                            <option value="village" data-i18n="merzouga_page.directory.location_village">Merzouga village</option>
-                            <option value="hassilabied" data-i18n="merzouga_page.directory.location_hassilabied">Hassilabied</option>
-                            <option value="dunes" data-i18n="merzouga_page.directory.location_dunes">Dunes / desert camp</option>
-                            <option value="rissani" data-i18n="merzouga_page.directory.location_rissani">Rissani area</option>
-                        </select>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="merzouga_page.stays.card1.name">Luxury Camp Erg Chebbi</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="merzouga_page.stays.card1.desc">Overnight in a tented camp among the dunes — Berber dinner, drums and sunrise over the erg.</p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="merzouga_page.stays.card1.location">Erg Chebbi dunes</span>
+                            <span class="text-xs font-bold text-sable group-hover:underline" data-i18n="merzouga_page.directory.check_availability">Book →</span>
+                        </div>
                     </div>
-                </div>
-                <div class="filter-counter" id="accommodation-counter" data-i18n="merzouga_page.directory.counter">28 accommodations listed</div>
+                </a>
+
+                <!-- Pick 2 — Kasbah / hotel with dune views -->
+                <a href="https://www.booking.com/searchresults.html?ss=Kasbah+Merzouga" target="_blank" rel="noopener sponsored" class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Kasbah hotel Merzouga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.stays.card2.badge">★ Kasbah &amp; Views</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="merzouga_page.stays.card2.name">Kasbah Hotel with Dune Views</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="merzouga_page.stays.card2.desc">Comfortable rooms and terraces facing Erg Chebbi — ideal base before or after a camel trek.</p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="merzouga_page.stays.card2.location">Merzouga village edge</span>
+                            <span class="text-xs font-bold text-sable group-hover:underline" data-i18n="merzouga_page.directory.check_availability">Book →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Pick 3 — Hassi Labied auberge -->
+                <a href="https://www.booking.com/searchresults.html?ss=Hassi+Labied+Merzouga" target="_blank" rel="noopener sponsored" class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hassi Labied auberge" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="merzouga_page.stays.card3.badge">★ Oasis Quiet</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="merzouga_page.stays.card3.name">Auberge Hassi Labied</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="merzouga_page.stays.card3.desc">Calm auberges in the palm grove at the foot of the erg — direct dune access and fewer crowds.</p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="merzouga_page.stays.card3.location">Hassi Labied</span>
+                            <span class="text-xs font-bold text-sable group-hover:underline" data-i18n="merzouga_page.directory.check_availability">Book →</span>
+                        </div>
+                    </div>
+                </a>
+
             </div>
 
-            <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Kasbah Mohayut" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">1. Kasbah Mohayut</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Kasbah hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Kasbah+Mohayut+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
+            <!-- BOOKING REDIRECTION BANNER -->
+            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="max-w-xl text-left z-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="merzouga_page.booking_banner.badge">Camps, kasbahs &amp; auberges around Erg Chebbi</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="merzouga_page.booking_banner.title">Explore all stays in Merzouga</h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="merzouga_page.booking_banner.desc">Compare real-time rates, read verified guest reviews, and enjoy free cancellation on top desert camps and village hotels.</p>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hotel Yasmina" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">2. Hotel Yasmina</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Dune-view hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Yasmina+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
+                <div class="w-full md:w-auto shrink-0 z-10 text-center">
+                    <a href="https://www.booking.com/searchresults.html?ss=Merzouga" target="_blank" rel="noopener sponsored" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                       <span data-i18n="merzouga_page.booking_banner.btn">View all stays on Booking.com</span>
+                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="merzouga_page.booking_banner.guarantee">✓ Best price guarantee &amp; secure booking</p>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Kasbah Azalay Merzouga" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">3. Kasbah Azalay Merzouga</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Kasbah with pool</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Kasbah+Azalay+Merzouga+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Hotel Kanz Erremal" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">4. Hotel Kanz Erremal</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.6</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Dune-edge hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Kanz+Erremal+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Nomad" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">5. Riad Nomad</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Village riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Nomad+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Riad Madu" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">6. Riad Madu</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Boutique riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Madu+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Dar El Janoub" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">7. Dar El Janoub</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Guesthouse style</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Dar+El+Janoub+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80" alt="Merzouga Resort" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">8. Merzouga Resort</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.4</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Resort near dunes</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Merzouga+Resort+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="hassilabied">
-                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Auberge du Sud" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">9. Auberge du Sud</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Classic auberge</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Auberge+du+Sud+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="hassilabied">
-                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Chez Julia" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">10. Chez Julia</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Family guesthouse</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Chez+Julia+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="hassilabied">
-                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Kasbah Tombouctou" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">11. Kasbah Tombouctou</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Kasbah Hassilabied</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Kasbah+Tombouctou+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="hassilabied">
-                    <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80" alt="Auberge Les Dunes d'Or" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">12. Auberge Les Dunes d'Or</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.6</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Dune-side auberge</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Auberge+Les+Dunes+d'Or+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="hassilabied">
-                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Maison Merzouga" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">13. Maison Merzouga</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Quiet guesthouse</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Maison+Merzouga+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="hassilabied">
-                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Hotel Panorama Merzouga" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">14. Hotel Panorama Merzouga</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.3</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: View over erg</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Panorama+Merzouga+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="camp" data-location="dunes">
-                    <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80" alt="Sahara Stars Camp" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">15. Sahara Stars Camp</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes / camp | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Desert camp</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Sahara+Stars+Camp+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="camp" data-location="dunes">
-                    <img src="https://images.unsplash.com/photo-1517824805568-7cece4e3d2a6?auto=format&fit=crop&w=800&q=80" alt="Merzouga Luxury Camp" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">16. Merzouga Luxury Camp</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.3</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes / camp | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Luxury tents</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Merzouga+Luxury+Camp+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="camp" data-location="dunes">
-                    <img src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&fit=crop&w=800&q=80" alt="Nomad Camp Merzouga" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">17. Nomad Camp Merzouga</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes / camp | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Berber camp</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Nomad+Camp+Merzouga+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="camp" data-location="dunes">
-                    <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=800&q=80" alt="Erg Chebbi Camp" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">18. Erg Chebbi Camp</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes / camp | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Classic bivouac</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Erg+Chebbi+Camp+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="camp" data-location="dunes">
-                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Desert Pearl Camp" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">19. Desert Pearl Camp</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes / camp | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Camp with dinner</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Desert+Pearl+Camp+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="camp" data-location="dunes">
-                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?auto=format&fit=crop&w=800&q=80" alt="Azawad Luxury Camp" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">20. Azawad Luxury Camp</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes / camp | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Premium desert camp</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Azawad+Luxury+Camp+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="camp" data-location="dunes">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80" alt="Standard Bivouac Camp" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">21. Standard Bivouac Camp</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.2</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Dunes / camp | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Budget desert night</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Standard+Bivouac+Camp+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Palais du Desert" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">22. Palais du Desert</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Comfort hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Palais+du+Desert+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Riad Merzouga Dunes" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">23. Riad Merzouga Dunes</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Riad near erg</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Merzouga+Dunes+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80" alt="Auberge Cafe du Sud" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">24. Auberge Cafe du Sud</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.4</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Simple auberge</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Auberge+Cafe+du+Sud+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="hassilabied">
-                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Dar Nasser" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">25. Dar Nasser</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Hassilabied | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Local guesthouse</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Nasser+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="rissani">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Hotel Sijilmassa" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">26. Hotel Sijilmassa</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Rissani area | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Rissani base</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Sijilmassa+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="rissani">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Kasbah Hotel Xaluca Arfoud" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">27. Kasbah Hotel Xaluca Arfoud</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.3</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Rissani area | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Near Erfoud/Rissani</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Kasbah+Hotel+Xaluca+Arfoud+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="village">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Alma" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">28. Riad Alma</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="merzouga_page.directory.district_label">Area</span>: Merzouga village | <span data-i18n="merzouga_page.directory.type_label">Type</span>: Intimate riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Alma+Merzouga" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="merzouga_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
             </div>
-            <p id="no-results" class="no-results-msg" style="display:none" data-i18n="merzouga_page.directory.no_results">No accommodations match your filters.</p>
         </section>
+
 
         <!-- Where to Eat Section -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
@@ -1070,17 +812,21 @@
     <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
     <script>
         function openDay(evt, dayId) {
-            var tabContents = document.getElementsByClassName("tab-content");
-            for (var i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.remove("active");
+            if (evt && evt.preventDefault) evt.preventDefault();
+            var tabContents = document.querySelectorAll(".itinerary-section .tab-content, .tab-content");
+            tabContents.forEach(function (el) { el.classList.remove("active"); });
+            var tabBtns = document.querySelectorAll(".itinerary-section .tab-btn, .tab-btn");
+            tabBtns.forEach(function (el) { el.classList.remove("active"); });
+            var panel = document.getElementById(dayId);
+            if (panel) panel.classList.add("active");
+            var target = (evt && (evt.currentTarget || evt.target)) || null;
+            if (target && target.classList) target.classList.add("active");
+            else {
+                var btn = document.querySelector('.tab-btn[onclick*="' + dayId + '"]');
+                if (btn) btn.classList.add("active");
             }
-            var tabBtns = document.getElementsByClassName("tab-btn");
-            for (var i = 0; i < tabBtns.length; i++) {
-                tabBtns[i].classList.remove("active");
-            }
-            document.getElementById(dayId).classList.add("active");
-            evt.currentTarget.classList.add("active");
         }
+        window.openDay = openDay;
 
         function filterAccommodations() {
             var selectedType = document.getElementById("filter-type").value;

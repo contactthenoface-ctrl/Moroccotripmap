@@ -58,6 +58,7 @@
         body { font-family: 'Outfit', sans-serif; }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -225,104 +226,117 @@
             </div>
         </div>
 
-        <!-- SECTION: ENRICHED OVERVIEW – The Architecture & Sanctuary of Moroccan Stays -->
+        <!-- SECTION: ENRICHED OVERVIEW – The Art of Moroccan Stays -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="max-w-4xl mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-widest" data-i18n="stays_page.overview.eyebrow">Architectural Sanctuaries</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-vert mt-1" data-i18n="stays_page.overview.title">Beyond Accommodation: The Timeless Sanctuary of Moroccan Riads</h2>
+            <div class="max-w-4xl mb-12">
+                <span class="text-xs font-bold text-sable uppercase tracking-widest" data-i18n="stays_page.overview.eyebrow">Heritage Behind Closed Doors</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-vert mt-1" data-i18n="stays_page.overview.title">Riads, Kasbahs &amp; Desert Camps: Morocco’s Signature Stays</h2>
                 <div class="mt-4 space-y-4 text-sombre/80 text-sm sm:text-base leading-relaxed">
                     <p data-i18n="stays_page.overview.p1">
-                        Choosing where to stay in Morocco is an architectural journey into centuries of master craftsmanship. Traditional riads and dars are inward-looking urban sanctuaries designed for privacy, climate control, and spiritual calm. Concealed behind heavy, unadorned wooden doors in the labyrinth of ancient medinas, these properties reveal breathtaking central courtyards adorned with hand-cut zellige tiles, carved cedar-wood galleries, blooming citrus trees, and soothing marble fountains.
+                        Staying in Morocco is far more than booking a room — it is an immersion into centuries of refined hospitality. Traditional riads, elegant dars, restored kasbahs, and luxury desert camps form the backbone of authentic accommodation across the country. Hidden behind unassuming medina doors, these houses open onto secret courtyards filled with citrus trees, mosaic fountains, and the soft play of light on hand-cut zellige tiles.
                     </p>
                     <p data-i18n="stays_page.overview.p2">
-                        From the imperial palaces of Marrakech and Fes to the blue-washed alleyways of Chefchaouen, the earthen kasbahs of the Saharan fringe, and luxury desert tented camps under the stars of Erg Chebbi, Moroccan accommodations offer a rare blend of heritage and modern boutique comfort. Every stay immerses travelers in authentic local textures—from smooth tadelakt walls and hand-knotted Berber rugs to sun-drenched rooftop terraces overlooking the timeless minarets of North Africa.
+                        A classic riad is built around a central garden (the word “riad” itself means garden), often featuring a plunge pool, tadelakt walls, cedar-wood ceilings, and rooftop terraces that overlook the labyrinth of the medina. Dars are typically smaller and more intimate, organized around a light-well patio. Beyond the imperial cities, travelers can sleep in ancient earthen kasbahs along the Route of the Thousand Kasbahs, or experience the silence of the Sahara in luxury tented camps under the stars of Erg Chebbi and Erg Chigaga. Whether you seek a boutique palace in Marrakech, a blue-washed guesthouse in Chefchaouen, or a palm-grove retreat in Skoura, Morocco offers an unmatched spectrum of stays that blend heritage, comfort, and genuine local welcome.
                     </p>
                 </div>
             </div>
+        </section>
 
-            <!-- CARROUSEL DES TYPES D'HÉBERGEMENTS (SLIDER INTERACTIF RESPONSIF) -->
-            <div class="mt-8">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg sm:text-xl font-bold text-vert" data-i18n="stays_page.carousel.title">Explore Distinctive Moroccan Accommodations</h3>
-                    <div class="hidden sm:flex items-center gap-2">
-                        <button onclick="document.getElementById('stays-carousel').scrollBy({left: -280, behavior: 'smooth'})" class="p-2 rounded-full bg-white border border-sable/20 text-sombre hover:bg-vert hover:text-white transition shadow-sm" aria-label="Previous">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-                        </button>
-                        <button onclick="document.getElementById('stays-carousel').scrollBy({left: 280, behavior: 'smooth'})" class="p-2 rounded-full bg-white border border-sable/20 text-sombre hover:bg-vert hover:text-white transition shadow-sm" aria-label="Next">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div id="stays-carousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-4 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0">
-
-                    <!-- Slide 1: Traditional Riads -->
-                    <div class="snap-start shrink-0 w-[240px] sm:w-[280px] h-[260px] sm:h-[300px] relative rounded-2xl overflow-hidden group shadow-md hover:shadow-xl transition duration-300 border border-sable/20">
-                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=600&q=80" alt="Traditional Riad in Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-sombre/95 via-sombre/40 to-transparent"></div>
-                        <div class="absolute top-3 left-3">
-                            <span class="bg-sable/90 backdrop-blur-md text-sombre text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider" data-i18n="stays_page.types.riad.tag">Courtyard Garden</span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                            <h4 class="text-base font-bold mb-1 group-hover:text-sable transition" data-i18n="stays_page.types.riad.title">Traditional Medina Riads</h4>
-                            <p class="text-[11px] text-creme/80 leading-snug line-clamp-2" data-i18n="stays_page.types.riad.desc">Historic townhouses centered around lush courtyards, fountain pools, and orange trees.</p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2: Earthen Kasbahs -->
-                    <div class="snap-start shrink-0 w-[240px] sm:w-[280px] h-[260px] sm:h-[300px] relative rounded-2xl overflow-hidden group shadow-md hover:shadow-xl transition duration-300 border border-sable/20">
-                        <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=600&q=80" alt="Authentic Moroccan Kasbah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-sombre/95 via-sombre/40 to-transparent"></div>
-                        <div class="absolute top-3 left-3">
-                            <span class="bg-sable/90 backdrop-blur-md text-sombre text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider" data-i18n="stays_page.types.kasbah.tag">Fortified Heritage</span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                            <h4 class="text-base font-bold mb-1 group-hover:text-sable transition" data-i18n="stays_page.types.kasbah.title">Fortified Desert Kasbahs</h4>
-                            <p class="text-[11px] text-creme/80 leading-snug line-clamp-2" data-i18n="stays_page.types.kasbah.desc">Earthen fortresses and clay castles along the Valley of Roses and Ouarzazate.</p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3: Desert Luxury Camps -->
-                    <div class="snap-start shrink-0 w-[240px] sm:w-[280px] h-[260px] sm:h-[300px] relative rounded-2xl overflow-hidden group shadow-md hover:shadow-xl transition duration-300 border border-sable/20">
-                        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80" alt="Sahara Luxury Desert Camp" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-sombre/95 via-sombre/40 to-transparent"></div>
-                        <div class="absolute top-3 left-3">
-                            <span class="bg-sable/90 backdrop-blur-md text-sombre text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider" data-i18n="stays_page.types.desert.tag">Sahara Nights</span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                            <h4 class="text-base font-bold mb-1 group-hover:text-sable transition" data-i18n="stays_page.types.desert.title">Luxury Desert Bivouacs</h4>
-                            <p class="text-[11px] text-creme/80 leading-snug line-clamp-2" data-i18n="stays_page.types.desert.desc">Sleep among the golden dunes of Erg Chebbi in canvas suites equipped with private baths.</p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 4: Blue Medina Dars -->
-                    <div class="snap-start shrink-0 w-[240px] sm:w-[280px] h-[260px] sm:h-[300px] relative rounded-2xl overflow-hidden group shadow-md hover:shadow-xl transition duration-300 border border-sable/20">
-                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80" alt="Chefchaouen Guesthouse Dar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-sombre/95 via-sombre/40 to-transparent"></div>
-                        <div class="absolute top-3 left-3">
-                            <span class="bg-sable/90 backdrop-blur-md text-sombre text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider" data-i18n="stays_page.types.dar.tag">Intimate Houses</span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                            <h4 class="text-base font-bold mb-1 group-hover:text-sable transition" data-i18n="stays_page.types.dar.title">Boutique Dars & Guesthouses</h4>
-                            <p class="text-[11px] text-creme/80 leading-snug line-clamp-2" data-i18n="stays_page.types.dar.desc">Cozy traditional homes centered around a tiled light-well patio in blue alleys.</p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 5: Coastal Eco-Lodges -->
-                    <div class="snap-start shrink-0 w-[240px] sm:w-[280px] h-[260px] sm:h-[300px] relative rounded-2xl overflow-hidden group shadow-md hover:shadow-xl transition duration-300 border border-sable/20">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Ocean Eco Lodge Dakhla" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-sombre/95 via-sombre/40 to-transparent"></div>
-                        <div class="absolute top-3 left-3">
-                            <span class="bg-sable/90 backdrop-blur-md text-sombre text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider" data-i18n="stays_page.types.ecolodge.tag">Atlantic & Lagoon</span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                            <h4 class="text-base font-bold mb-1 group-hover:text-sable transition" data-i18n="stays_page.types.ecolodge.title">Coastal & Lagoon Eco-Lodges</h4>
-                            <p class="text-[11px] text-creme/80 leading-snug line-clamp-2" data-i18n="stays_page.types.ecolodge.desc">Waterfront bungalows in Dakhla and oceanfront rampart stays in Essaouira.</p>
-                        </div>
-                    </div>
-
-                </div>
+        <!-- CAROUSEL – Signature Moroccan Stays -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-sable uppercase tracking-widest" data-i18n="stays_page.carousel.eyebrow">Visual Journey</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-vert mt-1" data-i18n="stays_page.carousel.title">A Glimpse Inside Morocco’s Most Beautiful Stays</h3>
             </div>
+
+            <div class="relative group">
+                <!-- Track -->
+                <div id="stays-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar gap-5 pb-4 -mx-1 px-1">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide flex-none w-[85%] sm:w-[70%] md:w-[48%] lg:w-[32%] snap-center">
+                        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-md border border-sable/20 group/card">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Traditional Moroccan riad courtyard with pool" class="w-full h-full object-cover transition duration-700 group-hover/card:scale-105"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-sombre/80 via-sombre/20 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-sable" data-i18n="stays_page.carousel.slide1.tag">Riad Courtyard</span>
+                                <h4 class="text-lg font-bold mt-0.5 leading-tight" data-i18n="stays_page.carousel.slide1.title">Secret Gardens & Plunge Pools</h4>
+                                <p class="text-xs text-white/80 mt-1 line-clamp-2" data-i18n="stays_page.carousel.slide1.desc">Citrus trees, mosaic fountains and private pools hidden behind medina walls.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide flex-none w-[85%] sm:w-[70%] md:w-[48%] lg:w-[32%] snap-center">
+                        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-md border border-sable/20 group/card">
+                            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Moroccan rooftop terrace at sunset" class="w-full h-full object-cover transition duration-700 group-hover/card:scale-105"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-sombre/80 via-sombre/20 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-sable" data-i18n="stays_page.carousel.slide2.tag">Rooftop Terrace</span>
+                                <h4 class="text-lg font-bold mt-0.5 leading-tight" data-i18n="stays_page.carousel.slide2.title">Sunset Over the Medina</h4>
+                                <p class="text-xs text-white/80 mt-1 line-clamp-2" data-i18n="stays_page.carousel.slide2.desc">Breakfast with panoramic views and mint tea as the call to prayer echoes below.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide flex-none w-[85%] sm:w-[70%] md:w-[48%] lg:w-[32%] snap-center">
+                        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-md border border-sable/20 group/card">
+                            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Earthen kasbah in the Atlas" class="w-full h-full object-cover transition duration-700 group-hover/card:scale-105"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-sombre/80 via-sombre/20 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-sable" data-i18n="stays_page.carousel.slide3.tag">Kasbah</span>
+                                <h4 class="text-lg font-bold mt-0.5 leading-tight" data-i18n="stays_page.carousel.slide3.title">Ancient Fortresses of Clay</h4>
+                                <p class="text-xs text-white/80 mt-1 line-clamp-2" data-i18n="stays_page.carousel.slide3.desc">Restored earthen strongholds along the Route of the Thousand Kasbahs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-slide flex-none w-[85%] sm:w-[70%] md:w-[48%] lg:w-[32%] snap-center">
+                        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-md border border-sable/20 group/card">
+                            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80" alt="Luxury desert camp in Merzouga dunes" class="w-full h-full object-cover transition duration-700 group-hover/card:scale-105"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-sombre/80 via-sombre/20 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-sable" data-i18n="stays_page.carousel.slide4.tag">Desert Camp</span>
+                                <h4 class="text-lg font-bold mt-0.5 leading-tight" data-i18n="stays_page.carousel.slide4.title">Nights Under the Sahara Stars</h4>
+                                <p class="text-xs text-white/80 mt-1 line-clamp-2" data-i18n="stays_page.carousel.slide4.desc">Luxury tents, camel treks and silence in the golden dunes of Erg Chebbi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-slide flex-none w-[85%] sm:w-[70%] md:w-[48%] lg:w-[32%] snap-center">
+                        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-md border border-sable/20 group/card">
+                            <img src="https://images.unsplash.com/photo-1590073844006-3338026d5b2b?auto=format&fit=crop&w=800&q=80" alt="Zellige and tadelakt interior details" class="w-full h-full object-cover transition duration-700 group-hover/card:scale-105"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-sombre/80 via-sombre/20 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-sable" data-i18n="stays_page.carousel.slide5.tag">Craftsmanship</span>
+                                <h4 class="text-lg font-bold mt-0.5 leading-tight" data-i18n="stays_page.carousel.slide5.title">Zellige, Tadelakt & Cedar</h4>
+                                <p class="text-xs text-white/80 mt-1 line-clamp-2" data-i18n="stays_page.carousel.slide5.desc">Hand-cut mosaics, polished lime plaster and sculpted wood that define Moroccan interiors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="carousel-slide flex-none w-[85%] sm:w-[70%] md:w-[48%] lg:w-[32%] snap-center">
+                        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-md border border-sable/20 group/card">
+                            <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=800&q=80" alt="Blue-washed guesthouse in Chefchaouen" class="w-full h-full object-cover transition duration-700 group-hover/card:scale-105"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-sombre/80 via-sombre/20 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-sable" data-i18n="stays_page.carousel.slide6.tag">Chefchaouen</span>
+                                <h4 class="text-lg font-bold mt-0.5 leading-tight" data-i18n="stays_page.carousel.slide6.title">Blue-Washed Mountain Retreats</h4>
+                                <p class="text-xs text-white/80 mt-1 line-clamp-2" data-i18n="stays_page.carousel.slide6.desc">Intimate guesthouses painted in the famous blue of the Rif mountains.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation arrows (desktop) -->
+                <button id="carousel-prev" type="button" aria-label="Previous" class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 z-10 w-11 h-11 items-center justify-center rounded-full bg-white/95 border border-sable/30 shadow-lg text-vert hover:bg-vert hover:text-white transition opacity-0 group-hover:opacity-100">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button id="carousel-next" type="button" aria-label="Next" class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 z-10 w-11 h-11 items-center justify-center rounded-full bg-white/95 border border-sable/30 shadow-lg text-vert hover:bg-vert hover:text-white transition opacity-0 group-hover:opacity-100">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+
+            <!-- Dots -->
+            <div id="carousel-dots" class="flex justify-center gap-2 mt-5"></div>
         </section>
 
         <!-- Stays Grid Section with Filters -->
@@ -1248,6 +1262,51 @@
                     });
                 });
             });
+
+            // Carousel navigation
+            const carousel = document.getElementById('stays-carousel');
+            const prevBtn = document.getElementById('carousel-prev');
+            const nextBtn = document.getElementById('carousel-next');
+            const dotsContainer = document.getElementById('carousel-dots');
+
+            if (carousel) {
+                const slides = carousel.querySelectorAll('.carousel-slide');
+                const scrollAmount = () => {
+                    const slide = slides[0];
+                    return slide ? slide.offsetWidth + 20 : 300;
+                };
+
+                // Dots
+                slides.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.type = 'button';
+                    dot.className = 'w-2 h-2 rounded-full transition ' + (i === 0 ? 'bg-vert w-5' : 'bg-sable/40');
+                    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+                    dot.addEventListener('click', () => {
+                        carousel.scrollTo({ left: i * scrollAmount(), behavior: 'smooth' });
+                    });
+                    dotsContainer.appendChild(dot);
+                });
+
+                const updateDots = () => {
+                    const index = Math.round(carousel.scrollLeft / scrollAmount());
+                    const dots = dotsContainer.querySelectorAll('button');
+                    dots.forEach((d, i) => {
+                        d.className = 'w-2 h-2 rounded-full transition ' + (i === index ? 'bg-vert w-5' : 'bg-sable/40');
+                    });
+                };
+
+                carousel.addEventListener('scroll', () => {
+                    window.requestAnimationFrame(updateDots);
+                });
+
+                if (prevBtn) prevBtn.addEventListener('click', () => {
+                    carousel.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+                });
+                if (nextBtn) nextBtn.addEventListener('click', () => {
+                    carousel.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+                });
+            }
         });
     </script>
 

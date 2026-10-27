@@ -60,7 +60,7 @@
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative overflow-x-hidden">
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
@@ -195,7 +195,7 @@
     <!-- Main Content -->
     <main class="flex-grow">
         <!-- Hero Section -->
-        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative overflow-x-hidden">
+        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative">
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
                     <a class="hover:text-white transition" href="../index.html" data-i18n="gastronomy_page.breadcrumb.home">Home</a>
@@ -213,12 +213,12 @@
                 </div>
 
                 <!-- Instant Search Bar -->
-                <div class="mt-8 max-w-lg relative z-20">
+                <div class="mt-8 max-w-lg relative z-50">
                     <div class="relative">
                         <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search dish (e.g. Pastilla, Tajine) or city (e.g. Marrakech, Fes)..." data-i18n-placeholder="gastronomy_page.search_placeholder" type="text"/>
                         <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </div>
-                    <div id="pageSearchResults" class="absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100"></div>
+                    <div id="pageSearchResults" class="absolute top-full left-0 right-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-[100] text-sombre text-sm border border-sable/20 max-h-72 overflow-y-auto divide-y divide-gray-100"></div>
                 </div>
             </div>
             <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-sable/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -1535,7 +1535,7 @@
                 });
             });
 
-            // CORRECTION : Instant Search Input Logic (Multilingue Dynamique)
+            // Instant Search Input Logic (Multilingue + Arabe RTL)
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
 
@@ -1551,28 +1551,38 @@
                         return;
                     }
 
-                    // Récupération dynamique à chaque frappe pour s'adapter à la langue active (Arabe, Français, etc.)
+                    const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+                    const typeDish = isRTL ? 'طبق' : 'Dish';
+                    const typeCity = isRTL ? 'جولة طعام' : 'City Food Tour';
+                    const viewLabel = isRTL ? 'عرض ←' : 'View →';
+                    const noResultText = isRTL ? 'لم يتم العثور على طبق أو جولة' : 'No dish or city food tour found';
+
+                    // Récupération dynamique du texte affiché (fonctionne en arabe après i18n)
                     const currentSearchItems = [
                         ...Array.from(dishCards).map(c => ({
-                            type: 'Dish',
-                            title: c.querySelector('h3')?.textContent.trim() || '',
+                            type: typeDish,
+                            title: (c.querySelector('h3')?.textContent || '').trim(),
                             element: c
                         })),
                         ...Array.from(cityCards).map(c => ({
-                            type: 'City Food Tour',
-                            title: c.querySelector('h3')?.textContent.trim() || '',
+                            type: typeCity,
+                            title: (c.querySelector('h3')?.textContent || '').trim(),
                             element: c
                         }))
                     ];
 
-                    const matches = currentSearchItems.filter(item => item.title.toLowerCase().includes(query));
+                    const matches = currentSearchItems.filter(item =>
+                        item.title.toLowerCase().includes(query) ||
+                        (item.element.textContent || '').toLowerCase().includes(query)
+                    );
 
                     if (matches.length > 0) {
                         searchResults.classList.remove('hidden');
                         matches.forEach(match => {
                             const div = document.createElement('div');
-                            div.className = 'px-4 py-3 hover:bg-creme cursor-pointer text-sm font-medium text-sombre flex items-center justify-between';
-                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span> <span class="text-xs text-gray-400">(${match.type})</span></div> <span class="text-xs text-sable font-bold">View →</span>`;
+                            div.className = `px-4 py-3 hover:bg-creme cursor-pointer text-sm font-medium text-sombre flex items-center justify-between ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`;
+                            div.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span> <span class="text-xs text-gray-400">(${match.type})</span></div> <span class="text-xs text-sable font-bold">${viewLabel}</span>`;
                             
                             div.addEventListener('click', function() {
                                 searchInput.value = match.title;
@@ -1584,7 +1594,7 @@
                         });
                     } else {
                         searchResults.classList.remove('hidden');
-                        searchResults.innerHTML = '<div class="px-4 py-3 text-sm text-gray-500">No dish or city food tour found</div>';
+                        searchResults.innerHTML = `<div class="px-4 py-3 text-sm text-gray-500 ${isRTL ? 'text-right' : 'text-left'}">${noResultText}</div>`;
                     }
                 });
 

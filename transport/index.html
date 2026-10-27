@@ -213,16 +213,19 @@
                     <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">ONCF, Rentalcars &amp; GYG</strong> <span data-i18n="transport_page.stat_partners">Trusted Networks</span></span>
                 </div>
 
-        <!-- Instant Search Bar -->
-                <div class="mt-8 max-w-lg relative">
-                <div class="relative z-20">
-                <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search transport type (e.g. Train, Car Rental, Airport Transfer)..." data-i18n-placeholder="transport_page.search_placeholder" type="text"/>
-                <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                <!-- Instant Search Bar -->
+                <div class="mt-8 max-w-lg relative w-full z-40">
+                    <div class="relative">
+                    <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search transport type (e.g. Train, Car Rental, Airport Transfer)..." data-i18n-placeholder="transport_page.search_placeholder" type="text"/>
+                    <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </div>
+                <!-- Boîte de résultats -->
+                    <div id="pageSearchResults" class="absolute top-full left-0 right-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100"></div>
                 </div>
-        <!-- Boîte de résultats superposée en absolute avec un z-index élevé -->
-                <div id="pageSearchResults" class="absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100"></div>
-                </div>
-         
+            </div>
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-sable/10 rounded-full blur-3xl pointer-events-none"></div>
+        </div>
+
         <!-- SECTION 1: DETAILED INTRO & ICONIC TRANSPORT MODES -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="max-w-4xl mb-12">

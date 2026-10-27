@@ -102,7 +102,6 @@
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
                     </button>
                     
-                    <!-- CORRECTION DE LA SUPERPOSITION DU MENU DE LANGUES -->
                     <div class="hidden absolute right-0 mt-3 w-40 bg-white border border-sable/20 rounded-xl shadow-xl z-50 overflow-hidden py-1" id="lang-menu-dropdown">
                         <button class="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme transition text-left" onclick="switchLanguage('en')" type="button">
                             <svg class="rounded-sm shadow-sm" height="15" viewBox="0 0 60 30" width="20" xmlns="http://www.w3.org/2000/svg"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><clipPath id="t2"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"></path></clipPath><g clip-path="url(#s2)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path clip-path="url(#t2)" d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"></path></g></svg>
@@ -2010,19 +2009,12 @@
                 });
             }
 
-            // Instant Search Input Logic (avec support Arabe complet)
+            // Instant Search Input Logic (Correction dynamique multi-langue et arabe)
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
             const itineraryCards = document.querySelectorAll('.itinerary-card');
 
             if (searchInput && searchResults) {
-                const searchItems = Array.from(itineraryCards).map(card => ({
-                    title: card.querySelector('h2')?.textContent || '',
-                    description: card.querySelector('p')?.textContent || '',
-                    element: card,
-                    regionId: card.closest('.region-block')?.id || ''
-                }));
-
                 searchInput.addEventListener('input', function() {
                     const query = normalizeText(this.value.trim());
                     searchResults.innerHTML = '';
@@ -2031,6 +2023,14 @@
                         searchResults.classList.add('hidden');
                         return;
                     }
+
+                    // Récupération dynamique du texte traduit actuellement affiché dans le DOM
+                    const searchItems = Array.from(itineraryCards).map(card => ({
+                        title: card.querySelector('h2')?.textContent || '',
+                        description: card.querySelector('p')?.textContent || '',
+                        element: card,
+                        regionId: card.closest('.region-block')?.id || ''
+                    }));
 
                     const matches = searchItems.filter(item => {
                         const normTitle = normalizeText(item.title);

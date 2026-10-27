@@ -194,33 +194,36 @@
 
     <!-- Main Content -->
     <main class="flex-grow w-full">
-        <!-- Hero Section (Strictement votre design initial, sans overflow-hidden et avec padding-bottom élargi : pb-20) -->
-        <div class="bg-vert text-creme pt-14 pb-20 px-4 sm:px-6 lg:px-8 relative">
-            <div class="max-w-7xl mx-auto relative z-10">
-                <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
-                    <a class="hover:text-white transition" href="../index.html" data-i18n="guides_page.breadcrumb.home">Home</a>
-                    <span>/</span>
-                    <span class="text-white" data-i18n="guides_page.breadcrumb.guides">Travel Guides</span>
-                </div>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight"><span data-i18n="guides_page.hero.title">Essential Morocco Travel Guides &amp; Practical Advice</span></h1>
-                <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed"><span data-i18n="guides_page.hero.subtitle">Prepare your road trip smoothly with expert local insight. Explore practical logistics, car rental rules, budget breakdown, cultural customs, souk etiquette, and seasonal weather advice across Morocco.</span></p>
-                <div class="mt-6 flex flex-wrap gap-4 text-xs sm:text-sm text-creme/90">
-                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">100%</strong> <span data-i18n="guides_page.stat_verified">Verified Local Field Advice</span></span>
-                    <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">6</strong> <span data-i18n="guides_page.stat_regions">Geographic Regions Covered</span></span>
-                </div>
-
-                <!-- Instant Search Bar (avec w-full, relative et z-40) -->
-                <div class="mt-8 max-w-lg relative w-full z-40">
-                    <div class="relative">
-                        <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search guide (e.g. driving, dirham budget, hammam, bargaining, weather)..." data-i18n-placeholder="guides_page.search_placeholder" type="text"/>
-                        <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                    </div>
-                    <!-- Boîte de résultats (z-50 et absolute top-full) -->
-                    <div class="absolute top-full left-0 right-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100" id="pageSearchResults"></div>
-                </div>
-            </div>
-            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-sable/10 rounded-full blur-3xl pointer-events-none"></div>
+        <!-- Hero Section -->
+<div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative">
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
+            <a class="hover:text-white transition" href="../index.html" data-i18n="transport_page.breadcrumb.home">Home</a>
+            <span>/</span>
+            <span class="text-white" data-i18n="transport_page.breadcrumb.transport">Morocco Transport &amp; Rental</span>
         </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight" data-i18n="transport_page.hero.title">Getting Around Morocco: High-Speed Trains, Car Hire &amp; Transfers</h1>
+        <p class="text-creme/90 max-w-3xl text-sm sm:text-lg leading-relaxed" data-i18n="transport_page.hero.description">
+            Navigate Morocco with ease and confidence. Compare options for the Al Boraq high-speed train (ONCF), private airport transfers, 4x4 desert car rentals, CTM intercity coaches, and city taxis across 40+ destinations.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-4 text-xs sm:text-sm text-creme/90">
+            <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">12+</strong> <span data-i18n="transport_page.stat_modes">Transport Options</span></span>
+            <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">40+</strong> <span data-i18n="transport_page.stat_cities">Connected Cities</span></span>
+            <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 backdrop-blur-sm"><strong class="text-sable">ONCF, Rentalcars &amp; GYG</strong> <span data-i18n="transport_page.stat_partners">Trusted Networks</span></span>
+        </div>
+
+        <!-- Instant Search Bar -->
+        <div class="mt-8 max-w-lg relative w-full z-40">
+            <div class="relative">
+                <input autocomplete="off" class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-sombre placeholder-gray-400 outline-none shadow-md text-sm border border-sable/20 focus:border-sable transition" id="pageSearchInput" placeholder="Search transport type (e.g. Train, Car Rental, Airport Transfer)..." data-i18n-placeholder="transport_page.search_placeholder" type="text"/>
+                <svg class="w-5 h-5 text-sable absolute left-3.5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            </div>
+            <!-- Boîte de résultats -->
+            <div id="pageSearchResults" class="absolute top-full left-0 right-0 w-full mt-2 bg-white rounded-2xl shadow-2xl overflow-hidden hidden z-50 text-sombre text-sm border border-sable/20 max-h-64 overflow-y-auto divide-y divide-gray-100"></div>
+        </div>
+    </div>
+    <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-sable/10 rounded-full blur-3xl pointer-events-none"></div>
+</div>
 
         <!-- SECTION 1: DETAILED INTRO & ICONIC MOROCCAN DISHES -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

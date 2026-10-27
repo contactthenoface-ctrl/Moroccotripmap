@@ -3,7 +3,7 @@
 <head>
     <meta name="robots" content="noindex, nofollow">
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
     <meta name="google" content="notranslate"/>
 
     <!-- Favicon SVG -->
@@ -55,12 +55,19 @@
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
     <style>
+        html, body {
+            overflow-x: hidden !important;
+            max-width: 100%;
+            width: 100%;
+        }
         body { font-family: 'Outfit', sans-serif; }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        /* Empêche tout élément absolu (blur décoratif) d'élargir la page */
+        .hero-clip { overflow: hidden; }
     </style>
 </head>
-<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
+<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative overflow-x-hidden">
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">

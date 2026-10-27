@@ -422,50 +422,48 @@
             </div>
         </section>
 
-        <!-- Recommended Itinerary Section (Corrigé à 3 jours) -->
-        <section class="itinerary-section">
-            <div class="text-center mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="el_jadida_page.itinerary.badge">Planning</span>
-                <h2 class="text-3xl font-bold text-vert" data-i18n="el_jadida_page.itinerary.title">Suggested 3-day plan for El Jadida</h2>
-                <p class="text-sm text-sombre/70 max-w-2xl mx-auto mt-2" data-i18n="el_jadida_page.itinerary.subtitle">Citadel and port first, then beaches and relaxation.</p>
-            </div>
+            <!-- Les 3 boutons d'onglets corrigés -->
             <div class="itinerary-tabs">
                 <button class="tab-btn active" data-i18n="el_jadida_page.detailed_itinerary.day1_tab" onclick="openDay(event,'day1')">Day 1 — Arrival &amp; citadel</button>
-                <button class="tab-btn" data-i18n="el_jadida_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Wind</button>
-                <button class="tab-btn" data-i18n="el_jadida_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day3')">Day 3 — Dunes &amp; Island</button>
+                <button class="tab-btn" data-i18n="el_jadida_page.detailed_itinerary.day2_tab" onclick="openDay(event,'day2')">Day 2 — Beaches &amp; Mellah</button>
+                <button class="tab-btn" data-i18n="el_jadida_page.detailed_itinerary.day3_tab" onclick="openDay(event,'day3')">Day 3 — Haouzia &amp; Corniche</button>
             </div>
+
+            <!-- Contenu Jour 1 -->
             <div class="tab-content active" id="day1">
                 <div class="day-card">
-                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day1_m">Morning — Arrive</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day1_md">Transfer from El Jadida Airport; check in near the citadel or in town.</p>
-                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day1_a">Afternoon — First citadel view</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day1_ad">Walk the shore, note wind direction, plan tomorrow’s session.</p>
+                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day1_m">Morning — Arrive &amp; Portuguese City</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day1_md">Explore the UNESCO-listed Portuguese Citadel, walk along the ramparts and discover the famous underground Portuguese Cistern.</p>
+                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day1_a">Afternoon — Church &amp; Bastions</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day1_ad">Visit the Church of the Assumption and enjoy panoramic views of the Atlantic from the historic bastions.</p>
                     <h3 data-i18n="el_jadida_page.detailed_itinerary.day1_e">Evening — Sunset on the water</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day1_ed">Quiet light over the citadel; simple dinner.</p>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day1_ed">Quiet light over the citadel; simple dinner near the port.</p>
                 </div>
             </div>
+
+            <!-- Contenu Jour 2 -->
             <div class="tab-content" id="day2">
                 <div class="day-card">
-                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_m">Morning — Sports Session</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_md">heritage or history on the citadel’s calm water.</p>
-                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_a">Afternoon — Second Session or Rest</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_ad">More water time or relaxing at a shore-side café.</p>
-                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_e">Evening — Camp or Town</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_ed">An evening by the citadel or along the waterfront.</p>
+                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_m">Morning — Mellah &amp; Souks</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_md">Stroll through the old Jewish quarter (Mellah) and explore the bustling central market and local spice souks.</p>
+                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_a">Afternoon — Fishing Port</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_ad">Watch the traditional blue fishing boats return and sample fresh grilled fish at the quayside stalls.</p>
+                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_e">Evening — Seaside Café</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_ed">Relax with a traditional mint tea facing the ocean.</p>
                 </div>
             </div>
+
+            <!-- Contenu Jour 3 -->
             <div class="tab-content" id="day3">
                 <div class="day-card">
-                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_m">Morning — Ramparts</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_md">Drive or take a boat toward the Ramparts to enjoy the views.</p>
-                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_a">Afternoon — Bastions View</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_ad">Spot the rocky formation, take photos, and enjoy the citadel light.</p>
-                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day2_e">Evening — Optional Oysters</h3>
-                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day2_ed">Taste citadel oysters if in season.</p>
+                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day3_m">Morning — Haouzia Beach</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day3_md">Head north to Haouzia Beach, famous for its wide golden sands and the mysterious shipwreck stranded offshore.</p>
+                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day3_a">Afternoon — Atlantic Corniche</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day3_ad">Walk along the vibrant El Jadida corniche, enjoy seaside cafes, or try water activities.</p>
+                    <h3 data-i18n="el_jadida_page.detailed_itinerary.day3_e">Evening — Farewell Dinner</h3>
+                    <p class="text-sm text-sombre/75 leading-relaxed" data-i18n="el_jadida_page.detailed_itinerary.day3_ed">Enjoy a final Moroccan dinner overlooking the illuminated ramparts.</p>
                 </div>
             </div>
-        </section>
-
         <!-- ========================================== -->
         <!-- SECTION HÉBERGEMENTS HYBRIDE : COUPS DE CŒUR + BANNIÈRE BOOKING -->
         <!-- ========================================== -->

@@ -1486,29 +1486,14 @@
                     });
                 });
             });
-
-            // Instant Search Input Logic (Corrigé pour l'Arabe & RTL)
+            
+            // Instant Search Input Logic (Correction complète pour la recherche en arabe)
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
 
             if (searchInput && searchResults) {
-                const searchItems = [
-                    ...Array.from(modeCards).map(c => ({
-                        type: 'Transport Mode',
-                        title: c.querySelector('h3')?.textContent || '',
-                        element: c,
-                        targetSection: 'modes'
-                    })),
-                    ...Array.from(cityCards).map(c => ({
-                        type: 'City Transport Hub',
-                        title: c.querySelector('h3')?.textContent || '',
-                        element: c,
-                        targetSection: 'cities'
-                    }))
-                ];
-
                 searchInput.addEventListener('input', function() {
-                    const query = this.value.toLowerCase().trim();
+                    const query = this.value.trim().toLowerCase();
                     searchResults.innerHTML = '';
 
                     if (query.length === 0) {
@@ -1518,6 +1503,21 @@
                         return;
                     }
 
+                    // Récupération dynamique des titres traduits (prend en compte l'arabe si le site a changé de langue)
+                    const searchItems = [
+                        ...Array.from(modeCards).map(c => ({
+                            type: document.documentElement.getAttribute('dir') === 'rtl' ? 'وسيلة نقل' : 'Transport Mode',
+                            title: c.querySelector('h3')?.textContent || '',
+                            element: c
+                        })),
+                        ...Array.from(cityCards).map(c => ({
+                            type: document.documentElement.getAttribute('dir') === 'rtl' ? 'محطة مدينة' : 'City Transport Hub',
+                            title: c.querySelector('h3')?.textContent || '',
+                            element: c
+                        }))
+                    ];
+
+                    // Filtrage insensible à la casse et supportant l'arabe
                     const matches = searchItems.filter(item => item.title.toLowerCase().includes(query));
                     const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
 
@@ -1538,7 +1538,7 @@
                         });
                     } else {
                         searchResults.classList.remove('hidden');
-                        const noResultText = isRTL ? 'لم يتم العثور على نتائج للنقل أو المحطة' : 'No transport mode or city hub found';
+                        const noResultText = isRTL ? 'لم يتم العثور على نتائج مطابقة' : 'No transport mode or city hub found';
                         searchResults.innerHTML = `<div class="px-4 py-3 text-sm text-gray-500 ${isRTL ? 'text-right' : 'text-left'}">${noResultText}</div>`;
                     }
                 });
@@ -1549,7 +1549,6 @@
                     }
                 });
             }
-        });
     </script>
 
     <!-- i18n & Global Search Scripts -->

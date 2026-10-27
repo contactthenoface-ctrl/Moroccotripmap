@@ -3,7 +3,7 @@
 <head>
     <meta name="robots" content="noindex, nofollow">
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
     <meta name="google" content="notranslate"/>
 
     <!-- Favicon SVG -->
@@ -55,9 +55,16 @@
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
     <style>
+        html, body {
+            overflow-x: hidden !important;
+            max-width: 100%;
+            width: 100%;
+        }
         body { font-family: 'Outfit', sans-serif; }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        /* Empêche tout élément absolu (blur décoratif) d'élargir la page */
+        .hero-clip { overflow: hidden; }
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative overflow-x-hidden">
@@ -195,7 +202,7 @@
     <!-- Main Content -->
     <main class="flex-grow">
         <!-- Hero Section -->
-        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative">
+        <div class="bg-vert text-creme py-14 px-4 sm:px-6 lg:px-8 relative overflow-x-hidden">
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-4 uppercase tracking-wider">
                     <a class="hover:text-white transition" href="../index.html" data-i18n="gastronomy_page.breadcrumb.home">Home</a>
@@ -1535,7 +1542,7 @@
                 });
             });
 
-            // Instant Search Input Logic (Multilingue + Arabe RTL)
+            // CORRECTION : Instant Search Input Logic (Multilingue Dynamique)
             const searchInput = document.getElementById('pageSearchInput');
             const searchResults = document.getElementById('pageSearchResults');
 
@@ -1551,38 +1558,28 @@
                         return;
                     }
 
-                    const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
-                    const typeDish = isRTL ? 'طبق' : 'Dish';
-                    const typeCity = isRTL ? 'جولة طعام' : 'City Food Tour';
-                    const viewLabel = isRTL ? 'عرض ←' : 'View →';
-                    const noResultText = isRTL ? 'لم يتم العثور على طبق أو جولة' : 'No dish or city food tour found';
-
-                    // Récupération dynamique du texte affiché (fonctionne en arabe après i18n)
+                    // Récupération dynamique à chaque frappe pour s'adapter à la langue active (Arabe, Français, etc.)
                     const currentSearchItems = [
                         ...Array.from(dishCards).map(c => ({
-                            type: typeDish,
-                            title: (c.querySelector('h3')?.textContent || '').trim(),
+                            type: 'Dish',
+                            title: c.querySelector('h3')?.textContent.trim() || '',
                             element: c
                         })),
                         ...Array.from(cityCards).map(c => ({
-                            type: typeCity,
-                            title: (c.querySelector('h3')?.textContent || '').trim(),
+                            type: 'City Food Tour',
+                            title: c.querySelector('h3')?.textContent.trim() || '',
                             element: c
                         }))
                     ];
 
-                    const matches = currentSearchItems.filter(item =>
-                        item.title.toLowerCase().includes(query) ||
-                        (item.element.textContent || '').toLowerCase().includes(query)
-                    );
+                    const matches = currentSearchItems.filter(item => item.title.toLowerCase().includes(query));
 
                     if (matches.length > 0) {
                         searchResults.classList.remove('hidden');
                         matches.forEach(match => {
                             const div = document.createElement('div');
-                            div.className = `px-4 py-3 hover:bg-creme cursor-pointer text-sm font-medium text-sombre flex items-center justify-between ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`;
-                            div.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span> <span class="text-xs text-gray-400">(${match.type})</span></div> <span class="text-xs text-sable font-bold">${viewLabel}</span>`;
+                            div.className = 'px-4 py-3 hover:bg-creme cursor-pointer text-sm font-medium text-sombre flex items-center justify-between';
+                            div.innerHTML = `<div><span class="font-bold text-vert">${match.title}</span> <span class="text-xs text-gray-400">(${match.type})</span></div> <span class="text-xs text-sable font-bold">View →</span>`;
                             
                             div.addEventListener('click', function() {
                                 searchInput.value = match.title;
@@ -1594,7 +1591,7 @@
                         });
                     } else {
                         searchResults.classList.remove('hidden');
-                        searchResults.innerHTML = `<div class="px-4 py-3 text-sm text-gray-500 ${isRTL ? 'text-right' : 'text-left'}">${noResultText}</div>`;
+                        searchResults.innerHTML = '<div class="px-4 py-3 text-sm text-gray-500">No dish or city food tour found</div>';
                     }
                 });
 

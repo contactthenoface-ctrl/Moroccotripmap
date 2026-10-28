@@ -24,7 +24,7 @@
         { name: "Merzouga", arabicName: "مرزوكة", type: "Ville", url: "merzouga.html", tags: ["merzouga", "desert", "dunes", "sahara", "erg chebbi", "camp", "مرزوكة"] },
         { name: "Azilal", arabicName: "أزيلال", type: "Ville", url: "azilal.html", tags: ["azilal", "ouzoud", "waterfalls", "atlas", "أزيلال"] },
         { name: "Tinghir", arabicName: "تنغير", type: "Ville", url: "tinghir.html", tags: ["tinghir", "todra", "gorge", "canyon", "oasis", "تنغير"] },
-        { name: "Oujda-Saïdia", arabicName: "وجدة السعيدية", type: "Ville", url: "oujda-saadia.html", tags: ["oujda", "saidia", "east", "mediterranean", "وجدة", "السعيدية"] },
+        { name: "Oujda-Saïdia", arabicName: "وجدة السعيدية", type: "Ville", url: "oujda-saidia.html", tags: ["oujda", "saidia", "east", "mediterranean", "وجدة", "السعيدية"] },
         { name: "Asilah", arabicName: "أصيلة", type: "Ville", url: "asilah.html", tags: ["asilah", "white medina", "murals", "atlantic", "أصيلة"] },
         { name: "Erfoud", arabicName: "أرفود", type: "Ville", url: "erfoud.html", tags: ["erfoud", "fossils", "dates", "merzouga gateway", "أرفود"] },
         { name: "Tiznit", arabicName: "تيزنيت", type: "Ville", url: "tiznit.html", tags: ["tiznit", "silver", "ramparts", "south", "تيزنيت"] },

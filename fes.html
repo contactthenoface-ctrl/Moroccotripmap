@@ -450,58 +450,70 @@
 
         </section>
 
-        <!-- Food Section (avec images ajoutées) -->
+        <!-- Food Section (cartes cliquables vers /gastronomy/) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
             <div class="mb-8"><span class="text-xs font-bold text-sable uppercase tracking-wider"><span data-i18n="fes_page.eat.badge">Eat &amp; Drink</span></span><h2 class="text-3xl font-bold text-vert"><span data-i18n="fes_page.eat.title">What to Eat in Fes</span></h2><p class="text-sm text-sombre/70 max-w-2xl mt-2"><span data-i18n="fes_page.eat.subtitle">Fes is a rewarding city for food lovers, from simple medina kitchens to polished Moroccan dining rooms.</span></p></div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Fassi Cuisine" class="w-full h-48 object-cover" loading="lazy" />
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-lg font-bold text-vert"><span data-i18n="fes_page.eat.fassi.title">Fassi Cuisine</span></h3>
+                <a href="/gastronomy/" class="group bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Fassi Cuisine" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition"><span data-i18n="fes_page.eat.fassi.title">Fassi Cuisine</span></h3>
                         <p class="text-sm text-sombre/70 mt-2"><span data-i18n="fes_page.eat.fassi.desc">Look for dishes such as pastilla, slow-cooked tagines, harira and seasonal salads. Fassi cooking is often known for its balance of sweet, savoury and fragrant spices.</span></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?auto=format&fit=crop&w=800&q=80" alt="Medina Food Stops" class="w-full h-48 object-cover" loading="lazy" />
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-lg font-bold text-vert"><span data-i18n="fes_page.eat.medina.title">Medina Food Stops</span></h3>
+                <a href="/gastronomy/" class="group bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?auto=format&fit=crop&w=800&q=80" alt="Medina Food Stops" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition"><span data-i18n="fes_page.eat.medina.title">Medina Food Stops</span></h3>
                         <p class="text-sm text-sombre/70 mt-2"><span data-i18n="fes_page.eat.medina.desc">Follow your appetite through the medina: bakeries, soup counters, grilled meats, olives, dates and fresh juices can make an excellent informal lunch.</span></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80" alt="Rooftop Mint Tea" class="w-full h-48 object-cover" loading="lazy" />
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-lg font-bold text-vert"><span data-i18n="fes_page.eat.rooftop.title">Rooftop Tea</span></h3>
+                <a href="/gastronomy/" class="group bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80" alt="Rooftop Mint Tea" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition"><span data-i18n="fes_page.eat.rooftop.title">Rooftop Tea</span></h3>
                         <p class="text-sm text-sombre/70 mt-2"><span data-i18n="fes_page.eat.rooftop.desc">For a slower evening, choose a rooftop terrace overlooking the old city and order mint tea alongside a traditional dinner.</span></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Moroccan Cooking Class" class="w-full h-48 object-cover" loading="lazy" />
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-lg font-bold text-vert"><span data-i18n="fes_page.eat.cooking.title">Cooking Experiences</span></h3>
+                <a href="/gastronomy/" class="group bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Moroccan Cooking Class" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition"><span data-i18n="fes_page.eat.cooking.title">Cooking Experiences</span></h3>
                         <p class="text-sm text-sombre/70 mt-2"><span data-i18n="fes_page.eat.cooking.desc">A local cooking class or market visit can be a fun way to understand the ingredients and techniques behind Moroccan home cooking.</span></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Moroccan Pastries" class="w-full h-48 object-cover" loading="lazy" />
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-lg font-bold text-vert"><span data-i18n="fes_page.eat.sweets.title">Sweet Treats</span></h3>
+                <a href="/gastronomy/" class="group bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Moroccan Pastries" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition"><span data-i18n="fes_page.eat.sweets.title">Sweet Treats</span></h3>
                         <p class="text-sm text-sombre/70 mt-2"><span data-i18n="fes_page.eat.sweets.desc">Try Moroccan pastries, chebakia and almond-based sweets with coffee or tea when you need a break from sightseeing.</span></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Fresh Moroccan Dinner" class="w-full h-48 object-cover" loading="lazy" />
-                    <div class="p-6 flex-grow">
-                        <h3 class="text-lg font-bold text-vert"><span data-i18n="fes_page.eat.order.title">What to Order</span></h3>
+                <a href="/gastronomy/" class="group bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Fresh Moroccan Dinner" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition"><span data-i18n="fes_page.eat.order.title">What to Order</span></h3>
                         <p class="text-sm text-sombre/70 mt-2"><span data-i18n="fes_page.eat.order.desc">If it is your first visit, ask your host or server what is freshly prepared that day. Fes rewards curiosity more than a fixed checklist.</span></p>
                     </div>
-                </div>
+                </a>
 
             </div>
         </section>

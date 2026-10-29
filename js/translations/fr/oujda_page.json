@@ -22,54 +22,54 @@
     "p2": "Que vous flâniez dans la médina par Bab Sidi Abdelwahab, savouriez une barida dans un parc ombragé ou passiez une journée sur la plage de Saïdia avant de revenir pour un karan le soir, Oujda offre un mélange rare de vie citadine authentique et d’escapade balnéaire facile, loin des foules du circuit impérial classique."
   },
   "places": {
-    "badge": "À ne pas manquer",
-    "title": "Lieux incontournables à Oujda",
-    "subtitle": "Portes historiques, parcs verts, Grande Mosquée et la longue plage méditerranéenne.",
+    "badge": "Incontournables",
+    "title": "Lieux à visiter à Oujda",
+    "subtitle": "Portes historiques, parcs verts, Grande Mosquée et longue plage méditerranéenne.",
     "explore": "Explorer le lieu →",
     "medina": {
       "tag": "Quartier historique",
-      "title": "Médina d’Oujda & Bab Sidi Abdelwahab",
-      "desc": "Une médina compacte et authentique avec étals d’épices, ateliers de cuir et bien moins de rabatteurs que dans les grandes villes touristiques."
+      "title": "Médina d'Oujda & Bab Sidi Abdelwahab",
+      "desc": "Médina compacte et authentique, échoppes d'épices et ateliers de cuir."
     },
     "mosque": {
       "tag": "Monument religieux",
-      "title": "Grande Mosquée (Al Kabir)",
-      "desc": "La plus ancienne mosquée de la ville, fondée à l’époque mérinide, avec son minaret élégant et les fameuses trois fontaines."
+      "title": "Grande Mosquée Al Kabir",
+      "desc": "Minaret historique et héritage andalou au cœur de la médina."
     },
     "parc": {
       "tag": "Parc urbain",
       "title": "Parc Lalla Aicha",
-      "desc": "Le poumon vert d’Oujda : allées ombragées, fontaines et lieu de rendez-vous familial dessiné dans les années 1930."
+      "desc": "Poumon vert d'Oujda : allées ombragées, fontaines et rendez-vous familial."
     },
     "dar_sebti": {
       "tag": "Palais culturel",
       "title": "Dar Sebti",
-      "desc": "Un palais du XXe siècle restauré qui accueille des événements culturels et des concerts de musique Gharnati."
+      "desc": "Palais du XXe siècle restauré, événements culturels et musique gharnati."
     },
     "place": {
       "tag": "Place centrale",
-      "title": "Place du 16 Août & Tour de l’Horloge",
-      "desc": "La place animée du centre avec sa tour de l’horloge art-déco des années 1920 et ses cafés idéaux pour observer la vie locale."
+      "title": "Place du 16 Août & Tour de l'horloge",
+      "desc": "Place centrale avec tour art déco et terrasses de cafés."
     },
     "sidi_yahya": {
-      "tag": "Oasis & sources",
+      "tag": "Oasis",
       "title": "Oasis de Sidi Yahya",
-      "desc": "Une oasis bordée de palmiers avec sources thermales à quelques kilomètres à l’est de la ville, calme et locale."
+      "desc": "Palmeraie et sources thermales à l'est de la ville, calme et locale."
     },
     "saidia_beach": {
-      "tag": "Plage méditerranéenne",
+      "tag": "Plage",
       "title": "Plage de Saïdia",
-      "desc": "Quatorze kilomètres de sable doré et d’eau turquoise calme, la plus longue plage continue de Méditerranée au Maroc."
+      "desc": "14 km de sable doré et mer calme – la Perle Bleue près d'Oujda."
     },
     "marina": {
-      "tag": "Marina moderne",
+      "tag": "Marina",
       "title": "Marina de Saïdia",
-      "desc": "Une grande marina avec restaurants, promenades en soirée et bases de sports nautiques en bord de mer."
+      "desc": "Grande marina, restaurants, promenades du soir et sports nautiques."
     },
     "zegzel": {
-      "tag": "Évasion nature",
-      "title": "Vallée de Zegzel & Béni Snassen",
-      "desc": "Vallées vertes, grottes préhistoriques et paysages de montagne à moins d’une heure d’Oujda."
+      "tag": "Nature",
+      "title": "Vallée de Zegzel & Beni Snassen",
+      "desc": "Vallées vertes et grottes préhistoriques à moins d'une heure d'Oujda."
     }
   },
   "itinerary": {
@@ -161,42 +161,42 @@
   "eat": {
     "badge": "Gastronomie",
     "title": "Où manger à Oujda",
-    "subtitle": "Spécialités locales, street food et fruits de mer frais au bord de la mer",
-    "karan": {
+    "subtitle": "Spécialités locales, street food et fruits de mer au bord de la mer",
+    "nomad": {
       "tag": "Classique local",
-      "loc": "Rues d’Oujda",
+      "loc": "Médina / Rues",
       "title": "Karan & Barida",
-      "desc": "Le célèbre gratin de pois chiches servi bien chaud avec un verre de barida glacée – le goût de la rue oujdie."
+      "desc": "Le gratin de pois chiches emblématique servi chaud avec une barida glacée."
     },
-    "medina_food": {
-      "tag": "Cuisine de médina",
-      "loc": "Près de Bab Sidi Abdelwahab",
-      "title": "Grills & Escargots des souks",
-      "desc": "Stands simples servant viandes grillées, escargots et pain frais au cœur de la médina."
+    "jardin": {
+      "tag": "Jardin",
+      "loc": "Centre d'Oujda",
+      "title": "Restaurants jardin",
+      "desc": "Tajines et plats marocains dans une cour verte et calme."
     },
-    "seafood": {
-      "tag": "Fruits de mer",
-      "loc": "Marina de Saïdia",
-      "title": "Poisson frais à la marina",
-      "desc": "Poissons grillés, calamars et salades méditerranéennes avec vue sur les bateaux."
-    },
-    "traditional": {
+    "fassia": {
       "tag": "Traditionnel",
-      "loc": "Oujda",
-      "title": "Tajines & Pastilla régionaux",
-      "desc": "Plats marocains maison avec une touche orientale, souvent dans des restaurants familiaux."
+      "loc": "Centre-ville",
+      "title": "Cuisine traditionnelle",
+      "desc": "Recettes classiques : épaule d'agneau mijotée et pastilla riche."
     },
-    "cafe": {
-      "tag": "Culture café",
+    "moha": {
+      "tag": "Régional",
+      "loc": "Oujda",
+      "title": "Tajines régionaux",
+      "desc": "Gastronomie orientale marocaine aux saveurs locales."
+    },
+    "bacha": {
+      "tag": "Café",
       "loc": "Place du 16 Août",
       "title": "Cafés de la ville",
-      "desc": "Terrasses pour le thé à la menthe, le café serré et l’observation du rythme quotidien de la place."
+      "desc": "Thé à la menthe, café serré et pâtisseries sur les terrasses de la place."
     },
-    "resort": {
-      "tag": "Restaurants de resort",
-      "loc": "Saïdia",
-      "title": "Restaurants en bord de mer",
-      "desc": "Tables détendues avec vue sur la mer, parfaites après une journée sur le sable."
+    "elfenn": {
+      "tag": "Fruits de mer",
+      "loc": "Marina de Saïdia",
+      "title": "Fruits de mer à la marina",
+      "desc": "Poisson grillé frais et vue méditerranéenne à la marina de Saïdia."
     }
   },
   "tips": {
@@ -254,5 +254,53 @@
       "question": "Comment aller de l’aéroport Oujda-Angad vers la ville ou Saïdia ?",
       "answer": "Oujda-Angad (OUD) se trouve à environ 15 km du centre d’Oujda. Taxis officiels et transferts pré-réservés sont disponibles. Jusqu’à Saïdia comptez environ 1 heure en grand taxi ou transfert privé."
     }
+  },
+  "oujda_places": {
+    "medina": {
+      "tag": "Quartier historique",
+      "title": "Médina d'Oujda",
+      "desc": "Rues authentiques, Bab Sidi Abdelwahab et l'âme de la capitale de l'Oriental."
+    },
+    "mosque": {
+      "tag": "Monument",
+      "title": "Grande Mosquée Al Kabir",
+      "desc": "Minaret historique et héritage andalou au cœur de la médina."
+    },
+    "parc": {
+      "tag": "Espace vert",
+      "title": "Parc Lalla Aicha",
+      "desc": "Poumon vert d'Oujda : allées ombragées, fontaines et ambiance familiale."
+    },
+    "saidia_beach": {
+      "tag": "Plage",
+      "title": "Plage de Saïdia",
+      "desc": "14 km de sable doré sur la Méditerranée – la Perle Bleue près d'Oujda."
+    },
+    "dar_sebti": {
+      "tag": "Culture",
+      "title": "Dar Sebti",
+      "desc": "Palais restauré accueillant événements culturels et musique gharnati."
+    },
+    "place": {
+      "tag": "Vie urbaine",
+      "title": "Place du 16 Août",
+      "desc": "Place centrale avec tour de l'horloge art déco et terrasses de cafés."
+    },
+    "sidi_yahya": {
+      "tag": "Oasis",
+      "title": "Oasis de Sidi Yahya",
+      "desc": "Palmeraie et sources à quelques kilomètres à l'est de la ville."
+    },
+    "zegzel": {
+      "tag": "Nature",
+      "title": "Vallée de Zegzel",
+      "desc": "Vallées vertes et grottes dans les montagnes des Béni Snassen."
+    },
+    "marina": {
+      "tag": "Marina",
+      "title": "Marina de Saïdia",
+      "desc": "Port de plaisance, restaurants en bord de mer et promenade du soir."
+    },
+    "explore": "Explorer le lieu →"
   }
 }

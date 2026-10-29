@@ -161,42 +161,42 @@
   "eat": {
     "badge": "Gastronomía",
     "title": "Dónde comer en Oujda",
-    "subtitle": "Especialidades locales, comida callejera y mariscos frescos junto al mar",
-    "karan": {
+    "subtitle": "Especialidades locales, comida callejera y marisco fresco junto al mar",
+    "nomad": {
       "tag": "Clásico local",
-      "loc": "Calles de Oujda",
+      "loc": "Medina / Calles",
       "title": "Karan y Barida",
-      "desc": "El icónico gratinado de garbanzos servido caliente con un vaso de barida (limonada) helada – el sabor de la calle de Oujda."
+      "desc": "El emblemático gratinado de garbanzos servido caliente con barida fría."
     },
-    "medina_food": {
-      "tag": "Comida de medina",
-      "loc": "Cerca de Bab Sidi Abdelwahab",
-      "title": "Parrillas y caracoles de los zocos",
-      "desc": "Puestos sencillos que sirven carnes a la parrilla, caracoles y pan fresco en el corazón de la medina."
+    "jardin": {
+      "tag": "Jardín",
+      "loc": "Centro de Oujda",
+      "title": "Restaurantes jardín",
+      "desc": "Tajines y platos marroquíes en un patio verde y tranquilo."
     },
-    "seafood": {
-      "tag": "Mariscos",
-      "loc": "Marina de Saïdia",
-      "title": "Pescado fresco en la marina",
-      "desc": "Pescado a la parrilla, calamares y ensaladas mediterráneas con vista a los barcos."
-    },
-    "traditional": {
+    "fassia": {
       "tag": "Tradicional",
-      "loc": "Oujda",
-      "title": "Tajines y pastilla regionales",
-      "desc": "Platos marroquíes caseros con un toque oriental, a menudo en restaurantes familiares."
+      "loc": "Centro",
+      "title": "Cocina tradicional",
+      "desc": "Recetas clásicas: cordero estofado y pastilla rica."
     },
-    "cafe": {
-      "tag": "Cultura de café",
+    "moha": {
+      "tag": "Regional",
+      "loc": "Oujda",
+      "title": "Tajines regionales",
+      "desc": "Gastronomía oriental marroquí con sabores locales."
+    },
+    "bacha": {
+      "tag": "Café",
       "loc": "Plaza del 16 de Agosto",
       "title": "Cafés de la ciudad",
-      "desc": "Terrazas para té de menta, café fuerte y observar el ritmo diario de la plaza."
+      "desc": "Té de menta, café fuerte y pasteles en las terrazas de la plaza."
     },
-    "resort": {
-      "tag": "Restaurantes de resort",
-      "loc": "Saïdia",
-      "title": "Restaurantes frente al mar",
-      "desc": "Comidas relajadas con vistas al mar, perfectas después de un día en la arena."
+    "elfenn": {
+      "tag": "Marisco",
+      "loc": "Marina de Saïdia",
+      "title": "Marisco en la marina",
+      "desc": "Pescado a la plancha fresco y vistas al Mediterráneo en Saïdia."
     }
   },
   "tips": {
@@ -254,5 +254,53 @@
       "question": "¿Cómo llegar del aeropuerto Oujda-Angad a la ciudad o a Saïdia?",
       "answer": "Oujda-Angad (OUD) está a unos 15 km del centro de Oujda. Hay taxis oficiales y traslados precontratados. Hasta Saïdia cuenta aproximadamente 1 hora en gran taxi o traslado privado."
     }
+  },
+  "oujda_places": {
+    "medina": {
+      "tag": "Barrio histórico",
+      "title": "Medina de Oujda",
+      "desc": "Callejuelas auténticas, Bab Sidi Abdelwahab y el alma de la capital del Oriente."
+    },
+    "mosque": {
+      "tag": "Monumento",
+      "title": "Gran Mezquita Al Kabir",
+      "desc": "Minarete histórico y herencia andalusí en el corazón de la medina."
+    },
+    "parc": {
+      "tag": "Espacio verde",
+      "title": "Parque Lalla Aicha",
+      "desc": "Pulmón verde de Oujda: senderos sombreados, fuentes y ambiente familiar."
+    },
+    "saidia_beach": {
+      "tag": "Playa",
+      "title": "Playa de Saïdia",
+      "desc": "14 km de arena dorada en el Mediterráneo – la Perla Azul cerca de Oujda."
+    },
+    "dar_sebti": {
+      "tag": "Cultura",
+      "title": "Dar Sebti",
+      "desc": "Palacio restaurado con eventos culturales y música gharnati."
+    },
+    "place": {
+      "tag": "Vida urbana",
+      "title": "Plaza del 16 de Agosto",
+      "desc": "Plaza central con torre del reloj art déco y terrazas de café."
+    },
+    "sidi_yahya": {
+      "tag": "Oasis",
+      "title": "Oasis de Sidi Yahya",
+      "desc": "Palmeras y manantiales a pocos kilómetros al este de la ciudad."
+    },
+    "zegzel": {
+      "tag": "Naturaleza",
+      "title": "Valle de Zegzel",
+      "desc": "Valles verdes y cuevas en las montañas Beni Snassen."
+    },
+    "marina": {
+      "tag": "Marina",
+      "title": "Marina de Saïdia",
+      "desc": "Puerto deportivo, restaurantes frente al mar y paseo nocturno."
+    },
+    "explore": "Explorar el lugar →"
   }
 }

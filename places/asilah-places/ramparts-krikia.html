@@ -1,209 +1,168 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" dir="ltr" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="../../css/style.css" />
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="google" content="notranslate"/>
-
-  <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23185336' d='M12 1.5C7.44 1.5 3.75 5.19 3.75 9.75c0 6.12 7.13 12.24 7.72 12.73a.85.85 0 0 0 1.06 0c.59-.49 7.72-6.61 7.72-12.73C20.25 5.19 16.56 1.5 12 1.5Zm0 11.63a3.38 3.38 0 1 1 0-6.76 3.38 3.38 0 0 1 0 6.76Z'/></svg>"/>
-
-  <!-- SEO & Metadata -->
-  <title>Ramparts Krikia | MoroccoTripMap</title>
-  <meta name="description" content="Discover Morocco with MoroccoTripMap">
-
-  <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        creme: '#F9F6F0',
-                        vert: '#185336',
-                        sable: '#C29B62',
-                        sombre: '#1A1A1A',
-                    },
-                    borderRadius: {
-                        'xl': '1rem',
-                        '2xl': '1.5rem',
-                        '3xl': '2rem',
-                    }
-                }
-            }
-        }
-    </script>
-  <style>
-        body { font-family: 'Outfit', sans-serif; }
-    </style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title data-i18n="ramparts_krikia_page.seo.title">Ramparts & Borj Al-Krikia | MoroccoTripMap</title>
+<meta name="description" content="" data-i18n-attr="content:ramparts_krikia_page.seo.description"/>
+<link rel="canonical" href="https://moroccotripmap.com/places/asilah-places/ramparts-krikia.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{creme:'#F9F6F0',vert:'#185336',sable:'#C29B62',sombre:'#1A1A1A'}}}}</script>
+<style>body{font-family:'Outfit',sans-serif}</style>
 </head>
-<body class="bg-creme text-sombre antialiased flex flex-col min-h-screen">
-
-<!-- Header Navigation -->
-<header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10 transition-all">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-<a class="flex items-center gap-3 group shrink-0" href="../../index.html">
-<img alt="MoroccoTripMap Logo" class="h-12 sm:h-14 w-auto object-contain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=100&amp;q=80';" src="../../images/logo.webp"/>
-</a>
-<nav class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-medium text-sombre/80">
-    <a class="text-vert font-bold transition" href="../../destinations.html" data-i18n="nav.destinations">Destinations</a>
-    <div class="relative inline-block text-left" id="categories-menu-container">
-        <button onclick="document.getElementById('categories-menu-dropdown').classList.toggle('hidden')" class="flex items-center gap-1.5 hover:text-vert transition" type="button">
-            <span data-i18n="nav.categories">Categories</span>
-            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-        </button>
-        <div id="categories-menu-dropdown" class="hidden absolute left-0 mt-3 w-56 bg-white border border-sable/20 rounded-xl shadow-lg z-50 overflow-hidden py-1">
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../../riads/index.html" data-i18n="nav.cat_stays">Stays & Riads</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../../gastronomy/" data-i18n="nav.cat_gastronomy">Gastronomy</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../../experiences/index.html" data-i18n="nav.cat_experiences">Experiences</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../../destinations.html" data-i18n="nav.cat_museums">Monuments & Museums</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../../transport/index.html" data-i18n="nav.cat_transport">Transport & Rental</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../../programmes/index.html" data-i18n="nav.cat_itineraries">Itineraries</a>
-            <a class="block px-4 py-2.5 text-sm font-medium text-sombre hover:bg-creme hover:text-vert transition" href="../../guides/index.html" data-i18n="nav.cat_guides">Travel Guides</a>
-        </div>
-    </div>
-    <a class="hover:text-vert transition" href="../../guides/histoire.html" data-i18n="nav.history">History</a>
-    <a class="hover:text-vert transition" href="../../blog/index.html" data-i18n="nav.blog">Blog</a>
-    <a class="hover:text-vert transition" href="../../contact.html" data-i18n="nav.contact">Contact</a>
+<body class="bg-creme text-sombre antialiased">
+<header class="sticky top-0 z-50 bg-creme/90 backdrop-blur-md border-b border-sable/10">
+<div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+<a href="../../index.html" class="font-bold text-vert">Morocco<span class="text-sable">TripMap</span></a>
+<nav class="hidden md:flex gap-6 text-sm">
+<a href="../../destinations.html" data-i18n="nav.destinations">Destinations</a>
+<a href="../../blog/index.html" data-i18n="nav.blog">Blog</a>
+<a href="../../contact.html" data-i18n="nav.contact">Contact</a>
 </nav>
-<div class="flex items-center gap-2 sm:gap-4">
-<div class="relative inline-block text-left">
-  <button id="lang-menu-button" onclick="document.getElementById('lang-menu-dropdown').classList.toggle('hidden')" class="bg-white border border-sable/20 hover:border-sable text-sm font-semibold rounded-xl px-3 py-2 flex items-center gap-2 text-sombre transition shadow-sm" type="button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="15" class="rounded-sm shadow-sm"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
-    <span id="current-lang-label">EN</span>
-    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-  </button>
-  <div id="lang-menu-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-white rounded-xl shadow-lg border border-sable/15 py-1 z-50">
-    <button data-lang="en" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">English</button>
-    <button data-lang="fr" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">Français</button>
-    <button data-lang="es" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">Español</button>
-    <button data-lang="ar" class="w-full text-left px-4 py-2 text-sm hover:bg-creme flex items-center gap-2 font-medium text-sombre">العربية</button>
-  </div>
+<div class="flex gap-2 text-xs font-semibold">
+<button onclick="switchLanguage('en')">EN</button>
+<button onclick="switchLanguage('fr')">FR</button>
+<button onclick="switchLanguage('es')">ES</button>
+<button onclick="switchLanguage('ar')">AR</button>
 </div>
-<button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden bg-white p-2 rounded-xl border border-sable/20 text-sombre hover:text-vert transition" type="button">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-</div>
-</div>
-
-<div class="hidden md:hidden absolute top-20 left-0 w-full bg-creme/95 backdrop-blur-md border-b border-sable/15 shadow-xl px-6 py-6 transition-all max-h-[80vh] overflow-y-auto z-50" id="mobile-menu">
-    <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-        <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="index.html">
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 001 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                <span data-i18n="nav.home">Home</span>
-            </div>
-            <span class="text-xs text-gray-400">→</span>
-        </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../../destinations.html">
-        <span data-i18n="nav.cities">Cities & Destinations</span>
-    </a>
-    <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="../../blog/index.html">
-        <span data-i18n="nav.blog">Blog</span>
-    </a>
-    </nav>
 </div>
 </header>
-
-<main class="flex-grow">
-<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-  <span class="text-xs font-bold text-sable uppercase tracking-wider">Guide Touristique</span>
-  <h1 class="text-4xl font-bold text-vert mt-2">Ramparts Krikia</h1>
-  <p class="text-lg text-sombre/70 mt-4">Explorez les richesses de cette destination</p>
-  <div class="mt-10 bg-white rounded-2xl border border-sable/10 shadow-sm p-8">
-    <h2 class="text-xl font-bold text-vert">Page en cours d'élaboration</h2>
-    <p class="text-sm text-sombre/70 mt-2">Nous préparons actuellement ce contenu. Revenez bientôt, ou poursuivez votre exploration des destinations dans l'andant.</p>
-  </div>
-  <div class="mt-8 flex flex-wrap justify-center gap-3">
-    <a href="../../destinations.html" class="px-5 py-2.5 rounded-xl bg-vert text-white font-semibold text-sm hover:opacity-90 transition">Explorer les destinations</a>
-    <a href="../../index.html" class="px-5 py-2.5 rounded-xl bg-white border border-sable/20 text-sombre font-semibold text-sm hover:border-vert transition">Retour à l'accueil</a>
-  </div>
+<main>
+<section class="bg-vert text-creme py-16 px-4">
+<div class="max-w-4xl mx-auto">
+<p class="text-sable text-xs uppercase tracking-wider mb-2"><a href="../../asilah.html" class="hover:underline">Asilah</a></p>
+<h1 class="text-3xl sm:text-4xl font-bold" data-i18n="ramparts_krikia_page.name">Ramparts & Borj Al-Krikia</h1>
+<p class="mt-4 text-creme/90 text-lg font-light" data-i18n="ramparts_krikia_page.hero_subtitle"></p>
+<div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+<div><span class="block text-sable text-xs" data-i18n="ramparts_krikia_page.info.best_time_label">Best time</span><span class="font-bold" data-i18n="ramparts_krikia_page.info.best_time_val"></span></div>
+<div><span class="block text-sable text-xs" data-i18n="ramparts_krikia_page.info.duration_label">Duration</span><span class="font-bold" data-i18n="ramparts_krikia_page.info.duration_val"></span></div>
+<div><span class="block text-sable text-xs" data-i18n="ramparts_krikia_page.info.entry_label">Entry</span><span class="font-bold" data-i18n="ramparts_krikia_page.info.entry_val"></span></div>
+<div><span class="block text-sable text-xs" data-i18n="ramparts_krikia_page.info.area_label">Where</span><span class="font-bold" data-i18n="ramparts_krikia_page.info.area_val"></span></div>
+</div>
+</div>
+</section>
+<section class="max-w-4xl mx-auto px-4 py-12">
+<h2 class="text-2xl font-bold text-vert mb-4" data-i18n="ramparts_krikia_page.overview.title"></h2>
+<p class="text-sombre/80 leading-relaxed mb-4" data-i18n="ramparts_krikia_page.overview.p1"></p>
+<p class="text-sombre/80 leading-relaxed mb-4" data-i18n="ramparts_krikia_page.overview.p2"></p>
+<p class="text-sombre/80 leading-relaxed" data-i18n="ramparts_krikia_page.overview.p3"></p>
+</section>
+<section class="max-w-4xl mx-auto px-4 py-10 border-t border-sable/10">
+<span class="text-xs font-bold text-sable uppercase" data-i18n="ramparts_krikia_page.moods.badge">Timing</span>
+<h2 class="text-2xl font-bold text-vert mb-6" data-i18n="ramparts_krikia_page.moods.title"></h2>
+<div class="grid sm:grid-cols-3 gap-4">
+<div class="bg-white p-5 rounded-2xl border border-sable/10"><span class="text-xs font-bold text-sable" data-i18n="ramparts_krikia_page.moods.1.tag"></span><h3 class="font-bold mt-1" data-i18n="ramparts_krikia_page.moods.1.title"></h3><p class="text-xs text-sombre/70 mt-2" data-i18n="ramparts_krikia_page.moods.1.desc"></p><p class="text-xs text-sable mt-2" data-i18n="ramparts_krikia_page.moods.1.duration"></p></div>
+<div class="bg-white p-5 rounded-2xl border border-sable/10"><span class="text-xs font-bold text-sable" data-i18n="ramparts_krikia_page.moods.2.tag"></span><h3 class="font-bold mt-1" data-i18n="ramparts_krikia_page.moods.2.title"></h3><p class="text-xs text-sombre/70 mt-2" data-i18n="ramparts_krikia_page.moods.2.desc"></p><p class="text-xs text-sable mt-2" data-i18n="ramparts_krikia_page.moods.2.duration"></p></div>
+<div class="bg-white p-5 rounded-2xl border border-sable/10"><span class="text-xs font-bold text-sable" data-i18n="ramparts_krikia_page.moods.3.tag"></span><h3 class="font-bold mt-1" data-i18n="ramparts_krikia_page.moods.3.title"></h3><p class="text-xs text-sombre/70 mt-2" data-i18n="ramparts_krikia_page.moods.3.desc"></p><p class="text-xs text-sable mt-2" data-i18n="ramparts_krikia_page.moods.3.duration"></p></div>
+</div>
+</section>
+<section class="max-w-4xl mx-auto px-4 py-10 border-t border-sable/10">
+<h2 class="text-2xl font-bold text-vert mb-4" data-i18n="ramparts_krikia_page.food.title"></h2>
+<p class="text-sombre/80 mb-3" data-i18n="ramparts_krikia_page.food.p1"></p>
+<ul class="list-disc pl-5 text-sm text-sombre/80 space-y-1">
+<li data-i18n="ramparts_krikia_page.food.li1"></li><li data-i18n="ramparts_krikia_page.food.li2"></li><li data-i18n="ramparts_krikia_page.food.li3"></li><li data-i18n="ramparts_krikia_page.food.li4"></li><li data-i18n="ramparts_krikia_page.food.li5"></li>
+</ul>
+<p class="text-sombre/70 text-sm mt-3" data-i18n="ramparts_krikia_page.food.p2"></p>
+</section>
+<section class="max-w-4xl mx-auto px-4 py-10 border-t border-sable/10">
+<h2 class="text-2xl font-bold text-vert mb-6" data-i18n="ramparts_krikia_page.tips.title"></h2>
+<div class="grid sm:grid-cols-3 gap-4">
+<div class="bg-white p-5 rounded-xl border border-sable/10"><h3 class="font-bold text-vert" data-i18n="ramparts_krikia_page.tips.1.title"></h3><p class="text-xs text-sombre/70 mt-2" data-i18n="ramparts_krikia_page.tips.1.desc"></p></div>
+<div class="bg-white p-5 rounded-xl border border-sable/10"><h3 class="font-bold text-vert" data-i18n="ramparts_krikia_page.tips.2.title"></h3><p class="text-xs text-sombre/70 mt-2" data-i18n="ramparts_krikia_page.tips.2.desc"></p></div>
+<div class="bg-white p-5 rounded-xl border border-sable/10"><h3 class="font-bold text-vert" data-i18n="ramparts_krikia_page.tips.3.title"></h3><p class="text-xs text-sombre/70 mt-2" data-i18n="ramparts_krikia_page.tips.3.desc"></p></div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-4 py-10 border-t border-sable/10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<span class="text-xs font-bold text-sable uppercase" data-i18n="ramparts_krikia_page.nearby.badge">Keep Exploring</span>
+<h2 class="text-3xl font-bold text-vert" data-i18n="ramparts_krikia_page.nearby.title">More places in Asilah</h2>
+</div>
+<a class="text-sm font-semibold text-sable hover:text-vert" href="../../asilah.html" data-i18n="ramparts_krikia_page.nearby.back">← Back to Asilah</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="art-medina.html">
+                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="ramparts_krikia_page.nearby.c1.tag">Tag</span>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="ramparts_krikia_page.nearby.c1.title">Title</h3>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="ramparts_krikia_page.nearby.c1.desc">Desc</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="ramparts_krikia_page.nearby.explore">Explore Place →</span>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="ramparts-krikia.html">
+                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="ramparts_krikia_page.nearby.c2.tag">Tag</span>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="ramparts_krikia_page.nearby.c2.title">Title</h3>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="ramparts_krikia_page.nearby.c2.desc">Desc</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="ramparts_krikia_page.nearby.explore">Explore Place →</span>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="paradise-beach.html">
+                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="ramparts_krikia_page.nearby.c3.tag">Tag</span>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="ramparts_krikia_page.nearby.c3.title">Title</h3>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="ramparts_krikia_page.nearby.c3.desc">Desc</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="ramparts_krikia_page.nearby.explore">Explore Place →</span>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="raissouni-palace.html">
+                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="ramparts_krikia_page.nearby.c4.tag">Tag</span>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="ramparts_krikia_page.nearby.c4.title">Title</h3>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="ramparts_krikia_page.nearby.c4.desc">Desc</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="ramparts_krikia_page.nearby.explore">Explore Place →</span>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="borj-al-kamra.html">
+                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="ramparts_krikia_page.nearby.c5.tag">Tag</span>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="ramparts_krikia_page.nearby.c5.title">Title</h3>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="ramparts_krikia_page.nearby.c5.desc">Desc</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="ramparts_krikia_page.nearby.explore">Explore Place →</span>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="corniche-harbour.html">
+                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="ramparts_krikia_page.nearby.c6.tag">Tag</span>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="ramparts_krikia_page.nearby.c6.title">Title</h3>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="ramparts_krikia_page.nearby.c6.desc">Desc</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="ramparts_krikia_page.nearby.explore">Explore Place →</span>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="art-medina.html">
+                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="ramparts_krikia_page.nearby.c7.tag">Tag</span>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="ramparts_krikia_page.nearby.c7.title">Title</h3>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="ramparts_krikia_page.nearby.c7.desc">Desc</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="ramparts_krikia_page.nearby.explore">Explore Place →</span>
+                </a>
+                <a class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-sable/10 flex flex-col p-5" href="ramparts-krikia.html">
+                    <span class="self-start bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" data-i18n="ramparts_krikia_page.nearby.c8.tag">Tag</span>
+                    <h3 class="text-lg font-bold text-sombre group-hover:text-vert transition" data-i18n="ramparts_krikia_page.nearby.c8.title">Title</h3>
+                    <p class="text-xs text-sombre/70 mt-2 line-clamp-2" data-i18n="ramparts_krikia_page.nearby.c8.desc">Desc</p>
+                    <span class="mt-auto pt-4 text-xs font-semibold text-sable group-hover:text-vert transition flex items-center gap-1" data-i18n="ramparts_krikia_page.nearby.explore">Explore Place →</span>
+                </a>
+</div>
+</section>
+<section class="max-w-4xl mx-auto px-4 py-12 border-t border-sable/10">
+<span class="text-xs font-bold text-sable uppercase" data-i18n="ramparts_krikia_page.faq.badge">FAQ</span>
+<h2 class="text-2xl font-bold text-vert mb-6" data-i18n="ramparts_krikia_page.faq.title"></h2>
+<div class="space-y-3">
+<details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="ramparts_krikia_page.faq.q1.question"></summary><p class="text-sm text-sombre/70 mt-3" data-i18n="ramparts_krikia_page.faq.q1.answer"></p></details>
+<details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="ramparts_krikia_page.faq.q2.question"></summary><p class="text-sm text-sombre/70 mt-3" data-i18n="ramparts_krikia_page.faq.q2.answer"></p></details>
+<details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="ramparts_krikia_page.faq.q3.question"></summary><p class="text-sm text-sombre/70 mt-3" data-i18n="ramparts_krikia_page.faq.q3.answer"></p></details>
+<details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="ramparts_krikia_page.faq.q4.question"></summary><p class="text-sm text-sombre/70 mt-3" data-i18n="ramparts_krikia_page.faq.q4.answer"></p></details>
+<details class="bg-white rounded-2xl border border-sable/10 p-5"><summary class="font-semibold cursor-pointer" data-i18n="ramparts_krikia_page.faq.q5.question"></summary><p class="text-sm text-sombre/70 mt-3" data-i18n="ramparts_krikia_page.faq.q5.answer"></p></details>
+</div>
 </section>
 </main>
-
-<footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-        <div>
-            <h3 class="text-xl font-bold mb-3 text-white">Morocco<span class="text-sable">TripMap</span></h3>
-            <p class="text-xs text-creme/80 leading-relaxed" data-i18n="footer.about_text">
-                Discover. Plan. Experience Morocco.<br/>
-                The premier tourism directory and cultural travel guide for visitors exploring Morocco.
-            </p>
-        </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.recommended_title">Recommended Pages</h4>
-            <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="../../marrakech.html">Marrakech Travel Guide</a></li>
-                <li><a class="hover:text-white transition" href="../../chefchaouen.html">Chefchaouen Blue City</a></li>
-                <li><a class="hover:text-white transition" href="../../blog/index.html">Travel Blog & Tips</a></li>
-                <li><a class="hover:text-white transition" href="../../guides/histoire.html">History of Morocco</a></li>
-                <li><a class="hover:text-white transition font-semibold text-sable" href="../../destinations.html">All Destinations →</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.categories_title">Travel Categories</h4>
-            <ul class="text-xs space-y-2 text-creme/80">
-                <li><a class="hover:text-white transition" href="../../riads/index.html">Authentic Riads & Hotels</a></li>
-                <li><a class="hover:text-white transition" href="../../gastronomy/">Moroccan Gastronomy & Food</a></li>
-                <li><a class="hover:text-white transition" href="../../experiences/index.html">Desert Tours & Activities</a></li>
-                <li><a class="hover:text-white transition" href="../../transport/index.html">Transport & Rental Cars</a></li>
-                <li><a class="hover:text-white transition" href="../../blog/index.html">Travel Blog & Tips</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-sm font-semibold text-sable mb-3 uppercase tracking-wider" data-i18n="footer.connect_title">Connect</h4>
-            <p class="text-xs text-creme/80 mb-3" data-i18n="footer.youtube_text">Follow our YouTube channel for video travel guides:</p>
-            <a class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-red-700 transition" href="https://youtube.com/@moroccotripmap" rel="noopener noreferrer" target="_blank">
-                @moroccotripmap
-            </a>
-        </div>
-    </div>
-    <div class="max-w-7xl mx-auto border-t border-creme/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-creme/70">
-        <p data-i18n="footer.copyright">© MoroccoTripMap. All rights reserved.</p>
-        <p>Created by <a class="text-sable underline font-semibold hover:text-white transition" href="https://kamliseo.com" rel="noopener noreferrer" target="_blank">Kamliseo</a></p>
-    </div>
+<footer class="bg-vert text-creme mt-12 py-10 px-4 text-xs">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between gap-4">
+<p data-i18n="footer.about_text">Discover. Plan. Experience Morocco.</p>
+<p data-i18n="footer.copyright">© MoroccoTripMap</p>
+</div>
 </footer>
-
 <script src="../../js/i18n.js"></script>
-<script src="../../js/search.js"></script>
 <script>
-    function toggleMobileCategories() {
-        const dropdown = document.getElementById('mobile-categories-dropdown');
-        const arrow = document.getElementById('categories-arrow');
-        if (dropdown) dropdown.classList.toggle('hidden');
-        if (arrow) arrow.classList.toggle('rotate-180');
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  const lang = localStorage.getItem('preferred_lang') || 'en';
+  if (typeof switchLanguage === 'function') switchLanguage(lang);
+  else if (typeof changeLanguage === 'function') changeLanguage(lang);
+});
+function switchLanguage(lang) {
+  localStorage.setItem('preferred_lang', lang);
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  if (typeof changeLanguage === 'function') changeLanguage(lang);
+}
 </script>
-    <!-- Bouton Retour en haut -->
-    <button id="scrollToTopBtn" aria-label="Retour en haut" class="fixed bottom-6 right-6 z-50 hidden bg-sable/60 hover:bg-sable text-vert p-3 rounded-full shadow-lg backdrop-blur-md transition-all duration-300 transform hover:scale-105">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
-        </svg>
-    </button>
-
-    <script>
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollToTopBtn.classList.remove('hidden');
-            } else {
-                scrollToTopBtn.classList.add('hidden');
-            }
-        });
-
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
 </body>
 </html>

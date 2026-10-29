@@ -116,7 +116,56 @@
   "nearby": {
     "badge": "Continuer à explorer",
     "title": "D'autres lieux incontournables à Oujda",
-    "back": "← Retour au guide d'Oujda"
+    "back": "← Retour au guide d'Oujda",
+    "explore": "Explorer le lieu →",
+    "c1": {
+      "tag": "Quartier historique",
+      "title": "Médina d'Oujda",
+      "desc": "Rues authentiques, Bab Sidi Abdelwahab et l'âme de la capitale de l'Oriental.",
+      "href": "medina-oujda.html"
+    },
+    "c2": {
+      "tag": "Monument",
+      "title": "Grande Mosquée Al Kabir",
+      "desc": "Minaret historique et héritage andalou au cœur de la médina.",
+      "href": "grande-mosquee.html"
+    },
+    "c3": {
+      "tag": "Espace vert",
+      "title": "Parc Lalla Aicha",
+      "desc": "Poumon vert d'Oujda : allées ombragées, fontaines et ambiance familiale.",
+      "href": "parc-lalla-aicha.html"
+    },
+    "c4": {
+      "tag": "Plage",
+      "title": "Plage de Saïdia",
+      "desc": "14 km de sable doré sur la Méditerranée – la Perle Bleue près d'Oujda.",
+      "href": "plage-saidia.html"
+    },
+    "c5": {
+      "tag": "Culture",
+      "title": "Dar Sebti",
+      "desc": "Palais restauré accueillant événements culturels et musique gharnati.",
+      "href": "dar-sebti.html"
+    },
+    "c6": {
+      "tag": "Vie urbaine",
+      "title": "Place du 16 Août",
+      "desc": "Place centrale avec tour art déco et terrasses de cafés.",
+      "href": "place-16-aout.html"
+    },
+    "c7": {
+      "tag": "Oasis",
+      "title": "Oasis de Sidi Yahya",
+      "desc": "Palmeraie et sources à quelques kilomètres à l'est de la ville.",
+      "href": "sidi-yahya.html"
+    },
+    "c8": {
+      "tag": "Nature",
+      "title": "Vallée de Zegzel",
+      "desc": "Vallées vertes et grottes dans les montagnes des Béni Snassen.",
+      "href": "zegzel.html"
+    }
   },
   "blog": {
     "badge": "From the Blog",
@@ -162,53 +211,5 @@
       "question": "Can I swim in the springs?",
       "answer": "The springs are mainly for local use and contemplation. Do not assume swimming is allowed; follow any local rules and respect the site."
     }
-  },
-  "oujda_places": {
-    "medina": {
-      "tag": "Quartier historique",
-      "title": "Médina d'Oujda",
-      "desc": "Rues authentiques, Bab Sidi Abdelwahab et l'âme de la capitale de l'Oriental."
-    },
-    "mosque": {
-      "tag": "Monument",
-      "title": "Grande Mosquée Al Kabir",
-      "desc": "Minaret historique et héritage andalou au cœur de la médina."
-    },
-    "parc": {
-      "tag": "Espace vert",
-      "title": "Parc Lalla Aicha",
-      "desc": "Poumon vert d'Oujda : allées ombragées, fontaines et ambiance familiale."
-    },
-    "saidia_beach": {
-      "tag": "Plage",
-      "title": "Plage de Saïdia",
-      "desc": "14 km de sable doré sur la Méditerranée – la Perle Bleue près d'Oujda."
-    },
-    "dar_sebti": {
-      "tag": "Culture",
-      "title": "Dar Sebti",
-      "desc": "Palais restauré accueillant événements culturels et musique gharnati."
-    },
-    "place": {
-      "tag": "Vie urbaine",
-      "title": "Place du 16 Août",
-      "desc": "Place centrale avec tour de l'horloge art déco et terrasses de cafés."
-    },
-    "sidi_yahya": {
-      "tag": "Oasis",
-      "title": "Oasis de Sidi Yahya",
-      "desc": "Palmeraie et sources à quelques kilomètres à l'est de la ville."
-    },
-    "zegzel": {
-      "tag": "Nature",
-      "title": "Vallée de Zegzel",
-      "desc": "Vallées vertes et grottes dans les montagnes des Béni Snassen."
-    },
-    "marina": {
-      "tag": "Marina",
-      "title": "Marina de Saïdia",
-      "desc": "Port de plaisance, restaurants en bord de mer et promenade du soir."
-    },
-    "explore": "Explorer le lieu →"
   }
 }

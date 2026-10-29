@@ -116,7 +116,56 @@
   "nearby": {
     "badge": "Keep Exploring",
     "title": "More Must-Visit Places in Oujda",
-    "back": "← Back to the Oujda guide"
+    "back": "← Back to the Oujda guide",
+    "explore": "Explore Place →",
+    "c1": {
+      "tag": "Historic Quarter",
+      "title": "Médina d'Oujda",
+      "desc": "Authentic alleys, Bab Sidi Abdelwahab and the soul of the Oriental capital.",
+      "href": "medina-oujda.html"
+    },
+    "c2": {
+      "tag": "Landmark",
+      "title": "Grande Mosquée Al Kabir",
+      "desc": "Historic minaret and Andalusian heritage at the heart of the medina.",
+      "href": "grande-mosquee.html"
+    },
+    "c3": {
+      "tag": "Green Space",
+      "title": "Parc Lalla Aicha",
+      "desc": "Oujda's green lung with shaded paths, fountains and family atmosphere.",
+      "href": "parc-lalla-aicha.html"
+    },
+    "c4": {
+      "tag": "Beach",
+      "title": "Plage de Saïdia",
+      "desc": "14 km of golden sand on the Mediterranean – the Blue Pearl near Oujda.",
+      "href": "plage-saidia.html"
+    },
+    "c5": {
+      "tag": "Culture",
+      "title": "Dar Sebti",
+      "desc": "Restored palace hosting cultural events and Gharnati music.",
+      "href": "dar-sebti.html"
+    },
+    "c6": {
+      "tag": "City Life",
+      "title": "Place du 16 Août",
+      "desc": "Central square with art-deco clock tower and café terraces.",
+      "href": "place-16-aout.html"
+    },
+    "c7": {
+      "tag": "Oasis",
+      "title": "Oasis de Sidi Yahya",
+      "desc": "Palm grove and springs a short drive east of the city.",
+      "href": "sidi-yahya.html"
+    },
+    "c8": {
+      "tag": "Nature",
+      "title": "Vallée de Zegzel",
+      "desc": "Green valleys and caves in the Beni Snassen mountains.",
+      "href": "zegzel.html"
+    }
   },
   "blog": {
     "badge": "From the Blog",
@@ -162,53 +211,5 @@
       "question": "Can I combine Saïdia with Oujda in one day?",
       "answer": "Yes. Spend the morning in Oujda’s medina, then take a grand taxi to Saïdia for the afternoon and early evening before returning."
     }
-  },
-  "oujda_places": {
-    "medina": {
-      "tag": "Historic Quarter",
-      "title": "Médina d'Oujda",
-      "desc": "Authentic alleys, Bab Sidi Abdelwahab and the soul of the Oriental capital."
-    },
-    "mosque": {
-      "tag": "Landmark",
-      "title": "Grande Mosquée Al Kabir",
-      "desc": "Historic minaret and Andalusian heritage at the heart of the medina."
-    },
-    "parc": {
-      "tag": "Green Space",
-      "title": "Parc Lalla Aicha",
-      "desc": "Oujda's green lung with shaded paths, fountains and family atmosphere."
-    },
-    "saidia_beach": {
-      "tag": "Beach",
-      "title": "Plage de Saïdia",
-      "desc": "14 km of golden sand on the Mediterranean – the Blue Pearl near Oujda."
-    },
-    "dar_sebti": {
-      "tag": "Culture",
-      "title": "Dar Sebti",
-      "desc": "Restored palace hosting cultural events and Gharnati music."
-    },
-    "place": {
-      "tag": "City Life",
-      "title": "Place du 16 Août",
-      "desc": "Central square with art-deco clock tower and café terraces."
-    },
-    "sidi_yahya": {
-      "tag": "Oasis",
-      "title": "Oasis de Sidi Yahya",
-      "desc": "Palm grove and springs a short drive east of the city."
-    },
-    "zegzel": {
-      "tag": "Nature",
-      "title": "Vallée de Zegzel",
-      "desc": "Green valleys and caves in the Beni Snassen mountains."
-    },
-    "marina": {
-      "tag": "Marina",
-      "title": "Marina de Saïdia",
-      "desc": "Modern harbour, seafront restaurants and evening promenade."
-    },
-    "explore": "Explore Place →"
   }
 }

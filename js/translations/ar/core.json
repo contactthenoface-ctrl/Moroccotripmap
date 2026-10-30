@@ -39,6 +39,39 @@
     "link_fes": "مدينة فاس العتيقة",
     "link_merzouga": "دليل سفر مرزوكة",
     "link_rabat": "الرباط العاصمة الإمبراطورية",
+    "link_casablanca": "دليل سفر الدار البيضاء",
+    "link_essaouira": "دليل سفر الصويرة",
+    "link_agadir": "دليل سفر أكادير",
+    "link_tanger": "دليل سفر طنجة",
+    "link_ouarzazate": "دليل سفر ورزازات",
+    "link_meknes": "دليل سفر مكناس",
+    "link_tetouan": "دليل سفر تطوان",
+    "link_ifrane": "دليل سفر إفران",
+    "link_el_jadida": "دليل سفر الجديدة",
+    "link_taroudant": "دليل سفر تارودانت",
+    "link_dakhla": "دليل سفر الداخلة",
+    "link_al_hoceima": "دليل سفر الحسيمة",
+    "link_nador": "دليل سفر الناظور",
+    "link_zagora": "دليل سفر زاكورة",
+    "link_safi": "دليل سفر آسفي",
+    "link_laayoune": "دليل سفر العيونه",
+    "link_azilal": "دليل سفر أزيلال",
+    "link_tinghir": "دليل سفر تنغير",
+    "link_oujda": "دليل سفر وجدة",
+    "link_asilah": "دليل سفر أصيلة",
+    "link_erfoud": "دليل سفر أرفود",
+    "link_tiznit": "دليل سفر تزنيت",
+    "link_sidi_ifni": "دليل سفر سيدي إفني",
+    "link_guelmim": "دليل سفر كلميم",
+    "link_oualidia": "دليل سفر الوالدية",
+    "link_azrou": "دليل سفر أزرو",
+    "link_sefrou": "دليل سفر سفرو",
+    "link_errachidia": "دليل سفر الرشيدية",
+    "link_larache": "دليل سفر العرائش",
+    "link_beni_mellal": "دليل سفر بني ملال",
+    "link_figuig": "دليل سفر فكيك",
+    "link_midelt": "دليل سفر ميدلت",
+    "link_imilchil": "دليل سفر إملشيل",
     "link_all_destinations": "جميع الوجهات ←",
     "link_stays": "رياضات وفنادق أصيلة",
     "link_restaurants": "مطاعم مغربية",
@@ -47,25 +80,7 @@
     "link_itineraries": "البرامج والجولات السياحية",
     "link_history": "تاريخ المغرب",
     "link_blog": "مدونة السفر والنصائح",
-    "link_oujda": "دليل سفر وجدة",
-    "link_asilah": "دليل سفر أصيلة",
-    "link_erfoud": "دليل سفر أرفود",
-    "link_tiznit": "دليل سفر تزنيت",
-    "link_sidi_ifni": "دليل سفر سيدي إفني",
-    "link_guelmim": "دليل سفر كلميم",
-    "link_agadir": "دليل سفر أكادير",
-    "link_legzira": "شاطئ لكزيرة",
-    "link_oualidia": "دليل سفر الوالدية",
-    "link_el_jadida": "دليل سفر الجديدة",
-    "link_safi": "دليل سفر آسفي",
-    "link_essaouira": "دليل سفر الصويرة",
-    "link_azrou": "دليل سفر أزرو",
-    "link_ifrane": "دليل سفر إفران",
-    "link_midelt": "دليل سفر ميدلت",
-    "link_sefrou": "دليل سفر سفرو",
-    "link_errachidia": "دليل سفر الرشيدية",
-    "link_larache": "دليل سفر العرائش",
-    "link_beni_mellal": "دليل سفر بني ملال"
+    "link_legzira": "شاطئ لكزيرة"
   },
   "breadcrumb": {
     "home": "الرئيسية",
@@ -76,34 +91,34 @@
     "language_title": "اللغة / Language"
   },
   "destinations": {
-    "badge": "Top Destinations",
-    "title": "Explore Famous Cities & Destinations",
-    "view_all": "View all destinations ←",
-    "view_all_btn": "View all destinations",
+    "badge": "أبرز الوجهات",
+    "title": "استكشف أشهر المدن والوجهات",
+    "view_all": "عرض جميع الوجهات ←",
+    "view_all_btn": "عرض جميع الوجهات",
     "marrakech": {
-      "tag": "Imperial City",
-      "name": "Marrakech",
-      "desc": "Old Medina, historic palaces and gateway to the desert"
+      "tag": "مدينة إمبراطورية",
+      "name": "مراكش",
+      "desc": "المدينة العتيقة، القصور التاريخية وبوابة الصحراء"
     },
     "chefchaouen": {
-      "tag": "Rif Mountains",
-      "name": "Chefchaouen",
-      "desc": "Morocco's iconic blue pearl"
+      "tag": "جبال الريف",
+      "name": "شفشاون",
+      "desc": "الجوهرة الزرقاء الأيقونية في المغرب"
     },
     "fes": {
-      "tag": "Cultural Capital",
-      "name": "Fes",
-      "desc": "Ancient medina and spiritual heritage"
+      "tag": "العاصمة الثقافية",
+      "name": "فاس",
+      "desc": "المدينة العتيقة والتراث الروحي"
     },
     "casablanca": {
-      "tag": "Economic Heart",
-      "name": "Casablanca",
-      "desc": "Morocco's largest city and Hassan II Mosque"
+      "tag": "القلب الاقتصادي",
+      "name": "الدار البيضاء",
+      "desc": "أكبر مدينة في المغرب ومسجد الحسن الثاني"
     },
     "essaouira": {
-      "tag": "Atlantic Coast",
-      "name": "Essaouira",
-      "desc": "Windy city, coastal ramparts and fresh seafood"
+      "tag": "الساحل الأطلسي",
+      "name": "الصويرة",
+      "desc": "المدينة الرياحية، الأسوار الساحلية والمأكولات البحرية الطازجة"
     },
     "agadir": {
       "tag": "شمس وشاطئ",
@@ -111,74 +126,74 @@
       "desc": "خليج أطلسي وقصبة وساحل أمواج"
     },
     "taroudant": {
-      "tag": "Little Marrakech",
-      "name": "Taroudant",
-      "desc": "Ochre ramparts and authentic Souss souks"
+      "tag": "مراكش الصטغيرة",
+      "name": "تارودانت",
+      "desc": "الأسوار الترابية وأسواق سوس الأصيلة"
     },
     "tangier": {
-      "tag": "Strait of Gibraltar",
-      "name": "Tangier",
-      "desc": "The gateway between Europe and Africa"
+      "tag": "مضيق جبل طارق",
+      "name": "طنجة",
+      "desc": "البوابة بين أوروبا وإفريقيا"
     },
     "ouarzazate": {
-      "tag": "Gateway to the Desert",
-      "name": "Ouarzazate",
-      "desc": "Historic kasbahs, movie studios and Ait Ben Haddou"
+      "tag": "بوابة الصحراء",
+      "name": "ورزازات",
+      "desc": "القصبات التاريخية، استوديوهات السينما وآيت بن حدو"
     },
     "rabat": {
-      "tag": "Atlantic Capital",
-      "name": "Rabat",
-      "desc": "Kasbah of the Udayas, Hassan Tower and Chellah"
+      "tag": "العاصمة الأطلسية",
+      "name": "الرباط",
+      "desc": "قصبة الأوداية، صومعة حسان وشالة"
     },
     "merzouga": {
-      "tag": "Sahara Desert",
-      "name": "Merzouga",
-      "desc": "Erg Chebbi sand dunes and desert camps"
+      "tag": "صحراء ساخنة",
+      "name": "مرزوكة",
+      "desc": "كثبان رمال عرق تشبي ومخيمات الصحراء"
     },
     "zagora": {
-      "tag": "Draa Valley",
-      "name": "Zagora",
-      "desc": "Timbuktu 52 days sign, lush oases and dunes"
+      "tag": "وادي درعة",
+      "name": "زاكورة",
+      "desc": "لفتة تمبكتو 52 يوماً، الواحات الخضراء والكثبان"
     },
     "meknes": {
-      "tag": "Ismaili Capital",
-      "name": "Meknes",
-      "desc": "Bab Mansour and historical monuments near Volubilis"
+      "tag": "العاصمة الإسماعيلية",
+      "name": "مكناس",
+      "desc": "باب المنصور والمعالم التاريخية قرب وليلي"
     },
     "tetouan": {
-      "tag": "The White Dove",
-      "name": "Tetouan",
-      "desc": "Andalusian heritage and UNESCO-listed medina"
+      "tag": "اليمامة البيضاء",
+      "name": "تطوان",
+      "desc": "التراث الأندلسي والمدينة العتيقة المصنفة في اليونسكو"
     },
     "ifrane": {
-      "tag": "Moroccan Switzerland",
-      "name": "Ifrane",
-      "desc": "Alpine architecture, cedar forests and ski resort"
+      "tag": "سويسرا المغرب",
+      "name": "إفران",
+      "desc": "العمارة الجبلية، غابات الأرز ومنتجع التزلج"
     },
     "el-jadida": {
-      "tag": "Portuguese Heritage",
-      "name": "El Jadida",
-      "desc": "Portuguese citadel and historic cistern"
+      "tag": "التراث البرتغالي",
+      "name": "الجديدة",
+      "desc": "القلعة البرتغالية والصهريج التاريخي"
     },
     "dakhla": {
-      "tag": "Where Desert Meets Ocean",
-      "name": "Dakhla",
-      "desc": "Lagoon, kitesurfing and white dune in the Far South"
+      "tag": "حيث يلتقي الصحراء بالمحيط",
+      "name": "الداخلة",
+      "desc": "الخليج، رياضة ركوب الأمواج الكايت سيرف والكثبان البيضاء في أقصى الجنوب"
     },
     "al_hoceima": {
-      "tag": "Pearl of the Mediterranean",
-      "name": "Al Hoceima",
-      "desc": "Pristine beaches, mountain nature and national park"
+      "tag": "لؤلؤة المتوسط",
+      "name": "الحسيمة",
+      "desc": "الشواطئ البكر، الطبيعة الجبلية والمنتزه الوطني"
     },
     "nador": {
-      "tag": "Marchica Lagoon & Coast",
-      "name": "Nador",
-      "desc": "Marchica lagoon, promenade, Mount Gourougou and Cape Three Forks"
+      "tag": "بحيرة مارشيكا والساحل",
+      "name": "الناظور",
+      "desc": "بحيرة مارشيكا، الممشى، جبل كوروكو ورأس الثلاثة فوركس"
     },
     "taghazout": {
-      "tag": "Surf Capital",
-      "name": "Taghazout",
-      "desc": "Coastal fishing village and world-class surf spots"
+      "tag": "عاصمة ركوب الأمواج",
+      "name": "تاغازوت",
+      "desc": "قرية صيد ساحلية ومواقع عالمية لركوب الأمواج"
     },
     "asilah": {
       "tag": "مدينة الفن",
@@ -196,19 +211,19 @@
       "desc": "تراث شرقي أصيل وموسيقى وأسواق"
     },
     "safi": {
-      "tag": "Ocean City",
-      "name": "Safi",
-      "desc": "Traditional pottery craftsmanship, sea castle and seafood"
+      "tag": "مدينة المحيط",
+      "name": "آسفي",
+      "desc": "حرف الخزف التقليدي، قلعة البحر والمأكولات البحرية"
     },
     "kenitra": {
-      "tag": "Gharb Gateway",
-      "name": "Kenitra",
-      "desc": "Mehdia beach and natural reserves"
+      "tag": "بوابة الغرب",
+      "name": "القنيطرة",
+      "desc": "شاطئ المهدية والمحميات الطبيعية"
     },
     "tinghir": {
-      "tag": "Oasis of Gorges",
-      "name": "Tinghir",
-      "desc": "Dramatic Todra Gorges and palm groves"
+      "tag": "واحة المضايق",
+      "name": "تنغير",
+      "desc": "مضايق تودغا الخلابة وبساتين النخيل"
     },
     "azrou": {
       "tag": "أرز الأطلس المتوسط",
@@ -221,14 +236,14 @@
       "desc": "ليكسوس القديمة ومدينة عتيقة وساحل أطلسي هادئ"
     },
     "midelt": {
-      "tag": "Apple Capital",
-      "name": "Midelt",
-      "desc": "Junction between the Middle and High Atlas"
+      "tag": "عاصمة التفاح",
+      "name": "ميدلت",
+      "desc": "نقطة التقاء الأطلس المتوسط والكبير"
     },
     "imlil": {
-      "tag": "Mountain Tourism",
-      "name": "Imlil",
-      "desc": "Basecamp for Mount Toubkal trekking and Atlas trails"
+      "tag": "السياحة الجبلية",
+      "name": "إمليل",
+      "desc": "محطة انطلاق تسلق جبل توبقال ومسارات الأطلس"
     },
     "mirleft": {
       "tag": "ساحل بكر",
@@ -236,14 +251,14 @@
       "desc": "شواطئ رملية هادئة ومنحدرات ساحلية"
     },
     "tafraout": {
-      "tag": "Heart of Anti-Atlas",
-      "name": "Tafraoute",
-      "desc": "Painted rocks, Amazigh villages and almond trees"
+      "tag": "قلب الأطلس الصغير",
+      "name": "تافراوت",
+      "desc": "الصخور الملونة، القرى الأمازيغية وأشجار اللوز"
     },
     "mhamid": {
-      "tag": "Chigaga Dunes",
-      "name": "M'Hamid El Ghizlane",
-      "desc": "Gateway to Erg Chigaga and authentic desert treks"
+      "tag": "كثبان الشيشارة",
+      "name": "محاميد الغزلان",
+      "desc": "بوابة عرق الشيشارة ورحلات الصحراء الأصيلة"
     },
     "errachidia": {
       "tag": "بوابة وادي زيز",
@@ -251,30 +266,30 @@
       "desc": "بساتين النخيل ومضيق زيز والطريق نحو الكثبان"
     },
     "oukaimeden": {
-      "tag": "Ski Resort",
-      "name": "Oukaïmeden",
-      "desc": "Africa's highest ski resort in the High Atlas Mountains"
+      "tag": "منتجع التزلج",
+      "name": "أوكايمدن",
+      "desc": "أعلى منتجع للتزلج في إفريقيا ضمن جبال الأطلس الكبير"
     },
-    "bin_el_ouidane": "Atlas Lake",
+    "bin_el_ouidane": "بحيرة الأطلس",
     "bin_el_ouidane_full": {
-      "tag": "Atlas Lake",
-      "name": "Bin El Ouidane",
-      "desc": "Turquoise mountain lake and water activities"
+      "tag": "بحيرة الأطلس",
+      "name": "بين الويدان",
+      "desc": "بحيرة جبلية تركوازية وأنشطة مائية"
     },
     "azilal": {
-      "tag": "Ouzoud Waterfalls",
-      "name": "Azilal",
-      "desc": "Ouzoud Falls and M'Goun UNESCO Global Geopark"
+      "tag": "شلالات أوزود",
+      "name": "أزيلال",
+      "desc": "شلالات أوزود والمنتزه العالمي المعتمد من اليونسكو مكون"
     },
     "saidia": {
-      "tag": "The Blue Pearl",
-      "name": "Saidia",
-      "desc": "Golden sandy beaches and Mediterranean resort"
+      "tag": "الجوهرة الزرقاء",
+      "name": "السعيدية",
+      "desc": "شواطئ رملية ذهبية ومنتجعات البحر الأبيض المتوسط"
     },
     "laayoune": {
-      "tag": "Sahara Metropolis",
-      "name": "Laayoune",
-      "desc": "Mechouar square, Laayoune port and coastal dunes"
+      "tag": "حاضرة الصحراء",
+      "name": "العيون",
+      "desc": "ساحة المشور، ميناء العيون وكثبان الساحل"
     },
     "guelmim": {
       "tag": "بوابة الصحراء",
@@ -287,19 +302,19 @@
       "desc": "إرث إسباني وأقواس لكزيرة"
     },
     "moulay_idriss": {
-      "tag": "Holy City",
-      "name": "Moulay Idriss Zerhoun",
-      "desc": "Shrine of Morocco's founding dynasty near Volubilis"
+      "tag": "المدينة المقدسة",
+      "name": "مولاي إدريس زرهون",
+      "desc": "ضريح مؤسس الدولة المغربية قرب وليلي"
     },
     "khenifra": {
-      "tag": "Capital of Zaian",
-      "name": "Khenifra",
-      "desc": "Aguelmame lakes, cedar forests and Oum Er-Rbia springs"
+      "tag": "عاصمة زيان",
+      "name": "خنيفرة",
+      "desc": "بحيرات ألمام، غابات الأرز وعيون أم الربيع"
     },
     "taza": {
-      "tag": "Taza Gap",
-      "name": "Taza",
-      "desc": "Friouato cave and Tazekka National Park"
+      "tag": "ممر تازة",
+      "name": "تازة",
+      "desc": "مغارةفريواطو والمنتزه الوطني تازكة"
     },
     "sefrou": {
       "tag": "بلدة الكرز قرب فاس",
@@ -307,49 +322,49 @@
       "desc": "مدينة عتيقة وشلالات ومهرجان الكرز قرب فاس"
     },
     "tan_tan": {
-      "tag": "Tan-Tan Moussem",
-      "name": "Tan-Tan",
-      "desc": "UNESCO cultural festival and coastal El Ouatia"
+      "tag": "موسم طانطان",
+      "name": "طانطان",
+      "desc": "مهرجان ثقافي مسجل في اليونسكو والوطية الساحلية"
     },
     "tarfaya": {
-      "tag": "Cap Juby History",
-      "name": "Tarfaya",
-      "desc": "Saint-Exupéry museum and Atlantic cape"
+      "tag": "تاريخ كاب جوبي",
+      "name": "طرفاية",
+      "desc": "متحف سانت إكزوبيري والرأس الأطلسي"
     },
     "berkane": {
-      "tag": "Citrus Capital",
-      "name": "Berkane",
-      "desc": "Camel cave and Beni Snassen mountains"
+      "tag": "عاصمة الحمضيات",
+      "name": "بركان",
+      "desc": "مغارة الجمل وجبال بني سناسن"
     },
     "taourirt": {
-      "tag": "Crossroads City",
-      "name": "Taourirt",
-      "desc": "Taourirt kasbah and proximity to Moulouya river"
+      "tag": "مدينة التقاطع",
+      "name": "تاوريرت",
+      "desc": "قصبة تاوريرت والقرب من نهر ملوية"
     },
     "settat": {
-      "tag": "Chaouia Capital",
-      "name": "Settat",
-      "desc": "Scenic landscapes and traditional horsemanship"
+      "tag": "عاصمة الشاوية",
+      "name": "سطات",
+      "desc": "مناظر طبيعية خلابة وفن التبوريدة التقليدي"
     },
     "khouribga": {
-      "tag": "Phosphate Capital",
-      "name": "Khouribga",
-      "desc": "International African Film Festival and industrial heritage"
+      "tag": "عاصمة الفوسفاط",
+      "name": "خريبكة",
+      "desc": "المهرجان السينمائي الدولي الإفريقي والتراث الصناعي"
     },
     "chichaoua": {
-      "tag": "Atlas Road",
-      "name": "Chichaoua",
-      "desc": "Main stopover between Marrakech and Essaouira"
+      "tag": "طريق الأطلس",
+      "name": "شيشاوة",
+      "desc": "محطة توقف رئيسية بين مراكش والصويرة"
     },
     "tiflet": {
-      "tag": "Zemmour Region",
-      "name": "Tiflet",
-      "desc": "Agricultural crafts and surrounding forests"
+      "tag": "منطقة زمور",
+      "name": "تيفلت",
+      "desc": "الحرف اليدوية الفلاحية والغابات المحيطة"
     },
     "khemisset": {
-      "tag": "Zemmour Capital",
-      "name": "Khemisset",
-      "desc": "Dayet Roumi lake, horses and handmade carpets"
+      "tag": "عاصمة زمور",
+      "name": "الخميسات",
+      "desc": "بحيرة دايت رومي، الخيول والزرابي المصنوعة يدوياً"
     },
     "erfoud": {
       "tag": "عاصمة الحفريات",
@@ -365,85 +380,95 @@
       "tag": "منابع وبحيرة تادلة",
       "name": "بني ملال",
       "desc": "عين أسردون وبن الويدان وسهول الزيتون"
+    },
+    "figuig": {
+      "tag": "واحة الشرق",
+      "name": "فكيك",
+      "desc": "واحات النخيل والقصور التقليدية"
+    },
+    "imilchil": {
+      "tag": "الأطلس الكبير",
+      "name": "إملشيل",
+      "desc": "بحيرات جبلية ومهرجان الخطوبة الشهير"
     }
   },
   "common": {
-    "photo": "Photo {n}",
-    "photo_aria": "Photo {n}",
+    "photo": "صورة {n}",
+    "photo_aria": "صورة {n}",
     "explore": "استكشف ←",
-    "explore_place": "Explore Place ←",
-    "gallery": "Gallery",
-    "what_to_see": "What to See",
+    "explore_place": "استكشف المكان ←",
+    "gallery": "معرض الصور",
+    "what_to_see": "ماذا ترى",
     "good_to_know": "من الجيد معرفة",
     "faq": "أسئلة شائعة",
     "practical_tips": "نصائح عملية",
-    "tours_experiences": "Tours & Experiences",
-    "from_the_blog": "From the Blog",
-    "related_articles": "Related Articles",
-    "all_articles": "All Articles ←",
-    "read_article": "Read Article ←",
-    "keep_exploring": "Keep Exploring",
-    "more_must_visit": "More Places to Visit",
-    "back_to_guide": "→ Back to Guide",
+    "tours_experiences": "الجولات والتجارب",
+    "from_the_blog": "من المدونة",
+    "related_articles": "مقالات ذات صلة",
+    "all_articles": "جميع المقالات ←",
+    "read_article": "قراءة المقال ←",
+    "keep_exploring": "استمر في الاستكشاف",
+    "more_must_visit": "المزيد من الأماكن للزيارة",
+    "back_to_guide": "→ العودة إلى الدليل",
     "best_time": "أفضل وقت",
-    "time_needed": "Duration",
-    "entry": "Entry",
-    "where": "Location",
-    "free": "Free",
-    "morning": "Morning",
-    "afternoon": "Afternoon",
-    "evening": "Evening",
-    "plan": "Plan",
+    "time_needed": "المدة الزمنية",
+    "entry": "الدخول",
+    "where": "الموقع",
+    "free": "مجاني",
+    "morning": "الصباح",
+    "afternoon": "بعد الظهر",
+    "evening": "المساء",
+    "plan": "الخطة",
     "detail": "التفاصيل",
     "stay": "إقامة",
     "food": "طعام",
-    "gastronomy": "Gastronomy",
-    "nature": "Nature",
-    "culture": "Culture",
-    "heritage": "Heritage",
-    "walk": "Walk",
-    "view": "View",
-    "town": "Town",
-    "park": "Park",
-    "lake": "Lake",
-    "forest": "Forest",
-    "mountain": "Mountain",
-    "coast": "Coast",
-    "beach": "Beach",
-    "family": "Family",
-    "private": "Private",
-    "half_day": "Half Day",
-    "full_day": "Full Day",
-    "winter": "Winter",
-    "combo": "Combo",
-    "type": "Type",
-    "hotel": "Hotel",
-    "riad": "Riad",
-    "guesthouse": "Guesthouse",
-    "stay_type": "Accommodation Type",
-    "area": "Area",
-    "all": "All",
-    "all_areas": "All Areas",
-    "district": "District",
-    "near_station": "Near Station",
-    "check_availability": "Check Availability ←",
-    "check_gyg": "Check on GetYourGuide ←",
-    "no_stays_match": "No accommodations match these filters.",
+    "gastronomy": "فن الطهي",
+    "nature": "طبيعة",
+    "culture": "ثقافة",
+    "heritage": "تراث",
+    "walk": "ممشى",
+    "view": "إطلالة",
+    "town": "بلدة",
+    "park": "منتزه",
+    "lake": "بحيرة",
+    "forest": "غابة",
+    "mountain": "جبل",
+    "coast": "ساحل",
+    "beach": "شاطئ",
+    "family": "عائلي",
+    "private": "خاص",
+    "half_day": "نصف يوم",
+    "full_day": "يوم كامل",
+    "winter": "الشتاء",
+    "combo": "مختلط",
+    "type": "النوع",
+    "hotel": "فندق",
+    "riad": "رياض",
+    "guesthouse": "دار ضيافة",
+    "stay_type": "نوع الإقامة",
+    "area": "المنطقة",
+    "all": "الكل",
+    "all_areas": "جميع المناطق",
+    "district": "الحي",
+    "near_station": "قرب المحطة",
+    "check_availability": "تحقق من التوفر ←",
+    "check_gyg": "التحقق عبر جيتيورجوايد ←",
+    "no_stays_match": "لا توجد إقامات تطابق هذه الفلاتر.",
     "ideal_stay": "الإقامة المثالية",
     "top_vibe": "الأجواء",
     "nearest_airport": "أقرب مطار",
-    "day_1": "Day 1",
-    "day_2": "Day 2",
-    "day_3": "Day 3",
-    "suggested_3_day": "Suggested 3-Day Itinerary",
-    "hour_by_hour": "Hour by Hour Ideas",
-    "affiliate_disclosure": "Some links are affiliate links. Booking through them may earn us a commission at no extra cost to you.",
-    "how_long": "How long do I need?",
-    "entry_fee": "Is there an entry fee?",
-    "best_time_q": "Best time to visit?",
-    "combine_with": "Combine with?",
-    "need_guide": "Do I need a guide?",
-    "book_tour": "Book a Tour",
+    "day_1": "اليوم الأول",
+    "day_2": "اليوم الثاني",
+    "day_3": "اليوم الثالث",
+    "suggested_3_day": "برنامج مقترح لـ 3 أيام",
+    "hour_by_hour": "أفكار تفصيلية ساعة بساعة",
+    "affiliate_disclosure": "بعض الروابط هي روابط تسويقية بالعمولة. الحجز من خلالها قد يمنحنا عمولة دون أي تكلفة إضافية عليك.",
+    "how_long": "ما هي المدة التي أستغرقها؟",
+    "entry_fee": "هل توجد رسوم دخول؟",
+    "best_time_q": "ما هو أفضل وقت للزيارة؟",
+    "combine_with": "مع ماذا يمكن دمجها؟",
+    "need_guide": "هل أحتاج إلى مرشد سياحي؟",
+    "book_tour": "حجز جولة سياحية",
     "home": "الرئيسية",
     "destinations": "الوجهات"
   }

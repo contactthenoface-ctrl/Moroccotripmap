@@ -52,6 +52,11 @@
       "tag": "Patrimoine",
       "title": "Kasbat Aghanaj",
       "desc": "Kasbah de terre dans les murs — cours et ruelles au soleil couchant."
+    },
+    "aglou": {
+      "tag": "Côte",
+      "title": "Plage et village d'Aglou",
+      "desc": "Littoral atlantique à 20–30 min à l'ouest de Tiznit."
     }
   },
   "place_sections": {
@@ -59,31 +64,55 @@
       "title": "Remparts et portes historiques",
       "p1": "Les murs de Tiznit s'étendent sur environ 7 km, ponctués de tours d'adobe et de cinq portes principales, dont Bab el Khemis, Bab Targa, Bab Aglou, Bab el Maader et Bab Oulad Jerrar. En fin d'après-midi, l'ocre vire au cuivre.",
       "p2": "On peut parcourir des tronçons du périmètre ou simplement photographier les portes les plus belles. Bab Targa ouvre vers les palmiers ; Bab el Khemis est parmi les accès les plus animés.",
-      "tip": "Meilleure lumière : fin d'après-midi. Chaussures confortables."
+      "tip": "Meilleure lumière : fin d'après-midi. Chaussures confortables.",
+      "cap1": "Remparts et portes",
+      "cap2": "Remparts et portes",
+      "cap3": "Remparts et portes"
     },
     "silver": {
       "title": "Souk de la bijouterie en argent",
       "p1": "La réputation de Tiznit repose sur l'orfèvrerie amazighe. Dans la médina, ateliers et boutiques exposent fibules (tizerzai), bracelets, pendentifs et pièces de cérémonie. Certains artisans travaillent encore sous vos yeux.",
       "p2": "Les prix sont souvent plus abordables qu'à Marrakech ou Essaouira, mais la qualité varie — argent massif, plaqué et stock industriel coexistent. Demandez le poids et la pureté.",
-      "tip": "Le marché du jeudi dynamise toute la ville."
+      "tip": "Le marché du jeudi dynamise toute la ville.",
+      "cap1": "Souk de l'argent",
+      "cap2": "Souk de l'argent",
+      "cap3": "Souk de l'argent"
     },
     "mechouar": {
       "title": "Place El Mechouar",
       "p1": "Place El Mechouar est la vieille place centrale de Tiznit — point de rencontre entre ruelles, cafés et rues des bijoutiers.",
       "p2": "Commencez ici pour vous orienter, puis dirigez-vous vers les souks ou une porte. Moins une place monumentale qu'un cœur de ville vécu.",
-      "tip": "Matin pour le rythme local ; fin de journée pour les photos."
+      "tip": "Matin pour le rythme local ; fin de journée pour les photos.",
+      "cap1": "Place El Mechouar",
+      "cap2": "Place El Mechouar",
+      "cap3": "Place El Mechouar"
     },
     "source": {
       "title": "Source Bleue (Aïn Aqdim)",
       "p1": "Aïn Aqdim — présentée comme Source Bleue — est une source liée aux récits de peuplement de Tiznit. N'attendez pas un bassin turquoise spectaculaire : c'est un repère patrimonial et une pause calme.",
       "p2": "Elle se trouve dans le noyau historique et se combine facilement avec la médina et le souk de l'argent.",
-      "tip": "À combiner avec El Mechouar et les bijoutiers le même matin."
+      "tip": "À combiner avec El Mechouar et les bijoutiers le même matin.",
+      "cap1": "Source Bleue (Aïn Aqdim)",
+      "cap2": "Source Bleue (Aïn Aqdim)",
+      "cap3": "Source Bleue (Aïn Aqdim)"
     },
     "kasbah": {
       "title": "Kasbat Aghanaj",
       "p1": "Kasbat Aghanaj est une forteresse de terre dans l'enceinte. Cours et ruelles sont plus intimes que les rues commerçantes et captent une belle lumière au coucher du soleil.",
       "p2": "L'accès peut varier — une marche extérieure vaut déjà le détour.",
-      "tip": "À associer à un point de vue sur les remparts à l'heure dorée."
+      "tip": "À associer à un point de vue sur les remparts à l'heure dorée.",
+      "cap1": "Kasbat Aghanaj",
+      "cap2": "Kasbat Aghanaj",
+      "cap3": "Kasbat Aghanaj"
+    },
+    "aglou": {
+      "title": "Plage et village d'Aglou",
+      "p1": "Aglou se trouve sur l'Atlantique à l'ouest de Tiznit. Village côtier discret — utile pour une demi-journée d'air marin après la médina.",
+      "p2": "Grand taxi ou voiture en 20–30 minutes. Équipements simples.",
+      "tip": "Médina le matin, Aglou l'après-midi pour artisanat et côte.",
+      "cap1": "Plage et village d'Aglou",
+      "cap2": "Plage et village d'Aglou",
+      "cap3": "Plage et village d'Aglou"
     }
   },
   "stays": {
@@ -117,21 +146,21 @@
     }
   },
   "booking_banner": {
-    "badge": "Comparer",
-    "title": "Hôtels à Tiznit",
-    "desc": "Comparez prix, notes et annulation gratuite.",
-    "btn": "Voir sur Booking.com",
-    "guarantee": "✓ Réservation sécurisée"
+    "badge": "Plus de 30 hébergements",
+    "title": "Explorez tous les séjours à Tiznit",
+    "desc": "Comparez les prix en direct, lisez les avis et profitez de l'annulation gratuite sur la plupart des hôtels.",
+    "btn": "Voir tous les séjours sur Booking.com",
+    "guarantee": "✓ Meilleur prix et réservation sécurisée"
   },
   "eat": {
     "badge": "Cuisine",
     "title": "Où manger à Tiznit",
-    "subtitle": "Tajines, grillades et douceurs locales dans et autour de la médina.",
+    "subtitle": "Tajines, grillades et douceurs locales.",
     "tagine": {
       "tag": "Local",
       "loc": "Médina",
       "title": "Restaurants de tajine",
-      "desc": "Tajine d'agneau ou de légumes — cuisine du Souss au quotidien."
+      "desc": "Tajine d'agneau ou de légumes — cuisine du Souss."
     },
     "sweets": {
       "tag": "Sucré",
@@ -150,7 +179,7 @@
     "title": "Conseils pratiques pour Tiznit",
     "transport": {
       "title": "Se déplacer",
-      "desc": "Médina à pied. Grands taxis et bus vers Agadir ; taxis pour la plage d'Aglou."
+      "desc": "Médina à pied. Grands taxis et bus vers Agadir ; taxis pour Aglou."
     },
     "shopping": {
       "title": "Acheter de l'argent",
@@ -167,7 +196,7 @@
     "subtitle": "Côte et Anti-Atlas à portée de route.",
     "aglou": {
       "title": "Plage d'Aglou (≈ 20–30 min)",
-      "desc": "Littoral atlantique à l'ouest de la ville."
+      "desc": "Littoral atlantique à l'ouest."
     },
     "sidi_ifni": {
       "title": "Sidi Ifni (≈ 1 h)",
@@ -175,11 +204,11 @@
     },
     "agadir": {
       "title": "Agadir (≈ 1h15)",
-      "desc": "Hub aéroport et grande ville côtière au nord."
+      "desc": "Hub aéroport au nord."
     },
     "tafraoute": {
       "title": "Tafraoute / Anti-Atlas",
-      "desc": "Paysages de granite rose — journée longue ou nuit sur place."
+      "desc": "Granite rose — journée longue ou nuit."
     }
   },
   "faq": {

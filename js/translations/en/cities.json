@@ -1,40 +1,192 @@
 {
-  "marrakech": {"tag": "Imperial City", "name": "Marrakech", "desc": "Medina, Palaces & Desert Gateways"},
-  "chefchaouen": {"tag": "Rif Mountains", "name": "Chefchaouen", "desc": "The Iconic Blue Pearl of Morocco"},
-  "fes": {"tag": "Cultural Capital", "name": "Fes", "desc": "Ancient Medina & Spiritual Heritage"},
-  "casablanca": {"tag": "Economic Heart", "name": "Casablanca", "desc": "The largest city in Morocco"},
-  "essaouira": {"tag": "Atlantic Coast", "name": "Essaouira", "desc": "Windy City, Ramparts & Fresh Seafood"},
-  "agadir": {"tag": "Sun & Beach", "name": "Agadir", "desc": "Golden Beaches & Modern Resorts"},
-  "tangier": {"tag": "Strait of Gibraltar", "name": "Tangier", "desc": "The Gateway Between Europe and Africa"},
-  "ouarzazate": {"tag": "Desert Gateway", "name": "Ouarzazate", "desc": "Cinematic Landscapes & Ancient Kasbahs"},
-  "rabat": {"tag": "Imperial Capital", "name": "Rabat", "desc": "Historic Gardens & Atlantic Breezes"},
-  "meknes": {"tag": "Imperial City", "name": "Meknes", "desc": "Bab Mansour, Volubilis & medina"},
-  "tetouan": {"tag": "Mediterranean Coast", "name": "Tetouan", "desc": "Andalusian Heritage & Rif Mountains"},
-  "ifrane": {"tag": "Middle Atlas", "name": "Ifrane", "desc": "Alpine Architecture & Cedar Forests"},
-  "el_jadida": {"tag": "Atlantic Coast", "name": "El Jadida", "desc": "Portuguese Cistern & Ocean Forts"},
-  "taroudant": {"tag": "Souss Valley", "name": "Taroudant", "desc": "Massive Ramparts & Authentic Souks"},
-  "dakhla": {"tag": "Deep South", "name": "Dakhla", "desc": "Stunning Lagoons & Kitesurf Paradise"},
-  "al_hoceima": {"tag": "Mediterranean Coast", "name": "Al Hoceima", "desc": "Turquoise Waters & Rif Cliffs"},
-  "nador": {"tag": "Mediterranean Lagoon", "name": "Nador", "desc": "Mar Chica Lagoon & Coastal Breezes"},
-  "zagora": {"tag": "Drâa Valley", "name": "Zagora", "desc": "Lush Palm Groves & Sahara Doors"},
-  "safi": {"tag": "Atlantic Coast", "name": "Safi", "desc": "Pottery Capital & Sea Fortress"},
-  "laayoune": {"tag": "Sahara Gateway", "name": "Laayoune", "desc": "Sahrawi Culture & Atlantic Horizon"},
-  "merzouga": {"tag": "Sahara Desert", "name": "Merzouga", "desc": "Erg Chebbi Dunes & Desert Camps"},
-  "azilal": {"tag": "Heart of the Atlas", "name": "Azilal", "desc": "Ouzoud Waterfalls & Green Valleys"},
-  "tinghir": {"tag": "Todra Gorge", "name": "Tinghir", "desc": "Spectacular Canyons & Palm Oases"},
-  "oujda": {"tag": "Blue Pearl of the East", "name": "Oujda", "desc": "Golden Beaches & Eastern Gateway"},
-  "asilah": {"name": "Asilah", "tag": "Atlantic North", "desc": "White medina, murals & ocean ramparts"},
-  "erfoud": {"name": "Erfoud", "tag": "Fossil Gateway", "desc": "Fossils, date palms & road to Merzouga"},
-  "tiznit": {"name": "Tiznit", "tag": "Silver City", "desc": "Ramparts, silver souks & gateway south"},
-  "sidi_ifni": {"name": "Sidi Ifni", "tag": "Wild Coast", "desc": "Art deco town, Legzira arches & Mirleft"},
-  "guelmim": {"name": "Guelmim", "tag": "Gateway to the Sahara", "desc": "Camel market, oasis & road to Dakhla"},
-  "oualidia": {"tag": "Atlantic Lagoon", "name": "Oualidia", "desc": "Oysters, lagoon & peaceful beaches"},
-  "azrou": {"tag": "Middle Atlas", "name": "Azrou", "desc": "Cedar forests & Barbary macaques"},
-  "sefrou": {"tag": "The garden of Morocco", "name": "Sefrou", "desc": "Medina, waterfalls & cherry blossoms"},
-  "errachidia": {"tag": "Desert oasis", "name": "Errachidia", "desc": "Fossils, kasbahs & road to Merzouga"},
-  "larache": {"tag": "Atlantic North", "name": "Larache", "desc": "Lixus ruins & quiet Atlantic medina"},
-  "beni_mellal": {"tag": "Middle Atlas Gateway", "name": "Beni Mellal", "desc": "Markets, mountains & access to Ouzoud"},
-  "figuig": {"tag": "Eastern Oasis", "name": "Figuig", "desc": "Palm groves & traditional ksour"},
-  "midelt": {"tag": "High Plains", "name": "Midelt", "desc": "Apple orchards, fossils & Atlas passes"},
-  "imilchil": {"tag": "High Atlas", "name": "Imilchil", "desc": "Mountain lakes & famous wedding festival"}
+  "marrakech": {
+    "tag": "Palm City Capital",
+    "name": "Marrakech",
+    "desc": "Ancient Medina, historic palaces & gateway to the Sahara"
+  },
+  "chefchaouen": {
+    "tag": "The Blue Pearl",
+    "name": "Chefchaouen",
+    "desc": "Iconic blue alleys & tranquil Rif mountain vibes"
+  },
+  "fes": {
+    "tag": "Spiritual & Cultural Capital",
+    "name": "Fes",
+    "desc": "Millenary medina, Al-Qarawiyyin & rich heritage"
+  },
+  "casablanca": {
+    "tag": "Economic Capital",
+    "name": "Casablanca",
+    "desc": "Hassan II Mosque, modern architecture & coastal energy"
+  },
+  "essaouira": {
+    "tag": "City of Winds",
+    "name": "Essaouira",
+    "desc": "Seaside ramparts, fresh seafood & Gnawa music"
+  },
+  "agadir": {
+    "tag": "Beach & Sun Capital",
+    "name": "Agadir",
+    "desc": "Golden beach bay, modern resorts & Oufella Kasbah"
+  },
+  "tangier": {
+    "tag": "Bride of the North",
+    "name": "Tangier",
+    "desc": "Atlantic-Mediterranean meeting point & gateway to Europe"
+  },
+  "ouarzazate": {
+    "tag": "Hollywood of Africa",
+    "name": "Ouarzazate",
+    "desc": "Cinema studios, historic kasbahs & Ait Ben Haddou"
+  },
+  "rabat": {
+    "tag": "Capital of Lights",
+    "name": "Rabat",
+    "desc": "Hassan Tower, Kasbah of the Udayas & Atlantic breeze"
+  },
+  "meknes": {
+    "tag": "Ismaili Capital",
+    "name": "Meknes",
+    "desc": "Bab Mansour, imperial monuments & Volubilis ruins"
+  },
+  "tetouan": {
+    "tag": "The White Dove",
+    "name": "Tetouan",
+    "desc": "Authentic Andalusian heritage & UNESCO-listed medina"
+  },
+  "ifrane": {
+    "tag": "Moroccan Switzerland",
+    "name": "Ifrane",
+    "desc": "Alpine architecture, winter snows & cedar forests"
+  },
+  "el_jadida": {
+    "tag": "Portuguese Jewel",
+    "name": "El Jadida",
+    "desc": "Historic Portuguese Cistern & ocean fortification"
+  },
+  "taroudant": {
+    "tag": "Little Marrakech",
+    "name": "Taroudant",
+    "desc": "Massive ochre ramparts & authentic Souss souks"
+  },
+  "dakhla": {
+    "tag": "Pearl of the Far South",
+    "name": "Dakhla",
+    "desc": "Where desert meets ocean, lagoon & kitesurf haven"
+  },
+  "al_hoceima": {
+    "tag": "Pearl of the Mediterranean",
+    "name": "Al Hoceima",
+    "desc": "Turquoise waters, pristine beaches & Rif cliffs"
+  },
+  "nador": {
+    "tag": "Marchica Lagoon Hub",
+    "name": "Nador",
+    "desc": "Marchica lagoon, seaside promenade & Mount Gourougou"
+  },
+  "zagora": {
+    "tag": "Timbuktu Gateway",
+    "name": "Zagora",
+    "desc": "Draâ valley palm oases & desert expedition routes"
+  },
+  "safi": {
+    "tag": "Pottery Capital",
+    "name": "Safi",
+    "desc": "Traditional ceramic craftsmanship, sea castle & seafood"
+  },
+  "laayoune": {
+    "tag": "Sahara Metropolis",
+    "name": "Laayoune",
+    "desc": "Mechouar square, Sahrawi culture & coastal dunes"
+  },
+  "merzouga": {
+    "tag": "Golden Dunes Capital",
+    "name": "Merzouga",
+    "desc": "Erg Chebbi sand dunes, desert camps & sunrise views"
+  },
+  "azilal": {
+    "tag": "Heart of the Atlas & M'Goun Geopark",
+    "name": "Azilal",
+    "desc": "Ouzoud Waterfalls, green valleys & UNESCO geopark"
+  },
+  "tinghir": {
+    "tag": "Oasis of Gorges",
+    "name": "Tinghir",
+    "desc": "Dramatic Todra Gorges & lush palm groves"
+  },
+  "oujda": {
+    "tag": "Capital of the East",
+    "name": "Oujda",
+    "desc": "Authentic Oriental heritage, Reggada music & historic souks"
+  },
+  "asilah": {
+    "tag": "City of Art & Culture",
+    "name": "Asilah",
+    "desc": "Artistic murals, seaside ramparts & tranquil Atlantic charm"
+  },
+  "erfoud": {
+    "tag": "Fossil & Date Capital",
+    "name": "Erfoud",
+    "desc": "Rare fossils, Tafilalet palm groves & road to Merzouga"
+  },
+  "tiznit": {
+    "tag": "Silver Capital",
+    "name": "Tiznit",
+    "desc": "Berber silver craftsmanship, pink ramparts & serene medina"
+  },
+  "sidi_ifni": {
+    "tag": "Art Deco Coast",
+    "name": "Sidi Ifni",
+    "desc": "Spanish heritage, Legzira arch beaches & ocean cliffs"
+  },
+  "guelmim": {
+    "tag": "Gateway to the Sahara",
+    "name": "Guelmim",
+    "desc": "Historic camel market, oases & Plage Blanche"
+  },
+  "oualidia": {
+    "tag": "Oyster Lagoon Capital",
+    "name": "Oualidia",
+    "desc": "Serene Atlantic lagoon, oyster farms & peaceful beaches"
+  },
+  "azrou": {
+    "tag": "Capital of Cedars",
+    "name": "Azrou",
+    "desc": "Atlas cedar forests & wild Barbary macaques"
+  },
+  "sefrou": {
+    "tag": "Cherry Capital",
+    "name": "Sefrou",
+    "desc": "Ancient medina, waterfalls & historic Cherry Festival"
+  },
+  "errachidia": {
+    "tag": "Desert Oasis Hub",
+    "name": "Errachidia",
+    "desc": "Ziz Valley ksour, Hassan Addakhil dam & southern routes"
+  },
+  "larache": {
+    "tag": "Jewel of Loukkos",
+    "name": "Larache",
+    "desc": "Ancient Lixus archaeological site & quiet Atlantic port"
+  },
+  "beni_mellal": {
+    "tag": "Gateway to Middle Atlas",
+    "name": "Beni Mellal",
+    "desc": "Ain Asserdoun springs, lush orchards & Ouzoud access"
+  },
+  "figuig": {
+    "tag": "Ancient Eastern Oasis",
+    "name": "Figuig",
+    "desc": "Millenary palm groves & traditional ksour in the Far East"
+  },
+  "midelt": {
+    "tag": "Apple Capital",
+    "name": "Midelt",
+    "desc": "Apple orchards, mineral treasures & High Atlas passes"
+  },
+  "imilchil": {
+    "tag": "Land of Lakes & Legend",
+    "name": "Imilchil",
+    "desc": "Isli & Tislit mountain lakes & famous Engagement Festival"
+  }
 }

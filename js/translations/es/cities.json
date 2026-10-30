@@ -1,40 +1,192 @@
 {
-  "marrakech": {"tag": "Ciudad Imperial", "name": "Marrakech", "desc": "Medina, palacios y puertas del desierto"},
-  "chefchaouen": {"tag": "Montañas del Rif", "name": "Chefchaouen", "desc": "La icónica Perla Azul de Marruecos"},
-  "fes": {"tag": "Capital cultural", "name": "Fez", "desc": "Antigua medina y patrimonio espiritual"},
-  "casablanca": {"tag": "Corazón económico", "name": "Casablanca", "desc": "La ciudad más grande de Marruecos"},
-  "essaouira": {"tag": "Costa Atlántica", "name": "Essaouira", "desc": "Ciudad ventosa, murallas y mariscos"},
-  "agadir": {"tag": "Sol y playa", "name": "Agadir", "desc": "Playas doradas y resorts modernos"},
-  "tangier": {"tag": "Estrecho de Gibraltar", "name": "Tánger", "desc": "La puerta entre Europa y África"},
-  "ouarzazate": {"tag": "Puerta del desierto", "name": "Ouarzazate", "desc": "Paisajes cinematográficos y kasbahs"},
-  "rabat": {"tag": "Capital Imperial", "name": "Rabat", "desc": "Jardines históricos y brisas atlánticas"},
-  "meknes": {"tag": "Ciudad Imperial", "name": "Meknes", "desc": "Bab Mansour, Volubilis y medina"},
-  "tetouan": {"tag": "Costa mediterránea", "name": "Tetuán", "desc": "Herencia andaluza y montañas del Rif"},
-  "ifrane": {"tag": "Atlas Medio", "name": "Ifrane", "desc": "Arquitectura alpina y bosques de cedros"},
-  "el_jadida": {"tag": "Costa Atlántica", "name": "El Jadida", "desc": "Cisterna portuguesa y fuertes oceánicos"},
-  "taroudant": {"tag": "Valle del Souss", "name": "Taroudant", "desc": "Murallas masivas y zocos auténticos"},
-  "dakhla": {"tag": "Extremo Sur", "name": "Dakhla", "desc": "Lagunas espectaculares y paraíso del kitesurf"},
-  "al_hoceima": {"tag": "Costa mediterránea", "name": "Al Hoceima", "desc": "Aguas turquesas y acantilados del Rif"},
-  "nador": {"tag": "Laguna mediterránea", "name": "Nador", "desc": "Laguna de Mar Chica y brisas costeras"},
-  "zagora": {"tag": "Valle del Drâa", "name": "Zagora", "desc": "Palmerales exuberantes y puertas del Sáhara"},
-  "safi": {"tag": "Costa Atlántica", "name": "Safi", "desc": "Capital de la cerámica y fortaleza"},
-  "laayoune": {"tag": "Puerta del Sáhara", "name": "Laayoune", "desc": "Cultura saharaui y horizonte atlántico"},
-  "merzouga": {"tag": "Desierto del Sáhara", "name": "Merzouga", "desc": "Dunas del Erg Chebbi y campamentos"},
-  "azilal": {"tag": "Corazón del Atlas", "name": "Azilal", "desc": "Cascadas de Ouzoud y valles verdes"},
-  "tinghir": {"tag": "Garganta del Todra", "name": "Tinghir", "desc": "Cañones espectaculares y oasis de palmeras"},
-  "oujda": {"tag": "Perla azul del Este", "name": "Oujda", "desc": "Playas doradas y puerta del Este"},
-  "asilah": {"name": "Asilah", "tag": "Atlántico Norte", "desc": "Medina blanca, murales y murallas"},
-  "erfoud": {"name": "Erfoud", "tag": "Puerta de los fósiles", "desc": "Fósiles, palmeras datileras y camino a Merzouga"},
-  "tiznit": {"name": "Tiznit", "tag": "Ciudad de la plata", "desc": "Murallas, zocos de plata y puerta al sur"},
-  "sidi_ifni": {"name": "Sidi Ifni", "tag": "Costa salvaje", "desc": "Pueblo Art Decó, arcos de Legzira y Mirleft"},
-  "guelmim": {"name": "Guelmim", "tag": "Puerta del Sáhara", "desc": "Mercado de camellos, oasis y camino a Dakhla"},
-  "oualidia": {"tag": "Laguna Atlántica", "name": "Oualidia", "desc": "Ostras, laguna y playas tranquilas"},
-  "azrou": {"tag": "Atlas Medio", "name": "Azrou", "desc": "Bosques de cedros y macacos de Berbería"},
-  "sefrou": {"tag": "El jardín de Marruecos", "name": "Sefrou", "desc": "Medina, cascadas y cerezos en flor"},
-  "errachidia": {"tag": "El oasis del desierto", "name": "Errachidia", "desc": "Fósiles, kasbahs y camino a Merzouga"},
-  "larache": {"tag": "Atlántico Norte", "name": "Larache", "desc": "Ruinas de Lixus y medina atlántica"},
-  "beni_mellal": {"tag": "Puerta del Atlas Medio", "name": "Beni Mellal", "desc": "Mercados, montañas y acceso a Ouzoud"},
-  "figuig": {"tag": "Oasis del Este", "name": "Figuig", "desc": "Palmerales y ksour tradicionales"},
-  "midelt": {"tag": "Altiplanos", "name": "Midelt", "desc": "Huertos de manzanos, fósiles y puertos del Atlas"},
-  "imilchil": {"tag": "Alto Atlas", "name": "Imilchil", "desc": "Lagos de montaña y famoso festival de bodas"}
+  "marrakech": {
+    "tag": "Capital de las Palmeras",
+    "name": "Marrakech",
+    "desc": "Antigua medina, palacios históricos y puerta de entrada al Sáhara"
+  },
+  "chefchaouen": {
+    "tag": "La Perla Azul",
+    "name": "Chefchaouen",
+    "desc": "Emblemáticas callejuelas azules y ambiente apacible del Rif"
+  },
+  "fes": {
+    "tag": "Capital Espiritual y Cultural",
+    "name": "Fez",
+    "desc": "Medina milenaria, Universidad Al Quaraouiyine y rico patrimonio"
+  },
+  "casablanca": {
+    "tag": "Capital Económica",
+    "name": "Casablanca",
+    "desc": "Mezquita Hassan II, arquitectura moderna y energía costera"
+  },
+  "essaouira": {
+    "tag": "Ciudad del Viento",
+    "name": "Essaouira",
+    "desc": "Murallas junto al mar, marisco fresco y música Gnawa"
+  },
+  "agadir": {
+    "tag": "Capital del Sol y la Playa",
+    "name": "Agadir",
+    "desc": "Bahía de playa dorada, resorts modernos y la kasbah de Oufella"
+  },
+  "tangier": {
+    "tag": "Novia del Norte",
+    "name": "Tánger",
+    "desc": "Punto de encuentro atlántico-mediterráneo y puerta a Europa"
+  },
+  "ouarzazate": {
+    "tag": "Hollywood de África",
+    "name": "Ouarzazate",
+    "desc": "Estudios de cine, kasbahs históricas y Ait Ben Haddou"
+  },
+  "rabat": {
+    "tag": "Capital de las Luces",
+    "name": "Rabat",
+    "desc": "Torre Hassan, Kasbah de los Udayas y brisa atlántica"
+  },
+  "meknes": {
+    "tag": "Capital Ismaelita",
+    "name": "Mequínez",
+    "desc": "Bab Mansour, monumentos imperiales y ruinas de Volubilis"
+  },
+  "tetouan": {
+    "tag": "La Paloma Blanca",
+    "name": "Tetuán",
+    "desc": "Auténtico patrimonio andalusí y medina Patrimonio de la Humanidad"
+  },
+  "ifrane": {
+    "tag": "La Suiza Marroquí",
+    "name": "Ifrane",
+    "desc": "Arquitectura alpina, nieves invernales y bosques de cedros"
+  },
+  "el_jadida": {
+    "tag": "Joya Portuguesa",
+    "name": "El Jadida",
+    "desc": "Cisterna portuguesa histórica y fortificación oceánica"
+  },
+  "taroudant": {
+    "tag": "Pequeña Marrakech",
+    "name": "Taroudant",
+    "desc": "Imponentes murallas de ocre y auténticos zocos del Souss"
+  },
+  "dakhla": {
+    "tag": "Perla del Lejano Sur",
+    "name": "Dakhla",
+    "desc": "Encuentro del desierto con el océano, laguna y paraíso del kitesurf"
+  },
+  "al_hoceima": {
+    "tag": "Perla del Mediterráneo",
+    "name": "Alhucemas",
+    "desc": "Aguas turquesas, playas vírgenes y acantilados del Rif"
+  },
+  "nador": {
+    "tag": "Centro de la Laguna de Marchica",
+    "name": "Nador",
+    "desc": "Laguna de Marchica, paseo marítimo y Monte Gourougou"
+  },
+  "zagora": {
+    "tag": "Puerta de Tombuctú",
+    "name": "Zagora",
+    "desc": "Oasis de palmeras del valle del Draa y rutas hacia el desierto"
+  },
+  "safi": {
+    "tag": "Capital de la Cerámica",
+    "name": "Safi",
+    "desc": "Artesanía alfarera tradicional, castillo del mar y marisco fresco"
+  },
+  "laayoune": {
+    "tag": "Metrópolis del Sáhara",
+    "name": "El Aaiún",
+    "desc": "Plaza Mechouar, cultura saharaui y dunas costeras"
+  },
+  "merzouga": {
+    "tag": "Capital de las Dunas Doradas",
+    "name": "Merzouga",
+    "desc": "Dunas de Erg Chebbi, campamentos en el desierto y amaneceres únicos"
+  },
+  "azilal": {
+    "tag": "Corazón del Atlas y Geoparque M'Goun",
+    "name": "Azilal",
+    "desc": "Cascadas de Ouzoud, valles verdes y geoparque de la UNESCO"
+  },
+  "tinghir": {
+    "tag": "Oasis de las Gargantas",
+    "name": "Tinghir",
+    "desc": "Espectaculares Gargantas del Todra y exuberantes palmerales"
+  },
+  "oujda": {
+    "tag": "Capital del Oriental",
+    "name": "Oujda",
+    "desc": "Auténtico patrimonio oriental, música Reggada y zocos históricos"
+  },
+  "asilah": {
+    "tag": "Ciudad del Arte y la Cultura",
+    "name": "Asilah",
+    "desc": "Murales artísticos, murallas marinas y encanto atlántico tranquilo"
+  },
+  "erfoud": {
+    "tag": "Capital de los Fósiles y los Dátiles",
+    "name": "Erfoud",
+    "desc": "Fósiles raros, palmerales del Tafilalet y camino a Merzouga"
+  },
+  "tiznit": {
+    "tag": "Capital de la Plata",
+    "name": "Tiznit",
+    "desc": "Joyería de plata bereber, murallas rosadas y medina serena"
+  },
+  "sidi_ifni": {
+    "tag": "Costa Art Déco",
+    "name": "Sidi Ifni",
+    "desc": "Herencia española, arcos naturales de Legzira y acantilados marinos"
+  },
+  "guelmim": {
+    "tag": "Puerta del Sáhara",
+    "name": "Guelmim",
+    "desc": "Mercado histórico de camellos, oasis y Plage Blanche"
+  },
+  "oualidia": {
+    "tag": "Capital de las Ostras",
+    "name": "Oualidia",
+    "desc": "Tranquila laguna atlántica, cultivo de ostras y playas serenas"
+  },
+  "azrou": {
+    "tag": "Capital de los Cedros",
+    "name": "Azrou",
+    "desc": "Bosques de cedros del Atlas y macacos de Berbería en libertad"
+  },
+  "sefrou": {
+    "tag": "Capital de la Cereza",
+    "name": "Sefrou",
+    "desc": "Antigua medina, cascadas y el histórico Festival de la Cereza"
+  },
+  "errachidia": {
+    "tag": "Oasis del Desierto",
+    "name": "Errachidia",
+    "desc": "Ksour del valle del Ziz, embalse Hassan Addakhil y rutas del sur"
+  },
+  "larache": {
+    "tag": "Joya del Lucus",
+    "name": "Larache",
+    "desc": "Yacimiento arqueológico de Lixus y tranquilo puerto atlántico"
+  },
+  "beni_mellal": {
+    "tag": "Puerta del Atlas Medio",
+    "name": "Beni Mellal",
+    "desc": "Manantiales de Ain Asserdoun, huertos frondosos y acceso a Ouzoud"
+  },
+  "figuig": {
+    "tag": "Oasis Milenario del Este",
+    "name": "Figuig",
+    "desc": "Palmerales milenarios y ksour tradicionales en el Lejano Oriente"
+  },
+  "midelt": {
+    "tag": "Capital de la Manzana",
+    "name": "Midelt",
+    "desc": "Huertos de manzanos, tesoros minerales y puertos del Alto Atlas"
+  },
+  "imilchil": {
+    "tag": "Tierra de Lagos y Leyendas",
+    "name": "Imilchil",
+    "desc": "Lagos de montaña Isli y Tislit y famoso Festival de las Bodas"
+  }
 }

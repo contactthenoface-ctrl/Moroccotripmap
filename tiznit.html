@@ -93,6 +93,14 @@
         .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
         .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
         .day-card h3:first-of-type { margin-top: 0; }
+    
+        .carousel-dot { width: 10px; height: 10px; border-radius: 9999px; background: rgba(194, 155, 98, 0.35); transition: 0.2s; border: 0; padding: 0; cursor: pointer; }
+        .carousel-dot.active { background: #185336; width: 26px; }
+        .carousel-btn:focus-visible, .carousel-dot:focus-visible { outline: 2px solid #185336; outline-offset: 2px; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        @media (prefers-reduced-motion: reduce) { .carousel-track { scroll-behavior: auto !important; } }
+
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -280,6 +288,7 @@
         </section>
 
         
+        
         <!-- Must-Visit Places Section -->
         <section id="places" class="py-16 bg-creme">
             <div class="max-w-6xl mx-auto px-4">
@@ -292,18 +301,18 @@
                     
                 <a href="#place-ramparts" class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-sable/20 hover:shadow-md transition flex flex-col">
                     <div class="relative h-44 overflow-hidden">
-                        <img alt="Ramparts & gates" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80"/>
+                        <img alt="Ramparts & gates" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80"/>
                         <span class="absolute top-3 left-3 text-xs font-semibold bg-vert/90 text-white px-2 py-1 rounded-lg" data-i18n="tiznit_page.places.ramparts.tag">Heritage</span>
                     </div>
                     <div class="p-4 flex flex-col flex-1">
-                        <h3 class="text-base font-bold text-sombre" data-i18n="tiznit_page.places.ramparts.title">Ramparts & gates</h3>
+                        <h3 class="text-base font-bold text-sombre" data-i18n="tiznit_page.places.ramparts.title">Ramparts &amp; gates</h3>
                         <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="tiznit_page.places.ramparts.desc">Seven kilometres of ochre walls and five main gates — Bab el Khemis, Bab Targa and more.</p>
                         <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="tiznit_page.places.explore">See details ↓</span>
                     </div>
                 </a>
                 <a href="#place-silver" class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-sable/20 hover:shadow-md transition flex flex-col">
                     <div class="relative h-44 overflow-hidden">
-                        <img alt="Silver jewellery souk" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80"/>
+                        <img alt="Silver jewellery souk" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80"/>
                         <span class="absolute top-3 left-3 text-xs font-semibold bg-vert/90 text-white px-2 py-1 rounded-lg" data-i18n="tiznit_page.places.silver.tag">Craft</span>
                     </div>
                     <div class="p-4 flex flex-col flex-1">
@@ -314,7 +323,7 @@
                 </a>
                 <a href="#place-mechouar" class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-sable/20 hover:shadow-md transition flex flex-col">
                     <div class="relative h-44 overflow-hidden">
-                        <img alt="Place El Mechouar" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1569385210018-1030571c2059?auto=format&fit=crop&w=800&q=80"/>
+                        <img alt="Place El Mechouar" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1569385210018-1030571c2059?auto=format&fit=crop&w=1200&q=80"/>
                         <span class="absolute top-3 left-3 text-xs font-semibold bg-vert/90 text-white px-2 py-1 rounded-lg" data-i18n="tiznit_page.places.mechouar.tag">Town</span>
                     </div>
                     <div class="p-4 flex flex-col flex-1">
@@ -325,7 +334,7 @@
                 </a>
                 <a href="#place-source" class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-sable/20 hover:shadow-md transition flex flex-col">
                     <div class="relative h-44 overflow-hidden">
-                        <img alt="Source Bleue (Aïn Aqdim)" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80"/>
+                        <img alt="Source Bleue (Aïn Aqdim)" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80"/>
                         <span class="absolute top-3 left-3 text-xs font-semibold bg-vert/90 text-white px-2 py-1 rounded-lg" data-i18n="tiznit_page.places.source.tag">Heritage</span>
                     </div>
                     <div class="p-4 flex flex-col flex-1">
@@ -336,12 +345,23 @@
                 </a>
                 <a href="#place-kasbah" class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-sable/20 hover:shadow-md transition flex flex-col">
                     <div class="relative h-44 overflow-hidden">
-                        <img alt="Kasbat Aghanaj" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1559592413-7eaba5c2e8c2?auto=format&fit=crop&w=800&q=80"/>
+                        <img alt="Kasbat Aghanaj" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1559592413-7eaba5c2e8c2?auto=format&fit=crop&w=1200&q=80"/>
                         <span class="absolute top-3 left-3 text-xs font-semibold bg-vert/90 text-white px-2 py-1 rounded-lg" data-i18n="tiznit_page.places.kasbah.tag">Heritage</span>
                     </div>
                     <div class="p-4 flex flex-col flex-1">
                         <h3 class="text-base font-bold text-sombre" data-i18n="tiznit_page.places.kasbah.title">Kasbat Aghanaj</h3>
                         <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="tiznit_page.places.kasbah.desc">Earthen kasbah within the walls — courtyards and lanes with sunset light.</p>
+                        <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="tiznit_page.places.explore">See details ↓</span>
+                    </div>
+                </a>
+                <a href="#place-aglou" class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-sable/20 hover:shadow-md transition flex flex-col">
+                    <div class="relative h-44 overflow-hidden">
+                        <img alt="Aglou beach & village" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"/>
+                        <span class="absolute top-3 left-3 text-xs font-semibold bg-vert/90 text-white px-2 py-1 rounded-lg" data-i18n="tiznit_page.places.aglou.tag">Coast</span>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <h3 class="text-base font-bold text-sombre" data-i18n="tiznit_page.places.aglou.title">Aglou beach &amp; village</h3>
+                        <p class="text-sm text-sombre/70 mt-2 flex-1" data-i18n="tiznit_page.places.aglou.desc">Atlantic shoreline about 20–30 minutes west of Tiznit — a simple coastal break.</p>
                         <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="tiznit_page.places.explore">See details ↓</span>
                     </div>
                 </a>
@@ -351,10 +371,29 @@
         
         <section id="place-ramparts" class="py-14 border-t border-sable/20">
             <div class="max-w-5xl mx-auto px-4">
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="tiznit_page.place_sections.ramparts.title">Ramparts & historic gates</h2>
-                <div class="flex gap-3 overflow-x-auto pb-4 snap-x scrollbar-thin mb-6">
-                    <div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80" alt="Ramparts & historic gates"/></div><div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=800&q=80" alt="Ramparts & historic gates"/></div><div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Ramparts & historic gates"/></div>
-                </div>
+                <p class="text-xs uppercase tracking-wider text-sable font-semibold mb-2" data-i18n="tiznit_page.places.ramparts.tag">Heritage</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-6" data-i18n="tiznit_page.place_sections.ramparts.title">Ramparts &amp; historic gates</h2>
+                
+              <div id="carousel-ramparts" class="relative max-w-5xl mx-auto mb-6" role="region" aria-roledescription="carousel">
+                  <div class="carousel-track no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl">
+                      
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80" alt="Ramparts & historic gates"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.ramparts.cap1">Ramparts &amp; gates</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1200&q=80" alt="Ramparts & historic gates"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.ramparts.cap2">Ramparts &amp; gates</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80" alt="Ramparts & historic gates"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.ramparts.cap3">Ramparts &amp; gates</figcaption>
+                      </figure>
+                  </div>
+                  <button type="button" class="carousel-btn carousel-prev absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Previous">‹</button>
+                  <button type="button" class="carousel-btn carousel-next absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Next">›</button>
+                  <div class="carousel-dots flex justify-center items-center gap-2 mt-3"></div>
+              </div>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.ramparts.p1">Tiznit’s walls stretch about 7 km and are punctuated by round adobe towers and five principal gates, including Bab el Khemis, Bab Targa, Bab Aglou, Bab el Maader and Bab Oulad Jerrar. Late afternoon light turns the ochre clay a warm copper colour.</p>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.ramparts.p2">You can walk sections of the perimeter or simply approach the most photogenic gates. Bab Targa on the west side opens toward palm edges; Bab el Khemis is among the liveliest approaches into the medina.</p>
                 <p class="text-sm text-sable font-medium" data-i18n="tiznit_page.place_sections.ramparts.tip">Best light: late afternoon. Wear comfortable shoes — surfaces can be uneven.</p>
@@ -362,10 +401,29 @@
         </section>
         <section id="place-silver" class="py-14 border-t border-sable/20">
             <div class="max-w-5xl mx-auto px-4">
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="tiznit_page.place_sections.silver.title">Silver jewellery souk</h2>
-                <div class="flex gap-3 overflow-x-auto pb-4 snap-x scrollbar-thin mb-6">
-                    <div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Silver jewellery souk"/></div><div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Silver jewellery souk"/></div><div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80" alt="Silver jewellery souk"/></div>
-                </div>
+                <p class="text-xs uppercase tracking-wider text-sable font-semibold mb-2" data-i18n="tiznit_page.places.silver.tag">Craft</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-6" data-i18n="tiznit_page.place_sections.silver.title">Silver jewellery souk</h2>
+                
+              <div id="carousel-silver" class="relative max-w-5xl mx-auto mb-6" role="region" aria-roledescription="carousel">
+                  <div class="carousel-track no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl">
+                      
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" alt="Silver jewellery souk"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.silver.cap1">Silver jewellery souk</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=80" alt="Silver jewellery souk"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.silver.cap2">Silver jewellery souk</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80" alt="Silver jewellery souk"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.silver.cap3">Silver jewellery souk</figcaption>
+                      </figure>
+                  </div>
+                  <button type="button" class="carousel-btn carousel-prev absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Previous">‹</button>
+                  <button type="button" class="carousel-btn carousel-next absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Next">›</button>
+                  <div class="carousel-dots flex justify-center items-center gap-2 mt-3"></div>
+              </div>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.silver.p1">Tiznit’s reputation rests on Amazigh silversmithing. Inside the medina, streets of workshops and shops display fibulae (tizerzai), bracelets, pendants, rings and ceremonial pieces. Some artisans still work silver in view of visitors.</p>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.silver.p2">Prices are often more approachable than in Marrakech or Essaouira, but quality varies — solid silver, plated pieces and industrial stock all exist. Ask about weight and purity, and take time before buying.</p>
                 <p class="text-sm text-sable font-medium" data-i18n="tiznit_page.place_sections.silver.tip">Thursday’s weekly market adds energy to the whole town if your dates match.</p>
@@ -373,10 +431,29 @@
         </section>
         <section id="place-mechouar" class="py-14 border-t border-sable/20">
             <div class="max-w-5xl mx-auto px-4">
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="tiznit_page.place_sections.mechouar.title">Place El Mechouar</h2>
-                <div class="flex gap-3 overflow-x-auto pb-4 snap-x scrollbar-thin mb-6">
-                    <div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1569385210018-1030571c2059?auto=format&fit=crop&w=800&q=80" alt="Place El Mechouar"/></div><div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80" alt="Place El Mechouar"/></div>
-                </div>
+                <p class="text-xs uppercase tracking-wider text-sable font-semibold mb-2" data-i18n="tiznit_page.places.mechouar.tag">Town</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-6" data-i18n="tiznit_page.place_sections.mechouar.title">Place El Mechouar</h2>
+                
+              <div id="carousel-mechouar" class="relative max-w-5xl mx-auto mb-6" role="region" aria-roledescription="carousel">
+                  <div class="carousel-track no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl">
+                      
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1569385210018-1030571c2059?auto=format&fit=crop&w=1200&q=80" alt="Place El Mechouar"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.mechouar.cap1">Place El Mechouar</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80" alt="Place El Mechouar"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.mechouar.cap2">Place El Mechouar</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1200&q=80" alt="Place El Mechouar"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.mechouar.cap3">Place El Mechouar</figcaption>
+                      </figure>
+                  </div>
+                  <button type="button" class="carousel-btn carousel-prev absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Previous">‹</button>
+                  <button type="button" class="carousel-btn carousel-next absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Next">›</button>
+                  <div class="carousel-dots flex justify-center items-center gap-2 mt-3"></div>
+              </div>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.mechouar.p1">Place El Mechouar is the old central square of Tiznit — a natural meeting point between medina lanes, cafés and the flow toward the jewellery streets.</p>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.mechouar.p2">Start here to orient yourself, then branch toward the souks or a gate. It is less a monumental plaza than a lived-in town heart.</p>
                 <p class="text-sm text-sable font-medium" data-i18n="tiznit_page.place_sections.mechouar.tip">Morning for local rhythm; late day for softer photos.</p>
@@ -384,10 +461,29 @@
         </section>
         <section id="place-source" class="py-14 border-t border-sable/20">
             <div class="max-w-5xl mx-auto px-4">
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="tiznit_page.place_sections.source.title">Source Bleue (Aïn Aqdim)</h2>
-                <div class="flex gap-3 overflow-x-auto pb-4 snap-x scrollbar-thin mb-6">
-                    <div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80" alt="Source Bleue (Aïn Aqdim)"/></div><div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Source Bleue (Aïn Aqdim)"/></div>
-                </div>
+                <p class="text-xs uppercase tracking-wider text-sable font-semibold mb-2" data-i18n="tiznit_page.places.source.tag">Heritage</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-6" data-i18n="tiznit_page.place_sections.source.title">Source Bleue (Aïn Aqdim)</h2>
+                
+              <div id="carousel-source" class="relative max-w-5xl mx-auto mb-6" role="region" aria-roledescription="carousel">
+                  <div class="carousel-track no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl">
+                      
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Source Bleue (Aïn Aqdim)"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.source.cap1">Source Bleue (Aïn Aqdim)</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80" alt="Source Bleue (Aïn Aqdim)"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.source.cap2">Source Bleue (Aïn Aqdim)</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Source Bleue (Aïn Aqdim)"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.source.cap3">Source Bleue (Aïn Aqdim)</figcaption>
+                      </figure>
+                  </div>
+                  <button type="button" class="carousel-btn carousel-prev absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Previous">‹</button>
+                  <button type="button" class="carousel-btn carousel-next absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Next">›</button>
+                  <div class="carousel-dots flex justify-center items-center gap-2 mt-3"></div>
+              </div>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.source.p1">Aïn Aqdim — marketed as Source Bleue — is a spring tied to the stories of Tiznit’s settlement. Do not expect a dramatic turquoise pool; treat it as a heritage landmark and a quiet pause in the urban fabric.</p>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.source.p2">It sits within the historic core and pairs easily with a medina walk and a stop at the silver streets.</p>
                 <p class="text-sm text-sable font-medium" data-i18n="tiznit_page.place_sections.source.tip">Combine with Place El Mechouar and the jewellery souk the same morning.</p>
@@ -395,13 +491,62 @@
         </section>
         <section id="place-kasbah" class="py-14 border-t border-sable/20">
             <div class="max-w-5xl mx-auto px-4">
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-4" data-i18n="tiznit_page.place_sections.kasbah.title">Kasbat Aghanaj</h2>
-                <div class="flex gap-3 overflow-x-auto pb-4 snap-x scrollbar-thin mb-6">
-                    <div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1559592413-7eaba5c2e8c2?auto=format&fit=crop&w=800&q=80" alt="Kasbat Aghanaj"/></div><div class="flex-none w-72 h-48 rounded-xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=800&q=80" alt="Kasbat Aghanaj"/></div>
-                </div>
+                <p class="text-xs uppercase tracking-wider text-sable font-semibold mb-2" data-i18n="tiznit_page.places.kasbah.tag">Heritage</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-6" data-i18n="tiznit_page.place_sections.kasbah.title">Kasbat Aghanaj</h2>
+                
+              <div id="carousel-kasbah" class="relative max-w-5xl mx-auto mb-6" role="region" aria-roledescription="carousel">
+                  <div class="carousel-track no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl">
+                      
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1559592413-7eaba5c2e8c2?auto=format&fit=crop&w=1200&q=80" alt="Kasbat Aghanaj"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.kasbah.cap1">Kasbat Aghanaj</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1200&q=80" alt="Kasbat Aghanaj"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.kasbah.cap2">Kasbat Aghanaj</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80" alt="Kasbat Aghanaj"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.kasbah.cap3">Kasbat Aghanaj</figcaption>
+                      </figure>
+                  </div>
+                  <button type="button" class="carousel-btn carousel-prev absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Previous">‹</button>
+                  <button type="button" class="carousel-btn carousel-next absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Next">›</button>
+                  <div class="carousel-dots flex justify-center items-center gap-2 mt-3"></div>
+              </div>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.kasbah.p1">Kasbat Aghanaj is an earthen fortress within the city walls. Courtyards and lanes feel more intimate than the main commercial streets and catch beautiful light near sunset.</p>
                 <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.kasbah.p2">Access and restoration status can vary — a short exterior walk is worthwhile even if interiors are limited.</p>
                 <p class="text-sm text-sable font-medium" data-i18n="tiznit_page.place_sections.kasbah.tip">Pair with a rampart viewpoint for golden-hour photos.</p>
+            </div>
+        </section>
+        <section id="place-aglou" class="py-14 border-t border-sable/20">
+            <div class="max-w-5xl mx-auto px-4">
+                <p class="text-xs uppercase tracking-wider text-sable font-semibold mb-2" data-i18n="tiznit_page.places.aglou.tag">Coast</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-vert mb-6" data-i18n="tiznit_page.place_sections.aglou.title">Aglou beach &amp; village</h2>
+                
+              <div id="carousel-aglou" class="relative max-w-5xl mx-auto mb-6" role="region" aria-roledescription="carousel">
+                  <div class="carousel-track no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl">
+                      
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Aglou beach & village"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.aglou.cap1">Aglou beach &amp; village</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1200&q=80" alt="Aglou beach & village"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.aglou.cap2">Aglou beach &amp; village</figcaption>
+                      </figure>
+                      <figure class="carousel-slide relative shrink-0 w-full snap-center">
+                        <img class="w-full h-64 sm:h-80 object-cover rounded-2xl" src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=80" alt="Aglou beach & village"/>
+                        <figcaption class="absolute bottom-3 left-3 right-3 text-white text-sm bg-black/40 rounded-lg px-3 py-1.5" data-i18n="tiznit_page.place_sections.aglou.cap3">Aglou beach &amp; village</figcaption>
+                      </figure>
+                  </div>
+                  <button type="button" class="carousel-btn carousel-prev absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Previous">‹</button>
+                  <button type="button" class="carousel-btn carousel-next absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center text-vert text-xl z-10" aria-label="Next">›</button>
+                  <div class="carousel-dots flex justify-center items-center gap-2 mt-3"></div>
+              </div>
+                <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.aglou.p1">Aglou sits on the Atlantic west of Tiznit. It is a low-key coastal village and beach stop rather than a resort strip — useful for a half-day of sea air after the medina and silver streets.</p>
+                <p class="text-sombre/80 leading-relaxed mb-3" data-i18n="tiznit_page.place_sections.aglou.p2">Reach it by grand taxi or private car in roughly 20–30 minutes. Facilities are simple; bring what you need for a short beach walk.</p>
+                <p class="text-sm text-sable font-medium" data-i18n="tiznit_page.place_sections.aglou.tip">Combine morning in Tiznit medina with an afternoon at Aglou if you want both craft and coast.</p>
             </div>
         </section>
 
@@ -430,7 +575,7 @@
                         <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="tiznit_page.stays.card1.desc">Walkable to the walls and jewellery streets.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert" data-i18n="tiznit_page.stays.card1.location">Centre</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Tiznit+hotel+medina" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tiznit_page.stays.book">Book →</a>
+                            <a href="https://www.booking.com/city/ma/tiznit.html" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tiznit_page.stays.book">Book →</a>
                         </div>
                     </div>
                 </div>
@@ -446,7 +591,7 @@
                         <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="tiznit_page.stays.card2.desc">Clean overnight before the road south or back to Agadir.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert" data-i18n="tiznit_page.stays.card2.location">Tiznit</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Tiznit+riad" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tiznit_page.stays.book">Book →</a>
+                            <a href="https://www.booking.com/city/ma/tiznit.html" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tiznit_page.stays.book">Book →</a>
                         </div>
                     </div>
                 </div>
@@ -462,7 +607,7 @@
                         <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="tiznit_page.stays.card3.desc">Courtyard calm after a day in the souks.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert" data-i18n="tiznit_page.stays.card3.location">Medina edge</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Tiznit+hotel" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tiznit_page.stays.book">Book →</a>
+                            <a href="https://www.booking.com/city/ma/tiznit.html" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tiznit_page.stays.book">Book →</a>
                         </div>
                     </div>
                 </div>
@@ -478,7 +623,7 @@
                         <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="tiznit_page.stays.card4.desc">Handy if you self-drive toward Sidi Ifni or Tafraoute.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert" data-i18n="tiznit_page.stays.card4.location">Tiznit</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Tiznit+accommodation" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tiznit_page.stays.book">Book →</a>
+                            <a href="https://www.booking.com/city/ma/tiznit.html" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tiznit_page.stays.book">Book →</a>
                         </div>
                     </div>
                 </div>
@@ -489,9 +634,9 @@
             <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
                 
                 <div class="max-w-xl text-start z-10">
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tiznit_page.booking_banner.badge">Compare</span>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="tiznit_page.booking_banner.title">Hotels in Tiznit</h3>
-                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="tiznit_page.booking_banner.desc">Compare prices, guest scores and free-cancellation options.</p>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tiznit_page.booking_banner.badge">Over 30+ properties</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="tiznit_page.booking_banner.title">Explore all stays in Tiznit</h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="tiznit_page.booking_banner.desc">Compare live prices, read trusted guest reviews and enjoy free cancellation on most hotels.</p>
                 </div>
 
                 <div class="w-full md:w-auto shrink-0 z-10 text-center">
@@ -499,12 +644,12 @@
                        target="_blank" 
                        rel="noopener sponsored" 
                        class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
-                       <span data-i18n="tiznit_page.booking_banner.btn">View on Booking.com</span>
+                       <span data-i18n="tiznit_page.booking_banner.btn">View all stays on Booking.com</span>
                        <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                        </svg>
                     </a>
-                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="tiznit_page.booking_banner.guarantee">✓ Secure booking</p>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="tiznit_page.booking_banner.guarantee">✓ Best price guarantee &amp; secure booking</p>
                 </div>
 
                 <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
@@ -544,7 +689,7 @@
                 </a>
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Portside Stalls" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Local sweets" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.5</span>
@@ -553,17 +698,17 @@
                     <div class="p-6 flex flex-col justify-between flex-grow">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-bold text-sable uppercase" data-i18n="tiznit_page.eat.dates.tag">Product</span>
-                                <span class="text-xs text-gray-400" data-i18n="tiznit_page.eat.dates.loc">Souk</span>
+                                <span class="text-xs font-bold text-sable uppercase" data-i18n="tiznit_page.eat.sweets.tag">Sweet</span>
+                                <span class="text-xs text-gray-400" data-i18n="tiznit_page.eat.sweets.loc">Medina</span>
                             </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="tiznit_page.eat.dates.title">Dates of the Souss</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="tiznit_page.eat.dates.desc">Local dates from Souss markets.</p>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="tiznit_page.eat.sweets.title">Local sweets</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="tiznit_page.eat.sweets.desc">Try khringos or chebakia from a medina pastry shop.</p>
                         </div>
                     </div>
                 </a>
                 <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
                     <div class="relative h-48 w-full overflow-hidden bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Palm groves Café" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cafés on the square" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
                         <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
                             <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <span>4.4</span>
@@ -573,10 +718,10 @@
                         <div>
                             <div class="flex items-center justify-between mb-3">
                                 <span class="text-xs font-bold text-sable uppercase" data-i18n="tiznit_page.eat.hotel.tag">Café</span>
-                                <span class="text-xs text-gray-400" data-i18n="tiznit_page.eat.hotel.loc">Old Palm groves</span>
+                                <span class="text-xs text-gray-400" data-i18n="tiznit_page.eat.hotel.loc">Square</span>
                             </div>
-                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="tiznit_page.eat.hotel.title">Palm groves Tea Terrace</h3>
-                            <p class="text-xs text-sombre/70 mt-2" data-i18n="tiznit_page.eat.hotel.desc">Mint tea, fresh juice, and Moroccan pastries with panoramic ocean views.</p>
+                            <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="tiznit_page.eat.hotel.title">Cafés on the square</h3>
+                            <p class="text-xs text-sombre/70 mt-2" data-i18n="tiznit_page.eat.hotel.desc">Mint tea and a break between jewellery shops.</p>
                         </div>
                     </div>
                 </a>
@@ -597,16 +742,16 @@
                 <div class="bg-white p-5 rounded-xl border border-sable/10">
                     <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
                         <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-                        <span data-i18n="tiznit_page.tips.silvers.title">Silvers in town</span>
+                        <span data-i18n="tiznit_page.tips.shopping.title">Buying silver</span>
                     </h3>
-                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="tiznit_page.tips.silvers.desc">Workshops in Tiznit sell polished stone. For dune-circuit silver stops, see the Sidi Ifni places pages.</p>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="tiznit_page.tips.shopping.desc">Compare several shops. Ask about silver purity and whether pieces are solid or plated.</p>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-sable/10">
                     <h3 class="font-bold text-vert mb-2 flex items-center gap-2">
                         <svg class="w-5 h-5 text-sable shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
-                        <span data-i18n="tiznit_page.tips.heat.title">Heat &amp; season</span>
+                        <span data-i18n="tiznit_page.tips.timing.title">When to come</span>
                     </h3>
-                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="tiznit_page.tips.heat.desc">Prefer October–April. Summers are extreme.</p>
+                    <p class="text-sombre/70 text-xs leading-relaxed" data-i18n="tiznit_page.tips.timing.desc">October–April is milder. Thursday is the big market day.</p>
                 </div>
             </div>
         </section>
@@ -620,7 +765,7 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Aglou Day Trip" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Sidi Ifni (≈ 1h)" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="tiznit_page.daytrips.sidi_ifni.title">Sidi Ifni (≈ 1h)</h3>
@@ -628,19 +773,19 @@
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Silver circuit Day Trip" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Sidi Ifni (≈ 1h)" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 class="text-base font-bold" data-i18n="tiznit_page.daytrips.silvers.title">Silver circuit</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="tiznit_page.daytrips.silvers.desc">Silver-focused stops on the Sidi Ifni side.</p>
+                        <h3 class="text-base font-bold" data-i18n="tiznit_page.daytrips.sidi_ifni.title">Sidi Ifni (≈ 1h)</h3>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="tiznit_page.daytrips.sidi_ifni.desc">Art Deco coastal town further south.</p>
                     </div>
                 </div>
                 <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
-                    <img alt="Aglou beach Day Trip" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
+                    <img alt="Aglou beach (≈ 20–30 min)" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&amp;fit=crop&amp;w=600&amp;q=80"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <h3 class="text-base font-bold" data-i18n="tiznit_page.daytrips.aglou.title">Aglou beach (≈ 20–30 min)</h3>
-                        <p class="text-xs text-white/80 mt-1" data-i18n="tiznit_page.daytrips.aglou.desc">Atlantic shoreline west of town — simple coastal break.</p>
+                        <p class="text-xs text-white/80 mt-1" data-i18n="tiznit_page.daytrips.aglou.desc">Atlantic shoreline west of town.</p>
                     </div>
                 </div>
             </div>
@@ -842,6 +987,45 @@
             });
         });
     </script>
+
+
+<script>
+(function () {
+  document.querySelectorAll('[id^="carousel-"]').forEach(function (root) {
+    var track = root.querySelector('.carousel-track');
+    var slides = root.querySelectorAll('.carousel-slide');
+    var dotsBox = root.querySelector('.carousel-dots');
+    if (!track || !slides.length) return;
+    var dots = [];
+    for (var i = 0; i < slides.length; i++) {
+      var d = document.createElement('button');
+      d.type = 'button';
+      d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', 'Slide ' + (i + 1));
+      (function (idx) { d.addEventListener('click', function () { goTo(idx); }); })(i);
+      dotsBox.appendChild(d);
+      dots.push(d);
+    }
+    function current() {
+      var w = track.clientWidth || 1;
+      return Math.round(track.scrollLeft / w);
+    }
+    function goTo(n) {
+      n = Math.max(0, Math.min(slides.length - 1, n));
+      track.scrollTo({ left: n * track.clientWidth, behavior: 'smooth' });
+      dots.forEach(function (d, j) { d.classList.toggle('active', j === n); });
+    }
+    var prev = root.querySelector('.carousel-prev');
+    var next = root.querySelector('.carousel-next');
+    if (prev) prev.addEventListener('click', function () { goTo(current() - 1); });
+    if (next) next.addEventListener('click', function () { goTo(current() + 1); });
+    track.addEventListener('scroll', function () {
+      var c = current();
+      dots.forEach(function (d, j) { d.classList.toggle('active', j === c); });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>

@@ -19,7 +19,9 @@
     "vibe_val": "Art déco · Costa · Pueblo tranquilo",
     "best_time_val": "Octubre – abril · clima atlántico suave",
     "stay_val": "1 – 2 noches",
-    "access_val": "Agadir (AGA) ≈ 2,5–3 h · vía Tiznit · grands taxis"
+    "access_val": "Agadir (AGA) ≈ 2,5–3 h · vía Tiznit · grands taxis",
+    "airport_label": "Cómo llegar",
+    "airport_val": "Agadir (AGA) ≈ 2,5–3 h · vía Tiznit · grands taxis"
   },
   "intro": {
     "title": "Bienvenido a Sidi Ifni — art déco en el Atlántico",
@@ -122,6 +124,31 @@
     "badge": "Alojamiento",
     "title": "Dónde dormir en Sidi Ifni",
     "subtitle": "Hoteles sencillos y casas de huéspedes cerca del centro o el mar.",
+    "book": "Reservar →",
+    "card1": {
+      "badge": "Clásico",
+      "name": "Hotel cerca del centro",
+      "desc": "A pie hasta la Plaza y las calles art déco.",
+      "location": "Centro"
+    },
+    "card2": {
+      "badge": "Valor",
+      "name": "Hotel sencillo",
+      "desc": "Base limpia antes de Legzira o la ruta al sur.",
+      "location": "Sidi Ifni"
+    },
+    "card3": {
+      "badge": "Tranquilo",
+      "name": "Casa con vistas al mar",
+      "desc": "Más cerca del Atlántico tras un día en la costa.",
+      "location": "Cornisa"
+    },
+    "card4": {
+      "badge": "Base",
+      "name": "Hotel con parking",
+      "desc": "Útil si conduces hacia Guelmim o Tiznit.",
+      "location": "Sidi Ifni"
+    },
     "c1": {
       "tag": "Clásico",
       "title": "Hotel cerca del centro",
@@ -145,8 +172,7 @@
       "title": "Hotel con parking",
       "desc": "Útil si conduces hacia Guelmim o Tiznit.",
       "loc": "Sidi Ifni"
-    },
-    "book": "Reservar →"
+    }
   },
   "booking_banner": {
     "badge": "Más de 25 alojamientos",
@@ -238,5 +264,6 @@
     "title": "Bienvenido a Sidi Ifni — art déco en el Atlántico",
     "p1": "Sidi Ifni está en la costa atlántica sur de Marruecos, a unas dos horas y media al sur de Agadir vía Tiznit. Hasta 1969 fue un enclave español (Ifni). Ese pasado se ve en los edificios art déco blancos y azules, la antigua Plaza de España y un ritmo de pueblo pesquero más calmado.",
     "p2": "El pueblo es compacto: camina el centro colonial, mira el puerto y haz una excursión a los arcos de Legzira al norte. Ideal para una o dos noches entre Tiznit, Mirleft y la ruta hacia Guelmim."
-  }
+  },
+  "hero_alt": "Sidi Ifni costa art déco y centro atlántico"
 }

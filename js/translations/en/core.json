@@ -1,16 +1,429 @@
 {
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "stays": "Stays",
+    "restaurants": "Restaurants",
+    "experiences": "Experiences",
+    "guides": "Guides",
+    "interactive_map": "Interactive Map",
+    "cities": "Cities & Destinations",
+    "categories": "Categories",
+    "cat_stays": "Stays",
+    "cat_hotels": "Hotels & Riads",
+    "cat_gastronomy": "Cuisine & Dining",
+    "cat_restaurants": "Restaurants & Cafés",
+    "cat_experiences": "Experiences & Activities",
+    "cat_tours": "Tours & Excursions",
+    "cat_attractions": "Attractions",
+    "cat_museums": "Monuments & Museums",
+    "cat_transport": "Transportation",
+    "cat_rental": "Car Rental & Travel",
+    "cat_itineraries": "Travel Itineraries",
+    "cat_guides": "Travel Guides",
+    "history": "Morocco History",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "directory": "Directory & Database"
+  },
   "footer": {
-    "link_sidi_ifni": "Sidi Ifni Travel Guide",
+    "about_text": "Discover. Plan. Experience Morocco.\nThe premier travel and cultural guide for visitors exploring Morocco.",
+    "recommended_title": "Recommended Pages",
+    "destinations_title": "Top Destinations",
+    "categories_title": "Categories",
+    "connect_title": "Connect With Us",
+    "youtube_text": "Subscribe to our YouTube channel for video travel guides:",
+    "copyright": "© MoroccoTripMap. All rights reserved.",
+    "link_marrakech": "Marrakech Travel Guide",
+    "link_chefchaouen": "Chefchaouen The Blue City",
+    "link_fes": "Fes Old Medina",
+    "link_merzouga": "Merzouga Travel Guide",
+    "link_rabat": "Rabat Imperial Capital",
+    "link_all_destinations": "All Destinations ←",
+    "link_stays": "Authentic Riads & Hotels",
+    "link_restaurants": "Moroccan Restaurants",
+    "link_experiences": "Desert & Cultural Experiences",
+    "link_transport": "Transport & Private Drivers",
+    "link_itineraries": "Tour Programs & Itineraries",
+    "link_history": "Morocco History",
+    "link_blog": "Travel Blog & Tips",
+    "link_oujda": "Oujda Travel Guide",
+    "link_asilah": "Asilah Travel Guide",
+    "link_erfoud": "Erfoud Travel Guide",
     "link_tiznit": "Tiznit Travel Guide",
+    "link_sidi_ifni": "Sidi Ifni Travel Guide",
     "link_guelmim": "Guelmim Travel Guide",
     "link_agadir": "Agadir Travel Guide",
     "link_legzira": "Legzira Beach"
   },
+  "breadcrumb": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "stays": "Stays"
+  },
+  "mobile_menu": {
+    "language_title": "Language / اللغة"
+  },
   "destinations": {
+    "badge": "Top Destinations",
+    "title": "Explore Famous Cities & Destinations",
+    "view_all": "View all destinations ←",
+    "view_all_btn": "View all destinations",
+    "marrakech": {
+      "tag": "Imperial City",
+      "name": "Marrakech",
+      "desc": "Old Medina, historic palaces and gateway to the desert"
+    },
+    "chefchaouen": {
+      "tag": "Rif Mountains",
+      "name": "Chefchaouen",
+      "desc": "Morocco's iconic blue pearl"
+    },
+    "fes": {
+      "tag": "Cultural Capital",
+      "name": "Fes",
+      "desc": "Ancient medina and spiritual heritage"
+    },
+    "casablanca": {
+      "tag": "Economic Heart",
+      "name": "Casablanca",
+      "desc": "Morocco's largest city and Hassan II Mosque"
+    },
+    "essaouira": {
+      "tag": "Atlantic Coast",
+      "name": "Essaouira",
+      "desc": "Windy city, coastal ramparts and fresh seafood"
+    },
+    "agadir": {
+      "tag": "Sun & Beach",
+      "name": "Agadir",
+      "desc": "Atlantic beach bay, kasbah and surf coast"
+    },
+    "taroudant": {
+      "tag": "Little Marrakech",
+      "name": "Taroudant",
+      "desc": "Ochre ramparts and authentic Souss souks"
+    },
+    "tangier": {
+      "tag": "Strait of Gibraltar",
+      "name": "Tangier",
+      "desc": "The gateway between Europe and Africa"
+    },
+    "ouarzazate": {
+      "tag": "Gateway to the Desert",
+      "name": "Ouarzazate",
+      "desc": "Historic kasbahs, movie studios and Ait Ben Haddou"
+    },
+    "rabat": {
+      "tag": "Atlantic Capital",
+      "name": "Rabat",
+      "desc": "Kasbah of the Udayas, Hassan Tower and Chellah"
+    },
+    "merzouga": {
+      "tag": "Sahara Desert",
+      "name": "Merzouga",
+      "desc": "Erg Chebbi sand dunes and desert camps"
+    },
+    "zagora": {
+      "tag": "Draa Valley",
+      "name": "Zagora",
+      "desc": "Timbuktu 52 days sign, lush oases and dunes"
+    },
+    "meknes": {
+      "tag": "Ismaili Capital",
+      "name": "Meknes",
+      "desc": "Bab Mansour and historical monuments near Volubilis"
+    },
+    "tetouan": {
+      "tag": "The White Dove",
+      "name": "Tetouan",
+      "desc": "Andalusian heritage and UNESCO-listed medina"
+    },
+    "ifrane": {
+      "tag": "Moroccan Switzerland",
+      "name": "Ifrane",
+      "desc": "Alpine architecture, cedar forests and ski resort"
+    },
+    "el-jadida": {
+      "tag": "Portuguese Heritage",
+      "name": "El Jadida",
+      "desc": "Portuguese citadel and historic cistern"
+    },
+    "dakhla": {
+      "tag": "Where Desert Meets Ocean",
+      "name": "Dakhla",
+      "desc": "Lagoon, kitesurfing and white dune in the Far South"
+    },
+    "al_hoceima": {
+      "tag": "Pearl of the Mediterranean",
+      "name": "Al Hoceima",
+      "desc": "Pristine beaches, mountain nature and national park"
+    },
+    "nador": {
+      "tag": "Marchica Lagoon & Coast",
+      "name": "Nador",
+      "desc": "Marchica lagoon, promenade, Mount Gourougou and Cape Three Forks"
+    },
+    "taghazout": {
+      "tag": "Surf Capital",
+      "name": "Taghazout",
+      "desc": "Coastal fishing village and world-class surf spots"
+    },
+    "asilah": {
+      "tag": "Art City",
+      "name": "Asilah",
+      "desc": "Artistic murals, seaside ramparts and laid-back vibe"
+    },
+    "tiznit": {
+      "tag": "Silver Capital",
+      "name": "Tiznit",
+      "desc": "Berber silver jewelry, pink ramparts and tranquil medina"
+    },
+    "oujda": {
+      "tag": "Capital of the East",
+      "name": "Oujda",
+      "desc": "Authentic Oriental heritage, traditional music and souks"
+    },
+    "safi": {
+      "tag": "Ocean City",
+      "name": "Safi",
+      "desc": "Traditional pottery craftsmanship, sea castle and seafood"
+    },
+    "kenitra": {
+      "tag": "Gharb Gateway",
+      "name": "Kenitra",
+      "desc": "Mehdia beach and natural reserves"
+    },
+    "tinghir": {
+      "tag": "Oasis of Gorges",
+      "name": "Tinghir",
+      "desc": "Dramatic Todra Gorges and palm groves"
+    },
+    "azrou": {
+      "tag": "Heart of Middle Atlas",
+      "name": "Azrou",
+      "desc": "Cedar forests, Barbary macaques and national parks"
+    },
+    "larache": {
+      "tag": "Loukkos Heritage",
+      "name": "Larache",
+      "desc": "Lixus archaeological site and Atlantic coastline"
+    },
+    "midelt": {
+      "tag": "Apple Capital",
+      "name": "Midelt",
+      "desc": "Junction between the Middle and High Atlas"
+    },
+    "imlil": {
+      "tag": "Mountain Tourism",
+      "name": "Imlil",
+      "desc": "Basecamp for Mount Toubkal trekking and Atlas trails"
+    },
+    "mirleft": {
+      "tag": "Pristine Coastline",
+      "name": "Mirleft",
+      "desc": "Peaceful sandy beaches and dramatic coastal cliffs"
+    },
+    "tafraout": {
+      "tag": "Heart of Anti-Atlas",
+      "name": "Tafraoute",
+      "desc": "Painted rocks, Amazigh villages and almond trees"
+    },
+    "mhamid": {
+      "tag": "Chigaga Dunes",
+      "name": "M'Hamid El Ghizlane",
+      "desc": "Gateway to Erg Chigaga and authentic desert treks"
+    },
+    "errachidia": {
+      "tag": "Tafilalet Gateway",
+      "name": "Errachidia",
+      "desc": "Palm groves, Hassan Addakhil dam and Ziz valley ksour"
+    },
+    "oukaimeden": {
+      "tag": "Ski Resort",
+      "name": "Oukaïmeden",
+      "desc": "Africa's highest ski resort in the High Atlas Mountains"
+    },
+    "bin_el_ouidane": "Atlas Lake",
+    "bin_el_ouidane_full": {
+      "tag": "Atlas Lake",
+      "name": "Bin El Ouidane",
+      "desc": "Turquoise mountain lake and water activities"
+    },
+    "azilal": {
+      "tag": "Ouzoud Waterfalls",
+      "name": "Azilal",
+      "desc": "Ouzoud Falls and M'Goun UNESCO Global Geopark"
+    },
+    "saidia": {
+      "tag": "The Blue Pearl",
+      "name": "Saidia",
+      "desc": "Golden sandy beaches and Mediterranean resort"
+    },
+    "laayoune": {
+      "tag": "Sahara Metropolis",
+      "name": "Laayoune",
+      "desc": "Mechouar square, Laayoune port and coastal dunes"
+    },
+    "guelmim": {
+      "tag": "Gateway to Moroccan Sahara",
+      "name": "Guelmim",
+      "desc": "Historic camel market and vast beaches"
+    },
     "sidi_ifni": {
-      "tag": "Art Deco coast",
+      "tag": "Art Deco Coast",
       "name": "Sidi Ifni",
-      "desc": "Spanish legacy and Legzira arches"
+      "desc": "Spanish heritage and Legzira rock arches"
+    },
+    "moulay_idriss": {
+      "tag": "Holy City",
+      "name": "Moulay Idriss Zerhoun",
+      "desc": "Shrine of Morocco's founding dynasty near Volubilis"
+    },
+    "khenifra": {
+      "tag": "Capital of Zaian",
+      "name": "Khenifra",
+      "desc": "Aguelmame lakes, cedar forests and Oum Er-Rbia springs"
+    },
+    "taza": {
+      "tag": "Taza Gap",
+      "name": "Taza",
+      "desc": "Friouato cave and Tazekka National Park"
+    },
+    "sefrou": {
+      "tag": "Cherry City",
+      "name": "Sefrou",
+      "desc": "Cherry festival, waterfalls and historic medina"
+    },
+    "tan_tan": {
+      "tag": "Tan-Tan Moussem",
+      "name": "Tan-Tan",
+      "desc": "UNESCO cultural festival and coastal El Ouatia"
+    },
+    "tarfaya": {
+      "tag": "Cap Juby History",
+      "name": "Tarfaya",
+      "desc": "Saint-Exupéry museum and Atlantic cape"
+    },
+    "berkane": {
+      "tag": "Citrus Capital",
+      "name": "Berkane",
+      "desc": "Camel cave and Beni Snassen mountains"
+    },
+    "taourirt": {
+      "tag": "Crossroads City",
+      "name": "Taourirt",
+      "desc": "Taourirt kasbah and proximity to Moulouya river"
+    },
+    "settat": {
+      "tag": "Chaouia Capital",
+      "name": "Settat",
+      "desc": "Scenic landscapes and traditional horsemanship"
+    },
+    "khouribga": {
+      "tag": "Phosphate Capital",
+      "name": "Khouribga",
+      "desc": "International African Film Festival and industrial heritage"
+    },
+    "chichaoua": {
+      "tag": "Atlas Road",
+      "name": "Chichaoua",
+      "desc": "Main stopover between Marrakech and Essaouira"
+    },
+    "tiflet": {
+      "tag": "Zemmour Region",
+      "name": "Tiflet",
+      "desc": "Agricultural crafts and surrounding forests"
+    },
+    "khemisset": {
+      "tag": "Zemmour Capital",
+      "name": "Khemisset",
+      "desc": "Dayet Roumi lake, horses and handmade carpets"
+    },
+    "erfoud": {
+      "tag": "Fossil Capital",
+      "name": "Erfoud",
+      "desc": "Fossils, Ziz valley oases and Tafilalet gateway"
     }
+  },
+  "common": {
+    "photo": "Photo {n}",
+    "photo_aria": "Photo {n}",
+    "explore": "Explore ←",
+    "explore_place": "Explore Place ←",
+    "gallery": "Gallery",
+    "what_to_see": "What to See",
+    "good_to_know": "Good to Know",
+    "faq": "FAQ",
+    "practical_tips": "Practical Tips",
+    "tours_experiences": "Tours & Experiences",
+    "from_the_blog": "From the Blog",
+    "related_articles": "Related Articles",
+    "all_articles": "All Articles ←",
+    "read_article": "Read Article ←",
+    "keep_exploring": "Keep Exploring",
+    "more_must_visit": "More Places to Visit",
+    "back_to_guide": "→ Back to Guide",
+    "best_time": "Best Time",
+    "time_needed": "Duration",
+    "entry": "Entry",
+    "where": "Location",
+    "free": "Free",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "plan": "Plan",
+    "detail": "Details",
+    "stay": "Stay",
+    "food": "Food",
+    "gastronomy": "Gastronomy",
+    "nature": "Nature",
+    "culture": "Culture",
+    "heritage": "Heritage",
+    "walk": "Walk",
+    "view": "View",
+    "town": "Town",
+    "park": "Park",
+    "lake": "Lake",
+    "forest": "Forest",
+    "mountain": "Mountain",
+    "coast": "Coast",
+    "beach": "Beach",
+    "family": "Family",
+    "private": "Private",
+    "half_day": "Half Day",
+    "full_day": "Full Day",
+    "winter": "Winter",
+    "combo": "Combo",
+    "type": "Type",
+    "hotel": "Hotel",
+    "riad": "Riad",
+    "guesthouse": "Guesthouse",
+    "stay_type": "Accommodation Type",
+    "area": "Area",
+    "all": "All",
+    "all_areas": "All Areas",
+    "district": "District",
+    "near_station": "Near Station",
+    "check_availability": "Check Availability ←",
+    "check_gyg": "Check on GetYourGuide ←",
+    "no_stays_match": "No accommodations match these filters.",
+    "ideal_stay": "Ideal Stay",
+    "top_vibe": "Vibe",
+    "nearest_airport": "Nearest Airport",
+    "day_1": "Day 1",
+    "day_2": "Day 2",
+    "day_3": "Day 3",
+    "suggested_3_day": "Suggested 3-Day Itinerary",
+    "hour_by_hour": "Hour by Hour Ideas",
+    "affiliate_disclosure": "Some links are affiliate links. Booking through them may earn us a commission at no extra cost to you.",
+    "how_long": "How long do I need?",
+    "entry_fee": "Is there an entry fee?",
+    "best_time_q": "Best time to visit?",
+    "combine_with": "Combine with?",
+    "need_guide": "Do I need a guide?",
+    "book_tour": "Book a Tour",
+    "home": "Home",
+    "destinations": "Destinations"
   }
 }

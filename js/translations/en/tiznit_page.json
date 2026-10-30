@@ -52,6 +52,11 @@
       "tag": "Heritage",
       "title": "Kasbat Aghanaj",
       "desc": "Earthen kasbah within the walls — courtyards and lanes with sunset light."
+    },
+    "aglou": {
+      "tag": "Coast",
+      "title": "Aglou beach & village",
+      "desc": "Atlantic shoreline about 20–30 minutes west of Tiznit — a simple coastal break."
     }
   },
   "place_sections": {
@@ -59,31 +64,55 @@
       "title": "Ramparts & historic gates",
       "p1": "Tiznit’s walls stretch about 7 km and are punctuated by round adobe towers and five principal gates, including Bab el Khemis, Bab Targa, Bab Aglou, Bab el Maader and Bab Oulad Jerrar. Late afternoon light turns the ochre clay a warm copper colour.",
       "p2": "You can walk sections of the perimeter or simply approach the most photogenic gates. Bab Targa on the west side opens toward palm edges; Bab el Khemis is among the liveliest approaches into the medina.",
-      "tip": "Best light: late afternoon. Wear comfortable shoes — surfaces can be uneven."
+      "tip": "Best light: late afternoon. Wear comfortable shoes — surfaces can be uneven.",
+      "cap1": "Ramparts & gates",
+      "cap2": "Ramparts & gates",
+      "cap3": "Ramparts & gates"
     },
     "silver": {
       "title": "Silver jewellery souk",
       "p1": "Tiznit’s reputation rests on Amazigh silversmithing. Inside the medina, streets of workshops and shops display fibulae (tizerzai), bracelets, pendants, rings and ceremonial pieces. Some artisans still work silver in view of visitors.",
       "p2": "Prices are often more approachable than in Marrakech or Essaouira, but quality varies — solid silver, plated pieces and industrial stock all exist. Ask about weight and purity, and take time before buying.",
-      "tip": "Thursday’s weekly market adds energy to the whole town if your dates match."
+      "tip": "Thursday’s weekly market adds energy to the whole town if your dates match.",
+      "cap1": "Silver jewellery souk",
+      "cap2": "Silver jewellery souk",
+      "cap3": "Silver jewellery souk"
     },
     "mechouar": {
       "title": "Place El Mechouar",
       "p1": "Place El Mechouar is the old central square of Tiznit — a natural meeting point between medina lanes, cafés and the flow toward the jewellery streets.",
       "p2": "Start here to orient yourself, then branch toward the souks or a gate. It is less a monumental plaza than a lived-in town heart.",
-      "tip": "Morning for local rhythm; late day for softer photos."
+      "tip": "Morning for local rhythm; late day for softer photos.",
+      "cap1": "Place El Mechouar",
+      "cap2": "Place El Mechouar",
+      "cap3": "Place El Mechouar"
     },
     "source": {
       "title": "Source Bleue (Aïn Aqdim)",
       "p1": "Aïn Aqdim — marketed as Source Bleue — is a spring tied to the stories of Tiznit’s settlement. Do not expect a dramatic turquoise pool; treat it as a heritage landmark and a quiet pause in the urban fabric.",
       "p2": "It sits within the historic core and pairs easily with a medina walk and a stop at the silver streets.",
-      "tip": "Combine with Place El Mechouar and the jewellery souk the same morning."
+      "tip": "Combine with Place El Mechouar and the jewellery souk the same morning.",
+      "cap1": "Source Bleue (Aïn Aqdim)",
+      "cap2": "Source Bleue (Aïn Aqdim)",
+      "cap3": "Source Bleue (Aïn Aqdim)"
     },
     "kasbah": {
       "title": "Kasbat Aghanaj",
       "p1": "Kasbat Aghanaj is an earthen fortress within the city walls. Courtyards and lanes feel more intimate than the main commercial streets and catch beautiful light near sunset.",
       "p2": "Access and restoration status can vary — a short exterior walk is worthwhile even if interiors are limited.",
-      "tip": "Pair with a rampart viewpoint for golden-hour photos."
+      "tip": "Pair with a rampart viewpoint for golden-hour photos.",
+      "cap1": "Kasbat Aghanaj",
+      "cap2": "Kasbat Aghanaj",
+      "cap3": "Kasbat Aghanaj"
+    },
+    "aglou": {
+      "title": "Aglou beach & village",
+      "p1": "Aglou sits on the Atlantic west of Tiznit. It is a low-key coastal village and beach stop rather than a resort strip — useful for a half-day of sea air after the medina and silver streets.",
+      "p2": "Reach it by grand taxi or private car in roughly 20–30 minutes. Facilities are simple; bring what you need for a short beach walk.",
+      "tip": "Combine morning in Tiznit medina with an afternoon at Aglou if you want both craft and coast.",
+      "cap1": "Aglou beach & village",
+      "cap2": "Aglou beach & village",
+      "cap3": "Aglou beach & village"
     }
   },
   "stays": {
@@ -117,11 +146,11 @@
     }
   },
   "booking_banner": {
-    "badge": "Compare",
-    "title": "Hotels in Tiznit",
-    "desc": "Compare prices, guest scores and free-cancellation options.",
-    "btn": "View on Booking.com",
-    "guarantee": "✓ Secure booking"
+    "badge": "Over 30+ properties",
+    "title": "Explore all stays in Tiznit",
+    "desc": "Compare live prices, read trusted guest reviews and enjoy free cancellation on most hotels.",
+    "btn": "View all stays on Booking.com",
+    "guarantee": "✓ Best price guarantee & secure booking"
   },
   "eat": {
     "badge": "Food",
@@ -167,7 +196,7 @@
     "subtitle": "Coast and Anti-Atlas within easy reach.",
     "aglou": {
       "title": "Aglou beach (≈ 20–30 min)",
-      "desc": "Atlantic shoreline west of town — simple coastal break."
+      "desc": "Atlantic shoreline west of town."
     },
     "sidi_ifni": {
       "title": "Sidi Ifni (≈ 1h)",
@@ -175,11 +204,11 @@
     },
     "agadir": {
       "title": "Agadir (≈ 1h15)",
-      "desc": "Airport hub and larger coastal city to the north."
+      "desc": "Airport hub north of Tiznit."
     },
     "tafraoute": {
       "title": "Tafraoute / Anti-Atlas",
-      "desc": "Pink granite landscapes inland — longer day or overnight."
+      "desc": "Pink granite landscapes — longer day or overnight."
     }
   },
   "faq": {

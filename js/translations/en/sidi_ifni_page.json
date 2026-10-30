@@ -14,12 +14,14 @@
     "stay": "1 – 2 nights",
     "vibe_label": "Atmosphere",
     "vibe": "Art Deco · Coast · Quiet town",
-    "access_label": "Getting there",
+    "access_label": "Access",
     "access": "Agadir (AGA) ≈ 2.5–3h · via Tiznit · grands taxis",
     "vibe_val": "Art Deco · Coast · Quiet town",
     "best_time_val": "October – April · mild Atlantic climate",
     "stay_val": "1 – 2 nights",
-    "access_val": "Agadir (AGA) ≈ 2.5–3h · via Tiznit · grands taxis"
+    "access_val": "Agadir (AGA) ≈ 2.5–3h · via Tiznit · grands taxis",
+    "airport_label": "Access",
+    "airport_val": "Agadir (AGA) ≈ 2.5–3h · via Tiznit · grands taxis"
   },
   "intro": {
     "title": "Welcome to Sidi Ifni — Art Deco on the Atlantic",
@@ -122,6 +124,31 @@
     "badge": "Stays",
     "title": "Where to stay in Sidi Ifni",
     "subtitle": "Simple hotels and guesthouses near the centre or the sea — ideal for one or two nights.",
+    "book": "Book →",
+    "card1": {
+      "badge": "Classic",
+      "name": "Hotel near the centre",
+      "desc": "Walk to the Plaza and Art Deco streets.",
+      "location": "Centre"
+    },
+    "card2": {
+      "badge": "Value",
+      "name": "Simple town hotel",
+      "desc": "Clean base before Legzira or the road south.",
+      "location": "Sidi Ifni"
+    },
+    "card3": {
+      "badge": "Quiet",
+      "name": "Sea-view guesthouse",
+      "desc": "Sleep closer to the Atlantic after a day on the coast.",
+      "location": "Corniche"
+    },
+    "card4": {
+      "badge": "Base",
+      "name": "Hotel with parking",
+      "desc": "Useful if you drive toward Guelmim or back to Tiznit.",
+      "location": "Sidi Ifni"
+    },
     "c1": {
       "tag": "Classic",
       "title": "Hotel near the centre",
@@ -145,8 +172,7 @@
       "title": "Hotel with parking",
       "desc": "Useful if you drive toward Guelmim or back to Tiznit.",
       "loc": "Sidi Ifni"
-    },
-    "book": "Book →"
+    }
   },
   "booking_banner": {
     "badge": "Over 25+ properties",
@@ -238,5 +264,6 @@
     "title": "Welcome to Sidi Ifni — Art Deco on the Atlantic",
     "p1": "Sidi Ifni sits on Morocco's southern Atlantic coast, about two and a half hours south of Agadir via Tiznit. Until 1969 it was a Spanish enclave (Ifni). That past still shows in the white and blue Art Deco buildings, the former Plaza de España and a laid-back fishing-town rhythm rarely found on busier coastal strips.",
     "p2": "The town itself is compact: walk the colonial centre, watch the port, then day-trip to Legzira's natural stone arches a short drive north. Ideal for one or two nights between Tiznit, Mirleft and the road toward Guelmim or the Anti-Atlas."
-  }
+  },
+  "hero_alt": "Sidi Ifni Art Deco coast and Atlantic centre"
 }

@@ -6,46 +6,46 @@
     "restaurants": "Restaurantes",
     "experiences": "Experiencias",
     "guides": "Guías",
-    "interactive_map": "Mapa interactivo",
-    "cities": "Ciudades y destinos",
+    "interactive_map": "Interactive Map",
+    "cities": "Cities & Destinations",
     "categories": "Categorías",
-    "cat_stays": "Alojamientos",
-    "cat_hotels": "Hoteles y riads",
-    "cat_gastronomy": "Gastronomía",
-    "cat_restaurants": "Restaurantes y cafés",
-    "cat_experiences": "Experiencias y actividades",
-    "cat_tours": "Tours y excursiones",
-    "cat_attractions": "Atracciones",
-    "cat_museums": "Monumentos y museos",
-    "cat_transport": "Transporte",
-    "cat_rental": "Alquiler de coches y viajes",
-    "cat_itineraries": "Itinerarios de viaje",
-    "cat_guides": "Guías de viaje",
+    "cat_stays": "Stays",
+    "cat_hotels": "Hotels & Riads",
+    "cat_gastronomy": "Cuisine & Dining",
+    "cat_restaurants": "Restaurants & Cafés",
+    "cat_experiences": "Experiences & Activities",
+    "cat_tours": "Tours & Excursions",
+    "cat_attractions": "Attractions",
+    "cat_museums": "Monuments & Museums",
+    "cat_transport": "Transportation",
+    "cat_rental": "Car Rental & Travel",
+    "cat_itineraries": "Travel Itineraries",
+    "cat_guides": "Travel Guides",
     "history": "Historia de Marruecos",
     "blog": "Blog",
     "contact": "Contacto",
-    "directory": "Directorio y base de datos"
+    "directory": "Directory & Database"
   },
   "footer": {
     "about_text": "Descubre. Planifica. Vive Marruecos.\nLa guía turística y cultural de referencia para explorar Marruecos.",
     "recommended_title": "Páginas recomendadas",
-    "destinations_title": "Principales destinos",
+    "destinations_title": "Top Destinations",
     "categories_title": "Categorías",
     "connect_title": "Conéctate",
     "youtube_text": "Sigue nuestro canal de YouTube para guías en vídeo:",
     "copyright": "© MoroccoTripMap. Todos los derechos reservados.",
-    "link_marrakech": "Guía de viaje de Marrakech",
-    "link_chefchaouen": "Chefchaouen la Ciudad Azul",
-    "link_fes": "Medina antigua de Fez",
-    "link_merzouga": "Guía de viaje de Merzouga",
-    "link_rabat": "Rabat capital imperial",
+    "link_marrakech": "Marrakech Travel Guide",
+    "link_chefchaouen": "Chefchaouen The Blue City",
+    "link_fes": "Fes Old Medina",
+    "link_merzouga": "Merzouga Travel Guide",
+    "link_rabat": "Rabat Imperial Capital",
     "link_all_destinations": "Todos los destinos →",
     "link_stays": "Riads y hoteles auténticos",
     "link_restaurants": "Gastronomía marroquí",
     "link_experiences": "Desierto y experiencias culturales",
     "link_transport": "Transporte y conductores privados",
     "link_itineraries": "Circuitos e itinerarios",
-    "link_history": "Historia de Marruecos",
+    "link_history": "Morocco History",
     "link_blog": "Blog y consejos de viaje",
     "link_oujda": "Guía de viaje de Oujda",
     "link_asilah": "Guía de viaje de Asilah",
@@ -54,7 +54,11 @@
     "link_sidi_ifni": "Guía de viaje de Sidi Ifni",
     "link_guelmim": "Guía de viaje de Guelmim",
     "link_agadir": "Guía de viaje de Agadir",
-    "link_legzira": "Playa de Legzira"
+    "link_legzira": "Playa de Legzira",
+    "link_oualidia": "Guía de viaje de Oualidia",
+    "link_el_jadida": "Guía de viaje de El Jadida",
+    "link_safi": "Guía de viaje de Safi",
+    "link_essaouira": "Guía de viaje de Essaouira"
   },
   "breadcrumb": {
     "home": "Inicio",
@@ -62,213 +66,213 @@
     "stays": "Alojamientos"
   },
   "mobile_menu": {
-    "language_title": "Idioma / Language"
+    "language_title": "Language / اللغة"
   },
   "destinations": {
-    "badge": "Principales destinos",
-    "title": "Explora ciudades y destinos famosos",
-    "view_all": "Ver todos los destinos ←",
-    "view_all_btn": "Ver todos los destinos",
+    "badge": "Top Destinations",
+    "title": "Explore Famous Cities & Destinations",
+    "view_all": "View all destinations ←",
+    "view_all_btn": "View all destinations",
     "marrakech": {
-      "tag": "Ciudad Imperial",
+      "tag": "Imperial City",
       "name": "Marrakech",
-      "desc": "Medina antigua, palacios históricos y puerta del desierto"
+      "desc": "Old Medina, historic palaces and gateway to the desert"
     },
     "chefchaouen": {
-      "tag": "Montañas del Rif",
+      "tag": "Rif Mountains",
       "name": "Chefchaouen",
-      "desc": "La emblemática perla azul de Marruecos"
+      "desc": "Morocco's iconic blue pearl"
     },
     "fes": {
-      "tag": "Capital Cultural",
-      "name": "Fez",
-      "desc": "Medina antigua y patrimonio espiritual"
+      "tag": "Cultural Capital",
+      "name": "Fes",
+      "desc": "Ancient medina and spiritual heritage"
     },
     "casablanca": {
-      "tag": "Corazón Económico",
+      "tag": "Economic Heart",
       "name": "Casablanca",
-      "desc": "La ciudad más grande de Marruecos y la Mezquita Hassan II"
+      "desc": "Morocco's largest city and Hassan II Mosque"
     },
     "essaouira": {
-      "tag": "Costa Atlántica",
+      "tag": "Atlantic Coast",
       "name": "Essaouira",
-      "desc": "Ciudad del viento, murallas costeras y marisco fresco"
+      "desc": "Windy city, coastal ramparts and fresh seafood"
     },
     "agadir": {
-      "tag": "Sol y Playa",
+      "tag": "Sun & Beach",
       "name": "Agadir",
-      "desc": "Bahía de playa atlántica, kasbah y costa surfista"
+      "desc": "Atlantic beach bay, kasbah and surf coast"
     },
     "taroudant": {
-      "tag": "Pequeña Marrakech",
+      "tag": "Little Marrakech",
       "name": "Taroudant",
-      "desc": "Murallas de ocre y zocos auténticos del Souss"
+      "desc": "Ochre ramparts and authentic Souss souks"
     },
     "tangier": {
-      "tag": "Estrecho de Gibraltar",
-      "name": "Tánger",
-      "desc": "La puerta de entrada entre Europa y África"
+      "tag": "Strait of Gibraltar",
+      "name": "Tangier",
+      "desc": "The gateway between Europe and Africa"
     },
     "ouarzazate": {
-      "tag": "Puerta del Desierto",
+      "tag": "Gateway to the Desert",
       "name": "Ouarzazate",
-      "desc": "Kasbahs históricas, estudios de cine y Ait Ben Haddou"
+      "desc": "Historic kasbahs, movie studios and Ait Ben Haddou"
     },
     "rabat": {
-      "tag": "Capital Atlántica",
+      "tag": "Atlantic Capital",
       "name": "Rabat",
-      "desc": "Kasbah de los Udayas, Torre Hassan y Chellah"
+      "desc": "Kasbah of the Udayas, Hassan Tower and Chellah"
     },
     "merzouga": {
-      "tag": "Desierto del Sáhara",
+      "tag": "Sahara Desert",
       "name": "Merzouga",
-      "desc": "Dunas de arena de Erg Chebbi y campamentos en el desierto"
+      "desc": "Erg Chebbi sand dunes and desert camps"
     },
     "zagora": {
-      "tag": "Valle del Draa",
+      "tag": "Draa Valley",
       "name": "Zagora",
-      "desc": "Cartel de Tombuctú a 52 días, oasis frondosos y dunas"
+      "desc": "Timbuktu 52 days sign, lush oases and dunes"
     },
     "meknes": {
-      "tag": "Capital Ismaelita",
-      "name": "Mequínez",
-      "desc": "Bab Mansour y monumentos históricos cerca de Volubilis"
+      "tag": "Ismaili Capital",
+      "name": "Meknes",
+      "desc": "Bab Mansour and historical monuments near Volubilis"
     },
     "tetouan": {
-      "tag": "La Paloma Blanca",
-      "name": "Tetuán",
-      "desc": "Herencia andalusí y medina Patrimonio de la Humanidad"
+      "tag": "The White Dove",
+      "name": "Tetouan",
+      "desc": "Andalusian heritage and UNESCO-listed medina"
     },
     "ifrane": {
-      "tag": "La Suiza Marroquí",
+      "tag": "Moroccan Switzerland",
       "name": "Ifrane",
-      "desc": "Arquitectura alpina, bosques de cedros y estación de esquí"
+      "desc": "Alpine architecture, cedar forests and ski resort"
     },
     "el-jadida": {
-      "tag": "Herencia Portuguesa",
-      "name": "El Yadida",
-      "desc": "Ciudadela portuguesa y aljibe histórico"
+      "tag": "Portuguese Heritage",
+      "name": "El Jadida",
+      "desc": "Portuguese citadel and historic cistern"
     },
     "dakhla": {
-      "tag": "Donde el desierto se une al océano",
-      "name": "Dajla",
-      "desc": "Laguna, kitesurf y duna blanca en el gran sur"
+      "tag": "Where Desert Meets Ocean",
+      "name": "Dakhla",
+      "desc": "Lagoon, kitesurfing and white dune in the Far South"
     },
     "al_hoceima": {
-      "tag": "Perla del Mediterráneo",
-      "name": "Alhucemas",
-      "desc": "Playas vírgenes, naturaleza montañosa y parque nacional"
+      "tag": "Pearl of the Mediterranean",
+      "name": "Al Hoceima",
+      "desc": "Pristine beaches, mountain nature and national park"
     },
     "nador": {
-      "tag": "Laguna de Marchica y Costa",
+      "tag": "Marchica Lagoon & Coast",
       "name": "Nador",
-      "desc": "Laguna de Marchica, paseo marítimo, monte Gourougou y Cabo de Tres Forcas"
+      "desc": "Marchica lagoon, promenade, Mount Gourougou and Cape Three Forks"
     },
     "taghazout": {
-      "tag": "Capital del Surf",
+      "tag": "Surf Capital",
       "name": "Taghazout",
-      "desc": "Pueblo costero de pescadores y mejores puntos de surf"
+      "desc": "Coastal fishing village and world-class surf spots"
     },
     "asilah": {
-      "tag": "Ciudad del Arte",
+      "tag": "Art City",
       "name": "Asilah",
-      "desc": "Murales artísticos, murallas marinas y ambiente relajado"
+      "desc": "Artistic murals, seaside ramparts and laid-back vibe"
     },
     "tiznit": {
-      "tag": "Capital de la Plata",
+      "tag": "Silver Capital",
       "name": "Tiznit",
-      "desc": "Joyería de plata bereber, murallas rosas y medina tranquila"
+      "desc": "Berber silver jewelry, pink ramparts and tranquil medina"
     },
     "oujda": {
-      "tag": "Capital del Oriental",
+      "tag": "Capital of the East",
       "name": "Oujda",
-      "desc": "Auténtico patrimonio oriental, música tradicional y zocos"
+      "desc": "Authentic Oriental heritage, traditional music and souks"
     },
     "safi": {
-      "tag": "Ciudad del Océano",
+      "tag": "Ocean City",
       "name": "Safi",
-      "desc": "Artesanía tradicional de cerámica, castillo del mar y mariscos"
+      "desc": "Traditional pottery craftsmanship, sea castle and seafood"
     },
     "kenitra": {
-      "tag": "Puerta del Gharb",
+      "tag": "Gharb Gateway",
       "name": "Kenitra",
-      "desc": "Playa de Mehdia y reservas naturales"
+      "desc": "Mehdia beach and natural reserves"
     },
     "tinghir": {
-      "tag": "Oasis de Gargantas",
+      "tag": "Oasis of Gorges",
       "name": "Tinghir",
-      "desc": "Impresionantes gargantas del Todra y palmerales"
+      "desc": "Dramatic Todra Gorges and palm groves"
     },
     "azrou": {
-      "tag": "Corazón del Atlas Medio",
+      "tag": "Heart of Middle Atlas",
       "name": "Azrou",
-      "desc": "Bosques de cedros, macacos de Berbería y parques nacionales"
+      "desc": "Cedar forests, Barbary macaques and national parks"
     },
     "larache": {
-      "tag": "Patrimonio de Lucus",
-      "name": "Larraix",
-      "desc": "Yacimiento arqueológico de Lixus y costa atlántica"
+      "tag": "Loukkos Heritage",
+      "name": "Larache",
+      "desc": "Lixus archaeological site and Atlantic coastline"
     },
     "midelt": {
-      "tag": "Capital de la Manzana",
+      "tag": "Apple Capital",
       "name": "Midelt",
-      "desc": "Cruce entre el Atlas Medio y el Gran Atlas"
+      "desc": "Junction between the Middle and High Atlas"
     },
     "imlil": {
-      "tag": "Turismo de Montaña",
+      "tag": "Mountain Tourism",
       "name": "Imlil",
-      "desc": "Campamento base para la ascensión al Toubkal y rutas del Atlas"
+      "desc": "Basecamp for Mount Toubkal trekking and Atlas trails"
     },
     "mirleft": {
-      "tag": "Costa Virgen",
+      "tag": "Pristine Coastline",
       "name": "Mirleft",
-      "desc": "Tranquilas playas de arena y acantilados costeros"
+      "desc": "Peaceful sandy beaches and dramatic coastal cliffs"
     },
     "tafraout": {
-      "tag": "Corazón del Anti-Atlas",
-      "name": "Tafraout",
-      "desc": "Rocas pintadas, pueblos amazighs y almendros"
+      "tag": "Heart of Anti-Atlas",
+      "name": "Tafraoute",
+      "desc": "Painted rocks, Amazigh villages and almond trees"
     },
     "mhamid": {
-      "tag": "Dunas de Chigaga",
+      "tag": "Chigaga Dunes",
       "name": "M'Hamid El Ghizlane",
-      "desc": "Puerta de entrada a Erg Chigaga y excursiones auténticas por el desierto"
+      "desc": "Gateway to Erg Chigaga and authentic desert treks"
     },
     "errachidia": {
-      "tag": "Puerta del Tafilalet",
+      "tag": "Tafilalet Gateway",
       "name": "Errachidia",
-      "desc": "Palmerales, embalse Hassan Addakhil y ksours del valle del Ziz"
+      "desc": "Palm groves, Hassan Addakhil dam and Ziz valley ksour"
     },
     "oukaimeden": {
-      "tag": "Estación de Esquí",
+      "tag": "Ski Resort",
       "name": "Oukaïmeden",
-      "desc": "La estación de esquí más alta de África en las montañas del Gran Atlas"
+      "desc": "Africa's highest ski resort in the High Atlas Mountains"
     },
-    "bin_el_ouidane": "Lago del Atlas",
+    "bin_el_ouidane": "Atlas Lake",
     "bin_el_ouidane_full": {
-      "tag": "Lago del Atlas",
+      "tag": "Atlas Lake",
       "name": "Bin El Ouidane",
-      "desc": "Lago turquesa de montaña y actividades acuáticas"
+      "desc": "Turquoise mountain lake and water activities"
     },
     "azilal": {
-      "tag": "Cascadas de Ouzoud",
+      "tag": "Ouzoud Waterfalls",
       "name": "Azilal",
-      "desc": "Cascadas de Ouzoud y Geoparque Mundial UNESCO M'Goun"
+      "desc": "Ouzoud Falls and M'Goun UNESCO Global Geopark"
     },
     "saidia": {
-      "tag": "La Perla Azul",
+      "tag": "The Blue Pearl",
       "name": "Saidia",
-      "desc": "Playas de arena dorada y complejo turístico mediterráneo"
+      "desc": "Golden sandy beaches and Mediterranean resort"
     },
     "laayoune": {
-      "tag": "Metrópolis del Sáhara",
-      "name": "El Aaiún",
-      "desc": "Plaza Mechouar, puerto de El Aaiún y dunas costeras"
+      "tag": "Sahara Metropolis",
+      "name": "Laayoune",
+      "desc": "Mechouar square, Laayoune port and coastal dunes"
     },
     "guelmim": {
       "tag": "Puerta del Sáhara",
       "name": "Guelmim",
-      "desc": "Mercado de camellos y Playa Blanca"
+      "desc": "Mercado de camellos y Plage Blanche"
     },
     "sidi_ifni": {
       "tag": "Costa art déco",
@@ -276,154 +280,159 @@
       "desc": "Herencia española y arcos de Legzira"
     },
     "moulay_idriss": {
-      "tag": "Ciudad Santa",
+      "tag": "Holy City",
       "name": "Moulay Idriss Zerhoun",
-      "desc": "Santuario de la dinastía fundadora de Marruecos cerca de Volubilis"
+      "desc": "Shrine of Morocco's founding dynasty near Volubilis"
     },
     "khenifra": {
-      "tag": "Capital de Zaian",
-      "name": "Jénifra",
-      "desc": "Lagos Aguelmame, bosques de cedros y fuentes de Oum Er-Rbia"
+      "tag": "Capital of Zaian",
+      "name": "Khenifra",
+      "desc": "Aguelmame lakes, cedar forests and Oum Er-Rbia springs"
     },
     "taza": {
-      "tag": "Paso de Taza",
+      "tag": "Taza Gap",
       "name": "Taza",
-      "desc": "Cueva de Friouato y Parque Nacional de Tazekka"
+      "desc": "Friouato cave and Tazekka National Park"
     },
     "sefrou": {
-      "tag": "Ciudad de la Cereza",
+      "tag": "Cherry City",
       "name": "Sefrou",
-      "desc": "Fiesta de la cereza, cascadas y medina histórica"
+      "desc": "Cherry festival, waterfalls and historic medina"
     },
     "tan_tan": {
-      "tag": "Moussem de Tan-Tan",
+      "tag": "Tan-Tan Moussem",
       "name": "Tan-Tan",
-      "desc": "Festival cultural de la UNESCO y El Ouatia costero"
+      "desc": "UNESCO cultural festival and coastal El Ouatia"
     },
     "tarfaya": {
-      "tag": "Historia de Cap Juby",
+      "tag": "Cap Juby History",
       "name": "Tarfaya",
-      "desc": "Museo Saint-Exupéry y cabo atlántico"
+      "desc": "Saint-Exupéry museum and Atlantic cape"
     },
     "berkane": {
-      "tag": "Capital de los Cítricos",
+      "tag": "Citrus Capital",
       "name": "Berkane",
-      "desc": "Cueva del Camello y montañas de Beni Snassen"
+      "desc": "Camel cave and Beni Snassen mountains"
     },
     "taourirt": {
-      "tag": "Ciudad Encrucijada",
+      "tag": "Crossroads City",
       "name": "Taourirt",
-      "desc": "Kasbah de Taourirt y cercanía al río Moulouya"
+      "desc": "Taourirt kasbah and proximity to Moulouya river"
     },
     "settat": {
-      "tag": "Capital de Chaouia",
+      "tag": "Chaouia Capital",
       "name": "Settat",
-      "desc": "Paisajes pintorescos y equitación tradicional"
+      "desc": "Scenic landscapes and traditional horsemanship"
     },
     "khouribga": {
-      "tag": "Capital de los Fosfatos",
+      "tag": "Phosphate Capital",
       "name": "Khouribga",
-      "desc": "Festival Internacional de Cine Africano y patrimonio industrial"
+      "desc": "International African Film Festival and industrial heritage"
     },
     "chichaoua": {
-      "tag": "Ruta del Atlas",
+      "tag": "Atlas Road",
       "name": "Chichaoua",
-      "desc": "Principal parada entre Marrakech y Essaouira"
+      "desc": "Main stopover between Marrakech and Essaouira"
     },
     "tiflet": {
-      "tag": "Región de Zemmour",
+      "tag": "Zemmour Region",
       "name": "Tiflet",
-      "desc": "Artesanía agrícola y bosques circundantes"
+      "desc": "Agricultural crafts and surrounding forests"
     },
     "khemisset": {
-      "tag": "Capital de Zemmour",
+      "tag": "Zemmour Capital",
       "name": "Khemisset",
-      "desc": "Lago Dayet Roumi, caballos y alfombras hechas a mano"
+      "desc": "Dayet Roumi lake, horses and handmade carpets"
     },
     "erfoud": {
-      "tag": "Capital de los Fósiles",
+      "tag": "Fossil Capital",
       "name": "Erfoud",
-      "desc": "Fósiles, oasis del valle del Ziz y puerta del Tafilalet"
+      "desc": "Fossils, Ziz valley oases and Tafilalet gateway"
+    },
+    "oualidia": {
+      "tag": "Laguna y ostras",
+      "name": "Oualidia",
+      "desc": "Laguna atlántica, ostras y costa tranquila"
     }
   },
   "common": {
-    "photo": "Foto {n}",
-    "photo_aria": "Foto {n}",
-    "explore": "Explorar ←",
-    "explore_place": "Explorar lugar ←",
-    "gallery": "Galería",
-    "what_to_see": "Qué ver",
-    "good_to_know": "Información útil",
-    "faq": "Preguntas frecuentes",
-    "practical_tips": "Consejos prácticos",
-    "tours_experiences": "Tours y experiencias",
-    "from_the_blog": "Del blog",
-    "related_articles": "Artículos relacionados",
-    "all_articles": "Todos los artículos ←",
-    "read_article": "Leer artículo ←",
-    "keep_exploring": "Sigue explorando",
-    "more_must_visit": "Más lugares para visitar",
-    "back_to_guide": "→ Volver a la guía",
-    "best_time": "Mejor época",
-    "time_needed": "Duración",
-    "entry": "Entrada",
-    "where": "Ubicación",
-    "free": "Gratis",
-    "morning": "Mañana",
-    "afternoon": "Tarde",
-    "evening": "Noche",
-    "plan": "Planificar",
-    "detail": "Detalles",
-    "stay": "Alojamiento",
-    "food": "Comida",
-    "gastronomy": "Gastronomía",
-    "nature": "Naturaleza",
-    "culture": "Cultura",
-    "heritage": "Patrimonio",
-    "walk": "Paseo",
-    "view": "Vistas",
-    "town": "Pueblo",
-    "park": "Parque",
-    "lake": "Lago",
-    "forest": "Bosque",
-    "mountain": "Montaña",
-    "coast": "Costa",
-    "beach": "Playa",
-    "family": "Familiar",
-    "private": "Privado",
-    "half_day": "Medio día",
-    "full_day": "Día completo",
-    "winter": "Invierno",
-    "combo": "Combinado",
-    "type": "Tipo",
+    "photo": "Photo {n}",
+    "photo_aria": "Photo {n}",
+    "explore": "Explore ←",
+    "explore_place": "Explore Place ←",
+    "gallery": "Gallery",
+    "what_to_see": "What to See",
+    "good_to_know": "Good to Know",
+    "faq": "FAQ",
+    "practical_tips": "Practical Tips",
+    "tours_experiences": "Tours & Experiences",
+    "from_the_blog": "From the Blog",
+    "related_articles": "Related Articles",
+    "all_articles": "All Articles ←",
+    "read_article": "Read Article ←",
+    "keep_exploring": "Keep Exploring",
+    "more_must_visit": "More Places to Visit",
+    "back_to_guide": "→ Back to Guide",
+    "best_time": "Best Time",
+    "time_needed": "Duration",
+    "entry": "Entry",
+    "where": "Location",
+    "free": "Free",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "plan": "Plan",
+    "detail": "Details",
+    "stay": "Stay",
+    "food": "Food",
+    "gastronomy": "Gastronomy",
+    "nature": "Nature",
+    "culture": "Culture",
+    "heritage": "Heritage",
+    "walk": "Walk",
+    "view": "View",
+    "town": "Town",
+    "park": "Park",
+    "lake": "Lake",
+    "forest": "Forest",
+    "mountain": "Mountain",
+    "coast": "Coast",
+    "beach": "Beach",
+    "family": "Family",
+    "private": "Private",
+    "half_day": "Half Day",
+    "full_day": "Full Day",
+    "winter": "Winter",
+    "combo": "Combo",
+    "type": "Type",
     "hotel": "Hotel",
     "riad": "Riad",
-    "guesthouse": "Casa de huéspedes",
-    "stay_type": "Tipo de alojamiento",
-    "area": "Zona",
-    "all": "Todos",
-    "all_areas": "Todas las zonas",
-    "district": "Distrito",
-    "near_station": "Cerca de la estación",
-    "check_availability": "Consultar disponibilidad ←",
-    "check_gyg": "Reservar en GetYourGuide ←",
-    "no_stays_match": "No hay alojamientos que coincidan con estos filtros.",
-    "ideal_stay": "Estancia ideal",
-    "top_vibe": "Ambiente",
-    "nearest_airport": "Aeropuerto más cercano",
-    "day_1": "Día 1",
-    "day_2": "Día 2",
-    "day_3": "Día 3",
-    "suggested_3_day": "Itinerario sugerido de 3 días",
-    "hour_by_hour": "Ideas hora por hora",
-    "affiliate_disclosure": "Algunos enlaces son enlaces de afiliados. Reservar a través de ellos puede generarnos una comisión sin coste adicional para ti.",
-    "how_long": "¿Cuánto tiempo necesito?",
-    "entry_fee": "¿Hay tarifa de entrada?",
-    "best_time_q": "¿Cuál es la mejor época para visitar?",
-    "combine_with": "¿Con qué combinarlo?",
-    "need_guide": "¿Necesito un guía?",
-    "book_tour": "Reservar un tour",
-    "home": "Inicio",
-    "destinations": "Destinos"
+    "guesthouse": "Guesthouse",
+    "stay_type": "Accommodation Type",
+    "area": "Area",
+    "all": "All",
+    "all_areas": "All Areas",
+    "district": "District",
+    "near_station": "Near Station",
+    "check_availability": "Check Availability ←",
+    "check_gyg": "Check on GetYourGuide ←",
+    "no_stays_match": "No accommodations match these filters.",
+    "ideal_stay": "Ideal Stay",
+    "top_vibe": "Vibe",
+    "nearest_airport": "Nearest Airport",
+    "day_1": "Day 1",
+    "day_2": "Day 2",
+    "day_3": "Day 3",
+    "suggested_3_day": "Suggested 3-Day Itinerary",
+    "hour_by_hour": "Hour by Hour Ideas",
+    "affiliate_disclosure": "Some links are affiliate links. Booking through them may earn us a commission at no extra cost to you.",
+    "how_long": "How long do I need?",
+    "entry_fee": "Is there an entry fee?",
+    "best_time_q": "Best time to visit?",
+    "combine_with": "Combine with?",
+    "need_guide": "Do I need a guide?",
+    "book_tour": "Book a Tour",
+    "home": "Home",
+    "destinations": "Destinations"
   }
 }

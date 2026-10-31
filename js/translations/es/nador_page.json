@@ -1,126 +1,118 @@
 {
-"seo": {
-"title": "Guía de Viaje Nador 2026 | Laguna, Corniche y Cabo de Tres Forcas | MoroccoTripMap",
-"description": "Planifica Nador: laguna de Marchica, corniche, monte Gurugú, Cabo de Tres Forcas, playa de Charrana y puerto de Beni Enzar.",
-"keywords": "nador, laguna marchica, corniche nador, gurugu, cabo de tres forcas"
-},
-"name": "Tetuán / Nador",
-"hero_subtitle": "Donde el Rif se encuentra con una vasta laguna mediterránea: Marchica, corniche y paisajes salvajes.",
-"info": {
-"best_time_label": "Mejor época",
-"best_time_val": "Mayo – Octubre para playa; Primavera y Otoño para senderismo",
-"stay_label": "Estancia ideal",
-"stay_val": "3 – 5 Días",
-"vibe_label": "Ambiente",
-"vibe_val": "Laguna, corniche, costa rifeña",
-"airport_label": "Aeropuerto / Puerto",
-"airport_val": "Nador (NDR) · Ferry Beni Enzar"
-},
-"overview": {
-"title": "Bienvenido a Nador — luz de laguna y costa del Rif",
-"p1": "Nador se ubica en la costa mediterránea del noreste de Marruecos, definida por el agua: la laguna de Marchica, una de las mayores lagunas saladas del Mediterráneo.",
-"p2": "Las tardes pertenecen a la corniche. Las excursiones llevan al monte Gurugú, al Cabo de Tres Forcas y a las playas cercanas."
-},
-"places": {
-"badge": "Imprescindibles",
-"title": "Lugares que visitar en Nador",
-"subtitle": "Laguna, corniche, montaña, cabo y playas.",
-"marchica": { "tag": "Laguna", "title": "Laguna de Marchica", "desc": "Vasta laguna mediterránea junto a la ciudad." },
-"corniche": { "tag": "Paseo", "title": "Corniche de Nador", "desc": "Paseo marítimo vespertino con cafés y vistas." },
-"gourougou": { "tag": "Montaña", "title": "Monte Gurugú", "desc": "Macizo con vistas panorámicas sobre la laguna y Melilla." },
-"cap_trois_fourches": { "tag": "Cabo", "title": "Cabo de Tres Forcas", "desc": "Península escarpada de acantilados y costa virgen." },
-"charrana": { "tag": "Playa", "title": "Playa de Charrana", "desc": "Cala protegida bajo acantilados para un baño tranquilo." },
-"beni_ansar": { "tag": "Puerto", "title": "Puerto de Beni Enzar", "desc": "Puerto comercial y terminal de ferries." },
-"kasbah_selouane": { "tag": "Patrimonio", "title": "Kasbah de Selouane", "desc": "Fortificación alauí del siglo XVII." },
-"ras_el_ma": { "tag": "Costa", "title": "Ras El Ma (Cabo de Agua)", "desc": "Pueblo costero y playa al este de Nador." }
-},
-"stays": {
-"badge": "Selección y Consejos",
-"title": "¿Dónde alojarse en Nador? Nuestros favoritos",
-"subtitle": "Hoteles junto a la corniche y resorts en la laguna.",
-"book": "Reservar →",
-"card1": { "badge": "★ Top Hotel", "name": "Hotel Bayview Nador", "desc": "Hotel moderno con vistas directas a la laguna de Marchica.", "location": "Corniche" },
-"card2": { "badge": "★ Centro", "name": "Hotel Rif Nador", "desc": "Hotel clásico céntrico ideal para negocios y compras.", "location": "Centro" },
-"card3": { "badge": "★ Resort Lujo", "name": "Marchica Lagoon Resort", "desc": "Resort exclusivo con spa, piscinas y acceso a la laguna.", "location": "Laguna" },
-"card4": { "badge": "★ Residencia", "name": "Residence Lagune", "desc": "Apartamentos equipados ideales para familias.", "location": "Centro" }
-},
-"booking_banner": {
-"badge": "Más de 30+ alojamientos",
-"title": "Explora todos los alojamientos en Nador",
-"desc": "Compara tarifas en tiempo real y encuentra hoteles en Booking.com.",
-"btn": "Ver todos los hoteles en Booking.com",
-"guarantee": "✓ Mejor precio garantizado y reserva segura"
-},
-"directory": {
-"badge": "Directorio",
-"title": "Encuentra tu alojamiento ideal en Nador",
-"subtitle": "Hoteles cercanos a la corniche y opciones en la laguna.",
-"filter_type_label": "Tipo:",
-"filter_location_label": "Zona:",
-"type_all": "Todos",
-"type_hotel": "Hoteles",
-"type_riad": "Residencias",
-"type_guesthouse": "Casas de huéspedes",
-"location_all": "Todas las zonas",
-"location_town": "Centro",
-"location_outside": "Cerca de la laguna",
-"location_outskirts": "Beni Enzar / Costa",
-"counter": "alojamientos encontrados",
-"district_label": "Zona",
-"type_label": "Tipo",
-"check_availability": "Ver disponibilidad →",
-"no_results": "Ningún alojamiento coincide con los filtros.",
-"h1": { "name": "1. Hotel Bayview Nador", "desc": "Hotel moderno con vistas directas a la laguna." },
-"h2": { "name": "2. Hotel Rif Nador", "desc": "Hotel clásico céntrico ideal para negocios y compras." },
-"h3": { "name": "3. Marchica Lagoon Resort", "desc": "Resort exclusivo con spa y piscinas." },
-"h4": { "name": "4. Residence Lagune", "desc": "Apartamentos equipados ideales para familias." },
-"h5": { "name": "5. Hotel Beni Enzar", "desc": "Hotel práctico cerca del puerto y aduana." },
-"h6": { "name": "6. Dar Nador Guesthouse", "desc": "Casa de huéspedes tradicional y acogedora." }
-},
-"itinerary": {
-"badge": "Planificación",
-"title": "Programa recomendado de 3 días",
-"subtitle": "Laguna y corniche, montaña o cabo, y día de playa."
-},
-"detailed_itinerary": {
-"day1_tab": "Día 1 — Laguna y Ciudad",
-"day1_m": "Mañana — Vistas de Marchica",
-"day1_md": "Primeras vistas de la laguna desde la corniche.",
-"day1_a": "Tarde — Ritmo urbano",
-"day1_ad": "Almuerzo sencillo y paseo.",
-"day1_e": "Noche — Corniche",
-"day1_ed": "Cafés y pescado fresco al atardecer."
-},
-"eat": {
-"badge": "Gastronomía",
-"title": "Dónde comer en Nador",
-"subtitle": "Pescado fresco y mesas junto a la laguna.",
-"nomad": { "tag": "Puerto", "title": "Pescado del puerto", "desc": "Capturas frescas junto al muelle." },
-"jardin": { "tag": "Hotel", "title": "Restaurantes de hoteles", "desc": "Opciones fiables en grandes establecimientos." },
-"fassia": { "tag": "Café", "title": "Cafeterías céntricas", "desc": "Café y descanso urbano." }
-},
-"tips": {
-"title": "Consejos prácticos para Nador",
-"transport": { "title": "Transporte", "desc": "Centro y corniche a pie; vehículo necesario para cabos y playas." },
-"bargain": { "title": "Sol y Estaciones", "desc": "Sol fuerte en verano. Ideal en primavera y otoño." },
-"water": { "title": "Moneda y Frontera", "desc": "Lleva dirhams. Pasaporte necesario para Melilla." }
-},
-"daytrips": {
-"badge": "Excursiones",
-"title": "Mejores excursiones desde Nador",
-"subtitle": "Escapadas al cabo, montaña y costa.",
-"tiout": { "title": "Cabo de Tres Forches", "desc": "Acantilados y paisajes salvajes." },
-"antiatlas": { "title": "Monte Gurugú", "desc": "Rutas y vistas sobre la laguna y Melilla." },
-"taliouine": { "title": "Charrana o Ras El Ma", "desc": "Días de playa y aguas claras." },
-"agadir": { "title": "Melilla (Excursión)", "desc": "Enclave español con aire modernista." }
-},
-"faq": {
-"badge": "Bueno saber",
-"title": "Preguntas frecuentes Nador",
-"q1": { "question": "¿Cuántos días en Nador?", "answer": "3 días cubren lo esencial; 5 días permiten explorar con calma." },
-"q2": { "question": "¿Es solo la laguna?", "answer": "Marchica es la clave, pero Gurugú y los cabos aportan gran riqueza natural." },
-"q3": { "question": "¿Cómo llegar?", "answer": "Vuelos al aeropuerto NDR, ferries en Beni Enzar o por carretera." },
-"q4": { "question": "¿Mejor época?", "answer": "De mayo a octubre para disfrutar del mar." }
-},
-"destinations": { "nador": { "name": "Nador" } }
+  "seo": {
+    "title": "Guía de Viaje de Nador 2026 | Bahía, Costa, Parque Nacional y Gourougou | MoroccoTripMap",
+    "description": "Planifica Nador: bahía bordeada de acantilados, costa, Parque Nacional, Gourougou, bahía de Bades y paisajes entre el Rif y el Mediterráneo.",
+    "keywords": "Nador, bahía de Nador, costa Nador, Parque Nacional, Dune Blanche, Gourougou, guía de viaje Nador, Rif Mediterráneo, playas Marruecos"
+  },
+  "name": "Nador",
+  "hero_subtitle": "Donde el Rif se encuentra con una vasta laguna mediterránea: Marchica, un animado paseo marítimo, miradores de montaña y cabos salvajes hacia el Cabo de Tres Forcas.",
+  "info": {
+    "best_time_label": "Mejor época",
+    "best_time_val": "Mayo – octubre para playas; primavera y otoño para senderismo",
+    "stay_label": "Estancia ideal",
+    "stay_val": "3 – 5 días",
+    "vibe_label": "Ambiente",
+    "vibe_val": "Laguna, paseo marítimo, costa del Rif, puerto de ferries",
+    "airport_label": "Aeropuerto / puerto",
+    "airport_val": "Nador (NDR) · Ferry Beni Ansar"
+  },
+  "overview": {
+    "title": "Bienvenido a Nador — luz de laguna y costa del Rif",
+    "p1": "Nador se encuentra en la costa mediterránea del nordeste de Marruecos, definida menos por un casco antiguo que por el agua: la laguna de Marchica (Mar Chica), una de las lagunas saladas más grandes del Mediterráneo, se extiende unos veinticinco kilómetros junto a la ciudad.",
+    "p2": "Las tardes pertenecen al paseo marítimo (corniche). Las excursiones invitan a descubrir el monte Gourougou, la dramática península del Cabo de Tres Forcas, playas más tranquilas como Charrana y Ras El Ma, y el puerto de Beni Ansar. Melilla se sitúa justo al otro lado de la frontera para una visita rápida."
+  },
+  "places": {
+    "badge": "Destacados",
+    "title": "Lugares imprescindibles en Nador",
+    "subtitle": "Laguna, paseo marítimo, montaña, cabo y playas cercanas.",
+    "explore": "Explorar lugar →",
+    "marchica": { "tag": "Laguna", "title": "Laguna de Marchica (Mar Chica)", "desc": "Una vasta laguna mediterránea junto a la ciudad — aguas tranquilas, aves y el paisaje que define Nador." },
+    "corniche": { "tag": "Paseo", "title": "Paseo Marítimo de Nador", "desc": "La fachada marítima al anochecer — cafés, vistas a la laguna y el corazón social de la ciudad." },
+    "gourougou": { "tag": "Montaña", "title": "Monte Gourougou", "desc": "Una montaña baja sobre Nador con senderos y amplias vistas hacia la laguna, la costa y Melilla." },
+    "cap_trois_fourches": { "tag": "Cabo", "title": "Cabo de Tres Forcas", "desc": "Una dramática península de acantilados y costa virgen — uno de los paisajes mediterráneos más salvajes." },
+    "charrana": { "tag": "Playa", "title": "Playa de Charrana", "desc": "Una cala resguardada por acantilados a una hora de la ciudad — baño tranquilo lejos de la laguna." },
+    "beni_ansar": { "tag": "Puerto", "title": "Puerto de Beni Ansar", "desc": "Puerto activo y terminal de ferries — desembarcos, pescado fresco y la actividad marítima." },
+    "kasbah_selouane": { "tag": "Patrimonio", "title": "Kasbah de Selouane", "desc": "Una fortificación alauí del siglo XVII en el interior — historia a poca distancia en coche." },
+    "ras_el_ma": { "tag": "Costa", "title": "Ras El Ma (Cabo de Agua)", "desc": "Un pueblo costero tranquilo y playa al este de Nador — arena, barcos de pesca y luz mediterránea." }
+  },
+  "stays": {
+  "badge": "Selección y Consejos",
+  "title": "¿Dónde alojarse en Nador? Nuestros favoritos",
+  "subtitle": "Resorts con vistas a la laguna, apartamentos modernos y estancias costeras acogedoras en Nador.",
+  "book": "Reservar →",
+  "card1": { "badge": "★ Resort de Lujo", "name": "Marchica Lagoon Resort", "desc": "Exclusivo resort de cinco estrellas con vistas directas a las prístinas aguas de la laguna de Marchica.", "location": "Frente a la Laguna" },
+  "card2": { "badge": "★ Hotel Corniche", "name": "Hotel Mercure Nador Rif", "desc": "Cómodo hotel de alta gama situado directamente en el paseo marítimo con vistas impresionantes de la bahía.", "location": "Paseo Marítimo" },
+  "card3": { "badge": "★ Casa de Huéspedes", "name": "Riad Dar Nador", "desc": "Encantadora casa tradicional que ofrece cálida hospitalidad y habitaciones tranquilas cerca del centro.", "location": "Centro de la Ciudad" },
+  "card4": { "badge": "★ Estancia Moderna", "name": "Hotel Rif Paradise", "desc": "Hotel contemporáneo y bien equipado que ofrece fácil acceso al transporte y atracciones locales.", "location": "Centro de la Ciudad" }
+  },
+  "booking_banner": {
+    "badge": "Más de 30 alojamientos",
+    "title": "Explora todos los alojamientos en Nador",
+    "desc": "Compara tarifas en directo, lee opiniones verificadas de huéspedes y descubre más resorts, apartamentos y hoteles en Nador a través de Booking.com.",
+    "btn": "Ver todos los hoteles en Booking.com",
+    "guarantee": "✓ Mejor precio garantizado y reserva segura"
+  },
+  "itinerary": {
+    "badge": "Planificación",
+    "title": "Programa sugerido de 3 días en Nador",
+    "subtitle": "Laguna y paseo marítimo primero, luego montaña o cabo, y un día de playa."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Día 1 — Laguna & Ciudad",
+    "day1_m": "Mañana — Vistas de Marchica",
+    "day1_md": "Primer vistazo a la laguna desde el paseo marítimo y las orillas abiertas.",
+    "day1_a": "Tarde — Ritmo urbano",
+    "day1_ad": "Almuerzo sencillo, breve paseo por la laguna o descanso antes del atardecer.",
+    "day1_e": "Noche — El Paseo Marítimo",
+    "day1_ed": "Cafés, luces de la laguna y marisco fresco cuando el paseo se llena de vida.",
+    "day2_tab": "Día 2 — Montaña o Cabo",
+    "day2_m": "Mañana — Gourougou o ruta oeste",
+    "day2_md": "Sendero o traslado hacia los miradores de montaña, o inicio hacia el Cabo de Tres Forcas.",
+    "day2_a": "Tarde — Vistas y regreso",
+    "day2_ad": "Panorámicas de la laguna y la costa; reserve tiempo para el trayecto de vuelta.",
+    "day2_e": "Noche — Cena tranquila",
+    "day2_ed": "Mesa en la ciudad o en el paseo marítimo tras un largo día al aire libre.",
+    "day3_tab": "Día 3 — Playa o Puerto",
+    "day3_m": "Mañana — Charrana o Ras El Ma",
+    "day3_md": "Baño y arena lejos de la zona principal de la laguna.",
+    "day3_a": "Tarde — Flexible",
+    "day3_ad": "Ambiente portuario de Beni Ansar o un segundo paseo junto a la laguna.",
+    "day3_e": "Noche — Opcional",
+    "day3_ed": "Nuevo paseo marítimo o descanso temprano antes de continuar el viaje."
+  },
+  "eat": {
+    "badge": "Gastronomía",
+    "title": "Dónde comer en Nador",
+    "subtitle": "Pescado fresco, mesas junto a la laguna y platos sencillos en la ciudad.",
+    "nomad": { "tag": "Puerto", "loc": "Beni Ansar", "title": "Pescado del puerto", "desc": "Capturas frescas cerca del puerto cuando regresan las barcas." },
+    "jardin": { "tag": "Hotel", "loc": "Centro", "title": "Restaurantes de hotel", "desc": "Opciones fiables si te alojas en un hotel grande." },
+    "fassia": { "tag": "Café", "loc": "Centro", "title": "Parada en cafetería", "desc": "Café y pausa rápida entre recados." },
+    "moha": { "tag": "Marisco", "loc": "Centro", "title": "Marisco en el centro", "desc": "Pescado y ensaladas en el centro entre paseos por la laguna." },
+    "bacha": { "tag": "Local", "loc": "Centro", "title": "Mesas de barrio", "desc": "Platos tranquilos preferidos por los residentes." },
+    "elfenn": { "tag": "Marisco", "loc": "Paseo Marítimo", "title": "Pescado nocturno", "desc": "Cena tardía cuando el paseo marítimo cobra vida." }
+  },
+  "tips": {
+    "title": "Consejos prácticos para Nador",
+    "transport": { "title": "Cómo moverse", "desc": "El centro y el paseo marítimo se recorren a pie; las playas y el Cabo de Tres Forcas requieren coche o traslado organizado. Beni Ansar está cerca para los ferries. Acuerda bien el precio de los taxis." },
+    "bargain": { "title": "Sol y estaciones", "desc": "El sol mediterráneo es fuerte en verano. Usa protección solar y agua para los días de laguna y playa. La primavera y el otoño son excelentes para el Gourougou y el cabo." },
+    "water": { "title": "Efectivo y frontera", "desc": "Lleva dírhams para taxis y pequeños pagos. Si visitas Melilla, lleva pasaporte válido y comprueba los horarios fronterizos." }
+  },
+  "daytrips": {
+    "badge": "Alrededores",
+    "title": "Mejores excursiones desde Nador",
+    "subtitle": "Rutas por la laguna, vistas de montaña y costa mediterránea salvaje.",
+    "tiout": { "title": "Cabo de Tres Forcas", "desc": "Medio día o día completo hacia acantilados, costa virgen y uno de los mejores miradores." },
+    "antiatlas": { "title": "Monte Gourougou", "desc": "Breves caminatas y vistas panorámicas sobre Nador, la laguna y Melilla en días despejados." },
+    "taliouine": { "title": "Charrana o Ras El Ma", "desc": "Día de playa con aguas más claras que en la laguna interior." },
+    "agadir": { "title": "Melilla (excursión con pasaporte)", "desc": "Enclave español al otro lado de la frontera — calles modernistas y un fuerte contraste cultural." }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "Preguntas frecuentes sobre Nador",
+    "q1": { "question": "¿Cuántos días en Nador?", "answer": "Tres días cubren la laguna, el paseo marítimo y una excursión a la montaña o la playa. Cinco días son ideales para el Cabo de Tres Forcas, Charrana y un ritmo más relajado." },
+    "q2": { "question": "¿Nador es solo la laguna?", "answer": "Marchica es el paisaje clave, pero el Gourougou, el Cabo de Tres Forcas y las playas aportan una gran diversidad de montaña y costa." },
+    "q3": { "question": "¿Cómo llegar a Nador?", "answer": "Vuelos al aeropuerto de Nador (NDR), ferries a través de Beni Ansar, o rutas terrestres por el Rif. Melilla se encuentra al lado para rutas transfronterizas." },
+    "q4": { "question": "¿Cuál es la mejor época?", "answer": "De mayo a octubre para nadar y disfrutar de los atardeceres en el paseo marítimo. La primavera y el otoño son excelentes para el senderismo y vistas más despejadas." }
+  },
+  "destinations": { "nador": { "name": "Nador" } }
 }

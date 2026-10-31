@@ -9,7 +9,7 @@
 - [ ] Les stades maroc de 2030
 - [ ] ajouter des articles de blog en s'inspirant de booking et tripadvisor.
 - [ ] les trésors cachés du maroc
-- [ ] les autres villes non rédigées, à mettres dans des articles de blog.
+- [ ] les autres villes non rédigées, à mettres dans des articles de blog : Mly Bousselham, Ksar El Kebir, Kenitra.
 
 Notes : Comment avoir du traffic et Monétiser le site
 

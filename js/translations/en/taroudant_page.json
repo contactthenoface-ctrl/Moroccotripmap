@@ -3,7 +3,7 @@
     "title": "Taroudant Travel Guide | Town, Kasbah & Souss Coast | MoroccoTripMap",
     "description": "Plan Taroudant: ochre ramparts, Place Assarag, souks, Bab El Kasbah and the Tioute palm grove. The Little Marrakech of the Souss.",
     "keywords": "Taroudant, Little Marrakech, Taroudant ramparts, Place Assarag, Taroudant souks, Souss",
-    "og_title": "Taroudant Travel Guide | Ochre Walls & Souss Town | MoroccoTripMap",
+    "og_title": "Taroudant Travel Guide | Town centre UNESCO, Kasbah & Souss Winds | MoroccoTripMap",
     "og_description": "Taroudant: ochre walls, medina and Souss oasis trips — the Little Marrakech without the crowds."
   },
   "name": "Taroudant",
@@ -16,7 +16,7 @@
     "vibe_label": "Vibe",
     "vibe_val": "Walled town, ochre brick and Souss calm",
     "airport_label": "Access",
-    "airport_val": "AGA Agadir (~1.5–2 h) · Road from Marrakech (~3.5–4 h)"
+    "airport_val": "AGA Taroudant (~1.5–2 h) · Road from Marrakech (~3.5–4 h)"
   },
   "overview": {
     "title": "Welcome to Taroudant — Little Marrakech of the Souss",
@@ -98,71 +98,108 @@
     "day3_ed": "Stay another night or move on toward Taroudant or the Anti-Atlas roads."
   },
   "directory": {
-    "badge": "Stay",
+    "badge": "Directory",
     "title": "Find Your Ideal Stay in Taroudant",
-    "subtitle": "Riads and hotels inside or near the walls — quieter than the big imperial cities.",
+    "subtitle": "Riads and hotels inside or near the walls — calmer than the major imperial cities.",
     "type_label": "Type:",
     "area_label": "Area:",
     "filter_type_label": "Type:",
     "filter_location_label": "Area:",
-    "type_all": "All types",
-    "location_all": "All areas",
-    "all_types": "All types",
-    "all_areas": "All areas",
+    "type_all": "All Types",
+    "location_all": "All Areas",
+    "all_types": "All Types",
+    "all_areas": "All Areas",
     "district_label": "Area:",
-    "check_availability": "Check availability →",
-    "check": "Check availability →",
-    "counter": "stays found",
-    "found": "stays found",
-    "no_results": "No stays match your filters.",
+    "check_availability": "Check Availability ←",
+    "check": "Check Availability ←",
+    "counter": "Stays",
+    "found": "Stays",
+    "no_results": "No stays found matching these filters.",
     "type_riad": "Riad",
     "type_hotel": "Hotel",
-    "type_dar": "Dar / guesthouse",
+    "type_dar": "Dar / Guesthouse",
     "type_guesthouse": "Guesthouse",
-    "type_boutique": "Boutique riad",
-    "location_town": "City centre",
-    "location_outskirts": "Tioute / North",
-    "location_outside": "Town centre"
+    "type_boutique": "Boutique",
+    "location_town": "Town Centre",
+    "location_outskirts": "Near Walls",
+    "location_outside": "Outside Walls"
+  },
+  "stays": {
+    "badge": "Selection & Advice",
+    "title": "Where to stay in Taroudant? Our Favorites",
+    "subtitle": "Traditional riads and peaceful garden hotels in the Little Marrakech.",
+    "book": "Book Now →",
+    "card1": {
+      "badge": "★ Palace Riad",
+      "name": "Palais Oumensour",
+      "desc": "Historic palace-riad featuring traditional gardens, courtyard pools and authentic Souss charm.",
+      "location": "Medina"
+    },
+    "card2": {
+      "badge": "★ Garden Resort",
+      "name": "Dar Zitoune",
+      "desc": "Peaceful olive grove resort with swimming pools and spacious bungalows just outside the ramparts.",
+      "location": "Outskirts"
+    },
+    "card3": {
+      "badge": "★ Design Guesthouse",
+      "name": "Dar Zahia",
+      "desc": "Renowned design guesthouse combining contemporary aesthetics with lush citrus gardens.",
+      "location": "Medina"
+    },
+    "card4": {
+      "badge": "★ Legendary Luxury",
+      "name": "Hotel Gazelle d'Or",
+      "desc": "Legendary historic luxury estate with massive parklands, private cottages and timeless elegance.",
+      "location": "Near Walls"
+    }
+  },
+  "booking_banner": {
+    "badge": "Over 25+ Accommodations",
+    "title": "Explore All Places to Stay in Taroudant",
+    "desc": "Compare real-time rates, read verified guest reviews, and discover more traditional riads, guest houses and hotels on Booking.com.",
+    "btn": "View All Hotels on Booking.com",
+    "guarantee": "✓ Best price guaranteed & secure booking"
   },
   "eat": {
-    "badge": "Food",
-    "title": "Where to eat in Taroudant",
-    "subtitle": "Café terraces on Assarag, medina tagines and hotel restaurants.",
+    "badge": "Where to eat",
+    "title": "Where to Eat in Taroudant",
+    "subtitle": "Square terraces, medina tagines and hotel restaurants.",
     "bacha": {
-      "title": "Square tables",
-      "tag": "Seafood",
-      "loc": "Square",
-      "desc": "Fish and seafood with harbour views."
+      "title": "Assarag Cafés",
+      "tag": "Café",
+      "loc": "Assarag",
+      "desc": "Mint tea and people-watching on the main square."
     },
     "elfenn": {
-      "title": "City centre",
+      "title": "Medina Tagines",
       "tag": "Local",
-      "loc": "Centre",
-      "desc": "Cafés and tagines away from the town crowds."
+      "loc": "Medina",
+      "desc": "Simple Moroccan dishes tucked inside the lanes."
     },
     "fassia": {
-      "title": "Hotel restaurants",
+      "title": "Hotel Restaurants",
       "tag": "Hotel",
-      "loc": "town",
-      "desc": "Reliable options on the seafront strip."
+      "loc": "Medina",
+      "desc": "Reliable dining options after a long walk on the ramparts."
     },
     "jardin": {
-      "title": "Town cafés",
-      "tag": "Café",
-      "loc": "town",
-      "desc": "Casual drinks and snacks along the promenade."
+      "title": "Grills",
+      "tag": "Grill",
+      "loc": "Centre",
+      "desc": "Fresh meat and daily bread near the centre."
     },
     "moha": {
-      "title": "Simple grills",
-      "tag": "Grill",
-      "loc": "Souk",
-      "desc": "Everyday Moroccan plates near Souk El Had."
+      "title": "Bakeries",
+      "tag": "Bakery",
+      "loc": "Medina",
+      "desc": "Fresh bread and quick bites."
     },
     "nomad": {
-      "title": "Port catch",
-      "tag": "Seafood",
-      "loc": "Port",
-      "desc": "Fresh fish when the boats are in."
+      "title": "Lunch in Tioute",
+      "tag": "Oasis",
+      "loc": "Tioute",
+      "desc": "Simple meals if arranged on your oasis trip."
     }
   },
   "tips": {
@@ -182,43 +219,43 @@
     }
   },
   "daytrips": {
-    "badge": "Beyond the walls",
-    "title": "Day trips from Taroudant",
-    "subtitle": "Palm oasis, Souss countryside and roads toward the Anti-Atlas.",
+    "badge": "Day Trips",
+    "title": "Day Trips from Taroudant",
+    "subtitle": "Palm oasis, Souss countryside and Anti-Atlas routes.",
     "tioute": {
       "name": "Palmeraie de Tioute",
       "title": "Palmeraie de Tioute",
       "desc": "Palm oasis and village about 30–45 minutes south of town."
     },
     "souss": {
-      "name": "Souss plain",
-      "title": "Souss plain",
-      "desc": "Argan and citrus country around Taroudant on short rural drives."
+      "name": "Souss Plain",
+      "title": "Souss Plain",
+      "desc": "Argan and citrus country surrounding Taroudant."
     },
     "anti_atlas": {
-      "name": "Toward the Anti-Atlas",
-      "title": "Toward the Anti-Atlas",
-      "desc": "Mountain roads south for travellers continuing deeper into the Souss hinterland."
+      "name": "Toward Anti-Atlas",
+      "title": "Toward Anti-Atlas",
+      "desc": "Mountain roads heading south into the interior."
     }
   },
   "faq": {
-    "badge": "Good to know",
-    "title": "FAQ about Taroudant",
+    "badge": "Good to Know",
+    "title": "Taroudant Travel FAQ",
     "q1": {
-      "question": "How many days in Taroudant?",
-      "answer": "One full day covers walls, Assarag and souks. A second day suits Tioute or a slower medina pace."
+      "question": "How many days should I spend in Taroudant?",
+      "answer": "One full day covers the ramparts, Assarag and the souks. A second day allows you to visit Tioute oasis or explore the medina at a slower pace."
     },
     "q2": {
-      "question": "Why “Little Marrakech”?",
-      "answer": "The ochre ramparts and medina silhouette recall Marrakech on a smaller, quieter Souss scale."
+      "question": "Why is it called Little Marrakech?",
+      "answer": "Because of its massive continuous red-ochre ramparts and bustling medina atmosphere, mirroring Marrakech but in a much more relaxed Souss setting."
     },
     "q3": {
       "question": "How do I get to Taroudant?",
-      "answer": "Most visitors come by road from Agadir (about 1.5–2 hours) or Marrakech (about 3.5–4 hours)."
+      "answer": "Most travelers arrive by road from Agadir (about 1.5 to 2 hours) or via the mountain roads from Marrakech."
     },
     "q4": {
       "question": "Best time to visit?",
-      "answer": "Spring and autumn. Summer is very hot on the open walls; winter is mild by day and cool at night."
+      "answer": "Spring and autumn. Summer is very hot on open ramparts; winter is mild by day and cool at night."
     }
   }
 }

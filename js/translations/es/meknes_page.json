@@ -1,109 +1,131 @@
 {
   "seo": {
-    "title": "Guía de Mequinez 2026 | Ciudad Imperial, Bab Mansour y Volubilis | MoroccoTripMap",
-    "description": "Guía de Mequinez: Plaza El Hedim, Bab Mansour, medina y las ruinas romanas de Volubilis. Planifica tu viaje y alojamientos."
+    "title": "Guía de viaje de Mequinez 2026 | Ciudad Imperial, Volubilis y Mulay Idrís | MoroccoTripMap",
+    "description": "Planifica tu viaje a Mequinez: Bab Mansour, Plaza El Hedim, Heri es-Souani, Mausoleo Real, Volubilis, medina, hoteles y consejos prácticos."
   },
   "name": "Mequinez",
-  "hero_subtitle": "La tranquila ciudad imperial — la gran puerta Bab Mansour, la plaza El Hedim y las ruinas romanas de Volubilis.",
+  "hero_subtitle": "Bab Mansour, Plaza El Hedim, Heri es-Souani y la puerta a Volubilis — la ciudad imperial ismailí.",
   "info": {
     "best_time_label": "Mejor época",
-    "best_time_val": "Marzo–Mayo y Septiembre–Noviembre",
-    "duration_label": "Estancia ideal",
-    "duration_val": "1 – 2 Días",
-    "entry_label": "Acceso",
-    "entry_val": "Trenes ONCF · Autopista · Autobús",
-    "area_label": "Ambiente",
-    "area_val": "Legado imperial, murallas masivas y calma tradicional"
+    "best_time_val": "Abril–Junio y Septiembre–Noviembre",
+    "stay_label": "Estancia recomendada",
+    "stay_val": "2 – 3 Días",
+    "vibe_label": "Ambiente",
+    "vibe_val": "Imperial e Histórico",
+    "airport_label": "Aeropuerto más cercano",
+    "airport_val": "FEZ (Saïss) / RBA"
   },
   "overview": {
-    "title": "Mequinez, la ciudad imperial — autenticidad y serenidad",
-    "p1": "Mequinez es una de las grandes ciudades imperiales de Marruecos, famosa por sus murallas monumentales y su suntuosa puerta Bab Mansour. Ofrece un ambiente mucho más relajado e íntimo que Fez o Marrakech.",
-    "p2": "Dedica uno o dos días a explorar los monumentos de la medina, la plaza histórica y planificar una excursión imprescindible a las ruinas romanas de Volubilis."
+    "title": "Mequinez: Puertas imperiales, graneros reales y la ruta a Volubilis",
+    "p1": "Mequinez es la majestuosa ciudad imperial del sultán Mulay Ismail: puertas monumentales, inmensos graneros y una medina que ofrece una atmósfera relajada en comparación con la bulliciosa Fez. La Plaza El Hedim y la imponente Bab Mansour marcan el paisaje, mientras que Heri es-Souani muestra la escala de la antigua logística real.",
+    "p2": "Dos días completos permiten explorar cómodamente los monumentos imperiales y la antigua medina. Un tercer día es perfecto para visitar las cercanas ruinas romanas de Volubilis y la ciudad santa de Mulay Idrís Zerhoun."
   },
   "places": {
-    "badge": "Lo más destacado",
-    "title": "Lugares imprescindibles en Mequinez",
-    "subtitle": "Puertas históricas, plazas, mausoleos y ciudades romanas cercanas.",
+    "badge": "Imprescindibles",
+    "title": "Lugares imperdibles en Mequinez",
+    "subtitle": "Puertas imperiales, antiguos graneros reales, ruinas romanas y sitios históricos que no te puedes perder.",
     "explore": "Explorar lugar ←",
-    "bab-mansour": {
-      "tag": "Monumento",
+    "bab": {
+      "tag": "Puerta Imperial",
       "title": "Bab Mansour",
-      "desc": "La puerta imperial más famosa de Marruecos, decorada con exquisitos azulejos."
+      "desc": "Una de las puertas imperiales más majestuosas y decoradas del norte de África."
     },
     "hedim": {
-      "tag": "Plaza",
+      "tag": "Plaza Histórica",
       "title": "Plaza El Hedim",
-      "desc": "El corazón de la ciudad, similar a una versión más íntima de Jemaa el-Fna."
+      "desc": "La animada plaza principal de Mequinez, llena de cuentacuentos, músicos y terrazas de cafés."
+    },
+    "heri": {
+      "tag": "Graneros Reales",
+      "title": "Heri es-Souani",
+      "desc": "Vastas establos y graneros reales diseñados para resistir asedios y albergar caballos imperiales."
+    },
+    "volubilis": {
+      "tag": "Ruinas Romanas",
+      "title": "Yacimiento Arqueológico de Volubilis",
+      "desc": "Ruinas romanas declaradas Patrimonio de la Humanidad por la UNESCO con mosaicos conservados y arcos de triunfo."
+    },
+    "ismail": {
+      "tag": "Mausoleo",
+      "title": "Mausoleo de Mulay Ismail",
+      "desc": "Suntuoso lugar de descanso del fundador, que muestra un fino trabajo de azulejos y tranquilos patios."
     },
     "medina": {
       "tag": "Medina",
-      "title": "Medina de Mequinez",
-      "desc": "Calles animadas y zocos tradicionales lejos del turismo masivo."
+      "title": "Medina y Zocos de Mequinez",
+      "desc": "Mercados artesanales tradicionales y tranquilos callejones residenciales llenos de encanto local."
     },
-    "moulay-ismail": {
-      "tag": "Mausoleo",
-      "title": "Mausoleo de Mulay Ismail",
-      "desc": "Santuario histórico que refleja la grandeza de la arquitectura ismailí."
+    "medersa": {
+      "tag": "Patrimonio Islámico",
+      "title": "Madraza Bou Inania",
+      "desc": "Escuela teológica del siglo XIV famosa por sus tallas en madera e intrincados azulejos."
     },
-    "volubilis": {
-      "tag": "Ruinas romanas",
-      "title": "Volubilis",
-      "desc": "El yacimiento arqueológico romano más impresionante de Marruecos, a 30 km."
-    },
-    "dar-jamai": {
+    "jamai": {
       "tag": "Museo",
       "title": "Museo Dar Jamai",
-      "desc": "Palacio del siglo XIX dedicado a las artes populares y artesanía."
+      "desc": "Palacio de finales del siglo XIX que exhibe artes marroquíes, alfombras, cerámicas y joyas."
+    },
+    "idriss": {
+      "tag": "Ciudad Santa",
+      "title": "Mulay Idrís Zerhoun",
+      "desc": "Pintoresca ciudad de peregrinación enclavada en colinas verdes cerca de Volubilis."
     }
   },
   "itinerary": {
     "badge": "Itinerario",
-    "title": "Programa recomendado de 2 días en Mequinez",
-    "subtitle": "La ciudad imperial el primer día y el yacimiento de Volubilis el segundo."
+    "title": "Programa recomendado de 3 días",
+    "subtitle": "Un calendario equilibrado para ver lo mejor de la era imperial y las ruinas romanas."
   },
   "detailed_itinerary": {
-    "day1_tab": "Día 1 — Ciudad Imperial y Murallas",
+    "day1_tab": "Día 1 — Puertas Imperiales y Medina",
     "day1_m": "Mañana — Bab Mansour y Plaza El Hedim",
-    "day1_md": "Comienza admirando Bab Mansour y pasea por la animada plaza El Hedim.",
-    "day1_a": "Tarde — Zocos y Mausoleo",
-    "day1_ad": "Visita el mausoleo de Mulay Ismail y recorre las callejuelas de la medina.",
-    "day1_e": "Noche — Cena con vistas",
-    "day1_ed": "Disfruta de un cuscús o tajine tradicional con vistas a la plaza iluminada.",
-    "day2_tab": "Día 2 — Volubilis y Mulay Idrís",
-    "day2_m": "Mañana — Las ruinas romanas de Volubilis",
-    "day2_md": "Excursión matutina a Volubilis para descubrir sus magníficos mosaicos.",
-    "day2_a": "Tarde — Visita a Mulay Idrís Zerhoun",
-    "day2_ad": "Breve parada en la ciudad santa encaramada en la montaña vecina.",
-    "day2_e": "Noche — Regreso a Mequinez",
-    "day2_ed": "Último té a la menta antes de continuar tu ruta."
+    "day1_md": "Comienza en la Plaza El Hedim y admira la majestuosa arquitectura de Bab Mansour con la luz de la mañana.",
+    "day1_a": "Tarde — Zocos de la Medina",
+    "day1_ad": "Pasea por los tranquilos zocos artesanales y descubre la artesanía local a tu propio ritmo.",
+    "day1_e": "Noche — Té de menta en la terraza",
+    "day1_ed": "Relájate en una azotea con vistas a la concurrida plaza al caer la noche.",
+    "day2_tab": "Día 2 — Graneros y Madrazas",
+    "day2_m": "Mañana — Heri es-Souani y Mausoleo",
+    "day2_md": "Explora los enormes graneros y establos reales, seguido de una visita al Mausoleo de Mulay Ismail.",
+    "day2_a": "Tarde — Bou Inania y Dar Jamai",
+    "day2_ad": "Visita la refinada Madraza Bou Inania y explora las piezas marroquíes en el Museo Dar Jamai.",
+    "day2_e": "Noche — Cena tradicional",
+    "day2_ed": "Disfruta de un tajín casero en el patio tradicional de un riad.",
+    "day3_tab": "Día 3 — Volubilis y Mulay Idrís",
+    "day3_m": "Mañana — Ruinas romanas de Volubilis",
+    "day3_md": "Realiza una breve excursión a Volubilis para caminar entre columnas y mosaicos romanos.",
+    "day3_a": "Tarde — Mulay Idrís Zerhoun",
+    "day3_ad": "Haz una parada en la sagrada ciudad de Mulay Idrís para disfrutar de vistas panorámicas y dulces locales.",
+    "day3_e": "Noche — Regreso a Mequinez",
+    "day3_ed": "Una última cena en la ciudad antes de continuar tu viaje."
   },
   "stays": {
     "badge": "Selección y Consejos",
     "title": "¿Dónde alojarse en Mequinez? Nuestros favoritos",
-    "subtitle": "Riads tradicionales en el corazón de la medina y hoteles cómodos cerca de los monumentos.",
+    "subtitle": "Riads tradicionales en la medina y hoteles cómodos cerca de los lugares históricos.",
     "book": "Reservar →",
     "card1": {
       "badge": "★ Riad Tradicional",
       "name": "Riad Zerhoun Meknès",
-      "desc": "Magnífico riad con cálida hospitalidad y ambiente auténtico en la ciudad vieja.",
-      "location": "Medina"
+      "desc": "Encantador riad que ofrece una cálida bienvenida y un ambiente auténtico en la ciudad vieja.",
+      "location": "Antigua Medina"
     },
     "card2": {
       "badge": "★ Hotel Moderno",
       "name": "Hotel Ibis Meknès",
-      "desc": "Alojamiento cómodo y práctico situado cerca de la estación de tren.",
+      "desc": "Alojamiento cómodo y práctico situado cerca de la estación de tren y las avenidas principales.",
       "location": "Ciudad Nueva"
     },
     "card3": {
       "badge": "★ Casa de huéspedes",
       "name": "Dar Meknès Charm",
       "desc": "Un refugio tranquilo que combina arquitectura tradicional y comodidades modernas.",
-      "location": "Cerca de Plaza El Hedim"
+      "location": "Cerca de la Plaza El Hedim"
     },
     "card4": {
-      "badge": "★ Riad con encanto",
+      "badge": "★ Riad con Encanto",
       "name": "Riad Bab Berdaine",
-      "desc": "Casa tradicional con una hermosa terraza con vistas a las murallas históricas.",
+      "desc": "Casa de huéspedes tradicional con una bonita terraza en la azotea con vistas a las murallas.",
       "location": "Zona de Murallas"
     }
   },
@@ -114,61 +136,56 @@
     "btn": "Ver todos los hoteles en Booking.com",
     "guarantee": "✓ Mejor precio garantizado y reserva segura"
   },
-  "eat": {
-    "badge": "Gastronomía",
-    "title": "Dónde comer en Mequinez",
-    "subtitle": "Auténtica cocina marroquí y platos tradicionales cerca de los monumentos.",
-    "item1": {
-      "tag": "Local",
-      "title": "Restaurantes de la Plaza El Hedim",
-      "loc": "Plaza",
-      "desc": "Especialidades locales y carnes a la parrilla en un ambiente vibrante."
-    },
-    "item2": {
-      "tag": "Tradicional",
-      "title": "Casas de huéspedes de la Medina",
-      "loc": "Medina",
-      "desc": "Tajines caseros servidos en decoraciones hispano-moriscas."
-    }
-  },
   "tips": {
-    "title": "Consejos prácticos para Mequinez",
+    "title": "Consejos prácticos para visitar Mequinez",
     "transport": {
       "title": "Cómo moverse",
-      "desc": "Taxis pequeños y grandes disponibles. Se recomienda taxi o excursión para ir a Volubilis."
+      "desc": "La medina y la Plaza El Hedim se recorren perfectamente a pie. Toma un taxi pequeño para Heri es-Souani y un gran taxi para Volubilis."
     },
     "bargain": {
-      "title": "A pie",
-      "desc": "La medina y sus principales puntos de interés se recorren muy bien caminando."
+      "title": "Compras en los Zocos",
+      "desc": "Comprar en Mequinez es mucho más tranquilo que en Marrakech o Fez. Se agradece el regateo amable en la artesanía."
     },
     "water": {
-      "title": "Ambiente relajado",
-      "desc": "Mequinez es mucho más tranquila que Marrakech, perfecta para pasear sin agobios."
+      "title": "Mantente hidratado",
+      "desc": "La primavera y el otoño ofrecen un clima ideal para caminar por las ruinas de Volubilis. Lleva siempre agua embotellada."
     }
   },
   "daytrips": {
-    "badge": "Excursiones",
-    "title": "Excursiones desde Mequinez",
-    "subtitle": "Descubre los tesoros de los alrededores.",
+    "badge": "Alrededores",
+    "title": "Las mejores excursiones desde Mequinez",
+    "subtitle": "Explora la historia romana, ciudades sagradas y metropolis imperiales cercanas.",
     "volubilis": {
-      "name": "Volubilis y Mulay Idrís",
-      "desc": "El yacimiento romano principal y la vecina ciudad santa."
+      "title": "Volubilis y Mulay Idrís",
+      "desc": "La combinación clásica de mosaicos romanos y la ciudad santa en la montaña."
     },
     "fes": {
-      "name": "Fez",
-      "desc": "A menos de una hora en tren para explorar la gran vecina espiritual."
+      "title": "Fez Ciudad Imperial",
+      "desc": "A solo 30–45 minutos en tren para pasar un día completo en la capital espiritual de Marruecos."
+    },
+    "atlas": {
+      "title": "Medio Atlas e Ifrane",
+      "desc": "Pueblo de estilo alpino, bosques de cedros y monos salvajes en la zona de Azrou."
     }
   },
   "faq": {
     "badge": "Bueno saber",
-    "title": "Preguntas frecuentes sobre Mequinez",
+    "title": "Preguntas frecuentes sobre tu estancia en Mequinez",
     "q1": {
-      "question": "¿Cuánto tiempo dedicar a Mequinez?",
-      "answer": "Un día completo basta para la ciudad, pero reserva un segundo día para visitar Volubilis."
+      "question": "¿Cuántos días debería pasar en Mequinez?",
+      "answer": "De 2 a 3 días es lo ideal para explorar los monumentos imperiales, la medina y hacer una excursión de medio día a Volubilis."
     },
     "q2": {
+      "question": "¿Es Mequinez una ciudad segura para los turistas?",
+      "answer": "Sí, Mequinez es muy segura y mucho más tranquila que los grandes centros turísticos de Marruecos, lo que permite un viaje relajado."
+    },
+    "q3": {
+      "question": "¿Qué moneda se utiliza y se puede pagar con tarjeta?",
+      "answer": "La moneda es el Dírham (MAD). Las tarjetas se aceptan en grandes hoteles y restaurantes, pero se necesita efectivo para comercios pequeños y taxis."
+    },
+    "q4": {
       "question": "¿Cómo llegar a Mequinez?",
-      "answer": "Fácilmente en tren con ONCF desde Fez, Rabat o Casablanca."
+      "answer": "Mequinez está muy bien conectada a través de la red de trenes ONCF desde Fez, Rabat, Casablanca y Tánger."
     }
   },
   "destinations": {

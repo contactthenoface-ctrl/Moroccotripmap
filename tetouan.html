@@ -60,7 +60,6 @@
     </script>
 
     <!-- Tailwind CSS CDN -->
-    
     <script>
         tailwind.config = {
             theme: {
@@ -98,20 +97,6 @@
         .day-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
         .day-card h3 { color: #185336; border-left: 4px solid #C29B62; padding-left: 12px; margin-top: 25px; font-size: 1.25rem; font-weight: 700; }
         .day-card h3:first-of-type { margin-top: 0; }
-
-        /* Styles pour les Filtres d'hébergement */
-        .filter-section { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 30px; border-radius: 1.5rem; margin: 40px auto; max-width: 1200px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-        .filter-container { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
-        .filter-group { display: flex; flex-direction: column; flex: 1; min-width: 250px; }
-        .filter-group label { font-weight: 600; margin-bottom: 8px; color: #1A1A1A; font-size: 0.9rem; }
-        .filter-group select { padding: 12px; border: 1px solid rgba(194, 155, 98, 0.3); border-radius: 0.75rem; font-size: 0.95rem; background-color: #F9F6F0; cursor: pointer; color: #1A1A1A; outline: none; transition: border-color 0.2s; }
-        .filter-group select:focus { border-color: #185336; }
-        .filter-counter { margin-top: 20px; font-weight: 700; color: #185336; font-size: 1rem; }
-        .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
-        .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
-        .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
-        .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
     </style>
 </head>
 <body class="bg-creme text-sombre antialiased flex flex-col min-h-screen relative">
@@ -197,13 +182,13 @@
             </div>
 
             <nav class="flex flex-col gap-3 text-base font-medium text-sombre/90">
-        <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="index.html">
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 001 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                <span data-i18n="nav.home">Home</span>
-            </div>
-            <span class="text-xs text-gray-400">→</span>
-        </a>
+                <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="index.html">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 001 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        <span data-i18n="nav.home">Home</span>
+                    </div>
+                    <span class="text-xs text-gray-400">→</span>
+                </a>
                 <a class="flex items-center justify-between py-2.5 px-3 rounded-xl hover:bg-white/60 hover:text-vert transition font-semibold" href="destinations.html">
                     <div class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-vert shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6"></path></svg>
@@ -462,386 +447,145 @@
         </section>
 
         <!-- ==========================================
-             SECTION RÉPERTOIRE & FILTRES DES HÉBERGEMENTS
+             ACCOMMODATION HYBRID SECTION: FEATURED PICKS + BOOKING BANNER
              ========================================== -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="filter-section mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tetouan_page.directory.badge">Directory & Database</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
-                    <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                    <span data-i18n="tetouan_page.directory.title">Find Your Ideal Stay in Tetouan</span>
-                </h2>
-                <p class="text-sm text-sombre/70 mt-2" data-i18n="tetouan_page.directory.subtitle">Use the filters below to instantly sort the best places based on your search criteria.</p>
-                
-                <div class="filter-container mt-6 flex flex-wrap gap-4">
-                    <!-- Filter by Accommodation Type -->
-                    <div class="filter-group flex flex-col">
-                        <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="tetouan_page.directory.filter_type_label">Type</label>
-                        <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
-                            <option value="all" data-i18n="tetouan_page.directory.type_all">All</option>
-                            <option value="hotel" data-i18n="tetouan_page.directory.type_hotel">Hotel</option>
-                            <option value="riad" data-i18n="tetouan_page.directory.type_riad">Riad</option>
-                            <option value="maison" data-i18n="tetouan_page.directory.type_guesthouse">Guesthouse</option>
-                        </select>
-                    </div>
-
-                    <!-- Filter by District / Area -->
-                    <div class="filter-group flex flex-col">
-                        <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="tetouan_page.directory.filter_location_label">District / Area:</label>
-                        <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
-                            <option value="all" data-i18n="tetouan_page.directory.location_all">All areas</option>
-                            <option value="medina" data-i18n="tetouan_page.directory.location_medina">Medina</option>
-                            <option value="ville_nouvelle" data-i18n="tetouan_page.directory.location_ville">Ville Nouvelle</option>
-                            <option value="near_walls" data-i18n="tetouan_page.directory.location_walls">Near walls / views</option>
-                            <option value="volubilis" data-i18n="tetouan_page.directory.location_volubilis">Martil / coast</option>
-                        </select>
-                    </div>
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tetouan_page.stays.badge">Selection &amp; Advice</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="tetouan_page.stays.title">Where to stay in Tetouan? Our Favorites</h2>
                 </div>
-                
-                <!-- Dynamic Counter -->
-                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="tetouan_page.directory.counter">28 accommodations listed</div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="tetouan_page.stays.subtitle">
+                    Traditional medina riads and comfortable modern hotels in the white city.
+                </p>
             </div>
 
-            <!-- Complete Grid of real Tetouan accommodations -->
-            <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Blanco Riad" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">1. Hotel Blanco Riad</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
+            <!-- Featured Highlights Grid (4 Handpicked Stays) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                
+                <!-- Pick 1: Hotel Blanco Riad -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Blanco Riad" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="tetouan_page.stays.card1.badge">
+                            ★ Boutique Riad
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="tetouan_page.stays.card1.name">Hotel Blanco Riad</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="tetouan_page.stays.card1.desc">
+                            Historic riad-hotel steps from the white medina, famous for its refined architecture.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="tetouan_page.stays.card1.location">Medina</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Blanco+Riad+Tetouan" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tetouan_page.stays.book">
+                                Book Now →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad / boutique hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h1.desc">Historic riad-hotel on Rue Zawiya Kadiria, steps from the white medina.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Blanco+Riad+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="El Reducto" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">2. El Reducto</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
+
+                <!-- Pick 2: El Reducto -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="El Reducto" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="tetouan_page.stays.card2.badge">
+                            ★ Historic Riad
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="tetouan_page.stays.card2.name">El Reducto</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="tetouan_page.stays.card2.desc">
+                            Elegant Spanish-Andalusian riad with panoramic rooftop terrace and Spanish dining.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="tetouan_page.stays.card2.location">Medina Gates</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=El+Reducto+Tetouan" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tetouan_page.stays.book">
+                                Book Now →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h2.desc">Elegant medina riad with rooftop terrace and strong guest service.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=El+Reducto+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad El Sultan" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">3. Riad El Sultan</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.7</span>
+
+                <!-- Pick 3: Riad El Sultan -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Riad El Sultan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="tetouan_page.stays.card3.badge">
+                            ★ Top Rated Riad
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="tetouan_page.stays.card3.name">Riad El Sultan</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="tetouan_page.stays.card3.desc">
+                            Intimate and peaceful guest house tucked deep in the authentic UNESCO medina.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="tetouan_page.stays.card3.location">Old Medina</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+El+Sultan+Tetouan" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tetouan_page.stays.book">
+                                Book Now →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h3.desc">Small high-rated riad deep in the medina lanes.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+El+Sultan+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Dar Achaach" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">4. Riad Dar Achaach</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
+
+                <!-- Pick 4: AUREA Hotel -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="AUREA Hotel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="tetouan_page.stays.card4.badge">
+                            ★ Modern City Hotel
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="tetouan_page.stays.card4.name">AUREA Hotel Tetouan</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="tetouan_page.stays.card4.desc">
+                            Comfortable contemporary hotel in Ville Nouvelle with easy access and mountain views.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="tetouan_page.stays.card4.location">Ville Nouvelle</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=AUREA+Hotel+Tetouan" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="tetouan_page.stays.book">
+                                Book Now →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina outskirts | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h4.desc">Spacious riad with garden and terrace, popular with families.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Achaach+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Soul of Tetouan" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">5. Riad Soul of Tetouan</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h5.desc">Authentic medina house with local hosts and medina tours.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Soul+of+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Las Mil y Una Noches" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">6. Riad Las Mil y Una Noches</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.4</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h6.desc">Andalusian-style riad with spa touches in the old town.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Las+Mil+y+Una+Noches+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Aziman" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">7. Riad Aziman</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h7.desc">Quiet four-room riad ideal for a medina base.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Aziman+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad El Manantial" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">8. Riad El Manantial</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h8.desc">19th-century heritage house with traditional decor.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+El+Manantial+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Dar Rehla" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">9. Dar Rehla</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad / guesthouse</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h9.desc">Simple authentic stay on a lively medina street.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Rehla+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Dar Fama" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">10. Riad Dar Fama</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h10.desc">Highly rated medina riad near the artisan lanes.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Fama+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Dari" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">11. Riad Dari</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.6</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h11.desc">Souika-area riad with spa options and local character.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Dari+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Al Mandari Hôtel" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">12. Al Mandari Hôtel</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h12.desc">Practical modern hotel on Avenue Moulay El Abbas.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Al+Mandari+Hotel+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="AUREA Hotel" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">13. AUREA Hotel</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h13.desc">Comfortable city hotel with mountain views and solid breakfast.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=AUREA+Hotel+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Prestige Hotel" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">14. Prestige Hotel</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h14.desc">Central hotel with spa/hammam options.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Prestige+Hotel+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Chams" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">15. Hotel Chams</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h15.desc">Straightforward city base near buses and taxis.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Chams+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Nostalgie" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">16. Riad Nostalgie</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h16.desc">Intimate medina house in Farrane Kouach lanes.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Nostalgie+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Dar Al Andalous" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">17. Dar Al Andalous</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h17.desc">Andalusian-inspired rooms close to Place Hassan II.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Andalous+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="near_walls">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Panorama Tetouan" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">18. Hotel Panorama Tetouan</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.9</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Near walls | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h18.desc">Elevated views toward the Rif edge of town.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Panorama+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="volubilis">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Yasmine Beach Martil" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">19. Yasmine Beach Martil</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.2</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Martil / coast | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h19.desc">Beach-oriented stay for a Martil evening after the medina.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Yasmine+Beach+Martil" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="volubilis">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Restinga Smir" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">20. Hotel Restinga Smir</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Martil / coast | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h20.desc">Coastal option north of Tetouan for sea days.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Restinga+Smir" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad BAB EL FAN" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">21. Riad BAB EL FAN</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.6</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad / cultural café</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h21.desc">Cultural café-riad on Rue Ramallah.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+BAB+EL+FAN+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Oumaima" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">22. Hotel Oumaima</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.8</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h22.desc">Budget-friendly city hotel for one-night stops.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Oumaima+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Darna" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">23. Riad Darna</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h23.desc">Small souika riad for travellers who want lanes first.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Darna+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Diamond Tetouan" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">24. Diamond Tetouan</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.1</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h24.desc">Modern rooms useful for business or transit nights.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Diamond+Hotel+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Paris Tetouan" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">25. Hotel Paris Tetouan</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.7</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h25.desc">Classic town hotel near shops and cafés.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Paris+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad La Madriguera" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">26. Riad La Madriguera</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Medina | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Riad</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h26.desc">Boutique medina riad with strong reviews.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+la+madriguera+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="volubilis">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Marina Smir resort area" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">27. Marina Smir resort area</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.3</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Martil / coast | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel / resort</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h27.desc">Marina strip for pools and Mediterranean evenings.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Marina+Smir+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Sania Ramel Airport hotels" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">28. Sania Ramel Airport hotels</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.5</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="tetouan_page.directory.district_label">Area</span>: Near airport | <span data-i18n="tetouan_page.directory.type_label">Stay type</span>: Hotel</p>
-                        <p class="text-xs text-sombre/70 mb-3" data-i18n="tetouan_page.directory.h28.desc">Practical stop if you fly into Tetouan’s small airport.</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Sania+Ramel+Tetouan" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="tetouan_page.directory.check_availability">Check availability →</a>
-                    </div>
-                </div>
+
             </div>
-            <p id="no-results" class="no-results-msg" style="display:none" data-i18n="tetouan_page.directory.no_results">No accommodations match your filters.</p>
+
+            <!-- BOOKING REDIRECTION BANNER -->
+            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="max-w-xl text-start z-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="tetouan_page.booking_banner.badge">
+                        Over 50+ Accommodations
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="tetouan_page.booking_banner.title">
+                        Explore All Places to Stay in Tetouan
+                    </h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="tetouan_page.booking_banner.desc">
+                        Compare real-time rates, read verified guest reviews, and discover more riads, beach stays in Martil and hotels on Booking.com.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-auto shrink-0 z-10 text-center">
+                    <a href="https://www.booking.com/city/ma/tetouan.html" 
+                       target="_blank" 
+                       rel="noopener sponsored" 
+                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                       <span data-i18n="tetouan_page.booking_banner.btn">View All Hotels on Booking.com</span>
+                       <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                       </svg>
+                    </a>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="tetouan_page.booking_banner.guarantee">✓ Best price guaranteed &amp; secure booking</p>
+                </div>
+
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+            </div>
+
         </section>
 
         <!-- Where to Eat -->
@@ -1033,49 +777,6 @@
             }
             document.getElementById(dayId).classList.add("active");
             evt.currentTarget.classList.add("active");
-        }
-
-        function filterAccommodations() {
-            var selectedType = document.getElementById("filter-type").value;
-            var selectedLocation = document.getElementById("filter-location").value;
-            var cards = document.getElementsByClassName("acc-card");
-            var visibleCount = 0;
-
-            for (var i = 0; i < cards.length; i++) {
-                var card = cards[i];
-                var cardType = card.getAttribute("data-type");
-                var cardLocation = card.getAttribute("data-location");
-
-                var matchType = (selectedType === "all" || cardType === selectedType);
-                var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
-
-                if (matchType && matchLocation) {
-                    card.style.display = "block";
-                    visibleCount++;
-                } else {
-                    card.style.display = "none";
-                }
-            }
-
-            var counterDiv = document.getElementById("accommodation-counter");
-            var noResults = document.getElementById("no-results");
-            
-            if (counterDiv) {
-                // Utilisation des attributs de traduction pour s'adapter à la langue active
-                if (visibleCount === 0) {
-                    counterDiv.setAttribute("data-i18n", "tetouan_page.directory.counter_zero");
-                    counterDiv.innerText = "0 accommodations found";
-                    if (noResults) noResults.style.display = "block";
-                } else if (visibleCount === 1) {
-                    counterDiv.setAttribute("data-i18n", "tetouan_page.directory.counter_one");
-                    counterDiv.innerText = "1 accommodation found";
-                    if (noResults) noResults.style.display = "none";
-                } else {
-                    counterDiv.removeAttribute("data-i18n");
-                    counterDiv.innerText = visibleCount + " accommodations listed";
-                    if (noResults) noResults.style.display = "none";
-                }
-            }
         }
 
         function toggleMobileCategories() {

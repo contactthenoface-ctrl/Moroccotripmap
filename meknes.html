@@ -479,109 +479,147 @@
             </div>
         </section>
 
-        <!-- ==========================================
-             SECTION RÉPERTOIRE & FILTRES DES HÉBERGEMENTS
+                <!-- ==========================================
+             ACCOMMODATION HYBRID SECTION: FEATURED PICKS + BOOKING BANNER
              ========================================== -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="filter-section mb-8">
-                <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="meknes_page.directory.badge">Directory & Database</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
-                    <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                    <span data-i18n="meknes_page.directory.title">Find Your Ideal Stay in Meknes</span>
-                </h2>
-                <p class="text-sm text-sombre/70 mt-2" data-i18n="meknes_page.directory.subtitle">Use the filters below to instantly sort the best places based on your search criteria.</p>
-                
-                <div class="filter-container mt-6 flex flex-wrap gap-4">
-                    <!-- Filter by Accommodation Type -->
-                    <div class="filter-group flex flex-col">
-                        <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="meknes_page.directory.filter_type_label">Accommodation Type:</label>
-                        <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
-                            <option value="all" data-i18n="meknes_page.directory.type_all">All Types</option>
-                            <option value="hotel" data-i18n="meknes_page.directory.type_hotel">Hotels</option>
-                            <option value="riad" data-i18n="meknes_page.directory.type_riad">Traditional Riads</option>
-                        </select>
-                    </div>
-
-                    <!-- Filter by District / Area -->
-                    <div class="filter-group flex flex-col">
-                        <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="meknes_page.directory.filter_location_label">District / Area:</label>
-                        <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
-                            <option value="all" data-i18n="meknes_page.directory.location_all">All Areas</option>
-                            <option value="medina" data-i18n="meknes_page.directory.location_medina">Medina</option>
-                            <option value="ville_nouvelle" data-i18n="meknes_page.directory.location_ville">Ville Nouvelle</option>
-                        </select>
-                    </div>
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="meknes_page.stays.badge">Selection &amp; Advice</span>
+                    <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="meknes_page.stays.title">Where to stay in Meknes? Our Favorites</h2>
                 </div>
-                
-                <!-- Dynamic Counter -->
-                <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="meknes_page.directory.counter">Accommodations found</div>
+                <p class="text-sm text-sombre/70 max-w-md" data-i18n="meknes_page.stays.subtitle">
+                    Traditional medina riads and comfortable hotels close to historic landmarks.
+                </p>
             </div>
 
-            <!-- Complete Grid of Accommodations -->
-            <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Lahboul" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">1. Riad Lahboul</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
+            <!-- Featured Highlights Grid (4 Handpicked Stays) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                
+                <!-- Pick 1: Riad Zerhoun Meknes -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Riad Zerhoun Meknes" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="meknes_page.stays.card1.badge">
+                            ★ Traditional Riad
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="meknes_page.stays.card1.name">Riad Zerhoun Meknes</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="meknes_page.stays.card1.desc">
+                            Charming riad offering warm hospitality and authentic old-town ambiance.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="meknes_page.stays.card1.location">Old Medina</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Meknes" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="meknes_page.stays.book">
+                                Book Now →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="meknes_page.directory.district_label">Area</span>: Medina | <span data-i18n="meknes_page.directory.type_label">Type</span>: Traditional Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Lahboul+Meknes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="meknes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Riad Yacout" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">2. Riad Yacout</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
+                <!-- Pick 2: Hotel Ibis Meknes -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Hotel Ibis Meknes" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="meknes_page.stays.card2.badge">
+                            ★ Modern Hotel
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="meknes_page.stays.card2.name">Hotel Ibis Meknes</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="meknes_page.stays.card2.desc">
+                            Comfortable and practical stay located close to the train station and main avenues.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="meknes_page.stays.card2.location">New Town</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Meknes" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="meknes_page.stays.book">
+                                Book Now →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="meknes_page.directory.district_label">Area</span>: Medina | <span data-i18n="meknes_page.directory.type_label">Type</span>: Medina Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+Yacout+Meknes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="meknes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel Transatlantique" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">3. Hotel Transatlantique</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.2</span>
+                <!-- Pick 3: Dar Meknes Charm -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Dar Meknes Charm" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="meknes_page.stays.card3.badge">
+                            ★ Guest House
+                        </span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="meknes_page.stays.card3.name">Dar Meknes Charm</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="meknes_page.stays.card3.desc">
+                            A peaceful sanctuary combining traditional architecture and modern amenities.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="meknes_page.stays.card3.location">Near El Hedim Square</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Meknes" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="meknes_page.stays.book">
+                                Book Now →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="meknes_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="meknes_page.directory.type_label">Type</span>: Classic Hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Hotel+Transatlantique+Meknes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="meknes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
 
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Ibis Meknes" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">4. Ibis Meknes</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0</span>
-                        </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="meknes_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="meknes_page.directory.type_label">Type</span>: Modern Hotel</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Ibis+Meknes+Meknes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="meknes_page.directory.check_availability">Check availability →</a>
+                <!-- Pick 4: Riad Bab Berdaine -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Riad Bab Berdaine" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="meknes_page.stays.card4.badge">
+                            ★ Character Riad
+                        </span>
                     </div>
-                </div>
-
-                <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
-                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Riad D'Or" class="w-full h-48 object-cover" loading="lazy">
-                    <div class="p-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg text-vert">5. Riad D'Or</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2</span>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="meknes_page.stays.card4.name">Riad Bab Berdaine</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="meknes_page.stays.card4.desc">
+                            Traditional guesthouse featuring a lovely rooftop terrace overlooking historic walls.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="meknes_page.stays.card4.location">Ramparts Area</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Bab+Berdaine+Meknes" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="meknes_page.stays.book">
+                                Book Now →
+                            </a>
                         </div>
-                        <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="meknes_page.directory.district_label">Area</span>: Medina | <span data-i18n="meknes_page.directory.type_label">Type</span>: Boutique Riad</p>
-                        <a href="https://www.booking.com/searchresults.html?ss=Riad+D'Or+Meknes" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="meknes_page.directory.check_availability">Check availability →</a>
                     </div>
                 </div>
 
             </div>
-            <div id="no-results" class="no-results-msg" style="display:none" data-i18n="meknes_page.directory.no_results">No accommodations match your filters.</div>
+
+            <!-- BOOKING REDIRECTION BANNER TO EXPAND SEARCH -->
+            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="max-w-xl text-start z-10">
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="meknes_page.booking_banner.badge">
+                        Over 60+ Accommodations
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="meknes_page.booking_banner.title">
+                        Explore All Places to Stay in Meknes
+                    </h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="meknes_page.booking_banner.desc">
+                        Compare real-time rates, read verified guest reviews, and discover more riads and hotels on Booking.com.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-auto shrink-0 z-10 text-center">
+                    <a href="https://www.booking.com/city/ma/meknes.html" 
+                       target="_blank" 
+                       rel="noopener sponsored" 
+                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                       <span data-i18n="meknes_page.booking_banner.btn">View All Hotels on Booking.com</span>
+                       <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                       </svg>
+                    </a>
+                    <p class="text-[11px] text-creme/60 mt-2" data-i18n="meknes_page.booking_banner.guarantee">✓ Best price guaranteed &amp; secure booking</p>
+                </div>
+
+                <!-- Decorative Background Glow -->
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
+            </div>
+
         </section>
 
         <!-- Practical Travel Tips -->

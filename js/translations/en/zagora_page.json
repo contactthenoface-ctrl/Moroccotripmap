@@ -1,8 +1,8 @@
 {
   "seo": {
     "title": "Zagora Travel Guide 2026 | Draa Valley, Timbuktu Sign & Sahara Gateway | MoroccoTripMap",
-    "description": "Plan Zagora: Draa Valley palm groves, Timbuktu 52 days sign, Tinfou dunes, Tamegroute pottery and library, Amezrou, Jebel Zagora, the souk and desert camps. Gateway to the Sahara.",
-    "keywords": "Zagora, Draa Valley, Timbuktu 52 days, Tinfou dunes, Tamegroute, Amezrou, Jebel Zagora, Sahara Morocco, desert camps Zagora"
+    "description": "Plan Zagora: palm-lined Draa Valley, Timbuktu 52 days sign, Tinfou dunes, Tamegroute pottery and library, Amezrou, Jebel Zagora and desert camps.",
+    "keywords": "Zagora, Draa Valley, Timbuktu 52 days, Tinfou dunes, Tamegroute, Amezrou, Jebel Zagora, Morocco desert, Zagora camps"
   },
   "name": "Zagora",
   "hero_subtitle": "Gateway to the Sahara: palm-lined Draa Valley, the famous Timbuktu sign, nearby dunes and the quiet rhythm of southern oasis towns.",
@@ -18,9 +18,9 @@
   },
   "overview": {
     "title": "Welcome to Zagora — palms, caravan memory and the road to the dunes",
-    "p1": "Zagora sits in the Draa Valley of southern Morocco, long a staging post on routes that once ran toward Timbuktu. Today the town is quieter than the big imperial cities, framed by expansive date-palm oases and the Anti-Atlas mountains. This historic desert market town offers the unique atmosphere of a Saharan gateway.",
+    "p1": "Zagora sits in the Draa Valley of southern Morocco, long a staging post on routes that once ran toward Timbuktu. Today the town is quieter than the big imperial cities, framed by expansive date-palm oases and historic earthen villages.",
     "p2": "Most travellers stop for the iconic “Timbuktu 52 days” sign, a walk or drive through the palm groves, a short outing to the Tinfou dunes, and a half-day in Tamegroute for green pottery and the historic library. Amezrou and Jebel Zagora add village lanes and a sunset climb.",
-    "p3": "Two to four days is enough if you want oasis time plus one desert night. Summer is extremely hot; the classic season runs from autumn through spring when evenings cool and the light on the palms is soft."
+    "p3": "A stay of 2 to 4 days is ideal if you want to explore the oasis and spend a night in the desert. Summer heat rises significantly, making autumn to spring the preferred season when evenings are refreshing."
   },
   "places": {
     "badge": "Highlights",
@@ -71,25 +71,7 @@
   "itinerary": {
     "badge": "Planning",
     "title": "Suggested 3-day plan for Zagora",
-    "subtitle": "Oasis and sign first, then Tamegroute or dunes, then a desert night or free day.",
-    "day1": {
-      "tag": "Day 1",
-      "title": "Town, sign & palms",
-      "desc": "Timbuktu sign, palm-grove walk and sunset toward Jebel Zagora.",
-      "duration": "Full day · orientation"
-    },
-    "day2": {
-      "tag": "Day 2",
-      "title": "Tamegroute or Tinfou",
-      "desc": "Pottery and library in Tamegroute, or an afternoon on the Tinfou dunes.",
-      "duration": "Full day · culture or dunes"
-    },
-    "day3": {
-      "tag": "Day 3",
-      "title": "Desert or Amezrou",
-      "desc": "Camel trek and camp, or a slower village morning in Amezrou before departure.",
-      "duration": "Full day · flexible"
-    }
+    "subtitle": "Oasis and sign first, then Tamegroute or dunes, then a desert night or free day."
   },
   "detailed_itinerary": {
     "day1_tab": "Day 1 — Oasis & sign",
@@ -114,25 +96,42 @@
     "day3_e": "Evening — Stars or departure",
     "day3_ed": "Desert night sky, or return to town for onward travel."
   },
-  "directory": {
-    "badge": "Stays",
-    "title": "Find your ideal stay in Zagora",
-    "subtitle": "Filter by type and area — open a listing for details and availability.",
-    "filter_type_label": "Type:",
-    "filter_location_label": "Area:",
-    "type_all": "All types",
-    "type_hotel": "Hotels",
-    "type_riad": "Riads & guesthouses",
-    "type_guesthouse": "Desert camps & Guesthouses",
-    "location_all": "All areas",
-    "location_town": "Town centre",
-    "location_outside": "Palm grove edge",
-    "location_outskirts": "Desert / south",
-    "counter": "stays found",
-    "district_label": "Area",
-    "type_label": "Type",
-    "check_availability": "Check availability →",
-    "no_results": "No stays match these filters."
+  "stays": {
+    "badge": "Selection & Advice",
+    "title": "Where to stay in Zagora? Our Favorites",
+    "subtitle": "Authentic riads, kasbah hotels and peaceful lodges at the gates of the Sahara.",
+    "book": "Book Now →",
+    "card1": {
+      "badge": "★ Palace Riad",
+      "name": "Palais Oumensour",
+      "desc": "Historic palace-riad featuring traditional gardens, courtyard pools and authentic desert charm.",
+      "location": "Town Centre"
+    },
+    "card2": {
+      "badge": "★ Eco Lodge",
+      "name": "Dar Sofiane",
+      "desc": "Charming lodge nestled right at the palm grove edge with relaxing pool and garden views.",
+      "location": "Palm Grove"
+    },
+    "card3": {
+      "badge": "★ Kasbah Hotel",
+      "name": "Kasbah Hotel Le Riad",
+      "desc": "Atmospheric kasbah architecture combining traditional clay structure with modern oasis comforts.",
+      "location": "Town Centre"
+    },
+    "card4": {
+      "badge": "★ Desert Fortress",
+      "name": "Hotel Ksar Tinsouline",
+      "desc": "Fortress-style hotel featuring spacious rooms, large swimming pool, and authentic southern decor.",
+      "location": "Central Zagora"
+    }
+  },
+  "booking_banner": {
+    "badge": "Over 20+ Accommodations",
+    "title": "Explore All Places to Stay in Zagora",
+    "desc": "Compare real-time rates, read verified guest reviews, and discover more traditional riads, guest houses and desert camps on Booking.com.",
+    "btn": "View All Hotels on Booking.com",
+    "guarantee": "✓ Best price guaranteed & secure booking"
   },
   "eat": {
     "badge": "Food",
@@ -229,11 +228,6 @@
     "q4": {
       "question": "Best time to visit?",
       "answer": "October to April for milder days. Summer heat can exceed 45–50°C and limits outdoor plans."
-    }
-  },
-  "destinations": {
-    "zagora": {
-      "name": "Zagora"
     }
   }
 }

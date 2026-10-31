@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Taroudant Travel Guide | Little Marrakech of the Souss | MoroccoTripMap",
+    "title": "Taroudant Travel Guide | Town, Kasbah & Souss Coast | MoroccoTripMap",
     "description": "Plan Taroudant: ochre ramparts, Place Assarag, souks, Bab El Kasbah and the Tioute palm grove. The Little Marrakech of the Souss.",
     "keywords": "Taroudant, Little Marrakech, Taroudant ramparts, Place Assarag, Taroudant souks, Souss",
-    "og_title": "Taroudant Travel Guide | Ochre Walls & Souss Medina | MoroccoTripMap",
+    "og_title": "Taroudant Travel Guide | Ochre Walls & Souss Town | MoroccoTripMap",
     "og_description": "Taroudant: ochre walls, medina and Souss oasis trips — the Little Marrakech without the crowds."
   },
   "name": "Taroudant",
@@ -95,10 +95,10 @@
     "day3_a": "Afternoon — Free or road south",
     "day3_ad": "Return to Taroudant or continue toward other Souss stops.",
     "day3_e": "Evening — Next leg",
-    "day3_ed": "Stay another night or move on toward Agadir or the Anti-Atlas roads."
+    "day3_ed": "Stay another night or move on toward Taroudant or the Anti-Atlas roads."
   },
   "directory": {
-    "badge": "Directory",
+    "badge": "Stay",
     "title": "Find Your Ideal Stay in Taroudant",
     "subtitle": "Riads and hotels inside or near the walls — quieter than the big imperial cities.",
     "type_label": "Type:",
@@ -114,77 +114,60 @@
     "check": "Check availability →",
     "counter": "stays found",
     "found": "stays found",
-    "no_results": "No stays match these filters.",
+    "no_results": "No stays match your filters.",
     "type_riad": "Riad",
     "type_hotel": "Hotel",
     "type_dar": "Dar / guesthouse",
     "type_guesthouse": "Guesthouse",
-    "type_boutique": "Boutique",
-    "location_town": "Town centre",
-    "location_outskirts": "Near the walls",
-    "location_outside": "Outside walls"
+    "type_boutique": "Boutique riad",
+    "location_town": "City centre",
+    "location_outskirts": "Tioute / North",
+    "location_outside": "Town centre"
   },
   "eat": {
     "badge": "Food",
     "title": "Where to eat in Taroudant",
-    "subtitle": "Café terraces on Assarag, medina tagines and simple hotel restaurants.",
+    "subtitle": "Café terraces on Assarag, medina tagines and hotel restaurants.",
     "bacha": {
-      "title": "Assarag cafés",
-      "tag": "Café",
-      "loc": "Assarag",
-      "desc": "Tea and people-watching on the main square."
+      "title": "Square tables",
+      "tag": "Seafood",
+      "loc": "Square",
+      "desc": "Fish and seafood with harbour views."
     },
     "elfenn": {
-      "title": "Medina tagines",
+      "title": "City centre",
       "tag": "Local",
-      "loc": "Medina",
-      "desc": "Simple Moroccan plates in the lanes."
+      "loc": "Centre",
+      "desc": "Cafés and tagines away from the town crowds."
     },
     "fassia": {
       "title": "Hotel restaurants",
       "tag": "Hotel",
-      "loc": "Town",
-      "desc": "Reliable options after a long walls walk."
+      "loc": "town",
+      "desc": "Reliable options on the seafront strip."
     },
     "jardin": {
-      "title": "Grill spots",
-      "tag": "Grill",
-      "loc": "Centre",
-      "desc": "Everyday meat and bread near the centre."
+      "title": "Town cafés",
+      "tag": "Café",
+      "loc": "town",
+      "desc": "Casual drinks and snacks along the promenade."
     },
     "moha": {
-      "title": "Bakeries",
-      "tag": "Bakery",
-      "loc": "Medina",
-      "desc": "Fresh bread and quick snacks."
+      "title": "Simple grills",
+      "tag": "Grill",
+      "loc": "Souk",
+      "desc": "Everyday Moroccan plates near Souk El Had."
     },
     "nomad": {
-      "title": "Tioute lunch",
-      "tag": "Oasis",
-      "loc": "Tioute",
-      "desc": "Simple meals if arranged on an oasis trip."
+      "title": "Port catch",
+      "tag": "Seafood",
+      "loc": "Port",
+      "desc": "Fresh fish when the boats are in."
     }
-  },
-  "food": {
-    "badge": "Food",
-    "title": "Where to eat in Taroudant",
-    "subtitle": "Café terraces on Assarag, medina tagines and simple hotel restaurants."
   },
   "tips": {
     "badge": "Practical tips",
     "title": "Practical tips for Taroudant",
-    "1": {
-      "title": "Getting around",
-      "desc": "Everything central is walkable. Petit taxis for longer hops; private drivers for Tioute."
-    },
-    "2": {
-      "title": "Heat on the walls",
-      "desc": "Open rampart walks have little shade. Morning and late afternoon are kinder."
-    },
-    "3": {
-      "title": "Little Marrakech, not Marrakech",
-      "desc": "Expect calmer souks and fewer ticketed monuments — atmosphere is the main draw."
-    },
     "transport": {
       "title": "Getting around",
       "desc": "Everything central is walkable. Petit taxis for longer hops; private drivers for Tioute."

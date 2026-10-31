@@ -57,7 +57,6 @@
  </script>
 
  <!-- Tailwind CSS CDN -->
- 
  <script>
  tailwind.config = {
  theme: {
@@ -109,11 +108,7 @@
  .accommodation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; max-width: 1200px; margin: 20px auto; padding: 0 1rem; }
  .acc-card { background: #fff; border: 1px solid rgba(194, 155, 98, 0.2); padding: 25px; border-radius: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
  .acc-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
- .acc-card h3 { margin-top: 0; color: #185336; font-size: 1.15rem; font-weight: 700; }
  .acc-meta { font-size: 0.85rem; color: #666; margin: 8px 0; font-weight: 500; }
- .acc-contact { font-size: 0.9rem; color: #1A1A1A; margin-top: 12px; }
- .acc-contact a { color: #C29B62; text-decoration: none; font-weight: 600; }
- .acc-contact a:hover { text-decoration: underline; }
  .no-results-msg { text-align: center; padding: 40px; font-size: 1rem; color: #666; max-width: 1200px; margin: 0 auto; }
  </style>
 </head>
@@ -307,7 +302,7 @@
  </div>
  </section>
 
- <!-- Must-Visit Places Section (9 Lieux Incontournables) -->
+ <!-- Must-Visit Places Section -->
  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-sable/10">
  <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
  <div>
@@ -405,14 +400,9 @@
                     <span class="mt-4 text-sm font-semibold text-sable group-hover:text-vert transition" data-i18n="taroudant_page.places.explore">Explore place →</span>
                 </div>
             </a>
-            </div>
+    </div>
 </section>
 
-
- <!-- ==========================================
- SECTION REPERTOIRE & FILTRES DES 60 HÉBERGEMENTS
- ========================================== -->
- 
 <!-- Recommended Itinerary Section -->
 <section class="itinerary-section">
 <div class="text-center mb-8">
@@ -451,22 +441,24 @@
 </div></div>
 </section>
 
-
+<!-- ==========================================
+ SECTION RÉPERTOIRE & FILTRES DES 28+ HÉBERGEMENTS (Modèle Tétouan/Nador)
+ ========================================== -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
  <div class="filter-section mb-8">
- <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="taroudant_page.directory.badge">Stay</span>
+ <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="taroudant_page.directory.badge">Directory & Database</span>
  <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1 flex items-center gap-2">
  <svg class="w-7 h-7 text-sable" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
  <span data-i18n="taroudant_page.directory.title">Find Your Ideal Stay in Taroudant</span>
  </h2>
- <p class="text-sm text-sombre/70 mt-2" data-i18n="taroudant_page.directory.subtitle">Riads and hotels inside or near the walls — quieter than the big imperial cities.</p>
+ <p class="text-sm text-sombre/70 mt-2" data-i18n="taroudant_page.directory.subtitle">Use the filters below to instantly sort the best places based on your search criteria.</p>
  
  <div class="filter-container mt-6 flex flex-wrap gap-4">
  <!-- Filter by Accommodation Type -->
  <div class="filter-group flex flex-col">
- <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="taroudant_page.directory.filter_type_label">Type:</label>
+ <label for="filter-type" class="text-xs font-semibold mb-1" data-i18n="taroudant_page.directory.filter_type_label">Type</label>
  <select id="filter-type" onchange="filterAccommodations()" class="p-2 border rounded-md">
- <option value="all" data-i18n="taroudant_page.directory.type_all">All types</option>
+ <option value="all" data-i18n="taroudant_page.directory.type_all">All</option>
  <option value="hotel" data-i18n="taroudant_page.directory.type_hotel">Hotel</option>
  <option value="riad" data-i18n="taroudant_page.directory.type_riad">Riad</option>
  <option value="maison" data-i18n="taroudant_page.directory.type_guesthouse">Guesthouse</option>
@@ -475,265 +467,388 @@
 
  <!-- Filter by District / Area -->
  <div class="filter-group flex flex-col">
- <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="taroudant_page.directory.filter_location_label">Area:</label>
+ <label for="filter-location" class="text-xs font-semibold mb-1" data-i18n="taroudant_page.directory.filter_location_label">District / Area:</label>
  <select id="filter-location" onchange="filterAccommodations()" class="p-2 border rounded-md">
  <option value="all" data-i18n="taroudant_page.directory.location_all">All areas</option>
- <option value="centre" data-i18n="taroudant_page.directory.location_town">City centre</option>
- <option value="town" data-i18n="taroudant_page.directory.location_outside">Town centre</option>
- <option value="newtown" data-i18n="taroudant_page.directory.location_outskirts">Tioute / North</option>
- <option value="peripherie" data-i18n="taroudant_page.directory.location_outskirts">Tioute / North</option>
+ <option value="medina" data-i18n="taroudant_page.directory.location_medina">Medina</option>
+ <option value="ville_nouvelle" data-i18n="taroudant_page.directory.location_ville">Ville Nouvelle</option>
+ <option value="near_walls" data-i18n="taroudant_page.directory.location_walls">Near walls / views</option>
+ <option value="volubilis" data-i18n="taroudant_page.directory.location_volubilis">Tioute / Outskirts</option>
  </select>
  </div>
  </div>
  
  <!-- Dynamic Counter -->
- <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="taroudant_page.directory.counter">stays found</div>
+ <div class="filter-counter mt-4 font-bold text-sm text-vert" id="accommodation-counter" data-i18n="taroudant_page.directory.counter">28 accommodations listed</div>
  </div>
 
- <!-- Taroudant accommodations (Coups de cœur) -->
+ <!-- Taroudant accommodations grid (28 items) -->
  <div class="accommodation-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodation-list">
-
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Palais Oumensour" class="w-full h-48 object-cover" loading="lazy">
  <div class="p-4">
  <div class="flex justify-between items-start mb-2">
  <h3 class="font-bold text-lg text-vert">1. Palais Oumensour</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.4</span>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="taroudant_page.directory.district_label">Area:</span> City centre · <span data-i18n="taroudant_page.directory.type_label">Type:</span> Riad-palace</p>
- <p class="text-xs text-sombre/70 mt-2">Magnificent historic riad with lush gardens, traditional architecture, and exceptional hospitality.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Palais+Oumensour+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
- </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad-palace</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h1.desc">Historic palace-riad featuring traditional gardens and pools.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Palais+Oumensour+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Dar Zitouna" class="w-full h-48 object-cover" loading="lazy">
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Riad Maryam" class="w-full h-48 object-cover" loading="lazy">
  <div class="p-4">
  <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">2. Dar Zitouna</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.2</span>
+ <h3 class="font-bold text-lg text-vert">2. Riad Maryam</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="taroudant_page.directory.district_label">Area:</span> City centre · <span data-i18n="taroudant_page.directory.type_label">Type:</span> Riad / Guesthouse</p>
- <p class="text-xs text-sombre/70 mt-2">Peaceful oasis surrounded by olive trees, featuring comfortable rooms and a relaxing pool.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Zitouna+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
- </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h2.desc">Charming courtyard riad in the heart of Taroudant medina.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Dar Zahia" class="w-full h-48 object-cover" loading="lazy">
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Riad Tania Mozaik" class="w-full h-48 object-cover" loading="lazy">
  <div class="p-4">
  <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">3. Dar Zahia</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.5</span>
+ <h3 class="font-bold text-lg text-vert">3. Riad Tania Mozaik</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="taroudant_page.directory.district_label">Area:</span> City centre · <span data-i18n="taroudant_page.directory.type_label">Type:</span> Boutique riad</p>
- <p class="text-xs text-sombre/70 mt-2">Artistic and stylish guesthouse blending modern design with authentic Moroccan charm.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Zahia+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
- </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Boutique riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h3.desc">Artistic boutique riad blending modern comfort and local tiles.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Tania+Mozaik+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Riad Maryam" class="w-full h-48 object-cover" loading="lazy">
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Dar Zahia" class="w-full h-48 object-cover" loading="lazy">
  <div class="p-4">
  <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">4. Riad Maryam</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.1</span>
+ <h3 class="font-bold text-lg text-vert">4. Dar Zahia</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.3</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="taroudant_page.directory.district_label">Area:</span> City centre · <span data-i18n="taroudant_page.directory.type_label">Type:</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2">Charming traditional riad offering a cozy atmosphere and attentive personal service.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Maryam+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
- </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Guesthouse</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h4.desc">Renowned design guesthouse with lush citrus gardens.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Dar+Zahia+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="hotel" data-location="peripherie">
- <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Dar Al Hossoun" class="w-full h-48 object-cover" loading="lazy">
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Riad Amnay" class="w-full h-48 object-cover" loading="lazy">
  <div class="p-4">
  <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">5. Dar Al Hossoun</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.6</span>
+ <h3 class="font-bold text-lg text-vert">5. Riad Amnay</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="taroudant_page.directory.district_label">Area:</span> Tioute / North · <span data-i18n="taroudant_page.directory.type_label">Type:</span> Botanical lodge</p>
- <p class="text-xs text-sombre/70 mt-2">Exceptional eco-lodge set within a stunning botanical garden with biological pool and fine dining.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Hossoun+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
- </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h5.desc">Traditional retreat with warm hospitality and quiet rooms.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Amnay+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
 
- <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm" data-type="riad" data-location="centre">
- <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Riad Taroudant" class="w-full h-48 object-cover" loading="lazy">
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="volubilis">
+ <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80" alt="Dar Zitoune" class="w-full h-48 object-cover" loading="lazy">
  <div class="p-4">
  <div class="flex justify-between items-start mb-2">
- <h3 class="font-bold text-lg text-vert">6. Riad Taroudant</h3>
- <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">★ 9.0</span>
+ <h3 class="font-bold text-lg text-vert">6. Dar Zitoune</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
  </div>
- <p class="acc-meta text-xs text-sombre/60"><span data-i18n="taroudant_page.directory.district_label">Area:</span> City centre · <span data-i18n="taroudant_page.directory.type_label">Type:</span> Riad</p>
- <p class="text-xs text-sombre/70 mt-2">An authentic sanctuary located right within the medina walls, featuring quiet patios and classic Moroccan decor.</p>
- <div class="acc-contact mt-3">
- <a href="https://www.booking.com/searchresults.html?ss=Riad+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block text-sm font-semibold text-sable hover:text-vert" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
- </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Outskirts | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Garden hotel</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h6.desc">Peaceful olive grove resort with pool just outside the ramparts.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Dar+Zitoune+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
 
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="volubilis">
+ <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Dar Al Hossoun" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">7. Dar Al Hossoun</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.4</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Outskirts | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Botanical lodge</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h7.desc">Exceptional eco-lodge surrounded by extensive botanical gardens.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Hossoun+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
  </div>
 
- <!-- Message d'alerte si aucun filtre ne correspond -->
- <div id="no-results" class="no-results-msg mt-8 text-center text-gray-500 font-semibold" style="display: none;" data-i18n="taroudant_page.directory.no_results">No stays match your filters.</div>
- </section>
- 
- <!-- Where to Eat Section (6 Restaurants) -->
- <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
- <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between">
- <div>
- <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="taroudant_page.eat.badge">Food</span>
- <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="taroudant_page.eat.title">Where to eat in Taroudant</h2>
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Riad Jnane Ines" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">8. Riad Jnane Ines</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
  </div>
- <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="taroudant_page.eat.subtitle">Seafood on the town, towns and simple grills near the souk.</p>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h8.desc">Charming quiet riad with pool and traditional patio.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Jnane+Ines+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
  </div>
 
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
- 
- <!-- 1. Restaurant Roudani -->
- <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
- <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80" alt="Restaurant Roudani" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.4</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="La Maison Taroudant" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">9. La Maison Taroudant</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Guesthouse</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h9.desc">Intimate guesthouse offering personalized service and local meals.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=La+Maison+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
- <div class="p-6 flex flex-col justify-between flex-grow">
- <div>
- <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="taroudant_page.eat.nomad.tag">Seafood</span>
- <span class="text-xs text-gray-400" data-i18n="taroudant_page.eat.nomad.loc">Square</span>
- </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="taroudant_page.eat.nomad.title">Square tables</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="taroudant_page.eat.nomad.desc">Fish and seafood with harbour views.</p>
- </div>
- </div>
- </a>
 
- <!-- 2. Le Jardin -->
- <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
- <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=80" alt="Le Jardin Taroudant" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.3</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80" alt="Riad Tafilag" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">10. Riad Tafilag</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.7</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h10.desc">Authentic local riad with genuine Souss hospitality.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Tafilag+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
- <div class="p-6 flex flex-col justify-between flex-grow">
- <div>
- <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="taroudant_page.eat.jardin.tag">Café</span>
- <span class="text-xs text-gray-400" data-i18n="taroudant_page.eat.jardin.loc">town</span>
- </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="taroudant_page.eat.jardin.title">town cafés</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="taroudant_page.eat.jardin.desc">Casual drinks and snacks along the promenade.</p>
- </div>
- </div>
- </a>
 
- <!-- 3. Al Jardin Taroudant -->
- <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
- <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Al Jardin Taroudant" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Dar Chamaa" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">11. Riad Dar Chamaa</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h11.desc">Beautiful riad with swimming pool and serene atmosphere.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Chamaa+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
- <div class="p-6 flex flex-col justify-between flex-grow">
- <div>
- <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="taroudant_page.eat.fassia.tag">Hotel</span>
- <span class="text-xs text-gray-400" data-i18n="taroudant_page.eat.fassia.loc">town</span>
- </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="taroudant_page.eat.fassia.title">Hotel restaurants</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="taroudant_page.eat.fassia.desc">Reliable options on the seafront strip.</p>
- </div>
- </div>
- </a>
 
- <!-- 4.  -->
- <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
- <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Taroudant Centre" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">12. Hotel Taroudant Centre</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.9</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Hotel</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h12.desc">Convenient modern city hotel close to all main amenities.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Hotel+Taroudant+Centre" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
- <div class="p-6 flex flex-col justify-between flex-grow">
- <div>
- <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="taroudant_page.eat.moha.tag">Grill</span>
- <span class="text-xs text-gray-400" data-i18n="taroudant_page.eat.moha.loc">Souk</span>
- </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="taroudant_page.eat.moha.title">Simple grills</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="taroudant_page.eat.moha.desc">Everyday Moroccan plates near Souk El Had.</p>
- </div>
- </div>
- </a>
 
- <!-- 5. Café Taroudant -->
- <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
- <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Café Taroudant" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.6</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Sidi Said" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">13. Riad Sidi Said</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.8</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h13.desc">Traditional home offering quiet patios and warm hospitality.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Sidi+Said+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
- <div class="p-6 flex flex-col justify-between flex-grow">
- <div>
- <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="taroudant_page.eat.bacha.tag">Seafood</span>
- <span class="text-xs text-gray-400" data-i18n="taroudant_page.eat.bacha.loc">Port</span>
- </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="taroudant_page.eat.bacha.title">Port catch</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="taroudant_page.eat.bacha.desc">Fresh fish when the boats are in.</p>
- </div>
- </div>
- </a>
 
- <!-- 6. Villa Atlantique -->
- <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
- <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Villa Atlantique" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="near_walls">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Gazelle d'Or" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">14. Hotel Gazelle d'Or</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.5</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Near walls | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Luxury estate</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h14.desc">Legendary historic luxury estate with parkland and bungalows.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Gazelle+dOr+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
  </div>
  </div>
- <div class="p-6 flex flex-col justify-between flex-grow">
- <div>
- <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="taroudant_page.eat.elfenn.tag">Local</span>
- <span class="text-xs text-gray-400" data-i18n="taroudant_page.eat.elfenn.loc">Centre</span>
- </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="taroudant_page.eat.elfenn.title">City centre</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="taroudant_page.eat.elfenn.desc">Cafés and tagines away from the town crowds.</p>
- </div>
- </div>
- </a>
 
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Ain Tit Mellin" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">15. Riad Ain Tit Mellin</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
  </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h15.desc">Cozy riad offering authentic Moroccan interior design.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Ain+Tit+Mellin+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Taroudant Atlas" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">16. Hotel Taroudant Atlas</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.1</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Hotel</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h16.desc">Comfortable hotel with easy access to regional transport.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Hotel+Taroudant+Atlas" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Taroudant Oasis" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">17. Riad Taroudant Oasis</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h17.desc">Peaceful urban oasis inside the historic ramparts.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Taroudant+Oasis" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Dar Souss" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">18. Dar Souss</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.6</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Guesthouse</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h18.desc">Welcoming guesthouse near the main artisan souks.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Dar+Souss+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Dar Assarag" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">19. Riad Dar Assarag</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.2</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h19.desc">Ideally located steps from Place Assarag with great roof views.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Assarag+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="volubilis">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Tioute Palm" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">20. Hotel Tioute Palm</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.4</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Tioute / Outskirts | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Lodge</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h20.desc">Scenic lodge overlooking the famous Tioute palm grove.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Hotel+Tioute+Palm" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Kasbah Taroudant" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">21. Riad Kasbah Taroudant</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.9</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h21.desc">Located near Bab El Kasbah for quiet historic walks.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Kasbah+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Souss Palace" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">22. Hotel Souss Palace</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 7.8</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Hotel</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h22.desc">Standard accommodation for business travelers or tourists.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Hotel+Souss+Palace+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Dar Zahra" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">23. Riad Dar Zahra</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.1</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h23.desc">Traditional medina house with warm interior courtyard.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Zahra+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Taroudant Park" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">24. Hotel Taroudant Park</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.0</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Hotel</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h24.desc">Greenery-set hotel with outdoor pool and easy parking.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Hotel+Taroudant+Park" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Les Remparts" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">25. Riad Les Remparts</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.3</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h25.desc">Situated right next to the majestic ochre ramparts.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Les+Remparts+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="maison" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Dar Al Hossoun Suites" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">26. Dar Al Hossoun Suites</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.6</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Outskirts | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Luxury suites</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h26.desc">Exclusive private suites extension of the renowned lodge.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Dar+Al+Hossoun+Suites" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="hotel" data-location="ville_nouvelle">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Hotel Taroudant Plaza" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">27. Hotel Taroudant Plaza</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 8.2</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Ville Nouvelle | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Hotel</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h27.desc">Central contemporary hotel with convenient city access.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Hotel+Taroudant+Plaza" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+
+ <div class="acc-card border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition" data-type="riad" data-location="medina">
+ <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Riad Dar El Kadi" class="w-full h-48 object-cover" loading="lazy">
+ <div class="p-4">
+ <div class="flex justify-between items-start mb-2">
+ <h3 class="font-bold text-lg text-vert">28. Riad Dar El Kadi</h3>
+ <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">★ 9.0</span>
+ </div>
+ <p class="acc-meta text-xs text-gray-600 mb-2"><span data-i18n="taroudant_page.directory.district_label">Area</span>: Medina | <span data-i18n="taroudant_page.directory.type_label">Stay type</span>: Riad</p>
+ <p class="text-xs text-sombre/70 mb-3" data-i18n="taroudant_page.directory.h28.desc">Historic medina house restored with traditional craftsmanship.</p>
+ <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+El+Kadi+Taroudant" target="_blank" rel="noopener sponsored" class="inline-block w-full text-center bg-blue-600 text-white text-xs font-bold py-2 rounded hover:bg-blue-700 transition" data-i18n="taroudant_page.directory.check_availability">Check availability →</a>
+ </div>
+ </div>
+ </div>
+ <p id="no-results" class="no-results-msg" style="display:none" data-i18n="taroudant_page.directory.no_results">No accommodations match your filters.</p>
  </section>
 
  <!-- Practical Travel Tips -->
@@ -763,77 +878,6 @@
  </div>
  </div>
  </section>
-
- <!-- Day Trips from Taroudant -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
- <div class="mb-8">
- <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="taroudant_page.daytrips.badge">Beyond the walls</span>
- <h2 class="text-3xl font-bold text-vert" data-i18n="taroudant_page.daytrips.title">Day trips from Taroudant</h2>
- <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="taroudant_page.daytrips.subtitle">Palm oasis, Souss countryside and roads toward the Anti-Atlas.</p>
- </div>
- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
- <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Palmeraie de Tioute" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/tioute/tioute-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
- <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
- <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="taroudant_page.daytrips.tioute.name">Palmeraie de Tioute</h3>
- <p class="text-xs text-white/80 mt-1" data-i18n="taroudant_page.daytrips.tioute.desc">Palm oasis and village about 30–45 minutes south of town.</p>
- </div></div>
- <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Souss countryside" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/souss/souss-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
- <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
- <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="taroudant_page.daytrips.souss.name">Souss plain</h3>
- <p class="text-xs text-white/80 mt-1" data-i18n="taroudant_page.daytrips.souss.desc">Argan and citrus country around Taroudant on short rural drives.</p>
- </div></div>
- <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Anti-Atlas foothills" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/anti-atlas/anti-atlas-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
- <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
- <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="taroudant_page.daytrips.anti_atlas.name">Toward the Anti-Atlas</h3>
- <p class="text-xs text-white/80 mt-1" data-i18n="taroudant_page.daytrips.anti_atlas.desc">Mountain roads south for travellers continuing deeper into the Souss hinterland.</p>
- </div></div>
- </div>
-</section>
-
- <!-- FAQ -->
- <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
- <div class="mb-8 text-center">
- <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="taroudant_page.faq.badge">Good to know</span>
- <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="taroudant_page.faq.title">FAQ about Taroudant</h2>
- </div>
- <div class="space-y-3">
- <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
- <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
- <span data-i18n="taroudant_page.faq.q1.question">How many days in Taroudant?</span>
- <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
- </summary>
- <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="taroudant_page.faq.q1.answer">One full day covers walls, Assarag and souks. A second day suits Tioute or a slower medina pace.</p>
- </details>
- <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
- <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
- <span data-i18n="taroudant_page.faq.q2.question">Why “Little Marrakech”?</span>
- <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
- </summary>
- <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="taroudant_page.faq.q2.answer">The ochre ramparts and medina silhouette recall Marrakech on a smaller, quieter Souss scale.</p>
- </details>
- <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
- <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
- <span data-i18n="taroudant_page.faq.q3.question">How do I get to Taroudant?</span>
- <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
- </summary>
- <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="taroudant_page.faq.q3.answer">Most visitors come by road from Taroudant (about 1.5–2 hours) or Marrakech (about 3.5–4 hours).</p>
- </details>
- <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
- <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
- <span data-i18n="taroudant_page.faq.q4.question">Best time to visit?</span>
- <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
- </summary>
- <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="taroudant_page.faq.q4.answer">Spring and autumn. Summer is very hot on the open walls; winter is mild by day and cool at night.</p>
- </details>
- </div>
- </section>
- </main>
 
  <!-- Footer -->
  <footer class="bg-vert text-creme pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-16 rounded-t-3xl">
@@ -882,15 +926,13 @@
     </div>
 </footer>
 
- <!-- Scripts JavaScript combinés (Langues, Menu Mobile, Itinéraire & Filtres) -->
+ <!-- Scripts JavaScript -->
  <script>
  function openDay(evt, dayId) {
  var tabContents = document.getElementsByClassName("tab-content");
  for (var i = 0; i < tabContents.length; i++) {
  tabContents[i].classList.remove("active");
  }
-
- 
  var tabBtns = document.getElementsByClassName("tab-btn");
  for (var i = 0; i < tabBtns.length; i++) {
  tabBtns[i].classList.remove("active");
@@ -899,7 +941,44 @@
  evt.currentTarget.classList.add("active");
  }
 
+ function filterAccommodations() {
+ var selectedType = document.getElementById("filter-type").value;
+ var selectedLocation = document.getElementById("filter-location").value;
+ var cards = document.getElementsByClassName("acc-card");
+ var visibleCount = 0;
+
+ for (var i = 0; i < cards.length; i++) {
+ var card = cards[i];
+ var cardType = card.getAttribute("data-type");
+ var cardLocation = card.getAttribute("data-location");
+
+ var matchType = (selectedType === "all" || cardType === selectedType);
+ var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
+
+ if (matchType && matchLocation) {
+ card.style.display = "block";
+ visibleCount++;
+ } else {
+ card.style.display = "none";
+ }
+ }
+
+ var counterDiv = document.getElementById("accommodation-counter");
+ var noResults = document.getElementById("no-results");
  
+ if (counterDiv) {
+ if (visibleCount === 0) {
+ counterDiv.innerText = "0 accommodations found";
+ if (noResults) noResults.style.display = "block";
+ } else if (visibleCount === 1) {
+ counterDiv.innerText = "1 accommodation found";
+ if (noResults) noResults.style.display = "none";
+ } else {
+ counterDiv.innerText = visibleCount + " accommodations listed";
+ if (noResults) noResults.style.display = "none";
+ }
+ }
+ }
 
  function toggleMobileCategories() {
  const dropdown = document.getElementById('mobile-categories-dropdown');
@@ -941,96 +1020,25 @@
  };
 
  function switchLanguage(lang) {
+ try { localStorage.setItem('preferred_lang', lang); } catch (e) {}
  const langLabel = document.getElementById('current-lang-label');
  const langButton = document.getElementById('lang-menu-button');
+ const langDropdown = document.getElementById('lang-menu-dropdown');
 
- if (langLabel) {
- langLabel.textContent = lang.toUpperCase();
- }
-
+ if (langLabel) langLabel.textContent = lang.toUpperCase();
  if (langButton && FLAG_SVGS[lang]) {
  const svgElement = langButton.querySelector('svg');
- if (svgElement) {
- svgElement.outerHTML = FLAG_SVGS[lang];
+ if (svgElement) svgElement.outerHTML = FLAG_SVGS[lang];
  }
- }
-
- const langDropdown = document.getElementById('lang-menu-dropdown');
- if (langDropdown) {
- langDropdown.classList.add('hidden');
- }
-
- if (typeof changeLanguage === 'function') {
- changeLanguage(lang);
- }
+ if (langDropdown) langDropdown.classList.add('hidden');
+ if (typeof changeLanguage === 'function') changeLanguage(lang);
+ document.documentElement.setAttribute('lang', lang);
+ document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
  }
  </script>
  
  <!-- Scripts externes -->
  <script src="js/i18n.js"></script>
  <script src="js/search.js"></script>
-<script>
-function filterAccommodations() {
- var typeEl = document.getElementById("filter-type");
- var locEl = document.getElementById("filter-location");
- var selectedType = typeEl ? typeEl.value : "all";
- var selectedLocation = locEl ? locEl.value : "all";
- var cards = document.getElementsByClassName("acc-card");
- var visibleCount = 0;
- for (var i = 0; i < cards.length; i++) {
- var card = cards[i];
- var cardType = card.getAttribute("data-type") || "";
- var cardLocation = card.getAttribute("data-location") || "";
- var matchType = (selectedType === "all" || cardType === selectedType);
- var matchLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
- if (matchType && matchLocation) {
- card.style.display = "block";
- visibleCount++;
- } else {
- card.style.display = "none";
- }
- }
- var counterDiv = document.getElementById("accommodation-counter");
- var noResults = document.getElementById("no-results");
- if (counterDiv) {
- if (visibleCount === 0) {
- counterDiv.innerText = "0 stays found";
- if (noResults) noResults.style.display = "block";
- } else if (visibleCount === 1) {
- counterDiv.innerText = "1 stay found";
- if (noResults) noResults.style.display = "none";
- } else {
- counterDiv.innerText = visibleCount + " stays found";
- if (noResults) noResults.style.display = "none";
- }
- }
- }
-</script>
-    <!-- Bouton Retour en haut -->
-    <button id="scrollToTopBtn" aria-label="Retour en haut" class="fixed bottom-6 right-6 z-50 hidden bg-sable/60 hover:bg-sable text-vert p-3 rounded-full shadow-lg backdrop-blur-md transition-all duration-300 transform hover:scale-105">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
-        </svg>
-    </button>
-
-    <script>
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollToTopBtn.classList.remove('hidden');
-            } else {
-                scrollToTopBtn.classList.add('hidden');
-            }
-        });
-
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
 </body>
 </html>

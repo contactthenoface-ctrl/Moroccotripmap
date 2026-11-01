@@ -1,75 +1,103 @@
 {
   "seo": {
-    "title": "Guías de Viaje Marruecos y Consejos Prácticos | MoroccoTripMap",
-    "description": "Guías completas de Marruecos: alquiler de coche y normas de conducción, presupuesto, cambio de divisa, etiqueta cultural, regateo en zocos, mejores temporadas y hammams tradicionales.",
-    "og_title": "Guías Prácticas de Marruecos y Consejos de Expertos | MoroccoTripMap",
-    "og_description": "Prepara tu viaje a Marruecos con consejos locales sobre conducción, presupuesto, etiqueta, temporadas y tradiciones culturales."
+    "title": "Guías de viaje de Marruecos y consejos prácticos | MoroccoTripMap",
+    "description": "Guías completas para Marruecos: alquiler de coches, presupuesto, seguridad y estafas, tarjetas SIM, cambio de divisa, etiqueta cultural, regateo en los zocos, mejores temporadas y hammams tradicionales.",
+    "og_title": "Guías prácticas para Marruecos y consejos de expertos | MoroccoTripMap",
+    "og_description": "Prepara tu viaje a Marruecos con consejos locales sobre conducción, presupuesto, seguridad, protocolo, estaciones y tradiciones culturales."
   },
   "breadcrumb": {
     "home": "Inicio",
-    "guides": "Guías de Viaje"
+    "guides": "Guías de viaje"
   },
   "hero": {
-    "title": "Guías Esenciales y Consejos Prácticos para Marruecos",
-    "subtitle": "Prepara tu road trip con información local experta. Logística, normas de alquiler de coche, presupuesto, costumbres, etiqueta de zocos y clima estacional en todo Marruecos."
+    "title": "Guías esenciales y consejos prácticos para viajar a Marruecos",
+    "subtitle": "Organiza tu ruta en coche sin complicaciones gracias a las recomendaciones de expertos locales. Logística, normas para alquilar coche, presupuesto, seguridad, conectividad, costumbres, protocolo en los zocos y clima estacional en todo Marruecos."
   },
-  "stat_verified": "Consejos Locales Verificados",
-  "stat_regions": "Regiones Geográficas Cubiertas",
-  "search_placeholder": "Buscar guía (ej. conducción, presupuesto dirham, hammam, regateo, clima)...",
+  "stat_verified": "Consejos locales verificados",
+  "stat_regions": "Regiones geográficas cubiertas",
+  "search_placeholder": "Buscar una guía (ej.: conducción, presupuesto, seguridad, SIM, hammam, regateo)...",
+  "start_here": {
+    "label": "Empieza aquí",
+    "title": "Las guías más útiles para viajeros principiantes",
+    "driving": "Conducir en Marruecos",
+    "budget": "Presupuesto y dírham",
+    "safety": "Seguridad y estafas"
+  },
   "step1": {
     "label": "Paso 1",
-    "title": "Logística, Transporte y Presupuesto"
+    "title": "Logística, transporte y presupuesto"
   },
   "guides": {
     "driving": {
-      "title": "Conducción y Alquiler de Coche",
-      "desc": "Peajes de autopista, límites de velocidad, puertos de montaña (Tizi n'Tichka), controles policiales y elección entre 4x4 o compacto para tu road trip por Marruecos.",
-      "cta": "Leer Guía Completa de Conducción"
+      "title": "Conducción y alquiler de coches",
+      "desc": "Peajes de autopista, límites de velocidad, puertos de montaña (Tizi n'Tichka), controles policiales y cómo elegir entre un 4x4 o un coche compacto para tu viaje por Marruecos.",
+      "cta": "Leer la guía completa de conducción"
     },
     "budget": {
-      "title": "Divisa, Cajeros y Presupuesto Diario",
-      "desc": "Gestionar el dírham marroquí (MAD), comisiones de cajero, efectivo frente a tarjetas en oasis remotos, propinas (bakchich) y costes diarios realistas según el perfil del viajero.",
-      "cta": "Leer Guía de Presupuesto y Dinero"
+      "title": "Moneda, cajeros automáticos y presupuesto diario",
+      "desc": "Gestión del dírham marroquí (MAD), comisiones de cajeros, efectivo frente a tarjetas en oasis remotos, propinas (baksheesh) y costes diarios reales según tu estilo de viaje.",
+      "cta": "Leer la guía de presupuesto y dinero"
     },
     "seasons": {
-      "title": "Cuándo Visitar: Clima y Temporadas",
-      "desc": "Comparación estación por estación: invierno en el Sáhara, verano en las playas de Taghazout y primavera en los valles del Alto Atlas.",
-      "cta": "Leer Guía de Temporadas y Equipaje"
+      "title": "Cuándo visitar: clima y temporadas",
+      "desc": "Comparativa temporada por temporada: invierno en el desierto, verano en las playas de Taghazout y primavera en los valles del Alto Atlas.",
+      "cta": "Leer la guía de temporadas y equipaje"
+    },
+    "safety": {
+      "title": "Seguridad, estafas y consejos prácticos",
+      "desc": "Cómo evitar guías falsos, cobros excesivos de taxis y engaños habituales en las medinas. Consejos de seguridad para mujeres, viajeros en solitario y zonas remotas.",
+      "cta": "Leer la guía de seguridad y estafas"
+    },
+    "connectivity": {
+      "title": "Tarjetas SIM, Internet y aplicaciones",
+      "desc": "Mejores operadores móviles (Orange, Maroc Telecom, Inwi), precios de tarifas, apps útiles (Careem, Google Maps sin conexión) y Wi-Fi en riads u hoteles.",
+      "cta": "Leer la guía de conectividad e Internet"
     },
     "souks": {
-      "title": "Zocos y Etiqueta del Regateo",
-      "desc": "Domina el arte de la negociación respetuosa con artesanos de Marrakech y Fez. Referencias de precios para alfombras, babuchas, lámparas de latón y especias.",
-      "cta": "Explorar talleres artesanos y tours de zoco"
+      "title": "Compras en los zocos y etiqueta de regateo",
+      "desc": "Domina el arte de la negociación respetuosa con artesanos en Marrakech y Fez. Referencias de precios justos para alfombras artesanales, babuchas, lámparas de latón y especias.",
+      "cta": "Explorar talleres artesanales y tours por los zocos"
     },
     "hammam": {
-      "title": "Experiencia Hammam Tradicional",
-      "desc": "Guía paso a paso de los baños marroquíes: diferencia entre hammams de barrio y spas de riad, material esencial (jabón negro, guante kessa) y normas de modestia.",
-      "cta": "Descubrir riads con hammam spa"
+      "title": "La experiencia del hammam tradicional",
+      "desc": "Guía paso a paso del hammam marroquí: diferencias entre hammams de barrio y spas de riad, imprescindibles (jabón negro, guante kessa) y normas de recato.",
+      "cta": "Descubrir riads con hammam y spa"
     }
   },
   "step2": {
     "label": "Paso 2",
-    "title": "Cultura, Patrimonio y Etiqueta de las Medinas"
+    "title": "Cultura, patrimonio y etiqueta en la medina"
   },
   "history_banner": {
-    "badge": "Inmersión Cultural Profunda",
-    "title": "Historia de Marruecos: De los Reinos Bereberes a las Dinastías",
-    "desc": "Comprende el rico tapiz histórico detrás de las ciudades imperiales, kasbahs UNESCO, arquitectura almorávide y monumentos saadíes.",
-    "btn": "Leer Guía de Historia de Marruecos"
+    "badge": "Inmersión cultural profunda",
+    "title": "Historia de Marruecos: de los reinos bereberes a las dinastías sucesivas",
+    "desc": "Comprende el rico tapiz histórico tras las ciudades imperiales, las kasbahs declaradas Patrimonio de la Humanidad por la UNESCO, la arquitectura almorávide y los monumentos saadíes.",
+    "btn": "Leer la guía de historia de Marruecos"
   },
   "faq": {
-    "eyebrow": "FAQ Práctica",
-    "title": "Preguntas Frecuentes de Viajeros en Marruecos",
-    "q1": "¿Necesito un Permiso Internacional de Conducir (PIC) para alquilar un coche en Marruecos?",
-    "a1": "La mayoría de agencias y controles policiales aceptan permisos nacionales en caracteres latinos (UE, Reino Unido, EE.UU., Canadá). Se recomienda un permiso internacional si tu licencia usa escritura no latina.",
-    "q2": "¿Cuál es el código de vestimenta en medinas y pueblos rurales?",
-    "a2": "En centros turísticos urbanos como Marrakech o resorts de Agadir, la ropa de verano informal es ampliamente aceptada. En medinas tradicionales, monumentos religiosos y pueblos del Atlas, se aprecia ropa modesta que cubra hombros y rodillas.",
-    "q3": "¿Se aceptan tarjetas de crédito o debo llevar efectivo?",
-    "a3": "Los grandes hoteles, restaurantes modernos y tiendas oficiales aceptan tarjetas. Sin embargo, el efectivo en dírhams (MAD) es esencial en zocos, taxis, propinas, pequeños comercios y oasis del desierto o montaña."
+    "eyebrow": "Preguntas prácticas",
+    "title": "Preguntas frecuentes de viajeros en Marruecos",
+    "q1": "¿Necesito permiso internacional de conducir para alquilar un coche en Marruecos?",
+    "a1": "La mayoría de agencias de alquiler y controles policiales aceptan permisos nacionales escritos en alfabeto latino (UE, Reino Unido, EE. UU., Canadá). Se recomienda el carné internacional si tu permiso está escrito en otro tipo de alfabeto.",
+    "q2": "¿Cuál es el código de vestimenta en las medinas y pueblos rurales?",
+    "a2": "En centros turísticos urbanos como Marrakech o resorts de Agadir, la ropa de verano habitual es aceptada. Sin embargo, en medinas tradicionales, recintos religiosos y pueblos del Atlas, se aprecia una vestimenta discreta que cubra hombros y rodillas.",
+    "q3": "¿Se aceptan tarjetas de crédito o es necesario llevar efectivo?",
+    "a3": "Los hoteles principales, restaurantes modernos y tiendas oficiales aceptan tarjeta. No obstante, el efectivo en dírhams marroquíes (MAD) es imprescindible en zocos, taxis, propinas, pequeños comercios y oasis de montaña o desierto.",
+    "q4": "¿Es Marruecos un destino seguro para turistas y viajeros en solitario?",
+    "a4": "Sí, Marruecos se considera un país seguro para los turistas. Ten precaución con guías no oficiales y vendedores insistentes en las medinas, y utiliza taxis oficiales o apps de transporte. Evita caminar a solas por callejones poco iluminados de noche.",
+    "q5": "¿Cómo conseguir una tarjeta SIM e Internet en Marruecos?",
+    "a5": "Puedes comprar una tarjeta SIM al llegar al aeropuerto (Orange, Maroc Telecom o Inwi). Los paquetes turísticos son económicos e incluyen suficientes datos. También puedes activar la itinerancia de datos o usar una eSIM si tu teléfono es compatible.",
+    "q6": "¿Necesito visado para entrar a Marruecos?",
+    "a6": "Ciudadanos de la Unión Europea, Reino Unido, EE. UU., Canadá, Australia y muchos otros países no necesitan visado para estancias de hasta 90 días. Consulta siempre los requisitos actualizados según tu nacionalidad."
   },
-  "search_no_results": "No se encontraron guías",
+  "search_no_results": "No se encontraron guías coincidentes",
   "search_read": "Leer guía →",
   "mobile_menu": {
-    "language_title": "Language / Langue"
+    "language_title": "Idioma / Language"
+  },
+  "packing": {
+    "title": "Lista de equipaje sugerida",
+    "desc": "Una lista práctica adaptada a las estaciones y al destino (desierto, montaña, costa).",
+    "cta": "Descargar lista de equipaje"
   }
 }

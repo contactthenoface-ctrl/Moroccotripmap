@@ -238,48 +238,6 @@
         <!-- GUIDES CATEGORIES SECTION -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
-            <!-- START HERE / POPULAR GUIDES -->
-            <div class="bg-white rounded-3xl border border-sable/20 p-6 sm:p-8 shadow-sm">
-                <div class="flex items-center gap-3 mb-5">
-                    <div class="p-2 bg-vert/10 text-vert rounded-xl">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <div>
-                        <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="guides_page.start_here.label">Start here</span>
-                        <h2 class="text-xl sm:text-2xl font-extrabold text-vert" data-i18n="guides_page.start_here.title">Most useful guides for first-time visitors</h2>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="../blog/driving-in-morocco.html" class="flex items-center gap-4 p-4 rounded-2xl bg-creme/80 hover:bg-sable/10 transition group">
-                        <div class="w-14 h-14 rounded-xl overflow-hidden shrink-0">
-                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=200&q=80" alt="Driving in Morocco" class="w-full h-full object-cover group-hover:scale-105 transition"/>
-                        </div>
-                        <div>
-                            <span class="font-bold text-sombre text-sm group-hover:text-vert transition" data-i18n="guides_page.start_here.driving">Driving in Morocco</span>
-                            <p class="text-xs text-sombre/60 mt-0.5" data-i18n="guides_page.start_here.driving_sub">Rules, tolls & mountain passes</p>
-                        </div>
-                    </a>
-                    <a href="../blog/morocco-travel-budget.html" class="flex items-center gap-4 p-4 rounded-2xl bg-creme/80 hover:bg-sable/10 transition group">
-                        <div class="w-14 h-14 rounded-xl overflow-hidden shrink-0">
-                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=200&q=80" alt="Budget Morocco" class="w-full h-full object-cover group-hover:scale-105 transition"/>
-                        </div>
-                        <div>
-                            <span class="font-bold text-sombre text-sm group-hover:text-vert transition" data-i18n="guides_page.start_here.budget">Budget & Dirham</span>
-                            <p class="text-xs text-sombre/60 mt-0.5" data-i18n="guides_page.start_here.budget_sub">Daily costs & money tips</p>
-                        </div>
-                    </a>
-                    <a href="#safety-guide" class="flex items-center gap-4 p-4 rounded-2xl bg-creme/80 hover:bg-sable/10 transition group">
-                        <div class="w-14 h-14 rounded-xl overflow-hidden shrink-0">
-                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=200&q=80" alt="Safety Morocco" class="w-full h-full object-cover group-hover:scale-105 transition"/>
-                        </div>
-                        <div>
-                            <span class="font-bold text-sombre text-sm group-hover:text-vert transition" data-i18n="guides_page.start_here.safety">Safety & Scams</span>
-                            <p class="text-xs text-sombre/60 mt-0.5" data-i18n="guides_page.start_here.safety_sub">Avoid common tourist traps</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
             <!-- CATEGORY 1: LOGISTICS & PREPARATION -->
             <div>
                 <div class="flex items-center gap-3 mb-6">
@@ -684,15 +642,7 @@
                     </div>
                 </div>
                 <!-- Q15 -->
-                <div class="bg-white rounded-2xl border border-sable/20 overflow-hidden shadow-sm">
-                    <button class="w-full text-left p-5 flex items-center justify-between font-bold text-sombre text-sm sm:text-base hover:text-vert transition" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')">
-                        <span data-i18n="guides_page.faq.q15">Is alcohol available in Morocco?</span>
-                        <svg class="faq-icon w-5 h-5 text-sable transform transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-                    </button>
-                    <div class="hidden px-5 pb-5 text-xs sm:text-sm text-sombre/80 leading-relaxed border-t border-sable/10 pt-3">
-                        <span data-i18n="guides_page.faq.a15">Yes, alcohol is sold in licensed hotels, some restaurants, and specialized shops (often called “caves”). It is not available everywhere and public drinking is frowned upon. During Ramadan availability may be more limited.</span>
-                    </div>
-                </div>
+                
             </div>
         </section>
     </main>
@@ -772,11 +722,6 @@
           "@type": "Question",
           "name": "What power plugs are used in Morocco?",
           "acceptedAnswer": { "@type": "Answer", "text": "Type C and Type E plugs at 220V (same as most of Europe). Bring an adapter if needed." }
-        },
-        {
-          "@type": "Question",
-          "name": "Is alcohol available in Morocco?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Alcohol is sold in licensed hotels, some restaurants and specialized shops. Public drinking is frowned upon." }
         }
 ]
     }
@@ -927,6 +872,5 @@
             });
         });
     </script>
-
 </body>
 </html>

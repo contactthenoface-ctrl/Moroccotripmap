@@ -1,75 +1,103 @@
 {
   "seo": {
-    "title": "Guides de Voyage Maroc & Conseils Pratiques | MoroccoTripMap",
-    "description": "Guides complets pour le Maroc : location de voiture et règles de conduite, budget, change, étiquette culturelle, négociation dans les souks, meilleures saisons et hammams traditionnels.",
-    "og_title": "Guides Pratiques Maroc & Conseils d'Experts | MoroccoTripMap",
-    "og_description": "Préparez votre voyage au Maroc avec des conseils locaux sur la conduite, le budget, l'étiquette, les saisons et les traditions culturelles."
+    "title": "Guides de voyage au Maroc et conseils pratiques | MoroccoTripMap",
+    "description": "Guides complets pour le Maroc : location de voiture, budget, sécurité et arnaques, cartes SIM, change de devises, étiquette culturelle, négociation dans les souks, meilleures saisons et hammams traditionnels.",
+    "og_title": "Guides pratiques pour le Maroc et conseils d'experts | MoroccoTripMap",
+    "og_description": "Préparez votre voyage au Maroc grâce à des conseils locaux sur la conduite, le budget, la sécurité, l'étiquette, les saisons et les traditions culturelles."
   },
   "breadcrumb": {
     "home": "Accueil",
-    "guides": "Guides de Voyage"
+    "guides": "Guides de voyage"
   },
   "hero": {
-    "title": "Guides Essentiels & Conseils Pratiques pour le Maroc",
-    "subtitle": "Préparez votre road trip en douceur grâce à des insights locaux. Logistique, règles de location de voiture, budget, coutumes, étiquette des souks et météo saisonnière à travers le Maroc."
+    "title": "Guides essentiels et conseils pratiques pour voyager au Maroc",
+    "subtitle": "Préparez votre road trip en toute sérénité grâce à des conseils locaux experts. Logistique, règles de location de voiture, budget, sécurité, connexion, coutumes, étiquette dans les souks et météo saisonnière à travers le Maroc."
   },
-  "stat_verified": "Conseils Locaux Vérifiés",
-  "stat_regions": "Régions Géographiques Couvertes",
-  "search_placeholder": "Rechercher un guide (ex. conduite, budget dirham, hammam, négociation, météo)...",
+  "stat_verified": "Conseils locaux vérifiés",
+  "stat_regions": "Régions géographiques couvertes",
+  "search_placeholder": "Rechercher un guide (ex. : conduite, budget, sécurité, SIM, hammam, négociation)...",
+  "start_here": {
+    "label": "Commencez ici",
+    "title": "Les guides les plus utiles pour les nouveaux voyageurs",
+    "driving": "Conduire au Maroc",
+    "budget": "Budget et Dirham",
+    "safety": "Sécurité et arnaques"
+  },
   "step1": {
     "label": "Étape 1",
-    "title": "Logistique, Transport & Budget"
+    "title": "Logistique, transports et budget"
   },
   "guides": {
     "driving": {
-      "title": "Conduite & Location de Voiture",
-      "desc": "Péages autoroutiers, limitations de vitesse, cols de montagne (Tizi n'Tichka), contrôles de police, et choix entre 4x4 ou citadine pour votre road trip au Maroc.",
-      "cta": "Lire le Guide Complet de Conduite"
+      "title": "Conduite et location de voiture",
+      "desc": "Péages d'autoroute, limitations de vitesse, cols de montagne (Tizi n'Tichka), contrôles de police et choix entre 4x4 ou citadine pour votre voyage au Maroc.",
+      "cta": "Lire le guide complet de la conduite"
     },
     "budget": {
-      "title": "Devise, Distributeurs & Budget Quotidien",
-      "desc": "Gérer le dirham marocain (MAD), frais de retrait, espèces vs cartes en oasis isolées, pourboires (bakchich) et budgets journaliers réalistes selon le profil voyageur.",
-      "cta": "Lire le Guide Budget & Argent"
+      "title": "Devise, distributeurs et budget quotidien",
+      "desc": "Gérer le Dirham marocain (MAD), frais de retrait, espèces vs cartes dans les oasis isolées, pourboires (baksheesh) et coûts quotidiens réalistes selon le profil de voyageur.",
+      "cta": "Lire le guide du budget et de l'argent"
     },
     "seasons": {
-      "title": "Quand Partir : Météo & Saisons",
-      "desc": "Comparaison saison par saison : hiver dans le Sahara, été sur les plages de Taghazout, et printemps dans les vallées du Haut Atlas.",
-      "cta": "Lire le Guide Saisons & Bagages"
+      "title": "Quand partir : météo et saisons",
+      "desc": "Comparatif saison par saison : l'hiver dans le désert, l'été sur les plages de Taghazout et le printemps dans les vallées du Haut Atlas.",
+      "cta": "Lire le guide des saisons et bagages"
+    },
+    "safety": {
+      "title": "Sécurité, arnaques et conseils pratiques",
+      "desc": "Comment éviter les faux guides, les surfacturations de taxi et les arnaques courantes dans les médinas. Conseils de sécurité pour les femmes, voyageurs solos et zones reculées.",
+      "cta": "Lire le guide sécurité et arnaques"
+    },
+    "connectivity": {
+      "title": "Cartes SIM, Internet et applications",
+      "desc": "Meilleurs opérateurs mobiles (Orange, Maroc Telecom, Inwi), prix des forfaits, applications utiles (Careem, Google Maps hors ligne) et Wi-Fi dans les riads et hôtels.",
+      "cta": "Lire le guide connexion et Internet"
     },
     "souks": {
-      "title": "Souks & Étiquette de Négociation",
-      "desc": "Maîtrisez l'art de la négociation respectueuse avec les artisans de Marrakech et Fès. Repères de prix pour tapis, babouches, lampes en laiton et épices.",
-      "cta": "Explorer ateliers d'artisans & visites guidées de souks"
+      "title": "Achats dans les souks et étiquette de négociation",
+      "desc": "Maîtrisez l'art de la négociation respectueuse avec les artisans à Marrakech et Fès. Repères de prix justes pour les tapis faits main, babouches, lanternes en cuivre et épices.",
+      "cta": "Explorer les ateliers d'artisans et circuits des souks"
     },
     "hammam": {
-      "title": "Expérience Hammam Traditionnel",
-      "desc": "Guide pas à pas des bains marocains : hammams de quartier vs spa de riad, matériel essentiel (savon noir, gant kessa) et règles de modestie.",
-      "cta": "Découvrir les riads avec hammam spa"
+      "title": "L'expérience du hammam traditionnel",
+      "desc": "Guide étape par étape du hammam marocain : différences entre hammams de quartier et spas de riad, indispensables (savon noir, gant kessa) et règles de pudeur.",
+      "cta": "Découvrir les riads avec hammam et spa"
     }
   },
   "step2": {
     "label": "Étape 2",
-    "title": "Culture, Patrimoine & Étiquette des Médinas"
+    "title": "Culture, patrimoine et étiquette en médina"
   },
   "history_banner": {
-    "badge": "Immersion Culturelle Profonde",
-    "title": "Histoire du Maroc : Des Royaumes Berbères aux Dynasties",
-    "desc": "Comprenez la riche tapisserie historique derrière les villes impériales, les kasbahs UNESCO, l'architecture almoravide et les monuments saadiens.",
-    "btn": "Lire le Guide Histoire du Maroc"
+    "badge": "Immersion culturelle profonde",
+    "title": "Histoire du Maroc : des royaumes berbères aux dynasties successives",
+    "desc": "Comprenez le riche patrimoine historique derrière les villes impériales, les kasbahs classées à l'UNESCO, l'architecture almoravide et les monuments saadiens.",
+    "btn": "Lire le guide de l'histoire du Maroc"
   },
   "faq": {
-    "eyebrow": "FAQ Pratique",
-    "title": "Questions Fréquentes des Voyageurs au Maroc",
-    "q1": "Ai-je besoin d'un permis de conduire international (PCI) pour louer une voiture au Maroc ?",
-    "a1": "La plupart des agences et des contrôles de police acceptent les permis nationaux en caractères latins (UE, Royaume-Uni, USA, Canada). Un permis international est recommandé si votre permis utilise une écriture non latine.",
-    "q2": "Quel code vestimentaire respecter dans les médinas et villages ruraux ?",
-    "a2": "Dans les hubs touristiques urbains comme Marrakech ou les stations balnéaires d'Agadir, les tenues d'été décontractées sont largement acceptées. Dans les médinas traditionnelles, monuments religieux et villages de l'Atlas, une tenue modeste couvrant épaules et genoux est appréciée.",
-    "q3": "Les cartes bancaires sont-elles acceptées ou faut-il de l'espèces ?",
-    "a3": "Les grands hôtels, restaurants modernes et magasins officiels acceptent les cartes. En revanche, l'espèces en dirhams (MAD) est indispensable dans les souks, taxis, pourboires, petites enseignes et oasis du désert ou de montagne."
+    "eyebrow": "Questions pratiques",
+    "title": "Foire aux questions des voyageurs au Maroc",
+    "q1": "Ai-je besoin d'un permis de conduire international pour louer une voiture au Maroc ?",
+    "a1": "La plupart des agences de location et des barrages de police acceptent les permis nationaux rédigés en caractères latins (UE, Royaume-Uni, États-Unis, Canada). Le permis international est recommandé si votre permis utilise un alphabet non latin.",
+    "q2": "Quelles sont les règles de tenue vestimentaire dans les médinas et villages ruraux ?",
+    "a2": "Dans les zones touristiques urbaines comme Marrakech ou les stations balnéaires d'Agadir, une tenue d'été classique convient. Toutefois, dans les médinas traditionnelles, les lieux de culte et les villages de l'Atlas, une tenue modeste couvrant épaules et genoux est appréciée.",
+    "q3": "Les cartes bancaires sont-elles acceptées ou faut-il prévoir des espèces ?",
+    "a3": "Les grands hôtels, restaurants modernes et boutiques officielles acceptent les cartes. Cependant, les espèces en dirhams marocains (MAD) sont indispensables dans les souks, taxis, pourboires, petits commerces et oasis du désert ou de montagne.",
+    "q4": "Le Maroc est-il sûr pour les touristes et les voyageurs solos ?",
+    "a4": "Oui, le Maroc est généralement sûr pour les touristes. Faites attention aux guides non officiels et aux vendeurs insistants dans les médinas, et privilégiez les taxis officiels ou les applications de VTC. Évitez de vous promener seul la nuit dans les ruelles mal éclairées.",
+    "q5": "Comment obtenir une carte SIM et avoir accès à Internet au Maroc ?",
+    "a5": "Vous pouvez acheter une carte SIM dès votre arrivée à l'aéroport (Orange, Maroc Telecom ou Inwi). Les forfaits touristiques sont abordables et offrent une bonne couverture de données. Vous pouvez aussi activer l'itinérance ou utiliser une eSIM compatible.",
+    "q6": "Faut-il un visa pour entrer au Maroc ?",
+    "a6": "Les citoyens de l'Union européenne, du Royaume-Uni, des États-Unis, du Canada, d'Australie et de nombreux autres pays n'ont pas besoin de visa pour un séjour allant jusqu'à 90 jours. Vérifiez toujours les conditions en vigueur selon votre nationalité."
   },
   "search_no_results": "Aucun guide correspondant",
   "search_read": "Lire le guide →",
   "mobile_menu": {
-    "language_title": "Language / Langue"
+    "language_title": "Langue / Language"
+  },
+  "packing": {
+    "title": "Liste d'effets conseillée",
+    "desc": "Une liste de contrôle pratique adaptée selon la saison et la destination (désert, montagnes, côte).",
+    "cta": "Télécharger la liste de bagages"
   }
 }

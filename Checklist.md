@@ -10,6 +10,7 @@
 - [ ] ajouter des articles de blog en s'inspirant de booking et tripadvisor.
 - [ ] les trésors cachés du maroc
 - [ ] les autres villes non rédigées, à mettres dans des articles de blog : Mly Bousselham, Ksar El Kebir, Kenitra.
+- [ ] Koukh Sed Smir
 
 Notes : Comment avoir du traffic et Monétiser le site
 

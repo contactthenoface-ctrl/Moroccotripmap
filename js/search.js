@@ -53,6 +53,7 @@
                 const input = e.target.value.toLowerCase().trim();
                 resultsContainer.innerHTML = '';
                 
+                // Si la recherche est vide, on remet tout l'affichage initial
                 if (input.length < 1) {
                     resultsContainer.style.display = 'none';
                     cityCards.forEach(card => card.style.display = 'block');
@@ -91,11 +92,14 @@
                     resultsContainer.style.display = 'none';
                 }
 
-                // Filtrage des cartes de la grille si on est sur la page des destinations
+                // Filtrage intelligent des cartes de la grille si on est sur une page avec des .city-card
                 if (cityCards.length > 0) {
                     cityCards.forEach(card => {
-                        const textContent = card.innerText.toLowerCase();
-                        if (textContent.includes(input)) {
+                        const cardText = card.innerText.toLowerCase();
+                        // Vérifie si le texte de la carte correspond ou si le nom d'une ville filtrée y figure
+                        const isMatch = filtered.some(item => cardText.includes(item.name.toLowerCase())) || cardText.includes(input);
+                        
+                        if (isMatch) {
                             card.style.display = 'block';
                         } else {
                             card.style.display = 'none';

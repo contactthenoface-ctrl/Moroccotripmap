@@ -15,6 +15,7 @@
 - [ ] Souk Semmarine blog article
 - [ ] Musée marrakech blog article
 - [ ] Kova Almravides قبة المرابطين blog article
+- [ ] Collab avec lgwerr li ka ydiro travels lmaroc
 
 Notes : Comment avoir du traffic et Monétiser le site
 

@@ -717,31 +717,24 @@
 </div>
 </main>
 
-
-<!-- SECTION CARTE INTERACTIVE : MARRAKECH & MAROC -->
+<!-- SECTION CARTE INTERACTIVE : MAROC SATELLITE ÉPURÉE -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="map">
   <div class="bg-white p-6 sm:p-8 rounded-3xl border border-sable/15 shadow-lg">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 gap-4">
-      <div>
-        <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="map.badge">Interactive Travel Map</span>
-        <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="map.title">Explore Marrakech & Morocco</h2>
-        <p class="text-sm text-sombre/70 mt-1" data-i18n="map.subtitle">Discover top attractions, traditional riads, and authentic spots directly on the map.</p>
-      </div>
-      <a href="marrakech.html" class="inline-flex items-center gap-2 bg-vert text-white px-5 py-2.5 rounded-xl text-xs font-semibold hover:bg-vert/90 transition shadow-sm">
-        <span data-i18n="map.explore_marrakech">Explore Marrakech Directory</span>
-        <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-      </a>
+    <div class="mb-6">
+      <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="map.badge">Interactive Travel Map</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="map.title">Explore Marrakech & Morocco</h2>
+      <p class="text-sm text-sombre/70 mt-1" data-i18n="map.subtitle">Discover top attractions, traditional riads, and authentic spots directly on the map.</p>
     </div>
 
-    <!-- Container Carte Google Maps (Maroc Unifié) -->
+    <!-- Container Carte Google Maps (Satellite pur, sans boutons externes) -->
     <div class="w-full h-[450px] rounded-2xl overflow-hidden border border-sable/20 relative shadow-inner">
       <iframe 
-        title="Carte Interactive du Maroc" 
-        class="w-full h-full border-0" 
+        title="Carte Satellite Interactive du Maroc" 
+        class="w-full h-full border-0 pointer-events-auto" 
         loading="lazy" 
         allowfullscreen 
         referrerpolicy="no-referrer-when-downgrade" 
-        src="images/places/converted-hero-placeholder.webp">
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448378.0772216595!2d-8.0026385!3d31.791702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42bffe7!2sMaroc!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma&maptype=satellite">
       </iframe>
     </div>
   </div>

@@ -56,7 +56,6 @@
 </script>
 
 <!-- Tailwind CSS CDN -->
-
 <script>
         tailwind.config = {
             theme: {
@@ -733,8 +732,6 @@
       </a>
     </div>
 
-    <!-- Container Carte Google Maps (Maroc Unifié) -->
-    <!-- Container Carte Google Maps (Maroc Unifié) -->
     <!-- Container Carte Google Maps (Maroc Unifié sans UI Google) -->
     <div class="w-full h-[450px] rounded-2xl overflow-hidden border border-sable/25 relative shadow-inner">
       <div class="absolute inset-0 overflow-hidden">
@@ -748,6 +745,7 @@
         </iframe>
       </div>
     </div>
+  </div>
 </section>
 
 <!-- Intro / Trust Text -->
@@ -757,7 +755,6 @@
     <p class="text-lg sm:text-2xl font-medium leading-relaxed max-w-3xl" data-i18n="intro.text">MoroccoTripMap started because too many "best of Morocco" lists were clearly written by people who never left their desk. Everything here — from riads to desert camps — comes from actual time spent in more than 20 Moroccan cities, checked and rechecked so the details still hold up when you get there. It's all here in English, French, Spanish and Arabic, because a good recommendation shouldn't depend on which language you happen to speak.</p>
   </div>
 </section>
-
 
 <!-- Blog / travel ideas -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -772,7 +769,7 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <a href="blog/index.html" class="block bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-md transition group">
       <div class="h-44 overflow-hidden">
-        <img alt="Sahara dunes Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/destinations/dest-1.webp" loading="lazy"/>
+        <img alt="Sahara dunes Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/home/merzouga.webp" loading="lazy"/>
       </div>
       <div class="p-5">
         <span class="text-[11px] font-bold uppercase tracking-wider text-sable" data-i18n="destinations_page.blog1_tag">Desert</span>
@@ -781,7 +778,7 @@
     </a>
     <a href="blog/index.html" class="block bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-md transition group">
       <div class="h-44 overflow-hidden">
-        <img alt="Atlantic coast Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/destinations/dest-25.webp" loading="lazy"/>
+        <img alt="Atlantic coast Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/home/essaouira.webp" loading="lazy"/>
       </div>
       <div class="p-5">
         <span class="text-[11px] font-bold uppercase tracking-wider text-sable" data-i18n="destinations_page.blog2_tag">Coast</span>
@@ -790,13 +787,46 @@
     </a>
     <a href="blog/index.html" class="block bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-md transition group">
       <div class="h-44 overflow-hidden">
-        <img alt="Chefchaouen blue city" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/destinations/dest-32.webp" loading="lazy"/>
+        <img alt="Chefchaouen blue city" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/home/chefchaouen.webp" loading="lazy"/>
       </div>
       <div class="p-5">
         <span class="text-[11px] font-bold uppercase tracking-wider text-sable" data-i18n="destinations_page.blog3_tag">North</span>
         <h3 class="text-base font-semibold text-sombre mt-1 group-hover:text-vert transition" data-i18n="destinations_page.blog3_title">Fès, Chefchaouen and Tangier in one northern loop</h3>
       </div>
     </a>
+  </div>
+</section>
+
+<!-- FAQ Section for SEO -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="faq">
+  <div class="bg-white rounded-3xl border border-sable/15 p-6 sm:p-10 shadow-sm">
+    <div class="mb-8">
+      <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="faq.badge">FAQ</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="faq.title">Frequently Asked Questions</h2>
+      <p class="text-sm text-sombre/70 mt-1" data-i18n="faq.subtitle">Everything you need to know about traveling in Morocco.</p>
+    </div>
+    
+    <div class="space-y-6">
+      <div class="border-b border-sable/10 pb-5">
+        <h3 class="text-base font-bold text-vert" data-i18n="faq.q1">What is the best time to visit Morocco?</h3>
+        <p class="text-xs sm:text-sm text-sombre/80 mt-2 leading-relaxed" data-i18n="faq.a1">Spring (March to May) and Autumn (September to November) offer the best weather across Morocco. Temperatures are pleasant for sightseeing in imperial cities like Marrakech and Fes, as well as for desert trips to Merzouga.</p>
+      </div>
+
+      <div class="border-b border-sable/10 pb-5">
+        <h3 class="text-base font-bold text-vert" data-i18n="faq.q2">Do I need a visa to travel to Morocco?</h3>
+        <p class="text-xs sm:text-sm text-sombre/80 mt-2 leading-relaxed" data-i18n="faq.a2">Citizens of over 70 countries, including the EU, US, UK, Canada, and Australia, can enter Morocco visa-free for up to 90 days. Always ensure your passport is valid for at least 6 months beyond your planned stay.</p>
+      </div>
+
+      <div class="border-b border-sable/10 pb-5">
+        <h3 class="text-base font-bold text-vert" data-i18n="faq.q3">How many days are recommended for a first trip to Morocco?</h3>
+        <p class="text-xs sm:text-sm text-sombre/80 mt-2 leading-relaxed" data-i18n="faq.a3">A 7 to 10-day itinerary allows you to explore the classic route: Marrakech, a Sahara desert tour, and the imperial city of Fes. If you have 14 days, you can add Chefchaouen and coastal towns like Essaouira.</p>
+      </div>
+
+      <div>
+        <h3 class="text-base font-bold text-vert" data-i18n="faq.q4">Is Morocco safe for tourists and solo travelers?</h3>
+        <p class="text-xs sm:text-sm text-sombre/80 mt-2 leading-relaxed" data-i18n="faq.a4">Morocco is generally very safe for international travelers. Standard travel precautions apply: stay mindful of your belongings in busy medinas, use official guides, and plan transportation in advance.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1010,4 +1040,4 @@ document.addEventListener('DOMContentLoaded', function () {
     </script>
 
 </body>
-  </html>
+</html>

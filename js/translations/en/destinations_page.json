@@ -25,169 +25,399 @@
   "tip3_desc": "Classic routes link Marrakech–Sahara, Fes–Chefchaouen, or the Atlantic road. Start from the map after the grid.",
   "map_badge": "Orientation",
   "map_title": "Map of Morocco",
-  "map_subtitle": "An interactive map of the Kingdom — from the Mediterranean and Rif to the Atlantic, Desert, and Southern Provinces — putting every destination in context.",
+  "map_subtitle": "An interactive satellite map of the Kingdom — from the Mediterranean and Rif to the Atlantic, Desert, and Southern Provinces.",
   "map_credit": "Map data © OpenStreetMap contributors — pan and zoom to explore.",
-  "map_note": "Tip: Pair the map with the filters above. Desert stops (Merzouga, Zagora, Tinghir) lie east of the High Atlas; Atlantic cities span the western coast down to Dakhla and Laayoune.",
+  "map_note": "Tip: Desert stops (Merzouga, Zagora, Tinghir) lie east of the High Atlas; Atlantic cities span the western coast down to Dakhla and Laayoune.",
   "blog_badge": "From the Blog",
   "blog_title": "Ideas for Connecting Destinations",
   "blog_subtitle": "Practical reads to help you choose routes, seasons, and side trips.",
-  "blog_all": "All articles ←",
+  "blog_all": "All articles →",
   "blog1_tag": "Desert",
   "blog1_title": "From Marrakech to Merzouga: How many days do you really need?",
   "blog2_tag": "Coast",
   "blog2_title": "Atlantic Road Trip: Essaouira, Agadir, and beyond",
   "blog3_tag": "North",
   "blog3_title": "Fes, Chefchaouen, and Tangier in one northern loop",
-
   "cities.marrakech.name": "Marrakech",
   "cities.marrakech.tag": "Imperial City",
   "cities.marrakech.desc": "Ancient Medina, historic palaces, and gateway to the desert",
-
   "cities.chefchaouen.name": "Chefchaouen",
   "cities.chefchaouen.tag": "Rif Mountains",
   "cities.chefchaouen.desc": "Morocco's iconic Blue Pearl",
-
   "cities.fes.name": "Fes",
   "cities.fes.tag": "Cultural Capital",
   "cities.fes.desc": "Ancient Medina and spiritual heritage",
-
   "cities.casablanca.name": "Casablanca",
   "cities.casablanca.tag": "Economic Heart",
   "cities.casablanca.desc": "Morocco's largest city and Hassan II Mosque",
-
   "cities.essaouira.name": "Essaouira",
   "cities.essaouira.tag": "Atlantic Coast",
   "cities.essaouira.desc": "Windy city, coastal ramparts, and fresh seafood",
-
   "cities.agadir.name": "Agadir",
   "cities.agadir.tag": "Sun & Beach",
   "cities.agadir.desc": "Golden beaches and modern resorts",
-
   "cities.tangier.name": "Tangier",
   "cities.tangier.tag": "Strait of Gibraltar",
   "cities.tangier.desc": "The gateway between Europe and Africa",
-
   "cities.ouarzazate.name": "Ouarzazate",
   "cities.ouarzazate.tag": "Gateway to Desert",
   "cities.ouarzazate.desc": "Cinematic landscapes and historic kasbahs",
-
   "cities.rabat.name": "Rabat",
   "cities.rabat.tag": "Imperial City",
   "cities.rabat.desc": "Historic gardens and Atlantic breezes",
-
   "cities.meknes.name": "Meknes",
   "cities.meknes.tag": "Imperial City",
   "cities.meknes.desc": "Monumental gates and Roman ruins",
-
   "cities.tetouan.name": "Tetouan",
   "cities.tetouan.tag": "Mediterranean Coast",
   "cities.tetouan.desc": "Andalusian heritage and Rif mountains",
-
   "cities.ifrane.name": "Ifrane",
   "cities.ifrane.tag": "Middle Atlas",
   "cities.ifrane.desc": "Alpine architecture and cedar forests",
-
   "cities.el_jadida.name": "El Jadida",
   "cities.el_jadida.tag": "Atlantic Coast",
   "cities.el_jadida.desc": "Portuguese Cistern and sea fortresses",
-
   "cities.taroudant.name": "Taroudant",
   "cities.taroudant.tag": "Souss Valley",
   "cities.taroudant.desc": "Massive ramparts and authentic souks",
-
   "cities.dakhla.name": "Dakhla",
   "cities.dakhla.tag": "Deep South",
   "cities.dakhla.desc": "Stunning lagoons and kitesurfing paradise",
-
   "cities.al_hoceima.name": "Al Hoceima",
   "cities.al_hoceima.tag": "Mediterranean Coast",
   "cities.al_hoceima.desc": "Turquoise waters and Rif cliffs",
-
   "cities.nador.name": "Nador",
   "cities.nador.tag": "Mediterranean Lagoon",
   "cities.nador.desc": "Marchica lagoon and coastal breezes",
-
   "cities.zagora.name": "Zagora",
   "cities.zagora.tag": "Draa Valley",
   "cities.zagora.desc": "Lush palm groves and desert gates",
-
   "cities.safi.name": "Safi",
   "cities.safi.tag": "Atlantic Coast",
   "cities.safi.desc": "Pottery capital and sea castle",
-
   "cities.laayoune.name": "Laayoune",
   "cities.laayoune.tag": "Gateway to Desert",
   "cities.laayoune.desc": "Sahrawi culture and Atlantic horizon",
-
   "cities.merzouga.name": "Merzouga",
   "cities.merzouga.tag": "Sahara Desert",
   "cities.merzouga.desc": "Erg Chebbi dunes and desert camps",
-
   "cities.azilal.name": "Azilal",
   "cities.azilal.tag": "Heart of Atlas",
   "cities.azilal.desc": "Ouzoud waterfalls and green valleys",
-
   "cities.tinghir.name": "Tinghir",
   "cities.tinghir.tag": "Todra Gorge",
   "cities.tinghir.desc": "Stunning gorges and palm oases",
-
   "cities.oujda.name": "Oujda",
   "cities.oujda.tag": "Eastern Pearl",
-  "cities.oujda.desc": "Golden beaches and eastern gateway",
-
+  "cities.oujda.desc": "Eastern gateway and nearby Mediterranean coast",
   "cities.asilah.name": "Asilah",
   "cities.asilah.tag": "North Atlantic",
   "cities.asilah.desc": "White medina, murals, and ocean ramparts",
-
   "cities.erfoud.name": "Erfoud",
   "cities.erfoud.tag": "Fossil Gateway",
   "cities.erfoud.desc": "Fossils, palm groves, and road to Merzouga",
-
   "cities.tiznit.name": "Tiznit",
   "cities.tiznit.tag": "Silver City",
   "cities.tiznit.desc": "Ramparts, silver souks, and southern gateway",
-
   "cities.sidi_ifni.name": "Sidi Ifni",
   "cities.sidi_ifni.tag": "Wild Coast",
   "cities.sidi_ifni.desc": "Art Deco town, Legzira arches, and Mirleft",
-
   "cities.guelmim.name": "Guelmim",
   "cities.guelmim.tag": "Gateway to Desert",
   "cities.guelmim.desc": "Camel market, oasis, and road to Dakhla",
-
   "cities.oualidia.name": "Oualidia",
   "cities.oualidia.tag": "Oyster Lagoon",
   "cities.oualidia.desc": "Oysters, lagoon, and serene beaches",
-
   "cities.azrou.name": "Azrou",
   "cities.azrou.tag": "Cedar Capital",
   "cities.azrou.desc": "Cedar forests and Barbary macaques",
-
   "cities.sefrou.name": "Sefrou",
   "cities.sefrou.tag": "Cherry City",
   "cities.sefrou.desc": "Old Medina, waterfalls, and cherry blossoms",
-
   "cities.errachidia.name": "Errachidia",
   "cities.errachidia.tag": "Desert Oasis",
   "cities.errachidia.desc": "Desert gates, Ziz valley ksars, and dramatic landscapes",
-
   "cities.larache.name": "Larache",
   "cities.larache.tag": "Loukkos Pearl",
   "cities.larache.desc": "Lixus ruins and quiet Atlantic medina",
-
   "cities.beni_mellal.name": "Beni Mellal",
   "cities.beni_mellal.tag": "Middle Atlas Gateway",
   "cities.beni_mellal.desc": "Ain Asserdoun, mountains, and access to Ouzoud",
-
   "cities.figuig.name": "Figuig",
   "cities.figuig.tag": "Ancient Oasis",
   "cities.figuig.desc": "Palm groves and traditional ksours in the far east",
-
   "cities.midelt.name": "Midelt",
   "cities.midelt.tag": "Apple Capital",
   "cities.midelt.desc": "Apple orchards, fossils, and Atlas passes",
-
   "cities.imilchil.name": "Imilchil",
   "cities.imilchil.tag": "Land of Lakes",
-  "cities.imilchil.desc": "Mountain lakes and famous Betrothal Festival in the Atlas heart"
-};
+  "cities.imilchil.desc": "Mountain lakes and famous Betrothal Festival in the Atlas heart",
+  "faq.badge": "Practical FAQ",
+  "destinations_page.faq.badge": "Practical FAQ",
+  "faq.title": "Destinations & Itineraries FAQ",
+  "destinations_page.faq.title": "Destinations & Itineraries FAQ",
+  "faq.subtitle": "Quick answers to plan routes between Morocco’s main regions.",
+  "destinations_page.faq.subtitle": "Quick answers to plan routes between Morocco’s main regions.",
+  "faq.q1": "How many days do I need for a first trip to Morocco?",
+  "destinations_page.faq.q1": "How many days do I need for a first trip to Morocco?",
+  "faq.a1": "7–10 days works well for a classic loop (e.g. Marrakech + Sahara, or Fes + Chefchaouen). Two weeks lets you combine imperial cities, coast, and desert without rushing.",
+  "destinations_page.faq.a1": "7–10 days works well for a classic loop (e.g. Marrakech + Sahara, or Fes + Chefchaouen). Two weeks lets you combine imperial cities, coast, and desert without rushing.",
+  "faq.q2": "Marrakech or Fes first?",
+  "destinations_page.faq.q2": "Marrakech or Fes first?",
+  "faq.a2": "Marrakech is livelier and the usual gateway to the High Atlas and Sahara. Fes is denser, more traditional, and pairs naturally with Chefchaouen and the north. Many travelers do both in 10+ days.",
+  "destinations_page.faq.a2": "Marrakech is livelier and the usual gateway to the High Atlas and Sahara. Fes is denser, more traditional, and pairs naturally with Chefchaouen and the north. Many travelers do both in 10+ days.",
+  "faq.q3": "How do I combine the desert with the cities?",
+  "destinations_page.faq.q3": "How do I combine the desert with the cities?",
+  "faq.a3": "From Marrakech, allow 2–3 nights for Merzouga (Erg Chebbi) via the High Atlas and gorges. From Fes, the desert is farther; overnight stops in Midelt or Errachidia help. Private transfer or organized tour is easiest.",
+  "destinations_page.faq.a3": "From Marrakech, allow 2–3 nights for Merzouga (Erg Chebbi) via the High Atlas and gorges. From Fes, the desert is farther; overnight stops in Midelt or Errachidia help. Private transfer or organized tour is easiest.",
+  "faq.q4": "Is Chefchaouen worth a detour?",
+  "destinations_page.faq.q4": "Is Chefchaouen worth a detour?",
+  "faq.a4": "Yes if you have at least 2 nights. It sits between Tangier/Tetouan and Fes. Ideal for a calm break between bigger cities, with day trips to Akchour waterfalls.",
+  "destinations_page.faq.a4": "Yes if you have at least 2 nights. It sits between Tangier/Tetouan and Fes. Ideal for a calm break between bigger cities, with day trips to Akchour waterfalls.",
+  "faq.q5": "Best region for a beach stop?",
+  "destinations_page.faq.q5": "Best region for a beach stop?",
+  "faq.a5": "Essaouira and Agadir on the Atlantic; Al Hoceima or Oued Laou on the Mediterranean. Essaouira pairs well with Marrakech (2.5–3h). Agadir suits longer beach stays and Taghazout nearby.",
+  "destinations_page.faq.a5": "Essaouira and Agadir on the Atlantic; Al Hoceima or Oued Laou on the Mediterranean. Essaouira pairs well with Marrakech (2.5–3h). Agadir suits longer beach stays and Taghazout nearby.",
+  "faq.q6": "Do I need a car to visit several destinations?",
+  "destinations_page.faq.q6": "Do I need a car to visit several destinations?",
+  "faq.a6": "Not always: CTM/Supratours buses and trains link major cities. A rental car (or private driver) is better for Atlas villages, desert gates, and flexible day trips.",
+  "destinations_page.faq.a6": "Not always: CTM/Supratours buses and trains link major cities. A rental car (or private driver) is better for Atlas villages, desert gates, and flexible day trips.",
+  "destinations_page.title": "Explore All Destinations",
+  "destinations_page.description": "From imperial cities and Chefchaouen's blue streets to Atlantic ports, Atlas valleys, and Erg Chebbi dunes — browse all covered regions, filter by mood, and open the full city guide when you're ready to plan.",
+  "destinations_page.search_placeholder": "Search destination (e.g., Marrakech, Sahara, Blue)...",
+  "destinations_page.filter_all": "All Regions",
+  "destinations_page.filter_imperial": "Imperial Cities",
+  "destinations_page.filter_north": "North & Rif",
+  "destinations_page.filter_atlantic": "Atlantic Coast",
+  "destinations_page.filter_desert": "Desert & South",
+  "destinations_page.filter_mountains": "Atlas Mountains",
+  "destinations_page.map_badge": "Orientation",
+  "destinations_page.map_title": "Map of Morocco",
+  "destinations_page.map_subtitle": "An interactive satellite map of the Kingdom — from the Mediterranean and Rif to the Atlantic, Desert, and Southern Provinces.",
+  "destinations_page.map_note": "Tip: Desert stops (Merzouga, Zagora, Tinghir) lie east of the High Atlas; Atlantic cities span the western coast down to Dakhla and Laayoune.",
+  "destinations_page.blog_badge": "From the Blog",
+  "destinations_page.blog_title": "Ideas for Connecting Destinations",
+  "destinations_page.blog_subtitle": "Practical reads to help you choose routes, seasons, and side trips.",
+  "destinations_page.blog_all": "All articles →",
+  "destinations_page.blog1_tag": "Desert",
+  "destinations_page.blog1_title": "From Marrakech to Merzouga: How many days do you really need?",
+  "destinations_page.blog2_tag": "Coast",
+  "destinations_page.blog2_title": "Atlantic Road Trip: Essaouira, Agadir, and beyond",
+  "destinations_page.blog3_tag": "North",
+  "destinations_page.blog3_title": "Fes, Chefchaouen, and Tangier in one northern loop",
+  "destinations_page.tip1_title": "Choose a Region",
+  "destinations_page.tip1_desc": "Use the filters below for Imperial Cities, Coast, Desert, or Atlas — or search by name.",
+  "destinations_page.tip2_title": "Open City Guide",
+  "destinations_page.tip2_desc": "Each guide includes essentials, a 3-day itinerary, stays, dining, and practical tips in 4 languages.",
+  "destinations_page.tip3_title": "Combine Destinations",
+  "destinations_page.tip3_desc": "Classic routes link Marrakech–Sahara, Fes–Chefchaouen, or the Atlantic road. Start from the map after the grid.",
+  "_cities": {
+    "marrakech": {
+      "name": "Marrakech",
+      "tag": "Imperial City",
+      "desc": "Ancient Medina, historic palaces, and gateway to the desert"
+    },
+    "chefchaouen": {
+      "name": "Chefchaouen",
+      "tag": "Rif Mountains",
+      "desc": "Morocco's iconic Blue Pearl"
+    },
+    "fes": {
+      "name": "Fes",
+      "tag": "Cultural Capital",
+      "desc": "Ancient Medina and spiritual heritage"
+    },
+    "casablanca": {
+      "name": "Casablanca",
+      "tag": "Economic Heart",
+      "desc": "Morocco's largest city and Hassan II Mosque"
+    },
+    "essaouira": {
+      "name": "Essaouira",
+      "tag": "Atlantic Coast",
+      "desc": "Windy city, coastal ramparts, and fresh seafood"
+    },
+    "agadir": {
+      "name": "Agadir",
+      "tag": "Sun & Beach",
+      "desc": "Golden beaches and modern resorts"
+    },
+    "tangier": {
+      "name": "Tangier",
+      "tag": "Strait of Gibraltar",
+      "desc": "The gateway between Europe and Africa"
+    },
+    "ouarzazate": {
+      "name": "Ouarzazate",
+      "tag": "Gateway to Desert",
+      "desc": "Cinematic landscapes and historic kasbahs"
+    },
+    "rabat": {
+      "name": "Rabat",
+      "tag": "Imperial City",
+      "desc": "Historic gardens and Atlantic breezes"
+    },
+    "meknes": {
+      "name": "Meknes",
+      "tag": "Imperial City",
+      "desc": "Monumental gates and Roman ruins"
+    },
+    "tetouan": {
+      "name": "Tetouan",
+      "tag": "Mediterranean Coast",
+      "desc": "Andalusian heritage and Rif mountains"
+    },
+    "ifrane": {
+      "name": "Ifrane",
+      "tag": "Middle Atlas",
+      "desc": "Alpine architecture and cedar forests"
+    },
+    "el_jadida": {
+      "name": "El Jadida",
+      "tag": "Atlantic Coast",
+      "desc": "Portuguese Cistern and sea fortresses"
+    },
+    "taroudant": {
+      "name": "Taroudant",
+      "tag": "Souss Valley",
+      "desc": "Massive ramparts and authentic souks"
+    },
+    "dakhla": {
+      "name": "Dakhla",
+      "tag": "Deep South",
+      "desc": "Stunning lagoons and kitesurfing paradise"
+    },
+    "al_hoceima": {
+      "name": "Al Hoceima",
+      "tag": "Mediterranean Coast",
+      "desc": "Turquoise waters and Rif cliffs"
+    },
+    "nador": {
+      "name": "Nador",
+      "tag": "Mediterranean Lagoon",
+      "desc": "Marchica lagoon and coastal breezes"
+    },
+    "zagora": {
+      "name": "Zagora",
+      "tag": "Draa Valley",
+      "desc": "Lush palm groves and desert gates"
+    },
+    "safi": {
+      "name": "Safi",
+      "tag": "Atlantic Coast",
+      "desc": "Pottery capital and sea castle"
+    },
+    "laayoune": {
+      "name": "Laayoune",
+      "tag": "Gateway to Desert",
+      "desc": "Sahrawi culture and Atlantic horizon"
+    },
+    "merzouga": {
+      "name": "Merzouga",
+      "tag": "Sahara Desert",
+      "desc": "Erg Chebbi dunes and desert camps"
+    },
+    "azilal": {
+      "name": "Azilal",
+      "tag": "Heart of Atlas",
+      "desc": "Ouzoud waterfalls and green valleys"
+    },
+    "tinghir": {
+      "name": "Tinghir",
+      "tag": "Todra Gorge",
+      "desc": "Stunning gorges and palm oases"
+    },
+    "oujda": {
+      "name": "Oujda",
+      "tag": "Eastern Pearl",
+      "desc": "Eastern gateway and nearby Mediterranean coast"
+    },
+    "asilah": {
+      "name": "Asilah",
+      "tag": "North Atlantic",
+      "desc": "White medina, murals, and ocean ramparts"
+    },
+    "erfoud": {
+      "name": "Erfoud",
+      "tag": "Fossil Gateway",
+      "desc": "Fossils, palm groves, and road to Merzouga"
+    },
+    "tiznit": {
+      "name": "Tiznit",
+      "tag": "Silver City",
+      "desc": "Ramparts, silver souks, and southern gateway"
+    },
+    "sidi_ifni": {
+      "name": "Sidi Ifni",
+      "tag": "Wild Coast",
+      "desc": "Art Deco town, Legzira arches, and Mirleft"
+    },
+    "guelmim": {
+      "name": "Guelmim",
+      "tag": "Gateway to Desert",
+      "desc": "Camel market, oasis, and road to Dakhla"
+    },
+    "oualidia": {
+      "name": "Oualidia",
+      "tag": "Oyster Lagoon",
+      "desc": "Oysters, lagoon, and serene beaches"
+    },
+    "azrou": {
+      "name": "Azrou",
+      "tag": "Cedar Capital",
+      "desc": "Cedar forests and Barbary macaques"
+    },
+    "sefrou": {
+      "name": "Sefrou",
+      "tag": "Cherry City",
+      "desc": "Old Medina, waterfalls, and cherry blossoms"
+    },
+    "errachidia": {
+      "name": "Errachidia",
+      "tag": "Desert Oasis",
+      "desc": "Desert gates, Ziz valley ksars, and dramatic landscapes"
+    },
+    "larache": {
+      "name": "Larache",
+      "tag": "Loukkos Pearl",
+      "desc": "Lixus ruins and quiet Atlantic medina"
+    },
+    "beni_mellal": {
+      "name": "Beni Mellal",
+      "tag": "Middle Atlas Gateway",
+      "desc": "Ain Asserdoun, mountains, and access to Ouzoud"
+    },
+    "figuig": {
+      "name": "Figuig",
+      "tag": "Ancient Oasis",
+      "desc": "Palm groves and traditional ksours in the far east"
+    },
+    "midelt": {
+      "name": "Midelt",
+      "tag": "Apple Capital",
+      "desc": "Apple orchards, fossils, and Atlas passes"
+    },
+    "imilchil": {
+      "name": "Imilchil",
+      "tag": "Land of Lakes",
+      "desc": "Mountain lakes and famous Betrothal Festival in the Atlas heart"
+    }
+  },
+  "_faq": {
+    "badge": "Practical FAQ",
+    "title": "Destinations & Itineraries FAQ",
+    "subtitle": "Quick answers to plan routes between Morocco’s main regions.",
+    "q1": "How many days do I need for a first trip to Morocco?",
+    "a1": "7–10 days works well for a classic loop (e.g. Marrakech + Sahara, or Fes + Chefchaouen). Two weeks lets you combine imperial cities, coast, and desert without rushing.",
+    "q2": "Marrakech or Fes first?",
+    "a2": "Marrakech is livelier and the usual gateway to the High Atlas and Sahara. Fes is denser, more traditional, and pairs naturally with Chefchaouen and the north. Many travelers do both in 10+ days.",
+    "q3": "How do I combine the desert with the cities?",
+    "a3": "From Marrakech, allow 2–3 nights for Merzouga (Erg Chebbi) via the High Atlas and gorges. From Fes, the desert is farther; overnight stops in Midelt or Errachidia help. Private transfer or organized tour is easiest.",
+    "q4": "Is Chefchaouen worth a detour?",
+    "a4": "Yes if you have at least 2 nights. It sits between Tangier/Tetouan and Fes. Ideal for a calm break between bigger cities, with day trips to Akchour waterfalls.",
+    "q5": "Best region for a beach stop?",
+    "a5": "Essaouira and Agadir on the Atlantic; Al Hoceima or Oued Laou on the Mediterranean. Essaouira pairs well with Marrakech (2.5–3h). Agadir suits longer beach stays and Taghazout nearby.",
+    "q6": "Do I need a car to visit several destinations?",
+    "a6": "Not always: CTM/Supratours buses and trains link major cities. A rental car (or private driver) is better for Atlas villages, desert gates, and flexible day trips."
+  }
+  }

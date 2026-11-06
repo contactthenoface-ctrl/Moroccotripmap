@@ -1,193 +1,423 @@
 {
-  "title": "Explora Todos los Destinos",
-  "description": "Desde las ciudades imperiales y las calles azules de Chaouen hasta los puertos atlánticos, valles del Atlas y dunas de Erg Chebbi — explora todas nuestras regiones, filtra por ambiente y abre la guía completa cuando estés listo para planificar.",
-  "search_placeholder": "Buscar destino (ej. Marrakech, Sahara, Azul)...",
+  "title": "Explorar todos los destinos",
+  "description": "Desde las ciudades imperiales y las calles azules de Chefchaouen hasta los puertos atlánticos, valles del Atlas y dunas de Erg Chebbi — explora las regiones, filtra por ambiente y abre la guía completa.",
+  "search_placeholder": "Buscar destino (ej. Marrakech, Sáhara, Azul)...",
   "filter_all": "Todas las regiones",
-  "filter_imperial": "Ciudades Imperiales",
+  "filter_imperial": "Ciudades imperiales",
   "filter_north": "Norte y Rif",
-  "filter_atlantic": "Costa Atlántica",
+  "filter_atlantic": "Costa atlántica",
   "filter_desert": "Desierto y Sur",
-  "filter_mountains": "Cordillera del Atlas",
+  "filter_mountains": "Montañas del Atlas",
   "stat_cities": "38+",
-  "stat_cities_label": "Ciudades y Regiones",
-  "stat_guides": "Guías",
+  "stat_cities_label": "Ciudades y regiones",
+  "stat_guides": "Guides",
   "stat_guides_label": "Con itinerarios y alojamientos",
   "stat_langs": "4",
   "stat_langs_label": "Idiomas",
-  "video_badge": "Ver video",
+  "video_badge": "Ver",
   "video_title": "Marruecos en movimiento",
-  "video_subtitle": "Un vistazo rápido a los paisajes y ciudades de nuestras guías — desde la medina hasta el desierto.",
+  "video_subtitle": "Un vistazo a los paisajes y ciudades de nuestras guías — de la medina antigua al desierto.",
   "tip1_title": "Elige una región",
-  "tip1_desc": "Usa los filtros a continuación para Ciudades Imperiales, Costa, Desierto o Atlas — o busca por nombre.",
+  "tip1_desc": "Usa los filtros de Ciudades imperiales, Costa, Desierto o Atlas — o busca por nombre.",
   "tip2_title": "Abre la guía de la ciudad",
-  "tip2_desc": "Cada guía incluye lo esencial, itinerario de 3 días, alojamiento, gastronomía y consejos prácticos en 4 idiomas.",
+  "tip2_desc": "Cada guía incluye lo esencial, un itinerario de 3 días, alojamientos, gastronomía y consejos en 4 idiomas.",
   "tip3_title": "Combina destinos",
-  "tip3_desc": "Rutas clásicas conectan Marrakech–Sahara, Fez–Chaouen o la ruta atlántica. Empieza desde el mapa tras la cuadrícula.",
+  "tip3_desc": "Las rutas clásicas unen Marrakech–Sáhara, Fez–Chefchaouen o la carretera atlántica. Empieza por el mapa tras la cuadrícula.",
   "map_badge": "Orientación",
   "map_title": "Mapa de Marruecos",
-  "map_subtitle": "Un mapa interactivo del Reino — desde el Mediterráneo y el Rif hasta el Atlántico, el Desierto y las Provincias del Sur — para ubicar cada destino.",
-  "map_credit": "Datos del mapa © Colaboradores de OpenStreetMap — arrastra y acerca para explorar.",
-  "map_note": "Consejo: Combina el mapa con los filtros superiores. Las paradas del desierto (Merzouga, Zagora, Tinghir) están al este del Alto Atlas; las ciudades atlánticas recorren la costa oeste hasta Dajla y El Aaiún.",
+  "map_subtitle": "Un mapa satélite interactivo del Reino — del Mediterráneo y el Rif al Atlántico, el desierto y las provincias del Sur.",
+  "map_credit": "Map data © OpenStreetMap contributors — pan and zoom to explore.",
+  "map_note": "Consejo: las paradas del desierto (Merzouga, Zagora, Tinghir) están al este del Alto Atlas; las ciudades atlánticas siguen la costa oeste hasta Dajla y El Aaiún.",
   "blog_badge": "Del blog",
   "blog_title": "Ideas para conectar destinos",
-  "blog_subtitle": "Lecturas prácticas para ayudarte a elegir rutas, temporadas y excursiones.",
-  "blog_all": "Todos los artículos ←",
+  "blog_subtitle": "Lecturas prácticas para elegir rutas, temporadas y escapadas.",
+  "blog_all": "Todos los artículos →",
   "blog1_tag": "Desierto",
-  "blog1_title": "De Marrakech a Merzouga: ¿Cuántos días necesitas realmente?",
+  "blog1_title": "De Marrakech a Merzouga: ¿cuántos días necesitas de verdad?",
   "blog2_tag": "Costa",
-  "blog2_title": "Ruta por la Costa Atlántica: Essaouira, Agadir y más allá",
+  "blog2_title": "Road trip atlántico: Essaouira, Agadir y más allá",
   "blog3_tag": "Norte",
-  "blog3_title": "Fez, Chefchaouen y Tánger en una sola ruta del norte",
-
+  "blog3_title": "Fez, Chefchaouen y Tánger en un recorrido norte",
   "cities.marrakech.name": "Marrakech",
-  "cities.marrakech.tag": "Ciudad Imperial",
-  "cities.marrakech.desc": "La Medina histórica, palacios y la puerta de entrada al desierto",
-
+  "cities.marrakech.tag": "Ciudad imperial",
+  "cities.marrakech.desc": "Medina antigua, palacios históricos y puerta al desierto",
   "cities.chefchaouen.name": "Chefchaouen",
   "cities.chefchaouen.tag": "Montañas del Rif",
-  "cities.chefchaouen.desc": "La icónica Perla Azul de Marruecos",
-
+  "cities.chefchaouen.desc": "La perla azul icónica de Marruecos",
   "cities.fes.name": "Fez",
-  "cities.fes.tag": "Capital Cultural",
-  "cities.fes.desc": "La Medina antigua y patrimonio espiritual",
-
+  "cities.fes.tag": "Capital cultural",
+  "cities.fes.desc": "Medina ancestral y patrimonio espiritual",
   "cities.casablanca.name": "Casablanca",
-  "cities.casablanca.tag": "Corazón Económico",
-  "cities.casablanca.desc": "La ciudad más grande de Marruecos y la mezquita Hasán II",
-
+  "cities.casablanca.tag": "Corazón económico",
+  "cities.casablanca.desc": "La mayor ciudad de Marruecos y la mezquita Hassan II",
   "cities.essaouira.name": "Essaouira",
-  "cities.essaouira.tag": "Costa Atlántica",
-  "cities.essaouira.desc": "Ciudad del viento, murallas costeras y mariscos frescos",
-
+  "cities.essaouira.tag": "Costa atlántica",
+  "cities.essaouira.desc": "Ciudad ventosa, murallas y mariscos frescos",
   "cities.agadir.name": "Agadir",
-  "cities.agadir.tag": "Sol y Playa",
-  "cities.agadir.desc": "Playas doradas y complejos turísticos modernos",
-
+  "cities.agadir.tag": "Sol y playa",
+  "cities.agadir.desc": "Playas doradas y resorts modernos",
   "cities.tangier.name": "Tánger",
   "cities.tangier.tag": "Estrecho de Gibraltar",
-  "cities.tangier.desc": "La puerta de enlace entre Europa y África",
-
+  "cities.tangier.desc": "La puerta entre Europa y África",
   "cities.ouarzazate.name": "Ouarzazate",
-  "cities.ouarzazate.tag": "Puerta del Desierto",
-  "cities.ouarzazate.desc": "Paisajes cinematográficos y kasbahs históricas",
-
+  "cities.ouarzazate.tag": "Puerta al desierto",
+  "cities.ouarzazate.desc": "Paisajes de cine y kasbahs históricas",
   "cities.rabat.name": "Rabat",
-  "cities.rabat.tag": "Ciudad Imperial",
+  "cities.rabat.tag": "Ciudad imperial",
   "cities.rabat.desc": "Jardines históricos y brisas atlánticas",
-
-  "cities.meknes.name": "Mequinez",
-  "cities.meknes.tag": "Ciudad Imperial",
+  "cities.meknes.name": "Meknes",
+  "cities.meknes.tag": "Ciudad imperial",
   "cities.meknes.desc": "Puertas monumentales y ruinas romanas",
-
   "cities.tetouan.name": "Tetuán",
-  "cities.tetouan.tag": "Costa Mediterránea",
+  "cities.tetouan.tag": "Costa mediterránea",
   "cities.tetouan.desc": "Herencia andalusí y montañas del Rif",
-
-  "cities.ifrane.name": "Ifrán",
+  "cities.ifrane.name": "Ifrane",
   "cities.ifrane.tag": "Medio Atlas",
   "cities.ifrane.desc": "Arquitectura alpina y bosques de cedros",
-
   "cities.el_jadida.name": "El Jadida",
-  "cities.el_jadida.tag": "Costa Atlántica",
+  "cities.el_jadida.tag": "Costa atlántica",
   "cities.el_jadida.desc": "Cisterna portuguesa y fortalezas marítimas",
-
-  "cities.taroudant.name": "Tarudant",
+  "cities.taroudant.name": "Taroudant",
   "cities.taroudant.tag": "Valle del Souss",
-  "cities.taroudant.desc": "Imponentes murallas y zocos auténticos",
-
+  "cities.taroudant.desc": "Murallas masivas y zocos auténticos",
   "cities.dakhla.name": "Dajla",
-  "cities.dakhla.tag": "Gran Sur",
+  "cities.dakhla.tag": "Sur profundo",
   "cities.dakhla.desc": "Lagunas espectaculares y paraíso del kitesurf",
-
   "cities.al_hoceima.name": "Alhucemas",
-  "cities.al_hoceima.tag": "Costa Mediterránea",
+  "cities.al_hoceima.tag": "Costa mediterránea",
   "cities.al_hoceima.desc": "Aguas turquesas y acantilados del Rif",
-
   "cities.nador.name": "Nador",
-  "cities.nador.tag": "Laguna Mediterránea",
-  "cities.nador.desc": "Laguna de Marchica y brisa costera",
-
+  "cities.nador.tag": "Laguna mediterránea",
+  "cities.nador.desc": "Laguna de Marchica y brisas costeras",
   "cities.zagora.name": "Zagora",
   "cities.zagora.tag": "Valle del Draa",
-  "cities.zagora.desc": "Frondosos palmerales y puertas del desierto",
-
+  "cities.zagora.desc": "Palmerales y puertas del desierto",
   "cities.safi.name": "Safi",
-  "cities.safi.tag": "Costa Atlántica",
-  "cities.safi.desc": "Capital de la cerámica y castillo del mar",
-
+  "cities.safi.tag": "Costa atlántica",
+  "cities.safi.desc": "Capital de la cerámica y castillo de mar",
   "cities.laayoune.name": "El Aaiún",
-  "cities.laayoune.tag": "Puerta del Desierto",
+  "cities.laayoune.tag": "Puerta al desierto",
   "cities.laayoune.desc": "Cultura saharaui y horizonte atlántico",
-
   "cities.merzouga.name": "Merzouga",
-  "cities.merzouga.tag": "Desierto del Sahara",
-  "cities.merzouga.desc": "Dunas de Erg Chebbi y campamentos del desierto",
-
+  "cities.merzouga.tag": "Desierto del Sáhara",
+  "cities.merzouga.desc": "Dunas de Erg Chebbi y campamentos",
   "cities.azilal.name": "Azilal",
   "cities.azilal.tag": "Corazón del Atlas",
   "cities.azilal.desc": "Cascadas de Ouzoud y valles verdes",
-
   "cities.tinghir.name": "Tinghir",
-  "cities.tinghir.tag": "Gargantas del Todra",
+  "cities.tinghir.tag": "Garganta de Todra",
   "cities.tinghir.desc": "Gargantas impresionantes y oasis de palmeras",
-
-  "cities.oujda.name": "Oujda",
-  "cities.oujda.tag": "Perla Oriental",
-  "cities.oujda.desc": "Playas doradas y puerta del este",
-
+  "cities.oujda.name": "Uchda",
+  "cities.oujda.tag": "Perla del Este",
+  "cities.oujda.desc": "Puerta del este y costa mediterránea cercana",
   "cities.asilah.name": "Arcila",
-  "cities.asilah.tag": "Atlántico Norte",
-  "cities.asilah.desc": "Medina blanca, murales y murallas junto al océano",
-
-  "cities.erfoud.name": "Erfud",
-  "cities.erfoud.tag": "Puerta de los Fósiles",
-  "cities.erfoud.desc": "Fósiles, palmerales y ruta hacia Merzouga",
-
+  "cities.asilah.tag": "Atlántico norte",
+  "cities.asilah.desc": "Medina blanca, murales y murallas",
+  "cities.erfoud.name": "Erfoud",
+  "cities.erfoud.tag": "Puerta de los fósiles",
+  "cities.erfoud.desc": "Fósiles, palmerales y ruta a Merzouga",
   "cities.tiznit.name": "Tiznit",
-  "cities.tiznit.tag": "Ciudad de la Plata",
+  "cities.tiznit.tag": "Ciudad de la plata",
   "cities.tiznit.desc": "Murallas, zocos de plata y puerta del sur",
-
   "cities.sidi_ifni.name": "Sidi Ifni",
-  "cities.sidi_ifni.tag": "Costa Salvaje",
-  "cities.sidi_ifni.desc": "Ciudad Art Déco, arcos de Legzira y Mirleft",
-
+  "cities.sidi_ifni.tag": "Costa salvaje",
+  "cities.sidi_ifni.desc": "Pueblo art déco, arcos de Legzira y Mirleft",
   "cities.guelmim.name": "Guelmim",
-  "cities.guelmim.tag": "Puerta del Desierto",
-  "cities.guelmim.desc": "Mercado de camellos, oasis y ruta hacia Dajla",
-
+  "cities.guelmim.tag": "Puerta al desierto",
+  "cities.guelmim.desc": "Mercado de camellos, oasis y ruta a Dajla",
   "cities.oualidia.name": "Oualidia",
-  "cities.oualidia.tag": "Laguna de las Ostras",
+  "cities.oualidia.tag": "Laguna de ostras",
   "cities.oualidia.desc": "Ostras, laguna y playas tranquilas",
-
   "cities.azrou.name": "Azrou",
-  "cities.azrou.tag": "Capital de los Cedros",
+  "cities.azrou.tag": "Capital del cedro",
   "cities.azrou.desc": "Bosques de cedros y macacos de Berbería",
-
   "cities.sefrou.name": "Sefrou",
-  "cities.sefrou.tag": "Ciudad de las Cerezas",
-  "cities.sefrou.desc": "Antigua medina, cascadas y cerezos en flor",
-
+  "cities.sefrou.tag": "Ciudad de la cereza",
+  "cities.sefrou.desc": "Medina antigua, cascadas y cerezos",
   "cities.errachidia.name": "Errachidia",
-  "cities.errachidia.tag": "Oasis del Desierto",
-  "cities.errachidia.desc": "Puertas del desierto, ksars del valle del Ziz y paisajes impresionantes",
-
+  "cities.errachidia.tag": "Oasis del desierto",
+  "cities.errachidia.desc": "Puertas del desierto y ksars del valle del Ziz",
   "cities.larache.name": "Larache",
   "cities.larache.tag": "Perla del Loukkos",
-  "cities.larache.desc": "Ruinas de Lixus y tranquila medina atlántica",
-
-  "cities.beni_mellal.name": "Beni Melal",
+  "cities.larache.desc": "Ruinas de Lixus y medina atlántica tranquila",
+  "cities.beni_mellal.name": "Beni Mellal",
   "cities.beni_mellal.tag": "Puerta del Medio Atlas",
-  "cities.beni_mellal.desc": "Ain Asserdoun, montañas y acceso a las cascadas de Ouzoud",
-
+  "cities.beni_mellal.desc": "Ain Asserdoun, montañas y acceso a Ouzoud",
   "cities.figuig.name": "Figuig",
-  "cities.figuig.tag": "Oasis Ancestral",
-  "cities.figuig.desc": "Palmerales y ksours tradicionales en el extremo oriente",
-
+  "cities.figuig.tag": "Oasis antiguo",
+  "cities.figuig.desc": "Palmerales y ksour tradicionales en el extremo este",
   "cities.midelt.name": "Midelt",
-  "cities.midelt.tag": "Capital de la Manzana",
-  "cities.midelt.desc": "Huertos de manzanas, fósiles y puertos del Atlas",
-
+  "cities.midelt.tag": "Capital de la manzana",
+  "cities.midelt.desc": "Huertos, fósiles y puertos del Atlas",
   "cities.imilchil.name": "Imilchil",
-  "cities.imilchil.tag": "Tierra de Lagos",
-  "cities.imilchil.desc": "Lagos de montaña y el famoso festival de novios en el corazón del Atlas"
-};
+  "cities.imilchil.tag": "Tierra de lagos",
+  "cities.imilchil.desc": "Lagos de montaña y famoso festival de esponsales",
+  "faq.badge": "FAQ práctica",
+  "destinations_page.faq.badge": "FAQ práctica",
+  "faq.title": "FAQ destinos e itinerarios",
+  "destinations_page.faq.title": "FAQ destinos e itinerarios",
+  "faq.subtitle": "Respuestas rápidas para planificar rutas entre las principales regiones de Marruecos.",
+  "destinations_page.faq.subtitle": "Respuestas rápidas para planificar rutas entre las principales regiones de Marruecos.",
+  "faq.q1": "¿Cuántos días necesito para un primer viaje a Marruecos?",
+  "destinations_page.faq.q1": "¿Cuántos días necesito para un primer viaje a Marruecos?",
+  "faq.a1": "7–10 días funcionan bien para un circuito clásico (Marrakech + Sáhara, o Fez + Chefchaouen). Dos semanas permiten combinar ciudades imperiales, costa y desierto sin prisas.",
+  "destinations_page.faq.a1": "7–10 días funcionan bien para un circuito clásico (Marrakech + Sáhara, o Fez + Chefchaouen). Dos semanas permiten combinar ciudades imperiales, costa y desierto sin prisas.",
+  "faq.q2": "¿Marrakech o Fez primero?",
+  "destinations_page.faq.q2": "¿Marrakech o Fez primero?",
+  "faq.a2": "Marrakech es más animada y la puerta habitual al Alto Atlas y al Sáhara. Fez es más densa y tradicional, y se combina bien con Chefchaouen y el norte. Muchos hacen ambas en 10+ días.",
+  "destinations_page.faq.a2": "Marrakech es más animada y la puerta habitual al Alto Atlas y al Sáhara. Fez es más densa y tradicional, y se combina bien con Chefchaouen y el norte. Muchos hacen ambas en 10+ días.",
+  "faq.q3": "¿Cómo combinar el desierto con las ciudades?",
+  "destinations_page.faq.q3": "¿Cómo combinar el desierto con las ciudades?",
+  "faq.a3": "Desde Marrakech, reserva 2–3 noches para Merzouga (Erg Chebbi) vía el Alto Atlas y las gargantas. Desde Fez el desierto está más lejos; ayudan paradas en Midelt o Errachidia. Traslado privado o tour organizado es lo más fácil.",
+  "destinations_page.faq.a3": "Desde Marrakech, reserva 2–3 noches para Merzouga (Erg Chebbi) vía el Alto Atlas y las gargantas. Desde Fez el desierto está más lejos; ayudan paradas en Midelt o Errachidia. Traslado privado o tour organizado es lo más fácil.",
+  "faq.q4": "¿Vale la pena el desvío a Chefchaouen?",
+  "destinations_page.faq.q4": "¿Vale la pena el desvío a Chefchaouen?",
+  "faq.a4": "Sí si tienes al menos 2 noches. Está entre Tánger/Tetuán y Fez. Ideal para una pausa tranquila, con excursiones a las cascadas de Akchour.",
+  "destinations_page.faq.a4": "Sí si tienes al menos 2 noches. Está entre Tánger/Tetuán y Fez. Ideal para una pausa tranquila, con excursiones a las cascadas de Akchour.",
+  "faq.q5": "¿Mejor región para una parada de playa?",
+  "destinations_page.faq.q5": "¿Mejor región para una parada de playa?",
+  "faq.a5": "Essaouira y Agadir en el Atlántico; Alhucemas u Oued Laou en el Mediterráneo. Essaouira combina bien con Marrakech (2,5–3 h). Agadir sirve para estancias de playa más largas y Taghazout cerca.",
+  "destinations_page.faq.a5": "Essaouira y Agadir en el Atlántico; Alhucemas u Oued Laou en el Mediterráneo. Essaouira combina bien con Marrakech (2,5–3 h). Agadir sirve para estancias de playa más largas y Taghazout cerca.",
+  "faq.q6": "¿Necesito coche para varios destinos?",
+  "destinations_page.faq.q6": "¿Necesito coche para varios destinos?",
+  "faq.a6": "No siempre: autobuses CTM/Supratours y trenes unen las grandes ciudades. Un alquiler (o conductor) es mejor para pueblos del Atlas, puertas del desierto y excursiones flexibles.",
+  "destinations_page.faq.a6": "No siempre: autobuses CTM/Supratours y trenes unen las grandes ciudades. Un alquiler (o conductor) es mejor para pueblos del Atlas, puertas del desierto y excursiones flexibles.",
+  "destinations_page.title": "Explorar todos los destinos",
+  "destinations_page.description": "Desde las ciudades imperiales y las calles azules de Chefchaouen hasta los puertos atlánticos, valles del Atlas y dunas de Erg Chebbi — explora las regiones, filtra por ambiente y abre la guía completa.",
+  "destinations_page.search_placeholder": "Buscar destino (ej. Marrakech, Sáhara, Azul)...",
+  "destinations_page.filter_all": "Todas las regiones",
+  "destinations_page.filter_imperial": "Ciudades imperiales",
+  "destinations_page.filter_north": "Norte y Rif",
+  "destinations_page.filter_atlantic": "Costa atlántica",
+  "destinations_page.filter_desert": "Desierto y Sur",
+  "destinations_page.filter_mountains": "Montañas del Atlas",
+  "destinations_page.map_badge": "Orientación",
+  "destinations_page.map_title": "Mapa de Marruecos",
+  "destinations_page.map_subtitle": "Un mapa satélite interactivo del Reino — del Mediterráneo y el Rif al Atlántico, el desierto y las provincias del Sur.",
+  "destinations_page.map_note": "Consejo: las paradas del desierto (Merzouga, Zagora, Tinghir) están al este del Alto Atlas; las ciudades atlánticas siguen la costa oeste hasta Dajla y El Aaiún.",
+  "destinations_page.blog_badge": "Del blog",
+  "destinations_page.blog_title": "Ideas para conectar destinos",
+  "destinations_page.blog_subtitle": "Lecturas prácticas para elegir rutas, temporadas y escapadas.",
+  "destinations_page.blog_all": "Todos los artículos →",
+  "destinations_page.blog1_tag": "Desierto",
+  "destinations_page.blog1_title": "De Marrakech a Merzouga: ¿cuántos días necesitas de verdad?",
+  "destinations_page.blog2_tag": "Costa",
+  "destinations_page.blog2_title": "Road trip atlántico: Essaouira, Agadir y más allá",
+  "destinations_page.blog3_tag": "Norte",
+  "destinations_page.blog3_title": "Fez, Chefchaouen y Tánger en un recorrido norte",
+  "destinations_page.tip1_title": "Elige una región",
+  "destinations_page.tip1_desc": "Usa los filtros de Ciudades imperiales, Costa, Desierto o Atlas — o busca por nombre.",
+  "destinations_page.tip2_title": "Abre la guía de la ciudad",
+  "destinations_page.tip2_desc": "Cada guía incluye lo esencial, un itinerario de 3 días, alojamientos, gastronomía y consejos en 4 idiomas.",
+  "destinations_page.tip3_title": "Combina destinos",
+  "destinations_page.tip3_desc": "Las rutas clásicas unen Marrakech–Sáhara, Fez–Chefchaouen o la carretera atlántica. Empieza por el mapa tras la cuadrícula.",
+  "_cities": {
+    "marrakech": {
+      "name": "Marrakech",
+      "tag": "Ciudad imperial",
+      "desc": "Medina antigua, palacios históricos y puerta al desierto"
+    },
+    "chefchaouen": {
+      "name": "Chefchaouen",
+      "tag": "Montañas del Rif",
+      "desc": "La perla azul icónica de Marruecos"
+    },
+    "fes": {
+      "name": "Fez",
+      "tag": "Capital cultural",
+      "desc": "Medina ancestral y patrimonio espiritual"
+    },
+    "casablanca": {
+      "name": "Casablanca",
+      "tag": "Corazón económico",
+      "desc": "La mayor ciudad de Marruecos y la mezquita Hassan II"
+    },
+    "essaouira": {
+      "name": "Essaouira",
+      "tag": "Costa atlántica",
+      "desc": "Ciudad ventosa, murallas y mariscos frescos"
+    },
+    "agadir": {
+      "name": "Agadir",
+      "tag": "Sol y playa",
+      "desc": "Playas doradas y resorts modernos"
+    },
+    "tangier": {
+      "name": "Tánger",
+      "tag": "Estrecho de Gibraltar",
+      "desc": "La puerta entre Europa y África"
+    },
+    "ouarzazate": {
+      "name": "Ouarzazate",
+      "tag": "Puerta al desierto",
+      "desc": "Paisajes de cine y kasbahs históricas"
+    },
+    "rabat": {
+      "name": "Rabat",
+      "tag": "Ciudad imperial",
+      "desc": "Jardines históricos y brisas atlánticas"
+    },
+    "meknes": {
+      "name": "Meknes",
+      "tag": "Ciudad imperial",
+      "desc": "Puertas monumentales y ruinas romanas"
+    },
+    "tetouan": {
+      "name": "Tetuán",
+      "tag": "Costa mediterránea",
+      "desc": "Herencia andalusí y montañas del Rif"
+    },
+    "ifrane": {
+      "name": "Ifrane",
+      "tag": "Medio Atlas",
+      "desc": "Arquitectura alpina y bosques de cedros"
+    },
+    "el_jadida": {
+      "name": "El Jadida",
+      "tag": "Costa atlántica",
+      "desc": "Cisterna portuguesa y fortalezas marítimas"
+    },
+    "taroudant": {
+      "name": "Taroudant",
+      "tag": "Valle del Souss",
+      "desc": "Murallas masivas y zocos auténticos"
+    },
+    "dakhla": {
+      "name": "Dajla",
+      "tag": "Sur profundo",
+      "desc": "Lagunas espectaculares y paraíso del kitesurf"
+    },
+    "al_hoceima": {
+      "name": "Alhucemas",
+      "tag": "Costa mediterránea",
+      "desc": "Aguas turquesas y acantilados del Rif"
+    },
+    "nador": {
+      "name": "Nador",
+      "tag": "Laguna mediterránea",
+      "desc": "Laguna de Marchica y brisas costeras"
+    },
+    "zagora": {
+      "name": "Zagora",
+      "tag": "Valle del Draa",
+      "desc": "Palmerales y puertas del desierto"
+    },
+    "safi": {
+      "name": "Safi",
+      "tag": "Costa atlántica",
+      "desc": "Capital de la cerámica y castillo de mar"
+    },
+    "laayoune": {
+      "name": "El Aaiún",
+      "tag": "Puerta al desierto",
+      "desc": "Cultura saharaui y horizonte atlántico"
+    },
+    "merzouga": {
+      "name": "Merzouga",
+      "tag": "Desierto del Sáhara",
+      "desc": "Dunas de Erg Chebbi y campamentos"
+    },
+    "azilal": {
+      "name": "Azilal",
+      "tag": "Corazón del Atlas",
+      "desc": "Cascadas de Ouzoud y valles verdes"
+    },
+    "tinghir": {
+      "name": "Tinghir",
+      "tag": "Garganta de Todra",
+      "desc": "Gargantas impresionantes y oasis de palmeras"
+    },
+    "oujda": {
+      "name": "Uchda",
+      "tag": "Perla del Este",
+      "desc": "Puerta del este y costa mediterránea cercana"
+    },
+    "asilah": {
+      "name": "Arcila",
+      "tag": "Atlántico norte",
+      "desc": "Medina blanca, murales y murallas"
+    },
+    "erfoud": {
+      "name": "Erfoud",
+      "tag": "Puerta de los fósiles",
+      "desc": "Fósiles, palmerales y ruta a Merzouga"
+    },
+    "tiznit": {
+      "name": "Tiznit",
+      "tag": "Ciudad de la plata",
+      "desc": "Murallas, zocos de plata y puerta del sur"
+    },
+    "sidi_ifni": {
+      "name": "Sidi Ifni",
+      "tag": "Costa salvaje",
+      "desc": "Pueblo art déco, arcos de Legzira y Mirleft"
+    },
+    "guelmim": {
+      "name": "Guelmim",
+      "tag": "Puerta al desierto",
+      "desc": "Mercado de camellos, oasis y ruta a Dajla"
+    },
+    "oualidia": {
+      "name": "Oualidia",
+      "tag": "Laguna de ostras",
+      "desc": "Ostras, laguna y playas tranquilas"
+    },
+    "azrou": {
+      "name": "Azrou",
+      "tag": "Capital del cedro",
+      "desc": "Bosques de cedros y macacos de Berbería"
+    },
+    "sefrou": {
+      "name": "Sefrou",
+      "tag": "Ciudad de la cereza",
+      "desc": "Medina antigua, cascadas y cerezos"
+    },
+    "errachidia": {
+      "name": "Errachidia",
+      "tag": "Oasis del desierto",
+      "desc": "Puertas del desierto y ksars del valle del Ziz"
+    },
+    "larache": {
+      "name": "Larache",
+      "tag": "Perla del Loukkos",
+      "desc": "Ruinas de Lixus y medina atlántica tranquila"
+    },
+    "beni_mellal": {
+      "name": "Beni Mellal",
+      "tag": "Puerta del Medio Atlas",
+      "desc": "Ain Asserdoun, montañas y acceso a Ouzoud"
+    },
+    "figuig": {
+      "name": "Figuig",
+      "tag": "Oasis antiguo",
+      "desc": "Palmerales y ksour tradicionales en el extremo este"
+    },
+    "midelt": {
+      "name": "Midelt",
+      "tag": "Capital de la manzana",
+      "desc": "Huertos, fósiles y puertos del Atlas"
+    },
+    "imilchil": {
+      "name": "Imilchil",
+      "tag": "Tierra de lagos",
+      "desc": "Lagos de montaña y famoso festival de esponsales"
+    }
+  },
+  "_faq": {
+    "badge": "FAQ práctica",
+    "title": "FAQ destinos e itinerarios",
+    "subtitle": "Respuestas rápidas para planificar rutas entre las principales regiones de Marruecos.",
+    "q1": "¿Cuántos días necesito para un primer viaje a Marruecos?",
+    "a1": "7–10 días funcionan bien para un circuito clásico (Marrakech + Sáhara, o Fez + Chefchaouen). Dos semanas permiten combinar ciudades imperiales, costa y desierto sin prisas.",
+    "q2": "¿Marrakech o Fez primero?",
+    "a2": "Marrakech es más animada y la puerta habitual al Alto Atlas y al Sáhara. Fez es más densa y tradicional, y se combina bien con Chefchaouen y el norte. Muchos hacen ambas en 10+ días.",
+    "q3": "¿Cómo combinar el desierto con las ciudades?",
+    "a3": "Desde Marrakech, reserva 2–3 noches para Merzouga (Erg Chebbi) vía el Alto Atlas y las gargantas. Desde Fez el desierto está más lejos; ayudan paradas en Midelt o Errachidia. Traslado privado o tour organizado es lo más fácil.",
+    "q4": "¿Vale la pena el desvío a Chefchaouen?",
+    "a4": "Sí si tienes al menos 2 noches. Está entre Tánger/Tetuán y Fez. Ideal para una pausa tranquila, con excursiones a las cascadas de Akchour.",
+    "q5": "¿Mejor región para una parada de playa?",
+    "a5": "Essaouira y Agadir en el Atlántico; Alhucemas u Oued Laou en el Mediterráneo. Essaouira combina bien con Marrakech (2,5–3 h). Agadir sirve para estancias de playa más largas y Taghazout cerca.",
+    "q6": "¿Necesito coche para varios destinos?",
+    "a6": "No siempre: autobuses CTM/Supratours y trenes unen las grandes ciudades. Un alquiler (o conductor) es mejor para pueblos del Atlas, puertas del desierto y excursiones flexibles."
+  }
+}

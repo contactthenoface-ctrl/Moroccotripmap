@@ -735,17 +735,19 @@
 
     <!-- Container Carte Google Maps (Maroc Unifié) -->
     <!-- Container Carte Google Maps (Maroc Unifié) -->
-    <div class="w-full h-[450px] rounded-2xl overflow-hidden border border-sable/20 relative shadow-inner">
-      <iframe 
-        title="Carte Interactive du Maroc" 
-        class="w-full h-full border-0" 
-        loading="lazy" 
-        allowfullscreen 
-        referrerpolicy="no-referrer-when-downgrade" 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448408.8596001746!2d-8.0!3d31.7917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0x7d9d0c634c83226!2sMaroc!5e1!3m2!1sfr!2sma!4v1650000000000!5m2!1sfr!2sma">
-      </iframe>
+    <!-- Container Carte Google Maps (Maroc Unifié sans UI Google) -->
+    <div class="w-full h-[450px] rounded-2xl overflow-hidden border border-sable/25 relative shadow-inner">
+      <div class="absolute inset-0 overflow-hidden">
+        <iframe 
+          title="Carte Interactive du Maroc" 
+          class="w-full h-[calc(100%+60px)] -mt-[20px] border-0" 
+          loading="lazy" 
+          allowfullscreen 
+          referrerpolicy="no-referrer-when-downgrade" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448408.8596001746!2d-8.0!3d31.7917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0x7d9d0c634c83226!2sMaroc!5e1!3m2!1sfr!2sma!4v1650000000000!5m2!1sfr!2sma">
+        </iframe>
+      </div>
     </div>
-  </div>
 </section>
 
 <!-- Intro / Trust Text -->

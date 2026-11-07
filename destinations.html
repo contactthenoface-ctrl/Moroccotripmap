@@ -56,6 +56,7 @@
 </script>
 
 <!-- Tailwind CSS CDN -->
+
 <script>
         tailwind.config = {
             theme: {
@@ -716,35 +717,31 @@
 </div>
 </main>
 
-
-<!-- SECTION CARTE INTERACTIVE : MARRAKECH & MAROC -->
+<!-- SECTION CARTE INTERACTIVE : MAROC SATELLITE ÉPURÉE -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="map">
   <div class="bg-white p-6 sm:p-8 rounded-3xl border border-sable/15 shadow-lg">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 gap-4">
-      <div>
-        <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="map.badge">Interactive Travel Map</span>
-        <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="map.title">Explore Marrakech & Morocco</h2>
-        <p class="text-sm text-sombre/70 mt-1" data-i18n="map.subtitle">Discover top attractions, traditional riads, and authentic spots directly on the map.</p>
-      </div>
-      <a href="marrakech.html" class="inline-flex items-center gap-2 bg-vert text-white px-5 py-2.5 rounded-xl text-xs font-semibold hover:bg-vert/90 transition shadow-sm">
-        <span data-i18n="map.explore_marrakech">Explore Marrakech Directory</span>
-        <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-      </a>
+    <div class="mb-6">
+      <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="destinations_page.map_badge">Orientation</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="destinations_page.map_title">Map of Morocco</h2>
+      <p class="text-sm text-sombre/70 mt-1" data-i18n="destinations_page.map_subtitle">An interactive satellite map of the Kingdom — from the Mediterranean and Rif to the Atlantic, Desert, and Southern Provinces.</p>
     </div>
 
-    <!-- Container Carte Google Maps (Maroc Unifié sans UI Google) -->
-    <div class="w-full h-[400px] rounded-2xl overflow-hidden border border-sable/25 relative shadow-inner">
-      <div class="absolute inset-0 overflow-hidden">
-        <iframe 
-          title="Carte Interactive du Maroc" 
-          class="w-full h-[calc(100%+60px)] -mt-[20px] border-0" 
-          loading="lazy" 
-          allowfullscreen 
-          referrerpolicy="no-referrer-when-downgrade" 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448408.8596001746!2d-8.0!3d31.7917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0x7d9d0c634c83226!2sMaroc!5e1!3m2!1sfr!2sma!4v1650000000000!5m2!1sfr!2sma">
-        </iframe>
-      </div>
+    <div class="relative w-full rounded-2xl overflow-hidden border border-sable/20 shadow-inner" style="height: 420px;">
+      <iframe
+        title="Morocco satellite map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3550000!2d-7.5!3d31.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
+        width="100%"
+        height="100%"
+        style="border:0; display:block; width:100%; height:100%;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <!-- Soft cover for top-left Open in Maps (does not block the whole map) -->
+      <div class="absolute top-2 left-2 z-10 w-[120px] h-[40px] bg-white/95 rounded-lg shadow-sm pointer-events-none" aria-hidden="true"></div>
     </div>
+
+    <p class="text-[11px] text-sombre/50 mt-3" data-i18n="destinations_page.map_note">Tip: Desert stops (Merzouga, Zagora, Tinghir) lie east of the High Atlas; Atlantic cities span the western coast down to Dakhla and Laayoune.</p>
   </div>
 </section>
 
@@ -755,6 +752,7 @@
     <p class="text-lg sm:text-2xl font-medium leading-relaxed max-w-3xl" data-i18n="intro.text">MoroccoTripMap started because too many "best of Morocco" lists were clearly written by people who never left their desk. Everything here — from riads to desert camps — comes from actual time spent in more than 20 Moroccan cities, checked and rechecked so the details still hold up when you get there. It's all here in English, French, Spanish and Arabic, because a good recommendation shouldn't depend on which language you happen to speak.</p>
   </div>
 </section>
+
 
 <!-- Blog / travel ideas -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -769,7 +767,7 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <a href="blog/index.html" class="block bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-md transition group">
       <div class="h-44 overflow-hidden">
-        <img alt="Sahara dunes Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/home/merzouga.webp" loading="lazy"/>
+        <img alt="Sahara dunes Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/destinations/dest-1.webp" loading="lazy"/>
       </div>
       <div class="p-5">
         <span class="text-[11px] font-bold uppercase tracking-wider text-sable" data-i18n="destinations_page.blog1_tag">Desert</span>
@@ -778,7 +776,7 @@
     </a>
     <a href="blog/index.html" class="block bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-md transition group">
       <div class="h-44 overflow-hidden">
-        <img alt="Atlantic coast Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/home/essaouira.webp" loading="lazy"/>
+        <img alt="Atlantic coast Morocco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/destinations/dest-25.webp" loading="lazy"/>
       </div>
       <div class="p-5">
         <span class="text-[11px] font-bold uppercase tracking-wider text-sable" data-i18n="destinations_page.blog2_tag">Coast</span>
@@ -787,7 +785,7 @@
     </a>
     <a href="blog/index.html" class="block bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-md transition group">
       <div class="h-44 overflow-hidden">
-        <img alt="Chefchaouen blue city" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/home/chefchaouen.webp" loading="lazy"/>
+        <img alt="Chefchaouen blue city" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/destinations/dest-32.webp" loading="lazy"/>
       </div>
       <div class="p-5">
         <span class="text-[11px] font-bold uppercase tracking-wider text-sable" data-i18n="destinations_page.blog3_tag">North</span>
@@ -797,36 +795,57 @@
   </div>
 </section>
 
-<!-- FAQ Section for SEO -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="faq">
-  <div class="bg-white rounded-3xl border border-sable/15 p-6 sm:p-10 shadow-sm">
-    <div class="mb-8">
-      <span class="text-xs font-bold uppercase tracking-widest text-sable" data-i18n="faq.badge">FAQ</span>
-      <h2 class="text-2xl sm:text-3xl font-bold text-sombre mt-1" data-i18n="faq.title">Frequently Asked Questions</h2>
-      <p class="text-sm text-sombre/70 mt-1" data-i18n="faq.subtitle">Everything you need to know about traveling in Morocco.</p>
-    </div>
-    
-    <div class="space-y-6">
-      <div class="border-b border-sable/10 pb-5">
-        <h3 class="text-base font-bold text-vert" data-i18n="faq.q1">What is the best time to visit Morocco?</h3>
-        <p class="text-xs sm:text-sm text-sombre/80 mt-2 leading-relaxed" data-i18n="faq.a1">Spring (March to May) and Autumn (September to November) offer the best weather across Morocco.</p>
-      </div>
 
-      <div class="border-b border-sable/10 pb-5">
-        <h3 class="text-base font-bold text-vert" data-i18n="faq.q2">Do I need a visa to travel to Morocco?</h3>
-        <p class="text-xs sm:text-sm text-sombre/80 mt-2 leading-relaxed" data-i18n="faq.a2">Citizens of over 70 countries enter Morocco visa-free for up to 90 days.</p>
-      </div>
-
-      <div class="border-b border-sable/10 pb-5">
-        <h3 class="text-base font-bold text-vert" data-i18n="faq.q3">How many days are recommended for a first trip to Morocco?</h3>
-        <p class="text-xs sm:text-sm text-sombre/80 mt-2 leading-relaxed" data-i18n="faq.a3">A 7 to 10-day itinerary allows you to explore the classic route.</p>
-      </div>
-
-      <div>
-        <h3 class="text-base font-bold text-vert" data-i18n="faq.q4">Is Morocco safe for tourists and solo travelers?</h3>
-        <p class="text-xs sm:text-sm text-sombre/80 mt-2 leading-relaxed" data-i18n="faq.a4">Morocco is generally very safe for international travelers.</p>
-      </div>
-    </div>
+<!-- FAQ Destinations & Itineraries -->
+<section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10" id="faq">
+  <div class="mb-8 text-center">
+    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="destinations_page.faq.badge">Practical FAQ</span>
+    <h2 class="text-2xl sm:text-3xl font-bold text-vert mt-1" data-i18n="destinations_page.faq.title">Destinations &amp; Itineraries FAQ</h2>
+    <p class="text-sm text-sombre/70 mt-2 max-w-xl mx-auto" data-i18n="destinations_page.faq.subtitle">Quick answers to plan routes between Morocco’s main regions.</p>
+  </div>
+  <div class="space-y-3">
+    <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+      <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+        <span data-i18n="destinations_page.faq.q1.question">How many days do I need for a first trip to Morocco?</span>
+        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="destinations_page.faq.q1.answer">7–10 days works well for a classic loop (e.g. Marrakech + Sahara, or Fes + Chefchaouen). Two weeks lets you combine imperial cities, coast, and desert without rushing.</p>
+    </details>
+    <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+      <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+        <span data-i18n="destinations_page.faq.q2.question">Marrakech or Fes first?</span>
+        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="destinations_page.faq.q2.answer">Marrakech is livelier and the usual gateway to the High Atlas and Sahara. Fes is denser, more traditional, and pairs naturally with Chefchaouen and the north. Many travelers do both in 10+ days.</p>
+    </details>
+    <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+      <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+        <span data-i18n="destinations_page.faq.q3.question">How do I combine the desert with the cities?</span>
+        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="destinations_page.faq.q3.answer">From Marrakech, allow 2–3 nights for Merzouga (Erg Chebbi) via the High Atlas and gorges. From Fes, the desert is farther; overnight stops in Midelt or Errachidia help. Private transfer or organized tour is easiest.</p>
+    </details>
+    <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+      <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+        <span data-i18n="destinations_page.faq.q4.question">Is Chefchaouen worth a detour?</span>
+        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="destinations_page.faq.q4.answer">Yes if you have at least 2 nights. It sits between Tangier/Tetouan and Fes. Ideal for a calm break between bigger cities, with day trips to Akchour waterfalls.</p>
+    </details>
+    <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+      <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+        <span data-i18n="destinations_page.faq.q5.question">Best region for a beach stop?</span>
+        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="destinations_page.faq.q5.answer">Essaouira and Agadir on the Atlantic; Al Hoceima or Oued Laou on the Mediterranean. Essaouira pairs well with Marrakech (2.5–3h). Agadir suits longer beach stays and Surfers’ Paradise Taghazout nearby.</p>
+    </details>
+    <details class="bg-white rounded-2xl border border-sable/10 p-5 group">
+      <summary class="flex items-center justify-between cursor-pointer font-semibold text-sombre text-sm sm:text-base">
+        <span data-i18n="destinations_page.faq.q6.question">Do I need a car to visit several destinations?</span>
+        <svg class="w-4 h-4 text-sable shrink-0 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <p class="text-sm text-sombre/70 mt-3 leading-relaxed" data-i18n="destinations_page.faq.q6.answer">Not always: CTM/Supratours buses and trains link major cities. A rental car (or private driver) is better for Atlas villages, desert gates, and flexible day trips. Read our driving guide before mountain passes.</p>
+    </details>
   </div>
 </section>
 

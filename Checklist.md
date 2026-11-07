@@ -16,6 +16,9 @@
 - [ ] Musée marrakech blog article
 - [ ] Kova Almravides قبة المرابطين blog article
 - [ ] Collab avec lgwerr li ka ydiro travels lmaroc
+- [ ] Casa finance city
+- [ ] mama beach
+- [ ] tourisme sport derby maroc
 
 Notes : Comment avoir du traffic et Monétiser le site
 

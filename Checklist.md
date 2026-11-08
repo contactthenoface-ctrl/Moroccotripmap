@@ -20,6 +20,7 @@
 - [ ] mama beach
 - [ ] tourisme sport derby maroc
 - [ ] محمية سوس ماسة Blog article
+- [ ] Téléphérique Agadir
 
 Notes : Comment avoir du traffic et Monétiser le site
 

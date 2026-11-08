@@ -19,6 +19,7 @@
 - [ ] Casa finance city
 - [ ] mama beach
 - [ ] tourisme sport derby maroc
+- [ ] محمية سوس ماسة Blog article
 
 Notes : Comment avoir du traffic et Monétiser le site
 

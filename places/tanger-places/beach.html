@@ -928,5 +928,37 @@ function filterAccommodations() {
         });
     </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const translations = {
+        'en': { 'MEDINA': 'MEDINA', 'SQUARE': 'SQUARE', 'MUSEUM': 'MUSEUM', 'CAFÉ': 'CAFÉ', 'BEACH': 'BEACH', 'CAPE': 'CAPE', 'CAVES': 'CAVES' },
+        'fr': { 'MEDINA': 'MEDINA', 'SQUARE': 'PLACE', 'MUSEUM': 'MUSÉE', 'CAFÉ': 'CAFÉ', 'BEACH': 'PLAGE', 'CAPE': 'CAP', 'CAVES': 'GROTTES' },
+        'ar': { 'MEDINA': 'مدينة', 'SQUARE': 'ساحة', 'MUSEUM': 'متحف', 'CAFÉ': 'مقهى', 'BEACH': 'شاطئ', 'CAPE': 'رأس', 'CAVES': 'مغارة' },
+        'es': { 'MEDINA': 'MEDINA', 'SQUARE': 'PLAZA', 'MUSEUM': 'MUSEO', 'CAFÉ': 'CAFÉ', 'BEACH': 'PLAYA', 'CAPE': 'CABO', 'CAVES': 'CUEVAS' }
+    };
+
+    function updateCategoryTags() {
+        const lang = localStorage.getItem('preferred_lang') || 'fr';
+        const dict = translations[lang] || translations['fr'];
+        
+        // On cible tous les petits spans de catégories dans les cartes
+        document.querySelectorAll('span.text-\[10px\].font-bold.uppercase').forEach(span => {
+            const originalText = span.getAttribute('data-original') || span.textContent.trim().toUpperCase();
+            if (!span.hasAttribute('data-original')) {
+                span.setAttribute('data-original', originalText);
+            }
+            if (dict[originalText]) {
+                span.textContent = dict[originalText];
+            }
+        });
+    }
+
+    // Exécuter au chargement et surveiller les changements de langue
+    setTimeout(updateCategoryTags, 500);
+    window.addEventListener('click', function() { setTimeout(updateCategoryTags, 200); });
+});
+</script>
 </body>
+
 </html>

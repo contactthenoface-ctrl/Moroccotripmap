@@ -26,30 +26,82 @@
     "title": "Must-visit places in Nador",
     "subtitle": "Lagoon, corniche, mountain, headland and nearby beaches.",
     "explore": "Explore place →",
-    "marchica": { "tag": "Lagoon", "title": "Marchica Lagoon (Mar Chica)", "desc": "A vast Mediterranean lagoon beside the city — calm water, birdlife and the defining landscape of Nador." },
-    "corniche": { "tag": "Promenade", "title": "Nador Corniche", "desc": "The city’s evening waterfront — cafés, lagoon views and the social heart of town." },
-    "gourougou": { "tag": "Mountain", "title": "Mount Gourougou", "desc": "A low mountain above Nador with trails and wide views over lagoon, coast and Melilla on clear days." },
-    "cap_trois_fourches": { "tag": "Headland", "title": "Cap des Trois Fourches", "desc": "A dramatic peninsula of cliffs and empty coast — one of Morocco’s wildest Mediterranean landscapes." },
-    "charrana": { "tag": "Beach", "title": "Charrana Beach", "desc": "A cliff-backed cove of clear water about an hour from town — quieter swimming away from the lagoon strip." },
-    "beni_ansar": { "tag": "Port", "title": "Beni Ansar Port", "desc": "Working harbour and ferry terminal — landings, seafood and the practical edge of the city." },
-    "kasbah_selouane": { "tag": "Heritage", "title": "Kasbah of Selouane", "desc": "A 17th-century Alaouite fortification inland from Nador — history with a short road hop." },
-    "ras_el_ma": { "tag": "Coast", "title": "Ras El Ma (Cap de l’Eau)", "desc": "A calmer coastal town and beach east of Nador — sand, fishing boats and open Mediterranean light." }
+    "marchica": {
+      "tag": "Lagoon",
+      "title": "Marchica Lagoon (Mar Chica)",
+      "desc": "A vast Mediterranean lagoon beside the city — calm water, birdlife and the defining landscape of Nador."
+    },
+    "corniche": {
+      "tag": "Promenade",
+      "title": "Nador Corniche",
+      "desc": "The city’s evening waterfront — cafés, lagoon views and the social heart of town."
+    },
+    "gourougou": {
+      "tag": "Mountain",
+      "title": "Mount Gourougou",
+      "desc": "A low mountain above Nador with trails and wide views over lagoon, coast and Melilla on clear days."
+    },
+    "cap_trois_fourches": {
+      "tag": "Headland",
+      "title": "Cap des Trois Fourches",
+      "desc": "A dramatic peninsula of cliffs and empty coast — one of Morocco’s wildest Mediterranean landscapes."
+    },
+    "charrana": {
+      "tag": "Beach",
+      "title": "Charrana Beach",
+      "desc": "A cliff-backed cove of clear water about an hour from town — quieter swimming away from the lagoon strip."
+    },
+    "beni_ansar": {
+      "tag": "Port",
+      "title": "Beni Ansar Port",
+      "desc": "Working harbour and ferry terminal — landings, seafood and the practical edge of the city."
+    },
+    "kasbah_selouane": {
+      "tag": "Heritage",
+      "title": "Kasbah of Selouane",
+      "desc": "A 17th-century Alaouite fortification inland from Nador — history with a short road hop."
+    },
+    "ras_el_ma": {
+      "tag": "Coast",
+      "title": "Ras El Ma (Cap de l’Eau)",
+      "desc": "A calmer coastal town and beach east of Nador — sand, fishing boats and open Mediterranean light."
+    }
   },
   "stays": {
     "badge": "Selection & Advice",
     "title": "Where to stay in Nador? Our Favorites",
     "subtitle": "Lagoon-view hotels, comfortable modern residences and welcoming coastal stays in Nador.",
     "book": "Book Now →",
-    "card1": { "badge": "★ Luxury Lagoon Resort", "name": "Marchica Lagoon Resort", "desc": "Exclusive five-star resort directly overlooking the pristine waters of Marchica lagoon.", "location": "Lagoon Front" },
-    "card2": { "badge": "★ Corniche Hotel", "name": "Hotel Mercure Nador Rif", "desc": "Comfortable upscale hotel right on the corniche with stunning views over the bay and marina.", "location": "Corniche" },
-    "card3": { "badge": "★ Authentic Guest House", "name": "Riad Dar Nador", "desc": "Charming traditional guest house offering warm hospitality and quiet rooms near the center.", "location": "Town Centre" },
-    "card4": { "badge": "★ Modern City Stay", "name": "Hotel Rif Paradise", "desc": "Contemporary and well-equipped hotel providing easy access to transport and local attractions.", "location": "City Centre" }
+    "card1": {
+      "badge": "★ Luxury Lagoon Resort",
+      "name": "Marchica Lagoon Resort",
+      "desc": "Exclusive five-star resort directly overlooking the pristine waters of Marchica lagoon.",
+      "location": "Lagoon Front"
+    },
+    "card2": {
+      "badge": "★ Corniche Hotel",
+      "name": "Hotel Mercure Nador Rif",
+      "desc": "Comfortable upscale hotel right on the corniche with stunning views over the bay and marina.",
+      "location": "Corniche"
+    },
+    "card3": {
+      "badge": "★ Authentic Guest House",
+      "name": "Riad Dar Nador",
+      "desc": "Charming traditional guest house offering warm hospitality and quiet rooms near the center.",
+      "location": "Town Centre"
+    },
+    "card4": {
+      "badge": "★ Modern City Stay",
+      "name": "Hotel Rif Paradise",
+      "desc": "Contemporary and well-equipped hotel providing easy access to transport and local attractions.",
+      "location": "City Centre"
+    }
   },
   "booking_banner": {
     "badge": "Over 30+ Accommodations",
     "title": "Explore All Places to Stay in Nador",
-    "desc": "Compare real-time rates, read verified guest reviews, and discover more lagoon resorts, apartments and hotels in Nador on Booking.com.",
-    "btn": "View All Hotels on Booking.com",
+    "desc": "View All Stays",
+    "btn": "View All Stays",
     "guarantee": "✓ Best price guaranteed & secure booking"
   },
   "directory": {
@@ -104,35 +156,98 @@
     "badge": "Food",
     "title": "Where to eat in Nador",
     "subtitle": "Fresh fish, lagoon-side tables and simple town plates.",
-    "nomad": { "tag": "Port", "loc": "Beni Ansar", "title": "Port-side fish", "desc": "Fresh catch near the harbour when boats are in." },
-    "jardin": { "tag": "Hotel", "loc": "Town", "title": "Hotel restaurants", "desc": "Reliable options if you stay in a larger hotel." },
-    "fassia": { "tag": "Café", "loc": "Centre", "title": "Town café stop", "desc": "Coffee and a pause between errands." },
-    "moha": { "tag": "Seafood", "loc": "Centre", "title": "Town seafood", "desc": "Fish and salads in the centre between lagoon walks." },
-    "bacha": { "tag": "Local", "loc": "Town", "title": "Neighbourhood tables", "desc": "Quiet plates preferred by residents." },
-    "elfenn": { "tag": "Seafood", "loc": "Corniche", "title": "Evening fish", "desc": "Later sitting when the corniche fills up." }
+    "nomad": {
+      "tag": "Port",
+      "loc": "Beni Ansar",
+      "title": "Port-side fish",
+      "desc": "Fresh catch near the harbour when boats are in."
+    },
+    "jardin": {
+      "tag": "Hotel",
+      "loc": "Town",
+      "title": "Hotel restaurants",
+      "desc": "Reliable options if you stay in a larger hotel."
+    },
+    "fassia": {
+      "tag": "Café",
+      "loc": "Centre",
+      "title": "Town café stop",
+      "desc": "Coffee and a pause between errands."
+    },
+    "moha": {
+      "tag": "Seafood",
+      "loc": "Centre",
+      "title": "Town seafood",
+      "desc": "Fish and salads in the centre between lagoon walks."
+    },
+    "bacha": {
+      "tag": "Local",
+      "loc": "Town",
+      "title": "Neighbourhood tables",
+      "desc": "Quiet plates preferred by residents."
+    },
+    "elfenn": {
+      "tag": "Seafood",
+      "loc": "Corniche",
+      "title": "Evening fish",
+      "desc": "Later sitting when the corniche fills up."
+    }
   },
   "tips": {
     "title": "Practical tips for Nador",
-    "transport": { "title": "Getting around", "desc": "Town and corniche are walkable; beaches and Cap des Trois Fourches need a car or organised transfer. Beni Ansar is a short hop for ferries. Agree taxi prices clearly." },
-    "bargain": { "title": "Sun & seasons", "desc": "Mediterranean sun is strong in summer. High SPF and water for lagoon and beach days. Spring and autumn are ideal for Gourougou and the Cap." },
-    "water": { "title": "Cash & border", "desc": "Carry dirhams for taxis and small stops. If you day-trip to Melilla, bring a valid passport and check border hours." }
+    "transport": {
+      "title": "Getting around",
+      "desc": "Town and corniche are walkable; beaches and Cap des Trois Fourches need a car or organised transfer. Beni Ansar is a short hop for ferries. Agree taxi prices clearly."
+    },
+    "bargain": {
+      "title": "Sun & seasons",
+      "desc": "Mediterranean sun is strong in summer. High SPF and water for lagoon and beach days. Spring and autumn are ideal for Gourougou and the Cap."
+    },
+    "water": {
+      "title": "Cash & border",
+      "desc": "Carry dirhams for taxis and small stops. If you day-trip to Melilla, bring a valid passport and check border hours."
+    }
   },
   "daytrips": {
     "badge": "Around Nador",
     "title": "Best outings from Nador",
     "subtitle": "Lagoon loops, mountain views and wilder Mediterranean coast.",
-    "tiout": { "title": "Cap des Trois Fourches", "desc": "Half or full day to cliffs, empty coast and one of the region’s strongest viewpoints." },
-    "antiatlas": { "title": "Mount Gourougou", "desc": "Short hikes and panoramas over Nador, the lagoon and Melilla on clear days." },
-    "taliouine": { "title": "Charrana or Ras El Ma", "desc": "Beach day with clearer swimming than the inner lagoon edges." },
-    "agadir": { "title": "Melilla (passport day)", "desc": "Spanish enclave across the border — modernist streets and a sharp cultural contrast." }
+    "tiout": {
+      "title": "Cap des Trois Fourches",
+      "desc": "Half or full day to cliffs, empty coast and one of the region’s strongest viewpoints."
+    },
+    "antiatlas": {
+      "title": "Mount Gourougou",
+      "desc": "Short hikes and panoramas over Nador, the lagoon and Melilla on clear days."
+    },
+    "taliouine": {
+      "title": "Charrana or Ras El Ma",
+      "desc": "Beach day with clearer swimming than the inner lagoon edges."
+    },
+    "agadir": {
+      "title": "Melilla (passport day)",
+      "desc": "Spanish enclave across the border — modernist streets and a sharp cultural contrast."
+    }
   },
   "faq": {
     "badge": "Good to know",
     "title": "Nador travel FAQ",
-    "q1": { "question": "How many days in Nador?", "answer": "Three days cover the lagoon, corniche and one mountain or beach outing. Five days suit Cap des Trois Fourches, Charrana and a slower rhythm without rushing." },
-    "q2": { "question": "Is Nador only the lagoon?", "answer": "Marchica is the signature landscape, but Gourougou, Cap des Trois Fourches, nearby beaches and Beni Ansar add mountain, wild coast and working-port energy." },
-    "q3": { "question": "How do I get to Nador?", "answer": "Flights to NDR, ferries via Beni Ansar, or road links along the northeastern Rif. Melilla is adjacent for some cross-border itineraries." },
-    "q4": { "question": "Best time to visit?", "answer": "May to October for swimming and corniche evenings. Spring and autumn are excellent for hiking and clearer long views." }
+    "q1": {
+      "question": "How many days in Nador?",
+      "answer": "Three days cover the lagoon, corniche and one mountain or beach outing. Five days suit Cap des Trois Fourches, Charrana and a slower rhythm without rushing."
+    },
+    "q2": {
+      "question": "Is Nador only the lagoon?",
+      "answer": "Marchica is the signature landscape, but Gourougou, Cap des Trois Fourches, nearby beaches and Beni Ansar add mountain, wild coast and working-port energy."
+    },
+    "q3": {
+      "question": "How do I get to Nador?",
+      "answer": "Flights to NDR, ferries via Beni Ansar, or road links along the northeastern Rif. Melilla is adjacent for some cross-border itineraries."
+    },
+    "q4": {
+      "question": "Best time to visit?",
+      "answer": "May to October for swimming and corniche evenings. Spring and autumn are excellent for hiking and clearer long views."
+    }
   },
   "destinations": {
     "nador": {

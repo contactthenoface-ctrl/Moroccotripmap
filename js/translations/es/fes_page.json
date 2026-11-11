@@ -29,14 +29,46 @@
     "title": "Lugares que Visitar en Fez",
     "subtitle": "Escuelas históricas, barrios de artesanos, miradores y rincones tranquilos que revelan el carácter de la ciudad imperial más antigua de Marruecos.",
     "explore": "Explorar lugar →",
-    "fes_el_bali": { "tag": "Medina UNESCO", "title": "Fes el-Bali", "desc": "La laberíntica ciudad vieja donde zocos, mezquitas, talleres y casas históricas se unen." },
-    "al_quaraouiyine": { "tag": "Patrimonio", "title": "Al Quaraouiyine", "desc": "Un centro histórico de aprendizaje y uno de los hitos espirituales más importantes de la ciudad." },
-    "bou_inania": { "tag": "Arquitectura", "title": "Madraza Bou Inania", "desc": "Zellige, estuco tallado y detalles de cedro hacen de este uno de los edificios históricos más destacados de Fez." },
-    "nejjarine": { "tag": "Artesanía", "title": "Museo Nejjarine", "desc": "Un funduq bellamente restaurado que celebra la herencia de la carpintería y la artesanía tradicional de Marruecos." },
-    "chouara": { "tag": "Oficios", "title": "Curtiembre de Chouara", "desc": "Una de las escenas artesanales más famosas de Fez, donde el trabajo del cuero sigue vivo en la economía local." },
-    "bab_bou_jeloud": { "tag": "Puerta de la Ciudad", "title": "Bab Bou Jeloud", "desc": "La famosa puerta azul es el punto de partida natural para explorar la antigua medina." },
-    "mellah": { "tag": "Historia", "title": "El Mellah de Fez", "desc": "Descubre otra capa de Fez a través de su histórico barrio judío y el distrito real circundante." },
-    "marinid_tombs": { "tag": "Panorama", "title": "Tumbas benimerines", "desc": "Ven al atardecer para disfrutar de una de las vistas panorámicas más memorables sobre la medina." }
+    "fes_el_bali": {
+      "tag": "Medina UNESCO",
+      "title": "Fes el-Bali",
+      "desc": "La laberíntica ciudad vieja donde zocos, mezquitas, talleres y casas históricas se unen."
+    },
+    "al_quaraouiyine": {
+      "tag": "Patrimonio",
+      "title": "Al Quaraouiyine",
+      "desc": "Un centro histórico de aprendizaje y uno de los hitos espirituales más importantes de la ciudad."
+    },
+    "bou_inania": {
+      "tag": "Arquitectura",
+      "title": "Madraza Bou Inania",
+      "desc": "Zellige, estuco tallado y detalles de cedro hacen de este uno de los edificios históricos más destacados de Fez."
+    },
+    "nejjarine": {
+      "tag": "Artesanía",
+      "title": "Museo Nejjarine",
+      "desc": "Un funduq bellamente restaurado que celebra la herencia de la carpintería y la artesanía tradicional de Marruecos."
+    },
+    "chouara": {
+      "tag": "Oficios",
+      "title": "Curtiembre de Chouara",
+      "desc": "Una de las escenas artesanales más famosas de Fez, donde el trabajo del cuero sigue vivo en la economía local."
+    },
+    "bab_bou_jeloud": {
+      "tag": "Puerta de la Ciudad",
+      "title": "Bab Bou Jeloud",
+      "desc": "La famosa puerta azul es el punto de partida natural para explorar la antigua medina."
+    },
+    "mellah": {
+      "tag": "Historia",
+      "title": "El Mellah de Fez",
+      "desc": "Descubre otra capa de Fez a través de su histórico barrio judío y el distrito real circundante."
+    },
+    "marinid_tombs": {
+      "tag": "Panorama",
+      "title": "Tumbas benimerines",
+      "desc": "Ven al atardecer para disfrutar de una de las vistas panorámicas más memorables sobre la medina."
+    }
   },
   "itinerary": {
     "badge": "Planifica tu Estancia",
@@ -94,44 +126,104 @@
     "badge": "Más de 300 alojamientos en Fez",
     "title": "Explora todas las estancias en Fez",
     "desc": "Compara tarifas en tiempo real, lee opiniones verificadas y disfruta de cancelación gratuita en riads tradicionales y hoteles modernos.",
-    "btn": "Ver todos los alojamientos en Booking.com",
+    "btn": "Ver todos los alojamientos",
     "guarantee": "✓ Garantía de mejor precio y reserva segura"
   },
   "eat": {
     "badge": "Comer y Beber",
     "title": "Qué Comer en Fez",
     "subtitle": "Fez es una ciudad excelente para los amantes de la comida, desde modestas cocinas de medina hasta restaurantes refinados.",
-    "fassi": { "title": "Cocina Fassi", "desc": "Prueba platos como la pastilla, tagines a fuego lento, harira y ensaladas de temporada. Destaca por su equilibrio dulce y salado." },
-    "medina": { "title": "Paradas en la Medina", "desc": "Sigue tu apetito por las calles: panaderías, sopas, carnes a la parrilla, aceitunas, dátiles y zumos frescos para un almuerzo informal." },
-    "rooftop": { "title": "Té en Azoteas", "desc": "Para una tarde más tranquila, elige una terraza en la azotea con vistas a la ciudad vieja y pide té de menta." },
-    "cooking": { "title": "Clases de Cocina", "desc": "Una clase de cocina local o visita al mercado es una forma divertida de entender los ingredientes de la cocina marroquí." },
-    "sweets": { "title": "Dulces y Pasteles", "desc": "Prueba la repostería marroquí, chebakia y dulces de almendra con café o té cuando necesites un descanso." },
-    "order": { "title": "Qué Pedir", "desc": "Si es tu primera visita, pregunta a tu anfitrión o camarero qué se ha preparado fresco ese día. Fez premia la curiosidad." }
+    "fassi": {
+      "title": "Cocina Fassi",
+      "desc": "Prueba platos como la pastilla, tagines a fuego lento, harira y ensaladas de temporada. Destaca por su equilibrio dulce y salado."
+    },
+    "medina": {
+      "title": "Paradas en la Medina",
+      "desc": "Sigue tu apetito por las calles: panaderías, sopas, carnes a la parrilla, aceitunas, dátiles y zumos frescos para un almuerzo informal."
+    },
+    "rooftop": {
+      "title": "Té en Azoteas",
+      "desc": "Para una tarde más tranquila, elige una terraza en la azotea con vistas a la ciudad vieja y pide té de menta."
+    },
+    "cooking": {
+      "title": "Clases de Cocina",
+      "desc": "Una clase de cocina local o visita al mercado es una forma divertida de entender los ingredientes de la cocina marroquí."
+    },
+    "sweets": {
+      "title": "Dulces y Pasteles",
+      "desc": "Prueba la repostería marroquí, chebakia y dulces de almendra con café o té cuando necesites un descanso."
+    },
+    "order": {
+      "title": "Qué Pedir",
+      "desc": "Si es tu primera visita, pregunta a tu anfitrión o camarero qué se ha preparado fresco ese día. Fez premia la curiosidad."
+    }
   },
   "tips": {
     "title": "Consejos Prácticos para Visitar Fez",
-    "shoes": { "title": "Lleva Zapatos Cómodos", "desc": "La ciudad vieja se explora a pie. Espera adoquines irregulares, escalones y mucho caminar." },
-    "stay": { "title": "Quédate en o cerca de la Medina", "desc": "Un riad ofrece una experiencia inmersiva, mientras que alojarse fuera facilita el acceso en taxi." },
-    "guide": { "title": "Usa un Guía Local si Quieres Contexto", "desc": "Fez tiene muchas capas de historia y un guía añade contexto valioso, especialmente en una primera visita." },
-    "cash": { "title": "Lleva Algo de Efectivo", "desc": "Mantén dirhams marroquíes para pequeñas compras, cafés, taxis y puestos de mercado." }
+    "shoes": {
+      "title": "Lleva Zapatos Cómodos",
+      "desc": "La ciudad vieja se explora a pie. Espera adoquines irregulares, escalones y mucho caminar."
+    },
+    "stay": {
+      "title": "Quédate en o cerca de la Medina",
+      "desc": "Un riad ofrece una experiencia inmersiva, mientras que alojarse fuera facilita el acceso en taxi."
+    },
+    "guide": {
+      "title": "Usa un Guía Local si Quieres Contexto",
+      "desc": "Fez tiene muchas capas de historia y un guía añade contexto valioso, especialmente en una primera visita."
+    },
+    "cash": {
+      "title": "Lleva Algo de Efectivo",
+      "desc": "Mantén dirhams marroquíes para pequeñas compras, cafés, taxis y puestos de mercado."
+    }
   },
   "daytrips": {
     "badge": "Más Allá de la Ciudad",
     "title": "Mejores Excursiones desde Fez",
     "subtitle": "Fez es también una base útil para explorar la historia y los paisajes del norte y centro de Marruecos.",
-    "volubilis": { "title": "Volubilis", "desc": "Explora las ruinas romanas, mosaicos y paisajes abiertos de uno de los yacimientos arqueológicos más famosos." },
-    "moulay_idriss": { "title": "Moulay Idriss", "desc": "Una ciudad de peregrinación en la ladera con calles encalizadas y vistas al campo circundante." },
-    "meknes": { "title": "Meknes", "desc": "Combina tu estancia en Fez con otra ciudad imperial, conocida por sus puertas monumentales y arquitectura." },
-    "ifrane": { "title": "Ifrane y Atlas Medio", "desc": "Adéntrate en el Atlas Medio para ver bosques de cedros, aire fresco y paisajes muy distintos a la medina." }
+    "volubilis": {
+      "title": "Volubilis",
+      "desc": "Explora las ruinas romanas, mosaicos y paisajes abiertos de uno de los yacimientos arqueológicos más famosos."
+    },
+    "moulay_idriss": {
+      "title": "Moulay Idriss",
+      "desc": "Una ciudad de peregrinación en la ladera con calles encalizadas y vistas al campo circundante."
+    },
+    "meknes": {
+      "title": "Meknes",
+      "desc": "Combina tu estancia en Fez con otra ciudad imperial, conocida por sus puertas monumentales y arquitectura."
+    },
+    "ifrane": {
+      "title": "Ifrane y Atlas Medio",
+      "desc": "Adéntrate en el Atlas Medio para ver bosques de cedros, aire fresco y paisajes muy distintos a la medina."
+    }
   },
   "faq": {
     "badge": "Bueno Saberlo",
     "title": "Preguntas Frecuentes sobre Fez",
-    "q1": { "question": "¿Cuántos días debo pasar en Fez?", "answer": "Dos días completos cubren lo principal, pero tres días permiten explorar la medina sin prisas y añadir una excursión." },
-    "q2": { "question": "¿Es Fez un buen destino para un primer viaje a Marruecos?", "answer": "Sí, especialmente si te interesa la historia, la arquitectura, la artesanía y la comida marroquí." },
-    "q3": { "question": "¿Cuál es la mejor zona para alojarse en Fez?", "answer": "Quédate en o cerca de Fes el-Bali si buscas ambiente. La Ville Nouvelle es más cómoda si prefieres hoteles modernos." },
-    "q4": { "question": "¿Puedo visitar la medina de Fez sin guía?", "answer": "Puedes explorar por cuenta propia, aunque la medina es grande. Un guía es útil para profundizar en la historia." },
-    "q5": { "question": "¿Qué debo comer en Fez?", "answer": "Prueba especialidades fassies como pastilla y tagines tradicionales, además de ensaladas y repostería." },
-    "q6": { "question": "¿Cuáles son las mejores excursiones desde Fez?", "answer": "Volubilis, Moulay Idriss, Meknes e Ifrane son las opciones más fáciles y enriquecedoras." }
+    "q1": {
+      "question": "¿Cuántos días debo pasar en Fez?",
+      "answer": "Dos días completos cubren lo principal, pero tres días permiten explorar la medina sin prisas y añadir una excursión."
+    },
+    "q2": {
+      "question": "¿Es Fez un buen destino para un primer viaje a Marruecos?",
+      "answer": "Sí, especialmente si te interesa la historia, la arquitectura, la artesanía y la comida marroquí."
+    },
+    "q3": {
+      "question": "¿Cuál es la mejor zona para alojarse en Fez?",
+      "answer": "Quédate en o cerca de Fes el-Bali si buscas ambiente. La Ville Nouvelle es más cómoda si prefieres hoteles modernos."
+    },
+    "q4": {
+      "question": "¿Puedo visitar la medina de Fez sin guía?",
+      "answer": "Puedes explorar por cuenta propia, aunque la medina es grande. Un guía es útil para profundizar en la historia."
+    },
+    "q5": {
+      "question": "¿Qué debo comer en Fez?",
+      "answer": "Prueba especialidades fassies como pastilla y tagines tradicionales, además de ensaladas y repostería."
+    },
+    "q6": {
+      "question": "¿Cuáles son las mejores excursiones desde Fez?",
+      "answer": "Volubilis, Moulay Idriss, Meknes e Ifrane son las opciones más fáciles y enriquecedoras."
+    }
   }
 }

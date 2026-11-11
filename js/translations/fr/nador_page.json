@@ -26,30 +26,82 @@
     "title": "À visiter à Nador",
     "subtitle": "Lagune, corniche, montagne, cap et plages environnantes.",
     "explore": "Explorer le lieu →",
-    "marchica": { "tag": "Lagune", "title": "Lagune de Marchica (Mar Chica)", "desc": "Vaste lagune méditerranéenne bordant la ville — eaux calmes, avifaune et paysage emblématique de Nador." },
-    "corniche": { "tag": "Promenade", "title": "Corniche de Nador", "desc": "Le front de mer vespéral — cafés, vues sur la lagune et cœur social de la ville." },
-    "gourougou": { "tag": "Montagne", "title": "Mont Gourougou", "desc": "Une montagne basse surplombant Nador avec des sentiers et de larges panoramas sur la lagune et Melilla." },
-    "cap_trois_fourches": { "tag": "Cap", "title": "Cap des Trois Fourches", "desc": "Une spectaculaire péninsule de falaises et de côtes sauvages — l'un des paysages les plus sauvages du Rif." },
-    "charrana": { "tag": "Plage", "title": "Plage de Charrana", "desc": "Une crique abritée par des falaises à environ une heure de la ville — baignade paisible loin de la lagune." },
-    "beni_ansar": { "tag": "Port", "title": "Port de Beni Ansar", "desc": "Port actif et terminal de ferries — débarquements, poissons et dynamisme maritime." },
-    "kasbah_selouane": { "tag": "Patrimoine", "title": "Kasbah de Selouane", "desc": "Une fortification alaouite du XVIIe siècle dans l'arrière-pays — l'histoire à portée de route." },
-    "ras_el_ma": { "tag": "Côte", "title": "Ras El Ma (Cap de l'Eau)", "desc": "Ville côtière paisible et plage à l'est de Nador — sable, bateaux de pêche et lumière méditerranéenne." }
+    "marchica": {
+      "tag": "Lagune",
+      "title": "Lagune de Marchica (Mar Chica)",
+      "desc": "Vaste lagune méditerranéenne bordant la ville — eaux calmes, avifaune et paysage emblématique de Nador."
+    },
+    "corniche": {
+      "tag": "Promenade",
+      "title": "Corniche de Nador",
+      "desc": "Le front de mer vespéral — cafés, vues sur la lagune et cœur social de la ville."
+    },
+    "gourougou": {
+      "tag": "Montagne",
+      "title": "Mont Gourougou",
+      "desc": "Une montagne basse surplombant Nador avec des sentiers et de larges panoramas sur la lagune et Melilla."
+    },
+    "cap_trois_fourches": {
+      "tag": "Cap",
+      "title": "Cap des Trois Fourches",
+      "desc": "Une spectaculaire péninsule de falaises et de côtes sauvages — l'un des paysages les plus sauvages du Rif."
+    },
+    "charrana": {
+      "tag": "Plage",
+      "title": "Plage de Charrana",
+      "desc": "Une crique abritée par des falaises à environ une heure de la ville — baignade paisible loin de la lagune."
+    },
+    "beni_ansar": {
+      "tag": "Port",
+      "title": "Port de Beni Ansar",
+      "desc": "Port actif et terminal de ferries — débarquements, poissons et dynamisme maritime."
+    },
+    "kasbah_selouane": {
+      "tag": "Patrimoine",
+      "title": "Kasbah de Selouane",
+      "desc": "Une fortification alaouite du XVIIe siècle dans l'arrière-pays — l'histoire à portée de route."
+    },
+    "ras_el_ma": {
+      "tag": "Côte",
+      "title": "Ras El Ma (Cap de l'Eau)",
+      "desc": "Ville côtière paisible et plage à l'est de Nador — sable, bateaux de pêche et lumière méditerranéenne."
+    }
   },
   "stays": {
-  "badge": "Sélection & Conseils",
-  "title": "Où loger à Nador ? Nos coups de cœur",
-  "subtitle": "Resorts avec vue sur la lagune, résidences modernes et séjours côtiers accueillants à Nador.",
-  "book": "Réserver →",
-  "card1": { "badge": "★ Resort de Luxe", "name": "Marchica Lagoon Resort", "desc": "Resort cinq étoiles exclusif surplombant directement les eaux pures de la lagune de Marchica.", "location": "Front de Lagune" },
-  "card2": { "badge": "★ Hôtel Corniche", "name": "Hôtel Mercure Nador Rif", "desc": "Hôtel haut de gamme confortable directement sur la corniche avec des vues superbes sur la baie.", "location": "Corniche" },
-  "card3": { "badge": "★ Maison d'Hôtes", "name": "Riad Dar Nador", "desc": "Charmante maison d'hôtes traditionnelle offrant une hospitalité chaleureuse et des chambres calmes.", "location": "Centre-Ville" },
-  "card4": { "badge": "★ Séjour Moderne", "name": "Hôtel Rif Paradise", "desc": "Hôtel contemporain et bien équipé offrant un accès facile aux transports et attractions locales.", "location": "Centre-Ville" }
+    "badge": "Sélection & Conseils",
+    "title": "Où loger à Nador ? Nos coups de cœur",
+    "subtitle": "Resorts avec vue sur la lagune, résidences modernes et séjours côtiers accueillants à Nador.",
+    "book": "Réserver →",
+    "card1": {
+      "badge": "★ Resort de Luxe",
+      "name": "Marchica Lagoon Resort",
+      "desc": "Resort cinq étoiles exclusif surplombant directement les eaux pures de la lagune de Marchica.",
+      "location": "Front de Lagune"
+    },
+    "card2": {
+      "badge": "★ Hôtel Corniche",
+      "name": "Hôtel Mercure Nador Rif",
+      "desc": "Hôtel haut de gamme confortable directement sur la corniche avec des vues superbes sur la baie.",
+      "location": "Corniche"
+    },
+    "card3": {
+      "badge": "★ Maison d'Hôtes",
+      "name": "Riad Dar Nador",
+      "desc": "Charmante maison d'hôtes traditionnelle offrant une hospitalité chaleureuse et des chambres calmes.",
+      "location": "Centre-Ville"
+    },
+    "card4": {
+      "badge": "★ Séjour Moderne",
+      "name": "Hôtel Rif Paradise",
+      "desc": "Hôtel contemporain et bien équipé offrant un accès facile aux transports et attractions locales.",
+      "location": "Centre-Ville"
+    }
   },
   "booking_banner": {
     "badge": "Plus de 30 hébergements",
     "title": "Explorez tous les hébergements à Nador",
     "desc": "Comparez les tarifs en direct, lisez les avis vérifiés et découvrez d'autres resorts, appartements et hôtels à Nador sur Booking.com.",
-    "btn": "Voir tous les hôtels sur Booking.com",
+    "btn": "Voir tous les hébergements",
     "guarantee": "✓ Meilleur prix garanti et réservation sécurisée"
   },
   "itinerary": {
@@ -84,35 +136,102 @@
     "badge": "Gastronomie",
     "title": "Où manger à Nador",
     "subtitle": "Poissons frais, tables au bord de l'eau et plats simples en ville.",
-    "nomad": { "tag": "Port", "loc": "Beni Ansar", "title": "Poissons du port", "desc": "Pêche fraîche à proximité du port lors du retour des bateaux." },
-    "jardin": { "tag": "Hôtel", "loc": "Centre", "title": "Restaurants d'hôtels", "desc": "Options fiables si vous séjournez dans les grands établissements." },
-    "fassia": { "tag": "Café", "loc": "Centre", "title": "Pause café en ville", "desc": "Café et halte reposante entre deux visites." },
-    "moha": { "tag": "Fruits de mer", "loc": "Centre", "title": "Poissons du centre", "desc": "Poissons et salades au cœur de la ville entre deux balades." },
-    "bacha": { "tag": "Local", "loc": "Centre", "title": "Tables de quartier", "desc": "Plats simples appréciés par les résidents." },
-    "elfenn": { "tag": "Fruits de mer", "loc": "Corniche", "title": "Dîner de poissons en soirée", "desc": "Service tardif lorsque la corniche s'anime." }
+    "nomad": {
+      "tag": "Port",
+      "loc": "Beni Ansar",
+      "title": "Poissons du port",
+      "desc": "Pêche fraîche à proximité du port lors du retour des bateaux."
+    },
+    "jardin": {
+      "tag": "Hôtel",
+      "loc": "Centre",
+      "title": "Restaurants d'hôtels",
+      "desc": "Options fiables si vous séjournez dans les grands établissements."
+    },
+    "fassia": {
+      "tag": "Café",
+      "loc": "Centre",
+      "title": "Pause café en ville",
+      "desc": "Café et halte reposante entre deux visites."
+    },
+    "moha": {
+      "tag": "Fruits de mer",
+      "loc": "Centre",
+      "title": "Poissons du centre",
+      "desc": "Poissons et salades au cœur de la ville entre deux balades."
+    },
+    "bacha": {
+      "tag": "Local",
+      "loc": "Centre",
+      "title": "Tables de quartier",
+      "desc": "Plats simples appréciés par les résidents."
+    },
+    "elfenn": {
+      "tag": "Fruits de mer",
+      "loc": "Corniche",
+      "title": "Dîner de poissons en soirée",
+      "desc": "Service tardif lorsque la corniche s'anime."
+    }
   },
   "tips": {
     "title": "Conseils pratiques pour Nador",
-    "transport": { "title": "Se déplacer", "desc": "Le centre et la corniche se visitent à pied ; les plages et le Cap des Trois Fourches nécessitent une voiture ou un transfert. Beni Ansar est idéal pour les ferries. Négociez clairement le tarif des taxis." },
-    "bargain": { "title": "Soleil et saisons", "desc": "Le soleil méditerranéen est fort en été. Prévoyez de la crème solaire et de l'eau pour la lagune et les plages. Le printemps et l'automne sont parfaits pour le Gourougou." },
-    "water": { "title": "Monnaie et frontières", "desc": "Ayez des dirhams pour les taxis et les petits achats. Pour une excursion à Melilla, munissez-vous d'un passeport valide et vérifiez les horaires de la frontière." }
+    "transport": {
+      "title": "Se déplacer",
+      "desc": "Le centre et la corniche se visitent à pied ; les plages et le Cap des Trois Fourches nécessitent une voiture ou un transfert. Beni Ansar est idéal pour les ferries. Négociez clairement le tarif des taxis."
+    },
+    "bargain": {
+      "title": "Soleil et saisons",
+      "desc": "Le soleil méditerranéen est fort en été. Prévoyez de la crème solaire et de l'eau pour la lagune et les plages. Le printemps et l'automne sont parfaits pour le Gourougou."
+    },
+    "water": {
+      "title": "Monnaie et frontières",
+      "desc": "Ayez des dirhams pour les taxis et les petits achats. Pour une excursion à Melilla, munissez-vous d'un passeport valide et vérifiez les horaires de la frontière."
+    }
   },
   "daytrips": {
     "badge": "Aux alentours",
     "title": "Meilleures excursions depuis Nador",
     "subtitle": "Boucles de lagune, panoramas de montagne et côte méditerranéenne sauvage.",
-    "tiout": { "title": "Cap des Trois Fourches", "desc": "Demi-journée ou journée vers les falaises, les côtes sauvages et des points de vue grandioses." },
-    "antiatlas": { "title": "Mont Gourougou", "desc": "Courtes randonnées et superbes panoramas sur Nador, la lagune et Melilla par temps clair." },
-    "taliouine": { "title": "Charrana ou Ras El Ma", "desc": "Journée plage avec des eaux de baignade plus limpides qu'aux abords de la lagune intérieure." },
-    "agadir": { "title": "Melilla (journée passeport)", "desc": "Enclave espagnole de l'autre côté de la frontière — rues modernistes et contraste culturel." }
+    "tiout": {
+      "title": "Cap des Trois Fourches",
+      "desc": "Demi-journée ou journée vers les falaises, les côtes sauvages et des points de vue grandioses."
+    },
+    "antiatlas": {
+      "title": "Mont Gourougou",
+      "desc": "Courtes randonnées et superbes panoramas sur Nador, la lagune et Melilla par temps clair."
+    },
+    "taliouine": {
+      "title": "Charrana ou Ras El Ma",
+      "desc": "Journée plage avec des eaux de baignade plus limpides qu'aux abords de la lagune intérieure."
+    },
+    "agadir": {
+      "title": "Melilla (journée passeport)",
+      "desc": "Enclave espagnole de l'autre côté de la frontière — rues modernistes et contraste culturel."
+    }
   },
   "faq": {
     "badge": "Bon à savoir",
     "title": "FAQ sur Nador",
-    "q1": { "question": "Combien de jours à Nador ?", "answer": "Trois jours permettent de découvrir la lagune, la corniche et une excursion en montagne ou à la plage. Cinq jours conviennent pour explorer le Cap des Trois Fourches et Charrana à un rythme plus détendu." },
-    "q2": { "question": "Nador se résume-t-elle à sa lagune ?", "answer": "Marchica reste le paysage emblématique, mais le Gourougou, le Cap des Trois Fourches et les plages apportent une dimension montagneuse et côtière très riche." },
-    "q3": { "question": "Comment se rendre à Nador ?", "answer": "Vols vers l'aéroport de Nador-العروي (NDR), ferries via Beni Ansar, ou liaisons routières à travers le Rif. Melilla est adjacente pour des itinéraires transfrontaliers." },
-    "q4": { "question": "Quelle est la meilleure période ?", "answer": "De mai à octobre pour la baignade et les soirées sur la corniche. Le printemps et l'automne sont idéaux pour la randonnée et la clarté des paysages." }
+    "q1": {
+      "question": "Combien de jours à Nador ?",
+      "answer": "Trois jours permettent de découvrir la lagune, la corniche et une excursion en montagne ou à la plage. Cinq jours conviennent pour explorer le Cap des Trois Fourches et Charrana à un rythme plus détendu."
+    },
+    "q2": {
+      "question": "Nador se résume-t-elle à sa lagune ?",
+      "answer": "Marchica reste le paysage emblématique, mais le Gourougou, le Cap des Trois Fourches et les plages apportent une dimension montagneuse et côtière très riche."
+    },
+    "q3": {
+      "question": "Comment se rendre à Nador ?",
+      "answer": "Vols vers l'aéroport de Nador-العروي (NDR), ferries via Beni Ansar, ou liaisons routières à travers le Rif. Melilla est adjacente pour des itinéraires transfrontaliers."
+    },
+    "q4": {
+      "question": "Quelle est la meilleure période ?",
+      "answer": "De mai à octobre pour la baignade et les soirées sur la corniche. Le printemps et l'automne sont idéaux pour la randonnée et la clarté des paysages."
+    }
   },
-  "destinations": { "nador": { "name": "Nador" } }
+  "destinations": {
+    "nador": {
+      "name": "Nador"
+    }
+  }
 }

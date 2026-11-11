@@ -1,286 +1,342 @@
 {
-"seo": {
-"title": "Guía de Viaje de Tetuán 2026 | Medina Blanca, Rif y Mediterráneo | MoroccoTripMap",
-"description": "Planifica tu viaje a Tetuán: medina UNESCO, Plaza Hassan II, Alcazaba, museos, playa de Martil y directorio de alojamientos.",
-"keywords": "guia viaje tetuan, turismo tetuan, medina tetuan, alcazaba tetuan, museos tetuan, martil, riads tetuan, hoteles tetuan"
-},
-"name": "Tetuán",
-"hero_subtitle": "Medina blanca andalusí al pie del Rif — artesanía, museos y el Mediterráneo muy cerca.",
-"info": {
-"best_time_label": "Mejor época",
-"best_time_val": "Abril – Junio y Septiembre – Noviembre",
-"stay_label": "Estancia recomendada",
-"stay_val": "2 – 3 Días",
-"vibe_label": "Ambiente",
-"vibe_val": "Andalusí y Rifeño",
-"airport_label": "Aeropuerto cercano",
-"airport_val": "TTU / TNG"
-},
-"overview": {
-"title": "Tetuán: La Medina Blanca, la Plaza Hassan II y la ruta al mar",
-"p1": "Tetuán es la Paloma Blanca de memoria andalusí: puertas monumentales y una medina bellísima y fácil de recorrer en comparación con Fez. La Plaza Hassan II domina el centro, mientras que la Alcazaba demuestra la fuerza de la antigua fortaleza. Es el punto de partida perfecto para visitar Martil y Chauen.",
-"p2": "Dos días enteros permiten conocer la medina y el centro histórico; un tercer día es ideal para disfrutar de la costa en Martil o las montañas del Rif. Los alojamientos se concentran en la medina y el Ensanche."
-},
-"places": {
-"badge": "Imprescindibles",
-"title": "Lugares imperdibles en Tetuán",
-"subtitle": "Medina, plaza principal, alcazaba, museos y puntos clave del Norte.",
-"medina": {
-"tag": "UNESCO",
-"title": "Medina de Tetuán",
-"desc": "Callejuelas blancas de estilo andalusí, artesanía y vida cotidiana."
-},
-"hassan": {
-"tag": "Plaza",
-"title": "Plaza Hassan II",
-"desc": "El corazón abierto entre la medina y el Ensanche español."
-},
-"kasbah": {
-"tag": "Fortaleza",
-"title": "La Alcazaba",
-"desc": "Murallas y vistas panorámicas sobre los tejados blancos."
-},
-"arch": {
-"tag": "Museo",
-"title": "Museo Arqueológico",
-"desc": "Piezas romanas y locales en un museo muy interesante."
-},
-"art": {
-"tag": "Museo",
-"title": "Museo de Arte Moderno",
-"desc": "Arte contemporáneo marroquí en un entorno tranquilo."
-},
-"palace": {
-"tag": "Monumento",
-"title": "Palacio Real",
-"desc": "Fachada majestuosa y explanada oficial — solo exterior."
-},
-"mellah": {
-"tag": "Barrio",
-"title": "El Mellah",
-"desc": "Callejones del antiguo barrio judío lleno de historia."
-},
-"martil": {
-"tag": "Playa",
-"title": "Martil",
-"desc": "Pueblo costero mediterráneo a muy corta distancia."
-},
-"artisan": {
-"tag": "Artesanía",
-"title": "Barrio de Artesanos",
-"desc": "Talleres de cuero, textiles y oficios tradicionales."
-}
-},
-"directory": {
-"badge": "Directorio y Base de Datos",
-"title": "Encuentra tu alojamiento ideal en Tetuán",
-"subtitle": "Utiliza los filtros a continuación para ordenar instantáneamente los mejores lugares según tus criterios.",
-"filter_type_label": "Tipo de alojamiento",
-"type_all": "Todos",
-"type_hotel": "Hotel",
-"type_riad": "Riad",
-"type_guesthouse": "Casa de huéspedes",
-"filter_location_label": "Zona / Distrito:",
-"location_all": "Todas las zonas",
-"location_medina": "Medina",
-"location_ville": "Ensanche (Ville Nouvelle)",
-"location_walls": "Cerca de murallas / Vistas",
-"location_volubilis": "Martil / Costa",
-"district_label": "Zona",
-"type_label": "Tipo de estancia",
-"counter": "28 alojamientos listados",
-"counter_zero": "0 alojamientos encontrados",
-"counter_one": "1 alojamiento encontrado",
-"no_results": "Ningún alojamiento coincide con tus filtros.",
-"check_availability": "Ver disponibilidad →",
-"h1": { "desc": "Hotel-riad histórico en la calle Zawiya Kadiria, a pasos de la medina blanca." },
-"h2": { "desc": "Elegante riad en la medina con terraza en la azotea y excelente atención." },
-"h3": { "desc": "Pequeño riad muy bien valorado en lo más profundo de la medina." },
-"h4": { "desc": "Amplio riad con jardín y terraza, muy popular entre familias." },
-"h5": { "desc": "Casa auténtica en la medina con anfitriones locales y tours." },
-"h6": { "desc": "Riad de estilo andaluz con toques de spa en el casco antiguo." },
-"h7": { "desc": "Acogedor riad de cuatro habitaciones ideal como base en la medina." },
-"h8": { "desc": "Casa solariega del siglo XIX con decoración tradicional." },
-"h9": { "desc": "Estancia auténtica y sencilla en una animada calle de la medina." },
-"h10": { "desc": "Riad de medina altamente calificado cerca de los callejones de artesanos." },
-"h11": { "desc": "Riad en el área de Souika con opciones de spa y carácter local." },
-"h12": { "desc": "Hotel moderno y práctico en la avenida Moulay El Abbas." },
-"h13": { "desc": "Cómodo hotel urbano con vistas a las montañas y buen desayuno." },
-"h14": { "desc": "Hotel céntrico con opciones de spa y baño turco." },
-"h15": { "desc": "Base urbana directa cerca de autobuses y taxis." },
-"h16": { "desc": "Íntima casa en la medina en los callejones de Farrane Kouach." },
-"h17": { "desc": "Habitaciones de inspiración andaluza cerca de la Plaza Hassan II." },
-"h18": { "desc": "Vistas elevadas hacia el Rif en el límite de la ciudad." },
-"h19": { "desc": "Estancia orientada a la playa para una tarde en Martil tras la medina." },
-"h20": { "desc": "Opción costera al norte de Tetuán para días de mar." },
-"h21": { "desc": "Café-riad cultural en la calle Ramallah." },
-"h22": { "desc": "Hotel económico para paradas de una noche." },
-"h23": { "desc": "Pequeño riad en Souika para viajeros que priorizan las callejuelas." },
-"h24": { "desc": "Habitaciones modernas útiles para negocios o noches de tránsito." },
-"h25": { "desc": "Hotel urbano clásico cerca de tiendas y cafés." },
-"h26": { "desc": "Riad boutique en la medina con excelentes valoraciones." },
-"h27": { "desc": "Zona de la marina para piscinas y atardeceres mediterráneos." },
-"h28": { "desc": "Parada práctica si vuelas al pequeño aeropuerto de Tetuán." }
-},
-"stays": {
-"badge": "Selección y Consejos",
-"title": "¿Dónde alojarse en Tetuán? Nuestros favoritos",
-"subtitle": "Riads tradicionales en la medina y hoteles modernos y cómodos en la Paloma Blanca.",
-"book": "Reservar →",
-"card1": {
-"badge": "★ Riad Boutique",
-"name": "Hotel Blanco Riad",
-"desc": "Riad histórico a pocos pasos de la medina blanca, famoso por su cuidada arquitectura.",
-"location": "Medina"
-},
-"card2": {
-"badge": "★ Riad Histórico",
-"name": "El Reducto",
-"desc": "Elegante riad de estilo hispano-andaluz con azotea panorámica y excelente restaurante.",
-"location": "Puertas de la Medina"
-},
-"card3": {
-"badge": "★ Mejor Valorado",
-"name": "Riad El Sultan",
-"desc": "Casa de huéspedes íntima y tranquila situada en el corazón de la medina UNESCO.",
-"location": "Antigua Medina"
-},
-"card4": {
-"badge": "★ Hotel Moderno",
-"name": "AUREA Hotel Tetuán",
-"desc": "Hotel contemporáneo y confortable en el Ensanche con vistas a las montañas.",
-"location": "Ensanche / Ville Nouvelle"
-}
-},
-"booking_banner": {
-"badge": "Más de 50+ alojamientos",
-"title": "Explora todos los alojamientos en Tetuán",
-"desc": "Compara precios en tiempo real, lee opiniones verificadas y encuentra más riads y hoteles de playa en Martil en Booking.com.",
-"btn": "Ver todos los hoteles en Booking.com",
-"guarantee": "✓ Mejor precio garantizado y reserva segura"
-},
-"itinerary": {
-"badge": "Itinerario",
-"title": "Programa recomendado de 3 días",
-"subtitle": "Un calendario equilibrado para disfrutar de Tetuán sin prisas."
-},
-"detailed_itinerary": {
-"day1_tab": "Día 1 — Medina y Plaza",
-"day1_m": "Mañana — Plaza Hassan II y Medina",
-"day1_md": "Comienza en la Plaza Hassan II con la luz de la mañana y adéntrate en la medina blanca para ver trabajar a los artesanos.",
-"day1_a": "Tarde — Murallas de la Alcazaba",
-"day1_ad": "Sube a la Alcazaba para disfrutar de vistas hermosas sobre la ciudad y regresa por calles residenciales.",
-"day1_e": "Noche — Cena en el centro",
-"day1_ed": "Cena cerca de la plaza o en el Ensanche — las noches en Tetuán son muy tranquilas.",
-"day2_tab": "Día 2 — Museos y Mellah",
-"day2_m": "Mañana — Museo Arqueológico",
-"day2_md": "Visita el Museo Arqueológico y camina hacia la explanada exterior del Palacio Real.",
-"day2_a": "Tarde — Arte Moderno y Mellah",
-"day2_ad": "Descubre el Museo de Arte Moderno y pasea por el histórico barrio del Mellah.",
-"day2_e": "Noche — Noche relajada",
-"day2_ed": "Una cena tranquila en el centro para descansar antes de ir a la costa.",
-"day3_tab": "Día 3 — Martil o el Rif",
-"day3_m": "Mañana — Zocos artesanales",
-"day3_md": "Vuelve a recorrer tus rincones favoritos de la medina sin horario fijo.",
-"day3_a": "Tarde — Playa de Martil",
-"day3_ad": "Toma un taxi a Martil para respirar el aire del Mediterráneo y comer pescado junto al mar.",
-"day3_e": "Noche — Despedida",
-"day3_ed": "Un último paseo por la Plaza Hassan II antes de continuar tu viaje hacia Tánger o Chauen."
-},
-"eat": {
-"badge": "Dónde comer",
-"title": "Dónde comer en Tetuán",
-"subtitle": "Terrazas en la plaza, asadores de la medina y restaurantes en el Ensanche.",
-"placehedim": {
-"tag": "Plaza",
-"title": "Cafés de la Plaza Hassan II",
-"desc": "Té de menta y platos sencillos con vistas a la plaza al atardecer."
-},
-"medina_grill": {
-"tag": "Local",
-"title": "Puestos de pinchos en la Medina",
-"desc": "Pinchos morunos, pan fresco y aceitunas donde comen los locales."
-},
-"riad_restaurant": {
-"tag": "Riad",
-"title": "Restaurantes en patios de Riads",
-"desc": "Menús tradicionales en casas señoriales restauradas."
-},
-"ville_nouvelle": {
-"tag": "Moderno",
-"title": "Cafeterías del Ensanche",
-"desc": "Café, repostería y ambiente relajado en la zona moderna."
-},
-"rooftop": {
-"tag": "Vista",
-"title": "Azoteas panorámicas",
-"desc": "Terrazas para admirar la puesta de sol sobre los tejados blancos."
-},
-"local_tagine": {
-"tag": "Clásico",
-"title": "Casas de Tajín y Cuscús",
-"desc": "Guisos tradicionales preparados a fuego lento."
-}
-},
-"tips": {
-"title": "Consejos prácticos para visitar Tetuán",
-"transport": {
-"title": "Cómo moverse",
-"desc": "La medina y la Plaza Hassan II se recorren a pie. Pide taxi pequeño con taxímetro para ir a Martil o la Alcazaba."
-},
-"bargain": {
-"title": "Compras en la Medina",
-"desc": "Los zocos son tranquilos. El regateo amable es habitual en productos de artesanía."
-},
-"water": {
-"title": "Clima e hidratación",
-"desc": "En verano hace calor por la tarde. Visita la medina por la mañana y reserva los museos o la playa para la tarde."
-}
-},
-"daytrips": {
-"badge": "Excursiones",
-"title": "Las mejores excursiones desde Tetuán",
-"subtitle": "Excursiones de un día muy fáciles de realizar.",
-"volubilis_combo": {
-"title": "Excursión a Chauen",
-"desc": "La ciudad azul del Rif — excursión clásica de un día en taxi compartido o tour."
-},
-"fes": {
-"title": "Tánger",
-"desc": "A 1 hora por carretera — medina, cafés y el Estrecho de Gibraltar."
-},
-"rabat": {
-"title": "Frontera de Ceuta / Fnideq",
-"desc": "Zona comercial y ambiente fronterizo al norte."
-},
-"azrou": {
-"title": "Martil y la Costa",
-"desc": "Disfruta de la playa mediterránea a pocos minutos de Tetuán."
-}
-},
-"faq": {
-"badge": "Bueno saber",
-"title": "Preguntas frecuentes sobre Tetuán",
-"q1": {
-"question": "¿Cuántos días pasar en Tetuán?",
-"answer": "2 días completos son ideales para lo principal. Con 3 o 4 días podrás visitar Chauen o Tánger."
-},
-"q2": {
-"question": "¿Es Tetuán una ciudad segura?",
-"answer": "Sí, Tetuán es muy segura y tranquila. Aplica las precauciones habituales de viaje."
-},
-"q3": {
-"question": "¿Qué moneda se usa y se puede pagar con tarjeta?",
-"answer": "La moneda es el Dírham (MAD). Las tarjetas se aceptan en hoteles, pero lleva efectivo para pequeños comercios y taxis."
-},
-"q4": {
-"question": "¿Cómo llegar a Tetuán desde Tánger?",
-"answer": "Hay taxis grandes y traslados privados que conectan Tánger con Tetuán en 1 hora. Tetuán cuenta con el aeropuerto Sania Ramel."
-}
-},
-"destinations": {
-"tetouan": {
-"name": "Tetuán"
-}
-}
+  "seo": {
+    "title": "Guía de Viaje de Tetuán 2026 | Medina Blanca, Rif y Mediterráneo | MoroccoTripMap",
+    "description": "Planifica tu viaje a Tetuán: medina UNESCO, Plaza Hassan II, Alcazaba, museos, playa de Martil y directorio de alojamientos.",
+    "keywords": "guia viaje tetuan, turismo tetuan, medina tetuan, alcazaba tetuan, museos tetuan, martil, riads tetuan, hoteles tetuan"
+  },
+  "name": "Tetuán",
+  "hero_subtitle": "Medina blanca andalusí al pie del Rif — artesanía, museos y el Mediterráneo muy cerca.",
+  "info": {
+    "best_time_label": "Mejor época",
+    "best_time_val": "Abril – Junio y Septiembre – Noviembre",
+    "stay_label": "Estancia recomendada",
+    "stay_val": "2 – 3 Días",
+    "vibe_label": "Ambiente",
+    "vibe_val": "Andalusí y Rifeño",
+    "airport_label": "Aeropuerto cercano",
+    "airport_val": "TTU / TNG"
+  },
+  "overview": {
+    "title": "Tetuán: La Medina Blanca, la Plaza Hassan II y la ruta al mar",
+    "p1": "Tetuán es la Paloma Blanca de memoria andalusí: puertas monumentales y una medina bellísima y fácil de recorrer en comparación con Fez. La Plaza Hassan II domina el centro, mientras que la Alcazaba demuestra la fuerza de la antigua fortaleza. Es el punto de partida perfecto para visitar Martil y Chauen.",
+    "p2": "Dos días enteros permiten conocer la medina y el centro histórico; un tercer día es ideal para disfrutar de la costa en Martil o las montañas del Rif. Los alojamientos se concentran en la medina y el Ensanche."
+  },
+  "places": {
+    "badge": "Imprescindibles",
+    "title": "Lugares imperdibles en Tetuán",
+    "subtitle": "Medina, plaza principal, alcazaba, museos y puntos clave del Norte.",
+    "medina": {
+      "tag": "UNESCO",
+      "title": "Medina de Tetuán",
+      "desc": "Callejuelas blancas de estilo andalusí, artesanía y vida cotidiana."
+    },
+    "hassan": {
+      "tag": "Plaza",
+      "title": "Plaza Hassan II",
+      "desc": "El corazón abierto entre la medina y el Ensanche español."
+    },
+    "kasbah": {
+      "tag": "Fortaleza",
+      "title": "La Alcazaba",
+      "desc": "Murallas y vistas panorámicas sobre los tejados blancos."
+    },
+    "arch": {
+      "tag": "Museo",
+      "title": "Museo Arqueológico",
+      "desc": "Piezas romanas y locales en un museo muy interesante."
+    },
+    "art": {
+      "tag": "Museo",
+      "title": "Museo de Arte Moderno",
+      "desc": "Arte contemporáneo marroquí en un entorno tranquilo."
+    },
+    "palace": {
+      "tag": "Monumento",
+      "title": "Palacio Real",
+      "desc": "Fachada majestuosa y explanada oficial — solo exterior."
+    },
+    "mellah": {
+      "tag": "Barrio",
+      "title": "El Mellah",
+      "desc": "Callejones del antiguo barrio judío lleno de historia."
+    },
+    "martil": {
+      "tag": "Playa",
+      "title": "Martil",
+      "desc": "Pueblo costero mediterráneo a muy corta distancia."
+    },
+    "artisan": {
+      "tag": "Artesanía",
+      "title": "Barrio de Artesanos",
+      "desc": "Talleres de cuero, textiles y oficios tradicionales."
+    }
+  },
+  "directory": {
+    "badge": "Directorio y Base de Datos",
+    "title": "Encuentra tu alojamiento ideal en Tetuán",
+    "subtitle": "Utiliza los filtros a continuación para ordenar instantáneamente los mejores lugares según tus criterios.",
+    "filter_type_label": "Tipo de alojamiento",
+    "type_all": "Todos",
+    "type_hotel": "Hotel",
+    "type_riad": "Riad",
+    "type_guesthouse": "Casa de huéspedes",
+    "filter_location_label": "Zona / Distrito:",
+    "location_all": "Todas las zonas",
+    "location_medina": "Medina",
+    "location_ville": "Ensanche (Ville Nouvelle)",
+    "location_walls": "Cerca de murallas / Vistas",
+    "location_volubilis": "Martil / Costa",
+    "district_label": "Zona",
+    "type_label": "Tipo de estancia",
+    "counter": "28 alojamientos listados",
+    "counter_zero": "0 alojamientos encontrados",
+    "counter_one": "1 alojamiento encontrado",
+    "no_results": "Ningún alojamiento coincide con tus filtros.",
+    "check_availability": "Ver disponibilidad →",
+    "h1": {
+      "desc": "Hotel-riad histórico en la calle Zawiya Kadiria, a pasos de la medina blanca."
+    },
+    "h2": {
+      "desc": "Elegante riad en la medina con terraza en la azotea y excelente atención."
+    },
+    "h3": {
+      "desc": "Pequeño riad muy bien valorado en lo más profundo de la medina."
+    },
+    "h4": {
+      "desc": "Amplio riad con jardín y terraza, muy popular entre familias."
+    },
+    "h5": {
+      "desc": "Casa auténtica en la medina con anfitriones locales y tours."
+    },
+    "h6": {
+      "desc": "Riad de estilo andaluz con toques de spa en el casco antiguo."
+    },
+    "h7": {
+      "desc": "Acogedor riad de cuatro habitaciones ideal como base en la medina."
+    },
+    "h8": {
+      "desc": "Casa solariega del siglo XIX con decoración tradicional."
+    },
+    "h9": {
+      "desc": "Estancia auténtica y sencilla en una animada calle de la medina."
+    },
+    "h10": {
+      "desc": "Riad de medina altamente calificado cerca de los callejones de artesanos."
+    },
+    "h11": {
+      "desc": "Riad en el área de Souika con opciones de spa y carácter local."
+    },
+    "h12": {
+      "desc": "Hotel moderno y práctico en la avenida Moulay El Abbas."
+    },
+    "h13": {
+      "desc": "Cómodo hotel urbano con vistas a las montañas y buen desayuno."
+    },
+    "h14": {
+      "desc": "Hotel céntrico con opciones de spa y baño turco."
+    },
+    "h15": {
+      "desc": "Base urbana directa cerca de autobuses y taxis."
+    },
+    "h16": {
+      "desc": "Íntima casa en la medina en los callejones de Farrane Kouach."
+    },
+    "h17": {
+      "desc": "Habitaciones de inspiración andaluza cerca de la Plaza Hassan II."
+    },
+    "h18": {
+      "desc": "Vistas elevadas hacia el Rif en el límite de la ciudad."
+    },
+    "h19": {
+      "desc": "Estancia orientada a la playa para una tarde en Martil tras la medina."
+    },
+    "h20": {
+      "desc": "Opción costera al norte de Tetuán para días de mar."
+    },
+    "h21": {
+      "desc": "Café-riad cultural en la calle Ramallah."
+    },
+    "h22": {
+      "desc": "Hotel económico para paradas de una noche."
+    },
+    "h23": {
+      "desc": "Pequeño riad en Souika para viajeros que priorizan las callejuelas."
+    },
+    "h24": {
+      "desc": "Habitaciones modernas útiles para negocios o noches de tránsito."
+    },
+    "h25": {
+      "desc": "Hotel urbano clásico cerca de tiendas y cafés."
+    },
+    "h26": {
+      "desc": "Riad boutique en la medina con excelentes valoraciones."
+    },
+    "h27": {
+      "desc": "Zona de la marina para piscinas y atardeceres mediterráneos."
+    },
+    "h28": {
+      "desc": "Parada práctica si vuelas al pequeño aeropuerto de Tetuán."
+    }
+  },
+  "stays": {
+    "badge": "Selección y Consejos",
+    "title": "¿Dónde alojarse en Tetuán? Nuestros favoritos",
+    "subtitle": "Riads tradicionales en la medina y hoteles modernos y cómodos en la Paloma Blanca.",
+    "book": "Reservar →",
+    "card1": {
+      "badge": "★ Riad Boutique",
+      "name": "Hotel Blanco Riad",
+      "desc": "Riad histórico a pocos pasos de la medina blanca, famoso por su cuidada arquitectura.",
+      "location": "Medina"
+    },
+    "card2": {
+      "badge": "★ Riad Histórico",
+      "name": "El Reducto",
+      "desc": "Elegante riad de estilo hispano-andaluz con azotea panorámica y excelente restaurante.",
+      "location": "Puertas de la Medina"
+    },
+    "card3": {
+      "badge": "★ Mejor Valorado",
+      "name": "Riad El Sultan",
+      "desc": "Casa de huéspedes íntima y tranquila situada en el corazón de la medina UNESCO.",
+      "location": "Antigua Medina"
+    },
+    "card4": {
+      "badge": "★ Hotel Moderno",
+      "name": "AUREA Hotel Tetuán",
+      "desc": "Hotel contemporáneo y confortable en el Ensanche con vistas a las montañas.",
+      "location": "Ensanche / Ville Nouvelle"
+    }
+  },
+  "booking_banner": {
+    "badge": "Más de 50+ alojamientos",
+    "title": "Explora todos los alojamientos en Tetuán",
+    "desc": "Ver todos los alojamientos",
+    "btn": "Ver todos los alojamientos",
+    "guarantee": "✓ Mejor precio garantizado y reserva segura"
+  },
+  "itinerary": {
+    "badge": "Itinerario",
+    "title": "Programa recomendado de 3 días",
+    "subtitle": "Un calendario equilibrado para disfrutar de Tetuán sin prisas."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Día 1 — Medina y Plaza",
+    "day1_m": "Mañana — Plaza Hassan II y Medina",
+    "day1_md": "Comienza en la Plaza Hassan II con la luz de la mañana y adéntrate en la medina blanca para ver trabajar a los artesanos.",
+    "day1_a": "Tarde — Murallas de la Alcazaba",
+    "day1_ad": "Sube a la Alcazaba para disfrutar de vistas hermosas sobre la ciudad y regresa por calles residenciales.",
+    "day1_e": "Noche — Cena en el centro",
+    "day1_ed": "Cena cerca de la plaza o en el Ensanche — las noches en Tetuán son muy tranquilas.",
+    "day2_tab": "Día 2 — Museos y Mellah",
+    "day2_m": "Mañana — Museo Arqueológico",
+    "day2_md": "Visita el Museo Arqueológico y camina hacia la explanada exterior del Palacio Real.",
+    "day2_a": "Tarde — Arte Moderno y Mellah",
+    "day2_ad": "Descubre el Museo de Arte Moderno y pasea por el histórico barrio del Mellah.",
+    "day2_e": "Noche — Noche relajada",
+    "day2_ed": "Una cena tranquila en el centro para descansar antes de ir a la costa.",
+    "day3_tab": "Día 3 — Martil o el Rif",
+    "day3_m": "Mañana — Zocos artesanales",
+    "day3_md": "Vuelve a recorrer tus rincones favoritos de la medina sin horario fijo.",
+    "day3_a": "Tarde — Playa de Martil",
+    "day3_ad": "Toma un taxi a Martil para respirar el aire del Mediterráneo y comer pescado junto al mar.",
+    "day3_e": "Noche — Despedida",
+    "day3_ed": "Un último paseo por la Plaza Hassan II antes de continuar tu viaje hacia Tánger o Chauen."
+  },
+  "eat": {
+    "badge": "Dónde comer",
+    "title": "Dónde comer en Tetuán",
+    "subtitle": "Terrazas en la plaza, asadores de la medina y restaurantes en el Ensanche.",
+    "placehedim": {
+      "tag": "Plaza",
+      "title": "Cafés de la Plaza Hassan II",
+      "desc": "Té de menta y platos sencillos con vistas a la plaza al atardecer."
+    },
+    "medina_grill": {
+      "tag": "Local",
+      "title": "Puestos de pinchos en la Medina",
+      "desc": "Pinchos morunos, pan fresco y aceitunas donde comen los locales."
+    },
+    "riad_restaurant": {
+      "tag": "Riad",
+      "title": "Restaurantes en patios de Riads",
+      "desc": "Menús tradicionales en casas señoriales restauradas."
+    },
+    "ville_nouvelle": {
+      "tag": "Moderno",
+      "title": "Cafeterías del Ensanche",
+      "desc": "Café, repostería y ambiente relajado en la zona moderna."
+    },
+    "rooftop": {
+      "tag": "Vista",
+      "title": "Azoteas panorámicas",
+      "desc": "Terrazas para admirar la puesta de sol sobre los tejados blancos."
+    },
+    "local_tagine": {
+      "tag": "Clásico",
+      "title": "Casas de Tajín y Cuscús",
+      "desc": "Guisos tradicionales preparados a fuego lento."
+    }
+  },
+  "tips": {
+    "title": "Consejos prácticos para visitar Tetuán",
+    "transport": {
+      "title": "Cómo moverse",
+      "desc": "La medina y la Plaza Hassan II se recorren a pie. Pide taxi pequeño con taxímetro para ir a Martil o la Alcazaba."
+    },
+    "bargain": {
+      "title": "Compras en la Medina",
+      "desc": "Los zocos son tranquilos. El regateo amable es habitual en productos de artesanía."
+    },
+    "water": {
+      "title": "Clima e hidratación",
+      "desc": "En verano hace calor por la tarde. Visita la medina por la mañana y reserva los museos o la playa para la tarde."
+    }
+  },
+  "daytrips": {
+    "badge": "Excursiones",
+    "title": "Las mejores excursiones desde Tetuán",
+    "subtitle": "Excursiones de un día muy fáciles de realizar.",
+    "volubilis_combo": {
+      "title": "Excursión a Chauen",
+      "desc": "La ciudad azul del Rif — excursión clásica de un día en taxi compartido o tour."
+    },
+    "fes": {
+      "title": "Tánger",
+      "desc": "A 1 hora por carretera — medina, cafés y el Estrecho de Gibraltar."
+    },
+    "rabat": {
+      "title": "Frontera de Ceuta / Fnideq",
+      "desc": "Zona comercial y ambiente fronterizo al norte."
+    },
+    "azrou": {
+      "title": "Martil y la Costa",
+      "desc": "Disfruta de la playa mediterránea a pocos minutos de Tetuán."
+    }
+  },
+  "faq": {
+    "badge": "Bueno saber",
+    "title": "Preguntas frecuentes sobre Tetuán",
+    "q1": {
+      "question": "¿Cuántos días pasar en Tetuán?",
+      "answer": "2 días completos son ideales para lo principal. Con 3 o 4 días podrás visitar Chauen o Tánger."
+    },
+    "q2": {
+      "question": "¿Es Tetuán una ciudad segura?",
+      "answer": "Sí, Tetuán es muy segura y tranquila. Aplica las precauciones habituales de viaje."
+    },
+    "q3": {
+      "question": "¿Qué moneda se usa y se puede pagar con tarjeta?",
+      "answer": "La moneda es el Dírham (MAD). Las tarjetas se aceptan en hoteles, pero lleva efectivo para pequeños comercios y taxis."
+    },
+    "q4": {
+      "question": "¿Cómo llegar a Tetuán desde Tánger?",
+      "answer": "Hay taxis grandes y traslados privados que conectan Tánger con Tetuán en 1 hora. Tetuán cuenta con el aeropuerto Sania Ramel."
+    }
+  },
+  "destinations": {
+    "tetouan": {
+      "name": "Tetuán"
+    }
+  }
 }

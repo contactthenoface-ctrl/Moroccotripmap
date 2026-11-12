@@ -55,7 +55,6 @@
  </script>
 
  <!-- Tailwind CSS CDN -->
- 
  <script>
  tailwind.config = {
  theme: {
@@ -259,7 +258,7 @@
  <main class="flex-grow">
  <!-- Hero Section -->
  <div class="relative h-[400px] sm:h-[480px] lg:h-[520px] flex items-end">
- <img alt="Rabat kasbah and Hassan Tower skyline" class="absolute inset-0 w-full h-full object-cover" src="images/rabat/hero.webp"
+ <img alt="Rabat kasbah and Hassan Tower skyline" class="absolute inset-0 w-full h-full object-cover" src="images/rabat/hero.webp" loading="eager" />
  <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
  <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
@@ -426,7 +425,7 @@
           </div>
 </section>
 
-           <!-- ==========================================
+        <!-- ==========================================
              ACCOMMODATION HYBRID SECTION: FEATURED PICKS + BOOKING BANNER
              ========================================== -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -438,132 +437,89 @@
                     <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="rabat_page.stays.title">Where to stay in Rabat? Our Favorites</h2>
                 </div>
                 <p class="text-sm text-sombre/70 max-w-md" data-i18n="rabat_page.stays.subtitle">
-                    Charming medina riads, luxury hotels in Hassan, and modern apartments in Agdal.
+                    Hotels near Hassan Tower and the Kasbah, a practical Agdal base, and a medina riad.
                 </p>
             </div>
 
             <!-- Featured Highlights Grid (4 Handpicked Stays) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-                
-                <!-- Pick 1: Riad Dar Nouzha -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="images/rabat/hotel-dar-nouzha.webp" alt="Riad Dar Nouzha" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.stays.card1.badge">
-                            ★ Traditional Riad
-                        </span>
-                    </div>
-                    <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="rabat_page.stays.card1.name">Riad Dar Nouzha</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="rabat_page.stays.card1.desc">
-                            Charming sanctuary inside the old medina offering authentic Moroccan hospitality.
-                        </p>
-                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="rabat_page.stays.card1.location">Old Medina</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Rabat" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="rabat_page.stays.book">
-                                Book Now →
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Pick 2: Hotel Tour Hassan -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
                         <img src="images/rabat/hotel-tour-hassan.webp" alt="Hotel Tour Hassan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.stays.card2.badge">
-                            ★ Prestige Hotel
-                        </span>
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.stays.card1.badge">★ Landmark hotel</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="rabat_page.stays.card2.name">Hotel Tour Hassan</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="rabat_page.stays.card2.desc">
-                            Luxury stay featuring Moorish architecture, located near key historical monuments.
-                        </p>
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="rabat_page.stays.card1.name">Hotel Tour Hassan</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="rabat_page.stays.card1.desc">Classic address near Hassan Tower and the administrative centre — polished rooms and a central base for monuments.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="rabat_page.stays.card2.location">Hassan District</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Tour+Hassan+Rabat" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="rabat_page.stays.book">
-                                Book Now →
-                            </a>
+                            <span class="text-xs font-bold text-vert" data-i18n="rabat_page.stays.card1.location">Hassan / Centre</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Tour+Hassan+Rabat" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="rabat_page.stays.book">Book now →</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pick 3: Oudayas Residence -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/rabat/hotel-oudayas.webp" alt="Oudayas Residence" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.stays.card3.badge">
-                            ★ Boutique Hotel
-                        </span>
+                        <img src="images/rabat/hotel-oudaias.webp" alt="Hotel Oudaïas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.stays.card2.badge">★ Kasbah views</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="rabat_page.stays.card3.name">Oudayas Residence</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="rabat_page.stays.card3.desc">
-                            Offers sweeping views over the Bouregreg river mouth and the Kasbah with modern comfort.
-                        </p>
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="rabat_page.stays.card2.name">Hotel Oudaïas</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="rabat_page.stays.card2.desc">Stay with easy access to the Kasbah of the Udayas and Bouregreg views — practical for the historic shore.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="rabat_page.stays.card3.location">Udayas Area</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Oudayas+Rabat" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="rabat_page.stays.book">
-                                Book Now →
-                            </a>
+                            <span class="text-xs font-bold text-vert" data-i18n="rabat_page.stays.card2.location">Udayas area</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Oudaias+Rabat" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="rabat_page.stays.book">Book now →</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pick 4: Agdal Suites -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/rabat/hotel-agdal.webp" alt="Agdal Suites" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.stays.card4.badge">
-                            ★ Modern Aparthotel
-                        </span>
+                        <img src="images/rabat/hotel-agdotel.webp" alt="Agdotel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.stays.card3.badge">★ Modern base</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="rabat_page.stays.card4.name">Agdal Suites</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="rabat_page.stays.card4.desc">
-                            Contemporary options in lively Agdal district, close to shopping, dining, and the train station.
-                        </p>
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="rabat_page.stays.card3.name">Agdotel</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="rabat_page.stays.card3.desc">Modern hotel in the Agdal district — cafés, shops and train connections nearby for a city-stay rhythm.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="rabat_page.stays.card4.location">Agdal District</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Agdal+Rabat" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="rabat_page.stays.book">
-                                Book Now →
-                            </a>
+                            <span class="text-xs font-bold text-vert" data-i18n="rabat_page.stays.card3.location">Agdal</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Agdotel+Rabat" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="rabat_page.stays.book">Book now →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/rabat/hotel-dar-al-manzah.webp" alt="Riad Dar Al Manzah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="rabat_page.stays.card4.badge">★ Traditional riad</span>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="rabat_page.stays.card4.name">Riad Dar Al Manzah</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="rabat_page.stays.card4.desc">Charming riad inside the medina walls with authentic Moroccan hospitality and a quiet atmosphere.</p>
+                        <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
+                            <span class="text-xs font-bold text-vert" data-i18n="rabat_page.stays.card4.location">Medina</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Al+Manzah+Rabat" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="rabat_page.stays.book">Book now →</a>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <!-- BOOKING REDIRECTION BANNER TO EXPAND SEARCH -->
-            <div class="bg-gradient-to-br from-vert to-[#0e3823] text-creme rounded-3xl p-8 sm:p-10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
-                
+            <!-- Booking Banner -->
+            <div class="relative bg-vert rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6 overflow-hidden shadow-lg">
                 <div class="max-w-xl text-start z-10">
-                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="rabat_page.booking_banner.badge">
-                        Over 120+ Accommodations
-                    </span>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="rabat_page.booking_banner.title">
-                        Explore All Places to Stay in Rabat
-                    </h3>
-                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="rabat_page.booking_banner.desc">
-                        Compare real-time rates, read verified guest reviews, and discover more riads and hotels on Booking.com.
-                    </p>
+                    <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="rabat_page.booking_banner.badge">Over 120+ Accommodations</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 leading-tight" data-i18n="rabat_page.booking_banner.title">Explore All Places to Stay in Rabat</h3>
+                    <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="rabat_page.booking_banner.desc">Compare real-time rates, read verified guest reviews, and discover more riads and hotels.</p>
                 </div>
-
                 <div class="w-full md:w-auto shrink-0 z-10 text-center">
-                    <a href="https://www.booking.com/city/ma/rabat.html" 
-                       target="_blank" 
-                       rel="noopener sponsored" 
-                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
+                    <a href="https://www.booking.com/city/ma/rabat.html" target="_blank" rel="noopener sponsored" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-sable hover:bg-[#b08a52] text-sombre font-bold text-base px-7 py-3.5 rounded-2xl shadow-md transition duration-200 transform hover:-translate-y-0.5">
                        <span data-i18n="rabat_page.booking_banner.btn">View All Stays</span>
-                       <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                       </svg>
+                       <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                     </a>
                     <p class="text-[11px] text-creme/60 mt-2" data-i18n="rabat_page.booking_banner.guarantee">✓ Best price guaranteed &amp; secure booking</p>
                 </div>
-
-                <!-- Decorative Background Glow -->
                 <div class="absolute -right-12 -bottom-12 w-56 h-56 bg-sable/10 rounded-full blur-2xl pointer-events-none"></div>
             </div>
 
@@ -576,143 +532,112 @@
  <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="rabat_page.eat.badge">Food</span>
  <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="rabat_page.eat.title">Where to eat in Rabat</h2>
  </div>
- <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="rabat_page.eat.subtitle">Seafood on the town, towns and simple grills near the souk.</p>
+ <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="rabat_page.eat.subtitle">Medina tajines, Kasbah tea, family tables and Atlantic seafood — capital classics.</p>
  </div>
 
  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
- 
- <!-- 1. Restaurant Roudani -->
+
+ <!-- 1. Dinarjat -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/rabat/restaurant-local.webp" alt="Restaurant Roudani" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.4</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/rabat/restau-dinarjat.webp" alt="Restaurant Dinarjat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.dinarjat.tag">Seafood</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.dinarjat.loc">Square</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.dinarjat.tag">Moroccan</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.dinarjat.loc">Medina</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.dinarjat.title">Square tables</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.dinarjat.desc">Fish and seafood with harbour views.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.dinarjat.title">Restaurant Dinarjat</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.dinarjat.desc">Elegant traditional Moroccan dining in a restored medina house — tajines, pastilla and a classic Rabat address.</p>
  </div>
  </div>
  </a>
 
- <!-- 2. Le Jardin -->
+ <!-- 2. L'Imprévu -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/rabat/restau-jardin.webp" alt="Le Jardin Rabat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.3</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/rabat/restau-imprevu.webp" alt="L'Imprévu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.imprevu.tag">Café</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.imprevu.loc">town</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.imprevu.tag">Contemporary</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.imprevu.loc">Centre</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.imprevu.title">town cafés</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.imprevu.desc">Casual drinks and snacks along the promenade.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.imprevu.title">L'Imprévu</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.imprevu.desc">Popular city-centre tables with a mixed menu — reliable stop between museums and the medina.</p>
  </div>
  </div>
  </a>
 
- <!-- 3. Al Jardin Rabat -->
+ <!-- 3. Dar Naji -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/rabat/restau-al-jardin.webp" alt="Al Jardin Rabat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/rabat/restau-dar-naji.webp" alt="Dar Naji" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.naji.tag">Hotel</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.naji.loc">town</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.naji.tag">Family</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.naji.loc">Medina</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.naji.title">Hotel restaurants</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.naji.desc">Reliable options on the seafront strip.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.naji.title">Dar Naji</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.naji.desc">Lively, generous Moroccan plates — tajines, salads and a family-friendly atmosphere locals recommend.</p>
  </div>
  </div>
  </a>
 
- <!-- 4.  -->
+ <!-- 4. Le Goéland -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/rabat/restau-grills.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/rabat/restau-goeland.webp" alt="Le Goéland" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.goeland.tag">Grill</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.goeland.loc">Souk</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.goeland.tag">Seafood</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.goeland.loc">Coast</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.goeland.title">Simple grills</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.goeland.desc">Everyday Moroccan plates near Souk El Had.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.goeland.title">Le Goéland</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.goeland.desc">Atlantic fish and seafood near the water — a Rabat classic for grilled catch and simple plates.</p>
  </div>
  </div>
  </a>
 
- <!-- 5. Café Rabat -->
+ <!-- 5. Dar Zaki -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/rabat/restau-cafe.webp" alt="Café Rabat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.6</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/rabat/restau-dar-zaki.webp" alt="Dar Zaki" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.tour.tag">Seafood</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.tour.loc">Port</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.ty.tag">Medina</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.ty.loc">Medina</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.tour.title">Port catch</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.tour.desc">Fresh fish when the boats are in.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.ty.title">Dar Zaki</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.ty.desc">Cosy medina house for home-style couscous and tajines — casual, warm and easy for families.</p>
  </div>
  </div>
  </a>
 
- <!-- 6. Villa Atlantique -->
+ <!-- 6. Café Maure -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/rabat/restau-villa.webp" alt="Villa Atlantique" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/rabat/restau-cafe-maure.webp" alt="Café Maure" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.maure.tag">Local</span>
- <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.maure.loc">Centre</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="rabat_page.eat.maure.tag">Café</span>
+ <span class="text-xs text-gray-400" data-i18n="rabat_page.eat.maure.loc">Kasbah Oudayas</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.maure.title">City centre</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.maure.desc">Cafés and tagines away from the town crowds.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="rabat_page.eat.maure.title">Café Maure</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="rabat_page.eat.maure.desc">Iconic mint tea and pastries on the Kasbah terraces with views over the river — a must stop.</p>
  </div>
  </div>
  </a>
-
  </div>
  </section>
 
@@ -744,40 +669,40 @@
  </div>
  </section>
 
- <!-- Day Trips from Rabat -->
+<!-- Day trips -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
  <div class="mb-8">
- <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="rabat_page.daytrips.badge">Beyond the walls</span>
+ <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="rabat_page.daytrips.badge">Day trips</span>
  <h2 class="text-3xl font-bold text-vert" data-i18n="rabat_page.daytrips.title">Day trips from Rabat</h2>
- <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="rabat_page.daytrips.subtitle">Palm oasis, Bouregreg countryside and roads toward the Anti-Atlas.</p>
+ <p class="text-sm text-sombre/70 mt-1 max-w-xl" data-i18n="rabat_page.daytrips.subtitle">Across the Bouregreg, along the coast or inland from the capital.</p>
  </div>
  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
  <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Palmeraie de Chellah" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/tioute/tioute-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
+ <img alt="Salé" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/rabat/sale.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.sale.title">Palmeraie de Chellah</h3>
- <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.sale.desc">Palm oasis and village about 30–45 minutes south of town.</p>
+ <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.sale.name">Salé</h3>
+ <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.sale.desc">Medina and beach just across the Bouregreg — tram or boat.</p>
  </div></div>
  <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Bouregreg countryside" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/sale/souss-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
+ <img alt="Casablanca" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/rabat/casa.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.sale.title">Salé</h3>
- <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.sale.desc">Medina and beach just across the Bouregreg — tram or boat. Rabat on short rural drives.</p>
+ <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.casa.name">Casablanca</h3>
+ <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.casa.desc">About an hour by train — Hassan II Mosque and corniche.</p>
  </div></div>
  <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Anti-Atlas foothills" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/anti-atlas/anti-atlas-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
+ <img alt="Kenitra and Mehdia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/rabat/kenitra.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
- <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.casa.title">Toward the Anti-Atlas</h3>
- <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.casa.desc">Mountain roads south for travellers continuing deeper into the Bouregreg hinterland.</p>
+ <h3 class="text-base font-bold" data-i18n="rabat_page.daytrips.kenitra.name">Kenitra &amp; Mehdia</h3>
+ <p class="text-xs text-white/80 mt-1" data-i18n="rabat_page.daytrips.kenitra.desc">Coast and lagoon north of the capital.</p>
  </div></div>
  </div>
 </section>
 
- <!-- FAQ -->
- <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
+<!-- FAQ -->
+<section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-sable/10">
  <div class="mb-8 text-center">
  <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="rabat_page.faq.badge">Good to know</span>
  <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="rabat_page.faq.title">FAQ about Rabat</h2>
@@ -870,7 +795,6 @@
  tabContents[i].classList.remove("active");
  }
 
- 
  var tabBtns = document.getElementsByClassName("tab-btn");
  for (var i = 0; i < tabBtns.length; i++) {
  tabBtns[i].classList.remove("active");
@@ -878,8 +802,6 @@
  document.getElementById(dayId).classList.add("active");
  evt.currentTarget.classList.add("active");
  }
-
- 
 
  function toggleMobileCategories() {
  const dropdown = document.getElementById('mobile-categories-dropdown');
@@ -1006,13 +928,13 @@ function formatAccommodationCount(n, el) {
  return map[lang] || map.en;
 }
 </script>
+  
     <!-- Bouton Retour en haut -->
     <button id="scrollToTopBtn" aria-label="Retour en haut" class="fixed bottom-6 right-6 z-50 hidden bg-sable/60 hover:bg-sable text-vert p-3 rounded-full shadow-lg backdrop-blur-md transition-all duration-300 transform hover:scale-105">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
         </svg>
     </button>
-
     <script>
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
@@ -1031,6 +953,5 @@ function formatAccommodationCount(n, el) {
             });
         });
     </script>
-
 </body>
 </html>

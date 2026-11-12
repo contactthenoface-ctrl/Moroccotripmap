@@ -6,21 +6,6 @@
 - [ ] Configurer le domaine personnalisé dans Settings > Pages
 - [ ] Ajouter le site à Google Search Console
 - [ ] Ajoute un article de blog sur Taghazout skatepark > https://www.instagram.com/taghazout_skatepark?stkn=YXVodXRyd3BzbWNw
-- [ ] Les stades maroc de 2030
-- [ ] ajouter des articles de blog en s'inspirant de booking et tripadvisor.
-- [ ] les trésors cachés du maroc
-- [ ] les autres villes non rédigées, à mettres dans des articles de blog : Mly Bousselham, Ksar El Kebir, Kenitra.
-- [ ] Koukh Sed Smir
-- [ ] Ourika City Fadma Blog article
-- [ ] Souk Semmarine blog article
-- [ ] Musée marrakech blog article
-- [ ] Kova Almravides قبة المرابطين blog article
-- [ ] Collab avec lgwerr li ka ydiro travels lmaroc
-- [ ] Casa finance city
-- [ ] mama beach
-- [ ] tourisme sport derby maroc
-- [ ] محمية سوس ماسة Blog article
-- [ ] Téléphérique Agadir
 
 Notes : Comment avoir du traffic et Monétiser le site
 

@@ -261,7 +261,7 @@
  <main class="flex-grow">
  <!-- Hero Section -->
  <div class="relative h-[400px] sm:h-[480px] lg:h-[520px] flex items-end">
- <img alt="Ouarzazate kasbah and desert gateway" class="absolute inset-0 w-full h-full object-cover" src="images/ouarzazate/hero.webp"
+ <img alt="Ouarzazate kasbah and desert gateway" class="absolute inset-0 w-full h-full object-cover" src="images/ouarzazate/hero.webp" loading="eager" />
  <div class="absolute inset-0 bg-gradient-to-t from-sombre via-sombre/40 to-transparent"></div>
  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full text-white">
  <div class="flex items-center gap-2 text-xs font-semibold text-sable mb-3 uppercase tracking-wider">
@@ -420,101 +420,76 @@
                     <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="ouarzazate_page.stays.title">Where to stay in Ouarzazate? Our Favorites</h2>
                 </div>
                 <p class="text-sm text-sombre/70 max-w-md" data-i18n="ouarzazate_page.stays.subtitle">
-                    Town hotels, kasbah views, and palm-grove lodges toward Skoura: explore our top recommended addresses.
+                    Palace comfort in town, boutique riads, and a calm palm-grove lodge toward Skoura.
                 </p>
             </div>
 
             <!-- Featured Highlights Grid (4 Handpicked Stays) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
                 
-                <!-- Pick 1: Hotel Kasbah Taourirt -->
+                <!-- Pick 1: Le Berbère Palace -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/ouarzazate/hotel-taourirt.webp" alt="Hotel Kasbah Taourirt" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="ouarzazate_page.stays.card1.badge">
-                            ★ Kasbah Hotel
-                        </span>
+                        <img src="images/ouarzazate/hotel-berbere-palace.webp" alt="Le Berbère Palace" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="ouarzazate_page.stays.card1.badge">★ Luxury Palace</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="ouarzazate_page.stays.card1.name">Hotel Kasbah Taourirt</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="ouarzazate_page.stays.card1.desc">
-                            Traditional refined stay near historical monuments, offering authentic Saharan ambiance and great comfort.
-                        </p>
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="ouarzazate_page.stays.card1.name">Le Berbère Palace</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="ouarzazate_page.stays.card1.desc">Landmark palace hotel with pools, gardens and polished service — the classic upscale base in Ouarzazate.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="ouarzazate_page.stays.card1.location">Town Centre</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Kasbah+Taourirt+Ouarzazate" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="ouarzazate_page.stays.book">
-                                Book Now →
-                            </a>
+                            <span class="text-xs font-bold text-vert" data-i18n="ouarzazate_page.stays.card1.location">Town centre</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Berbere+Palace+Ouarzazate" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="ouarzazate_page.stays.book">Book now →</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pick 2: Dar Atlas Ouarzazate -->
+                <!-- Pick 2: Dar Chamaa -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/ouarzazate/hotel-dar-atlas.webp" alt="Dar Atlas Ouarzazate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-sable text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="ouarzazate_page.stays.card2.badge">
-                            ★ Oasis Riad
-                        </span>
+                        <img src="images/ouarzazate/hotel-dar-chamaa.webp" alt="Dar Chamaa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="ouarzazate_page.stays.card2.badge">★ Boutique Riad</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="ouarzazate_page.stays.card2.name">Dar Atlas Ouarzazate</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="ouarzazate_page.stays.card2.desc">
-                            A peaceful sanctuary combining traditional earthen architecture and modern amenities with a bright patio.
-                        </p>
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="ouarzazate_page.stays.card2.name">Dar Chamaa</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="ouarzazate_page.stays.card2.desc">Elegant boutique house with clay architecture, quiet patio and refined rooms close to the centre.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="ouarzazate_page.stays.card2.location">Town Centre</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Atlas+Ouarzazate" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="ouarzazate_page.stays.book">
-                                Book Now →
-                            </a>
+                            <span class="text-xs font-bold text-vert" data-i18n="ouarzazate_page.stays.card2.location">Town centre</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Dar+Chamaa+Ouarzazate" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="ouarzazate_page.stays.book">Book now →</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pick 3: Hotel des Studios -->
+                <!-- Pick 3: Riad Dar Sofian -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/ouarzazate/hotel-studios.webp" alt="Hotel des Studios" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="ouarzazate_page.stays.card3.badge">
-                            ★ Film Gem
-                        </span>
+                        <img src="images/ouarzazate/hotel-dar-sofian.webp" alt="Riad Dar Sofian" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="ouarzazate_page.stays.card3.badge">★ Authentic Riad</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="ouarzazate_page.stays.card3.name">Hotel des Studios</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="ouarzazate_page.stays.card3.desc">
-                            Located near Atlas Studios, featuring an artistic ambiance inspired by world-famous movie productions.
-                        </p>
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="ouarzazate_page.stays.card3.name">Riad Dar Sofian</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="ouarzazate_page.stays.card3.desc">Traditional riad comfort with warm décor, terrace views and a calm base for kasbahs and studios.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
-                            <span class="text-xs font-bold text-vert" data-i18n="ouarzazate_page.stays.card3.location">Kasbah Area</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Atlas+Studios+Ouarzazate" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="ouarzazate_page.stays.book">
-                                Book Now →
-                            </a>
+                            <span class="text-xs font-bold text-vert" data-i18n="ouarzazate_page.stays.card3.location">Town centre</span>
+                            <a href="https://www.booking.com/searchresults.html?ss=Riad+Dar+Sofian+Ouarzazate" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="ouarzazate_page.stays.book">Book now →</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pick 4: Kasbah Palmeraie Skoura -->
+                <!-- Pick 4: Les Jardins de Skoura -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-sable/10 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/ouarzazate/hotel-palmeraie-skoura.webp" alt="Kasbah Palmeraie Skoura" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-                        <span class="absolute top-3 left-3 bg-sombre text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="ouarzazate_page.stays.card4.badge">
-                            ★ Oasis Lodge
-                        </span>
+                        <img src="images/ouarzazate/hotel-jardins-skoura.webp" alt="Les Jardins de Skoura" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                        <span class="absolute top-3 left-3 bg-vert text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" data-i18n="ouarzazate_page.stays.card4.badge">★ Palm Oasis</span>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
-                        <h3 class="text-lg font-bold text-sombre" data-i18n="ouarzazate_page.stays.card4.name">Kasbah Palmeraie Skoura</h3>
-                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="ouarzazate_page.stays.card4.desc">
-                            A true sanctuary of serenity amidst palm groves, ideal for quietness and exploring the southeast trails.
-                        </p>
+                        <h3 class="text-lg font-bold text-sombre" data-i18n="ouarzazate_page.stays.card4.name">Les Jardins de Skoura</h3>
+                        <p class="text-xs text-sombre/70 mt-2 flex-grow" data-i18n="ouarzazate_page.stays.card4.desc">Peaceful lodge among palm groves east of town — ideal for quiet nights and Dadès routes.</p>
                         <div class="mt-4 pt-3 border-t border-sable/10 flex items-center justify-between">
                             <span class="text-xs font-bold text-vert" data-i18n="ouarzazate_page.stays.card4.location">Skoura / East</span>
-                            <a href="https://www.booking.com/searchresults.html?ss=Skoura+Ouarzazate" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="ouarzazate_page.stays.book">
-                                Book Now →
-                            </a>
+                            <a href="https://www.booking.com/searchresults.html?ss=Jardins+de+Skoura" target="_blank" rel="noopener sponsored" class="text-xs font-bold text-sable hover:underline" data-i18n="ouarzazate_page.stays.book">Book now →</a>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- BOOKING REDIRECTION BANNER TO EXPAND SEARCH -->
@@ -528,7 +503,7 @@
                         Explore All Places to Stay in Ouarzazate
                     </h3>
                     <p class="text-creme/80 mt-2 text-sm leading-relaxed" data-i18n="ouarzazate_page.booking_banner.desc">
-                        Compare real-time rates, read verified guest reviews, and discover more kasbahs, riads, and hotels on Booking.com.
+                        Compare real-time rates, read verified guest reviews, and discover more kasbahs, riads and hotels.
                     </p>
                 </div>
 
@@ -558,139 +533,103 @@
  <span class="text-xs font-bold text-sable uppercase tracking-wider" data-i18n="ouarzazate_page.eat.badge">Food</span>
  <h2 class="text-3xl font-bold text-vert mt-1" data-i18n="ouarzazate_page.eat.title">Where to eat in Ouarzazate</h2>
  </div>
- <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="ouarzazate_page.eat.subtitle">Tagines in town, terrace lunches at Aït Benhaddou and simple hotel restaurants.</p>
+ <p class="text-xs text-sombre/60 mt-2 md:mt-0" data-i18n="ouarzazate_page.eat.subtitle">Family tajines in town, terraces at Aït Benhaddou and local tables — not nightlife spots.</p>
  </div>
 
  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
- 
- <!-- 1. Restaurant Roudani -->
+
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/ouarzazate/restaurant-local.webp" alt="Restaurant Roudani" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.4</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/ouarzazate/restau-douyria.webp" alt="Restaurant Douyria" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.nomad.tag">Seafood</span>
- <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.nomad.loc">Plaza</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.nomad.tag">Moroccan</span>
+ <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.nomad.loc">Near kasbah</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.nomad.title">Plaza tables</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.nomad.desc">Fish and seafood with harbour views.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.nomad.title">Restaurant Douyria</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.nomad.desc">Traditional Moroccan restaurant near the kasbah area — tajines, couscous and a local family atmosphere.</p>
  </div>
  </div>
  </a>
 
- <!-- 2. Le Jardin -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/ouarzazate/restau-jardin.webp" alt="Le Jardin Ouarzazate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.3</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/ouarzazate/restau-datte-dor.webp" alt="La Datte d'Or" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.jardin.tag">Café</span>
- <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.jardin.loc">Ksar</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.jardin.tag">Moroccan</span>
+ <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.jardin.loc">Centre</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.jardin.title">Town cafés</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.jardin.desc">Casual drinks and snacks along the promenade.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.jardin.title">La Datte d'Or</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.jardin.desc">Well-rated Moroccan tables in town — tajines, kefta and generous portions for families.</p>
  </div>
  </div>
  </a>
 
- <!-- 3. Al Jardin Ouarzazate -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/ouarzazate/restau-al-jardin.webp" alt="Al Jardin Ouarzazate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/ouarzazate/restau-ait-benhaddou.webp" alt="Terrasses Aït Benhaddou" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.fassia.tag">Hotel</span>
- <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.fassia.loc">Avenue</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.fassia.tag">Day trip</span>
+ <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.fassia.loc">Aït Benhaddou</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.fassia.title">Hotel restaurants</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.fassia.desc">Reliable options on the seafront strip.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.fassia.title">Terrasses d'Aït Benhaddou</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.fassia.desc">Lunch terraces facing the ksar — tajines with the UNESCO view, best at midday.</p>
  </div>
  </div>
  </a>
 
- <!-- 4.  -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/ouarzazate/restau-grills.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/ouarzazate/restau-toudgha.webp" alt="Restaurant Toudgha" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.moha.tag">Grill</span>
- <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.moha.loc">Souk</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.moha.tag">Moroccan</span>
+ <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.moha.loc">Centre</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.moha.title">Simple grills</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.moha.desc">Everyday Moroccan plates near Souk El Had.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.moha.title">Restaurant Toudgha</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.moha.desc">Local favourite for homemade Moroccan dishes, tajines and friendly service at fair prices.</p>
  </div>
  </div>
  </a>
 
- <!-- 5. Café Ouarzazate -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/ouarzazate/restau-cafe.webp" alt="Café Ouarzazate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.6</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/ouarzazate/restau-sabrine.webp" alt="Café Restaurant Sabrine" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.bacha.tag">Seafood</span>
- <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.bacha.loc">Port</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.bacha.tag">Café-restaurant</span>
+ <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.bacha.loc">Centre</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.bacha.title">Port catch</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.bacha.desc">Fresh fish when the boats are in.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.bacha.title">Café Restaurant Sabrine</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.bacha.desc">Café-restaurant for Moroccan meals and tea — practical stop after the kasbah or a long drive.</p>
  </div>
  </div>
  </a>
 
- <!-- 6. Villa Atlantique -->
  <a class="group bg-white rounded-2xl border border-sable/10 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col" href="gastronomy/">
  <div class="relative h-48 w-full overflow-hidden bg-gray-100">
- <img src="images/ouarzazate/restau-villa.webp" alt="Villa Atlantique" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
- <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-sombre flex items-center gap-1 shadow-sm">
- <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
- <span>4.5</span>
- <span class="text-gray-400 font-normal text-[10px]">(Google)</span>
- </div>
+ <img src="images/ouarzazate/restau-skoura-lodge.webp" alt="Table d'hôtes Skoura" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
  </div>
  <div class="p-6 flex flex-col justify-between flex-grow">
  <div>
  <div class="flex items-center justify-between mb-3">
- <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.elfenn.tag">Local</span>
- <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.elfenn.loc">Centre</span>
+ <span class="text-xs font-bold text-sable uppercase" data-i18n="ouarzazate_page.eat.elfenn.tag">Oasis</span>
+ <span class="text-xs text-gray-400" data-i18n="ouarzazate_page.eat.elfenn.loc">Skoura</span>
  </div>
- <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.elfenn.title">City centre</h3>
- <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.elfenn.desc">Cafés and tagines away from the town crowds.</p>
+ <h3 class="text-xl font-bold text-sombre group-hover:text-vert transition" data-i18n="ouarzazate_page.eat.elfenn.title">Table d'hôtes Skoura</h3>
+ <p class="text-xs text-sombre/70 mt-2" data-i18n="ouarzazate_page.eat.elfenn.desc">Fixed menus in palm-grove guesthouses — quiet dinners on the road to the Dadès.</p>
  </div>
  </div>
  </a>
@@ -698,7 +637,7 @@
  </div>
  </section>
 
- <!-- Practical Travel Tips -->
+<!-- Practical Travel Tips -->
  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
  <h2 class="text-2xl font-bold text-vert mb-6" data-i18n="ouarzazate_page.tips.title">Practical tips for Ouarzazate</h2>
  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
@@ -735,21 +674,21 @@
  </div>
  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
  <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Aït Benhaddou" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/ouarzazate-ait-benhaddou/ait-benhaddou-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
+ <img alt="Aït Benhaddou" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/ouarzazate/ait-ben-haddou.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
  <h3 class="text-base font-bold" data-i18n="ouarzazate_page.daytrips.ait_benhaddou.name">Aït Benhaddou</h3>
  <p class="text-xs text-white/80 mt-1" data-i18n="ouarzazate_page.daytrips.ait_benhaddou.desc">UNESCO ksar about 30–40 minutes away — the region’s signature day stop.</p>
  </div></div>
  <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Dadès Gorge" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/dades/dades-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
+ <img alt="Dadès Gorge" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/ouarzazate/gorges-dades.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
  <h3 class="text-base font-bold" data-i18n="ouarzazate_page.daytrips.dades.name">Dadès Gorge</h3>
  <p class="text-xs text-white/80 mt-1" data-i18n="ouarzazate_page.daytrips.dades.desc">Road of kasbahs and dramatic gorge landscapes east of Skoura.</p>
  </div></div>
  <div class="relative h-56 rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition">
- <img alt="Draa Valley" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/places/draa/draa-01.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
+ <img alt="Draa Valley" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" src="images/ouarzazate/oued-draa.webp" loading="lazy" onerror="this.style.background='#e8e0d5'"/>
  <div class="absolute inset-0 bg-gradient-to-t from-sombre/85 via-sombre/10 to-transparent"></div>
  <div class="absolute bottom-4 left-4 right-4 text-white">
  <h3 class="text-base font-bold" data-i18n="ouarzazate_page.daytrips.draa.name">Draa Valley</h3>

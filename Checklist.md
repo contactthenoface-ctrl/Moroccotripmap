@@ -7,6 +7,7 @@
 - [ ] Ajouter le site à Google Search Console
 - [ ] Ajoute un article de blog sur Taghazout skatepark > https://www.instagram.com/taghazout_skatepark?stkn=YXVodXRyd3BzbWNw
 
+https://www.facebook.com/share/r/1KT5nY2aaJ/
 Notes : Comment avoir du traffic et Monétiser le site
 
 À terme, MoroccoTripMap peut obtenir des visiteurs grâce à :

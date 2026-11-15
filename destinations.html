@@ -757,6 +757,8 @@
     #morocco-map .leaflet-tooltip.city-label::before { display: none; }
     /* Petites villes : noms visibles seulement quand on zoome */
     #morocco-map:not(.zoomed) .leaflet-tooltip.minor { display: none; }
+    /* En zoom rapproché, les noms de lieux de la carte prennent le relais : on garde juste le point */
+    #morocco-map.close .leaflet-tooltip.city-label { display: none; }
     #morocco-map .leaflet-popup-content-wrapper { border-radius: 12px; }
     #morocco-map .leaflet-popup-content { margin: 10px 14px; font: 600 14px Outfit, sans-serif; }
     #morocco-map .leaflet-popup-content a { color: #185336; text-decoration: none; }
@@ -794,6 +796,19 @@
       L.tileLayer(
         'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         { maxNativeZoom: 15, maxZoom: 16 }   // vraies images jusqu'au niveau 15, léger agrandissement au 16
+      ).addTo(map);
+
+      // Noms de quartiers, lieux et routes (apparaissent quand on zoome sur une ville)
+      map.createPane('labels');
+      map.getPane('labels').style.zIndex = 450;
+      map.getPane('labels').style.pointerEvents = 'none';
+      L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}',
+        { pane: 'labels', minZoom: 12, maxNativeZoom: 15, maxZoom: 16 }
+      ).addTo(map);
+      L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
+        { pane: 'labels', minZoom: 10, maxNativeZoom: 15, maxZoom: 16 }
       ).addTo(map);
 
       map.fitBounds([[22.5, -17.0], [36.2, -0.8]]);
@@ -856,7 +871,10 @@
 
       // Affiche les petites villes à partir de ce niveau de zoom
       const container = map.getContainer();
-      function updateZoomClass() { container.classList.toggle('zoomed', map.getZoom() >= 6.5); }
+      function updateZoomClass() {
+        container.classList.toggle('zoomed', map.getZoom() >= 6.5);
+        container.classList.toggle('close', map.getZoom() >= 10);
+      }
       map.on('zoomend', updateZoomClass);
       updateZoomClass();
 

@@ -790,26 +790,48 @@
         attributionControl: false,
         scrollWheelZoom: false,
         zoomSnap: 0.25,
-        maxZoom: 16
+        maxZoom: 15
       });
 
       L.tileLayer(
         'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-        { maxNativeZoom: 15, maxZoom: 16 }   // vraies images jusqu'au niveau 15, léger agrandissement au 16
+        { maxNativeZoom: 15, maxZoom: 15 }   // pas d'agrandissement artificiel : on s'arrête au niveau 15
       ).addTo(map);
 
-      // Noms de quartiers, lieux et routes (apparaissent quand on zoome sur une ville)
+      // Noms de quartiers, lieux et routes, selon la langue choisie dans le menu :
+      //  - FR / EN / ES : noms en alphabet latin (OpenStreetMap via CARTO)
+      //  - AR           : noms en arabe (Esri)
       map.createPane('labels');
       map.getPane('labels').style.zIndex = 450;
       map.getPane('labels').style.pointerEvents = 'none';
-      L.tileLayer(
-        'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}',
-        { pane: 'labels', minZoom: 12, maxNativeZoom: 15, maxZoom: 16 }
-      ).addTo(map);
-      L.tileLayer(
+
+      const labelsLatin = L.tileLayer(
+        'https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',
+        { pane: 'labels', subdomains: 'abcd', minZoom: 10, maxNativeZoom: 18, maxZoom: 15,
+          attribution: '© OpenStreetMap © CARTO' }
+      );
+      const labelsArabic = L.tileLayer(
         'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
-        { pane: 'labels', minZoom: 10, maxNativeZoom: 15, maxZoom: 16 }
-      ).addTo(map);
+        { pane: 'labels', minZoom: 10, maxNativeZoom: 15, maxZoom: 15 }
+      );
+
+      function currentLang() {
+        let l = null;
+        try { l = localStorage.getItem('preferred_lang'); } catch (e) {}
+        return (l || document.documentElement.lang || 'en').slice(0, 2);
+      }
+      function applyLabelLang() {
+        const wantArabic = currentLang() === 'ar';
+        const on = wantArabic ? labelsArabic : labelsLatin;
+        const off = wantArabic ? labelsLatin : labelsArabic;
+        if (map.hasLayer(off)) map.removeLayer(off);
+        if (!map.hasLayer(on)) on.addTo(map);
+      }
+      applyLabelLang();
+      // Quand on change de langue dans le menu
+      document.addEventListener('click', function (e) {
+        if (e.target.closest && e.target.closest('[data-lang]')) setTimeout(applyLabelLang, 200);
+      });
 
       map.fitBounds([[22.5, -17.0], [36.2, -0.8]]);
 

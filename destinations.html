@@ -748,11 +748,15 @@
     }
     #morocco-map .city-pin:hover span,
     #morocco-map .city-pin:focus span { transform: scale(1.5); background: #185336; }
-    #morocco-map .leaflet-tooltip.city-tip {
-      background: #185336; color: #fff; border: 0; border-radius: 8px;
-      font: 600 12px Outfit, sans-serif; padding: 3px 8px; box-shadow: 0 2px 6px rgba(0,0,0,.4);
+    #morocco-map .leaflet-tooltip.city-label {
+      background: transparent; border: 0; box-shadow: none; padding: 0;
+      color: #fff; font: 700 12px Outfit, sans-serif; white-space: nowrap;
+      text-shadow: 0 0 3px #000, 0 0 3px #000, 0 1px 4px rgba(0,0,0,.9);
+      pointer-events: none;
     }
-    #morocco-map .leaflet-tooltip.city-tip::before { display: none; }
+    #morocco-map .leaflet-tooltip.city-label::before { display: none; }
+    /* Petites villes : noms visibles seulement quand on zoome */
+    #morocco-map:not(.zoomed) .leaflet-tooltip.minor { display: none; }
     #morocco-map .leaflet-popup-content-wrapper { border-radius: 12px; }
     #morocco-map .leaflet-popup-content { margin: 10px 14px; font: 600 14px Outfit, sans-serif; }
     #morocco-map .leaflet-popup-content a { color: #185336; text-decoration: none; }
@@ -784,18 +788,18 @@
         attributionControl: false,
         scrollWheelZoom: false,
         zoomSnap: 0.25,
-        maxZoom: 10
+        maxZoom: 16
       });
 
       L.tileLayer(
         'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-        { maxZoom: 10 }
+        { maxNativeZoom: 13, maxZoom: 16 }   // au-delà de 13, l'image est agrandie (évite les tuiles vides)
       ).addTo(map);
 
       map.fitBounds([[22.5, -17.0], [36.2, -0.8]]);
 
       L.control.attribution({ prefix: false, position: 'bottomright' })
-        .addAttribution(' MoroccoTripMap © Esri')
+        .addAttribution('MoroccoTripMap © Esri')
         .addTo(map);
 
       const canHover = window.matchMedia('(hover: hover)').matches;
@@ -805,6 +809,15 @@
         iconSize: [24, 24],   // zone de toucher confortable sur mobile
         iconAnchor: [12, 12]
       });
+
+      // Villes dont le nom est toujours affiché (les autres apparaissent au zoom)
+      const MAJOR = ['marrakech','casablanca','rabat','fes','tanger','agadir','essaouira',
+                     'chefchaouen','ouarzazate','merzouga','laayoune','dakhla','oujda'];
+      // Villes côtières : nom à gauche du point (sinon à droite)
+      const LEFT = ['casablanca','rabat','essaouira','agadir','dakhla','laayoune','safi','el-jadida',
+                    'oualidia','tiznit','sidi-ifni','guelmim','larache','asilah','tanger'];
+
+      const markers = [];
 
       // Les villes, noms (traduits) et liens viennent directement des cartes de la page
       document.querySelectorAll('#destinations-grid .city-card').forEach(function (card) {
@@ -818,19 +831,41 @@
           return h ? h.textContent.trim() : key;
         };
 
+        const left = LEFT.indexOf(key) !== -1;
         const marker = L.marker(pos, { icon: icon, keyboard: true, title: getName() }).addTo(map);
 
+        // Nom affiché en permanence à côté du point
+        marker.bindTooltip(getName(), {
+          permanent: true,
+          direction: left ? 'left' : 'right',
+          offset: [left ? -8 : 8, 0],
+          className: 'city-label' + (MAJOR.indexOf(key) === -1 ? ' minor' : '')
+        });
+        marker._getName = getName;
+        markers.push(marker);
+
         if (canHover) {
-          // Ordinateur : nom au survol, clic = ouvre la page
-          marker.bindTooltip(getName, { direction: 'top', offset: [0, -10], className: 'city-tip' });
           marker.on('click', function () { window.location.href = href; });
         } else {
-          // Mobile : 1er toucher = nom + lien, 2e toucher sur le lien = ouvre la page
+          // Mobile : toucher le point = petite bulle avec le lien vers la page
           marker.bindPopup(function () {
             return '<a href="' + href + '">' + getName() + ' →</a>';
           }, { closeButton: false, offset: [0, -6] });
         }
       });
+
+      // Affiche les petites villes à partir de ce niveau de zoom
+      const container = map.getContainer();
+      function updateZoomClass() { container.classList.toggle('zoomed', map.getZoom() >= 6.5); }
+      map.on('zoomend', updateZoomClass);
+      updateZoomClass();
+
+      // Met à jour les noms si la langue du site change
+      function refreshNames() { markers.forEach(function (m) { m.setTooltipContent(m._getName()); }); }
+      const grid = document.getElementById('destinations-grid');
+      if (grid && window.MutationObserver) {
+        new MutationObserver(refreshNames).observe(grid, { childList: true, characterData: true, subtree: true });
+      }
     })();
   </script>
 </section>
@@ -1147,5 +1182,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     </script>
+
 </body>
 </html>

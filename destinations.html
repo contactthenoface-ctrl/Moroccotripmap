@@ -793,7 +793,7 @@
 
       L.tileLayer(
         'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-        { maxNativeZoom: 13, maxZoom: 16 }   // au-delà de 13, l'image est agrandie (évite les tuiles vides)
+        { maxNativeZoom: 15, maxZoom: 16 }   // vraies images jusqu'au niveau 15, léger agrandissement au 16
       ).addTo(map);
 
       map.fitBounds([[22.5, -17.0], [36.2, -0.8]]);

@@ -712,7 +712,6 @@
 <p class="text-xs text-white/80 mt-1" data-i18n="cities.imilchil.desc">Mountain lakes &amp; famous wedding festival</p>
 </div>
 </a>
-
 </div>
 </div>
 </main>
@@ -738,6 +737,10 @@
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Noms de quartiers, lieux et rues (OpenStreetMap via OpenFreeMap, sans clé API) -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
+  <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0/leaflet-maplibre-gl.js"></script>
   <style>
     #morocco-map .city-pin { background: transparent; border: 0; }
     #morocco-map .city-pin span {
@@ -768,22 +771,61 @@
   </style>
   <script>
     (function () {
-      // Coordonnées [latitude, longitude] — la clé = nom du fichier de la page ville (sans .html)
+      // Chaque ville : [latitude, longitude, EN, FR, ES, AR]
+      // Le lien est automatiquement  <clé>.html  (ex. marrakech.html)
       const CITIES = {
-        'marrakech':[31.6295,-7.9811], 'chefchaouen':[35.1688,-5.2636], 'fes':[34.0331,-5.0003],
-        'casablanca':[33.5731,-7.5898], 'essaouira':[31.5085,-9.7595], 'agadir':[30.4278,-9.5981],
-        'tanger':[35.7595,-5.8340], 'ouarzazate':[30.9189,-6.8934], 'rabat':[34.0209,-6.8416],
-        'meknes':[33.8935,-5.5473], 'tetouan':[35.5785,-5.3684], 'ifrane':[33.5228,-5.1106],
-        'el-jadida':[33.2316,-8.5007], 'taroudant':[30.4703,-8.8770], 'dakhla':[23.6848,-15.9579],
-        'al-hoceima':[35.2517,-3.9372], 'nador':[35.1681,-2.9335], 'zagora':[30.3324,-5.8384],
-        'safi':[32.2994,-9.2372], 'laayoune':[27.1253,-13.1625], 'merzouga':[31.0999,-4.0121],
-        'azilal':[31.9600,-6.5700], 'tinghir':[31.5147,-5.5328], 'oujda':[34.6867,-1.9114],
-        'asilah':[35.4650,-6.0340], 'erfoud':[31.4300,-4.2300], 'tiznit':[29.6974,-9.7316],
-        'sidi-ifni':[29.3797,-10.1731], 'guelmim':[28.9870,-10.0574], 'oualidia':[32.7340,-9.0390],
-        'azrou':[33.4342,-5.2210], 'sefrou':[33.8307,-4.8352], 'errachidia':[31.9314,-4.4244],
-        'larache':[35.1932,-6.1557], 'beni-mellal':[32.3373,-6.3498], 'figuig':[32.1090,-1.2290],
-        'midelt':[32.6852,-4.7450], 'imilchil':[32.1560,-5.5700]
+        'marrakech':[31.6295,-7.9811,'Marrakech','Marrakech','Marrakech','مراكش'],
+        'chefchaouen':[35.1688,-5.2636,'Chefchaouen','Chefchaouen','Chefchaouen','شفشاون'],
+        'fes':[34.0331,-5.0003,'Fes','Fès','Fez','فاس'],
+        'casablanca':[33.5731,-7.5898,'Casablanca','Casablanca','Casablanca','الدار البيضاء'],
+        'essaouira':[31.5085,-9.7595,'Essaouira','Essaouira','Esauira','الصويرة'],
+        'agadir':[30.4278,-9.5981,'Agadir','Agadir','Agadir','أكادير'],
+        'tanger':[35.7595,-5.8340,'Tangier','Tanger','Tánger','طنجة'],
+        'ouarzazate':[30.9189,-6.8934,'Ouarzazate','Ouarzazate','Uarzazate','ورزازات'],
+        'rabat':[34.0209,-6.8416,'Rabat','Rabat','Rabat','الرباط'],
+        'meknes':[33.8935,-5.5473,'Meknes','Meknès','Mequinez','مكناس'],
+        'tetouan':[35.5785,-5.3684,'Tetouan','Tétouan','Tetuán','تطوان'],
+        'ifrane':[33.5228,-5.1106,'Ifrane','Ifrane','Ifrane','إفران'],
+        'el-jadida':[33.2316,-8.5007,'El Jadida','El Jadida','El Yadida','الجديدة'],
+        'taroudant':[30.4703,-8.8770,'Taroudant','Taroudant','Taroudant','تارودانت'],
+        'dakhla':[23.6848,-15.9579,'Dakhla','Dakhla','Dajla','الداخلة'],
+        'al-hoceima':[35.2517,-3.9372,'Al Hoceima','Al Hoceïma','Alhucemas','الحسيمة'],
+        'nador':[35.1681,-2.9335,'Nador','Nador','Nador','الناظور'],
+        'zagora':[30.3324,-5.8384,'Zagora','Zagora','Zagora','زاكورة'],
+        'safi':[32.2994,-9.2372,'Safi','Safi','Safi','آسفي'],
+        'laayoune':[27.1253,-13.1625,'Laayoune','Laâyoune','El Aaiún','العيون'],
+        'merzouga':[31.0999,-4.0121,'Merzouga','Merzouga','Merzouga','مرزوكة'],
+        'azilal':[31.9600,-6.5700,'Azilal','Azilal','Azilal','أزيلال'],
+        'tinghir':[31.5147,-5.5328,'Tinghir','Tinghir','Tinghir','تنغير'],
+        'oujda':[34.6867,-1.9114,'Oujda','Oujda','Uchda','وجدة'],
+        'asilah':[35.4650,-6.0340,'Asilah','Asilah','Arcila','أصيلة'],
+        'erfoud':[31.4300,-4.2300,'Erfoud','Erfoud','Erfoud','أرفود'],
+        'tiznit':[29.6974,-9.7316,'Tiznit','Tiznit','Tiznit','تيزنيت'],
+        'sidi-ifni':[29.3797,-10.1731,'Sidi Ifni','Sidi Ifni','Sidi Ifni','سيدي إفني'],
+        'guelmim':[28.9870,-10.0574,'Guelmim','Guelmim','Guelmim','كلميم'],
+        'oualidia':[32.7340,-9.0390,'Oualidia','Oualidia','Oualidia','الوليدية'],
+        'azrou':[33.4342,-5.2210,'Azrou','Azrou','Azrou','أزرو'],
+        'sefrou':[33.8307,-4.8352,'Sefrou','Sefrou','Sefrou','صفرو'],
+        'errachidia':[31.9314,-4.4244,'Errachidia','Errachidia','Errachidia','الراشيدية'],
+        'larache':[35.1932,-6.1557,'Larache','Larache','Larache','العرائش'],
+        'beni-mellal':[32.3373,-6.3498,'Beni Mellal','Béni Mellal','Beni Mellal','بني ملال'],
+        'figuig':[32.1090,-1.2290,'Figuig','Figuig','Figuig','فجيج'],
+        'midelt':[32.6852,-4.7450,'Midelt','Midelt','Midelt','ميدلت'],
+        'imilchil':[32.1560,-5.5700,'Imilchil','Imilchil','Imilchil','إميلشيل']
       };
+      const LANG_INDEX = { en: 2, fr: 3, es: 4, ar: 5 };
+
+      // Langue courante : on lit l'étiquette du sélecteur de langue (EN / FR / ES / AR)
+      function currentLang() {
+        const el = document.getElementById('current-lang-label');
+        let l = el ? el.textContent.trim().toLowerCase() : '';
+        if (!LANG_INDEX[l]) {
+          try { l = (localStorage.getItem('preferred_lang') || '').toLowerCase(); } catch (e) {}
+        }
+        if (!LANG_INDEX[l]) l = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase();
+        return LANG_INDEX[l] ? l : 'en';
+      }
+      function nameOf(key) { return CITIES[key][LANG_INDEX[currentLang()]]; }
 
       const map = L.map('morocco-map', {
         zoomControl: false,
@@ -795,45 +837,63 @@
 
       L.tileLayer(
         'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-        { maxNativeZoom: 15, maxZoom: 15 }   // pas d'agrandissement artificiel : on s'arrête au niveau 15
+        { maxNativeZoom: 15, maxZoom: 15 }
       ).addTo(map);
 
-      // Noms de quartiers et de lieux (Esri, en arabe) : affichés seulement quand la langue du site est l'arabe
+      // Noms de quartiers, lieux et rues, dans la langue du site (EN / FR / ES / AR)
       map.createPane('labels');
       map.getPane('labels').style.zIndex = 450;
       map.getPane('labels').style.pointerEvents = 'none';
 
-      const labelsArabic = L.tileLayer(
-        'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
-        { pane: 'labels', minZoom: 10, maxNativeZoom: 15, maxZoom: 15 }
-      );
+      function labelText(lang) {
+        return ['coalesce', ['get', 'name:' + lang], ['get', 'name:latin'], ['get', 'name']];
+      }
+      const haloColor = 'rgba(0,0,0,0.85)';
+      const labelStyle = {
+        version: 8,
+        glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',
+        sources: { omt: { type: 'vector', url: 'https://tiles.openfreemap.org/planet' } },
+        layers: [
+          { // quartiers, villages, hameaux
+            id: 'lbl-place', type: 'symbol', source: 'omt', 'source-layer': 'place', minzoom: 9.5,
+            filter: ['in', ['get', 'class'], ['literal', ['suburb', 'neighbourhood', 'quarter', 'village', 'hamlet', 'town', 'isolated_dwelling']]],
+            layout: { 'text-field': labelText('en'), 'text-font': ['Noto Sans Bold'],
+                      'text-size': ['match', ['get', 'class'], 'town', 15, 'suburb', 14, 13] },
+            paint: { 'text-color': '#ffffff', 'text-halo-color': haloColor, 'text-halo-width': 1.6 }
+          },
+          { // lieux (mosquées, musées, parcs...)
+            id: 'lbl-poi', type: 'symbol', source: 'omt', 'source-layer': 'poi', minzoom: 12.5,
+            filter: ['<=', ['get', 'rank'], 25],
+            layout: { 'text-field': labelText('en'), 'text-font': ['Noto Sans Regular'], 'text-size': 11,
+                      'text-anchor': 'top', 'text-offset': [0, 0.4] },
+            paint: { 'text-color': '#ffe9b8', 'text-halo-color': haloColor, 'text-halo-width': 1.4 }
+          },
+          { // noms de rues
+            id: 'lbl-road', type: 'symbol', source: 'omt', 'source-layer': 'transportation_name', minzoom: 12.5,
+            layout: { 'symbol-placement': 'line', 'text-field': labelText('en'),
+                      'text-font': ['Noto Sans Regular'], 'text-size': 11 },
+            paint: { 'text-color': '#ffffff', 'text-halo-color': haloColor, 'text-halo-width': 1.4 }
+          }
+        ]
+      };
 
-      function currentLang() {
-        let l = null;
-        try { l = localStorage.getItem('preferred_lang'); } catch (e) {}
-        return (l || document.documentElement.lang || 'en').slice(0, 2);
+      let glLayer = null;
+      if (typeof L.maplibreGL === 'function') {
+        try { glLayer = L.maplibreGL({ style: labelStyle, pane: 'labels' }).addTo(map); }
+        catch (e) { console.warn('Labels layer unavailable', e); }
       }
-      function applyLabelLang() {
-        const isAr = currentLang() === 'ar';
-        if (isAr && !map.hasLayer(labelsArabic)) labelsArabic.addTo(map);
-        if (!isAr && map.hasLayer(labelsArabic)) map.removeLayer(labelsArabic);
-        updateZoomClass();
-      }
-      document.addEventListener('click', function (e) {
-        if (e.target.closest && e.target.closest('[data-lang]')) setTimeout(applyLabelLang, 200);
-      });
 
       map.fitBounds([[22.5, -17.0], [36.2, -0.8]]);
 
       L.control.attribution({ prefix: false, position: 'bottomright' })
-        .addAttribution('MoroccoTripMap ©')
+        .addAttribution('MoroccoTripMap © Esri · © OpenStreetMap · OpenFreeMap')
         .addTo(map);
 
       const canHover = window.matchMedia('(hover: hover)').matches;
       const icon = L.divIcon({
         className: 'city-pin',
         html: '<span></span>',
-        iconSize: [24, 24],   // zone de toucher confortable sur mobile
+        iconSize: [24, 24],
         iconAnchor: [12, 12]
       });
 
@@ -846,58 +906,62 @@
 
       const markers = [];
 
-      // Les villes, noms (traduits) et liens viennent directement des cartes de la page
-      document.querySelectorAll('#destinations-grid .city-card').forEach(function (card) {
-        const href = card.getAttribute('href');
-        const key = (href || '').split('/').pop().replace('.html', '');
-        const pos = CITIES[key];
-        if (!pos) return;
-
-        const getName = function () {
-          const h = card.querySelector('h3');
-          return h ? h.textContent.trim() : key;
-        };
-
+      Object.keys(CITIES).forEach(function (key) {
+        const href = key + '.html';
         const left = LEFT.indexOf(key) !== -1;
-        const marker = L.marker(pos, { icon: icon, keyboard: true, title: getName() }).addTo(map);
+        const marker = L.marker([CITIES[key][0], CITIES[key][1]], {
+          icon: icon, keyboard: true, title: nameOf(key)
+        }).addTo(map);
 
-        // Nom affiché en permanence à côté du point
-        marker.bindTooltip(getName(), {
+        marker.bindTooltip(nameOf(key), {
           permanent: true,
           direction: left ? 'left' : 'right',
           offset: [left ? -8 : 8, 0],
           className: 'city-label' + (MAJOR.indexOf(key) === -1 ? ' minor' : '')
         });
-        marker._getName = getName;
+        marker._key = key;
         markers.push(marker);
 
         if (canHover) {
           marker.on('click', function () { window.location.href = href; });
         } else {
-          // Mobile : toucher le point = petite bulle avec le lien vers la page
           marker.bindPopup(function () {
-            return '<a href="' + href + '">' + getName() + ' →</a>';
+            return '<a href="' + href + '">' + nameOf(key) + ' →</a>';
           }, { closeButton: false, offset: [0, -6] });
         }
       });
 
-      // Affiche les petites villes à partir de ce niveau de zoom
-      const container = map.getContainer();
       function updateZoomClass() {
         const c = map.getContainer();
         c.classList.toggle('zoomed', map.getZoom() >= 6.5);
-        // On cache nos noms de villes seulement si les noms Esri (arabe) prennent le relais
-        c.classList.toggle('close', map.getZoom() >= 10 && map.hasLayer(labelsArabic));
       }
-      map.on('zoomend', updateZoomClass);
-      applyLabelLang();
 
-      // Met à jour les noms si la langue du site change
-      function refreshNames() { markers.forEach(function (m) { m.setTooltipContent(m._getName()); }); }
-      const grid = document.getElementById('destinations-grid');
-      if (grid && window.MutationObserver) {
-        new MutationObserver(refreshNames).observe(grid, { childList: true, characterData: true, subtree: true });
+      function applyLang() {
+        const lang = currentLang();
+        if (glLayer && glLayer.getMaplibreMap) {
+          const gl = glLayer.getMaplibreMap();
+          const setLang = function () {
+            ['lbl-place', 'lbl-poi', 'lbl-road'].forEach(function (id) {
+              if (gl.getLayer(id)) gl.setLayoutProperty(id, 'text-field', labelText(lang));
+            });
+          };
+          if (gl.isStyleLoaded()) setLang(); else gl.once('load', setLang);
+        }
+        markers.forEach(function (m) { m.setTooltipContent(nameOf(m._key)); });
+        updateZoomClass();
       }
+
+      map.on('zoomend', updateZoomClass);
+      applyLang();
+
+      // Mise à jour quand on change de langue dans le menu
+      document.addEventListener('click', function (e) {
+        if (e.target.closest && e.target.closest('[onclick*="switchLanguage"], [data-lang]')) {
+          setTimeout(applyLang, 250);
+        }
+      });
+      // Au cas où la langue est appliquée un peu après le chargement de la page
+      window.addEventListener('load', function () { setTimeout(applyLang, 400); });
     })();
   </script>
 </section>

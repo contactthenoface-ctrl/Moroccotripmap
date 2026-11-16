@@ -1,191 +1,234 @@
 {
   "seo": {
-    "title": "Guide Meknès 2026 | Ville Impériale, Volubilis & Moulay Idriss | MoroccoTripMap",
-    "description": "Planifiez votre voyage à Meknès : Bab Mansour, Place El Hedim, Heri es-Souani, Mausolée Royal, Volubilis, médina, hôtels et conseils pratiques."
+    "title": "Guide Meknès 2026 | Ville impériale, Volubilis & Moulay Idriss | MoroccoTripMap",
+    "description": "Planifiez votre séjour à Meknès : Bab Mansour, place el-Hedim, Heri es-Souani, mausolée, Volubilis, médina, hôtels et conseils pratiques.",
+    "og_title": "Guide Meknès | Médina, monuments impériaux, Volubilis & riads | MoroccoTripMap",
+    "og_description": "Médina, portes impériales, greniers historiques, riads et itinéraire prêt à l’emploi pour Meknès."
   },
   "name": "Meknès",
-  "hero_subtitle": "Bab Mansour, Place El Hedim, Heri es-Souani et la porte de Volubilis — la cité impériale ismaélienne.",
+  "hero_subtitle": "Bab Mansour, place el-Hedim, Heri es-Souani et la porte de Volubilis — capitale impériale ismaïlienne.",
   "info": {
     "best_time_label": "Meilleure période",
-    "best_time_val": "Avril–Juin & Septembre–Novembre",
-    "stay_label": "Séjour conseillé",
-    "stay_val": "2 – 3 Jours",
+    "best_time_val": "Avril–juin et septembre–novembre",
+    "stay_label": "Durée suggérée",
+    "stay_val": "2 – 3 jours",
     "vibe_label": "Ambiance",
-    "vibe_val": "Impériale & Historique",
+    "vibe_val": "Patrimoine impérial et histoire",
     "airport_label": "Aéroport le plus proche",
-    "airport_val": "FEZ (Saïss) / RBA"
+    "airport_val": "Fès (Saïss) / Rabat"
   },
   "overview": {
-    "title": "Meknès : Portes impériales, greniers royaux et la route de Volubilis",
-    "p1": "Meknès est la majestueuse ville impériale du sultan Moulay Ismail : des portes monumentales, des greniers immenses et une médina à l'atmosphère paisible comparée à la très vivante Fès. La Place El Hedim et l'imposante Bab Mansour plantent le décor, tandis que Heri es-Souani illustre l'échelle grandiose de la logistique royale d'autrefois.",
-    "p2": "Deux jours complets permettent d'explorer confortablement les monuments impériaux et la vieille médina. Une troisième journée est idéale pour visiter les ruines romaines voisines de Volubilis et la cité sainte de Moulay Idriss Zerhoun."
+    "title": "Meknès : portes impériales, greniers royaux et route vers Volubilis",
+    "p1": "Meknès est la ville impériale imposante du sultan Moulay Ismaïl, avec ses immenses murailles, ses greniers et une médina plus calme que Fès. La place el-Hedim et Bab Mansour donnent le ton ; Heri es-Souani montre l’ampleur de la logistique royale.",
+    "p2": "Deux jours complets suffisent pour les monuments et la médina à un rythme confortable ; un troisième jour convient parfaitement à Volubilis et à Moulay Idriss Zerhoun."
   },
   "places": {
-    "badge": "Incontournables",
-    "title": "Lieux à visiter absolument à Meknès",
-    "subtitle": "Portes impériales, anciens greniers royaux, ruines romaines et sites historiques à ne pas manquer.",
-    "explore": "Explorer le lieu ←",
+    "badge": "À ne pas manquer",
+    "title": "Lieux à visiter à Meknès",
+    "subtitle": "Portes historiques, greniers royaux, ruines romaines et sites incontournables.",
+    "explore": "Explorer le lieu →",
     "bab": {
-      "tag": "Porte Impériale",
+      "tag": "Porte impériale",
       "title": "Bab Mansour",
-      "desc": "L'une des portes impériales les plus majestueuses et ornées d'Afrique du Nord."
+      "desc": "La porte impériale la plus célèbre d’Afrique du Nord, couverte de zellige et de détails monumentaux."
     },
     "hedim": {
-      "tag": "Place Historique",
-      "title": "Place El Hedim",
-      "desc": "La place principale animée de Meknès, vivante avec ses conteurs, musiciens et cafés en terrasse."
+      "tag": "Place historique",
+      "title": "Place el-Hedim",
+      "desc": "Le cœur battant de Meknès — conteurs, musiciens et cafés locaux."
     },
     "heri": {
-      "tag": "Greniers Royaux",
+      "tag": "Greniers royaux",
       "title": "Heri es-Souani",
-      "desc": "Vastes écuries et greniers royaux conçus pour résister aux sièges et abriter les chevaux impériaux."
+      "desc": "Écuries et greniers royaux immenses, conçus pour tenir un siège et abriter les chevaux impériaux."
     },
     "volubilis": {
-      "tag": "Ruines Romaines",
-      "title": "Site Archéologique de Volubilis",
-      "desc": "Ruines romaines classées à l'UNESCO abritant des mosaïques préservées et des arcs de triomphe."
+      "tag": "Ruines romaines",
+      "title": "Volubilis",
+      "desc": "Site romain classé UNESCO avec mosaïques préservées et arcs de triomphe."
     },
     "ismail": {
       "tag": "Mausolée",
-      "title": "Mausolée de Moulay Ismail",
-      "desc": "Lieu de repos somptueux du fondateur, mettant en valeur le travail des zelliges et de paisibles cours."
+      "title": "Mausolée de Moulay Ismaïl",
+      "desc": "Lieu de repos historique aux décorations marocaines soignées et cours calmes."
     },
     "medina": {
       "tag": "Médina",
-      "title": "Médina & Souks de Meknès",
-      "desc": "Marchés d'artisans traditionnels et ruelles résidentielles paisibles au charme local."
+      "title": "Médina et souks de Meknès",
+      "desc": "Souks d’artisans et ruelles résidentielles au rythme local."
     },
     "medersa": {
-      "tag": "Patrimoine Islamique",
+      "tag": "Patrimoine islamique",
       "title": "Médersa Bou Inania",
-      "desc": "École théologique du XIVe siècle réputée pour ses sculptures sur bois et ses zelliges complexes."
+      "desc": "École coranique du XIVe siècle, bois sculpté et zellige remarquables."
     },
     "jamai": {
       "tag": "Musée",
-      "title": "Musée Dar Jamai",
-      "desc": "Palais de la fin du XIXe siècle présentant les arts marocains, tapis, céramiques et bijoux."
+      "title": "Musée Dar Jamaï",
+      "desc": "Palais de la fin du XIXe siècle présentant arts marocains, tapis et objets."
     },
     "idriss": {
-      "tag": "Cité Sainte",
+      "tag": "Ville sainte",
       "title": "Moulay Idriss Zerhoun",
-      "desc": "Pittoresque cité de pèlerinage accrochée aux collines verdoyantes près de Volubilis."
+      "desc": "Ville en terrasses sur les collines vertes près de Volubilis."
     }
   },
   "itinerary": {
-    "badge": "Itinéraire",
-    "title": "Programme conseillé de 3 jours",
-    "subtitle": "Un planning équilibré pour découvrir les joyaux impériaux et les ruines romaines."
+    "badge": "Organisation",
+    "title": "Itinéraire suggéré sur 3 jours",
+    "subtitle": "Un plan équilibré pour monuments impériaux et ruines romaines."
   },
   "detailed_itinerary": {
-    "day1_tab": "Jour 1 — Portes Impériales & Médina",
-    "day1_m": "Matin — Bab Mansour & Place El Hedim",
-    "day1_md": "Commencez sur la Place El Hedim et admirez l'architecture majestueuse de Bab Mansour sous la lumière du matin.",
-    "day1_a": "Après-midi — Souks de la Médina",
-    "day1_ad": "Flânez dans les souks artisanaux paisibles et découvrez le savoir-faire local à votre rythme.",
+    "day1_tab": "Jour 1 — Portes et médina",
+    "day1_m": "Matin — Bab Mansour et place el-Hedim",
+    "day1_md": "Commencez sur la place el-Hedim et admirez Bab Mansour en lumière du matin.",
+    "day1_a": "Après-midi — Souks de la médina",
+    "day1_ad": "Flânez dans les souks d’artisans et les ruelles résidentielles.",
     "day1_e": "Soir — Thé à la menthe en terrasse",
-    "day1_ed": "Détendez-vous sur un toit-terrasse surplombant la place animée à la tombée de la nuit.",
-    "day2_tab": "Jour 2 — Greniers & Médersas",
-    "day2_m": "Matin — Heri es-Souani & Mausolée",
-    "day2_md": "Explorez les immenses greniers royaux et les écuries, suivis d'une visite du mausolée de Moulay Ismail.",
-    "day2_a": "Après-midi — Bou Inania & Dar Jamai",
-    "day2_ad": "Visitez la médersa raffinée Bou Inania puis découvrez les collections du musée Dar Jamai.",
+    "day1_ed": "Détendez-vous dans un café face à la place à la tombée du jour.",
+    "day2_tab": "Jour 2 — Greniers et médersas",
+    "day2_m": "Matin — Heri es-Souani et mausolée",
+    "day2_md": "Explorez greniers et écuries royales, puis le mausolée de Moulay Ismaïl.",
+    "day2_a": "Après-midi — Bou Inania et Dar Jamaï",
+    "day2_ad": "Visitez la médersa Bou Inania et le musée des arts à Dar Jamaï.",
     "day2_e": "Soir — Dîner traditionnel",
-    "day2_ed": "Dégustez un tajine mijoté dans le patio traditionnel d'un riad.",
-    "day3_tab": "Jour 3 — Volubilis & Moulay Idriss",
-    "day3_m": "Matin — Ruines romaines de Volubilis",
-    "day3_md": "Faites une courte excursion à Volubilis pour vous promener parmi les colonnades et mosaïques romaines.",
+    "day2_ed": "Savourez un tajine marocain dans la cour d’un riad.",
+    "day3_tab": "Jour 3 — Volubilis et Moulay Idriss",
+    "day3_m": "Matin — Ruines de Volubilis",
+    "day3_md": "Courte excursion à Volubilis pour marcher parmi colonnes et mosaïques.",
     "day3_a": "Après-midi — Moulay Idriss Zerhoun",
-    "day3_ad": "Faites escale dans la cité sainte de Moulay Idriss pour profiter des vues panoramiques et des douceurs locales.",
+    "day3_ad": "Pause dans la ville sainte en terrasses pour les vues et les douceurs locales.",
     "day3_e": "Soir — Retour à Meknès",
-    "day3_ed": "Un dernier dîner en ville avant de poursuivre votre voyage."
+    "day3_ed": "Dernier dîner en ville avant de poursuivre le voyage."
   },
   "stays": {
-    "badge": "Sélection & Conseils",
-    "title": "Où loger à Meknès ? Nos coups de cœur",
-    "subtitle": "Riads traditionnels au cœur de la médina et hôtels confortables proches des sites historiques.",
+    "badge": "Sélection",
+    "title": "Où dormir à Meknès ? Nos coups de cœur",
+    "subtitle": "Riads traditionnels en médina et hôtels confortables près des sites.",
     "book": "Réserver →",
     "card1": {
-      "badge": "★ Riad Traditionnel",
+      "badge": "★ Riad traditionnel",
       "name": "Riad Zerhoun Meknès",
-      "desc": "Riad de charme offrant un accueil chaleureux et une ambiance authentique dans la vieille ville.",
-      "location": "Ancienne Médina"
+      "desc": "Riad chaleureux à l’ambiance authentique au cœur de la vieille ville.",
+      "location": "Médina"
     },
     "card2": {
-      "badge": "★ Hôtel Moderne",
-      "name": "Hôtel Ibis Meknès",
-      "desc": "Séjour confortable et pratique situé à proximité de la gare et des grandes avenues.",
-      "location": "Ville Nouvelle"
+      "badge": "★ Hôtel moderne",
+      "name": "Ibis Meknès",
+      "desc": "Séjour pratique et confortable près de la gare et des axes principaux.",
+      "location": "Ville nouvelle"
     },
     "card3": {
-      "badge": "★ Maison d'hôtes",
-      "name": "Dar Meknès Charm",
-      "desc": "Havre de paix alliant architecture traditionnelle et équipements modernes.",
-      "location": "Près de la Place El Hedim"
+      "badge": "★ Maison d’hôtes",
+      "name": "Dar Meknès",
+      "desc": "Refuge calme alliant architecture traditionnelle et confort contemporain.",
+      "location": "Près de la place el-Hedim"
     },
     "card4": {
-      "badge": "★ Riad de Caractère",
+      "badge": "★ Riad de caractère",
       "name": "Riad Bab Berdaine",
-      "desc": "Maison d'hôtes traditionnelle dotée d'une belle terrasse sur le toit avec vue sur les remparts.",
-      "location": "Quartier des Remparts"
+      "desc": "Maison traditionnelle avec belle terrasse sur les remparts.",
+      "location": "Quartier des remparts"
     }
   },
   "booking_banner": {
-    "badge": "Plus de 60+ hébergements",
-    "title": "Explorez tous les hébergements à Meknès",
-    "desc": "Comparez les prix en direct, lisez les avis certifiés et trouvez d'autres riads et hôtels sur Booking.com.",
+    "badge": "60+ hébergements",
+    "title": "Voir tous les hébergements à Meknès",
+    "desc": "Comparez les tarifs en direct, lisez les avis voyageurs et découvrez d’autres riads et hôtels sur Booking.com.",
     "btn": "Voir tous les hébergements",
-    "guarantee": "✓ Meilleur prix garanti & réservation sécurisée"
+    "guarantee": "✓ Meilleur prix et réservation sécurisée"
+  },
+  "eat": {
+    "badge": "Gastronomie",
+    "title": "Où manger à Meknès",
+    "subtitle": "Tables marocaines familiales près de la place el-Hedim, de la médina et du quartier impérial — tajines, couscous et ambiance locale.",
+    "omnia": {
+      "tag": "Marocain",
+      "loc": "Près de la médina",
+      "title": "Restaurant Omnia",
+      "desc": "Cuisine traditionnelle fiable près de la médina — tajines, couscous et cadre familial calme."
+    },
+    "collier": {
+      "tag": "Terrasse · Marocain",
+      "loc": "Près de la place el-Hedim",
+      "title": "Collier de la Colombe",
+      "desc": "Vue sur la médina et les remparts depuis la terrasse — classiques marocains dans un cadre accueillant."
+    },
+    "yahala": {
+      "tag": "Adresse locale",
+      "loc": "Quartier médina",
+      "title": "Restaurant Ya Hala",
+      "desc": "Adresse populaire pour des portions généreuses et une cuisine maison de Meknès."
+    },
+    "zitouna": {
+      "tag": "Marocain",
+      "loc": "Près des remparts",
+      "title": "Restaurant Zitouna",
+      "desc": "Plats marocains simples et bien cuisinés, dans un coin calme près des murailles."
+    },
+    "bahia": {
+      "tag": "Café · Légers repas",
+      "loc": "Place el-Hedim",
+      "title": "Café Restaurant Bahia",
+      "desc": "Terrasse face à la place el-Hedim — idéal pour le thé à la menthe, un en-cas et l’ambiance de la place."
+    },
+    "sultana": {
+      "tag": "Table de riad",
+      "loc": "Riad médina",
+      "title": "Dar Sultana",
+      "desc": "Table en patio ou sur le toit d’une maison traditionnelle — repas marocains lents dans une atmosphère paisible."
+    }
   },
   "tips": {
-    "title": "Conseils pratiques pour visiter Meknès",
+    "title": "Conseils pratiques pour Meknès",
     "transport": {
       "title": "Se déplacer",
-      "desc": "La médina et la Place El Hedim se visitent très bien à pied. Prenez un petit taxi pour Heri es-Souani et un grand taxi pour Volubilis."
+      "desc": "La médina et la place el-Hedim se parcourent à pied. Petits taxis pour Heri es-Souani ; grands taxis ou transfert pour Volubilis."
     },
     "bargain": {
-      "title": "Achats dans les Souks",
-      "desc": "Faire du shopping à Meknès est beaucoup plus serein qu'à Marrakech ou Fès. La négociation courtoise est appréciée pour l'artisanat."
+      "title": "Négociation au souk",
+      "desc": "Le shopping à Meknès est plus calme qu’à Marrakech ou Fès ; une négociation douce reste la norme pour l’artisanat."
     },
     "water": {
-      "title": "N'oubliez pas de vous hydrater",
-      "desc": "Le printemps et l'automne offrent une météo idéale pour marcher dans les ruines de Volubilis. Emportez toujours de l'eau en bouteille."
+      "title": "Hydratation et climat",
+      "desc": "Printemps et automne sont idéaux pour marcher sur les remparts et à Volubilis. Emportez toujours de l’eau."
     }
   },
   "daytrips": {
-    "badge": "Autour de la ville",
+    "badge": "Au-delà de la ville",
     "title": "Meilleures excursions depuis Meknès",
-    "subtitle": "Explorez l'histoire romaine, les cités saintes et les métropoles impériales voisines.",
+    "subtitle": "Histoire romaine, villes saintes et voisines impériales à portée de main.",
     "volubilis": {
-      "title": "Volubilis & Moulay Idriss",
-      "desc": "La combinaison classique des mosaïques romaines et de la cité sainte perchée."
+      "title": "Volubilis et Moulay Idriss",
+      "desc": "Le duo classique mosaïques romaines et ville sainte en terrasses."
     },
     "fes": {
-      "title": "Fès la Cité Impériale",
-      "desc": "À seulement 30–45 minutes en train pour passer une journée dans la capitale spirituelle du Maroc."
+      "title": "Fès, ville impériale",
+      "desc": "Seulement 30 à 45 minutes en train pour une journée dans la capitale spirituelle."
     },
     "atlas": {
-      "title": "Moyen Atlas & Ifrane",
-      "desc": "Ville au style alpin, forêts de cèdres et singes sauvages dans la région d'Azrou."
+      "title": "Moyen Atlas et Ifrane",
+      "desc": "Ville style alpin, forêts de cèdres et singes sauvages vers Azrou."
     }
   },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ sur votre séjour à Meknès",
+    "title": "FAQ voyage Meknès",
     "q1": {
-      "question": "Combien de jours passer à Meknès ?",
-      "answer": "2 à 3 jours sont idéaux pour explorer les monuments impériaux, la médina et faire une excursion d'une demi-journée à Volubilis."
+      "question": "Combien de jours prévoir à Meknès ?",
+      "answer": "2 à 3 jours suffisent pour les monuments, la médina et une demi-journée à Volubilis."
     },
     "q2": {
-      "question": "Meknès est-elle une ville sûre pour les touristes ?",
-      "answer": "Oui, Meknès est très sûre et beaucoup plus paisible que les grands centres touristiques marocains, permettant un voyage détendu."
+      "question": "Meknès est-elle sûre pour les touristes ?",
+      "answer": "Oui. Meknès est très sûre et plus calme que les grands hubs touristiques du Maroc."
     },
     "q3": {
-      "question": "Quelle est la monnaie utilisée et peut-on payer par carte ?",
-      "answer": "La monnaie est le Dirham (MAD). Les cartes sont acceptées dans les grands hôtels et restaurants, mais l'argent liquide est nécessaire pour les petits commerces et taxis."
+      "question": "Quelle monnaie et paiement par carte ?",
+      "answer": "Le Maroc utilise le dirham (MAD). Les cartes passent dans les grands hôtels et restaurants ; le cash reste utile pour petits commerces et taxis."
     },
     "q4": {
-      "question": "Comment se rendre à Meknès ?",
-      "answer": "Meknès est très bien desservie par le réseau ferroviaire ONCF depuis Fès, Rabat, Casablanca et Tanger."
+      "question": "Comment arriver à Meknès ?",
+      "answer": "Meknès est bien reliée par les trains ONCF depuis Fès, Rabat, Casablanca et Tanger."
     }
   },
   "destinations": {

@@ -1,37 +1,47 @@
 {
   "seo": {
     "title": "Kasbah de Tetuán | Guía de Tetuán | MoroccoTripMap",
-    "description": "¿Visitas la Kasbah de Tetuán? Horarios de visita, entradas, código de vestimenta, mejores fotos y consejos prácticos.",
-    "og_title": "Kasbah de Tetuán: Horarios, Entradas y Consejos",
-    "og_description": "Cómo visitar este punto clave de Tetuán: tours, arquitectura destacada, código de vestimenta y consejos útiles."
+    "description": "¿Visitas la Kasbah de Tetuán? Horarios, acceso, código de vestimenta, mejores fotos y consejos prácticos.",
+    "og_title": "Kasbah de Tetuán: horarios, acceso y consejos",
+    "og_description": "Cómo visitar este lugar de Tetuán: arquitectura, normas de acceso, vestimenta y consejos prácticos."
   },
   "name": "Kasbah de Tetuán",
-  "hero_subtitle": "Lugar de descanso imperial en Tetuán — acceso controlado, artesanía refinada y un tono más tranquilo que la plaza.",
+  "hero_subtitle": "Hito imperial tranquilo en Tetuán — acceso controlado, artesanía fina y un tono más calmado que la plaza.",
   "info": {
-    "best_time_label": "Mejor hora para ir",
+    "best_time_label": "Mejor momento",
     "best_time_val": "Mañana",
-    "duration_label": "Tiempo necesario",
-    "duration_val": "20 – 40 minutos",
+    "duration_label": "Duración",
+    "duration_val": "20 – 40 min",
     "entry_label": "Entrada",
-    "entry_val": "Las reglas varían — consultar en el día",
-    "area_label": "Ubicación",
+    "entry_val": "Normas variables — comprueba el mismo día",
+    "area_label": "Dónde",
     "area_val": "Cerca del complejo imperial, Tetuán"
   },
   "overview": {
     "title": "Donde se guarda la memoria del sultán",
-    "p1": "La Kasbah de Tetuán guarda la tumba del sultán que convirtió a Tetuán en capital imperial. El complejo mezcla la calma de los patios con una decoración detallada: azulejos, estuco y madera que recompensan una mirada pausada, lejos del bullicio de la plaza.",
-    "p2": "Las normas de acceso pueden cambiar y algunas zonas están restringidas. Vístete con modestia, sigue las indicaciones del personal y toma la visita como una parada formal más que como un paseo fotográfico informal. El tiempo dentro suele ser corto pero denso.",
-    "p3": "Visítala por la mañana cuando hay menos aglomeraciones. Combínala con otros sitios el mismo día para mantener la narrativa histórica —poder, logística y memoria— en una sola línea."
+    "p1": "La Kasbah de Tetuán alberga el memorial del sultán que hizo de Tetuán una capital imperial. El complejo mezcla patios tranquilos con zellige, yeso y madera finos — una parada formal y reflexiva lejos de la plaza bulliciosa.",
+    "p2": "Las normas de acceso pueden cambiar y algunas zonas estar restringidas. Viste con modestia, sigue al personal y trata la visita como una parada oficial, no como una sesión de fotos. El tiempo dentro suele ser corto pero intenso.",
+    "p3": "Ven por la mañana cuando hay menos cola. Combínala con otros lugares de Tetuán el mismo día para mantener unida la historia imperial."
   },
   "gallery": {
-    "badge": "Galería",
-    "title": "La Kasbah de Tetuán en imágenes",
-    "subtitle": "Patios, detalles artesanales y el entorno formal del complejo.",
-    "s1": { "caption": "Calma del patio exterior" },
-    "s2": { "caption": "Detalles de azulejos y estuco" },
-    "s3": { "caption": "Carpintería en el complejo" },
-    "s4": { "caption": "Aproximación a los espacios memoriales" },
-    "s5": { "caption": "Atmósfera tranquila lejos de la plaza" }
+    "badge": "Galería de fotos",
+    "title": "Kasbah de Tetuán en imágenes",
+    "subtitle": "Patios, detalle artesanal y tono formal del complejo.",
+    "s1": {
+      "caption": "Patio exterior tranquilo"
+    },
+    "s2": {
+      "caption": "Detalle de zellige y yeso"
+    },
+    "s3": {
+      "caption": "Trabajo en madera del complejo"
+    },
+    "s4": {
+      "caption": "Camino hacia los espacios memoriales"
+    },
+    "s5": {
+      "caption": "Ambiente calmado lejos de la plaza"
+    }
   },
   "moods": {
     "badge": "Qué ver",
@@ -40,68 +50,68 @@
     "1": {
       "tag": "Patio",
       "title": "Espacios exteriores tranquilos",
-      "desc": "El acceso y los patios abiertos antes de llegar a las salas más formales.",
+      "desc": "Entrada y patios abiertos antes de las salas formales.",
       "duration": "10–15 min"
     },
     "2": {
       "tag": "Artesanía",
-      "title": "Azulejos, estuco y madera",
-      "desc": "Detalles que muestran el alto nivel de los talleres de la corte.",
+      "title": "Zellige, yeso y madera",
+      "desc": "Detalles que muestran el nivel de los talleres reales.",
       "duration": "15–25 min"
     },
     "3": {
-      "tag": "Atmósfera",
-      "title": "Visita formal y silenciosa",
-      "desc": "Un ritmo diferente al de la Plaza el-Hedim en el exterior.",
-      "duration": "visita completa"
+      "tag": "Ambiente",
+      "title": "Visita formal y tranquila",
+      "desc": "Un ritmo muy distinto al de la plaza exterior.",
+      "duration": "Visita completa"
     }
   },
   "food": {
-    "title": "Comer antes o después, no dentro",
-    "p1": "No hay opciones de restauración dentro del mausoleo. Planifica tomar un té en la Plaza el-Hedim antes o almorzar en la medina después.",
-    "li1": "Té en la Plaza el-Hedim antes de entrar",
+    "title": "Come antes o después — no dentro",
+    "p1": "No hay restauración dentro del memorial. Planea té en la plaza principal antes o almuerzo en la medina después.",
+    "li1": "Té en la plaza principal antes de entrar",
     "li2": "Almuerzo en la medina tras la visita",
-    "li3": "Llevar agua para el recorrido imperial",
-    "li4": "Evitar comidas pesadas justo antes si te afecta el calor",
-    "li5": "Cena cerca de la plaza al caer la tarde",
-    "p2": "Lleva agua para la caminata entre sitios, especialmente si continúas explorando la zona."
+    "li3": "Agua para el circuito imperial",
+    "li4": "Evita comidas pesadas antes si te afecta el calor",
+    "li5": "Cena cerca de la plaza más tarde",
+    "p2": "Lleva agua al caminar entre sitios, sobre todo si continúas hacia otros monumentos."
   },
   "tips": {
-    "title": "Consejos prácticos para visitar la Kasbah de Tetuán",
+    "title": "Consejos prácticos para la Kasbah de Tetuán",
     "1": {
-      "title": "Comprueba el acceso antes de planificar la mañana",
-      "desc": "Los horarios de apertura y las normas para visitantes pueden cambiar. Confírmalo esa misma mañana en tu hotel o en la entrada para no basar todo tu plan en una sección cerrada."
+      "title": "Comprueba el acceso antes de planear la mañana",
+      "desc": "Horarios y normas pueden cambiar. Confirma por la mañana en el hotel o en la entrada para no basar todo el plan en una sección cerrada."
     },
     "2": {
-      "title": "La vestimenta y el comportamiento importan aquí",
-      "desc": "Es un espacio memorial. Habla en voz baja, cúbrete adecuadamente y guarda la cámara cuando el personal lo indique. Una visita breve y respetuosa es mejor que una discusión en la puerta."
+      "title": "La vestimenta y el comportamiento importan",
+      "desc": "Es un lugar memorial. Habla bajo, viste con modestia y guarda la cámara si el personal lo pide. Una visita corta y respetuosa es mejor que una discusión en la puerta."
     },
     "3": {
-      "title": "Combínala con otros monumentos cercanos",
-      "desc": "El mausoleo y los graneros cuentan historias relacionadas de Tetuán. Hacer ambos la misma mañana simplifica el transporte y aclara la narrativa histórica."
+      "title": "Enlázala con otros sitios de Tetuán",
+      "desc": "La kasbah y otras paradas imperiales cuentan historias conectadas. Visitarlas la misma mañana simplifica el transporte y aclara la historia."
     }
   },
   "gyg": {
-    "badge": "Tours y Experiencias",
-    "title": "Reservar un tour que incluya la Kasbah de Tetuán",
-    "subtitle": "Circuitos imperiales guiados que gestionan el contexto de acceso y los trayectos a pie.",
+    "badge": "Tours y experiencias",
+    "title": "Reserva un tour que incluya la Kasbah de Tetuán",
+    "subtitle": "Tours imperiales guiados para un acceso y contexto más fáciles.",
     "t1": {
       "tag": "Imperial",
-      "title": "Tour de la Kasbah de Tetuán y puertas",
-      "desc": "Contexto del mausoleo junto con la kasbah y la plaza."
+      "title": "Tour kasbah y puertas históricas",
+      "desc": "Contexto del memorial con la kasbah y la plaza."
     },
     "t2": {
-      "tag": "Medio día",
-      "title": "Tetuán imperial: Mausoleo y graneros",
-      "desc": "Kasbah y puntos históricos en un único recorrido guiado."
+      "tag": "Media jornada",
+      "title": "Tetuán imperial: memorial y almacenes",
+      "desc": "Kasbah y sitios históricos en una sola ruta guiada."
     },
     "t3": {
       "tag": "Ciudad",
-      "title": "Núcleo histórico de Tetuán",
-      "desc": "Plaza, puerta, aproximación al mausoleo y orientación en la medina."
+      "title": "Corazón histórico de Tetuán",
+      "desc": "Plaza, puerta, entrada del memorial e introducción breve a la medina."
     },
     "check": "Comprobar disponibilidad en GetYourGuide →",
-    "disclosure": "Algunos de estos enlaces son de afiliación. Si reservas a través de ellos, podemos ganar una comisión sin coste adicional para ti."
+    "disclosure": "Algunos enlaces son de afiliados. Si reservas a través de ellos, podemos ganar una comisión sin coste extra para ti."
   },
   "nearby": {
     "badge": "Sigue explorando",
@@ -109,48 +119,48 @@
     "back": "← Volver a la guía de Tetuán"
   },
   "blog": {
-    "badge": "Desde el Blog",
+    "badge": "Del blog",
     "title": "Artículos relacionados",
     "all": "Todos los artículos →",
     "read": "Leer el artículo →",
     "a1": {
       "tag": "Historia",
-      "title": "Tetuán y su legado",
-      "desc": "Por qué el mausoleo sigue marcando la lectura de la ciudad."
+      "title": "Tetuán y su largo legado",
+      "desc": "Por qué el memorial sigue marcando cómo se lee la ciudad."
     },
     "a2": {
       "tag": "Etiqueta",
       "title": "Visitar sitios religiosos en Marruecos",
-      "desc": "Vestimenta, fotos y zonas restringidas sin complicaciones."
+      "desc": "Vestimenta, fotos y zonas restringidas sin estrés."
     },
     "a3": {
       "tag": "Planificación",
       "title": "Circuito imperial en una mañana",
-      "desc": "Mausoleo y kasbah en un orden lógico."
+      "desc": "Memorial y kasbah en un orden sensato."
     }
   },
   "faq": {
-    "badge": "Bueno saberlo",
-    "title": "Preguntas frecuentes de la Kasbah",
+    "badge": "Bueno saber",
+    "title": "FAQ Kasbah",
     "q1": {
-      "question": "¿Pueden entrar los no musulmanes?",
-      "answer": "Las políticas de acceso han variado con el tiempo. Consúltalo el mismo día, respeta las zonas restringidas y sigue las indicaciones del personal sin discutir."
+      "question": "¿Pueden visitar los no musulmanes?",
+      "answer": "Las normas de acceso han variado. Comprueba el mismo día, respeta las zonas restringidas y sigue al personal sin discutir."
     },
     "q2": {
       "question": "¿Hay código de vestimenta?",
-      "answer": "Sí, se espera ropa recatada que cubra hombros y rodillas. Lleva un pañuelo por si acaso."
+      "answer": "Sí — ropa modesta que cubra hombros y rodillas. Lleva un pañuelo por si acaso."
     },
     "q3": {
       "question": "¿Cuánto dura la visita?",
-      "answer": "Lo habitual son entre veinte y cuarenta minutos una vez dentro de las zonas abiertas."
+      "answer": "Veinte a cuarenta minutos una vez dentro de las zonas abiertas."
     },
     "q4": {
-      "question": "¿Está permitido hacer fotos?",
-      "answer": "Las normas varían según la sala. Pregunta antes de fotografiar y evita el flash en zonas sensibles."
+      "question": "¿Se permite fotografiar?",
+      "answer": "Las normas varían según la sala. Pregunta antes de disparar y evita el flash en espacios sensibles."
     },
     "q5": {
-      "question": "¿Cuál es la mejor hora para ir?",
-      "answer": "Por la mañana, poco después de abrir, para encontrar menos grupos y un ambiente más fresco."
+      "question": "¿Mejor momento para ir?",
+      "answer": "Por la mañana, poco después de la apertura, con menos grupos y aire más fresco."
     }
   }
 }

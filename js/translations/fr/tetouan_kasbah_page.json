@@ -1,156 +1,166 @@
 {
   "seo": {
     "title": "Kasbah de Tétouan | Guide Tétouan | MoroccoTripMap",
-    "description": "Vous visitez la Kasbah de Tétouan ? Horaires de visite, billets, code vestimentaire, meilleurs spots photo et conseils pratiques.",
-    "og_title": "Kasbah de Tétouan : Horaires, Billets & Conseils",
-    "og_description": "Comment visiter ce site incontournable de Tétouan : visites, points forts architecturaux, code vestimentaire et conseils pratiques."
+    "description": "Visiter la Kasbah de Tétouan ? Horaires, accès, tenue, meilleurs spots photo et conseils pratiques.",
+    "og_title": "Kasbah de Tétouan : horaires, accès et conseils",
+    "og_description": "Comment visiter ce site de Tétouan : architecture, règles d'accès, tenue et conseils pratiques."
   },
   "name": "Kasbah de Tétouan",
-  "hero_subtitle": "Lieu de repos impérial à Tétouan — accès contrôlé, artisanat raffiné et atmosphère plus calme que la place.",
+  "hero_subtitle": "Repère impérial calme à Tétouan — accès contrôlé, artisanat raffiné et ton plus posé que la place.",
   "info": {
     "best_time_label": "Meilleur moment",
     "best_time_val": "Matin",
-    "duration_label": "Temps nécessaire",
-    "duration_val": "20 – 40 minutes",
+    "duration_label": "Durée",
+    "duration_val": "20 – 40 min",
     "entry_label": "Entrée",
-    "entry_val": "Règles variables — vérifier sur place",
-    "area_label": "Lieu",
+    "entry_val": "Règles variables — vérifier le jour même",
+    "area_label": "Où",
     "area_val": "Près du complexe impérial, Tétouan"
   },
   "overview": {
-    "title": "Où se conserve la mémoire du sultan",
-    "p1": "La Kasbah de Tétouan abrite la tombe du sultan qui a fait de Tétouan une capitale impériale. Le complexe mêle le calme des cours à une décoration soignée : zelliges, stucs et bois qui récompensent un regard attentif, loin de l'agitation de la place.",
-    "p2": "Les règles d'accès peuvent changer et certaines zones sont restreintes. Habillez-vous décemment, suivez les instructions du personnel et considérez la visite comme un arrêt formel plutôt qu'une simple balade photo. Le temps passé à l'intérieur est généralement court mais dense.",
-    "p3": "Privilégiez la matinée quand l'affluence est plus faible. Associez la visite à d'autres sites le même jour pour garder l'histoire impériale — puissance, logistique et mémoire — dans une même continuité."
+    "title": "Là où la mémoire du sultan est conservée",
+    "p1": "La Kasbah de Tétouan abrite le mémorial du sultan qui fit de Tétouan une capitale impériale. Le complexe mêle cours calmes et zellige, plâtre et bois raffinés — une halte formelle et recueillie loin de l'agitation de la place.",
+    "p2": "Les règles d'accès peuvent changer et certaines zones être restreintes. Habillez-vous modestement, suivez le personnel, et traitez la visite comme un arrêt officiel plutôt qu'une sortie photo. Le temps à l'intérieur est souvent court mais intense.",
+    "p3": "Venez le matin quand les files sont plus légères. Associez-la aux autres sites de Tétouan le même jour pour garder le fil impérial — pouvoir, logistique et mémoire."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "La Kasbah de Tétouan en images",
-    "subtitle": "Cours intérieures, détails d'artisanat et cadre formel du complexe.",
-    "s1": { "caption": "Calme de la cour extérieure" },
-    "s2": { "caption": "Détails de carreaux et de stuc" },
-    "s3": { "caption": "Boiseries dans le complexe" },
-    "s4": { "caption": "Approche des espaces mémoriels" },
-    "s5": { "caption": "Atmosphère paisible loin de la place" }
+    "badge": "Galerie photo",
+    "title": "Kasbah de Tétouan en images",
+    "subtitle": "Cours, détails d'artisanat et ton formel du complexe.",
+    "s1": {
+      "caption": "Cour extérieure calme"
+    },
+    "s2": {
+      "caption": "Détails de zellige et plâtre"
+    },
+    "s3": {
+      "caption": "Boiseries du complexe"
+    },
+    "s4": {
+      "caption": "Chemin vers les espaces mémoriaux"
+    },
+    "s5": {
+      "caption": "Atmosphère calme loin de la place"
+    }
   },
   "moods": {
     "badge": "À voir",
-    "title": "À voir à la Kasbah de Tétouan",
+    "title": "Que voir dans la Kasbah de Tétouan",
     "subtitle": "Cours, artisanat et cœur formel du complexe.",
     "1": {
       "tag": "Cour",
       "title": "Espaces extérieurs calmes",
-      "desc": "L'approche et les cours ouvertes avant les salles les plus formelles.",
+      "desc": "Entrée et cours ouvertes avant les salles formelles.",
       "duration": "10–15 min"
     },
     "2": {
       "tag": "Artisanat",
-      "title": "Carreaux, stuc et bois",
-      "desc": "Des détails qui témoignent du haut niveau des ateliers de la cour.",
+      "title": "Zellige, plâtre et bois",
+      "desc": "Détails qui montrent le niveau des ateliers royaux.",
       "duration": "15–25 min"
     },
     "3": {
-      "tag": "Atmosphère",
-      "title": "Visite formelle et silencieuse",
-      "desc": "Un rythme différent de la Place el-Hedim à l'extérieur.",
-      "duration": "visite complète"
+      "tag": "Ambiance",
+      "title": "Visite formelle et calme",
+      "desc": "Un rythme très différent de la place à l'extérieur.",
+      "duration": "Visite complète"
     }
   },
   "food": {
-    "title": "Manger avant ou après, pas à l'intérieur",
-    "p1": "Il n'y a pas de restauration à l'intérieur du mausolée. Prévoyez un thé sur la Place el-Hedim avant ou un déjeuner dans la médina après.",
-    "li1": "Thé sur la Place el-Hedim avant l'entrée",
-    "li2": "Déjeuner dans la médina après la visite",
-    "li3": "Emporter de l'eau pour le circuit impérial",
-    "li4": "Éviter les repas trop lourds juste avant si vous craignez la chaleur",
-    "li5": "Dîner en soirée près de la place",
-    "p2": "Gardez de l'eau pour la marche entre les sites, en particulier si vous poursuivez vers d'autres monuments."
+    "title": "Manger avant ou après — pas à l'intérieur",
+    "p1": "Pas de restauration dans le mémorial. Prévoyez un thé sur la place principale avant, ou le déjeuner en médina ensuite.",
+    "li1": "Thé sur la place principale avant l'entrée",
+    "li2": "Déjeuner en médina après la visite",
+    "li3": "Eau pour le circuit impérial",
+    "li4": "Éviter les repas lourds avant si la chaleur vous affecte",
+    "li5": "Dîner près de la place plus tard",
+    "p2": "Gardez de l'eau pour marcher entre les sites, surtout si vous continuez vers d'autres monuments."
   },
   "tips": {
-    "title": "Conseils pratiques pour visiter la Kasbah de Tétouan",
+    "title": "Conseils pratiques pour la Kasbah de Tétouan",
     "1": {
-      "title": "Vérifier l'accès avant de planifier votre matinée",
-      "desc": "Les horaires d'ouverture et les règles pour les visiteurs peuvent changer. Confirmez le matin même auprès de votre hôtel ou à l'entrée pour ne pas baser tout votre planning sur une section fermée."
+      "title": "Vérifiez l'accès avant de planifier le matin",
+      "desc": "Horaires et règles peuvent changer. Confirmez le matin à l'hôtel ou à l'entrée pour ne pas baser tout le plan sur une section fermée."
     },
     "2": {
-      "title": "La tenue et le comportement comptent ici",
-      "desc": "C'est un espace mémoriel. Parlez à voix basse, couvrez-vous et rangez l'appareil photo lorsque le personnel le demande. Une courte visite respectueuse vaut mieux qu'une discussion à l'entrée."
+      "title": "Tenue et comportement comptent ici",
+      "desc": "C'est un lieu mémorial. Parlez bas, habillez-vous modestement, rangez l'appareil si le personnel le demande. Une visite courte et respectueuse vaut mieux qu'une discussion à la porte."
     },
     "3": {
-      "title": "Associer la visite à d'autres monuments",
-      "desc": "Le mausolée et les greniers racontent des pans liés de l'histoire de Tétouan. Faire les deux la même matinée simplifie les déplacements et clarifie le parcours."
+      "title": "Reliez-la aux autres sites de Tétouan",
+      "desc": "La kasbah et les autres arrêts impériaux racontent des histoires liées. Les visiter le même matin simplifie les déplacements et clarifie l'histoire."
     }
   },
   "gyg": {
-    "badge": "Tours & Expériences",
-    "title": "Réserver une visite incluant la Kasbah de Tétouan",
-    "subtitle": "Circuits impériaux guidés qui gèrent le contexte d'accès et la marche vers les sites proches.",
+    "badge": "Visites & expériences",
+    "title": "Réservez une visite incluant la Kasbah de Tétouan",
+    "subtitle": "Circuits impériaux guidés pour un accès et un contexte plus faciles.",
     "t1": {
       "tag": "Impérial",
-      "title": "Visite de la Kasbah de Tétouan et des portes",
-      "desc": "Contexte du mausolée avec la kasbah et la place."
+      "title": "Visite kasbah et portes historiques",
+      "desc": "Contexte du mémorial avec la kasbah et la place."
     },
     "t2": {
       "tag": "Demi-journée",
-      "title": "Tétouan impérial : Mausolée et greniers",
-      "desc": "Kasbah et sites historiques en une seule boucle guidée."
+      "title": "Tétouan impériale : mémorial et entrepôts",
+      "desc": "Kasbah et sites historiques sur un seul parcours guidé."
     },
     "t3": {
       "tag": "Ville",
       "title": "Cœur historique de Tétouan",
-      "desc": "Place, porte, approche du mausolée et orientation dans la médina."
+      "desc": "Place, porte, entrée du mémorial et courte introduction à la médina."
     },
     "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens d'affiliation. En réservant via ces derniers, nous pouvons percevoir une commission sans frais supplémentaires pour vous."
+    "disclosure": "Certains liens sont affiliés. Une réservation via ces liens peut nous rapporter une commission sans frais supplémentaires pour vous."
   },
   "nearby": {
     "badge": "Continuer l'exploration",
     "title": "Autres lieux incontournables à Tétouan",
-    "back": "← Retour au guide de Tétouan"
+    "back": "← Retour au guide Tétouan"
   },
   "blog": {
-    "badge": "Depuis le Blog",
-    "title": "Articles associés",
+    "badge": "Du blog",
+    "title": "Articles liés",
     "all": "Tous les articles →",
     "read": "Lire l'article →",
     "a1": {
       "tag": "Histoire",
-      "title": "Tétouan et son héritage",
-      "desc": "Pourquoi le mausolée façonne encore la lecture de la ville."
+      "title": "Tétouan et son long héritage",
+      "desc": "Pourquoi le mémorial façonne encore la lecture de la ville."
     },
     "a2": {
       "tag": "Étiquette",
       "title": "Visiter les sites religieux au Maroc",
-      "desc": "Tenue, photos et zones réglementées en toute sérénité."
+      "desc": "Tenue, photos et zones restreintes sans stress."
     },
     "a3": {
-      "tag": "Planification",
+      "tag": "Organisation",
       "title": "Circuit impérial en une matinée",
-      "desc": "Mausolée et kasbah dans un ordre logique."
+      "desc": "Mémorial et kasbah dans un ordre logique."
     }
   },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ de la Kasbah",
+    "title": "FAQ Kasbah",
     "q1": {
       "question": "Les non-musulmans peuvent-ils visiter ?",
-      "answer": "Les politiques d'accès ont varié au fil du temps. Vérifiez sur place, respectez les zones restreintes et suivez les instructions du personnel sans discuter."
+      "answer": "Les règles d'accès ont varié. Vérifiez le jour même, respectez les zones restreintes et suivez le personnel sans discussion."
     },
     "q2": {
       "question": "Y a-t-il un code vestimentaire ?",
-      "answer": "Oui — une tenue modeste couvrant les épaules et les genoux est exigée. Apportez un foulard en cas de doute."
+      "answer": "Oui — tenue modeste couvrant épaules et genoux. Prévoyez un foulard si besoin."
     },
     "q3": {
       "question": "Combien de temps dure la visite ?",
-      "answer": "Vingt à quarante minutes sont généralement nécessaires une fois à l'intérieur des espaces ouverts."
+      "answer": "Vingt à quarante minutes une fois à l'intérieur des zones ouvertes."
     },
     "q4": {
-      "question": "La photographie est-elle autorisée ?",
-      "answer": "Les règles diffèrent selon les salles. Demandez avant de photographier et évitez le flash dans les espaces sensibles."
+      "question": "La photo est-elle autorisée ?",
+      "answer": "Les règles varient selon les salles. Demandez avant de photographier et évitez le flash dans les espaces sensibles."
     },
     "q5": {
-      "question": "Quel est le meilleur moment pour venir ?",
-      "answer": "Le matin, juste après l'ouverture, pour croiser moins de groupes et profiter d'un air plus frais."
+      "question": "Meilleur moment pour venir ?",
+      "answer": "Le matin, juste après l'ouverture, pour moins de groupes et un air plus frais."
     }
   }
 }

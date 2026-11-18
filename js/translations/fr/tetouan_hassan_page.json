@@ -1,117 +1,166 @@
 {
   "seo": {
-    "title": "Place Hassan II | Guide Tétouan | MoroccoTripMap",
-    "description": "Vous visitez la Place Hassan II à Tétouan ? Horaires, conseils et points d'intérêt pour découvrir le cœur de la ville.",
-    "og_title": "Place Hassan II, Tétouan : Visite, Architecture & Conseils",
-    "og_description": "Comment découvrir ce lieu incontournable de Tétouan : vues, architecture et conseils pratiques."
+    "title": "Place Hassan II | Guide de Tétouan | MoroccoTripMap",
+    "description": "Visiter la Place Hassan II à Tétouan ? Architecture, lien avec la médina, spots photo et conseils pratiques.",
+    "og_title": "Place Hassan II, Tétouan : Architecture, Porte de la Médina & Conseils",
+    "og_description": "Planifiez votre visite de la Place Hassan II à Tétouan : grands espaces, transition Ensanche espagnol et conseils pratiques."
   },
   "name": "Place Hassan II",
-  "hero_subtitle": "La grande place animée qui relie la médina historique de Tétouan à l'Ensanche espagnol.",
+  "hero_subtitle": "Le grand cœur urbain de Tétouan reliant l'Ensanche espagnol à la médina UNESCO.",
   "info": {
-    "best_time_label": "Meilleur moment",
-    "best_time_val": "Matin & fin d'après-midi",
-    "duration_label": "Temps nécessaire",
-    "duration_val": "30 minutes – 2 heures",
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Fin d'après-midi / soir",
+    "duration_label": "Durée",
+    "duration_val": "30–60 minutes",
     "entry_label": "Entrée",
-    "entry_val": "Gratuit",
+    "entry_val": "Place publique gratuite",
     "area_label": "Où",
-    "area_val": "Centre du Tétouan historique"
+    "area_val": "Centre de Tétouan, à côté du Palais Royal"
   },
   "overview": {
-    "title": "La place qui unit deux époques",
-    "p1": "La Place Hassan II est le grand cœur urbain de Tétouan, reliant harmonieusement le quartier colonial espagnol du XXe siècle (l'Ensanche) aux antiques portes de la médina classée par l'UNESCO. Encadrée par d'élégantes façades néoclassiques et dominée par les superbes portes du Palais Royal, elle constitue l'espace de rassemblement par excellence pour les habitants comme pour les visiteurs.",
-    "p2": "Visitez-la le matin pour voir la ville s'éveiller sous une lumière douce, ou revenez au coucher du soleil lorsque les familles flânent sur la vaste esplanade pavée et que les cafés locaux s'animent de discussions.",
-    "p3": "Véritable point d'repère principal à Tétouan, vous traverserez cette place à maintes reprises lors de vos transitions entre les visites de musées, les circuits architecturaux et l'exploration des souks labyrinthiques."
+    "title": "Porte entre deux mondes",
+    "p1": "La Place Hassan II est le centre cérémoniel et social de Tétouan. Elle se situe au point de rencontre de l'Ensanche construit par les Espagnols et de la médina historique, encadrée par la façade du Palais Royal d'un côté et les portes de la médina de l'autre.",
+    "p2": "Le grand espace ouvert est idéal pour la photographie, l'observation de la vie locale et comme point de départ pour explorer la vieille ville. Le soir, la place se remplit d'habitants profitant du paseo.",
+    "p3": "La plupart des visiteurs l'utilisent à la fois comme repère et point d'orientation pratique avant d'entrer dans la médina ou de continuer vers les musées proches."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "La Place Hassan II en images",
-    "subtitle": "Architecture, grands espaces ouverts et vie urbaine vibrante.",
-    "s1": { "caption": "Vue panoramique de la vaste place" },
-    "s2": { "caption": "Terrasses et abords d'architecture coloniale espagnole" },
-    "s3": { "caption": "Ambiance matinale et sentiers paisibles" },
-    "s4": { "caption": "Rassemblements animés au crépuscule" },
-    "s5": { "caption": "Porte d'accès menant à l'ancienne médina" }
-  },
-  "moods": {
-    "badge": "À voir",
-    "title": "Points forts de la place",
-    "subtitle": "Éléments architecturaux clés et caractéristiques urbaines.",
-    "1": {
-      "tag": "Architecture",
-      "title": "Façades de l'Ensanche espagnol",
-      "desc": "Élégants bâtiments néoclassiques encadrant l'aménagement colonial européen.",
-      "duration": "30 min"
+    "badge": "Galerie photo",
+    "title": "Place Hassan II en images",
+    "subtitle": "Espace ouvert, vues du palais et transition vers la médina.",
+    "s1": {
+      "caption": "Vue large de la place"
     },
-    "2": {
-      "tag": "Patrimoine",
-      "title": "Portes du Palais Royal",
-      "desc": "Superbes détails hispano-mauresques ancrant la majesté de la place.",
-      "duration": "20 min"
+    "s2": {
+      "caption": "Façade du Palais Royal"
     },
-    "3": {
-      "tag": "Ambiance",
-      "title": "Vaste esplanade",
-      "desc": "La promenade piétonne animée menant directement aux portes de la médina.",
-      "duration": "30 min"
+    "s3": {
+      "caption": "Portes de la médina depuis la place"
+    },
+    "s4": {
+      "caption": "Ambiance du soir"
+    },
+    "s5": {
+      "caption": "Détails architecturaux autour de la place"
     }
   },
-  "tips": {
-    "title": "Conseils pratiques pour visiter la Place Hassan II",
+  "moods": {
+    "badge": "Que faire",
+    "title": "Que faire sur la Place Hassan II",
+    "subtitle": "Vie de la place, photographie et orientation.",
     "1": {
-      "title": "Utilisez-la comme boussole géographique",
-      "desc": "Repérez les portes du palais royal et les entrées de la médina pour vous orienter facilement."
+      "tag": "Place",
+      "title": "Parcourir l'espace ouvert",
+      "desc": "Ressentez l'échelle et la transition de l'architecture coloniale à celle de la médina.",
+      "duration": "20–40 min"
     },
     "2": {
-      "title": "Calme matinal vs effervescence du soir",
-      "desc": "Les premières heures offrent des vues photographiques dégagées, tandis que la fin d'après-midi met en valeur la vie locale."
+      "tag": "Photo",
+      "title": "Photos du palais et des portes",
+      "desc": "Meilleurs angles du Palais Royal et des entrées de la médina.",
+      "duration": "15–30 min"
     },
     "3": {
-      "title": "Étiquette au café",
-      "desc": "Savourer un verre de thé à la menthe frais sur une terrasse face à la place est une expérience incontournable."
+      "tag": "Café",
+      "title": "Moment en terrasse",
+      "desc": "Asseyez-vous dans un café sur ou près de la place et observez la vie quotidienne.",
+      "duration": "30–60 min"
+    }
+  },
+  "food": {
+    "title": "Cafés et snacks autour de la place",
+    "p1": "La place et les rues adjacentes regorgent de cafés et restaurants simples.",
+    "li1": "Cafés en terrasse avec vue sur la place",
+    "li2": "Thé à la menthe et pâtisseries",
+    "li3": "Plats marocains rapides à proximité",
+    "li4": "Glaces le soir",
+    "li5": "Plus d'options dans les premières ruelles de la médina",
+    "p2": "Le soir est le moment le plus atmosphérique pour un verre sur la place."
+  },
+  "tips": {
+    "title": "Conseils pratiques pour la Place Hassan II",
+    "1": {
+      "title": "Libre et ouverte",
+      "desc": "Pas de billet nécessaire. La place est publique et sûre à la plupart des heures."
+    },
+    "2": {
+      "title": "Meilleure lumière",
+      "desc": "Fin d'après-midi et début de soirée offrent la meilleure lumière et l'ambiance la plus vivante."
+    },
+    "3": {
+      "title": "Point d'orientation",
+      "desc": "Utilisez la place pour vous orienter entre l'Ensanche, le palais et les portes de la médina."
     }
   },
   "gyg": {
-    "badge": "Visites & Expériences",
-    "title": "Réserver une visite guidée de Tétouan",
-    "subtitle": "Découvrez le Palais Royal, la Place Hassan II et la médina classée par l'UNESCO avec un guide local expert.",
+    "badge": "Visites & expériences",
+    "title": "Explorer le centre avec un guide",
+    "subtitle": "Visites à pied qui commencent ou passent par la Place Hassan II.",
     "t1": {
-      "tag": "Palais & Place",
-      "title": "Héritage royal de Tétouan et promenade en médina",
-      "desc": "Explorez la Place Hassan II, admirez l'extérieur du Palais Royal et plongez au cœur de la médina."
+      "tag": "Marche",
+      "title": "Visite guidée médina & place",
+      "desc": "De la Place Hassan II dans la médina UNESCO."
     },
     "t2": {
-      "tag": "Journée complète",
-      "title": "Lieux incontournables et architecture de Tétouan",
-      "desc": "Une visite culturelle complète reliant l'Ensanche espagnol à la vieille ville andalouse."
+      "tag": "Privé",
+      "title": "Promenade privée centre de Tétouan",
+      "desc": "Itinéraire flexible couvrant place, extérieur du palais et médina."
     },
     "t3": {
-      "tag": "Privé",
-      "title": "Visite guidée privée de Tétouan",
-      "desc": "Exploration sur mesure des monuments historiques, des ateliers d'artisans et des marchés locaux."
+      "tag": "Culture",
+      "title": "Promenade patrimoine andalou",
+      "desc": "Accent sur les couches architecturales autour de la place."
     },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens d'affiliation. Si vous réservez via ces liens, nous pourrions toucher une commission sans frais supplémentaires pour vous."
+    "check": "Vérifier les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via eux, nous pouvons percevoir une commission sans frais supplémentaires pour vous."
   },
   "nearby": {
     "badge": "Continuer l'exploration",
     "title": "Autres lieux incontournables à Tétouan",
     "back": "← Retour au guide de Tétouan"
   },
+  "blog": {
+    "badge": "Du blog",
+    "title": "Articles liés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Architecture",
+      "title": "L'Ensanche rencontre la médina",
+      "desc": "Comment la Place Hassan II raconte l'histoire de deux traditions urbaines."
+    },
+    "a2": {
+      "tag": "Planning",
+      "title": "Commencer sa journée à Tétouan",
+      "desc": "Pourquoi la place est le meilleur point d'orientation."
+    },
+    "a3": {
+      "tag": "Photo",
+      "title": "Meilleurs angles sur la Place Hassan II",
+      "desc": "Où se placer pour les photos du palais et des portes."
+    }
+  },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ de la Place Hassan II",
+    "title": "FAQ Place Hassan II",
     "q1": {
-      "question": "La Place Hassan II est-elle sûre la nuit ?",
-      "answer": "Oui, elle est généralement sûre, animée et bien éclairée en soirée. Les précautions d'usage en ville s'appliquent."
+      "question": "La Place Hassan II est-elle sûre le soir ?",
+      "answer": "Oui, elle est généralement sûre, animée et bien éclairée en soirée. Les précautions habituelles en ville s'appliquent."
     },
     "q2": {
-      "question": "Faut-il un billet pour y accéder ?",
-      "answer": "Non, la place est entièrement publique et son accès est gratuit."
+      "question": "Faut-il un billet pour visiter ?",
+      "answer": "Non, la place est entièrement publique et d'accès libre."
     },
     "q3": {
-      "question": "Combien de temps faut-il y passer ?",
-      "answer": "Environ 30 minutes pour une traversée, ou plus si vous vous détendez à la terrasse d'un café."
+      "question": "Combien de temps y passer ?",
+      "answer": "Environ 30 minutes pour une traversée, ou plus si vous vous posez en terrasse de café."
+    },
+    "q4": {
+      "question": "Est-ce proche de la médina ?",
+      "answer": "Oui. Plusieurs portes de la médina s'ouvrent directement depuis ou tout près de la place."
+    },
+    "q5": {
+      "question": "Quelle est la meilleure heure ?",
+      "answer": "Fin d'après-midi et début de soirée pour la lumière, l'ambiance et l'observation de la vie locale."
     }
   }
 }

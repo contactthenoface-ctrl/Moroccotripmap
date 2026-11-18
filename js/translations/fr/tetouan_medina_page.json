@@ -1,97 +1,117 @@
 {
   "seo": {
-    "title": "Médina de Tétouan | Guide Tétouan | MoroccoTripMap",
-    "description": "Explorez la médina de Tétouan classée à l'UNESCO. Découvrez l'architecture andalouse, les souks traditionnels, les quartiers d'artisans et conseils pratiques.",
-    "og_title": "Médina de Tétouan : Histoire, architecture et conseils de voyage",
-    "og_description": "Planifiez votre visite de la magnifique médina de Tétouan : héritage andalou, souks animés, points forts architecturaux et conseils pratiques."
+    "title": "Médina de Tétouan | Guide de Tétouan | MoroccoTripMap",
+    "description": "Explorez la médina de Tétouan classée UNESCO. Architecture andalouse, souks traditionnels, quartiers d'artisans, meilleurs spots photo et conseils pratiques.",
+    "og_title": "Médina de Tétouan : Histoire, Architecture & Conseils",
+    "og_description": "Planifiez votre visite de la magnifique médina de Tétouan : patrimoine andalou, souks animés, points d'architecture et conseils pratiques."
   },
   "name": "Médina de Tétouan",
-  "hero_subtitle": "Un trésor du patrimoine mondial de l'UNESCO témoignant d'un héritage andalou-marocain exceptionnel, de ruelles blanchies à la chaux et de souks animés.",
+  "hero_subtitle": "Médina blanche classée UNESCO aux racines andalouses, souks animés et ateliers d'artisans.",
   "info": {
-    "best_time_label": "Meilleur moment",
+    "best_time_label": "Meilleure période",
     "best_time_val": "Matin ou fin d'après-midi",
-    "duration_label": "Temps nécessaire",
-    "duration_val": "2 à 3 heures",
+    "duration_label": "Durée",
+    "duration_val": "2–3 heures",
     "entry_label": "Entrée",
-    "entry_val": "Gratuit (accès public)",
-    "area_label": "Lieu",
-    "area_val": "Vieille ville, Tétouan"
+    "entry_val": "Rues et souks publics gratuits",
+    "area_label": "Où",
+    "area_val": "Cœur historique, accès depuis Place Hassan II"
   },
   "overview": {
-    "title": "Un chef-d'œuvre vivant de l'histoire andalouse",
-    "p1": "La médina de Tétouan est remarquablement bien conservée, ayant servi de principal point de contact entre l'Andalousie et le Maroc après la Reconquista au XVe siècle. Reconstruite par des réfugiés andalous, son architecture unique reflète une profonde fusion entre traditions mauresques et andalouses.",
-    "p2": "Flâner dans son labyrinthe de ruelles blanchies à la chaux dévoile des balcons en fer forgé, des toits de tuiles vertes, des fontaines cachées et des quartiers d'artisans animés où des savoir-faire séculaires sont encore pratiqués au quotidien.",
-    "p3": "Prenez le temps d'explorer les souks traditionnels, d'échanger avec les artisans locaux et de comprendre pourquoi ce joyau culturel a obtenu sa prestigieuse désignation de site du patrimoine mondial de l'UNESCO."
+    "title": "Une médina andalouse-marocaine vivante",
+    "p1": "La médina de Tétouan est un site du patrimoine mondial UNESCO célébré pour son caractère andalou bien préservé. Murs blanchis à la chaux, ruelles étroites et dense réseau de souks forment l'un des centres historiques les plus atmosphériques du Maroc.",
+    "p2": "Contrairement aux plus grandes médinas, celle de Tétouan paraît plus résidentielle et gérable. Les ateliers d'artisans (cuir, textiles, métal) restent actifs, et les portes s'ouvrent directement sur la Place Hassan II et l'Ensanche espagnol.",
+    "p3": "Prévoyez deux à trois heures pour une promenade complète. Les matins sont plus frais et calmes pour la photo et les ateliers ; la fin d'après-midi apporte une lumière plus chaude et plus de vie locale."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "La Médina de Tétouan en images",
-    "subtitle": "Ruelles blanches, portes anciennes et détails traditionnels.",
-    "s1": { "caption": "Charmantes rues blanchies à la chaux" },
-    "s2": { "caption": "Détails architecturaux andalous" },
-    "s3": { "caption": "Souks traditionnels animés" },
-    "s4": { "caption": "Murailles et portes historiques" },
-    "s5": { "caption": "Artisanat local authentique" }
-  },
-  "moods": {
-    "badge": "À voir",
-    "title": "Points forts de la Médina",
-    "subtitle": "Zones clés et expériences incontournables à l'intérieur des anciens murs.",
-    "1": {
-      "tag": "Architecture",
-      "title": "Patios andalous",
-      "desc": "Découvrez des demeures cachées dotées de carreaux ornés, de fontaines et de détails en fer forgé.",
-      "duration": "45 min"
+    "badge": "Galerie photo",
+    "title": "Médina en images",
+    "subtitle": "Ruelles blanches, portes, souks et détails d'artisans.",
+    "s1": {
+      "caption": "Ruelles blanchies de la médina"
     },
-    "2": {
-      "tag": "Shopping",
-      "title": "Souks traditionnels",
-      "desc": "Parcourez textiles, maroquinerie, épices et bijoux faits main dans les ruelles commerçantes historiques.",
-      "duration": "1 heure"
+    "s2": {
+      "caption": "Portes et arches historiques"
     },
-    "3": {
-      "tag": "Culture",
-      "title": "Artisans et corporations",
-      "desc": "Observez sculpteurs sur bois, tisserands et maroquiniers perpétuant des traditions transmises de génération en génération.",
-      "duration": "45 min"
+    "s3": {
+      "caption": "Ambiance des souks traditionnels"
+    },
+    "s4": {
+      "caption": "Intérieurs d'ateliers d'artisans"
+    },
+    "s5": {
+      "caption": "Vues depuis les remparts"
     }
   },
-  "tips": {
-    "title": "Conseils pratiques pour visiter la Médina de Tétouan",
+  "moods": {
+    "badge": "Que faire",
+    "title": "Que faire dans la médina",
+    "subtitle": "Se promener, shopper, photographier et découvrir les métiers.",
     "1": {
-      "title": "Portez des chaussures de marche confortables",
-      "desc": "La médina comporte des rues pavées de pierre, des pentes et des marches. Des chaussures plates et robustes rendront votre exploration beaucoup plus agréable."
+      "tag": "Flâner",
+      "title": "Se perdre dans les ruelles",
+      "desc": "Suivez les murs blancs et les petites places sans plan fixe.",
+      "duration": "1–2 heures"
     },
     "2": {
-      "title": "Engagez un guide local si nécessaire",
-      "desc": "Bien que vous puissiez flâner librement, un guide local officiel peut vous aider à naviguer dans les ruelles complexes et à partager des anecdotes historiques fascinantes."
+      "tag": "Artisanat",
+      "title": "Visiter les ateliers",
+      "desc": "Cuir, textiles et métaux encore produits sur place.",
+      "duration": "45–90 min"
     },
     "3": {
-      "title": "Respectez les coutumes locales",
-      "desc": "Demandez la permission avant de photographier les habitants dans leurs ateliers et habillez-vous modestement par respect pour les traditions locales."
+      "tag": "Souks",
+      "title": "Explorer les marchés",
+      "desc": "Alimentation, vêtements et biens du quotidien dans un cadre vivant mais gérable.",
+      "duration": "30–60 min"
+    }
+  },
+  "food": {
+    "title": "Manger dans et autour de la médina",
+    "p1": "Petits restaurants et street food sont dispersés dans la médina et juste à l'extérieur des portes principales.",
+    "li1": "Pain frais et olives des boulangeries locales",
+    "li2": "Tajines et viandes grillées dans des adresses simples",
+    "li3": "Thé à la menthe sur une place calme",
+    "li4": "Pâtisseries et douceurs près des portes",
+    "li5": "Options fruits de mer à courte marche vers le côté côtier",
+    "p2": "Beaucoup de visiteurs mangent juste à l'extérieur de la médina après l'exploration pour plus d'espace et de choix."
+  },
+  "tips": {
+    "title": "Conseils pratiques pour la médina",
+    "1": {
+      "title": "Tenue correcte",
+      "desc": "En zone résidentielle et commerciale, il est recommandé de couvrir épaules et genoux par respect."
+    },
+    "2": {
+      "title": "Lumière du matin",
+      "desc": "Les premières heures sont plus fraîches, plus calmes et meilleures pour la photo contre les murs blancs."
+    },
+    "3": {
+      "title": "Guidé ou indépendant",
+      "desc": "L'exploration en autonomie est facile ; un guide local enrichit le contexte historique et les ateliers."
     }
   },
   "gyg": {
-    "badge": "Tours et Expériences",
-    "title": "Réservez une visite guidée de Tétouan",
-    "subtitle": "Visites guidées immersives à travers la vieille ville classée par l'UNESCO.",
+    "badge": "Visites & expériences",
+    "title": "Explorer la médina avec un guide",
+    "subtitle": "Visites à pied centrées sur le patrimoine andalou et l'artisanat.",
     "t1": {
-      "tag": "Visite guidée",
-      "title": "Visite historique à pied de la Médina de Tétouan",
-      "desc": "Explorez les racines andalouses, les portes et les marchés artisanaux avec un guide expert."
+      "tag": "Marche",
+      "title": "Visite guidée de la médina de Tétouan",
+      "desc": "Médina UNESCO, portes, souks et monuments clés."
     },
     "t2": {
-      "tag": "Culture & Artisanat",
-      "title": "Visite découverte des artisans et souks",
-      "desc": "Un regard privilégié sur les ateliers traditionnels, la sculpture sur bois et les corporations de tissage."
+      "tag": "Artisanat",
+      "title": "Expérience atelier d'artisan",
+      "desc": "Visite d'ateliers actifs de cuir ou textile avec un expert local."
     },
     "t3": {
-      "tag": "Excursion d'un jour",
-      "title": "Points forts de Tétouan et de la côte",
-      "desc": "Associez une matinée dans la médina à une visite l'après-midi de la plage voisine de Martil."
+      "tag": "Privé",
+      "title": "Visite privée médina & zone du palais",
+      "desc": "Itinéraire flexible couvrant le cœur historique et la Place Hassan II."
     },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens d'affiliation. En réservant via ces derniers, nous pouvons percevoir une commission sans frais supplémentaires pour vous."
+    "check": "Vérifier les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via eux, nous pouvons percevoir une commission sans frais supplémentaires pour vous."
   },
   "nearby": {
     "badge": "Continuer l'exploration",
@@ -99,40 +119,48 @@
     "back": "← Retour au guide de Tétouan"
   },
   "blog": {
-    "badge": "Depuis le Blog",
-    "title": "Articles associés",
+    "badge": "Du blog",
+    "title": "Articles liés",
     "all": "Tous les articles →",
     "read": "Lire l'article →",
     "a1": {
-      "tag": "Planification",
-      "title": "Tétouan en un jour : par où commencer",
-      "desc": "Pourquoi la place Hassan II et la médina de Tétouan constituent la première heure idéale."
+      "tag": "Patrimoine",
+      "title": "Pourquoi la médina de Tétouan est classée UNESCO",
+      "desc": "Racines andalouses et intégrité architecturale expliquées."
     },
     "a2": {
-      "tag": "Photo",
-      "title": "Photographier les portes historiques au Maroc",
-      "desc": "Lumière, distance et affluence autour de la médina de Tétouan."
+      "tag": "Shopping",
+      "title": "Que rapporter des souks de Tétouan",
+      "desc": "Cuir, textiles et artisanat local authentique."
     },
     "a3": {
-      "tag": "Histoire",
-      "title": "Le contexte historique de Tétouan",
-      "desc": "Comment la médina s'inscrit dans le projet andalou-marocain global."
+      "tag": "Planning",
+      "title": "Itinéraire demi-journée dans la médina",
+      "desc": "Portes, ateliers et déjeuner sans se presser."
     }
   },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ de la Médina de Tétouan",
+    "title": "FAQ Médina de Tétouan",
     "q1": {
-      "question": "L'accès à la Médina de Tétouan est-il gratuit ?",
-      "answer": "Oui. La promenade à travers les rues, les portes et les marchés en plein air de la médina est entièrement gratuite."
+      "question": "La médina de Tétouan est-elle gratuite ?",
+      "answer": "Oui, se promener dans les rues et souks de la médina est entièrement gratuit et ouvert au public."
     },
     "q2": {
-      "question": "Combien de temps faut-il pour l'explorer ?",
-      "answer": "2 à 3 heures suffisent généralement pour une promenade complète à travers les principales allées commerciales et les quartiers historiques."
+      "question": "Quelle est la meilleure période pour visiter la médina ?",
+      "answer": "Les matins sont plus calmes et frais pour explorer les ateliers. La fin d'après-midi offre une belle lumière pour photographier les murs blanchis."
     },
     "q3": {
-      "question": "Puis-je la visiter sans guide ?",
-      "answer": "Oui, de nombreux voyageurs explorent de manière indépendante, bien qu'un guide puisse enrichir l'expérience en expliquant l'histoire et le patrimoine andalous."
+      "question": "Y a-t-il un code vestimentaire ?",
+      "answer": "En zone résidentielle et commerciale traditionnelle, une tenue correcte couvrant épaules et genoux est recommandée par respect pour la culture locale."
+    },
+    "q4": {
+      "question": "Combien de temps dure une visite de la médina ?",
+      "answer": "Une promenade guidée ou indépendante standard prend environ 2 à 3 heures pour explorer confortablement les principaux souks et portes."
+    },
+    "q5": {
+      "question": "Peut-on visiter sans guide ?",
+      "answer": "Oui, de nombreux voyageurs explorent en autonomie, même si un guide enrichit l'expérience en expliquant l'histoire et le patrimoine andalous."
     }
   }
 }

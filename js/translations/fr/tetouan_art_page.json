@@ -1,97 +1,117 @@
 {
   "seo": {
-    "title": "Musée d'Art Moderne | Guide Tétouan | MoroccoTripMap",
-    "description": "Visitez le Musée d'Art Moderne de Tétouan. Découvrez les expositions d'art contemporain marocain, les horaires, les tarifs et des conseils pratiques.",
-    "og_title": "Musée d'Art Moderne de Tétouan : Expositions, horaires et conseils",
-    "og_description": "Planifiez votre visite du Musée d'Art Moderne de Tétouan : peintures marocaines contemporaines, sculptures et conseils pratiques."
+    "title": "Musée d'Art Moderne | Guide de Tétouan | MoroccoTripMap",
+    "description": "Visitez le Musée d'Art Moderne de Tétouan. Expositions d'art contemporain marocain, horaires, tarifs et conseils pratiques.",
+    "og_title": "Musée d'Art Moderne de Tétouan : Expositions, Horaires & Conseils",
+    "og_description": "Planifiez votre visite du Musée d'Art Moderne de Tétouan : peintures contemporaines marocaines, sculpture et conseils pratiques."
   },
-  "name": "Musée d'Art Moderne de Tétouan",
-  "hero_subtitle": "Découvrez l'art contemporain marocain au cœur d'une ancienne gare ferroviaire historique magnifiquement restaurée.",
+  "name": "Musée d'Art Moderne",
+  "hero_subtitle": "Art contemporain marocain dans l'ancienne gare historique de Tétouan.",
   "info": {
-    "best_time_label": "Meilleur moment",
-    "best_time_val": "Matin ou après-midi",
-    "duration_label": "Temps nécessaire",
-    "duration_val": "1 – 1,5 heure",
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Matin ou milieu d'après-midi",
+    "duration_label": "Durée",
+    "duration_val": "1–1,5 heure",
     "entry_label": "Entrée",
-    "entry_val": "Billet abordable sur place",
-    "area_label": "Lieu",
-    "area_val": "Quartier de l'Ensanche, Tétouan"
+    "entry_val": "Payante (vérifier le tarif sur place)",
+    "area_label": "Où",
+    "area_val": "Ensanche central, près de la médina"
   },
   "overview": {
-    "title": "La créativité marocaine contemporaine dans un cadre historique",
-    "p1": "Le Musée d'Art Moderne de Tétouan est un pôle culturel dynamique situé dans le quartier de l'Ensanche. Installé dans l'architecture remarquable de l'ancienne gare coloniale de Tétouan, le musée fait le lien entre la riche histoire de la ville et sa scène artistique contemporaine florissante.",
-    "p2": "À l'intérieur, les visiteurs peuvent découvrir des expositions temporaires mettant en valeur les œuvres de peintres, sculpteurs et artistes visuels marocains de premier plan, soulignant l'identité artistique unique du nord du Maroc et de la célèbre École des Beaux-Arts de Tétouan.",
-    "p3": "Une visite ici offre un contraste culturel bienvenu avec la médina historique, permettant aux amateurs d'art d'apprécier pleinement l'évolution de la création moderne au Maroc."
+    "title": "Art contemporain dans une gare historique",
+    "p1": "Le Musée d'Art Moderne de Tétouan occupe l'ancienne gare de la ville, un bel édifice qui accueille désormais des expositions tournantes de peinture, sculpture et techniques mixtes contemporaines marocaines.",
+    "p2": "C'est l'un des meilleurs endroits du nord du Maroc pour découvrir la production artistique actuelle aux côtés de la forte tradition artisanale de la ville. L'architecture de la gare fait partie de la visite.",
+    "p3": "Combinez facilement avec la Place Hassan II, l'extérieur du Palais Royal et une promenade dans la médina — tous à courte distance."
   },
   "gallery": {
-    "badge": "Galerie",
-    "title": "Le Musée en images",
-    "subtitle": "Espaces d'exposition, architecture historique et œuvres contemporaines.",
-    "s1": { "caption": "Architecture de l'ancienne gare coloniale" },
-    "s2": { "caption": "Salles d'exposition contemporaines spacieuses" },
-    "s3": { "caption": "Peintures d'artistes régionaux et nationaux" },
-    "s4": { "caption": "Sculptures et installations créatives" },
-    "s5": { "caption": "Une parenthèse culturelle paisible" }
-  },
-  "moods": {
-    "badge": "À voir",
-    "title": "Points forts du Musée",
-    "subtitle": "Collections clés et éléments architecturaux à ne pas manquer.",
-    "1": {
-      "tag": "Architecture",
-      "title": "Ancienne gare ferroviaire",
-      "desc": "Admirez l'architecture coloniale du XXe siècle reconvertie en galerie moderne.",
-      "duration": "30 min"
+    "badge": "Galerie photo",
+    "title": "Musée d'Art Moderne en images",
+    "subtitle": "Galeries, bâtiment et ambiance d'exposition.",
+    "s1": {
+      "caption": "Extérieur de l'ancienne gare"
     },
-    "2": {
-      "tag": "Art",
-      "title": "Peintures contemporaines",
-      "desc": "Explorez des œuvres reflétant les divers mouvements artistiques modernes du Maroc.",
-      "duration": "45 min"
+    "s2": {
+      "caption": "Espace de la galerie principale"
     },
-    "3": {
-      "tag": "Culture",
-      "title": "Expositions temporaires",
-      "desc": "Découvrez des expositions changeantes mettant en avant des créateurs locaux et internationaux.",
-      "duration": "30 min"
+    "s3": {
+      "caption": "Œuvres contemporaines marocaines"
+    },
+    "s4": {
+      "caption": "Vues de sculptures et installations"
+    },
+    "s5": {
+      "caption": "Détails architecturaux de l'ancienne gare"
     }
   },
-  "tips": {
-    "title": "Conseils pratiques pour la visite",
+  "moods": {
+    "badge": "Que faire",
+    "title": "Que faire au musée",
+    "subtitle": "Expositions, architecture et regard tranquille.",
     "1": {
-      "title": "À combiner avec l'Ensanche",
-      "desc": "Le musée est idéalement situé pour explorer le quartier d'expansion coloniale espagnole de Tétouan."
+      "tag": "Art",
+      "title": "Expositions en cours",
+      "desc": "Spectacles tournants d'artistes contemporains marocains et régionaux.",
+      "duration": "45–75 min"
     },
     "2": {
-      "title": "Vérifiez les horaires",
-      "desc": "Consultez les jours et horaires d'ouverture sur place, car ils peuvent exceptionnellement varier lors des jours fériés."
+      "tag": "Bâtiment",
+      "title": "Architecture de la gare",
+      "desc": "Appréciez la conversion de l'ancienne gare historique.",
+      "duration": "15–20 min"
     },
     "3": {
-      "title": "Politique de photographie",
-      "desc": "Renseignez-vous à l'entrée concernant les règles d'utilisation du flash dans certaines salles d'exposition temporaire."
+      "tag": "Calme",
+      "title": "Visite lente",
+      "desc": "Une pause intérieure calme loin de la médina et de la place.",
+      "duration": "visite complète"
+    }
+  },
+  "food": {
+    "title": "Cafés et restaurants à proximité",
+    "p1": "La zone Ensanche autour du musée regorge de cafés et restaurants.",
+    "li1": "Cafés à quelques minutes à pied",
+    "li2": "Thé à la menthe et snacks légers",
+    "li3": "Repas plus consistants vers la Place Hassan II",
+    "li4": "Options dans les premières rues de la médina",
+    "li5": "Dîner le soir dans le centre",
+    "p2": "Prévoyez un café après la visite — le quartier est animé."
+  },
+  "tips": {
+    "title": "Conseils pratiques pour le Musée d'Art Moderne",
+    "1": {
+      "title": "Vérifier les horaires",
+      "desc": "Les horaires peuvent varier ; vérifiez le jour même ou via l'office de tourisme local."
+    },
+    "2": {
+      "title": "Billet",
+      "desc": "Un droit d'entrée modeste est généralement demandé. Prévoyez de la monnaie."
+    },
+    "3": {
+      "title": "Combiner les visites",
+      "desc": "Associez avec la Place Hassan II et la médina pour une demi-journée culturelle complète."
     }
   },
   "gyg": {
-    "badge": "Tours et Expériences",
-    "title": "Réservez une visite culturelle à Tétouan",
-    "subtitle": "Explorez les repères artistiques et historiques avec un guide expert.",
+    "badge": "Visites & expériences",
+    "title": "Visites culturelles incluant le musée",
+    "subtitle": "Expériences guidées couvrant art et patrimoine.",
     "t1": {
-      "tag": "Visite de ville",
-      "title": "Visite guidée art et culture de Tétouan",
-      "desc": "Découvrez l'architecture coloniale, le musée et la médina historique."
+      "tag": "Culture",
+      "title": "Demi-journée art & médina",
+      "desc": "Visite du musée combinée à une promenade guidée dans la médina."
     },
     "t2": {
-      "tag": "Patrimoine",
-      "title": "Visite privée du patrimoine de Tétouan",
-      "desc": "Une exploration approfondie des racines artistiques hispano-andalouses et modernes de Tétouan."
+      "tag": "Privé",
+      "title": "Chauffeur culturel privé",
+      "desc": "Itinéraire flexible couvrant musée, place et quartiers d'artisans."
     },
     "t3": {
-      "tag": "Excursion d'un jour",
-      "title": "Points forts de Tétouan et environs",
-      "desc": "Associez une matinée culturelle au musée à un après-midi avec vue sur la mer à Martil."
+      "tag": "Marche",
+      "title": "Art & architecture du centre de Tétouan",
+      "desc": "Accent sur les couches modernes et historiques du centre-ville."
     },
-    "check": "Vérifier la disponibilité sur GetYourGuide →",
-    "disclosure": "Certains de ces liens sont des liens d'affiliation. En réservant via ces derniers, nous pouvons percevoir une commission sans frais supplémentaires pour vous."
+    "check": "Vérifier les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains de ces liens sont affiliés. Si vous réservez via eux, nous pouvons percevoir une commission sans frais supplémentaires pour vous."
   },
   "nearby": {
     "badge": "Continuer l'exploration",
@@ -99,40 +119,48 @@
     "back": "← Retour au guide de Tétouan"
   },
   "blog": {
-    "badge": "Depuis le Blog",
-    "title": "Articles associés",
+    "badge": "Du blog",
+    "title": "Articles liés",
     "all": "Tous les articles →",
     "read": "Lire l'article →",
     "a1": {
-      "tag": "Planification",
-      "title": "Médina sans stress",
-      "desc": "Pourquoi Tétouan est idéale lorsqu'on découvre le Maroc pour la première fois."
+      "tag": "Art",
+      "title": "L'art contemporain dans le nord du Maroc",
+      "desc": "Pourquoi le musée de Tétouan mérite une halte."
     },
     "a2": {
-      "tag": "Gastronomie",
-      "title": "Que manger dans les souks de Tétouan",
-      "desc": "Grillades, olives et pauses gourmandes authentiques."
+      "tag": "Planning",
+      "title": "Demi-journée culturelle à Tétouan",
+      "desc": "Musée, place et médina en une boucle."
     },
     "a3": {
-      "tag": "Shopping",
-      "title": "Négocier sereinement dans les petites médinas",
-      "desc": "Une approche pratique pour les échoppes de Tétouan."
+      "tag": "Architecture",
+      "title": "De la gare au musée",
+      "desc": "La reconversion de l'ancien bâtiment ferroviaire de Tétouan."
     }
   },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ du Musée d'Art Moderne",
+    "title": "FAQ Musée d'Art Moderne",
     "q1": {
       "question": "Que peut-on voir au Musée d'Art Moderne ?",
-      "answer": "Le musée abrite une impressionnante collection de peintures contemporaines marocaines, des sculptures et des expositions temporaires."
+      "answer": "Le musée présente une impressionnante collection de peintures, sculptures et expositions tournantes contemporaines marocaines."
     },
     "q2": {
       "question": "Où se trouve le musée ?",
-      "answer": "Il est situé dans l'ancienne gare ferroviaire historique de Tétouan, près du quartier central de l'Ensanche."
+      "answer": "Il est installé dans l'ancienne gare historique de Tétouan, proche du quartier Ensanche central."
     },
     "q3": {
       "question": "Combien de temps dure une visite ?",
-      "answer": "Prévoyez environ 1 à 1h30 pour explorer les galeries à votre rythme."
+      "answer": "Prévoyez environ 1 à 1,5 heure pour explorer les galeries à un rythme détendu."
+    },
+    "q4": {
+      "question": "La photographie est-elle autorisée ?",
+      "answer": "Les règles varient selon les expositions ; demandez au personnel à l'arrivée et évitez le flash."
+    },
+    "q5": {
+      "question": "Convient-il pour une courte halte ?",
+      "answer": "Oui. Même 45–60 minutes donnent une bonne idée des expositions permanentes et temporaires."
     }
   }
 }

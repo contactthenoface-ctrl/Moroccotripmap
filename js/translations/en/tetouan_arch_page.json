@@ -6,40 +6,65 @@
     "og_description": "How to visit this Tetouan highlight: key artefacts, architecture of the building and practical advice."
   },
   "name": "Archaeological Museum",
-  "hero_subtitle": "Key stop for the archaeology of northern Morocco, from prehistory to Islamic periods.",
+  "hero_subtitle": "A major stop for the archaeology of northern Morocco, from prehistory to the Islamic periods.",
   "info": {
-    "best_time_label": "Best Time to Go",
+    "best_time_label": "Best time",
     "best_time_val": "Morning",
-    "duration_label": "Time Needed",
+    "duration_label": "Duration",
     "duration_val": "45–90 minutes",
     "entry_label": "Entry",
     "entry_val": "Ticketed historic site",
-    "area_label": "Where",
+    "area_label": "Area",
     "area_val": "Central Tetouan"
   },
   "overview": {
     "title": "Archaeology of the northern coast",
-    "p1": "The Archaeological Museum of Tetouan presents finds from the region, covering prehistoric, Roman, and later periods that shaped northern Morocco. It is an essential complement to walking the living medina.",
+    "p1": "The Archaeological Museum in Tetouan presents finds from the region, covering the prehistoric, Roman and later periods that shaped northern Morocco. It is an essential complement to walking the living medina.",
     "p2": "The collection helps place the city's Andalusian and later history in a longer timeline. Displays are generally clear and the visit is manageable in under two hours.",
-    "p3": "Combine with the Modern Art Museum, Place Hassan II or a medina walk for a full cultural day."
+    "p3": "Combine with the Modern Art Museum, Place Hassan II or a medina stroll for a full cultural day."
   },
   "gallery": {
-    "badge": "Photo Gallery",
+    "badge": "Gallery",
     "title": "Archaeological Museum in Pictures",
     "subtitle": "Galleries, key objects and building.",
-    "s1": {"caption": "Museum exterior"},
-    "s2": {"caption": "Main exhibition halls"},
-    "s3": {"caption": "Notable artefacts"},
-    "s4": {"caption": "Display cases and interpretation"},
-    "s5": {"caption": "Architectural features of the building"}
+    "s1": {
+      "caption": "Museum exterior"
+    },
+    "s2": {
+      "caption": "Main exhibition halls"
+    },
+    "s3": {
+      "caption": "Notable artefacts"
+    },
+    "s4": {
+      "caption": "Display cases and interpretation"
+    },
+    "s5": {
+      "caption": "Architectural features of the building"
+    }
   },
   "moods": {
-    "badge": "What to Do",
+    "badge": "What to do",
     "title": "Things to do at the museum",
     "subtitle": "Collection, context and quiet looking.",
-    "1": {"tag": "Collection", "title": "Key periods", "desc": "Prehistoric, Roman and later material from the region.", "duration": "40–70 min"},
-    "2": {"tag": "Context", "title": "Place Tetouan in time", "desc": "Understand the longer history behind the medina you walk outside.", "duration": "15–25 min"},
-    "3": {"tag": "Quiet", "title": "Indoor cultural stop", "desc": "A calm, air-conditioned or cooler break from the streets.", "duration": "full visit"}
+    "1": {
+      "tag": "Collection",
+      "title": "Key periods",
+      "desc": "Prehistoric, Roman and later material from the region.",
+      "duration": "40–70 min"
+    },
+    "2": {
+      "tag": "Context",
+      "title": "Place Tetouan in time",
+      "desc": "Understand the longer history behind the medina you walk outside.",
+      "duration": "15–25 min"
+    },
+    "3": {
+      "tag": "Quiet",
+      "title": "Indoor cultural stop",
+      "desc": "A calm, air-conditioned or cooler break from the streets.",
+      "duration": "full visit"
+    }
   },
   "food": {
     "title": "Eating near the museum",
@@ -53,41 +78,89 @@
   },
   "tips": {
     "title": "Practical tips for the Archaeological Museum",
-    "1": {"title": "Ticket", "desc": "A modest entry fee is charged. Keep small change or a card if accepted."},
-    "2": {"title": "Morning preferred", "desc": "Cooler and quieter; better light if any natural illumination is present."},
-    "3": {"title": "Combine visits", "desc": "Easy to pair with the Modern Art Museum and the central square."}
+    "1": {
+      "title": "Ticket",
+      "desc": "A modest entry fee is charged. Keep small change or a card if accepted."
+    },
+    "2": {
+      "title": "Morning preferred",
+      "desc": "Cooler and quieter; better light if any natural illumination is present."
+    },
+    "3": {
+      "title": "Combine visits",
+      "desc": "Easy to pair with the Modern Art Museum and the central square."
+    }
   },
   "gyg": {
     "badge": "Tours & Experiences",
     "title": "Cultural tours including the museum",
     "subtitle": "Guided experiences that add context to the collection.",
-    "t1": {"tag": "Culture", "title": "Archaeology & medina half-day", "desc": "Museum visit plus guided walk in the historic centre."},
-    "t2": {"tag": "Private", "title": "Private cultural itinerary", "desc": "Flexible day covering museum, square and craft areas."},
-    "t3": {"tag": "History", "title": "Northern Morocco through its finds", "desc": "Focus on the archaeological story of the region."},
+    "t1": {
+      "tag": "Culture",
+      "title": "Archaeology & medina half-day",
+      "desc": "Museum visit plus guided walk in the historic centre."
+    },
+    "t2": {
+      "tag": "Private",
+      "title": "Private cultural itinerary",
+      "desc": "Flexible day covering museum, square and craft areas."
+    },
+    "t3": {
+      "tag": "History",
+      "title": "Northern Morocco through its finds",
+      "desc": "Focus on the archaeological story of the region."
+    },
     "check": "Check availability on GetYourGuide →",
-    "disclosure": "Some of these links are affiliate. If you book through them, we may earn a commission at no extra cost to you."
+    "disclosure": "Some of these links are affiliate links. If you book through them, we may earn a commission at no extra cost to you."
   },
   "nearby": {
-    "badge": "Keep Exploring",
-    "title": "More Must-Visit Places in Tetouan",
-    "back": "← Back to the Tetouan guide"
+    "badge": "Keep exploring",
+    "title": "More places to visit in Tetouan",
+    "back": "← Back to Tetouan guide"
   },
   "blog": {
-    "badge": "From the Blog",
-    "title": "Related Articles",
+    "badge": "From the blog",
+    "title": "Related articles",
     "all": "All articles →",
-    "read": "Read the article →",
-    "a1": {"tag": "History", "title": "What the museum adds to a medina visit", "desc": "Why the archaeological collection matters."},
-    "a2": {"tag": "Planning", "title": "Cultural morning in Tetouan", "desc": "Museum and nearby sites in a logical order."},
-    "a3": {"tag": "Collection", "title": "Highlights not to miss", "desc": "Key periods and objects worth seeking out."}
+    "read": "Read article →",
+    "a1": {
+      "tag": "History",
+      "title": "What the museum adds to a medina visit",
+      "desc": "Why the archaeological collection matters."
+    },
+    "a2": {
+      "tag": "Planning",
+      "title": "Cultural morning in Tetouan",
+      "desc": "Museum and nearby sites in a logical order."
+    },
+    "a3": {
+      "tag": "Collection",
+      "title": "Highlights not to miss",
+      "desc": "Key periods and objects worth seeking out."
+    }
   },
   "faq": {
-    "badge": "Good to Know",
+    "badge": "Good to know",
     "title": "Archaeological Museum FAQ",
-    "q1": {"question": "Is there an entry fee?", "answer": "Yes — it is a ticketed historic site. Keep small change or a card if accepted at the desk."},
-    "q2": {"question": "How long should I stay?", "answer": "Forty-five to ninety minutes covers the main halls without rushing."},
-    "q3": {"question": "Is it suitable in summer?", "answer": "The interior is cooler than outside. Morning is still the most comfortable time."},
-    "q4": {"question": "Do I need a guide?", "answer": "Not required. Labels provide context; a guide adds depth if you want more detail."},
-    "q5": {"question": "How far from Place Hassan II?", "answer": "A short walk or very short taxi ride depending on exact location and heat."}
+    "q1": {
+      "question": "Is there an entry fee?",
+      "answer": "Yes — it is a ticketed historic site. Keep small change or a card if accepted at the desk."
+    },
+    "q2": {
+      "question": "How long should I spend?",
+      "answer": "Forty-five to ninety minutes covers the main halls without rushing."
+    },
+    "q3": {
+      "question": "Is it good in summer?",
+      "answer": "The interior is cooler than outside. Morning is still the most comfortable time."
+    },
+    "q4": {
+      "question": "Do I need a guide?",
+      "answer": "Not required. Labels provide context; a guide adds depth if you want more detail."
+    },
+    "q5": {
+      "question": "How far from Place Hassan II?",
+      "answer": "A short walk or very short taxi ride depending on exact location and heat."
+    }
   }
 }

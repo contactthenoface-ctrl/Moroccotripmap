@@ -27,19 +27,44 @@
     "badge": "Photo Gallery",
     "title": "Medina in Pictures",
     "subtitle": "White lanes, gates, souks and artisan details.",
-    "s1": {"caption": "Whitewashed medina lanes"},
-    "s2": {"caption": "Historic gates and arches"},
-    "s3": {"caption": "Traditional souk atmosphere"},
-    "s4": {"caption": "Artisan workshop interiors"},
-    "s5": {"caption": "Views from the ramparts"}
+    "s1": {
+      "caption": "Whitewashed medina lanes"
+    },
+    "s2": {
+      "caption": "Historic gates and arches"
+    },
+    "s3": {
+      "caption": "Traditional souk atmosphere"
+    },
+    "s4": {
+      "caption": "Artisan workshop interiors"
+    },
+    "s5": {
+      "caption": "Tetouan Medina"
+    }
   },
   "moods": {
     "badge": "What to Do",
     "title": "Things to do in the Medina",
     "subtitle": "Wander, shop, photograph and discover local crafts.",
-    "1": {"tag": "Wander", "title": "Get lost in the lanes", "desc": "Follow the white walls and small squares without a fixed plan.", "duration": "1–2 hours"},
-    "2": {"tag": "Crafts", "title": "Visit artisan workshops", "desc": "Leather, textiles and metalwork still produced on site.", "duration": "45–90 min"},
-    "3": {"tag": "Souks", "title": "Explore the markets", "desc": "Food, clothing and everyday goods in a lively but manageable setting.", "duration": "30–60 min"}
+    "1": {
+      "tag": "Wander",
+      "title": "Get lost in the lanes",
+      "desc": "Follow the white walls and small squares without a fixed plan.",
+      "duration": "1–2 hours"
+    },
+    "2": {
+      "tag": "Crafts",
+      "title": "Visit artisan workshops",
+      "desc": "Leather, textiles and metalwork still produced on site.",
+      "duration": "45–90 min"
+    },
+    "3": {
+      "tag": "Souks",
+      "title": "Explore the markets",
+      "desc": "Food, clothing and everyday goods in a lively but manageable setting.",
+      "duration": "30–60 min"
+    }
   },
   "food": {
     "title": "Eating in and around the medina",
@@ -53,17 +78,38 @@
   },
   "tips": {
     "title": "Practical tips for visiting the Medina",
-    "1": {"title": "Modest dress", "desc": "As a residential and commercial area, covering shoulders and knees is recommended out of respect."},
-    "2": {"title": "Morning light", "desc": "Early hours are cooler, quieter and better for photography against the white walls."},
-    "3": {"title": "Guided or independent", "desc": "Self-guided exploration is easy; a local guide adds historical context and helps with workshops."}
+    "1": {
+      "title": "Modest dress",
+      "desc": "As a residential and commercial area, covering shoulders and knees is recommended out of respect."
+    },
+    "2": {
+      "title": "Morning light",
+      "desc": "Early hours are cooler, quieter and better for photography against the white walls."
+    },
+    "3": {
+      "title": "Guided or independent",
+      "desc": "Self-guided exploration is easy; a local guide adds historical context and helps with workshops."
+    }
   },
   "gyg": {
     "badge": "Tours & Experiences",
     "title": "Explore the Medina with a guide",
     "subtitle": "Walking tours focused on Andalusian heritage and crafts.",
-    "t1": {"tag": "Walking", "title": "Tetouan Medina guided walk", "desc": "UNESCO medina, gates, souks and key monuments."},
-    "t2": {"tag": "Craft", "title": "Artisan workshop experience", "desc": "Visit active leather or textile workshops with a local expert."},
-    "t3": {"tag": "Private", "title": "Private medina & palace area tour", "desc": "Flexible itinerary covering the historic core and Place Hassan II."},
+    "t1": {
+      "tag": "Walking",
+      "title": "Tetouan Medina guided walk",
+      "desc": "UNESCO medina, gates, souks and key monuments."
+    },
+    "t2": {
+      "tag": "Craft",
+      "title": "Artisan workshop experience",
+      "desc": "Visit active leather or textile workshops with a local expert."
+    },
+    "t3": {
+      "tag": "Private",
+      "title": "Private medina & palace area tour",
+      "desc": "Flexible itinerary covering the historic core and Place Hassan II."
+    },
     "check": "Check availability on GetYourGuide →",
     "disclosure": "Some of these links are affiliate. If you book through them, we may earn a commission at no extra cost to you."
   },
@@ -77,17 +123,44 @@
     "title": "Related Articles",
     "all": "All articles →",
     "read": "Read the article →",
-    "a1": {"tag": "Heritage", "title": "Why Tetouan's medina is UNESCO-listed", "desc": "Andalusian roots and architectural integrity explained."},
-    "a2": {"tag": "Shopping", "title": "What to buy in Tetouan souks", "desc": "Leather, textiles and authentic local crafts."},
-    "a3": {"tag": "Planning", "title": "Half-day medina itinerary", "desc": "Gates, workshops and lunch without rushing."}
+    "a1": {
+      "tag": "Heritage",
+      "title": "Why Tetouan's medina is UNESCO-listed",
+      "desc": "Andalusian roots and architectural integrity explained."
+    },
+    "a2": {
+      "tag": "Shopping",
+      "title": "What to buy in Tetouan souks",
+      "desc": "Leather, textiles and authentic local crafts."
+    },
+    "a3": {
+      "tag": "Planning",
+      "title": "Half-day medina itinerary",
+      "desc": "Gates, workshops and lunch without rushing."
+    }
   },
   "faq": {
     "badge": "Good to Know",
     "title": "Tetouan Medina FAQ",
-    "q1": {"question": "Is the Tetouan Medina free to visit?", "answer": "Yes, walking through the streets and souks of the Medina is completely free and open to the public."},
-    "q2": {"question": "What is the best time to visit the Tetouan Medina?", "answer": "Mornings are quieter and cooler for exploring the artisan workshops. Late afternoon offers great lighting for photography against the white-washed walls."},
-    "q3": {"question": "Is there a dress code?", "answer": "As a traditional residential and commercial area, modest clothing covering shoulders and knees is recommended out of respect for local culture."},
-    "q4": {"question": "How long does a tour of the Medina take?", "answer": "A standard guided or self-guided walk takes about 2 to 3 hours to comfortably explore the main souks and gates."},
-    "q5": {"question": "Can I visit without a guide?", "answer": "Yes, many travelers explore independently, though a guide can enrich the experience by explaining the Andalusian history and heritage."}
+    "q1": {
+      "question": "Is the Tetouan Medina free to visit?",
+      "answer": "Yes, walking through the streets and souks of the Medina is completely free and open to the public."
+    },
+    "q2": {
+      "question": "What is the best time to visit the Tetouan Medina?",
+      "answer": "Mornings are quieter and cooler for exploring the artisan workshops. Late afternoon offers great lighting for photography against the white-washed walls."
+    },
+    "q3": {
+      "question": "Is there a dress code?",
+      "answer": "As a traditional residential and commercial area, modest clothing covering shoulders and knees is recommended out of respect for local culture."
+    },
+    "q4": {
+      "question": "How long does a tour of the Medina take?",
+      "answer": "A standard guided or self-guided walk takes about 2 to 3 hours to comfortably explore the main souks and gates."
+    },
+    "q5": {
+      "question": "Can I visit without a guide?",
+      "answer": "Yes, many travelers explore independently, though a guide can enrich the experience by explaining the Andalusian history and heritage."
+    }
   }
 }

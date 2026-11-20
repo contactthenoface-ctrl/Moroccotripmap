@@ -27,19 +27,44 @@
     "badge": "Photo Gallery",
     "title": "Kasbah in Pictures",
     "subtitle": "Walls, gates and medina views.",
-    "s1": {"caption": "Kasbah walls and gates"},
-    "s2": {"caption": "Views over the white medina"},
-    "s3": {"caption": "Interior courtyards or open areas"},
-    "s4": {"caption": "Architectural details"},
-    "s5": {"caption": "Approach from the medina streets"}
+    "s1": {
+      "caption": "Kasbah walls and gates"
+    },
+    "s2": {
+      "caption": "Tetouan Kasbah"
+    },
+    "s3": {
+      "caption": "Interior courtyards or open areas"
+    },
+    "s4": {
+      "caption": "Architectural details"
+    },
+    "s5": {
+      "caption": "Approach from the medina streets"
+    }
   },
   "moods": {
     "badge": "What to Do",
     "title": "Things to do at the Kasbah",
     "subtitle": "Walls, views and a calmer pace.",
-    "1": {"tag": "Views", "title": "Medina panorama", "desc": "Look out over the dense white roofs when viewpoints are open.", "duration": "15–25 min"},
-    "2": {"tag": "Architecture", "title": "Walls and gates", "desc": "Study the defensive and residential architecture.", "duration": "20–30 min"},
-    "3": {"tag": "Quiet", "title": "Slower atmosphere", "desc": "A less crowded corner compared with the main souks.", "duration": "full visit"}
+    "1": {
+      "tag": "Views",
+      "title": "Medina panorama",
+      "desc": "Look out over the dense white roofs when viewpoints are open.",
+      "duration": "15–25 min"
+    },
+    "2": {
+      "tag": "Architecture",
+      "title": "Walls and gates",
+      "desc": "Study the defensive and residential architecture.",
+      "duration": "20–30 min"
+    },
+    "3": {
+      "tag": "Quiet",
+      "title": "Slower atmosphere",
+      "desc": "A less crowded corner compared with the main souks.",
+      "duration": "full visit"
+    }
   },
   "food": {
     "title": "Eating near the Kasbah",
@@ -53,17 +78,38 @@
   },
   "tips": {
     "title": "Practical tips for the Kasbah",
-    "1": {"title": "Check access", "desc": "Opening rules can change. Confirm on the day and respect any restricted zones."},
-    "2": {"title": "Modest dress", "desc": "Modest clothing covering shoulders and knees is recommended as a general rule in historic residential areas."},
-    "3": {"title": "Morning visit", "desc": "Cooler temperatures and fewer people make morning the most comfortable time."}
+    "1": {
+      "title": "Check access",
+      "desc": "Opening rules can change. Confirm on the day and respect any restricted zones."
+    },
+    "2": {
+      "title": "Modest dress",
+      "desc": "Modest clothing covering shoulders and knees is recommended as a general rule in historic residential areas."
+    },
+    "3": {
+      "title": "Morning visit",
+      "desc": "Cooler temperatures and fewer people make morning the most comfortable time."
+    }
   },
   "gyg": {
     "badge": "Tours & Experiences",
     "title": "Guided visits including the Kasbah",
     "subtitle": "Walking tours that cover the fortress and medina.",
-    "t1": {"tag": "Walking", "title": "Medina & Kasbah tour", "desc": "Guided walk covering walls, views and historic quarters."},
-    "t2": {"tag": "Private", "title": "Private heritage half-day", "desc": "Flexible itinerary with Kasbah, medina and square."},
-    "t3": {"tag": "Culture", "title": "Defensive architecture of Tetouan", "desc": "Focus on walls, gates and urban history."},
+    "t1": {
+      "tag": "Walking",
+      "title": "Medina & Kasbah tour",
+      "desc": "Guided walk covering walls, views and historic quarters."
+    },
+    "t2": {
+      "tag": "Private",
+      "title": "Private heritage half-day",
+      "desc": "Flexible itinerary with Kasbah, medina and square."
+    },
+    "t3": {
+      "tag": "Culture",
+      "title": "Defensive architecture of Tetouan",
+      "desc": "Focus on walls, gates and urban history."
+    },
     "check": "Check availability on GetYourGuide →",
     "disclosure": "Some of these links are affiliate. If you book through them, we may earn a commission at no extra cost to you."
   },
@@ -77,17 +123,44 @@
     "title": "Related Articles",
     "all": "All articles →",
     "read": "Read the article →",
-    "a1": {"tag": "History", "title": "The Kasbah in Tetouan's urban story", "desc": "How the fortress relates to the medina below."},
-    "a2": {"tag": "Planning", "title": "Morning in the upper medina", "desc": "Kasbah and surrounding lanes in a sensible order."},
-    "a3": {"tag": "Photo", "title": "Best viewpoints in Tetouan", "desc": "Where the Kasbah and other spots deliver the classic white-roof views."}
+    "a1": {
+      "tag": "History",
+      "title": "The Kasbah in Tetouan's urban story",
+      "desc": "How the fortress relates to the medina below."
+    },
+    "a2": {
+      "tag": "Planning",
+      "title": "Morning in the upper medina",
+      "desc": "Kasbah and surrounding lanes in a sensible order."
+    },
+    "a3": {
+      "tag": "Photo",
+      "title": "Best viewpoints in Tetouan",
+      "desc": "Where the Kasbah and other spots deliver the classic white-roof views."
+    }
   },
   "faq": {
     "badge": "Good to Know",
     "title": "Kasbah FAQ",
-    "q1": {"question": "Is the Kasbah open to visitors?", "answer": "Access policies have varied. Check on the day, respect any restricted zones, and follow staff instructions."},
-    "q2": {"question": "Is there a recommended dress code?", "answer": "Modest clothing covering shoulders and knees is recommended out of respect for the historic residential setting."},
-    "q3": {"question": "How long is the visit?", "answer": "Thirty to sixty minutes is typical once you are in the accessible areas."},
-    "q4": {"question": "Is photography allowed?", "answer": "Generally yes in open outdoor areas; ask before photographing interiors or people."},
-    "q5": {"question": "Best time to come?", "answer": "Morning, soon after opening if applicable, for fewer people and cooler air."}
+    "q1": {
+      "question": "Is the Kasbah open to visitors?",
+      "answer": "Access policies have varied. Check on the day, respect any restricted zones, and follow staff instructions."
+    },
+    "q2": {
+      "question": "Is there a recommended dress code?",
+      "answer": "Modest clothing covering shoulders and knees is recommended out of respect for the historic residential setting."
+    },
+    "q3": {
+      "question": "How long is the visit?",
+      "answer": "Thirty to sixty minutes is typical once you are in the accessible areas."
+    },
+    "q4": {
+      "question": "Is photography allowed?",
+      "answer": "Generally yes in open outdoor areas; ask before photographing interiors or people."
+    },
+    "q5": {
+      "question": "Best time to come?",
+      "answer": "Morning, soon after opening if applicable, for fewer people and cooler air."
+    }
   }
 }

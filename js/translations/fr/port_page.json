@@ -1,169 +1,168 @@
 {
-  "port_page": {
-    "name": "Port & Front de mer",
-    "hero_subtitle": "Port d'activité et promenade du soir en ville à Dakhla.",
-    "info": {
-      "best_time_label": "Meilleur moment",
-      "best_time_val": "Fin de journée conseillée",
-      "duration_label": "Durée conseillée",
-      "duration_val": "1 – 2 heures",
-      "entry_label": "Accès",
-      "entry_val": "Accès libre",
-      "area_label": "Localisation",
-      "area_val": "Ville de Dakhla"
+  "seo": {
+    "title": "Port de pêche & Corniche Dakhla | MoroccoTripMap",
+    "description": "Port et front de mer de Dakhla : ambiance portuaire, promenade du soir, restaurants simples et conseils pratiques en ville.",
+    "keywords": "port Dakhla, front de mer Dakhla, corniche Dakhla, poisson frais Dakhla",
+    "og_title": "Port & Front de mer de Dakhla | Soirée en ville | MoroccoTripMap",
+    "og_description": "Port et front de mer de Dakhla : ambiance portuaire, promenade du soir, restaurants simples et conseils pratiques en ville."
+  },
+  "name": "Port & Front de mer",
+  "hero_subtitle": "Port d'activité et promenade du soir en ville à Dakhla.",
+  "info": {
+    "best_time_label": "Meilleur moment",
+    "best_time_val": "Fin de journée conseillée",
+    "duration_label": "Durée conseillée",
+    "duration_val": "1 – 2 heures",
+    "entry_label": "Accès",
+    "entry_val": "Accès libre",
+    "area_label": "Localisation",
+    "area_val": "Ville de Dakhla"
+  },
+  "overview": {
+    "title": "Vie côtière autour du port",
+    "p1": "Le port et le front de mer de Dakhla offrent un aperçu du quotidien urbain loin des camps de kite : barques de pêche, promeneurs du soir et cafés simples.",
+    "p2": "Ce n'est pas un port monumental : on y vient pour l'atmosphère et un changement de rythme après les journées sur la lagune.",
+    "p3": "Idéal comme sortie tranquille en soirée lorsque vous séjournez en ville plutôt que dans un camp isolé."
+  },
+  "gallery": {
+    "badge": "Galerie photo",
+    "title": "Port & Front de mer en images",
+    "subtitle": "Vues du port et du front de mer à Dakhla.",
+    "s1": {
+      "caption": "Port & Front de mer — 1"
     },
-    "overview": {
-      "title": "Vie côtière autour du port",
-      "p1": "Le port et le front de mer de Dakhla offrent un aperçu du quotidien urbain loin des camps de kite : barques de pêche, promeneurs du soir et cafés simples.",
-      "p2": "Ce n'est pas un port monumental : on y vient pour l'atmosphère et un changement de rythme après les journées sur la lagune.",
-      "p3": "Idéal comme sortie tranquille en soirée lorsque vous séjournez en ville plutôt que dans un camp isolé."
+    "s2": {
+      "caption": "Port & Front de mer — 2"
     },
-    "gallery": {
-      "badge": "Galerie photo",
-      "title": "Port & Front de mer en images",
-      "subtitle": "Vues du port et du front de mer à Dakhla.",
-      "s1": {
-        "caption": "Port & Front de mer"
-      },
-      "s2": {
-        "caption": "Port & Front de mer"
-      },
-      "s3": {
-        "caption": "Port & Front de mer"
-      },
-      "s4": {
-        "caption": "Port & Front de mer"
-      },
-      "s5": {
-        "caption": "Port & Front de mer"
-      }
+    "s3": {
+      "caption": "Port & Front de mer — 3"
     },
-    "moods": {
-      "badge": "Rythme de la journée",
-      "title": "Port & Front de mer au fil de la journée",
-      "subtitle": "Quand y aller.",
-      "1": {
-        "tag": "Matin",
-        "title": "Départ calme",
-        "desc": "Lumière plus douce et air plus frais.",
-        "duration": "Matin"
-      },
-      "2": {
-        "tag": "Milieu de journée",
-        "title": "Soleil fort",
-        "desc": "Protégez votre peau et hydratez-vous.",
-        "duration": "Milieu de journée"
-      },
-      "3": {
-        "tag": "Fin d'après-midi",
-        "title": "Plus belles couleurs",
-        "desc": "Lumière chaude sur la lagune et les dunes.",
-        "duration": "Fin d'après-midi"
-      }
+    "s4": {
+      "caption": "Port & Front de mer — 4"
     },
-    "food": {
-      "title": "Où manger près du port et du front de mer",
-      "p1": "Prévoyez vos repas dans les camps de la lagune ou en ville à Dakhla ; emportez de l'eau pour chaque sortie.",
-      "li1": "Eau en bouteille.",
-      "li2": "Poisson grillé en ville.",
-      "li3": "Repas au camp si vous séjournez sur la lagune.",
-      "li4": "Dégustation d'huîtres lorsque les fermes sont ouvertes.",
-      "li5": "Vérifiez les horaires de cuisine du camp après les sessions de vent.",
-      "p2": "Avoir des espèces est pratique aux petites haltes autour de la lagune."
-    },
-    "tips": {
-      "title": "Conseils pratiques pour le port et le front de mer",
-      "1": {
-        "title": "Accès",
-        "desc": "Confirmez les horaires de transfert depuis votre camp ou hôtel."
-      },
-      "2": {
-        "title": "Soleil et vent",
-        "desc": "Indice solaire élevé, coupe-vent et eau supplémentaire."
-      },
-      "3": {
-        "title": "Respect des lieux",
-        "desc": "Restez sur les zones autorisées et soyez attentif aux pratiquants sur l'eau."
-      }
-    },
-    "gyg": {
-      "badge": "Excursions et activités",
-      "title": "Activités liées au port et au front de mer",
-      "subtitle": "Options si vous préférez un opérateur local.",
-      "t1": {
-        "tag": "Lagune",
-        "title": "Découverte de la lagune",
-        "desc": "Introduction aux rives et points de vue."
-      },
-      "t2": {
-        "tag": "Vent",
-        "title": "Session kite ou wing",
-        "desc": "Cours et navigation encadrée sur l'eau."
-      },
-      "t3": {
-        "tag": "Désert",
-        "title": "Sortie dune ou sebkha",
-        "desc": "Piste vers la Dune Blanche ou la bordure désertique."
-      },
-      "check": "Voir les disponibilités sur GetYourGuide →",
-      "disclosure": "Certains liens sont des liens affiliés. Si vous réservez via ces liens, nous pouvons percevoir une petite commission sans frais supplémentaires pour vous."
-    },
-    "nearby": {
-      "badge": "Continuer l'exploration",
-      "title": "Autres lieux à voir à Dakhla",
-      "back": "← Retour au guide de Dakhla"
-    },
-    "blog": {
-      "badge": "Sur le blog",
-      "title": "Articles associés",
-      "all": "Tous les articles →",
-      "read": "Lire l'article →",
-      "a1": {
-        "tag": "Organisation",
-        "title": "Première visite à Dakhla",
-        "desc": "Lagune, vent et durée de séjour idéale."
-      },
-      "a2": {
-        "tag": "Guide",
-        "title": "Journée sur la lagune",
-        "desc": "Rivages, dune et lumière."
-      },
-      "a3": {
-        "tag": "Sports",
-        "title": "Kitesurf à Dakhla",
-        "desc": "Spots et saisons."
-      }
-    },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "FAQ Port & Front de mer",
-      "q1": {
-        "question": "À quelle distance se trouve le port des camps de kite ?",
-        "answer": "La ville est distincte de la zone principale des camps sur la lagune. Prévoyez le temps de transfert si vous logez au bord de l'eau."
-      },
-      "q2": {
-        "question": "Le front de mer est-il agréable en soirée ?",
-        "answer": "Restez sur les axes éclairés et appliquez les précautions habituelles en ville."
-      },
-      "q3": {
-        "question": "Où manger près du port ?",
-        "answer": "De simples restaurants de poisson et des assiettes locales constituent l'essentiel des options autour du port."
-      },
-      "q4": {
-        "question": "Combien de temps prévoir au port ?",
-        "answer": "Une à deux heures suffisent pour une promenade et une pause repas."
-      },
-      "q5": {
-        "question": "Est-ce pertinent si je séjourne uniquement dans un camp de lagune ?",
-        "answer": "Optionnel. C'est surtout intéressant si vous passez une soirée en ville ou un transfert par le centre."
-      }
-    },
-    "seo": {
-      "title": "Port & Front de mer Dakhla | MoroccoTripMap",
-      "description": "Port d'activité et promenade du soir en ville à Dakhla — atmosphère côtière, barques et poissons frais.",
-      "og_title": "Port & Front de mer",
-      "og_description": "Port d'activité et promenade du soir en ville à Dakhla — atmosphère côtière, barques et poissons frais."
+    "s5": {
+      "caption": "Port & Front de mer — 5"
     }
+  },
+  "moods": {
+    "badge": "Rythme de la journée",
+    "title": "Port & Front de mer au fil de la journée",
+    "subtitle": "Quand y aller.",
+    "1": {
+      "tag": "Matin",
+      "title": "Départ calme",
+      "desc": "Lumière plus douce et air plus frais.",
+      "duration": "Matin"
+    },
+    "2": {
+      "tag": "Milieu de journée",
+      "title": "Soleil fort",
+      "desc": "Protégez votre peau et hydratez-vous.",
+      "duration": "Milieu de journée"
+    },
+    "3": {
+      "tag": "Fin d'après-midi",
+      "title": "Plus belles couleurs",
+      "desc": "Lumière chaude sur la lagune et les dunes.",
+      "duration": "Fin d'après-midi"
+    }
+  },
+  "food": {
+    "title": "Où manger près du port et du front de mer",
+    "p1": "Prévoyez vos repas dans les camps de la lagune ou en ville à Dakhla ; emportez de l'eau pour chaque sortie.",
+    "li1": "Repas au camp si vous séjournez sur la lagune.",
+    "li2": "Dégustation d'huîtres lorsque les fermes sont ouvertes.",
+    "li3": "Poisson grillé en ville.",
+    "li4": "Emportez de l'eau et des en-cas sur les pistes dunaires ou désertiques.",
+    "li5": "Vérifiez les horaires de cuisine du camp après les sessions de vent.",
+    "p2": "Avoir des espèces est pratique aux petites haltes autour de la lagune."
+  },
+  "tips": {
+    "title": "Conseils pratiques pour le port et le front de mer",
+    "1": {
+      "title": "Accès",
+      "desc": "Confirmez les horaires de transfert depuis votre camp ou hôtel."
+    },
+    "2": {
+      "title": "Soleil et vent",
+      "desc": "Indice solaire élevé, coupe-vent et eau supplémentaire."
+    },
+    "3": {
+      "title": "Respect des lieux",
+      "desc": "Restez sur les zones autorisées et soyez attentif aux pratiquants sur l'eau."
+    }
+  },
+  "gyg": {
+    "badge": "Excursions et activités",
+    "title": "Activités liées au port et au front de mer",
+    "subtitle": "Options si vous préférez un opérateur local.",
+    "t1": {
+      "tag": "Lagune",
+      "title": "Découverte de la lagune",
+      "desc": "Introduction aux rives et points de vue."
+    },
+    "t2": {
+      "tag": "Vent",
+      "title": "Session kite ou wing",
+      "desc": "Cours et navigation encadrée sur l'eau."
+    },
+    "t3": {
+      "tag": "Désert",
+      "title": "Sortie dune ou sebkha",
+      "desc": "Piste vers la Dune Blanche ou la bordure désertique."
+    },
+    "check": "Voir les disponibilités sur GetYourGuide →",
+    "disclosure": "Certains liens sont des liens affiliés. Si vous réservez via ces liens, nous pouvons percevoir une petite commission sans frais supplémentaires pour vous."
+  },
+  "blog": {
+    "badge": "Sur le blog",
+    "title": "Articles associés",
+    "all": "Tous les articles →",
+    "read": "Lire l'article →",
+    "a1": {
+      "tag": "Organisation",
+      "title": "Première visite à Dakhla",
+      "desc": "Lagune, vent et durée de séjour idéale."
+    },
+    "a2": {
+      "tag": "Guide",
+      "title": "Journée sur la lagune",
+      "desc": "Rivages, dune et lumière."
+    },
+    "a3": {
+      "tag": "Sports",
+      "title": "Kitesurf à Dakhla",
+      "desc": "Spots et saisons."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ Port & Front de mer",
+    "q1": {
+      "question": "À quelle distance se trouve le port des camps de kite ?",
+      "answer": "La ville est distincte de la zone principale des camps sur la lagune. Prévoyez le temps de transfert si vous logez au bord de l'eau."
+    },
+    "q2": {
+      "question": "Le front de mer est-il agréable en soirée ?",
+      "answer": "Restez sur les axes éclairés et appliquez les précautions habituelles en ville."
+    },
+    "q3": {
+      "question": "Où manger près du port ?",
+      "answer": "De simples restaurants de poisson et des assiettes locales constituent l'essentiel des options autour du port."
+    },
+    "q4": {
+      "question": "Combien de temps prévoir au port ?",
+      "answer": "Une à deux heures suffisent pour une promenade et une pause repas."
+    },
+    "q5": {
+      "question": "Est-ce pertinent si je séjourne uniquement dans un camp de lagune ?",
+      "answer": "Optionnel. C'est surtout intéressant si vous passez une soirée en ville ou un transfert par le centre."
+    }
+  },
+  "nearby": {
+    "badge": "Continuer l'exploration",
+    "title": "Autres lieux à voir à Dakhla",
+    "back": "← Retour au guide de Dakhla"
   },
   "destinations": {
     "dakhla": {

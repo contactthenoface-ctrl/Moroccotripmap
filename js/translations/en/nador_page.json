@@ -155,42 +155,42 @@
   "eat": {
     "badge": "Food",
     "title": "Where to eat in Nador",
-    "subtitle": "Fresh fish, lagoon-side tables and simple town plates.",
-    "nomad": {
-      "tag": "Port",
-      "loc": "Beni Ansar",
-      "title": "Port-side fish",
-      "desc": "Fresh catch near the harbour when boats are in."
-    },
-    "jardin": {
-      "tag": "Hotel",
-      "loc": "Town",
-      "title": "Hotel restaurants",
-      "desc": "Reliable options if you stay in a larger hotel."
-    },
-    "fassia": {
-      "tag": "Café",
-      "loc": "Centre",
-      "title": "Town café stop",
-      "desc": "Coffee and a pause between errands."
-    },
-    "moha": {
+    "subtitle": "Fresh seafood, Moroccan tables, grill spots and cafés in Nador.",
+    "spot1": {
       "tag": "Seafood",
-      "loc": "Centre",
-      "title": "Town seafood",
-      "desc": "Fish and salads in the centre between lagoon walks."
+      "loc": "Nador",
+      "title": "Restaurant Carablanca",
+      "desc": "Well-known seafood restaurant in Nador serving fresh fish and coastal dishes."
     },
-    "bacha": {
-      "tag": "Local",
-      "loc": "Town",
-      "title": "Neighbourhood tables",
-      "desc": "Quiet plates preferred by residents."
+    "spot2": {
+      "tag": "Mediterranean",
+      "loc": "Corniche, Nador",
+      "title": "L'Artiste",
+      "desc": "Popular spot near the corniche mixing Mediterranean, Italian, Spanish and seafood plates."
     },
-    "elfenn": {
+    "spot3": {
+      "tag": "Fish & Grill",
+      "loc": "Av. Hassan II, Nador",
+      "title": "Restaurant Abbas",
+      "desc": "Classic Nador fish address on Avenue Hassan II known for fresh seafood and fair prices."
+    },
+    "spot4": {
+      "tag": "Moroccan",
+      "loc": "Nador",
+      "title": "Dar Abdesalam",
+      "desc": "Traditional Moroccan dishes, tagines and hearty plates in central Nador."
+    },
+    "spot5": {
+      "tag": "Café & Grill",
+      "loc": "Nador",
+      "title": "Taksim Café & Restaurant",
+      "desc": "Lively café and restaurant spot for grilled dishes, snacks, coffee and evening breaks."
+    },
+    "spot6": {
       "tag": "Seafood",
-      "loc": "Corniche",
-      "title": "Evening fish",
-      "desc": "Later sitting when the corniche fills up."
+      "loc": "Nador",
+      "title": "Dorade Fish",
+      "desc": "Seafood spot in Nador focused on grilled fish and Mediterranean plates."
     }
   },
   "tips": {

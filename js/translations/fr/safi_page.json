@@ -1,235 +1,233 @@
 {
-  "safi_page": {
-    "booking_banner": {
-      "badge": "Des dizaines d'hôtels à Safi",
-      "title": "Explorez tous les hébergements à Safi",
-      "desc": "Comparez les tarifs en temps réel, lisez les avis vérifiés et profitez de l'annulation gratuite.",
-      "btn": "Voir tous les hébergements",
-      "guarantee": "✓ Meilleur prix garanti & réservation sécurisée"
+  "seo": {
+    "title": "Guide de Voyage Safi 2026 | Poterie, Château de Mer & Atlantique | MoroccoTripMap",
+    "description": "Préparez votre séjour à Safi : château de mer, médina, plages de Lalla Fatna et Cap Beddouza, port de pêche, quartier des potiers et corniche atlantique.",
+    "og_title": "Guide de Voyage Safi | Château de Mer & Plages | MoroccoTripMap",
+    "og_description": "Château de mer portugais, médina, plages et port de pêche sur la côte atlantique du Maroc."
+  },
+  "hero_subtitle": "Capitale de la poterie au Maroc — château de mer portugais, médina vivante et côte atlantique.",
+  "info": {
+    "best_time_label": "Meilleure période",
+    "best_time_val": "Avr–Juin & Sep–Oct ; été pour la plage",
+    "stay_label": "Séjour idéal",
+    "stay_val": "3 – 5 Jours",
+    "vibe_label": "Ambiance",
+    "vibe_val": "citadelle & patrimoine",
+    "airport_label": "Aéroport le plus proche",
+    "airport_val": "RAK (Marrakech) ou CMN (Casablanca)"
+  },
+  "overview": {
+    "title": "Bienvenue à Safi — Citadelle portugaise et rivage atlantique",
+    "p1": "Safi (Asfi), sur la côte atlantique marocaine entre El Jadida et Essaouira, est la capitale de la poterie du royaume. Son château de mer portugais, sa médina, le Musée National de la Céramique et le quartier des potiers en font une étape authentique.",
+    "p2": "Au-delà des remparts : le Musée National de la Céramique, le quartier des potiers, le port de pêche et le Cap Beddouza. La vie locale y est paisible et authentique.",
+    "p3": "Trois à cinq jours conviennent parfaitement pour combiner détente, citadelle, port et après-midi à Lalla Fatna. L'été est animé ; l'hiver est doux et agréable."
+  },
+  "places": {
+    "badge": "À voir absolument",
+    "title": "Lieux incontournables à Safi",
+    "subtitle": "citadelle, dunes, poterie, port et château de mer.",
+    "explore": "Découvrir le lieu →",
+    "sea_castle": {
+      "tag": "UNESCO",
+      "title": "Château de Mer",
+      "desc": "Salle voûtée et colonnes reflétées dans l'eau — le joyau de la ville."
     },
-    "daytrips": {
-      "badge": "Autour de Safi",
-      "title": "Meilleures excursions depuis Safi",
-      "subtitle": "Côte, nature et villes voisines.",
-      "cap_beddouza": {
-        "title": "Cap Beddouza",
-        "desc": "Falaises et panoramas atlantiques à environ 25 km."
-      },
-      "essaouira": {
-        "title": "Essaouira",
-        "desc": "Médina UNESCO et port, environ 2h de route."
-      },
-      "el_jadida": {
-        "title": "El Jadida",
-        "desc": "Cité portugaise UNESCO, environ 1h30."
-      },
-      "marrakech": {
-        "title": "Marrakech",
-        "desc": "Départ ou retour via la capitale ocre (environ 2h30)."
-      }
+    "medina": {
+      "tag": "Médina",
+      "title": "Médina de Safi",
+      "desc": "Remparts face à l'océan, fortifications et canons d'époque."
     },
-    "detailed_itinerary": {
-      "day1_tab": "Jour 1 — Médina, château & potiers",
-      "day1_m": "Matin — Château de Mer & médina",
-      "day1_md": "Visite du château de mer et promenade dans la médina.",
-      "day1_a": "Après-midi — Musée & quartier des potiers",
-      "day1_ad": "Musée national de la céramique puis ateliers des potiers.",
-      "day1_e": "Soir — Port & poisson grillé",
-      "day1_ed": "Ambiance du port de pêche et dîner face à la mer.",
-      "day2_tab": "Jour 2 — Kechla & côte",
-      "day2_m": "Matin — Kechla & vues",
-      "day2_md": "Citadelle et panoramas sur la ville et l'océan.",
-      "day2_a": "Après-midi — Lalla Fatna ou Cap Beddouza",
-      "day2_ad": "Plage ou pointe sauvage selon l'envie.",
-      "day2_e": "Soir — Corniche ou médina",
-      "day2_ed": "Dernière promenade et thé à la menthe."
+    "ceramics": {
+      "tag": "Patrimoine",
+      "title": "Musée National de la Céramique",
+      "desc": "Collections de céramiques et témoignage d'histoire au cœur de la citadelle."
     },
-    "directory": {
-      "badge": "Hébergements",
-      "title": "Trouvez votre hébergement idéal à Safi",
-      "subtitle": "Hôtels en ville, riads près de la médina et adresses face à l'océan — ouvrez une fiche pour les détails.",
-      "check_availability": "Réserver →"
+    "potters": {
+      "tag": "Artisanat",
+      "title": "Colline des Potiers",
+      "desc": "Fours, ateliers et artisans qui font la renommée de Safi."
     },
-    "eat": {
-      "badge": "Gastronomie",
-      "title": "Où manger à Safi",
-      "subtitle": "Poissons grillés, fruits de mer et tables locales",
-      "chez_hosni": {
-        "tag": "MAROCAIN",
-        "loc": "Safi",
-        "title": "Restaurant Chez Hosni",
-        "desc": "Adresse locale appréciée pour ses tajines généreux au poisson et fruits de mer et son accueil chaleureux."
-      },
-      "chez_said": {
-        "tag": "POISSONS & GRILL",
-        "loc": "Safi",
-        "title": "Restaurant Chez Said",
-        "desc": "Table réputée à Safi pour les produits de la mer frais, les grillades et un hôte très attentionné."
-      },
-      "riad_du_pecheur": {
-        "tag": "FRUITS DE MER",
-        "loc": "Safi",
-        "title": "Riad du Pêcheur Safi",
-        "desc": "Adresse reconnue à Safi pour ses plats de la mer, son service soigné et son cadre détendu."
-      },
-      "filet_du_pecheur": {
-        "tag": "POISSONS GRILLÉS",
-        "loc": "Route de Sidi Bouzid",
-        "title": "Le Filet du Pêcheur",
-        "desc": "Bonne table côtière pour déguster poissons grillés et assiettes mixtes de fruits de mer."
-      },
-      "ilot_chatain": {
-        "tag": "CAFÉ & MER",
-        "loc": "Safi",
-        "title": "L'îlot Châtain",
-        "desc": "Café-restaurant très bien noté proposant des assiettes de la mer fraîches et des pauses gourmandes."
-      },
-      "calypso_medina": {
-        "tag": "CORNICHE & DESSERTS",
-        "loc": "Corniche",
-        "title": "Calypso Medina",
-        "desc": "Halte animée près de la corniche pour des encas de la mer, douceurs et pause face à la brise marine."
-      }
+    "harbor": {
+      "tag": "Port",
+      "title": "Port de Pêche",
+      "desc": "Barques bleues, arrivée quotidienne du poisson et animation sur les quais."
     },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "FAQ — Safi",
-      "q1": {
-        "question": "Combien de jours à Safi ?",
-        "answer": "Un jour permet le château, la médina et les potiers. Deux à trois jours ajoutent le musée, la Kechla et une plage ou le Cap Beddouza."
-      },
-      "q2": {
-        "question": "Safi est-elle intéressante hors poterie ?",
-        "answer": "Oui : château de mer portugais, médina, port de pêche et côte atlantique forment un ensemble patrimonial et maritime complet."
-      },
-      "q3": {
-        "question": "Comment aller à Safi ?",
-        "answer": "Bus depuis Casablanca, Marrakech ou El Jadida. Aéroports les plus proches : Marrakech (RAK) ou Casablanca (CMN), puis transfert routier."
-      },
-      "q4": {
-        "question": "Quelle est la meilleure période ?",
-        "answer": "Avril à juin et septembre–octobre offrent un bon équilibre. L'été convient à la plage mais peut être venteux."
-      }
+    "kechla": {
+      "tag": "Forteresse",
+      "title": "Kechla",
+      "desc": "Citadelle et points de vue sur la vieille ville et l'océan."
     },
-    "hero_subtitle": "Capitale de la poterie marocaine — château de mer portugais, médina vivante et côte atlantique.",
-    "info": {
-      "best_time_label": "Meilleure période",
-      "best_time_val": "Avr–Juin & Sep–Oct ; été pour la plage",
-      "stay_label": "Durée idéale",
-      "stay_val": "1 à 3 jours",
-      "vibe_label": "Ambiance principale",
-      "vibe_val": "Poterie & patrimoine",
-      "airport_label": "Aéroport proche",
-      "airport_val": "RAK (Marrakech) ou CMN (Casablanca)"
+    "lalla_fatna": {
+      "tag": "Plage",
+      "title": "Plage Lalla Fatna",
+      "desc": "Grande étendue de sable et promenade animée au pied de la médina."
     },
-    "itinerary": {
-      "badge": "Planification",
-      "title": "Itinéraire suggéré de 2 jours à Safi",
-      "subtitle": "Patrimoine et poterie d'abord, puis côte et détente."
+    "cap_beddouza": {
+      "tag": "Plage",
+      "title": "Cap Beddouza",
+      "desc": "Large plage bordée de dunes au nord, souvent plus calme."
     },
-    "overview": {
-      "title": "Bienvenue à Safi — terre de potiers et de fortifications",
-      "p1": "Safi (Asfi), sur la côte atlantique entre El Jadida et Essaouira, est la capitale marocaine de la poterie. Ses fours, son musée national de la céramique et le quartier des potiers en font une étape incontournable pour les amateurs d'artisanat.",
-      "p2": "La ville conserve aussi un riche passé portugais : le château de mer (Qasr al-Bahr) face à l'océan, la Kechla et une médina dense. Le port de pêche anime le front de mer, tandis que Lalla Fatna et le Cap Beddouza offrent des échappées nature.",
-      "p3": "Un à trois jours suffisent pour la médina, les potiers, le château et une plage. Safi reste authentique et moins fréquentée que les grandes destinations touristiques."
+    "souks": {
+      "tag": "Marché",
+      "title": "Souks & Marché Central",
+      "desc": "Épices, poissons frais et artisanat au cœur commerçant de la ville."
+    }
+  },
+  "itinerary": {
+    "badge": "Itinéraire",
+    "title": "Itinéraire conseillé de 2 jours à Safi",
+    "subtitle": "Patrimoine et poterie d'abord, puis côte et détente."
+  },
+  "detailed_itinerary": {
+    "day1_tab": "Jour 1 — Médina, château & potiers",
+    "day1_m": "Matin — Château de Mer & médina",
+    "day1_md": "Visite du château de mer et balade dans la médina.",
+    "day1_a": "Après-midi — Musée & quartier des potiers",
+    "day1_ad": "Musée de la Céramique puis ateliers des potiers.",
+    "day1_e": "Soir — Port & poisson grillé",
+    "day1_ed": "Ambiance du port de pêche et dîner face à l'océan.",
+    "day2_tab": "Jour 2 — Kechla & littoral",
+    "day2_m": "Matin — Kechla & panoramas",
+    "day2_md": "Citadelle et points de vue sur la ville et l'Atlantique.",
+    "day2_a": "Après-midi — Lalla Fatna ou Cap Beddouza",
+    "day2_ad": "Plage ou cap sauvage selon vos envies.",
+    "day2_e": "Soir — Corniche ou médina",
+    "day2_ed": "Dernière promenade et thé à la menthe."
+  },
+  "directory": {
+    "badge": "Hébergements",
+    "title": "Trouvez votre hébergement idéal à Safi",
+    "subtitle": "Hôtels en ville, riads près de la médina et adresses face à l'océan — ouvrez une fiche pour les détails.",
+    "check_availability": "Réserver →"
+  },
+  "stays": {
+    "card1": {
+      "badge": "★ RIAD MÉDINA",
+      "name": "Riad Le Cheval Blanc",
+      "desc": "Riad historique bien noté dans l'ancienne médina de Safi face à l'océan, apprécié pour son accueil et son petit déjeuner.",
+      "location": "Ancienne Médina"
     },
-    "places": {
-      "badge": "Lieux incontournables",
-      "title": "À voir absolument à Safi",
-      "subtitle": "Château de mer, céramique, médina, potiers et côte.",
-      "explore": "Explorer le lieu →",
-      "sea_castle": {
-        "tag": "Patrimoine",
-        "title": "Château de Mer",
-        "desc": "Forteresse portugaise du XVIe siècle face à l'Atlantique — symbole de Safi."
-      },
-      "medina": {
-        "tag": "Médina",
-        "title": "Médina de Safi",
-        "desc": "Rues animées, souks et architecture traditionnelle au cœur de la ville."
-      },
-      "ceramics": {
-        "tag": "Musée",
-        "title": "Musée National de la Céramique",
-        "desc": "Collections de poterie marocaine dans un cadre historique."
-      },
-      "potters": {
-        "tag": "Artisanat",
-        "title": "Quartier des Potiers",
-        "desc": "Fours, ateliers et artisans qui font la renommée de Safi."
-      },
-      "harbor": {
-        "tag": "Port",
-        "title": "Port de Pêche",
-        "desc": "Bateaux, poisson du jour et ambiance maritime authentique."
-      },
-      "kechla": {
-        "tag": "Citadelle",
-        "title": "Kechla",
-        "desc": "Citadelle et vues sur la médina et l'océan."
-      },
-      "lalla_fatna": {
-        "tag": "Plage",
-        "title": "Plage Lalla Fatna",
-        "desc": "Longue plage de sable au sud de la ville."
-      },
-      "cap_beddouza": {
-        "tag": "Nature",
-        "title": "Cap Beddouza",
-        "desc": "Pointe atlantique, falaises et panoramas sauvages."
-      },
-      "souks": {
-        "tag": "Marché",
-        "title": "Souks & Marché",
-        "desc": "Épices, poterie et produits du quotidien."
-      }
+    "card2": {
+      "badge": "★ RIAD & PATIO",
+      "name": "Riad Bleu Azahraa",
+      "desc": "Riad traditionnel très bien noté dans un bâtiment historique avec patio ensoleillé, atmosphère calme et service attentionné.",
+      "location": "Safi"
     },
-    "seo": {
-      "title": "Guide de Voyage Safi 2026 | Poterie, Château de Mer & Atlantique | MoroccoTripMap",
-      "description": "Préparez votre séjour à Safi : château de mer portugais, médina, musée national de la céramique, quartier des potiers, port de pêche, plage Lalla Fatna et Cap Beddouza. Capitale de la poterie sur l'Atlantique.",
-      "og_title": "Guide de Voyage Safi | Poterie & Château de Mer | MoroccoTripMap",
-      "og_description": "Château de mer, médina, céramique, potiers et côte atlantique à Safi, Maroc."
+    "card3": {
+      "badge": "★ HÔTEL BOUTIQUE",
+      "name": "Valley Boutique Hotel",
+      "desc": "Hôtel boutique moderne à Safi offrant des chambres confortables, une table sur place et un accès pratique en ville.",
+      "location": "Safi"
     },
-    "stays": {
-      "card1": {
-        "badge": "★ RIAD MÉDINA",
-        "name": "Riad Le Cheval Blanc",
-        "desc": "Riad historique bien noté dans l'ancienne médina de Safi face à l'océan, apprécié pour son accueil et son petit déjeuner.",
-        "location": "Ancienne Médina"
-      },
-      "card2": {
-        "badge": "★ RIAD & PATIO",
-        "name": "Riad Bleu Azahraa",
-        "desc": "Riad traditionnel très bien noté dans un bâtiment historique avec patio ensoleillé, atmosphère calme et service attentionné.",
-        "location": "Safi"
-      },
-      "card3": {
-        "badge": "★ HÔTEL BOUTIQUE",
-        "name": "Valley Boutique Hotel",
-        "desc": "Hôtel boutique moderne à Safi offrant des chambres confortables, une table sur place et un accès pratique en ville.",
-        "location": "Safi"
-      },
-      "card4": {
-        "badge": "★ TERRASSE & VUE",
-        "name": "Dar Salam Asfi",
-        "desc": "Maison d'hôtes conviviale près de la médina et de l'océan avec terrasse sur le toit surplombant la ville et l'Atlantique.",
-        "location": "Médina & Océan"
-      }
+    "card4": {
+      "badge": "★ TERRASSE & VUE",
+      "name": "Dar Salam Asfi",
+      "desc": "Maison d'hôtes conviviale près de la médina et de l'océan avec terrasse sur le toit surplombant la ville et l'Atlantique.",
+      "location": "Médina & Océan"
+    }
+  },
+  "booking_banner": {
+    "badge": "Plus de 40 hôtels & riads à Safi",
+    "title": "Explorer tous les hébergements à Safi",
+    "desc": "Comparez les tarifs en temps réel, consultez les avis vérifiés et profitez d'options d'annulation gratuite à Safi.",
+    "btn": "Voir tous les séjours",
+    "guarantee": "✓ Meilleur tarif garanti & réservation sécurisée"
+  },
+  "eat": {
+    "badge": "Gastronomie",
+    "title": "Où manger à Safi",
+    "subtitle": "Poissons grillés, fruits de mer et tables locales",
+    "chez_hosni": {
+      "tag": "MAROCAIN",
+      "loc": "Safi",
+      "title": "Restaurant Chez Hosni",
+      "desc": "Adresse locale appréciée pour ses tajines généreux au poisson et fruits de mer et son accueil chaleureux."
     },
-    "tips": {
-      "title": "Conseils pratiques pour Safi",
-      "transport": {
-        "title": "S'y rendre",
-        "desc": "Bus depuis Casablanca, Marrakech ou El Jadida. Gare routière en ville ; petits taxis pour les déplacements locaux."
-      },
-      "bargain": {
-        "title": "Poterie & achats",
-        "desc": "Dans le quartier des potiers, regardez travailler les artisans. La négociation est courante pour les pièces d'artisanat."
-      },
-      "water": {
-        "title": "Climat & horaires",
-        "desc": "Vent atlantique fréquent. Vérifiez les horaires du musée et du château ; certains sites ferment un jour par semaine."
-      }
+    "chez_said": {
+      "tag": "POISSONS & GRILL",
+      "loc": "Safi",
+      "title": "Restaurant Chez Said",
+      "desc": "Table réputée à Safi pour les produits de la mer frais, les grillades et un hôte très attentionné."
+    },
+    "riad_du_pecheur": {
+      "tag": "FRUITS DE MER",
+      "loc": "Safi",
+      "title": "Riad du Pêcheur Safi",
+      "desc": "Adresse reconnue à Safi pour ses plats de la mer, son service soigné et son cadre détendu."
+    },
+    "filet_du_pecheur": {
+      "tag": "POISSONS GRILLÉS",
+      "loc": "Route de Sidi Bouzid",
+      "title": "Le Filet du Pêcheur",
+      "desc": "Bonne table côtière pour déguster poissons grillés et assiettes mixtes de fruits de mer."
+    },
+    "ilot_chatain": {
+      "tag": "CAFÉ & MER",
+      "loc": "Safi",
+      "title": "L'îlot Châtain",
+      "desc": "Café-restaurant très bien noté proposant des assiettes de la mer fraîches et des pauses gourmandes."
+    },
+    "calypso_medina": {
+      "tag": "CORNICHE & DESSERTS",
+      "loc": "Corniche",
+      "title": "Calypso Medina",
+      "desc": "Halte animée près de la corniche pour des encas de la mer, douceurs et pause face à la brise marine."
+    }
+  },
+  "tips": {
+    "title": "Conseils pratiques pour Safi",
+    "transport": {
+      "title": "Se déplacer",
+      "desc": "Les transferts et taxis couvrent l'essentiel. Convenez du tarif avant les trajets plus longs."
+    },
+    "bargain": {
+      "title": "Artisanat & achats",
+      "desc": "Dans le quartier des potiers, observez le travail des artisans. La négociation reste courante pour les pièces artisanales."
+    },
+    "water": {
+      "title": "Espèces & réservations",
+      "desc": "Prévoyez des dirhams pour les taxis et petites dépenses. Réservez tôt en haute saison."
+    }
+  },
+  "daytrips": {
+    "badge": "Autour de Safi",
+    "title": "Meilleures excursions depuis Safi",
+    "subtitle": "Littoral, nature et villes proches.",
+    "cap_beddouza": {
+      "title": "Cap Beddouza",
+      "desc": "Falaises et panoramas atlantiques à environ 25 km."
+    },
+    "essaouira": {
+      "title": "Essaouira",
+      "desc": "Médina et port classés UNESCO, à environ 2 heures par la route."
+    },
+    "el_jadida": {
+      "title": "El Jadida",
+      "desc": "Cité portugaise classée UNESCO, à environ 1h30."
+    },
+    "marrakech": {
+      "title": "Marrakech",
+      "desc": "Départ ou retour par la ville ocre (environ 2h30)."
+    }
+  },
+  "faq": {
+    "badge": "Bon à savoir",
+    "title": "FAQ voyage à Safi",
+    "q1": {
+      "question": "Combien de jours prévoir à Safi ?",
+      "answer": "Une journée suffit pour le château, la médina et les potiers. Deux à trois jours permettent d'ajouter le musée, la Kechla et une plage ou le Cap Beddouza."
+    },
+    "q2": {
+      "question": "Safi vaut-elle le détour au-delà de la poterie ?",
+      "answer": "Oui : le château de mer portugais, la médina, le port de pêche et la côte atlantique forment un ensemble patrimonial et maritime complet."
+    },
+    "q3": {
+      "question": "Comment aller à Safi ?",
+      "answer": "En bus depuis Casablanca, Marrakech ou El Jadida. Aéroports proches : Marrakech (RAK) ou Casablanca (CMN), puis transfert routier."
+    },
+    "q4": {
+      "question": "Quelle est la meilleure saison pour visiter ?",
+      "answer": "Avril à juin et septembre-octobre offrent un excellent équilibre. L'été est idéal pour la plage mais peut être venteux."
     }
   }
 }

@@ -229,5 +229,71 @@
       "question": "Quelle est la meilleure période ?",
       "answer": "Avril à juin et septembre–octobre offrent un bon équilibre. L'été convient à la plage mais peut être venteux."
     }
+  },
+  "safi_page": {
+    "stays": {
+      "card1": {
+        "badge": "★ RIAD MÉDINA",
+        "name": "Riad Le Cheval Blanc",
+        "desc": "Riad historique bien noté dans l'ancienne médina de Safi face à l'océan, apprécié pour son accueil et son petit déjeuner.",
+        "location": "Ancienne Médina"
+      },
+      "card2": {
+        "badge": "★ RIAD & PATIO",
+        "name": "Riad Bleu Azahraa",
+        "desc": "Riad traditionnel très bien noté dans un bâtiment historique avec patio ensoleillé, atmosphère calme et service attentionné.",
+        "location": "Safi"
+      },
+      "card3": {
+        "badge": "★ HÔTEL BOUTIQUE",
+        "name": "Valley Boutique Hotel",
+        "desc": "Hôtel boutique moderne à Safi offrant des chambres confortables, une table sur place et un accès pratique en ville.",
+        "location": "Safi"
+      },
+      "card4": {
+        "badge": "★ TERRASSE & VUE",
+        "name": "Dar Salam Asfi",
+        "desc": "Maison d'hôtes conviviale près de la médina et de l'océan avec terrasse sur le toit surplombant la ville et l'Atlantique.",
+        "location": "Médina & Océan"
+      }
+    },
+    "eat": {
+      "chez_hosni": {
+        "tag": "MAROCAIN",
+        "loc": "Safi",
+        "title": "Restaurant Chez Hosni",
+        "desc": "Adresse locale appréciée pour ses tajines généreux au poisson et fruits de mer et son accueil chaleureux."
+      },
+      "chez_said": {
+        "tag": "POISSONS & GRILL",
+        "loc": "Safi",
+        "title": "Restaurant Chez Said",
+        "desc": "Table réputée à Safi pour les produits de la mer frais, les grillades et un hôte très attentionné."
+      },
+      "riad_du_pecheur": {
+        "tag": "FRUITS DE MER",
+        "loc": "Safi",
+        "title": "Riad du Pêcheur Safi",
+        "desc": "Adresse reconnue à Safi pour ses plats de la mer, son service soigné et son cadre détendu."
+      },
+      "filet_du_pecheur": {
+        "tag": "POISSONS GRILLÉS",
+        "loc": "Route de Sidi Bouzid",
+        "title": "Le Filet du Pêcheur",
+        "desc": "Bonne table côtière pour déguster poissons grillés et assiettes mixtes de fruits de mer."
+      },
+      "ilot_chatain": {
+        "tag": "CAFÉ & MER",
+        "loc": "Safi",
+        "title": "L'îlot Châtain",
+        "desc": "Café-restaurant très bien noté proposant des assiettes de la mer fraîches et des pauses gourmandes."
+      },
+      "calypso_medina": {
+        "tag": "CORNICHE & DESSERTS",
+        "loc": "Corniche",
+        "title": "Calypso Medina",
+        "desc": "Halte animée près de la corniche pour des encas de la mer, douceurs et pause face à la brise marine."
+      }
+    }
   }
 }

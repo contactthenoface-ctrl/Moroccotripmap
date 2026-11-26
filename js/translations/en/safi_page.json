@@ -1,233 +1,353 @@
 {
   "seo": {
-    "title": "Safi Travel Guide 2026 | Pottery, Sea Castle & Atlantic | MoroccoTripMap",
-    "description": "Plan your stay in Safi: UNESCO Safi, Sea Castle, medina, Lalla Fatna and Cap Beddouza beaches, fishing port, potters-quarter and Atlantic corniche.",
-    "og_title": "Safi Travel Guide | Safi, Sea Castle & Beaches | MoroccoTripMap",
-    "og_description": "UNESCO Safi, magical sea castle, medina, beaches and fishing port on Morocco’s Atlantic coast."
+    "title": "Safi Travel Guide: Ceramics Quarter, Sea Castle, Fishing Port & Atlantic Coast | MoroccoTripMap",
+    "description": "Explore Safi on Morocco's Atlantic coast: Potters Quarter (Colline des Potiers), National Ceramics Museum, Kechla & Sea Castle (Dar El Bahr), medina, souks, fishing port, Cap Safi and Lalla Fatna.",
+    "og_title": "Safi: Ceramics Heritage, Sea Castle & Atlantic Coast | MoroccoTripMap",
+    "og_description": "Morocco's historic ceramics capital on the Atlantic — potters' workshops, Portuguese fortress, medina, fishing port and coastal spots."
   },
-  "hero_subtitle": "Morocco's pottery capital — Portuguese sea castle, living medina and Atlantic coast.",
+  "name": "Safi",
+  "hero_subtitle": "Morocco's historic ceramics capital on the Atlantic — potters' hill, sea fortresses, medina and coastal cliffs.",
   "info": {
-    "best_time_label": "Best Time to Visit",
-    "best_time_val": "Apr–Jun & Sep–Oct; summer for the beach",
-    "stay_label": "Ideal Stay",
-    "stay_val": "3 – 5 Days",
-    "vibe_label": "Top Vibe",
-    "vibe_val": "citadel & heritage",
-    "airport_label": "Nearest Airport",
-    "airport_val": "RAK (Marrakech) or CMN (Casablanca)"
+    "best_time_label": "Best time",
+    "best_time": "April – October · mild Atlantic breeze",
+    "stay_label": "Ideal stay",
+    "stay": "1 – 2 days",
+    "vibe_label": "Atmosphere",
+    "vibe": "Ceramics · Fortresses · Working port",
+    "access_label": "Access",
+    "access": "Marrakech (RAK) ≈ 2h · Casablanca (CMN) ≈ 3h · coastal road N1",
+    "vibe_val": "Ceramics · Fortresses · Working port",
+    "best_time_val": "April – October · mild Atlantic breeze",
+    "stay_val": "1 – 2 days",
+    "access_val": "Marrakech (RAK) ≈ 2h · Casablanca (CMN) ≈ 3h · coastal road N1",
+    "airport_label": "Access",
+    "airport_val": "Marrakech (RAK) ≈ 2h · Casablanca (CMN) ≈ 3h · coastal road N1"
   },
-  "overview": {
-    "title": "Welcome to Safi — Portuguese citadel and Atlantic shores",
-    "p1": "Safi (Asfi), on Morocco's Atlantic coast between El Jadida and Essaouira, is the kingdom's pottery capital. Its Portuguese sea castle, medina, National Ceramics Museum and potters' quarter make it an authentic stop away from the major tourist circuits.",
-    "p2": "Beyond the walls: the National Ceramics Museum, the potters' quarter, the fishing port and Cap Beddouza. Town life is calm and authentic.",
-    "p3": "Three to five days work well if you mix water time with the citadel, port and a lalla-fatna afternoon. Summer is lively; winter is milder and still excellent for sports."
+  "intro": {
+    "title": "Welcome to Safi — Ceramics & Atlantic History",
+    "p1": "Set between Casablanca and Essaouira on Morocco's Atlantic coast, Safi blends centuries of ceramic craftsmanship with Portuguese coastal fortifications, a lively medina and one of the country's major sardine and fishing ports.",
+    "p2": "Most landmarks sit relatively close together: start on the Potters' Quarter (Colline des Potiers) and the National Ceramics Museum, walk down through the medina and souks toward the Sea Castle (Dar El Bahr) and Kechla, then head to the port or nearby beaches and Cap Safi."
   },
   "places": {
-    "badge": "Top Sightseeing",
-    "title": "Must-Visit Places in Safi",
-    "subtitle": "citadel, dunes, island, pottery and the sea castle.",
-    "explore": "Explore the place →",
-    "sea_castle": {
-      "tag": "UNESCO",
-      "title": "Sea Castle",
-      "desc": "Underground vaulted hall with columns reflected in water — the city's jewel."
-    },
-    "medina": {
-      "tag": "Medina",
-      "title": "Safi Medina",
-      "desc": "Wall circuit facing the ocean, Angel and Holy Spirit fortifications, period cannons."
-    },
-    "ceramics": {
-      "tag": "Heritage",
-      "title": "National Ceramics Museum",
-      "desc": "Rare Manueline church still standing inside the citadel."
-    },
-    "potters": {
+    "badge": "In Safi",
+    "title": "Must-visit places in Safi",
+    "subtitle": "All on this page — open a card to jump to its section.",
+    "explore": "See details ↓",
+    "potters_quarter": {
       "tag": "Crafts",
-      "title": "Potters' Quarter",
-      "desc": "Kilns, workshops and artisans that made Safi's name."
+      "title": "Potters' Quarter (Colline des Potiers)",
+      "desc": "Traditional clay workshops, kilns and colourful glazed ceramics overlooking the city."
     },
-    "harbor": {
-      "tag": "Port",
-      "title": "Fishing Port",
-      "desc": "Blue boats, daily fish landing and quay activity."
+    "ceramics_museum": {
+      "tag": "Museum",
+      "title": "National Ceramics Museum",
+      "desc": "Historic pottery pieces and regional styles showcased on the Potters' Hill."
+    },
+    "sea_castle": {
+      "tag": "Fortress",
+      "title": "Sea Castle (Dar El Bahr)",
+      "desc": "16th-century Portuguese coastal bastion guarding the ocean approach and harbour."
     },
     "kechla": {
-      "tag": "Fortress",
-      "title": "Kechla",
-      "desc": "Citadel and panoramas over the old town and ocean."
+      "tag": "Heritage",
+      "title": "Kechla Fortress & Ramparts",
+      "desc": "Elevated historic citadel and defensive walls overlooking the old town."
+    },
+    "medina": {
+      "tag": "Old Town",
+      "title": "Medina & Souks",
+      "desc": "Narrow alleys, neighbourhood shops, spices and everyday local life."
+    },
+    "port": {
+      "tag": "Port",
+      "title": "Fishing Port & Sardine Harbour",
+      "desc": "Active Atlantic harbour famous for sardine boats, nets and fresh seafood."
+    },
+    "great_mosque": {
+      "tag": "Landmark",
+      "title": "Great Mosque (Grande Mosquée)",
+      "desc": "Historic sanctuary and minaret at the heart of the old quarter."
+    },
+    "bab_chaaba": {
+      "tag": "Heritage",
+      "title": "Bab Chaâba & Old Gates",
+      "desc": "Historic city gate and surrounding bastions linking the medina to town."
+    },
+    "cap_safi": {
+      "tag": "Coast",
+      "title": "Cap Safi & Atlantic Cliffs",
+      "desc": "Sweeping ocean views, coastal cliffs and breezy sunset viewpoints."
+    },
+    "beach_corniche": {
+      "tag": "Coast",
+      "title": "Safi Beach & Corniche",
+      "desc": "Seafront promenade, cafés and sandy Atlantic stretch for evening walks."
     },
     "lalla_fatna": {
-      "tag": "Beach",
+      "tag": "Nature",
       "title": "Lalla Fatna Beach",
-      "desc": "Long stretch of sand and lively promenade at the foot of the medina."
+      "desc": "Sheltered cove north of Safi known for cliffs, surf and quieter sea views."
     },
-    "cap_beddouza": {
-      "tag": "Beach",
-      "title": "Cap Beddouza",
-      "desc": "Large dune-backed beach to the north, often quieter."
-    },
-    "souks": {
-      "tag": "Market",
-      "title": "Souks & Central Market",
-      "desc": "Spices, fresh fish and crafts in the commercial heart of the city."
+    "souira_qdima": {
+      "tag": "Nearby",
+      "title": "Souira Qdima & Tensift Mouth",
+      "desc": "Historic ribat, coastal ruins and river-meets-ocean scenery south of Safi."
     }
   },
-  "itinerary": {
-    "badge": "Planning",
-    "title": "Suggested 2-day itinerary in Safi",
-    "subtitle": "Heritage and pottery first, then coast and relaxation."
-  },
-  "detailed_itinerary": {
-    "day1_tab": "Day 1 — Medina, castle & potters",
-    "day1_m": "Morning — Sea Castle & medina",
-    "day1_md": "Visit the sea castle and walk the medina.",
-    "day1_a": "Afternoon — Museum & potters' quarter",
-    "day1_ad": "National Ceramics Museum then potters' workshops.",
-    "day1_e": "Evening — Port & grilled fish",
-    "day1_ed": "Fishing port atmosphere and dinner by the sea.",
-    "day2_tab": "Day 2 — Kechla & coast",
-    "day2_m": "Morning — Kechla & views",
-    "day2_md": "Citadel and panoramas over town and ocean.",
-    "day2_a": "Afternoon — Lalla Fatna or Cap Beddouza",
-    "day2_ad": "Beach or wild headland as you prefer.",
-    "day2_e": "Evening — Corniche or medina",
-    "day2_ed": "Last stroll and mint tea."
-  },
-  "directory": {
-    "badge": "Stays",
-    "title": "Find your ideal stay in Safi",
-    "subtitle": "City hotels, riads near the medina and seafront options — open a listing for details.",
-    "check_availability": "Book →"
+  "place_sections": {
+    "potters_quarter": {
+      "title": "Potters' Quarter (Colline des Potiers)",
+      "p1": "Rising above the city, the Potters' Quarter is the beating heart of Safi's craft identity. Dozens of family workshops shape local clay on the wheel, dry pieces in the sun, paint traditional motifs and fire them in kilns.",
+      "p2": "Walk through the lanes with time to watch artisans at work and compare glaze patterns directly in the studios and showrooms.",
+      "tip": "Visit in the morning when workshops are active; check shipping or packing if buying large pieces.",
+      "cap1": "Potters' Quarter (Colline des Potiers)",
+      "cap2": "Potters' Quarter (Colline des Potiers)",
+      "cap3": "Potters' Quarter (Colline des Potiers)"
+    },
+    "ceramics_museum": {
+      "title": "National Ceramics Museum",
+      "p1": "Located near the potters' hill, the museum provides helpful context on Safi's pottery traditions, glazes and regional Moroccan ceramic styles before you browse the surrounding workshops.",
+      "p2": "It is compact and easy to pair with a stroll through the adjacent craft lanes.",
+      "tip": "Combine with the Potters' Quarter in the same morning circuit.",
+      "cap1": "National Ceramics Museum",
+      "cap2": "National Ceramics Museum",
+      "cap3": "National Ceramics Museum"
+    },
+    "sea_castle": {
+      "title": "Sea Castle (Dar El Bahr)",
+      "p1": "Built along the rocky shore during the Portuguese presence in the 16th century, Dar El Bahr stands right above the Atlantic swells and offers broad views over the coast and harbour entrance.",
+      "p2": "Its stone ramparts and ocean backdrop make it one of Safi's most atmospheric stops for photography and a short coastal walk.",
+      "tip": "Watch your footing near wet rocks and windy edges along the sea wall.",
+      "cap1": "Sea Castle (Dar El Bahr)",
+      "cap2": "Sea Castle (Dar El Bahr)",
+      "cap3": "Sea Castle (Dar El Bahr)"
+    },
+    "kechla": {
+      "title": "Kechla Fortress & Ramparts",
+      "p1": "Overlooking the old quarters, the Kechla citadel and historic ramparts reflect Safi's strategic coastal role across centuries of trade and fortification.",
+      "p2": "Walk around the outer walls to connect the medina with views over the rooftops and Atlantic horizon.",
+      "tip": "Late afternoon light gives strong relief to the old stone walls.",
+      "cap1": "Kechla Fortress & Ramparts",
+      "cap2": "Kechla Fortress & Ramparts",
+      "cap3": "Kechla Fortress & Ramparts"
+    },
+    "medina": {
+      "title": "Medina & Souks",
+      "p1": "Safi's medina feels grounded and everyday rather than purely touristic. Winding lanes connect bakeries, spice stalls, small craftsmen and shaded passages.",
+      "p2": "Take an unhurried walk through the souks to sample local snacks, pick up ceramics or head down toward the seafront.",
+      "tip": "Go earlier in the day for bustling market stalls and calmer foot traffic.",
+      "cap1": "Medina & Souks",
+      "cap2": "Medina & Souks",
+      "cap3": "Medina & Souks"
+    },
+    "port": {
+      "title": "Fishing Port & Sardine Harbour",
+      "p1": "Safi's fishing port is a busy working harbour long known for sardine fishing and seafood activity along the Atlantic coast.",
+      "p2": "Mending nets, moored boats and fresh catch create a lively maritime scene, especially when vessels come in.",
+      "tip": "Stay clear of active quays and cranes, and ask before taking close portraits of fishermen.",
+      "cap1": "Fishing Port & Sardine Harbour",
+      "cap2": "Fishing Port & Sardine Harbour",
+      "cap3": "Fishing Port & Sardine Harbour"
+    },
+    "great_mosque": {
+      "title": "Great Mosque (Grande Mosquée)",
+      "p1": "Anchoring the historic centre, the Great Mosque and its minaret serve as a familiar reference point while exploring the streets of the old town.",
+      "p2": "Admire the exterior architecture and surrounding squares as you move between the souks and coastal walls.",
+      "tip": "Dress modestly around places of worship and avoid blocking entrances at prayer times.",
+      "cap1": "Great Mosque (Grande Mosquée)",
+      "cap2": "Great Mosque (Grande Mosquée)",
+      "cap3": "Great Mosque (Grande Mosquée)"
+    },
+    "bab_chaaba": {
+      "title": "Bab Chaâba & Old Gates",
+      "p1": "Historic gateways like Bab Chaâba mark the transition between Safi's walled quarters and the wider town, recalling how land routes and coastal defences met.",
+      "p2": "They make natural orientation points when walking between the medina, souks and nearby avenues.",
+      "tip": "Use the historic gates as easy landmarks for a self-guided walking loop.",
+      "cap1": "Bab Chaâba & Old Gates",
+      "cap2": "Bab Chaâba & Old Gates",
+      "cap3": "Bab Chaâba & Old Gates"
+    },
+    "cap_safi": {
+      "title": "Cap Safi & Atlantic Cliffs",
+      "p1": "North of the city centre, Cap Safi opens onto rugged Atlantic cliffs, coastal wind and wide ocean horizons away from the dense streets.",
+      "p2": "It is best reached by car or taxi and rewards visitors looking for coastal scenery and sunset views.",
+      "tip": "Bring a light windbreaker even on sunny days — Atlantic gusts pick up quickly.",
+      "cap1": "Cap Safi & Atlantic Cliffs",
+      "cap2": "Cap Safi & Atlantic Cliffs",
+      "cap3": "Cap Safi & Atlantic Cliffs"
+    },
+    "beach_corniche": {
+      "title": "Safi Beach & Corniche",
+      "p1": "Safi's seafront promenade and beach area offer a relaxed place to unwind after exploring the medina and workshops, with cafés, ocean air and sunset views.",
+      "p2": "Sea conditions and currents vary along the Atlantic coast, so check local conditions before entering the water.",
+      "tip": "Ideal for an early-evening walk along the promenade.",
+      "cap1": "Safi Beach & Corniche",
+      "cap2": "Safi Beach & Corniche",
+      "cap3": "Safi Beach & Corniche"
+    },
+    "lalla_fatna": {
+      "title": "Lalla Fatna Beach",
+      "p1": "Situated north of Safi along the coast, Lalla Fatna is a scenic bay framed by cliffs and hills, popular with local beachgoers and surfers looking for a quieter coastal setting.",
+      "p2": "Because it sits outside the immediate town centre, plan ahead for transport and bring essentials for the day.",
+      "tip": "Great as a half-day coastal escape if you have a car or arranged taxi.",
+      "cap1": "Lalla Fatna Beach",
+      "cap2": "Lalla Fatna Beach",
+      "cap3": "Lalla Fatna Beach"
+    },
+    "souira_qdima": {
+      "title": "Souira Qdima & Tensift Mouth",
+      "p1": "South of Safi where the Tensift River meets the Atlantic, Souira Qdima preserves historic coastal fortifications, quiet dunes and an off-the-beaten-path atmosphere.",
+      "p2": "It pairs naturally with a coastal drive heading south toward Essaouira.",
+      "tip": "Best visited by car or private driver as an unhurried coastal stop.",
+      "cap1": "Souira Qdima & Tensift Mouth",
+      "cap2": "Souira Qdima & Tensift Mouth",
+      "cap3": "Souira Qdima & Tensift Mouth"
+    }
   },
   "stays": {
+    "badge": "Stays",
+    "title": "Where to stay in Safi",
+    "subtitle": "Practical hotels and guesthouses near the centre, corniche or road south — ideal for one or two nights.",
+    "book": "Book →",
     "card1": {
-      "badge": "★ MEDINA RIAD",
-      "name": "Riad Le Cheval Blanc",
-      "desc": "Well-rated historic riad in Safi's old medina facing the ocean, appreciated for its warm hospitality and breakfast.",
-      "location": "Old Medina"
+      "badge": "Central",
+      "name": "City-centre hotel",
+      "desc": "Convenient base for the medina, souks and restaurants.",
+      "location": "Centre"
     },
     "card2": {
-      "badge": "★ RIAD & PATIO",
-      "name": "Riad Bleu Azahraa",
-      "desc": "Highly rated traditional riad in a historic building with a sunny patio, calm atmosphere and attentive service.",
-      "location": "Safi"
+      "badge": "Coast",
+      "name": "Corniche & sea-view stay",
+      "desc": "Easy evening walks along the Atlantic promenade.",
+      "location": "Corniche"
     },
     "card3": {
-      "badge": "★ BOUTIQUE HOTEL",
-      "name": "Valley Boutique Hotel",
-      "desc": "Modern boutique hotel in Safi featuring comfortable rooms, on-site dining and convenient access around town.",
+      "badge": "Value",
+      "name": "Practical stopover hotel",
+      "desc": "Straightforward comfort on a coastal route toward Essaouira or El Jadida.",
       "location": "Safi"
     },
     "card4": {
-      "badge": "★ TERRACE & VIEW",
-      "name": "Dar Salam Asfi",
-      "desc": "Welcoming guesthouse near the medina and ocean with a rooftop terrace overlooking the old town and Atlantic.",
-      "location": "Medina & Ocean"
+      "badge": "Driver",
+      "name": "Hotel with parking",
+      "desc": "Helpful if driving to Cap Safi, Lalla Fatna or Souira Qdima.",
+      "location": "Safi"
+    },
+    "c1": {
+      "tag": "Central",
+      "title": "City-centre hotel",
+      "desc": "Convenient base for the medina, souks and restaurants.",
+      "loc": "Centre"
+    },
+    "c2": {
+      "tag": "Coast",
+      "title": "Corniche & sea-view stay",
+      "desc": "Easy evening walks along the Atlantic promenade.",
+      "loc": "Corniche"
+    },
+    "c3": {
+      "tag": "Value",
+      "title": "Practical stopover hotel",
+      "desc": "Straightforward comfort on a coastal route toward Essaouira or El Jadida.",
+      "loc": "Safi"
+    },
+    "c4": {
+      "tag": "Driver",
+      "title": "Hotel with parking",
+      "desc": "Helpful if driving to Cap Safi, Lalla Fatna or Souira Qdima.",
+      "loc": "Safi"
     }
   },
   "booking_banner": {
-    "badge": "Over 40 hotels & riads across Safi",
+    "badge": "Local stays & hotels",
     "title": "Explore all stays in Safi",
-    "desc": "Compare real-time rates, read verified guest reviews, and enjoy free cancellation on hotels and riads in Safi.",
+    "desc": "Compare live prices, read trusted guest reviews and enjoy free cancellation on most hotels.",
     "btn": "View All Stays",
     "guarantee": "✓ Best price guarantee & secure booking"
   },
   "eat": {
     "badge": "Food",
     "title": "Where to eat in Safi",
-    "subtitle": "Grilled fish, seafood and local tables",
-    "chez_hosni": {
-      "tag": "MOROCCAN",
-      "loc": "Safi",
-      "title": "Restaurant Chez Hosni",
-      "desc": "Popular local table praised for generous fish and seafood tagines and friendly service."
+    "subtitle": "Grilled sardines, coastal seafood, tagines and neighbourhood cafés.",
+    "sardines": {
+      "tag": "Seafood",
+      "loc": "Port & coast",
+      "title": "Grilled sardines & fish",
+      "desc": "Fresh Atlantic catch and grilled sardines — a signature Safi experience."
     },
-    "chez_said": {
-      "tag": "SEAFOOD & GRILL",
-      "loc": "Safi",
-      "title": "Restaurant Chez Said",
-      "desc": "Well-reviewed seafood and grill spot known for fresh catches and a welcoming host."
+    "tagines": {
+      "tag": "Local",
+      "loc": "Medina & centre",
+      "title": "Tagines & everyday eateries",
+      "desc": "Hearty tagines, grills and casual local spots around the old town."
     },
-    "riad_du_pecheur": {
-      "tag": "SEAFOOD",
-      "loc": "Safi",
-      "title": "Riad du Pêcheur Safi",
-      "desc": "Renowned seafood address in Safi combining coastal dishes, friendly service and a relaxed setting."
-    },
-    "filet_du_pecheur": {
-      "tag": "FISH & GRILL",
-      "loc": "Sidi Bouzid Road",
-      "title": "Le Filet du Pêcheur",
-      "desc": "Classic spot for grilled fish and mixed seafood platters along the coastal road."
-    },
-    "ilot_chatain": {
-      "tag": "CAFÉ & SEAFOOD",
-      "loc": "Safi",
-      "title": "L'îlot Châtain",
-      "desc": "Highly rated café and seafood restaurant serving fresh coastal plates and refreshments."
-    },
-    "calypso_medina": {
-      "tag": "CORNICHE & DESSERTS",
-      "loc": "Corniche",
-      "title": "Calypso Medina",
-      "desc": "Lively stop near the corniche for seafood bites, sweet treats and sea-breeze breaks."
+    "cafe": {
+      "tag": "Cafe",
+      "loc": "Corniche & avenues",
+      "title": "Cafés & pastry stops",
+      "desc": "Coffee, mint tea and breaks between sightseeing loops."
     }
   },
   "tips": {
     "title": "Practical tips for Safi",
     "transport": {
       "title": "Getting around",
-      "desc": "Airport transfers and camp shuttles cover most needs. Agree taxi prices before longer citadel or desert tracks."
+      "desc": "The medina and nearby seafront are easy on foot; petits taxis cover city hops and a car helps for Cap Safi or coastal beaches."
     },
-    "bargain": {
-      "title": "Wind & sun",
-      "desc": "In the potters' quarter, watch the artisans at work. Bargaining is common for craft pieces."
+    "ceramics_tip": {
+      "title": "Buying ceramics",
+      "desc": "Compare pieces across several workshops on the Potters' Quarter and ask about protective packaging before you travel on."
     },
-    "water": {
-      "title": "Cash & bookings",
-      "desc": "Carry dirhams for taxis and small stops. Book accommodation ahead in peak season."
+    "timing": {
+      "title": "When to visit",
+      "desc": "Spring through autumn brings pleasant coastal days; mornings are best for workshops and souks, late afternoons for cliffs and sea views."
     }
   },
   "daytrips": {
-    "badge": "Around Safi",
-    "title": "Best day trips from Safi",
-    "subtitle": "Coast, nature and nearby towns.",
-    "cap_beddouza": {
-      "title": "Cap Beddouza",
-      "desc": "Cliffs and Atlantic panoramas about 25 km away."
+    "badge": "Nearby & along the coast",
+    "title": "From Safi",
+    "subtitle": "Coastal coves, historic stops and Atlantic towns along the route.",
+    "lalla_fatna": {
+      "title": "Lalla Fatna (≈ 20–30 min)",
+      "desc": "Cliff-backed cove and surf spot north of Safi."
+    },
+    "souira_qdima": {
+      "title": "Souira Qdima (≈ 30–40 min)",
+      "desc": "Historic coastal fort and Tensift river mouth to the south."
+    },
+    "oualidia": {
+      "title": "Oualidia lagoon (≈ 1h)",
+      "desc": "Sheltered coastal lagoon and seafood stop to the north."
     },
     "essaouira": {
-      "title": "Essaouira",
-      "desc": "UNESCO medina and port, about 2 hours by road."
-    },
-    "el_jadida": {
-      "title": "El Jadida",
-      "desc": "UNESCO Portuguese City, about 1h30."
-    },
-    "marrakech": {
-      "title": "Marrakech",
-      "desc": "Leave or return via the ochre city (about 2h30)."
+      "title": "Essaouira (≈ 2h)",
+      "desc": "Walled Atlantic port city further down the coast road."
     }
   },
   "faq": {
     "badge": "Good to know",
-    "title": "Safi travel FAQ",
+    "title": "Questions about Safi",
     "q1": {
-      "question": "How many days in Safi?",
-      "answer": "One day covers the castle, medina and potters. Two to three days add the museum, Kechla and a beach or Cap Beddouza."
+      "question": "How long should I spend in Safi?",
+      "answer": "A full day covers the Potters' Quarter, Ceramics Museum, Sea Castle, Kechla, medina and port; stay one night if you also want Cap Safi or Lalla Fatna at a relaxed pace."
     },
     "q2": {
-      "question": "Is Safi interesting beyond pottery?",
-      "answer": "Yes: Portuguese sea castle, medina, fishing port and Atlantic coast form a complete heritage and maritime ensemble."
+      "question": "What is Safi best known for?",
+      "answer": "Safi is renowned across Morocco for its traditional ceramics and pottery workshops on the Colline des Potiers, alongside its Portuguese-era coastal fortifications and busy sardine fishing port."
     },
     "q3": {
-      "question": "How do I get to Safi?",
-      "answer": "Bus from Casablanca, Marrakech or El Jadida. Nearest airports: Marrakech (RAK) or Casablanca (CMN), then road transfer."
+      "question": "Can I visit Safi as a stop between cities?",
+      "answer": "Yes — Safi works well as a stopover or day trip on road itineraries linking Casablanca or El Jadida with Essaouira or Marrakech."
     },
     "q4": {
-      "question": "Best time to visit?",
-      "answer": "April to June and September–October offer a good balance. Summer suits the beach but can be windy."
+      "question": "Do I need a car in Safi?",
+      "answer": "You can explore the medina, Sea Castle, Kechla and potters' hill on foot or by local taxi, while a car makes reaching Cap Safi, Lalla Fatna and Souira Qdima much easier."
     }
-  }
+  },
+  "overview": {
+    "title": "Welcome to Safi — Ceramics & Atlantic History",
+    "p1": "Set between Casablanca and Essaouira on Morocco's Atlantic coast, Safi blends centuries of ceramic craftsmanship with Portuguese coastal fortifications, a lively medina and one of the country's major sardine and fishing ports.",
+    "p2": "Most landmarks sit relatively close together: start on the Potters' Quarter (Colline des Potiers) and the National Ceramics Museum, walk down through the medina and souks toward the Sea Castle (Dar El Bahr) and Kechla, then head to the port or nearby beaches and Cap Safi."
+  },
+  "hero_alt": "Safi ceramics heritage, sea fortress and Atlantic coast"
 }

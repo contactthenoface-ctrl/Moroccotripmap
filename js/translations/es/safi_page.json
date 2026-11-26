@@ -1,233 +1,353 @@
 {
   "seo": {
-    "title": "Guía de Viaje de Safi 2026 | Alfarería, Castillo del Mar y Atlántico | MoroccoTripMap",
-    "description": "Planifica tu viaje a Safi: castillo del mar, medina, playas de Lalla Fatna y Cabo Beddouza, puerto pesquero, barrio alfarero y cornisa atlántica.",
-    "og_title": "Guía de Viaje de Safi | Castillo del Mar y Playas | MoroccoTripMap",
-    "og_description": "Castillo del mar portugués, medina, playas y puerto pesquero en la costa atlántica de Marruecos."
+    "title": "Guía de viaje de Safi: Barrio de los Alfareros, Castillo del Mar, puerto pesquero y costa atlántica | MoroccoTripMap",
+    "description": "Descubre Safi en la costa atlántica de Marruecos: Barrio de los Alfareros (Colline des Potiers), Museo Nacional de la Cerámica, Kechla y Castillo del Mar (Dar El Bahr), medina, zocos, puerto pesquero, Cabo Safi y Lalla Fatna.",
+    "og_title": "Safi: patrimonio cerámico, Castillo del Mar y costa atlántica | MoroccoTripMap",
+    "og_description": "La histórica capital de la cerámica de Marruecos en el Atlántico: talleres de alfareros, fortaleza portuguesa, medina, puerto pesquero y enclaves costeros."
   },
-  "hero_subtitle": "Capital de la alfarería en Marruecos — castillo del mar portugués, medina viva y costa atlántica.",
+  "name": "Safi",
+  "hero_subtitle": "La histórica capital de la cerámica de Marruecos en el Atlántico: colina de los alfareros, fortalezas marítimas, medina y acantilados costeros.",
   "info": {
     "best_time_label": "Mejor época",
-    "best_time_val": "Abr–Jun y Sep–Oct; verano para la playa",
+    "best_time": "Abril – Octubre · brisa atlántica suave",
     "stay_label": "Estancia ideal",
-    "stay_val": "3 – 5 Días",
+    "stay": "1 – 2 días",
     "vibe_label": "Ambiente",
-    "vibe_val": "ciudadela y patrimonio",
-    "airport_label": "Aeropuerto más cercano",
-    "airport_val": "RAK (Marrakech) o CMN (Casablanca)"
+    "vibe": "Cerámica · Fortalezas · Puerto activo",
+    "access_label": "Acceso",
+    "access": "Marrakech (RAK) ≈ 2 h · Casablanca (CMN) ≈ 3 h · carretera costera N1",
+    "vibe_val": "Cerámica · Fortalezas · Puerto activo",
+    "best_time_val": "Abril – Octubre · brisa atlántica suave",
+    "stay_val": "1 – 2 días",
+    "access_val": "Marrakech (RAK) ≈ 2 h · Casablanca (CMN) ≈ 3 h · carretera costera N1",
+    "airport_label": "Acceso",
+    "airport_val": "Marrakech (RAK) ≈ 2 h · Casablanca (CMN) ≈ 3 h · carretera costera N1"
   },
-  "overview": {
-    "title": "Bienvenido a Safi — Ciudadela portuguesa y costa atlántica",
-    "p1": "Safi (Asfi), en la costa atlántica de Marruecos entre El Jadida y Essaouira, es la capital de la alfarería del país. Su castillo del mar portugués, su medina, el Museo Nacional de la Cerámica y el barrio de los alfareros ofrecen una escapada auténtica.",
-    "p2": "Más allá de las murallas: el Museo Nacional de la Cerámica, el barrio alfarero, el puerto pesquero y Cabo Beddouza. La vida local es tranquila y auténtica.",
-    "p3": "Entre tres y cinco días funcionan muy bien para combinar costa, ciudadela, puerto y una tarde en Lalla Fatna. El verano es animado; el invierno es suave."
+  "intro": {
+    "title": "Bienvenido a Safi — Cerámica e historia atlántica",
+    "p1": "Situada entre Casablanca y Esauira en la costa atlántica de Marruecos, Safi combina siglos de artesanía cerámica con fortificaciones costeras portuguesas, una medina animada y uno de los principales puertos pesqueros y sardineros del país.",
+    "p2": "La mayoría de los lugares de interés están relativamente cerca entre sí: empieza en el Barrio de los Alfareros (Colline des Potiers) y el Museo Nacional de la Cerámica, baja por la medina y los zocos hacia el Castillo del Mar (Dar El Bahr) y la Kechla, y continúa hacia el puerto o las playas cercanas y Cabo Safi."
   },
   "places": {
-    "badge": "Imprescindibles",
+    "badge": "En Safi",
     "title": "Lugares imprescindibles en Safi",
-    "subtitle": "ciudadela, dunas, alfarería, puerto y castillo del mar.",
-    "explore": "Explorar lugar →",
-    "sea_castle": {
-      "tag": "UNESCO",
-      "title": "Castillo del Mar",
-      "desc": "Sala abovedada y columnas reflejadas en el agua — la joya de la ciudad."
-    },
-    "medina": {
-      "tag": "Medina",
-      "title": "Medina de Safi",
-      "desc": "Murallas frente al océano, fortificaciones y cañones históricos."
-    },
-    "ceramics": {
-      "tag": "Patrimonio",
-      "title": "Museo Nacional de la Cerámica",
-      "desc": "Colecciones de cerámica y testimonio histórico en el corazón de la ciudadela."
-    },
-    "potters": {
+    "subtitle": "Todo en esta página — abre una tarjeta para ir directamente a su sección.",
+    "explore": "Ver detalles ↓",
+    "potters_quarter": {
       "tag": "Artesanía",
-      "title": "Barrio de los Alfareros",
-      "desc": "Hornos, talleres y artesanos que dieron fama a Safi."
+      "title": "Barrio de los Alfareros (Colline des Potiers)",
+      "desc": "Talleres tradicionales de barro, hornos y colorida cerámica esmaltada con vistas a la ciudad."
     },
-    "harbor": {
-      "tag": "Puerto",
-      "title": "Puerto Pesquero",
-      "desc": "Barcas azules, descarga diaria de pescado y actividad portuaria."
+    "ceramics_museum": {
+      "tag": "Museo",
+      "title": "Museo Nacional de la Cerámica",
+      "desc": "Piezas históricas de alfarería y estilos regionales expuestos en la colina de los alfareros."
+    },
+    "sea_castle": {
+      "tag": "Fortaleza",
+      "title": "Castillo del Mar (Dar El Bahr)",
+      "desc": "Baluarte costero portugués del siglo XVI que protege el acceso marítimo y el puerto."
     },
     "kechla": {
-      "tag": "Fortaleza",
-      "title": "Kechla",
-      "desc": "Ciudadela y vistas panorámicas sobre la ciudad antigua y el océano."
+      "tag": "Patrimonio",
+      "title": "Fortaleza de la Kechla y murallas",
+      "desc": "Ciudadela histórica elevada y murallas defensivas con vistas al casco antiguo."
+    },
+    "medina": {
+      "tag": "Casco antiguo",
+      "title": "Medina y zocos",
+      "desc": "Callejuelas estrechas, tiendas de barrio, especias y vida cotidiana local."
+    },
+    "port": {
+      "tag": "Puerto",
+      "title": "Puerto pesquero y puerto sardinero",
+      "desc": "Activo puerto atlántico famoso por sus barcos sardineros, redes y pescado fresco."
+    },
+    "great_mosque": {
+      "tag": "Monumento",
+      "title": "Gran Mezquita",
+      "desc": "Santuario histórico y minarete en el corazón del barrio antiguo."
+    },
+    "bab_chaaba": {
+      "tag": "Patrimonio",
+      "title": "Bab Chaâba y antiguas puertas",
+      "desc": "Puerta histórica de la ciudad y baluartes cercanos que conectan la medina con el resto de la localidad."
+    },
+    "cap_safi": {
+      "tag": "Costa",
+      "title": "Cabo Safi y acantilados atlánticos",
+      "desc": "Amplias vistas al océano, acantilados costeros y miradores ventosos al atardecer."
+    },
+    "beach_corniche": {
+      "tag": "Costa",
+      "title": "Playa de Safi y paseo marítimo",
+      "desc": "Paseo junto al mar, cafeterías y tramo de arena atlántica para caminar al atardecer."
     },
     "lalla_fatna": {
-      "tag": "Playa",
-      "title": "Playa Lalla Fatna",
-      "desc": "Amplio arenal y paseo animado a los pies de la medina."
+      "tag": "Naturaleza",
+      "title": "Playa de Lalla Fatna",
+      "desc": "Cala resguardada al norte de Safi conocida por sus acantilados, el surf y vistas marinas más tranquilas."
     },
-    "cap_beddouza": {
-      "tag": "Playa",
-      "title": "Cabo Beddouza",
-      "desc": "Gran playa rodeada de dunas al norte, a menudo más tranquila."
-    },
-    "souks": {
-      "tag": "Mercado",
-      "title": "Zocos y Mercado Central",
-      "desc": "Especias, pescado fresco y artesanía en el corazón comercial."
+    "souira_qdima": {
+      "tag": "Alrededores",
+      "title": "Souira Qdima y desembocadura del Tensift",
+      "desc": "Ribat histórico, ruinas costeras y paisaje donde el río se une con el océano al sur de Safi."
     }
   },
-  "itinerary": {
-    "badge": "Planificación",
-    "title": "Itinerario sugerido de 2 días en Safi",
-    "subtitle": "Patrimonio y alfarería primero, luego costa y descanso."
-  },
-  "detailed_itinerary": {
-    "day1_tab": "Día 1 — Medina, castillo y alfareros",
-    "day1_m": "Mañana — Castillo del Mar y medina",
-    "day1_md": "Visita al castillo del mar y paseo por la medina.",
-    "day1_a": "Tarde — Museo y barrio alfarero",
-    "day1_ad": "Museo de la Cerámica y talleres de alfarería.",
-    "day1_e": "Noche — Puerto y pescado a la brasa",
-    "day1_ed": "Ambiente del puerto pesquero y cena junto al mar.",
-    "day2_tab": "Día 2 — Kechla y costa",
-    "day2_m": "Mañana — Kechla y vistas",
-    "day2_md": "Ciudadela y panorámicas sobre la ciudad y el océano.",
-    "day2_a": "Tarde — Lalla Fatna o Cabo Beddouza",
-    "day2_ad": "Playa o cabo natural según prefieras.",
-    "day2_e": "Noche — Corniche o medina",
-    "day2_ed": "Último paseo y té a la menta."
-  },
-  "directory": {
-    "badge": "Alojamientos",
-    "title": "Encuentra tu alojamiento ideal en Safi",
-    "subtitle": "Hoteles urbanos, riads cerca de la medina y opciones junto al mar — abre una ficha para ver los detalles.",
-    "check_availability": "Reservar →"
+  "place_sections": {
+    "potters_quarter": {
+      "title": "Barrio de los Alfareros (Colline des Potiers)",
+      "p1": "Alzándose sobre la ciudad, el Barrio de los Alfareros es el corazón de la identidad artesanal de Safi. Decenas de talleres familiares moldean la arcilla local en el torno, secan las piezas al sol, pintan motivos tradicionales y las cuecen en hornos.",
+      "p2": "Recorre sus callejones con tiempo para observar a los artesanos trabajando y comparar los diseños esmaltados directamente en los talleres y salas de exposición.",
+      "tip": "Visítalo por la mañana, cuando los talleres están más activos; consulta opciones de embalaje o envío si compras piezas grandes.",
+      "cap1": "Barrio de los Alfareros (Colline des Potiers)",
+      "cap2": "Barrio de los Alfareros (Colline des Potiers)",
+      "cap3": "Barrio de los Alfareros (Colline des Potiers)"
+    },
+    "ceramics_museum": {
+      "title": "Museo Nacional de la Cerámica",
+      "p1": "Situado junto a la colina de los alfareros, el museo ofrece un excelente contexto sobre las tradiciones alfareras de Safi, los esmaltes y los estilos cerámicos regionales de Marruecos antes de recorrer los talleres cercanos.",
+      "p2": "Es un espacio manejable y muy fácil de combinar con un paseo por las calles artesanales contiguas.",
+      "tip": "Combínalo con el Barrio de los Alfareros en el mismo recorrido matinal.",
+      "cap1": "Museo Nacional de la Cerámica",
+      "cap2": "Museo Nacional de la Cerámica",
+      "cap3": "Museo Nacional de la Cerámica"
+    },
+    "sea_castle": {
+      "title": "Castillo del Mar (Dar El Bahr)",
+      "p1": "Construido sobre la costa rocosa durante la presencia portuguesa en el siglo XVI, Dar El Bahr se alza justo sobre el oleaje del Atlántico y ofrece amplias vistas de la costa y la entrada del puerto.",
+      "p2": "Sus murallas de piedra y el telón de fondo oceánico lo convierten en una de las paradas más fotogénicas de Safi para dar un breve paseo costero.",
+      "tip": "Ten cuidado al caminar cerca de las rocas húmedas y los tramos ventosos junto a la muralla.",
+      "cap1": "Castillo del Mar (Dar El Bahr)",
+      "cap2": "Castillo del Mar (Dar El Bahr)",
+      "cap3": "Castillo del Mar (Dar El Bahr)"
+    },
+    "kechla": {
+      "title": "Fortaleza de la Kechla y murallas",
+      "p1": "Dominando los barrios antiguos, la ciudadela de la Kechla y sus murallas históricas reflejan el papel estratégico costero de Safi a lo largo de siglos de comercio y fortificación.",
+      "p2": "Camina junto a los muros exteriores para enlazar la medina con vistas sobre los tejados y el horizonte atlántico.",
+      "tip": "La luz de última hora de la tarde realza el relieve de los antiguos muros de piedra.",
+      "cap1": "Fortaleza de la Kechla y murallas",
+      "cap2": "Fortaleza de la Kechla y murallas",
+      "cap3": "Fortaleza de la Kechla y murallas"
+    },
+    "medina": {
+      "title": "Medina y zocos",
+      "p1": "La medina de Safi conserva un carácter auténtico y cotidiano más que puramente turístico. Sus callejuelas conectan hornos tradicionales, puestos de especias, pequeños artesanos y pasajes sombreados.",
+      "p2": "Da un paseo tranquilo por los zocos para probar bocados locales, comprar cerámica o bajar hacia el paseo marítimo.",
+      "tip": "Acude a primera hora del día para ver los puestos animados con menos aglomeraciones.",
+      "cap1": "Medina y zocos",
+      "cap2": "Medina y zocos",
+      "cap3": "Medina y zocos"
+    },
+    "port": {
+      "title": "Puerto pesquero y puerto sardinero",
+      "p1": "El puerto pesquero de Safi es un activo puerto de trabajo conocido históricamente por la pesca de la sardina y la actividad marítima en la costa atlántica.",
+      "p2": "La reparación de redes, los barcos amarrados y la descarga de capturas crean una animada escena portuaria, especialmente cuando regresan las embarcaciones.",
+      "tip": "Mantente apartado de los muelles y grúas en funcionamiento, y pide permiso antes de fotografiar de cerca a los pescadores.",
+      "cap1": "Puerto pesquero y puerto sardinero",
+      "cap2": "Puerto pesquero y puerto sardinero",
+      "cap3": "Puerto pesquero y puerto sardinero"
+    },
+    "great_mosque": {
+      "title": "Gran Mezquita",
+      "p1": "En el corazón del centro histórico, la Gran Mezquita y su minarete sirven como punto de referencia habitual al recorrer las calles del casco antiguo.",
+      "p2": "Contempla su arquitectura exterior y las plazas cercanas mientras te desplazas entre los zocos y las murallas costeras.",
+      "tip": "Viste con discreción cerca de los lugares de culto y evita obstaculizar los accesos en horas de oración.",
+      "cap1": "Gran Mezquita",
+      "cap2": "Gran Mezquita",
+      "cap3": "Gran Mezquita"
+    },
+    "bab_chaaba": {
+      "title": "Bab Chaâba y antiguas puertas",
+      "p1": "Puertas históricas como Bab Chaâba marcan la transición entre los barrios amurallados de Safi y el resto de la ciudad, recordando el encuentro entre las rutas terrestres y las defensas costeras.",
+      "p2": "Resultan puntos de orientación muy útiles al caminar entre la medina, los zocos y las avenidas cercanas.",
+      "tip": "Utiliza las puertas históricas como referencias sencillas para una ruta a pie por tu cuenta.",
+      "cap1": "Bab Chaâba y antiguas puertas",
+      "cap2": "Bab Chaâba y antiguas puertas",
+      "cap3": "Bab Chaâba y antiguas puertas"
+    },
+    "cap_safi": {
+      "title": "Cabo Safi y acantilados atlánticos",
+      "p1": "Al norte del centro urbano, Cabo Safi se abre a escarpados acantilados atlánticos, brisa marina y amplios horizontes oceánicos lejos del bullicio de las calles.",
+      "p2": "Lo más práctico es llegar en coche o taxi, y recompensa a quienes buscan paisajes costeros y vistas al atardecer.",
+      "tip": "Lleva un cortavientos ligero incluso en días soleados, ya que las rachas atlánticas cobran fuerza rápidamente.",
+      "cap1": "Cabo Safi y acantilados atlánticos",
+      "cap2": "Cabo Safi y acantilados atlánticos",
+      "cap3": "Cabo Safi y acantilados atlánticos"
+    },
+    "beach_corniche": {
+      "title": "Playa de Safi y paseo marítimo",
+      "p1": "El paseo marítimo y la playa de Safi ofrecen un lugar relajado para descansar tras recorrer la medina y los talleres, con cafeterías, aire marino y vistas de la puesta de sol.",
+      "p2": "El oleaje y las corrientes varían en la costa atlántica, así que infórmate sobre el estado del mar antes de entrar al agua.",
+      "tip": "Ideal para un paseo a primera hora de la tarde por la corniche.",
+      "cap1": "Playa de Safi y paseo marítimo",
+      "cap2": "Playa de Safi y paseo marítimo",
+      "cap3": "Playa de Safi y paseo marítimo"
+    },
+    "lalla_fatna": {
+      "title": "Playa de Lalla Fatna",
+      "p1": "Situada al norte de Safi a lo largo de la costa, Lalla Fatna es una pintoresca bahía enmarcada por acantilados y colinas, muy apreciada por bañistas locales y surfistas que buscan un entorno costero más tranquilo.",
+      "p2": "Al encontrarse fuera del centro inmediato, planifica el transporte con antelación y lleva lo necesario para pasar el día.",
+      "tip": "Estupenda como escapada costera de medio día si dispones de coche o taxi concertado.",
+      "cap1": "Playa de Lalla Fatna",
+      "cap2": "Playa de Lalla Fatna",
+      "cap3": "Playa de Lalla Fatna"
+    },
+    "souira_qdima": {
+      "title": "Souira Qdima y desembocadura del Tensift",
+      "p1": "Al sur de Safi, donde el río Tensift desemboca en el Atlántico, Souira Qdima conserva antiguas fortificaciones costeras, dunas tranquilas y un ambiente poco frecuentado.",
+      "p2": "Encaja de forma natural en una ruta costera en dirección sur hacia Esauira.",
+      "tip": "Se visita mejor en coche o con conductor privado para disfrutar del lugar sin prisas.",
+      "cap1": "Souira Qdima y desembocadura del Tensift",
+      "cap2": "Souira Qdima y desembocadura del Tensift",
+      "cap3": "Souira Qdima y desembocadura del Tensift"
+    }
   },
   "stays": {
+    "badge": "Alojamientos",
+    "title": "Dónde alojarse en Safi",
+    "subtitle": "Hoteles prácticos y casas de huéspedes cerca del centro, el paseo marítimo o la carretera del sur — ideal para una o dos noches.",
+    "book": "Reservar →",
     "card1": {
-      "badge": "★ RIAD MEDINA",
-      "name": "Riad Le Cheval Blanc",
-      "desc": "Riad histórico bien valorado en la medina de Safi frente al océano, destacado por su hospitalidad y desayuno.",
-      "location": "Medina Antigua"
+      "badge": "Céntrico",
+      "name": "Hotel en el centro",
+      "desc": "Base cómoda para visitar la medina, los zocos y los restaurantes.",
+      "location": "Centro"
     },
     "card2": {
-      "badge": "★ RIAD Y PATIO",
-      "name": "Riad Bleu Azahraa",
-      "desc": "Riad tradicional muy bien puntuado en un edificio histórico con patio soleado, ambiente tranquilo y trato cercano.",
-      "location": "Safi"
+      "badge": "Costa",
+      "name": "Alojamiento en la corniche con vistas al mar",
+      "desc": "Paseos cómodos al atardecer junto al paseo atlántico.",
+      "location": "Corniche"
     },
     "card3": {
-      "badge": "★ HOTEL BOUTIQUE",
-      "name": "Valley Boutique Hotel",
-      "desc": "Hotel boutique moderno en Safi con habitaciones cómodas, restaurante en el alojamiento y buena ubicación.",
+      "badge": "Buena relación",
+      "name": "Hotel práctico de paso",
+      "desc": "Comodidad sencilla en una ruta costera hacia Esauira o El Jadida.",
       "location": "Safi"
     },
     "card4": {
-      "badge": "★ TERRAZA Y VISTA",
-      "name": "Dar Salam Asfi",
-      "desc": "Casa de huéspedes acogedora cerca de la medina y el océano con terraza en la azotea con vistas a la ciudad y al Atlántico.",
-      "location": "Medina y Océano"
+      "badge": "Con coche",
+      "name": "Hotel con aparcamiento",
+      "desc": "Muy útil si conduces hacia Cabo Safi, Lalla Fatna o Souira Qdima.",
+      "location": "Safi"
+    },
+    "c1": {
+      "tag": "Céntrico",
+      "title": "Hotel en el centro",
+      "desc": "Base cómoda para visitar la medina, los zocos y los restaurantes.",
+      "loc": "Centro"
+    },
+    "c2": {
+      "tag": "Costa",
+      "title": "Alojamiento en la corniche con vistas al mar",
+      "desc": "Paseos cómodos al atardecer junto al paseo atlántico.",
+      "loc": "Corniche"
+    },
+    "c3": {
+      "tag": "Buena relación",
+      "title": "Hotel práctico de paso",
+      "desc": "Comodidad sencilla en una ruta costera hacia Esauira o El Jadida.",
+      "loc": "Safi"
+    },
+    "c4": {
+      "tag": "Con coche",
+      "title": "Hotel con aparcamiento",
+      "desc": "Muy útil si conduces hacia Cabo Safi, Lalla Fatna o Souira Qdima.",
+      "loc": "Safi"
     }
   },
   "booking_banner": {
-    "badge": "Más de 40 hoteles y riads en Safi",
-    "title": "Explorar todos los alojamientos en Safi",
-    "desc": "Compara tarifas en tiempo real, lee reseñas verificadas y disfruta de cancelación gratuita en Safi.",
-    "btn": "Ver alojamientos",
+    "badge": "Alojamientos y hoteles locales",
+    "title": "Explora todos los alojamientos en Safi",
+    "desc": "Compara precios en tiempo real, lee opiniones verificadas y disfruta de cancelación gratuita en la mayoría de los hoteles.",
+    "btn": "Ver todos los alojamientos",
     "guarantee": "✓ Mejor precio garantizado y reserva segura"
   },
   "eat": {
     "badge": "Gastronomía",
     "title": "Dónde comer en Safi",
-    "subtitle": "Pescado a la brasa, marisco y mesas locales",
-    "chez_hosni": {
-      "tag": "MARROQUÍ",
-      "loc": "Safi",
-      "title": "Restaurant Chez Hosni",
-      "desc": "Restaurante local popular por sus generosos tajines de pescado y marisco y su trato amable."
+    "subtitle": "Sardinas a la brasa, pescado atlántico, tayines y cafeterías de barrio.",
+    "sardines": {
+      "tag": "Pescado",
+      "loc": "Puerto y costa",
+      "title": "Sardinas a la brasa y pescado",
+      "desc": "Captura fresca del Atlántico y sardinas asadas — una experiencia emblemática de Safi."
     },
-    "chez_said": {
-      "tag": "MARISCO Y PARRILLA",
-      "loc": "Safi",
-      "title": "Restaurant Chez Said",
-      "desc": "Lugar muy bien valorado en Safi por el pescado fresco, las carnes y pescados a la brasa y su hospitalidad."
+    "tagines": {
+      "tag": "Local",
+      "loc": "Medina y centro",
+      "title": "Tayines y restaurantes tradicionales",
+      "desc": "Tayines sabrosos, carnes a la brasa y locales sencillos alrededor del casco antiguo."
     },
-    "riad_du_pecheur": {
-      "tag": "MARISCO",
-      "loc": "Safi",
-      "title": "Riad du Pêcheur Safi",
-      "desc": "Conocida dirección en Safi para platos del mar, buen servicio y ambiente relajado."
-    },
-    "filet_du_pecheur": {
-      "tag": "PESCADO A LA BRASA",
-      "loc": "Carretera de Sidi Bouzid",
-      "title": "Le Filet du Pêcheur",
-      "desc": "Opción clásica en la costa para disfrutar de pescado a la brasa y bandejas variadas de marisco."
-    },
-    "ilot_chatain": {
-      "tag": "CAFÉ Y MAR",
-      "loc": "Safi",
-      "title": "L'îlot Châtain",
-      "desc": "Cafetería y restaurante con excelentes reseñas por sus platos frescos del mar y bebidas."
-    },
-    "calypso_medina": {
-      "tag": "CORNICHE Y POSTRES",
-      "loc": "Corniche",
-      "title": "Calypso Medina",
-      "desc": "Parada animada junto a la corniche para picar algo del mar, postres y disfrutar de la brisa."
+    "cafe": {
+      "tag": "Cafetería",
+      "loc": "Corniche y avenidas",
+      "title": "Cafeterías y repostería",
+      "desc": "Café, té a la menta y pausas entre visitas."
     }
   },
   "tips": {
     "title": "Consejos prácticos para Safi",
     "transport": {
       "title": "Cómo moverse",
-      "desc": "Los traslados y taxis cubren lo esencial. Acuerda el precio antes de trayectos más largos."
+      "desc": "La medina y el paseo marítimo cercano se recorren fácilmente a pie; los petits taxis cubren los trayectos urbanos y el coche ayuda para Cabo Safi o las playas."
     },
-    "bargain": {
-      "title": "Artesanía y compras",
-      "desc": "En el barrio alfarero observa el trabajo de los artesanos. Regatear es habitual en piezas artesanales."
+    "ceramics_tip": {
+      "title": "Comprar cerámica",
+      "desc": "Compara piezas en varios talleres del Barrio de los Alfareros y solicita embalaje protector antes de continuar tu viaje."
     },
-    "water": {
-      "title": "Efectivo y reservas",
-      "desc": "Lleva dírhams para taxis y gastos pequeños. Reserva con antelación en temporada alta."
+    "timing": {
+      "title": "Cuándo ir",
+      "desc": "De primavera a otoño ofrece agradables días costeros; las mañanas son ideales para talleres y zocos, y las tardes para acantilados y vistas al mar."
     }
   },
   "daytrips": {
-    "badge": "Cerca de Safi",
-    "title": "Mejores excursiones desde Safi",
-    "subtitle": "Costa, naturaleza y ciudades cercanas.",
-    "cap_beddouza": {
-      "title": "Cabo Beddouza",
-      "desc": "Acantilados y vistas atlánticas a unos 25 km."
+    "badge": "Alrededores y costa",
+    "title": "Desde Safi",
+    "subtitle": "Calas costeras, paradas históricas y ciudades atlánticas cercanas.",
+    "lalla_fatna": {
+      "title": "Lalla Fatna (≈ 20–30 min)",
+      "desc": "Cala rodeada de acantilados y punto de surf al norte de Safi."
+    },
+    "souira_qdima": {
+      "title": "Souira Qdima (≈ 30–40 min)",
+      "desc": "Antiguo fuerte costero y desembocadura del río Tensift al sur."
+    },
+    "oualidia": {
+      "title": "Laguna de Oualidia (≈ 1 h)",
+      "desc": "Laguna costera resguardada y parada gastronómica de marisco hacia el norte."
     },
     "essaouira": {
-      "title": "Essaouira",
-      "desc": "Medina y puerto Patrimonio de la Humanidad, a unas 2 horas por carretera."
-    },
-    "el_jadida": {
-      "title": "El Jadida",
-      "desc": "Ciudad portuguesa Patrimonio de la Humanidad, a 1h30 aprox."
-    },
-    "marrakech": {
-      "title": "Marrakech",
-      "desc": "Salida o regreso por la ciudad roja (unas 2h30)."
+      "title": "Esauira (≈ 2 h)",
+      "desc": "Ciudad portuaria amurallada en el Atlántico siguiendo la carretera costera hacia el sur."
     }
   },
   "faq": {
     "badge": "Información útil",
-    "title": "Preguntas frecuentes sobre Safi",
+    "title": "Preguntas sobre Safi",
     "q1": {
-      "question": "¿Cuántos días dedicar a Safi?",
-      "answer": "Un día cubre el castillo, la medina y los alfareros. Dos o tres días permiten sumar el museo, la Kechla y una playa o Cabo Beddouza."
+      "question": "¿Cuánto tiempo conviene dedicar a Safi?",
+      "answer": "Un día completo permite recorrer el Barrio de los Alfareros, el Museo de la Cerámica, el Castillo del Mar, la Kechla, la medina y el puerto; quédate una noche si también quieres visitar Cabo Safi o Lalla Fatna con calma."
     },
     "q2": {
-      "question": "¿Vale la pena visitar Safi más allá de la alfarería?",
-      "answer": "Sí: el castillo del mar portugués, la medina, el puerto pesquero y la costa atlántica forman un conjunto histórico y marítimo muy completo."
+      "question": "¿Por qué es más conocida Safi?",
+      "answer": "Safi es famosa en todo Marruecos por su cerámica tradicional y sus talleres de alfarería en la Colline des Potiers, además de sus fortificaciones costeras de época portuguesa y su activo puerto sardinero."
     },
     "q3": {
-      "question": "¿Cómo llegar a Safi?",
-      "answer": "En autobús desde Casablanca, Marrakech o El Jadida. Aeropuertos cercanos: Marrakech (RAK) o Casablanca (CMN), luego traslado por carretera."
+      "question": "¿Se puede visitar Safi como parada entre ciudades?",
+      "answer": "Sí — Safi funciona muy bien como escala o excursión de un día en rutas por carretera entre Casablanca o El Jadida y Esauira o Marrakech."
     },
     "q4": {
-      "question": "¿Cuál es la mejor temporada para viajar?",
-      "answer": "De abril a junio y de septiembre a octubre ofrecen un gran equilibrio. El verano es ideal para la playa pero puede haber viento."
+      "question": "¿Necesito coche en Safi?",
+      "answer": "Puedes recorrer la medina, el Castillo del Mar, la Kechla y la colina de los alfareros a pie o en taxi local, mientras que un coche facilita mucho llegar a Cabo Safi, Lalla Fatna y Souira Qdima."
     }
-  }
+  },
+  "overview": {
+    "title": "Bienvenido a Safi — Cerámica e historia atlántica",
+    "p1": "Situada entre Casablanca y Esauira en la costa atlántica de Marruecos, Safi combina siglos de artesanía cerámica con fortificaciones costeras portuguesas, una medina animada y uno de los principales puertos pesqueros y sardineros del país.",
+    "p2": "La mayoría de los lugares de interés están relativamente cerca entre sí: empieza en el Barrio de los Alfareros (Colline des Potiers) y el Museo Nacional de la Cerámica, baja por la medina y los zocos hacia el Castillo del Mar (Dar El Bahr) y la Kechla, y continúa hacia el puerto o las playas cercanas y Cabo Safi."
+  },
+  "hero_alt": "Patrimonio cerámico de Safi, fortaleza marítima y costa atlántica"
 }

@@ -330,7 +330,10 @@
         "loc": "Mazeej Mall",
         "title": "Baristas",
         "desc": "Modern café stop inside Mazeej Mall for specialty coffees, pastries, and daytime breaks."
-      }
+      },
+      "badge": "Food",
+      "title": "Where to eat in Laâyoune",
+      "subtitle": "Atlantic seafood, grilled dishes, pizzas and neighbourhood cafés in Laâyoune."
     },
     "places": {
       "place_mechouar": {
@@ -377,7 +380,11 @@
         "tag": "Dunes",
         "title": "Lemsid Dunes",
         "desc": "Golden desert dunes north of Laâyoune offering quiet Saharan scenery."
-      }
+      },
+      "badge": "In Laâyoune",
+      "title": "Must-visit places in Laâyoune",
+      "subtitle": "All on this page — open a card to jump to its section and photo carousel.",
+      "explore": "See details ↓"
     },
     "place_sections": {
       "place_mechouar": {
@@ -487,7 +494,144 @@
       "boujdour": {
         "title": "Boujdour (≈ 2h)",
         "desc": "Cape and Atlantic coastline south of Laâyoune shaped by ocean breezes and open horizons."
+      },
+      "badge": "Nearby & along the route",
+      "title": "From Laâyoune",
+      "subtitle": "Coastal stops, nature reserves and Saharan towns reachable from Laâyoune."
+    },
+    "hero_subtitle": "Gateway between Saharan horizons and the Atlantic — wide squares, vibrant souks, fishing port, coastal breezes and dunes.",
+    "info": {
+      "best_time_label": "Best time",
+      "best_time": "October – April · pleasant desert & coastal climate",
+      "stay_label": "Ideal stay",
+      "stay": "2 – 3 days",
+      "vibe_label": "Atmosphere",
+      "vibe": "Saharan culture · Atlantic coast · Dunes",
+      "airport_label": "Access",
+      "airport_val": "Laâyoune Hassan I Airport (EUN) · N1 coastal highway"
+    },
+    "intro": {
+      "title": "Welcome to Laâyoune — Saharan Heritage & Atlantic Horizons",
+      "p1": "Positioned in southern Morocco where wide Saharan plains meet the Atlantic Ocean, Laâyoune combines monumental public spaces, lively traditional markets, a major fishing port in El Marsa and expansive coastal and dune landscapes.",
+      "p2": "Organize your visit around distinct zones: explore the central squares, Spanish Quarter, Moulay Abdellah Mosque and Souk Soune in town, then head to Foum El Oued and El Marsa Port on the coast or Lemsid dunes to the north."
+    },
+    "stays": {
+      "badge": "Stays",
+      "title": "Where to stay in Laâyoune",
+      "subtitle": "Practical hotels and stays near the centre, main avenues or coast — ideal for two or three nights.",
+      "book": "Book →",
+      "card1": {
+        "badge": "Central",
+        "name": "City-centre hotel",
+        "desc": "Convenient base for central squares, souks and restaurants.",
+        "location": "Centre"
+      },
+      "card2": {
+        "badge": "Coast",
+        "name": "Coastal & beach stay",
+        "desc": "Easy reach of ocean air and coastal outings toward Foum El Oued or El Marsa.",
+        "location": "Coast"
+      },
+      "card3": {
+        "badge": "Value",
+        "name": "Practical stopover hotel",
+        "desc": "Straightforward comfort on a southern road itinerary.",
+        "location": "Laâyoune"
+      },
+      "card4": {
+        "badge": "Driver",
+        "name": "Hotel with parking",
+        "desc": "Helpful if driving toward Lemsid dunes, Tarfaya or Khnifiss.",
+        "location": "Laâyoune"
       }
+    },
+    "booking_banner": {
+      "badge": "Local stays & hotels",
+      "title": "Explore all stays in Laâyoune",
+      "desc": "Compare live prices, read trusted guest reviews and enjoy free cancellation on most hotels.",
+      "btn": "View All Stays",
+      "guarantee": "✓ Best price guarantee & secure booking"
+    },
+    "tips": {
+      "title": "Practical tips for Laâyoune",
+      "transport": {
+        "title": "Getting around",
+        "desc": "Central streets and squares are easy by foot or petit taxi; a car helps for Foum El Oued, El Marsa or Lemsid dunes."
+      },
+      "ceramics_tip": {
+        "title": "Local crafts & markets",
+        "desc": "Compare fabrics, melhfas and handmade items across local markets and keep small cash handy."
+      },
+      "timing": {
+        "title": "When to visit",
+        "desc": "Autumn through spring brings comfortable weather; mornings suit markets, while late afternoons shine by the coast or dunes."
+      }
+    },
+    "faq": {
+      "badge": "Good to know",
+      "title": "Questions about Laâyoune",
+      "q1": {
+        "question": "How long should I spend in Laâyoune?",
+        "answer": "Two to three days let you cover central squares and markets, Foum El Oued and El Marsa on the coast, plus an outing to Lemsid dunes."
+      },
+      "q2": {
+        "question": "What is Laâyoune best known for?",
+        "answer": "Laâyoune blends Saharan culture, wide urban squares, lively markets like Souk Soune, maritime life at El Marsa and easy access to Atlantic beaches and dunes."
+      },
+      "q3": {
+        "question": "Can you combine city, beach and desert in one trip?",
+        "answer": "Yes — the city sits close to the Atlantic shore at Foum El Oued and desert dunes to the north, making varied outings easy within a short stay."
+      },
+      "q4": {
+        "question": "Do I need a car around Laâyoune?",
+        "answer": "Getting around town is easy on foot or by taxi, while a car or driver makes visiting Foum El Oued, El Marsa, Lemsid dunes or Tarfaya much easier."
+      }
+    },
+    "name": "Laâyoune",
+    "seo": {
+      "title": "Laâyoune Travel Guide: Méchouar Square, Moulay Abdellah Mosque, Souk Soune, El Marsa Port & Lemsid Dunes | MoroccoTripMap"
     }
+  },
+  "breadcrumb": {
+    "destinations": "Destinations",
+    "home": "Home"
+  },
+  "footer": {
+    "about_text": "Discover. Plan. Experience Morocco. The premier tourism directory and cultural travel guide for visitors exploring Morocco.",
+    "categories_title": "Travel Categories",
+    "connect_title": "Connect",
+    "copyright": "© MoroccoTripMap. All rights reserved.",
+    "link_agadir": "Agadir Travel Guide",
+    "link_all_destinations": "All Destinations →",
+    "link_blog": "Travel Blog & Tips",
+    "link_experiences": "Desert Tours & Activities",
+    "link_itineraries": "Circuits & Itineraries",
+    "link_restaurants": "Moroccan Gastronomy & Food",
+    "link_safi": "Laâyoune Travel Guide",
+    "link_sidi_ifni": "Sidi Ifni Travel Guide",
+    "link_stays": "Authentic Riads & Hotels",
+    "link_tiznit": "Tiznit Travel Guide",
+    "link_transport": "Transport & Rental Cars",
+    "recommended_title": "Recommended Pages",
+    "youtube_text": "Follow our YouTube channel for video travel guides:"
+  },
+  "mobile_menu": {
+    "language_title": "Language / Langue"
+  },
+  "nav": {
+    "blog": "Blog",
+    "cat_experiences": "Experiences",
+    "cat_gastronomy": "Gastronomy",
+    "cat_guides": "Travel Guides",
+    "cat_itineraries": "Itineraries",
+    "cat_museums": "Monuments & Museums",
+    "cat_stays": "Stays & Riads",
+    "cat_transport": "Transport & Rental",
+    "categories": "Categories",
+    "cities": "Cities & Destinations",
+    "contact": "Contact",
+    "destinations": "Destinations",
+    "history": "Market",
+    "home": "Home"
   }
 }

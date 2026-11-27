@@ -330,7 +330,10 @@
         "loc": "Mazeej Mall",
         "title": "Baristas",
         "desc": "Parada en Mazeej Mall para cafés, repostería y descansos tranquilos durante el día."
-      }
+      },
+      "badge": "Gastronomía",
+      "title": "Dónde comer en El Aaiún",
+      "subtitle": "Pescado del Atlántico, parrillas, pizzas y cafés de barrio en El Aaiún."
     },
     "places": {
       "place_mechouar": {
@@ -377,7 +380,11 @@
         "tag": "Dunas",
         "title": "Dunas de Lemsid",
         "desc": "Dunas doradas al norte de El Aaiún con amplios paisajes tranquilos de desierto."
-      }
+      },
+      "badge": "En El Aaiún",
+      "title": "Lugares imprescindibles en El Aaiún",
+      "subtitle": "Todo en esta página — abre una tarjeta para ir a su sección detallada y carrusel.",
+      "explore": "Ver detalles ↓"
     },
     "place_sections": {
       "place_mechouar": {
@@ -487,7 +494,144 @@
       "boujdour": {
         "title": "Boujdour (≈ 2h)",
         "desc": "Cabo y litoral atlántico al sur de El Aaiún marcado por la brisa marina y espacios abiertos."
+      },
+      "badge": "Cerca y en ruta",
+      "title": "Desde El Aaiún",
+      "subtitle": "Paradas costeras, reservas naturales y ciudades saharianas cerca de El Aaiún."
+    },
+    "hero_subtitle": "Entre horizontes saharianos y el océano Atlántico — amplias plazas, zocos animados, puerto pesquero, costa y dunas.",
+    "info": {
+      "best_time_label": "Mejor época",
+      "best_time": "Octubre – Abril · clima suave de desierto y costa",
+      "stay_label": "Estancia ideal",
+      "stay": "2 – 3 días",
+      "vibe_label": "Ambiente",
+      "vibe": "Cultura sahariana · Costa atlántica · Dunas",
+      "airport_label": "Acceso",
+      "airport_val": "Aeropuerto de El Aaiún Hassan I (EUN) · Carretera costera N1"
+    },
+    "intro": {
+      "title": "Bienvenido a El Aaiún — Patrimonio sahariano y horizontes atlánticos",
+      "p1": "Situada en el sur de Marruecos donde las llanuras saharianas se encuentran con el océano Atlántico, El Aaiún combina grandes plazas, mercados animados, el puerto de El Marsa y paisajes de costa y dunas.",
+      "p2": "Organiza tu visita por zonas: recorre primero la plaza del Méchouar, la mezquita Moulay Abdellah, el Barrio Español y Souk Soune en la ciudad, y luego acércate a Foum El Oued y al puerto en la costa o a las dunas de Lemsid al norte."
+    },
+    "stays": {
+      "badge": "Alojamientos",
+      "title": "Dónde alojarse en El Aaiún",
+      "subtitle": "Hoteles y alojamientos prácticos cerca del centro, avenidas principales o la costa.",
+      "book": "Reservar →",
+      "card1": {
+        "badge": "Centro",
+        "name": "Hotel en el centro",
+        "desc": "Base cómoda para moverse entre plazas, zocos y restaurantes.",
+        "location": "Centro"
+      },
+      "card2": {
+        "badge": "Costa",
+        "name": "Estancia junto a la costa",
+        "desc": "Acceso sencillo a la brisa marina y salidas hacia Foum El Oued o El Marsa.",
+        "location": "Costa"
+      },
+      "card3": {
+        "badge": "Práctico",
+        "name": "Hotel práctico de paso",
+        "desc": "Comodidad sencilla y práctica en una ruta por el sur.",
+        "location": "El Aaiún"
+      },
+      "card4": {
+        "badge": "Coche",
+        "name": "Hotel con aparcamiento",
+        "desc": "Útil si te desplazas en coche hacia las dunas de Lemsid, Tarfaya o Khnifiss.",
+        "location": "Laâyoune"
       }
+    },
+    "booking_banner": {
+      "badge": "Hoteles y alojamientos",
+      "title": "Ver todos los alojamientos en El Aaiún",
+      "desc": "Compara precios, consulta opiniones de viajeros y aprovecha opciones flexibles.",
+      "btn": "Ver todos los alojamientos",
+      "guarantee": "✓ Reserva segura y selección de alojamientos"
+    },
+    "tips": {
+      "title": "Consejos prácticos para El Aaiún",
+      "transport": {
+        "title": "Cómo moverse",
+        "desc": "El centro es cómodo a pie o en taxi; un coche facilita ir a Foum El Oued, El Marsa o las dunas de Lemsid."
+      },
+      "ceramics_tip": {
+        "title": "Artesanía y mercados",
+        "desc": "Compara tejidos, melhfas y artesanía en los mercados locales y lleva efectivo en billetes pequeños."
+      },
+      "timing": {
+        "title": "Cuándo viajar",
+        "desc": "De otoño a primavera el clima es agradable; las mañanas van bien para los mercados y la tarde para la costa o las dunas."
+      }
+    },
+    "faq": {
+      "badge": "Información útil",
+      "title": "Preguntas sobre El Aaiún",
+      "q1": {
+        "question": "¿Cuánto tiempo conviene pasar en El Aaiún?",
+        "answer": "Dos o tres días permiten ver plazas y mercados, la costa de Foum El Oued y El Marsa, y una salida a las dunas de Lemsid."
+      },
+      "q2": {
+        "question": "¿Por qué destaca El Aaiún?",
+        "answer": "El Aaiún combina cultura sahariana, grandes plazas, mercados como Souk Soune, actividad portuaria en El Marsa y cercanía al Atlántico y las dunas."
+      },
+      "q3": {
+        "question": "¿Se pueden combinar ciudad, playa y desierto?",
+        "answer": "Sí — la ciudad está cerca de la costa atlántica en Foum El Oued y de zonas de dunas al norte, lo que facilita excursiones variadas."
+      },
+      "q4": {
+        "question": "¿Hace falta coche para recorrer los alrededores?",
+        "answer": "Moverse por la ciudad es sencillo a pie o en taxi, pero el coche facilita mucho ir a Foum El Oued, El Marsa, las dunas de Lemsid o Tarfaya."
+      }
+    },
+    "name": "Laâyoune",
+    "seo": {
+      "title": "Laâyoune Travel Guide: Méchouar Square, Moulay Abdellah Mosque, Souk Soune, El Marsa Port & Lemsid Dunes | MoroccoTripMap"
     }
+  },
+  "breadcrumb": {
+    "destinations": "Destinations",
+    "home": "Home"
+  },
+  "footer": {
+    "about_text": "Discover. Plan. Experience Morocco. The premier tourism directory and cultural travel guide for visitors exploring Morocco.",
+    "categories_title": "Travel Categories",
+    "connect_title": "Connect",
+    "copyright": "© MoroccoTripMap. All rights reserved.",
+    "link_agadir": "Agadir Travel Guide",
+    "link_all_destinations": "All Destinations →",
+    "link_blog": "Travel Blog & Tips",
+    "link_experiences": "Desert Tours & Activities",
+    "link_itineraries": "Circuits & Itineraries",
+    "link_restaurants": "Moroccan Gastronomy & Food",
+    "link_safi": "Laâyoune Travel Guide",
+    "link_sidi_ifni": "Sidi Ifni Travel Guide",
+    "link_stays": "Authentic Riads & Hotels",
+    "link_tiznit": "Tiznit Travel Guide",
+    "link_transport": "Transport & Rental Cars",
+    "recommended_title": "Recommended Pages",
+    "youtube_text": "Follow our YouTube channel for video travel guides:"
+  },
+  "mobile_menu": {
+    "language_title": "Language / Langue"
+  },
+  "nav": {
+    "blog": "Blog",
+    "cat_experiences": "Experiences",
+    "cat_gastronomy": "Gastronomy",
+    "cat_guides": "Travel Guides",
+    "cat_itineraries": "Itineraries",
+    "cat_museums": "Monuments & Museums",
+    "cat_stays": "Stays & Riads",
+    "cat_transport": "Transport & Rental",
+    "categories": "Categories",
+    "cities": "Cities & Destinations",
+    "contact": "Contact",
+    "destinations": "Destinations",
+    "history": "Market",
+    "home": "Home"
   }
 }

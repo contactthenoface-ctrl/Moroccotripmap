@@ -330,7 +330,10 @@
         "loc": "مزيج مول",
         "title": "باريستاس",
         "desc": "محطة في مزيج مول للاستمتاع بالقهوة والحلويات واستراحة خلال اليوم."
-      }
+      },
+      "badge": "المطاعم والمقاهي",
+      "title": "أين تأكل في العيون",
+      "subtitle": "أسماك الأطلسي والمشويات والبيتزا والمقاهي المحلية في العيون."
     },
     "places": {
       "place_mechouar": {
@@ -377,7 +380,11 @@
         "tag": "الكثبان",
         "title": "كثبان لمسيد",
         "desc": "كثبان رملية ذهبية شمال العيون توفر مشاهد صحراوية هادئة وواسعة."
-      }
+      },
+      "badge": "في العيون",
+      "title": "أبرز الأماكن للزيارة في العيون",
+      "subtitle": "كل التفاصيل في هذه الصفحة — افتح أي بطاقة للانتقال إلى قسمها ومعرض صورها.",
+      "explore": "عرض التفاصيل ↓"
     },
     "place_sections": {
       "place_mechouar": {
@@ -487,7 +494,144 @@
       "boujdour": {
         "title": "بوجدور (≈ 2سا)",
         "desc": "رأس وساحل أطلسي جنوب العيون يتميز بالنسيم البحري والامتدادات المفتوحة."
+      },
+      "badge": "في النواحي وعلى الطريق",
+      "title": "انطلاقًا من العيون",
+      "subtitle": "محطات ساحلية ومحميات طبيعية ومدن صحراوية يمكن زيارتها انطلاقًا من العيون."
+    },
+    "hero_subtitle": "ملتقى الآفاق الصحراوية والمحيط الأطلسي — ساحات واسعة وأسواق نابضة وميناء نشط وشواطئ وكثبان لمسيد.",
+    "info": {
+      "best_time_label": "أفضل وقت للزيارة",
+      "best_time": "أكتوبر – أبريل · مناخ صحراوي وساحلي معتدل",
+      "stay_label": "المدة المناسبة",
+      "stay": "2 – 3 أيام",
+      "vibe_label": "الأجواء",
+      "vibe": "ثقافة صحراوية · ساحل أطلسي · كثبان",
+      "airport_label": "الوصول",
+      "airport_val": "مطار العيون الحسن الأول (EUN) · الطريق الساحلية N1"
+    },
+    "intro": {
+      "title": "مرحبًا بكم في العيون — تراث صحراوي وآفاق أطلسية",
+      "p1": "تقع مدينة العيون في جنوب المغرب حيث تلتقي السهول الصحراوية بالمحيط الأطلسي، وتجمع بين الساحات الفسيحة والأسواق النابضة وميناء المرسى والمشاهد الساحلية والكثبان الرملية.",
+      "p2": "يمكن تنظيم الزيارة حسب المحاور: ابدأ بساحة المشور ومسجد مولاي عبد الله والحي الإسباني وسوق صون داخل المدينة، ثم توجه إلى شاطئ فم الواد وميناء المرسى على الساحل أو كثبان لمسيد شمالًا."
+    },
+    "stays": {
+      "badge": "الإقامة",
+      "title": "أين تقيم في العيون",
+      "subtitle": "فنادق وإقامات عملية قرب الوسط أو المحاور الرئيسية أو الساحل لعدة ليالٍ.",
+      "book": "احجز ←",
+      "card1": {
+        "badge": "الوسط",
+        "name": "فندق وسط المدينة",
+        "desc": "خيار عملي للوصول إلى الساحات والأسواق والمطاعم.",
+        "location": "الوسط"
+      },
+      "card2": {
+        "badge": "الساحل",
+        "name": "إقامة قرب الساحل",
+        "desc": "سهولة الوصول إلى الهواء البحري ونزهات فم الواد أو المرسى.",
+        "location": "الساحل"
+      },
+      "card3": {
+        "badge": "اقتصادي",
+        "name": "فندق عملي للمسافرين",
+        "desc": "راحة بسيطة وعملية خلال التنقل في الجنوب.",
+        "location": "العيون"
+      },
+      "card4": {
+        "badge": "سيارة",
+        "name": "فندق بموقف سيارات",
+        "desc": "مناسب لمن يتنقل بالسيارة نحو كثبان لمسيد أو طرفاية أو خنيفيس.",
+        "location": "Laâyoune"
       }
+    },
+    "booking_banner": {
+      "badge": "فنادق وإقامات محلية",
+      "title": "استكشف جميع أماكن الإقامة في العيون",
+      "desc": "قارن الأسعار وتصفح تقييمات الزوار واختر العروض المناسبة لإقامتك.",
+      "btn": "عرض جميع الإقامات",
+      "guarantee": "✓ حجز آمن وخيارات إقامة متنوعة"
+    },
+    "tips": {
+      "title": "نصائح عملية للعيون",
+      "transport": {
+        "title": "التنقل",
+        "desc": "يسهل التنقل في الوسط سيرًا على الأقدام أو بسيارة الأجرة، بينما تُعد السيارة عملية للوصول إلى فم الواد والمرسى وكثبان لمسيد."
+      },
+      "ceramics_tip": {
+        "title": "الحرف والأسواق",
+        "desc": "قارن الملاحف والمنسوجات والمنتجات المحلية في الأسواق واحتفظ بنقود نقدية صغيرة."
+      },
+      "timing": {
+        "title": "متى تزور",
+        "desc": "من الخريف إلى الربيع يكون الجو ملائمًا؛ يُفضل الصباح للأسواق وأواخر العصر للساحل أو الكثبان."
+      }
+    },
+    "faq": {
+      "badge": "معلومات مفيدة",
+      "title": "أسئلة شائعة حول العيون",
+      "q1": {
+        "question": "كم من الوقت يُنصح بقضائه في العيون؟",
+        "answer": "يكفي يومان إلى ثلاثة أيام لاستكشاف الساحات والأسواق وساحل فم الواد والمرسى مع جولة نحو كثبان لمسيد."
+      },
+      "q2": {
+        "question": "بماذا تشتهر العيون؟",
+        "answer": "تجمع العيون بين الثقافة الصحراوية والساحات الواسعة والأسواق التقليدية مثل سوق صون والنشاط البحري في المرسى وقربها من الأطلسي والكثبان."
+      },
+      "q3": {
+        "question": "هل يمكن الجمع بين المدينة والشاطئ والصحراء في رحلة واحدة؟",
+        "answer": "نعم — تقع المدينة على مقربة من الساحل الأطلسي في فم الواد والكثبان الرملية شمالًا، مما يتيح تنوع الجولات في فترة قصيرة."
+      },
+      "q4": {
+        "question": "هل أحتاج إلى سيارة لزيارة النواحي؟",
+        "answer": "التنقل داخل المدينة سهل سيرًا على الأقدام أو بسيارة الأجرة، بينما تسهل السيارة الوصول إلى فم الواد والمرسى وكثبان لمسيد أو طرفاية."
+      }
+    },
+    "name": "Laâyoune",
+    "seo": {
+      "title": "Laâyoune Travel Guide: Méchouar Square, Moulay Abdellah Mosque, Souk Soune, El Marsa Port & Lemsid Dunes | MoroccoTripMap"
     }
+  },
+  "breadcrumb": {
+    "destinations": "Destinations",
+    "home": "Home"
+  },
+  "footer": {
+    "about_text": "Discover. Plan. Experience Morocco. The premier tourism directory and cultural travel guide for visitors exploring Morocco.",
+    "categories_title": "Travel Categories",
+    "connect_title": "Connect",
+    "copyright": "© MoroccoTripMap. All rights reserved.",
+    "link_agadir": "Agadir Travel Guide",
+    "link_all_destinations": "All Destinations →",
+    "link_blog": "Travel Blog & Tips",
+    "link_experiences": "Desert Tours & Activities",
+    "link_itineraries": "Circuits & Itineraries",
+    "link_restaurants": "Moroccan Gastronomy & Food",
+    "link_safi": "Laâyoune Travel Guide",
+    "link_sidi_ifni": "Sidi Ifni Travel Guide",
+    "link_stays": "Authentic Riads & Hotels",
+    "link_tiznit": "Tiznit Travel Guide",
+    "link_transport": "Transport & Rental Cars",
+    "recommended_title": "Recommended Pages",
+    "youtube_text": "Follow our YouTube channel for video travel guides:"
+  },
+  "mobile_menu": {
+    "language_title": "Language / Langue"
+  },
+  "nav": {
+    "blog": "Blog",
+    "cat_experiences": "Experiences",
+    "cat_gastronomy": "Gastronomy",
+    "cat_guides": "Travel Guides",
+    "cat_itineraries": "Itineraries",
+    "cat_museums": "Monuments & Museums",
+    "cat_stays": "Stays & Riads",
+    "cat_transport": "Transport & Rental",
+    "categories": "Categories",
+    "cities": "Cities & Destinations",
+    "contact": "Contact",
+    "destinations": "Destinations",
+    "history": "Market",
+    "home": "Home"
   }
 }

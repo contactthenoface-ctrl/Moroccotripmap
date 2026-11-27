@@ -331,6 +331,145 @@
         "title": "Baristas",
         "desc": "Modern café stop at Mazeej Mall for specialty coffees, pastries, and afternoon breaks."
       }
+    },
+    "places": {
+      "place_mechouar": {
+        "tag": "Landmark",
+        "title": "Méchouar Square (Place du Méchouar)",
+        "desc": "Broad central square with shaded trees, fountains and Saharan architectural character."
+      },
+      "moulay_abdellah": {
+        "tag": "Architecture",
+        "title": "Moulay Abdellah Mosque",
+        "desc": "Monumental mosque with distinctive Saharan and Moroccan architectural details."
+      },
+      "spanish_quarter": {
+        "tag": "Heritage",
+        "title": "Spanish Quarter (Quartier Espagnol)",
+        "desc": "Historic district featuring arcades, plazas and layered architectural memory."
+      },
+      "souk_soune": {
+        "tag": "Market",
+        "title": "Souk Soune",
+        "desc": "Bustling market for Saharan melhfa fabrics, crafts, spices and daily essentials."
+      },
+      "saguia_el_hamra": {
+        "tag": "Landscape",
+        "title": "Saguia El Hamra Valley",
+        "desc": "Historic valley corridor with palms, dry riverbed scenery and desert horizons."
+      },
+      "oulad_tedrarag": {
+        "tag": "Urban Life",
+        "title": "Oulad Tedrarag Square",
+        "desc": "Lively neighbourhood square reflecting everyday social life in Laâyoune."
+      },
+      "el_marsa_port": {
+        "tag": "Harbour",
+        "title": "El Marsa Port",
+        "desc": "Active Atlantic fishing and commercial port serving Laâyoune's coast."
+      },
+      "foum_el_oued": {
+        "tag": "Coast",
+        "title": "Foum El Oued Beach",
+        "desc": "Wide sandy Atlantic beach near Laâyoune with open horizons and sea breeze."
+      },
+      "lemsid_dunes": {
+        "tag": "Dunes",
+        "title": "Lemsid Dunes",
+        "desc": "Golden desert dunes north of Laâyoune offering quiet Saharan scenery."
+      }
+    },
+    "place_sections": {
+      "place_mechouar": {
+        "title": "Méchouar Square (Place du Méchouar)",
+        "p1": "Méchouar Square is one of the defining open spaces of central Laâyoune, offering wide sightlines, landscaped walkways and a welcoming civic atmosphere that anchors nearby avenues.",
+        "p2": "Strolling around the square in the late afternoon lets you observe everyday city rhythm, meet locals and connect easily toward adjacent neighbourhoods and markets.",
+        "tip": "Best visited around sunset when temperatures soften and the square feels most lively.",
+        "cap1": "Méchouar Square — wide central avenues and landscaped greenery",
+        "cap2": "Méchouar Square — Saharan architectural lines and open space",
+        "cap3": "Méchouar Square — late-afternoon light across the plaza",
+        "cap4": "Méchouar Square — everyday city life in central Laâyoune"
+      },
+      "moulay_abdellah": {
+        "title": "Moulay Abdellah Mosque",
+        "p1": "Rising prominently within Laâyoune, Moulay Abdellah Mosque stands out for its generous proportions, geometric motifs and strong visual presence along the city skyline.",
+        "p2": "Even from the outside, its courtyards, facade details and surrounding open space make it an essential architectural landmark for understanding contemporary religious building in the south.",
+        "tip": "Dress respectfully around the mosque and avoid blocking entrances during prayer times.",
+        "cap1": "Moulay Abdellah Mosque — monumental exterior and courtyard",
+        "cap2": "Moulay Abdellah Mosque — intricate geometric and regional details",
+        "cap3": "Moulay Abdellah Mosque — views across the surrounding esplanade",
+        "cap4": "Moulay Abdellah Mosque — warm light along the facade"
+      },
+      "spanish_quarter": {
+        "title": "Spanish Quarter (Quartier Espagnol)",
+        "p1": "The Spanish Quarter preserves low-rise blocks, arcaded walkways and small plazas that reflect an earlier chapter of Laâyoune's urban planning woven into the modern city.",
+        "p2": "Walking through its streets reveals subtle contrasts between older facades, shaded corners and active local shops that give the district its distinctive character.",
+        "tip": "Explore on foot at an unhurried pace to notice architectural details on upper facades.",
+        "cap1": "Spanish Quarter — historic streetscapes and shaded corners",
+        "cap2": "Spanish Quarter — arcades and distinctive urban proportions",
+        "cap3": "Spanish Quarter — quiet lanes blending past and present",
+        "cap4": "Spanish Quarter — local storefronts along the neighbourhood streets"
+      },
+      "souk_soune": {
+        "title": "Souk Soune",
+        "p1": "Souk Soune is a vibrant hub of local commerce where visitors encounter traditional Saharan textiles, handcrafted goods, spices, tea supplies and everyday household items.",
+        "p2": "Moving between stalls offers an authentic look at regional tastes and textures, making it a rewarding stop for souvenirs, fabrics and friendly exchanges with merchants.",
+        "tip": "Go in the morning or early evening when stalls are active and carry small cash bills.",
+        "cap1": "Souk Soune — colourful textiles, melhfas and market stalls",
+        "cap2": "Souk Soune — spices, tea essentials and local flavours",
+        "cap3": "Souk Soune — artisanal crafts and everyday goods",
+        "cap4": "Souk Soune — lively market lanes in Laâyoune"
+      },
+      "saguia_el_hamra": {
+        "title": "Saguia El Hamra Valley",
+        "p1": "Saguia El Hamra gives its name to the region and traces a striking natural corridor of palm groves, dry channels and arid banks right beside Laâyoune.",
+        "p2": "The contrast between clusters of greenery, ochre earth and wide skies creates a memorable sense of place that connects the city directly to its southern environment.",
+        "tip": "Bring sun protection and a camera for wide landscape views in clear daylight.",
+        "cap1": "Saguia El Hamra — palm groves and desert valley corridor",
+        "cap2": "Saguia El Hamra — ochre banks and open southern skies",
+        "cap3": "Saguia El Hamra — natural contrast beside the city edge",
+        "cap4": "Saguia El Hamra — calm viewpoints along the valley"
+      },
+      "oulad_tedrarag": {
+        "title": "Oulad Tedrarag Square",
+        "p1": "Oulad Tedrarag Square serves as an active local gathering point where residents cross paths, pause between errands and enjoy open urban space.",
+        "p2": "Its surroundings capture a genuine, unpolished slice of daily life in Laâyoune, surrounded by nearby streets, cafés and neighbourhood activity.",
+        "tip": "Pair a stop here with nearby central avenues and local cafés.",
+        "cap1": "Oulad Tedrarag Square — open civic space and surrounding streets",
+        "cap2": "Oulad Tedrarag Square — daily movement and local atmosphere",
+        "cap3": "Oulad Tedrarag Square — palm trees and walkways",
+        "cap4": "Oulad Tedrarag Square — evening breeze across the plaza"
+      },
+      "el_marsa_port": {
+        "title": "El Marsa Port",
+        "p1": "Located on the coast west of the city centre, El Marsa Port is a major maritime anchor driven by fishing boats, marine activity and fresh Atlantic catches.",
+        "p2": "Watching boats, harbour infrastructure and ocean swells gives clear insight into how coastal trade and fisheries shape life across the region.",
+        "tip": "Stay clear of active quays and heavy loading gear, and check local access rules.",
+        "cap1": "El Marsa Port — fishing vessels and Atlantic harbour waters",
+        "cap2": "El Marsa Port — working quays and maritime activity",
+        "cap3": "El Marsa Port — coastal breakwaters and ocean horizon",
+        "cap4": "El Marsa Port — fresh seafood connection along the shore"
+      },
+      "foum_el_oued": {
+        "title": "Foum El Oued Beach",
+        "p1": "Just a short drive from Laâyoune, Foum El Oued opens onto a broad Atlantic shoreline where long stretches of sand meet rolling waves and crisp coastal air.",
+        "p2": "Visitors come to walk along the tide line, unwind beside the ocean and take in wide sunsets where desert light meets the Atlantic.",
+        "tip": "Atlantic currents and waves can be strong — stay mindful of sea conditions.",
+        "cap1": "Foum El Oued Beach — wide Atlantic sand and rolling waves",
+        "cap2": "Foum El Oued Beach — coastal promenade and ocean air",
+        "cap3": "Foum El Oued Beach — open shoreline stretches near Laâyoune",
+        "cap4": "Foum El Oued Beach — sunset light over the Atlantic"
+      },
+      "lemsid_dunes": {
+        "title": "Lemsid Dunes",
+        "p1": "North of Laâyoune along the coastal desert corridor, Lemsid Dunes present sweeping sand ridges shaped by wind and framed by vast horizons.",
+        "p2": "Walking along the crests or pausing to watch shadows shift across the sand delivers a classic desert escape within easy reach of the city.",
+        "tip": "Carry water, wear sturdy footwear for sand, and respect fragile desert terrain.",
+        "cap1": "Lemsid Dunes — wind-sculpted sand ridges and desert horizon",
+        "cap2": "Lemsid Dunes — golden crests and quiet Saharan space",
+        "cap3": "Lemsid Dunes — shifting light across the dunes",
+        "cap4": "Lemsid Dunes — coastal desert scenery north of Laâyoune"
+      }
     }
   }
 }

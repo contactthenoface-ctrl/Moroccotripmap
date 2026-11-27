@@ -331,6 +331,145 @@
         "title": "Baristas",
         "desc": "Parada moderna en Mazeej Mall para cafés, dulces y descansos por la tarde."
       }
+    },
+    "places": {
+      "place_mechouar": {
+        "tag": "Monumento",
+        "title": "Plaza del Méchouar",
+        "desc": "Amplia plaza central con árboles, paseos ajardinados y carácter arquitectónico sahariano."
+      },
+      "moulay_abdellah": {
+        "tag": "Arquitectura",
+        "title": "Mezquita Moulay Abdellah",
+        "desc": "Mezquita monumental con detalles arquitectónicos marroquíes y saharianos."
+      },
+      "spanish_quarter": {
+        "tag": "Patrimonio",
+        "title": "Barrio Español",
+        "desc": "Barrio histórico con soportales, plazuelas y memoria arquitectónica integrada."
+      },
+      "souk_soune": {
+        "tag": "Mercado",
+        "title": "Souk Soune",
+        "desc": "Mercado animado de tejidos saharianos (melhfas), artesanía, especias y productos cotidianos."
+      },
+      "saguia_el_hamra": {
+        "tag": "Paisaje",
+        "title": "Valle de la Saguia El Hamra",
+        "desc": "Valle emblemático con palmerales, cauce seco y horizontes desérticos junto a la ciudad."
+      },
+      "oulad_tedrarag": {
+        "tag": "Vida urbana",
+        "title": "Plaza Oulad Tedrarag",
+        "desc": "Plaza animada de barrio que refleja la vida cotidiana de El Aaiún."
+      },
+      "el_marsa_port": {
+        "tag": "Puerto",
+        "title": "Puerto de El Aaiún",
+        "desc": "Puerto atlántico activo de pesca y actividad marítima en la costa de El Aaiún."
+      },
+      "foum_el_oued": {
+        "tag": "Costa",
+        "title": "Playa de Foum El Oued",
+        "desc": "Amplia playa atlántica de arena cerca de El Aaiún con brisa marina y horizontes abiertos."
+      },
+      "lemsid_dunes": {
+        "tag": "Dunas",
+        "title": "Dunas de Lemsid",
+        "desc": "Dunas doradas al norte de El Aaiún con amplios paisajes tranquilos de desierto."
+      }
+    },
+    "place_sections": {
+      "place_mechouar": {
+        "title": "Plaza del Méchouar",
+        "p1": "La Plaza del Méchouar es uno de los espacios abiertos emblemáticos del centro de El Aaiún, con amplias perspectivas, paseos ajardinados y un ambiente urbano acogedor.",
+        "p2": "Pasear por la plaza a última hora de la tarde permite observar el ritmo diario de la ciudad y conectar fácilmente con las calles y comercios cercanos.",
+        "tip": "Ideal al atardecer, cuando bajan las temperaturas y la plaza cobra mayor vida.",
+        "cap1": "Plaza del Méchouar — amplias avenidas centrales y zonas verdes",
+        "cap2": "Plaza del Méchouar — líneas arquitectónicas y espacio abierto",
+        "cap3": "Plaza del Méchouar — luz de la tarde sobre la explanada",
+        "cap4": "Plaza del Méchouar — vida cotidiana en el centro de El Aaiún"
+      },
+      "moulay_abdellah": {
+        "title": "Mezquita Moulay Abdellah",
+        "p1": "Destacada en el paisaje urbano de El Aaiún, la mezquita Moulay Abdellah llama la atención por sus proporciones, motivos geométricos y presencia monumental.",
+        "p2": "Incluso desde el exterior, sus patios, fachadas y explanada constituyen un referente arquitectónico clave en el sur de Marruecos.",
+        "tip": "Viste con respeto en los alrededores y evita obstruir las entradas en horas de oración.",
+        "cap1": "Mezquita Moulay Abdellah — fachada monumental y explanada",
+        "cap2": "Mezquita Moulay Abdellah — detalles geométricos y acabados",
+        "cap3": "Mezquita Moulay Abdellah — vista desde el entorno abierto",
+        "cap4": "Mezquita Moulay Abdellah — luz cálida sobre la fachada"
+      },
+      "spanish_quarter": {
+        "title": "Barrio Español",
+        "p1": "El Barrio Español conserva edificios de poca altura, soportales y pequeñas plazas que reflejan una etapa histórica del trazado urbano de El Aaiún.",
+        "p2": "Recorrer sus calles permite descubrir contrastes entre fachadas antiguas, rincones sombreados y comercios locales activos.",
+        "tip": "Recórrelo a pie sin prisas para fijarte en los detalles de las fachadas superiores.",
+        "cap1": "Barrio Español — calles históricas y rincones con sombra",
+        "cap2": "Barrio Español — soportales y proporciones urbanas",
+        "cap3": "Barrio Español — calles tranquilas entre pasado y presente",
+        "cap4": "Barrio Español — comercios locales en las calles del barrio"
+      },
+      "souk_soune": {
+        "title": "Souk Soune",
+        "p1": "Souk Soune es un núcleo comercial muy vivo donde se encuentran tejidos saharianos, artesanía, especias, té y artículos de uso diario.",
+        "p2": "Caminar entre los puestos ofrece una visión auténtica de texturas, colores y costumbres locales, ideal para buscar telas y charlar con los vendedores.",
+        "tip": "Ve por la mañana o a primera hora de la tarde cuando los puestos están activos y lleva efectivo pequeño.",
+        "cap1": "Souk Soune — tejidos saharianos, melhfas y puestos de colores",
+        "cap2": "Souk Soune — especias, té y sabores locales",
+        "cap3": "Souk Soune — artesanía y productos cotidianos",
+        "cap4": "Souk Soune — pasillos concurridos del mercado en El Aaiún"
+      },
+      "saguia_el_hamra": {
+        "title": "Valle de la Saguia El Hamra",
+        "p1": "La Saguia El Hamra da nombre a la región y traza un corredor natural de palmeras, orillas ocres y paisajes áridos junto a El Aaiún.",
+        "p2": "El contraste entre la vegetación, la tierra ocre y el cielo abierto crea un paisaje representativo del entorno del sur.",
+        "tip": "Lleva protección solar y cámara para aprovechar la luz abierta durante el día.",
+        "cap1": "Saguia El Hamra — palmerales y corredor del valle",
+        "cap2": "Saguia El Hamra — orillas ocres y cielos abiertos del sur",
+        "cap3": "Saguia El Hamra — contraste natural junto a la ciudad",
+        "cap4": "Saguia El Hamra — miradores tranquilos a lo largo del valle"
+      },
+      "oulad_tedrarag": {
+        "title": "Plaza Oulad Tedrarag",
+        "p1": "La plaza Oulad Tedrarag es un punto de paso y encuentro donde los vecinos coinciden, descansan y disfrutan de un espacio abierto.",
+        "p2": "Su entorno muestra una faceta cotidiana y cercana de la ciudad, rodeada de calles con movimiento, cafés y vida de barrio.",
+        "tip": "Combina esta parada con un paseo por las avenidas cercanas y los cafés del entorno.",
+        "cap1": "Plaza Oulad Tedrarag — espacio abierto y calles cercanas",
+        "cap2": "Plaza Oulad Tedrarag — movimiento diario y ambiente local",
+        "cap3": "Plaza Oulad Tedrarag — palmeras y zonas peatonales",
+        "cap4": "Plaza Oulad Tedrarag — brisa de la tarde en la plaza"
+      },
+      "el_marsa_port": {
+        "title": "Puerto de El Aaiún",
+        "p1": "Situado en la costa al oeste del centro, el puerto de El Aaiún es un punto marítimo clave marcado por los barcos pesqueros y la actividad costera.",
+        "p2": "Observar las embarcaciones, los espigones y el oleaje muestra el peso del mar en la economía y la gastronomía local.",
+        "tip": "Mantente apartado de las zonas de carga activas y respeta las normas de acceso al puerto.",
+        "cap1": "Puerto de El Aaiún — barcos pesqueros y aguas del Atlántico",
+        "cap2": "Puerto de El Aaiún — muelles activos y movimiento marítimo",
+        "cap3": "Puerto de El Aaiún — espigones costeros y horizonte marino",
+        "cap4": "Puerto de El Aaiún — vínculo directo con el pescado fresco"
+      },
+      "foum_el_oued": {
+        "title": "Playa de Foum El Oued",
+        "p1": "A pocos minutos en coche de El Aaiún, Foum El Oued abre una larga franja de arena frente al Atlántico, ideal para caminar junto al mar.",
+        "p2": "Es un lugar habitual para desconectar junto al mar y contemplar la puesta de sol sobre el océano.",
+        "tip": "Las corrientes y el oleaje del Atlántico pueden ser intensos; ten precaución en el agua.",
+        "cap1": "Playa de Foum El Oued — arena atlántica y oleaje",
+        "cap2": "Playa de Foum El Oued — paseo costero y brisa marina",
+        "cap3": "Playa de Foum El Oued — amplios tramos de litoral cerca de El Aaiún",
+        "cap4": "Playa de Foum El Oued — atardecer sobre el Atlántico"
+      },
+      "lemsid_dunes": {
+        "title": "Dunas de Lemsid",
+        "p1": "Al norte de El Aaiún, a lo largo del corredor costero y desértico, las dunas de Lemsid ofrecen crestas de arena moldeadas por el viento.",
+        "p2": "Caminar por las crestas o contemplar cómo cambian las sombras en la arena ofrece una escapada desértica muy accesible desde la ciudad.",
+        "tip": "Lleva agua, usa calzado cómodo para la arena y respeta el entorno natural.",
+        "cap1": "Dunas de Lemsid — crestas de arena moldeadas por el viento",
+        "cap2": "Dunas de Lemsid — dunas doradas y calma del desierto",
+        "cap3": "Dunas de Lemsid — cambios de luz sobre la arena",
+        "cap4": "Dunas de Lemsid — paisaje de desierto y costa al norte de El Aaiún"
+      }
     }
   }
 }

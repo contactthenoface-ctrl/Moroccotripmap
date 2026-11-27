@@ -1,637 +1,326 @@
 {
   "seo": {
-    "title": "Laâyoune Travel Guide 2026 | Sahara, Dunes & Atlantic Coast | MoroccoTripMap",
-    "description": "Explore Laâyoune: Place Mechouar, Foum El Oued beach, Sahrawi culture, Saguia el-Hamra oasis, and El Marsa port. Travel tips, itineraries, and best hotels.",
-    "og_title": "Laâyoune Travel Guide | Capital of the Sahara, Dunes & Coast | MoroccoTripMap",
-    "og_description": "Top landmarks, Sahrawi culture, fresh Atlantic seafood, and top places to stay in Laâyoune."
+    "title": "Laayoune Travel Guide: Mechouar Square, Saharan Dunes, Foum El Oued Beach & Atlantic Coast | MoroccoTripMap",
+    "description": "Discover Laayoune, where the Sahara meets the Atlantic: Mechouar Square, Spanish Church, Museum of Saharan Arts, craft center, sand dunes, Sakia El Hamra wadi, Foum El Oued beach, El Marsa, and Khnifiss Lagoon.",
+    "og_title": "Laayoune: Gateway to the Sahara, Dunes & Atlantic Beaches | MoroccoTripMap",
+    "og_description": "Where the Sahara meets the Atlantic: Mechouar Square, desert dunes, Saharan crafts, ocean beaches, and lagoon excursions."
   },
-  "hero_subtitle": "The capital of the Moroccan Sahara, wide grand avenues, golden coastal dunes, and the Atlantic Ocean.",
+  "name": "Laayoune",
+  "hero_subtitle": "Gateway to the Atlantic Sahara: Mechouar Square, desert dunes, Sakia El Hamra wadi, and Foum El Oued beaches.",
   "info": {
-    "best_time_label": "Best Time to Visit",
-    "best_time_val": "Oct – Apr",
-    "stay_label": "Ideal Stay",
-    "stay_val": "2 – 3 Days",
-    "vibe_label": "Top Vibe",
-    "vibe_val": "Desert & Atlantic Coast",
-    "airport_label": "Nearest Airport",
-    "airport_val": "EUN (Hassan I)"
+    "best_time_label": "Best time",
+    "best_time": "October – April · mild temperatures and ocean breeze",
+    "stay_label": "Ideal stay",
+    "stay": "1 – 2 days",
+    "vibe_label": "Vibe",
+    "vibe": "Desert · Ocean · Saharan culture",
+    "access_label": "Access",
+    "access": "Hassan I Airport (EUN) near the center · N1 coastal highway toward Tarfaya and Dakhla",
+    "vibe_val": "Desert · Ocean · Saharan culture",
+    "best_time_val": "October – April · mild temperatures and ocean breeze",
+    "stay_val": "1 – 2 days",
+    "access_val": "Hassan I Airport (EUN) near the center · N1 coastal highway toward Tarfaya and Dakhla",
+    "airport_label": "Access",
+    "airport_val": "Hassan I Airport (EUN) near the center · N1 coastal highway toward Tarfaya and Dakhla"
   },
-  "overview": {
-    "title": "Welcome to Laâyoune — Where the Desert Meets the Atlantic",
-    "p1": "Laâyoune is the largest city and economic heart of the Moroccan Sahara. Situated on the dry bed of the Saguia el-Hamra river and just 25 kilometers from the Atlantic shore, it bridges modern urban development with centuries-old nomadic customs.",
-    "p2": "From traditional three-round Sahrawi tea ceremonies to fresh seafood catches at the port of El Marsa and peaceful ocean sunsets at Foum El Oued beach, Laâyoune offers an authentic southern desert experience."
+  "intro": {
+    "title": "Welcome to Laayoune — Desert, Ocean, and Saharan Culture",
+    "p1": "Capital of the Laayoune-Sakia El Hamra region, Laayoune sits where the Sahara meets the Atlantic. The city combines a modern, airy center, a Spanish-era church, Saharan craftsmanship, and easy access to sand dunes and ocean beaches.",
+    "p2": "Most visitors spend one or two days here: start at Mechouar Square and the craft center, visit the arts museum and the Spanish church, then head to the dunes for sunset or Foum El Oued for the ocean. Khnifiss Lagoon and Tarfaya make a great day trip to the north."
   },
   "places": {
-    "badge": "Top Sightseeing",
-    "title": "Must-Visit Places in Laâyoune",
-    "subtitle": "Monuments, Atlantic beaches, desert oases, and vibrant local markets.",
-    "jemaa": {
-      "tag": "Monument & Square",
-      "title": "Place du Méchouar",
-      "desc": "The historic and ceremonial heart of Laâyoune, framed by landscaped walkways, shaded trees, and Saharan architectural touches. Ideal for an evening stroll, people-watching, and experiencing local city life.",
-      "images": [
-        "images/places/laayoune-place-mechouar/place-mechouar-01.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-02.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-03.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-04.webp"
-      ]
+    "badge": "In Laayoune",
+    "title": "Must-See Places in Laayoune",
+    "subtitle": "Everything on this page — open a card to jump directly to its section.",
+    "explore": "See details ↓",
+    "mechouar": {
+      "tag": "Square",
+      "title": "Mechouar Square",
+      "desc": "Expansive central square lined with arcades and a favorite gathering spot for locals."
     },
-    "majorelle": {
-      "tag": "Coast & Atlantic",
-      "title": "Foum El Oued Beach",
-      "desc": "A wide stretch of golden sand along the Atlantic coast just outside Laâyoune. Popular for brisk walks beside the surf, refreshing ocean air, and wide-open sunsets over the water.",
-      "images": [
-        "images/places/laayoune-foum-el-oued/foum-el-oued-01.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-02.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-03.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-04.webp"
-      ]
+    "spanish_church": {
+      "tag": "Heritage",
+      "title": "Spanish Church (Cathedral of Saint Francis of Assisi)",
+      "desc": "Iconic Spanish-era church reflecting the city's 1930s origins."
     },
-    "bahia": {
-      "tag": "Harbor & Fishing",
-      "title": "El Marsa Port",
-      "desc": "A major maritime hub in southern Morocco lively with fishing vessels, working quays, and crisp Atlantic light. It highlights Laâyoune's strong connection to the ocean and coastal trade.",
-      "images": [
-        "images/places/laayoune-port-el-marsa/port-el-marsa-01.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-02.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-03.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-04.webp"
-      ]
+    "arts_museum": {
+      "tag": "Museum",
+      "title": "Museum of Saharan Arts",
+      "desc": "An introduction to Saharan arts, crafts, and traditions on Oum Saad Square."
     },
-    "ben_youssef": {
-      "tag": "Valley & Oasis",
-      "title": "Saguia El Hamra",
-      "desc": "An iconic valley cutting through arid terrain and lending its name to the region. It creates a striking contrast between mineral expanses, palm groves, and the region's natural identity.",
-      "images": [
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-01.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-02.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-03.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-04.webp"
-      ]
+    "craft_center": {
+      "tag": "Crafts",
+      "title": "Craft Center & Markets",
+      "desc": "Rugs, jewelry, fabrics, and souvenirs near Mechouar Square."
     },
-    "saadian": {
-      "tag": "Crafts & Local Market",
-      "title": "Souk Soune",
-      "desc": "A lively traditional market filled with Saharan textiles, handicrafts, spices, and everyday goods. A great place to discover local craftsmanship and interact with vendors.",
-      "images": [
-        "images/places/laayoune-souk-soune/souk-soune-01.webp",
-        "images/places/laayoune-souk-soune/souk-soune-02.webp",
-        "images/places/laayoune-souk-soune/souk-soune-03.webp",
-        "images/places/laayoune-souk-soune/souk-soune-04.webp"
-      ]
+    "mosque": {
+      "tag": "Monument",
+      "title": "Laayoune Mosque & Minaret",
+      "desc": "An elegant minaret and a beloved landmark at golden hour."
     },
-    "elbadi": {
-      "tag": "Heritage & Architecture",
-      "title": "Spanish Quarter",
-      "desc": "A district shaped by facades, small squares, and architectural lines rooted in the past, woven into Laâyoune's urban fabric. A calm walk to trace how the city's architecture evolved.",
-      "images": [
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-01.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-02.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-03.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-04.webp"
-      ]
+    "wadi": {
+      "tag": "Nature",
+      "title": "Sakia El Hamra Wadi",
+      "desc": "The riverbed running through the city, offering a peaceful open space between neighborhoods."
     },
-    "jardin_menara": {
-      "tag": "Architecture & Landmark",
-      "title": "Moulay Abdellah Mosque",
-      "desc": "A major mosque in Laâyoune recognizable by its monumental scale and presence within the city. It serves both as a prominent landmark and a central place of prayer.",
-      "images": [
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-01.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-02.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-03.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-04.webp"
-      ]
+    "dunes": {
+      "tag": "Desert",
+      "title": "Laayoune Dunes (Ocean of Sand)",
+      "desc": "Sand dunes right outside the city for sunset walks, camel rides, and 4x4 outings."
     },
-    "dar_el_bacha": {
-      "tag": "Dunes & Desert",
-      "title": "Lemsid Dunes",
-      "desc": "Striking sand dunes north of Laâyoune shaped by Saharan winds. Ideal for watching shifting desert light, walking along the ridges, and enjoying quiet open spaces.",
-      "images": [
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-01.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-02.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-03.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-04.webp"
-      ]
+    "foum_el_oued": {
+      "tag": "Coast",
+      "title": "Foum El Oued: Beach & Corniche",
+      "desc": "Atlantic beach and renovated promenade about 25 km from the city."
     },
-    "koutoubia": {
-      "tag": "Gardens",
-      "title": "Place Oulad Tedrarag",
-      "desc": "Lush palm park providing cool shade and evening family promenades."
+    "el_marsa": {
+      "tag": "Port",
+      "title": "El Marsa & Its Port",
+      "desc": "The city's port district, featuring fishing boats, seafood, and a seaside atmosphere."
     },
-    "place_oulad_tedrarag": {
-      "tag": "Urban Life",
-      "title": "Oulad Tedrarag Square",
-      "desc": "A lively public square that reflects everyday life in Laâyoune. A familiar meeting and passing spot valued for its friendly neighborhood atmosphere.",
-      "images": [
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-01.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-02.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-03.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-04.webp"
-      ]
+    "khnifiss": {
+      "tag": "Surroundings",
+      "title": "Khnifiss Lagoon (Naïla)",
+      "desc": "Protected Atlantic lagoon north of the city, renowned for its birdlife and sand dunes."
     }
   },
-  "itinerary": {
-    "badge": "Planning",
-    "title": "Suggested 3-Day Itinerary",
-    "subtitle": "A balanced plan to discover the city landmarks, the port, and the surrounding desert."
-  },
-  "detailed_itinerary": {
-    "day1_tab": "Day 1 — City Heart & Sahrawi Culture",
-    "day2_tab": "Day 2 — Coast, Port & Seafood",
-    "day3_tab": "Day 3 — Oasis & Desert Excursion",
-    "day1_m": "Morning — Place Mechouar & Great Mosque",
-    "day1_md": "Stroll around Place Mechouar, admiring the Sahrawi architectural motifs and broad palm-lined boulevards.",
-    "day1_a": "Afternoon — Souk Soune & Artisanal Crafts",
-    "day1_ad": "Browse traditional silver jewelry, camel-leather goods, and colorful melhfa fabrics in local markets.",
-    "day1_e": "Evening — Traditional Sahrawi Tea Ceremony",
-    "day1_ed": "Experience local tea hospitality (Atay) served in three distinct rounds in a relaxed city café.",
-    "day2_m": "Morning — El Marsa Fishing Port",
-    "day2_md": "Head west to the port town of El Marsa to observe fishing boats returning with the daily Atlantic catch.",
-    "day2_a": "Afternoon — Foum El Oued Ocean Relax",
-    "day2_ad": "Enjoy lunch with freshly grilled fish, then unwind along the wide sandy beach of Foum El Oued.",
-    "day2_e": "Evening — Sunset over Coastal Dunes",
-    "day2_ed": "Watch the sunset as the golden desert dunes merge directly into the ocean shore.",
-    "day3_m": "Morning — Saguia el-Hamra Valley Excursion",
-    "day3_md": "Explore the palm groves and dry river bed landscapes north-east of Laâyoune.",
-    "day3_a": "Afternoon — Camel Ride & Dune Trek",
-    "day3_ad": "Take a short camel trek across the golden dunes surrounding the city limits.",
-    "day3_e": "Evening — Farewell Sahrawi Dinner",
-    "day3_ed": "Enjoy camel meat tagine or fresh grilled sea bass in one of Laâyoune's authentic local restaurants."
+  "place_sections": {
+    "mechouar": {
+      "title": "Mechouar Square",
+      "p1": "Built for King Hassan II's visit in 1985, Mechouar Square is the civic heart of Laayoune. Its arcades open up wide perspectives, making it the natural starting point for any walk downtown.",
+      "p2": "Locals gather here in the evening: it's the ideal spot to people-watch, sip mint tea at a nearby café, and get your bearings before exploring other sites.",
+      "tip": "Visit at sunset or early evening, when the square is liveliest and the light softens the arcades.",
+      "cap1": "Mechouar Square",
+      "cap2": "Mechouar Square",
+      "cap3": "Mechouar Square"
+    },
+    "spanish_church": {
+      "title": "Spanish Church (Cathedral of Saint Francis of Assisi)",
+      "p1": "Located on Avenue Hassan II, the former Spanish cathedral recalls the era when Laayoune was founded under Spanish administration. Its distinctive silhouette stands out against the surrounding modern buildings.",
+      "p2": "It is primarily admired from the outside and easily pairs with a visit to nearby Mechouar Square.",
+      "tip": "Ask locally before planning an interior visit, as visitor access can vary.",
+      "cap1": "Spanish Church (Cathedral of Saint Francis of Assisi)",
+      "cap2": "Spanish Church (Cathedral of Saint Francis of Assisi)",
+      "cap3": "Spanish Church (Cathedral of Saint Francis of Assisi)"
+    },
+    "arts_museum": {
+      "title": "Museum of Saharan Arts",
+      "p1": "Located on Oum Saad Square, the museum offers an introduction to Saharan arts, crafts, and traditions, providing helpful context for everything you'll see in the city and surrounding desert.",
+      "p2": "It is a compact stop, ideal to pair with the craft center before shopping for souvenirs.",
+      "tip": "Opening hours can change—check with your hotel before heading over.",
+      "cap1": "Museum of Saharan Arts",
+      "cap2": "Museum of Saharan Arts",
+      "cap3": "Museum of Saharan Arts"
+    },
+    "craft_center": {
+      "title": "Craft Center & Markets",
+      "p1": "Near Mechouar Square, the craft center brings together local artisans and stalls offering rugs, jewelry, leatherwork, and fabrics inspired by Saharan traditions.",
+      "p2": "The surrounding markets offer a glimpse into daily local life, from fresh produce to household goods.",
+      "tip": "Compare several stalls before buying and bargain courteously.",
+      "cap1": "Craft Center & Markets",
+      "cap2": "Craft Center & Markets",
+      "cap3": "Craft Center & Markets"
+    },
+    "mosque": {
+      "title": "Laayoune Mosque & Minaret",
+      "p1": "One of Laayoune's most photographed landmarks, the mosque and its minaret stand out against the desert sky, especially at sunset.",
+      "p2": "Entry is reserved for Muslims, but the exterior and surrounding streets are well worth a brief stop.",
+      "tip": "Dress modestly around places of worship and avoid blocking entrances during prayer times.",
+      "cap1": "Laayoune Mosque & Minaret",
+      "cap2": "Laayoune Mosque & Minaret",
+      "cap3": "Laayoune Mosque & Minaret"
+    },
+    "wadi": {
+      "title": "Sakia El Hamra Wadi",
+      "p1": "The Sakia El Hamra wadi runs through Laayoune and gives the region its name. Its banks catch the late-day light, offering a peaceful contrast to the bustling center.",
+      "p2": "Its water flow varies by season, changing the landscape from one visit to the next.",
+      "tip": "Late afternoon is the best time for a walk and photos.",
+      "cap1": "Sakia El Hamra Wadi",
+      "cap2": "Sakia El Hamra Wadi",
+      "cap3": "Sakia El Hamra Wadi"
+    },
+    "dunes": {
+      "title": "Laayoune Dunes (Ocean of Sand)",
+      "p1": "Just a few kilometers from the center on the road to Dakhla, the Laayoune dunes stretch to the horizon—offering a taste of the Sahara without a long drive.",
+      "p2": "Sunset walks, camel rides, and 4x4 excursions are the classic ways to enjoy them.",
+      "tip": "Bring water, sunglasses, and a scarf, and avoid venturing into the dunes alone at night.",
+      "cap1": "Laayoune Dunes (Ocean of Sand)",
+      "cap2": "Laayoune Dunes (Ocean of Sand)",
+      "cap3": "Laayoune Dunes (Ocean of Sand)"
+    },
+    "foum_el_oued": {
+      "title": "Foum El Oued: Beach & Corniche",
+      "p1": "About 25 km west of Laayoune, Foum El Oued is the city's Atlantic outlet: a wide beach where the ocean's energy contrasts with the silence of the desert. The renovated, well-lit corniche has become a popular evening outing for families.",
+      "p2": "Buses run in summer, while grand taxis remain the standard way to get there the rest of the year; cafés, campsites, and rental villas are available on site.",
+      "tip": "Atlantic currents can be strong—ask locally before swimming.",
+      "cap1": "Foum El Oued: Beach & Corniche",
+      "cap2": "Foum El Oued: Beach & Corniche",
+      "cap3": "Foum El Oued: Beach & Corniche"
+    },
+    "el_marsa": {
+      "title": "El Marsa & Its Port",
+      "p1": "El Marsa is Laayoune's port district, connected to the city by a road heading west to the ocean. Fishing boats, port activity, and fresh fish give it a completely different atmosphere from downtown.",
+      "p2": "Beachfront hotels and seafood spots make it a practical alternative base if you prefer sleeping near the sea.",
+      "tip": "Ask permission before photographing fishermen or port facilities, and stay clear of active docks.",
+      "cap1": "El Marsa & Its Port",
+      "cap2": "El Marsa & Its Port",
+      "cap3": "El Marsa & Its Port"
+    },
+    "khnifiss": {
+      "title": "Khnifiss Lagoon (Naïla)",
+      "p1": "North of Laayoune toward Tarfaya, Khnifiss Lagoon (Naïla) is a protected wetland where the desert meets the Atlantic, famous for its birdlife, including seasonal flamingos.",
+      "p2": "It is best visited as a day trip by 4x4 or with a local guide, combined with a stop in Tarfaya.",
+      "tip": "Hire an experienced local driver or guide and bring plenty of water and fuel.",
+      "cap1": "Khnifiss Lagoon (Naïla)",
+      "cap2": "Khnifiss Lagoon (Naïla)",
+      "cap3": "Khnifiss Lagoon (Naïla)"
+    }
   },
   "stays": {
-    "badge": "Selection & Advice",
-    "title": "Where to stay in Laâyoune? Our Favorites",
-    "subtitle": "Modern city-center hotels or comfortable beachfront residences at Foum El Oued.",
+    "badge": "Accommodations",
+    "title": "Where to Stay in Laayoune",
+    "subtitle": "Hotels in Laayoune near the center, airport, and El Marsa waterfront.",
+    "book": "Book →",
     "card1": {
-      "badge": "★ City Center",
-      "name": "Hotel Nagjir Plaza",
-      "desc": "Comfortable modern accommodations centrally located close to main plazas and dining options.",
-      "location": "Downtown Laâyoune"
+      "badge": "Center",
+      "name": "Hotel Parador",
+      "desc": "4-star hotel with a garden, terrace, and restaurant, well located near the center.",
+      "location": "Center"
     },
-    "book": "Book Now →",
     "card2": {
-      "badge": "★ Full Service",
-      "name": "Hotel Al Massira",
-      "desc": "Established hotel offering a swimming pool, gardens, and on-site restaurant in a quiet neighborhood.",
-      "location": "Av. Makkah"
+      "badge": "Waterfront",
+      "name": "Hotel El Marsa La Playa",
+      "desc": "Beachfront hotel in El Marsa with a garden, terrace, and restaurant, ideal for ocean views.",
+      "location": "El Marsa"
     },
     "card3": {
-      "badge": "★ Coastal Stay",
-      "name": "Foum El Oued Beach Residencial",
-      "desc": "Beachfront apartments and guest rooms perfect for an Atlantic ocean escape.",
-      "location": "Foum El Oued Beach"
+      "badge": "Comfort",
+      "name": "Hotel Al Massira",
+      "desc": "4-star hotel on Avenue de la Mecque, convenient for getting around the city.",
+      "location": "Laayoune"
     },
     "card4": {
-      "badge": "★ Modern Style",
-      "name": "Sahara Line Hotel",
-      "desc": "Modern hotel offering comfortable rooms, friendly service, and quick airport transport.",
-      "location": "Av. Smara"
+      "badge": "Budget",
+      "name": "Hotel Beauport",
+      "desc": "Simple and affordable option for a short stopover in Laayoune.",
+      "location": "Laayoune"
+    },
+    "c1": {
+      "tag": "Center",
+      "title": "Hotel Parador",
+      "desc": "4-star hotel with a garden, terrace, and restaurant, well located near the center.",
+      "loc": "Center"
+    },
+    "c2": {
+      "tag": "Waterfront",
+      "title": "Hotel El Marsa La Playa",
+      "desc": "Beachfront hotel in El Marsa with a garden, terrace, and restaurant, ideal for ocean views.",
+      "loc": "El Marsa"
+    },
+    "c3": {
+      "tag": "Comfort",
+      "title": "Hotel Al Massira",
+      "desc": "4-star hotel on Avenue de la Mecque, convenient for getting around the city.",
+      "loc": "Laayoune"
+    },
+    "c4": {
+      "tag": "Budget",
+      "title": "Hotel Beauport",
+      "desc": "Simple and affordable option for a short stopover in Laayoune.",
+      "loc": "Laayoune"
     }
   },
   "booking_banner": {
-    "badge": "Accommodations in Laâyoune",
-    "title": "Explore All Places to Stay in Laâyoune",
-    "desc": "Compare real-time rates, read verified guest reviews, and secure your stay in the capital of the Sahara.",
-    "btn": "View All Stays",
+    "badge": "Local Stays & Hotels",
+    "title": "Explore All Accommodations in Laayoune",
+    "desc": "Compare live rates, read verified reviews, and enjoy free cancellation on most hotels.",
+    "btn": "View all accommodations",
     "guarantee": "✓ Best price guaranteed & secure booking"
   },
   "eat": {
     "badge": "Gastronomy",
-    "title": "Best Restaurants & Cafés",
-    "subtitle": "Fresh Atlantic seafood, grilled meats, and local tea spots.",
-    "nomad": {
+    "title": "Where to Eat in Laayoune",
+    "subtitle": "Fresh fish, Saharan flavors, and neighborhood cafés.",
+    "seafood": {
       "tag": "Seafood",
-      "loc": "El Marsa Port",
-      "title": "El Marsa Port Grills",
-      "desc": "Savor freshly caught Atlantic fish and sardines grilled right beside the harbor."
+      "loc": "El Marsa & Foum El Oued",
+      "title": "Fish & Seafood",
+      "desc": "Grilled fish and Atlantic seafood near the port and the beach."
     },
-    "jardin": {
-      "tag": "Local Cuisine",
+    "sahrawi": {
+      "tag": "Local",
       "loc": "Downtown",
-      "title": "Traditional Tagine House",
-      "desc": "Famous for slow-cooked camel meat tagines served with local flatbreads."
+      "title": "Saharan Cuisine & Tea",
+      "desc": "Tagines, grilled meats, and traditional Saharan tea served the local way."
     },
-    "fassia": {
-      "tag": "Café & Tea",
-      "loc": "Place Mechouar",
-      "title": "Mechouar Avenue Cafés",
-      "desc": "Enjoy mint tea or Sahrawi Atay with views over the monumental square."
-    },
-    "moha": {
-      "tag": "International",
-      "loc": "Av. Makkah",
-      "title": "Café Restaurant Le Parisien",
-      "desc": "Popular spot offering European coffee, wood-fired pizzas, and Moroccan dishes."
-    },
-    "bacha": {
-      "tag": "Ocean View",
-      "loc": "Foum El Oued",
-      "title": "Foum El Oued Promenade Terrace",
-      "desc": "Relaxing oceanfront tables for fresh juices, fried calamari, and sunset tea."
-    },
-    "elfenn": {
-      "tag": "Casual Eats",
-      "loc": "Souk Soune",
-      "title": "Street Grill & Sandwiches",
-      "desc": "Casual local market grills serving quick brochettes, kofta, and fresh breads."
+    "cafe": {
+      "tag": "Café",
+      "loc": "Mechouar & Avenues",
+      "title": "Cafés & Pastries",
+      "desc": "Coffee, mint tea, and relaxing breaks between sightseeing stops."
     }
   },
   "tips": {
-    "title": "Practical Tips for Visiting Laâyoune",
+    "title": "Practical Tips for Laayoune",
     "transport": {
       "title": "Getting Around",
-      "desc": "Yellow petit taxis are plentiful and economical within the city. Grand taxis run frequently to El Marsa and Foum El Oued beach."
+      "desc": "The Mechouar Square area is walkable; petit taxis cover city trips, grand taxis serve Foum El Oued, and a car or 4x4 with a driver helps for the dunes and Khnifiss Lagoon."
     },
-    "bargain": {
-      "title": "Weather & Climate",
-      "desc": "Enjoyable sunny desert climate year-round with mild Atlantic ocean breezes. Evening temperatures can drop noticeably in winter."
+    "crafts_tip": {
+      "title": "Buying Crafts",
+      "desc": "Compare rugs, jewelry, and fabrics at the craft center and nearby stalls, and agree on a price before buying."
     },
-    "water": {
-      "title": "Sahrawi Etiquette",
-      "desc": "Hospitality is deep-rooted. Accepting tea when offered is customary. Respect local social norms and ask before photographing people."
+    "timing": {
+      "title": "When to Visit",
+      "desc": "The weather is mild from autumn to spring; favor late afternoon for the dunes and wadi, and evening for Mechouar Square and the Foum El Oued corniche."
     }
   },
   "daytrips": {
-    "badge": "Beyond the City",
-    "title": "Best Day Trips from Laâyoune",
-    "subtitle": "Explore coastal reserves, historic Sahrawi towns, and desert oases.",
-    "atlas": {
-      "title": "Tarfaya & Saint-Exupéry",
-      "desc": "Historic Aéropostale town and coastal fort about 1 hour north."
+    "badge": "Surroundings & Southern Route",
+    "title": "Around Laayoune",
+    "subtitle": "Atlantic towns and desert stops along the N1 highway.",
+    "tarfaya": {
+      "title": "Tarfaya (≈ 1h30)",
+      "desc": "Atlantic fishing town to the north and gateway to Khnifiss Lagoon."
     },
-    "agafay": {
-      "title": "Khenifiss National Park",
-      "desc": "UNESCO biosphere reserve lagoon for birdwatching and sand dunes."
+    "boujdour": {
+      "title": "Boujdour (≈ 2h30)",
+      "desc": "Coastal town to the south, featuring its lighthouse and fishing port."
     },
-    "ouzoud": {
-      "title": "Smara Oasis Town",
-      "desc": "Historic spiritual desert city inland along the Saguia el-Hamra."
+    "smara": {
+      "title": "Smara (≈ 3h)",
+      "desc": "Historic inland desert city founded by Sheikh Ma al-'Aynayn."
     },
-    "essaouira": {
-      "title": "Boujdour Coast Drive",
-      "desc": "Scenic coastal road driving south with dramatic ocean cliffs."
+    "dakhla": {
+      "title": "Dakhla (≈ 6h)",
+      "desc": "Lagoon peninsula in the far south, famous for kitesurfing and desert-meets-ocean landscapes."
     }
   },
   "faq": {
     "badge": "Good to Know",
-    "title": "Laâyoune Travel FAQ",
+    "title": "Frequently Asked Questions About Laayoune",
     "q1": {
-      "question": "Is Laâyoune easy to reach?",
-      "answer": "Yes, Hassan I Airport (EUN) offers regular direct domestic flights from Casablanca and Agadir, as well as international connections. The N1 coastal highway connects it smoothly by road."
+      "question": "How long should I spend in Laayoune?",
+      "answer": "One full day allows you to see Mechouar Square, the Spanish Church, the craft center, and the museum; add a second day for the dunes, Foum El Oued, or Khnifiss Lagoon."
     },
     "q2": {
-      "question": "How far is the beach from the city?",
-      "answer": "Foum El Oued beach and the port of El Marsa are located about 20 to 25 kilometers west of the city center, reachable in 20 minutes by taxi or car."
+      "question": "What is Laayoune best known for?",
+      "answer": "Laayoune is the largest city in southern Morocco's Atlantic region, known for Mechouar Square, its nearby sand dunes, and the ocean beach of Foum El Oued."
     },
     "q3": {
-      "question": "How many days should I spend in Laâyoune?",
-      "answer": "2 to 3 days allow you to explore the city squares, enjoy fresh seafood at the port, relax on Foum El Oued beach, and take a dune excursion."
+      "question": "Can I visit Laayoune as a stopover on the southern route?",
+      "answer": "Yes—Laayoune is a natural stop on the long N1 highway between Tan-Tan or Agadir and Dakhla, and it has its own airport."
     },
     "q4": {
-      "question": "What is the best month to visit Laâyoune?",
-      "answer": "From October to April, the climate is pleasantly warm and sunny, avoiding the intense heat of peak summer."
+      "question": "Do I need a car in Laayoune?",
+      "answer": "Downtown sights can be visited on foot or by petit taxi, though a car, 4x4, or driver is much more practical for the dunes, Foum El Oued, and Khnifiss Lagoon."
     }
   },
-  "name": "Laâyoune",
-  "laayoune_page": {
-    "eat": {
-      "nomad": {
-        "tag": "Seafood",
-        "loc": "El Marsa Road",
-        "title": "Restaurant Oumaima",
-        "desc": "Known along El Marsa Road for fresh Atlantic fish, grilled seafood, and generous local platters."
-      },
-      "jardin": {
-        "tag": "Fish & Grill",
-        "loc": "Mekka Avenue",
-        "title": "Restaurant Le Poissonnier",
-        "desc": "Popular spot in central Laâyoune for grilled fish, fried seafood dishes, and hearty plates."
-      },
-      "fassia": {
-        "tag": "Moroccan & Grill",
-        "loc": "Mekka Avenue",
-        "title": "La Perla",
-        "desc": "Central restaurant on Mekka Avenue serving grilled meats, tagines, and everyday dishes."
-      },
-      "moha": {
-        "tag": "Pizza & Pasta",
-        "loc": "Chahid Bouchraya Av.",
-        "title": "La Madone",
-        "desc": "Established city spot for pizzas, pasta, and casual meals in a relaxed setting."
-      },
-      "bacha": {
-        "tag": "Café & Bites",
-        "loc": "Es-Semara Boulevard",
-        "title": "Mi Casita Café",
-        "desc": "Busy café along Es-Semara Boulevard suited for coffee breaks, breakfasts, and light bites."
-      },
-      "elfenn": {
-        "tag": "Coffee & Lounge",
-        "loc": "Mazeej Mall",
-        "title": "Baristas",
-        "desc": "Modern café stop inside Mazeej Mall for specialty coffees, pastries, and daytime breaks."
-      },
-      "badge": "Food",
-      "title": "Where to eat in Laâyoune",
-      "subtitle": "Atlantic seafood, grilled dishes, pizzas and neighbourhood cafés in Laâyoune."
-    },
-    "places": {
-      "place_mechouar": {
-        "tag": "Landmark",
-        "title": "Méchouar Square (Place du Méchouar)",
-        "desc": "Broad central square with shaded trees, fountains and Saharan architectural character."
-      },
-      "moulay_abdellah": {
-        "tag": "Architecture",
-        "title": "Moulay Abdellah Mosque",
-        "desc": "Monumental mosque with distinctive Saharan and Moroccan architectural details."
-      },
-      "spanish_quarter": {
-        "tag": "Heritage",
-        "title": "Spanish Quarter (Quartier Espagnol)",
-        "desc": "Historic district featuring arcades, plazas and layered architectural memory."
-      },
-      "souk_soune": {
-        "tag": "Market",
-        "title": "Souk Soune",
-        "desc": "Bustling market for Saharan melhfa fabrics, crafts, spices and daily essentials."
-      },
-      "saguia_el_hamra": {
-        "tag": "Landscape",
-        "title": "Saguia El Hamra Valley",
-        "desc": "Historic valley corridor with palms, dry riverbed scenery and desert horizons."
-      },
-      "oulad_tedrarag": {
-        "tag": "Urban Life",
-        "title": "Oulad Tedrarag Square",
-        "desc": "Lively neighbourhood square reflecting everyday social life in Laâyoune."
-      },
-      "el_marsa_port": {
-        "tag": "Harbour",
-        "title": "El Marsa Port",
-        "desc": "Active Atlantic fishing and commercial port serving Laâyoune's coast."
-      },
-      "foum_el_oued": {
-        "tag": "Coast",
-        "title": "Foum El Oued Beach",
-        "desc": "Wide sandy Atlantic beach near Laâyoune with open horizons and sea breeze."
-      },
-      "lemsid_dunes": {
-        "tag": "Dunes",
-        "title": "Lemsid Dunes",
-        "desc": "Golden desert dunes north of Laâyoune offering quiet Saharan scenery."
-      },
-      "badge": "In Laâyoune",
-      "title": "Must-visit places in Laâyoune",
-      "subtitle": "All on this page — open a card to jump to its section and photo carousel.",
-      "explore": "See details ↓"
-    },
-    "place_sections": {
-      "place_mechouar": {
-        "title": "Méchouar Square (Place du Méchouar)",
-        "p1": "Méchouar Square is one of the defining open spaces of central Laâyoune, offering wide sightlines, landscaped walkways and a welcoming civic atmosphere that anchors nearby avenues.",
-        "p2": "Strolling around the square in the late afternoon lets you observe everyday city rhythm, meet locals and connect easily toward adjacent neighbourhoods and markets.",
-        "tip": "Best visited around sunset when temperatures soften and the square feels most lively.",
-        "cap1": "Méchouar Square — wide central avenues and landscaped greenery",
-        "cap2": "Méchouar Square — Saharan architectural lines and open space",
-        "cap3": "Méchouar Square — late-afternoon light across the plaza",
-        "cap4": "Méchouar Square — everyday city life in central Laâyoune"
-      },
-      "moulay_abdellah": {
-        "title": "Moulay Abdellah Mosque",
-        "p1": "Rising prominently within Laâyoune, Moulay Abdellah Mosque stands out for its generous proportions, geometric motifs and strong visual presence along the city skyline.",
-        "p2": "Even from the outside, its courtyards, facade details and surrounding open space make it an essential architectural landmark for understanding contemporary religious building in the south.",
-        "tip": "Dress respectfully around the mosque and avoid blocking entrances during prayer times.",
-        "cap1": "Moulay Abdellah Mosque — monumental exterior and courtyard",
-        "cap2": "Moulay Abdellah Mosque — intricate geometric and regional details",
-        "cap3": "Moulay Abdellah Mosque — views across the surrounding esplanade",
-        "cap4": "Moulay Abdellah Mosque — warm light along the facade"
-      },
-      "spanish_quarter": {
-        "title": "Spanish Quarter (Quartier Espagnol)",
-        "p1": "The Spanish Quarter preserves low-rise blocks, arcaded walkways and small plazas that reflect an earlier chapter of Laâyoune's urban planning woven into the modern city.",
-        "p2": "Walking through its streets reveals subtle contrasts between older facades, shaded corners and active local shops that give the district its distinctive character.",
-        "tip": "Explore on foot at an unhurried pace to notice architectural details on upper facades.",
-        "cap1": "Spanish Quarter — historic streetscapes and shaded corners",
-        "cap2": "Spanish Quarter — arcades and distinctive urban proportions",
-        "cap3": "Spanish Quarter — quiet lanes blending past and present",
-        "cap4": "Spanish Quarter — local storefronts along the neighbourhood streets"
-      },
-      "souk_soune": {
-        "title": "Souk Soune",
-        "p1": "Souk Soune is a vibrant hub of local commerce where visitors encounter traditional Saharan textiles, handcrafted goods, spices, tea supplies and everyday household items.",
-        "p2": "Moving between stalls offers an authentic look at regional tastes and textures, making it a rewarding stop for souvenirs, fabrics and friendly exchanges with merchants.",
-        "tip": "Go in the morning or early evening when stalls are active and carry small cash bills.",
-        "cap1": "Souk Soune — colourful textiles, melhfas and market stalls",
-        "cap2": "Souk Soune — spices, tea essentials and local flavours",
-        "cap3": "Souk Soune — artisanal crafts and everyday goods",
-        "cap4": "Souk Soune — lively market lanes in Laâyoune"
-      },
-      "saguia_el_hamra": {
-        "title": "Saguia El Hamra Valley",
-        "p1": "Saguia El Hamra gives its name to the region and traces a striking natural corridor of palm groves, dry channels and arid banks right beside Laâyoune.",
-        "p2": "The contrast between clusters of greenery, ochre earth and wide skies creates a memorable sense of place that connects the city directly to its southern environment.",
-        "tip": "Bring sun protection and a camera for wide landscape views in clear daylight.",
-        "cap1": "Saguia El Hamra — palm groves and desert valley corridor",
-        "cap2": "Saguia El Hamra — ochre banks and open southern skies",
-        "cap3": "Saguia El Hamra — natural contrast beside the city edge",
-        "cap4": "Saguia El Hamra — calm viewpoints along the valley"
-      },
-      "oulad_tedrarag": {
-        "title": "Oulad Tedrarag Square",
-        "p1": "Oulad Tedrarag Square serves as an active local gathering point where residents cross paths, pause between errands and enjoy open urban space.",
-        "p2": "Its surroundings capture a genuine, unpolished slice of daily life in Laâyoune, surrounded by nearby streets, cafés and neighbourhood activity.",
-        "tip": "Pair a stop here with nearby central avenues and local cafés.",
-        "cap1": "Oulad Tedrarag Square — open civic space and surrounding streets",
-        "cap2": "Oulad Tedrarag Square — daily movement and local atmosphere",
-        "cap3": "Oulad Tedrarag Square — palm trees and walkways",
-        "cap4": "Oulad Tedrarag Square — evening breeze across the plaza"
-      },
-      "el_marsa_port": {
-        "title": "El Marsa Port",
-        "p1": "Located on the coast west of the city centre, El Marsa Port is a major maritime anchor driven by fishing boats, marine activity and fresh Atlantic catches.",
-        "p2": "Watching boats, harbour infrastructure and ocean swells gives clear insight into how coastal trade and fisheries shape life across the region.",
-        "tip": "Stay clear of active quays and heavy loading gear, and check local access rules.",
-        "cap1": "El Marsa Port — fishing vessels and Atlantic harbour waters",
-        "cap2": "El Marsa Port — working quays and maritime activity",
-        "cap3": "El Marsa Port — coastal breakwaters and ocean horizon",
-        "cap4": "El Marsa Port — fresh seafood connection along the shore"
-      },
-      "foum_el_oued": {
-        "title": "Foum El Oued Beach",
-        "p1": "Just a short drive from Laâyoune, Foum El Oued opens onto a broad Atlantic shoreline where long stretches of sand meet rolling waves and crisp coastal air.",
-        "p2": "Visitors come to walk along the tide line, unwind beside the ocean and take in wide sunsets where desert light meets the Atlantic.",
-        "tip": "Atlantic currents and waves can be strong — stay mindful of sea conditions.",
-        "cap1": "Foum El Oued Beach — wide Atlantic sand and rolling waves",
-        "cap2": "Foum El Oued Beach — coastal promenade and ocean air",
-        "cap3": "Foum El Oued Beach — open shoreline stretches near Laâyoune",
-        "cap4": "Foum El Oued Beach — sunset light over the Atlantic"
-      },
-      "lemsid_dunes": {
-        "title": "Lemsid Dunes",
-        "p1": "North of Laâyoune along the coastal desert corridor, Lemsid Dunes present sweeping sand ridges shaped by wind and framed by vast horizons.",
-        "p2": "Walking along the crests or pausing to watch shadows shift across the sand delivers a classic desert escape within easy reach of the city.",
-        "tip": "Carry water, wear sturdy footwear for sand, and respect fragile desert terrain.",
-        "cap1": "Lemsid Dunes — wind-sculpted sand ridges and desert horizon",
-        "cap2": "Lemsid Dunes — golden crests and quiet Saharan space",
-        "cap3": "Lemsid Dunes — shifting light across the dunes",
-        "cap4": "Lemsid Dunes — coastal desert scenery north of Laâyoune"
-      }
-    },
-    "daytrips": {
-      "tarfaya": {
-        "title": "Tarfaya (≈ 1h15)",
-        "desc": "Historic coastal town, Atlantic cliffs, and early aviation heritage southwest of Laâyoune."
-      },
-      "khnifiss": {
-        "title": "Khnifiss Lagoon (≈ 1h45)",
-        "desc": "Coastal nature reserve of lagoon, dunes, and ocean valued for birdlife and quiet scenery."
-      },
-      "smara": {
-        "title": "Smara (≈ 3h30)",
-        "desc": "Historic Saharan inland town known for its spiritual heritage and wide desert landscapes."
-      },
-      "boujdour": {
-        "title": "Boujdour (≈ 2h)",
-        "desc": "Cape and Atlantic coastline south of Laâyoune shaped by ocean breezes and open horizons."
-      },
-      "badge": "Nearby & along the route",
-      "title": "From Laâyoune",
-      "subtitle": "Coastal stops, nature reserves and Saharan towns reachable from Laâyoune."
-    },
-    "hero_subtitle": "Gateway between Saharan horizons and the Atlantic — wide squares, vibrant souks, fishing port, coastal breezes and dunes.",
-    "info": {
-      "best_time_label": "Best time",
-      "best_time": "October – April · pleasant desert & coastal climate",
-      "stay_label": "Ideal stay",
-      "stay": "2 – 3 days",
-      "vibe_label": "Atmosphere",
-      "vibe": "Saharan culture · Atlantic coast · Dunes",
-      "airport_label": "Access",
-      "airport_val": "Laâyoune Hassan I Airport (EUN) · N1 coastal highway"
-    },
-    "intro": {
-      "title": "Welcome to Laâyoune — Saharan Heritage & Atlantic Horizons",
-      "p1": "Positioned in southern Morocco where wide Saharan plains meet the Atlantic Ocean, Laâyoune combines monumental public spaces, lively traditional markets, a major fishing port in El Marsa and expansive coastal and dune landscapes.",
-      "p2": "Organize your visit around distinct zones: explore the central squares, Spanish Quarter, Moulay Abdellah Mosque and Souk Soune in town, then head to Foum El Oued and El Marsa Port on the coast or Lemsid dunes to the north."
-    },
-    "stays": {
-      "badge": "Stays",
-      "title": "Where to stay in Laâyoune",
-      "subtitle": "Practical hotels and stays near the centre, main avenues or coast — ideal for two or three nights.",
-      "book": "Book →",
-      "card1": {
-        "badge": "Central",
-        "name": "City-centre hotel",
-        "desc": "Convenient base for central squares, souks and restaurants.",
-        "location": "Centre"
-      },
-      "card2": {
-        "badge": "Coast",
-        "name": "Coastal & beach stay",
-        "desc": "Easy reach of ocean air and coastal outings toward Foum El Oued or El Marsa.",
-        "location": "Coast"
-      },
-      "card3": {
-        "badge": "Value",
-        "name": "Practical stopover hotel",
-        "desc": "Straightforward comfort on a southern road itinerary.",
-        "location": "Laâyoune"
-      },
-      "card4": {
-        "badge": "Driver",
-        "name": "Hotel with parking",
-        "desc": "Helpful if driving toward Lemsid dunes, Tarfaya or Khnifiss.",
-        "location": "Laâyoune"
-      }
-    },
-    "booking_banner": {
-      "badge": "Local stays & hotels",
-      "title": "Explore all stays in Laâyoune",
-      "desc": "Compare live prices, read trusted guest reviews and enjoy free cancellation on most hotels.",
-      "btn": "View All Stays",
-      "guarantee": "✓ Best price guarantee & secure booking"
-    },
-    "tips": {
-      "title": "Practical tips for Laâyoune",
-      "transport": {
-        "title": "Getting around",
-        "desc": "Central streets and squares are easy by foot or petit taxi; a car helps for Foum El Oued, El Marsa or Lemsid dunes."
-      },
-      "ceramics_tip": {
-        "title": "Local crafts & markets",
-        "desc": "Compare fabrics, melhfas and handmade items across local markets and keep small cash handy."
-      },
-      "timing": {
-        "title": "When to visit",
-        "desc": "Autumn through spring brings comfortable weather; mornings suit markets, while late afternoons shine by the coast or dunes."
-      }
-    },
-    "faq": {
-      "badge": "Good to know",
-      "title": "Questions about Laâyoune",
-      "q1": {
-        "question": "How long should I spend in Laâyoune?",
-        "answer": "Two to three days let you cover central squares and markets, Foum El Oued and El Marsa on the coast, plus an outing to Lemsid dunes."
-      },
-      "q2": {
-        "question": "What is Laâyoune best known for?",
-        "answer": "Laâyoune blends Saharan culture, wide urban squares, lively markets like Souk Soune, maritime life at El Marsa and easy access to Atlantic beaches and dunes."
-      },
-      "q3": {
-        "question": "Can you combine city, beach and desert in one trip?",
-        "answer": "Yes — the city sits close to the Atlantic shore at Foum El Oued and desert dunes to the north, making varied outings easy within a short stay."
-      },
-      "q4": {
-        "question": "Do I need a car around Laâyoune?",
-        "answer": "Getting around town is easy on foot or by taxi, while a car or driver makes visiting Foum El Oued, El Marsa, Lemsid dunes or Tarfaya much easier."
-      }
-    },
-    "name": "Laâyoune",
-    "seo": {
-      "title": "Laâyoune Travel Guide: Méchouar Square, Moulay Abdellah Mosque, Souk Soune, El Marsa Port & Lemsid Dunes | MoroccoTripMap"
-    }
+  "overview": {
+    "title": "Welcome to Laayoune — Desert, Ocean, and Saharan Culture",
+    "p1": "Capital of the Laayoune-Sakia El Hamra region, Laayoune sits where the Sahara meets the Atlantic. The city combines a modern, airy center, a Spanish-era church, Saharan craftsmanship, and easy access to sand dunes and ocean beaches.",
+    "p2": "Most visitors spend one or two days here: start at Mechouar Square and the craft center, visit the arts museum and the Spanish church, then head to the dunes for sunset or Foum El Oued for the ocean. Khnifiss Lagoon and Tarfaya make a great day trip to the north."
   },
-  "breadcrumb": {
-    "destinations": "Destinations",
-    "home": "Home"
-  },
-  "footer": {
-    "about_text": "Discover. Plan. Experience Morocco. The premier tourism directory and cultural travel guide for visitors exploring Morocco.",
-    "categories_title": "Travel Categories",
-    "connect_title": "Connect",
-    "copyright": "© MoroccoTripMap. All rights reserved.",
-    "link_agadir": "Agadir Travel Guide",
-    "link_all_destinations": "All Destinations →",
-    "link_blog": "Travel Blog & Tips",
-    "link_experiences": "Desert Tours & Activities",
-    "link_itineraries": "Circuits & Itineraries",
-    "link_restaurants": "Moroccan Gastronomy & Food",
-    "link_safi": "Laâyoune Travel Guide",
-    "link_sidi_ifni": "Sidi Ifni Travel Guide",
-    "link_stays": "Authentic Riads & Hotels",
-    "link_tiznit": "Tiznit Travel Guide",
-    "link_transport": "Transport & Rental Cars",
-    "recommended_title": "Recommended Pages",
-    "youtube_text": "Follow our YouTube channel for video travel guides:"
-  },
-  "mobile_menu": {
-    "language_title": "Language / Langue"
-  },
-  "nav": {
-    "blog": "Blog",
-    "cat_experiences": "Experiences",
-    "cat_gastronomy": "Gastronomy",
-    "cat_guides": "Travel Guides",
-    "cat_itineraries": "Itineraries",
-    "cat_museums": "Monuments & Museums",
-    "cat_stays": "Stays & Riads",
-    "cat_transport": "Transport & Rental",
-    "categories": "Categories",
-    "cities": "Cities & Destinations",
-    "contact": "Contact",
-    "destinations": "Destinations",
-    "history": "Market",
-    "home": "Home"
-  }
+  "hero_alt": "Laayoune, Mechouar Square, Saharan dunes, and Atlantic coast",
+  "footer_link": "Laayoune Travel Guide"
 }

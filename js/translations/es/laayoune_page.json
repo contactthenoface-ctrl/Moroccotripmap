@@ -1,637 +1,326 @@
 {
   "seo": {
-    "title": "Guía de viaje Laâyoune 2026 | Sáhara, dunas y costa atlántica | MoroccoTripMap",
-    "description": "Explora Laâyoune: Place Mechouar, playa de Foum El Oued, cultura saharaui, oasis de Saguia el-Hamra y puerto de El Marsa. Consejos, itinerarios y hoteles.",
-    "og_title": "Guía de viaje Laâyoune | Capital del Sáhara, dunas y costa | MoroccoTripMap",
-    "og_description": "Lugares imprescindibles, cultura saharaui, marisco atlántico y dónde alojarse en Laâyoune."
+    "title": "Guía de viaje de El Aaiún: plaza del Mechouar, dunas saharianas, playa de Foum El Oued y costa atlántica | MoroccoTripMap",
+    "description": "Descubre El Aaiún, donde el Sáhara se encuentra con el Atlántico: plaza del Mechouar, iglesia española, Museo de Artes Saharianas, centro artesanal, dunas, uadi Sakia El Hamra, playa de Foum El Oued, El Marsa y laguna de Khnifiss.",
+    "og_title": "El Aaiún: puerta del Sáhara, dunas y playas atlánticas | MoroccoTripMap",
+    "og_description": "Donde el Sáhara se encuentra con el Atlántico: plaza del Mechouar, dunas del desierto, artesanía sahariana, playas oceánicas y excursiones a la laguna."
   },
-  "hero_subtitle": "La capital del Sáhara marroquí: amplias avenidas, dunas costeras doradas y océano Atlántico.",
+  "name": "El Aaiún",
+  "hero_subtitle": "Puerta del Sáhara atlántico: plaza del Mechouar, dunas del desierto, uadi Sakia El Hamra y playas de Foum El Oued.",
   "info": {
     "best_time_label": "Mejor época",
-    "best_time_val": "Oct – Abr",
+    "best_time": "Octubre – Abril · temperaturas suaves y brisa oceánica",
     "stay_label": "Estancia ideal",
-    "stay_val": "2 – 3 días",
+    "stay": "1 – 2 días",
     "vibe_label": "Ambiente",
-    "vibe_val": "Desierto y costa atlántica",
-    "airport_label": "Aeropuerto más cercano",
-    "airport_val": "EUN (Hassan I)"
+    "vibe": "Desierto · Océano · Cultura sahariana",
+    "access_label": "Acceso",
+    "access": "Aeropuerto Hassan I (EUN) cerca del centro · carretera costera N1 hacia Tarfaya y Dajla",
+    "vibe_val": "Desierto · Océano · Cultura sahariana",
+    "best_time_val": "Octubre – Abril · temperaturas suaves y brisa oceánica",
+    "stay_val": "1 – 2 días",
+    "access_val": "Aeropuerto Hassan I (EUN) cerca del centro · carretera costera N1 hacia Tarfaya y Dajla",
+    "airport_label": "Acceso",
+    "airport_val": "Aeropuerto Hassan I (EUN) cerca del centro · carretera costera N1 hacia Tarfaya y Dajla"
   },
-  "overview": {
-    "title": "Bienvenido a Laâyoune — donde el desierto encuentra el Atlántico",
-    "p1": "Laâyoune es la mayor ciudad y el corazón económico del Sáhara marroquí. Situada en el lecho seco del río Saguia el-Hamra y a solo 25 km del Atlántico, une desarrollo urbano moderno y costumbres nómadas centenarias.",
-    "p2": "Desde las ceremonias de té saharaui en tres rondas hasta el marisco fresco del puerto de El Marsa y las puestas de sol en Foum El Oued, Laâyoune ofrece una experiencia auténtica del sur desértico."
+  "intro": {
+    "title": "Bienvenido a El Aaiún — Desierto, océano y cultura sahariana",
+    "p1": "Capital de la región de El Aaiún-Sakia El Hamra, El Aaiún se sitúa donde el Sáhara se encuentra con el Atlántico. La ciudad combina un centro moderno y amplio, una iglesia de la época española, artesanía sahariana y fácil acceso a las dunas y las playas del océano.",
+    "p2": "La mayoría de los visitantes pasan aquí uno o dos días: comienza por la plaza del Mechouar y el centro artesanal, visita el museo de artes y la iglesia española, y luego dirígete a las dunas para ver el atardecer o a Foum El Oued para disfrutar del océano. La laguna de Khnifiss y Tarfaya son una excelente excursión hacia el norte."
   },
   "places": {
-    "badge": "Qué ver",
-    "title": "Lugares imprescindibles en Laâyoune",
-    "subtitle": "Monumentos, playas atlánticas, oasis del desierto y mercados locales.",
-    "jemaa": {
-      "tag": "Monumento y Plaza",
-      "title": "Plaza del Méchouar",
-      "desc": "El corazón histórico y ceremonial de El Aaiún, rodeado de paseos ajardinados, árboles y detalles arquitectónicos saharianos. Perfecto para pasear al atardecer y sentir el pulso de la ciudad.",
-      "images": [
-        "images/places/laayoune-place-mechouar/place-mechouar-01.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-02.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-03.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-04.webp"
-      ]
+    "badge": "En El Aaiún",
+    "title": "Lugares imprescindibles en El Aaiún",
+    "subtitle": "Todo en esta página — abre una tarjeta para ir directamente a su sección.",
+    "explore": "Ver detalles ↓",
+    "mechouar": {
+      "tag": "Plaza",
+      "title": "Plaza del Mechouar",
+      "desc": "Gran plaza central rodeada de soportales y punto de encuentro favorito de los habitantes."
     },
-    "majorelle": {
-      "tag": "Costa y Atlántico",
-      "title": "Playa de Foum El Oued",
-      "desc": "Amplia franja de arena dorada frente al océano Atlántico a pocos kilómetros de El Aaiún. Muy buscada para caminar junto al oleaje, respirar la brisa marina y contemplar atardeceres abiertos.",
-      "images": [
-        "images/places/laayoune-foum-el-oued/foum-el-oued-01.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-02.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-03.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-04.webp"
-      ]
+    "spanish_church": {
+      "tag": "Patrimonio",
+      "title": "Iglesia española (Catedral de San Francisco de Asís)",
+      "desc": "Emblemática iglesia de la época española, testigo de los orígenes de la ciudad en los años 1930."
     },
-    "bahia": {
-      "tag": "Puerto y Pesca",
-      "title": "Puerto de El Aaiún",
-      "desc": "Importante puerto del sur de Marruecos con actividad pesquera, muelles de trabajo y luz atlántica. Refleja el vínculo estrecho de El Aaiún con el mar y la economía costera.",
-      "images": [
-        "images/places/laayoune-port-el-marsa/port-el-marsa-01.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-02.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-03.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-04.webp"
-      ]
+    "arts_museum": {
+      "tag": "Museo",
+      "title": "Museo de Artes Saharianas",
+      "desc": "Una introducción a las artes, la artesanía y las tradiciones saharianas, en la plaza Oum Saad."
     },
-    "ben_youssef": {
-      "tag": "Valle y Oasis",
-      "title": "Saguia El Hamra",
-      "desc": "Valle emblemático que atraviesa paisajes áridos y da nombre a la región. Ofrece un contraste marcado entre extensiones minerales, palmeras y la identidad natural del territorio.",
-      "images": [
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-01.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-02.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-03.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-04.webp"
-      ]
+    "craft_center": {
+      "tag": "Artesanía",
+      "title": "Centro artesanal y mercados",
+      "desc": "Alfombras, joyas, tejidos y recuerdos cerca de la plaza del Mechouar."
     },
-    "saadian": {
-      "tag": "Artesanía y Mercado",
-      "title": "Souk Soune",
-      "desc": "Mercado tradicional animado con tejidos saharianos, artesanía, especias y productos cotidianos. Ideal para conocer los oficios locales y conversar con los comerciantes.",
-      "images": [
-        "images/places/laayoune-souk-soune/souk-soune-01.webp",
-        "images/places/laayoune-souk-soune/souk-soune-02.webp",
-        "images/places/laayoune-souk-soune/souk-soune-03.webp",
-        "images/places/laayoune-souk-soune/souk-soune-04.webp"
-      ]
+    "mosque": {
+      "tag": "Monumento",
+      "title": "Mezquita y minarete de El Aaiún",
+      "desc": "Un elegante minarete, punto de referencia muy apreciado durante la hora dorada."
     },
-    "elbadi": {
-      "tag": "Patrimonio y Arquitectura",
-      "title": "Barrio Español",
-      "desc": "Barrio con fachadas, plazuelas y líneas arquitectónicas de épocas pasadas integradas en el entramado urbano de El Aaiún. Un paseo tranquilo para observar la evolución de la ciudad.",
-      "images": [
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-01.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-02.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-03.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-04.webp"
-      ]
+    "wadi": {
+      "tag": "Naturaleza",
+      "title": "Uadi Sakia El Hamra",
+      "desc": "El cauce que atraviesa la ciudad y abre un respiro tranquilo entre los barrios."
     },
-    "jardin_menara": {
-      "tag": "Arquitectura y Referente",
-      "title": "Mezquita Moulay Abdellah",
-      "desc": "Mezquita destacada de El Aaiún reconocible por su escala monumental y su presencia urbana. Funciona como punto de referencia visual y espacio central de oración.",
-      "images": [
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-01.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-02.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-03.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-04.webp"
-      ]
+    "dunes": {
+      "tag": "Desierto",
+      "title": "Dunas de El Aaiún (océano de arena)",
+      "desc": "Dunas de arena a las puertas de la ciudad para paseos al atardecer, rutas en dromedario y salidas en 4x4."
     },
-    "dar_el_bacha": {
-      "tag": "Dunas y Desierto",
-      "title": "Dunas de Lemsid",
-      "desc": "Impresionantes dunas al norte de El Aaiún moldeadas por el viento sahariano. Ideales para observar la luz cambiante del desierto, recorrer las crestas y disfrutar de la calma.",
-      "images": [
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-01.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-02.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-03.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-04.webp"
-      ]
+    "foum_el_oued": {
+      "tag": "Costa",
+      "title": "Foum El Oued: playa y paseo marítimo",
+      "desc": "Playa atlántica y paseo marítimo renovado a unos 25 km de la ciudad."
     },
-    "koutoubia": {
-      "tag": "Jardines",
-      "title": "Place Oulad Tedrarag",
-      "desc": "Parque de palmeras con sombra y paseos familiares por la noche."
+    "el_marsa": {
+      "tag": "Puerto",
+      "title": "El Marsa y su puerto",
+      "desc": "El barrio portuario de la ciudad, con sus barcos pesqueros, mariscos y ambiente costero."
     },
-    "place_oulad_tedrarag": {
-      "tag": "Vida Urbana",
-      "title": "Plaza Oulad Tedrarag",
-      "desc": "Plaza concurrida que acompaña el día a día de El Aaiún. Un punto de paso y encuentro apreciado por su ambiente cercano.",
-      "images": [
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-01.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-02.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-03.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-04.webp"
-      ]
+    "khnifiss": {
+      "tag": "Alrededores",
+      "title": "Laguna de Khnifiss (Naïla)",
+      "desc": "Laguna atlántica protegida al norte de la ciudad, famosa por su avifauna y sus dunas."
     }
   },
-  "itinerary": {
-    "badge": "Planificación",
-    "title": "Itinerario sugerido de 3 días",
-    "subtitle": "Un plan equilibrado para ciudad, puerto y desierto cercano."
-  },
-  "detailed_itinerary": {
-    "day1_tab": "Día 1 — Centro y cultura saharaui",
-    "day2_tab": "Día 2 — Costa, puerto y marisco",
-    "day3_tab": "Día 3 — Oasis y excursión al desierto",
-    "day1_m": "Mañana — Place Mechouar y Gran Mezquita",
-    "day1_md": "Paseo por Place Mechouar, motivos saharauis y bulevares de palmeras.",
-    "day1_a": "Tarde — Souk Soune y artesanía",
-    "day1_ad": "Plata, cuero de camello y tejidos melhfa en los mercados locales.",
-    "day1_e": "Noche — Ceremonia del té saharaui",
-    "day1_ed": "Hospitalidad del té (Atay) en tres rondas en un café de la ciudad.",
-    "day2_m": "Mañana — Puerto pesquero de El Marsa",
-    "day2_md": "Hacia el oeste: barcos de pesca y capturas diarias del Atlántico.",
-    "day2_a": "Tarde — Relax en Foum El Oued",
-    "day2_ad": "Almuerzo de pescado a la parrilla y playa de arena de Foum El Oued.",
-    "day2_e": "Noche — Atardecer sobre dunas costeras",
-    "day2_ed": "El sol se pone donde las dunas doradas se unen al océano.",
-    "day3_m": "Mañana — Excursión valle de Saguia el-Hamra",
-    "day3_md": "Palmerales y paisajes de uadi al noreste de Laâyoune.",
-    "day3_a": "Tarde — Camello y dunas",
-    "day3_ad": "Paseo en camello o caminata por las dunas con vistas clásicas del Sáhara.",
-    "day3_e": "Noche — Cena saharaui de despedida",
-    "day3_ed": "Termina con una comida tradicional y té, entre desierto y océano."
+  "place_sections": {
+    "mechouar": {
+      "title": "Plaza del Mechouar",
+      "p1": "Acondicionada con motivo de la visita del rey Hassan II en 1985, la plaza del Mechouar es el corazón cívico de El Aaiún. Sus soportales abren amplias perspectivas y la convierten en el punto de partida natural de cualquier paseo por el centro.",
+      "p2": "Los habitantes se reúnen aquí al caer la tarde: es el lugar ideal para observar la vida cotidiana, tomar un té a la menta en una cafetería cercana y orientarse antes de visitar otros lugares.",
+      "tip": "Ven al atardecer o a primera hora de la noche, cuando la plaza está más animada y la luz suaviza los soportales.",
+      "cap1": "Plaza del Mechouar",
+      "cap2": "Plaza del Mechouar",
+      "cap3": "Plaza del Mechouar"
+    },
+    "spanish_church": {
+      "title": "Iglesia española (Catedral de San Francisco de Asís)",
+      "p1": "En la avenida Hassan II, la antigua catedral española recuerda la época en que El Aaiún fue fundada bajo administración española. Su singular silueta destaca entre los edificios modernos que la rodean.",
+      "p2": "Se admira principalmente desde el exterior y se combina fácilmente con la cercana plaza del Mechouar.",
+      "tip": "Infórmate en el lugar antes de planear una visita interior, ya que el acceso para visitantes puede variar.",
+      "cap1": "Iglesia española (Catedral de San Francisco de Asís)",
+      "cap2": "Iglesia española (Catedral de San Francisco de Asís)",
+      "cap3": "Iglesia española (Catedral de San Francisco de Asís)"
+    },
+    "arts_museum": {
+      "title": "Museo de Artes Saharianas",
+      "p1": "Situado en la plaza Oum Saad, el museo ofrece una introducción a las artes, la artesanía y las tradiciones del Sáhara, brindando referencias útiles para todo lo que verás en la ciudad y en el desierto circundante.",
+      "p2": "Es una parada compacta, ideal para combinar con el centro artesanal antes de buscar recuerdos.",
+      "tip": "Los horarios pueden cambiar: pregunta en tu hotel antes de acudir.",
+      "cap1": "Museo de Artes Saharianas",
+      "cap2": "Museo de Artes Saharianas",
+      "cap3": "Museo de Artes Saharianas"
+    },
+    "craft_center": {
+      "title": "Centro artesanal y mercados",
+      "p1": "Cerca de la plaza del Mechouar, el centro artesanal reúne a artesanos locales y puestos que ofrecen alfombras, joyas, marroquinería y tejidos inspirados en las tradiciones saharianas.",
+      "p2": "Los mercados de los alrededores ofrecen una muestra de la vida cotidiana de los habitantes, desde productos frescos hasta artículos para el hogar.",
+      "tip": "Compara varios puestos antes de comprar y regatea con cortesía.",
+      "cap1": "Centro artesanal y mercados",
+      "cap2": "Centro artesanal y mercados",
+      "cap3": "Centro artesanal y mercados"
+    },
+    "mosque": {
+      "title": "Mezquita y minarete de El Aaiún",
+      "p1": "Uno de los monumentos más fotografiados de El Aaiún: la mezquita y su minarete se recortan contra el cielo del desierto, especialmente al atardecer.",
+      "p2": "La entrada está reservada a los musulmanes, pero el exterior y las calles circundantes merecen una breve parada.",
+      "tip": "Viste de forma discreta en los alrededores de los lugares de culto y evita obstaculizar los accesos durante las horas de oración.",
+      "cap1": "Mezquita y minarete de El Aaiún",
+      "cap2": "Mezquita y minarete de El Aaiún",
+      "cap3": "Mezquita y minarete de El Aaiún"
+    },
+    "wadi": {
+      "title": "Uadi Sakia El Hamra",
+      "p1": "El uadi Sakia El Hamra atraviesa El Aaiún y da nombre a la región. Sus riberas captan la luz al final del día, ofreciendo un contraste tranquilo con el bullicioso centro.",
+      "p2": "Su caudal varía según las estaciones, por lo que el paisaje cambia de una visita a otra.",
+      "tip": "El final de la tarde es el mejor momento para dar un paseo y hacer fotos.",
+      "cap1": "Uadi Sakia El Hamra",
+      "cap2": "Uadi Sakia El Hamra",
+      "cap3": "Uadi Sakia El Hamra"
+    },
+    "dunes": {
+      "title": "Dunas de El Aaiún (océano de arena)",
+      "p1": "A pocos kilómetros del centro, en la carretera hacia Dajla, las dunas de El Aaiún se extienden hasta el horizonte: un primer anticipo del Sáhara sin largos desplazamientos.",
+      "p2": "Paseos al atardecer, rutas en dromedario y excursiones en 4x4 son las formas clásicas de disfrutarlas.",
+      "tip": "Lleva agua, gafas de sol y un pañuelo, y evita aventurarte solo en las dunas por la noche.",
+      "cap1": "Dunas de El Aaiún (océano de arena)",
+      "cap2": "Dunas de El Aaiún (océano de arena)",
+      "cap3": "Dunas de El Aaiún (océano de arena)"
+    },
+    "foum_el_oued": {
+      "title": "Foum El Oued: playa y paseo marítimo",
+      "p1": "A unos 25 km al oeste de El Aaiún, Foum El Oued es la salida atlántica de la ciudad: una amplia playa donde la energía del océano contrasta con el silencio del desierto. El paseo marítimo renovado y bien iluminado se ha convertido en una salida nocturna muy popular entre las familias.",
+      "p2": "Circulan autobuses en verano y los grandes taxis siguen siendo el medio habitual para llegar el resto del año; hay cafeterías, campings y villas de alquiler disponibles.",
+      "tip": "Las corrientes atlánticas pueden ser fuertes: infórmate en el lugar antes de bañarte.",
+      "cap1": "Foum El Oued: playa y paseo marítimo",
+      "cap2": "Foum El Oued: playa y paseo marítimo",
+      "cap3": "Foum El Oued: playa y paseo marítimo"
+    },
+    "el_marsa": {
+      "title": "El Marsa y su puerto",
+      "p1": "El Marsa es el barrio portuario de El Aaiún, conectado a la ciudad por una carretera que va hacia el océano al oeste. Barcos de pesca, actividad portuaria y pescado fresco le dan un ambiente totalmente distinto al del centro.",
+      "p2": "Hoteles frente a la playa y marisquerías lo convierten en una base alternativa práctica si prefieres dormir cerca del mar.",
+      "tip": "Pide permiso antes de fotografiar a los pescadores o las instalaciones portuarias, y mantente alejado de los muelles operativos.",
+      "cap1": "El Marsa y su puerto",
+      "cap2": "El Marsa y su puerto",
+      "cap3": "El Marsa y su puerto"
+    },
+    "khnifiss": {
+      "title": "Laguna de Khnifiss (Naïla)",
+      "p1": "Al norte de El Aaiún, en dirección a Tarfaya, la laguna de Khnifiss (Naïla) es un humedal protegido donde el desierto se encuentra con el Atlántico, famoso por su avifauna, incluidos flamencos en temporada.",
+      "p2": "Se visita principalmente en una excursión de un día en 4x4 o con un guía local, combinándola con una parada en Tarfaya.",
+      "tip": "Contrata a un conductor o guía local con experiencia y lleva abundante agua y combustible.",
+      "cap1": "Laguna de Khnifiss (Naïla)",
+      "cap2": "Laguna de Khnifiss (Naïla)",
+      "cap3": "Laguna de Khnifiss (Naïla)"
+    }
   },
   "stays": {
-    "badge": "Selección y consejos",
-    "title": "¿Dónde alojarse en Laâyoune? Nuestras favoritas",
-    "subtitle": "Hoteles modernos en el centro o residencias frente al mar en Foum El Oued.",
-    "card1": {
-      "badge": "★ Centro",
-      "name": "Hotel Nagjir Plaza",
-      "desc": "Alojamiento moderno céntrico, cerca de plazas y restaurantes.",
-      "location": "Centro de Laâyoune"
-    },
+    "badge": "Alojamientos",
+    "title": "Dónde dormir en El Aaiún",
+    "subtitle": "Hoteles en El Aaiún cerca del centro, del aeropuerto y del paseo marítimo de El Marsa.",
     "book": "Reservar →",
+    "card1": {
+      "badge": "Centro",
+      "name": "Hotel Parador",
+      "desc": "Hotel de 4 estrellas con jardín, terraza y restaurante, bien situado cerca del centro.",
+      "location": "Centro"
+    },
     "card2": {
-      "badge": "★ Todo incluido",
-      "name": "Hotel Al Massira",
-      "desc": "Hotel consolidado con piscina, jardines y restaurante, zona tranquila.",
-      "location": "Av. Makkah"
+      "badge": "Frente al mar",
+      "name": "Hotel El Marsa La Playa",
+      "desc": "Hotel frente al mar en El Marsa con jardín, terraza y restaurante, ideal para disfrutar de vistas al océano.",
+      "location": "El Marsa"
     },
     "card3": {
-      "badge": "★ Frente al mar",
-      "name": "Foum El Oued Beach Residencial",
-      "desc": "Apartamentos y habitaciones frente al Atlántico.",
-      "location": "Playa de Foum El Oued"
+      "badge": "Confort",
+      "name": "Hotel Al Massira",
+      "desc": "Hotel de 4 estrellas en la avenida de la Meca, práctico para desplazarse por la ciudad.",
+      "location": "El Aaiún"
     },
     "card4": {
-      "badge": "★ Estilo moderno",
-      "name": "Sahara Line Hotel",
-      "desc": "Habitaciones cómodas, buen servicio y fácil traslado al aeropuerto.",
-      "location": "Av. Smara"
+      "badge": "Económico",
+      "name": "Hotel Beauport",
+      "desc": "Opción sencilla y asequible para una breve parada en El Aaiún.",
+      "location": "El Aaiún"
+    },
+    "c1": {
+      "tag": "Centro",
+      "title": "Hotel Parador",
+      "desc": "Hotel de 4 estrellas con jardín, terraza y restaurante, bien situado cerca del centro.",
+      "loc": "Centro"
+    },
+    "c2": {
+      "tag": "Frente al mar",
+      "title": "Hotel El Marsa La Playa",
+      "desc": "Hotel frente al mar en El Marsa con jardín, terraza y restaurante, ideal para disfrutar de vistas al océano.",
+      "loc": "El Marsa"
+    },
+    "c3": {
+      "tag": "Confort",
+      "title": "Hotel Al Massira",
+      "desc": "Hotel de 4 estrellas en la avenida de la Meca, práctico para desplazarse por la ciudad.",
+      "loc": "El Aaiún"
+    },
+    "c4": {
+      "tag": "Económico",
+      "title": "Hotel Beauport",
+      "desc": "Opción sencilla y asequible para una breve parada en El Aaiún.",
+      "loc": "El Aaiún"
     }
   },
   "booking_banner": {
-    "badge": "Alojamiento en Laâyoune",
-    "title": "Ver todos los alojamientos en Laâyoune",
-    "desc": "Compara tarifas en tiempo real, lee reseñas y reserva en la capital del Sáhara.",
+    "badge": "Alojamientos y hoteles locales",
+    "title": "Explorar todos los alojamientos en El Aaiún",
+    "desc": "Compara tarifas en tiempo real, consulta opiniones verificadas y disfruta de cancelación gratuita en la mayoría de los hoteles.",
     "btn": "Ver todos los alojamientos",
     "guarantee": "✓ Mejor precio garantizado y reserva segura"
   },
   "eat": {
     "badge": "Gastronomía",
-    "title": "Mejores restaurantes y cafés",
-    "subtitle": "Marisco atlántico, carnes a la parrilla y puntos de té locales.",
-    "nomad": {
-      "tag": "Marisco",
-      "loc": "Puerto de El Marsa",
-      "title": "Parrillas del puerto de El Marsa",
-      "desc": "Pescado y sardinas del Atlántico a la parrilla junto al muelle."
+    "title": "Dónde comer en El Aaiún",
+    "subtitle": "Pescados, sabores saharianos y cafeterías de barrio.",
+    "seafood": {
+      "tag": "Mariscos",
+      "loc": "El Marsa y Foum El Oued",
+      "title": "Pescados y mariscos",
+      "desc": "Pescados a la parrilla y mariscos del Atlántico cerca del puerto y de la playa."
     },
-    "jardin": {
-      "tag": "Cocina local",
+    "sahrawi": {
+      "tag": "Local",
       "loc": "Centro",
-      "title": "Casa del tajín tradicional",
-      "desc": "Tajines de carne de camello a fuego lento con pan local."
+      "title": "Cocina sahariana y té",
+      "desc": "Tajines, carnes a la brasa y té sahariano tradicional servido al estilo local."
     },
-    "fassia": {
-      "tag": "Café y té",
-      "loc": "Place Mechouar",
-      "title": "Cafés de la avenida Mechouar",
-      "desc": "Té de menta o Atay saharaui con vistas a la plaza monumental."
-    },
-    "moha": {
-      "tag": "Internacional",
-      "loc": "Av. Makkah",
-      "title": "Café Restaurant Le Parisien",
-      "desc": "Café europeo, pizzas al horno de leña y platos marroquíes."
-    },
-    "bacha": {
-      "tag": "Vista al mar",
-      "loc": "Foum El Oued",
-      "title": "Terraza del paseo",
-      "desc": "Mesas frente al océano: zumos, calamares fritos y té al atardecer."
-    },
-    "elfenn": {
-      "tag": "Street food",
-      "loc": "Souk Soune",
-      "title": "Parrillas y sándwiches",
-      "desc": "Brochetas, kefta y pan fresco en las parrillas del mercado."
+    "cafe": {
+      "tag": "Cafetería",
+      "loc": "Mechouar y avenidas",
+      "title": "Cafeterías y pastelerías",
+      "desc": "Café, té a la menta y pausas relajantes entre visitas."
     }
   },
   "tips": {
-    "title": "Consejos prácticos para Laâyoune",
+    "title": "Consejos prácticos para El Aaiún",
     "transport": {
       "title": "Cómo moverse",
-      "desc": "Los pequeños taxis amarillos son abundantes y económicos en la ciudad. Los grandes taxis conectan con El Marsa y Foum El Oued."
+      "desc": "La zona de la plaza del Mechouar se recorre a pie; los petits taxis cubren los trayectos urbanos, los grands taxis conectan con Foum El Oued, y un coche o 4x4 con conductor resulta muy útil para las dunas y la laguna de Khnifiss."
     },
-    "bargain": {
-      "title": "Clima",
-      "desc": "Clima desértico soleado todo el año, con brisas atlánticas. Las noches de invierno pueden ser frescas."
+    "crafts_tip": {
+      "title": "Comprar artesanía",
+      "desc": "Compara alfombras, joyas y tejidos en el centro artesanal y en los puestos vecinos, y acuerda el precio antes de comprar."
     },
-    "water": {
-      "title": "Etiqueta saharaui",
-      "desc": "La hospitalidad es central. Aceptar el té ofrecido es costumbre. Respeta las normas y pregunta antes de fotografiar."
+    "timing": {
+      "title": "Cuándo venir",
+      "desc": "El clima es suave desde otoño hasta primavera; prioriza el final de la tarde para las dunas y el uadi, y la noche para el Mechouar y el paseo marítimo de Foum El Oued."
     }
   },
   "daytrips": {
-    "badge": "Más allá de la ciudad",
-    "title": "Mejores excursiones desde Laâyoune",
-    "subtitle": "Reservas costeras, ciudades saharauis históricas y oasis del desierto.",
-    "atlas": {
-      "title": "Tarfaya y Saint-Exupéry",
-      "desc": "Ciudad histórica de la Aéropostale y fuerte costero, unos 1 h al norte."
+    "badge": "Alrededores y ruta del sur",
+    "title": "Alrededor de El Aaiún",
+    "subtitle": "Ciudades atlánticas y paradas del desierto a lo largo de la N1.",
+    "tarfaya": {
+      "title": "Tarfaya (≈ 1h30)",
+      "desc": "Ciudad pesquera atlántica al norte, puerta de entrada a la laguna de Khnifiss."
     },
-    "agafay": {
-      "title": "Parque nacional de Khenifiss",
-      "desc": "Reserva de la biosfera UNESCO: laguna, aves y dunas."
+    "boujdour": {
+      "title": "Bojador (≈ 2h30)",
+      "desc": "Ciudad costera al sur, con su faro y su puerto pesquero."
     },
-    "ouzoud": {
-      "title": "Oasis de Smara",
-      "desc": "Ciudad espiritual histórica tierra adentro, a lo largo de Saguia el-Hamra."
+    "smara": {
+      "title": "Esmara (≈ 3h)",
+      "desc": "Ciudad histórica del desierto en el interior, fundada por el jeque Ma El Ainin."
     },
-    "essaouira": {
-      "title": "Carretera costera de Boujdour",
-      "desc": "Ruta panorámica hacia el sur, acantilados y océano."
+    "dakhla": {
+      "title": "Dajla (≈ 6h)",
+      "desc": "Península lagunar del extremo sur, famosa por el kitesurf y sus paisajes entre desierto y océano."
     }
   },
   "faq": {
-    "badge": "Bueno saber",
-    "title": "FAQ de viaje a Laâyoune",
+    "badge": "Conviene saber",
+    "title": "Preguntas frecuentes sobre El Aaiún",
     "q1": {
-      "question": "¿Es fácil llegar a Laâyoune?",
-      "answer": "Sí. El aeropuerto Hassan I (EUN) tiene vuelos domésticos regulares desde Casablanca y Agadir, más conexiones internacionales. La N1 también une la ciudad por carretera."
+      "question": "¿Cuánto tiempo prever en El Aaiún?",
+      "answer": "Un día completo permite ver la plaza del Mechouar, la iglesia española, el centro artesanal y el museo; añade un segundo día para las dunas, Foum El Oued o la laguna de Khnifiss."
     },
     "q2": {
-      "question": "¿A qué distancia está la playa?",
-      "answer": "Foum El Oued y el puerto de El Marsa están a unos 20–25 km al oeste del centro, unos 20 minutos en taxi o coche."
+      "question": "¿Por qué es más conocido El Aaiún?",
+      "answer": "El Aaiún es la gran ciudad de la región atlántica del sur de Marruecos, conocida por su plaza del Mechouar, sus cercanas dunas y la playa oceánica de Foum El Oued."
     },
     "q3": {
-      "question": "¿Cuántos días pasar en Laâyoune?",
-      "answer": "2 o 3 días bastan para las plazas, el marisco del puerto, la playa de Foum El Oued y una excursión a las dunas."
+      "question": "¿Se puede visitar El Aaiún como parada en la ruta del sur?",
+      "answer": "Sí: El Aaiún es una parada natural en la larga carretera N1 entre Tan-Tan o Agadir y Dajla, y cuenta con su propio aeropuerto."
     },
     "q4": {
-      "question": "¿Cuál es el mejor mes para visitar?",
-      "answer": "De octubre a abril: clima agradablemente cálido y soleado, sin el calor intenso del verano."
+      "question": "¿Hace falta coche en El Aaiún?",
+      "answer": "Los lugares del centro se recorren a pie o en petit taxi, pero un coche, un 4x4 o un conductor es mucho más práctico para las dunas, Foum El Oued y la laguna de Khnifiss."
     }
   },
-  "name": "Laâyoune",
-  "laayoune_page": {
-    "eat": {
-      "nomad": {
-        "tag": "Mariscos",
-        "loc": "Carretera de El Aaiún del Puerto",
-        "title": "Restaurante Oumaima",
-        "desc": "Conocido en la carretera de El Aaiún del Puerto por su pescado fresco del Atlántico y platos de marisco."
-      },
-      "jardin": {
-        "tag": "Pescado y Parrilla",
-        "loc": "Avenida Mekka",
-        "title": "Restaurante Le Poissonnier",
-        "desc": "Lugar apreciado en el centro de El Aaiún por su pescado a la brasa, frituras y platos abundantes."
-      },
-      "fassia": {
-        "tag": "Cocina Variada",
-        "loc": "Avenida Mekka",
-        "title": "La Perla",
-        "desc": "Restaurante céntrico en la avenida Mekka con carnes a la brasa, tajines y platos diarios."
-      },
-      "moha": {
-        "tag": "Pizzas y Pasta",
-        "loc": "Av. Chahid Bouchraya",
-        "title": "La Madone",
-        "desc": "Lugar conocido en la ciudad para pizzas, pasta y comidas informales en un ambiente relajado."
-      },
-      "bacha": {
-        "tag": "Café y Meriendas",
-        "loc": "Bulevar Es-Semara",
-        "title": "Mi Casita Café",
-        "desc": "Cafetería concurrida en el bulevar Es-Semara ideal para pausas de café, desayunos o algo ligero."
-      },
-      "elfenn": {
-        "tag": "Café y Lounge",
-        "loc": "Mazeej Mall",
-        "title": "Baristas",
-        "desc": "Parada en Mazeej Mall para cafés, repostería y descansos tranquilos durante el día."
-      },
-      "badge": "Gastronomía",
-      "title": "Dónde comer en El Aaiún",
-      "subtitle": "Pescado del Atlántico, parrillas, pizzas y cafés de barrio en El Aaiún."
-    },
-    "places": {
-      "place_mechouar": {
-        "tag": "Monumento",
-        "title": "Plaza del Méchouar",
-        "desc": "Amplia plaza central con árboles, paseos ajardinados y carácter arquitectónico sahariano."
-      },
-      "moulay_abdellah": {
-        "tag": "Arquitectura",
-        "title": "Mezquita Moulay Abdellah",
-        "desc": "Mezquita monumental con detalles arquitectónicos marroquíes y saharianos."
-      },
-      "spanish_quarter": {
-        "tag": "Patrimonio",
-        "title": "Barrio Español",
-        "desc": "Barrio histórico con soportales, plazuelas y memoria arquitectónica integrada."
-      },
-      "souk_soune": {
-        "tag": "Mercado",
-        "title": "Souk Soune",
-        "desc": "Mercado animado de tejidos saharianos (melhfas), artesanía, especias y productos cotidianos."
-      },
-      "saguia_el_hamra": {
-        "tag": "Paisaje",
-        "title": "Valle de la Saguia El Hamra",
-        "desc": "Valle emblemático con palmerales, cauce seco y horizontes desérticos junto a la ciudad."
-      },
-      "oulad_tedrarag": {
-        "tag": "Vida urbana",
-        "title": "Plaza Oulad Tedrarag",
-        "desc": "Plaza animada de barrio que refleja la vida cotidiana de El Aaiún."
-      },
-      "el_marsa_port": {
-        "tag": "Puerto",
-        "title": "Puerto de El Aaiún",
-        "desc": "Puerto atlántico activo de pesca y actividad marítima en la costa de El Aaiún."
-      },
-      "foum_el_oued": {
-        "tag": "Costa",
-        "title": "Playa de Foum El Oued",
-        "desc": "Amplia playa atlántica de arena cerca de El Aaiún con brisa marina y horizontes abiertos."
-      },
-      "lemsid_dunes": {
-        "tag": "Dunas",
-        "title": "Dunas de Lemsid",
-        "desc": "Dunas doradas al norte de El Aaiún con amplios paisajes tranquilos de desierto."
-      },
-      "badge": "En El Aaiún",
-      "title": "Lugares imprescindibles en El Aaiún",
-      "subtitle": "Todo en esta página — abre una tarjeta para ir a su sección detallada y carrusel.",
-      "explore": "Ver detalles ↓"
-    },
-    "place_sections": {
-      "place_mechouar": {
-        "title": "Plaza del Méchouar",
-        "p1": "La Plaza del Méchouar es uno de los espacios abiertos emblemáticos del centro de El Aaiún, con amplias perspectivas, paseos ajardinados y un ambiente urbano acogedor.",
-        "p2": "Pasear por la plaza a última hora de la tarde permite observar el ritmo diario de la ciudad y conectar fácilmente con las calles y comercios cercanos.",
-        "tip": "Ideal al atardecer, cuando bajan las temperaturas y la plaza cobra mayor vida.",
-        "cap1": "Plaza del Méchouar — amplias avenidas centrales y zonas verdes",
-        "cap2": "Plaza del Méchouar — líneas arquitectónicas y espacio abierto",
-        "cap3": "Plaza del Méchouar — luz de la tarde sobre la explanada",
-        "cap4": "Plaza del Méchouar — vida cotidiana en el centro de El Aaiún"
-      },
-      "moulay_abdellah": {
-        "title": "Mezquita Moulay Abdellah",
-        "p1": "Destacada en el paisaje urbano de El Aaiún, la mezquita Moulay Abdellah llama la atención por sus proporciones, motivos geométricos y presencia monumental.",
-        "p2": "Incluso desde el exterior, sus patios, fachadas y explanada constituyen un referente arquitectónico clave en el sur de Marruecos.",
-        "tip": "Viste con respeto en los alrededores y evita obstruir las entradas en horas de oración.",
-        "cap1": "Mezquita Moulay Abdellah — fachada monumental y explanada",
-        "cap2": "Mezquita Moulay Abdellah — detalles geométricos y acabados",
-        "cap3": "Mezquita Moulay Abdellah — vista desde el entorno abierto",
-        "cap4": "Mezquita Moulay Abdellah — luz cálida sobre la fachada"
-      },
-      "spanish_quarter": {
-        "title": "Barrio Español",
-        "p1": "El Barrio Español conserva edificios de poca altura, soportales y pequeñas plazas que reflejan una etapa histórica del trazado urbano de El Aaiún.",
-        "p2": "Recorrer sus calles permite descubrir contrastes entre fachadas antiguas, rincones sombreados y comercios locales activos.",
-        "tip": "Recórrelo a pie sin prisas para fijarte en los detalles de las fachadas superiores.",
-        "cap1": "Barrio Español — calles históricas y rincones con sombra",
-        "cap2": "Barrio Español — soportales y proporciones urbanas",
-        "cap3": "Barrio Español — calles tranquilas entre pasado y presente",
-        "cap4": "Barrio Español — comercios locales en las calles del barrio"
-      },
-      "souk_soune": {
-        "title": "Souk Soune",
-        "p1": "Souk Soune es un núcleo comercial muy vivo donde se encuentran tejidos saharianos, artesanía, especias, té y artículos de uso diario.",
-        "p2": "Caminar entre los puestos ofrece una visión auténtica de texturas, colores y costumbres locales, ideal para buscar telas y charlar con los vendedores.",
-        "tip": "Ve por la mañana o a primera hora de la tarde cuando los puestos están activos y lleva efectivo pequeño.",
-        "cap1": "Souk Soune — tejidos saharianos, melhfas y puestos de colores",
-        "cap2": "Souk Soune — especias, té y sabores locales",
-        "cap3": "Souk Soune — artesanía y productos cotidianos",
-        "cap4": "Souk Soune — pasillos concurridos del mercado en El Aaiún"
-      },
-      "saguia_el_hamra": {
-        "title": "Valle de la Saguia El Hamra",
-        "p1": "La Saguia El Hamra da nombre a la región y traza un corredor natural de palmeras, orillas ocres y paisajes áridos junto a El Aaiún.",
-        "p2": "El contraste entre la vegetación, la tierra ocre y el cielo abierto crea un paisaje representativo del entorno del sur.",
-        "tip": "Lleva protección solar y cámara para aprovechar la luz abierta durante el día.",
-        "cap1": "Saguia El Hamra — palmerales y corredor del valle",
-        "cap2": "Saguia El Hamra — orillas ocres y cielos abiertos del sur",
-        "cap3": "Saguia El Hamra — contraste natural junto a la ciudad",
-        "cap4": "Saguia El Hamra — miradores tranquilos a lo largo del valle"
-      },
-      "oulad_tedrarag": {
-        "title": "Plaza Oulad Tedrarag",
-        "p1": "La plaza Oulad Tedrarag es un punto de paso y encuentro donde los vecinos coinciden, descansan y disfrutan de un espacio abierto.",
-        "p2": "Su entorno muestra una faceta cotidiana y cercana de la ciudad, rodeada de calles con movimiento, cafés y vida de barrio.",
-        "tip": "Combina esta parada con un paseo por las avenidas cercanas y los cafés del entorno.",
-        "cap1": "Plaza Oulad Tedrarag — espacio abierto y calles cercanas",
-        "cap2": "Plaza Oulad Tedrarag — movimiento diario y ambiente local",
-        "cap3": "Plaza Oulad Tedrarag — palmeras y zonas peatonales",
-        "cap4": "Plaza Oulad Tedrarag — brisa de la tarde en la plaza"
-      },
-      "el_marsa_port": {
-        "title": "Puerto de El Aaiún",
-        "p1": "Situado en la costa al oeste del centro, el puerto de El Aaiún es un punto marítimo clave marcado por los barcos pesqueros y la actividad costera.",
-        "p2": "Observar las embarcaciones, los espigones y el oleaje muestra el peso del mar en la economía y la gastronomía local.",
-        "tip": "Mantente apartado de las zonas de carga activas y respeta las normas de acceso al puerto.",
-        "cap1": "Puerto de El Aaiún — barcos pesqueros y aguas del Atlántico",
-        "cap2": "Puerto de El Aaiún — muelles activos y movimiento marítimo",
-        "cap3": "Puerto de El Aaiún — espigones costeros y horizonte marino",
-        "cap4": "Puerto de El Aaiún — vínculo directo con el pescado fresco"
-      },
-      "foum_el_oued": {
-        "title": "Playa de Foum El Oued",
-        "p1": "A pocos minutos en coche de El Aaiún, Foum El Oued abre una larga franja de arena frente al Atlántico, ideal para caminar junto al mar.",
-        "p2": "Es un lugar habitual para desconectar junto al mar y contemplar la puesta de sol sobre el océano.",
-        "tip": "Las corrientes y el oleaje del Atlántico pueden ser intensos; ten precaución en el agua.",
-        "cap1": "Playa de Foum El Oued — arena atlántica y oleaje",
-        "cap2": "Playa de Foum El Oued — paseo costero y brisa marina",
-        "cap3": "Playa de Foum El Oued — amplios tramos de litoral cerca de El Aaiún",
-        "cap4": "Playa de Foum El Oued — atardecer sobre el Atlántico"
-      },
-      "lemsid_dunes": {
-        "title": "Dunas de Lemsid",
-        "p1": "Al norte de El Aaiún, a lo largo del corredor costero y desértico, las dunas de Lemsid ofrecen crestas de arena moldeadas por el viento.",
-        "p2": "Caminar por las crestas o contemplar cómo cambian las sombras en la arena ofrece una escapada desértica muy accesible desde la ciudad.",
-        "tip": "Lleva agua, usa calzado cómodo para la arena y respeta el entorno natural.",
-        "cap1": "Dunas de Lemsid — crestas de arena moldeadas por el viento",
-        "cap2": "Dunas de Lemsid — dunas doradas y calma del desierto",
-        "cap3": "Dunas de Lemsid — cambios de luz sobre la arena",
-        "cap4": "Dunas de Lemsid — paisaje de desierto y costa al norte de El Aaiún"
-      }
-    },
-    "daytrips": {
-      "tarfaya": {
-        "title": "Tarfaya (≈ 1h15)",
-        "desc": "Ciudad costera histórica, acantilados atlánticos y memoria de la aeropostal al suroeste de El Aaiún."
-      },
-      "khnifiss": {
-        "title": "Laguna de Khnifiss (≈ 1h45)",
-        "desc": "Reserva natural costera de laguna, dunas y océano ideal para aves y paisajes tranquilos."
-      },
-      "smara": {
-        "title": "Smara (≈ 3h30)",
-        "desc": "Ciudad histórica del interior sahariano conocida por su patrimonio y paisajes desérticos."
-      },
-      "boujdour": {
-        "title": "Boujdour (≈ 2h)",
-        "desc": "Cabo y litoral atlántico al sur de El Aaiún marcado por la brisa marina y espacios abiertos."
-      },
-      "badge": "Cerca y en ruta",
-      "title": "Desde El Aaiún",
-      "subtitle": "Paradas costeras, reservas naturales y ciudades saharianas cerca de El Aaiún."
-    },
-    "hero_subtitle": "Entre horizontes saharianos y el océano Atlántico — amplias plazas, zocos animados, puerto pesquero, costa y dunas.",
-    "info": {
-      "best_time_label": "Mejor época",
-      "best_time": "Octubre – Abril · clima suave de desierto y costa",
-      "stay_label": "Estancia ideal",
-      "stay": "2 – 3 días",
-      "vibe_label": "Ambiente",
-      "vibe": "Cultura sahariana · Costa atlántica · Dunas",
-      "airport_label": "Acceso",
-      "airport_val": "Aeropuerto de El Aaiún Hassan I (EUN) · Carretera costera N1"
-    },
-    "intro": {
-      "title": "Bienvenido a El Aaiún — Patrimonio sahariano y horizontes atlánticos",
-      "p1": "Situada en el sur de Marruecos donde las llanuras saharianas se encuentran con el océano Atlántico, El Aaiún combina grandes plazas, mercados animados, el puerto de El Marsa y paisajes de costa y dunas.",
-      "p2": "Organiza tu visita por zonas: recorre primero la plaza del Méchouar, la mezquita Moulay Abdellah, el Barrio Español y Souk Soune en la ciudad, y luego acércate a Foum El Oued y al puerto en la costa o a las dunas de Lemsid al norte."
-    },
-    "stays": {
-      "badge": "Alojamientos",
-      "title": "Dónde alojarse en El Aaiún",
-      "subtitle": "Hoteles y alojamientos prácticos cerca del centro, avenidas principales o la costa.",
-      "book": "Reservar →",
-      "card1": {
-        "badge": "Centro",
-        "name": "Hotel en el centro",
-        "desc": "Base cómoda para moverse entre plazas, zocos y restaurantes.",
-        "location": "Centro"
-      },
-      "card2": {
-        "badge": "Costa",
-        "name": "Estancia junto a la costa",
-        "desc": "Acceso sencillo a la brisa marina y salidas hacia Foum El Oued o El Marsa.",
-        "location": "Costa"
-      },
-      "card3": {
-        "badge": "Práctico",
-        "name": "Hotel práctico de paso",
-        "desc": "Comodidad sencilla y práctica en una ruta por el sur.",
-        "location": "El Aaiún"
-      },
-      "card4": {
-        "badge": "Coche",
-        "name": "Hotel con aparcamiento",
-        "desc": "Útil si te desplazas en coche hacia las dunas de Lemsid, Tarfaya o Khnifiss.",
-        "location": "Laâyoune"
-      }
-    },
-    "booking_banner": {
-      "badge": "Hoteles y alojamientos",
-      "title": "Ver todos los alojamientos en El Aaiún",
-      "desc": "Compara precios, consulta opiniones de viajeros y aprovecha opciones flexibles.",
-      "btn": "Ver todos los alojamientos",
-      "guarantee": "✓ Reserva segura y selección de alojamientos"
-    },
-    "tips": {
-      "title": "Consejos prácticos para El Aaiún",
-      "transport": {
-        "title": "Cómo moverse",
-        "desc": "El centro es cómodo a pie o en taxi; un coche facilita ir a Foum El Oued, El Marsa o las dunas de Lemsid."
-      },
-      "ceramics_tip": {
-        "title": "Artesanía y mercados",
-        "desc": "Compara tejidos, melhfas y artesanía en los mercados locales y lleva efectivo en billetes pequeños."
-      },
-      "timing": {
-        "title": "Cuándo viajar",
-        "desc": "De otoño a primavera el clima es agradable; las mañanas van bien para los mercados y la tarde para la costa o las dunas."
-      }
-    },
-    "faq": {
-      "badge": "Información útil",
-      "title": "Preguntas sobre El Aaiún",
-      "q1": {
-        "question": "¿Cuánto tiempo conviene pasar en El Aaiún?",
-        "answer": "Dos o tres días permiten ver plazas y mercados, la costa de Foum El Oued y El Marsa, y una salida a las dunas de Lemsid."
-      },
-      "q2": {
-        "question": "¿Por qué destaca El Aaiún?",
-        "answer": "El Aaiún combina cultura sahariana, grandes plazas, mercados como Souk Soune, actividad portuaria en El Marsa y cercanía al Atlántico y las dunas."
-      },
-      "q3": {
-        "question": "¿Se pueden combinar ciudad, playa y desierto?",
-        "answer": "Sí — la ciudad está cerca de la costa atlántica en Foum El Oued y de zonas de dunas al norte, lo que facilita excursiones variadas."
-      },
-      "q4": {
-        "question": "¿Hace falta coche para recorrer los alrededores?",
-        "answer": "Moverse por la ciudad es sencillo a pie o en taxi, pero el coche facilita mucho ir a Foum El Oued, El Marsa, las dunas de Lemsid o Tarfaya."
-      }
-    },
-    "name": "Laâyoune",
-    "seo": {
-      "title": "Laâyoune Travel Guide: Méchouar Square, Moulay Abdellah Mosque, Souk Soune, El Marsa Port & Lemsid Dunes | MoroccoTripMap"
-    }
+  "overview": {
+    "title": "Bienvenido a El Aaiún — Desierto, océano y cultura sahariana",
+    "p1": "Capital de la región de El Aaiún-Sakia El Hamra, El Aaiún se sitúa donde el Sáhara se encuentra con el Atlántico. La ciudad combina un centro moderno y amplio, una iglesia de la época española, artesanía sahariana y fácil acceso a las dunas y las playas del océano.",
+    "p2": "La mayoría de los visitantes pasan aquí uno o dos días: comienza por la plaza del Mechouar y el centro artesanal, visita el museo de artes y la iglesia española, y luego dirígete a las dunas para ver el atardecer o a Foum El Oued para disfrutar del océano. La laguna de Khnifiss y Tarfaya son una excelente excursión hacia el norte."
   },
-  "breadcrumb": {
-    "destinations": "Destinations",
-    "home": "Home"
-  },
-  "footer": {
-    "about_text": "Discover. Plan. Experience Morocco. The premier tourism directory and cultural travel guide for visitors exploring Morocco.",
-    "categories_title": "Travel Categories",
-    "connect_title": "Connect",
-    "copyright": "© MoroccoTripMap. All rights reserved.",
-    "link_agadir": "Agadir Travel Guide",
-    "link_all_destinations": "All Destinations →",
-    "link_blog": "Travel Blog & Tips",
-    "link_experiences": "Desert Tours & Activities",
-    "link_itineraries": "Circuits & Itineraries",
-    "link_restaurants": "Moroccan Gastronomy & Food",
-    "link_safi": "Laâyoune Travel Guide",
-    "link_sidi_ifni": "Sidi Ifni Travel Guide",
-    "link_stays": "Authentic Riads & Hotels",
-    "link_tiznit": "Tiznit Travel Guide",
-    "link_transport": "Transport & Rental Cars",
-    "recommended_title": "Recommended Pages",
-    "youtube_text": "Follow our YouTube channel for video travel guides:"
-  },
-  "mobile_menu": {
-    "language_title": "Language / Langue"
-  },
-  "nav": {
-    "blog": "Blog",
-    "cat_experiences": "Experiences",
-    "cat_gastronomy": "Gastronomy",
-    "cat_guides": "Travel Guides",
-    "cat_itineraries": "Itineraries",
-    "cat_museums": "Monuments & Museums",
-    "cat_stays": "Stays & Riads",
-    "cat_transport": "Transport & Rental",
-    "categories": "Categories",
-    "cities": "Cities & Destinations",
-    "contact": "Contact",
-    "destinations": "Destinations",
-    "history": "Market",
-    "home": "Home"
-  }
+  "hero_alt": "El Aaiún, plaza del Mechouar, dunas saharianas y costa atlántica",
+  "footer_link": "Guía de viaje de El Aaiún"
 }

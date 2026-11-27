@@ -871,5 +871,23 @@
         });
     </script>
 
+
+<script>
+document.querySelectorAll('.laayoune-carousel').forEach((box) => {
+  const track = box.firstElementChild;
+  const dots = box.querySelectorAll('.carousel-dot');
+  const total = dots.length || 4;
+  let idx = 0;
+  function goTo(i) {
+    idx = (i + total) % total;
+    if (track) track.style.transform = `translateX(-${idx * 100}%)`;
+    dots.forEach((d, n) => d.classList.toggle('active', n === idx));
+  }
+  box.querySelector('.prev-btn')?.addEventListener('click', () => goTo(idx - 1));
+  box.querySelector('.next-btn')?.addEventListener('click', () => goTo(idx + 1));
+  dots.forEach((d, n) => d.addEventListener('click', () => goTo(n)));
+});
+</script>
+
 </body>
 </html>

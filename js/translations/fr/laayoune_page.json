@@ -26,49 +26,108 @@
     "title": "Lieux incontournables à Laâyoune",
     "subtitle": "Monuments, plages atlantiques, oasis du désert et marchés locaux.",
     "jemaa": {
-      "tag": "Monument",
-      "title": "Place Mechouar",
-      "desc": "La place monumentale bordée de portes sahraouies et de jardins."
+      "tag": "Monument & Place",
+      "title": "Place du Méchouar",
+      "desc": "Cœur historique et cérémoniel de Laâyoune, bordé d'espaces aménagés, d'arbres et d'une architecture saharienne soignée. C'est un lieu idéal pour flâner en fin de journée, observer la vie locale et ressentir l'identité de la ville.",
+      "images": [
+        "images/places/laayoune-place-mechouar/place-mechouar-01.webp",
+        "images/places/laayoune-place-mechouar/place-mechouar-02.webp",
+        "images/places/laayoune-place-mechouar/place-mechouar-03.webp",
+        "images/places/laayoune-place-mechouar/place-mechouar-04.webp"
+      ]
     },
     "majorelle": {
-      "tag": "Côte & plage",
+      "tag": "Littoral & Atlantique",
       "title": "Plage de Foum El Oued",
-      "desc": "Longue bande de sable atlantique idéale pour marcher et respirer."
+      "desc": "Grande étendue de sable doré baignée par l'océan Atlantique à quelques kilomètres de Laâyoune. Très appréciée pour les promenades face aux vagues, l'air marin vivifiant et les couchers de soleil ouverts sur l'horizon.",
+      "images": [
+        "images/places/laayoune-foum-el-oued/foum-el-oued-01.webp",
+        "images/places/laayoune-foum-el-oued/foum-el-oued-02.webp",
+        "images/places/laayoune-foum-el-oued/foum-el-oued-03.webp",
+        "images/places/laayoune-foum-el-oued/foum-el-oued-04.webp"
+      ]
     },
     "bahia": {
-      "tag": "Port & fruits de mer",
-      "title": "Port d’El Marsa",
-      "desc": "Port de pêche animé, réputé pour les arrivages quotidiens et les sardines grillées."
+      "tag": "Port & Pêche",
+      "title": "Port d'El Marsa",
+      "desc": "Port maritime majeur du Sud marocain, animé par l'activité des bateaux de pêche, les quais de travail et la lumière atlantique. Il reflète le lien fort entre Laâyoune et les ressources de l'océan.",
+      "images": [
+        "images/places/laayoune-port-el-marsa/port-el-marsa-01.webp",
+        "images/places/laayoune-port-el-marsa/port-el-marsa-02.webp",
+        "images/places/laayoune-port-el-marsa/port-el-marsa-03.webp",
+        "images/places/laayoune-port-el-marsa/port-el-marsa-04.webp"
+      ]
     },
     "ben_youssef": {
-      "tag": "Nature & vallée",
-      "title": "Saguia el-Hamra",
-      "desc": "Oasis de la vallée historique, palmeraies et paysages désertiques."
+      "tag": "Vallée & Oasis",
+      "title": "Saguia El Hamra",
+      "desc": "Vallée emblématique qui traverse les paysages arides et donne son nom à la région. Elle offre un contraste saisissant entre les étendues minérales, les palmiers et la mémoire géographique du territoire.",
+      "images": [
+        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-01.webp",
+        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-02.webp",
+        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-03.webp",
+        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-04.webp"
+      ]
     },
     "saadian": {
-      "tag": "Culture & artisanat",
+      "tag": "Artisanat & Terroir",
       "title": "Souk Soune",
-      "desc": "Bazar traditionnel : argent sahraoui, cuir de chameau et tissus melhfa."
+      "desc": "Marché traditionnel vivant où se mêlent étoffes sahraouies, objets artisanaux, épices et produits du quotidien. C'est l'endroit tout indiqué pour découvrir les savoir-faire locaux et échanger avec les commerçants.",
+      "images": [
+        "images/places/laayoune-souk-soune/souk-soune-01.webp",
+        "images/places/laayoune-souk-soune/souk-soune-02.webp",
+        "images/places/laayoune-souk-soune/souk-soune-03.webp",
+        "images/places/laayoune-souk-soune/souk-soune-04.webp"
+      ]
     },
     "elbadi": {
-      "tag": "Histoire",
-      "title": "Quartier espagnol & cathédrale",
-      "desc": "Architecture coloniale en contraste avec les bâtiments modernes du désert."
+      "tag": "Patrimoine & Architecture",
+      "title": "Quartier Espagnol",
+      "desc": "Quartier marqué par des façades, placettes et lignes architecturales héritées du passé colonial, intégrées au tissu urbain de Laâyoune. Une balade tranquille pour observer l'évolution architecturale de la ville.",
+      "images": [
+        "images/places/laayoune-quartier-espagnol/quartier-espagnol-01.webp",
+        "images/places/laayoune-quartier-espagnol/quartier-espagnol-02.webp",
+        "images/places/laayoune-quartier-espagnol/quartier-espagnol-03.webp",
+        "images/places/laayoune-quartier-espagnol/quartier-espagnol-04.webp"
+      ]
     },
     "jardin_menara": {
-      "tag": "Architecture",
+      "tag": "Architecture & Repère",
       "title": "Mosquée Moulay Abdellah",
-      "desc": "Emblème d’architecture islamique aux touches décoratives sahraouies modernes."
+      "desc": "Édifice religieux majeur de Laâyoune, reconnaissable à ses volumes monumentaux et à son intégration dans la ville. Il constitue un repère visuel fort et un lieu de recueillement central.",
+      "images": [
+        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-01.webp",
+        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-02.webp",
+        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-03.webp",
+        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-04.webp"
+      ]
     },
     "dar_el_bacha": {
-      "tag": "Dunes",
-      "title": "Mer de dunes de Lemsid",
-      "desc": "Majestueuses dunes dorées en périphérie, idéales pour le coucher du soleil."
+      "tag": "Dunes & Désert",
+      "title": "Dunes de Lemsid",
+      "desc": "Superbes formations dunaires au nord de Laâyoune où le sable ondule sous le vent saharien. Parfaites pour admirer la lumière changeante du désert, marcher sur les crêtes et profiter du calme.",
+      "images": [
+        "images/places/laayoune-dunes-lemsid/dunes-lemsid-01.webp",
+        "images/places/laayoune-dunes-lemsid/dunes-lemsid-02.webp",
+        "images/places/laayoune-dunes-lemsid/dunes-lemsid-03.webp",
+        "images/places/laayoune-dunes-lemsid/dunes-lemsid-04.webp"
+      ]
     },
     "koutoubia": {
       "tag": "Jardins",
       "title": "Place Oulad Tedrarag",
       "desc": "Parc de palmiers offrant ombre et promenades familiales le soir."
+    },
+    "place_oulad_tedrarag": {
+      "tag": "Vie urbaine",
+      "title": "Place Oulad Tedrarag",
+      "desc": "Espace public animé qui rythme la vie quotidienne des habitants de Laâyoune. Lieu de passage et de rencontre apprécié pour l'ambiance conviviale de la ville.",
+      "images": [
+        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-01.webp",
+        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-02.webp",
+        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-03.webp",
+        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-04.webp"
+      ]
     }
   },
   "itinerary": {

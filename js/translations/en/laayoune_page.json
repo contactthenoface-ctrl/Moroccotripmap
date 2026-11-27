@@ -26,49 +26,108 @@
     "title": "Must-Visit Places in Laâyoune",
     "subtitle": "Monuments, Atlantic beaches, desert oases, and vibrant local markets.",
     "jemaa": {
-      "tag": "Monument",
-      "title": "Place Mechouar",
-      "desc": "The landmark monumental square lined with palatial Sahrawi gates and lush gardens."
+      "tag": "Monument & Square",
+      "title": "Place du Méchouar",
+      "desc": "The historic and ceremonial heart of Laâyoune, framed by landscaped walkways, shaded trees, and Saharan architectural touches. Ideal for an evening stroll, people-watching, and experiencing local city life.",
+      "images": [
+        "images/places/laayoune-place-mechouar/place-mechouar-01.webp",
+        "images/places/laayoune-place-mechouar/place-mechouar-02.webp",
+        "images/places/laayoune-place-mechouar/place-mechouar-03.webp",
+        "images/places/laayoune-place-mechouar/place-mechouar-04.webp"
+      ]
     },
     "majorelle": {
-      "tag": "Coast & Beach",
+      "tag": "Coast & Atlantic",
       "title": "Foum El Oued Beach",
-      "desc": "A long expanse of Atlantic sandy coastline ideal for seaside walks and fresh air."
+      "desc": "A wide stretch of golden sand along the Atlantic coast just outside Laâyoune. Popular for brisk walks beside the surf, refreshing ocean air, and wide-open sunsets over the water.",
+      "images": [
+        "images/places/laayoune-foum-el-oued/foum-el-oued-01.webp",
+        "images/places/laayoune-foum-el-oued/foum-el-oued-02.webp",
+        "images/places/laayoune-foum-el-oued/foum-el-oued-03.webp",
+        "images/places/laayoune-foum-el-oued/foum-el-oued-04.webp"
+      ]
     },
     "bahia": {
-      "tag": "Port & Seafood",
+      "tag": "Harbor & Fishing",
       "title": "El Marsa Port",
-      "desc": "Bustling fishing port known for daily ocean catches and grilled sardines."
+      "desc": "A major maritime hub in southern Morocco lively with fishing vessels, working quays, and crisp Atlantic light. It highlights Laâyoune's strong connection to the ocean and coastal trade.",
+      "images": [
+        "images/places/laayoune-port-el-marsa/port-el-marsa-01.webp",
+        "images/places/laayoune-port-el-marsa/port-el-marsa-02.webp",
+        "images/places/laayoune-port-el-marsa/port-el-marsa-03.webp",
+        "images/places/laayoune-port-el-marsa/port-el-marsa-04.webp"
+      ]
     },
     "ben_youssef": {
-      "tag": "Nature & Valley",
-      "title": "Saguia el-Hamra",
-      "desc": "Historic river valley oasis featuring date palm groves and surrounding desert landscapes."
+      "tag": "Valley & Oasis",
+      "title": "Saguia El Hamra",
+      "desc": "An iconic valley cutting through arid terrain and lending its name to the region. It creates a striking contrast between mineral expanses, palm groves, and the region's natural identity.",
+      "images": [
+        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-01.webp",
+        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-02.webp",
+        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-03.webp",
+        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-04.webp"
+      ]
     },
     "saadian": {
-      "tag": "Culture & Craft",
+      "tag": "Crafts & Local Market",
       "title": "Souk Soune",
-      "desc": "Traditional bazaar with Sahrawi silver crafts, camel leather goods, and colorful melhfa fabrics."
+      "desc": "A lively traditional market filled with Saharan textiles, handicrafts, spices, and everyday goods. A great place to discover local craftsmanship and interact with vendors.",
+      "images": [
+        "images/places/laayoune-souk-soune/souk-soune-01.webp",
+        "images/places/laayoune-souk-soune/souk-soune-02.webp",
+        "images/places/laayoune-souk-soune/souk-soune-03.webp",
+        "images/places/laayoune-souk-soune/souk-soune-04.webp"
+      ]
     },
     "elbadi": {
-      "tag": "History",
-      "title": "Spanish Quarter & Cathedral",
-      "desc": "Historic colonial architecture standing in contrast with modern desert buildings."
+      "tag": "Heritage & Architecture",
+      "title": "Spanish Quarter",
+      "desc": "A district shaped by facades, small squares, and architectural lines rooted in the past, woven into Laâyoune's urban fabric. A calm walk to trace how the city's architecture evolved.",
+      "images": [
+        "images/places/laayoune-quartier-espagnol/quartier-espagnol-01.webp",
+        "images/places/laayoune-quartier-espagnol/quartier-espagnol-02.webp",
+        "images/places/laayoune-quartier-espagnol/quartier-espagnol-03.webp",
+        "images/places/laayoune-quartier-espagnol/quartier-espagnol-04.webp"
+      ]
     },
     "jardin_menara": {
-      "tag": "Architecture",
+      "tag": "Architecture & Landmark",
       "title": "Moulay Abdellah Mosque",
-      "desc": "An emblem of Islamic architecture with modern Sahrawi decorative touches."
+      "desc": "A major mosque in Laâyoune recognizable by its monumental scale and presence within the city. It serves both as a prominent landmark and a central place of prayer.",
+      "images": [
+        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-01.webp",
+        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-02.webp",
+        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-03.webp",
+        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-04.webp"
+      ]
     },
     "dar_el_bacha": {
-      "tag": "Desert Dunes",
-      "title": "Lemsid Dune Sea",
-      "desc": "Majestic golden sand dunes on the outskirts of the city ideal for sunset watching."
+      "tag": "Dunes & Desert",
+      "title": "Lemsid Dunes",
+      "desc": "Striking sand dunes north of Laâyoune shaped by Saharan winds. Ideal for watching shifting desert light, walking along the ridges, and enjoying quiet open spaces.",
+      "images": [
+        "images/places/laayoune-dunes-lemsid/dunes-lemsid-01.webp",
+        "images/places/laayoune-dunes-lemsid/dunes-lemsid-02.webp",
+        "images/places/laayoune-dunes-lemsid/dunes-lemsid-03.webp",
+        "images/places/laayoune-dunes-lemsid/dunes-lemsid-04.webp"
+      ]
     },
     "koutoubia": {
       "tag": "Gardens",
       "title": "Place Oulad Tedrarag",
       "desc": "Lush palm park providing cool shade and evening family promenades."
+    },
+    "place_oulad_tedrarag": {
+      "tag": "Urban Life",
+      "title": "Oulad Tedrarag Square",
+      "desc": "A lively public square that reflects everyday life in Laâyoune. A familiar meeting and passing spot valued for its friendly neighborhood atmosphere.",
+      "images": [
+        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-01.webp",
+        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-02.webp",
+        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-03.webp",
+        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-04.webp"
+      ]
     }
   },
   "itinerary": {

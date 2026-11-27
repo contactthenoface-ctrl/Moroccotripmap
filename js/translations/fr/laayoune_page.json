@@ -1,637 +1,326 @@
 {
   "seo": {
-    "title": "Guide de voyage Laâyoune 2026 | Sahara, dunes et côte atlantique | MoroccoTripMap",
-    "description": "Explorez Laâyoune : Place Mechouar, plage de Foum El Oued, culture sahraouie, oasis de la Saguia el-Hamra et port d’El Marsa. Conseils, itinéraires et hôtels.",
-    "og_title": "Guide de voyage Laâyoune | Capitale du Sahara, dunes et côte | MoroccoTripMap",
-    "og_description": "Sites incontournables, culture sahraouie, fruits de mer atlantiques et adresses où dormir à Laâyoune."
+    "title": "Guide de voyage Laâyoune : place du Mechouar, dunes sahariennes, plage de Foum El Oued et côte atlantique | MoroccoTripMap",
+    "description": "Découvrez Laâyoune, là où le Sahara rencontre l'Atlantique : place du Mechouar, église espagnole, Musée des arts sahariens, centre artisanal, dunes, oued Sakia El Hamra, plage de Foum El Oued, El Marsa et lagune de Khnifiss.",
+    "og_title": "Laâyoune : porte du Sahara, dunes et plages atlantiques | MoroccoTripMap",
+    "og_description": "Là où le Sahara rencontre l'Atlantique : place du Mechouar, dunes du désert, artisanat saharien, plages océanes et excursions vers la lagune."
   },
-  "hero_subtitle": "La capitale du Sahara marocain : grandes avenues, dunes côtières dorées et océan Atlantique.",
+  "name": "Laâyoune",
+  "hero_subtitle": "Porte du Sahara atlantique : place du Mechouar, dunes du désert, oued Sakia El Hamra et plages de Foum El Oued.",
   "info": {
     "best_time_label": "Meilleure période",
-    "best_time_val": "Oct – Avr",
-    "stay_label": "Séjour idéal",
-    "stay_val": "2 – 3 jours",
-    "vibe_label": "Ambiance",
-    "vibe_val": "Désert & côte atlantique",
-    "airport_label": "Aéroport le plus proche",
-    "airport_val": "EUN (Hassan I)"
+    "best_time": "Octobre – Avril · températures douces et brise océane",
+    "stay_label": "Durée idéale",
+    "stay": "1 – 2 jours",
+    "vibe_label": "Atmosphère",
+    "vibe": "Désert · Océan · Culture saharienne",
+    "access_label": "Accès",
+    "access": "Aéroport Hassan Ier (EUN) près du centre · route côtière N1 vers Tarfaya et Dakhla",
+    "vibe_val": "Désert · Océan · Culture saharienne",
+    "best_time_val": "Octobre – Avril · températures douces et brise océane",
+    "stay_val": "1 – 2 jours",
+    "access_val": "Aéroport Hassan Ier (EUN) près du centre · route côtière N1 vers Tarfaya et Dakhla",
+    "airport_label": "Accès",
+    "airport_val": "Aéroport Hassan Ier (EUN) près du centre · route côtière N1 vers Tarfaya et Dakhla"
   },
-  "overview": {
-    "title": "Bienvenue à Laâyoune — là où le désert rencontre l’Atlantique",
-    "p1": "Laâyoune est la plus grande ville et le cœur économique du Sahara marocain. Située sur le lit asséché de la Saguia el-Hamra et à seulement 25 km de l’Atlantique, elle relie développement urbain moderne et traditions nomades séculaires.",
-    "p2": "Des cérémonies de thé sahraoui en trois services aux fruits de mer frais du port d’El Marsa et aux couchers de soleil à Foum El Oued, Laâyoune offre une expérience authentique du Sud désertique."
+  "intro": {
+    "title": "Bienvenue à Laâyoune — Désert, océan et culture saharienne",
+    "p1": "Capitale de la région Laâyoune-Sakia El Hamra, Laâyoune se situe à la rencontre du Sahara et de l'Atlantique. La ville associe un centre moderne et aéré, une église de l'époque espagnole, l'artisanat saharien et un accès facile aux dunes et aux plages de l'océan.",
+    "p2": "La plupart des visiteurs y passent un ou deux jours : commencez par la place du Mechouar et le centre artisanal, visitez le musée des arts et l'église espagnole, puis filez vers les dunes pour le coucher du soleil ou vers Foum El Oued pour l'océan. La lagune de Khnifiss et Tarfaya font une belle excursion vers le nord."
   },
   "places": {
-    "badge": "À voir",
+    "badge": "À Laâyoune",
     "title": "Lieux incontournables à Laâyoune",
-    "subtitle": "Monuments, plages atlantiques, oasis du désert et marchés locaux.",
-    "jemaa": {
-      "tag": "Monument & Place",
-      "title": "Place du Méchouar",
-      "desc": "Cœur historique et cérémoniel de Laâyoune, bordé d'espaces aménagés, d'arbres et d'une architecture saharienne soignée. C'est un lieu idéal pour flâner en fin de journée, observer la vie locale et ressentir l'identité de la ville.",
-      "images": [
-        "images/places/laayoune-place-mechouar/place-mechouar-01.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-02.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-03.webp",
-        "images/places/laayoune-place-mechouar/place-mechouar-04.webp"
-      ]
+    "subtitle": "Tout sur cette page — ouvrez une carte pour accéder directement à sa section.",
+    "explore": "Voir les détails ↓",
+    "mechouar": {
+      "tag": "Place",
+      "title": "Place du Mechouar",
+      "desc": "Grande place centrale bordée d'arcades, lieu de rendez-vous favori des habitants."
     },
-    "majorelle": {
-      "tag": "Littoral & Atlantique",
-      "title": "Plage de Foum El Oued",
-      "desc": "Grande étendue de sable doré baignée par l'océan Atlantique à quelques kilomètres de Laâyoune. Très appréciée pour les promenades face aux vagues, l'air marin vivifiant et les couchers de soleil ouverts sur l'horizon.",
-      "images": [
-        "images/places/laayoune-foum-el-oued/foum-el-oued-01.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-02.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-03.webp",
-        "images/places/laayoune-foum-el-oued/foum-el-oued-04.webp"
-      ]
+    "spanish_church": {
+      "tag": "Patrimoine",
+      "title": "Église espagnole (cathédrale Saint-François d'Assise)",
+      "desc": "Église emblématique de l'époque espagnole, témoin des origines de la ville dans les années 1930."
     },
-    "bahia": {
-      "tag": "Port & Pêche",
-      "title": "Port d'El Marsa",
-      "desc": "Port maritime majeur du Sud marocain, animé par l'activité des bateaux de pêche, les quais de travail et la lumière atlantique. Il reflète le lien fort entre Laâyoune et les ressources de l'océan.",
-      "images": [
-        "images/places/laayoune-port-el-marsa/port-el-marsa-01.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-02.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-03.webp",
-        "images/places/laayoune-port-el-marsa/port-el-marsa-04.webp"
-      ]
+    "arts_museum": {
+      "tag": "Musée",
+      "title": "Musée des arts sahariens",
+      "desc": "Une introduction aux arts, à l'artisanat et aux traditions sahariennes, place Oum Saad."
     },
-    "ben_youssef": {
-      "tag": "Vallée & Oasis",
-      "title": "Saguia El Hamra",
-      "desc": "Vallée emblématique qui traverse les paysages arides et donne son nom à la région. Elle offre un contraste saisissant entre les étendues minérales, les palmiers et la mémoire géographique du territoire.",
-      "images": [
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-01.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-02.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-03.webp",
-        "images/places/laayoune-saguia-el-hamra/saguia-el-hamra-04.webp"
-      ]
+    "craft_center": {
+      "tag": "Artisanat",
+      "title": "Centre artisanal et marchés",
+      "desc": "Tapis, bijoux, tissus et souvenirs près de la place du Mechouar."
     },
-    "saadian": {
-      "tag": "Artisanat & Terroir",
-      "title": "Souk Soune",
-      "desc": "Marché traditionnel vivant où se mêlent étoffes sahraouies, objets artisanaux, épices et produits du quotidien. C'est l'endroit tout indiqué pour découvrir les savoir-faire locaux et échanger avec les commerçants.",
-      "images": [
-        "images/places/laayoune-souk-soune/souk-soune-01.webp",
-        "images/places/laayoune-souk-soune/souk-soune-02.webp",
-        "images/places/laayoune-souk-soune/souk-soune-03.webp",
-        "images/places/laayoune-souk-soune/souk-soune-04.webp"
-      ]
+    "mosque": {
+      "tag": "Monument",
+      "title": "Mosquée et minaret de Laâyoune",
+      "desc": "Un minaret élégant, repère apprécié à l'heure dorée."
     },
-    "elbadi": {
-      "tag": "Patrimoine & Architecture",
-      "title": "Quartier Espagnol",
-      "desc": "Quartier marqué par des façades, placettes et lignes architecturales héritées du passé colonial, intégrées au tissu urbain de Laâyoune. Une balade tranquille pour observer l'évolution architecturale de la ville.",
-      "images": [
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-01.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-02.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-03.webp",
-        "images/places/laayoune-quartier-espagnol/quartier-espagnol-04.webp"
-      ]
+    "wadi": {
+      "tag": "Nature",
+      "title": "Oued Sakia El Hamra",
+      "desc": "L'oued qui traverse la ville et ouvre une respiration paisible entre les quartiers."
     },
-    "jardin_menara": {
-      "tag": "Architecture & Repère",
-      "title": "Mosquée Moulay Abdellah",
-      "desc": "Édifice religieux majeur de Laâyoune, reconnaissable à ses volumes monumentaux et à son intégration dans la ville. Il constitue un repère visuel fort et un lieu de recueillement central.",
-      "images": [
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-01.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-02.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-03.webp",
-        "images/places/laayoune-mosquee-moulay-abdellah/mosquee-moulay-abdellah-04.webp"
-      ]
+    "dunes": {
+      "tag": "Désert",
+      "title": "Dunes de Laâyoune (océan de sable)",
+      "desc": "Dunes de sable aux portes de la ville pour des balades au coucher du soleil, des tours à dos de dromadaire et des sorties en 4x4."
     },
-    "dar_el_bacha": {
-      "tag": "Dunes & Désert",
-      "title": "Dunes de Lemsid",
-      "desc": "Superbes formations dunaires au nord de Laâyoune où le sable ondule sous le vent saharien. Parfaites pour admirer la lumière changeante du désert, marcher sur les crêtes et profiter du calme.",
-      "images": [
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-01.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-02.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-03.webp",
-        "images/places/laayoune-dunes-lemsid/dunes-lemsid-04.webp"
-      ]
+    "foum_el_oued": {
+      "tag": "Côte",
+      "title": "Foum El Oued : plage et corniche",
+      "desc": "Plage atlantique et corniche rénovée à environ 25 km de la ville."
     },
-    "koutoubia": {
-      "tag": "Jardins",
-      "title": "Place Oulad Tedrarag",
-      "desc": "Parc de palmiers offrant ombre et promenades familiales le soir."
+    "el_marsa": {
+      "tag": "Port",
+      "title": "El Marsa et son port",
+      "desc": "Le quartier portuaire de la ville, avec ses bateaux de pêche, ses fruits de mer et son cadre balnéaire."
     },
-    "place_oulad_tedrarag": {
-      "tag": "Vie urbaine",
-      "title": "Place Oulad Tedrarag",
-      "desc": "Espace public animé qui rythme la vie quotidienne des habitants de Laâyoune. Lieu de passage et de rencontre apprécié pour l'ambiance conviviale de la ville.",
-      "images": [
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-01.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-02.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-03.webp",
-        "images/places/laayoune-place-oulad-tedrarag/place-oulad-tedrarag-04.webp"
-      ]
+    "khnifiss": {
+      "tag": "Environs",
+      "title": "Lagune de Khnifiss (Naïla)",
+      "desc": "Lagune atlantique protégée au nord de la ville, réputée pour son avifaune et ses dunes."
     }
   },
-  "itinerary": {
-    "badge": "Organisation",
-    "title": "Itinéraire suggéré sur 3 jours",
-    "subtitle": "Un plan équilibré pour découvrir la ville, le port et le désert alentour."
-  },
-  "detailed_itinerary": {
-    "day1_tab": "Jour 1 — Cœur de ville & culture sahraouie",
-    "day2_tab": "Jour 2 — Côte, port & fruits de mer",
-    "day3_tab": "Jour 3 — Oasis & sortie désert",
-    "day1_m": "Matin — Place Mechouar & Grande Mosquée",
-    "day1_md": "Promenez-vous autour de la Place Mechouar, motifs sahraouis et larges boulevards plantés de palmiers.",
-    "day1_a": "Après-midi — Souk Soune & artisanat",
-    "day1_ad": "Bijoux en argent, cuir de chameau et tissus melhfa colorés dans les marchés locaux.",
-    "day1_e": "Soir — Cérémonie du thé sahraoui",
-    "day1_ed": "Découvrez l’hospitalité du thé (Atay) servi en trois tours dans un café de la ville.",
-    "day2_m": "Matin — Port de pêche d’El Marsa",
-    "day2_md": "Direction l’ouest : bateaux de pêche et arrivage quotidien de l’Atlantique.",
-    "day2_a": "Après-midi — Détente à Foum El Oued",
-    "day2_ad": "Déjeuner de poisson grillé, puis plage de sable de Foum El Oued.",
-    "day2_e": "Soir — Coucher de soleil sur les dunes côtières",
-    "day2_ed": "Regardez le soleil descendre là où dunes dorées et océan se rejoignent.",
-    "day3_m": "Matin — Excursion vallée de la Saguia el-Hamra",
-    "day3_md": "Palmeraies et paysages de oued à nord-est de Laâyoune.",
-    "day3_a": "Après-midi — Chameau & dunes",
-    "day3_ad": "Courte balade à chameau ou marche sur les dunes pour des vues sahariennes classiques.",
-    "day3_e": "Soir — Dîner sahraoui d’adieu",
-    "day3_ed": "Terminez par un repas traditionnel et du thé, entre désert et océan."
+  "place_sections": {
+    "mechouar": {
+      "title": "Place du Mechouar",
+      "p1": "Aménagée à l'occasion de la visite du roi Hassan II en 1985, la place du Mechouar est le cœur civique de Laâyoune. Ses arcades ouvrent de larges perspectives et en font le point de départ naturel de toute balade dans le centre-ville.",
+      "p2": "Les habitants s'y retrouvent en soirée : c'est l'endroit idéal pour observer la vie quotidienne, boire un thé à la menthe dans un café voisin et s'orienter avant de partir vers les autres sites.",
+      "tip": "Venez au coucher du soleil ou en début de soirée, quand la place est la plus animée et que la lumière adoucit les arcades.",
+      "cap1": "Place du Mechouar",
+      "cap2": "Place du Mechouar",
+      "cap3": "Place du Mechouar"
+    },
+    "spanish_church": {
+      "title": "Église espagnole (cathédrale Saint-François d'Assise)",
+      "p1": "Avenue Hassan II, l'ancienne cathédrale espagnole rappelle l'époque où Laâyoune a été fondée sous administration espagnole. Sa silhouette singulière se détache des bâtiments modernes qui l'entourent.",
+      "p2": "On l'admire surtout de l'extérieur, et on la combine facilement avec la place du Mechouar, toute proche.",
+      "tip": "Renseignez-vous sur place avant de prévoir une visite intérieure, car l'accès des visiteurs peut varier.",
+      "cap1": "Église espagnole (cathédrale Saint-François d'Assise)",
+      "cap2": "Église espagnole (cathédrale Saint-François d'Assise)",
+      "cap3": "Église espagnole (cathédrale Saint-François d'Assise)"
+    },
+    "arts_museum": {
+      "title": "Musée des arts sahariens",
+      "p1": "Installé place Oum Saad, le musée offre une introduction aux arts, à l'artisanat et aux traditions du Sahara, et donne des repères utiles pour tout ce que vous verrez en ville et dans le désert alentour.",
+      "p2": "C'est une étape compacte, idéale à associer au centre artisanal avant de chercher des souvenirs.",
+      "tip": "Les horaires peuvent changer : demandez à votre hôtel avant de vous y rendre.",
+      "cap1": "Musée des arts sahariens",
+      "cap2": "Musée des arts sahariens",
+      "cap3": "Musée des arts sahariens"
+    },
+    "craft_center": {
+      "title": "Centre artisanal et marchés",
+      "p1": "Près de la place du Mechouar, le centre artisanal réunit artisans locaux et échoppes proposant tapis, bijoux, maroquinerie et tissus inspirés des traditions sahariennes.",
+      "p2": "Les marchés environnants donnent un aperçu du quotidien des habitants, des produits frais aux articles ménagers.",
+      "tip": "Comparez plusieurs échoppes avant d'acheter et négociez avec courtoisie.",
+      "cap1": "Centre artisanal et marchés",
+      "cap2": "Centre artisanal et marchés",
+      "cap3": "Centre artisanal et marchés"
+    },
+    "mosque": {
+      "title": "Mosquée et minaret de Laâyoune",
+      "p1": "L'un des repères les plus photographiés de Laâyoune : la mosquée et son minaret se détachent sur le ciel du désert, surtout au coucher du soleil.",
+      "p2": "L'entrée est réservée aux musulmans, mais l'extérieur et les rues alentour méritent un court arrêt.",
+      "tip": "Adoptez une tenue sobre aux abords des lieux de culte et évitez de gêner les accès aux heures de prière.",
+      "cap1": "Mosquée et minaret de Laâyoune",
+      "cap2": "Mosquée et minaret de Laâyoune",
+      "cap3": "Mosquée et minaret de Laâyoune"
+    },
+    "wadi": {
+      "title": "Oued Sakia El Hamra",
+      "p1": "L'oued Sakia El Hamra traverse Laâyoune et donne son nom à la région. Ses rives captent la lumière en fin de journée, en contraste paisible avec le centre animé.",
+      "p2": "Son débit varie selon les saisons : le paysage change d'une visite à l'autre.",
+      "tip": "La fin d'après-midi est le meilleur moment pour une promenade et des photos.",
+      "cap1": "Oued Sakia El Hamra",
+      "cap2": "Oued Sakia El Hamra",
+      "cap3": "Oued Sakia El Hamra"
+    },
+    "dunes": {
+      "title": "Dunes de Laâyoune (océan de sable)",
+      "p1": "À quelques kilomètres du centre, sur la route de Dakhla, les dunes de Laâyoune s'étendent jusqu'à l'horizon : un premier avant-goût du Sahara sans long trajet.",
+      "p2": "Balades au coucher du soleil, tours à dos de dromadaire et sorties en 4x4 sont les façons classiques d'en profiter.",
+      "tip": "Emportez de l'eau, des lunettes de soleil et un foulard, et évitez de vous aventurer seul dans les dunes la nuit.",
+      "cap1": "Dunes de Laâyoune (océan de sable)",
+      "cap2": "Dunes de Laâyoune (océan de sable)",
+      "cap3": "Dunes de Laâyoune (océan de sable)"
+    },
+    "foum_el_oued": {
+      "title": "Foum El Oued : plage et corniche",
+      "p1": "À environ 25 km à l'ouest de Laâyoune, Foum El Oued est le débouché atlantique de la ville : une large plage où l'énergie de l'océan contraste avec le silence du désert. La corniche rénovée et bien éclairée est devenue une sortie du soir prisée des familles.",
+      "p2": "Des bus circulent en été et les grands taxis restent le moyen habituel d'y aller le reste de l'année ; cafés, campings et villas à louer sont disponibles sur place.",
+      "tip": "Les courants atlantiques peuvent être forts : renseignez-vous sur place avant de vous baigner.",
+      "cap1": "Foum El Oued : plage et corniche",
+      "cap2": "Foum El Oued : plage et corniche",
+      "cap3": "Foum El Oued : plage et corniche"
+    },
+    "el_marsa": {
+      "title": "El Marsa et son port",
+      "p1": "El Marsa est le quartier portuaire de Laâyoune, relié à la ville par une route qui file vers l'océan à l'ouest. Bateaux de pêche, activité portuaire et poisson frais lui donnent une tout autre ambiance que le centre-ville.",
+      "p2": "Hôtels en bord de plage et adresses de poisson en font une base alternative pratique si vous préférez dormir près de la mer.",
+      "tip": "Demandez l'autorisation avant de photographier les pêcheurs ou les installations portuaires, et restez à l'écart des quais en activité.",
+      "cap1": "El Marsa et son port",
+      "cap2": "El Marsa et son port",
+      "cap3": "El Marsa et son port"
+    },
+    "khnifiss": {
+      "title": "Lagune de Khnifiss (Naïla)",
+      "p1": "Au nord de Laâyoune, en direction de Tarfaya, la lagune de Khnifiss (Naïla) est une zone humide protégée où le désert rencontre l'Atlantique, réputée pour son avifaune, dont des flamants en saison.",
+      "p2": "On la visite plutôt en excursion d'une journée en 4x4 ou avec un guide local, en combinant avec une halte à Tarfaya.",
+      "tip": "Faites appel à un chauffeur ou guide local expérimenté et emportez beaucoup d'eau et de carburant.",
+      "cap1": "Lagune de Khnifiss (Naïla)",
+      "cap2": "Lagune de Khnifiss (Naïla)",
+      "cap3": "Lagune de Khnifiss (Naïla)"
+    }
   },
   "stays": {
-    "badge": "Sélection & conseils",
-    "title": "Où dormir à Laâyoune ? Nos coups de cœur",
-    "subtitle": "Hôtels modernes en centre-ville ou résidences en bord de mer à Foum El Oued.",
-    "card1": {
-      "badge": "★ Centre-ville",
-      "name": "Hotel Nagjir Plaza",
-      "desc": "Hébergement moderne central, proche des places et restaurants.",
-      "location": "Centre de Laâyoune"
-    },
+    "badge": "Hébergements",
+    "title": "Où dormir à Laâyoune",
+    "subtitle": "Hôtels à Laâyoune près du centre, de l'aéroport et du front de mer d'El Marsa.",
     "book": "Réserver →",
+    "card1": {
+      "badge": "Centre",
+      "name": "Hotel Parador",
+      "desc": "Hôtel 4 étoiles avec jardin, terrasse et restaurant, bien situé près du centre.",
+      "location": "Centre"
+    },
     "card2": {
-      "badge": "★ Tout confort",
-      "name": "Hotel Al Massira",
-      "desc": "Hôtel établi avec piscine, jardins et restaurant, quartier calme.",
-      "location": "Av. Makkah"
+      "badge": "Front de mer",
+      "name": "Hotel El Marsa La Playa",
+      "desc": "Hôtel en bord de mer à El Marsa avec jardin, terrasse et restaurant, idéal pour la vue sur l'océan.",
+      "location": "El Marsa"
     },
     "card3": {
-      "badge": "★ Bord de mer",
-      "name": "Foum El Oued Beach Residencial",
-      "desc": "Appartements et chambres face à l’Atlantique.",
-      "location": "Plage de Foum El Oued"
+      "badge": "Confort",
+      "name": "Hotel Al Massira",
+      "desc": "Hôtel 4 étoiles avenue de la Mecque, pratique pour se déplacer en ville.",
+      "location": "Laâyoune"
     },
     "card4": {
-      "badge": "★ Style moderne",
-      "name": "Sahara Line Hotel",
-      "desc": "Chambres confortables, accueil soigné et navette aéroport facile.",
-      "location": "Av. Smara"
+      "badge": "Petit budget",
+      "name": "Hotel Beauport",
+      "desc": "Option simple et abordable pour une courte étape à Laâyoune.",
+      "location": "Laâyoune"
+    },
+    "c1": {
+      "tag": "Centre",
+      "title": "Hotel Parador",
+      "desc": "Hôtel 4 étoiles avec jardin, terrasse et restaurant, bien situé près du centre.",
+      "loc": "Centre"
+    },
+    "c2": {
+      "tag": "Front de mer",
+      "title": "Hotel El Marsa La Playa",
+      "desc": "Hôtel en bord de mer à El Marsa avec jardin, terrasse et restaurant, idéal pour la vue sur l'océan.",
+      "loc": "El Marsa"
+    },
+    "c3": {
+      "tag": "Confort",
+      "title": "Hotel Al Massira",
+      "desc": "Hôtel 4 étoiles avenue de la Mecque, pratique pour se déplacer en ville.",
+      "loc": "Laâyoune"
+    },
+    "c4": {
+      "tag": "Petit budget",
+      "title": "Hotel Beauport",
+      "desc": "Option simple et abordable pour une courte étape à Laâyoune.",
+      "loc": "Laâyoune"
     }
   },
   "booking_banner": {
-    "badge": "Hébergements à Laâyoune",
-    "title": "Voir tous les logements à Laâyoune",
-    "desc": "Comparez les tarifs en temps réel, lisez les avis et réservez dans la capitale du Sahara.",
+    "badge": "Hébergements et hôtels locaux",
+    "title": "Explorer tous les hébergements à Laâyoune",
+    "desc": "Comparez les tarifs en direct, consultez les avis vérifiés et profitez de l'annulation gratuite sur la plupart des hôtels.",
     "btn": "Voir tous les hébergements",
-    "guarantee": "✓ Meilleur prix garanti & réservation sécurisée"
+    "guarantee": "✓ Meilleur prix garanti et réservation sécurisée"
   },
   "eat": {
     "badge": "Gastronomie",
-    "title": "Meilleurs restaurants & cafés",
-    "subtitle": "Fruits de mer atlantiques, viandes grillées et spots de thé locaux.",
-    "nomad": {
+    "title": "Où manger à Laâyoune",
+    "subtitle": "Poissons, saveurs sahariennes et cafés de quartier.",
+    "seafood": {
       "tag": "Fruits de mer",
-      "loc": "Port d’El Marsa",
-      "title": "Grills du port d’El Marsa",
-      "desc": "Poisson et sardines de l’Atlantique grillés au bord du quai."
+      "loc": "El Marsa et Foum El Oued",
+      "title": "Poissons et fruits de mer",
+      "desc": "Poissons grillés et fruits de mer de l'Atlantique près du port et de la plage."
     },
-    "jardin": {
-      "tag": "Cuisine locale",
+    "sahrawi": {
+      "tag": "Local",
       "loc": "Centre-ville",
-      "title": "Maison du tagine traditionnel",
-      "desc": "Tagines de viande de chameau mijotés, servis avec pain local."
+      "title": "Cuisine saharienne et thé",
+      "desc": "Tajines, grillades et thé saharien traditionnel servis à la manière locale."
     },
-    "fassia": {
-      "tag": "Café & thé",
-      "loc": "Place Mechouar",
-      "title": "Cafés de l’avenue Mechouar",
-      "desc": "Thé à la menthe ou Atay sahraoui face à la place monumentale."
-    },
-    "moha": {
-      "tag": "International",
-      "loc": "Av. Makkah",
-      "title": "Café Restaurant Le Parisien",
-      "desc": "Café européen, pizzas au feu de bois et plats marocains."
-    },
-    "bacha": {
-      "tag": "Vue océan",
-      "loc": "Foum El Oued",
-      "title": "Terrasse de la promenade",
-      "desc": "Tables face à la mer : jus, calamars frits et thé au coucher du soleil."
-    },
-    "elfenn": {
-      "tag": "Street food",
-      "loc": "Souk Soune",
-      "title": "Grillades & sandwichs",
-      "desc": "Brochettes, kefta et pains frais sur les grills du marché."
+    "cafe": {
+      "tag": "Café",
+      "loc": "Mechouar et avenues",
+      "title": "Cafés et pâtisseries",
+      "desc": "Café, thé à la menthe et pauses détente entre deux visites."
     }
   },
   "tips": {
     "title": "Conseils pratiques pour Laâyoune",
     "transport": {
       "title": "Se déplacer",
-      "desc": "Les petits taxis jaunes sont nombreux et économiques en ville. Les grands taxis relient régulièrement El Marsa et Foum El Oued."
+      "desc": "Le quartier de la place du Mechouar se parcourt à pied ; les petits taxis assurent les trajets en ville, les grands taxis desservent Foum El Oued, et une voiture ou un 4x4 avec chauffeur aide pour les dunes et la lagune de Khnifiss."
     },
-    "bargain": {
-      "title": "Climat",
-      "desc": "Climat désertique ensoleillé toute l’année, avec brises atlantiques. Les soirées d’hiver peuvent être fraîches."
+    "crafts_tip": {
+      "title": "Acheter de l'artisanat",
+      "desc": "Comparez tapis, bijoux et tissus au centre artisanal et dans les échoppes voisines, et convenez du prix avant d'acheter."
     },
-    "water": {
-      "title": "Étiquette sahraouie",
-      "desc": "L’hospitalité est centrale. Accepter le thé offert est de coutume. Respectez les usages et demandez avant de photographier."
+    "timing": {
+      "title": "Quand venir",
+      "desc": "Le temps est doux de l'automne au printemps ; privilégiez la fin d'après-midi pour les dunes et l'oued, et la soirée pour le Mechouar et la corniche de Foum El Oued."
     }
   },
   "daytrips": {
-    "badge": "Au-delà de la ville",
-    "title": "Meilleures excursions depuis Laâyoune",
-    "subtitle": "Réserves côtières, villes sahraouies historiques et oasis du désert.",
-    "atlas": {
-      "title": "Tarfaya & Saint-Exupéry",
-      "desc": "Ville historique de l’Aéropostale et fort côtier, environ 1 h au nord."
+    "badge": "Environs et route du sud",
+    "title": "Autour de Laâyoune",
+    "subtitle": "Villes atlantiques et étapes du désert le long de la N1.",
+    "tarfaya": {
+      "title": "Tarfaya (≈ 1h30)",
+      "desc": "Ville de pêche atlantique au nord, porte d'entrée de la lagune de Khnifiss."
     },
-    "agafay": {
-      "title": "Parc national de Khenifiss",
-      "desc": "Réserve de biosphère UNESCO : lagune, oiseaux et dunes."
+    "boujdour": {
+      "title": "Boujdour (≈ 2h30)",
+      "desc": "Ville côtière au sud, avec son phare et son port de pêche."
     },
-    "ouzoud": {
-      "title": "Oasis de Smara",
-      "desc": "Ville spirituelle historique à l’intérieur, le long de la Saguia el-Hamra."
+    "smara": {
+      "title": "Smara (≈ 3h)",
+      "desc": "Cité historique du désert à l'intérieur des terres, fondée par le cheikh Ma El Aïnine."
     },
-    "essaouira": {
-      "title": "Route côtière de Boujdour",
-      "desc": "Route panoramique vers le sud, falaises et océan."
+    "dakhla": {
+      "title": "Dakhla (≈ 6h)",
+      "desc": "Presqu'île lagunaire du grand sud, célèbre pour le kitesurf et ses paysages entre désert et océan."
     }
   },
   "faq": {
     "badge": "Bon à savoir",
-    "title": "FAQ voyage à Laâyoune",
+    "title": "Questions fréquentes sur Laâyoune",
     "q1": {
-      "question": "Laâyoune est-elle facile d’accès ?",
-      "answer": "Oui. L’aéroport Hassan I (EUN) propose des vols domestiques réguliers depuis Casablanca et Agadir, plus des liaisons internationales. La N1 relie aussi la ville par la route."
+      "question": "Combien de temps prévoir à Laâyoune ?",
+      "answer": "Une journée complète permet de voir la place du Mechouar, l'église espagnole, le centre artisanal et le musée ; ajoutez une seconde journée pour les dunes, Foum El Oued ou la lagune de Khnifiss."
     },
     "q2": {
-      "question": "À quelle distance est la plage ?",
-      "answer": "Foum El Oued et le port d’El Marsa sont à environ 20–25 km à l’ouest du centre, soit environ 20 minutes en taxi ou en voiture."
+      "question": "Pour quoi Laâyoune est-elle la plus connue ?",
+      "answer": "Laâyoune est la grande ville de la région atlantique du sud du Maroc, connue pour sa place du Mechouar, ses dunes toutes proches et la plage océane de Foum El Oued."
     },
     "q3": {
-      "question": "Combien de jours prévoir à Laâyoune ?",
-      "answer": "2 à 3 jours suffisent pour les places de la ville, les fruits de mer au port, la plage de Foum El Oued et une sortie dunes."
+      "question": "Peut-on visiter Laâyoune comme étape sur la route du sud ?",
+      "answer": "Oui — Laâyoune est une étape naturelle sur la longue route N1 entre Tan-Tan ou Agadir et Dakhla, et dispose de son propre aéroport."
     },
     "q4": {
-      "question": "Quel est le meilleur mois pour venir ?",
-      "answer": "D’octobre à avril : climat agréablement chaud et ensoleillé, sans la chaleur intense de l’été."
+      "question": "Faut-il une voiture à Laâyoune ?",
+      "answer": "Les sites du centre se font à pied ou en petit taxi, mais une voiture, un 4x4 ou un chauffeur est bien plus pratique pour les dunes, Foum El Oued et la lagune de Khnifiss."
     }
   },
-  "name": "Laâyoune",
-  "laayoune_page": {
-    "eat": {
-      "nomad": {
-        "tag": "Poissons & Mer",
-        "loc": "Route d'El Marsa",
-        "title": "Restaurant Oumaima",
-        "desc": "Adresse connue sur la route d'El Marsa pour ses poissons frais de l'Atlantique, grillades et plats de fruits de mer."
-      },
-      "jardin": {
-        "tag": "Poissons & Grill",
-        "loc": "Avenue Mekka",
-        "title": "Restaurant Le Poissonnier",
-        "desc": "Table appréciée au centre de Laâyoune pour les poissons grillés, fritures de la mer et assiettes copieuses."
-      },
-      "fassia": {
-        "tag": "Cuisine Variée",
-        "loc": "Avenue Mekka",
-        "title": "La Perla",
-        "desc": "Restaurant central sur l'avenue Mekka proposant grillades, tajines et cuisine du quotidien en ville."
-      },
-      "moha": {
-        "tag": "Pizzas & Pâtes",
-        "loc": "Av. Chahid Bouchraya",
-        "title": "La Madone",
-        "desc": "Adresse établie en ville pour les pizzas, pâtes et repas conviviaux dans un cadre simple et détendu."
-      },
-      "bacha": {
-        "tag": "Café & Pause",
-        "loc": "Boulevard Es-Semara",
-        "title": "Mi Casita Café",
-        "desc": "Café fréquenté sur le boulevard Es-Semara pour boire un café, prendre un petit-déjeuner ou une collation."
-      },
-      "elfenn": {
-        "tag": "Café & Détente",
-        "loc": "Mazeej Mall",
-        "title": "Baristas",
-        "desc": "Pause café à Mazeej Mall pour boissons chaudes, pâtisseries et moments de détente en journée."
-      },
-      "badge": "Gastronomie",
-      "title": "Où manger à Laâyoune",
-      "subtitle": "Poissons de l'Atlantique, grillades, pizzas et cafés de quartier à Laâyoune."
-    },
-    "places": {
-      "place_mechouar": {
-        "tag": "Monument & Place",
-        "title": "Place du Méchouar",
-        "desc": "Vaste place centrale bordée d'arbres, d'allées aménagées et d'une architecture saharienne soignée."
-      },
-      "moulay_abdellah": {
-        "tag": "Architecture",
-        "title": "Mosquée Moulay Abdellah",
-        "desc": "Grande mosquée emblématique aux volumes monumentaux et aux détails décoratifs marquants."
-      },
-      "spanish_quarter": {
-        "tag": "Patrimoine",
-        "title": "Quartier Espagnol",
-        "desc": "Quartier historique mêlant arcades, placettes et mémoire architecturale intégrée à la ville."
-      },
-      "souk_soune": {
-        "tag": "Marché",
-        "title": "Souk Soune",
-        "desc": "Marché animé dédié aux étoffes sahraouies (melhfas), objets artisanaux, épices et produits du quotidien."
-      },
-      "saguia_el_hamra": {
-        "tag": "Paysage",
-        "title": "Vallée de la Saguia El Hamra",
-        "desc": "Vallée emblématique mêlant palmeraies, lit asséché et horizons désertiques aux portes de la ville."
-      },
-      "oulad_tedrarag": {
-        "tag": "Vie urbaine",
-        "title": "Place Oulad Tedrarag",
-        "desc": "Place de quartier animée qui reflète la vie sociale et le quotidien de Laâyoune."
-      },
-      "el_marsa_port": {
-        "tag": "Port",
-        "title": "Port d'El Marsa",
-        "desc": "Port atlantique actif dédié à la pêche et au commerce maritime sur le littoral de Laâyoune."
-      },
-      "foum_el_oued": {
-        "tag": "Littoral",
-        "title": "Plage de Foum El Oued",
-        "desc": "Grande plage de sable atlantique proche de Laâyoune, réputée pour son air marin et ses vastes horizons."
-      },
-      "lemsid_dunes": {
-        "tag": "Dunes",
-        "title": "Dunes de Lemsid",
-        "desc": "Cordons de sable doré au nord de Laâyoune offrant de grands espaces calmes et sahariens."
-      },
-      "badge": "À Laâyoune",
-      "title": "Lieux incontournables à Laâyoune",
-      "subtitle": "Tout sur cette page — cliquez sur une carte pour accéder à sa section détaillée et à son carrousel.",
-      "explore": "Voir les détails ↓"
-    },
-    "place_sections": {
-      "place_mechouar": {
-        "title": "Place du Méchouar",
-        "p1": "La Place du Méchouar est l'un des grands espaces ouverts qui structurent le centre de Laâyoune, offrant de larges perspectives, des cheminements piétons et une ambiance urbaine accueillante.",
-        "p2": "S'y promener en fin de journée permet d'observer le rythme quotidien de la ville, d'échanger avec les habitants et de rejoindre facilement les quartiers et commerces alentour.",
-        "tip": "À privilégier au coucher du soleil lorsque la chaleur retombe et que la place s'anime.",
-        "cap1": "Place du Méchouar — larges avenues centrales et espaces verts",
-        "cap2": "Place du Méchouar — lignes architecturales et grands volumes",
-        "cap3": "Place du Méchouar — lumière de fin d'après-midi sur l'esplanade",
-        "cap4": "Place du Méchouar — vie quotidienne au cœur de Laâyoune"
-      },
-      "moulay_abdellah": {
-        "title": "Mosquée Moulay Abdellah",
-        "p1": "Dressée au cœur de Laâyoune, la mosquée Moulay Abdellah se distingue par ses proportions généreuses, ses motifs géométriques et sa forte présence dans le paysage urbain.",
-        "p2": "Même depuis l'extérieur, ses cours, ses façades et son esplanade en font un repère architectural majeur pour saisir l'identité urbaine et spirituelle de la ville.",
-        "tip": "Adoptez une tenue respectueuse aux abords du lieu de culte et évitez d'encombrer les accès aux heures de prière.",
-        "cap1": "Mosquée Moulay Abdellah — façade monumentale et parvis",
-        "cap2": "Mosquée Moulay Abdellah — détails géométriques et ornements",
-        "cap3": "Mosquée Moulay Abdellah — perspective depuis l'esplanade",
-        "cap4": "Mosquée Moulay Abdellah — lumière dorée sur les murs"
-      },
-      "spanish_quarter": {
-        "title": "Quartier Espagnol",
-        "p1": "Le Quartier Espagnol conserve des immeubles à taille humaine, des passages à arcades et de petites places qui témoignent d'une étape historique de l'urbanisme de Laâyoune.",
-        "p2": "Flâner dans ses rues permet de repérer des contrastes subtils entre façades anciennes, coins ombragés et commerces de proximité bien vivants.",
-        "tip": "Parcourez le quartier à pied tranquillement pour observer les détails architecturaux des étages.",
-        "cap1": "Quartier Espagnol — scènes de rue et coins ombragés",
-        "cap2": "Quartier Espagnol — arcades et proportions urbaines",
-        "cap3": "Quartier Espagnol — ruelles calmes entre passé et présent",
-        "cap4": "Quartier Espagnol — façades et commerces de quartier"
-      },
-      "souk_soune": {
-        "title": "Souk Soune",
-        "p1": "Souk Soune est un lieu d'échanges commerciaux très vivant où l'on découvre des tissus sahraouis colorés, des créations artisanales, des épices, du thé et des articles de tous les jours.",
-        "p2": "Circuler entre les étals offre un aperçu authentique des matières, couleurs et habitudes locales, idéal pour ramener des textiles ou discuter avec les commerçants.",
-        "tip": "Passez le matin ou en début de soirée lorsque les étals sont actifs et prévoyez de la petite monnaie.",
-        "cap1": "Souk Soune — tissus sahraouis, melhfas et étals colorés",
-        "cap2": "Souk Soune — épices, aromates et saveurs locales",
-        "cap3": "Souk Soune — artisanat et objets du quotidien",
-        "cap4": "Souk Soune — allées animées du marché de Laâyoune"
-      },
-      "saguia_el_hamra": {
-        "title": "Vallée de la Saguia El Hamra",
-        "p1": "La Saguia El Hamra donne son nom à la région et dessine un couloir naturel saisissant entre palmiers, berges ocres et étendues arides à proximité immédiate de Laâyoune.",
-        "p2": "Le contraste entre les touches de verdure, la terre ocre et la clarté du ciel offre un panorama marquant qui relie directement la ville à son environnement saharien.",
-        "tip": "Prévoyez une protection solaire et un appareil photo pour profiter de la lumière franche en journée.",
-        "cap1": "Saguia El Hamra — palmeraie et vallée saharienne",
-        "cap2": "Saguia El Hamra — berges ocres et vastes horizons",
-        "cap3": "Saguia El Hamra — contraste naturel aux abords de la ville",
-        "cap4": "Saguia El Hamra — points de vue paisibles le long du tracé"
-      },
-      "oulad_tedrarag": {
-        "title": "Place Oulad Tedrarag",
-        "p1": "La place Oulad Tedrarag constitue un point de passage et de rencontre apprécié où les habitants se croisent, font une pause et profitent d'un espace ouvert en ville.",
-        "p2": "Ses abords montrent une facette simple et authentique de la vie de quartier, entourée de rues commerçantes, de cafés et d'une animation constante.",
-        "tip": "Intégrez cet arrêt à une balade vers les grands axes voisins et les cafés du secteur.",
-        "cap1": "Place Oulad Tedrarag — espace ouvert et rues environnantes",
-        "cap2": "Place Oulad Tedrarag — animation quotidienne et ambiance locale",
-        "cap3": "Place Oulad Tedrarag — palmiers et allées piétonnes",
-        "cap4": "Place Oulad Tedrarag — brise du soir sur la place"
-      },
-      "el_marsa_port": {
-        "title": "Port d'El Marsa",
-        "p1": "Situé sur le littoral à l'ouest de Laâyoune, le port d'El Marsa est un pôle maritime majeur animé par les bateaux de pêche, la logistique côtière et les arrivages de poisson.",
-        "p2": "Observer les navires, les digues et la houle atlantique permet de comprendre l'importance de l'océan dans l'économie et la gastronomie de la région.",
-        "tip": "Restez à distance des zones de manutention actives et respectez les consignes d'accès portuaire.",
-        "cap1": "Port d'El Marsa — bateaux de pêche et eaux de l'Atlantique",
-        "cap2": "Port d'El Marsa — quais actifs et activité maritime",
-        "cap3": "Port d'El Marsa — digues côtières et horizon océanique",
-        "cap4": "Port d'El Marsa — lien direct avec les produits de la mer"
-      },
-      "foum_el_oued": {
-        "title": "Plage de Foum El Oued",
-        "p1": "À quelques minutes en voiture de Laâyoune, Foum El Oued déploie une longue étendue de sable face à l'Atlantique, idéale pour marcher au bord de l'eau et respirer l'air du large.",
-        "p2": "C'est un lieu privilégié pour se détendre face aux vagues et profiter des couchers de soleil lorsque la lumière décline sur l'océan.",
-        "tip": "Les courants et vagues de l'Atlantique peuvent être soutenus : restez vigilant face aux conditions de baignade.",
-        "cap1": "Plage de Foum El Oued — sable atlantique et vagues",
-        "cap2": "Plage de Foum El Oued — promenade littorale et air marin",
-        "cap3": "Plage de Foum El Oued — longues étendues côtières près de Laâyoune",
-        "cap4": "Plage de Foum El Oued — coucher de soleil sur l'Atlantique"
-      },
-      "lemsid_dunes": {
-        "title": "Dunes de Lemsid",
-        "p1": "Au nord de Laâyoune le long du littoral désertique, les dunes de Lemsid déploient des ondulations de sable façonnées par le vent et encadrées par de vastes horizons.",
-        "p2": "Marcher sur les crêtes ou observer l'évolution des ombres sur le sable procure une parenthèse désertique dépaysante à portée de route de la ville.",
-        "tip": "Emportez de l'eau, portez des chaussures adaptées au sable et préservez les milieux naturels.",
-        "cap1": "Dunes de Lemsid — crêtes de sable sculptées par le vent",
-        "cap2": "Dunes de Lemsid — étendues dorées et calme saharien",
-        "cap3": "Dunes de Lemsid — jeux d'ombres et de lumière sur le sable",
-        "cap4": "Dunes de Lemsid — paysages entre désert et côte au nord de Laâyoune"
-      }
-    },
-    "daytrips": {
-      "tarfaya": {
-        "title": "Tarfaya (≈ 1h15)",
-        "desc": "Ville côtière chargée d'histoire, falaises atlantiques et mémoire de l'aéropostale au sud-ouest de Laâyoune."
-      },
-      "khnifiss": {
-        "title": "Lagune de Khnifiss (≈ 1h45)",
-        "desc": "Réserve naturelle littorale entre lagune, dunes et océan, prisée pour l'observation des oiseaux."
-      },
-      "smara": {
-        "title": "Smara (≈ 3h30)",
-        "desc": "Ville historique de l'intérieur saharien connue pour son patrimoine spirituel et ses paysages désertiques."
-      },
-      "boujdour": {
-        "title": "Boujdour (≈ 2h)",
-        "desc": "Cap et littoral atlantique au sud de Laâyoune, marqué par les brises marines et les grands espaces."
-      },
-      "badge": "Aux alentours & sur la route",
-      "title": "Depuis Laâyoune",
-      "subtitle": "Étapes côtières, réserves naturelles et villes sahariennes accessibles depuis Laâyoune."
-    },
-    "hero_subtitle": "Entre horizons sahariens et océan Atlantique — grandes places, souks animés, port d'El Marsa, littoral et dunes de Lemsid.",
-    "info": {
-      "best_time_label": "Meilleure période",
-      "best_time": "Octobre – Avril · climat doux et ensoleillé",
-      "stay_label": "Durée idéale",
-      "stay": "2 – 3 jours",
-      "vibe_label": "Ambiance",
-      "vibe": "Culture saharienne · Côte atlantique · Dunes",
-      "airport_label": "Accès",
-      "airport_val": "Aéroport Laâyoune Hassan I (EUN) · Route côtière N1"
-    },
-    "intro": {
-      "title": "Bienvenue à Laâyoune — Patrimoine saharien et horizons atlantiques",
-      "p1": "Située dans le sud du Maroc là où les étendues sahariennes rejoignent l'océan Atlantique, Laâyoune réunit de vastes places urbaines, des marchés vivants, un port maritime actif à El Marsa et des paysages côtiers et dunaires ouverts.",
-      "p2": "Organisez votre séjour par zones : découvrez d'abord la place du Méchouar, la mosquée Moulay Abdellah, le Quartier Espagnol et Souk Soune en ville, puis rejoignez la plage de Foum El Oued et le port d'El Marsa sur la côte ou les dunes de Lemsid au nord."
-    },
-    "stays": {
-      "badge": "Hébergements",
-      "title": "Où dormir à Laâyoune",
-      "subtitle": "Hôtels et adresses pratiques près du centre, des grands axes ou du littoral pour quelques nuits.",
-      "book": "Réserver →",
-      "card1": {
-        "badge": "Centre",
-        "name": "Hôtel en centre-ville",
-        "desc": "Point de chute pratique pour rejoindre les places, souks et restaurants.",
-        "location": "Centre"
-      },
-      "card2": {
-        "badge": "Littoral",
-        "name": "Séjour côté plage ou mer",
-        "desc": "Accès facile à l'air marin et aux promenades vers Foum El Oued ou El Marsa.",
-        "location": "Littoral"
-      },
-      "card3": {
-        "badge": "Essentiel",
-        "name": "Adresse étape confortable",
-        "desc": "Confort simple et efficace pour une étape sur la route du Sud marocain.",
-        "location": "Laâyoune"
-      },
-      "card4": {
-        "badge": "Voiture",
-        "name": "Hôtel avec stationnement",
-        "desc": "Pratique si vous circulez en voiture vers les dunes de Lemsid, Tarfaya ou Khnifiss.",
-        "location": "Laâyoune"
-      }
-    },
-    "booking_banner": {
-      "badge": "Hôtels & séjours locaux",
-      "title": "Découvrir tous les hébergements à Laâyoune",
-      "desc": "Comparez les disponibilités, consultez les avis voyageurs et profitez d'options flexibles.",
-      "btn": "Voir tous les séjours",
-      "guarantee": "✓ Réservation sécurisée et choix d'adresses locales"
-    },
-    "tips": {
-      "title": "Conseils pratiques pour Laâyoune",
-      "transport": {
-        "title": "Se déplacer",
-        "desc": "Les places et rues centrales se parcourent facilement à pied ou en petit taxi ; une voiture est idéale pour Foum El Oued, El Marsa ou les dunes de Lemsid."
-      },
-      "ceramics_tip": {
-        "title": "Souvenirs & artisanat",
-        "desc": "Prenez le temps de comparer les tissus, melhfas et objets artisanaux dans les marchés locaux et gardez de la petite monnaie sur vous."
-      },
-      "timing": {
-        "title": "Quand partir",
-        "desc": "De l'automne au printemps, les journées sont agréables ; privilégiez le matin pour les marchés et la fin d'après-midi pour la plage ou les dunes."
-      }
-    },
-    "faq": {
-      "badge": "Bon à savoir",
-      "title": "Questions fréquentes sur Laâyoune",
-      "q1": {
-        "question": "Combien de temps prévoir à Laâyoune ?",
-        "answer": "Deux à trois jours permettent de découvrir les lieux emblématiques de la ville, le marché, le littoral de Foum El Oued et El Marsa ainsi qu'une escapade vers les dunes de Lemsid."
-      },
-      "q2": {
-        "question": "Qu'est-ce qui caractérise Laâyoune ?",
-        "answer": "Laâyoune allie culture saharienne, grandes places urbaines, marchés traditionnels comme Souk Soune, activité maritime à El Marsa et proximité directe avec l'Atlantique et les dunes."
-      },
-      "q3": {
-        "question": "Peut-on combiner ville, plage et désert ?",
-        "answer": "Oui — la ville se situe à courte distance du littoral atlantique à Foum El Oued et des étendues dunaires au nord, ce qui facilite des sorties variées sur une courte durée."
-      },
-      "q4": {
-        "question": "Faut-il une voiture pour visiter les environs ?",
-        "answer": "Les déplacements en ville sont simples à pied ou en taxi, mais une voiture ou un chauffeur est très pratique pour rejoindre Foum El Oued, El Marsa, les dunes de Lemsid ou Tarfaya."
-      }
-    },
-    "name": "Laâyoune",
-    "seo": {
-      "title": "Laâyoune Travel Guide: Méchouar Square, Moulay Abdellah Mosque, Souk Soune, El Marsa Port & Lemsid Dunes | MoroccoTripMap"
-    }
+  "overview": {
+    "title": "Bienvenue à Laâyoune — Désert, océan et culture saharienne",
+    "p1": "Capitale de la région Laâyoune-Sakia El Hamra, Laâyoune se situe à la rencontre du Sahara et de l'Atlantique. La ville associe un centre moderne et aéré, une église de l'époque espagnole, l'artisanat saharien et un accès facile aux dunes et aux plages de l'océan.",
+    "p2": "La plupart des visiteurs y passent un ou deux jours : commencez par la place du Mechouar et le centre artisanal, visitez le musée des arts et l'église espagnole, puis filez vers les dunes pour le coucher du soleil ou vers Foum El Oued pour l'océan. La lagune de Khnifiss et Tarfaya font une belle excursion vers le nord."
   },
-  "breadcrumb": {
-    "destinations": "Destinations",
-    "home": "Home"
-  },
-  "footer": {
-    "about_text": "Discover. Plan. Experience Morocco. The premier tourism directory and cultural travel guide for visitors exploring Morocco.",
-    "categories_title": "Travel Categories",
-    "connect_title": "Connect",
-    "copyright": "© MoroccoTripMap. All rights reserved.",
-    "link_agadir": "Agadir Travel Guide",
-    "link_all_destinations": "All Destinations →",
-    "link_blog": "Travel Blog & Tips",
-    "link_experiences": "Desert Tours & Activities",
-    "link_itineraries": "Circuits & Itineraries",
-    "link_restaurants": "Moroccan Gastronomy & Food",
-    "link_safi": "Laâyoune Travel Guide",
-    "link_sidi_ifni": "Sidi Ifni Travel Guide",
-    "link_stays": "Authentic Riads & Hotels",
-    "link_tiznit": "Tiznit Travel Guide",
-    "link_transport": "Transport & Rental Cars",
-    "recommended_title": "Recommended Pages",
-    "youtube_text": "Follow our YouTube channel for video travel guides:"
-  },
-  "mobile_menu": {
-    "language_title": "Language / Langue"
-  },
-  "nav": {
-    "blog": "Blog",
-    "cat_experiences": "Experiences",
-    "cat_gastronomy": "Gastronomy",
-    "cat_guides": "Travel Guides",
-    "cat_itineraries": "Itineraries",
-    "cat_museums": "Monuments & Museums",
-    "cat_stays": "Stays & Riads",
-    "cat_transport": "Transport & Rental",
-    "categories": "Categories",
-    "cities": "Cities & Destinations",
-    "contact": "Contact",
-    "destinations": "Destinations",
-    "history": "Market",
-    "home": "Home"
-  }
+  "hero_alt": "Laâyoune, place du Mechouar, dunes sahariennes et côte atlantique",
+  "footer_link": "Guide de voyage Laâyoune"
 }
